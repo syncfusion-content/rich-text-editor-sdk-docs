@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+   
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <div id='editor'>
+In Rich Text Editor , you click the toolbar buttons to format the words and the changes are visible immediately. 
+Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words 
+and phrases should look different from each other
+
+Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
+
+We can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/).
+
+The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content            
+        </div>
+    </div>
+    <style>
+        .e-richtexteditor textarea.e-content {
+            float: left;
+            border-right: 1px solid rgba(0, 0, 0, 0.12);
+        }
+        .e-richtexteditor .e-rte-content .e-content{
+            min-height: 150px;
+        }
+    
+        .e-richtexteditor .e-rte-content {
+            overflow: hidden;
+        }
+    
+        .e-icon-btn.e-active .e-md-preview::before {
+            content: '\e350';
+        }
+    
+        .e-icon-btn .e-md-preview::before {
+            content: '\e345';
+        }
+    
+        .e-rte-content .e-content {
+            float: right;
+            width: 50%;
+            overflow: auto;
+            height: inherit;
+            padding: 8px;
+            height: 100%;
+        }
+    
+        .e-rte-content .e-content.e-pre-source {
+            width: 100%;
+        }
+    
+        .highcontrast .e-richtexteditor textarea.e-content {
+            border-right: 1px solid #fff;
+        }
+    
+        .sb-header {
+            z-index: 100;
+        }
+    </style>
+</body>
+
+</html>

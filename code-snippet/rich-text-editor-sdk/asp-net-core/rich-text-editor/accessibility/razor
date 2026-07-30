@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("accessibility").Value(ViewBag.value).Render()

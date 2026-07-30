@@ -1,0 +1,24 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-rte-block-blue-text {
+  color: #0079f3;
+}
+
+.e-inline-text-highlight {
+  background-color: yellow;
+}
+
+.e-rte-strong-bg {
+  background-color: beige;
+}

@@ -1,0 +1,2 @@
+<ejs-richtexteditor id="htmlEditor" value="@ViewBag.value">
+</ejs-richtexteditor>

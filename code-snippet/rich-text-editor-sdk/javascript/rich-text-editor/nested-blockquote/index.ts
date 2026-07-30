@@ -1,0 +1,17 @@
+import { RichTextEditor, Toolbar, HtmlEditor} from '@syncfusion/ej2-richtexteditor';
+RichTextEditor.Inject(Toolbar, HtmlEditor);
+
+let editor: RichTextEditor = new RichTextEditor({
+    value: `
+<blockquote>
+        <p><strong>Outer Quote:</strong> The Rich Text Editor provides a flexible way to format quotations.</p>
+        <blockquote>
+            <p><em>Inner Quote:</em> You can even nest blockquotes to represent quoted replies or layered citations.</p>
+            <blockquote>
+                <p><em>Deep Quote:</em> This is useful in forums, emails, or academic writing where multiple levels of quoting are needed.</p>
+            </blockquote>
+        </blockquote>
+    </blockquote>
+`
+});
+editor.appendTo('#editor');

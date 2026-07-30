@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-layouts/styles/tailwind3.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+   
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div class="default-section">
+            <div id="splitter-rte-markdown-preview">
+              <div class="splitter-default-content pane1">
+                <div id="markdown-editor"></div>
+              </div>
+              <div class="heading right">
+                <div>
+                  <h6 class="title"><b>Markdown Preview</b></h6>
+                </div>
+                <div
+                  class="splitter-default-content source-code pane2"
+                  style="padding: 20px"
+                ></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <style>
+        .heading {
+        float: left;
+        width: 50%;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .title {
+        color: #333333;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        text-align: center;
+        margin: 15px 0;
+      }
+      .e-richtexteditor textarea.e-content {
+        float: left;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .e-richtexteditor .e-rte-content .e-content {
+        min-height: 150px;
+      }
+
+      .e-richtexteditor .e-rte-content {
+        overflow: hidden;
+      }
+      .bootstrap4 .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e790';
+      }
+
+      .bootstrap4 .e-icon-btn .e-md-preview::before {
+        content: '\e787';
+      }
+
+      .tailwind .e-icon-btn.e-active .e-md-preview::before,
+      .tailwind-dark .e-icon-btn.e-active .e-md-preview::before,
+      .tailwind3 .e-icon-btn.e-active .e-md-preview::before,
+      .tailwind3-dark .e-icon-btn.e-active .e-md-preview::before,
+      .fluent .e-icon-btn.e-active .e-md-preview::before,
+      .fluent-dark .e-icon-btn.e-active .e-md-preview::before,
+      .fluent2 .e-icon-btn.e-active .e-md-preview::before,
+      .fluent2-dark .e-icon-btn.e-active .e-md-preview::before,
+      .bootstrap5 .e-icon-btn.e-active .e-md-preview::before,
+      .bootstrap5\.3 .e-icon-btn.e-active .e-md-preview::before,
+      .bootstrap5\.3-dark .e-icon-btn.e-active .e-md-preview::before,
+      .bootstrap5-dark .e-icon-btn.e-active .e-md-preview::before,
+      .material3 .e-icon-btn.e-active .e-md-preview::before,
+      .material3-dark .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e80e';
+      }
+
+      .tailwind .e-icon-btn .e-md-preview::before,
+      .tailwind-dark .e-icon-btn .e-md-preview::before,
+      .tailwind3 .e-icon-btn .e-md-preview::before,
+      .tailwind3-dark .e-icon-btn .e-md-preview::before,
+      .bootstrap5 .e-icon-btn .e-md-preview::before,
+      .bootstrap5\.3 .e-icon-btn .e-md-preview::before,
+      .bootstrap5\.3-dark .e-icon-btn .e-md-preview::before,
+      .bootstrap5-dark .e-icon-btn .e-md-preview::before,
+      .fluent .e-icon-btn .e-md-preview::before,
+      .fluent-dark .e-icon-btn .e-md-preview::before,
+      .fluent2 .e-icon-btn .e-md-preview::before,
+      .fluent2-dark .e-icon-btn .e-md-preview::before,
+      .material3 .e-icon-btn .e-md-preview::before,
+      .material3-dark .e-icon-btn .e-md-preview::before {
+        content: '\e7de';
+      }
+
+      .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+      }
+
+      .e-icon-btn .e-md-preview::before {
+        content: '\e345';
+      }
+
+      .e-rte-content .e-content {
+        float: right;
+        width: 50%;
+        overflow: auto;
+        height: inherit;
+        padding: 8px;
+        height: 100%;
+      }
+
+      .e-rte-content .e-content.e-pre-source {
+        width: 100%;
+      }
+
+      .highcontrast .e-richtexteditor textarea.e-content {
+        border-right: 1px solid #fff;
+      }
+    </style>
+</body>
+
+</html>

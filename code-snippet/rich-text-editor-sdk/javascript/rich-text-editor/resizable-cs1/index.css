@@ -1,0 +1,19 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-richtexteditor {
+    min-width: 200px;
+    max-width: 800px;
+    min-height: 100px;
+    max-height: 300px;
+}

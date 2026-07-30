@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typescript UI Controls">
+    <meta name="author" content="Syncfusion">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/tailwind3.css" rel="stylesheet">
+     <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet"/>
+    
+   
+<script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="editorMention"></div>
+        <div id="markdownMention"> 
+    </div>
+    <style>
+        .e-richtexteditor textarea.e-content {
+            float: left;
+        }
+        .e-richtexteditor .e-rte-content {
+            overflow: hidden;
+        }
+        .e-icon-btn.e-active .e-md-preview::before {
+            content: '\e350';
+        }
+        .e-icon-btn .e-md-preview::before {
+            content: '\e345';
+        }
+            .bootstrap4 .e-icon-btn.e-active .e-md-preview::before {
+            content: '\e790';
+        }
+
+        .bootstrap4 .e-icon-btn .e-md-preview::before {
+            content: '\e787';
+        }
+
+        .tailwind .e-icon-btn.e-active .e-md-preview::before,
+        .tailwind-dark .e-icon-btn.e-active .e-md-preview::before,
+        .tailwind3 .e-icon-btn.e-active .e-md-preview::before,
+        .tailwind3-dark .e-icon-btn.e-active .e-md-preview::before,
+        .fluent .e-icon-btn.e-active .e-md-preview::before,
+        .fluent-dark .e-icon-btn.e-active .e-md-preview::before,
+        .fluent2 .e-icon-btn.e-active .e-md-preview::before,
+        .fluent2-dark .e-icon-btn.e-active .e-md-preview::before,
+        .fluent2-highcontrast .e-icon-btn.e-active .e-md-preview::before,
+        .bootstrap5 .e-icon-btn.e-active .e-md-preview::before,
+        .bootstrap5-dark .e-icon-btn.e-active .e-md-preview::before,
+        .material3 .e-icon-btn.e-active .e-md-preview::before,
+        .material3-dark .e-icon-btn.e-active .e-md-preview::before {
+            content: '\e80e';
+        }
+
+        .tailwind .e-icon-btn .e-md-preview::before,
+        .tailwind-dark .e-icon-btn .e-md-preview::before,
+        .tailwind3 .e-icon-btn .e-md-preview::before,
+        .tailwind3-dark .e-icon-btn .e-md-preview::before,
+        .bootstrap5 .e-icon-btn .e-md-preview::before,
+        .bootstrap5-dark .e-icon-btn .e-md-preview::before,
+        .fluent .e-icon-btn .e-md-preview::before,
+        .fluent-dark .e-icon-btn .e-md-preview::before,
+        .fluent2 .e-icon-btn .e-md-preview::before,
+        .fluent2-dark .e-icon-btn .e-md-preview::before,
+        .fluent2-highcontrast .e-icon-btn .e-md-preview::before,
+        .material3 .e-icon-btn .e-md-preview::before,
+        .material3-dark .e-icon-btn .e-md-preview::before {
+            content: '\e7de';
+        }
+
+        .editor-mention-item-template {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .em-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .em-avatar {
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 500;
+            text-indent: 0px;
+            line-height: 13px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .em-name {
+            color: rgb(16, 24, 40);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            margin-bottom: 5px;
+        }
+
+        .em-email {
+            color: gray;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+
+        #markdownMention_editable-content_popup li {
+            padding: 10px;
+            height: 60px;
+        }
+
+        body[class*="-dark"] .em-name {
+            color: #fff !important;
+        }
+
+    </style>
+
+
+<script>
+var ele = document.getElementById('container');
+if(ele) {
+  ele.style.visibility = "visible";
+}   
+      </script>
+<script src="index.js" type="text/javascript"></script>
+</body></html>

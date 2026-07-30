@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("audio").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertAudioSettings(obj => obj.LayoutOption("Break")).Value(ViewBag.value).Render()

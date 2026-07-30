@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("iframe").IframeSettings(iframeSettings => iframeSettings.Enable(true).Resources(ViewBag.resources)).Value(ViewBag.value).Render()

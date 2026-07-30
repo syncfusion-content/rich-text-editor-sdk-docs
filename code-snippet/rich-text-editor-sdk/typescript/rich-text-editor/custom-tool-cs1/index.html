@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 Rich Text Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
+     <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container' class='e-rte-custom-tbar-section'>
+        <div id='editor'>
+        </div>
+        <div id="customTbarDialog" style="display: none">
+            <div id="rteSpecial_char">
+                <div class="char_block" title="^">^</div>
+                <div class="char_block" title="_">_</div>
+                <div class="char_block" title="`">`</div>
+                <div class="char_block" title="{">{</div>
+                <div class="char_block" title="|">|</div>
+                <div class="char_block" title="}">}</div>
+                <div class="char_block" title="~">~</div>
+                <div class="char_block" title="&#xA0;">&#xA0;</div>
+                <div class="char_block" title="&#xA1;">&#xA1;</div>
+                <div class="char_block" title="&#xA2;">&#xA2;</div>
+                <div class="char_block" title="&#xA3;">&#xA3;</div>
+                <div class="char_block" title="&#xA4;">&#xA4;</div>
+                <div class="char_block" title="&#xA5;">&#xA5;</div>
+                <div class="char_block" title="&#x20B9;">&#x20B9;</div>
+                <div class="char_block" title="&#xA6;">&#xA6;</div>
+                <div class="char_block" title="&#xA7;">&#xA7;</div>
+                <div class="char_block" title="&#xA8;">&#xA8;</div>
+                <div class="char_block" title="&#xA9;">&#xA9;</div>
+                <div class="char_block" title="&#xAA;">&#xAA;</div>
+                <div class="char_block" title="&#xAB;">&#xAB;</div>
+                <div class="char_block" title="&#xAC;">&#xAC;</div>
+                <div class="char_block" title="&#xAD;">&#xAD;</div>
+                <div class="char_block" title="&#xAE;">&#xAE;</div>
+                <div class="char_block" title="&#xAF;">&#xAF;</div>
+                <div class="char_block" title="&#xB0;">&#xB0;</div>
+                <div class="char_block" title="&#xB1;">&#xB1;</div>
+                <div class="char_block" title="&#xB2;">&#xB2;</div>
+                <div class="char_block" title="&#xB3;">&#xB3;</div>
+                <div class="char_block" title="&#xB4;">&#xB4;</div>
+                <div class="char_block" title="&#xB5;">&#xB5;</div>
+                <div class="char_block" title="&#xB6;">&#xB6;</div>
+                <div class="char_block" title="&#xB7;">&#xB7;</div>
+                <div class="char_block" title="&#xB8;">&#xB8;</div>
+                <div class="char_block" title="&#xB9;">&#xB9;</div>
+                <div class="char_block" title="&#xBA;">&#xBA;</div>
+                <div class="char_block" title="&#xBB;">&#xBB;</div>
+                <div class="char_block" title="&#xBC;">&#xBC;</div>
+                <div class="char_block" title="&#xBD;">&#xBD;</div>
+                <div class="char_block" title="&#xBE;">&#xBE;</div>
+                <div class="char_block" title="&#xBF;">&#xBF;</div>
+                <div class="char_block" title="&#xC0;">&#xC0;</div>
+                <div class="char_block" title="&#xC1;">&#xC1;</div>
+                <div class="char_block" title="&#xC2;">&#xC2;</div>
+                <div class="char_block" title="&#xC3;">&#xC3;</div>
+            </div>
+        </div>
+    </div>
+<style>
+    #special_char,
+      .char_block {
+        display: inline-block;
+      }
+      .char_block.e-active {
+        /* box-shadow: inset 3px 3px 7px 0px; */
+        outline: 1.5px solid;
+      }
+      .char_block {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px 5px 0;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #dddddd;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+      }
+      #custom_tbar,
+      #custom_tbar div {
+        cursor: pointer;
+      }
+      #rteSection {
+        height: 500px;
+      }
+      .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-left::before {
+        content: '\e76e';
+      }
+      .e-rte-quick-popup .e-rte-quick-toolbar .e-roatate-right::before {
+        content: '\e726';
+      }
+      .e-richtexteditor textarea.e-content {
+        float: left;
+      }
+      .e-richtexteditor .e-rte-content {
+        overflow: hidden;
+      }
+      .e-rte-content .e-content.e-pre-source {
+        width: 100%;
+      }
+      .property-panel-content td {
+        width: 50%;
+      }
+      .property-panel-content td div {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+      }
+      .e-icon-btn .e-md-preview.e-icons::before {
+        content: '\e345';
+      }
+      .e-icon-btn.e-active .e-md-preview::before,
+      #mdCustom .e-icon-btn.e-active .e-md-preview.e-icons::before {
+        content: '\e350';
+      }
+      #mdCustom .e-icon-btn .e-md-preview.e-icons::before {
+        content: '\e345';
+      }
+      #rteDialog.e-dialog .e-dlg-content {
+        padding: 0px 0px 5px 16px;
+      }
+      #custom_tbar .e-tbar-btn-text {
+        font-size: 16px;
+      }
+      .e-bigger #custom_tbar .e-tbar-btn-text {
+        font-size: 18px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .fabric.e-bigger #rteDialog {
+          min-width: 281px;
+        }
+        .fabric #rteDialog {
+          min-width: 241px;
+        }
+        .bootstrap.e-bigger #rteDialog,
+        .bootstrap #rteDialog {
+          min-width: 223px;
+        }
+        .highcontrast.e-bigger #rteDialog {
+          min-width: 283px;
+        }
+        .highcontrast #rteDialog {
+          min-width: 243px;
+        }
+        .material #rteDialog {
+          min-width: 224px;
+        }
+        .material.e-bigger #rteDialog {
+          min-width: 236px;
+        }
+      }
+</style>
+</body>
+
+</html>

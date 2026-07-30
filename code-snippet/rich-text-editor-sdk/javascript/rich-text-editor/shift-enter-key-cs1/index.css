@@ -1,0 +1,33 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.api {
+    width: 55%;
+}
+.api td {
+    padding-right: 100px;
+    margin-top: 3px;
+}
+@media only screen and (max-width: 600px) {
+    .api {
+        width: 100%;
+    }
+    .api td {
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .api {
+        width: 55%;
+    }
+}

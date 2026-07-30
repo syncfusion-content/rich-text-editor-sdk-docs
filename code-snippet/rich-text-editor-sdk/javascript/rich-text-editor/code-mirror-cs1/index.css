@@ -1,0 +1,59 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-rte-code-mirror-enabled .rte-code-mirror {
+    display: block !important;
+    /* To show the custom source code view. */
+  }
+
+  .e-rte-code-mirror-enabled .e-rte-content {
+    display: none !important;
+    /* To hide the editor area when custom source code enabled. */
+  }
+  .e-rte-srctextarea {
+    display: none !important;  /* To hide the editor area when custom source code enabled. */
+  }
+  .e-source-content {
+    display: block !important;
+  }
+  body[class*='-dark'] .rte-code-mirror .cm-tag,
+  body[class*='highcontrast'] .rte-code-mirror .cm-tag {
+    color: #00ff00;
+  }
+
+  body[class*='-dark'] .rte-code-mirror .cm-string,
+  body[class*='highcontrast'] .rte-code-mirror .cm-string {
+    color: blue;
+  }
+
+  body[class*='-dark'] .rte-code-mirror .cm-attribute,
+  body[class*='highcontrast'] .rte-code-mirror .cm-attribute {
+    color: #f00;
+  }
+
+  body[class*='-dark'] .rte-code-mirror .CodeMirror-gutters,
+  body[class*='-dark']
+    .rte-code-mirror
+    .CodeMirror
+    body[class*='highcontrast']
+    .rte-code-mirror
+    .CodeMirror-gutters,
+  body[class*='highcontrast'] .rte-code-mirror .CodeMirror {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .tailwind3-dark .CodeMirror-scroll {
+    background-color: #111827;
+    color: #fff;
+  }
