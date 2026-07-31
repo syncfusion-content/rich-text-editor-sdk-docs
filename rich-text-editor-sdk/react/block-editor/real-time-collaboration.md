@@ -171,7 +171,7 @@ export { yDoc, yFragment, adapter, provider, roomName };
 - Pass the adapter and provider to the Block Editor through the `collaborationSettings` property.
 - Set `enableAwareness` to `true` in `collaborationSettings` property to display remote cursors, text selection overlays, and user details on hover.
 
-In your `App.tsx` file, replace the existing Block Editor with the following code:
+In your React component file, add the following code. Replace your existing Block Editor setup with this:
 
 {% raw %}
 ```typescript
@@ -243,9 +243,7 @@ const users = blockEditorRef.current?.users;
 ### Enable version history
 
 - Inject the `VersionHistory` module and configure the `versionHistory` property under `collaborationSettings` property.
-
 - Version snapshots need to be persisted to enable version history across browser sessions.
-
 - Implement the `IVersionStorage` interface to provide a custom storage backend for managing snapshots. You can use IndexedDB, a backend database, or any other storage solution suitable for your deployment.
 
 - The `IVersionStorage` interface defines the following methods:
@@ -261,10 +259,10 @@ const users = blockEditorRef.current?.users;
 - After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
 
 Before that need to create a storage service for snapshots.
-- Create versionHistoryService.ts with IndexedDBVersionStorage class
-- This class implements IVersionStorage interface (required by Syncfusion)
+- Create `versionHistoryService.ts` with `IndexedDBVersionStorage` class
+- This class implements `IVersionStorage` interface (required by Syncfusion)
 
-Make Storage Room-Specific by importing roomName from collaboration.ts to make each room gets its own isolated snapshot database.
+Make Storage Room-Specific by importing `roomName` from `collaboration.ts` to make each room gets its own isolated snapshot database.
 
 Create a `versionHistoryService.ts` file in the src folder, replace the `App.tsx` file to configure the BlockEditorComponent, and replace the `App.css` file with the styles required for the version history panel.
 
@@ -529,7 +527,7 @@ const imported = await versionHistory.importSnapshot(exported);
 
 ### Events
 
-Use the following event callbacks in `versionHistory` settings to respond to snapshot lifecycle events.
+Use the following event callbacks in `versionHistory` settings to respond to snapshot life cycle events.
 
 #### snapshotCreated
 
