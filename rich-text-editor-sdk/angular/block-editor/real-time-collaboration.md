@@ -88,7 +88,7 @@ running at 'localhost' on port 1234
 - Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 - Create a provider that connects users to the same shared document.
 
-Create a `collaboration.ts` file in the src folder to configure the Yjs document, provider, collaboration adapter, and room allocation logic.
+Create a `collaboration.ts` file in the src folder and add the following code to configure the Yjs document, provider, collaboration adapter, and room allocation logic.
 
 ```typescript
 import * as Y from 'yjs';
@@ -529,11 +529,11 @@ The following are the methods available in the `IVersionHistory`:
 Creates a new snapshot of the current document state with an optional label and metadata.
 
 ```typescript
-    this.versionHistory = this.blockEditor.getVersionHistory();
-    this.versionHistory.createSnapshot({
-        label: 'Before major update',
-        modifiedBy: this.currentUserId
-    });
+this.versionHistory = this.blockEditor.getVersionHistory();
+this.versionHistory.createSnapshot({
+    label: 'Before major update',
+    modifiedBy: this.currentUserId
+});
 ```
 
 #### List snapshots
@@ -576,7 +576,7 @@ Compares two snapshots to identify differences such as added, removed, or modifi
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
-    this.versionHistory.compareVersions(snapshotIdA, snapshotIdB);
+this.versionHistory.compareVersions(snapshotIdA, snapshotIdB);
 ```
 
 The returned `VersionDiff` object provides a summary of the differences between the two selected versions.
