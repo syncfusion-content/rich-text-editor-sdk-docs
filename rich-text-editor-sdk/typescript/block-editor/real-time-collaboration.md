@@ -271,10 +271,9 @@ import {
 } from '@syncfusion/ej2-blockeditor';
 import { adapter, provider, roomName } from './collaboration';
 import { IndexedDBVersionStorage } from './versionHistoryService';
-
 BlockEditor.Inject(Collaboration, VersionHistory);
-const myStorage = new IndexedDBVersionStorage(`blockeditor-versions-${roomName}`);
 
+const myStorage = new IndexedDBVersionStorage(`blockeditor-versions-${roomName}`);
 const blockEditor = new BlockEditor({
     collaborationSettings: {
         adapter: adapter,
@@ -296,7 +295,6 @@ async function renderSnapshots(): Promise<void> {
     await versionHistory.whenReady();
     const snapshots: VersionSnapshot[] = versionHistory.getSnapshots();
     panel.innerHTML = `<h3>Snapshots (${snapshots.length})</h3>`;
-
     if (snapshots.length === 0) {
         panel.innerHTML += '<p>No snapshots yet...</p>';
         return;
@@ -316,7 +314,6 @@ async function renderSnapshots(): Promise<void> {
         container.appendChild(item);
     });
     panel.appendChild(container);
-
     panel.querySelectorAll<HTMLButtonElement>('.restore-btn').forEach((btn) => {
         btn.addEventListener('click', async () => {
             await blockEditor.getVersionHistory().restoreSnapshot(btn.dataset.id!);
