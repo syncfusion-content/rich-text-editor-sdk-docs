@@ -105,7 +105,7 @@ These modules can be injected as `services` through the component's `providers` 
 
 {% tabs %}
 {% highlight ts hl_lines="9" tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -117,14 +117,14 @@ Modify the template in the [src/app/app.ts] file to render the Markdown Editor c
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/styles.css %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

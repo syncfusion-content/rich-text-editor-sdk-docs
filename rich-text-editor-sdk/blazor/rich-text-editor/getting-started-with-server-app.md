@@ -223,8 +223,6 @@ dotnet run
 
 {% endtabcontent %}
 
-{% endtabcontents %}
-
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BtBdjohZVVUMIRjO?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" backgroundimage "[Blazor Rich Text Editor Component](./images/blazor-richtexteditor.webp)" %}
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/RichTextEditor).
