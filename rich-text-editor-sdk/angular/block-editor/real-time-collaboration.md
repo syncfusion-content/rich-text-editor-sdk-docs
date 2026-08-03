@@ -221,6 +221,9 @@ If the text appears in both tabs, **real-time collaboration is achieved.**
 Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
 
 ```typescript
+import { Component, OnInit } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+
 @Component({
     selector: 'app-root',
     template: `

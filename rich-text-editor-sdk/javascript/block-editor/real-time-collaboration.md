@@ -341,24 +341,20 @@ function updateSnapshots() {
     if (!versionHistory) {
         return;
     }
-
     var snapshots = versionHistory.getSnapshots();
     var panel = document.getElementById('version-history-panel');
     if (!panel) {
         return;
     }
-
     if (snapshots.length === 0) {
         panel.innerHTML =
             '<h3>Snapshots (0)</h3>' +
             '<p>No snapshots yet...</p>';
         return;
     }
-
     var html =
         '<h3>Snapshots (' + snapshots.length + ')</h3>' +
         '<div class="snapshots-container">';
-
     snapshots.forEach(function (snapshot) {
         html +=
             '<div class="snapshot-item">' +
