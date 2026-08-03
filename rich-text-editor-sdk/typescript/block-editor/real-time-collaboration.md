@@ -62,7 +62,7 @@ Install the WebSocket server package:
 npm install @y/websocket-server
 ```
 
-#### Running the server:
+#### Run the WebSocket Server
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -83,16 +83,13 @@ You should see the message:
 running at 'localhost' on port 1234
 ```
 
-**Keep this terminal open** while you develop. Your Block Editor will connect to this server.
-
 ### Step 4: Create a collaboration configuration file
 
 - Create a shared Yjs document and XML fragment.
 - Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 - Create a provider that connects users to the same shared document.
-- Allocate a collaboration room dynamically based on the URL hash, so each hash gets its own isolated document room.
 
-Create a new file named `collaboration.ts` in your `src` folder. This file will contain all the Yjs and provider setup:
+Create a `collaboration.ts` file in the src folder and add the following code to configure the Yjs document, provider, collaboration adapter and room allocation logic.
 
 ```typescript
 import * as Y from 'yjs';
@@ -171,7 +168,8 @@ export { yDoc, yFragment, adapter, provider, roomName };
 
 - Enable collaboration by importing the `Collaboration` module from `@syncfusion/ej2-blockeditor` and injecting it into the Block Editor.
 - Use the `collaborationSettings` property of type `CollaborationSettingsModel` to configure collaboration settings for your Block Editor. 
-- It provides properties such as `provider`, `enableAwareness`, `adapter`, and `versionHistory` which allow you to customize the collaboration behavior.
+- It provides properties such as `provider`, `enableAwareness`, `adapter` and `versionHistory` which allow you to customize the collaboration behavior.
+- Pass the adapter and provider to the Block Editor through the `collaborationSettings` property.
 - Set `enableAwareness` to `true` in `collaborationSettings` property to display remote cursors, text selection overlays, and user details on hover.
 
 In your `main.ts` file, replace the existing Block Editor code with the following:
@@ -200,7 +198,7 @@ blockEditor.appendTo('#blockeditor_default');
 npm run dev
 ```
 
-> **Important:** Make sure your WebSocket server is still running in another terminal window. You need both servers running for collaboration to work.
+> **Important:** Make sure your WebSocket server is still running in another terminal window.
 
 2. **Open a tab and duplicate it** with your Typescript application
 3. **Type in one window** — you should see the text appear in the other window instantly
@@ -254,8 +252,8 @@ const users = blockEditor.users;
 - After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
 
 Before that need to create a storage service for snapshots.
-- Create versionHistoryService.ts with IndexedDBVersionStorage class
-- This class implements IVersionStorage interface (required by Syncfusion)
+- Create `versionHistoryService.ts` with `IndexedDBVersionStorage` class
+- This class implements `IVersionStorage` interface (required by Syncfusion)
 
 Make Storage Room-Specific by importing `roomName` from `collaboration.ts` to make each room get its own isolated snapshot database.
 
@@ -273,11 +271,9 @@ import {
 } from '@syncfusion/ej2-blockeditor';
 import { adapter, provider, roomName } from './collaboration';
 import { IndexedDBVersionStorage } from './versionHistoryService';
-
 BlockEditor.Inject(Collaboration, VersionHistory);
 
 const myStorage = new IndexedDBVersionStorage(`blockeditor-versions-${roomName}`);
-
 const blockEditor = new BlockEditor({
     collaborationSettings: {
         adapter: adapter,
@@ -298,17 +294,13 @@ async function renderSnapshots(): Promise<void> {
     const versionHistory = blockEditor.getVersionHistory();
     await versionHistory.whenReady();
     const snapshots: VersionSnapshot[] = versionHistory.getSnapshots();
-
     panel.innerHTML = `<h3>Snapshots (${snapshots.length})</h3>`;
-
     if (snapshots.length === 0) {
         panel.innerHTML += '<p>No snapshots yet...</p>';
         return;
     }
-
     const container = document.createElement('div');
     container.className = 'snapshots-container';
-
     snapshots.forEach((s) => {
         const item = document.createElement('div');
         item.className = 'snapshot-item';
@@ -321,9 +313,7 @@ async function renderSnapshots(): Promise<void> {
         `;
         container.appendChild(item);
     });
-
     panel.appendChild(container);
-
     panel.querySelectorAll<HTMLButtonElement>('.restore-btn').forEach((btn) => {
         btn.addEventListener('click', async () => {
             await blockEditor.getVersionHistory().restoreSnapshot(btn.dataset.id!);
