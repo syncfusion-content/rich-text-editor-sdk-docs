@@ -326,7 +326,6 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         }
     }
 });
-
 blockEditor.appendTo('#blockeditor_default');
 
 // Update version history panel periodically
@@ -345,7 +344,6 @@ function updateSnapshots() {
 
     var snapshots = versionHistory.getSnapshots();
     var panel = document.getElementById('version-history-panel');
-
     if (!panel) {
         return;
     }
@@ -373,7 +371,6 @@ function updateSnapshots() {
                 '</div>' +
             '</div>';
     });
-
     html += '</div>';
     panel.innerHTML = html;
 }
