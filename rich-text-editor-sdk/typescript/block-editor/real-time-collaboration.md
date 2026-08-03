@@ -273,7 +273,6 @@ import { adapter, provider, roomName } from './collaboration';
 import { IndexedDBVersionStorage } from './versionHistoryService';
 
 BlockEditor.Inject(Collaboration, VersionHistory);
-
 const myStorage = new IndexedDBVersionStorage(`blockeditor-versions-${roomName}`);
 
 const blockEditor = new BlockEditor({
@@ -296,17 +295,14 @@ async function renderSnapshots(): Promise<void> {
     const versionHistory = blockEditor.getVersionHistory();
     await versionHistory.whenReady();
     const snapshots: VersionSnapshot[] = versionHistory.getSnapshots();
-
     panel.innerHTML = `<h3>Snapshots (${snapshots.length})</h3>`;
 
     if (snapshots.length === 0) {
         panel.innerHTML += '<p>No snapshots yet...</p>';
         return;
     }
-
     const container = document.createElement('div');
     container.className = 'snapshots-container';
-
     snapshots.forEach((s) => {
         const item = document.createElement('div');
         item.className = 'snapshot-item';
@@ -319,7 +315,6 @@ async function renderSnapshots(): Promise<void> {
         `;
         container.appendChild(item);
     });
-
     panel.appendChild(container);
 
     panel.querySelectorAll<HTMLButtonElement>('.restore-btn').forEach((btn) => {
