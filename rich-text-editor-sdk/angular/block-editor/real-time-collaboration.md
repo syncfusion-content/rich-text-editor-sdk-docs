@@ -221,6 +221,16 @@ If the text appears in both tabs, **real-time collaboration is achieved.**
 Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
 
 ```typescript
+@Component({
+    selector: 'app-root',
+    template: `
+        <ejs-blockeditor
+            [users]="users"
+            [currentUserId]="currentUserId"
+            [collaborationSettings]="collaborationSettings">
+        </ejs-blockeditor>
+    `
+})
 export class App implements OnInit {
     users: any[] = [{
         id: 'user-1',
@@ -234,12 +244,6 @@ export class App implements OnInit {
         // Initialize with users configuration
     }
 }
-```
-
-**In template:**
-
-```html
-<ejs-blockeditor [users]="users" [currentUserId]="currentUserId" [collaborationSettings]="collaborationSettings"></ejs-blockeditor>
 ```
 
 ### Get active users
