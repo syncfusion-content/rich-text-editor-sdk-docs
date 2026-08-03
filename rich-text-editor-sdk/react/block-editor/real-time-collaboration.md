@@ -171,7 +171,7 @@ export { yDoc, yFragment, adapter, provider, roomName };
 - Pass the adapter and provider to the Block Editor through the `collaborationSettings` property.
 - Set `enableAwareness` to `true` in `collaborationSettings` property to display remote cursors, text selection overlays, and user details on hover.
 
-In your React component file, add the following code. Replace your existing Block Editor setup with this:
+In your `App.tsx` file, replace the existing Block Editor with the following code:
 
 {% raw %}
 ```typescript
