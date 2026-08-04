@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Inline content in Blazor Block Editor Component | Syncfusion®
-description: Learn about inline content types, styling, and formatting in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Inline Content in Blazor Block Editor | Syncfusion
+description: Learn how to add inline content to blocks in the Blazor Block Editor using the Content property to define text and functionality within each block.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

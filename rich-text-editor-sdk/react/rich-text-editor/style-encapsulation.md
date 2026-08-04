@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Style Encapsulation | Syncfusion
-description: Learn here all about Style Encapsulation Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style Encapsulation in React Rich Text Editor | Syncfusion
+description: Learn how to apply style encapsulation in the React Rich Text Editor to scope editor styles and prevent leakage to the host page.
 platform: rich-text-editor-sdk
-control: Style Encapsulation
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

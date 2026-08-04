@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fullscreen mode in React Rich Text Editor component | Syncfusion
-description: Learn here all about Fullscreen mode in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Fullscreen Mode in React Rich Text Editor | Syncfusion
+description: Learn how to expand the React Rich Text Editor to a fullscreen view for distraction-free editing using the fullscreen tool.
 platform: rich-text-editor-sdk
-control: Fullscreen mode
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Fullscreen Mode in React Rich Text Editor Component
+# Fullscreen Mode in React Rich Text Editor
 
 The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Spell Checker in Angular Rich Text Editor | Syncfusion
-description: Learn here all about Spell Checker in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to integrate WProofreader with the Angular Rich Text Editor for real-time spelling, grammar, and style checks inside the editor area.
 platform: rich-text-editor-sdk
-control: Spell and Grammar Check 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate WProofreader into the Angular Rich Text Editor
+# Spell Checker in Angular Rich Text Editor
 
 [WProofreader](https://wproofreader.com/sdk) enables real-time spelling, grammar, and style checks inside the Rich Text Editor editable area. The SDK attaches to the editor content element and provides suggestions without changing the editor workflow.
 

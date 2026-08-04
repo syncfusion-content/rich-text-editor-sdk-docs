@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Types in React Rich Text Editor component | Syncfusion
-description: Learn how to configure Toolbar Types in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Toolbar Types
+title: Toolbar Types in React Rich Text Editor | Syncfusion
+description: Learn how to configure the four Toolbar Types — Expand, MultiRow, Scrollable, and Popup — in the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar in the React Rich Text Editor component
+# Toolbar Types in React Rich Text Editor
 
 The Syncfusion React Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 

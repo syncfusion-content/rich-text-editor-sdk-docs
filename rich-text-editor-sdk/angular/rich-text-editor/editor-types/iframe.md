@@ -1,14 +1,14 @@
 ---
 layout: post
-title: IFrame Editing Mode | Syncfusion
-description: Learn how to use Iframe mode in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: IFrame Editing in Angular Rich Text Editor | Syncfusion
+description: Learn how to use iframe editing mode in the Angular Rich Text Editor to isolate content from the parent page's styles and scripts.
 platform: rich-text-editor-sdk
-control: IFrame Editing Mode
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# IFrame Editing Mode in the Angular Rich Text Editor Component
+# IFrame Editing in Angular Rich Text Editor
 
 The iframe editor in the Rich Text Editor provides an isolated environment for content editing by using an iframe element as the content area. This ensures separation from the parent page's styles and scripts, preventing conflicts and enhancing compatibility.In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 

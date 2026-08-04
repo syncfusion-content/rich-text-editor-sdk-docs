@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with Angular Rich Text Editor component | Syncfusion
-description: Learn how to set up and configure the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Rich Text Editor | Syncfusion
+description: Learn how to get started with the Angular Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor"
 platform: rich-text-editor-sdk
-control: Getting started
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -18,92 +18,6 @@ The Syncfusion Angular Rich Text Editor is a WYSIWYG (What You See Is What You G
 To get started quickly with the Angular Rich Text Editor using CLI and Schematics, refer to this video tutorial:
 
 {% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
-
-{% tabcontents %}
-
-{% tabcontent Syncfusion CLI %}
-
-## Prerequisites
-
-- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
-- Syncfusion CLI.
-
-## Install the Syncfusion CLI 
-
-Install the Syncfusion CLI globally using the following command:
-
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/syncfusion-cli
-{% endhighlight %}
-{% endtabs %}
-
-## Create a new Angular application using Syncfusion CLI
-
-You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
-
-### Non-interactive mode
-
-Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf new syncfusion-angular-app --framework angular --template rte
-{% endhighlight %}
-{% endtabs %}
-
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor component.
-
-### Interactive mode
-
-Interactive mode guides you through the project creation process with step-by-step prompts.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf
-{% endhighlight %}
-{% endtabs %}
-
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a Angular application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component, select the following options:
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-√ Project name? ... syncfusion-angular-app
-√ Choose Framework: » Angular
-√ Choose Template: » RTE
-√ Choose Theme: » Material3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no
-√ Install dependencies and start app now? ... no
-
-{% endhighlight %}
-{% endtabs %}
-
-The above selections generate a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
-
-## Run the project
-
-Once the project is created, navigate to the project directory and run the following commands in your terminal.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-cd syncfusion-angular-app
-npm install
-ng serve
-{% endhighlight %}
-{% endtabs %}
-
-The output will appear as follows:
-
-![Rich Text Component](images/cli-rte.png)
-
-{% endtabcontent %}
-
-{% tabcontent Angular CLI %}
 
 ## Prerequisites
 

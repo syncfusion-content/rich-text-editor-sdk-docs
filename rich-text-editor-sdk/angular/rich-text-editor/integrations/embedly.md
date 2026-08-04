@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embedly in Angular Rich text editor component | Syncfusion
-description: Learn here all about embedly integration in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Embedly in Angular Rich Text Editor | Syncfusion
+description: Learn how to integrate Embedly with the Angular Rich Text Editor to insert links that render as interactive embed cards for shared content.
 platform: rich-text-editor-sdk
-control: Embedly
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Embedly into the Angular Rich Text Editor
+# Embedly in Angular Rich Text Editor
 
 - Rich Text Editor easily integrate with [Embed.ly](https://embed.ly/) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook and lots of other publishing platform embeds. This integration allows users to insert links that render as interactive embed cards, enhancing the visual presentation and user experience when sharing web content.
 

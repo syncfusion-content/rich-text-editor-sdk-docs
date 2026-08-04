@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Update Value in Blazor RichTextEditor Component | Syncfusion®
-description: Learn how to update the value in Blazor RichTextEditor component programmatically with examples and detailed steps.
+title: Update Value in Blazor Rich Text Editor | Syncfusion
+description: Learn how to update the value in the Blazor Rich Text Editor by binding a keydown event to the editor's div element to capture Ctrl+S.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Capture ctrl+s to update the value
+# Update Value in Blazor Rich Text Editor
 
 To achieve this, the `onkeydown` event can be bound to the `div` element that contains the Rich Text Editor. When the `Ctrl + S` key press is detected, the [GetXhtmlAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetXhtmlAsync) method is called to update the value, and the content is then saved in the required database.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar Configuration in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Toolbar in Blazor Rich Text Editor component with examples and much more details.
+title: Toolbar in Blazor Rich Text Editor | Syncfusion
+description: Learn about the toolbar in the Blazor Rich Text Editor with built-in formatting tools, custom toolbar items, and layout options.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Toolbar types in Blazor Rich Text Editor
+# Toolbar in Blazor Rich Text Editor
 
 The Rich Text Editor toolbar provides a collection of tools such as Bold, Italic, and text alignment buttons used to format the content.
 

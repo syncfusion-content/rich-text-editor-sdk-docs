@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Import and Export Content in Angular Rich Text Editor | Syncfusion
-description: Learn how to import from Word and export content in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to import content from Microsoft Word and export editor content in the Angular Rich Text Editor using built-in settings.
 platform: rich-text-editor-sdk
-control: Import and Export
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tab component in Rich text editor component | Syncfusion
-description: Learn about tab integration in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Tab in Angular Rich Text Editor | Syncfusion
+description: Learn how to integrate the Tab component with the Angular Rich Text Editor to support multi-document editing across multiple editor instances.
 platform: rich-text-editor-sdk
-control: tab
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Tab component into the Angular Rich Text Editor
+# Tab in Angular Rich Text Editor
 
 The integration of Tab component with Rich Text Editor component offers versatile functionality for content management scenarios. Users can leverage this combination for multi-document editing where different tabs contain separate RTE instances, allowing simultaneous work on multiple content pieces without context switching.
 

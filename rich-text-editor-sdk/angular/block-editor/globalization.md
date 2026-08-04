@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Globalization with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Block Editor | Syncfusion
+description: Learn how to globalize the Angular Block Editor with built-in support for right-to-left languages and culture-specific content.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in Angular Block Editor component
+# Globalization in Angular Block Editor
 
 Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor component provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
 

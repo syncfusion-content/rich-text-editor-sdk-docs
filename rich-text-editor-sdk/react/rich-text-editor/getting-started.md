@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with React Rich Text Editor Component | Syncfusion
-description: Learn how to set up and configure the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with React Rich Text Editor | Syncfusion
+description: Learn how to get started with the React Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor"
-control: Getting started
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -18,94 +18,6 @@ The [React Rich Text Editor](https://www.syncfusion.com/react-components/react-r
 To get started quickly with the React Rich Text Editor, refer to this video tutorial:
 
 {% youtube "https://www.youtube.com/watch?v=5mLO6_nwzww" %}
-
-{% tabcontents %}
-
-{% tabcontent Syncfusion CLI %}
-
-## Prerequisites
-
-- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
-- Syncfusion CLI.
-
-## Install the Syncfusion CLI 
-
-Install the Syncfusion CLI globally using the following command:
-
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/syncfusion-cli
-{% endhighlight %}
-{% endtabs %}
-
-## Set up the Vite project using Syncfusion CLI
-
-You can create a React Vite application using the Syncfusion CLI. The CLI provides two ways to create a project:
-
-### Non-interactive mode
-
-Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf new my-app --framework react --type ts --template rte --theme tailwind3
-{% endhighlight %}
-{% endtabs %}
-
-In this mode, the project configuration is passed directly in the command. The above command creates a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component.
-
-### Interactive mode
-
-Interactive mode guides you through the project creation process with step-by-step prompts.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf
-{% endhighlight %}
-{% endtabs %}
-
-When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a React Vite application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component, select the following options:
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-√ Project name? ... my-app
-√ Choose Framework: » React
-√ Choose Build Tool: » Vite
-√ Choose Language: » Typescript
-√ Choose Template: » RTE
-√ Choose Theme: » Tailwind3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
-√ Install dependencies and start app now? ... no
-
-{% endhighlight %}
-{% endtabs %}
-
-The above selections generate a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
-
-## Run the project
-
-Once the project is created, navigate to the project directory and run the following commands in your terminal.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-cd my-app
-npm install
-npm run dev
-{% endhighlight %}
-{% endtabs %}
-
-The output will appear as follows:
-
-![Rich Text Editor Component](./images/cli-rte.png)
-
-{% endtabcontent %}
-
-{% tabcontent Vite CLI %}
 
 ## Prerequisites
 

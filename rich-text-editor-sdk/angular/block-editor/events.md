@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Events with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Events in Angular Block Editor | Syncfusion
+description: Learn about the events in the Angular Block Editor to monitor user interactions, state changes, validation, and integration behavior.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Events in Angular Block Editor Component
+# Events in Angular Block Editor
 
 The Block Editor component provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

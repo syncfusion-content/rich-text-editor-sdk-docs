@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controlled Access in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Controlling Editor Access with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in Angular Block Editor | Syncfusion
+description: Learn how to enable read-only mode in the Angular Block Editor to control user interaction and restrict content editing.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in Angular Block Editor component
+# Read-Only Mode in Angular Block Editor
 
 The Syncfusion Angular Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 

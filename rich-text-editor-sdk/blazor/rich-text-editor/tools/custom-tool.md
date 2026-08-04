@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Add a Custom Tool in Blazor RichTextEditor | Syncfusion®
-description: Checkout and learn here all about Custom tool in Blazor Rich Text Editor component with examples and much more details.
+title: Add a Custom Tool in Blazor Rich Text Editor | Syncfusion
+description: Learn how to add custom toolbar items in the Blazor Rich Text Editor using the RichTextEditorCustomToolbarItems tag directive in toolbar settings.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Custom Toolbar Items in Blazor Rich Text Editor Component
+# Add a Custom Tool in Blazor Rich Text Editor
 
 The Rich Text Editor allows you to configure your own tools to its toolbar using the [RichTextEditorCustomToolbarItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorCustomToolbarItems.html) tag directive within a [RichTextEditorToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html). The tools can be plain text, icon, or HTML template. Also, define the order and group where the tool should be included.
 

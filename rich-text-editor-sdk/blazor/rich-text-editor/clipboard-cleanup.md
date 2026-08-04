@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Clipboard Clean-up in Blazor Rich Text Editor | Syncfusion®
-description: Learn about clipboard clean-up in Blazor Rich Text Editor, including how to remove unwanted HTML formatting from copied content.
+title: Clipboard Clean-Up in Blazor Rich Text Editor | Syncfusion
+description: Learn how clipboard clean-up works in the Blazor Rich Text Editor to remove unwanted HTML formatting from copied content automatically.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Lists in Blazor Block Editor Component | Syncfusion®
-description: Learn about list blocks including bullet lists, numbered lists, and checklists in the Blazor Block Editor component.
+title: List Types in Blazor Block Editor | Syncfusion
+description: Learn about the list block types in the Blazor Block Editor, including BulletList, NumberedList, and Checklist for structured content.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

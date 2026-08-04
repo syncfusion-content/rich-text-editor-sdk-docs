@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Audio in Blazor RichTextEditor Component | Syncfusion®
-description: Checkout and learn here all about insert audio in Blazor Rich Text Editor component with examples and much more details.
+title: Audio in Blazor Rich Text Editor | Syncfusion
+description: Learn how to insert and manage audio files in the Blazor Rich Text Editor from online sources and local machines using RichTextEditorAudioSettings.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Insert Audio in Blazor Rich Text Editor Component
+# Audio in Blazor Rich Text Editor
 
 The Rich Text Editor allows inserting audio files from online sources and the local computer where you want to insert the audio in your content. For inserting audio into the Rich Text Editor, the following list of options has been provided in the [RichTextEditorAudioSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorAudioSettings.html).
 

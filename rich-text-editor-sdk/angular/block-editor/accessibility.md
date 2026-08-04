@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Block Editor component | Syncfusion
-description:  Checkout and learn about Accessibility with Angular Block Editor component of Syncfusion Essential JS 2 and more details.
+title: Accessibility in Angular Block Editor | Syncfusion
+description: Learn how to enable accessibility in the Angular Block Editor with WCAG 2.2, ADA, Section 508, and WAI-ARIA role compliance.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Angular Block Editor component
+# Accessibility in Angular Block Editor
 
 The Block Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

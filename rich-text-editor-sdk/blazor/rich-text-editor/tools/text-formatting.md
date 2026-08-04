@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Formatting in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Text Formatting in Blazor Rich Text Editor component with examples and much more details.
+title: Text Formatting in Blazor Rich Text Editor | Syncfusion
+description: Learn about the text formatting tools in the Blazor Rich Text Editor for basic styling like bold, italic, underline, and text alignment.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Text Formatting in Blazor Rich Text Editor Component
+# Text Formatting in Blazor Rich Text Editor
 
 ## Basic text styling
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize AI Assistant in Angular Rich Text Editor | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 Angular Rich Text Editor Component.
+title: AI Assistant Properties in Angular Rich Text Editor | Syncfusion
+description: Learn about the AIAssistantSettings properties in the Angular Rich Text Editor for customizing the AI Assistant dialog, prompts, and responses.
 platform: rich-text-editor-sdk
-control: Properties of AI Assistant
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Properties of AI Assistant
+# AI Assistant Properties in Angular Rich Text Editor
 
 The [AIAssistantSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel) class provides the following properties for complete customization:
 

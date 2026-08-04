@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Videos in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert and manage videos in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Videos in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert and manage videos in the Angular Rich Text Editor from online sources and local machines using insertVideoSettings.
 platform: rich-text-editor-sdk
-control: Videos
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Videos in the Angular Rich Text Editor Component
+# Insert Videos in Angular Rich Text Editor
 
 The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 

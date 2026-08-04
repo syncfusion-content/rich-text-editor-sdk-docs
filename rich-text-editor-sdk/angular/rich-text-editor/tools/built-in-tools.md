@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Built-in Tools in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Built-in Tools in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Built-in Tools in Angular Rich Text Editor | Syncfusion
+description: Learn about the built-in toolbar tools in the Angular Rich Text Editor for formatting, styling, and managing content efficiently.
 platform: rich-text-editor-sdk
-control: Built-in Tools
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Built-in Tools in Angular Rich Text Editor Component
+# Built-in Tools in Angular Rich Text Editor
 
 The Angular Rich Text Editor's toolbar provide tools for formatting, styling, and managing content, enhancing user productivity in a Rich Text Editor.
 

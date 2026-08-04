@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with RichTextEditor in WebAssembly | Syncfusion®
-description: Learn how to get started with Blazor RichTextEditor in a WebAssembly application with Visual Studio and detailed examples.
+title: Getting Started with Blazor Rich Text Editor in WebAssembly | Syncfusion
+description: Learn how to get started with the Blazor Rich Text Editor in a WebAssembly application with Visual Studio and detailed examples.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD024 -->
 
-# Blazor RichTextEditor Component in WebAssembly App using Visual Studio
+# Getting Started with Blazor Rich Text Editor in WebAssembly
 
 This article provides a step-by-step instructions for building Blazor WebAssembly App with Blazor RichTextEditor component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

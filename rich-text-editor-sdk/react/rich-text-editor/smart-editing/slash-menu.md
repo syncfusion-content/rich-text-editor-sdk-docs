@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Slash Menu  in React Rich Text Editor component | Syncfusion
-description: Explore the Slash Menu in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Slash Menu 
+title: Slash Menu in React Rich Text Editor | Syncfusion
+description: Learn how to use the Slash Menu in the React Rich Text Editor to insert content blocks and formatting via / commands.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Slash Menu in React Rich Text Editor Component
+# Slash Menu in React Rich Text Editor
 
 The Slash Menu in the Rich Text Editor enables users to apply formatting, insert elements, and execute custom commands by typing the `/` character. This feature enhances editing efficiency by providing quick access to common actions directly within the editor.
 

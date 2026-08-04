@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resizable Editor in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to make the Blazor Rich Text Editor resizable, allowing users to adjust its dimensions and much more details.
+title: Resizable Editor in Blazor Rich Text Editor | Syncfusion
+description: Learn how to make the Blazor Rich Text Editor resizable using the EnableResize property to let users adjust the editor dimensions.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Resizable Editor in Blazor Rich Text Editor Component
+# Resizable Editor in Blazor Rich Text Editor
 
 The Rich Text Editor supports dynamic resizing, allowing users to adjust the editor's dimensions based on their needs. You can enable or disable this feature using the [EnableResize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableResize) property. When `EnableResize` is set to `true`, a resize handle appears at the bottom-right corner of the editor, enabling diagonal resizing.
 

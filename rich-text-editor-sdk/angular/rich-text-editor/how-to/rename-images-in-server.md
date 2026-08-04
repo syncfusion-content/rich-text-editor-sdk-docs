@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Rename images in server in Angular Rich text editor component | Syncfusion
-description: Learn here all about Rename images in server in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Rename Images on Server in Angular Rich Text Editor | Syncfusion
+description: Learn how to rename images on the server in the Angular Rich Text Editor by using the imageUploadSuccess event to receive the renamed file.
 platform: rich-text-editor-sdk
-control: Rename images in server 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Rename Images on the Server in the Angular Rich Text Editor Component
+# Rename Images on Server in Angular Rich Text Editor
 
 By using the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettings#imageSettings) property, you can specify the server handler that uploads the selected image. Then, by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesuccesseventargs#imageSuccessEventArgs) event, you can receive the renamed file from the server and update it in the Rich Text Editor’s insert image dialog.
 

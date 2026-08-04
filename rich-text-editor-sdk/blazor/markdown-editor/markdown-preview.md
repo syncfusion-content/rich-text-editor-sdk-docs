@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markdown preview in Blazor Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about Markdown preview in Blazor Markdown Editor component and much more details.
+title: Markdown Preview in Blazor Markdown Editor | Syncfusion
+description: Learn how to enable real-time Markdown-to-HTML preview in the Blazor Markdown Editor to see formatted content as you type.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 
-# Live Markdown Preview in Blazor Markdown Editor
+# Markdown Preview in Blazor Markdown Editor
 
 The Blazor Markdown Editor provides an instant Markdown to HTML preview, allowing users to visualize formatted content in real time as they type or edit Markdown text. This feature enhances the editing experience by making formatting changes immediately visible.
 

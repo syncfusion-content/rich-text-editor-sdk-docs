@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Get Started with Smart Rich Text Editor in Server App | Syncfusion®
-description: Check out and learn here all about Getting started with Blazor Smart Rich Text Editor component in Blazor Server App and more.
+title: Get Started with Smart Rich Text Editor in Server App | Syncfusion
+description: Learn how to get started with the Blazor Smart Rich Text Editor in a Blazor Server App using Visual Studio, VS Code, or the .NET CLI.
 platform: Blazor
 component: Smart Rich Text Editor
+control: Smart Rich Text Editor
 documentation: ug
 ---
 

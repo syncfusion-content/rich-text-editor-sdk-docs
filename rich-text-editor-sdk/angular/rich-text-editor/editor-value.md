@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor Value in Angular Rich Text Editor component | Syncfusion
-description: Learn how to manage editor content in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Value in Angular Rich Text Editor | Syncfusion
+description: Learn how to set placeholders, retrieve values, and enable two-way binding in the Angular Rich Text Editor for managing editor content.
 platform: rich-text-editor-sdk
-control: Editor value
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Value in Angular Rich Text Editor Component
+# Editor Value in Angular Rich Text Editor
 
 The Angular Rich Text Editor allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively.
 

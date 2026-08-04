@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Shortcuts in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn here all about Keyboard Shortcuts with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Keyboard Shortcuts in Blazor Block Editor | Syncfusion
+description: Learn about the keyboard shortcuts in the Blazor Block Editor for formatting, block manipulation, and quick navigation.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Keyboard shortcuts in Blazor Block Editor Component
+# Keyboard Shortcuts in Blazor Block Editor
 
 The Block Editor component provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions. The ⌘ symbol represents the Command key on Mac, and ⌥ represents the Option key.
 

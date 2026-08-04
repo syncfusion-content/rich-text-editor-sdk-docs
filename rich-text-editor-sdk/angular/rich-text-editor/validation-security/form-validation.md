@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form Validation in Angular Rich Text editor component | Syncfusion
-description: Learn how to Integrate and Validate the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Form Validation in Angular Rich Text Editor | Syncfusion
+description: Learn how to integrate the Angular Rich Text Editor with template-driven and reactive forms for two-way data binding, validation, and dynamic control.
 platform: rich-text-editor-sdk
-control: Form Validation
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Form Validation in Angular Rich Text Editor Component
+# Form Validation in Angular Rich Text Editor
 
 The Syncfusion Angular Rich Text Editor supports both template-driven and reactive forms, enabling seamless integration with Angular’s form-building technologies. It supports two-way data binding, validation, and dynamic control for enabling or disabling the editor, making it ideal for capturing and managing rich text content within forms.
 

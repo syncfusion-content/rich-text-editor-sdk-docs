@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about appearance with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Appearance in Angular Block Editor | Syncfusion
+description: Learn how to customize the appearance of the Angular Block Editor with properties for dimensions, styling, and visual behavior.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Appearance in Angular Block Editor component
+# Appearance in Angular Block Editor
 
 The Block Editor component provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Rich Text Editor | Syncfusion
+description: Learn how to enable accessibility in the Angular Rich Text Editor with WAI-ARIA roles, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
-control: Accessibility 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in the Angular Rich Text Editor Component
+# Accessibility in Angular Rich Text Editor
 
 The Rich Text Editor component is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 

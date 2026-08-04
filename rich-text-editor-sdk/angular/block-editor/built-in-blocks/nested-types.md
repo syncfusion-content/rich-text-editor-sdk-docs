@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nested blocks in Angular Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with Angular Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in Angular Block Editor | Syncfusion
+description: Learn how to nest blocks within other blocks in the Angular Block Editor to create hierarchical, organized content structures.
 platform: rich-text-editor-sdk
 control: Block Editor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in Angular Block Editor control
+# Nested Blocks in Angular Block Editor
 
 ## Configure children
 

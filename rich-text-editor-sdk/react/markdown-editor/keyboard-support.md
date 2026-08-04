@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Support in React Markdown Editor component | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Keyboard Support
+title: Keyboard Support in React Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts available in the React Markdown Editor for formatting, navigation, and toolbar actions.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Support in React Markdown Editor Component
+# Keyboard Support in React Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/#editormode) as `Markdown`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Drag and drop with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the Angular Block Editor to rearrange content blocks within the editor area.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Drag and drop in the Angular Block Editor component
+# Drag and Drop in Angular Block Editor
 
 The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 

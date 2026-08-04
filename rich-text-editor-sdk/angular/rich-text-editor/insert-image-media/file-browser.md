@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File Browser in Angular Rich Text Editor component | Syncfusion
-description: Learn how to use the File Browser in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: File Browser in Angular Rich Text Editor | Syncfusion
+description: Learn how to use the File Browser in the Angular Rich Text Editor to browse and insert files from the file system or cloud services.
 platform: rich-text-editor-sdk
-control: File Browser
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# File Browser in the Angular Rich Text Editor
+# File Browser in Angular Rich Text Editor
 
 The File Browser in the Rich Text Editor enables browsing and inserting files, such as images, in the edit panel. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 

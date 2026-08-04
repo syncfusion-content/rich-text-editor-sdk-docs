@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Lists in React Block Editor Component | Syncfusion
-description: Checkout and learn about List Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: List Types in React Block Editor | Syncfusion
+description: Learn how to add bullet, numbered, and checklist lists in the React Block Editor with structured block content.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in the React Block Editor component
+# List Types in React Block Editor
 
 The Syncfusion React Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Accessibility and Keyboard interaction with Blazor Block Editor component and more details.
+title: Accessibility in Blazor Block Editor | Syncfusion
+description: Learn about accessibility in the Blazor Block Editor with WCAG 2.2, ADA, Section 508, and WAI-ARIA role compliance.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 ---
 
-# Accessibility in Blazor Block Editor component
+# Accessibility in Blazor Block Editor
 
 The Blazor Block Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

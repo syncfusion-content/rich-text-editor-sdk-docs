@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Managing File Attachments | Syncfusion
-description: Learn here all about Managing File Attachments in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Managing File Attachments
+title: How to manage file attachments in React Rich Text Editor | Syncfusion
+description: Learn how to manage file attachments in the React Rich Text Editor with upload services, attachment link insertion, and drag-and-drop support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Managing File Attachments in React Rich Text Editor Component
+# How to manage file attachments in React Rich Text Editor
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Typography Blocks in React Block Editor Component | Syncfusion
-description: Checkout and learn about Typography Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Typography in React Block Editor | Syncfusion
+description: Learn how to use typography blocks in the React Block Editor such as paragraphs, headings, quotes, and callouts.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in React Block Editor component
+# Typography in React Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 

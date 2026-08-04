@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Retrieve the Content in Blazor Markdown Editor | Syncfusion®
-description: Checkout and learn about how to retrieve the formatted content in Blazor Markdown Editor component and much more details.
+title: Retrieve the Content in Blazor Markdown Editor | Syncfusion
+description: Learn how to retrieve the formatted Markdown content in the Blazor Markdown Editor using the Value property of the Rich Text Editor.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 
-# Retrieve the formatted content in the Blazor Markdown Editor
+# Retrieve the Content in Blazor Markdown Editor
 
 To retrieve the contents of the Markdown editor, use the [Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Value) property of the Rich Text Editor.
 

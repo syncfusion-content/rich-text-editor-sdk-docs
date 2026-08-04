@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo in Angular Rich Text Editor component | Syncfusion
-description: Learn how to use and customize Undo and Redo features in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in Angular Rich Text Editor | Syncfusion
+description: Learn how to use and customize the Undo and Redo features in the Angular Rich Text Editor to reverse or restore recent content changes.
 platform: rich-text-editor-sdk
-control: Undo and Redo
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo and Redo in Angular Rich Text Editor Component
+# Undo and Redo in Angular Rich Text Editor
 
 The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 

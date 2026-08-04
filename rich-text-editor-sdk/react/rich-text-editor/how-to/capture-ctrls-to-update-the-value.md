@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Implementing Ctrl+s Shortcut for Value Updates | Syncfusion
-description: Learn here all about Update value in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Implementing Ctrl+s Shortcut for Value Updates
+title: How to implement Ctrl+S shortcut in React Rich Text Editor | Syncfusion
+description: Learn how to capture the Ctrl+S shortcut in the React Rich Text Editor to save editor value programmatically.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Implementing Ctrl+s Shortcut for Value Updates in React Rich Text Editor Component
+# How to implement Ctrl+S shortcut in React Rich Text Editor
 
 To implement this functionality, you bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
 

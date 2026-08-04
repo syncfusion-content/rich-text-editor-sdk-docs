@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text Formatting and Structure in Angular Rich Text Editor | Syncfusion
-description: Learn here all about Text formatting and Structure in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Text Formatting in Angular Rich Text Editor | Syncfusion
+description: Learn about the text formatting tools in the Angular Rich Text Editor for styling, structure, and producing professional, well-organized content.
 platform: rich-text-editor-sdk
-control: Text formatting and Structure
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting in the Angular Rich Text Editor
+# Text Formatting in Angular Rich Text Editor
 
 The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 

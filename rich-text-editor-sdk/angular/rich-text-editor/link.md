@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Link in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert, edit, and manage links in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Link in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert, edit, and manage hyperlinks in the Angular Rich Text Editor using text or image as the link source.
 platform: rich-text-editor-sdk
-control: Link 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Link in Angular Rich Text Editor Component
+# Link in Angular Rich Text Editor
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 

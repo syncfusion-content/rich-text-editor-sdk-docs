@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Code Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Code Blocks in Angular Block Editor | Syncfusion
+description: Learn how to add code blocks with syntax highlighting in the Angular Block Editor by setting the blockType property to Code.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in Angular Block Editor component
+# Code Blocks in Angular Block Editor
 
 The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property.
 

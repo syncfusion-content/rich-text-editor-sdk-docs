@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resizable Editor in React Rich Text Editor component | Syncfusion
-description: Learn how to enable and customize the Resizable Editor in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Resizable Editor
+title: Resizable Editor in React Rich Text Editor | Syncfusion
+description: Learn how to enable the Resizable Editor in the React Rich Text Editor so users can drag to resize the editor surface.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Resizable Editor in the React Rich Text Editor Component
+# Resizable Editor in React Rich Text Editor
 
 The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 

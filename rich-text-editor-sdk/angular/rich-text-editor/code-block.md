@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Code Block in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Code Block in Syncfusion the Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Code Block in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert and format code blocks in the Angular Rich Text Editor with support for syntax highlighters, language selection, and tab indentation.
 platform: rich-text-editor-sdk
-control: Code Block
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

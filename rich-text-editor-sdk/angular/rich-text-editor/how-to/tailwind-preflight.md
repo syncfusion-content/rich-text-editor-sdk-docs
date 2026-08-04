@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Rich Text Editor with Tailwind CSS Preflight Theme| Syncfusion
-description: Learn here all about Integrating Editor with Tailwind CSS Preflight Theme in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more
+title: Use Tailwind CSS with Angular Rich Text Editor | Syncfusion
+description: Learn how to use the Angular Rich Text Editor with Tailwind CSS Preflight while preserving the editor's default list and heading styles.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor with Tailwind CSS Preflight
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating the Angular Rich Text Editor with Tailwind CSS
+# Use Tailwind CSS with Angular Rich Text Editor
 
 When combining the Rich Text Editor with Tailwind CSS, you may encounter unintended style conflicts. Tailwind’s Preflight, a base reset layer, can override default element styles used by the Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In the Rich Text Editor, it affects ordered and unordered lists, which are unformatted by default, with no bullets or numbers.
 

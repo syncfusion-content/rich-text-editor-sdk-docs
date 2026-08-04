@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in React Rich Text Editor component | Syncfusion
-description: Learn here all about Style in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Style 
+title: Style in React Rich Text Editor | Syncfusion
+description: Learn how to style the React Rich Text Editor with custom CSS for toolbar buttons, content area, and dialogs.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style Appearance Customization in the React Rich Text Editor component
+# Style in React Rich Text Editor
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 

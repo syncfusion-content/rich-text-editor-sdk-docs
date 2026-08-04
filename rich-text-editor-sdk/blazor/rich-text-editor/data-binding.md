@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Blazor Rich Text Editor | Syncfusion®
-description: Learn about data binding in Blazor Rich Text Editor, including value binding and synchronization with application data.
+title: Data Binding in Blazor Rich Text Editor | Syncfusion
+description: Learn how to bind values in the Blazor Rich Text Editor using @bind-Value for two-way synchronization with application data.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Value Binding in Blazor Rich Text Editor
+# Data Binding in Blazor Rich Text Editor
 
 The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) supports two-way data binding to its [Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Value) property using the `@bind-Value` attribute. The `Value` property accepts a `string` type. When the editor's content is modified, the bound variable is automatically updated. Likewise, any changes to the variable will be reflected in the editor's content.
 
