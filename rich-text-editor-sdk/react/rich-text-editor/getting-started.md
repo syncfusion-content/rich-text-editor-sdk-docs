@@ -4,14 +4,14 @@ title: Getting Started with React Rich Text Editor Component | Syncfusion
 description: Learn how to set up and configure the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor"
 control: Getting started
-platform: rich-text-editor-sdk
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: ##DomainURL##
 ---
 
 # Getting Started with React Rich Text Editor
 
-The [React Rich Text Editor](https://www.syncfusion.com/react-components/react-rich-text-editor) is a <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple React Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using a Vite-based React project scaffolded with the latest Vite version.
+The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) is a <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple React Rich Text Editor and demonstrates the basic usage of the Rich Text Editor control using a Vite-based React project scaffolded with the latest Vite version.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> React development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> React components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/mcp-server/ai-coding-assistant/getting-started)
 
@@ -109,7 +109,7 @@ The output will appear as follows:
 
 ## Prerequisites
 
-This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
+This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vite.dev/).
 
 N> For information about supported React versions and Syncfusion package compatibility, refer to the [Version Compatibility](https://ej2.syncfusion.com/react/documentation/upgrade/version-compatibility) documentation.
 
@@ -121,7 +121,7 @@ Run the following commands to set up a React application:
 npm create vite@latest my-app -- --template react-ts
 ```
 
-This command prompts you to configure the React application. When prompted to choose a linter, select either Oxlint or ESLint based on your preference.
+This command prompts you to configure the React application. When prompted to choose a linter, select an option based on your preference.
 
 ![Rich Text Editor Linter configuration](images/linter-config.png)
 
@@ -136,7 +136,7 @@ cd my-app
 npm install
 ```
 
-N> To set up a React application with Nextjs or Remix, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) for more details.
+> **Note:** To set up a React application with Nextjs or Remix, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) for more details.
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor packages
 
@@ -167,11 +167,11 @@ I> To apply the application-specific styles correctly, import **App.css** into *
 
 ## Module injection
 
-The following modules provide the basic features of the the Rich Text Editor.
+The following modules provide the basic features of the Rich Text Editor.
 
 * **HtmlEditor** - Inject this module to use the Rich Text Editor as HTML editor.
-* **Image** - Inject this module to use image feature in the Rich Text Editor.
-* **Link** - Inject this module to use link feature in the Rich Text Editor.
+* **Image** - Inject this module to use the image feature in Rich Text Editor.
+* **Link** - Inject this module to use the link feature in Rich Text Editor.
 * **QuickToolbar** - Inject this module to use the quick toolbar feature for the target element.
 * **Toolbar** - Inject this module to use the Toolbar feature.
 
@@ -179,10 +179,10 @@ These modules can be injected into the `services` prop of the `<Inject>` compone
 
 {% tabs %}
 {% highlight ts hl_lines="7" tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js hl_lines="6" tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,10 +194,10 @@ Now, you can start adding the React Rich Text Editor component in the applicatio
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
@@ -217,10 +217,14 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor is d
 
 ![Syncfusion React Rich Text Editor output](images/getting-started.png)
 
+{% endtabcontent %}
+
+{% endtabcontents %}
+
 ## See Also
 
-* [Accessibility in Rich Text Editor](./accessibility.md)
-* [Keyboard support in Rich Text Editor](./keyboard-support.md)
-* [Globalization in Rich Text Editor](./globalization.md)
+* [Accessibility in Rich Text Editor](./accessibility)
+* [Keyboard support in Rich Text Editor](./keyboard-support)
+* [Globalization in Rich Text Editor](./globalization)
 
-N> Looking for the full React Rich Text Editor component overview, features, pricing, and documentation? Visit the [React Rich Text Editor](https://www.syncfusion.com/react-components/react-rich-text-editor) page.
+N> Looking for the full React Rich Text Editor component overview, features, pricing, and documentation? Visit the [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) page.
