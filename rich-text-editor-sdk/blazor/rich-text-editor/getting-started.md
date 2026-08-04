@@ -229,8 +229,8 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 
 1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
 2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
-3. [How to insert Emoticons](https://blazor.syncfusion.com/demos/rich-text-editor/insert-emoticons?theme=bootstrap5)
-4. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=bootstrap5)
-5. [Accessibility in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/accessibility)
-6. [Keyboard support in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support)
-7. [Globalization in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/globalization)
+3. [How to insert Emoticons](https://blazor.syncfusion.com/demos/rich-text-editor/insert-emoticons?theme=fluent2)
+4. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
+5. [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
+6. [Keyboard support in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
+7. [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)
