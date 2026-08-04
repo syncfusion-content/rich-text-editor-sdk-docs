@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in React Markdown Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Accessibility
+title: Accessibility in React Markdown Editor | Syncfusion
+description: Learn about accessibility features in the React Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in React Markdown Editor Component
+# Accessibility in React Markdown Editor
 
 The React Markdown Editor is designed to be fully accessible, adhering to WAI-ARIA specifications with ARIA roles, states, and properties. These features ensure compatibility with assistive technologies (AT) and keyboard navigation, enhancing usability for all users.
 

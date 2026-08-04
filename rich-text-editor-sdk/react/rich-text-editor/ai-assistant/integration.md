@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI Assistant in React Rich Text Editor component | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Integrating the AI Assistant
+title: AI Assistant in React Rich Text Editor | Syncfusion
+description: Learn how to enable and configure the AI Assistant in the React Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in React Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
