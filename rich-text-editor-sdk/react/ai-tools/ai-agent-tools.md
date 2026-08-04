@@ -10,33 +10,37 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # AI Agent Tools
 
-Many developers use AI assistants to accelerate their Syncfusion<sup style="font-size:70%">&reg;</sup> development workflows. Without proper context, AI can generate code that looks correct but fails at runtime — often due to incorrect import paths, missing `Inject` services, or deprecated API calls. Providing AI access to Syncfusion<sup style="font-size:70%">&reg;</sup> documentation and tooling significantly improves the accuracy of generated Rich Text Editor code.
+AI assistants can generate Rich Text Editor code, but without the right context they often produce code that looks correct and fails at runtime — wrong import paths, missing `Inject` services, or deprecated APIs. Grounding the assistant in Syncfusion's component knowledge eliminates most of these errors.
 
-## Three ways to use AI with the Rich Text Editor SDK
+There are three ways to bring Syncfusion context to an AI workflow.
 
-### Browser-based AI
+## Browser-based AI
 
-Browser-based AI platforms (ChatGPT, Claude, Gemini) with built-in web search can read Syncfusion<sup style="font-size:70%">&reg;</sup> documentation in real time.
+ChatGPT, Claude, and Gemini can read Syncfusion documentation in real time when web search is enabled.
 
-**How to get the best results:**
-1. Include the specific Rich Text Editor documentation URL in your prompt.
-2. Be specific about requirements — component (Rich Text Editor / Block Editor / Markdown Editor), features needed, framework (React), TypeScript or JavaScript.
-3. Reference exact documentation pages.
+**Get better results by:**
 
-### IDE-based AI (Skills & MCP Server)
+1. Pasting the relevant Rich Text Editor documentation URL into the prompt.
+2. Naming the exact component — Rich Text Editor, Block Editor, or Markdown Editor.
+3. Specifying framework (React) and language (TypeScript or JavaScript).
+4. Listing the features you need (toolbar items, image upload, link dialog, and so on).
 
-Inside AI-powered IDEs, use the [Skills](./skills) package or the [MCP Server](./mcp-server) to ground the assistant in accurate React Rich Text Editor SDK knowledge, including required module injection.
+## IDE-based AI: Skills and MCP Server
 
-### API-based AI
+Inside AI-powered IDEs, install the [Skills](./skills) package or the [MCP Server](./mcp-server) to ground the assistant in React Rich Text Editor SDK knowledge — including the required `Inject` services.
 
-Integrate Syncfusion<sup style="font-size:70%">&reg;</sup> knowledge into your own tooling via the MCP Server's `search_docs` tool.
+Use Skills when the IDE supports the Skills CLI. Use the MCP Server when the IDE supports the Model Context Protocol (VS Code, Syncfusion Code Studio, Cursor, JetBrains).
 
-## Package installation
+## API-based AI
 
-Before generating code, ensure the Rich Text Editor package is installed:
+Integrate Syncfusion knowledge into your own tools by calling the MCP Server's `search_docs` tool over the Model Context Protocol. This is useful for CI assistants, internal chatbots, or any custom pipeline that needs grounded answers.
+
+## Before generating code
+
+Install the Rich Text Editor and its matching theme package so the assistant can suggest valid imports and styling:
 
 ```bash
-npm install @syncfusion/ej2-react-richtexteditor
+npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
 ```
 
 ## See also

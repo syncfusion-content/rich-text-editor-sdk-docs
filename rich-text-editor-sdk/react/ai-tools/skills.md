@@ -10,29 +10,30 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> React Agent Skills for AI Assistants
 
-**Syncfusion<sup style="font-size:70%">&reg;</sup> React Skills** are a knowledge package that enables AI assistants (VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, etc.) to understand and generate accurate React Rich Text Editor SDK code using official APIs, patterns, and theming guidelines.
-
-These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project-specific configuration — such as the required `Inject` services for the Rich Text Editor.
+**Syncfusion React Skills** is a knowledge package that gives AI assistants — VS Code, Cursor, Syncfusion Code Studio, and other Skills CLI–compatible tools — accurate React Rich Text Editor SDK guidance. The skills include official APIs, composition patterns, theming conventions, and the required `Inject` services, so the assistant generates code that runs without manual fixes.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/) version >= 16
-- A React application (existing or new); see the [Quick Start](../rich-text-editor/quick-start)
-- A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
+- [Node.js](https://nodejs.org/en/) version 16 or higher.
+- A React application (existing or new); see the [Quick Start](../rich-text-editor/quick-start).
+- An AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion Code Studio, Cursor, and so on).
 
-## Key benefits
+## What the skills cover
 
-**Component usage & API knowledge**
-- Accurate guidance for adding and configuring the React Rich Text Editor, Block Editor, and Markdown Editor.
+**Component usage and APIs**
+
+- Adding and configuring the Rich Text Editor, Block Editor, and Markdown Editor.
 - Component-specific props, events, and required feature modules.
-- Guidance for injecting services/modules (Toolbar, Image, Link, HtmlEditor, QuickToolbar, etc.).
+- Injecting services such as `Toolbar`, `Image`, `Link`, `HtmlEditor`, and `QuickToolbar`.
 
-**Patterns & best practices**
+**Patterns and best practices**
+
 - Recommended API structures and composition patterns.
 - Feature-injection workflows.
-- All guidance is authored directly in Skill files and does not rely on external documentation fetches.
+- Guidance authored directly in the Skill files — no external documentation fetches required.
 
-**Design-system guidance**
+**Theming and styling**
+
 - Theme usage, including light and dark variants.
 - Styling and icon usage patterns.
 

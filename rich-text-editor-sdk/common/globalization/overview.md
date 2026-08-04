@@ -10,36 +10,63 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Globalization Overview for the React Rich Text Editor SDK
 
-Globalization is the process of designing applications that adapt seamlessly to different cultures, languages, and regional preferences. It combines two complementary aspects:
+Globalization lets your editor adapt to different cultures, languages, and regional formats. It has two parts:
 
-- **Internationalization (i18n)** — designing the application to support multiple locales without code changes, primarily through culture-specific formatting and parsing of dates, numbers, and currencies
-- **Localization (l10n)** — translating user-facing text (such as toolbar labels, tooltips, dialog messages, and aria labels) into different languages
+- **Internationalization (i18n)** — formats dates, numbers, and currencies using the rules of a chosen culture.
+- **Localization (l10n)** — translates the editor's user-facing text (toolbar labels, dialogs, tooltips) into a chosen language.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK — including the **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — provides full globalization support so that editors automatically adjust to diverse cultural and linguistic requirements.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — supports both out of the box.
 
-## What is Globalization?
+## Quick start
 
-For the React Rich Text Editor SDK, globalization covers:
+By default, every Syncfusion<sup style="font-size:70%">&reg;</sup> component uses the **en-US** culture and **USD** currency. To switch:
 
-- **Date and Time Formatting** — when the editor or surrounding app displays dates, they use locale-specific patterns (for example, `MM/DD/YYYY` in the US vs. `DD/MM/YYYY` in many European countries)
-- **Number Formatting** — appropriate decimal separators, thousands grouping, and digit patterns (for example, `1,234.56` in English vs. `1.234,56` in German)
-- **Currency Formatting** — monetary values display the correct currency symbol, placement, and format
-- **Text Translation** — toolbar captions, context-menu items, dialog messages, and validation errors are translated into the target language
-- **Text Direction** — automatic right-to-left (RTL) layout and text alignment for languages such as Arabic and Hebrew (see [Right-to-Left support](../right-to-left))
+```bash
+npm install @syncfusion/ej2-cldr-data
+```
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> components use the **en-US** culture and **USD** currency. Developers can change these globally using the `setCulture()` and `setCurrencyCode()` methods provided by the Internationalization library.
+```ts
+import { setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 
-## Localization in the React Rich Text Editor
+setCulture('de');
+setCurrencyCode('EUR');
+```
 
-The Rich Text Editor (and Markdown Editor) ship with an extensible localization file. The default locale is `en-US`. The editor exposes a complete string table covering toolbar items, dialogs, table editor, image/audio/video dialogs, and quick toolbar — see [Localization](./localization) for the full set of keys and the recommended `L10n.load()` workflow.
+For UI text, register translations with `L10n.load()` and call `setCulture()`:
 
-The Block Editor also supports translation of its menu items, block placeholders, and slash-menu commands.
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': { 'richtexteditor': { 'bold': 'Fett', 'italic': 'Kursiv' } }
+});
+setCulture('de-DE');
+```
+
+## What gets globalized
+
+| Area | What changes | Where to start |
+| --- | --- | --- |
+| Date / time | `MM/dd/yyyy` vs `dd/MM/yyyy` patterns | [Internationalization](./internationalization) |
+| Numbers | Decimal and grouping separators (`1,234.56` vs `1.234,56`) | [Internationalization](./internationalization) |
+| Currency | Symbol, placement, and code | [Internationalization](./internationalization) |
+| UI text | Toolbar, dialogs, tooltips, aria labels | [Localization](./localization) |
+| Text direction | RTL for Arabic, Hebrew, Persian | [Right-to-Left support](../right-to-left) |
+
+## Key points to remember
+
+- **No setup required to render the editor.** Out of the box it works in `en-US`.
+- **Set culture once at app startup.** `setCulture()`, `setCurrencyCode()`, and `L10n.load()` are global — call them before components mount.
+- **Translation keys differ per component.** Rich Text Editor uses the `richtexteditor` scope; Block Editor uses `blockeditor`; Markdown Editor uses `markdowneditor`.
+- **RTL needs separate setup.** For Arabic, Hebrew, and other RTL cultures, enable RTL support — globalization only handles data, not layout direction.
+- **Runtime switching.** Call `L10n.load()` with the new translations, update the culture, then trigger a React state update to re-render the editor in the new locale.
+- **Load only what you need.** For best performance, load only the CLDR data and translations for the cultures your users actually use.
 
 ## Learn more
 
-- [Localization](./localization) — translate static UI text (toolbar labels, dialog messages, table editor) into any language
-- [Internationalization](./internationalization) — format and parse dates, numbers, and currencies per culture
-- [Right-to-Left support](../right-to-left) — RTL layout for Arabic, Hebrew, Persian, and more
+- [Localization](./localization) — translate UI text and switch languages at runtime.
+- [Internationalization](./internationalization) — format and parse dates, numbers, and currencies per culture.
+- [Right-to-Left support](../right-to-left) — RTL layout for Arabic, Hebrew, Persian, and more.
 
 ## See also
 

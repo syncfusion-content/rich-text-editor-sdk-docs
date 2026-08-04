@@ -10,124 +10,123 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Internationalization for the React Rich Text Editor SDK
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Internationalization library enables formatting and parsing of date and number values according to culture-specific rules using official [Unicode CLDR](https://cldr.unicode.org/) JSON data. The default culture is `en-US` and the default currency code is `USD` for all Syncfusion<sup style="font-size:70%">&reg;</sup> React components — including the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
+Internationalization (i18n) formats and parses dates, numbers, and currencies per culture. The Syncfusion<sup style="font-size:70%">&reg;</sup> i18n library uses official [Unicode CLDR](https://cldr.unicode.org/) JSON data. It applies to the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
 
-> The Rich Text Editor and Markdown Editor primarily use localization for their UI text (toolbar labels, dialogs); they delegate date / number / currency formatting to your app's choice of culture. Setting the global culture ensures the editor's helper widgets (such as the date picker that appears in dialogs) follow the right format.
+**Defaults:** culture `en-US`, currency `USD`. Override globally with `setCulture()` and `setCurrencyCode()`.
 
-## Loading Culture Data
+> The editor delegates date / number / currency formatting to your app's culture. Setting the global culture also ensures helper widgets in dialogs (such as the date picker) follow the right format.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> CLDR data package contains only JSON data files generated from the official [Unicode CLDR](https://cldr.unicode.org/) data. This avoids the third-party [cldr-data](https://www.npmjs.com/package/cldr-data) package and its known vulnerabilities. Use the `loadCldr` function to load CLDR data for cultures other than `en-US`.
-
-### Installing CLDR Data
+## Quick start
 
 ```bash
 npm install @syncfusion/ej2-cldr-data
 ```
 
-### Individual File Path Reference
+```ts
+import { loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
+import deNumberData from '@syncfusion/ej2-cldr-data/main/de/numbers.json';
+import deTimeZoneData from '@syncfusion/ej2-cldr-data/main/de/timeZoneNames.json';
+import deGregorian from '@syncfusion/ej2-cldr-data/main/de/ca-gregorian.json';
+import deCurrencies from '@syncfusion/ej2-cldr-data/main/de/currencies.json';
+import numberingSystems from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
+
+loadCldr(deNumberData, deTimeZoneData, deGregorian, deCurrencies, numberingSystems);
+setCulture('de');
+setCurrencyCode('EUR');
+```
+
+> For `en-US`, the library preloads required data — explicit `loadCldr()` is optional.
+
+## Required files and order of operations
+
+Call `loadCldr()` **before** `setCulture()` and **before** components mount. Replace the `de` segment in the paths with your culture code (`fr`, `ar`, `ja`, and so on). The five required files are `ca-gregorian`, `timeZoneNames`, `numbers`, `currencies`, and `numberingSystems`. For one-shot loading, use the combined `all.json` for the first four files; `numberingSystems` is still separate.
+
+## CLDR file paths
 
 Replace `en` with the desired culture code (for example, `de`, `fr`, `ar`):
 
-| File Name         | Path                                                            |
-| ----------------- | --------------------------------------------------------------- |
-| ca-gregorian      | @syncfusion/ej2-cldr-data/main/en/ca-gregorian.json             |
-| timeZoneNames     | @syncfusion/ej2-cldr-data/main/en/timeZoneNames.json            |
-| numbers           | @syncfusion/ej2-cldr-data/main/en/numbers.json                  |
-| currencies        | @syncfusion/ej2-cldr-data/main/en/currencies.json               |
-| numberingSystems  | @syncfusion/ej2-cldr-data/supplemental/numberingSystems.json    |
+| File | Path |
+| --- | --- |
+| ca-gregorian | `@syncfusion/ej2-cldr-data/main/en/ca-gregorian.json` |
+| timeZoneNames | `@syncfusion/ej2-cldr-data/main/en/timeZoneNames.json` |
+| numbers | `@syncfusion/ej2-cldr-data/main/en/numbers.json` |
+| currencies | `@syncfusion/ej2-cldr-data/main/en/currencies.json` |
+| numberingSystems | `@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json` |
 
-### Single File Path Reference
+**Combined bundle** (first four files): `@syncfusion/ej2-cldr-data/main/en/all.json`.
 
-| File Name                                       | Path                                                            |
-| ----------------------------------------------- | --------------------------------------------------------------- |
-| ca-gregorian, timeZoneNames, numbers, currencies| @syncfusion/ej2-cldr-data/main/en/all.json                      |
-| numberingSystems                                | @syncfusion/ej2-cldr-data/supplemental/numberingSystems.json    |
+## Number formatting
 
-> For the `en-US` culture, all required data files are preloaded in the library, so explicit loading is optional.
+Number formatting and parsing use the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) interface.
 
-### Binding to i18n Library
-
-```typescript
-import { loadCldr } from '@syncfusion/ej2-base';
-import enNumberData from '@syncfusion/ej2-cldr-data/main/en/numbers.json';
-import enTimeZoneData from '@syncfusion/ej2-cldr-data/main/en/timeZoneNames.json';
-import enGregorian from '@syncfusion/ej2-cldr-data/main/en/ca-gregorian.json';
-import enCurrencies from '@syncfusion/ej2-cldr-data/main/en/currencies.json';
-import numberingSystems from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
-
-loadCldr(enNumberData, enTimeZoneData, enGregorian, enCurrencies, numberingSystems);
-```
-
-## Changing Culture and Currency Code
-
-```typescript
-import { setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
-
-setCulture('ar');
-setCurrencyCode('QAR');
-```
-
-> If no global culture is set, `en-US` is used as the default locale and `USD` as the default currency code.
-
-## Manipulating Numbers
-
-### Supported Format String
-
-Number formatting and parsing are processed based on the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) interface.
+### Built-in options
 
 | Property | Description |
 | --- | --- |
 | `format` | Format type: **N** (numeric), **C** (currency), **P** (percentage). |
-| `minimumFractionDigits` / `maximumFractionDigits` | Fraction-digit count, 0-20. |
-| `minimumSignificantDigits` / `maximumSignificantDigits` | Significant-digit count, 1-21. |
-| `useGrouping` | Whether to enable the group separator. Default `true`. |
-| `minimumIntegerDigits` | Minimum number of integer digits, 1-21. |
-| `currency` | Currency code used for currency formatting. |
+| `minimumFractionDigits` / `maximumFractionDigits` | Fraction digits, 0–20. |
+| `minimumSignificantDigits` / `maximumSignificantDigits` | Significant digits, 1–21. |
+| `useGrouping` | Enable group separator. Default `true`. |
+| `minimumIntegerDigits` | Minimum integer digits, 1–21. |
+| `currency` | Currency code for currency formatting. |
 
 > `minimumIntegerDigits`, `minimumFractionDigits`, and `maximumFractionDigits` belong to group one. `minimumSignificantDigits` and `maximumSignificantDigits` belong to group two. If group two is set, group one is ignored.
 
-### Custom Number Formatting and Parsing
+### Custom patterns
 
-You can supply a custom pattern directly in the `format` property.
-
-| Specifier | Description | Example | Output |
+| Specifier | Meaning | Example | Output |
 | --- | --- | --- | --- |
-| `0` | Replaces with the corresponding digit or `0` if absent. | `formatNumber(123, { format: '0000' })` | `'0123'` |
-| `#` | Replaces with the corresponding digit or nothing if absent. | `formatNumber(1234, { format: '####' })` | `'1234'` |
-| `.` | Decimal-point location. | `formatNumber(546321, { format: '###0.##0#' })` | `'546321.000'` |
-| `%` | Percentage format. | `formatNumber(1, { format: '0000 %' })` | `'0100 %'` |
-| `$` | Currency format based on the global currency code. | `formatNumber(13, { format: '$ ###.00' })` | `'$ 13.00'` |
+| `0` | Digit or `0` if absent. | `formatNumber(123, { format: '0000' })` | `'0123'` |
+| `#` | Digit or nothing if absent. | `formatNumber(1234, { format: '####' })` | `'1234'` |
+| `.` | Decimal point. | `formatNumber(546321, { format: '###0.##0#' })` | `'546321.000'` |
+| `%` | Percentage. | `formatNumber(1, { format: '0000 %' })` | `'0100 %'` |
+| `$` | Currency using global code. | `formatNumber(13, { format: '$ ###.00' })` | `'$ 13.00'` |
 | `;` | Separate positive / negative / zero formats. | `formatNumber(-120, { format: '###.##;(###.00);-0' })` | `'(120.00)'` |
-| `'String'` (single quotes) | Literal text in the result. | `formatNumber(-123.44, { format: "####.## '@'" })` | `'123.44 @'` |
+| `'…'` | Literal text. | `formatNumber(-123.44, { format: "####.## '@'" })` | `'123.44 @'` |
 
-> If a custom format pattern is specified, other `NumberFormatOptions` properties are ignored.
+> When you supply a custom pattern, other `NumberFormatOptions` are ignored.
 
-### Number Parsing
+### Format and parse
 
-`getNumberParser` returns a function that parses a given string based on the supplied `NumberFormatOptions`. `parseNumber(value, options)` parses a string and returns a number.
+```ts
+import { getNumberFormat, getNumberParser } from '@syncfusion/ej2-base';
 
-### Number Formatting
+const format = getNumberFormat({ format: 'C', currency: 'EUR' });
+format(1234.5);                  // e.g. "1.234,50 €"
 
-`getNumberFormat` returns a function that formats a given number based on the supplied `NumberFormatOptions`. `formatNumber(value, options)` formats a number and returns a string.
+const parse = getNumberParser({ format: 'N', useGrouping: true });
+parse("1,234.5");                // 1234.5
+```
 
-## Manipulating DateTime
+## Date formatting
 
-Date formatting and parsing are based on the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) interface.
+Date formatting and parsing use the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) interface.
 
 | Option | Description |
 | --- | --- |
 | `type` | Format type: **date**, **dateTime**, **time**. |
-| `skeleton` | Skeleton that controls the format. Supported skeletons: `short`, `medium`, `long`, `full`. |
-| `format` | A custom pattern such as `dd/MM/yyyy`, `MMM yyyy`, or `EEEE, MMMM d, yyyy`. |
-| `calendar` | Calendar system (for example, `gregorian`, `islamic`). |
+| `skeleton` | Preset pattern: `short`, `medium`, `long`, `full`. |
+| `format` | Custom pattern such as `dd/MM/yyyy`, `MMM yyyy`, `EEEE, MMMM d, yyyy`. |
+| `calendar` | Calendar system, for example `gregorian`, `islamic`. |
 
-### Date Parsing
+### Format and parse
 
-`getDateParser(options)` returns a parser function. `parseDate(value, options)` parses a string and returns a `Date` object.
+```ts
+import { getDateFormat, getDateParser } from '@syncfusion/ej2-base';
 
-### Date Formatting
+const format = getDateFormat({ type: 'date', skeleton: 'long' });
+format(new Date(2026, 7, 4));    // e.g. "August 4, 2026"
 
-`getDateFormat(options)` returns a formatter function. `formatDate(value, options)` formats a `Date` object and returns a string.
+const parse = getDateParser({ type: 'date', format: 'dd/MM/yyyy' });
+parse('04/08/2026');             // Date object
+```
+
+## Performance and best practices
+
+- The `setCulture()` code must match the culture segment in the CLDR paths you loaded.
+- `getNumberFormat` and `getDateFormat` return reusable functions — create them once and reuse for performance.
+- For locales that use non-Latin digits (Arabic, Thai), ensure `numberingSystems` is loaded.
+- The CLDR data package replaces the third-party `cldr-data` package to avoid known vulnerabilities.
 
 ## See also
 

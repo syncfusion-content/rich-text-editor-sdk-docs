@@ -27,3 +27,4 @@ Detailed, version-by-version release notes are maintained in the [Release Notes]
 
 * [Upgrade](../installation/upgrade)
 * [System Requirements](./system-requirements)
+* [Latest Release](../Release-Notes/v34.1.33.md)
