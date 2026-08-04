@@ -217,6 +217,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor is d
 
 ![Syncfusion React Rich Text Editor output](images/getting-started.png)
 
+{% endtabcontent %}
+{% endtabcontents %}
+
 ## See Also
 
 * [Accessibility in Rich Text Editor](./accessibility.md)

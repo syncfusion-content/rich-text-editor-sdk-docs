@@ -220,6 +220,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Rich Text Editor is
 
 ![Syncfusion Angular Rich Text Editor output](images/getting-started.png)
 
+{% endtabcontent %}
+{% endtabcontents %}
+
 ## See Also
 
 **Documentation links**

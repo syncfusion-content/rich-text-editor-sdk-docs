@@ -208,6 +208,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Rich Text Editor is dis
 
 ![Syncfusion Vue Rich Text Editor output](images/getting-started.png)
 
+{% endtabcontent %}
+{% endtabcontents %}
+
 ## See Also
 
 * [Accessibility in Rich text editor](./accessibility.md)
