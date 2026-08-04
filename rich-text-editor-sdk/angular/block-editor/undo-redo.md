@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo redo in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Undo redo with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in Angular Block Editor | Syncfusion
+description: Learn how to use the Undo and Redo features in the Angular Block Editor to revert or reapply changes made to the content.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo redo in Angular Block Editor component
+# Undo and Redo in Angular Block Editor
 
 The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
 

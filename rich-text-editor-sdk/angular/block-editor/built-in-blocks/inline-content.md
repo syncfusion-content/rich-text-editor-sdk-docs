@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Content in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Inline Content with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Inline Content in Angular Block Editor | Syncfusion
+description: Learn how to add inline content to blocks in the Angular Block Editor using the content property to define text and functionality within each block.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Content in Angular Block Editor component
+# Inline Content in Angular Block Editor
 
 In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
 

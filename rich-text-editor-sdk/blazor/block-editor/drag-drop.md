@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and Drop in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Drag and Drop with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Drag and Drop in Blazor Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the Blazor Block Editor to rearrange content blocks within the editor area.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Drag and drop in Blazor Block Editor component
+# Drag and Drop in Blazor Block Editor
 
 The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 

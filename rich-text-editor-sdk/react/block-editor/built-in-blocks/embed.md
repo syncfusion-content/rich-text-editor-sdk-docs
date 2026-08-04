@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embed Blocks in React Block Editor Component | Syncfusion
-description: Checkout and learn about Embed Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Embed Blocks in React Block Editor | Syncfusion
+description: Learn how to embed images, videos, iframes, and other media as embed blocks in the React Block Editor.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Embed Blocks in React Block Editor component
+# Embed Blocks in React Block Editor
 
 The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 

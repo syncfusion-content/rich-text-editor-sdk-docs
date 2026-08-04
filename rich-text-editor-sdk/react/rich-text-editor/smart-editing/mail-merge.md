@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Mail Merge in React Rich Text Editor | Syncfusion
-description: Learn how to use and customize the Mail Merge in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to use Mail Merge in the React Rich Text Editor to insert dynamic placeholder fields and merge values into content.
 platform: rich-text-editor-sdk
-control: Mail Merge
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mail merge in React Rich Text Editor component
+# Mail Merge in React Rich Text Editor
 
 The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 

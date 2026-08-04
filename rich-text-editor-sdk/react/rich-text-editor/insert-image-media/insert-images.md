@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Insert Images in React Rich Text Editor component | Syncfusion
-description: Learn how to insert, manage, and customize images in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Images 
+title: Insert Images in React Rich Text Editor | Syncfusion
+description: Learn how to insert, manage, and customize images in the React Rich Text Editor with upload, caption, and link options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-#  Insert Images in the React Rich Text Editor Component
+# Insert Images in React Rich Text Editor
 
 The Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/imagesettingsmodel)
 

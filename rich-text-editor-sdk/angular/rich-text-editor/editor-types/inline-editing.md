@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Editing in Angular Rich Text Editor component | Syncfusion
-description: Learn how to enable inline editing in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Inline Editing in Angular Rich Text Editor | Syncfusion
+description: Learn how to enable inline editing in the Angular Rich Text Editor for editing content directly within the display area.
 platform: rich-text-editor-sdk
-control: Inline editing
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Editing in the Angular Rich Text Editor Component
+# Inline Editing in Angular Rich Text Editor
 
 Inline editing in the Rich Text Editor enables users to edit content directly within the editor where it is displayed. Unlike traditional editing interfaces where the editor toolbar is in a separate area at the top or bottom, inline editing offers a seamless, on-the-spot editing experience. You can click on the text or select the text you wish to edit and make changes immediately.
 

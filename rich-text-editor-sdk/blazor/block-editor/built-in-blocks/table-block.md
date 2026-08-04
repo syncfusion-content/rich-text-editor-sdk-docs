@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Table Blocks in Blazor Block Editor Component | Syncfusion®
-description: Learn about table blocks and structured data display in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Table Blocks in Blazor Block Editor | Syncfusion
+description: Learn how to add table blocks in the Blazor Block Editor to render structured data in rows and columns with customizable layouts and headers.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

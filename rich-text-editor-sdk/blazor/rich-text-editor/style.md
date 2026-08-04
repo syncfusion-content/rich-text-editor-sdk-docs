@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style and appearance in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Style and appearance in Blazor Rich Text Editor component with examples and much more details.
+title: Style and Appearance in Blazor Rich Text Editor | Syncfusion
+description: Learn how to customize the CSS structure and visual appearance of the Blazor Rich Text Editor with placeholder styling and theme overrides.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Styling and Appearance
+# Style and Appearance in Blazor Rich Text Editor
 
 ## Styling the placeholder text
 

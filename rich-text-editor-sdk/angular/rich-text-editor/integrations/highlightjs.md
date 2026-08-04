@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Highlight.js in Angular Rich Text Editor | Syncfusion
-description: Learn here all about Highlight.js in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to integrate Highlight.js with the Angular Rich Text Editor to keep code blocks highlighted while editing, previewing, and exporting content.
 platform: rich-text-editor-sdk
-control: Highlight.js
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Highlight.js into the Angular Rich Text Editor
+# Highlight.js in Angular Rich Text Editor
 
 The [Highlight.js](https://highlightjs.org/) integration with the Syncfusion Angular Rich Text Editor allows for syntax highlighting, ensuring that code blocks remain highlighted during editing, previewing, and exporting.
 

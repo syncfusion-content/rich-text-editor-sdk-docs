@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Markdown Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Markdown Editor | Syncfusion
+description: Learn how to enable accessibility in the Angular Markdown Editor with WAI-ARIA roles, states, and keyboard navigation support.
 platform: rich-text-editor-sdk
-control: Markdown Editor Accessibility
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Angular Markdown Editor Component
+# Accessibility in Angular Markdown Editor
 
 The Angular Markdown Editor is designed to be fully accessible, adhering to WAI-ARIA specifications with ARIA roles, states, and properties. These features ensure compatibility with assistive technologies (AT) and keyboard navigation, enhancing usability for all users.
 

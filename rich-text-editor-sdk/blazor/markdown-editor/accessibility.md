@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Accessibility in Blazor Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about the accessibility in Blazor Markdown Editor component and much more details.
+title: Accessibility in Blazor Markdown Editor | Syncfusion
+description: Learn how to enable accessibility in the Blazor Markdown Editor with WAI-ARIA roles, states, and complete keyboard navigation support.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

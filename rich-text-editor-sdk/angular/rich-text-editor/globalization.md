@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Rich Text Editor | Syncfusion
+description: Learn how to localize and globalize the Angular Rich Text Editor with built-in support for right-to-left languages and culture-specific content.
 platform: rich-text-editor-sdk
-control: Globalization 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in the Angular Rich Text Editor Component
+# Globalization in Angular Rich Text Editor
 
 ## Localization
 

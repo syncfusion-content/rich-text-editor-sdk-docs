@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Import/Export in React Rich Text Editor component | Syncfusion
-description: Learn how to import from Word and export content in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Content Import/Export
+title: Import and Export in React Rich Text Editor | Syncfusion
+description: Learn how to import content from Word and export to PDF, HTML, and Markdown in the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Import and Export Content in React Rich Text Editor
+# Import and Export in React Rich Text Editor
 
 ## Importing content from Microsoft Word
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard support in Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about Keyboard support in Blazor Markdown Editor component and much more details.
+title: Keyboard Support in Blazor Markdown Editor | Syncfusion
+description: Learn about the keyboard shortcuts available in the Blazor Markdown Editor when the Rich Text Editor is set to EditorMode as Markdown.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 
-# Keyboard support in Blazor Markdown Editor Component
+# Keyboard Support in Blazor Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EditorMode) as `Markdown`.
 

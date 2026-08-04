@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controlled Access in React Block Editor Component | Syncfusion
-description: Checkout and learn about Controlling Editor Access with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in React Block Editor | Syncfusion
+description: Learn how to enable Read-Only mode in the React Block Editor to prevent user edits while keeping content visible.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in React Block Editor component
+# Read-Only Mode in React Block Editor
 
 The Syncfusion React Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 

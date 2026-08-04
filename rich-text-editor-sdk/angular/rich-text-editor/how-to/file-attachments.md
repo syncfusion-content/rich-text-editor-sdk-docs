@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Managing File Attachments | Syncfusion
-description: Learn here all about File attachments in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Manage File Attachments in Angular Rich Text Editor | Syncfusion
+description: Learn how to attach files in the Angular Rich Text Editor through the file upload dialog or drag-and-drop, with auto-inserted attachment links.
 platform: rich-text-editor-sdk
-control: File attachments
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Managing File Attachments in the Angular Rich Text Editor Component
+# Manage File Attachments in Angular Rich Text Editor
 
 The Rich Text Editor allows you to attach files through the file upload feature. You can upload files either by selecting them via the file upload dialog or by dragging and dropping them from your local system. When the file upload succeeds, the editor automatically inserts an attachment link into the content.
 

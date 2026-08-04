@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Blazor Block Editor in Server App | Syncfusion
-description: Get Started with Blazor Block Editor in Blazor Server App using Visual Studio, Visual Studio Code, or .NET CLI.
+description: Learn how to get started with the Blazor Block Editor in a Blazor Server App using Visual Studio, VS Code, or the .NET CLI.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug

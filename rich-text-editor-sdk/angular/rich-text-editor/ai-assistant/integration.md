@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI Assistant in Angular Rich Text Editor | Syncfusion
-description: Learn about the integration of the AI Assistant feature in the Syncfusion Essential JS 2 Angular Rich Text Editor Component.
+title: AI Assistant Integration in Angular Rich Text Editor | Syncfusion
+description: Learn how to integrate the AI Assistant in the Angular Rich Text Editor with an AssistView popup, predefined prompts, and dedicated toolbar options.
 platform: rich-text-editor-sdk
-control: Integrating the AI Assistant
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating the AI Assistant
+# AI Assistant Integration in Angular Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 

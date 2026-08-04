@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor Value in React Rich Text Editor component | Syncfusion
-description: Learn how to manage editor content in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Editor value
+title: Editor Value in React Rich Text Editor | Syncfusion
+description: Learn how to get and set the editor value in the React Rich Text Editor with one-way and two-way data binding patterns.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Value in React Rich Text Editor Component
+# Editor Value in React Rich Text Editor
 
 The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively
 

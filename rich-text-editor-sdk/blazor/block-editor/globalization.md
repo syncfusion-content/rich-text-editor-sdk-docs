@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Globalization in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Globalization with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Globalization in Blazor Block Editor | Syncfusion
+description: Learn how to globalize the Blazor Block Editor with Localization and right-to-left alignment support for different cultures.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

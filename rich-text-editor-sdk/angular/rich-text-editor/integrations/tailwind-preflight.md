@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Tailwind Preflight in Angular Rich Text Editor | Syncfusion
-description: Learn here all about integrating Tailwind preflight in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to integrate Tailwind CSS Preflight with the Angular Rich Text Editor while preserving the editor's default styling and functionality.
 platform: rich-text-editor-sdk
-control: Tailwind Preflight Integration
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Tailwind preflight into the Angular Rich Text Editor
+# Tailwind Preflight in Angular Rich Text Editor
 
 The [Tailwind CSS Preflight](https://tailwindcss.com/docs/preflight) provides a modern baseline of styles that resets browser defaults and establishes a consistent foundation for your application. This guide explains how to integrate Tailwind CSS Preflight with the Syncfusion Angular Rich Text Editor while preserving the editor's styling and functionality.
 

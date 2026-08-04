@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor mode in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Editor mode in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Modes in Angular Rich Text Editor | Syncfusion
+description: Learn about the editor modes available in the Angular Rich Text Editor, including HTML and Markdown formats for content output.
 platform: rich-text-editor-sdk
-control: Editor mode 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Modes in Angular Rich Text Editor Component
+# Editor Modes in Angular Rich Text Editor
 
 The Rich Text Editor component allows you to create and edit content, returning it as either valid HTML or Markdown (MD). It supports the following two editing formats:
 

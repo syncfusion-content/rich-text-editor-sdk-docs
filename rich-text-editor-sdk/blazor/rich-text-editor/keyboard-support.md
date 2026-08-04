@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Support in Blazor Rich Text Editor | Syncfusion®
-description: Learn about keyboard navigation and shortcuts in Blazor Rich Text Editor for efficient content editing.
+title: Keyboard Support in Blazor Rich Text Editor | Syncfusion
+description: Learn about the keyboard navigation and shortcuts available in the Blazor Rich Text Editor for toolbar, dropdown, and dialog interactions.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Keyboard support in Blazor Rich Text Editor Component
+# Keyboard Support in Blazor Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

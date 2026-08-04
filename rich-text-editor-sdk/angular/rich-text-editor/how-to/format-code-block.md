@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format code block in Angular Rich text editor component | Syncfusion
-description: Learn here all about Format code block in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Format Code Block in Angular Rich Text Editor | Syncfusion
+description: Learn how to add a Format Code Block toolbar button in the Angular Rich Text Editor by configuring the InsertCode keyword in the toolbarSettings items.
 platform: rich-text-editor-sdk
-control: Format code block 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Format code block in Angular Rich text editor component
+# Format Code Block in Angular Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
 

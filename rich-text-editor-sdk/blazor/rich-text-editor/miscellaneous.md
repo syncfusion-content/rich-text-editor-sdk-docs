@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Miscellaneous in Blazor Rich Text Editor component with examples and much more details.
+title: Miscellaneous in Blazor Rich Text Editor | Syncfusion
+description: Learn about miscellaneous features in the Blazor Rich Text Editor, including placeholder text customization, save formats, and more.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Miscellaneous in Blazor Rich Text Editor Component
+# Miscellaneous in Blazor Rich Text Editor
 
 ## Placeholder Text Customization
 

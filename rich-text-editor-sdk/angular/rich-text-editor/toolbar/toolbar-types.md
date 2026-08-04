@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Types in Angular Rich Text Editor component | Syncfusion
-description: Learn how to configure Toolbar Types in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Rich Text Editor | Syncfusion
+description: Learn about the toolbar in the Angular Rich Text Editor with built-in formatting tools, customization options, and a flexible item API.
 platform: rich-text-editor-sdk
-control: Toolbar
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar in Angular Rich Text Editor component
+# Toolbar in Angular Rich Text Editor
 
 The Syncfusion Angular Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 

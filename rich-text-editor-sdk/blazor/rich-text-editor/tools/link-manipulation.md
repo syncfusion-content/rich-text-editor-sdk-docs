@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Link manipulation in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Link manipulation in Blazor Rich Text Editor component with examples and much more details.
+title: Link Manipulation in Blazor Rich Text Editor | Syncfusion
+description: Learn how to insert and manage hyperlinks in the Blazor Rich Text Editor using text or image as the link source.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Link Manipulation in Rich Text Editor
+# Link Manipulation in Blazor Rich Text Editor
 
 The hyperlink can be inserted into the editor for quick access to the related information. The hyperlink itself can be text or an image.
 

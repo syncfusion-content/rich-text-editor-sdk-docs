@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Blocks in React Block Editor Component | Syncfusion
-description: Checkout and learn about Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Built-in Blocks in React Block Editor | Syncfusion
+description: Learn about the built-in block types in the React Block Editor such as paragraphs, headings, lists, tables, code, and embeds.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Blocks in React Block Editor component
+# Built-in Blocks in React Block Editor
 
 The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blocks) property.
 

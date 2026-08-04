@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Emoji Picker in Angular Rich Text Editor | Syncfusion
-description: Learn how to use and customize the Emoji Picker in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to use and customize the Emoji Picker in the Angular Rich Text Editor to add emojis from categorized panels with search support.
 platform: rich-text-editor-sdk
-control: Emoji Picker
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Emoji Picker in Angular Rich Text Editor component
+# Emoji Picker in Angular Rich Text Editor
 
 The Emoji Picker is a tool that simplifies adding emojis or emoticons to text content within the Syncfusion Angular Rich Text Editor. It appears as a popup panel displaying a variety of emojis organized into categories such as Smilies & People, Animals & Nature, and more. Users can select an emoji by clicking it or searching for it by name using the built-in search box.
 

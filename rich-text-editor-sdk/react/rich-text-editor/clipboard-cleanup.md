@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Cleanup in React Rich Text Editor component | Syncfusion
-description: Learn how to configure  Clipboard Cleanup in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Clipboard cleanup 
+title: Clipboard Cleanup in React Rich Text Editor | Syncfusion
+description: Learn how to configure Clipboard Cleanup in the React Rich Text Editor to copy and paste content in plain text, formatted, or cleaned HTML.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Clipboard Cleanup in React Rich Text Editor Component
+# Clipboard Cleanup in React Rich Text Editor
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [enableClipboardCleanup](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#enableClipboardCleanup) property.
 

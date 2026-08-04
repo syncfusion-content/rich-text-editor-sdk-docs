@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Style Encapsulation | Syncfusion
-description: Learn here all about Style Encapsulation Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style Encapsulation in Angular Rich Text Editor | Syncfusion
+description: Learn how to control style encapsulation in the Angular Rich Text Editor to determine whether editor content inherits global application styles.
 platform: rich-text-editor-sdk
-control: Style Encapsulation
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

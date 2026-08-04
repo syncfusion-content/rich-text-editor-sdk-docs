@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrating Rich Text Editor in Tab Components | Syncfusion
-description: Learn here all about Rich Text Editor Inside Tab in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: How to render Rich Text Editor in a Tab in React | Syncfusion
+description: Learn how to render the React Rich Text Editor inside a Tab component in React applications.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Tab Components 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating Rich Text Editor in Tab Components
+# How to render Rich Text Editor in a Tab in React
 
 Integrating a Rich Text Editor within Tab components provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Typography Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Typography Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Typography Blocks in Angular Block Editor | Syncfusion
+description: Learn about the typography blocks in the Angular Block Editor, including Paragraph, Heading, Collapsible, Divider, Quote, and Callout.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in Angular Block Editor component
+# Typography Blocks in Angular Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 

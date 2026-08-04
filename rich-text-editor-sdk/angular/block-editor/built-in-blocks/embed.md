@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embed Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Embed Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Embed Blocks in Angular Block Editor | Syncfusion
+description: Learn how to add embed blocks in the Angular Block Editor to organize and showcase visual content from external sources.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Embed Blocks in Angular Block Editor component
+# Embed Blocks in Angular Block Editor
 
 The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 

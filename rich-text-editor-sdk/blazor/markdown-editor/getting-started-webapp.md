@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Getting Started with Blazor Markdown Editor in Web App | Syncfusion
-description: Check out and learn the documentation for getting started with Blazor Markdown Editor Components in Blazor Web App.
+description: Learn how to get started with the Blazor Markdown Editor in a Blazor Web App using Visual Studio, VS Code, or the .NET CLI.
 platform: Blazor
 component: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

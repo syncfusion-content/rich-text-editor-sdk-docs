@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AssistViewSettings Events in Smart Rich Text Editor | Syncfusion®
-description: Reference for AssistViewSettings events, arguments, and examples to handle prompt submissions, streaming responses, popup lifecycle, and toolbar actions.
+title: AssistViewSettings Events in Smart Rich Text Editor | Syncfusion
+description: Learn about the AssistViewSettings events in the Blazor Smart Rich Text Editor, including AIPromptRequested, response streaming, and popup lifecycle.
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
 ---
 
-# AssistViewSettings Events
+# AssistViewSettings Events in Smart Rich Text Editor
 
 ## AIPromptRequested
 **Type:** `EventCallback<AssistViewPromptRequestedEventArgs>`

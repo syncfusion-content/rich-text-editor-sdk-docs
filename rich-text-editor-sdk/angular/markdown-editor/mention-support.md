@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Support in Angular Markdown Editor component | Syncfusion
-description: Learn how to enable mention support in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Mention Support in Angular Markdown Editor | Syncfusion
+description: Learn how to enable mention support in the Angular Markdown Editor by integrating the Mention component to tag users from a suggested list.
 platform: rich-text-editor-sdk
-control: Mention Support in Markdown Editor
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mention Support in Angular Markdown Editor Component
+# Mention Support in Angular Markdown Editor
 
 By integrating the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/) component with the Markdown Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving both efficiency and accuracy.
 

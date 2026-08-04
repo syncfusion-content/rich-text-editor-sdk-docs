@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Getting Started with Blazor Rich Text Editor in MAUI App | Syncfusion®
+title: Getting Started with Blazor Rich Text Editor in MAUI App | Syncfusion
 canonical_url: "https://blazor.syncfusion.com/documentation/rich-text-editor/getting-started-with-maui-app"
-description: Check out and learn about getting started with the Rich Text Editor in Blazor MAUI Application.
+description: Learn how to get started with the Blazor Rich Text Editor in a Blazor MAUI App using Visual Studio, VS Code, or the .NET CLI.
 platform: rich-text-editor-sdk
 component: Rich Text Editor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Getting Started with Blazor Rich Text Editor
+# Getting Started with Blazor Rich Text Editor in MAUI App
 
 This section provides a step-by-step guide to integrating the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component in your Blazor MAUI App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/) and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 

@@ -2,9 +2,10 @@
 layout: post
 title: Getting Started with Blazor Rich Text Editor in Web App | Syncfusion
 canonical_url: "https://www.syncfusion.com/blazor-components/blazor-rich-text-editor"
-description: Check out the documentation for getting started with Blazor Rich Text Editor Components in Blazor Web App.
+description: Learn how to get started with the Blazor Rich Text Editor in a Blazor Web App using Visual Studio, VS Code, or the .NET CLI.
 platform: rich-text-editor-sdk
 component: Rich Text Editor
+control: Rich Text Editor
 documentation: ug
 ---
 

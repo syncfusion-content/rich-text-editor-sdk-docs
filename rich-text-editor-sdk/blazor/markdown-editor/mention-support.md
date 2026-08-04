@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Mention support in Blazor Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about Mention support in Blazor Markdown Editor component and much more details.
+title: Mention Support in Blazor Markdown Editor | Syncfusion
+description: Learn how to enable Mention support in the Blazor Markdown Editor by integrating the Mention component to tag users from a suggested list.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

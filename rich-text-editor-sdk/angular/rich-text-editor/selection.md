@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Selection in Angular Rich Text Editor | Syncfusion
-description: Learn how to select a character range using Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular Rich Text Editor | Syncfusion
+description: Learn how to select character ranges in the Angular Rich Text Editor programmatically using the selectRange method and selection APIs.
 platform: rich-text-editor-sdk
-control: Text Selection
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Selection in Angular Rich Text Editor Component
+# Selection in Angular Rich Text Editor
 
 ## Text selection
 

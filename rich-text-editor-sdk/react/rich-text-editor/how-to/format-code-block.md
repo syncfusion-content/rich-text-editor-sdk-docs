@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format code block in React Rich text editor component | Syncfusion
-description: Learn here all about Format code block in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Format code block 
+title: Format Code Block in React Rich Text Editor | Syncfusion
+description: Learn how to format a code block in the React Rich Text Editor using a custom toolbar button to apply monospace styling.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Format code block in React Rich text editor component
+# Format Code Block in React Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [toolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text Formatting and Structure in React Rich text editor | Syncfusion
-description: Learn here all about Text formatting and Structure in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Text formatting and Structure
+title: Text Formatting in React Rich Text Editor | Syncfusion
+description: Learn how to apply text formatting and structure in the React Rich Text Editor including bold, italic, headings, and lists.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting and Structure in the React Rich Text Editor Component
+# Text Formatting in React Rich Text Editor
 
 The React Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 

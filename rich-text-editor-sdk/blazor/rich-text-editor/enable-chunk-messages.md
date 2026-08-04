@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Enable Chunk Messages in Blazor RichTextEditor | Syncfusion
-description: Learn how to process large HTML content in Blazor RichTextEditor without increasing the SignalR hub MaximumReceiveMessageSize using EnableChunkMessages.
+title: Enable Chunk Messages in Blazor Rich Text Editor | Syncfusion
+description: Learn how to process large HTML content in the Blazor Rich Text Editor using chunk messages to avoid increasing the SignalR maximum receive message size.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Process large HTML content without increasing maximum message size
+# Enable Chunk Messages in Blazor Rich Text Editor
 
 The Blazor **Rich Text Editor** component supports processing large HTML content without increasing the SignalR hub maximum receive message size (`MaximumReceiveMessageSize`, default 32 KB) by using chunk messaging.
 

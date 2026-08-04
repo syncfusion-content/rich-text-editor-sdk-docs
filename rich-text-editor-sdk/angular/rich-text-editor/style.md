@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style Appearance Customization | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in Angular Rich Text Editor | Syncfusion
+description: Learn how to customize the CSS structure and visual appearance of the Angular Rich Text Editor to match your application design.
 platform: rich-text-editor-sdk
-control: Style Appearance Customization 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style Appearance Customization in the Angular Rich Text Editor component
+# Style and Appearance in Angular Rich Text Editor
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 

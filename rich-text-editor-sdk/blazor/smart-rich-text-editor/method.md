@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AssistViewSettings Methods in Smart Rich Text Editor | Syncfusion®
-description: Comprehensive reference for AssistViewSettings methods with examples to show/hide the AI popup, execute prompts, stream/update responses, and manage history.
+title: AssistViewSettings Methods in Smart Rich Text Editor | Syncfusion
+description: Learn about the AssistViewSettings public methods in the Blazor Smart Rich Text Editor to show or hide the AI popup, execute prompts, and stream responses.
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
 ---
 
-# AssistViewSettings Methods
+# AssistViewSettings Methods in Smart Rich Text Editor
 
 Using the public methods, you can build custom workflows with the AI Assistant. Actions such as retrieving conversation history, executing prompts, updating responses, showing or hiding the AI Assistant, and clearing conversation history can all be achieved using the following public methods programmatically.
 

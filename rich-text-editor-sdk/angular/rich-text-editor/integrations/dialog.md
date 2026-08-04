@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dialog in Angular Rich text editor component | Syncfusion
-description: Learn here all about dialog integration in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Dialog in Angular Rich Text Editor | Syncfusion
+description: Learn how to render the Angular Rich Text Editor inside a Dialog component with the correct container styles for proper toolbar layout.
 platform: rich-text-editor-sdk
-control: Dialog
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Dialog into Angular Rich Text Editor Component
+# Dialog in Angular Rich Text Editor
 
 When rendering the Rich Text Editor inside a Dialog component, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor’s toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 

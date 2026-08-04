@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Position in Angular Rich Text Editor component | Syncfusion
-description: Learn how to configure the Toolbar Position in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar Position in Angular Rich Text Editor | Syncfusion
+description: Learn how to configure the toolbar position in the Angular Rich Text Editor using the position field in the toolbarSettings property.
 platform: rich-text-editor-sdk
-control: Toolbar
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar Position in Angular Rich Text Editor component
+# Toolbar Position in Angular Rich Text Editor
 
 The Angular Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#position) field in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings) property. The available positions are:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in React Rich text editor component | Syncfusion
-description: Learn here all about Validation in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Validation 
+title: Validation in React Rich Text Editor | Syncfusion
+description: Learn how to validate the React Rich Text Editor content against custom rules and restrict disallowed HTML tags or attributes.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Validation in React Rich text editor component
+# Validation in React Rich Text Editor
 
 ## Validation rules
 

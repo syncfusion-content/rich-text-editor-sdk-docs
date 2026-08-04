@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Insert image in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Insert image in Blazor Rich Text Editor component with examples and much more details.
+title: Insert Image in Blazor Rich Text Editor | Syncfusion
+description: Learn how to insert images in the Blazor Rich Text Editor from web URLs, uploaded files, and configured image services.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Insert image in Rich Text Editor
+# Insert Image in Blazor Rich Text Editor
 
 ## Inserting images from web urls
 

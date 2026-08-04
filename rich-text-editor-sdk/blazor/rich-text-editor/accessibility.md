@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Blazor Rich Text Editor Accessibility | Syncfusion®
-description: Learn about the accessibility features in the Blazor Rich Text Editor component, including keyboard navigation and screen reader support.
+title: Accessibility in Blazor Rich Text Editor | Syncfusion
+description: Learn how to enable accessibility in the Blazor Rich Text Editor with WAI-ARIA roles, states, properties, and keyboard navigation support.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

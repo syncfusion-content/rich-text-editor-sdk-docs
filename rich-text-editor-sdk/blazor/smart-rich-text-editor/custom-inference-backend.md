@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AI Service Integration with Smart Rich Text Editor | Syncfusion®
-description: Learn how to use IChatInferenceService to integrate custom AI services with the Blazor Smart Rich Text Editor component.
+title: AI Service Integration in Smart Rich Text Editor | Syncfusion
+description: Learn how to integrate custom AI services with the Blazor Smart Rich Text Editor using the IChatInferenceService interface for third-party providers.
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
 ---
 
-# Custom AI Service Integration with Blazor Smart Rich Text Editor
+# AI Service Integration in Smart Rich Text Editor
 
 The Blazor Smart Rich Text Editor component leverages AI to provide context-aware content generation and editing, typically using OpenAI or Azure OpenAI services. Developers can integrate custom AI services using the `IChatInferenceService` interface, which standardizes communication between the Smart Rich Text Editor and third-party AI providers. This section explains how to implement and register a custom AI service for the Smart Rich Text Editor.
 

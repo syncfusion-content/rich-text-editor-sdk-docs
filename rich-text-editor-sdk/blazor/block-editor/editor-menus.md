@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editor Menus in Blazor Block Editor Component | Syncfusion®
-description: Learn to configure Slash Command menu, Context menu, Block Action menu, and Inline Toolbar in Blazor Block Editor.
+title: Editor Menus in Blazor Block Editor | Syncfusion
+description: Learn about the Slash Command, Context, Block Action, and Inline Toolbar menus in the Blazor Block Editor.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Editor Menus in Blazor Block Editor Component
+# Editor Menus in Blazor Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 

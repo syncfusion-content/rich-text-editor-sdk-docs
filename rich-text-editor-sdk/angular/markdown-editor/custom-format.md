@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Markdown Syntax in Angular Markdown Editor component | Syncfusion
-description: Learn how to customize Markdown syntax in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Custom Markdown Syntax in Angular Markdown Editor | Syncfusion
+description: Learn how to customize Markdown syntax in the Angular Markdown Editor by overriding the default formatter with a custom Markdown implementation.
 platform: rich-text-editor-sdk
-control: Custom Markdown Syntax
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Markdown Syntax in Angular Markdown Editor Component
+# Custom Markdown Syntax in Angular Markdown Editor
 
 The Angular Markdown Editor allows customization of default Markdown syntax to match preferred formatting styles. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
 

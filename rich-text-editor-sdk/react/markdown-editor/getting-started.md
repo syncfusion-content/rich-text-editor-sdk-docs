@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with React Markdown Editor component | Syncfusion
-description: Check out and learn about Getting started with React Markdown Editor component of Syncfusion Essential JS 2 and more details.
-control: Getting Started
+title: Getting Started with React Markdown Editor | Syncfusion
+description: Learn how to get started with the React Markdown Editor and explore setup, configuration, and core feature examples.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with React Markdown Editor Component
+# Getting Started with React Markdown Editor
 
 The Syncfusion React Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section explains the steps required to create a simple Markdown Editor and demonstrate the basic usage of the Markdown Editor component in a React environment.
 

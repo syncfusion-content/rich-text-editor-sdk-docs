@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Blocks in Angular Block Editor | Syncfusion
+description: Learn about the built-in blocks in the Angular Block Editor and how they are configured through the blocks property to structure content.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Blocks in Angular Block Editor component
+# Blocks in Angular Block Editor
 
 The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blocks) property.
 
