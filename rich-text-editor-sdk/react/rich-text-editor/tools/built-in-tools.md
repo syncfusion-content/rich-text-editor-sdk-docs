@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Built-in Tools in React Rich text editor component | Syncfusion
-description: Learn here all about Built-in Tools in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control:  Built-in Tools
+title: Toolbar Items in React Rich Text Editor | Syncfusion
+description:  Learn about all available toolbar items in the React Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Built-in Tools in React Rich Text Editor Component
+# Built-in Tools in React Rich Text Editor
 
 The React Rich Text Editor's toolbar provide tools for formatting, styling, and managing content, enhancing user productivity in a Rich Text Editor.
 

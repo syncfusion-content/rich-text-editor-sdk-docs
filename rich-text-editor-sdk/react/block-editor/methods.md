@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in React Block Editor component | Syncfusion
-description: Checkout and learn about Methods with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Methods in React Block Editor | Syncfusion
+description: Learn about the public methods in React Block Editor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Methods in React Block Editor component
+# Methods in React Block Editor
 
 The Block Editor component provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 

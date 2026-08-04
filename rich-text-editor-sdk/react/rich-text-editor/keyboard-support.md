@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Support in React Rich Text Editor Component | Syncfusion
-description: Learn here all about keyboard support in Syncfusion Essential React Rich Text Editor component, it's elements and more.
-control: Keyboard support 
+title: Keyboard Support in React Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the React Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Support in React Rich Text Editor Component
+# Keyboard Support in React Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 
