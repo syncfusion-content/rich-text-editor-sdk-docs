@@ -33,7 +33,7 @@ Required CSS file of code mirror.
     <link href="scripts/CodeMirror/codemirror.min.css" rel="stylesheet" />
    ```
 
-Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [actionComplete](/api/js/global#actioncomplete) event.
+Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugin, and then pass the Rich Text Editor content as argument in the [actionComplete](/api/js/global#actioncomplete) event.
 
 `[Class-component]`
 

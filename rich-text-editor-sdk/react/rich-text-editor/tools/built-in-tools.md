@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar Items in React Rich Text Editor | Syncfusion
-description:  Learn about all available toolbar items in the React Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
+description:  Learn about all available toolbar items in React Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

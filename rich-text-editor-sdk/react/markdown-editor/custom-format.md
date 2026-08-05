@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Custom Markdown Syntax in React Markdown Editor
 
-The React Markdown Editor allows customization of default Markdown syntax to match preferred formatting styles. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
+The React Markdown Editor allows customization of default Markdown syntax to match preferred formatting styles. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor#formatter) property, enabling a customized Markdown experience.
 
 ## Customizing markdown syntax  
 

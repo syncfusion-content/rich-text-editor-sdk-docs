@@ -14,7 +14,7 @@ By integrating the [Mention](https://ej2.syncfusion.com/react/documentation/ment
 
 ## Enabling mention in React Markdown Editor
 
-To enable the Mention functionality within the Markdown Editor, set the [target](https://ej2.syncfusion.com/react/documentation/api/mention/#target)  property of the Mention component to the ID of the textarea element inside the editor. When specifying the target, ensure that you append the suffix `_editable-content` to the ID. This configuration allows users to mention or tag others from the suggested list while editing text.
+To enable the Mention functionality within the Markdown Editor, set the [target](https://ej2.syncfusion.com/react/documentation/api/mention#target)  property of the Mention component to the ID of the textarea element inside the editor. When specifying the target, ensure that you append the suffix `_editable-content` to the ID. This configuration allows users to mention or tag others from the suggested list while editing text.
 
 When a user types the `@` symbol followed by a character, the Markdown Editor displays a list of suggestions. Users can select an item from the list by either clicking on it or typing the desired name.
 
@@ -22,9 +22,9 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 
 The Syncfusion Mention component provides several customizable properties to enhance the tagging experience:
 
-* [allowSpaces](https://ej2.syncfusion.com/react/documentation/api/mention/#allowspaces) - Allow to continue search action if user enter space after mention character while searching.
-* [suggestionCount](https://ej2.syncfusion.com/react/documentation/api/mention/#suggestioncount) - Defines the maximum number of items displayed in the suggestion list.
-* [itemTemplate](https://ej2.syncfusion.com/react/documentation/api/mention/#itemtemplate) - Customizes the appearance of items in the suggestion list.
+* [allowSpaces](https://ej2.syncfusion.com/react/documentation/api/mention#allowspaces) - Allow to continue search action if user enter space after mention character while searching.
+* [suggestionCount](https://ej2.syncfusion.com/react/documentation/api/mention#suggestioncount) - Defines the maximum number of items displayed in the suggestion list.
+* [itemTemplate](https://ej2.syncfusion.com/react/documentation/api/mention#itemtemplate) - Customizes the appearance of items in the suggestion list.
 
 ## Example: Implementing mention in markdown editor
 

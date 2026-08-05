@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Formatting in React Rich Text Editor | Syncfusion
-description: Learn how to format text in the React Rich Text Editor with bold, italic, headings, lists, checklists, blockquotes, line height, Markdown auto-format, format painter, indentation, and clear formatting.
+description: Learn how to format text in the React Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

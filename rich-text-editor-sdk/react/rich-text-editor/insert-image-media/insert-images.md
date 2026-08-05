@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Insert Images in React Rich Text Editor | Syncfusion
-description: Learn how to insert images in the React Rich Text Editor using URLs, local uploads, File Manager integration, resizing, captions, alignment, wrapping, and server-side storage.
+description: Learn how to insert images in the React Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

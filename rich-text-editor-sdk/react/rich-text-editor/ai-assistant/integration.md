@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI Assistant in React Rich Text Editor | Syncfusion
-description: Learn how to enable and configure the AI Assistant in the React Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
+description: Learn how to enable and configure the React Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

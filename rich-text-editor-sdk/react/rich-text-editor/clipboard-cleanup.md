@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Cleanup in React Rich Text Editor | Syncfusion
-description: Learn how to clean and customize clipboard content in the React Rich Text Editor by removing unwanted styles and preserving formatting during copy and cut operations.
+description: Learn how to clean and customize clipboard content in the React Rich Text Editor by removing unwanted styles while preserving formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
