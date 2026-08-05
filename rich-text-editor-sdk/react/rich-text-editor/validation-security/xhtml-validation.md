@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Xhtml Validation in React Rich text editor component | Syncfusion
-description: Learn how to enable XHTML validation and XSS prevention in the Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Xhtml Validation
+title: XHTML Validation and XSS Prevention in React Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the React Rich Text Editor using built-in sanitization and custom filtering.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# XHTML validation in React Rich Text Editor Component
+# XHTML Validation and XSS Prevention in React Rich Text Editor
 
 The Syncfusion React Rich Text Editor provides features to ensure content complies with XHTML standards and is secure against cross-site scripting (XSS) attacks. The `enableXhtml` property enforces continuous XHTML validation, while `enableHtmlSanitizer` and the `beforeSanitizeHtml` event protect against XSS vulnerabilities. These features are essential for maintaining standards-compliant and secure content, particularly when `editorMode` is set to `HTML`.
 

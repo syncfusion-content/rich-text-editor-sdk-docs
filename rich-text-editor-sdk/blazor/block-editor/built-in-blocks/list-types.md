@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Lists in Blazor Block Editor Component | Syncfusion®
-description: Learn about list blocks including bullet lists, numbered lists, and checklists in the Blazor Block Editor component.
+title: List Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the Blazor Block Editor component, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 ---
 
-# Lists in Blazor Block Editor Component
+# List Blocks in Blazor Block Editor
 
 The Blazor Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property of the [BlockModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html) to [BulletList](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Bulletlist), [NumberedList](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Numberedlist), or [Checklist](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Checklist). Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 

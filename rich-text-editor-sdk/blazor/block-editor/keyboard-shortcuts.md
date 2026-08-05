@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Shortcuts in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn here all about Keyboard Shortcuts with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Keyboard Shortcuts in Blazor Block Editor | Syncfusion®
+description: Learn the keyboard shortcuts available in the Blazor Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug

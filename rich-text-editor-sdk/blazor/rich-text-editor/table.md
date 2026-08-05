@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Table in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all the features about Table in Blazor Rich Text Editor component and much more details.
+title: Tables in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to insert, format, and manage tables in the Blazor Rich Text Editor with row, column, and cell customization options.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug
 ---
 
-# Table in Blazor RichTextEditor Component
+# Tables in Blazor Rich Text Editor
 
 Rich Text Editor allows to insert table of content in edit panel and provide options to add, edit, and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the `RichTextEditorTableSettings`
 

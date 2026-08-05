@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Configuration in React Markdown Editor component | Syncfusion
-description: Learn how to configure and customize the toolbar in the Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Toolbar Configuration
+title: Toolbar Configuration in React Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the React Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar configuration in Markdown Editor Component
+# Toolbar Configuration in React Markdown Editor
 
 ## Default toolbar items
 

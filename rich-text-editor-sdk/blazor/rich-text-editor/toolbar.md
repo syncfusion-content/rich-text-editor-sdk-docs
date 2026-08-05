@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar Configuration in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Toolbar in Blazor Rich Text Editor component with examples and much more details.
+title: Toolbar Types in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the Blazor Rich Text Editor for different layout requirements.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug

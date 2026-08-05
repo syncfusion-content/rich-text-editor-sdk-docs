@@ -7,7 +7,7 @@ control: RichTextEditor
 documentation: ug
 ---
 
-# Controlling Editor Access in Blazor Rich Text Editor Component
+# Controlling Editor Access in Blazor Rich Text Editor
 
 ## Read-only mode
 
