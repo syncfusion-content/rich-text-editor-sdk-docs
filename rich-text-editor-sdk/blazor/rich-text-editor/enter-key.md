@@ -46,4 +46,4 @@ When configured, pressing <kbd>Shift</kbd> + <kbd>Enter</kbd> inserts the specif
 
 ![Blazor Rich Text Editor Shift+Enter key configuration](./images/blazor-richtexteditor-shiftenterkey.webp)
 
-N> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/enterkeyconfiguration)
+N> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/enterkeyconfiguration?theme=fluent2)

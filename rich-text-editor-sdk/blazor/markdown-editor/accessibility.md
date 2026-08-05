@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility in Blazor Markdown Editor Component
 
-The [Blazor Markdown Editor](https://blazor.syncfusion.com/demos/markdown-editor/overview?theme=fluent2) component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The [Blazor Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 
 The Blazor Markdown Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -74,7 +74,7 @@ The Blazor Markdown Editor element is assigned the role of `application`:
 
 The Blazor Markdown Editor component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor component. 
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support) documentation.
+For more details on keyboard navigation, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/blazor/markdown-editor/keyboard-support) documentation.
 
 ## Ensuring accessibility
 
@@ -97,7 +97,7 @@ In the following code block, customize the bold and italic, toolbar actions with
 {% endtabs %}
 
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Markdown Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=bootstrap5) example to knows how to render and configure the Markdown Editor tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Markdown Editor](https://blazor.syncfusion.com/demos/markdown-editor/overview?theme=fluent2) example to knows how to render and configure the Markdown Editor tools.
 
 ## See also
 

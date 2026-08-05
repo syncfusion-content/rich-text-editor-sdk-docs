@@ -73,11 +73,11 @@ The Blazor Rich Text Editor element is assigned the `application` role.
 
 The Blazor Rich Text Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support) documentation.
+For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support) documentation.
 
 ## Ensuring accessibility
 
-The Blazor Rich Text Editor component's accessibility is validated using the [axe-core](https://www.npmjs.com/package/axe-core/) software tool during automated testing.
+The Blazor Rich Text Editor component's accessibility is validated using the [axe-core](https://www.npmjs.com/package/axe-core) software tool during automated testing.
 
 The accessibility compliance of the Rich Text Editor component is demonstrated in the following sample. Open the [sample](https://blazor.syncfusion.com/accessibility/rich-text-editor) in a new window to evaluate the component with accessibility tools.
 
