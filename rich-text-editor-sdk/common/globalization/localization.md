@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Localization for React Rich Text Editor SDK | Syncfusion
-description: Learn how to localize and translate the Syncfusion React Rich Text Editor, Block Editor, and Markdown Editor into different languages using the L10n library.
+title: Localization for Rich Text Editor SDK | Syncfusion
+description: Learn how to localize and translate the Syncfusion Rich Text Editor, Block Editor, and Markdown Editor into different languages using the L10n library.
 platform: rich-text-editor-sdk
 control: Localization
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Localization for the React Rich Text Editor SDK
+# Localization for the Rich Text Editor SDK
 
-Localization (l10n) translates the editor's UI text — toolbar labels, tooltips, dialog messages, table-editor text, image / audio / video dialog text, and placeholders — into different languages. It applies to the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
+Localization (l10n) translates the editor's UI text — toolbar labels, tooltips, dialog messages, table-editor text, image / audio / video dialog text, and placeholders — into different languages. It applies to every component in the SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — across React, Angular, Vue, JavaScript, ASP.NET (Core / MVC), Blazor, and MAUI.
 
-> For the full string table per component, see each component's globalization page: [Rich Text Editor](../../react/rich-text-editor/globalization), [Block Editor](../../react/block-editor/globalization), [Markdown Editor](../../react/markdown-editor/globalization). This page covers how to **load and switch** translations.
+> For the full string table per component, see each component's globalization page. This page covers how to **load and switch** translations.
 
 ## Quick start
+
+Install the locale package and register translations for the culture you want, then switch globally:
 
 ```bash
 npm install @syncfusion/ej2-locale
@@ -22,13 +24,25 @@ npm install @syncfusion/ej2-locale
 
 ```ts
 import { L10n, setCulture } from '@syncfusion/ej2-base';
-import * as deLocale from '@syncfusion/ej2-locale/src/de.json';
 
-L10n.load({ 'de-DE': deLocale });
+L10n.load({
+  'de-DE': {
+    richtexteditor: {
+      bold: 'Fett',
+      italic: 'Kursiv',
+      underline: 'Unterstrichen',
+      createLink: 'Link einfügen',
+      image: 'Bild einfügen',
+      undo: 'Rückgängig',
+      redo: 'Wiederherstellen'
+    }
+  }
+});
+
 setCulture('de-DE');
 ```
 
-> Call `L10n.load()` **before** `setCulture()` and **before** any component renders.
+> Call `L10n.load()` **before** `setCulture()` and **before** any component initializes.
 
 ## How translations work
 
@@ -36,16 +50,7 @@ The translation key under each culture code (for example `'richtexteditor'`) mus
 
 ## Loading translations
 
-### From the locale package (recommended)
-
-```ts
-import { L10n } from '@syncfusion/ej2-base';
-import * as frLocale from '@syncfusion/ej2-locale/src/fr.json';
-
-L10n.load({ 'fr-FR': frLocale });
-```
-
-### Inline override
+### Inline override (works in every framework)
 
 ```ts
 import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -69,17 +74,37 @@ setCulture('fr-BE');
 
 ### From the ej2-locale GitHub repository
 
-Pre-built JSON files are available at [github.com/syncfusion/ej2-locale](https://github.com/syncfusion/ej2-locale). Download the file for your language and import it the same way as the npm package.
+Pre-built JSON files for every supported language are available at [github.com/syncfusion/ej2-locale](https://github.com/syncfusion/ej2-locale). Fetch the file for your language, then load it with `L10n.load()`:
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+import frLocale from './locales/fr.json';
+
+L10n.load({ 'fr-FR': frLocale });
+setCulture('fr-FR');
+```
+
+The path to the JSON file depends on your framework and bundler (npm, CDN, `wwwroot/locale`, and so on).
+
+### Framework-specific sources
+
+| Framework | Where to load translations from |
+| --- | --- |
+| JavaScript / TypeScript | CDN script, npm `ej2-locale` package, or local JSON |
+| React / Angular / Vue | `L10n.load()` at app startup; `ej2-locale` JSON |
+| ASP.NET Core / MVC | `wwwroot/Scripts/locale/` plus the `ej2-locale` script tag |
+| Blazor | Syncfusion `Locale` file system; the editor reads from there automatically |
+| MAUI | `ej2-locale` package or Syncfusion `Locale` files packaged with the app |
 
 ## Per-component scopes
 
-Each component has its own scope. Load only the scopes your app uses.
+The SDK exposes three locale scopes. Load only the scopes your app uses.
 
-| Component | Scope | String table |
+| Component | Scope | String table location |
 | --- | --- | --- |
-| Rich Text Editor | `richtexteditor` | [Globalization](../../react/rich-text-editor/globalization) |
-| Block Editor | `blockeditor` | [Block Editor → Globalization](../../react/block-editor/globalization) |
-| Markdown Editor | `markdowneditor` | [Markdown Editor → Globalization](../../react/markdown-editor/globalization) |
+| Rich Text Editor | `richtexteditor` | [Rich Text Editor globalization](../../react/rich-text-editor/globalization) (per-platform equivalents exist) |
+| Block Editor | `blockeditor` | [Block Editor globalization](../../react/block-editor/globalization) |
+| Markdown Editor | `markdowneditor` | [Markdown Editor globalization](../../react/markdown-editor/globalization) |
 
 ```ts
 L10n.load({
@@ -134,7 +159,7 @@ function switchToGerman() {
 }
 ```
 
-After switching, trigger a React state update (or a key-based remount) so the editor re-renders in the new locale.
+After switching, trigger a re-render of the editor in the new locale. In React, a state update is enough; in Angular / Vue, re-render the host component; in server-side frameworks, request a fresh page render with the new culture.
 
 ### Performance
 
@@ -163,9 +188,18 @@ After switching, trigger a React state update (or a key-based remount) so the ed
 - Confirm `setCulture()` uses the correct culture code.
 - Include all five required files: `numbers`, `ca-gregorian`, `timeZoneNames`, `currencies`, `numberingSystems`.
 
+### Server-side frameworks (ASP.NET / Blazor / MAUI)
+
+- Confirm the host application's `CultureInfo` matches the editor's culture.
+- Make sure the `ej2-locale` script (or `Locale` files) is referenced in the layout, `index.html`, or `App.razor`.
+- For Blazor Server / WASM, the locale JSON must be reachable from the static file path the editor reads.
+
 ## See also
 
 * [Internationalization](./internationalization)
 * [Globalization overview](./overview)
 * [Right-to-Left support](../right-to-left)
-* [React Rich Text Editor → Globalization](../../react/rich-text-editor/globalization)
+* [Rich Text Editor globalization](../../react/rich-text-editor/globalization)
+* [Block Editor globalization](../../react/block-editor/globalization)
+* [Markdown Editor globalization](../../react/markdown-editor/globalization)
+* [ej2-locale GitHub Repository](https://github.com/syncfusion/ej2-locale)

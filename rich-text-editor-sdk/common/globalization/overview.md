@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Globalization Overview for React Rich Text Editor SDK | Syncfusion
-description: Learn how the Syncfusion React Rich Text Editor SDK supports globalization, including internationalization (i18n) and localization (l10n) for the Rich Text Editor, Block Editor, and Markdown Editor.
+title: Globalization Overview for Rich Text Editor SDK | Syncfusion
+description: Learn how the Syncfusion Rich Text Editor SDK supports globalization, including internationalization (i18n) and localization (l10n) for the Rich Text Editor, Block Editor, and Markdown Editor.
 platform: rich-text-editor-sdk
 control: Globalization Overview
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization Overview for the React Rich Text Editor SDK
+# Globalization Overview for the Rich Text Editor SDK
 
-Globalization lets your editor adapt to different cultures, languages, and regional formats. It has two parts:
+Globalization lets the Rich Text Editor SDK adapt to different cultures, languages, and regional formats. It has two parts:
 
 - **Internationalization (i18n)** — formats dates, numbers, and currencies using the rules of a chosen culture.
 - **Localization (l10n)** — translates the editor's user-facing text (toolbar labels, dialogs, tooltips) into a chosen language.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — supports both out of the box.
+The Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — supports both out of the box across every framework in the SDK.
 
 ## Quick start
 
-By default, every Syncfusion<sup style="font-size:70%">&reg;</sup> component uses the **en-US** culture and **USD** currency. To switch:
+By default, every Syncfusion<sup style="font-size:70%">&reg;</sup> component uses the **en-US** culture and **USD** currency. Install the CLDR data package and switch globally:
 
 ```bash
 npm install @syncfusion/ej2-cldr-data
@@ -56,10 +56,10 @@ setCulture('de-DE');
 ## Key points to remember
 
 - **No setup required to render the editor.** Out of the box it works in `en-US`.
-- **Set culture once at app startup.** `setCulture()`, `setCurrencyCode()`, and `L10n.load()` are global — call them before components mount.
-- **Translation keys differ per component.** Rich Text Editor uses the `richtexteditor` scope; Block Editor uses `blockeditor`; Markdown Editor uses `markdowneditor`.
+- **Set culture once at app startup.** `setCulture()`, `setCurrencyCode()`, and `L10n.load()` are global — call them before components initialize.
+- **The SDK exposes three locale scopes.** Rich Text Editor uses the `richtexteditor` scope; Block Editor uses `blockeditor`; Markdown Editor uses `markdowneditor`.
 - **RTL needs separate setup.** For Arabic, Hebrew, and other RTL cultures, enable RTL support — globalization only handles data, not layout direction.
-- **Runtime switching.** Call `L10n.load()` with the new translations, update the culture, then trigger a React state update to re-render the editor in the new locale.
+- **Runtime switching works the same in every framework.** Call `L10n.load()` with the new translations, update the culture, then trigger a re-render of the editor in the new locale.
 - **Load only what you need.** For best performance, load only the CLDR data and translations for the cultures your users actually use.
 
 ## Learn more

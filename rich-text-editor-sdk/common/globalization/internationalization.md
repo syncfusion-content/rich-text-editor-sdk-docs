@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Internationalization for React Rich Text Editor SDK | Syncfusion
-description: Learn how to implement internationalization in the Syncfusion React Rich Text Editor SDK using CLDR data to format and parse dates, numbers, and currencies across cultures.
+title: Internationalization for Rich Text Editor SDK | Syncfusion
+description: Learn how to implement internationalization in the Syncfusion Rich Text Editor SDK using CLDR data to format and parse dates, numbers, and currencies across cultures.
 platform: rich-text-editor-sdk
 control: Internationalization
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Internationalization for the React Rich Text Editor SDK
+# Internationalization for the Rich Text Editor SDK
 
-Internationalization (i18n) formats and parses dates, numbers, and currencies per culture. The Syncfusion<sup style="font-size:70%">&reg;</sup> i18n library uses official [Unicode CLDR](https://cldr.unicode.org/) JSON data. It applies to the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
+Internationalization (i18n) formats and parses dates, numbers, and currencies per culture. The Syncfusion<sup style="font-size:70%">&reg;</sup> i18n library uses official [Unicode CLDR](https://cldr.unicode.org/) JSON data and applies to every component in the SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — across React, Angular, Vue, JavaScript, ASP.NET (Core / MVC), Blazor, and MAUI.
 
 **Defaults:** culture `en-US`, currency `USD`. Override globally with `setCulture()` and `setCurrencyCode()`.
 
-> The editor delegates date / number / currency formatting to your app's culture. Setting the global culture also ensures helper widgets in dialogs (such as the date picker) follow the right format.
+> The editor delegates date / number / currency formatting to your app's culture. Setting the global culture also ensures helper widgets inside dialogs (such as the date picker) follow the right format.
 
 ## Quick start
 
@@ -39,7 +39,7 @@ setCurrencyCode('EUR');
 
 ## Required files and order of operations
 
-Call `loadCldr()` **before** `setCulture()` and **before** components mount. Replace the `de` segment in the paths with your culture code (`fr`, `ar`, `ja`, and so on). The five required files are `ca-gregorian`, `timeZoneNames`, `numbers`, `currencies`, and `numberingSystems`. For one-shot loading, use the combined `all.json` for the first four files; `numberingSystems` is still separate.
+Call `loadCldr()` **before** `setCulture()` and **before** any component initializes. Replace the `de` segment in the paths with your culture code (`fr`, `ar`, `ja`, and so on). The five required files are `ca-gregorian`, `timeZoneNames`, `numbers`, `currencies`, and `numberingSystems`. For one-shot loading, use the combined `all.json` for the first four files; `numberingSystems` is still separate.
 
 ## CLDR file paths
 
@@ -127,6 +127,7 @@ parse('04/08/2026');             // Date object
 - `getNumberFormat` and `getDateFormat` return reusable functions — create them once and reuse for performance.
 - For locales that use non-Latin digits (Arabic, Thai), ensure `numberingSystems` is loaded.
 - The CLDR data package replaces the third-party `cldr-data` package to avoid known vulnerabilities.
+- For .NET-based SDKs (ASP.NET Core / MVC / Blazor / MAUI), the editor reads culture from the host application's `CultureInfo` and uses Syncfusion's `Locale` file system or `ej2-locale` package accordingly.
 
 ## See also
 
