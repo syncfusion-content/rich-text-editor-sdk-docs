@@ -91,10 +91,10 @@ These modules can be injected into the `services` prop of the `<Inject>` compone
 
 {% tabs %}
 {% highlight ts hl_lines="7" tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js hl_lines="6" tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,10 +106,10 @@ Now, you can start adding the React Rich Text Editor component in the applicatio
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 

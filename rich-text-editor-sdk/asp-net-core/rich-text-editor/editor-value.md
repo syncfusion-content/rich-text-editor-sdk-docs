@@ -508,5 +508,5 @@ The Rich Text Editor provides the `showSourceCode` method, which allows you to t
 ## See also
 
 * [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
-* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](./third-party-integration#codemirror-integration)

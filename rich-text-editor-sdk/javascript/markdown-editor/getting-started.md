@@ -91,10 +91,10 @@ Markdown Editor can be initialized on a div element as shown below:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

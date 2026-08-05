@@ -102,7 +102,7 @@ These modules can be injected as `services` through the component's `providers` 
 
 {% tabs %}
 {% highlight ts hl_lines="10" tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started/basic-editor/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started/basic-editor/src/app.component.ts %}
 {% endhighlight %}
 {% endtabs %}
 
