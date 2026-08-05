@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard support in Angular Markdown Editor component | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in Angular Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts supported in the Angular Markdown Editor for formatting text, inserting content, navigating the toolbar, and performing editing actions.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Keyboard Support
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard support in Angular Markdown Editor Component
+# Keyboard Shortcuts in Angular Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) as `Markdown`.
 

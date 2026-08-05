@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize placeholder style in Angular Rich text editor component | Syncfusion
-description: Learn here all about Customize placeholder style in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Customize Placeholder Style in Angular Rich Text Editor | Syncfusion
+description: Learn how to customize the placeholder text style in the Angular Rich Text Editor using CSS classes to modify its appearance.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Customize placeholder style 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customize placeholder style in Angular Rich text editor component
+# Customize Placeholder Text Style in Angular Rich Text Editor
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 

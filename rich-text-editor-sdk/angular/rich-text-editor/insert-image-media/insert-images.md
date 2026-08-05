@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert, manage, and customize images in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Images in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert images in the Angular Rich Text Editor using URLs, local uploads, File Manager integration, resizing, captions, alignment, wrapping, and server-side storage.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Images
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Images in the Angular Rich Text Editor Component
+# Insert Images in Angular Rich Text Editor
 
 The Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel)
 

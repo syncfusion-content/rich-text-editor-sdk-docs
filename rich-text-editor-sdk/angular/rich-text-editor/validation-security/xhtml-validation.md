@@ -1,14 +1,14 @@
 ---
 layout: post
-title: XHTML Validation in Angular Rich Text Editor component | Syncfusion
-description: Learn how to enable XHTML validation and XSS prevention in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: XHTML Validation and XSS Prevention in Angular Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the Angular Rich Text Editor using built-in sanitization and custom filtering.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: XHTML Validation
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# XHTML Validation in Angular Rich Text Editor Component
+# XHTML Validation and XSS Prevention in Angular Rich Text Editor
 
 The Syncfusion Angular Rich Text Editor provides features to ensure content complies with XHTML standards and is secure against cross-site scripting (XSS) attacks. The `enableXhtml` property enforces continuous XHTML validation, while `enableHtmlSanitizer` and the `beforeSanitizeHtml` event protect against XSS vulnerabilities. These features are essential for maintaining standards-compliant and secure content, particularly when `editorMode` is set to `HTML`.
 
