@@ -163,5 +163,5 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 ## See also
 
-* [Globalization](./globalization/)
-* [Accessibility](./accessibility/)
+* [Globalization](./globalization)
+* [Accessibility](./accessibility)

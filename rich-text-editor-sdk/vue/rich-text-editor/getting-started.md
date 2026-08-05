@@ -98,7 +98,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Grid Component](./images/cli-rte.png)
+![Rich Text Editor Component](images/cli-rte.png)
 
 {% endtabcontent %}
 

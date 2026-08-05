@@ -99,7 +99,7 @@ ng serve
 
 The output will appear as follows:
 
-![Rich Text Component](images/cli-rte.png)
+![Rich Text Editor Component](images/cli-rte.png)
 
 {% endtabcontent %}
 
