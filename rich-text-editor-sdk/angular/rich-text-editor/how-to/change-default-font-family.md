@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change default font family in Angular Rich text editor component | Syncfusion
-description: Learn here all about Change default font family in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Set Default Font Family in Angular Rich Text Editor | Syncfusion
+description: Learn how to set the default font family in the Angular Rich Text Editor using custom fonts and CSS customization for editor content.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Change default font family 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Change the Default Font Family in the Angular Rich Text Editor Component
+# Set Default Font Family in Angular Rich Text Editor
 
 By using the [default](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/fontfamilymodel#default) property, you can change the default font family of the Rich Text Editor. To apply a specific font family to the editor content when it loads, set the font family in the style section by using the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#cssclass) property.
 
