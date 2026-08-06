@@ -152,7 +152,7 @@ In the following sample, we configured the following properties:
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/mention-integration-cs2" %}
 
-> [View Sample](https://ej2.syncfusion.com/react/demos#/bootstrap5/rich-text-editor/mention-integration)
+> [View Sample](https://ej2.syncfusion.com/react/demos/#/bootstrap5/rich-text-editor/mention-integration)
 
 ## See also
 
