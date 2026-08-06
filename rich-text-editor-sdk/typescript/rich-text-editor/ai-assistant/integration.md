@@ -1,15 +1,15 @@
 ---
 layout: post
 title: AI Assistant in TypeScript Rich Text Editor | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 TypeScript Rich Text Editor control.
+description: Learn how to enable and configure the TypeScript Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
 platform: rich-text-editor-sdk
-control: Integrating the AI Assistant
+control: Rich Text Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in TypeScript Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
@@ -109,4 +109,4 @@ editor.addAIPromptResponse(data, true);
 A working demonstration of the AI Assistant, showcasing real-time chunk streaming, is available in the following resources:
 
 * **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
-* **[Live Demo](https://ej2.syncfusion.com/demos/#/tailwind3/rich-text-editor/ai-assistant.html):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/demos#/tailwind3/rich-text-editor/ai-assistant.html):** Implementation using the `gpt-4o-mini` model

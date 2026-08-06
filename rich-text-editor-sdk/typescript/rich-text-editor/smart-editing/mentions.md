@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Mentions in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Mentions in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Mentions in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to add user mentions in the TypeScript Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Mentions
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Mentions in TypeScript Rich Text Editor control
+# Mentions in TypeScript Rich Text Editor
 
 By integrating the [Mention](https://ej2.syncfusion.com/documentation/mention/getting-started) control with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
 
@@ -156,7 +156,7 @@ In the following sample, we configured the following properties:
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/mention-integration-cs1" %}
 {% endif %}
 
-> [View Sample](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/mention-integration.html)
+> [View Sample](https://ej2.syncfusion.com/demos#/bootstrap5/rich-text-editor/mention-integration.html)
 
 ## See also
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Keyboard support in TypeScript Rich text editor | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Support in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the TypeScript Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Keyboard support 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Keyboard support in TypeScript Rich text editor control
+# Keyboard Support in TypeScript Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

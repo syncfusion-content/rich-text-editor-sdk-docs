@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Resizable Editor in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Resizable Editor in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Resizable Editor in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to resize the TypeScript Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Resizable Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Resizable Editor in the Angular Rich Text Editor control
+# Resizable Editor in TypeScript Rich Text Editor
 
-The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
+The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 
 > To use the Resizable feature, inject the Resize module to the Rich Text Editor using the `RichTextEditor.Inject(Resize)` method.
 

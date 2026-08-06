@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cross-Site script in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Cross-Site scripting with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: XSS Prevention in TypeScript Block Editor | Syncfusion
+description: Learn how to enable XSS prevention in the TypeScript Block Editor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: Block Editor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Cross-Site scripting in TypeScript Block Editor control
+# XSS Prevention in TypeScript Block Editor
 
 The Block Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Controlling Editor Access in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Controlling Editor Access in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to use read-only and disabled modes in the TypeScript Rich Text Editor to control editing, restrict user interaction, and display content safely.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Controlling Editor Access
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Controlling Editor Access in the TypeScript Rich Text Editor control
+# Read-Only Mode in TypeScript Rich Text Editor
 
 ## Read-only mode
 
 The Rich Text Editor control offers a read-only mode that prevents you from editing the content while still allowing them to view it. This feature is particularly useful when you want to display formatted content without permitting modifications.
 
-To enable the read-only mode, set the [readonly](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#readonly) property to `true`. 
+To enable the read-only mode, set the [readonly](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#readonly) property to `true`. 
 
 This will allow you to view the content without making any modifications.
 
@@ -54,7 +54,7 @@ The Rich Text Editor component offers a feature to disable the editor, preventin
 
 ### How to disable the editor
 
-To disable the editor, set the [enabled](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#enabled) property to `false`.
+To disable the editor, set the [enabled](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enabled) property to `false`.
 
 When disabled, the editor becomes non-interactive, ensuring that users cannot edit or modify the content.
 

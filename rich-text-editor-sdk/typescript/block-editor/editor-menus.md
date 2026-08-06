@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editor Menus in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Editor Menus with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Editor Menus in TypeScript Block Editor | Syncfusion
+description: Learn how to use the editor menus in the TypeScript Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in TypeScript Block Editor control
+# Editor Menus in TypeScript Block Editor
 
 The Block Editor control includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 

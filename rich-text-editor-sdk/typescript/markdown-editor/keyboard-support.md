@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Keyboard support in TypeScript Markdown Editor control | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion TypeScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in TypeScript Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts supported in the TypeScript Markdown Editor for formatting, inserting content, toolbar navigation, and editing.
 platform: rich-text-editor-sdk
-control: Keyboard support
+control: Markdown Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard support in TypeScript Markdown Editor Control
+# Keyboard Shortcuts in TypeScript Markdown Editor
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/#editormode) as `Markdown`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor#editormode) as `Markdown`.
 
 ## Toolbar
 

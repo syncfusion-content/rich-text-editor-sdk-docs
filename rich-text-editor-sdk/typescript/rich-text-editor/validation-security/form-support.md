@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Form support in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Form support in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Form Support in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to integrate the TypeScript Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Form support 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Form support in TypeScript Rich text editor control
+# Form Support in TypeScript Rich Text Editor
 
 The following sample demonstrates how to get the Rich Text Editor value in button click.
 
@@ -65,4 +65,4 @@ Upon submitting the form, the `getValue` method will be triggered. Through the `
 
 ## See also
 
-* [How to integrate the third party library](../third-party-integration/)
+* [How to integrate the third party library](../third-party-integration)

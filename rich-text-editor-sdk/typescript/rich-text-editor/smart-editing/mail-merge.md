@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Mail Merge in TypeScript Rich Text Editor Control | Syncfusion
-description: Learn all about Mail Merge in the Syncfusion TypeScript Rich Text Editor control, part of Essential JS 2.
-platform: rich-text-editor-sdk
-control: Mail Merge 
+title: Mail Merge in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to create personalized documents in the TypeScript Rich Text Editor using dynamic fields, placeholders, and automated content generation.
+platform: rich-text-editor-
+control: Rich Text Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Mail merge in TypeScript Rich Text Editor Control
+# Mail Merge in TypeScript Rich Text Editor
 
 The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 

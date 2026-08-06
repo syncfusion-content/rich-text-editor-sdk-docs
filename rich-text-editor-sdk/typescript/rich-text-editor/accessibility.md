@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Accessibility in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Accessibility in TypeScript Rich Text Editor | Syncfusion
+description: Learn about accessibility features in the TypeScript Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Accessibility 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Accessibility in TypeScript Rich text editor control
+# Accessibility in TypeScript Rich Text Editor
 
 The Rich Text Editor control is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
@@ -90,7 +90,7 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 ## Keyboard navigation
 
-The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
+The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
 
 For more details on keyboard navigation, refer to the [Keyboard support](./keyboard-support) documentation.
 

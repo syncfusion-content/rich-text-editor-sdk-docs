@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Toolbar Configuration in TypeScript Markdown Editor control | Syncfusion
-description: Learn here all about Toolbar Configuration in Syncfusion TypeScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Configuration in TypeScript Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the TypeScript Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 platform: rich-text-editor-sdk
-control: Toolbar Configuration 
+control: Markdown Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar configuration in Markdown Editor Control
+# Toolbar Configuration in TypeScript Markdown Editor
 
 ## Default toolbar items
 
@@ -21,7 +21,7 @@ These default items cover Essential text editing features, such as text formatti
 
 ## Type of toolbar 
 
-The Syncfusion Markdown Editor allows you to configure different type of toolbars using the [type](../api/rich-text-editor/toolbarType/#toolbartype) field in the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property.
+The Syncfusion Markdown Editor allows you to configure different type of toolbars using the [type](../api/rich-text-editor/toolbarType#toolbartype) field in the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property.
 
 The available toolbar types are:
 
@@ -31,7 +31,7 @@ The available toolbar types are:
 
 ### Expanding the Toolbar
 
-The default toolbar mode is `Expand`, which is configured using [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) with type: `Expand`.
+The default toolbar mode is `Expand`, which is configured using [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) with type: `Expand`.
 
 In this mode, any overflowing toolbar items are hidden in the next row. Users can reveal them by clicking the expand arrow.
 
@@ -64,7 +64,7 @@ In this mode, any overflowing toolbar items are hidden in the next row. Users ca
 
 ### Configuring a Multi-row Toolbar
 
-By setting type: `MultiRow` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings), the toolbar items are arranged across multiple rows. This ensures that all configured toolbar items are always visible.
+By setting type: `MultiRow` in [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings), the toolbar items are arranged across multiple rows. This ensures that all configured toolbar items are always visible.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -95,7 +95,7 @@ By setting type: `MultiRow` in [toolbarSettings](../api/rich-text-editor/toolbar
 
 ### Implementing a Scrollable Toolbar
 
-Use `type: 'Scrollable'` in [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) to create a single-line toolbar with horizontal scrolling capability for overflow items.
+Use `type: 'Scrollable'` in [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) to create a single-line toolbar with horizontal scrolling capability for overflow items.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -128,9 +128,9 @@ Use `type: 'Scrollable'` in [toolbarSettings](../api/rich-text-editor/toolbarSet
 
 By default, the toolbar remains fixed at the top of the Markdown editor when scrolling.
 
-You can customize its position by setting [floatingToolbarOffset](../api/rich-text-editor/#floatingtoolbaroffset) to adjust the offset from the top of the document.
+You can customize its position by setting [floatingToolbarOffset](../api/rich-text-editor#floatingtoolbaroffset) to adjust the offset from the top of the document.
 
-Additionally, you can enable or disable the floating toolbar using the [enableFloating](../api/rich-text-editor/toolbarSettings/#enablefloating) property.
+Additionally, you can enable or disable the floating toolbar using the [enableFloating](../api/rich-text-editor/toolbarSettings#enablefloating) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -161,11 +161,11 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 
 ## Custom Toolbar Items
 
-The Markdown Editor allows you to add custom commands to the toolbar using the [toolbarSettings](../api/rich-text-editor/toolbarSettings/#toolbarsettings) property. These custom commands can be displayed as plain text, icons, or HTML templates. You can define their order and grouping, ensuring a structured and intuitive toolbar layout. Additionally, actions can be bound to these commands by retrieving their instances and handling events accordingly.
+The Markdown Editor allows you to add custom commands to the toolbar using the [toolbarSettings](../api/rich-text-editor/toolbarSettings#toolbarsettings) property. These custom commands can be displayed as plain text, icons, or HTML templates. You can define their order and grouping, ensuring a structured and intuitive toolbar layout. Additionally, actions can be bound to these commands by retrieving their instances and handling events accordingly.
 
 In this example, a custom toolbar item (Ω) is added to insert special characters into the editor. When users click the Ω button, a list of special characters appears, allowing them to select and insert a character into the content. This feature enhances the Markdown Editor by providing quick access to special symbols without manually entering character codes.
 
-The following code snippet demonstrates how to configure a custom toolbar item with a tooltip. The item is added to the [items](../api/rich-text-editor/toolbarSettings/#items) field of the `toolbarSettings` property, ensuring seamless integration within the toolbar.
+The following code snippet demonstrates how to configure a custom toolbar item with a tooltip. The item is added to the [items](../api/rich-text-editor/toolbarSettings#items) field of the `toolbarSettings` property, ensuring seamless integration within the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Getting started with TypeScript Rich Text Editor | Syncfusion
-description: Checkout and learn how to create and run a Rich Text Editor using a Vite-based TypeScript project and Syncfusion Essential JS 2.
+title: Getting Started with TypeScript Rich Text Editor | Syncfusion
+description: Learn how to get started with the TypeScript Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
-control: Getting started 
+control: Rich Text Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Getting started in TypeScript Rich Text Editor control
+# Getting started in TypeScript Rich Text Editor
 
 The TypeScript Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section explains the steps to create a simple Rich Text Editor and demonstrate the basic usage of the Rich Text Editor control using a Vite-based TypeScript project scaffolded with the latest Vite version.
 
 ## Prerequisites
 
-This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vite.dev/).
+This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vite.dev).
 
 ## Create a TypeScript application
 
@@ -159,6 +159,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Rich Text Editor
 
 **Live examples:**
 
-* [Insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/reactive-form)
+* [Insert Emoticons](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/blog-posting)
+* [TypeScriptive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/TypeScriptive-form)

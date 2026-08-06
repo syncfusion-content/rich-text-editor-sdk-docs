@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Module in TypeScript Rich Text Editor control | Syncfusion
-description: Learn here all about Module in Syncfusion TypeScript Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Feature Modules in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to inject feature modules in the TypeScript Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Module 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Module in TypeScript Rich Text Editor control
+# Feature Modules in TypeScript Rich Text Editor
 
 The Rich Text Editor component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
 

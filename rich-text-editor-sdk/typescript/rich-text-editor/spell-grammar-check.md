@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Spell & Grammar Check in TypeScript Richtexteditor | Syncfusion
-description: Learn here all about Spell & Grammar Check in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Spell and Grammar Check in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to integrate spell and grammar checking in the TypeScript Rich Text Editor using WProofreader to improve content accuracy and writing quality.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Spell & Grammar Check
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrate WProofreader into the TypeScript Rich Text Editor control
+# Spell and Grammar Check in TypeScript Rich Text Editor
 
 WProofreader is a powerful tool that enhances content quality by detecting and correcting spelling and grammar errors in real-time as users type. This functionality significantly improves the professionalism of your content and ensures error-free text.
 

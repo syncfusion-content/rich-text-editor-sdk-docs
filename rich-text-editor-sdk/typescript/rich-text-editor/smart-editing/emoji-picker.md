@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Emoji Picker in TypeScript RichTextEditor | Syncfusion
-description: Learn about Emoji Picker in Syncfusion TypeScript RichTextEditor control of Syncfusion Essential JS 2 and more.
-platform: rich-text-editor-sdk
-control: Emoji Picker
+title: Emoji Picker in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to add emojis in the TypeScript Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
+platform: rich-text-editor-
+control: Rich Text Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Emoji Picker in TypeScript Rich Text Editor control
+# Emoji Picker in TypeScript Rich Text Editor
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 

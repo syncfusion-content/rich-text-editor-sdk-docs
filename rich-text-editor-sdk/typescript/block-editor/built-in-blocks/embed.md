@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Embed Blocks in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Embed Blocks with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Image Blocks in TypeScript Block Editor | Syncfusion
+description: Learn how to add and configure image blocks in the TypeScript Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: Block Editor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Embed Blocks in TypeScript Block Editor control
+# Image Blocks in TypeScript Block Editor
 
 The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 

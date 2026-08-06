@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Text Formatting in TypeScript Rich Text Editor | Syncfusion
-description: Learn here all about Text Formatting and Structure in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+description: Learn how to format text in the TypeScript Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Text Formatting and Structure
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/

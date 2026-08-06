@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Getting started with TypeScript  Markdown Editor | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with TypeScript Markdown Editor | Syncfusion
+description: Learn how to get started with TypeScript Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 platform: rich-text-editor-sdk
-control: Getting started 
+control: Markdown Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting started in TypeScript Markdown Editor control
+# Getting Started with TypeScript Markdown Editor
 
 The Syncfusion TypeScript Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section explains the steps to create a simple Markdown Editor and demonstrates the basic usage of the Markdown Editor control using a Vite-based TypeScript project scaffolded with Vite latest Vite version.
 
 ## Prerequisites
 
-This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
+This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev).
 
 ## Create a TypeScript application.
 
@@ -160,6 +160,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Markdown Editor 
 
 **Live examples:**
 
-* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/insert-emoticons)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/blog-posting)
+* [TypeScriptive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/TypeScriptive-form)

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editor inside a Tab in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Rich Text Editor inside a Tab in TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Render Rich Text Editor in TypeScript Tab | Syncfusion
+description: Learn how to render multiple TypeScript Rich Text Editor instances inside a Tab component with toolbar configuration and content editing support.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Tab control 
+control: Rich Text Editor 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrating Rich Text Editor in Tab Control
+# Render Rich Text Editor in TypeScript Tab
 
 Integrating a Rich Text Editor within Tab control provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
 

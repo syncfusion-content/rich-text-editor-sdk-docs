@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Execute command in TypeScript Rich text editor | Syncfusion
-description: Learn here all about Execute command in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Execute Command in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the TypeScript Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Execute command 
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Execute command in TypeScript Rich text editor control
+# Execute Command in TypeScript Rich Text Editor
 
 In Rich Text Editor, executeCommand used to perform command for the modification of content in editable area.
 
