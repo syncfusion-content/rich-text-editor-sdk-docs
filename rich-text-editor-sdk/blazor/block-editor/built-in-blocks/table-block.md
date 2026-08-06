@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Table Blocks in Blazor Block Editor Component | Syncfusion®
-description: Learn about table blocks and structured data display in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Table Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure table blocks in the Blazor Block Editor with rows, columns, headers, cell content, resizing, selection, and deletion.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 ---
 
-# Table Blocks in Blazor Block Editor Component
+# Table Blocks in Blazor Block Editor
 
 The Block Editor allows you to render structured data in rows and columns by setting the block's [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 

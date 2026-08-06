@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo redo in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Undo redo with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Undo and redo in Blazor Block Editor | Syncfusion®
+description: Learn how to configure undo and redo in Blazor Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blocks in Blazor Block Editor Component | Syncfusion®
-description: Learn about blocks and content organization in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Block Types and Configuration in Blazor Block Editor | Syncfusion
+description: Learn how to use the built-in block types in Blazor Block Editor, including paragraphs, headings, lists, tables, images, code blocks, and block customization.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 ---
 
-# Blocks in Blazor Block Editor Component
+# Built-in Block Types and Configuration in Blazor Block Editor
 
 The Block Editor uses [Blocks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blocks) as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [Blocks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blocks) property.
 

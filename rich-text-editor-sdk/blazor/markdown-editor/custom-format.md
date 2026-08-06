@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customize Markdown Syntax in Blazor Markdown Editor | Syncfusion®
-description: Learn how to customize Markdown syntax in the Blazor Markdown Editor component, including formatting options, toolbar customization, and more.
+description: Learn how to customize Markdown syntax in the Blazor Markdown Editor by overriding default list, bold, and italic symbols.
 platform: rich-text-editor-sdk
 control: MarkdownEditor
 documentation: ug
 ---
 
-# Customizing Markdown Syntax in Blazor Markdown Editor Component
+# Custom Markdown Syntax in Blazor Markdown Editor
 
 The Rich Text Editor allows you to customize the Markdown syntax by overriding its default behavior. You can configure custom Markdown syntax using the following properties:
 - [RichTextEditorMarkdownOptions.ListSyntax](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMarkdownOptions.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMarkdownOptions_ListSyntax)

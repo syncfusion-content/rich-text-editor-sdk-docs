@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Markdown Editor in WebAssembly App | Syncfusion®
-description: Checkout and learn about getting started with the Markdown Editor in Blazor WebAssembly Application.
+description: Learn how to get started with Blazor Markdown Editor in Blazor WebAssembly App by installing packages and running your first app.
 platform: rich-text-editor-sdk
 component: MarkdownEditor
 documentation: ug
