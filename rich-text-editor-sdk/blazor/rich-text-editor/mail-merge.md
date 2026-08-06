@@ -3,7 +3,7 @@ layout: post
 title: Mail Merge in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to create personalized documents in the Blazor Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

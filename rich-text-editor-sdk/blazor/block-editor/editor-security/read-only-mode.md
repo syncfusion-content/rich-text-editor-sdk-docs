@@ -3,7 +3,7 @@ layout: post
 title: Read-Only Mode in Blazor Block Editor | Syncfusion®
 description: Learn how to enable read-only mode in the Blazor Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

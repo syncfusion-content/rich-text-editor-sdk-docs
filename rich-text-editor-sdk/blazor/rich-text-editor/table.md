@@ -3,7 +3,7 @@ layout: post
 title: Tables in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to insert, format, and manage tables in the Blazor Rich Text Editor with row, column, and cell customization options.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

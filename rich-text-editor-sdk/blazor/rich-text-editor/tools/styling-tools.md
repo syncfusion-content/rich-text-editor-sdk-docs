@@ -3,7 +3,7 @@ layout: post
 title: Font Styling in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the Blazor Rich Text Editor.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

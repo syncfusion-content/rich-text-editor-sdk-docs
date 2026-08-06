@@ -3,7 +3,7 @@ layout: post
 title: Paste Cleanup in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to clean and manage pasted content in the Blazor Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

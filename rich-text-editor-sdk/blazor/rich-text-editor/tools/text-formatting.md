@@ -3,7 +3,7 @@ layout: post
 title: Text Formatting in Blazor Rich Text Editor | Syncfusion®
 description:  Learn how to format text in the Blazor Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

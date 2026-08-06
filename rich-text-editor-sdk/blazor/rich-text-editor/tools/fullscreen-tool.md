@@ -3,7 +3,7 @@ layout: post
 title: Fullscreen Mode in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to enable fullscreen mode in the Blazor Rich Text Editor for distraction-free editing and an expanded content editing workspace.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

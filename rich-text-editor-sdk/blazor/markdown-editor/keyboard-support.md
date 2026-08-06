@@ -3,7 +3,7 @@ layout: post
 title: Keyboard Shortcuts in Blazor Markdown Editor | Syncfusion®
 description: Learn the keyboard shortcuts supported in the Blazor Markdown Editor for formatting text, inserting content, navigating the toolbar, and editing.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

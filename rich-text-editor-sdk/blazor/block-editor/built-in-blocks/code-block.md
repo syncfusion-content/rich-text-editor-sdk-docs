@@ -3,7 +3,7 @@ layout: post
 title: Code Blocks in Blazor Block Editor | Syncfusion®
 description: Learn how to add and configure code blocks in the Blazor Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

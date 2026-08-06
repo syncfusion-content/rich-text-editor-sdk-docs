@@ -3,7 +3,7 @@ layout: post
 title: Globalization in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to localize the React Blazor Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

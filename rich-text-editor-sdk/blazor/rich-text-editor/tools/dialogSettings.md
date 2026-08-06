@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Render Rich Text Editor in Blazor Dialog | Syncfusion®
-description: Learn how to render the Blazor Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
+description: Learn how to render the Blazor Rich Text Editor inside a Dialog and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

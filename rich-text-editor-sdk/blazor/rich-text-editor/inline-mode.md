@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Inline Editing in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to enable inline editing in the Blazor Rich Text Editor to edit content directly in place with an inline toolbar for quick 
+description: Learn how to enable inline editing in the Blazor Rich Text Editor to edit content directly in place with an inline toolbar for quick formatting.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

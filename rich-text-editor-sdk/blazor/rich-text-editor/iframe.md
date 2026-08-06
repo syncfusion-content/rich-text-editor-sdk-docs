@@ -3,7 +3,7 @@ layout: post
 title: IFrame Editing Mode in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to enable IFrame editing mode in the Blazor Rich Text Editor to isolate styles and scripts within the editor surface.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

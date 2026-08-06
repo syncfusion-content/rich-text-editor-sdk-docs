@@ -3,7 +3,7 @@ layout: post
 title: Insert Tables in Blazor Markdown Editor | Syncfusion®
 description: Learn how to insert and customize tables in the Blazor Markdown Editor by configuring rows, columns, and Markdown table content.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

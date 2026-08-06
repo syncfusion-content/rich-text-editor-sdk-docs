@@ -3,7 +3,7 @@ layout: post
 title: Block Types and Configuration in Blazor Block Editor | Syncfusion
 description: Learn how to use the built-in block types in Blazor Block Editor, including paragraphs, headings, lists, tables, images, code blocks, and block customization.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

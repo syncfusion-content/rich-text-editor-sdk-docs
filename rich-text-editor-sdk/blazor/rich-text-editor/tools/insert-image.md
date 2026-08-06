@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Insert images in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to insert images in the Blazor Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
+description: Learn how to insert and manage images in the Blazor Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, and storage.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

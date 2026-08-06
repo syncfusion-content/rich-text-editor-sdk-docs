@@ -3,7 +3,7 @@ layout: post
 title: Editor Menus in Blazor Block Editor | Syncfusion®
 description: Learn how to use the editor menus in the Blazor Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

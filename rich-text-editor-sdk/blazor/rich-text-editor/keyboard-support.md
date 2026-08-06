@@ -3,7 +3,7 @@ layout: post
 title: Keyboard Support in Blazor Rich Text Editor | Syncfusion
 description: Learn how to use keyboard shortcuts in the Blazor Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

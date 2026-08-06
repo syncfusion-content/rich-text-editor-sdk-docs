@@ -3,11 +3,11 @@ layout: post
 title: Table manipulation in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to create, edit, resize, merge, split, style, and manage tables in the Blazor Rich Text Editor with quick toolbar support.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Table Manipulation in Rich Text Editor
+# Table Manipulation in Blazor Rich Text Editor
 
 The Rich Text Editor allows you to insert the table of content in the edit panel and provide options to add, edit, and remove the table as well as to perform other table-related actions. For inserting the table into the Rich Text Editor, the following list of options has been provided in the [RichTextEditorTableSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html).
 

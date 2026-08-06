@@ -3,11 +3,11 @@ layout: post
 title: Toolbar Types in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the Blazor Rich Text Editor for different layout requirements.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Toolbar types in Blazor Rich Text Editor
+# Toolbar Types in Blazor Rich Text Editor
 
 The Rich Text Editor toolbar provides a collection of tools such as Bold, Italic, and text alignment buttons used to format the content.
 

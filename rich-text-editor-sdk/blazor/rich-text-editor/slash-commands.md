@@ -3,7 +3,7 @@ layout: post
 title: Slash Commands in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to use slash commands in the Blazor Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

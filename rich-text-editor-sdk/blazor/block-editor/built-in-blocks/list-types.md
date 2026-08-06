@@ -3,7 +3,7 @@ layout: post
 title: List Blocks in Blazor Block Editor | Syncfusion®
 description: Learn how to add and configure bullet, numbered, and checklist blocks in the Blazor Block Editor component, including placeholders and checked states.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

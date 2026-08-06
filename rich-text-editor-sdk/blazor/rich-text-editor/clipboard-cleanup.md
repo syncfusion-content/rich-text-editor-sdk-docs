@@ -3,7 +3,7 @@ layout: post
 title: Clipboard Cleanup in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to clean and customize clipboard content in the Blazor Rich Text Editor by removing unwanted styles while preserving formatting. 
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

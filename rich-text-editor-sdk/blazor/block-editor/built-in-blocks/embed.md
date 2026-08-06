@@ -3,7 +3,7 @@ layout: post
 title: Image Blocks in Blazor Block Editor | Syncfusion®
 description: Learn how to add and configure image blocks in Blazor Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

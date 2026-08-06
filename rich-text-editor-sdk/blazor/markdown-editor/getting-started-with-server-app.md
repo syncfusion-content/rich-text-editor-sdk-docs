@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Markdown Editor in Server App | Syncfusion®
 description: Learn how to get started with Blazor Markdown Editor in a Blazor Server App by installing packages and running your first app.
 platform: rich-text-editor-sdk
-component: MarkdownEditor
+component: Markdown Editor
 documentation: ug
 ---
 

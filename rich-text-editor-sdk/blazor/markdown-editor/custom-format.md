@@ -3,7 +3,7 @@ layout: post
 title: Customize Markdown Syntax in Blazor Markdown Editor | Syncfusion®
 description: Learn how to customize Markdown syntax in the Blazor Markdown Editor by overriding default list, bold, and italic symbols.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

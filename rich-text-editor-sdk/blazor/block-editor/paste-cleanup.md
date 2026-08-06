@@ -3,7 +3,7 @@ layout: post
 title: Paste Cleanup in Blazor Block Editor | Syncfusion®
 description: Learn how to configure paste cleanup in Blazor Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

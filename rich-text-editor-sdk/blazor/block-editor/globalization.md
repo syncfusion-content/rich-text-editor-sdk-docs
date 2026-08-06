@@ -3,7 +3,7 @@ layout: post
 title: Globalization in Blazor Block Editor | Syncfusion®
 description: Learn how to localize the Blazor Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

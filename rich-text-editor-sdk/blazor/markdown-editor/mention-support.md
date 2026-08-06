@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Mentions in Blazor Markdown Editor | Syncfusion®
-description: Learn how to enable mentions in the Blazor Markdown Editorusing the @ trigger to tag users or items from a suggestion list while editing Markdown content.
+description: Learn how to enable mentions in the Blazor Markdown Editor using the @ trigger to tag users or items from a suggestion list while editing Markdown content.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

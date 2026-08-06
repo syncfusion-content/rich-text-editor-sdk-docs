@@ -3,7 +3,7 @@ layout: post
 title: XSS Prevention in Blazor Block Editor | Syncfusion®
 description: Learn how to enable XSS prevention in the Blazor Block Editor component to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

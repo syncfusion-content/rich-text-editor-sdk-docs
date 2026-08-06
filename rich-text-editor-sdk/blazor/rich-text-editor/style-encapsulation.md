@@ -3,7 +3,7 @@ layout: post
 title: Style Encapsulation in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to isolate or apply application styles in the Blazor Rich Text Editor using iframe mode and control CSS styling behavior.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

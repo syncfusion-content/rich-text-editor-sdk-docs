@@ -3,11 +3,11 @@ layout: post
 title: Toolbar Configuration in Blazor Markdown Editor | Syncfusion®
 description: Learn how to configure the toolbar in the Blazor Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 
-# Toolbar configuration in Blazor Markdown Editor
+# Toolbar Configuration in Blazor Markdown Editor
 
 The Blazor Markdown Editor provides a flexible toolbar that enhances the editing experience. Users can choose from multiple toolbar layouts, enable sticky behavior, and add custom tools based on their application requirements. This guide explains the available toolbar types, configuration options, and customization techniques.
 

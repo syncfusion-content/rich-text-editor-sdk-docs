@@ -3,7 +3,7 @@ layout: post
 title: Toolbar position in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to position the toolbar at the top or bottom of the Blazor Rich Text Editor to match your application layout and editing experience.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 

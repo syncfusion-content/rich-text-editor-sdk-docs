@@ -3,7 +3,7 @@ layout: post
 title: Drag and Drop in Blazor Block Editor | Syncfusion®
 description: Learn how to enable drag and drop in the Blazor Block Editor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
