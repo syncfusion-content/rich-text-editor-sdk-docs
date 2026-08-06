@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Mentions in Angular Markdown Editor
 
-By integrating the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/) component with the Markdown Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving both efficiency and accuracy.
+By integrating the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) component with the Markdown Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving both efficiency and accuracy.
 
 ## Enabling mention in Markdown Editor
 

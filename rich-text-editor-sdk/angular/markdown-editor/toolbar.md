@@ -20,7 +20,7 @@ These default items cover essential text editing features, such as text formatti
 
 ## Type of toolbar 
 
-Configure the toolbar layout using the [type](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#type) property in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/). Available types:
+Configure the toolbar layout using the [type](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings#type) property in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings). Available types:
 
 - **Expand**: Hides overflowing items, accessible via an expand arrow (recommended for compact layouts).
 - **MultiRow**: Displays items across multiple rows, keeping all visible (ideal for wide screens).
