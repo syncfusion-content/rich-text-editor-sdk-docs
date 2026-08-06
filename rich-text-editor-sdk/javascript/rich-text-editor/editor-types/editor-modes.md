@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor modes in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Editor modes in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Editor Modes in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the JavaScript Rich Text Editor to create and edit content in different formats.
 platform: rich-text-editor-sdk
-control: Editor modes 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Editor Mode in JavaScript Rich Text Editor control
+# Editor Modes in JavaScript Rich Text Editor
 
 The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 

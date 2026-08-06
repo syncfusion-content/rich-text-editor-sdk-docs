@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Customizing Markdown Syntax in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Customizing Markdown Syntax in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Custom Markdown Syntax in JavaScript Markdown Editor | Syncfusion
+description: Learn how to customize Markdown syntax in the JavaScript Markdown Editor by overriding default list, bold, and italic symbols.
 platform: rich-text-editor-sdk
-control: Customizing Markdown Syntax
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customizing Markdown Syntax in JavaScript Markdown Editor Component
+# Customizing Markdown Syntax in JavaScript Markdown Editor
 
 The Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Blocks in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Blocks with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Block Types and Configuration in JavaScript Block Editor | Syncfusion
+description: Learn how to use built-in block types in the JavaScript Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Blocks in JavaScript Block Editor control
+# Built-in Block Types and Configuration in React Block Editor
 
 The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
 

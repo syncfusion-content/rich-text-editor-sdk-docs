@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Accessibility in JavaScript Markdown Editor | Syncfusion
+description: Learn about accessibility features in the JavaScript Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
-control: Accessibility
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in the JavaScript Markdown Editor Control
+# Accessibility in the JavaScript Markdown Editor
 
 The Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 

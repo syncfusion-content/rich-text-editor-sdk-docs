@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Controlling Editor Access in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Controlling Editor Access in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use read-only and disabled modes in the JavaScript Rich Text Editor to control editing, restrict user interaction, and display content safely.
 platform: rich-text-editor-sdk
-control: Controlling Editor Access
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Controlling Editor Access in the JavaScript Rich Text Editor control
+# Read-Only Mode in JavaScript Rich Text Editor
 
 ## Read-only mode
 

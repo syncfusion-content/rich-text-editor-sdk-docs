@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Toolbar Configuration in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Toolbar Configuration in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Configuration in JavaScript Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the JavaScript Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 platform: rich-text-editor-sdk
-control: Toolbar Configuration 
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar configuration in Markdown Editor Control
+# Toolbar Configuration in JavaScript Markdown Editor
 
 ## Default toolbar items
 

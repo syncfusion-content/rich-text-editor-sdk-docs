@@ -1,15 +1,14 @@
 ---
 layout: post
-title: File size in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about File size in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: File size in JavaScript Rich text editor | Syncfusion
+description: Learn how to validate and restrict image upload file sizes in the JavaScript Rich Text Editor using the imageUploading event.
 platform: rich-text-editor-sdk
-control: File size 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# File size in JavaScript Rich text editor control
+# File size in JavaScript Rich text editor
 
 By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
 

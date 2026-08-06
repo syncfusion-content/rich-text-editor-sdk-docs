@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in JavaScript Block Editor control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Accessibility in JavaScript Block Editor | Syncfusion
+description: Learn about accessibility in the JavaScript Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in JavaScript Block Editor control
+# Accessibility in JavaScript Block Editor
 
 The Block Editor control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Form support in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Form support in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Form Support in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to integrate the JavaScript Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
 platform: rich-text-editor-sdk
-control: Form support 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Form support in JavaScript Rich text editor control
+# Form Support in JavaScript Rich Text Editor
 
 The following sample demonstrates how to get the Rich Text Editor value in button click.
 

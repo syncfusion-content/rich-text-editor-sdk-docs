@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Keyboard support in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in JavaScript Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts supported in the JavaScript Markdown Editor for formatting, inserting content, toolbar navigation, and editing.
 platform: rich-text-editor-sdk
-control: Keyboard support
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard support in JavaScript Markdown Editor Control
+# Keyboard Shortcuts in JavaScript Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/#editormode) as `Markdown`.
 

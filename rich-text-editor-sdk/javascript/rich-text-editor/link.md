@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Link in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Link in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Links in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the JavaScript Rich Text Editor for better content navigation and user experiences.
 platform: rich-text-editor-sdk
-control: Link 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Link in JavaScript Rich Text Editor Control
+# Links in JavaScript Rich Text Editor
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 

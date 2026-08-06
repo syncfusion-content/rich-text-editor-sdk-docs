@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Table in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Table in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Tables in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the JavaScript Rich Text Editor with row, column, and cell customization options.
 platform: rich-text-editor-sdk
-control: Table 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Table in JavaScript Rich Text Editor control
+# Tables in JavaScript Rich Text Editor
 
 Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/tablesettings#tablesettings)
 
