@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Vue Rich text editor component | Syncfusion
-description: Learn here all about Form support in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Form support 
+title: Form Support in React Rich Text Editor | Syncfusion
+description: Learn how to integrate the React Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Form support in Vue Rich Text Editor Component
+# Form Support in React Rich Text Editor
 
 The following sample demonstrates how to get the Rich Text Editor value in button click.
 

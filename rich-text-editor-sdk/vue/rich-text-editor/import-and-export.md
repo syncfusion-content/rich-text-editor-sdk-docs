@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Import/Export in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about  Import/Export in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control:  Import/Export
+title:  Import and Export Content in React Rich Text Editor | Syncfusion
+description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in React applications.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Content Import/Export in Vue Rich Text Editor component
+# Import and Export Content in React Rich Text Editor
 
 ## Importing content from Microsoft Word
 

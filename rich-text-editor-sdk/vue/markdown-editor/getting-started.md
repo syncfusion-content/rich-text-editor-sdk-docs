@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Vue Markdown Editor component | Syncfusion
-description:  Check out and learn about Getting started with Vue Markdown Editor component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
+title: Getting Started with Vuet Markdown Editor | Syncfusion
+description: Learn how to get started with Vuet Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 platform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the Vue Markdown Editor Component in Vue
+# Getting Started with Vuet Markdown Editor
 
 The Syncfusion Vue Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This article provides a step-by-step guide for setting up a [Vite](https://vite.dev/) project with a TypeScript environment and integrating the Syncfusion Vue Markdown Editor component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 

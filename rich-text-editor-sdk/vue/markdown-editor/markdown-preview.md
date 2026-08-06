@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Markdown to HTML preview in Vue Markdown Editor component | Syncfusion
-description: Learn here all about Markdown to HTML preview in Syncfusion Vue Markdown editor component of Syncfusion Essential JS 2 and more.
+title: Markdown Preview in Vuet Markdown Editor | Syncfusion
+description: Learn how to enable Markdown preview in the Vuet Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
 platform: rich-text-editor-sdk
-control: Markdown to HTML preview
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Markdown to HTML preview in Vue Markdown Editor Component
+# Markdown Preview in Vuet Markdown Editor
 
 The Markdown Editor provides an instant preview of Markdown changes, allowing users to see the formatted output while typing or editing text. This enhances the editing experience by enabling real-time visualization of Markdown formatting.
 

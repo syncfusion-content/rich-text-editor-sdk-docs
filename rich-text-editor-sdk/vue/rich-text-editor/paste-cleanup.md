@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste cleanup in Vue Rich text editor component | Syncfusion
-description: Learn here all about Paste cleanup in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Paste cleanup 
+title: Paste Cleanup in React Rich Text Editor | Syncfusion
+description:  Learn how to clean and manage pasted content in the React Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Cleanup in Vue Rich Text Editor Component
+# Paste Cleanup in React Rich Text Editor
 
 The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mentions in Vue Rich text editor component | Syncfusion
-description: Learn here all about Mentions in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Mentions 
+title: Mentions in React Rich Text Editor | Syncfusion
+description: Learn how to add user mentions in the React Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mentions in the Vue Rich Text Editor Component
+# Mentions in React Rich Text Editor
 
 By integrating the [Mention](https://ej2.syncfusion.com/vue/documentation/mention/getting-started) component with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
 

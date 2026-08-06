@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling tools in Vue Rich text editor component | Syncfusion
-description: Learn here all about Styling tools in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Styling tools
+title: Font Styling in React Rich Text Editor | Syncfusion
+description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Styling Tools in Vue Rich Text Editor Component
+# Font Styling in React Rich Text Editor
 
 ## Font family
   

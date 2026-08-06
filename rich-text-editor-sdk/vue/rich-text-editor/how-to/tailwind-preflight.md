@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Rich Text Editor with Tailwind CSS Preflight Theme | Syncfusion
-description: Learn here all about Integrating Editor with Tailwind CSS Preflight Theme in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more
+title: Fix Tailwind CSS Preflight in React Rich Text Editor | Syncfusion
+description: Learn how to resolve Tailwind CSS Preflight conflicts in the React Rich Text Editor and restore list styles, bullets, numbering, and formatting.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor with Tailwind CSS Preflight
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

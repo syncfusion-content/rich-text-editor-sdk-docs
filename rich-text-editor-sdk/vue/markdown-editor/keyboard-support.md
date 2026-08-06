@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard support in Vue Markdown editor component | Syncfusion
-description: Learn here all about Insert Table in Syncfusion Vue Markdown editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in Vuet Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts supported in the Vuet Markdown Editor for formatting, inserting content, toolbar navigation, and editing.
 platform: rich-text-editor-sdk
-control: Keyboard support
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard support in Vue Markdown Editor Component
+# Keyboard Shortcuts in Vuet Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/#editormode) as `Markdown`.
 

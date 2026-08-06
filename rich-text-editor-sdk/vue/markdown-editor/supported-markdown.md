@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Supported Markdown Syntax in Markdown editor component | Syncfusion
-description: Learn here all about Supported Markdown Syntax in Syncfusion Vue Markdown editor component of Syncfusion Essential JS 2 and more.
+title: Markdown Syntax Supported in Vuet Markdown Editor | Syncfusion
+description:  Learn the Markdown syntax supported in the Vuet Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 platform: rich-text-editor-sdk
-control: Supported Markdown Syntax
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Supported Markdown Syntax in Vue Markdown Editor Component
+# Markdown Syntax Supported in Vuet Markdown Editor
 
 The Syncfusion Vue Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
 

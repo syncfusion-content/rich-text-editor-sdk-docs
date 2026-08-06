@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text formatting in Vue Rich text editor component | Syncfusion
-description: Learn here all about Text formatting in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Text formatting
+title: Text Formatting in React Rich Text Editor | Syncfusion
+description: Learn how to format text in the React Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting and Structure in the Vue Rich Text Editor Component
+# Text Formatting in React Rich Text Editor
 
 ## Basic text styling
 

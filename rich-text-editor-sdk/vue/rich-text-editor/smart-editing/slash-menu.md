@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Slash Menu in Vue Rich text editor component | Syncfusion
-description: Learn here all about Slash Menu in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Slash Menu 
+title: Slash Commands in React Rich Text Editor | Syncfusion
+description: Learn how to use slash commands in the React Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Slash Commands in the Vue Rich Text Editor component
+# Slash Commands in React Rich Text Editor
 
-The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
+The Slash Commands in the Rich Text Editor enable users to apply formatting, insert content elements, and execute custom actions by typing the `/` character. This provides quick access to commonly used editing options, helping users create and format content more efficiently.
 
 ## Enabling the slash menu
 

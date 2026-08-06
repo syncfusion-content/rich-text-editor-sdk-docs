@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Vue Markdown Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in Vuet Markdown Editor | Syncfusion
+description: Learn about accessibility features in the Vuet Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in the Vue Markdown Editor Component
+# Accessibility in Vuet Markdown Editor
 
 The Vue Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 
