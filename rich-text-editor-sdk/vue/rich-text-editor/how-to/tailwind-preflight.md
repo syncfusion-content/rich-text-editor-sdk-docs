@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating Rich Text Editor with Tailwind CSS Preflight Styles
+# Fix Tailwind CSS Preflight in Vue Rich Text Editor
 
 When combining Rich Text Editor with Tailwind CSS, you may often encounter unintended style conflicts. Tailwind’s Preflight, a base reset layer can override default element styles used by Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In Rich Text Editor, it affects the ordered and unordered lists, which are Unformatted by default, with no bullets or numbers.
 
