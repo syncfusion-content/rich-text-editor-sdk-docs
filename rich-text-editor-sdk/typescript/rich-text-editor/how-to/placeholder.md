@@ -4,7 +4,6 @@ title: Placeholder in TypeScript Rich text editor | Syncfusion
 description: Learn how to customize the placeholder text style in the Syncfusion TypeScript Rich Text Editor using CSS class.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

@@ -4,7 +4,6 @@ title: Shortcut key in TypeScript Rich text editor | Syncfusion
 description: Learn how to customize keyboard shortcuts in the TypeScript Rich Text Editor by configuring key combinations for custom editor actions.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

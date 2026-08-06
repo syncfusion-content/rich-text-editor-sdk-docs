@@ -4,7 +4,6 @@ title: Toolbar Items in TypeScript Rich Text Editor | Syncfusion
 description:  Learn about all available toolbar items in the TypeScript Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and more.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

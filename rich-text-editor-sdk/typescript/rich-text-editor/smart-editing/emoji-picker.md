@@ -4,7 +4,6 @@ title: Emoji Picker in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to add emojis in the TypeScript Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
 platform: rich-text-editor-
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

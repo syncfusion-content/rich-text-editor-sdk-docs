@@ -4,7 +4,6 @@ title: Toolbar Position in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to position the toolbar at the top or bottom of the TypeScript Rich Text Editor to match your application layout and editing experience.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

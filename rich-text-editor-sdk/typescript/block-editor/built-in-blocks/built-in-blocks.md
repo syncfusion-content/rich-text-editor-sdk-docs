@@ -4,7 +4,6 @@ title: Block Types and Configuration in TypeScript Block Editor | Syncfusion
 description: Learn how to use built-in block types in the TypeScript Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

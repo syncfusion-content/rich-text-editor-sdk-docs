@@ -4,7 +4,6 @@ title: Clipboard Cleanup in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to clean and customize clipboard content in the TypeScript Rich Text Editor by removing unwanted styles while preserving formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

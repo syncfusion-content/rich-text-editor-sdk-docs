@@ -4,7 +4,6 @@ title: Fix Tailwind CSS Preflight in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to resolve Tailwind CSS Preflight conflicts in the TypeScript Rich Text Editor and restore list styles, bullets, numbering, and formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

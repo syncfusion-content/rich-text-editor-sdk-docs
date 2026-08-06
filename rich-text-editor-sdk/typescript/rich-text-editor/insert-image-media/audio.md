@@ -4,7 +4,6 @@ title: Insert Audios in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to add, upload, manage, and customize audio content in the TypeScript Rich Text Editor using online sources and local audio files.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

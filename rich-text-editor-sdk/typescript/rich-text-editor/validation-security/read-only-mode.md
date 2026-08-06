@@ -4,7 +4,6 @@ title: Read-Only Mode in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to use read-only and disabled modes in the TypeScript Rich Text Editor to control editing, restrict user interaction, and display content safely.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

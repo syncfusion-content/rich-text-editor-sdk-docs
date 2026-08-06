@@ -4,7 +4,6 @@ title: Form Support in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to integrate the TypeScript Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

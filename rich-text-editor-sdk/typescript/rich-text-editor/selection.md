@@ -4,7 +4,6 @@ title: Selection in TypeScript Rich Text Editor | Syncfusion
 description:  Learn how to select text, nodes, table cells, and content programmatically in the TypeScript Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

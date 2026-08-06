@@ -4,7 +4,6 @@ title: Real-Time Collaboration in TypeScript Block Editor | Syncfusion
 description: Learn how to enable real-time collaboration in the TypeScript Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

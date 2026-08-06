@@ -4,7 +4,6 @@ title: Mentions in TypeScript Markdown Editor | Syncfusion
 description: Learn how to enable mentions in TypeScript Markdown Editor using the @ trigger to tag users or items from a suggestion list while editing Markdown content.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

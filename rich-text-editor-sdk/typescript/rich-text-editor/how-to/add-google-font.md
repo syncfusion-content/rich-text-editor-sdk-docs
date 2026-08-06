@@ -4,7 +4,6 @@ title: Add google font in TypeScript Rich text editor | Syncfusion
 description: Learn how to add Google Fonts to the TypeScript Rich Text Editor by configuring web font links and the fontFamily toolbar option.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

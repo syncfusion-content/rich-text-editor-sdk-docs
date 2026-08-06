@@ -4,7 +4,6 @@ title: Inline Content in TypeScript Block Editor | Syncfusion
 description: Learn how to add inline content in TypeScript Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

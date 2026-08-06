@@ -4,7 +4,6 @@ title: Mail Merge in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to create personalized documents in the TypeScript Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 platform: rich-text-editor-
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

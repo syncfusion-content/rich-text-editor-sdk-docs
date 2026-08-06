@@ -4,7 +4,6 @@ title: Custom Markdown Syntax in TypeScript Markdown Editor | Syncfusion
 description: Learn how to customize Markdown syntax in the TypeScript Markdown Editor by overriding default list, bold, and italic symbols.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

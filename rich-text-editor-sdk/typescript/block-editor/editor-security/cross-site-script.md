@@ -4,7 +4,6 @@ title: XSS Prevention in TypeScript Block Editor | Syncfusion
 description: Learn how to enable XSS prevention in the TypeScript Block Editor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

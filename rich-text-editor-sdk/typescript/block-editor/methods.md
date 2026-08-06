@@ -4,7 +4,6 @@ title: Methods in TypeScript Block Editor | Syncfusion
 description: Learn about the public methods in TypeScript Block Editor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

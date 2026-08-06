@@ -4,7 +4,6 @@ title: Insert Images in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to insert images in the TypeScript Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

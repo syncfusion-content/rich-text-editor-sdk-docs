@@ -4,7 +4,6 @@ title: Getting Started with TypeScript Markdown Editor | Syncfusion
 description: Learn how to get started with TypeScript Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -162,4 +161,4 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Markdown Editor 
 
 * [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/blog-posting)
-* [TypeScriptive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/TypeScriptive-form)
+* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/Reactive-form)

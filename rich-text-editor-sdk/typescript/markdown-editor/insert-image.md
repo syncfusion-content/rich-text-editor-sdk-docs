@@ -4,7 +4,6 @@ title: Insert Images in TypeScript Markdown Editor | Syncfusion
 description: Learn how to add images to Markdown content in the TypeScript Markdown Editor using the Insert Image toolbar option and image URLs.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

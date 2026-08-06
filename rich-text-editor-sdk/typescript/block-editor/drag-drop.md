@@ -4,7 +4,6 @@ title: Drag and Drop in TypeScript Block Editor | Syncfusion
 description: Learn how to enable drag and drop in the TypeScript Block Editor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

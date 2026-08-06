@@ -4,7 +4,6 @@ title: Save in TypeScript Rich text editor | Syncfusion
 description: Learn how to save content in the TypeScript Rich Text Editor by handling the keyboard shortcut.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

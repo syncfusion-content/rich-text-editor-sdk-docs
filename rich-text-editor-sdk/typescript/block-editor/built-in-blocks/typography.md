@@ -4,7 +4,6 @@ title: Text Block Types in TypeScript Block Editor | Syncfusion
 description: Learn how to configure text block types in the TypeScript Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

@@ -4,7 +4,6 @@ title: Keyboard Shortcuts in TypeScript Markdown Editor | Syncfusion
 description: Learn the keyboard shortcuts supported in the TypeScript Markdown Editor for formatting, inserting content, toolbar navigation, and editing.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

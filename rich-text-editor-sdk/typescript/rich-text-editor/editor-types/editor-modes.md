@@ -5,7 +5,6 @@ description: Learn how to use HTML, Markdown, and IFrame editing modes in the Ty
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

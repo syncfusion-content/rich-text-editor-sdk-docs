@@ -4,7 +4,6 @@ title: Read-Only Mode in TypeScript Block Editor | Syncfusion
 description: Learn how to enable read-only mode in the TypeScript Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

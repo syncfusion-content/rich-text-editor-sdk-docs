@@ -4,7 +4,6 @@ title: Configure of AI Assistant in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the TypeScript Rich Text Editor with prompt templates, response actions, and toolbar settings.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

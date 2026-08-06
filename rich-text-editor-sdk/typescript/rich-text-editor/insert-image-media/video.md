@@ -4,7 +4,6 @@ title: Insert Videos in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to insert, upload, embed, resize, and manage videos in the TypeScript Rich Text Editor from local files, URLs, and online sources.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

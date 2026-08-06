@@ -4,7 +4,6 @@ title: Events in TypeScript Block Editor | Syncfusion
 description: Learn how to handle events in the TypeScript Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

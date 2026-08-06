@@ -4,7 +4,6 @@ title: Accessibility in TypeScript Block Editor | Syncfusion
 description: Learn about accessibility in the TypeScript Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

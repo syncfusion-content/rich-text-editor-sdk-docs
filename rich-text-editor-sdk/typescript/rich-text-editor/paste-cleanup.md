@@ -4,7 +4,6 @@ title: Paste Cleanup in TypeScript Rich Text Editor | Syncfusion
 description:  Learn how to clean and manage pasted content in the TypeScript Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

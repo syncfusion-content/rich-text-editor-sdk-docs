@@ -4,7 +4,6 @@ title: Code Blocks in TypeScript Block Editor | Syncfusion
 description: Learn how to add and configure code blocks in the TypeScript Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

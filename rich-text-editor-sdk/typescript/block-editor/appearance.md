@@ -4,7 +4,6 @@ title: Style and Appearance in TypeScript Block Editor | Syncfusion
 description: Learn how to customize the TypeScript Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

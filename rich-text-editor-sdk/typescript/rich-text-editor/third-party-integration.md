@@ -4,7 +4,6 @@ title: Third-Party Integrations in TypeScript Rich Text Editor | Syncfusion
 description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the TypeScript Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

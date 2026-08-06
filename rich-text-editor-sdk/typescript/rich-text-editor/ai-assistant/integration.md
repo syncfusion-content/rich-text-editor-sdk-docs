@@ -4,7 +4,6 @@ title: AI Assistant in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to enable and configure the TypeScript Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

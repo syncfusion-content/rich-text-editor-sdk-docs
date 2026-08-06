@@ -4,7 +4,6 @@ title: Render Rich Text Editor in TypeScript Tab | Syncfusion
 description: Learn how to render multiple TypeScript Rich Text Editor instances inside a Tab component with toolbar configuration and content editing support.
 platform: rich-text-editor-sdk
 control: Rich Text Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

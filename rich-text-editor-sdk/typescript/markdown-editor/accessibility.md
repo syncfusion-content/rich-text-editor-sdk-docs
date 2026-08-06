@@ -4,7 +4,6 @@ title: Accessibility in TypeScript Markdown Editor | Syncfusion
 description: Learn about accessibility features in the TypeScript Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

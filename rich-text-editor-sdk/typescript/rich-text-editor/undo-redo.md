@@ -4,7 +4,6 @@ title: Undo and Redo in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to use Undo and Redo in the TypeScript Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

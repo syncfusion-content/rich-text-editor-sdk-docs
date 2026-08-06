@@ -4,7 +4,6 @@ title: File size in TypeScript Rich text editor | Syncfusion
 description: Learn how to validate and restrict image upload file sizes in the TypeScript Rich Text Editor using the imageUploading event.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

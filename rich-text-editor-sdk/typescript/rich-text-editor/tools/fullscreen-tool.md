@@ -4,7 +4,6 @@ title: Fullscreen Mode in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to enable fullscreen mode in the TypeScript Rich Text Editor for distraction-free editing and an expanded content editing workspace.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

@@ -4,7 +4,6 @@ title: Toolbar Configuration in TypeScript Markdown Editor | Syncfusion
 description: Learn how to configure the toolbar in the TypeScript Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

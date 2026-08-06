@@ -4,7 +4,6 @@ title: Enter Key Configuration in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to customize Enter and Shift+Enter key behavior in the TypeScript Rich Text Editor for flexible content formatting and structure.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

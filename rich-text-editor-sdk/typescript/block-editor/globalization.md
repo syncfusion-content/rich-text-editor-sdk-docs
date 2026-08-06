@@ -4,7 +4,6 @@ title: Globalization in TypeScript Block Editor | Syncfusion
 description: Learn how to localize the TypeScript Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

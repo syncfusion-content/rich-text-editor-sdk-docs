@@ -4,7 +4,6 @@ title: Globalization in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to localize the TypeScript Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

@@ -4,7 +4,6 @@ title: Render Rich Text Editor in TypeScript Dialog | Syncfusion
 description: Learn how to render the TypeScript Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

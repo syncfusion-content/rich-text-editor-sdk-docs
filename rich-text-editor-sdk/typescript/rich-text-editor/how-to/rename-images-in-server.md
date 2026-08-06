@@ -4,7 +4,6 @@ title: Rename Uploaded Images in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to rename uploaded images in the TypeScript Rich Text Editor using the image upload success event and a custom server-side upload handler.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

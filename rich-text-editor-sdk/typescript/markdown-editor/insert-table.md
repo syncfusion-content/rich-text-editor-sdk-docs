@@ -4,7 +4,6 @@ title: Insert Tables in TypeScript Markdown Editor | Syncfusion
 description: Learn how to insert and customize tables in the Syncfusion TypeScript Markdown Editor by configuring rows, columns, and Markdown table content.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

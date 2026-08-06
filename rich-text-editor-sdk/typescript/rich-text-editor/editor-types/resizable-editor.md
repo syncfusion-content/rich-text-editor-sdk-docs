@@ -4,7 +4,6 @@ title: Resizable Editor in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to resize the TypeScript Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

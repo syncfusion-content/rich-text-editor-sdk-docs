@@ -4,7 +4,6 @@ title: Accessibility in TypeScript Rich Text Editor | Syncfusion
 description: Learn about accessibility features in the TypeScript Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

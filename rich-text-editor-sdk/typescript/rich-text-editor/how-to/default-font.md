@@ -4,7 +4,6 @@ title: Default font in TypeScript Rich text editor | Syncfusion
 description: Learn how to set the default font in the TypeScript Rich Text Editor using the default fontFamily and cssClass properties.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

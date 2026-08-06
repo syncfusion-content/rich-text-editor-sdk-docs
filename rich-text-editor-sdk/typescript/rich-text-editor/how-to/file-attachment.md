@@ -4,7 +4,6 @@ title: Attach Files in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to attach files in the TypeScript Rich Text Editor using file upload, drag and drop, saveUrl, and path configurations.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

@@ -4,7 +4,6 @@ title: XHTML Validation in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to validate XHTML content and prevent XSS attacks in the TypeScript Rich Text Editor using built-in sanitization and custom filtering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

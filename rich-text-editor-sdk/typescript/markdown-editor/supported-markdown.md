@@ -4,7 +4,6 @@ title: Markdown Syntax Supported in TypeScript Markdown Editor | Syncfusion
 description:  Learn the Markdown syntax supported in the TypeScript Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

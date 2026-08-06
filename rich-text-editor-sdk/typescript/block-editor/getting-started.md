@@ -5,7 +5,6 @@ description: Learn how to get started with the TypeScript Block Editor and explo
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor"
 platform: ej2-javascript
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

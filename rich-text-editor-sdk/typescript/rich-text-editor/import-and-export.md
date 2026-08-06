@@ -4,7 +4,6 @@ title:  Import and Export Content in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in TypeScript applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

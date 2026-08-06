@@ -4,7 +4,6 @@ title: Customization of AI Assistant in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to customize the AI Assistant in the TypeScript Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
