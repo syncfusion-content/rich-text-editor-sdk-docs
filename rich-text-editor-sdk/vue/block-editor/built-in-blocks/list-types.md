@@ -34,7 +34,7 @@ You can render a Bullet List block by setting the [blockType](https://ej2.syncfu
 
 ### Configure placeholder
 
-The [placeholder](https://ej2.syncfusion.com/Vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
+The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
 
 ```typescript
 // Adding placeholder value 
@@ -71,7 +71,7 @@ You can render a Numbered List block by setting the [blockType](https://ej2.sync
 
 ### Configure placeholder
 
-The [placeholder](https://ej2.syncfusion.com/Vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
+The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
 
 ```typescript
 // Adding placeholder value 
