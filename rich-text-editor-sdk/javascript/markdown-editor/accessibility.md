@@ -4,7 +4,6 @@ title: Accessibility in JavaScript Markdown Editor control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Accessibility
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

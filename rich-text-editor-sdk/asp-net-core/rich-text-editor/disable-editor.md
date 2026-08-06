@@ -4,7 +4,6 @@ title: Disabling the ASP.NET Core Rich Text Editor Control | Syncfusion
 description: Learn here all about Disabling the ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Disabling the Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

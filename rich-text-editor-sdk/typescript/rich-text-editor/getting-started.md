@@ -5,7 +5,6 @@ description: Checkout and learn how to create and run a Rich Text Editor using a
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

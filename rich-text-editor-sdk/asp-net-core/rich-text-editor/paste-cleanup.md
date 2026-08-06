@@ -4,7 +4,6 @@ title: Paste Cleanup in ASP.NET Core Syncfusion Rich Text Editor Control
 description: Learn here all about Paste Cleanup in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Paste Cleanup
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

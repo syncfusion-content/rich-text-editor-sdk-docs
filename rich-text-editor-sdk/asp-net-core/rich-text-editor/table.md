@@ -4,7 +4,6 @@ title: Table in ASP.NET Core Rich Text Editor control | Syncfusion
 description: Learn here all about Table in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Table
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

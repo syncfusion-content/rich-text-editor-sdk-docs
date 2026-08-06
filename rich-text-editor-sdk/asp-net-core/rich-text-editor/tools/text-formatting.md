@@ -4,7 +4,6 @@ title: Text Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Text formatting and Structure
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

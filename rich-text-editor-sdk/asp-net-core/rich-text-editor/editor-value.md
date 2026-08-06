@@ -4,7 +4,6 @@ title: Editor value in ASP.NET Core Rich Text Editor Control | Syncfusion
 description: Learn here all about Editor value in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Editor value
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
