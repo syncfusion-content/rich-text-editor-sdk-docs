@@ -150,7 +150,7 @@ N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/ric
 
 By activating the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Rich Text Editor offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus on editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
 
-Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://blazor.syncfusion.com/documentation/rich-text-editor/tools/built-in-tools)
+Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/tools/built-in-tools)
 
 {% tabs %}
 {% highlight razor %}

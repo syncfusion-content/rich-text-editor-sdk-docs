@@ -188,7 +188,7 @@ The example below shows how video is saved in `Blob` and `Base64` formats.
 
 ```
 <video>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4" >
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4" >
 </video>
 
 <video>
