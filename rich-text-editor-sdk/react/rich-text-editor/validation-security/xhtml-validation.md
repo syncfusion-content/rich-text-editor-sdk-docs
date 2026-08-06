@@ -105,7 +105,7 @@ The following example shows XSS prevention removing a `<script>` tag and `onmous
 
 For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
 
-### Implementing custom cross-site scripting and fililtering in Rich Text Editor
+### Implementing custom cross-site scripting and filtering in Rich Text Editor
 
 1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.
