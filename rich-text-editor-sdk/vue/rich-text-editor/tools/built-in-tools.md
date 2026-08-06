@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar Items in Vue Rich Text Editor | Syncfusion
-description:  Learn about all available toolbar items in Vue Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
+description: Learn about all available toolbar items in Vue Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

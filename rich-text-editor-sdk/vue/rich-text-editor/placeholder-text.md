@@ -3,7 +3,7 @@ layout: post
 title: Placeholder Text in Vue Rich Text Editor | Syncfusion
 description: Learn how to display and customize placeholder text in the Vue Rich Text Editor using the placeholder property and CSS styling.
 platform: rich-text-editor-sdk
-control: Placeholder Text
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

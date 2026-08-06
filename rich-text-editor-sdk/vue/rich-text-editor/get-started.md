@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Vue Rich Text Editor | Syncfusion
 description: Learn how to get started with the Vue Rich Text Editor and explore setup, configuration, and core feature examples.
-control: Get started 
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -48,7 +48,8 @@ Using one of the above commands will lead you to set up additional configuration
 ? Select a framework: » - Use arrow-keys. Return to submit.
 Vanilla
 > Vue
-  Vue
+  React
+  Preact
   Lit
   Svelte
   Others

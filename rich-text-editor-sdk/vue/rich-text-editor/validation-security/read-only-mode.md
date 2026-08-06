@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in the Vue Rich Text Editor Component
+# Read-Only Mode in Vue Rich Text Editor
 
 ## Read-only mode
 
