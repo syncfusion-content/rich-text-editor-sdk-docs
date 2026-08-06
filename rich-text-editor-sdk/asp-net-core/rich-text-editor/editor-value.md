@@ -56,7 +56,7 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 * Using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property directly.
 
-* Using the [value template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ValueTemplate) property allows you to customize the content of the Rich Text Editor.
+* Using the [valuetemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ValueTemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 

@@ -4,7 +4,6 @@ title: Getting started with JavaScript Markdown Editor | Syncfusion
 description:  Check out and learn about Getting started with JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

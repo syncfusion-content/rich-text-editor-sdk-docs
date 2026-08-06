@@ -61,7 +61,7 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 * Using the [value](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#value) property directly.
 
-* Using the [value template](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
+* Using the [valuetemplate](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
