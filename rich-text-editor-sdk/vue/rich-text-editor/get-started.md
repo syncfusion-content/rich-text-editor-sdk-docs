@@ -49,7 +49,6 @@ Using one of the above commands will lead you to set up additional configuration
 Vanilla
 > Vue
   Vue
-  PVue
   Lit
   Svelte
   Others
