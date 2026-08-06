@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render Rich Text Editor in React Dialog | Syncfusion
-description: Learn how to render the React Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
+title: Render Rich Text Editor in Vue Dialog | Syncfusion
+description: Learn how to render the Vue Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

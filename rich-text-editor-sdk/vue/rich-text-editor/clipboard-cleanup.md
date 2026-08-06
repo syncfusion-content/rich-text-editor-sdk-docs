@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Cleanup in React Rich Text Editor | Syncfusion
-description: Learn how to clean and customize clipboard content in the React Rich Text Editor by removing unwanted styles while preserving formatting.
+title: Clipboard Cleanup in Vue Rich Text Editor | Syncfusion
+description: Learn how to clean and customize clipboard content in the Vue Rich Text Editor by removing unwanted styles while preserving formatting.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Clipboard Cleanup in React Rich Text Editor
+# Clipboard Cleanup in Vue Rich Text Editor
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [enableClipboardCleanup](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enableClipboardCleanup) property.
 

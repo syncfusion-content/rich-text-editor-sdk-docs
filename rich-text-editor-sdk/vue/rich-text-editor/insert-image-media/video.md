@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Videos in React Rich Text Editor | Syncfusion
-description: Learn how to insert, upload, embed, resize, and manage videos in the React Rich Text Editor from local files, URLs, and online sources.
+title: Insert Videos in Vue Rich Text Editor | Syncfusion
+description: Learn how to insert, upload, embed, resize, and manage videos in the Vue Rich Text Editor from local files, URLs, and online sources.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Videos in React Rich Text Editor
+# Insert Videos in Vue Rich Text Editor
 
 The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 

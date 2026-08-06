@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Links in React Rich Text Editor | Syncfusion
-description: Learn how to add, edit, remove, and manage hyperlinks in the React Rich Text Editor for better content navigation and user experiences.
+title: Links in Vue Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the Vue Rich Text Editor for better content navigation and user experiences.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Links in React Rich Text Editor
+# Links in Vue Rich Text Editor
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 

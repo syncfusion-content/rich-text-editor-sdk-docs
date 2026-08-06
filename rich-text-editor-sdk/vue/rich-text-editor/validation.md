@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form Validation in React Rich Text Editor | Syncfusion
-description: Learn how to validate React Rich Text Editor input in forms using required, minimum, and maximum length rules with custom validation messages.
+title: Form Validation in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate Vue Rich Text Editor input in forms using required, minimum, and maximum length rules with custom validation messages.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Form Validation in React Rich Text Editor
+# Form Validation in Vue Rich Text Editor
 
 ## Validation rules
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spell and Grammar Check in React Rich Text Editor | Syncfusion
-description: Learn how to integrate spell and grammar checking in the React Rich Text Editor using WProofreader to improve content accuracy and writing quality.
+title: Spell and Grammar Check in Vue Rich Text Editor | Syncfusion
+description: Learn how to integrate spell and grammar checking in the Vue Rich Text Editor using WProofreader to improve content accuracy and writing quality.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

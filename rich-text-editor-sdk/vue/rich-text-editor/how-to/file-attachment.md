@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Attach Files in React Rich Text Editor | Syncfusion
-description: Learn how to attach files in the React Rich Text Editor using file upload, drag and drop, saveUrl, and path configurations.
+title: Attach Files in Vue Rich Text Editor | Syncfusion
+description: Learn how to attach files in the Vue Rich Text Editor using file upload, drag and drop, saveUrl, and path configurations.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Attach Files in React Rich Text Editor
+# Attach Files in Vue Rich Text Editor
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 

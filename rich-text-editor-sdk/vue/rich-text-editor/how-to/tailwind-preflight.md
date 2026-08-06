@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Fix Tailwind CSS Preflight in React Rich Text Editor | Syncfusion
-description: Learn how to resolve Tailwind CSS Preflight conflicts in the React Rich Text Editor and restore list styles, bullets, numbering, and formatting.
+title: Fix Tailwind CSS Preflight in Vue Rich Text Editor | Syncfusion
+description: Learn how to resolve Tailwind CSS Preflight conflicts in the Vue Rich Text Editor and restore list styles, bullets, numbering, and formatting.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

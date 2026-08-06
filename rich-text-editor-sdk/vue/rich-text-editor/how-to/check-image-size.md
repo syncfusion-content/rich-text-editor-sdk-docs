@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validate Image Size in React Rich Text Editor | Syncfusion
-description: Learn how to validate image dimensions before uploading in the React Rich Text Editor and restrict images that exceed the allowed size.
+title: Validate Image Size in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate image dimensions before uploading in the Vue Rich Text Editor and restrict images that exceed the allowed size.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Validate Image Size Before Upload in React Rich Text Editor
+# Validate Image Size Before Upload in Vue Rich Text Editor
 
 By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
 

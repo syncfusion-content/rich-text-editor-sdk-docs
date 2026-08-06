@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Rename Uploaded Images in React Rich Text Editor | Syncfusion
-description: Learn how to rename uploaded images in the React Rich Text Editor using the image upload success event and a custom server-side upload handler.
+title: Rename Uploaded Images in Vue Rich Text Editor | Syncfusion
+description: Learn how to rename uploaded images in the Vue Rich Text Editor using the image upload success event and a custom server-side upload handler.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Rename Uploaded Images in React Rich Text Editor
+# Rename Uploaded Images in Vue Rich Text Editor
 
 By using the [`insertImageSettings`](https://ej2.syncfusion.com/vue/documentation/rich-text-editor/insert-image-media/insert-images) property, you can specify the server handler to upload the selected image. Then you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/vue/documentation/rich-text-editor/how-to/rename-images-in-server) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 

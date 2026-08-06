@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Position in React Rich Text Editor | Syncfusion
-description: Learn how to position the toolbar at the top or bottom of the React Rich Text Editor to match your application layout and editing experience.
+title: Toolbar Position in Vue Rich Text Editor | Syncfusion
+description: Learn how to position the toolbar at the top or bottom of the Vue Rich Text Editor to match your application layout and editing experience.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar Position in React Rich Text Editor
+# Toolbar Position in Vue Rich Text Editor
 
 The Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#position) field in the [toolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings) property. The available positions are:
 

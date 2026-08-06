@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Feature Modules in React Rich Text Editor | Syncfusion
-description: Learn how to inject feature modules in the React Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+title: Feature Modules in Vue Rich Text Editor | Syncfusion
+description: Learn how to inject feature modules in the Vue Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Feature Modules in React Rich Text Editor
+# Feature Modules in Vue Rich Text Editor
 
 The [Vue Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/vue-rich-text-editor) component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
 

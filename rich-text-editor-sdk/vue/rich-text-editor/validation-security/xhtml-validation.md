@@ -1,14 +1,14 @@
 ---
 layout: post
-title: XHTML Validation in React Rich Text Editor | Syncfusion
-description: Learn how to validate XHTML content and prevent XSS attacks in the React Rich Text Editor using built-in sanitization and custom filtering.
+title: XHTML Validation in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the Vue Rich Text Editor using built-in sanitization and custom filtering.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# XHTML Validation in React Rich Text Editor
+# XHTML Validation in Vue Rich Text Editor
 
 The editor includes an [enableXhtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enablexhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
 

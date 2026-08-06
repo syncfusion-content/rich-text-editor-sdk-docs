@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Items in React Rich Text Editor | Syncfusion
-description:  Learn about all available toolbar items in React Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
+title: Toolbar Items in Vue Rich Text Editor | Syncfusion
+description:  Learn about all available toolbar items in Vue Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Built-in Tools in React Rich Text Editor
+# Built-in Tools in Vue Rich Text Editor
 
 By default, the Vue Rich Text Editor displays the following toolbar items:
 

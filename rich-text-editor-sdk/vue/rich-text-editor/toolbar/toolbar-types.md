@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Types in React Rich Text Editor | Syncfusion
-description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the React Rich Text Editor for different layout requirements.
+title: Toolbar Types in Vue Rich Text Editor | Syncfusion
+description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the Vue Rich Text Editor for different layout requirements.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar Types in React Rich Text Editor
+# Toolbar Types in Vue Rich Text Editor
 
 The Vue Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo in React Rich Text Editor | Syncfusion
-description: Learn how to use Undo and Redo in the React Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
+title: Undo and Redo in Vue Rich Text Editor | Syncfusion
+description: Learn how to use Undo and Redo in the Vue Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo and Redo in React Rich Text Editor
+# Undo and Redo in Vue Rich Text Editor
 
 The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 

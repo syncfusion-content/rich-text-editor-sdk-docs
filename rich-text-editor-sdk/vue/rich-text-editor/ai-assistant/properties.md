@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure of AI Assistant in React Rich Text Editor | Syncfusion
-description: Learn how to configure the AI Assistant in the React Rich Text Editor with prompt templates, response actions, and toolbar settings.
+title: Configure of AI Assistant in Vue Rich Text Editor | Syncfusion
+description: Learn how to configure the AI Assistant in the Vue Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Configure AI Assistant in React Rich Text Editor
+# Configure AI Assistant in Vue Rich Text Editor
 
 The `AIAssistantSettings` class provides the following properties for complete customization:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization of AI Assistant in React Rich Text Editor | Syncfusion
-description: Learn how to customize the AI Assistant in the React Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
+title: Customization of AI Assistant in Vue Rich Text Editor | Syncfusion
+description: Learn how to customize the AI Assistant in the Vue Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customization of AI Assistant in React Rich Text Editor
+# Customization of AI Assistant in Vue Rich Text Editor
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
 

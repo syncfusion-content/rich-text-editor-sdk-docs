@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and Appearance in React Rich Text Editor | Syncfusion
-description: Learn how to customize the React Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
+title: Style and Appearance in Vue Rich Text Editor | Syncfusion
+description: Learn how to customize the Vue Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style and Appearance in React Rich Text Editor
+# Style and Appearance in Vue Rich Text Editor
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

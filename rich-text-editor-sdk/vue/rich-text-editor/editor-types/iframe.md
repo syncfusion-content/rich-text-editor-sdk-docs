@@ -1,14 +1,14 @@
 ---
 layout: post
-title: IFrame Editing Mode in React Rich Text Editor | Syncfusion
-description: Learn how to enable IFrame editing mode in the React Rich Text Editor to isolate styles and scripts within the editor surface.
+title: IFrame Editing Mode in Vue Rich Text Editor | Syncfusion
+description: Learn how to enable IFrame editing mode in the Vue Rich Text Editor to isolate styles and scripts within the editor surface.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# IFrame Editing Mode in React Rich Text Editor
+# IFrame Editing Mode in Vue Rich Text Editor
 
 The iframe editor in the Rich Text Editor component provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 

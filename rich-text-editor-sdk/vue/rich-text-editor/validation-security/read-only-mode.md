@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Read-Only Mode in React Rich Text Editor | Syncfusion
-description: Learn how to use read-only and disabled modes in the React Rich Text Editor to control editing, restrict user interaction, and display content safely.
+title: Read-Only Mode in Vue Rich Text Editor | Syncfusion
+description: Learn how to use read-only and disabled modes in the Vue Rich Text Editor to control editing, restrict user interaction, and display content safely.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

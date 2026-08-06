@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with React Rich Text Editor | Syncfusion
-description: Learn how to get started with the React Rich Text Editor and explore setup, configuration, and core feature examples.
+title: Getting Started with Vue Rich Text Editor | Syncfusion
+description: Learn how to get started with the Vue Rich Text Editor and explore setup, configuration, and core feature examples.
 control: Get started 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with React Rich Text Editor in Vue 3
+# Getting Started with Vue Rich Text Editor in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vite.dev/) project with a JavaScript environment and integrating the Syncfusion Vue Rich Text Editor component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
@@ -48,8 +48,8 @@ Using one of the above commands will lead you to set up additional configuration
 ? Select a framework: » - Use arrow-keys. Return to submit.
 Vanilla
 > Vue
-  React
-  Preact
+  Vue
+  PVue
   Lit
   Svelte
   Others

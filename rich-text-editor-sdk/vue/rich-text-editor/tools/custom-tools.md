@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Toolbar Items in React Rich Text Editor | Syncfusion
-description: Learn how to create custom toolbar items in the React Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
+title: Custom Toolbar Items in Vue Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the Vue Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Toolbar Items in React Rich Text Editor
+# Custom Toolbar Items in Vue Rich Text Editor
 
 The Rich Text Editor allows you to configure your own commands to its toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
 

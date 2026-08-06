@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in React Rich Text Editor | Syncfusion
-description: Learn how to localize the React Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
+title: Globalization in Vue Rich Text Editor | Syncfusion
+description: Learn how to localize the Vue Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in React Rich Text Editor
+# Globalization in Vue Rich Text Editor
 
 ## Localization
 

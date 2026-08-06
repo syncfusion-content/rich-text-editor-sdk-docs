@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Update Editor Value in React Rich Text Editor | Syncfusion
-description: Learn how to update content in the React Rich Text Editor dynamically and save changes using keyboard shortcuts and event handling.
+title: Update Editor Value in Vue Rich Text Editor | Syncfusion
+description: Learn how to update content in the Vue Rich Text Editor dynamically and save changes using keyboard shortcuts and event handling.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

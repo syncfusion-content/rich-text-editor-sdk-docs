@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Execute Command in React Rich Text Editor | Syncfusion
-description: Learn how to programmatically modify content in the React Rich Text Editor using editor commands for formatting and editing operations.
+title: Execute Command in Vue Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the Vue Rich Text Editor using editor commands for formatting and editing operations.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Execute Command in React Rich Text Editor
+# Execute Command in Vue Rich Text Editor
 
 The executeCommand is used to perform command for the modification of content in editable area. The list of valid executeCommand are given in the below table.
 

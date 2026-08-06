@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Audio in React Rich Text Editor | Syncfusion
-description: Learn how to add, upload, manage, and customize audio content in the React Rich Text Editor using online sources and local audio files.
+title: Insert Audio in Vue Rich Text Editor | Syncfusion
+description: Learn how to add, upload, manage, and customize audio content in the Vue Rich Text Editor using online sources and local audio files.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Audio in React Rich Text Editor
+# Insert Audio in Vue Rich Text Editor
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizable Editor in React Rich Text Editor | Syncfusion
-description: Learn how to resize the React Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
+title: Resizable Editor in Vue Rich Text Editor | Syncfusion
+description: Learn how to resize the Vue Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

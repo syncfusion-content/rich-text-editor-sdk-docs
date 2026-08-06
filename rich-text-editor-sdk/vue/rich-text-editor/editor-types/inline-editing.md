@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Editing in React Rich Text Editor | Syncfusion
-description: Learn how to enable inline editing in the React Rich Text Editor to edit content directly in place with an inline toolbar for quick formatting.
+title: Inline Editing in Vue Rich Text Editor | Syncfusion
+description: Learn how to enable inline editing in the Vue Rich Text Editor to edit content directly in place with an inline toolbar for quick formatting.
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Editing in React Rich Text Editor
+# Inline Editing in Vue Rich Text Editor
 
 Inline editing is a feature of the Rich Text Editor that allows users to edit content directly within the editor where it is displayed. Unlike traditional editing interfaces where the editor toolbar is in a separate area at the top or bottom, inline editing offers a seamless, on-the-spot editing experience. You can click on the text or select the text you wish to edit and make changes immediately.
 

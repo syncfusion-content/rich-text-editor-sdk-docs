@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text Formatting in React Rich Text Editor | Syncfusion
-description: Learn how to format text in the React Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
+title: Text Formatting in Vue Rich Text Editor | Syncfusion
+description: Learn how to format text in the Vue Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting in React Rich Text Editor
+# Text Formatting in Vue Rich Text Editor
 
 ## Basic text styling
 
@@ -432,7 +432,7 @@ You can customize the format painter tool in the Rich Text Editor using the [for
 
 The [allowedFormats](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/formatpaintersettingsmodel#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
-Similarly, with the [deniedFormats](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/formatpaintersettingsmodel#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
+Similarly, with the [deniedFormats](https://ej2.syncfusion.com/Vue/documentation/api/rich-text-editor/formatpaintersettingsmodel#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
 
 | Type | Description        | Selector                                                | Usage                                                                  |
 |------|--------------------|---------------------------------------------------------|------------------------------------------------------------------------|

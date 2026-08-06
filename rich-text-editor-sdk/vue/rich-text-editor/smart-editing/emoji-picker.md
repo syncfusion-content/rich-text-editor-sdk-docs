@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Emoji Picker in Vue Rich Text Editor | Syncfusion
-description: Learn how to add emojis in the React Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
+description: Learn how to add emojis in the Vue Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Emoji Picker in React Rich Text Editor
+# Emoji Picker in Vue Rich Text Editor
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 

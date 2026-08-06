@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File Browser in React Rich Text Editor | Syncfusion
-description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the React Rich Text Editor.
+title: File Browser in Vue Rich Text Editor | Syncfusion
+description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the Vue Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

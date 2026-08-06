@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Font Styling in React Rich Text Editor | Syncfusion
-description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the React Rich Text Editor.
+title: Font Styling in Vue Rich Text Editor | Syncfusion
+description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the Vue Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Font Styling in React Rich Text Editor
+# Font Styling in Vue Rich Text Editor
 
 ## Font family
   

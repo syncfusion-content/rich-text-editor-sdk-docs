@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in React Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the React Rich Text Editor for advanced editing workflows.
+title: Selection in Vue Rich Text Editor | Syncfusion
+description:  Learn how to select text, nodes, table cells, and content programmatically in the Vue Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Selection in React Rich Text Editor
+# Selection in Vue Rich Text Editor
 
 ## Text selection
 
