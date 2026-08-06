@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Tables in Vuet Markdown Editor | Syncfusion
-description: Learn how to insert and customize tables in the Vuet Markdown Editor by configuring rows, columns, and Markdown table content.
+title: Insert Tables in Vue Markdown Editor | Syncfusion
+description: Learn how to insert and customize tables in the Vue Markdown Editor by configuring rows, columns, and Markdown table content.
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Tables in Vuet Markdown Editor
+# Insert Tables in Vue Markdown Editor
 
 To enable the table insertion feature, add the `CreateTable` option to the toolbar items. Once added, users can click the Insert Table icon in the toolbar to insert a table into the editor.
 

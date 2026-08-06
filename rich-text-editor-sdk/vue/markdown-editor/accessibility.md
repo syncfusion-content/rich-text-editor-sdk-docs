@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Vuet Markdown Editor | Syncfusion
-description: Learn about accessibility features in the Vuet Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+title: Accessibility in Vue Markdown Editor | Syncfusion
+description: Learn about accessibility features in the Vue Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug

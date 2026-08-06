@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in Vuet Markdown Editor | Syncfusion
-description: Learn how to insert images in the Vuet Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
+title: Insert Images in Vue Markdown Editor | Syncfusion
+description: Learn how to insert images in the Vue Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Images in Vuet Markdown Editor
+# Insert Images in Vue Markdown Editor
 
 The Syncfusion Vue Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 

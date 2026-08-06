@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Configuration in Vuet Markdown Editor | Syncfusion
-description: Learn how to configure the toolbar in the Vuet Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
+title: Toolbar Configuration in Vue Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the Vue Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Toolbar Configuration in Vuet Markdown Editor
+# Toolbar Configuration in Vue Markdown Editor
 
 ## Default toolbar items
 
