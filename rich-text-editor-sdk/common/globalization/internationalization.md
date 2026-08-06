@@ -18,6 +18,8 @@ Internationalization (i18n) formats and parses dates, numbers, and currencies pe
 
 ## Quick start
 
+Install the CLDR data package and load the files for your target culture. The i18n setup is shared across all three editors in the SDK — the snippet below applies to the Rich Text Editor, Block Editor, and Markdown Editor.
+
 ```bash
 npm install @syncfusion/ej2-cldr-data
 ```
@@ -35,7 +37,75 @@ setCulture('de');
 setCurrencyCode('EUR');
 ```
 
-> For `en-US`, the library preloads required data — explicit `loadCldr()` is optional.
+### Apply the culture to each editor
+
+The culture set with `setCulture()` applies to every editor in the SDK. For UI text, register translations with `L10n.load()` under the matching scope — one per editor.
+
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': {
+    'richtexteditor': {
+      'bold': 'Fett',
+      'italic': 'Kursiv',
+      'createLink': 'Link einfügen'
+    }
+  }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': {
+    'blockeditor': {
+      'paragraph': 'Absatz',
+      'heading': 'Überschrift',
+      'insertLink': 'Link einfügen'
+    }
+  }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': {
+    'markdowneditor': {
+      'bold': 'Fett',
+      'italic': 'Kursiv',
+      'createLink': 'Link einfügen'
+    }
+  }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+> For `en-US`, the library preloads required data — explicit `loadCldr()` is optional. The same `setCulture()` call covers all three editors; load each editor's locale scope only if you translate its UI text.
 
 ## Required files and order of operations
 

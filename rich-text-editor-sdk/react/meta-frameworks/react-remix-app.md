@@ -86,7 +86,9 @@ export default defineConfig({
 
 Update **app/routes/home.tsx** with the editor you want. Each editor is mounted as a standalone component and needs its own `Inject` services.
 
-### Rich Text Editor
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
 
 ```tsx
 import type { MetaFunction } from "react-router";
@@ -114,7 +116,9 @@ export default function Home() {
 }
 ```
 
-### Block Editor
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
 
 ```tsx
 import type { MetaFunction } from "react-router";
@@ -133,7 +137,9 @@ export default function Home() {
 }
 ```
 
-### Markdown Editor
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
 
 ```tsx
 import type { MetaFunction } from "react-router";
@@ -153,6 +159,10 @@ export default function Home() {
 }
 ```
 
+{% endtabcontent %}
+
+{% endtabcontents %}
+
 > Mount each editor on a separate route. The three editors are independent — use one, two, or all three.
 
 ## Run the application
@@ -170,7 +180,7 @@ npm run start
 
 ## See also
 
-- [Quick Start for the React Rich Text Editor SDK](../rich-text-editor/quick-start)
-- [Block Editor — Getting Started](../block-editor/getting-started)
-- [Markdown Editor — Getting Started](../markdown-editor/getting-started)
-- [Feature Module Injection](../rich-text-editor/module)
+- [Quick Start for the React Rich Text Editor SDK](../components/rich-text-editor/quick-start)
+- [Block Editor — Getting Started](../components/block-editor/getting-started)
+- [Markdown Editor — Getting Started](../components/markdown-editor/getting-started)
+- [Feature Module Injection](../components/rich-text-editor/module)

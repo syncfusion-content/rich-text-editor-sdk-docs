@@ -32,7 +32,17 @@ setCulture('de');
 setCurrencyCode('EUR');
 ```
 
-For UI text, register translations with `L10n.load()` and call `setCulture()`:
+For UI text, install the locale package for your editor and call `L10n.load()` before `setCulture()`. The snippets below show one locale-scope per editor in the SDK.
+
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
+
+Install the [locale package](https://www.npmjs.com/package/@syncfusion/ej2-locale) and register translations under the `richtexteditor` scope:
+
+```bash
+npm install @syncfusion/ej2-locale
+```
 
 ```ts
 import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -40,8 +50,55 @@ import { L10n, setCulture } from '@syncfusion/ej2-base';
 L10n.load({
   'de-DE': { 'richtexteditor': { 'bold': 'Fett', 'italic': 'Kursiv' } }
 });
+
 setCulture('de-DE');
 ```
+
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
+
+Install the [locale package](https://www.npmjs.com/package/@syncfusion/ej2-locale) and register translations under the `blockeditor` scope:
+
+```bash
+npm install @syncfusion/ej2-locale
+```
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': { 'blockeditor': { 'paragraph': 'Absatz', 'heading': 'Überschrift' } }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+Install the [locale package](https://www.npmjs.com/package/@syncfusion/ej2-locale) and register translations under the `markdowneditor` scope:
+
+```bash
+npm install @syncfusion/ej2-locale
+```
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': { 'markdowneditor': { 'bold': 'Fett', 'italic': 'Kursiv' } }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+> The three locale scopes — `richtexteditor`, `blockeditor`, and `markdowneditor` — are independent. Load the scopes for the editors your app uses.
 
 ## What gets globalized
 

@@ -1,49 +1,47 @@
 ---
 layout: post
-title: React Rich Text Editor SDK getting started with Gatsby | Syncfusion
-description: Step-by-step guide to integrating the Syncfusion React Rich Text Editor SDK — Rich Text Editor, Block Editor, and Markdown Editor — into a Gatsby project.
-control: Gatsby
+title: React Rich Text Editor SDK getting started with Next.js | Syncfusion
+description: Step-by-step guide to integrating the Syncfusion React Rich Text Editor SDK — Rich Text Editor, Block Editor, and Markdown Editor — into a Next.js application.
+control: Next.js
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the React Rich Text Editor SDK in Gatsby
+# Getting Started with the React Rich Text Editor SDK in Next.js
 
-This guide integrates the Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — into a [Gatsby](https://www.gatsbyjs.com) project.
+This guide integrates the Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — into a [Next.js](https://nextjs.org/) app.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en) 18 or higher.
-- See the [system requirements](../../common/system-requirements) for supported platforms.
+- [Node.js 18.17.0](https://nodejs.org/en) or later (LTS recommended).
+- Compatible with macOS, Windows, and Linux.
 
-## Set up the Gatsby project
+## Create a Next.js application
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npm create gatsby@latest
+npx create-next-app@latest
 
 {% endhighlight %}
 {% highlight bash tabtitle="YARN" %}
 
-yarn create gatsby
+yarn create next-app
 
 {% endhighlight %}
 {% endtabs %}
 
 ```text
-√ What would you like to call your site? · my-gatsby-rte
-√ What would you like to name the folder where your site will be created? · my-gatsby-rte
-√ Will you be using JavaScript or TypeScript? · TypeScript
-√ Will you be using a CMS? · No (or I'll add it later)
-√ Would you like to install a styling system? · No (or I'll add it later)
-√ Would you like to install additional features with other plugins? · No items were selected
-Shall we do this? (Y/n) » Yes
+√ What is your project named? ... my-nextjs-rte
+? Would you like to use the recommended Next.js defaults?
+>   Yes, use recommended defaults - TypeScript, ESLint, Tailwind CSS, App Router
+    No, reuse previous settings
+    No, customize settings
 ```
 
 ```bash
-cd my-gatsby-rte
+cd my-nextjs-rte
 ```
 
 ## Install the SDK packages
@@ -70,41 +68,45 @@ Or pick only the editors you need.
 Install the [Tailwind 3 theme](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme):
 
 {% tabs %}
-{% highlight bash tabtitle="NPM" %}
+{% highlight bash tabtitle="npm" %}
 
 npm install @syncfusion/ej2-tailwind3-theme
 
 {% endhighlight %}
-{% highlight bash tabtitle="YARN" %}
+{% highlight bash tabtitle="yarn" %}
 
 yarn add @syncfusion/ej2-tailwind3-theme
 
 {% endhighlight %}
 {% endtabs %}
 
-Create **src/pages/style.css** and import the stylesheet for each editor you use:
+Replace **app/globals.css** with the stylesheet for each editor you use:
 
 ```css
 /* Rich Text Editor */
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
 
 /* Block Editor */
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/block-editor/index.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/block-editor/index.css";
 
 /* Markdown Editor */
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/markdown-editor/index.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/markdown-editor/index.css";
 ```
 
 For other theme options (CDN, Theme Studio), see the [themes](../themes/built-in-themes) page.
 
 ## Add the editors
 
-Replace **src/pages/index.tsx** with the editor you want. Each editor is mounted as a standalone component and needs its own `Inject` services.
+The App Router requires a client component (`'use client'`). Each editor is mounted as a standalone component and needs its own `Inject` services.
 
-### Rich Text Editor
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
+
+**app/page.tsx**
 
 ```tsx
-import * as React from 'react';
+'use client';
 import {
   RichTextEditorComponent,
   Inject,
@@ -114,9 +116,8 @@ import {
   HtmlEditor,
   QuickToolbar
 } from '@syncfusion/ej2-react-richtexteditor';
-import './style.css';
 
-export default function IndexPage() {
+export default function Home() {
   return (
     <RichTextEditorComponent>
       <p>The Rich Text Editor is a WYSIWYG editing control that creates and edits rich content.</p>
@@ -126,14 +127,17 @@ export default function IndexPage() {
 }
 ```
 
-### Block Editor
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
+
+**app/page.tsx**
 
 ```tsx
-import * as React from 'react';
+'use client';
 import { BlockEditorComponent, ParagraphBlock, HeadingBlock, ListBlock, DividerBlock, ChecklistBlock, ImageBlock, TableBlock, CodeBlock, QuoteBlock, CalloutBlock, AttachFileBlock, MentionBlock } from '@syncfusion/ej2-react-blockeditor';
-import './style.css';
 
-export default function IndexPage() {
+export default function Home() {
   return (
     <BlockEditorComponent blocks={[ParagraphBlock, HeadingBlock, ListBlock, DividerBlock, ChecklistBlock, ImageBlock, TableBlock, CodeBlock, QuoteBlock, CalloutBlock, AttachFileBlock, MentionBlock]}>
       <p>Start writing your content...</p>
@@ -142,14 +146,17 @@ export default function IndexPage() {
 }
 ```
 
-### Markdown Editor
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+**app/page.tsx**
 
 ```tsx
-import * as React from 'react';
+'use client';
 import { MarkdownEditorComponent, Inject, Toolbar, Image, Link, MarkdownFormatter } from '@syncfusion/ej2-react-markdowneditor';
-import './style.css';
 
-export default function IndexPage() {
+export default function Home() {
   return (
     <MarkdownEditorComponent>
       <p>The Markdown Editor is a WYSIWYG editing control that creates and edits Markdown content.</p>
@@ -159,26 +166,30 @@ export default function IndexPage() {
 }
 ```
 
-> Mount each editor on a separate page or section. The three editors are independent — use one, two, or all three.
+{% endtabcontent %}
 
-## Run the project
+{% endtabcontents %}
+
+> Mount each editor on a separate route or section. The three editors are independent — use one, two, or all three.
+
+## Run the application
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
 
-npm run develop
+npm run dev
 
 {% endhighlight %}
 {% highlight bash tabtitle="YARN" %}
 
-yarn run develop
+yarn run dev
 
 {% endhighlight %}
 {% endtabs %}
 
 ## See also
 
-- [Quick Start for the React Rich Text Editor SDK](../rich-text-editor/quick-start)
-- [Block Editor — Getting Started](../block-editor/getting-started)
-- [Markdown Editor — Getting Started](../markdown-editor/getting-started)
-- [Feature Module Injection](../rich-text-editor/module)
+- [Quick Start for the React Rich Text Editor SDK](../components/rich-text-editor/quick-start)
+- [Block Editor — Getting Started](../components/block-editor/getting-started)
+- [Markdown Editor — Getting Started](../components/markdown-editor/getting-started)
+- [Feature Module Injection](../components/rich-text-editor/module)

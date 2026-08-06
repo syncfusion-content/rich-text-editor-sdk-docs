@@ -12,7 +12,7 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), also known as custom properties, allow authors to define reusable values in CSS files. Variable names start with two hyphens (`--`) followed by an identifier and can store values such as colors, lengths, or fonts.
 
-The modern Syncfusion<sup style="font-size:70%">&reg;</sup> themes leverage CSS variables for consistent, easily customizable styling across the Rich Text Editor SDK components. The supported CSS-variable themes are:
+The modern Syncfusion<sup style="font-size:70%">&reg;</sup> themes leverage CSS variables for consistent, easily customizable styling across the React Rich Text Editor SDK — **Rich Text Editor**, **Block Editor**, and **Markdown Editor**. The supported CSS-variable themes are:
 
 * Material 3
 * Fluent 2
@@ -21,40 +21,90 @@ The modern Syncfusion<sup style="font-size:70%">&reg;</sup> themes leverage CSS 
 
 Each theme ships `light` and `dark` variants.
 
-## Referencing themes
+> Material 3 defines color variables using `rgb()` values (comma-separated). Using hex values may produce inconsistent results.
 
-You can reference the theme in a React application through npm, CDN, or SASS.
+## Reference the theme in your application
 
-**npm (recommended):** install the theme package and import the Rich Text Editor stylesheet.
+Install the theme package and import the stylesheet for each editor you use.
 
 ```bash
 npm install @syncfusion/ej2-material3-theme
 ```
 
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
+
 ```css
-@import '../node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor/index.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor/index.css";
 ```
 
-## Overriding the primary color
+{% endtabcontent %}
 
-Override a theme variable in your own stylesheet, loaded after the theme CSS. For example, to change the primary color in Material 3:
+{% tabcontent Block Editor %}
 
-> Material 3 defines color variables using `rgb()` values (comma-separated). Using hex values may produce inconsistent results.
+```css
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/block-editor/index.css";
+```
+
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+```css
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/markdown-editor/index.css";
+```
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Customize the primary color
+
+Override a theme variable in your own stylesheet, loaded after the theme CSS. The pattern is the same for all three editors.
 
 ```css
 :root {
-    --color-sf-primary: 103, 80, 164;
+  --color-sf-primary: 103, 80, 164;
 }
 ```
 
-## Switching between light and dark
+## Switch between light and dark at runtime
 
-Reference the light theme by default and swap to the dark stylesheet at runtime (for example, based on a user preference or `prefers-color-scheme`).
+Each editor stylesheet has a matching `-dark-theme` stylesheet. Swap the import at runtime (for example, based on a user preference or `prefers-color-scheme`).
+
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
 
 ```css
 /* dark */
-@import '../node_modules/@syncfusion/ej2-material3-dark-theme/styles/rich-text-editor/index.css';
+@import "../node_modules/@syncfusion/ej2-material3-dark-theme/styles/rich-text-editor/index.css";
 ```
+
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
+
+```css
+/* dark */
+@import "../node_modules/@syncfusion/ej2-material3-dark-theme/styles/block-editor/index.css";
+```
+
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+```css
+/* dark */
+@import "../node_modules/@syncfusion/ej2-material3-dark-theme/styles/markdown-editor/index.css";
+```
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+To switch with a single class (such as `e-dark-mode` on the `<body>`), prefer the unified theme stylesheet that ships light and dark variants and toggle the class instead of swapping the import.
 
 ## See also
 

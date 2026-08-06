@@ -22,19 +22,27 @@ Install the locale package and register translations for the culture you want, t
 npm install @syncfusion/ej2-locale
 ```
 
+For UI text, register translations with `L10n.load()` and call `setCulture()`. Each editor in the SDK has its own locale scope — pick the tab for the editor you use.
+
+{% tabcontents %}
+
+{% tabcontent Rich Text Editor %}
+
+Register translations under the `richtexteditor` scope:
+
 ```ts
 import { L10n, setCulture } from '@syncfusion/ej2-base';
 
 L10n.load({
   'de-DE': {
-    richtexteditor: {
-      bold: 'Fett',
-      italic: 'Kursiv',
-      underline: 'Unterstrichen',
-      createLink: 'Link einfügen',
-      image: 'Bild einfügen',
-      undo: 'Rückgängig',
-      redo: 'Wiederherstellen'
+    'richtexteditor': {
+      'bold': 'Fett',
+      'italic': 'Kursiv',
+      'underline': 'Unterstrichen',
+      'createLink': 'Link einfügen',
+      'image': 'Bild einfügen',
+      'undo': 'Rückgängig',
+      'redo': 'Wiederherstellen'
     }
   }
 });
@@ -42,7 +50,62 @@ L10n.load({
 setCulture('de-DE');
 ```
 
-> Call `L10n.load()` **before** `setCulture()` and **before** any component initializes.
+{% endtabcontent %}
+
+{% tabcontent Block Editor %}
+
+Register translations under the `blockeditor` scope:
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': {
+    'blockeditor': {
+      'paragraph': 'Absatz',
+      'heading': 'Überschrift',
+      'bulletList': 'Aufzählung',
+      'numberedList': 'Nummerierte Liste',
+      'insertLink': 'Link einfügen',
+      'insertImage': 'Bild einfügen'
+    }
+  }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% tabcontent Markdown Editor %}
+
+Register translations under the `markdowneditor` scope:
+
+```ts
+import { L10n, setCulture } from '@syncfusion/ej2-base';
+
+L10n.load({
+  'de-DE': {
+    'markdowneditor': {
+      'bold': 'Fett',
+      'italic': 'Kursiv',
+      'underline': 'Unterstrichen',
+      'createLink': 'Link einfügen',
+      'image': 'Bild einfügen',
+      'undo': 'Rückgängig',
+      'redo': 'Wiederherstellen'
+    }
+  }
+});
+
+setCulture('de-DE');
+```
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+> Call `L10n.load()` **before** `setCulture()` and **before** any component initializes. Load the scopes for the editors your app uses — the three scopes are independent.
 
 ## How translations work
 

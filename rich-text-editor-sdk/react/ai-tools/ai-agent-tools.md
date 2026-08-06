@@ -203,4 +203,3 @@ The MCP Server mitigates this automatically by grounding the AI against live doc
 
 - [Skills](./skills)
 - [MCP Server](./mcp-server)
-- [Quick Start for the React Rich Text Editor SDK](../rich-text-editor/quick-start)

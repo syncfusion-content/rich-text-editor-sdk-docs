@@ -14,7 +14,7 @@ If your React project uses the Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 > Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is performed **offline** during application execution. No internet access is required at runtime, so apps registered with a license key can be deployed on any system.
 
-> If you have not yet generated a key, see [Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> license key](../../../common/licensing/generate-license-key).
+> If you have not yet generated a key, see [Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> license key](../../../../common/licensing/generate-license-key.md).
 
 ## Where to register the key in a React app
 
@@ -86,19 +86,19 @@ After starting the app (`npm run dev` or `npm start`):
 2. Open the browser DevTools **Console** — there should be **no** license-validity warnings.
 3. The editor's full set of modules (Toolbar, Image, Link, HtmlEditor, QuickToolbar, AI Assistant) should render without restrictions.
 
-If a warning appears, see [Licensing errors](../../../common/licensing/licensing-errors).
+If a warning appears, see [Licensing errors](../../../../common/licensing/licensing-errors).
 
 ## Best practices for the React Rich Text Editor
 
 - **Register exactly once**, at the application entry point. Do not call `registerLicense` inside React components or `useEffect` hooks — re-registration on every render can cause issues.
 - **Do not hard-code the key in source control.** Use a `.env` file (`VITE_SYNCFUSION_LICENSE_KEY=...`) and reference it via `import.meta.env.VITE_SYNCFUSION_LICENSE_KEY` (Vite) or `process.env.NEXT_PUBLIC_SYNCFUSION_LICENSE_KEY` (Next.js).
 - **Register before the first import of any Syncfusion component** to guarantee that the Rich Text Editor (and the Block Editor / Markdown Editor if you use them) is initialized with a valid license.
-- **CI/CD:** fail the build if the key is missing — see [Validate license key in CI](../../../common/licensing/validate-license-key-ci).
+- **CI/CD:** fail the build if the key is missing — see [Validate license key in CI](../../../../common/licensing/validate-license-key-ci).
 
 ## See also
 
-* [Generate license key](../../../common/licensing/generate-license-key)
-* [Validate license key in CI](../../../common/licensing/validate-license-key-ci)
-* [Licensing errors](../../../common/licensing/licensing-errors)
-* [Licensing overview](../../../common/licensing/overview)
+* [Generate license key](../../../../common/licensing/generate-license-key)
+* [Validate license key in CI](../../../../common/licensing/validate-license-key-ci)
+* [Licensing errors](../../../../common/licensing/licensing-errors)
+* [Licensing overview](../../../../common/licensing/overview)
 * [Quick Start for React Rich Text Editor](../quick-start)
