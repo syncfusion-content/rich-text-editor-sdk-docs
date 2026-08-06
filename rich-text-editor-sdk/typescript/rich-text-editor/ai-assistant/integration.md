@@ -108,4 +108,4 @@ editor.addAIPromptResponse(data, true);
 A working demonstration of the AI Assistant, showcasing real-time chunk streaming, is available in the following resources:
 
 * **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
-* **[Live Demo](https://ej2.syncfusion.com/demos#/tailwind3/rich-text-editor/ai-assistant.html):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/demos/#/tailwind3/rich-text-editor/ai-assistant.html):** Implementation using the `gpt-4o-mini` model

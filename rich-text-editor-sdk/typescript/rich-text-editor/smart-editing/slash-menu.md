@@ -20,7 +20,7 @@ To enable the Slash Menu, set the `enable` property within [`slashMenuSettings`]
 
 ## Configuring the slash menu items
 
-The slashMenuSettings property allows customization of the `items` displayed in the Slash Menu. By defining the [`items`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#items) property, a list of available commands can be provided for users to choose from when they type a slash () in the Rich Text Editor.
+The slashMenuSettings property allows customization of the `items` displayed in the Slash Menu. By defining the [`items`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
 
 This list can include various formatting options such as paragraph and heading levels. Here’s an code snippet of configuring the Slash Menu items:
 

@@ -5,6 +5,7 @@ description: Learn how to get started with the TypeScript Rich Text Editor and e
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Rich Text Editor
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
@@ -158,6 +159,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Rich Text Editor
 
 **Live examples:**
 
-* [Insert Emoticons](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/blog-posting)
-* [TypeScriptive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/TypeScriptive-form)
+* [Insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons.html)
+* [Form Validation](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/form-validation.html)
+* [Ajax Content](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/ajax-load.html)

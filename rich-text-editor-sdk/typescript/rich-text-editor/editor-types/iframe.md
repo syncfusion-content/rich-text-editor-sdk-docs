@@ -109,7 +109,7 @@ Likewise, add the external script file to the `< iframe >` element using the [sc
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs3" %}
 {% endif %}
 
-> You can also explore our [iframe in JavaScript Rich Text Editor example](https://ej2.syncfusion.com/demos#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in JavaScript Rich Text Editor.
+> You can also explore our [iframe in JavaScript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in JavaScript Rich Text Editor.
 
 ## Integrating Mention with Iframe
 

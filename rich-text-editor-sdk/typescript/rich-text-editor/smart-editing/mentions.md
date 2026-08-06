@@ -155,7 +155,7 @@ In the following sample, we configured the following properties:
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/mention-integration-cs1" %}
 {% endif %}
 
-> [View Sample](https://ej2.syncfusion.com/demos#/bootstrap5/rich-text-editor/mention-integration.html)
+> [View Sample](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/mention-integration.html)
 
 ## See also
 

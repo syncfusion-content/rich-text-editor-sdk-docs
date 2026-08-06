@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Blocks in TypeScript Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the TypeScript Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
+description: Learn how to add and configure image blocks in TypeScript Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug

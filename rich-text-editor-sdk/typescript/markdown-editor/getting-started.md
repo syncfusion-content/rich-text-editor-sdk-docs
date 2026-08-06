@@ -159,6 +159,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Markdown Editor 
 
 **Live examples:**
 
-* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/insert-emoticons)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/blog-posting)
-* [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos#/tailwind3/rich-text-editor/Reactive-form)
+* [How to insert Emoticons](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/insert-emoticons.html)
+* [Form Validation with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/form-validation.html)
+* [Ajax Content with Rich Text Editor](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/rich-text-editor/ajax-load.html)
