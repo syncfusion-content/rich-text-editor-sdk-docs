@@ -1,6 +1,6 @@
 ---
 layout: post
-itle: Tables in Vue Rich Text Editor | Syncfusion
+title: Tables in Vue Rich Text Editor | Syncfusion
 description: Learn how to insert, format, and manage tables in the Vue Rich Text Editor with row, column, and cell customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk

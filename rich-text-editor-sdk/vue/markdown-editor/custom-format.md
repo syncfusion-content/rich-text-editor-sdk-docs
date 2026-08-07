@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Custom Markdown Syntax in Vue Markdown Editor
 
-The Vue Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
+The Vue Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor#formatter) property, enabling a customized Markdown experience.
 
 ## Defining Custom Markdown Formatting  
 

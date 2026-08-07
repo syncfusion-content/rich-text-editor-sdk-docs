@@ -157,7 +157,7 @@ The [default](hhttps://helpej2.syncfusion.com/vue/documentation/api/rich-text-ed
 
 The [showRecentColors](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
 
-This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
+This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

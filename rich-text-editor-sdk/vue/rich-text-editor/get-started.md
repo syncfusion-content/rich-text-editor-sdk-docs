@@ -248,4 +248,4 @@ The output will appear as follows:
 
 > **Sample**: [vue-3-richrexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
 
-For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue3-tutorial#migration-from-vue-2-to-vue-3) documentation.
+For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.
