@@ -5,7 +5,6 @@ description:  Check out and learn about Getting started with JavaScript Rich Tex
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
@@ -92,10 +91,10 @@ Rich Text Editor can be initialized on a div element as shown below
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
