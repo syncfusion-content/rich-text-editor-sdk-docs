@@ -7,7 +7,7 @@ control: Block Editor
 documentation: ug
 ---
 
-# Globalization in Blazor Block Editor Component
+# Globalization in Blazor Block Editor
 
 The Blazor Block Editor component supports globalization features like `Localization` and `Right-to-Left (RTL)` alignment, enabling it to be adapted for different cultures and languages.
 
