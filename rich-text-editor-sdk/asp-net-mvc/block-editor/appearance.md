@@ -4,7 +4,6 @@ title: Style and Appearance in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to customize the ASP.NET MVC BlockEditor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

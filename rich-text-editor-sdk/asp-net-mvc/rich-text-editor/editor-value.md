@@ -4,7 +4,6 @@ title: Editor Value in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to set, retrieve, bind, and manage content in the ASP.NET MVC Rich Text Editor with placeholders, auto save, character count, and source code editing.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

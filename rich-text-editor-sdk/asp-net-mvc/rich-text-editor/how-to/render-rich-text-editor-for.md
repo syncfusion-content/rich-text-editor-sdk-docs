@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Render RichTextEditorFor in ASP.NET MVC Rich Text Editor
+title: Render RichTextEditorFor in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to render the RichTextEditorFor control in the ASP.NET MVC Rich Text Editor and bind editor content to model properties.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

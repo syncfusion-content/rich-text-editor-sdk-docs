@@ -4,7 +4,6 @@ title: Add Google Fonts in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add and apply Google Fonts in the ASP.NET MVC Rich Text Editor to customize font options and enhance content styling.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

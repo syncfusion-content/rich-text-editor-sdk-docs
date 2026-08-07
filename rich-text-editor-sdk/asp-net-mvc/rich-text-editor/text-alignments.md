@@ -4,7 +4,6 @@ title: Text Alignments in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to apply text alignments in the ASP.NET MVC Rich Text Editor, including left, center, right, and justified alignment options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

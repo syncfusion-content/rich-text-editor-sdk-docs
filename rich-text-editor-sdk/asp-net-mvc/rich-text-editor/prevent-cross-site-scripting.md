@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Prevent Cross-Site Scripting (XSS) in ASP.NET MVC Rich Text Editor
+title: XSS Prevention in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to prevent Cross-Site Scripting (XSS) attacks in the ASP.NET MVC Rich Text Editor by validating and sanitizing content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Prevent Cross-Site Scripting (XSS) in ASP.NET MVC Rich Text Editor
+# XSS Prevention in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 

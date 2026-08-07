@@ -4,7 +4,6 @@ title: Tables in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to insert, format, and manage tables in the ASP.NET MVC Rich Text Editor with row, column, and cell customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

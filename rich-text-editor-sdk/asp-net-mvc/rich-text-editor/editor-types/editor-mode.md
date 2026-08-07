@@ -4,8 +4,7 @@ title: Editor Modes in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to use HTML, Markdown, and IFrame editing modes in the ASP.NET MVC Rich Text Editor to create and edit content in different formats.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-]publishingplatform: rich-text-editor-sdk
-documentation: ug
+]documentation: ug
 ---
 
 # Editor Modes in ASP.NET MVC Rich Text Editor

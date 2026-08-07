@@ -4,7 +4,6 @@ title: Insert Tables in ASP.NET MVC Markdown Editor | Syncfusion
 description: Learn how to insert and customize tables in the ASP.NET MVC Markdown Editor using the Create Table toolbar option. Configure rows, columns, and table content in Markdown format.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Insert Images in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to insert images in the ASP.NET MVC Rich Text Editor using URLs, local uploads, File Manager integration, resizing, captions, alignment, wrapping, and server-side storage.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

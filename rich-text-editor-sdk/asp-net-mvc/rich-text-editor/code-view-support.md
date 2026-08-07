@@ -4,7 +4,6 @@ title: Code View Support in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to enable code view support in the ASP.NET MVC Rich Text Editor to switch between visual editing and HTML source code.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Toolbar Types in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the ASP.NET MVC Rich Text Editor for different layout requirements.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

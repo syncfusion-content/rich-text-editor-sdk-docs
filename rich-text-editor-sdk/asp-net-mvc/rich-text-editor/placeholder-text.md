@@ -4,7 +4,6 @@ title: Placeholder in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add and customize placeholder text in the ASP.NET MVC Rich Text Editor to guide users before entering content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

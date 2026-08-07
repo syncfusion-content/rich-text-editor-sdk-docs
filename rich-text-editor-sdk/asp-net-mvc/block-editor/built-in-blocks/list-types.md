@@ -4,7 +4,6 @@ title: List Blocks in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to add and configure bullet, numbered, and checklist blocks in the ASP.NET MVC Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
