@@ -81,5 +81,5 @@ For further details on Markdown editing, refer to the [`Markdown`](https://ej2.s
 
 ## See Also
 
-* [How to integrate the third party library](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/third-party-integration)
-* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)
+* [How to integrate the third party library](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/third-party-integration)
+* [How to render the iframe](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/iframe)

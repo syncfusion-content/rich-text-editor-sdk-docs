@@ -111,7 +111,7 @@ N> The runnable demo application is available in this [Github](https://github.co
 
 You can use the [InsertImageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings) property, to specify the server handler to upload the selected image. Then by binding the [ImageUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
-Refer the section [Rename images before inserting it in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
+Refer the section [Rename images before inserting it in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
 
 ### Secure Image Upload with Authentication
 
