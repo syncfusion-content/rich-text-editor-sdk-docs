@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Slider-Based Text Selection in TypeScript Editor | Syncfusion
-description:  Learn how to select a character range using TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Selection in TypeScript Rich Text Editor | Syncfusion
+description:  Learn how to select text, nodes, table cells, and content programmatically in the TypeScript Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
-control: Text Selection
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Selection in TypeScript Rich Text Editor Control
+# Selection in TypeScript Rich Text Editor
 
 ## Text selection
 

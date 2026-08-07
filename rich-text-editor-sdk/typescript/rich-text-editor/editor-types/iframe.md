@@ -1,15 +1,14 @@
 ---
 layout: post
-title: IFrame Editing Mode  in TypeScript Rich text editor | Syncfusion
-description: Learn here all about IFrame Editing Mode  in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
-platform: rich-text-editor-sdk
-control: IFrame Editing Mode  
-publishingplatform: rich-text-editor-sdk
+title: IFrame Editing Mode in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to enable IFrame editing mode in the TypeScript Rich Text Editor to isolate styles and scripts within the editor surface.
+control: Rich Text Editor
+platform: rich-text-editor-sdk  
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# IFrame Editing Mode in TypeScript Rich Text Editor control
+# IFrame Editing Mode in TypeScript Rich Text Editor
 
 The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 

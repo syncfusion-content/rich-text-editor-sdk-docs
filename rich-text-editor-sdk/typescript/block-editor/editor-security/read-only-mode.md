@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Controlled in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Controlled Access with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in TypeScript Block Editor | Syncfusion
+description: Learn how to enable read-only mode in the TypeScript Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in TypeScript Block Editor control
+# Read-Only Mode in TypeScript Block Editor
 
 The Syncfusion Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 
