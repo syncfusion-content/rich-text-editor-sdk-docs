@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Globalization in JavaScript Rich Text Editor
+# Globalization with JavaScript Rich Text Editor
 
 ## Localization
 

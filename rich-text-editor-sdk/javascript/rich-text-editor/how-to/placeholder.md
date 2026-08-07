@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Placeholder in JavaScript Rich text editor | Syncfusion
+title: Placeholder in JavaScript Rich Text Editor | Syncfusion
 description: Learn how to customize the placeholder text style in the Syncfusion JavaScript Rich Text Editor using CSS class.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Placeholder in JavaScript Rich text editor
+# Placeholder in JavaScript Rich Text Editor
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 

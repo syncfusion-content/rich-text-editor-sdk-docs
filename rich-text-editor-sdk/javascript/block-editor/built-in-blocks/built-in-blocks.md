@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Built-in Block Types and Configuration in React Block Editor
+# Built-in Block Types and Configuration in JavaScript Block Editor
 
 The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
 
