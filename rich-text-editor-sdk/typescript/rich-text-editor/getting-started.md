@@ -5,7 +5,6 @@ description: Learn how to get started with the TypeScript Rich Text Editor and e
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

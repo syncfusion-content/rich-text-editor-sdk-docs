@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save in TypeScript Rich text editor | Syncfusion
-description: Learn how to save content in the TypeScript Rich Text Editor by handling the keyboard shortcut.
+description: Learn how to save content in the TypeScript Rich Text Editor by handling the Ctrl+S keyboard shortcut and updating the editor value.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
