@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Set Cursor Position by Range in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Set Cursor Position in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to set the cursor position at a specific range in the ASP.NET MVC Rich Text Editor using the NodeSelection and setRange methods.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

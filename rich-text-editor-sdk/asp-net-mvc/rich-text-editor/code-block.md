@@ -4,7 +4,6 @@ title: Code Blocks in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to insert and configure code blocks in the ASP.NET MVC Rich Text Editor with language selection, formatting options, and syntax highlighting support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

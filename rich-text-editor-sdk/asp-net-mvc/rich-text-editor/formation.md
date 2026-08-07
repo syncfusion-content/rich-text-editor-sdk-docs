@@ -4,7 +4,6 @@ title: Content Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to apply content formatting in the ASP.NET MVC Rich Text Editor using built-in formatting tools to enhance text presentation.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

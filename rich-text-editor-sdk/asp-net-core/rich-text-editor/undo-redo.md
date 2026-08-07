@@ -4,7 +4,6 @@ title: Undo and Redo in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use Undo and Redo in the ASP.NET Core Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

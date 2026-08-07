@@ -4,7 +4,6 @@ title: Form Support in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to integrate the ASP.NET Core Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

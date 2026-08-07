@@ -4,7 +4,6 @@ title: Increase and Decrease Indent in ASP.NET MVC Rich Text Editor
 description: Learn how to increase and decrease indentation in the ASP.NET MVC Rich Text Editor to format and organize content effectively.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

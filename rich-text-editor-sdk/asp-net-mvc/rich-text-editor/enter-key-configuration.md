@@ -4,7 +4,6 @@ title: Enter Key Configuration in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to customize Enter and Shift+Enter key behavior in the ASP.NET MVC Rich Text Editor for flexible content formatting and structure.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

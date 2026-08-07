@@ -4,7 +4,6 @@ title: Heading Styles in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to apply heading styles in the ASP.NET MVC Rich Text Editor to organize content and improve document structure.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

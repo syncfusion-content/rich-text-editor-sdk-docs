@@ -4,7 +4,6 @@ title: Methods in ASP.NET Core Block Editor | Syncfusion
 description: Learn about the public methods in ASP.NET Core BlockEditor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

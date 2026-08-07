@@ -4,7 +4,6 @@ title: Text Block Types in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to configure text block types in the ASP.NET MVC Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

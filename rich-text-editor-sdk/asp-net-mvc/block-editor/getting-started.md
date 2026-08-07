@@ -5,7 +5,6 @@ description: Learn how to get started with the ASP.NET MVC Block Editor and expl
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-block-editor"
 platform: ej2-asp-core-mvc
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

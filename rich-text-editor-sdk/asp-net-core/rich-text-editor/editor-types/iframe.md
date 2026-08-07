@@ -4,7 +4,6 @@ title: IFrame Editing Mode in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to enable IFrame editing mode in the ASP.NET Core Rich Text Editor to isolate styles and scripts within the editor surface.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Render Rich Text Editor in ASP.NET Core Tab | Syncfusion
-description: Learn how to render multiple ASP.NET Core Rich Text Editor instances inside a Tab component with toolbar configuration and content editing support.
+description: Learn how to render multiple ASP.NET Core Rich Text Editor instances inside a Tab with toolbar configuration and content editing support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

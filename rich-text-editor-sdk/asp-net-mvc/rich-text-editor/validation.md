@@ -4,7 +4,6 @@ title: Validation in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to validate content in the ASP.NET MVC Rich Text Editor using built-in validation support and form integration.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

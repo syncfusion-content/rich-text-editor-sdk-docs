@@ -4,7 +4,6 @@ title: Links in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add, edit, remove, and manage hyperlinks in the ASP.NET MVC Rich Text Editor for better content navigation and user experiences.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

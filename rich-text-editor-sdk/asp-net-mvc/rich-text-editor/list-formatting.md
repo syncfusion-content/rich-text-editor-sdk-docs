@@ -4,7 +4,6 @@ title: List Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to apply list formatting in the ASP.NET MVC Rich Text Editor using ordered and unordered lists to structure content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

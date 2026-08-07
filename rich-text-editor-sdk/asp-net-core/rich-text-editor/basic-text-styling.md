@@ -4,7 +4,6 @@ title: Basic Text Styling in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to apply basic text styling in the ASP.NET Core Rich Text Editor, including formatting options such as bold, italic, and underline.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Quotation Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to apply quotation formatting in the ASP.NET Core Rich Text Editor to highlight quoted content and improve readability.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: AI Assistant in ASP.NET Core Syncfusion Rich Text Editor
+title: AI Assistant in ASP.NET Core Syncfusion Rich Text Editor | Syncfusion
 description: Learn how to enable and configure the AI Assistant in the ASP.NET Core Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

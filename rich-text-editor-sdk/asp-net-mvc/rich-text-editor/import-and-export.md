@@ -4,7 +4,6 @@ title:  Import and Export Content in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in ASP.NET MVC applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

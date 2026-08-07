@@ -4,7 +4,6 @@ title: Handle Ctrl+S Shortcut in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to implement the Ctrl+S keyboard shortcut in the ASP.NET MVC Rich Text Editor to update values and save editor content programmatically.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

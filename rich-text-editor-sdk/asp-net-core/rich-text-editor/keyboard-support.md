@@ -4,7 +4,6 @@ title: Keyboard Support in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use keyboard shortcuts in the ASP.NET Core Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

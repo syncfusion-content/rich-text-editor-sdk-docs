@@ -5,7 +5,6 @@ description: Learn how to customize the placeholder text style in the ASP.NET MV
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 control: Customize Placeholder Style
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

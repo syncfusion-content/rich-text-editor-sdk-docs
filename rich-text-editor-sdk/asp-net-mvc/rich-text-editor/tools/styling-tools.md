@@ -4,7 +4,6 @@ title: Font Styling in ASP.NET MVC Rich Text Editor | Syncfusion
 description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the ASP.NET MVC Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

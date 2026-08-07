@@ -4,7 +4,6 @@ title: Editor Menus in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to use the editor menus in the ASP.NET Core BlockEditor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

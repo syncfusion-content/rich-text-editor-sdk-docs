@@ -4,11 +4,10 @@ title: Toolbar Configuration in ASP.NET Core Markdown Editor | Syncfusion
 description: Learn how to configure the toolbar in the ASP.NET Core Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Toolbar configuration in Markdown Editor
+# Toolbar Configuration in ASP.NET Core Markdown Editor
 
 ## Default toolbar items
 

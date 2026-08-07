@@ -4,7 +4,6 @@ title: Paste Cleanup in ASP.NET MVC Rich Text Editor | Syncfusion
 description:  Learn how to clean and manage pasted content in the ASP.NET MVC Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

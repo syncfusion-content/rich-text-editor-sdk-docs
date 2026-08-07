@@ -4,7 +4,6 @@ title: Clipboard Cleanup in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to clean and customize clipboard content in the ASP.NET MVC Rich Text Editor by removing unwanted styles and preserving formatting during copy and cut operations.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

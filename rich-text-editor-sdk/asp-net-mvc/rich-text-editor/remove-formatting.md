@@ -4,13 +4,12 @@ title: Remove Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to remove text formatting in the ASP.NET MVC Rich Text Editor and clear applied styles to maintain consistent content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 # Remove Formatting in ASP.NET MVC Rich Text Editor
 
-The ASP.NET Core Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
+The ASP.NET MVC Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
 
 This feature is particularly useful when you need to:
 

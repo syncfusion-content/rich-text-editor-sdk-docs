@@ -4,7 +4,6 @@ title: Mentions in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add user mentions in the ASP.NET MVC Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
