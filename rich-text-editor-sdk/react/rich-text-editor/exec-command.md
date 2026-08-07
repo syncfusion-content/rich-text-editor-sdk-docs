@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Execute command in React Rich Text Editor component | Syncfusion
-description: Learn here all about Execute command in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Execute command 
+title: Execute Command in React Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the React Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Execute command in React Rich text editor component
+# Execute Command in React Rich Text Editor
 
 In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area.
 The executeCommand will perform the following commands.
