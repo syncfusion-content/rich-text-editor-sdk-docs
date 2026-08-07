@@ -4,7 +4,6 @@ title: Editor Modes in TypeScript Rich Text Editor | Syncfusion
 description: Learn how to use HTML, Markdown, and IFrame editing modes in the TypeScript Rich Text Editor to create and edit content in different formats.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
