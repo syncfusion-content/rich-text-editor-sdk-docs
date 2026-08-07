@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blocks in ASP.NET MVC Block Editor control | Syncfusion
-description: Checkout and learn about Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
+title: Block Types and Configuration in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to use built-in block types in the ASP.NET MVC Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Blocks in ASP.NET MVC Block Editor control
+# Built-in Block Types and Configuration in ASP.NET MVC Block Editor
 
 The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) property allows you to define and manage the content structure of your editor.
 

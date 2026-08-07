@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resize Editor in ASP.NET MVC RichTextEditor Control | Syncfusion
-description: Learn here all about Resizable Editor in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Resizable Editor in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to resize the ASP.NET MVC Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Resizable Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Resizable Editor in the ASP.NET MVC Rich Text Editor Control
+# Resizable Editor in ASP.NET MVC Rich Text Editor
 
 The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [EnableResize](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableResize) property in the Rich Text Editor. When `EnableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 

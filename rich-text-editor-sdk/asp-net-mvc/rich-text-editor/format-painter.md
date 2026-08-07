@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format Painter in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about Format Painter in Syncfusion ASP.NET MVC Rich Text Editor Control of Syncfusion Essential JS 2 and more.
+title: Format Painter in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to use the Format Painter feature in the ASP.NET MVC Rich Text Editor to copy and apply text formatting quickly.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Format Painter
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Format Painter in ASP.NET MVC Rich Text Editor Control | Syncfusion
+# Format Painter in ASP.NET MVC Rich Text Editor
 
 The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [FormatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 

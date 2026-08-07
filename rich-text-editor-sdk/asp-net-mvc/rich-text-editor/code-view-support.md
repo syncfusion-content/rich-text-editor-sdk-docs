@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code View in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Code View in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Code View Support in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to enable code view support in the ASP.NET MVC Rich Text Editor to switch between visual editing and HTML source code.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Code View
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Code View Support in ASP.NET MVC Rich Text Editor Control
+# Code View Support in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor enables you to directly edit HTML code through the `Source View` in the text area. Any changes you make in Source view are immediately reflected in the editor's content, giving you greater flexibility and control over your work.
 The source code is presented with enhanced formatting and consistent indentation for both block-level and inline HTML elements, resulting in a cleaner, more readable, and user-friendly editing experience.

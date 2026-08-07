@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Format Code Block in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Format Code Block in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Add Code Block Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to add code block formatting in the ASP.NET MVC Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Format Code Block
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Format code block using toolbar button
+# Add Code Block Formatting in ASP.NET MVC Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`ToolbarSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) items property.
 

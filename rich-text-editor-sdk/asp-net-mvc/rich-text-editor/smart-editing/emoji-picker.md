@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Emoji Picker in ASP.NET MVC RichTextEditor | Syncfusion
-description: Learn about Emoji Picker in Syncfusion ASP.NET MVC RichTextEditor control of Syncfusion Essential JS 2 and more.
+description: Learn how to add emojis in the ASP.NET MVC Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Emoji Picker
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Emoji Picker in the ASP.NET MVC Rich Text Editor Control
+# Emoji Picker in the ASP.NET MVC Rich Text Editor
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Form Support in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Form Support in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Form Support in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to integrate the ASP.NET MVC Rich Text Editor with HTML forms, capture editor content, and validate user input in web applications.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Form Support
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Form support
+# Form Support in ASP.NET MVC Rich Text Editor
 
 This below sample demonstrate how to get the Rich Text Editor value in button click.
 

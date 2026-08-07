@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar types in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Toolbar types in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Items in ASP.NET MVC Rich Text Editor | Syncfusion
+description:  Learn about all available toolbar items in the ASP.NET MVC Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Toolbar types
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Built-in Tools in the ASP.NET MVC Rich Text Editor Control
+# Built-in Tools in ASP.NET MVC Rich Text Editor
 
 By default, the ASP.NET MVC Rich Text Editor displays the following toolbar items:
 

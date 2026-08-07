@@ -1,14 +1,14 @@
 ---
 layout: post
-title: List formatting in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about List formatting in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: List Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to apply list formatting in the ASP.NET MVC Rich Text Editor using ordered and unordered lists to structure content.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: List formatting
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# List Formatting in ASP.NET MVC Rich Text Editor Control
+# List Formatting in ASP.NET MVC Rich Text Editor
 
 List formatting in the Rich Text Editor allows users to organize content into structured lists, enhancing readability and visual presentation. The control supports two main types of lists:
 

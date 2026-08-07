@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Iframe in ASP.NET MVC Syncfusion Rich Text Editor Component
-description: Learn here all about Iframe in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: IFrame Editing Mode in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to enable IFrame editing mode in the ASP.NET MVC Rich Text Editor to isolate styles and scripts within the editor surface.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Iframe
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---

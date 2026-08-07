@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Read-only Mode in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about Read-only Mode in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to use read-only and disabled modes in the ASP.NET MVC Rich Text Editor to control editing, restrict user interaction, and display content safely.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Read-only Mode
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Read-only Mode in the ASP.NET MVC Rich Text Editor Control
+# Read-Only Mode in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control offers a read-only mode that prevents you from editing the content while still allowing them to view it. This feature is particularly useful when you want to display formatted content without permitting modifications.
 
