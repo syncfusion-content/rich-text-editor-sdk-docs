@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Text Formatting in JavaScript Rich Text Editor | Syncfusion
-description: Learn here all about Text Formatting and Structure in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+description: Learn how to format text in the JavaScript Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
 platform: rich-text-editor-sdk
-control: Text Formatting and Structure
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

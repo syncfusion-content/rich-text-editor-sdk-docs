@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Enter key in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Enter key in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Enter Key Configuration in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to customize Enter and Shift+Enter key behavior in the JavaScript Rich Text Editor for flexible content formatting and structure.
 platform: rich-text-editor-sdk
-control: Enter key 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Enter key Configuration in JavaScript Rich Text Editor control
+# Enter and Shift+Enter in JavaScript Rich Text Editor
 
 Rich Text Editor allows you to customize the behavior of the Enter key and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 

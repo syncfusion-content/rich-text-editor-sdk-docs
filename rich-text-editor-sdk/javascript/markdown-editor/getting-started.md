@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Getting started with JavaScript Markdown Editor | Syncfusion
-description:  Check out and learn about Getting started with JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with JavaScript Markdown Editor | Syncfusion
+description: Learn how to get started with JavaScript Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 platform: rich-text-editor-sdk
-control: Getting started 
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting started in JavaScript Markdown Editor control
+# Getting started with JavaScript Markdown Editor
 
 The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be directly used in the latest web browsers.
 
@@ -91,10 +90,10 @@ Markdown Editor can be initialized on a div element as shown below:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
