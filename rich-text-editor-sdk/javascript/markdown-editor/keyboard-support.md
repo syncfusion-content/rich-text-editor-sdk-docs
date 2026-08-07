@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Keyboard Shortcuts in JavaScript Markdown Editor
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/#editormode) as `Markdown`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor#editormode) as `Markdown`.
 
 ## Toolbar
 

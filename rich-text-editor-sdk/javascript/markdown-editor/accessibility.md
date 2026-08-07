@@ -89,13 +89,13 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 ## Keyboard Navigation
 
-The Markdown Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor control.
+The Markdown Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor control.
 
 For more details on keyboard navigation, refer to the [Keyboard support](./keyboard-support) documentation. 
 
 ### Customizing Shortcut Keys
 
-You can customize shortcut keys using the [formatter](../../api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog. 
+You can customize shortcut keys using the [formatter](../../api/rich-text-editor#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog. 
 
 {% if page.publishingplatform == "typescript" %}
 

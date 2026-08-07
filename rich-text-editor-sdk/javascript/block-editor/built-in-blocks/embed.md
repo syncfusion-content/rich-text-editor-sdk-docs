@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Blocks in JavaScript Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the JavaScript Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
+description: Learn how to add and configure image blocks in JavaScript Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug

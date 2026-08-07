@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Customizing Markdown Syntax in JavaScript Markdown Editor
 
-The Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
+The Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#formatter) property, enabling a customized Markdown experience.
 
 ## Defining Custom Markdown Formatting
 
