@@ -4,7 +4,6 @@ title: Accessibility in JavaScript Markdown Editor control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Accessibility
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -96,7 +95,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](./keybo
 
 ### Customizing Shortcut Keys
 
-You can customize shortcut keys using the [formatter](../../api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog. 
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/javascript/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog. 
 
 {% if page.publishingplatform == "typescript" %}
 

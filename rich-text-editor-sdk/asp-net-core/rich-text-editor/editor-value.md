@@ -4,7 +4,6 @@ title: Editor Value in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to set, retrieve, bind, and manage content in the ASP.NET Core Rich Text Editor with placeholders, auto save, character count, and source code editing.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -508,5 +507,5 @@ The Rich Text Editor provides the `showSourceCode` method, which allows you to t
 ## See also
 
 * [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
-* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](./third-party-integration#codemirror-integration)

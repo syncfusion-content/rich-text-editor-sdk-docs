@@ -4,7 +4,6 @@ title: Paste Cleanup in ASP.NET Core Rich Text Editor | Syncfusion
 description:  Learn how to clean and manage pasted content in the ASP.NET Core Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -25,7 +24,7 @@ The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML
 
 When `Prompt` is set to true, pasting the content in the editor will open a dialog box that contains three options `Keep`, `Clean`, and `Plain Text` as radio buttons:
 
-![Rich Text Editor Paste options prompt dialog ](../images/richtexteditor-paste-prompt.png)
+![Rich Text Editor Paste options prompt dialog ](./images/richtexteditor-paste-prompt.png)
 
 1. `Keep`: Maintains the same format as the copied content.
 2. `Clean`: Clears all style formats from the copied content.

@@ -5,7 +5,6 @@ description: Checkout and learn how to create and run a Rich Text Editor using a
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
@@ -77,7 +76,7 @@ The following modules provide the basic features of the Rich Text Editor.
 These modules should be injected into the Rich Text Editor using the `RichTextEditor.Inject` method as demonstrated in the following example:
 
 {% tabs %}
-{% highlight ts ts hl_lines="4" tabtitle="main.ts" %}
+{% highlight ts hl_lines="4" tabtitle="main.ts" %}
 
 import './style.css';
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';

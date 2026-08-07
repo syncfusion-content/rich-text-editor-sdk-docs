@@ -4,7 +4,6 @@ title: Links in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add, edit, remove, and manage hyperlinks in the ASP.NET Core Rich Text Editor for better content navigation and user experiences.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -97,5 +96,5 @@ However, if you want to accept the given URL without validating it for hyperlink
 ## See also
 
 * [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
-* [Image with links](./insert-images#hyperlinking-images)
-* [Insert File Attachments](./how-to/file-attachments)
+* [Image with links](./insert-image-media/insert-images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachment)
