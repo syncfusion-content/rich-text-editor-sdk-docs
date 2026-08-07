@@ -4,7 +4,6 @@ title: Mentions in ASP.NET Core Markdown Editor | Syncfusion
 description: Learn how to enable mentions in the ASP.NET Core Markdown Editor using the @ trigger to tag users or items from a suggestion list while editing Markdown content.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

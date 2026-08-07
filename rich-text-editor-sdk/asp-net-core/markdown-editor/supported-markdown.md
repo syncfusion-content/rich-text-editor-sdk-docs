@@ -4,7 +4,6 @@ title: Markdown Syntax Supported in ASP.NET Core Markdown Editor | Syncfusion
 description: Learn the Markdown syntax supported in the ASP.NET Core Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

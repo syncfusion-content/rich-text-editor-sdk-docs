@@ -4,7 +4,6 @@ title: Execute Command in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to programmatically modify content in the ASP.NET Core Rich Text Editor using editor commands for formatting and editing operations.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

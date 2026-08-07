@@ -4,7 +4,6 @@ title: Custom Toolbar Items in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to create custom toolbar items in the ASP.NET Core Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

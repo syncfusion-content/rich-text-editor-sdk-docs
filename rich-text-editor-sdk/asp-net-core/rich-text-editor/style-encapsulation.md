@@ -4,7 +4,6 @@ title: Style Encapsulation in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to isolate or apply application styles in the ASP.NET Core Rich Text Editor using iframe mode and control CSS styling behavior.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

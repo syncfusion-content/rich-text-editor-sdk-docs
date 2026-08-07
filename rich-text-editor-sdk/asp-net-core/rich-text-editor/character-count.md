@@ -4,7 +4,6 @@ title: Character Count in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to enable and display character count in the ASP.NET Core Rich Text Editor to monitor and manage content length effectively.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Save Content to a Server File in ASP.NET Core Rich Text Editor
+title: Save Content to Server in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to save content to a file on the server in ASP.NET Core Rich Text Editor and securely store editor data.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

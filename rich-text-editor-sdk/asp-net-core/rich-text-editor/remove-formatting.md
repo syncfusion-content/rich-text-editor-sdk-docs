@@ -4,7 +4,6 @@ title: Remove Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to remove text formatting in the ASP.NET Core Rich Text Editor and clear applied styles to maintain consistent content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

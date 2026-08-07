@@ -4,7 +4,6 @@ title: Slash Commands in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use slash commands in the ASP.NET Core Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

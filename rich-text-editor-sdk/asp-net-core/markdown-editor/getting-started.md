@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET Core Markdown Editor | Syncfusion
 description: Learn how to get started with ASP.NET Core Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
