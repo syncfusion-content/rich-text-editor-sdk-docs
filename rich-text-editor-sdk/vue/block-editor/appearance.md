@@ -3,8 +3,7 @@ layout: post
 title: Style and Appearance in Vue Block Editor | Syncfusion
 description: Learn how to customize the Vue Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

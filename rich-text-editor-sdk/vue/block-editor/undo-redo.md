@@ -4,7 +4,6 @@ title: Undo and Redo in Vue Block Editor | Syncfusion
 description: Learn how to configure undo and redo in Vue Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

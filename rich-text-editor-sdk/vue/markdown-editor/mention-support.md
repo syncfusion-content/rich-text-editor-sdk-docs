@@ -23,7 +23,7 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 The Syncfusion Mention component provides several customizable properties to enhance the tagging experience:
 
 * [allowSpaces](https://ej2.syncfusion.com/vue/documentation/api/mention#allowspaces) - Allow to continue search action if user enter space after mention character while searching.
-* [suggestionCount](https://ej2.syncfusion.com/vue/documentation/api/mention/#suggestioncount) - Defines the maximum number of items displayed in the suggestion list.
+* [suggestionCount](https://ej2.syncfusion.com/vue/documentation/api/mention#suggestioncount) - Defines the maximum number of items displayed in the suggestion list.
 * [itemTemplate](https://ej2.syncfusion.com/vue/documentation/api/mention#itemtemplate) - Customizes the appearance of items in the suggestion list.
 
 ## Example: Implementing Mention in Markdown Editor

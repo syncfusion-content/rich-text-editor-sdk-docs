@@ -4,7 +4,6 @@ title: List Blocks in Vue Block Editor | Syncfusion
 description: Learn how to add and configure bullet, numbered, and checklist blocks in the Vue Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
