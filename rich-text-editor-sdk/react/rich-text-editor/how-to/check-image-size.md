@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Check image size in React Rich text editor component | Syncfusion
-description: Learn here all about Check image size in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Check image size 
+title: Validate Image Size Before Upload in React Rich Text Editor | Syncfusion
+description: Learn how to validate image dimensions before uploading in the React Rich Text Editor and restrict images that exceed the allowed size.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Check image size in React Rich text editor component
+# Validate Image Size Before Upload in React Rich Text Editor
 
 By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
 

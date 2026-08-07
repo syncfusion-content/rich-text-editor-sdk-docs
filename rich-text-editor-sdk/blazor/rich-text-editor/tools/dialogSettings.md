@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DialogSettings in Blazor Rich Text Editor | Syncfusion®
-description: Check out and learn here all about DialogSettings in Blazor Rich Text Editor component with examples and much more details.
+title: Render Rich Text Editor in Blazor Dialog | Syncfusion®
+description: Learn how to render the Blazor Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug
 ---
 
-# Customizing Dialog Behavior in Blazor Rich Text Editor
+# Render Rich Text Editor in Blazor Dialog
 
 The Blazor Rich Text Editor provides enhanced customization for built-in dialogs through the [RichTextEditorDialogSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorDialogSettings.html) property. This feature allows developers to control the appearance, behavior, and positioning of dialogs such as image, link, and audio insertion dialogs.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ExecuteCommand in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to execute commands programmatically in Blazor Rich Text Editor to manipulate content dynamically.
+title: Execute Command in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to programmatically modify content in the Blazor Rich Text Editor using editor commands for formatting and editing operations.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug
 ---
 
-# Execute Command Programmatically
+# Execute Command in Blazor Rich Text Editor
 
 In the Rich Text Editor, the [ExecuteCommand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ExecuteCommandOption.html) method runs HTML and Markdown commands programmatically to manipulate content in the current editable area.
 

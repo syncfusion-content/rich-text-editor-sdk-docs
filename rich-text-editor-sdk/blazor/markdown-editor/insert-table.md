@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Insert Table in Blazor Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about Insert Table in Blazor Markdown Editor component and much more details.
+title: Insert Table in Blazor Markdown Editor | Syncfusion®
+description: Learn how to insert images in Blazor Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
 platform: rich-text-editor-sdk
 control: MarkdownEditor
 documentation: ug
 ---
 
-# How to Insert Table in Blazor Markdown Editor Component
+# Insert Images in Blazor Markdown Editor
 
 The Blazor Markdown Editor provides built-in support for inserting tables, allowing users to create and customize tables effortlessly within the editor.
 

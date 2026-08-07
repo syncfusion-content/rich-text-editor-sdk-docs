@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in Angular Markdown Editor component | Syncfusion
-description: Learn how to insert images in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Images in Angular Markdown Editor | Syncfusion
+description: Learn how to insert images in the Angular Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Image Insertion in Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Images in Angular Markdown Editor Component
+# Insert Images in Angular Markdown Editor
 
 The Syncfusion Angular Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positioning Cursor at Content End in Rich Text Editor | Syncfusion
-description: Learn here all about Focus cursor at the end of the content in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Move Cursor to End in Angular Rich Text Editor | Syncfusion
+description: Learn how to move the cursor to the end of content in the Angular Rich Text Editor using the focus method and selection handling.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Positioning Cursor at Content End in Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Positioning the Cursor at the End of Content in the Rich Text Editor Component
+# Move Cursor to End in Angular Rich Text Editor
 
 To focus the cursor at the end of the content in the Rich Text Editor, you need to ensure the editor is focused and then manipulate the selection to place the cursor at the end. This involves focusing the editor using the `focus` method and then using the `Range` and `Selection` objects to collapse the range at the end of the content. Adding a slight delay (using `setTimeout`) ensures that the focus is properly set before manipulating the cursor position.
 

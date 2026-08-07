@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Toolbar Configuration in Angular Markdown Editor component | Syncfusion
-description: Learn how to configure and customize the toolbar in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar Configuration in Angular Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the Angular Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Markdown Editor Toolbar Configuration
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

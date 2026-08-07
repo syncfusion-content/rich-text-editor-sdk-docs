@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paste Clean-up in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to clean up pasted content in Blazor Rich Text Editor, removing unwanted formatting from MS Word and other sources.
+title: Paste Cleanup in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to clean and manage pasted content in the Blazor Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug
 ---
 
-# Paste Clean-up in Blazor Rich Text Editor
+# Paste Cleanup in Blazor Rich Text Editor
 
 The Rich Text Editor provides built-in option to paste content from Microsoft Word, Microsoft Outlook, Microsoft Excel, and other websites by filtering out tags, attributes, and styles. Copy content from Microsoft Office or other websites and paste it into the editor, where it is cleaned up and pasted based on the settings in the [PasteCleanupSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorPasteCleanupSettings.html) property values.
 

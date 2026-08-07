@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Table manipulation in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Table manipulation in Blazor Rich Text Editor component with examples and much more details.
+title: Table manipulation in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to create, edit, resize, merge, split, style, and manage tables in the Blazor Rich Text Editor with quick toolbar support.
 platform: rich-text-editor-sdk
 control: RichTextEditor
 documentation: ug

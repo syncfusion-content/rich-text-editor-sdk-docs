@@ -1,8 +1,8 @@
 ---
 layout: post
-title: File Browser in React Rich Text Editor component | Syncfusion
-description: Learn how to use the File Browser in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: File Browser 
+title: File Browser in React Rich Text Editor | Syncfusion
+description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
