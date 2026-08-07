@@ -4,7 +4,6 @@ title: Link in Syncfusion ASP.NET Core Rich Text Editor Control
 description: Learn here all about Link in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Link
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -97,5 +96,5 @@ However, if you want to accept the given URL without validating it for hyperlink
 ## See also
 
 * [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
-* [Image with links](./insert-images#hyperlinking-images)
-* [Insert File Attachments](./how-to/file-attachments)
+* [Image with links](./insert-image-media/insert-images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachment)

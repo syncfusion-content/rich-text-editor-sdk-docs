@@ -4,7 +4,6 @@ title: Editor value in ASP.NET Core Rich Text Editor Control | Syncfusion
 description: Learn here all about Editor value in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Editor value
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -508,5 +507,5 @@ The Rich Text Editor provides the `showSourceCode` method, which allows you to t
 ## See also
 
 * [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
-* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](./third-party-integration#codemirror-integration)

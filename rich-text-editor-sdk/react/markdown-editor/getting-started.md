@@ -86,10 +86,10 @@ These modules can be injected into the `services` prop of the `<Inject>` compone
 
 {% tabs %}
 {% highlight ts hl_lines="6" tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight js hl_lines="6" tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.jsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,10 +101,10 @@ Now, you can start adding React Markdown Editor component to the application. Fo
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
