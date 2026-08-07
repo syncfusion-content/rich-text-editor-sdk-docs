@@ -100,7 +100,7 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 {% endtabs %}
 {% endif %}
 
-> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/tailwind3) that shows how to render the iframe in Angular Rich Text Editor.
+> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/fluent2) that shows how to render the iframe in Angular Rich Text Editor.
 
 
 ## See Also

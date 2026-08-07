@@ -108,4 +108,4 @@ A working demonstration of the AI Assistant, showcasing real-time chunk streamin
 
 * **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
 
-* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/tailwind3):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/fluent2):** Implementation using the `gpt-4o-mini` model
