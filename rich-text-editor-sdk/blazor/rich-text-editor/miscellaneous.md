@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Miscellaneous in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Miscellaneous in Blazor Rich Text Editor component with examples and much more details.
+title: Miscellaneous in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to customize placeholders, enable character count, limit content, edit HTML in code view, and format lists in Blazor Rich Text Editor.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Miscellaneous in Blazor Rich Text Editor Component
+# Miscellaneous in Blazor Rich Text Editor
 
 ## Placeholder Text Customization
 
