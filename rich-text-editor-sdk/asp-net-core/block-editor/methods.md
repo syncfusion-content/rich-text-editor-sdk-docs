@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in ASP.NET Core Block Editor Control | Syncfusion
-description: Checkout and learn about Methods with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: Methods in ASP.NET Core Block Editor | Syncfusion
+description: Learn about the public methods in ASP.NET Core BlockEditor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Methods in ASP.NET Core Block Editor control
+# Methods in ASP.NET Core Block Editor
 
 The Block Editor control provides a comprehensive set of public methods that allow you to programmatically interact with and manipulate the editor content. These methods enable you to add, remove, update, and manage blocks, as well as control selection, formatting, and other editor operations.
 

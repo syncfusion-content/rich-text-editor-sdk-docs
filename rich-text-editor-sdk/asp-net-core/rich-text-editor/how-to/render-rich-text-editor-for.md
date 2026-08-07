@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Render Rich Text Editor For in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Render Rich Text Editor For in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Render RichTextEditorFor in ASP.NET Core Rich Text Editor
+description: Learn how to render the RichTextEditorFor control in the ASP.NET Core Rich Text Editor and bind editor content to model properties.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Render Rich Text Editor For
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Render the RichTextEditorFor control
+# Render RichTextEditorFor in ASP.NET Core Rich Text Editor
 
 The RichTextEditorFor control can be rendered by passing values from the controller. The formatted Rich Text Editor value is retrieved when submitting the form using the post method.
 

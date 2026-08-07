@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Inline Content in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Inline Content with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Inline Content in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to add inline content in ASP.NET Core Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Content  in ASP.NET Core Block Editor control
+# Inline Content  in ASP.NET Core Block Editor
 
 Content in the Block Editor is managed through the `content` property of blocks.
 

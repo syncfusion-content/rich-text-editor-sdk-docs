@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Integration in ASP.NET Core Rich Text Editor | Syncfusion
-description: Learn here all about Mention Integration in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Mentions in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to add user mentions in the ASP.NET Core Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Mention Integration
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Mentions in the ASP.NET Core Rich Text Editor Control
+# Mentions in the ASP.NET Core Rich Text Editor
 
 By integrating the [Mention](https://ej2.syncfusion.com/aspnetcore/documentation/mention/getting-started) component with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
 

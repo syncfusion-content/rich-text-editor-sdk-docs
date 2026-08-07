@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Table in ASP.NET Core Rich Text Editor control | Syncfusion
-description: Learn here all about Table in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Tables in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the ASP.NET Core Rich Text Editor with row, column, and cell customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Table
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Table in ASP.NET Core Rich Text Editor Control
+# Tables in ASP.NET Core Rich Text Editor
 
 Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings)
 
@@ -127,7 +126,7 @@ Entire rows can be selected using the icons that appears on hover.
 - **What you'll see**: A selection handle appears on the left side of the corresponding row.
 - **How to select**: Click the handle to select the entire row.
 
-![Rich Text Editor table row selection](../images/table_row_selection.gif)
+![Rich Text Editor table row selection](./images/table_row_selection.gif)
 
 ### Selecting an Entire Column
 
@@ -139,7 +138,7 @@ Entire columns can be selected using the icons that appears on hover.
 - **What you'll see**: A selection handle appears at the top of the corresponding column.
 - **How to select**: Click the handle to select the entire column.
 
-![Rich Text Editor table column selection](../images/table_column_selection.gif)
+![Rich Text Editor table column selection](./images/table_column_selection.gif)
 
 ### Selecting the Entire Table
 
@@ -151,7 +150,7 @@ The entire table can be selected using the table selection icon that appears on 
 - **What you'll see**: A selection handle appears at the top-left corner of the table.
 - **How to select**: Click the handle to select the entire table.
 
-![Rich Text Editor entire table selection](../images/table_entire_selection.gif)
+![Rich Text Editor entire table selection](./images/table_entire_selection.gif)
 
 ### Keyboard Shortcuts
 
@@ -263,7 +262,7 @@ The `TableCellProperties` enables modification of properties for both single and
 
 All changes made in the Table Cell Properties dialog are instantly reflected in the editor as a live preview, providing real-time visual feedback before finalizing the modifications.
 
-![Rich Text Editor table settings](../images/table_cell_properties.png)
+![Rich Text Editor table settings](./images/table_cell_properties.png)
 
 In the following sample, the table cell properties feature has been provided from table module.
 

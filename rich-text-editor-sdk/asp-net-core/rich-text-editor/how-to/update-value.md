@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Update Value in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Update Value in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Handle Ctrl+S Shortcut in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to implement the Ctrl+S keyboard shortcut in the ASP.NET Core Rich Text Editor to update values and save editor content programmatically.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Update Value
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Capture ctrl+s to update the value
+# Implement Ctrl+S Shortcut to Save Content in ASP.NET Core Rich Text Editor
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its `keyCode`.
 

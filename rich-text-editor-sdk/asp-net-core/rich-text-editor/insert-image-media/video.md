@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Video in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Video in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Insert Videos in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to insert, upload, embed, resize, and manage videos in the ASP.NET Core Rich Text Editor from local files, URLs, and online sources.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Video
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Videos in the ASP.NET Core Rich Text Editor Control
+# Insert Videos in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property.
 

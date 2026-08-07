@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Placeholder Text in ASP.NET Core Rich Text Editor Control
-description: Learn here all about Placeholder Text in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Quotation Formatting in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to apply quotation formatting in the ASP.NET Core Rich Text Editor to highlight quoted content and improve readability.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Placeholder Text
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Quotation formatting in ASP.NET Core Rich Text Editor Control
+# Quotation Formatting in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor facilitates quotation formatting through the `Blockquote` tool available in the toolbar. Blockquotes are designed to visually highlight significant text, emphasizing key information or quotations by setting them apart from the main content for added emphasis and clarity.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar types in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Toolbar types in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Types in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the ASP.NET Core Rich Text Editor for different layout requirements.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Toolbar types
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Toolbar in the ASP.NET Core Rich Text Editor Control
+# Toolbar Types in ASP.NET Core Rich Text Editor
 
 The Syncfusion ASP.NET Core Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 

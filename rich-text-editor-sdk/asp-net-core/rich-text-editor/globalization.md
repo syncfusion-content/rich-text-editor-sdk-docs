@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Globalization in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to localize the ASP.NET Core Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Globalization
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Globalization in the ASP.NET Core Rich Text Editor Control
+# Globalization in ASP.NET Core Rich Text Editor
 
 ## Localization
 
@@ -246,10 +246,6 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             "slashMenuItemVideoDescription": "Insert a video.",
             "slashMenuItemEmojiText": "Emojipicker",
             "slashMenuItemEmojiDescription": "Use emojis to express ideas and emoticons.",
-<<<<<<< HEAD
-
-=======
->>>>>>> 33e0df3f6e7ecbb65842c957659045cb2c7b1518
         }
     }
 }

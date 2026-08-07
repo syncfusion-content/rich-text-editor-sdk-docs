@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Third Party Integration in ASP.NET Core Rich Text Editor Control
-description: Learn here all about Third Party Integration in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Third-Party Integrations in ASP.NET Core Rich Text Editor | Syncfusion
+description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET Core Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Third Party Integration
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Third party integration in ASP.NET Core Rich text editor Control
+# Third-Party Integration in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure AI Assistant in ASP.NET Core Syncfusion Rich Text Editor
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ASP.NET Core Rich Text Editor Component.
+title: Configure of AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to configure the AI Assistant in the ASP.NET Core Rich Text Editor with prompt templates, response actions, and toolbar settings.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Properties of AI Assistant
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Properties of AI Assistant
+# Configure AI Assistant in ASP.NET Core Rich Text Editor
 
 The `AIAssistantSettings` class provides the following properties for complete customization:
 
