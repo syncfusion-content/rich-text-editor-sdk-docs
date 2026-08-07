@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI Assistant of ASP.NET MVC Syncfusion Rich Text Editor
-description: Learn about AI Assistant feature in the Syncfusion Essential JS 2 ASP.NET MVC Rich Text Editor Component.
+title: AI Assistant in ASP.NET MVC Syncfusion Rich Text Editor
+description: Learn how to enable and configure the AI Assistant in the ASP.NET MVC Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Integrating AI Assistant
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Integrating AI Assistant
+# Integrating AI Assistant in ASP.NET MVC Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 

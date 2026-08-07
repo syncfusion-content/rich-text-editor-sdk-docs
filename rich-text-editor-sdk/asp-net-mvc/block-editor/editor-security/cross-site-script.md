@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cross-Site scripting in ASP.NET MVC Block Editor | Syncfusion
-description: Checkout and learn about Cross-Site scripting with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
+title: XSS Prevention in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to enable XSS prevention in the ASP.NET MVC BlockEditor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Prevent XSS in ASP.NET MVC Block Editor Control
+# XSS Prevention in ASP.NET MVC Block Editor
 
 The Block Editor control allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 

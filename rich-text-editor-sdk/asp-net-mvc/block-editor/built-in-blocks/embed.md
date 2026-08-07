@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Embed Blocks in ASP.NET MVC Block Editor control | Syncfusion
-description: Checkout and learn about Embed Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
+title: Image Blocks in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to add and configure image blocks in the ASP.NET MVC Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Embed Blocks in ASP.NET MVC Block Editor control
+# Image Blocks in ASP.NET MVC Block Editor
 
 Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
 

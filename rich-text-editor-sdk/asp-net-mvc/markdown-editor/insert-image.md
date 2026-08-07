@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in ASP.NET MVC Markdown Editor Control | Syncfusion
-description: Checkout and learn about Insert Images in ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Insert Images in ASP.NET MVC Markdown Editor | Syncfusion
+description: Learn how to insert images in the ASP.NET MVC Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Insert Images
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Insert Images in ASP.NET MVC Markdown Editor Control
+# Insert Images in ASP.NET MVC Markdown Editor
 
 The Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 

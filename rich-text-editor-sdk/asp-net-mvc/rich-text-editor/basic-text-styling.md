@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text Styling in ASP.NET MVC RichTextEditor Control | Syncfusion
-description: Learn here all about Basic Text Styling in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Basic Text Styling in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to apply basic text styling in the ASP.NET MVC Rich Text Editor, including formatting options such as bold, italic, and underline.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Basic Text Styling
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Basic Text Styling in  ASP.NET MVC Rich Text Editor control
+# Basic Text Styling in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor's basic styles feature provides essential formatting options, including bold, italic, underline, strikethrough, subscript, superscript, and case changes. These fundamental tools enable users to enhance and customize their text effortlessly. By leveraging these options, users can ensure their content is both visually appealing and well-structured.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lists in ASP.NET MVC Block Editor control | Syncfusion
-description: Checkout and learn about List Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
+title: List Blocks in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the ASP.NET MVC Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: BlockEditor
 publishingplatform: rich-text-editor-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in ASP.NET MVC Block Editor control
+# List Blocks in ASP.NET MVC Block Editor
 
 List blocks in the BlockEditor component are used to organize content into structured lists. You can render List blocks by setting the `blockType` property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 

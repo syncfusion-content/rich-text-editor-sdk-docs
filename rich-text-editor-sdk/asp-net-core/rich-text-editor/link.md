@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Link in Syncfusion ASP.NET Core Rich Text Editor Control
-description: Learn here all about Link in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Links in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the ASP.NET Core Rich Text Editor for better content navigation and user experiences.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Link
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Link in ASP.NET Core Rich Text Editor Control
+# Links in ASP.NET Core Rich Text Editor
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 

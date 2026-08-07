@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Overview in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Overview in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Overview of ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn about the ASP.NET Core Rich Text Editor features, editing capabilities, toolbar options, and content formatting support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Index
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-
-# Overview
+# Overview of ASP.NET Core Rich Text Editor
 
 The Rich Text Editor control is WYSIWYG ("what you see is what you get") editor; it is used to create and edit the content and return valid HTML markup or markdown (MD) of the content. The editor provides a standard toolbar to format content using its commands. Modular library features to load the necessary functionality on demand. The toolbar contains commands to align the text, insert link, insert image, insert list, undo/redo operation, HTML view, and more.
 

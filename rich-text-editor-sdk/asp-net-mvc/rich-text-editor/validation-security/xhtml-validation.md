@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Xhtml Validation in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Xhtml Validation in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: XHTML Validation and XSS Prevention in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the ASP.NET MVC Rich Text Editor using built-in sanitization and custom filtering.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Xhtml Validation
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# XHTML validation in  ASP.NET MVC Rich Text Editor Control
+# XHTML Validation and XSS Prevention in ASP.NET MVC Rich Text Editor
 
 The editor includes an [EnableXhtml](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableXhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: File Browser in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about File Browser in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: File Browser in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the ASP.NET MVC Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: File Browser
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---

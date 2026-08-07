@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ej1 Api Migration in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Migrate from Essential JS 1 to ASP.NET Core Rich Text Editor
+description: Learn how to migrate from Essential JS 1 to the ASP.NET Core Rich Text Editor by mapping APIs, features, and configuration settings.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Ej1 Api Migration
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migrate from Essential JS 1 to ASP.NET Core Rich Text Editor
 
 This article describes the API migration process of Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

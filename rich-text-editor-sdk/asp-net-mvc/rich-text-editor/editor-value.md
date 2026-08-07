@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor value in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Editor value in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Editor Value in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the ASP.NET MVC Rich Text Editor with placeholders, auto save, character count, and source code editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Editor value
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Editor value in ASP.NET MVC Rich Text Editor Control
+# Editor Value in ASP.NET MVC Rich Text Editor
 
 ## Get and Set Value
 

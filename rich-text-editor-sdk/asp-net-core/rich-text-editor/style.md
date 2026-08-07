@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Syncfusion ASP.NET Core Rich Text Editor Control
-description: Learn here all about Style in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to customize the ASP.NET Core Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Style
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Style Appearance Customization in the ASP.NET Core Rich Text Editor Control
+# Style and Appearance in ASP.NET Core Rich Text Editor
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 

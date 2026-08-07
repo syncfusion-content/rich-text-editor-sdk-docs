@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Headings in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about Headings in Syncfusion ASP.NET MVC Rich Text Editor Control of Syncfusion Essential JS 2 and more.
+title: Heading Styles in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to apply heading styles in the ASP.NET MVC Rich Text Editor to organize content and improve document structure.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Headings
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Heading Styles in the ASP.NET MVC Rich Text Editor Control
+# Heading Styles in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings allow for structuring content hierarchically, improving readability, and organizing information effectively.
 

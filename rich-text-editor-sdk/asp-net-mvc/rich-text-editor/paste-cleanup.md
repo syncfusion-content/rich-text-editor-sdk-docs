@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste Cleanup in ASP.NET MVC Syncfusion Rich Text Editor Component
-description: Learn here all about Paste Cleanup in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in ASP.NET MVC Rich Text Editor | Syncfusion
+description:  Learn how to clean and manage pasted content in the ASP.NET MVC Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Paste Cleanup
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Paste Cleanup in ASP.NET MVC Rich Text Editor Control
+# Paste Cleanup in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_PasteCleanupSettings)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 

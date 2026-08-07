@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Support in ASP.NET MVC Rich Text Editor Component | Syncfusion
-description: Learn here all about Keyboard Support in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard Support in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the ASP.NET MVC Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Keyboard Support
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Keyboard Support in ASP.NET MVC Rich Text Editor component
+# Keyboard Support in ASP.NET MVC Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

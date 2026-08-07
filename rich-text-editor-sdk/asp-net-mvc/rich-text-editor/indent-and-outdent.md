@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Indent and Outdent in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Indent and Outdent in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Increase and Decrease Indent in ASP.NET MVC Rich Text Editor
+description: Learn how to increase and decrease indentation in the ASP.NET MVC Rich Text Editor to format and organize content effectively.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Indent and Outdent
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Increase and Decrease Indent in ASP.NET MVC Rich Text Editor Control
+# Increase and Decrease Indent in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
 

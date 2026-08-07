@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrating Syncfusion RichTextEditor in a Dialog in ASP.NET Core
-description: Integrating Rich Text Editor in Dialog in ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Render Rich Text Editor in ASP.NET Core Dialog | Syncfusion
+description: Learn how to render the ASP.NET Core Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Dialog
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Integrating Rich Text Editor in Dialog Control
+# Render Rich Text Editor in ASP.NET Core Dialog
 
 When rendering the Rich Text Editor inside a Dialog Control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Block Formatting in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about Code Block Formatting in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Add Code Block Formatting in ASP.NET MVC Rich Text Editor
+description: Learn how to add code block formatting in the ASP.NET MVC Rich Text Editor using toolbar options to apply and remove code styles.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Code Block Formatting
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Code Block Formatting in the ASP.NET MVC Rich Text Editor Control
+# Add Code Block Formatting in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control offers a powerful feature to format text as preformatted code blocks, making it ideal for displaying programming snippets or structured contents.
 

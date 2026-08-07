@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ASP.NET MVC RichTextEditor Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Globalization in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to localize the ASP.NET MVC Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Globalization
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Globalization in the ASP.NET MVC Rich Text Editor
+# Globalization in ASP.NET MVC Rich Text Editor
 
 ## Localization
 
