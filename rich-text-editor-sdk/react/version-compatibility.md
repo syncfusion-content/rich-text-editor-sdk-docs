@@ -33,11 +33,11 @@ For example, version `22.1.34` is interpreted as:
 * **1** — minor release within the major volume (feature additions and bug fixes that are generally non-breaking).
 * **34** — revision or patch number (bug fixes and small updates).
 
-Refer to the [Release Notes](./release-notes-index) and the [Upgrade guide](../installation/upgrade) to verify compatibility and identify any breaking changes before updating packages.
+Refer to the [Release Notes](../common/release-notes-index) and the [Upgrade guide](../installation/upgrade) to verify compatibility and identify any breaking changes before updating packages.
 
 ## See also
 
-* [System requirements](./system-requirements)
-* [Browser support](./browser-support)
+* [System requirements](../common/system-requirements)
+* [Browser support](../common/browser-support)
 * [Upgrade guide](../installation/upgrade)
 * [Syncfusion product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
