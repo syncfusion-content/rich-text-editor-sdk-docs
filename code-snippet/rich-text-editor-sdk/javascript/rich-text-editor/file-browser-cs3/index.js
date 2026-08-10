@@ -2,17 +2,16 @@
  * Rich Text Editor - File browser sample
  */
 
-var hostUrl = 'https://ej2-aspcore-service.azurewebsites.net/';
+var hostUrl = 'https://services.syncfusion.com/js/production/';
 
 var editor = new ej.richtexteditor.RichTextEditor({
 	fileManagerSettings: {
 		enable: true,
-		path: '/Pictures/Food',
 		ajaxSettings: {
-			url: hostUrl + 'api/FileManager/FileOperations',
-			getImageUrl: hostUrl + 'api/FileManager/GetImage',
-			uploadUrl: hostUrl + 'api/FileManager/Upload',
-			downloadUrl: hostUrl + 'api/FileManager/Download'
+			url: hostUrl + 'api/RichTextEditor/FileOperations',
+			getImageUrl: hostUrl + 'api/RichTextEditor/GetImage',
+			uploadUrl: hostUrl + 'api/RichTextEditor/Upload',
+			downloadUrl: hostUrl + 'api/RichTextEditor/Download'
 		}
 	},
 	toolbarSettings: {
