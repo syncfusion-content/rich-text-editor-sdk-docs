@@ -23,7 +23,7 @@ These steps will apply the selected font style to the chosen text, allowing you 
 
 ### Configuring the Font Family Tool in the Toolbar
 
-You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Iems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
