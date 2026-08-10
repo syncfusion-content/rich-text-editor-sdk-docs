@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of the React Rich Text Editor SDK | Syncfusion
-description: Discover the Syncfusion React Rich Text Editor SDK — why to choose it, how to pick the right editor for your app, integration scenarios, state-management integration, and a feature comparison across the Rich Text Editor, Block Editor, and Markdown Editor.
+description: A short, information-dense overview of the Syncfusion React Rich Text Editor SDK — what it ships, how to pick the right editor, how to integrate it, and a single comparison table for Rich Text Editor, Block Editor, and Markdown Editor.
 platform: rich-text-editor-sdk
 control: Overview
 documentation: ug
@@ -10,77 +10,77 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Overview of the React Rich Text Editor SDK
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK is a set of three production-grade React editors — **Rich Text Editor**, **Block Editor**, and **Markdown Editor** — that share the same theme system, accessibility guarantees, and Syncfusion tooling. Each editor ships as its own npm package, so you install only what you use, and every editor works in Vite, Next.js, Gatsby, and Remix.
+The React Rich Text Editor SDK includes three editors — **Rich Text Editor**, **Block Editor**, and **Markdown Editor**. They share the same theme system, accessibility model, and Syncfusion tooling. Each editor is a separate npm package.
 
-## Why Rich Text Editor SDK for React?
+```bash
+npm install @syncfusion/ej2-react-richtexteditor
+npm install @syncfusion/ej2-react-blockeditor
+npm install @syncfusion/ej2-react-markdowneditor
+npm install @syncfusion/ej2-tailwind3-theme
+```
 
-The SDK exists to remove the friction of bolting a single-purpose editor onto a React app and then maintaining it. Picking the SDK gives you:
+## SDK components
 
-- **Three editors, one design system.** All three editors share the same Tailwind 3 / Material 3 / Fluent 2 / Bootstrap 5.3 themes, light/dark variants, CSS variables, and icon library. A single theme package covers every editor you install.
-- **Native React components.** Each editor is a first-class React component (`RichTextEditorComponent`, `BlockEditorComponent`, `MarkdownEditorComponent`) with typed props, `Inject` services, and event handlers — no wrapper around a vanilla widget.
-- **Production-grade features out of the box.** Toolbar, image upload, link and table dialogs, paste cleanup, undo/redo, keyboard shortcuts, accessibility (WCAG 2.2 AA, Section 508), and right-to-left rendering are built in.
-- **Optional AI tooling.** The SDK ships [Skills](./ai-tools/skills) and an [MCP Server](./ai-tools/mcp-server) that ground AI assistants in the correct APIs, `Inject` services, and theme imports for every editor.
-- **Framework-agnostic docs, React-specific code.** Common topics (globalization, accessibility, licensing) live under `/common`, while React-specific setup, themes, and meta-framework guides live under `/react`.
-- **One license, three editors.** A single Syncfusion license covers the Rich Text Editor, Block Editor, and Markdown Editor packages.
+- **Themes** — Tailwind 3, Material 3, Fluent 2, Bootstrap 5.3, with light/dark variants, CSS variables, and a shared icon set. One theme package covers every installed editor.
+- **React components** — `RichTextEditorComponent`, `BlockEditorComponent`, `MarkdownEditorComponent`. Each uses typed props, `Inject` services, and React event handlers.
+- **Built-in features** — Toolbar, image / link / table dialogs, paste cleanup, undo/redo, keyboard shortcuts, RTL, and accessibility (WCAG 2.2 AA, Section 508).
+- **AI tooling** — [Skills](./ai-tools/skills) and [MCP Server](./ai-tools/mcp-server) provide AI assistants with the correct APIs and theme imports.
+- **State contract** — Every editor is a controlled component. Pass `value`, handle `change`. The same pattern works with `useState`, React Hook Form, Redux, Zustand, or a CRDT layer.
 
-## Choose the right editor for your React application
+## Choose an editor
 
-The three editors target different content shapes. Pick the one that matches what your users author.
-
-| If your users… | Use this editor | Why |
+| Content shape | Editor | Output |
 | --- | --- | --- |
-| Author free-form articles, emails, or notes with inline formatting, images, tables, and links | **Rich Text Editor** | WYSIWYG HTML output, full toolbar, quick toolbar, image / audio / video dialogs, paste cleanup, and XHTML validation. |
-| Build structured documents from blocks (paragraphs, headings, lists, callouts, code blocks, tables) and want slash-menu composition | **Block Editor** | Block-based document model, drag-and-drop block reordering, slash commands, and a clean block API for custom blocks. |
-| Write in Markdown and want a live preview or a WYSIWYG Markdown surface | **Markdown Editor** | Bidirectional Markdown ↔ HTML, `MarkdownFormatter`, custom Markdown syntax, and a toolbar tuned for Markdown. |
+| Inline formatting, images, tables, links | **Rich Text Editor** | HTML |
+| Block-based documents (paragraphs, headings, lists, callouts, code, tables) | **Block Editor** | Block JSON |
+| Markdown with preview or WYSIWYG surface | **Markdown Editor** | Markdown (+ HTML preview) |
 
-> The three editors are independent. You can install one, two, or all three in the same React app and mount each on its own route or component.
+The editors are independent. Install any combination and mount each on its own route.
 
-## React integration scenarios
+## Framework integration
 
-The SDK is designed for the React stacks teams actually ship. The same editor component works in each scenario — only the bootstrap and SSR configuration differ.
-
-| Scenario | Where to start |
+| Scenario | Start here |
 | --- | --- |
 | New Vite + React + TypeScript app | [Quick Start](./components/rich-text-editor/quick-start) |
 | Next.js (App Router, `'use client'`) | [Next.js guide](./meta-frameworks/nextjs) |
-| Gatsby (static site) | [Gatsby guide](./meta-frameworks/gatsby) |
+| Gatsby | [Gatsby guide](./meta-frameworks/gatsby) |
 | Remix / React Router (SSR via Vite) | [Remix guide](./meta-frameworks/react-remix-app) |
-| Existing React app, just add an editor | [Getting Started](./components/rich-text-editor/getting-started) |
-| Server-side rendering notes (Remix, Next.js SSR) | Each meta-framework guide includes the SSR configuration step (`ssr.noExternal` for Vite, `'use client'` for the Next.js App Router). |
+| Existing React app | [Getting Started](./components/rich-text-editor/getting-started) |
 
-## State management integration
+SSR steps (`ssr.noExternal` for Vite, `'use client'` for the Next.js App Router) are covered in each meta-framework guide.
 
-The editors expose controlled-value APIs so you can wire them into any React state layer — local `useState`, a form library, or a global store.
+## State management
 
-| Pattern | How it works |
+Bind `value` to your state and update on `change`. The same pattern applies across all three editors.
+
+| Pattern | Wiring |
 | --- | --- |
-| **Local component state** | Bind the editor's `value` prop to `useState` and update it in the `change` event handler. This is the default in the [Quick Start](./components/rich-text-editor/quick-start). |
-| **Form libraries (React Hook Form, Formik)** | Register the editor as a controlled field. Use `value` for the field value and `change` to update the form state. See [Forms Support](./components/rich-text-editor/validation-security/form-support). |
-| **Global stores (Redux, Zustand, Jotai)** | Read the editor value from the store and dispatch an update on `change`. Because the editor is a controlled component, store updates re-render the editor without a remount. |
-| **Persistence** | Enable `enablePersistence` to write the editor's value to `localStorage` across reloads, or serialize the value to your own backend. See [State Persistence](./common/state-persistence). |
-| **Collaboration / server sync** | Send the `change` payload to your backend (or a Yjs / Automerge CRDT layer) and rehydrate `value` from the server on mount. |
+| Local `useState` | Default in the [Quick Start](./components/rich-text-editor/quick-start). |
+| React Hook Form / Formik | Register the editor as a controlled field. See [Forms Support](./components/rich-text-editor/validation-security/form-support). |
+| Redux / Zustand / Jotai | Read the value from the store, dispatch an update on `change`. The editor re-renders without a remount. |
+| Persistence | Set `enablePersistence` for `localStorage`, or serialize to your backend. See [State Persistence](./common/state-persistence). |
+| Collaboration | Send the `change` payload to your backend or a Yjs / Automerge CRDT, then rehydrate `value` from the server. |
 
-> Whichever layer you choose, treat the editor as a controlled component: pass `value` in and react to `change`. Avoid mutating the editor's internal DOM directly.
+Do not mutate the editor's internal DOM. State always flows through `value` and `change`.
 
-## Feature comparison matrix
+## Feature comparison
 
-Use this matrix to decide which editor to install. All three share the same theme, accessibility, and licensing; the differences are in the content model and the feature surface.
+Theme, accessibility, licensing, and telemetry are the same across all three editors. The differences are in the content model and feature surface.
 
 | Feature | Rich Text Editor | Block Editor | Markdown Editor |
 | --- | --- | --- | --- |
-| Content model | HTML | Blocks (paragraph, heading, list, callout, code, table, image, etc.) | Markdown |
-| Output format | HTML | Block JSON (serializable) | Markdown (with HTML preview) |
+| Content model | HTML | Block tree | Markdown |
 | WYSIWYG | Yes | Yes | Yes (preview pane) |
-| Toolbar | Full toolbar + quick toolbar | Slash menu + block toolbar | Markdown toolbar |
+| Toolbar | Full + quick toolbar | Slash menu + block toolbar | Markdown toolbar |
 | Image / audio / video | Insert dialogs + file browser | Image block, embed block | Image insert |
 | Tables | Table editor | Table block | Markdown table insert |
 | Code blocks | Code-block tool | Code block | Fenced code blocks |
 | Slash commands | — | Yes | — |
-| Drag-and-drop block reordering | — | Yes | — |
+| Block drag-and-drop | — | Yes | — |
 | Paste cleanup | Yes | Yes | Yes |
 | Undo / Redo | Yes | Yes | Yes |
 | Keyboard shortcuts | Yes | Yes | Yes |
-| RTL support | Yes | Yes | Yes |
+| RTL | Yes | Yes | Yes |
 | Accessibility (WCAG 2.2 AA, Section 508) | Yes | Yes | Yes |
 | `enablePersistence` | Yes | Yes | Yes |
 | `disableTelemetry` | Yes | Yes | Yes |
@@ -88,7 +88,7 @@ Use this matrix to decide which editor to install. All three share the same them
 | React package | `@syncfusion/ej2-react-richtexteditor` | `@syncfusion/ej2-react-blockeditor` | `@syncfusion/ej2-react-markdowneditor` |
 | Required `Inject` services | `Toolbar`, `Image`, `Link`, `HtmlEditor`, `QuickToolbar` | Block array (`ParagraphBlock`, `HeadingBlock`, `ListBlock`, …) | `Toolbar`, `Image`, `Link`, `MarkdownFormatter` |
 
-> Where a cell shows "—", the feature is not part of that editor's model by design (for example, the Markdown Editor has no slash menu because Markdown is the source of truth).
+A "—" means the feature is not part of that editor's model. The Markdown Editor has no slash menu because Markdown is the source of truth.
 
 ## Next steps
 

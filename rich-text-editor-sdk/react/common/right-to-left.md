@@ -80,6 +80,6 @@ For per-component control (for example, RTL only inside the editor), set `enable
 
 ## See also
 
-* [Accessibility](./accessibility)
-* [Globalization overview](./globalization/overview)
-* [Quick Start for React Rich Text Editor](../react/rich-text-editor/quick-start)
+* [Accessibility](../../common/accessibility)
+* [Globalization overview](../../common/globalization/overview)
+* [Quick Start for React Rich Text Editor](../components/rich-text-editor/quick-start)

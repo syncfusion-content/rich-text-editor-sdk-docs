@@ -117,7 +117,53 @@ Override styles on the `e-icons` class or on a specific icon element to change c
 
 ## Available icons
 
-The full icon library is available per theme at [https://ej2.syncfusion.com/react/documentation/appearance/icons#available-icons](https://ej2.syncfusion.com/react/documentation/appearance/icons#available-icons). All themes' icons render the same glyphs; only the visual weight and primary color change with the theme.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 icon package includes a comprehensive library of icons across multiple themes. Each theme demo below shows the icon name, CSS class, and visual preview.
+
+<!-- markdownlint-disable MD033 -->
+
+### Material 3
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material3/demo.html" style="height:1000px;width:100%;" title="Material 3 icons preview" loading="lazy"></iframe>
+
+### Material
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material/demo.html" style="height:1000px;width:100%;" title="Material icons preview" loading="lazy"></iframe>
+
+### Fabric
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fabric/demo.html" style="height:1000px;width:100%;" title="Fabric icons preview" loading="lazy"></iframe>
+
+### Bootstrap
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/bootstrap/demo.html" style="height:1000px;width:100%;" title="Bootstrap icons preview" loading="lazy"></iframe>
+
+### Bootstrap 4
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/bootstrap4/demo.html" style="height:1000px;width:100%;" title="Bootstrap 4 icons preview" loading="lazy"></iframe>
+
+### Bootstrap 5
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/bootstrap5/demo.html" style="height:1000px;width:100%;" title="Bootstrap 5 icons preview" loading="lazy"></iframe>
+
+### High Contrast
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/highcontrast/demo.html" style="height:1000px;width:100%;" title="High Contrast icons preview" loading="lazy"></iframe>
+
+### Tailwind CSS
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/tailwind/demo.html" style="height:1000px;width:100%;" title="Tailwind CSS icons preview" loading="lazy"></iframe>
+
+### Tailwind 3.4
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/tailwind3/demo.html" style="height:1000px;width:100%;" title="Tailwind 3.4 icons preview" loading="lazy"></iframe>
+
+### Fluent 2
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent2/demo.html" style="height:1000px;width:100%;" title="Fluent 2 icons preview" loading="lazy"></iframe>
+
+### Fluent
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent/demo.html" style="height:1000px;width:100%;" title="Fluent icons preview" loading="lazy"></iframe>
 
 ## See also
 
