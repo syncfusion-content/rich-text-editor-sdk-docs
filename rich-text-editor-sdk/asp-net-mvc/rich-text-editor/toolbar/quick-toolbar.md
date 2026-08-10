@@ -4,7 +4,6 @@ title: Quick toolbars in ASP.NET MVC Rich Text Editor Control | Syncfusion
 description: Learn here all about Quick toolbars in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Quick toolbars
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

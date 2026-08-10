@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC Markdown Editor | Syncfusion
 description: Check out and learn about getting started with ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Getting Started
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

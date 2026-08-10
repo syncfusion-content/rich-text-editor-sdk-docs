@@ -4,7 +4,6 @@ title: Editor Modes in ASP.NET MVC Syncfusion Rich Text Editor Component
 description: Learn here all about Formation in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Formation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC Rich Text Editor | Syncfusion
 description: Check out and learn about getting started with ASP.NET MVC Rich Text Editor control of Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
