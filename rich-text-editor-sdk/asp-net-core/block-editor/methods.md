@@ -241,7 +241,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting Method](/method-formatting.png)
+![Formatting Method](./images/method-formatting.png)
 
 ## Data Export Methods
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar Items in ASP.NET Core Rich Text Editor | Syncfusion
-description:  Learn about all available toolbar items in the ASP.NET Core Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
+description: Learn about toolbar items in the ASP.NET Core Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -146,7 +146,7 @@ Horizontal lines visually separate sections of content in the editor, enhancing 
 
 | Name | Icons | Summary | Initialization |
 |----------------|---------|---------|------------------------------------------|
-| Horizontal Line | ![HorizontalLine icon](../../images/horizontal-icon.png) | Allows you to insert horizontal line.|toolbarSettings: { items: ['HorizontalLine']} |
+| Horizontal Line | ![HorizontalLine icon](../images/horizontal-icon.png) | Allows you to insert horizontal line.|toolbarSettings: { items: ['HorizontalLine']} |
 
 ### Undo & redo
 

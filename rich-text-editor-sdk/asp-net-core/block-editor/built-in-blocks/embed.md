@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Blocks in ASP.NET Core Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the ASP.NET Core Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
+description: Learn how to add and configure image blocks in the ASP.NET Core Block Editor, including uploads, storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug

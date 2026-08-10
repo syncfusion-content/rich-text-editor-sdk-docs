@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Implement Ctrl+S Shortcut to Save Content in ASP.NET Core Rich Text Editor
+# Implement Ctrl+S Shortcut in ASP.NET Core Rich Text Editor
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its `keyCode`.
 

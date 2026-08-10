@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model Binding in Razor Pages for ASP.NET Core Rich Text Editor | Syncfusion
+title: Razor Pages Model Binding in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use model binding in Razor Pages with the ASP.NET Core Rich Text Editor to handle and process editor content efficiently.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -10,7 +10,7 @@ documentation: ug
 
 # Model Binding in Razor Pages for ASP.NET Core Rich Text Editor
 
-This article deals with the model binding of the Razor Pages of the ASP.NET Core platform. Refer to this [`Page Model`](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/page-model-binding/) section for the detailed instructions on how to create a page model.
+This article deals with the model binding of the Razor Pages of the ASP.NET Core platform. Refer to this [`Page Model`](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/page-model-binding) section for the detailed instructions on how to create a page model.
 
 The model binding provides data to the page models and Razor pages. OnGet is a handler method that will be executed once the Razor page gets loaded in the browser. `value` in the form tag retrieves data from the OnGet method in the `IndexModel` class using the model binding.
 

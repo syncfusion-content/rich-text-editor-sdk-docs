@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Cleanup in ASP.NET Core Rich Text Editor | Syncfusion
-description: Learn how to clean and customize clipboard content in the ASP.NET Core Rich Text Editor by removing unwanted styles and preserving formatting during copy and cut operations.
+description: Learn how to clean clipboard content in the ASP.NET Core Rich Text Editor by removing unwanted styles and preserving formatting during copy and cut.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

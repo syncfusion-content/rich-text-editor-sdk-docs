@@ -133,5 +133,5 @@ However, if you want to accept the given URL without validating it for hyperlink
 
 ## See Also
 
-* [Image with links](./image/#image-with-link)
+* [Image with links](./image#image-with-link)
 * [Insert File Attachments](./how-to/file-attachment)

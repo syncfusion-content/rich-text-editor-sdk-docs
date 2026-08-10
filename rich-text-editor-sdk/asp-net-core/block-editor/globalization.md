@@ -56,7 +56,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
 
-![Locale](./../images/locale.png)
+![Locale](./images/locale.png)
 
 ## RTL
 

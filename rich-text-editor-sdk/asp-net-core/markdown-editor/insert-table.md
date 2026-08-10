@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Insert Tables in ASP.NET Core Markdown Editor | Syncfusion
-description: Learn how to insert and customize tables in the ASP.NET Core Markdown Editor using the Create Table toolbar option. Configure rows, columns, and table content in Markdown format.
+description: Learn how to insert and customize tables in the ASP.NET Core Markdown Editor using the Create Table option with configurable rows and columns.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
