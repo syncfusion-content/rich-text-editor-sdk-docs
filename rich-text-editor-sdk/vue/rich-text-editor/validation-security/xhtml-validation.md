@@ -68,7 +68,7 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 
 For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
 
-### Implementing custom cross-site scripting and fililtering in Rich Text Editor
+### Implementing custom cross-site scripting and filtering in Rich Text Editor
 
 1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.
@@ -87,7 +87,7 @@ The following sample demonstrates how to filter the `script` tag by value.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs28" %}
 
-You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributs`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
+You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributes`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
 
 For instance, if you want to display `<iframe>`, By manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframes while preventing potential security risks associated with XSS vulnerabilities.
 
