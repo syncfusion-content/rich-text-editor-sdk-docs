@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Custom Markdown Syntax in React Markdown Editor component | Syncfusion
-description: Learn how to customize Markdown syntax in the Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Customizing Markdown Syntax 
+title: Custom Markdown Syntax in React Markdown Editor | Syncfusion
+description: Learn how to customize Markdown syntax in the React Markdown Editor by overriding default list, bold, and italic symbols.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Markdown Syntax in React Markdown Editor Component
+# Custom Markdown Syntax in React Markdown Editor
 
-The React Markdown Editor allows customization of default Markdown syntax to match preferred formatting styles. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/#formatter) property, enabling a customized Markdown experience.
+The React Markdown Editor allows customization of default Markdown syntax to match preferred formatting styles. You can override the default syntax using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor#formatter) property, enabling a customized Markdown experience.
 
 ## Customizing markdown syntax  
 
