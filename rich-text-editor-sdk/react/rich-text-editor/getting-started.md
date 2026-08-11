@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with React Rich Text Editor Component | Syncfusion
-description: Learn how to set up and configure the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with React Rich Text Editor | Syncfusion
+description: Learn how to get started with the React Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor"
-control: Getting started
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -48,7 +48,7 @@ Non-interactive mode allows you to create a project directly using a single comm
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
-sf new my-app --framework react --type ts --template rte --theme tailwind3
+sf new my-app --framework react --type ts --template rich-text-editor --theme tailwind3
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,7 +73,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 √ Choose Framework: » React
 √ Choose Build Tool: » Vite
 √ Choose Language: » Typescript
-√ Choose Template: » RTE
+√ Choose Template: » Rich Text Editor
 √ Choose Theme: » Tailwind3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
@@ -101,7 +101,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Rich Text Editor Component](./images/cli-rte.png)
+![Rich Text Editor Component](images/cli-rte.png)
 
 {% endtabcontent %}
 
