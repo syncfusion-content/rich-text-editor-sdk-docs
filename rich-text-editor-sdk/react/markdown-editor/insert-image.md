@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in React Markdown Editor | Syncfusion
-description: Learn how to insert images in the React Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
-control: Markdown Editor
+title: Insert Images in React Markdown Editor component | Syncfusion
+description: Learn how to insert images in the Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
+control: Image Insertion in Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Images in React Markdown Editor
+# Insert Images in React Markdown Editor Component
 
 The Syncfusion React Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 

@@ -4,7 +4,6 @@ title: Getting started with JavaScript Markdown Editor | Syncfusion
 description:  Check out and learn about Getting started with JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -91,10 +90,10 @@ Markdown Editor can be initialized on a div element as shown below:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/javascript/markdown-editor/getting-started-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

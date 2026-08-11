@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in React Block Editor | Syncfusion
-description: Learn how to handle events in the React Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
+title: Events in React Block Editor component | Syncfusion
+description: Checkout and learn about Events with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Events in React Block Editor
+# Events in React Block Editor Component
 
 The Block Editor component provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

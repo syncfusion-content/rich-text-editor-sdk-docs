@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Read-Only Mode in React Rich Text Editor | Syncfusion
-description: Learn how to use read-only and disabled modes in the React Rich Text Editor to control editing, restrict user interaction, and display content safely.
-control: Rich Text Editor
+title: Controlling Editor Access in React Rich Text Editor component | Syncfusion
+description: Learn here all about Controlling Editor Access in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Controlling Editor Access
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Read-Only Mode in React Rich Text Editor
+# Controlling Editor Access in React Rich Text Editor
 	
 The Syncfusion React Rich Text Editor provides read-only and disabled modes to control user interaction with the editor. Read-only mode allows users to view formatted content without editing, while disabled mode prevents all interactions, including toolbar access. These features are useful for displaying content without modifications or temporarily restricting input.
 

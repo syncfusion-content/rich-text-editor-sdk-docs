@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Shortcuts in React Block Editor | Syncfusion
-description: Learn the keyboard shortcuts available in the React Block Editor for block creation, navigation, formatting, and undo/redo.
+title: Keyboard Shortcuts in React Block Editor component | Syncfusion
+description: Checkout and learn about Keyboard Shortcuts with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Shortcuts in React Block Editor
+# Keyboard Shortcuts in React Block Editor component
 
 The Block Editor component provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 

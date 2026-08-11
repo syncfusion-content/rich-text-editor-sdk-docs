@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor Modes in React Rich Text Editor | Syncfusion
-description: Learn how to use HTML, Markdown, and IFrame editing modes in the React Rich Text Editor to create and edit content in different formats.
-control: Rich Text Editor
+title: Editor mode in React Rich Text Editor Component | Syncfusion
+description: Learn here all about Editor mode in Syncfusion React Rich Text Editor Component of Syncfusion Essential JS 2 and more.
+control: Editor mode
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Modes in React Rich Text Editor
+# Editor Modes in React Rich Text Editor Component
 
 The Rich Text Editor component allows you to create and edit content, returning it as either valid HTML or Markdown (MD). It supports the following two editing formats:
 

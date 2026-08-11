@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Quick Toolbars in React Rich Text Editor | Syncfusion
-description: Learn how to customize Quick Toolbars in the React Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
-control: Rich Text Editor
+title: Quick Toolbars in React Rich Text Editor component | Syncfusion
+description: Learn how to customize the Quick toolbars in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Quick toolbars
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Quick Toolbars in React Rich Text Editor
+# Quick Toolbars in the React Rich Text Editor component
 
 The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [quickToolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#quickToolbarSettings) property.
 

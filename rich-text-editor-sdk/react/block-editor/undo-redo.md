@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo in React Block Editor | Syncfusion
-description: Learn how to configure undo and redo in React Block Editor, customize the undo/redo history stack, and restore editing actions.
+title: Undo redo in React Block Editor component | Syncfusion
+description: Checkout and learn about Undo redo with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo and Redo in React Block Editor
+# Undo redo in React Block Editor component
 
 The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
 

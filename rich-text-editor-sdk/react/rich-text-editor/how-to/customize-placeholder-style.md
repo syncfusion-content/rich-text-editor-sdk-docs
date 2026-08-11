@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Placeholder Style in React Rich Text Editor | Syncfusion
-description: Learn how to customize the placeholder text style in the React Rich Text Editor using CSS classes to modify its appearance.
-control: Rich Text Editor
+title: Customize placeholder style in React Rich text editor component | Syncfusion
+description: Learn here all about Customize placeholder style in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
+control: Customize placeholder style 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customize Placeholder Text Style in React Rich Text Editor
+# Customize placeholder style in React Rich text editor component
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 

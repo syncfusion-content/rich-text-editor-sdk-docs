@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Audio in React Rich Text Editor | Syncfusion
-description: Learn how to add, upload, manage, and customize audio content in the React Rich Text Editor using online sources and local audio files.
-control: Rich Text Editor
+title: Audios in React Rich Text Editor component | Syncfusion
+description: Learn how to insert and manage Audio in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Audios 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Audio in React Rich Text Editor
+# Audios in React Rich Text Editor Component
 
 The Rich Text Editor enables insertion of audio files from online sources or local machines. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 

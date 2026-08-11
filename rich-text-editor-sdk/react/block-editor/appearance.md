@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and Appearance in React Block Editor | Syncfusion
-description: Learn how to customize the React Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
+title: Appearance in React Block Editor component | Syncfusion
+description: Checkout and learn about appearance with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style and Appearance in React Block Editor
+# Appearance in React Block Editor component
 
 The Block Editor component provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Tables in React Markdown Editor | Syncfusion
-description: Learn how to insert and customize tables in the React Markdown Editor by configuring rows, columns, and Markdown table content.
-control: Markdown Editor
+title: Insert Table in React Markdown Editor component | Syncfusion
+description: Learn how to insert and customize tables in the Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
+control: Table Insertion in Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Tables in React Markdown Editor
+# Insert Table in React Markdown Editor Component
 
 To enable the table insertion feature, add the `CreateTable` option to the toolbar items. Once added, users can click the Insert Table icon in the toolbar to insert a table into the editor.
 

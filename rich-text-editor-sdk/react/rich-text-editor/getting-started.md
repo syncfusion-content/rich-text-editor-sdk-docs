@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with React Rich Text Editor | Syncfusion
-description: Learn how to get started with the React Rich Text Editor and explore setup, configuration, and core feature examples.
+title: Getting Started with React Rich Text Editor Component | Syncfusion
+description: Learn how to set up and configure the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor"
-control: Rich Text Editor
+control: Getting started
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -48,7 +48,7 @@ Non-interactive mode allows you to create a project directly using a single comm
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
-sf new my-app --framework react --type ts --template rich-text-editor --theme tailwind3
+sf new my-app --framework react --type ts --template rte --theme tailwind3
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,7 +73,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 √ Choose Framework: » React
 √ Choose Build Tool: » Vite
 √ Choose Language: » Typescript
-√ Choose Template: » Rich Text Editor
+√ Choose Template: » RTE
 √ Choose Theme: » Tailwind3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
@@ -101,7 +101,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Rich Text Editor Component](images/cli-rte.png)
+![Rich Text Editor Component](./images/cli-rte.png)
 
 {% endtabcontent %}
 
@@ -179,10 +179,10 @@ These modules can be injected into the `services` prop of the `<Inject>` compone
 
 {% tabs %}
 {% highlight ts hl_lines="7" tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js hl_lines="6" tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,10 +194,10 @@ Now, you can start adding the React Rich Text Editor component in the applicatio
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 

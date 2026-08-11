@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Image Blocks in React Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the React Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
+title: Embed Blocks in React Block Editor Component | Syncfusion
+description: Checkout and learn about Embed Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Image Blocks in React Block Editor
+# Embed Blocks in React Block Editor component
 
 The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 

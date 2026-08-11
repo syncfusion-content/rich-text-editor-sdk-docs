@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in React Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the React Rich Text Editor for advanced editing workflows.
+title: Selection in React Rich Text Editor component | Syncfusion
+description: Learn how to select a character range using React Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Rich Text Editor
+control: Text Selection
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Selection in React Rich Text Editor
+# Selection in React Rich Text Editor Component
 
 ## Text selection
 

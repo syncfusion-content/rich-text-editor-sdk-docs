@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Toolbar Items in React Rich Text Editor | Syncfusion
-description: Learn how to create custom toolbar items in the React Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
-control: Rich Text Editor
+title: Custom Toolbar Items in React Rich Text Editor component | Syncfusion
+description: Learn how to create and manage custom toolbar items in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control:  Custom Toolbar
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Toolbar Items in React Rich Text Editor
+# Custom Toolbar Items in React Rich Text Editor Component
 
 The React Syncfusion Rich Text Editor allows you to customize the toolbar using the [toolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#toolbarSettings) property. You can add custom commands with text, icons, or HTML templates and define their position in the toolbar.
 

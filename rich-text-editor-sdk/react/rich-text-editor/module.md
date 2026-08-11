@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Feature Modules in React Rich Text Editor | Syncfusion
-description: Learn how to inject feature modules in the React Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
-control: Rich Text Editor
+title: Feature Modules with React Rich Text Editor component | Syncfusion
+description:  Learn about feature modules in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+control: Modules
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Feature Modules in React Rich Text Editor
+# Module in React Rich Text Editor
 
 The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) employs a modular architecture, allowing selective inclusion of features to optimize performance and customize functionality. This approach reduces bundle size and enhances flexibility for developers adapting the editor to specific use cases.
 

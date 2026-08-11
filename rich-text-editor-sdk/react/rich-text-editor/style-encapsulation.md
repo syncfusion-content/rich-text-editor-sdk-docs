@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Style Encapsulation in React Rich Text Editor | Syncfusion
-description: Learn how to isolate or apply application styles in the React Rich Text Editor using iframe mode and control CSS styling behavior.
+title: Style Encapsulation | Syncfusion
+description: Learn here all about Style Encapsulation Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Rich Text Editor
+control: Style Encapsulation
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

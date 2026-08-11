@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Markdown Syntax Supported in React Markdown Editor | Syncfusion
-description:  Learn the Markdown syntax supported in the React Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
-control: Markdown Editor
+title: Supported Markdown Syntax in React Markdown Editor component | Syncfusion
+description: Learn here all about Supported Markdown Syntax in Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
+control: Supported Markdown Syntax
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Markdown Syntax Supported in React Markdown Editor
+# Supported Markdown Syntax in React Markdown Editor Component
 
 The Syncfusion React Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
 

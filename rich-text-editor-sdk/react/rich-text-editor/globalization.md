@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in React Rich Text Editor | Syncfusion
-description: Learn how to localize the React Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
-control: Rich Text Editor
+title: Globalization in React Rich Text Editor component | Syncfusion
+description: Learn here all about Globalization in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Globalization 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in React Rich Text Editor
+# Globalization in the React Rich Text Editor Component
 
 ## Localization
 

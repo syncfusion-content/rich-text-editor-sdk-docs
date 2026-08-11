@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enter Key Configuration in React Rich Text Editor | Syncfusion
-description: Learn how to customize Enter and Shift+Enter key behavior in the React Rich Text Editor for flexible content formatting and structure.
-control: Rich Text Editor
+title: Enter key Configuration in React Rich Text Editor | Syncfusion
+description: Learn how to customize Enter and Shift+Enter key behaviors in the Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
+control: Enter key 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Enter and Shift+Enter in React Rich Text Editor
+# Enter and Shift+Enter Key Configuration in React Rich Text Editor
 
 Rich Text Editor allows customization of the Enter and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure of AI Assistant in React Rich Text Editor | Syncfusion
-description: Learn how to configure the AI Assistant in the React Rich Text Editor with prompt templates, response actions, and toolbar settings.
-control: Rich Text Editor
+title: Configure AI Assistant in React Rich Text Editor | Syncfusion
+description: Learn about the AI Assistant feature configuration in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Properties of AI Assistant
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Configure AI Assistant in React Rich Text Editor
+# Properties of AI Assistant
 
 The `AIAssistantSettings` class provides the following properties for complete customization:
 

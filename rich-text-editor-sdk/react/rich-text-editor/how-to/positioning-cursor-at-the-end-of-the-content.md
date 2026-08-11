@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Move Cursor to End in React Rich Text Editor | Syncfusion
-description: Learn how to move the cursor to the end of content in the React Rich Text Editor using the focus method and selection handling.
-control: Rich Text Editor
+title: Positioning Cursor at Content End in Rich Text Editor | Syncfusion
+description: Learn here all about Positioning Cursor at Content End in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
+control: Positioning Cursor at Content End
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Move Cursor to End in React Rich Text Editor
+# Positioning Cursor at Content End in React Rich Text Editor
 
 To focus the cursor at the end of the content in the Rich Text Editor, you need to ensure the editor is focused and then manipulate the selection to place the cursor at the end. This involves focusing the editor using the `focus` method and then using the `Range` and `Selection` objects to collapse the range at the end of the content. Adding a slight delay (using `setTimeout`) ensures the focus is properly set before manipulating the cursor position.
 

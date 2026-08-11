@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Videos in React Rich Text Editor | Syncfusion
-description: Learn how to insert, upload, embed, resize, and manage videos in the React Rich Text Editor from local files, URLs, and online sources.
-control: Rich Text Editor
+title: Insert Videos in React Rich Text Editor component | Syncfusion
+description: Learn how to insert and manage videos in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Videos 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Videos in React Rich Text Editor
+# Insert Videos in the React Rich Text Editor Component
 
 The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 

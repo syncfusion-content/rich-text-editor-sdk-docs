@@ -1,14 +1,14 @@
 ---
 layout: post
-title: IFrame Editing Mode in React Rich Text Editor | Syncfusion
-description: Learn how to enable IFrame editing mode in the React Rich Text Editor to isolate styles and scripts within the editor surface.
-control: Rich Text Editor
+title: Iframe in React Rich Text Editor component | Syncfusion
+description: Learn how to use Iframe mode in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: IFrame Editing Mode
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# IFrame Editing Mode in React Rich Text Editor
+# IFrame Editing Mode in the React Rich Text Editor Component
 
 The iframe editor in the Rich Text Editor provides an isolated environment for content editing by using an iframe element as the content area. This ensures separation from the parent page's styles and scripts, preventing conflicts and enhancing compatibility.In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 

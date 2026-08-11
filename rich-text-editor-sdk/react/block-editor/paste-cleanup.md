@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste Cleanup in React Block Editor | Syncfusion
-description: Learn how to configure paste cleanup in React Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
+title: Paste Clean-up in React Block Editor component | Syncfusion
+description: Checkout and learn about Paste Clean-up with React Block Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Cleanup in React Block Editor
+# Paste Clean-up in React Block Editor component
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
