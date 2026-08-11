@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Xhtml validation in Vue Rich text editor component | Syncfusion
-description: Learn here all about Xhtml validation in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Xhtml validation 
+title: XHTML Validation in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the Vue Rich Text Editor using built-in sanitization and custom filtering.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Xhtml Validation in Vue Rich Text Editor Component
+# XHTML Validation in Vue Rich Text Editor
 
 The editor includes an [enableXhtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enablexhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
 
@@ -68,7 +68,7 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 
 For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
 
-### Implementing custom cross-site scripting and fililtering in Rich Text Editor
+### Implementing custom cross-site scripting and filtering in Rich Text Editor
 
 1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.
@@ -87,7 +87,7 @@ The following sample demonstrates how to filter the `script` tag by value.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs28" %}
 
-You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributs`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
+You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributes`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
 
 For instance, if you want to display `<iframe>`, By manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframes while preventing potential security risks associated with XSS vulnerabilities.
 

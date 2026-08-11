@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Vue Block Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started in Vue Block Editor | Syncfusion
+description: Learn how to get started with the Vue Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
 control: Block Editor
 platform: ej2-vue
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the Block Editor component in Vue 3
+# Getting Started with Vue Block Editor in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev/) project with a JavaScript environment and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Block Editor component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 

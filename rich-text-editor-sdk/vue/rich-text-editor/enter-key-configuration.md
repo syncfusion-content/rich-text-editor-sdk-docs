@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enter key in Vue Rich text editor component | Syncfusion
-description: Learn here all about Enter key in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Enter key 
+title: Enter Key Configuration in Vue Rich Text Editor | Syncfusion
+description: Learn how to customize Enter and Shift+Enter key behavior in the Vue Rich Text Editor for flexible content formatting and structure.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Enter key Configuration in Vue Rich Text Editor Component
+# Enter and Shift+Enter in Vue Rich Text Editor
 
 Rich Text Editor allows you to customize the behavior of the Enter key and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 

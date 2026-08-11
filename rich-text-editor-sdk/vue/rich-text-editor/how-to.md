@@ -1,14 +1,14 @@
 ---
 layout: post
 title: How to in Vue Rich text editor component | Syncfusion
-description: Learn here all about How to in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to customize, configure, and implement common Rich Text Editor scenarios in Vue applications.
 control: How to 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# How to in Vue Rich text editor component
+# How to in Vue Rich text editor
 
 ## Add Google fonts
 

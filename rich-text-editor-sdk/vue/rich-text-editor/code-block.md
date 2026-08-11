@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Block in Vue Rich text editor component | Syncfusion
-description: Learn here all about Code Block in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Code Block 
+title: Code Blocks in Vue Rich Text Editor | Syncfusion
+description: Learn how to insert and configure code blocks in the Vue Rich Text Editor with language selection, formatting options, and syntax highlighting support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Block in Vue Rich Text Editor Component
+# Code Blocks in Vue Rich Text Editor
 
 The Code Block feature in the Rich Text Editor, enabling users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the frontend.
 

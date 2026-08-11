@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format code block in Vue Rich text editor component | Syncfusion
-description: Learn here all about Format code block in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Format code block 
+title: Add Code Block Formatting in Vue Rich Text Editor | Syncfusion
+description: Learn how to add code block formatting in the Vue Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Format code block in Vue Rich text editor component
+# Add Code Block Formatting in Vue Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
 
