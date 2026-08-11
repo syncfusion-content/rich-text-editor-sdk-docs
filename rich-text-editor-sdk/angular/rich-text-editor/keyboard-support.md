@@ -135,11 +135,11 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,11 +153,11 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

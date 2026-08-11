@@ -91,10 +91,10 @@ Rich Text Editor can be initialized on a div element as shown below
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
