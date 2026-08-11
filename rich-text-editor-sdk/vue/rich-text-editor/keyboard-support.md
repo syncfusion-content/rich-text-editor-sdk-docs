@@ -135,10 +135,10 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs21/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/getting-started-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs21/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/getting-started-cs21/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -152,10 +152,10 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs23/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/getting-started-cs23/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs23/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/getting-started-cs23/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -163,5 +163,5 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 ## See also
 
-* [Globalization](./globalization)
-* [Accessibility](./accessibility)
+* [Globalization](./globalization/)
+* [Accessibility](./accessibility/)

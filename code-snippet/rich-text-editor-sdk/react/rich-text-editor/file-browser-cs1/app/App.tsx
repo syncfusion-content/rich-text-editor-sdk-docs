@@ -7,11 +7,12 @@ import * as React from 'react';
 class App extends React.Component<{},{}> {
   private fileManagerSettings: object = {
     enable: true,
+    path: '/Pictures/Food',
     ajaxSettings: {
-      url: 'https://services.syncfusion.com/react/production/api/RichTextEditor/FileOperations',
-      getImageUrl: 'https://services.syncfusion.com/react/production/api/RichTextEditor/GetImage',
-      uploadUrl: 'https://services.syncfusion.com/react/production/api/RichTextEditor/Upload',
-      downloadUrl: 'https://services.syncfusion.com/react/production/api/RichTextEditor/Download'
+      url: 'https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations',
+      getImageUrl: 'https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage',
+      uploadUrl: 'https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload',
+      downloadUrl: 'https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download'
     }
   }
 

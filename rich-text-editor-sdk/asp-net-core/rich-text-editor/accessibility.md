@@ -4,6 +4,7 @@ title: Accessibility in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn about accessibility features in the ASP.NET Core Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -13,17 +13,18 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickTool
 })
 
 export class AppComponent {
-    private hostUrl: string = 'https://services.syncfusion.com/angular/production/';
+    private hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public toolbarSettings: Object = {
         items: ['FileManager']
     };
     public fileManagerSettings: object = {
         enable: true,
+        path: '/Pictures/Food',
         ajaxSettings: {
-            url: this.hostUrl + 'api/RichTextEditor/FileOperations',
-            getImageUrl: this.hostUrl + 'api/RichTextEditor/GetImage',
-            uploadUrl: this.hostUrl + 'api/RichTextEditor/Upload',
-            downloadUrl: this.hostUrl + 'api/RichTextEditor/Download'
+            url: this.hostUrl + 'api/FileManager/FileOperations',
+            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+            downloadUrl: this.hostUrl + 'api/FileManager/Download'
         }
     };
 
