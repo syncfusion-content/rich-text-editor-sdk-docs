@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Support in React Rich Text Editor Component | Syncfusion
-description: Learn here all about keyboard support in Syncfusion Essential React Rich Text Editor component, it's elements and more.
-control: Keyboard support 
+title: Keyboard Support in React Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the React Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Support in React Rich Text Editor Component
+# Keyboard Support in React Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 
@@ -129,8 +129,8 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 | Actions | PC | Mac | 
 |----------------|---------| --------- |
 | View HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> |
-| Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
-| Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
+| Toggle full screen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
+| Exit Full screen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
 
 `[Class-component]`
