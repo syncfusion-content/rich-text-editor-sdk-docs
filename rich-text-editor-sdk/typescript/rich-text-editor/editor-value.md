@@ -4,6 +4,7 @@ title: Editor value in TypeScript Rich text editor control | Syncfusion
 description: Learn here all about Editor value in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Editor value
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
@@ -30,10 +31,10 @@ The below sample demonstrates the placeholder option in Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs16/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs16/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -43,10 +44,10 @@ The below sample demonstrates the placeholder option in Rich Text Editor.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs16/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs16/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,10 +74,10 @@ To get the content from the Rich Text Editor, use the following approaches:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -86,10 +87,10 @@ To get the content from the Rich Text Editor, use the following approaches:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs1/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +103,10 @@ To get the content from the Rich Text Editor, use the following approaches:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs3/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs3/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -115,10 +116,10 @@ To get the content from the Rich Text Editor, use the following approaches:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs3/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs3/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,10 +136,10 @@ The change event will be triggered if the content has been modified since the la
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs2/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -148,10 +149,10 @@ The change event will be triggered if the content has been modified since the la
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs2/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/editor-value-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/editor-value-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,10 +185,10 @@ The [enableHtmlEncode](https://ej2.syncfusion.com/documentation/api/rich-text-ed
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/html-encoder-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/html-encoder-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/html-encoder-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/html-encoder-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -197,10 +198,10 @@ The [enableHtmlEncode](https://ej2.syncfusion.com/documentation/api/rich-text-ed
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/html-encoder-cs1/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/html-encoder-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/html-encoder-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/html-encoder-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -449,10 +450,10 @@ When enabled, the character count is displayed at the bottom right corner of the
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs17/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs17/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs17/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -462,10 +463,10 @@ When enabled, the character count is displayed at the bottom right corner of the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs17/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs17/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs17/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/getting-started-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -486,10 +487,10 @@ The character count color will be modified based on the characters in the Rich T
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/character-count-limit-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/character-count-limit-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/character-count-limit-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/character-count-limit-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -499,10 +500,10 @@ The character count color will be modified based on the characters in the Rich T
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/character-count-limit-cs1/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/character-count-limit-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/character-count-limit-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/character-count-limit-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -540,10 +541,10 @@ You can add the `SourceCode` tool in the Rich Text Editor using the `toolbarSett
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/code-mirror-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/code-mirror-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/code-mirror-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/code-mirror-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -553,10 +554,10 @@ You can add the `SourceCode` tool in the Rich Text Editor using the `toolbarSett
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/code-mirror-cs1/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/code-mirror-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/code-mirror-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/typescript/rich-text-editor/code-mirror-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

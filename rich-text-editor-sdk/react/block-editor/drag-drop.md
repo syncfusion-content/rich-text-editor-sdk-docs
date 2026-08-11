@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in React Block Editor component | Syncfusion
-description: Checkout and learn about Drag and drop with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in React Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the React Block Editor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Drag and drop in the React Block Editor component
+# Drag and Drop in React Block Editor
 
 The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 
