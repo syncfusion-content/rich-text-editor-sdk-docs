@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Iframe in ASP.NET Core Rich Text Editor Component | Syncfusion
+title: Iframe in ASP.NET Core Rich Text Editor Component
 description: Learn here all about Iframe in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Iframe
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -105,4 +106,4 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 ## See Also
 
 * [Implementing Inline Editing](./inline-editing)
-* [Using the Markdown Editor](../../markdown-editor/getting-started)
+* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.NETCORE/getting-started)

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Spell & Grammar Check in React Rich Text Editor component | Syncfusion
-description: Learn here all about Spell & Grammar Check in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Spell & Grammar Check
+title: Spell and Grammar Check in React Rich Text Editor | Syncfusion
+description: Learn how to integrate spell and grammar checking in the React Rich Text Editor using WProofreader to improve content accuracy and writing quality.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate WProofreader into the React Rich Text Editor Component
+# Spell and Grammar Check in React Rich Text Editor
 
 WProofreader is a powerful tool that enhances content quality by detecting and correcting spelling and grammar errors in real-time as users type. This functionality significantly improves the professionalism of your content and ensures error-free text.
 
@@ -24,7 +24,7 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 ## Set up the WProofreader
 
-For integrating the `WProofreader` refer the following link : [WebSpellChecker](https://webspellchecker.com), you need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
+For integrating the `WProofreader` refer the following link : https://webspellchecker.com, you need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
 
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
