@@ -73,7 +73,6 @@ The terminal lists the available skills. Use the arrow keys to navigate, the spa
  Select skills to install (space to toggle)
 │  ◻ syncfusion-react-richtexteditor
 │  ◻ syncfusion-react-blockeditor
-│  ◻ syncfusion-react-markdowneditor
 |  ...
 ```
 

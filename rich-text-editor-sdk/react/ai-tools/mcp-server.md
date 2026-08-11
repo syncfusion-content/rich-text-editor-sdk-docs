@@ -261,4 +261,3 @@ The MCP Server is a knowledge bridge between your AI model and Syncfusion-specif
 - [AI-Powered Development](./ai-agent-tools)
 - [Skills](./skills)
 - [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
-- [Release Notes](./release-notes)
