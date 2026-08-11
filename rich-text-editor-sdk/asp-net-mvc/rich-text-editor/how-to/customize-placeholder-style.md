@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customize Placeholder Style in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Customize Placeholder Style in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Customize Placeholder Style in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to customize the placeholder text style in the ASP.NET MVC Rich Text Editor using CSS classes to modify its appearance.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 control: Customize Placeholder Style
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Customize the placeholder style
+# Customize Placeholder Text Style in ASP.NET MVC Rich Text Editor
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 

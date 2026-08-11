@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Events in ASP.NET MVC Block Editor Control | Syncfusion
-description: Checkout and learn about Events with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
+title: Events in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to handle events in the ASP.NET MVC BlockEditor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Events in ASP.NET MVC Block Editor control
+# Events in ASP.NET MVC Block Editor
 
 The Block Editor control provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

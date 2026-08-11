@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Audio in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Audio in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Audios in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to add, upload, manage, and customize audio content in the ASP.NET MVC Rich Text Editor using online sources and local audio files.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Audio
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Audios in ASP.NET MVC Rich text editor Control
+# Insert Audios in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [InsertAudioSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property.
 

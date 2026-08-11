@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Enter Key in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Enter Key in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Enter Key Configuration in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to customize Enter and Shift+Enter key behavior in the ASP.NET MVC Rich Text Editor for flexible content formatting and structure.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Enter Key
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Enter key Configuration in ASP.NET MVC Rich Text Editor Control
+# Enter and Shift+Enter in ASP.NET MVC Rich Text Editor
 
 Rich Text Editor allows you to customize the behavior of the Enter key and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 
