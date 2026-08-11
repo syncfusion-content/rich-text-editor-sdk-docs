@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Style Encapsulation in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Style Encapsulation in Blazor Rich Text Editor component with examples and much more details.
+description: Learn how to isolate or apply application styles in the Blazor Rich Text Editor using iframe mode and control CSS styling behavior.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Style Encapsulation in Blazor Rich Text Editor Component
+# Style Encapsulation in Blazor Rich Text Editor
 
 Style encapsulation determines how styles are applied within the **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
 

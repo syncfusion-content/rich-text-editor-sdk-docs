@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Real-Time Collaboration in JavaScript Block Editor | Syncfusion
-description: Enable real-time collaborative editing in the Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+description: Learn how to enable real-time collaboration in the JavaScript Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in JavaScript Block Editor control
+# Real-Time Collaboration in JavaScript Block Editor
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -29,9 +28,9 @@ With collaboration enabled, users can:
 
 Get real-time collaboration working in just a few minutes using `y-websocket` and a simple WebSocket server in our Block Editor component.
 
-### Step 1: Set up a basic Javascript Block Editor component
+### Step 1: Set up a basic JavaScript Block Editor component
 
-Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/es5-getting-started) to create a Javascript project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
+Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/es5-getting-started) to create a JavaScript project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
 
 ### Step 2: Creation of Yjs and Websocket provider bundle file using esbuild
 

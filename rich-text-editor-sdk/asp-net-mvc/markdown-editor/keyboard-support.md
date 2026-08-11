@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Keyboard support in ASP.NET MVC Markdown Editor Control | Syncfusion
-description: Checkout and learn about Keyboard support in ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Keyboard Shortcuts in ASP.NET MVC Markdown Editor | Syncfusion
+description: Learn the keyboard shortcuts supported in the ASP.NET MVC Markdown Editor for formatting text, inserting content, navigating the toolbar, and performing editing actions.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Keyboard support
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Keyboard support in ASP.NET MVC Markdown Editor Control
+# Keyboard Shortcuts in ASP.NET MVC Markdown Editor
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) as `Markdown`.
 

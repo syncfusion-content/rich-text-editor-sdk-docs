@@ -1,15 +1,14 @@
 ---
 layout: post
-title: File attachment in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about File attachment in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Attach Files in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to attach files in the JavaScript Rich Text Editor using file upload, drag and drop, saveUrl, and path configurations.
 platform: rich-text-editor-sdk
-control: File attachment 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# File attachment in JavaScript Rich text editor control
+# Attach Files in JavaScript Rich Text Editor
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Code Block in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Code Block with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Code Block in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to add and configure code blocks in the ASP.NET Core Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in ASP.NET Core Block Editor control
+# Code Blocks in ASP.NET Core Block Editor
 
 You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 

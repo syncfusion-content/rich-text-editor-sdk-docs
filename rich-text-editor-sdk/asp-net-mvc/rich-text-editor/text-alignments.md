@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Text Alignments in ASP.NET MVC Rich Text Editor control
-description: Learn here all about Text Alignments in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Text Alignments in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to apply text alignments in the ASP.NET MVC Rich Text Editor, including left, center, right, and justified alignment options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Text Alignments
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Text Alignments in the ASP.NET MVC Rich Text Editor Control
+# Text Alignments in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor offers various text alignment options, including left, center, right, and justify. To utilize these alignment options, add the Alignments item to the items property in the toolbarSettings.
 

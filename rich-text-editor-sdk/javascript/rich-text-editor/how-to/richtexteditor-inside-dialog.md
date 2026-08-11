@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor inside Dialog in JavaScript Richtexteditor | Syncfusion
-description: Learn here all about Rich Text Editor inside Dialog in JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Render Rich Text Editor in JavaScript Dialog | Syncfusion
+description: Learn how to render the JavaScript Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Dialog control 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrating Rich Text Editor in Dialog Control
+# Render Rich Text Editor in JavaScript Dialog
 
 When rendering the Rich Text Editor inside a Dialog control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 

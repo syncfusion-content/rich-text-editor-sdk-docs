@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Image in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Image in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Insert Images in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to insert images in the ASP.NET Core Rich Text Editor using URLs, local uploads, File Manager integration, resizing, captions, alignment, wrapping, and server-side storage.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Image
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Images in ASP.NET Core Rich Text Editor Control
+# Insert Images in ASP.NET Core Rich Text Editor
 
 Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings)
 

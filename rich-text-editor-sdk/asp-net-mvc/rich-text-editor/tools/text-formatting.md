@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Text Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
-description: Learn here all about Text formatting and Structure in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+description: Learn how to format text in the ASP.NET MVC Rich Text Editor with bold, italic, headings, lists, checklists, blockquotes, line height, Markdown auto-format, format painter, indentation, and clear formatting.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Text formatting and Structure
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Text Formatting in the ASP.NET MVC Rich Text Editor Control
+# Text Formatting in ASP.NET MVC Rich Text Editor
 
 ## Basic text styling
 

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Rich Text Editor Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn about accessibility features in the ASP.NET MVC Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Accessibility
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Accessibility in the ASP.NET MVC Rich Text Editor Control
+# Accessibility in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
@@ -93,8 +92,6 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 The Rich Text Editor control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Rich Text Editor control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rich-text-editor.html) in a new window to evaluate the accessibility of the Rich Text Editor control with accessibility tools.
-
-{% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
 ## See Also
 

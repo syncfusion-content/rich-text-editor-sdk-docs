@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Embed in Blazor Block Editor Component | Syncfusion®
-description: Learn about embedding images and visual content in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Image Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure image blocks in Blazor Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Embed Blocks in Blazor Block Editor Component
+# Image Blocks in Blazor Block Editor
 
 The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
 

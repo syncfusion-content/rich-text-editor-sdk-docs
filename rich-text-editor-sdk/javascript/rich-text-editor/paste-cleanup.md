@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Paste cleanup in JavaScript Rich text editor control | Syncfusion
-description:  Learn how to configure  Paste Cleanup in the Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in JavaScript Rich Text Editor | Syncfusion
+description:  Learn how to clean and manage pasted content in the JavaScript Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 platform: rich-text-editor-sdk
-control: Paste cleanup 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Paste Cleanup in JavaScript Rich Text Editor control
+# Paste Cleanup in JavaScript Rich Text Editor
 
 The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://ej2.syncfusion.com/documentation/api/rich-text-editor/pastecleanupsettingsmodel)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 
