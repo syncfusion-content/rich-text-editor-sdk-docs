@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Mail Merge in Vue Rich Text Editor
 
-The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
+The Rich Text Editor can be customized to implement **Mail merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 
 This feature simplifies the creation of dynamic documents by allowing users to insert merge fields that are automatically populated with real data during content generation.
 
