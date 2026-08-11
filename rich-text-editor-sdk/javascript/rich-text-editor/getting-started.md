@@ -5,6 +5,7 @@ description:  Check out and learn about Getting started with JavaScript Rich Tex
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
 control: Getting started 
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---

@@ -17,93 +17,6 @@ To get started quickly with the Vue Rich Text Editor, refer to this video tutori
 
 {% youtube "https://www.youtube.com/watch?v=UfzKsdkxGpM" %}
 
-{% tabcontents %}
-
-{% tabcontent Syncfusion CLI %}
-
-## Prerequisites
-
-- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
-- Syncfusion CLI.
-
-## Install the Syncfusion CLI 
-
-Install the Syncfusion CLI globally using the following command:
-
-{% tabs %}
-{% highlight bash tabtitle="npm" %}
-npm install -g @syncfusion/syncfusion-cli
-{% endhighlight %}
-{% endtabs %}
-
-## Set up the Vite project using Syncfusion CLI
-
-You can create a Vue application with [Vite](https://vite.dev/) using the Syncfusion CLI. The CLI provides two ways to create a project:
-
-### Non-interactive mode
-
-Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf new my-app --framework vue --type ts --template rte --theme tailwind3
-{% endhighlight %}
-{% endtabs %}
-
-In this mode, the project configuration is passed directly in the command. The above command creates a `Vue` application with Vite and configured it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component. The generated project uses the TypeScript and the Composition API.
-
-### Interactive mode
-
-Interactive mode guides you through the project creation process with step-by-step prompts.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-sf
-{% endhighlight %}
-{% endtabs %}
-
-When you run the `sf` command, the CLI prompts you to select the required project configuration options. To create a Vue application with Vite and the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component, select the following options:
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-
-√ Project name? ... my-app
-√ Choose Framework: » Vue
-√ Choose Language: » TypeScript
-√ Choose Template: » RTE
-√ Choose Theme: » Tailwind3
-√ Choose Style Format: » CSS
-√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
-√ Install dependencies and start app now? ... no
-
-{% endhighlight %}
-{% endtabs %}
-
-The above selections generate a `Vue` application with Vite and configure it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Rich Text Editor` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
-
-## Run the project
-
-Once the project is created, navigate to the project directory and run the following commands in your terminal.
-
-{% tabs %}
-{% highlight bash tabtitle="CMD" %}
-cd my-app
-npm install
-npm run dev
-{% endhighlight %}
-{% endtabs %}
-
-The output will appear as follows:
-
-![Rich Text Editor Component](./images/cli-rte.png)
-
-{% endtabcontent %}
-
-{% tabcontent Vite CLI %}
-
 ## Prerequisites
 
 This guide uses Vite as the bundler and development environment. Install Node.js `24.13.0` or `higher` before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
@@ -207,9 +120,6 @@ npm run dev
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Rich Text Editor is displayed in the browser as shown below.
 
 ![Syncfusion Vue Rich Text Editor output](images/getting-started.png)
-
-{% endtabcontent %}
-{% endtabcontents %}
 
 ## See Also
 

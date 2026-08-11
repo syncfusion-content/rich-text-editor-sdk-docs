@@ -89,8 +89,7 @@ The following example shows a default Block Editor component.
 {% endhighlight %}
 
 {% highlight css tabtitle="styles.css" %}
-/* You can add global styles to this file, and also import other style files */
-@import '../node_modules/@syncfusion/ej2-material3-theme/styles/blockeditor/index.css';
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/getting-started/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

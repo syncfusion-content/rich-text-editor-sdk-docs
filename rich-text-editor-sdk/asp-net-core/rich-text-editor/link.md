@@ -4,6 +4,7 @@ title: Link in Syncfusion ASP.NET Core Rich Text Editor Control
 description: Learn here all about Link in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Link
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

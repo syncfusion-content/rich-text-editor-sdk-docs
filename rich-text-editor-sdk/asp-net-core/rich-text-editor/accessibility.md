@@ -4,6 +4,7 @@ title: Accessibility in ASP.NET Core Rich Text Editor Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Accessibility
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

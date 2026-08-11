@@ -4,6 +4,7 @@ title: Accessibility in ASP.NET MVC Markdown Editor Control | Syncfusion
 description: Checkout and learn about Accessibility in ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Accessibility
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

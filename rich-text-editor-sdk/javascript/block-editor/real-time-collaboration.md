@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in JavaScript Block Editor control
+# Real-time Collaboration in JavaScript Block Editor control
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -33,7 +33,7 @@ Get real-time collaboration working in just a few minutes using `y-websocket` an
 
 Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/es5-getting-started) to create a Javascript project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
 
-### Step 2: Creation of Yjs and Websocket provider bundle file using esbuild
+### Step 2: Creation of Yjs and websocket provider bundle file using esbuild
 
 A Yjs provider handles the transport of document updates between connected users. Choose a provider based on your deployment requirements.
 
@@ -107,7 +107,7 @@ Install the WebSocket server package in `server` folder:
 npm install @y/websocket-server
 ```
 
-#### Run the WebSocket Server
+#### Running the server:
 
 Open terminal in `server` folder:
 
@@ -248,7 +248,7 @@ Ensure that the following scripts are included in `index.html`:
 
 ### Step 6: Test the collaboration
  
-In your project, run the `index.html` in web browser.
+In your project, open the `index.html` page.
  
 > **Important:** Make sure your WebSocket server is still running in another terminal window.
  
@@ -300,13 +300,11 @@ var users = ej.blockeditor.users;
 | `deleteSnapshot` | `(id: string): Promise<void>` | Permanently remove a snapshot by id. |
 | `clearAll` | `(): Promise<void>` | Remove all snapshots from storage. |
 
-- After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
-
 Before that need to create a storage service for snapshots.
-- Create `versionHistoryService.js` with `IndexedDBVersionStorage` class
-- This class implements `IVersionStorage` interface (required by Syncfusion)
+- Create versionHistoryService.js with IndexedDBVersionStorage class
+- This class implements IVersionStorage interface (required by Syncfusion)
 
-Make Storage Room-Specific by using roomName from `collaboration.js` to make each room gets its own isolated snapshot database.
+Make Storage Room-Specific by using roomName from collaboration.js to make each room gets its own isolated snapshot database.
 
 Create a `versionHistoryService.js` file in the src folder, replace the `index.js` file to configure the BlockEditorComponent, and replace the `index.css` file with the styles required for the version history panel.
 
@@ -326,6 +324,7 @@ var blockEditor = new ej.blockeditor.BlockEditor({
         }
     }
 });
+
 blockEditor.appendTo('#blockeditor_default');
 
 // Update version history panel periodically
@@ -341,20 +340,25 @@ function updateSnapshots() {
     if (!versionHistory) {
         return;
     }
+
     var snapshots = versionHistory.getSnapshots();
     var panel = document.getElementById('version-history-panel');
+
     if (!panel) {
         return;
     }
+
     if (snapshots.length === 0) {
         panel.innerHTML =
             '<h3>Snapshots (0)</h3>' +
             '<p>No snapshots yet...</p>';
         return;
     }
+
     var html =
         '<h3>Snapshots (' + snapshots.length + ')</h3>' +
         '<div class="snapshots-container">';
+
     snapshots.forEach(function (snapshot) {
         html +=
             '<div class="snapshot-item">' +
@@ -367,6 +371,7 @@ function updateSnapshots() {
                 '</div>' +
             '</div>';
     });
+
     html += '</div>';
     panel.innerHTML = html;
 }

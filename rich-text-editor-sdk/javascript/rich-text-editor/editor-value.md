@@ -4,6 +4,7 @@ title: Editor value in JavaScript Rich text editor control | Syncfusion
 description: Learn here all about Editor value in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Editor value
+publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
