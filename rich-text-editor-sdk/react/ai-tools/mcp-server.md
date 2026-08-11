@@ -8,9 +8,9 @@ documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK MCP Server
+# Syncfusion® React Rich Text Editor SDK MCP Server
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates React Rich Text Editor SDK development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features for the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates React Rich Text Editor SDK development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features for the **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
 
 > The previously available **Agentic UI Builder** (`#sf_react_ui_builder`) has been upgraded to an **Agent skill-based experience** and is no longer part of the MCP Server. The **AI Coding Assistant** (`#sf_react_assistant`) has been **renamed** to **`search_docs`** (`#search_docs`) to follow MCP naming conventions.
 
@@ -200,7 +200,7 @@ Use the `search_docs` tool to get contextual guidance, code snippets, and config
 
 {% promptcards %}
 {% promptcard Markdown Editor features %}
-#searchdocs How do I switch between Markdown and rich-text view in the Markdown Editor?
+#search_docs How do I switch between Markdown and rich-text view in the Markdown Editor?
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -260,4 +260,4 @@ The MCP Server is a knowledge bridge between your AI model and Syncfusion-specif
 
 - [AI-Powered Development](./ai-agent-tools)
 - [Skills](./skills)
-- [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)

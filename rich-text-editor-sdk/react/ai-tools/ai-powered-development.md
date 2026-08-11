@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI-Powered Development with React Rich Text Editor SDK | Syncfusion
-description: Master AI-powered development with the Syncfusion React Rich Text Editor SDK — Rich Text Editor, Block Editor, and Markdown Editor — using MCP Server and Skills.
+description: Master AI-powered development with the Syncfusion React Rich Text Editor SDK using MCP Server and Skills.
 platform: rich-text-editor-sdk
 control: AI-Powered Development
 documentation: ug

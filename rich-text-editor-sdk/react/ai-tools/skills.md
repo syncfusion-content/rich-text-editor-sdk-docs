@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion React Rich Text Editor SDK Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor SDK guidance — Rich Text Editor, Block Editor, and Markdown Editor.
+title: React Rich Text Editor SDK Agent Skills | Syncfusion
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor SDK guidance.
 platform: rich-text-editor-sdk
 control: Skills
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK Agent Skills for AI Assistants
+# Syncfusion® React Rich Text Editor SDK Agent Skills for AI Assistants
 
 **Syncfusion React Skills** is a knowledge package that gives AI assistants — VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, and other Skills CLI–compatible tools — accurate React Rich Text Editor SDK guidance. The skills include official APIs, composition patterns, theming conventions, and the required `Inject` services, so the assistant generates code that runs without manual fixes.
 
