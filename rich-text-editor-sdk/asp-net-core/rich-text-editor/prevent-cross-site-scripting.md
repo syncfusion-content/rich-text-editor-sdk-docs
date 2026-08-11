@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Preventing XSS in Syncfusion ASP.NET Core RichText Editor Control
-description: Learn here all about preventing Cross-Site Scripting (XSS) in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Prevent XSS in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to prevent Cross-Site Scripting (XSS) attacks in the ASP.NET Core Rich Text Editor by validating and sanitizing content.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Preventing Cross-Site Scripting (XSS)
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Preventing Cross-Site Scripting (XSS)
+# Prevent XSS in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 

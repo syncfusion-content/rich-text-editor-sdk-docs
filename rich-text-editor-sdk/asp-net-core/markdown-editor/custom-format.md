@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Customizing Markdown Syntax in ASP.NET Core Markdown Editor Control | Syncfusion
-description: Checkout and learn about Customizing Markdown Syntax in ASP.NET Core Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Custom Markdown Syntax in ASP.NET Core Markdown Editor | Syncfusion
+description: Learn how to customize Markdown syntax in the ASP.NET Core Markdown Editor by overriding default list, bold, and italic symbols.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Customizing Markdown Syntax
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Customizing Markdown Syntax in ASP.NET Core Markdown Editor Control
+# Custom Markdown Syntax in ASP.NET Core Markdown Editor
 
 The ASP.NET Core Markdown Editor allows you to modify the default Markdown syntax to match your preferred formatting style. You can override the default syntax using the [formatter](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Formatter) property, enabling a customized Markdown experience.
 
