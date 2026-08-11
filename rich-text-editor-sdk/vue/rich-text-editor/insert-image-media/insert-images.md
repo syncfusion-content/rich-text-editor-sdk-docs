@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Images in Vue Rich text editor component | Syncfusion
-description: Learn here all about Images in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Images
+title: Insert Images in Vue Rich Text Editor | Syncfusion
+description: Learn how to insert images in the Vue Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Images in Vue Rich Text Editor Component
+# Insert Images in Vue Rich Text Editor
 
 Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/imagesettingsmodel)
 

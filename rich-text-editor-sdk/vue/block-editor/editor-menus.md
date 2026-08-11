@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor Menus in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Editor Menus with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Editor Menus in Vue Block Editor | Syncfusion
+description: Learn how to use the editor menus in the Vue Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in Vue Block Editor component
+# Editor Menus in Vue Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Globalization  in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Globalization  with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Globalization in Vue Block Editor | Syncfusion
+description: Learn how to localize the Vue Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in Vue Block Editor component
+# Globalization in Vue Block Editor
 
 Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor component provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
 

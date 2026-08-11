@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Methods in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Methods with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Methods in Vue Block Editor | Syncfusion
+description: Learn about the public methods in Vue Block Editor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Methods in Vue Block Editor component
+# Methods in Vue Block Editor
 
 The Block Editor component provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 
