@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Mention Integration in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to integrate mentions in Blazor Rich Text Editor for collaborative user tagging functionality.
+title: Mentions in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to add user mentions in the Blazor Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Mention Integration in Blazor RichTextEditor
+# Mentions in Blazor Rich Text Editor
 
 By integrating the [Mention](https://blazor.syncfusion.com/documentation/mention/getting-started) component with a Rich Text Editor, users can easily mention or tag other users or objects from the suggested list without manually typing names or identifiers.
 
