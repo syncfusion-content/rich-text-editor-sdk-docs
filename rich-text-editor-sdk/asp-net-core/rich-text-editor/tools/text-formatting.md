@@ -4,7 +4,6 @@ title: Text Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to format text in the ASP.NET Core Rich Text Editor with bold, italic, headings, lists, blockquotes, line height, format painter, and indentation.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
@@ -247,7 +246,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](../../images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
 
 ## Increase and decrease indent
 
@@ -541,8 +540,6 @@ Below is an example illustrating how to define the `allowedFormats` and `deniedF
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-painter-cs2/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-painter-cs2" %}
 
 ### Shortcut keys for copy and paste format
 

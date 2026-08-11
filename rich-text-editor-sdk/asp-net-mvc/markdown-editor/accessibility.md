@@ -4,7 +4,6 @@ title: Accessibility in ASP.NET MVC Markdown Editor | Syncfusion
 description: Learn about accessibility features in the ASP.NET MVC Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

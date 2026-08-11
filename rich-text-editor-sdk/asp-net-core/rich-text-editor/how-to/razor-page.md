@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Razor Pages Model Binding in ASP.NET Core Rich Text Editor | Syncfusion
+title: Model Binding in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use model binding in Razor Pages with the ASP.NET Core Rich Text Editor to handle and process editor content efficiently.
 control: Rich Text Editor
 platform: rich-text-editor-sdk

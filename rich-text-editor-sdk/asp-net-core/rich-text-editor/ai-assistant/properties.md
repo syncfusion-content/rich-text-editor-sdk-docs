@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Assistant Configuration in ASP.NET Core Rich Text Editor | Syncfusion
+title: Configure AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the ASP.NET Core Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
