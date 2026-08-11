@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors in Rich Text Editor SDK - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion Rich Text Editor SDK Components installation.
-platform: file-formats
+platform: rich-text-editor-sdk
 control: Installation and Deployment
 documentation: ug
 

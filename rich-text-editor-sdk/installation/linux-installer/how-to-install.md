@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion Rich Text Editor SDK Linux installer - Syncfusion
 description: Learn here about how to install the Syncfusion Rich Text Editor SDK Linux installer after downloading it from the Syncfusion website.
-platform: Rich Text Editor SDK
+platform: rich-text-editor-sdk
 control: Installation and Deployment
 documentation: ug
 
