@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nested blocks in Angular Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with Angular Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in Angular Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in Angular Block Editor using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in Angular Block Editor control
+# Nested Blocks in Angular Block Editor
 
 ## Configure children
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Real-Time Collaboration in Angular Block Editor Control | Syncfusion
-description: Learn how to enable real-time collaborative editing in the Angular Block Editor control, including user presence, version history, and more.
+title: Real-Time Collaboration in Angular Block Editor | Syncfusion
+description: Learn how to enable real-time collaboration in the Angular Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://www.syncfusion.com/angular-components/angular-block-editor/
 ---
 
-# Real-Time Collaboration in Angular Block Editor component
+# Real-Time Collaboration in Angular Block Editor
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 

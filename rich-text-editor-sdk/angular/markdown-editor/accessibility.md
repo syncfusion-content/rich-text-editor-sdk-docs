@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Markdown Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Markdown Editor | Syncfusion
+description: Learn about accessibility features in the Angular Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Markdown Editor Accessibility
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Angular Markdown Editor Component
+# Accessibility in Angular Markdown Editor
 
 The Angular Markdown Editor is designed to be fully accessible, adhering to WAI-ARIA specifications with ARIA roles, states, and properties. These features ensure compatibility with assistive technologies (AT) and keyboard navigation, enhancing usability for all users.
 
@@ -81,13 +81,13 @@ The Markdown Editor is assigned the `application` role:
 
 ## Keyboard navigation
 
-The Markdown Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor component.
+The Markdown Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor component.
 
 For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/angular/documentation/markdown-editor/keyboard-support) documentation.
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#formatter) property.This allows you to configure custom key combinations for various actions in the Markdown Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

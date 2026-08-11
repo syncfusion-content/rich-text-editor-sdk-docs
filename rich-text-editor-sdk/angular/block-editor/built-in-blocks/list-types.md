@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Lists in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about List Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: List Blocks in Angular Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the Angular Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in the Angular Block Editor Component
+# List Blocks in Angular Block Editor
 
 The Syncfusion Angular Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property of the [BlockModel](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel) to [BulletList](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype), [NumberedList](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype), or [Checklist](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype). Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
