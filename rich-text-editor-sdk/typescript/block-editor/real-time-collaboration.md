@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Real-Time Collaboration in TypeScript Block Editor | Syncfusion
-description: Enable real-time collaborative editing in the Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+description: Learn how to enable real-time collaboration in the TypeScript Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-time Collaboration in TypeScript Block Editor Component
+# Real-Time Collaboration in TypeScript Block Editor
 
-The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
+The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
 With collaboration enabled, users can:
 
@@ -45,8 +44,8 @@ See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choos
 | `y-webrtc` | Peer-to-peer | Quick local testing and development; no server required. |
 | `y-indexeddb` | Local storage | Offline persistence within a single browser. |
 | [Hocuspocus](https://tiptap.dev/docs/hocuspocus/getting-started/overview) | Open-source server | Scalable Node.js server with pluggable storage and Redis support. |
-| [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
-| [PartyKit](https://www.partykit.io/) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
+| [Liveblocks](https://liveblocks.io) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
+| [PartyKit](https://www.partykit.io) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
 
 Install the required libraries using npm:
 
@@ -110,7 +109,7 @@ const adapter: YjsAdapter = {
 
 // Create WebSocket provider for real-time synchronization
 // Connects to local WebSocket server on port 1234 and joins the room based on URL hash
-// Example: https://yourapp.com/#wb3lu joins room "wb3lu"
+// Example: https://yourapp.com#wb3lu joins room "wb3lu"
 const provider = new WebsocketProvider(
     'ws://localhost:1234',
     roomName,

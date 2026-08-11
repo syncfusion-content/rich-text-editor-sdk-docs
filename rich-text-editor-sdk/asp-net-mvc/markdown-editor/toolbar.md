@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Toolbar Configuration in ASP.NET MVC Markdown Editor Control | Syncfusion
-description: Checkout and learn about Toolbar Configuration in ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Toolbar Configuration in ASP.NET MVC Markdown Editor | Syncfusion
+description: Learn how to configure the toolbar in the ASP.NET MVC Markdown Editor with Expand, MultiRow, Scrollable, and custom item layouts.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Toolbar Configuration
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Toolbar configuration in Markdown Editor Control
+# Toolbar Configuration in ASP.NET MVC Markdown Editor
 
 ## Default toolbar items
 

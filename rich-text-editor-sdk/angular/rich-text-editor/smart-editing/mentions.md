@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mentions in Angular Rich Text Editor component | Syncfusion
-description: Learn how to integrate and customize the Mentions in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Mentions in Angular Rich Text Editor | Syncfusion
+description: Learn how to add user mentions in the Angular Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Mentions
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mentions in Angular Rich Text Editor Component
+# Mentions in Angular Rich Text Editor
 
 The Mention feature, integrated with the Syncfusion Angular Rich Text Editor via the [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
 

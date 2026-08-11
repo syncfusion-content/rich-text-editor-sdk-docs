@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Lists in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about List Blocks with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: List Blocks in TypeScript Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the TypeScript Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in TypeScript Block Editor control
+# List Blocks in TypeScript Block Editor
 
 The Syncfusion Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 

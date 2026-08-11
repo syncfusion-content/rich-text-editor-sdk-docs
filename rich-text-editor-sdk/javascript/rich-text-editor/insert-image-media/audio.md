@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Audios in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Audios in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Insert Audios in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add, upload, manage, and customize audio content in the JavaScript Rich Text Editor using online sources and local audio files.
 platform: rich-text-editor-sdk
-control: Audios 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Audios in JavaScript Rich text editor control
+# Insert Audios in JavaScript Rich Text Editor
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 

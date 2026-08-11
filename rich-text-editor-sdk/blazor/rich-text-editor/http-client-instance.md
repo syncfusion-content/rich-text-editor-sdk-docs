@@ -3,11 +3,11 @@ layout: post
 title: HttpClient Instance in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to configure and use HttpClient instance in Blazor Rich Text Editor for HTTP requests and much more details.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# HttpClientInstance in Blazor RichTextEditor Component
+# HttpClientInstance in Blazor RichTextEditor
 
 The Rich Text Editor component in Blazor enables you to utilize the `HttpClientInstance` property to append the custom HttpClient instance to all file upload and download requests. This approach offers flexibility in managing authentication and custom request configurations for Word Import, Word and PDF Export and image/audio/video insertions.
 

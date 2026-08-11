@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors in Rich Text Editor SDK - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion Rich Text Editor SDK Components installation.
-platform: file-formats
+platform: rich-text-editor-sdk
 control: Installation and Deployment
 documentation: ug
 
@@ -13,11 +13,11 @@ documentation: ug
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
-* [Unlocking the license installer using the trial key](https://help.syncfusion.com/file-formats/installation/installation-errors#unlocking-the-license-installer-using-the-trial-key)
-* [License has expired](https://help.syncfusion.com/file-formats/installation/installation-errors#license-has-expired)
-* [Unable to find a valid license or trial](https://help.syncfusion.com/file-formats/installation/installation-errors#unable-to-find-a-valid-license-or-trial)
-* [Unable to install because of another installation](https://help.syncfusion.com/file-formats/installation/installation-errors#unable-to-install-because-of-another-installation)
-* [Unable to install due to controlled folder access](http://help.syncfusion.com/file-formats/installation/installation-errors#unable-to-install-due-to-controlled-folder-access)
+* [Unlocking the license installer using the trial key](https://help.syncfusion.com/rich-text-editor-sdk/installation/installation-errors#unlocking-the-license-installer-using-the-trial-key)
+* [License has expired](https://help.syncfusion.com/rich-text-editor-sdk/installation/installation-errors#license-has-expired)
+* [Unable to find a valid license or trial](https://help.syncfusion.com/rich-text-editor-sdk/installation/installation-errors#unable-to-find-a-valid-license-or-trial)
+* [Unable to install because of another installation](https://help.syncfusion.com/rich-text-editor-sdk/installation/installation-errors#unable-to-install-because-of-another-installation)
+* [Unable to install due to controlled folder access](http://help.syncfusion.com/rich-text-editor-sdk/installation/installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 ## Unlocking the license installer using the trial key
 

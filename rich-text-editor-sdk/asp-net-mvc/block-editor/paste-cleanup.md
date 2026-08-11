@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Undo redo in ASP.NET MVC Block Editor | Syncfusion
-description: Checkout and learn about undo redo with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
+title: Paste Cleanup in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to configure paste cleanup in ASP.NET MVC BlockEditor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Paste Clean-up in ASP.NET MVC Block Editor control
+# Paste Cleanup in ASP.NET MVC Block Editor
 
 The Block Editor control provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains consistency with the editor's styling and structure. This helps in removing unwanted formatting, scripts, or elements often copied from external sources like web pages or word processors.
 

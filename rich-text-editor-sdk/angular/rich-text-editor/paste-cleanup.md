@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste Cleanup in Angular Rich Text Editor component | Syncfusion
-description: Learn how to configure  Paste Cleanup in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in Angular Rich Text Editor | Syncfusion
+description:  Learn how to clean and manage pasted content in the Angular Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Paste Cleanup
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Cleanup in Angular Rich Text Editor Component
+# Paste Cleanup in Angular Rich Text Editor
 
 The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/pastecleanupsettingsmodel)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 

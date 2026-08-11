@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Paste Clean-up in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Paste Clean-up with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in JavaScript Block Editor | Syncfusion
+description: Learn how to configure paste cleanup in JavaScript Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Clean-up in JavaScript Block Editor control
+# Paste Cleanup in JavaScript Block Editor
 
 The Block Editor control provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 

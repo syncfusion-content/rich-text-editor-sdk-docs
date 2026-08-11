@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nested blocks in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in JavaScript Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in the JavaScript Block Editor using parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in JavaScript Block Editor control
+# Nested Blocks in JavaScript Block Editor
 
 ## Configure children
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular Block Editor Component | Syncfusion
-description: Checkout and learn about getting started with Syncfusion Essential Angular Block Editor component, its elements, and more details.
+title: Getting Started with Angular Block Editor | Syncfusion
+description: Learn how to get started with the Angular Block Editor and explore setup, configuration, and core feature examples.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the Angular Block Editor Component
+# Getting Started with Angular Block Editor
 
 This guide explains how to create a default Block Editor component in a new Angular application.
 

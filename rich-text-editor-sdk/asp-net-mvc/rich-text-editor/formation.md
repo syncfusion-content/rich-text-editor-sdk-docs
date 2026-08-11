@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Formation in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Formation in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Content Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to apply content formatting in the ASP.NET MVC Rich Text Editor using built-in formatting tools to enhance text presentation.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Formation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Formation
+# Content Formatting in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control used to create and edit the content and return valid HTML markup or markdown (MD) of the content. It supports the following two editing formation.
 

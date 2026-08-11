@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Slash Menu in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Slash Menu in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Slash Commands in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use slash commands in the JavaScript Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
 platform: rich-text-editor-sdk
-control: Slash Menu
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Slash Commands in JavaScript Rich text editor control
+# Slash Commands in JavaScript Rich Text Editor
 
 The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 

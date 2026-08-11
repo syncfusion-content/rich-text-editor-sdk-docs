@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Custom Toolbar in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Custom Toolbar in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Custom Toolbar Items in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the ASP.NET MVC Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Custom Toolbar
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Custom Toolbar Items in the ASP.NET MVC Rich Text Editor Control
+# Custom Toolbar Items in ASP.NET MVC Rich Text Editor
 
 To quickly get started with the ASP.NET MVC Rich Text Editor with a custom toolbar, watch this video:
 

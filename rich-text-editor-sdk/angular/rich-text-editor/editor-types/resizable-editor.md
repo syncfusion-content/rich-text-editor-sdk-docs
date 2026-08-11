@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resizable Editor in Angular Rich Text Editor component | Syncfusion
-description: Learn how to enable and customize the Resizable Editor in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Resizable Editor in Angular Rich Text Editor | Syncfusion
+description: Learn how to resize the Angular Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Resizable Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Resizable Editor in the Angular Rich Text Editor Component
+# Resizable Editor in Angular Rich Text Editor
 
 The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Custom Toolbar in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Custom Toolbar in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Custom Toolbar Items in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the JavaScript Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
 platform: rich-text-editor-sdk
-control: Custom Toolbar
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Custom Toolbar Items in JavaScript Rich Text Editor control
+# Custom Toolbar Items in JavaScript Rich Text Editor
 
 The Rich Text Editor allows you to customize the toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#toolbarsettings) property. You can add custom commands with text, icons, or HTML templates and define their position in the toolbar.
 

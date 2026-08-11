@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Clipboard Cleanup in ASP.NET MVC Syncfusion Rich Text Editor Component
-description: Learn here all about Clipboard Cleanup in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Clipboard Cleanup in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to clean and customize clipboard content in the ASP.NET MVC Rich Text Editor by removing unwanted styles and preserving formatting during copy and cut operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Clipboard Cleanup
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Clipboard Cleanup in ASP.NET MVC Rich Text Editor Control
+# Clipboard Cleanup in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [EnableClipboardCleanup](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableClipboardCleanup) property.
 
