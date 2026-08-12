@@ -82,7 +82,7 @@ For example, by default, the mention chip renders as:
 Using the `displayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
+<a href="mailto:selma@gmail.com" aria-label="display-template" title="selma@gmail.com">@Selma Rose</a>
 
 ```
 
