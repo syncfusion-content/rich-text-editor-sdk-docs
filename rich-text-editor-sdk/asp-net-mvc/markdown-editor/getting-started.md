@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Markdown Editor
 
-The Syncfusion ASP.NET MVC Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains how to include [ASP.NET MVC Markdown Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
+The Syncfusion ASP.NET MVC Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains how to include [ASP.NET MVC Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -128,7 +128,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 * [Keyboard support in Rich Text Editor](./keyboard-support)
 * [Globalization in Rich Text Editor](../rich-text-editor/globalization)
 
-* [Real time example using Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/Forums#/bootstrap5)
-* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/InsertEmoticons#/material)
+* [Real time example using Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/forums#/fluent2)
+* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/insertemoticons#/fluent2)
 
-> You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the Rich Text Editor tools.
+> You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/defaultfunctionalities#/fluent2) that shows how to render the Rich Text Editor tools.
