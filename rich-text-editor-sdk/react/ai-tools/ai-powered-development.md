@@ -12,8 +12,6 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 AI assistants accelerate development, but without proper context they generate code that looks correct and fails at runtime — wrong import paths, missing `Inject` services, or deprecated APIs. Grounding the assistant in Syncfusion knowledge eliminates most of these errors for every editor in the SDK.
 
-The React Rich Text Editor SDK includes three editors: **Rich Text Editor**, **Block Editor**, and **Markdown Editor**. This guide covers how to get accurate, runnable code for any of them.
-
 **In this guide:**
 
 - Three ways to use AI with the React Rich Text Editor SDK (Browser, IDE, API)
@@ -113,11 +111,10 @@ For tools or applications that use AI APIs (Claude API, OpenAI, Gemini) to gener
 You are an expert in the Syncfusion React Rich Text Editor SDK (Rich Text Editor,
 Block Editor, Markdown Editor).
 
-- Always use @syncfusion/ej2-react-richtexteditor, @syncfusion/ej2-react-blockeditor,
-  or @syncfusion/ej2-react-markdowneditor
+- Always use @syncfusion/ej2-react-richtexteditor, @syncfusion/ej2-react-blockeditor
 - Use the <Inject> directive for required services (Toolbar, Image, Link, HtmlEditor,
-  QuickToolbar for the Rich Text Editor; MarkdownFormatter for the Markdown Editor)
-- If unsure about an API, search https://helpstaging.syncfusion.com/rich-text-editor-sdk/
+  QuickToolbar for the Rich Text Editor; MarkdownEditor for the Markdown Editor)
+- If unsure about an API, search https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default
 ```
 
 ## Package installation
@@ -135,14 +132,9 @@ npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
 npm install @syncfusion/ej2-react-blockeditor @syncfusion/ej2-tailwind3-theme
 
 {% endhighlight %}
-{% highlight bash tabtitle="Markdown Editor" %}
-
-npm install @syncfusion/ej2-react-markdowneditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
 {% endtabs %}
 
-> Install only the editors your project uses. The theme package covers all three.
+> Install only the editors your project uses along with the theme package.
 
 ## Choosing the right approach
 
@@ -174,8 +166,8 @@ AI models are trained on historical data and may suggest APIs from older Syncfus
 Use the latest Syncfusion React Rich Text Editor SDK APIs only.
 Target: React 18+ with @syncfusion/ej2-react-richtexteditor latest.
 
-Find any editor's API reference at
-https://helpstaging.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/api
+Find Rich Text Editor API reference at
+https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default
 ```
 
 The MCP Server mitigates this automatically by grounding the AI against live documentation.
@@ -185,7 +177,7 @@ The MCP Server mitigates this automatically by grounding the AI against live doc
 | Problem | Likely cause | Fix |
 | --- | --- | --- |
 | Editor feature doesn't work (toolbar missing, image upload broken) | Missing `Inject` for the required service | Add `<Inject services={[...]} />` as a child of the editor component |
-| Wrong or missing imports | AI confused with vanilla JS or another component family | Prompt explicitly: "Use `@syncfusion/ej2-react-richtexteditor` (or `…-blockeditor` / `…-markdowneditor`) only" |
+| Wrong or missing imports | AI confused with vanilla JS or another component family | Prompt explicitly: "Use `@syncfusion/ej2-react-richtexteditor` (or `…-blockeditor`) only" |
 | Deprecated API usage | AI trained on older docs | Enable the MCP Server for live doc grounding |
 | Unstyled editor | Missing theme stylesheet import | Import the matching theme CSS for the editor you use |
 | `<Inject>` placed outside the editor | Incorrect nesting | `<Inject>` must be a direct child of the editor component |

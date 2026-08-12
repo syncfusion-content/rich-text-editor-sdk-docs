@@ -57,11 +57,6 @@ npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
 npm install @syncfusion/ej2-react-blockeditor @syncfusion/ej2-tailwind3-theme
 
 {% endhighlight %}
-{% highlight bash tabtitle="Markdown Editor" %}
-
-npm install @syncfusion/ej2-react-markdowneditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
 {% endtabs %}
 
 ### Configure the MCP client
@@ -180,7 +175,7 @@ Use the `search_docs` tool to get contextual guidance, code snippets, and config
 
 {% promptcards %}
 {% promptcard Markdown Editor setup %}
-#search_docs How do I set up the Syncfusion React Markdown Editor with a custom toolbar and MarkdownFormatter?
+#search_docs How do I set up the Syncfusion React Markdown Editor with a custom toolbar and MarkdownEditor?
 {% endpromptcard %}
 {% endpromptcards %}
 

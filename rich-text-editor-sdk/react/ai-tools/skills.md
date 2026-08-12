@@ -12,8 +12,6 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 **Syncfusion React Skills** is a knowledge package that gives AI assistants — VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, and other Skills CLI–compatible tools — accurate React Rich Text Editor SDK guidance. The skills include official APIs, composition patterns, theming conventions, and the required `Inject` services, so the assistant generates code that runs without manual fixes.
 
-These skills cover every editor in the SDK: **Rich Text Editor**, **Block Editor**, and **Markdown Editor**.
-
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/) version 16 or higher.
@@ -26,7 +24,7 @@ These skills cover every editor in the SDK: **Rich Text Editor**, **Block Editor
 
 - Adding and configuring the Rich Text Editor, Block Editor, and Markdown Editor.
 - Component-specific props, events, and required feature modules.
-- Injecting services such as `Toolbar`, `Image`, `Link`, `HtmlEditor`, and `QuickToolbar` (Rich Text Editor), or `MarkdownFormatter` (Markdown Editor).
+- Injecting services such as `Toolbar`, `Image`, `Link`, `HtmlEditor`, and `QuickToolbar` (Rich Text Editor), or `MarkdownEditor` (Markdown Editor).
 
 **Patterns and best practices**
 
@@ -124,11 +122,6 @@ npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
 npm install @syncfusion/ej2-react-blockeditor @syncfusion/ej2-tailwind3-theme
 
 {% endhighlight %}
-{% highlight bash tabtitle="Markdown Editor" %}
-
-npm install @syncfusion/ej2-react-markdowneditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
 {% endtabs %}
 
 ## How the SDK Skills work
@@ -136,7 +129,7 @@ npm install @syncfusion/ej2-react-markdowneditor @syncfusion/ej2-tailwind3-theme
 1. **Reads relevant Skill files based on queries** — retrieves component usage patterns, APIs, and best-practice guidance for the Rich Text Editor, Block Editor, and Markdown Editor. The assistant loads skill names and descriptions first, then dynamically loads the required skill and reference files as needed.
 2. **Enforces Syncfusion best practices**, including:
    - Using the required feature modules for each editor.
-   - Injecting applicable services (`Toolbar`, `Image`, `Link`, `HtmlEditor`, `QuickToolbar`, `MarkdownFormatter`, and so on).
+   - Injecting applicable services (`Toolbar`, `Image`, `Link`, `HtmlEditor`, `QuickToolbar`, `MarkdownEditor`, and so on).
    - Adding the correct theme and style imports.
 3. **Generates editor-accurate code**, avoiding invalid props or unsupported patterns.
 
@@ -146,7 +139,7 @@ Once the SDK skills are installed, the assistant can generate and update code fo
 
 - "Add a Rich Text Editor with Bold, Italic, Underline, and Image."
 - "Build a Block Editor with default blocks and a custom slash-menu command."
-- "Add a Markdown Editor with MarkdownFormatter and a custom toolbar."
+- "Add a Markdown Editor with MarkdownEditor and a custom toolbar."
 - "Apply the Tailwind 3 theme and enable dark mode for any editor."
 
 ## Skills CLI commands
