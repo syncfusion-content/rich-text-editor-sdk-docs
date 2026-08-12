@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Rich Text Editor SDK getting started with Gatsby | Syncfusion
-description: Step-by-step guide to integrating the Syncfusion React Rich Text Editor in a Gatsby project.
+description: Integrate the Syncfusion React Rich Text Editor into a Gatsby project — install, theme, and add the editor to a page component.
 control: Gatsby
 platform: rich-text-editor-sdk
 documentation: ug

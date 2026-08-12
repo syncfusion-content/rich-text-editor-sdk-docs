@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Rich Text Editor SDK getting started with Remix | Syncfusion
-description: Step-by-step guide to integrating the Syncfusion React Rich Text Editor in a Remix (React Router) application.
+description: Integrate the Syncfusion React Rich Text Editor into a Remix application — install, theme, configure SSR, and add the editor to a route.
 control: Remix
 platform: rich-text-editor-sdk
 documentation: ug

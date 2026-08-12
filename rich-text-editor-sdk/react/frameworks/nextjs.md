@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Rich Text Editor SDK getting started with Next.js | Syncfusion
-description: Step-by-step guide to integrating the Syncfusion React Rich Text Editor in a Next.js application.
+description: Integrate the Syncfusion React Rich Text Editor into a Next.js application — install, theme, and add the editor in a client component.
 control: Next.js
 platform: rich-text-editor-sdk
 documentation: ug
