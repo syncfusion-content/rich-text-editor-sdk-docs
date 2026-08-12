@@ -7,7 +7,7 @@ control: MarkdownEditor
 documentation: ug
 ---
 
-# Toolbar configuration in Markdown Editor Component
+# Toolbar configuration in Blazor Markdown Editor Component
 
 The Blazor Markdown Editor provides a flexible toolbar that enhances the editing experience. Users can choose from multiple toolbar layouts, enable sticky behavior, and add custom tools based on their application requirements. This guide explains the available toolbar types, configuration options, and customization techniques.
 
