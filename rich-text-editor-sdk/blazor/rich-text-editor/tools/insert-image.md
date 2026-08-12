@@ -26,7 +26,7 @@ The image selected from the local machine will be uploaded and saved to the spec
 A generated `blob` URL is assigned to the `<img>` tag as shown below:
 
 ```
-<img src="blob:http://blazor.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" >
+<img src="blob:https://blazor.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" >
 ```
 
 A generated `base64` URL is assigned to the `<img>` tag as shown below:

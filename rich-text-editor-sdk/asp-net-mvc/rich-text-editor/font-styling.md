@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Font Family, Size, and Color in ASP.NET MVC Rich Text Editor
+title: Font Style in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to customize font family, font size, and text color in the ASP.NET MVC Rich Text Editor to enhance content formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Font Family, Size, and Color in ASP.NET MVC Rich Text Editor
+# Font Style in ASP.NET MVC Rich Text Editor
 
 ## Font Family
   
@@ -22,7 +22,7 @@ These steps will apply the selected font style to the chosen text, allowing you 
 
 ### Configuring the Font Family Tool in the Toolbar
 
-You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Iems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -236,5 +236,5 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 
 ## See Also
 
-* [Applying Basic Text Formatting in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/basic-text-styling)
-* [Implementing Headings and Text Hierarchy in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/headings)
+* [Applying Basic Text Formatting in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/basic-text-styling)
+* [Implementing Headings and Text Hierarchy in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings)

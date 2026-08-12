@@ -11,7 +11,7 @@ documentation: ug
 
 This section outlines performance best practices for using Rich Text Editor component efficiently in Blazor WebAssembly application. The best practice or guidelines for general framework Blazor WebAssembly performance can be found [here](https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0).
 
-N> You can refer to our Getting Started with [Blazor Server-Side RichTextEditor](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio) and [Blazor WebAssembly RichTextEditor](https://blazor.syncfusion.com/documentation/rich-text-editor/how-to/blazor-web-assembly) documentation pages for configuration specifications.
+N> You can refer to our Getting Started with [Blazor Server-Side RichTextEditor](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio) and [Blazor WebAssembly RichTextEditor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/how-to/blazor-web-assembly) documentation pages for configuration specifications.
 
 ## Avoid unnecessary component renders
 
