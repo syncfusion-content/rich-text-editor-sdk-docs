@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Undo redo in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Undo redo in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to use Undo and Redo in the ASP.NET MVC Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Undo redo
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Undo redo in the  ASP.NET MVC Rich Text Editor Control
+# Undo and Redo in ASP.NET MVC Rich Text Editor
 
 The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 

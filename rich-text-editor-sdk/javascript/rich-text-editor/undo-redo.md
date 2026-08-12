@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Undo redo in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Undo redo in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use Undo and Redo in the JavaScript Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 platform: rich-text-editor-sdk
-control: Undo redo
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Undo redo in the JavaScript Rich Text Editor control
+# Undo and Redo in JavaScript Rich Text Editor
 
 The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 

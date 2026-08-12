@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Blazor Block Editor in WASM App | Syncfusion
-description: Get Started with Blazor Block Editor in Blazor WebAssembly App using Visual Studio, Visual Studio Code, or .NET CLI.
+description: Learn how to get started with the Blazor Block Editor in Blazor WebAssembly App using Visual Studio, Visual Studio Code, or .NET CLI with setup and examples.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 ---
 
-# Getting Started with Blazor Block Editor Component in Blazor WASM App
+# Getting Started with Blazor Block Editor in Blazor WASM App
 
 The [Blazor Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-block-editor) is a modular, block-based content editor component that enables rich, structured content creation. It provides an intuitive interface for building documents and articles content using customizable blocks such as headings, paragraphs, lists, and more. The WebAssembly deployment model allows the editor to run entirely in the browser, providing a responsive client-side experience.
 

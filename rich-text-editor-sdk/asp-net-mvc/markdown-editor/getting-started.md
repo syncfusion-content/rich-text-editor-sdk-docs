@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Getting Started with ASP.NET MVC Markdown Editor | Syncfusion
-description: Check out and learn about getting started with ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
+description: Learn how to get started with ASP.NET MVC Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Getting Started
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Markdown Editor Control
+# Getting Started with ASP.NET MVC Markdown Editor
 
 The Syncfusion ASP.NET MVC Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains how to include [ASP.NET MVC Markdown Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
 

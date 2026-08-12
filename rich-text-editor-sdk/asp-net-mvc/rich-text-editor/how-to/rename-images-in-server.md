@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Rename Images In Server in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Rename Images In Server in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Rename Uploaded Images in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to rename uploaded images in the ASP.NET MVC Rich Text Editor using the image upload success event and a custom server-side upload handler.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Rename Images In Server
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Rename uploaded images in server before inserting it in the Rich Text Editor
+# Rename Uploaded Images in ASP.NET MVC Rich Text Editor
 
 By using the [`InsertImageSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property, you can specify the server handler to upload the selected image. Then you can bind the [`ImageUploadSuccess`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Inline mode in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Inline mode in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Inline Editing in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to enable inline editing in the TypeScript Rich Text Editor to edit content directly in place with an inline toolbar for quick formatting.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Inline mode 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Inline Editing in the TypeScript  Rich Text Editor component
+# Inline Editing in TypeScript Rich Text Editor
 
 Inline editing is a feature of the Rich Text Editor that allows users to edit content directly within the editor where it is displayed. Unlike traditional editing interfaces where the editor toolbar is in a separate area at the top or bottom, inline editing offers a seamless, on-the-spot editing experience. You can click on the text or select the text you wish to edit and make changes immediately.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard Clean-up in Blazor Rich Text Editor | Syncfusion®
-description: Learn about clipboard clean-up in Blazor Rich Text Editor, including how to remove unwanted HTML formatting from copied content.
+title: Clipboard Cleanup in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to clean and customize clipboard content in the Blazor Rich Text Editor by removing unwanted styles while preserving formatting. 
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Clipboard Clean-up in Blazor Rich Text Editor
+# Clipboard Cleanup in Blazor Rich Text Editor
 
 The Rich Text Editor now provides automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are removed while preserving important structural elements such as tables, lists, and images. This feature is enabled by default through [EnableClipboardCleanup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableClipboardCleanup) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Audios in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert and manage Audio in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Audio in Angular Rich Text Editor | Syncfusion
+description: Learn how to add, upload, manage, and customize audio content in the Angular Rich Text Editor using online sources and local audio files.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Audios 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Audios in Angular Rich Text Editor Component
+# Insert Audio in Angular Rich Text Editor
 
 The Rich Text Editor enables insertion of audio files from online sources or local machines. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 
@@ -22,11 +22,11 @@ The following example demonstrates configuring the audio toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/audio-cs1/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/audio-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/audio-cs1/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/audio-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -221,7 +221,7 @@ You can use the [insertAudioSettings](https://ej2.syncfusion.com/angular/documen
 
 <ejs-richtexteditor [toolbarSettings]='toolbarSettings' [insertAudioSettings] = 'insertAudioSettings' (fileUploadSuccess) = 'onAudioUploadSuccess($event)' >
 <ng-template #valueTemplate>
-    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">markdown</a> of the content</p>
 </ng-template>
 </ejs-richtexteditor>
 
@@ -408,11 +408,11 @@ In the following sample, you can see feature demo.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs34/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs34/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs34/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

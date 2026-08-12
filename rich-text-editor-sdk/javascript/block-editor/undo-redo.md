@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Undo redo in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Undo redo with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in JavaScript Block Editor | Syncfusion
+description: Learn how to configure undo and redo in JavaScript Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo redo in JavaScript Block Editor control
+# Undo and Redo in JavaScript Block Editor
 
 The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
 

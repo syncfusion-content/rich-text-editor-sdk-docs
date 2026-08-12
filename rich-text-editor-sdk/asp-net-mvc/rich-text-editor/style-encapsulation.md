@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Style Encapsulation in ASP.NET MVC Rich Text Editor Component | Syncfusion
-description: Learn here all about Style Encapsulation in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style Encapsulation in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to isolate or apply application styles in the ASP.NET MVC Rich Text Editor using iframe mode and control CSS styling behavior.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Style Encapsulation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Style Encapsulation in ASP.NET MVC Rich Text Editor Control
+# Style Encapsulation in ASP.NET MVC Rich Text Editor
 
 Style encapsulation determines how styles are applied within the Syncfusion ASP.NET MVC **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
 

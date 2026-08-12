@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Images in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Images in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Insert Images in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to insert images in the JavaScript Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
 platform: rich-text-editor-sdk
-control: Images 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Images in JavaScript Rich text editor control
+# Insert Images in JavaScript Rich Text Editor
 
 Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesettings#imageSettings)
 

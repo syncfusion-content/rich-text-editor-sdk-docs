@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling Tools in React Rich Text Editor component | Syncfusion
-description: Learn here all about Styling tools in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Styling tools
+title: Font Styling in React Rich Text Editor | Syncfusion
+description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Styling Tools in React Rich Text Editor Component
+# Font Styling in React Rich Text Editor
 
 The React Rich Text Editor's styling tools enable customization of font family, size, and colors, enhancing content presentation in a WYSIWYG editor. Configure these tools using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property with `FontName`, `FontSize`, `FontColor`, and `BackgroundColor`. 
 
@@ -265,7 +265,7 @@ The [default](https://helpej2.syncfusion.com/react/documentation/api/rich-text-e
 
 The [showRecentColors](https://helpej2.syncfusion.com/react/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
 
-This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/react/documentation/api/rich-text-editor/#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/react/documentation/api/rich-text-editor/#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
+This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/react/documentation/api/rich-text-editor#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/react/documentation/api/rich-text-editor#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
 
 `[Class-component]`
 

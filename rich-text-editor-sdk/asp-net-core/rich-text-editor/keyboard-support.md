@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Keyboard Support in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Keyboard Support in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Support in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the ASP.NET Core Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Keyboard Support
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Keyboard Support in ASP.NET Core Rich Text Editor Control
+# Keyboard Support in ASP.NET Core Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

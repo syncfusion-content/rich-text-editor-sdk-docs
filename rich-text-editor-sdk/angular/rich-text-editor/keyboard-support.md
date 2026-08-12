@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard support in Angular Rich text editor component | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard Support in Angular Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the Angular Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Keyboard support 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Support in Angular Rich Text Editor Component
+# Keyboard Support in Angular Rich Text Editor
 
 The Rich Text Editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists and dialogs.
 
@@ -135,11 +135,11 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs13/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs13/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,11 +153,11 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs15/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs15/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

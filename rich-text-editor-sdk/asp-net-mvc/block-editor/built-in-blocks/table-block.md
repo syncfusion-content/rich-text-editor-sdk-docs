@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Table Block in ASP.NET MVC Block Editor control | Syncfusion
-description: Checkout and learn about Table Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
+title: Table Block in ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to add and configure table blocks in the ASP.NET MVC Block Editor with rows, columns, headers, cell content, resizing, selection, and deletion.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table Blocks in ASP.NET MVC Block Editor control
+# Table Blocks in ASP.NET MVC Block Editor
 
 The Block Editor control allows you to render structured data in rows and columns by setting the block's `blockType` property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 

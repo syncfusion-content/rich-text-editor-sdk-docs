@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with React Markdown Editor component | Syncfusion
-description: Check out and learn about Getting started with React Markdown Editor component of Syncfusion Essential JS 2 and more details.
-control: Getting Started
+title: Getting Started with React Markdown Editor | Syncfusion
+description: Learn how to get started with React Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with React Markdown Editor Component
+# Getting Started with React Markdown Editor
 
 The Syncfusion React Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section explains the steps required to create a simple Markdown Editor and demonstrate the basic usage of the Markdown Editor component in a React environment.
 
@@ -86,10 +86,10 @@ These modules can be injected into the `services` prop of the `<Inject>` compone
 
 {% tabs %}
 {% highlight ts hl_lines="6" tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight js hl_lines="6" tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.jsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,10 +101,10 @@ Now, you can start adding React Markdown Editor component to the application. Fo
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/react/markdown-editor/getting-started-cs3/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/markdown-editor/getting-started-cs3/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 

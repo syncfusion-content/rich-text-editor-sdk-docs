@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Character count in ASP.NET Core Rich Text Editor Control
-description: Learn here all about Character count in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Character Count in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to enable and display character count in the ASP.NET Core Rich Text Editor to monitor and manage content length effectively.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Character count
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Character Count in ASP.NET Core Rich Text Editor Control
+# Character Count in ASP.NET Core Rich Text Editor
 
 The Character Count feature in the Rich Text Editor allows you to track and display the number of characters entered in the editor. This feature is particularly useful when you need to limit the content length or provide visual feedback to users about their input.
 

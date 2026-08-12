@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Methods in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Methods with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Methods in JavaScript Block Editor | Syncfusion
+description: Learn about the public methods in JavaScript Block Editor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Methods in JavaScript Block Editor control
+# Methods in JavaScript Block Editor
 
 The Block Editor control provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 

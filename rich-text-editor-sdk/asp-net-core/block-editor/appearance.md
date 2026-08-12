@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Appearance in ASP.NET Core Block Editor Control | Syncfusion
-description: Checkout and learn about appearance with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: Style and Appearance in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to customize the ASP.NET Core BlockEditor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Appearance in ASP.NET Core Block Editor control
+# Style and Appearance in ASP.NET Core Block Editor
 
 The Block Editor control provides various appearance customization options to match your application's design requirements. These properties allow you to control the visual styling, layout, and overall look and feel of the editor.
 
