@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo Redo Manager in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about undo redo manager in Blazor Rich Text Editor component with examples and much more details.
+title: Undo and Redo in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to use Undo and Redo in the Blazor Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Undo and Redo Manager in Blazor Rich Text Editor
+# Undo and Redo in Blazor Rich Text Editor
 
 The undo and redo tools in the Rich Text Editor allow users to revert or restore recent changes, providing a convenient way to manage content edits. This feature is especially useful for correcting accidental modifications and maintaining content integrity. In the editor, you can undo or redo up to `30` actions by default. 
 

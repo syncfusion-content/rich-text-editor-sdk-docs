@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Toolbar Items in Angular Rich Text Editor component | Syncfusion
-description: Learn how to create and manage custom toolbar items in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Custom Toolbar Items in Angular Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the Angular Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Custom Toolbar
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Toolbar Items in Angular Rich Text Editor Component
+# Custom Toolbar Items in Angular Rich Text Editor
 
 The Angular Rich Text Editor allows you to create your own commands to its toolbar using the  [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#toolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind action to the command by getting its instance.
 

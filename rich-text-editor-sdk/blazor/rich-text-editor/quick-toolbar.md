@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Quick Toolbars in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to use and configure quick toolbars in Blazor Rich Text Editor for fast formatting access.
+description: Learn how to customize Quick Toolbars in the Blazor Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Quick Toolbars in Blazor Rich Text Editor Component
+# Quick Toolbars in Blazor Rich Text Editor
 
 The Rich text editor has quick toolbars that are open as context-menu on clicking the image, link, audio, video and table elements. By default, the below quick toolbar items show on click on the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
 

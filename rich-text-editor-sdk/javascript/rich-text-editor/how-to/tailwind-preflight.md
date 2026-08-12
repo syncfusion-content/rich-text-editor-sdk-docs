@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor with Tailwind Preflight in JavaScript Richtexteditor control | Syncfusion
-description: Learn here all about Rich Text Editor with Tailwind Preflight Styles in JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Fix Tailwind CSS Preflight in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to resolve Tailwind CSS Preflight conflicts in the JavaScript Rich Text Editor and restore list styles, bullets, numbering, and formatting.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor with Tailwind CSS Preflight Styles 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrating Rich Text Editor with Tailwind CSS Preflight Styles
+# Fix Tailwind CSS Preflight in JavaScript Rich Text Editor
 
 When combining Rich Text Editor with Tailwind CSS, you may often encounter unintended style conflicts. Tailwind’s Preflight—a base reset layer—can override default element styles used by Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In Rich Text Editor, it affects the ordered and unordered lists, which are Unformatted by default, with no bullets or numbers.
 

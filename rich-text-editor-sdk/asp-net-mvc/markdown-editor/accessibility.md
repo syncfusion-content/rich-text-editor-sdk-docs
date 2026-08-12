@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Markdown Editor Control | Syncfusion
-description: Checkout and learn about Accessibility in ASP.NET MVC Markdown Editor control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ASP.NET MVC Markdown Editor | Syncfusion
+description: Learn about accessibility features in the ASP.NET MVC Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Accessibility
 documentation: ug
 ---
 
-# Accessibility in the ASP.NET MVC Markdown Editor Control
+# Accessibility in ASP.NET MVC Markdown Editor
 
 The Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 
@@ -92,8 +92,6 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 The Markdown Editor control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Markdown Editor control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rich-text-editor.html) in a new window to evaluate the accessibility of the Markdown Editor control with accessibility tools.
-
-{% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
 ## See Also
 

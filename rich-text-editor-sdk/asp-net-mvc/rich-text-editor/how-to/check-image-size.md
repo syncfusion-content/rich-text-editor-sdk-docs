@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Check Image Size in ASP.NET MVC Rich Text Editor Component
-description: Learn here all about Check Image Size in Syncfusion ASP.NET MVC Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Validate Image Size Before Upload in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to validate image dimensions before uploading in the ASP.NET MVC Rich Text Editor and restrict images that exceed the allowed size.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Check Image Size
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Restrict the image uploading while uploading with large size
+# Validate Image Size Before Upload in ASP.NET MVC Rich Text Editor
 
 By using the Rich text editor's `ImageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
 

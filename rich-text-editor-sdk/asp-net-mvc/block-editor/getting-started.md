@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Block Editor Control | Syncfusion
-description: Check out and learn about getting started with Syncfusion Essential ASP.NET MVC Block Editor control, its elements, and more.
+title: Getting Started with ASP.NET MVC Block Editor | Syncfusion
+description: Learn how to get started with the ASP.NET MVC Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-block-editor"
 platform: ej2-asp-core-mvc
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Block Editor control
+# Getting Started with ASP.NET MVC Block Editor
 
 This section briefly explains about how to include `ASP.NET MVC BlockEditor` control in your ASP.NET MVC application using Visual Studio.
 

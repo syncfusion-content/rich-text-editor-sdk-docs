@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor Menus in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Editor Menus with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Editor Menus in JavaScript Block Editor | Syncfusion
+description: Learn how to use the editor menus in the JavaScript Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in JavaScript Block Editor control
+# Editor Menus in JavaScript Block Editor
 
 The Block Editor control includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 

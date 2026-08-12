@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Typography Blocks in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Typography Blocks with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Text Block Types in JavaScript Block Editor | Syncfusion
+description: Learn how to configure text block types in the JavaScript Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in JavaScript Block Editor control
+# Text Block Types in JavaScript Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor control supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 

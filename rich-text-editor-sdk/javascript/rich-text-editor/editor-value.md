@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editor value in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Editor value in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Editor Value in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the JavaScript Rich Text Editor with placeholders, auto save, character count, and source code editing.
 platform: rich-text-editor-sdk
-control: Editor value
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Editor value in JavaScript Rich Text Editor control
+# Editor Value in JavaScript Rich Text Editor
 
 ## Set placeholder text 
 

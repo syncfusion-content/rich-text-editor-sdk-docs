@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Es5 getting started with JavaScript Block Editor | Syncfusion
-description:  Checkout and learn about Es5 getting started with JavaScript Block Editor control of Syncfusion Essential JS 2 and more details.
+description:  Learn how to get started with the JavaScript (ES5) Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor"
 platform: ej2-javascript
-control: Es5 getting started
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# ES5 getting started in JavaScript Block Editor control
+# ES5 getting started in JavaScript Block Editor
 
 The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in modern web browsers.
 

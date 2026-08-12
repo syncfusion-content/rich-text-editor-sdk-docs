@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Editor Modes in ASP.NET Core Syncfusion Rich Text Editor Component
-description: Learn here all about Formation in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Editor Modes in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the ASP.NET Core Rich Text Editor to create and edit content in different formats.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Formation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Editor mode in ASP.NET Core Rich Text Editor control
+# Editor modes in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor control used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 

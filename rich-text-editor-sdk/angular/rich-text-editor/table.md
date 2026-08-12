@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Table in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert, format, and manage Table in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Tables in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the Angular Rich Text Editor with row, column, and cell customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Table
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table in Angular Rich Text Editor Component
+# Tables in Angular Rich Text Editor
 
 The Syncfusion Angular Rich Text Editor allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tablesettingsmodel)
 

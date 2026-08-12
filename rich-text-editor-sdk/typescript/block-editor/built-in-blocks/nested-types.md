@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nested blocks in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in TypeScript Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in the TypeScript Block Editor using parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in TypeScript Block Editor control
+# Nested Blocks in TypeScript Block Editor
 
 ## Configure children
 

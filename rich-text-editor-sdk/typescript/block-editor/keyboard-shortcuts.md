@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Keyboard Shortcuts in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Keyboard Shortcuts with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in TypeScript Block Editor | Syncfusion
+description: Learn the keyboard shortcuts available in the TypeScript Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Shortcuts in TypeScript Block Editor control
+# Keyboard Shortcuts in TypeScript Block Editor
 
 The Block Editor control provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 
