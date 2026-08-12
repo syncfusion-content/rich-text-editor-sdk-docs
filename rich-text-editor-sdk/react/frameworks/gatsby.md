@@ -81,7 +81,6 @@ import './style.css';
 export default function IndexPage() {
   return (
     <RichTextEditorComponent>
-      <p>The Rich Text Editor is a WYSIWYG editing control that creates and edits rich content.</p>
       <Inject services={[Toolbar, Image, Link, HtmlEditor, QuickToolbar]} />
     </RichTextEditorComponent>
   );
