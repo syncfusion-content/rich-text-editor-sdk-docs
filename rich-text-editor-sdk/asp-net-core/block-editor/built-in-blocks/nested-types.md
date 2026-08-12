@@ -4,7 +4,6 @@ title: Nested blocks in ASP.NET Core Block Editor control | Syncfusion
 description: Checkout and learn about Nested blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
@@ -146,7 +145,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Quote Block](./../../images/block-quote.png)
+![Quote Block](../images/block-quote.png)
 
 ## Configure callout block
 
@@ -188,4 +187,4 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Callout Block](./../../images/block-callout.png)
+![Callout Block](../images/block-callout.png)

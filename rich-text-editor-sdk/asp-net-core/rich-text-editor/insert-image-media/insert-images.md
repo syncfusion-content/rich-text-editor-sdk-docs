@@ -4,7 +4,6 @@ title: Image in ASP.NET Core Rich Text Editor Control | Syncfusion
 description: Learn here all about Image in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Image
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

@@ -1,14 +1,13 @@
 ---
 layout: post
 title: AI Assistant in ASP.NET Core Syncfusion Rich Text Editor
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ASP.NET Core Rich Text Editor Component.
+description: Learn how to integrate AI Assistant features in the Syncfusion Essential JS 2 ASP.NET Core Rich Text Editor Component.
 platform: rich-text-editor-sdk
 control: Integrating the AI Assistant
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in ASP.NET Core Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 

@@ -4,7 +4,6 @@ title: Lists in ASP.NET Core Block Editor control | Syncfusion
 description: Checkout and learn about List Blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---

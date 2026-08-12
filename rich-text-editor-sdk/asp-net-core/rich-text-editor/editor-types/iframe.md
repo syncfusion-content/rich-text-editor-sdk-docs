@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Iframe in ASP.NET Core Rich Text Editor Component
+title: Iframe in ASP.NET Core Rich Text Editor Component | Syncfusion
 description: Learn here all about Iframe in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Iframe
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

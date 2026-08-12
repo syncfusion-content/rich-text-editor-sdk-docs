@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET Core Markdown Editor Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Markdown Editor control of Essential JS 2 and more details.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 

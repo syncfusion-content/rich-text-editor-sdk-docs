@@ -4,7 +4,6 @@ title: Paste Clean-up in ASP.NET Core Block Editor control | Syncfusion
 description: Checkout and learn about paste clean-up with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---

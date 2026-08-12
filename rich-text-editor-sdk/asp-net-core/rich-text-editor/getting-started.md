@@ -176,7 +176,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Rich Text Editor Control](/images/richtexteditor-control.webp)
+![ASP.NET Core Rich Text Editor Control](./images/richtexteditor-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

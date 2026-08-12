@@ -4,7 +4,6 @@ title: Execute Command in ASP.NET Core Rich Text Editor Control | Syncfusion
 description: Learn here all about Execute Command in Syncfusion ASP.NET Core Rich Text Editor Control of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Execute Command
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
