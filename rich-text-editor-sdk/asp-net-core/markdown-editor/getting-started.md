@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Markdown Editor Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Markdown Editor control of Essential JS 2 and more details.
-platform: rich-text-editor-sdk
+title: Getting Started with ASP.NET Core Markdown Editor | Syncfusion
+description: Learn how to get started with ASP.NET Core Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 control: Markdown Editor
+platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Markdown Editor Control
+# Getting Started with ASP.NET Core Markdown Editor
 
 The [ASP.NET Core Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor)is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET Core Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

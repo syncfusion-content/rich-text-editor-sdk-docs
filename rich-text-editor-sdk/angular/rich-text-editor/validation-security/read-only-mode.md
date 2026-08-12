@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controlling Editor Access in Angular Rich Text Editor component | Syncfusion
-description: Learn all about Controlling Editor Access in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in Angular Rich Text Editor | Syncfusion
+description: Learn how to use read-only and disabled modes in the Angular Rich Text Editor to control editing, restrict user interaction, and display content safely.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Controlling Editor Access
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in Angular Rich Text Editor component
+# Read-Only Mode in Angular Rich Text Editor
 
 The Syncfusion Angular Rich Text Editor provides read-only and disabled modes to control user interaction with the editor. Read-only mode allows users to view formatted content without editing, while disabled mode prevents all interactions, including toolbar access. These features are useful for displaying content without modifications or temporarily restricting input.
 

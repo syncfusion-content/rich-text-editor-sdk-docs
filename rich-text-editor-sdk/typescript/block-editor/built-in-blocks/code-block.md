@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Code Block in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Code Block with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Code Blocks in TypeScript Block Editor | Syncfusion
+description: Learn how to add and configure code blocks in the TypeScript Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in TypeScript Block Editor control
+# Code Blocks in TypeScript Block Editor
 
 The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#properties) property.
 

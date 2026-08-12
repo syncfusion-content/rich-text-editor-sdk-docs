@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Keyboard support in JavaScript Rich text editor | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Support in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the JavaScript Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
 platform: rich-text-editor-sdk
-control: Keyboard support 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Keyboard support in JavaScript Rich text editor control
+# Keyboard Support in JavaScript Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Cleanup in Angular Rich Text Editor component | Syncfusion
-description: Learn how to configure  Clipboard Cleanup in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Clipboard Cleanup in Angular Rich Text Editor | Syncfusion
+description: Learn how to clean and customize clipboard content in the Angular Rich Text Editor by removing unwanted styles while preserving formatting.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Clipboard Cleanup
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Clipboard Cleanup in Angular Rich Text Editor Component
+# Clipboard Cleanup in Angular Rich Text Editor
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [enableClipboardCleanup](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enableClipboardCleanup) property.
 

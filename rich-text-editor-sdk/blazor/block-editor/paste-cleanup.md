@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paste Cleanup in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Paste Cleanup with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Paste Cleanup in Blazor Block Editor | Syncfusion®
+description: Learn how to configure paste cleanup in Blazor Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Paste Cleanup in Blazor Block Editor Component
+# Paste Cleanup in Blazor Block Editor
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 

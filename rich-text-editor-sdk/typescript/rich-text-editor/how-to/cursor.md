@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cursor in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Cursor in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Cursor in TypeScript Rich text editor | Syncfusion
+description: Learn how to set the cursor position in the TypeScript Rich Text Editor using the NodeSelection instance and the setRange method.
 platform: rich-text-editor-sdk
-control: Cursor 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Cursor in TypeScript Rich text editor control
+# Cursor in TypeScript Rich text editor
 
 This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, we have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
 

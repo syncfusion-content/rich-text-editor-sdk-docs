@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Validation in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Validation in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Validation in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to validate content in the ASP.NET Core Rich Text Editor using built-in validation support and form integration.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Validation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Validation
+# Validation in ASP.NET Core Rich Text Editor
 
 Validate the Rich Text Editor’s value on form submission by applying Validation Rules and Validation Message to the Rich Text Editor.
 

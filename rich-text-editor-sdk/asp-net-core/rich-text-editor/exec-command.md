@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Execute Command in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Execute Command in Syncfusion ASP.NET Core Rich Text Editor Control of Syncfusion Essential JS 2 and more.
+title: Execute Command in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the ASP.NET Core Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Execute Command
 documentation: ug
 ---
 
-# Execute command in ASP.NET Core Rich text editor Control
+# Execute Command in ASP.NET Core Rich text editor
 
 In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area. The executeCommand will perform the following commands.
 

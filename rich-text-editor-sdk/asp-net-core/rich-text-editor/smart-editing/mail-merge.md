@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Mail merge in ASP.NET Core RichTextEditor | Syncfusion
-description: Learn about Mail merge in Syncfusion ASP.NET Core RichTextEditor control of Syncfusion Essential JS 2 and more.
+title: Mail Merge in ASP.NET Core RichTextEditor | Syncfusion
+description: Learn how to create personalized documents in the ASP.NET Core Rich Text Editor using dynamic fields, placeholders, and automated content generation.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Mail merge
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Mail merge in ASP.NET Core Rich Text Editor control
+# Mail Merge in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 

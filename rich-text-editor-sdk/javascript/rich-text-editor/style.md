@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Style Appearance Customization in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Style Appearance Customization in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to customize the JavaScript Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
 platform: rich-text-editor-sdk
-control: Style Appearance Customization 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Style Appearance Customization in JavaScript Rich text editor control
+# Style and Appearance in JavaScript Rich Text Editor
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 

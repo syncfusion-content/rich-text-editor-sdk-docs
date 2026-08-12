@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nested blocks in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Nested blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in the ASP.NET Core Block Editor using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Nested blocks in ASP.NET Core Block Editor control
+# Nested Blocks in ASP.NET Core Block Editor
 
 ## Configure children
 

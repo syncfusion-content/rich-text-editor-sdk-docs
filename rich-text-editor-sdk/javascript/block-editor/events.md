@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Events in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Events with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Events in JavaScript Block Editor | Syncfusion
+description: Learn how to handle events in the JavaScript Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Events in JavaScript Block Editor control
+# Events in JavaScript Block Editor
 
 The Block Editor control provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Typography Blocks in Blazor Block Editor Component | Syncfusion®
-description: Learn about typography blocks like paragraphs, headings, quotes, and callouts in the Blazor Block Editor component.
+title: Text Block Types in Blazor Block Editor | Syncfusion®
+description: Learn how to configure text block types in the Blazor Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Typography Blocks in Blazor Block Editor Component
+# Text Block Types in Blazor Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 

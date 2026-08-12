@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Drag and drop in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Drag and drop with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in JavaScript Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the JavaScript Block Editor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Drag and drop in JavaScript Block Editor control
+# Drag and Drop in JavaScript Block Editor
 
 The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 

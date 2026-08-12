@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Markdown to HTML preview in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Markdown to HTML preview in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Markdown Preview in JavaScript Markdown Editor | Syncfusion
+description: Learn how to enable Markdown preview in JavaScript Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
 platform: rich-text-editor-sdk
-control: Markdown to HTML preview
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Markdown to HTML preview in JavaScript Markdown Editor Control
+# Markdown Preview in JavaScript Markdown Editor
 
 The Markdown Editor provides an instant preview of Markdown changes, allowing users to see the formatted output while typing or editing text. This enhances the editing experience by enabling real-time visualization of Markdown formatting.
 

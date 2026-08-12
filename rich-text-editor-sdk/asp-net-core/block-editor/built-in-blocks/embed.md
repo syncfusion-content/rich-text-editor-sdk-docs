@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Embed Blocks in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Embed Blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Image Blocks in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to add and configure image blocks in the ASP.NET Core Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Embed Blocks in ASP.NET Core Block Editor control
+# Image Blocks in ASP.NET Core Block Editor
 
 Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
 

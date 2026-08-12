@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Execute command in Angular Rich text editor component | Syncfusion
-description: Learn here all about Execute command in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Execute Command in Angular Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the Angular Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Execute command 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Execute Command in Angular Rich Text Editor Component
+# Execute Command in Angular Rich Text Editor
 
 The executeCommand is used to perform command for the modification of content in editable area. The list of valid executeCommand are given in the below table.
 

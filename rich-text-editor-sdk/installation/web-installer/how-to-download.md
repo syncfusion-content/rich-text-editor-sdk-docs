@@ -73,4 +73,4 @@ You should initiate an evaluation if you have already obtained our components th
 
 N> You must be signed in to your Syncfusion account to download the licensed installer.
 
-You can also refer to the [**Web Installer**](https://help.syncfusion.com/richtexteditor-sdk/installation/web-installer/how-to-install) link for step-by-step installation guidelines.	
+You can also refer to the [**Web Installer**](https://help.syncfusion.com/rich-text-editor-sdk/installation/web-installer/how-to-install) link for step-by-step installation guidelines.	

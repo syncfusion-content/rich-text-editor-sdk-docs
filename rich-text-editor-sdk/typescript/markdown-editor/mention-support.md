@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Mention Support in TypeScript Markdown Editor control | Syncfusion
-description: Learn here all about Mention Support in Syncfusion TypeScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Mentions in TypeScript Markdown Editor | Syncfusion
+description: Learn how to enable mentions in TypeScript Markdown Editor using the @ trigger to tag users or items from a suggestion list while editing Markdown content.
 platform: rich-text-editor-sdk
-control: Mention Support
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mention Support in TypeScript Markdown Editor Control
+# Mentions in TypeScript Markdown Editor
 
 By integrating the [Mention](https://helpej2.syncfusion.com/documentation/mention/getting-started) control with the Markdown Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving both efficiency and accuracy.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: File browser in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about File browser in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: File Browser in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the TypeScript Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: File browser 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# File browser in TypeScript Rich text editor control
+# File Browser in TypeScript Rich text editor
 
 Rich Text Editor allows to browse and insert an image in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 

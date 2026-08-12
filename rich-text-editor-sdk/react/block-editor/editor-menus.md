@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor Menus in React Block Editor component | Syncfusion
-description: Checkout and learn about Editor Menus with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Menus in React Block Editor | Syncfusion
+description: Learn how to use the editor menus in the React Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in React Block Editor component
+# Editor Menus in React Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 
