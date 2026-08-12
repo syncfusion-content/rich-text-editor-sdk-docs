@@ -58,3 +58,4 @@ This sample demonstrates the `Table` block multiple row and column selection and
 {% endtabs %}
 
 ![Table Block](../images/table-resize.png)
+ 
