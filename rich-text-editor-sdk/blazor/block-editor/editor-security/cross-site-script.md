@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cross-Site scripting in Blazor Block Editor Component | Syncfusion®
-description: Learn about Cross-Site Scripting (XSS) prevention and HTML sanitization features in the Blazor Block Editor component.
+title: XSS Prevention in Blazor Block Editor | Syncfusion®
+description: Learn how to enable XSS prevention in the Blazor Block Editor component to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Cross-Site scripting (XSS) prevention in Blazor Block Editor Component
+# XSS Prevention in Blazor Block Editor
 
 The Block Editor allows users to edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove potentially malicious elements from editor content that could cause XSS attacks. The editor removes elements and attributes that could execute scripts, such as `<script>` tags and event handler attributes like `onmouseover`, `onclick`, and similar JavaScript execution vectors.
 

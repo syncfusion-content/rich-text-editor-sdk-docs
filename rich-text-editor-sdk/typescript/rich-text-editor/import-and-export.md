@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Import/Export in TypeScript Rich Text Editor | Syncfusion
-description: Learn here all about Content Import/Export in Syncfusion TypeScript Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title:  Import and Export Content in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in TypeScript applications.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: IContent Import/Export
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Content Import/Export in TypeScript Rich Text Editor control
+# Import and Export Content in TypeScript Rich Text Editor
 
 ## Importing content from Microsoft Word
 

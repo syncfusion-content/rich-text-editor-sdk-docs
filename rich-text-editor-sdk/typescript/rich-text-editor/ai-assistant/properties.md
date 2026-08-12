@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Configure AI Assistant in TypeScript Rich Text Editor | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 TypeScript Rich Text Editor control.
+title: Configure of AI Assistant in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to configure the AI Assistant in the TypeScript Rich Text Editor with prompt templates, response actions, and toolbar settings.
 platform: rich-text-editor-sdk
-control: Properties of AI Assistant
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Properties of AI Assistant
+# Configure AI Assistant in TypeScript Rich Text Editor
 
 The `AIAssistantSettings` class provides the following properties for complete customization:
 

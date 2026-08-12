@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Video in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about insert video in Blazor Rich Text Editor component with examples and much more details.
+title: Insert Videos in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to insert, upload, embed, resize, and manage videos in the Blazor Rich Text Editor from local files, URLs, and online sources.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Insert Video in Blazor Rich Text Editor Component
+# Insert Videos in Blazor Rich Text Editor
 
 The Rich Text Editor allows inserting video files from online sources as well as from the local computer, making it easy to embed videos directly into your content. To support video insertion, the following list of configuration options has been provided through the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html).
 

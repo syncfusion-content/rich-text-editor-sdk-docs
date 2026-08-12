@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Methods with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Methods in Angular Block Editor | Syncfusion
+description: Learn about the public methods in Angular Block Editor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Methods in Angular Block Editor component
+# Methods in Angular Block Editor
 
 The Block Editor component provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 

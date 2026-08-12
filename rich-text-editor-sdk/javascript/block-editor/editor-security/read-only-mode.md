@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Controlled in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Controlled Access with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in JavaScript Block Editor | Syncfusion
+description: Learn how to enable read-only mode in the JavaScript Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in JavaScript Block Editor control
+# Read-Only Mode in JavaScript Block Editor
 
 The Syncfusion Block Editor provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 

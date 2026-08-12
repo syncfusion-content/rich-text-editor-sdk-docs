@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Rich Text Editor | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Rich Text Editor control of Essential JS 2 and more details.
+description: Learn how to get started with the ASP.NET Core Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor"
 platform: ej2-asp-core-mvc
 control: Rich Text Editor
-publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with ASP.NET Core Rich Text Editor Control
+# Getting Started with ASP.NET Core Rich Text Editor
 
 The [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

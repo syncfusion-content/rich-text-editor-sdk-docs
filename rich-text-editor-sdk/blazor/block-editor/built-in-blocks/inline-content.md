@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Inline content in Blazor Block Editor Component | Syncfusion®
-description: Learn about inline content types, styling, and formatting in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Inline Content in Blazor Block Editor | Syncfusion®
+description: Learn how to add inline content in the Blazor Block Editor, blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Inline Content in Blazor Block Editor Component
+# Inline Content in Blazor Block Editor
 
 In the Block Editor, all content is organized within blocks. Each block contains a [Content](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentModel.html#Syncfusion_Blazor_BlockEditor_ContentModel_Content) property, which is a list of [ContentModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentModel.html) that defines the text and functionality within that block.
 

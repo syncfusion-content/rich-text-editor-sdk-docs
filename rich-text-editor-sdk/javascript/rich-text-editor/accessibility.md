@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Accessibility in JavaScript Rich Text Editor | Syncfusion
+description: Learn about accessibility features in the JavaScript Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
-control: Accessibility 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Accessibility in JavaScript Rich text editor control
+# Accessibility in JavaScript Rich Text Editor
 
 The Rich Text Editor control is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 

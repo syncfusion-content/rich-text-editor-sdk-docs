@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Getting Started with Angular Rich Text Editor component | Syncfusion
-description: Learn how to set up and configure the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Rich Text Editor | Syncfusion
+description: Learn how to get started with the Angular Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor"
-platform: rich-text-editor-sdk
-control: Getting started
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -48,7 +47,7 @@ Non-interactive mode allows you to create a project directly using a single comm
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
-sf new syncfusion-angular-app --framework angular --template rte
+sf new syncfusion-angular-app --framework angular --template rich-text-editor
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +70,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 
 √ Project name? ... syncfusion-angular-app
 √ Choose Framework: » Angular
-√ Choose Template: » RTE
+√ Choose Template: » Rich Text Editor
 √ Choose Theme: » Material3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
