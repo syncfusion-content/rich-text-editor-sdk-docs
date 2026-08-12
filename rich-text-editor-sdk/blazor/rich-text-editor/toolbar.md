@@ -98,6 +98,6 @@ You can enable or disable the floating toolbar using [RichTextEditorToolbarSetti
 
 ## See also
 
-* [Customizing Rich Text Editor Toolbar Styles](https://blazor.syncfusion.com/documentation/rich-text-editor/style#customizing-the-toolbar-appearance)
-* [Implementing Inline Editing](https://blazor.syncfusion.com/documentation/rich-text-editor/inline-mode)
-* [Customizing Accessibility Shortcut Keys](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support#custom-key-config)
+* [Customizing Rich Text Editor Toolbar Styles](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/style#customizing-the-toolbar-appearance)
+* [Implementing Inline Editing](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/inline-mode)
+* [Customizing Accessibility Shortcut Keys](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support#custom-key-config)

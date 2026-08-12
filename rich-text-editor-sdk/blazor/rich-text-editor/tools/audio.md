@@ -176,7 +176,7 @@ The example below shows how audio is saved in `Blob` and `Base64` formats.
 
 ```
 <audio>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" />
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" />
 </audio>
 
 <audio>
