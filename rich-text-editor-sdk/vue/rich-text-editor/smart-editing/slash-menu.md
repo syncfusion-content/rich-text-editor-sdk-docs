@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Slash Commands in Vue Rich Text Editor
 
-The Slash Commands in the Rich Text Editor enable users to apply formatting, insert content elements, and execute custom actions by typing the `/` character. This provides quick access to commonly used editing options, helping users create and format content more efficiently.
+The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
 ## Enabling the slash menu
 
