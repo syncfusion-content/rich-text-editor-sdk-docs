@@ -14,7 +14,7 @@ Globalization is the process of designing and developing applications that can a
 
 ## Localization
 
-The Block Editor can be localized for any culture by translating its static text labels. The default locale is `en` (English). The following table lists the default text values for the `en` culture that can be translated.
+The Block Editor can be localized for any culture by translating its static text labels. The default locale is `en` (English). To localize the Block Editor, provide translated text for the UI labels using the `localizationSettings` property. The following table lists the default text keys and their English values that you can translate.
 
 |KEY|Text|
 |----|----|
