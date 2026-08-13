@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Style and Appearance in Angular Block Editor
 
-The Block Editor component provides inputs to customize its visual appearance, allowing you to control its dimensions, theming, and behavior. This page covers the four inputs most commonly used for layout and styling: `width`, `height`, `cssClass`, and `readOnly`.
+The Block Editor component provides properties to customize its visual appearance, allowing you to control its dimensions, theming, and behavior. This page covers the four properties most commonly used for layout and styling: `width`, `height`, `cssClass`, and `readOnly`.
 
 ## Setting width and height
 
-You can specify the width and height of the Block Editor using the [width](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#height) inputs. Both accept a CSS length value, such as a percentage, viewport unit, or pixel value:
+You can specify the width and height of the Block Editor using the [width](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#height) properties. Both accept a CSS length value, such as a percentage, viewport unit, or pixel value:
 
 ```html
 <!-- Fluid layout that fills its container -->
@@ -28,7 +28,7 @@ If `width` and `height` are not set, the editor defaults to `width: '100%'` and 
 
 ## Customization using CSS class
 
-You can apply a custom theme to the Block Editor by passing one or more CSS class names through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#cssclass) input. The class is added to the editor's root element, so selectors should target `.e-block-editor.your-class` (or whichever root class the editor renders). This input is useful for things like brand colors, gradient backgrounds, or dark-mode overrides:
+You can apply a custom theme to the Block Editor by passing one or more CSS class names through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#cssclass) property. The class is added to the editor's root element, so selectors should target `.e-block-editor.your-class` (or whichever root class the editor renders). This property is useful for things like brand colors, gradient backgrounds, or dark-mode overrides:
 
 ```html
 <ejs-blockeditor [width]="'600px'" [height]="'400px'" [cssClass]="'custom-editor-theme'" />
@@ -36,7 +36,7 @@ You can apply a custom theme to the Block Editor by passing one or more CSS clas
 
 ## Setting read-only mode
 
-You can place the Block Editor in read-only mode by setting the [readOnly](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#readonly) input to `true`. While read-only, the user can view the content with all formatting intact but cannot make changes. This is useful for previews and reports — see the [Read-Only Mode](editor-security/read-only-mode.html) page for full details and a runtime-toggle example:
+You can place the Block Editor in read-only mode by setting the [readOnly](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#readonly) property to `true`. While read-only, the user can view the content with all formatting intact but cannot make changes. This is useful for previews and reports — see the [Read-Only Mode](editor-security/read-only-mode.html) page for full details and a runtime-toggle example:
 
 ```html
 <ejs-blockeditor [readOnly]="true" />
