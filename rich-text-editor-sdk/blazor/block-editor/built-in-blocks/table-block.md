@@ -11,7 +11,7 @@ documentation: ug
 
 The Block Editor allows you to render structured data in rows and columns by setting the block's [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure table block
+## Configure table block
 
 For Table blocks, you can configure layout and structure using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property. This property supports the following options:
 
@@ -132,15 +132,15 @@ The following example demonstrates how to pre-configure a [Table](https://help.s
 
 ![Blazor Block Editor Table Block](./../images/table-block.webp)
 
-### Table resizing
+## Table resizing
 
 The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized (rows have fixed heights), and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
 
-### Table cell content
+## Table cell content
 
 You can add various block types inside table cells using the `Blocks` collection within each `TableCellModel`. Supported content includes paragraphs, text formatting, links, and inline content. Use slash commands inside cells to insert additional blocks.
 
-### Table multiple row column selection and deletion
+## Table multiple row column selection and deletion
 
 The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift-based multiple selection is also supported: select a row, hold Shift, and click a non-adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
 
