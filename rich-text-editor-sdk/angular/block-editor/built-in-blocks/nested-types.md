@@ -10,52 +10,58 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Nested Blocks in Angular Block Editor
 
-## Configure children
+## Configuring children
 
-The Block Editor supports hierarchical content structures through the [children](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#children) property. This can be achieved by using the `properties` property that allows you to create nested blocks, which is applicable only for `Quote`, `Callout` and `Collapsible` blocks.
+The Block Editor supports hierarchical content structures through the `children` array on a parent block's [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) object. Children are currently supported only for `Quote`, `Callout`, and `Collapsible` (paragraph/heading) blocks — see [ICollapsibleBlockSettings.children](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/icollapsibleblocksettings#children).
 
-Child blocks can be configured with all the same properties as top-level blocks.
+Child blocks can be configured with all the same properties as top-level blocks (for example, `blockType`, `content`, `indent`).
 
-## Configure parent id
-To establish a clear parent-child relationship, the [parentId](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#parentid) of each child block must match the [id](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#id) of its parent block.
+## Configuring parent id
+To establish a clear parent-child relationship, the [parentId](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#parentid) of each child block must match the [id](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#id) of its parent block. This is required when the children array is wired up by the editor.
 
 This structure is essential for maintaining nested relationships within the editor.
 
-## Configure collapsible blocks
+## Configuring collapsible blocks
 
-You can render Collapsible blocks by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
-### Configure levels
+### Configuring levels
 
-You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
+You can configure a `CollapsibleHeading`'s heading level with the `level` property inside `properties`. Levels range from `1` (highest) to `4` (lowest). This setting does not apply to `CollapsibleParagraph`.
 
-### Configure expanded state
+### Configuring expanded state
 
-You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `Collapsible` blocks.
+You can control whether a block starts in the expanded or collapsed state using the [isExpanded](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block is collapsed initially. This setting is only applicable to `Collapsible` blocks.
 
-### Block type & properties
+### Block type and properties
 
 ```typescript
-// Configuring CollapsibleHeading block
+// Configuring a CollapsibleHeading block (level varies from 1 to 4)
 {
     blockType: 'CollapsibleHeading',
-    properties:{
-        level: 1, //level varies from 1 to 4
+    properties: {
+        level: 1,
         isExpanded: true,
         children: [
             {
-                //your content to be here..
+                blockType: 'Paragraph',
+                content: [
+                    { contentType: 'Text', content: 'Hidden content shown when expanded.' }
+                ]
             }
         ]
     }
 }
-// Configuring CollapsibleParagraph block
+// Configuring a CollapsibleParagraph block
 {
     blockType: 'CollapsibleParagraph',
-    properties:{
+    properties: {
         children: [
             {
-               //your content to be here..
+                blockType: 'Paragraph',
+                content: [
+                    { contentType: 'Text', content: 'Hidden content shown when expanded.' }
+                ]
             }
         ]
     }
@@ -79,44 +85,51 @@ This example shows how to configure `CollapsibleHeading` and `CollapsibleParagra
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/children/toggle-block" %}
 
-### Configure placeholder
+### Configuring the placeholder for Collapsible blocks
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for a Collapsible block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/icollapsibleblocksettings#placeholder) property. The text appears when the block is empty. The default placeholder for a `CollapsibleHeading` is `Collapsible Heading {level}` (for example, `Collapsible Heading 1`), and for a `CollapsibleParagraph` it is `Collapsible Paragraph`.
 
 ```typescript
-// Adding placeholder value to collapsible heading
+// Adding a placeholder to a CollapsibleHeading block
 {
     blockType: 'CollapsibleHeading',
     properties: {
         level: 2,
         placeholder: 'Heading block'
-    }
+    },
+    content: [
+        { contentType: 'Text', content: '' }
+    ]
 }
-//Adding placeholder value for collapsible paragraph
+// Adding a placeholder to a CollapsibleParagraph block
 {
     blockType: 'CollapsibleParagraph',
-    properties: { placeholder: 'Collapsible Paragraph'}
+    properties: { placeholder: 'Collapsible Paragraph' },
+    content: [
+        { contentType: 'Text', content: '' }
+    ]
 }
 ```
 
-## Configure quote block
+## Configuring the quote block
 
-Quote blocks are styled for displaying quotations or excerpts. Render a Quote block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) to `Quote`. Editing is now more natural with multi‑line support—pressing Enter creates a new line inside the block, and pressing Enter again on an empty line exits the quote.
+Quote blocks are styled for displaying quotations or excerpts. Render a Quote block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) to `Quote`. Editing is multi-line by default — pressing **Enter** creates a new line inside the block, and pressing **Enter** again on an empty line exits the quote.
 
-### Block type & properties
+### Block type and properties
 
 ```typescript
-// Adding quote block
+// Adding a quote block with a single empty Paragraph child
 {
     blockType: 'Quote',
-    properties:{
-        children:[{
-            blockType: 'Paragraph',
-            content: [
-                contentType: 'Text',
-                content: ''
-            ]
-        }]
+    properties: {
+        children: [
+            {
+                blockType: 'Paragraph',
+                content: [
+                    { contentType: 'Text', content: '' }
+                ]
+            }
+        ]
     }
 }
 ```
@@ -137,26 +150,29 @@ The following sample demonstrates how to configure quote block.
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/children/quote" %}
 
-## Configure callout block
+## Configuring the callout block
 
 Callout blocks highlight important information such as notes, warnings, or tips. Render one by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) to `Callout`.
 
-### Block type & properties
+### Block type and properties
 
 ```typescript
-// Adding callout block
-  {
+// Adding a callout block with one Paragraph child
+{
+    id: 'my-callout',
     blockType: 'Callout',
-    properties:{
-        children: [{ 
-            blockType: 'Paragraph',
-            content: [{
-                contentType: 'Text',
-                content: 'Important information: This is a callout block used to highlight important content.'
-            }]
-        }]
+    properties: {
+        children: [
+            {
+                parentId: 'my-callout', // must match the parent's id
+                blockType: 'Paragraph',
+                content: [
+                    { contentType: 'Text', content: 'Important information: this is a callout block used to highlight important content.' }
+                ]
+            }
+        ]
     }
- }
+}
 ```
 
 The following sample demonstrates how to configure callout block.

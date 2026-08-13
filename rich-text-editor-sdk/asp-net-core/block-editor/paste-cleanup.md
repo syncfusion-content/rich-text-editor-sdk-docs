@@ -5,7 +5,7 @@ description: Learn how to configure paste cleanup in ASP.NET Core BlockEditor to
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Paste Cleanup in ASP.NET Core Block Editor
