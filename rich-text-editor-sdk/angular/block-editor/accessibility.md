@@ -50,7 +50,7 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 | `aria-orientation` | Specifies the orientation of the toolbar. |
 | `aria-disabled` | Indicates whether the toolbar or element is currently disabled and not interactive. |
 | `aria-haspopup` / `aria-expanded` | Used by menus and popups (command/context/action menus). `aria-expanded` reflects open/closed state. |
-| `aria-hidden` | Hides non-interactive or offscreen content (e.g., closed popups) from assistive technologies. |
+| `aria-hidden` | Hides non-interactive or off screen content (e.g., closed popups) from assistive technologies. |
 
 ## Keyboard interaction
 
