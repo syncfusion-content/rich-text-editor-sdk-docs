@@ -9,13 +9,13 @@ documentation: ug
 
 # XSS Prevention in Blazor Block Editor
 
-The Block Editor allows users to edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove potentially malicious elements from editor content that could cause XSS attacks. The editor removes elements and attributes that could execute scripts, such as `<script>` tags and event handler attributes like `onmouseover`, `onclick`, and similar JavaScript execution vectors.
+The Block Editor allows users to edit content securely by preventing cross-site scripting (XSS) attacks. By default, the editor removes potentially malicious elements from content that could cause XSS attacks. This includes `<script>` tags, `<iframe>` elements, `<form>` tags, and event handler attributes like `onmouseover`, `onclick`, `onerror`, and other JavaScript execution vectors.
 
 ## Enabling XSS prevention
 
-The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_EnableHtmlSanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes potentially dangerous elements like `<script>` and attributes like `onmouseover` from the content.
+The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_EnableHtmlSanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes potentially dangerous elements like `<script>` tags and attributes like `onmouseover`, `onclick`, `onerror`, `onload`, and other event handler attributes from the content.
 
-The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:
+The following example demonstrates XSS prevention by removing a `<script>` tag and `onmouseover` attribute from user-supplied content:
 
 ```cshtml
 
