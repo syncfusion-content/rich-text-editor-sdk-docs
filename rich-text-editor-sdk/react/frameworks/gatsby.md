@@ -27,7 +27,7 @@ yarn create gatsby
 {% endhighlight %}
 {% endtabs %}
 
-```text
+```bash
 √ What would you like to call your site? · my-gatsby-rte
 √ What would you like to name the folder where your site will be created? · my-gatsby-rte
 √ Will you be using JavaScript or TypeScript? · TypeScript
@@ -73,7 +73,7 @@ For other theme options (CDN, Theme Studio), see the [themes](../themes/built-in
 
 Replace **src/pages/index.tsx** with `RichTextEditorComponent` and the services it needs.
 
-```tsx
+```typescript
 import * as React from 'react';
 import { RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 import './style.css';

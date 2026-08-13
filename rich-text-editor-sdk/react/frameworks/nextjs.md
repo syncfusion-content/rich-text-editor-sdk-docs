@@ -27,7 +27,7 @@ yarn create next-app
 {% endhighlight %}
 {% endtabs %}
 
-```text
+```bash
 √ What is your project named? ... my-nextjs-rte
 ? Would you like to use the recommended Next.js defaults?
 >   Yes, use recommended defaults - TypeScript, ESLint, Tailwind CSS, App Router
@@ -73,7 +73,7 @@ The App Router requires a client component (`'use client'`). Mount `RichTextEdit
 
 **app/page.tsx**
 
-```tsx
+```typescript
 'use client';
 import { RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
