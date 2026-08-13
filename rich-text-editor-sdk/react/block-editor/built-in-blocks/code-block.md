@@ -30,8 +30,9 @@ For Code blocks, you can specify the language for syntax highlighting using the 
 - [language](https://ej2.syncfusion.com/react/documentation/api/blockeditor/codeLanguageModel#language): The default language value used for syntax highlighting.
 
 ### Block type & properties
+
 ```typescript
-// Adding Code block
+// Adding a Code block
 {
     blockType: 'Code',
     content: [
