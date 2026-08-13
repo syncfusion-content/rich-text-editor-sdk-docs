@@ -14,7 +14,11 @@ The Block Editor supports image blocks for displaying visual content effectively
 
 ## Adding an image block
 
-You can use the `Image` block to display images within your editor. To render an `Image` block, set the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model.
+You can use the `Image` block to showcase an image content within your editor.
+
+### Configure image block
+
+You can render an `Image` block by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
 #### Global image settings
 
