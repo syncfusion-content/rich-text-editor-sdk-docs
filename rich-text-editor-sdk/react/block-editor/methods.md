@@ -284,8 +284,6 @@ editor.disableToolbarItems(['bold', 'italic', 'underline']);
 
 The following example demonstrates the usage of the formatting and focus methods.
 
-{% endraw %}
-
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/block-editor/methods/formatting/app/index.jsx %}
