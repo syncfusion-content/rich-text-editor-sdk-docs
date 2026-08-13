@@ -197,10 +197,9 @@ Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusi
 // Select all content in the editor
 editor.selectAllBlocks();
 ```
+{% endraw %}
 
 The following example demonstrates the usage of the selection and cursor methods.
-
-{% endraw %}
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
