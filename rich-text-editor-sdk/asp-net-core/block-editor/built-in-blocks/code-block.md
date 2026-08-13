@@ -5,7 +5,7 @@ description: Learn how to add and configure code blocks in the ASP.NET Core Bloc
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Code Blocks in ASP.NET Core Block Editor

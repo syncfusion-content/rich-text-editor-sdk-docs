@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI Assistant in ASP.NET Core Syncfusion Rich Text Editor | Syncfusion
-description: Learn how to enable and configure the AI Assistant in the ASP.NET Core Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
+description: Learn how to integrate and configure AI Assistant in ASP.NET Core Rich Text Editor for content generation, editing, custom prompts, and AI responses.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -107,4 +107,4 @@ A working demonstration of the AI Assistant, showcasing real-time chunk streamin
 
 * **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
 
-* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/tailwind3):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/fluent2):** Implementation using the `gpt-4o-mini` model

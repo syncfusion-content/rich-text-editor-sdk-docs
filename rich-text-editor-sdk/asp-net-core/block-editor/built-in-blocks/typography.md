@@ -5,7 +5,7 @@ description: Learn how to configure text block types in the ASP.NET Core Block E
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Text Block Types in ASP.NET Core Block Editor
