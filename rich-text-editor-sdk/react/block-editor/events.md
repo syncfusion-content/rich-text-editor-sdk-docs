@@ -54,7 +54,7 @@ The [blockDragStart](https://ej2.syncfusion.com/react/documentation/api/blockedi
 
 ## BlockDragging
 
-The [blockDragging](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blockdragging) event is triggered continuously during a dragging operation, providing information about the blocks being dragged and their current position.
+The [blockDragging](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blockdragging) event is triggered continuously during a dragging operation, providing real-time information about block positions.
 
 {% raw %}
 ```typescript
@@ -64,7 +64,7 @@ The [blockDragging](https://ej2.syncfusion.com/react/documentation/api/blockedit
 
 ## BlockDropped
 
-The [blockDropped](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blockdropped) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation. This event includes data about the drop target and position.
+The [blockDropped](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blockdropped) event is triggered when blocks are successfully dropped at their destination. This event includes data about the drop target and final position.
 
 {% raw %}
 ```typescript
@@ -74,7 +74,7 @@ The [blockDropped](https://ej2.syncfusion.com/react/documentation/api/blockedito
 
 ## Focus
 
-The [focus](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus. This is useful for updating UI states and managing editor interactions.
+The [focus](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus. Use this for updating UI states, showing formatting toolbars, or managing editor interactions.
 
 {% raw %}
 ```typescript
@@ -84,7 +84,7 @@ The [focus](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index
 
 ## Blur
 
-The [blur](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blur) event is triggered when the editor loses focus. This is commonly used for auto-saving content or hiding UI elements that should only be visible when the editor is active.
+The [blur](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blur) event is triggered when the editor loses focus. Commonly used for auto-saving content or hiding UI elements that should only be visible when the editor is active.
 
 {% raw %}
 ```typescript
