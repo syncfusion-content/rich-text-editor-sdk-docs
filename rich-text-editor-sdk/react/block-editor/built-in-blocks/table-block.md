@@ -19,7 +19,7 @@ For Table blocks, you can configure layout and structure using the [properties](
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | width | Specifies the display width of the table. | `100%` |
-| enableHeader | Specifies whether to enable header for the table. | `true` |
+| enableHeader | Specifies whether to enable header row for the table. | `true` |
 | enableRowNumbers | Specifies whether to enable row numbers for the table. | `true` |
 | readOnly | Specifies whether to render the table in read-only mode, disabling edits. | `false` |
 | columns | Defines the columns of the table, including their types and headers. | `[]` |
