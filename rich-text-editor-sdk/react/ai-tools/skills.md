@@ -1,16 +1,16 @@
 ---
 layout: post
-title: React Rich Text Editor SDK Agent Skills | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor SDK guidance.
+title: Syncfusion React Rich Text Editor Agent Skills for AI Assistants | Syncfusion
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor guidance — APIs, composition patterns, and Inject services.
 platform: rich-text-editor-sdk
 control: Skills
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Syncfusion® React Rich Text Editor SDK Agent Skills for AI Assistants
+# Syncfusion® React Rich Text Editor Agent Skills for AI Assistants
 
-**Syncfusion React Skills** is a knowledge package that gives AI assistants — VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, and other Skills CLI–compatible tools — accurate React Rich Text Editor SDK guidance. The skills include official APIs, composition patterns, theming conventions, and the required `Inject` services, so the assistant generates code that runs without manual fixes.
+**Syncfusion React Skills** is a knowledge package that gives AI assistants — VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, and other Skills CLI–compatible tools — accurate React Rich Text Editor guidance. The skills include official APIs, composition patterns, theming conventions, and the required `Inject` services, so the assistant generates code that runs without manual fixes.
 
 ## Prerequisites
 
@@ -22,9 +22,9 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 **Component usage and API knowledge**
 
-- Adding and configuring the Rich Text Editor, Block Editor, and Markdown Editor.
+- Adding and configuring the React Rich Text Editor.
 - Component-specific props, events, and required feature modules.
-- Injecting services such as `Toolbar`, `Image`, `Link`, `HtmlEditor`, and `QuickToolbar` (Rich Text Editor), or `MarkdownEditor` (Markdown Editor).
+- Injecting services such as `Toolbar`, `Image`, `Link`, `HtmlEditor`, and `QuickToolbar`.
 
 **Patterns and best practices**
 
@@ -39,21 +39,9 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 ## Installation
 
-Install the [Syncfusion React Rich Text Editor SDK skills](https://github.com/syncfusion/react-ui-components-skills) using the Skills CLI. Browse the available skills in the [marketplace](https://www.skills.sh/syncfusion).
+Install the [Syncfusion React Rich Text Editor skills](https://github.com/syncfusion/react-ui-components-skills) using the Skills CLI. Browse the available skills in the [marketplace](https://www.skills.sh/syncfusion).
 
-### Install all skills
-
-Install every editor skill at once in the `.agents/skills` directory:
-
-{% tabs %}
-{% highlight bash tabtitle="NPM" %}
-
-npx skills add syncfusion/react-ui-components-skills -y
-
-{% endhighlight %}
-{% endtabs %}
-
-### Install selected skills
+### Install React Rich Text Editor skills
 
 Install skills interactively:
 
@@ -65,12 +53,11 @@ npx skills add syncfusion/react-ui-components-skills
 {% endhighlight %}
 {% endtabs %}
 
-The terminal lists the available skills. Use the arrow keys to navigate, the space bar to select, and the Enter key to confirm. The skills that match the RTE-SDK include:
+The terminal lists the available skills. Use the arrow keys to navigate, the space bar to select, and the Enter key to confirm. The skill for the React Rich Text Editor is:
 
 ```text
  Select skills to install (space to toggle)
 │  ◻ syncfusion-react-richtexteditor
-│  ◻ syncfusion-react-blockeditor
 |  ...
 ```
 
@@ -103,48 +90,31 @@ Choose the installation scope (project-level or global), then confirm:
 │  ● Yes / ○ No
 ```
 
-This registers the SDK skill pack so AI assistants can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
+This registers the skill pack so AI assistants can automatically load it in supported IDEs such as [Code Studio](https://help.syncfusion.com/code-studio/reference/configure-properties/skills), [Visual Studio Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills), and [Cursor](https://cursor.com/docs/skills).
 
 For more on the Skills CLI, see the [Skills CLI docs](https://www.skills.sh/docs).
 
-## Install the editor packages
+## How the React Rich Text Editor Skills work
 
-After the skills are installed, add the editor packages your project uses. Each tab installs one editor with the matching theme.
-
-{% tabs %}
-{% highlight bash tabtitle="Rich Text Editor" %}
-
-npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
-{% highlight bash tabtitle="Block Editor" %}
-
-npm install @syncfusion/ej2-react-blockeditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
-{% endtabs %}
-
-## How the SDK Skills work
-
-1. **Reads relevant Skill files based on queries** — retrieves component usage patterns, APIs, and best-practice guidance for the Rich Text Editor, Block Editor, and Markdown Editor. The assistant loads skill names and descriptions first, then dynamically loads the required skill and reference files as needed.
+1. **Reads relevant Skill files based on queries** — retrieves component usage patterns, APIs, and best-practice guidance for the React Rich Text Editor. The assistant loads skill names and descriptions first, then dynamically loads the required skill and reference files as needed.
 2. **Enforces Syncfusion best practices**, including:
-   - Using the required feature modules for each editor.
-   - Injecting applicable services (`Toolbar`, `Image`, `Link`, `HtmlEditor`, `QuickToolbar`, `MarkdownEditor`, and so on).
+   - Using the required feature modules for the editor.
+   - Injecting applicable services (`Toolbar`, `Image`, `Link`, `HtmlEditor`, `QuickToolbar`, and so on).
    - Adding the correct theme and style imports.
 3. **Generates editor-accurate code**, avoiding invalid props or unsupported patterns.
 
 ### Using the AI Assistant
 
-Once the SDK skills are installed, the assistant can generate and update code for tasks such as:
+Once the skills are installed, the assistant can generate and update code for tasks such as:
 
 - "Add a Rich Text Editor with Bold, Italic, Underline, and Image."
-- "Build a Block Editor with default blocks and a custom slash-menu command."
-- "Add a Markdown Editor with MarkdownEditor and a custom toolbar."
-- "Apply the Tailwind 3 theme and enable dark mode for any editor."
+- "Configure the toolbar to show only the formatting tools I need."
+- "Add image upload to a custom endpoint."
+- "Apply the Tailwind 3 theme and enable dark mode."
 
 ## Skills CLI commands
 
-Manage the SDK skills after installation.
+Manage the skills after installation.
 
 ### List skills
 
