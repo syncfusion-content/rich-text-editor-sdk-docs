@@ -10,7 +10,7 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Syncfusion® React Rich Text Editor MCP Server
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates React Rich Text Editor development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features for the **React Rich Text Editor**.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates React Rich Text Editor development by providing deep knowledge directly in your AI-powered IDE. [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) (MCP) integration enables quick access to documentation, API references, and code-generation features for the **React Rich Text Editor**.
 
 > The previously available **Agentic UI Builder** (`#sf_react_ui_builder`) has been upgraded to an **Agent skill-based experience** and is no longer part of the MCP Server. The **AI Coding Assistant** (`#sf_react_assistant`) has been **renamed** to **`search_docs`** (`#search_docs`) to follow MCP naming conventions.
 
@@ -210,4 +210,4 @@ The MCP Server is a knowledge bridge between your AI model and Syncfusion-specif
 
 - [AI-Powered Development](./ai-agent-tools)
 - [Skills](./skills)
-- [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [Model Context Protocol](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)

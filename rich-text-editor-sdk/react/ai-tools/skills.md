@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion React Rich Text Editor Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor guidance — APIs, composition patterns, and Inject services.
+title: Syncfusion React Rich Text Editor Agent Skills | Syncfusion
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate React Rich Text Editor guidance.
 platform: rich-text-editor-sdk
 control: Skills
 documentation: ug
@@ -55,7 +55,7 @@ npx skills add syncfusion/react-ui-components-skills
 
 The terminal lists the available skills. Use the arrow keys to navigate, the space bar to select, and the Enter key to confirm. The skill for the React Rich Text Editor is:
 
-```text
+```bash
  Select skills to install (space to toggle)
 │  ◻ syncfusion-react-richtexteditor
 |  ...
@@ -63,7 +63,7 @@ The terminal lists the available skills. Use the arrow keys to navigate, the spa
 
 Next, select the AI agent and where to store the skills. In Syncfusion Code Studio, the `.agents/skills` directory is used. See the [supported agents list](https://github.com/vercel-labs/skills?tab=readme-ov-file#supported-agents) for other IDEs.
 
-```text
+```bash
 │  ── Additional agents ─────────────────────────────
 │  Search:
 │  ↑↓ move, space select, enter confirm
@@ -81,7 +81,7 @@ Next, select the AI agent and where to store the skills. In Syncfusion Code Stud
 
 Choose the installation scope (project-level or global), then confirm:
 
-```text
+```bash
 ◆  Installation scope
 │  ● Project (Install in current directory (committed with your project))
 │  ○ Global

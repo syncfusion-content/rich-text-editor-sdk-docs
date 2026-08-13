@@ -34,7 +34,7 @@ ChatGPT, Claude, and Gemini can read Syncfusion documentation in real time when 
 
 **Use this prompt template:**
 
-```text
+```bash
 I need a Syncfusion React Rich Text Editor with the following specifications:
 - [specific requirements]
 - [feature list]
@@ -44,7 +44,7 @@ Reference: [Documentation link]
 
 **Example prompt:**
 
-```text
+```bash
 I need a Syncfusion React Rich Text Editor with the following specifications:
 - Toolbar with Bold, Italic, Underline, CreateLink, Image
 - Image upload to a custom endpoint
@@ -107,7 +107,7 @@ For tools or applications that use AI APIs (Claude API, OpenAI, Gemini) to gener
 
 **Example system prompt:**
 
-```text
+```bash
 You are an expert in the Syncfusion React Rich Text Editor.
 
 - Always use @syncfusion/ej2-react-richtexteditor
@@ -141,7 +141,7 @@ A generic request like "Create a Syncfusion React editor" fails at runtime — w
 
 AI models are trained on historical data and may suggest APIs from older Syncfusion versions. To ensure accurate API usage, include the API reference link directly in your prompt:
 
-```text
+```bash
 Use the latest Syncfusion React Rich Text Editor APIs only.
 Target: React 18+ with @syncfusion/ej2-react-richtexteditor latest.
 
