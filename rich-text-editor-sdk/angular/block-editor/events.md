@@ -12,83 +12,90 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Block Editor component provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 
-## Created
+## created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#created) event is triggered when the Block Editor component is successfully initialized and ready for use. This event is useful for performing setup operations or initializing additional features after the editor is created.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#created) event is triggered when the Block Editor component has finished initializing and is ready for use. It is useful for performing setup operations, applying initial focus, or wiring up other components after the editor mounts.
 
-```typescript
+```html
 <ejs-blockeditor (created)="onCreated()" />
 ```
 
-## BlockChanged
-
-The [blockChanged](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockchanged) event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
-
 ```typescript
-<ejs-blockeditor (blockChanged)="onBlockChanged()" />
+public onCreated(): void {
+    // Editor is ready; safe to call API methods or focus the editor.
+}
 ```
 
-## SelectionChanged
+## blockChanged
 
-The [selectionChanged](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#selectionchanged) event is triggered when the user's text selection changes within the editor. The event arguments contain details about the new selection, which can be useful for updating UI elements.
+The [blockChanged](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockchanged) event is triggered whenever the editor's blocks change. This includes block additions, deletions, and any structural modifications to the document. The event arguments expose the affected blocks so you can implement change tracking or autosave:
 
-```typescript
-<ejs-blockeditor (selectionChanged)="onSelectionChanged()" />
-
+```html
+<ejs-blockeditor (blockChanged)="onBlockChanged($event)" />
 ```
 
-## BlockDragStart
-
-The [blockDragStart](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdragstart) event is triggered at the beginning of a block drag operation, providing information about the blocks being dragged and their initial position.
-
 ```typescript
-<ejs-blockeditor (blockDragStart)="onBlockDragStart()" />
+public onBlockChanged(args: BlockChangedEventArgs): void {
+    console.log('Blocks changed:', args.blocks);
+}
 ```
 
-## BlockDragging
+## selectionChanged
 
-The [blockDragging](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdragging) event is triggered continuously during a dragging operation, providing information about the blocks being dragged and their current position.
+The [selectionChanged](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#selectionchanged) event is triggered when the user's text selection changes inside the editor. The event arguments describe the new selection and are useful for driving context-aware toolbars or status indicators:
 
-```typescript
-<ejs-blockeditor (blockDragging)="onBlockDragging()" />
+```html
+<ejs-blockeditor (selectionChanged)="onSelectionChanged($event)" />
 ```
 
-## BlockDropped
+## blockDragStart, blockDragging, blockDropped
 
-The [blockDropped](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdropped) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation. This event includes data about the drop target and position.
+These three events let you observe or react to drag-and-drop operations on blocks. They are fired in order during a single drag:
 
-```typescript
-<ejs-blockeditor (blockDropped)="onBlockDropped()" />
+* [blockDragStart](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdragstart) — fires once when the user begins dragging a block.
+* [blockDragging](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdragging) — fires repeatedly while the block is being dragged.
+* [blockDropped](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blockdropped) — fires once when the user releases the block at its destination. Set `args.cancel = true` to prevent the move.
+
+```html
+<ejs-blockeditor
+    (blockDragStart)="onBlockDragStart($event)"
+    (blockDragging)="onBlockDragging($event)"
+    (blockDropped)="onBlockDropped($event)" />
 ```
 
-## Focus
-
-The [focus](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus. This is useful for updating UI states and managing editor interactions.
-
 ```typescript
+public onBlockDropped(args: BlockDropEventArgs): void {
+    if (args.droppedBlock?.id === 'protected') {
+        args.cancel = true; // disallow moving the protected block
+    }
+}
+```
+
+## focus
+
+The [focus](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus. It is useful for updating UI state — for example, showing or hiding floating toolbars:
+
+```html
 <ejs-blockeditor (focus)="onFocus()" />
 ```
 
-## Blur
+## blur
 
-The [blur](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blur) event is triggered when the editor loses focus. This is commonly used for auto-saving content or hiding UI elements that should only be visible when the editor is active.
+The [blur](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#blur) event is triggered when the editor loses focus. It is commonly used for auto-saving content, hiding toolbars, or validating the current state:
 
-```typescript
+```html
 <ejs-blockeditor (blur)="onBlur()" />
 ```
 
-## BeforePasteCleanup
+## beforePasteCleanup and afterPasteCleanup
 
-The [beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#beforepastecleanup) event is triggered before content is pasted into the editor. This event allows you to inspect, modify, or cancel the paste operation via its event arguments.
+These two events bracket every paste operation and let you inspect, modify, or block the pasted content. See the [Paste cleanup](./paste-cleanup.md) page for full details on the `pasteCleanupSettings` model and the event arguments.
 
-```typescript
-<ejs-blockeditor (beforePasteCleanup)="onBeforePasteCleanup()" />
-```
+* [beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#beforepastecleanup) — fires before the pasted content is inserted. You can cancel the paste or rewrite the content here.
+* [afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#afterpastecleanup) — fires after the content is inserted. Useful for post-processing or analytics.
 
-## AfterPasteCleanup
-
-The [afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#afterpastecleanup) event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
-
-```typescript
-<ejs-blockeditor (afterPasteCleanup)="onAfterPasteCleanup()" />
+```html
+<ejs-blockeditor
+    (beforePasteCleanup)="onBeforePasteCleanup($event)"
+    (afterPasteCleanup)="onAfterPasteCleanup($event)" />
 ```
