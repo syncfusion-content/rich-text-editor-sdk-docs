@@ -49,18 +49,18 @@ editor.removeBlock('block-to-remove-id');
 
 ### Moving a block
 
-Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#moveblock) method.
+Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#moveblock) method. The block is positioned after the target block ID.
 
 {% raw %}
 ```typescript
-// Move a block to a new position
+// Move a block to a new position (after the target block)
 editor.moveBlock('source-block-id', 'target-block-id');
 ```
 {% endraw %}
 
 ### Updating a block
 
-Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#updateblock) method. Only the specified properties are modified, while others remain unchanged. It returns `true` if the update was successful and `false` otherwise.
+Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#updateblock) method. Only the specified properties are modified, while others remain unchanged. The method returns `true` if the block exists and was updated, or `false` if the block ID is not found.
 
 {% raw %}
 ```typescript
@@ -245,6 +245,8 @@ Execute a built-in toolbar formatting command using the [executeToolbarAction](h
 
 {% raw %}
 ```typescript
+import { BuiltInToolbar } from '@syncfusion/ej2-react-blockeditor';
+
 // Apply bold formatting
 editor.executeToolbarAction(BuiltInToolbar.Bold);
 
@@ -273,12 +275,13 @@ Disable specific items in the inline toolbar using the [disableToolbarItems](htt
 
 {% raw %}
 ```typescript
-// Disable a specific toolbar items
+// Disable a specific toolbar item
 editor.disableToolbarItems('bold');
 
 // Disable multiple items
 editor.disableToolbarItems(['bold', 'italic', 'underline']);
 ```
+{% endraw %}
 
 The following example demonstrates the usage of the formatting and focus methods.
 
@@ -362,10 +365,9 @@ Print the editor content using the [print](https://ej2.syncfusion.com/react/docu
 // Print the editor content
 editor.print();
 ```
+{% endraw %}
 
 The following example demonstrates the usage of the data export methods.
-
-{% endraw %}
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
