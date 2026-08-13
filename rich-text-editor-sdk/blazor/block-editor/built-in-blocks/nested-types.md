@@ -49,6 +49,8 @@ You can control whether a block is expanded or collapsed using the [IsExpanded](
     }
 ```
 
+This example shows how to configure [CollapsibleHeading](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_CollapsibleHeading) and [CollapsibleParagraph](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_CollapsibleParagraph) blocks.
+
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
 
