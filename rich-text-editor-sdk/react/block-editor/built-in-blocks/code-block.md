@@ -27,7 +27,7 @@ The `codeBlockSettings` property supports the following options:
 
 For Code blocks, you can specify the language for syntax highlighting using the [properties](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel) property. This property supports the following options:
 
-- [language](https://ej2.syncfusion.com/react/documentation/api/blockeditor/codeLanguageModel#language): The default language value used for syntax highlighting. Supported languages include JavaScript, TypeScript, Python, Java, C#, CSS, HTML, XML, JSON, and others (see [Prism.js documentation](https://prismjs.com/#supported-languages) for the complete list).
+- [language](https://ej2.syncfusion.com/react/documentation/api/blockeditor/codeLanguageModel#language): The default language value used for syntax highlighting.
 
 ### Block type & properties
 
