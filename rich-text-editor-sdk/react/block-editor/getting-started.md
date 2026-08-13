@@ -62,7 +62,7 @@ I> To apply the application-specific styles correctly, import **App.css** into *
 
 ## Add the Block Editor Component
 
-Now, You can add the Block Editor component to your application. Replace the default contents of `src/App.tsx` with the following code, which uses the `<BlockEditorComponent>` directive to render the editor.
+Add the BlockEditorComponent to your application. Replace the contents of `src/App.tsx` with the following code:
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}

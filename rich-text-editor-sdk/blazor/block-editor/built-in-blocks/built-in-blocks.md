@@ -44,6 +44,8 @@ You can specify the indentation level of a block using the [Indent](https://help
 
 By default, the [Indent](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Indent) property is set to `0`.
 
+The following example demonstrates how to configure block indentation:
+
 ```cshtml
 
 @using Syncfusion.Blazor.BlockEditor
@@ -89,7 +91,7 @@ By default, the [Indent](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor
 
 You can apply custom styling to individual blocks using the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_CssClass) property. This property accepts a string containing one or more CSS class names.
 
-Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
+Custom CSS classes allow you to define specialized styling for specific blocks in your editor. The following example demonstrates how to apply CSS classes to blocks:
 
 ```cshtml
 
