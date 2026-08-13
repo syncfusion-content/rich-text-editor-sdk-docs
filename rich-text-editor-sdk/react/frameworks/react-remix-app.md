@@ -27,7 +27,7 @@ yarn create react-router@latest my-remix-rte
 {% endhighlight %}
 {% endtabs %}
 
-```text
+```bash
 dir   :: Where should we create your new project? · my-remix-rte
         Using basic template · See https://remix.run/guides/templates for more
         ✔ Template copied
@@ -86,7 +86,7 @@ export default defineConfig({
 
 Update **app/routes/home.tsx** with `RichTextEditorComponent` and the services it needs.
 
-```tsx
+```typescript
 import type { MetaFunction } from "react-router";
 import { RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 

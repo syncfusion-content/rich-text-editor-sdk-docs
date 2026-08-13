@@ -1,59 +1,57 @@
 ---
 layout: post
-title: AI-Powered Development with React Rich Text Editor SDK | Syncfusion
-description: Master AI-powered development with the Syncfusion React Rich Text Editor SDK using MCP Server and Skills.
+title: AI-Powered Development with React Rich Text Editor | Syncfusion
+description: Use AI assistants with the Syncfusion React Rich Text Editor — install the MCP Server or Skills to get accurate component code on the first try.
 platform: rich-text-editor-sdk
 control: AI-Powered Development
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# AI-Powered Development with the React Rich Text Editor SDK
+# AI-Powered Development with the React Rich Text Editor
 
-AI assistants accelerate development, but without proper context they generate code that looks correct and fails at runtime — wrong import paths, missing `Inject` services, or deprecated APIs. Grounding the assistant in Syncfusion knowledge eliminates most of these errors for every editor in the SDK.
-
-The React Rich Text Editor SDK includes three editors: **Rich Text Editor**, **Block Editor**, and **Markdown Editor**. This guide covers how to get accurate, runnable code for any of them.
+AI assistants accelerate React Rich Text Editor development, but without proper context they generate code that looks correct and fails at runtime — wrong import paths, missing `Inject` services, or deprecated APIs. Grounding the assistant in Syncfusion knowledge eliminates most of these errors.
 
 **In this guide:**
 
-- Three ways to use AI with the React Rich Text Editor SDK (Browser, IDE, API)
+- Three ways to use AI with the React Rich Text Editor (Browser, IDE, API)
 - How to prompt for accurate code on the first try
 - Which tool — MCP Server or Skills — fits your workflow
 
-## Three ways to use AI with the SDK
+## Three ways to use AI with the editor
 
 ### Browser-based AI
 
 ChatGPT, Claude, and Gemini can read Syncfusion documentation in real time when web search is enabled.
 
-**Best for:** learning the SDK, exploring the three editors, and quick prototypes.
+**Best for:** learning the editor, exploring features, and quick prototypes.
 
 **Get better results by:**
 
-1. **Include documentation links in your prompt** — paste the URL of the editor page you need.
-2. **Name the editor explicitly** — Rich Text Editor, Block Editor, or Markdown Editor.
-3. **Reference exact documentation pages** — direct links improve accuracy.
+1. **Include documentation links in your prompt** — paste the URL of the page you need.
+2. **Reference exact documentation pages** — direct links improve accuracy.
+3. **Specify the package and version** — say `@syncfusion/ej2-react-richtexteditor` and the React version.
 
 **Use this prompt template:**
 
-```text
-I need a [Rich Text Editor | Block Editor | Markdown Editor] with the following specifications:
+```bash
+I need a Syncfusion React Rich Text Editor with the following specifications:
 - [specific requirements]
 - [feature list]
 
-Reference: https://helpstaging.syncfusion.com/rich-text-editor-sdk/react/[rich-text-editor|block-editor|markdown-editor]/[page]
+Reference: [Documentation link]
 ```
 
-**Example prompt for the Rich Text Editor:**
+**Example prompt:**
 
-```text
+```bash
 I need a Syncfusion React Rich Text Editor with the following specifications:
 - Toolbar with Bold, Italic, Underline, CreateLink, Image
 - Image upload to a custom endpoint
 - Read-only mode toggle
 - TypeScript
 
-Reference: https://helpstaging.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/quick-start
+Reference: https://help.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/getting-started
 ```
 
 **Development considerations:**
@@ -78,13 +76,13 @@ Standard IDE AI tools often lack real-time access to Syncfusion-specific documen
 
 #### MCP Server
 
-The [MCP Server](./mcp-server) uses Retrieval-Augmented Generation (RAG) to inject relevant documentation into the AI's context and produce accurate, up-to-date code suggestions for every editor in the SDK.
+The [MCP Server](./mcp-server) uses Retrieval-Augmented Generation (RAG) to inject relevant documentation into the AI's context and produce accurate, up-to-date code suggestions for the Rich Text Editor.
 
 **What you get:**
 
-- Complete documentation for the Rich Text Editor, Block Editor, and Markdown Editor.
-- Live API references (properties, methods, events) for every editor.
-- Current `Inject` service recommendations per editor.
+- Complete documentation for the Rich Text Editor.
+- Live API references (properties, methods, events).
+- Current `Inject` service recommendations.
 
 #### Skills
 
@@ -92,7 +90,7 @@ The [Syncfusion Skills](./skills) package stores reference documents in your pro
 
 **What they include:**
 
-- Best practices for each of the three editors.
+- Best practices for the Rich Text Editor.
 - Common configuration patterns.
 - Implementation guidance for the required `Inject` services.
 - Theme and styling patterns.
@@ -105,50 +103,23 @@ For tools or applications that use AI APIs (Claude API, OpenAI, Gemini) to gener
 
 1. **Enable web search** — choose API providers that support web search as a tool.
 2. **Include the skill files** — add Syncfusion Skills to your system prompt for better accuracy.
-3. **Specify the SDK and editor** — say "Syncfusion React Rich Text Editor SDK" and name the editor to avoid vanilla-JS or wrong-component confusion.
+3. **Specify the package** — say "Syncfusion React Rich Text Editor" and the package `@syncfusion/ej2-react-richtexteditor` to avoid vanilla-JS or wrong-component confusion.
 
 **Example system prompt:**
 
-```text
-You are an expert in the Syncfusion React Rich Text Editor SDK (Rich Text Editor,
-Block Editor, Markdown Editor).
+```bash
+You are an expert in the Syncfusion React Rich Text Editor.
 
-- Always use @syncfusion/ej2-react-richtexteditor, @syncfusion/ej2-react-blockeditor,
-  or @syncfusion/ej2-react-markdowneditor
-- Use the <Inject> directive for required services (Toolbar, Image, Link, HtmlEditor,
-  QuickToolbar for the Rich Text Editor; MarkdownFormatter for the Markdown Editor)
-- If unsure about an API, search https://helpstaging.syncfusion.com/rich-text-editor-sdk/
+- Always use @syncfusion/ej2-react-richtexteditor
+- Use the <Inject> directive for required services (Toolbar, Image, Link, HtmlEditor, QuickToolbar)
+- If unsure about an API, search https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default
 ```
-
-## Package installation
-
-Install the SDK editors you need before generating code, so the assistant suggests valid imports. Each tab installs one editor with its matching theme.
-
-{% tabs %}
-{% highlight bash tabtitle="Rich Text Editor" %}
-
-npm install @syncfusion/ej2-react-richtexteditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
-{% highlight bash tabtitle="Block Editor" %}
-
-npm install @syncfusion/ej2-react-blockeditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
-{% highlight bash tabtitle="Markdown Editor" %}
-
-npm install @syncfusion/ej2-react-markdowneditor @syncfusion/ej2-tailwind3-theme
-
-{% endhighlight %}
-{% endtabs %}
-
-> Install only the editors your project uses. The theme package covers all three.
 
 ## Choosing the right approach
 
 | Situation | Recommended approach |
 | --- | --- |
-| Learning the SDK, exploring the three editors | Browser AI with documentation links |
+| Learning the editor and exploring features | Browser AI with documentation links |
 | Quick code samples and prototypes | Browser AI |
 | Production development in the IDE | IDE AI + MCP Server |
 | Team consistency and offline work | IDE AI + Skills |
@@ -168,14 +139,14 @@ A generic request like "Create a Syncfusion React editor" fails at runtime — w
 
 ## API accuracy
 
-AI models are trained on historical data and may suggest APIs from older Syncfusion versions. To ensure accurate API usage, include the editor's API reference link directly in your prompt:
+AI models are trained on historical data and may suggest APIs from older Syncfusion versions. To ensure accurate API usage, include the API reference link directly in your prompt:
 
-```text
-Use the latest Syncfusion React Rich Text Editor SDK APIs only.
+```bash
+Use the latest Syncfusion React Rich Text Editor APIs only.
 Target: React 18+ with @syncfusion/ej2-react-richtexteditor latest.
 
-Find any editor's API reference at
-https://helpstaging.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/api
+Find the API reference at
+https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default
 ```
 
 The MCP Server mitigates this automatically by grounding the AI against live documentation.
@@ -185,9 +156,9 @@ The MCP Server mitigates this automatically by grounding the AI against live doc
 | Problem | Likely cause | Fix |
 | --- | --- | --- |
 | Editor feature doesn't work (toolbar missing, image upload broken) | Missing `Inject` for the required service | Add `<Inject services={[...]} />` as a child of the editor component |
-| Wrong or missing imports | AI confused with vanilla JS or another component family | Prompt explicitly: "Use `@syncfusion/ej2-react-richtexteditor` (or `…-blockeditor` / `…-markdowneditor`) only" |
+| Wrong or missing imports | AI confused with vanilla JS or another component family | Prompt explicitly: "Use `@syncfusion/ej2-react-richtexteditor` only" |
 | Deprecated API usage | AI trained on older docs | Enable the MCP Server for live doc grounding |
-| Unstyled editor | Missing theme stylesheet import | Import the matching theme CSS for the editor you use |
+| Unstyled editor | Missing theme stylesheet import | Import the matching theme CSS |
 | `<Inject>` placed outside the editor | Incorrect nesting | `<Inject>` must be a direct child of the editor component |
 
 ## Quick reference
