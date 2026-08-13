@@ -10,15 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Image Blocks in React Block Editor
 
-The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
+The Block Editor supports image blocks for displaying visual content effectively. This allows users to insert, configure, and manage images within their editor content.
 
 ## Adding an image block
 
-You can use the `Image` block to showcase an image content within your editor.
-
-### Configure image block
-
-You can render an `Image` block by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can use the `Image` block to display images within your editor. To render an `Image` block, set the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model.
 
 #### Global image settings
 
@@ -28,10 +24,10 @@ The `imageBlockSettings` property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| saveUrl | Specifies the server endpoint URL for uploading images. | `''` |
-| maxFileSize | Specifies the maximum file size allowed for image uploads in bytes. | `30000000` |
+| saveUrl | Specifies the server endpoint URL for uploading images (e.g., `/api/images/save`). | `''` |
+| maxFileSize | Specifies the maximum file size allowed for image uploads in bytes. Uploads exceeding this limit will be rejected. | `30000000` |
 | path | Specifies the base path for storing and displaying images on the server. | `''` |
-| saveFormat | Specifies the format to save the image. | `Base64` |
+| saveFormat | Specifies the format to save the image: `Base64` (embedded in content) or `Blob` (server-stored). | `Base64` |
 | allowedTypes | Specifies allowed image file types for upload. | `['.jpg', '.jpeg', '.png']` |
 | width | Specifies the default display width of the image. | `auto` |
 | height | Specifies the default display height of the image. | `auto` |
@@ -82,13 +78,13 @@ The following example demonstrates how to pre-configure an `Image` block in the 
 
 ```typescript
 // Adding an Image block
- {
+{
     blockType: 'Image',
     properties: {
-        src: '',
+        src: 'https://example.com/image.jpg',
         width: '200px',
         height: '100px',
-        altText: '',
+        altText: 'Description of image',
     }
 }
 ```
