@@ -10,13 +10,19 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Inline Content in React Block Editor
 
-In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel#content) property that define the text and functionality within that block.
+In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel#content) items that define the text and functionality within that block.
+
+Before using inline content, import the ContentType enum from the Block Editor package:
+
+```typescript
+import { ContentType } from '@syncfusion/ej2-react-blockeditor';
+```
 
 Each [contentModel](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentModel) is an object with properties such as [id](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel#id), [contentType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentmodel#contenttype), [content](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentModel#content), and [properties](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentModel#properties), allowing for granular control over its appearance and behavior.
 
 ## Setting content type
 
-The Block Editor supports several inline content types through the `ContentType` enum, which can be set using the [contentType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentmodel#contenttype) property.
+The Block Editor supports several inline content types through the `ContentType` enum. For each content item in a block, set the [contentType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentmodel#contenttype) property to specify its type and behavior.
 
 | Built-in Content Type | Description                    |
 | ----------------------- | ------------------------------ |
@@ -80,7 +86,7 @@ Link settings accepts the following options:
 
 ## Configure Label
 
-To render labels, set the [contentType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentmodel#contenttype) property to`Label`. The `properties` property allows you to specify which label to display.
+To render labels, set the [contentType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/contentmodel#contenttype) property to `Label`. The `properties` property allows you to specify which label to display.
 
 ### Built-in items
 
@@ -88,6 +94,8 @@ The Block Editor comes with offers different built-in options. These include:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
+
+These built-in labels must be configured in your Block Editor settings to appear in label suggestions.
 
 ### Customize label
 
@@ -155,7 +163,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 ### ContentType
 
 ```typescript
-// Adding inline code
+// Adding inline mention
 {
     blockType: 'Paragraph',
     content: [
