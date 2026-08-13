@@ -172,7 +172,7 @@ The inline toolbar now includes `transform` options to quickly convert blocks be
 
 #### Built-in default transform block options
 
-Below are the builtincludes `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#transformSettings) property to customize the transform menu. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+Below are the built-in `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#transformSettings) property to customize the transform menu. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
 
 **Block Type |
 |---|
