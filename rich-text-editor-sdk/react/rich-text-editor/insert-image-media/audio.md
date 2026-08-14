@@ -46,7 +46,7 @@ The following example demonstrates configuring the audio toolbar item:
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/audio-cs2" %}
 
-## Audio Save Formats
+## Audio save formats
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -64,23 +64,23 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 ```
 
-## Inserting Audio
+## Inserting audio
 
 You can insert audio from either a hosted link or a local machine by clicking the audio button in the editor's toolbar. A dialog opens allowing you to insert audio from a web URL or upload from your device.
 
-### Inserting Audio from Web URLs
+### Inserting audio from web URLs
 
 By default, the audio toolbar item opens a dialog for inserting audio from an online source. Entering a valid URL adds it to the `src` attribute of the `<source>` tag.
 
 ![React Rich Text Editor Audio insert](../images/react-richtexteditor-audio-web.png)
 
-### Uploading Audio from Local Machine
+### Uploading audio from local machine
 
 The audio dialog includes a `browse` option to select audio file from a local machine and insert it into the Rich Text Editor content.
 
 If the [insertAudioSettings.path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertaudiosettings) is not specified, the audio is converted to a `Blob` or `Base64` URL and inserted into the editor.
 
-## Maximum File Size Restriction
+## Maximum file size restriction
 
 You can restrict audio uploads from your local machine using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB).
 
@@ -143,9 +143,9 @@ export default App;
 
 ```
 
-## Saving Audio to the Server
+## Saving audio to the server
 
-### Configuration Properties
+### Configuration properties
 
 | Property | Description |
 |----------|-------------|
@@ -154,7 +154,7 @@ export default App;
 | [removeUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#removeurl) | URL endpoint for deleting audio files from the server |
 | [path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#path) | Destination path on server where audio files are stored |
 
-### Server-side Action
+### Server-side action
 
 The selected audio can be uploaded to the required destination using the controller action below. Map this method name in [insertAudioSettings.saveUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#saveurl) and provide the required destination path through [insertAudioSettings.path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#path) properties.
 
@@ -324,7 +324,7 @@ class App extends React.Component<{},{}> {
     return (
       <RichTextEditorComponent height={450} toolbarSettings={this.toolbarSettings} fileUploadSuccess={this.onFileUploadSuccess} insertAudioSettings={this.insertAudioSettings} >
         <Inject services={[Toolbar, Audio, Link, HtmlEditor, QuickToolbar]} />
-        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown">markdown</a> of the content</p>
       </RichTextEditorComponent>
     );
   }

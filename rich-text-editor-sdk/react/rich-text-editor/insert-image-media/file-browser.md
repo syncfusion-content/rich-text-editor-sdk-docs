@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The File Browser in the Rich Text Editor enables browsing and inserting files, such as images, in the edit panel. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 
-## Required Dependencies
+## Required dependencies
 
 Install the FileManager package and related dependencies:
 
@@ -20,7 +20,7 @@ Install the FileManager package and related dependencies:
 npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-grids
 ```
 
-### Dependency Structure
+### Dependency structure
 
 ```
 @syncfusion/ej2-react-richtexteditor
@@ -29,7 +29,7 @@ npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-
 └── @syncfusion/ej2-filemanager
 ```
 
-## CSS Theme Reference
+## CSS theme reference
 
 Additionally add the below styles in the `[src/App.css]` file.
 
@@ -39,7 +39,7 @@ Additionally add the below styles in the `[src/App.css]` file.
   @import "../../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 ```
 
-## Setup Steps
+## Setup steps
 
 The following example demonstrates how to configure the file browser within the Rich Text Editor:
 
@@ -76,9 +76,9 @@ The following example demonstrates how to configure the file browser within the 
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/file-browser-cs2" %}
 
-## See Also
+## See also
 
-* [FileManager Documentation](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/)
+* [FileManager Documentation](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started)
 * [Image Insertion](./insert-images)
 * [Video Insertion](./video)
 * [Audio Insertion](./audio)

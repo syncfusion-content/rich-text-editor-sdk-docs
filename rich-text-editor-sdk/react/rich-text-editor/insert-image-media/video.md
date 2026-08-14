@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 
-## Configuring the Video Toolbar Item
+## Configuring the video toolbar item
 
 The video feature is enabled by adding the `Video` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
@@ -21,10 +21,10 @@ The video feature is enabled by adding the `Video` item to the toolbar using the
 Import and inject the `Video` module:
 
 ```tsx
-import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video } from '@syncfusion/ej2-react-richtexteditor';
+import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent toolbarSettings={{ items: ['Video'] }}>
-  <Inject services={[HtmlEditor, Toolbar, Video]} />
+  <Inject services={[HtmlEditor, Toolbar, Video, QuickToolbar]} />
 </RichTextEditorComponent>
 ```
 
