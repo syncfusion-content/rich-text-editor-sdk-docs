@@ -5,7 +5,7 @@ description: Learn how to add inline content in ASP.NET Core Block Editor blocks
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Inline Content in ASP.NET Core Block Editor

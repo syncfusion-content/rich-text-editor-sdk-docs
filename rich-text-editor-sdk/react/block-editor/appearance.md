@@ -31,7 +31,7 @@ You can utilize the [readOnly](https://ej2.syncfusion.com/react/documentation/ap
 
 {% raw %}
 ```typescript
-<BlockEditorComponent readonly={true}></BlockEditorComponent>
+<BlockEditorComponent readOnly={true}></BlockEditorComponent>
 ```
 {% endraw %}
 
@@ -45,7 +45,7 @@ You can use the [cssClass](https://ej2.syncfusion.com/react/documentation/api/bl
 ```
 {% endraw %}
 
-The following example demonstrates the usage of `readOnly` and `cssClass` properties of the Block Editor.
+The following example demonstrates the usage of the `readOnly` and `cssClass` properties of the Block Editor.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

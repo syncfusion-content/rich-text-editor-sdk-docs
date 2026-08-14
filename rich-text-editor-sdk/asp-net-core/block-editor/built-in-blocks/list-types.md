@@ -5,7 +5,7 @@ description: Learn how to add and configure bullet, numbered, and checklist bloc
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # List Blocks in ASP.NET Core Block Editor

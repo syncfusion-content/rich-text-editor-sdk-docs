@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick Toolbars in ASP.NET Core Rich Text Editor | Syncfusion
-description: Learn how to customize Quick Toolbars in the ASP.NET Core Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
+description: Learn how to customize Quick Toolbars in the ASP.NET Core Rich Text Editor for images, links, tables, audio, video, and text editing.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -199,7 +199,7 @@ Quick commands are opened as context-menu on clicking the corresponding element.
 |----------------|---------|
 |image | 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
 | link | 'Open', 'Edit', 'UnLink'.|
-| text | null <br> (Any toolbar [items](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/toolbar/toolbar-types#toolbar-items) in the Rich Text Editor can be configured here).|
+| text | null <br> (Any toolbar [items](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/toolbar/toolbar-types#toolbar-items) in the Rich Text Editor can be configured here).|
 | table| 'TableHeader', 'TableRows', 'TableColumns', 'BackgroundColor', '-', 'TableRemove', 'Alignments', 'TableCellVerticalAlign', 'Styles'.|
 
 Custom tool can be added to the corresponding quick toolbar, using [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
