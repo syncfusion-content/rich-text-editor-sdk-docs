@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Inline Content in TypeScript Block Editor
 
-In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
+In the TypeScript Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
 
 Each [contentModel](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel) is an object with properties such as [id](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#id), [contentType](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#contentType), [content](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#content), and [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#properties), allowing for granular control over its appearance and behavior.
 
@@ -48,7 +48,7 @@ To configure text content, set the `contentType` property to `Text`. This is the
 
 ## Configure hyperlink
 
-To create a hyperlink, set the `contentType` property to `Link`. You can configure the link's URL using the `properties` property.
+To create a hyperlink, set the `contentType` property to `Link`. You can configure the link's URL and target behavior using the `properties` property.
 
 ### Configure link properties
 
@@ -59,6 +59,7 @@ Link settings accepts the following options:
 | Option                     | Description                                                       | Default Value |
 | -------------------------  | ----------------------------------------------------------------- | ------------- |
 |[url](https://ej2.syncfusion.com/documentation/api/blockeditor/ilinkcontentsettings#url)| Specifies the destination URL of the link.     | `''`          |
+|[target](https://ej2.syncfusion.com/documentation/api/blockeditor/ilinkcontentsettings#target)| Specifies where the link opens ('_blank', '_self', '_parent', '_top'). | `'_blank'`    |
 
 ### ContentType & Properties
 
@@ -70,6 +71,7 @@ Link settings accepts the following options:
             contentType: 'Link',
             content: 'hyperlinks',
             properties: {
+                target: '_blank'
                 url: 'https://ej2.syncfusion.com/documentation',
             }
         }
@@ -160,6 +162,7 @@ The below sample demonstrates the customization of labels in the Block Editor.
 {% endif %}
 
 ## Configure mention
+ Before using mentions, ensure you have initialized the [users](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#users) collection in the Block Editor with the list of available users.
 
 Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the `contentType` property to `Mention`.
 
@@ -168,7 +171,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 ### ContentType
 
 ```typescript
-// Adding inline code
+// Adding inline mention
 {
     blockType: 'Paragraph',
     content: [
