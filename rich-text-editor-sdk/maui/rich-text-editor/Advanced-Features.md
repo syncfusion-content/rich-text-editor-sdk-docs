@@ -20,7 +20,7 @@ The Rich Text Editor control displays plain text, which can be set using the [Te
 {% highlight xaml %} 
 xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
 
- <richTextEditor:SfRichTextEditor Text="The rich text editor component is a WYSIWYG editor that provides the best user experience to create and update the content"/>
+ <richTextEditor:SfRichTextEditor Text="The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content"/>
 
 {% endhighlight %}
 
@@ -28,7 +28,7 @@ xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Sync
 using Syncfusion.Maui.RichTextEditor;
 
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.Text = "The rich text editor component is a WYSIWYG editor that provides the best user experience to create and update the content";
+richTextEditor.Text = "The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ The [HtmlText](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEdito
 {% highlight xaml %} 
 xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
 
- <richTextEditor:SfRichTextEditor HtmlText= "The &lt;b&gt; rich text editor &lt;/b&gt; component is a WYSIWYG editor that provides the best user experience to create and update the content"/>
+ <richTextEditor:SfRichTextEditor HtmlText= "The &lt;b&gt; rich text editor &lt;/b&gt; component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content"/>
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Sync
 using Syncfusion.Maui.RichTextEditor;
 
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.HtmlText = "The <b>rich text editor</b> component is a WYSIWYG editor that provides the best user experience to create and update the content";
+richTextEditor.HtmlText = "The <b>rich text editor</b> component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
 
 {% endhighlight %}
 
