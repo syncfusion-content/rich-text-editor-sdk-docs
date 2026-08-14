@@ -10,7 +10,6 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Insert Audio in React Rich Text Editor
 
-
 The Rich Text Editor enables insertion of audio files from online sources or local machines. You can insert audio with the following options using the [insertAudioSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 
 ## Configuring the audio toolbar item
@@ -85,7 +84,7 @@ If the [insertAudioSettings.path](https://ej2.syncfusion.com/react/documentation
 
 You can restrict audio uploads from your local machine using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB).
 
-In the following illustration, the audio size is validated before uploading:
+In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
 `[Class-component]`
 

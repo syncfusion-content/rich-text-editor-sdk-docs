@@ -39,7 +39,6 @@ Additionally add the below styles in the `[src/App.css]` file.
   @import "../../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 ```
 
-
 ## Setup Steps
 
 The following example demonstrates how to configure the file browser within the Rich Text Editor:
