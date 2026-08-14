@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Globalization in React Block Editor
 
-Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor component provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
+Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The React Block Editor component provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
 
 ## Localization
 
