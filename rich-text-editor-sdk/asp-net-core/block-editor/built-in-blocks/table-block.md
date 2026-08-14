@@ -36,9 +36,9 @@ new BlockModel
     {
         columns = new List<object>
         {
-            new { headerText = "Name" },
-            new { headerText = "Age" },
-            new { headerText = "Gender" }
+            new { id = "col1", headerText = "Name" },
+            new { id = "col2", headerText = "Age" },
+            new { id = "col3", headerText = "Gender" }
         },
         rows = new List<object>
         {
@@ -46,7 +46,7 @@ new BlockModel
             {
                 cells = new List<object>
                 {
-                    new { blocks = new List<BlockModel> { 
+                    new { columnId = "col1", blocks = new List<BlockModel> { 
                         new BlockModel { 
                             blockType = "Paragraph", 
                             content = new List<object> { 
@@ -54,7 +54,7 @@ new BlockModel
                             } 
                         } 
                     } },
-                    new { blocks = new List<BlockModel> { 
+                    new { columnId = "col2", blocks = new List<BlockModel> { 
                         new BlockModel { 
                             blockType = "Paragraph", 
                             content = new List<object> { 
@@ -62,7 +62,7 @@ new BlockModel
                             } 
                         } 
                     } },
-                    new { blocks = new List<BlockModel> { 
+                    new { columnId = "col3", blocks = new List<BlockModel> { 
                         new BlockModel { 
                             blockType = "Paragraph", 
                             content = new List<object> { 
