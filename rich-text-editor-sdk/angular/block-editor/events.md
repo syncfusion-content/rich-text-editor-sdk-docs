@@ -73,7 +73,7 @@ public onBlockDropped(args: BlockDropEventArgs): void {
 
 ## focus
 
-The [focus](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus. It is useful for updating UI state — for example, showing or hiding floating toolbars:
+The [focus](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#focus) event is triggered when the editor gains focus.
 
 ```html
 <ejs-blockeditor (focus)="onFocus()" />
