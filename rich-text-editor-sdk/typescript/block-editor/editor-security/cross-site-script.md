@@ -10,12 +10,12 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # XSS Prevention in TypeScript Block Editor
 
-The Block Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
+The Block Editor protects against cross-site scripting (XSS) attacks by providing built-in support to remove potentially malicious elements and attributes from content. By default, the editor automatically removes elements and attributes that could execute scripts or compromise security.
 
 ## Enabling XSS prevention
 The [enableHtmlSanitizer](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#enablehtmlsanitizer), enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
 
-The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:
+The following example demonstrates XSS prevention in action, removing a `<script>` tag and `onmouseover` attribute from content:
 
 {% if page.publishingplatform == "typescript" %}
 

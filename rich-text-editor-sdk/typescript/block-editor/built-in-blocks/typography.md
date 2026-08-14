@@ -160,7 +160,7 @@ The following sample demonstrates the configuration of a heading block in the Bl
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for a block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading blocks is `Heading1`, `Heading2`, `Heading3`, or `Heading4` depending on the level set.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -168,41 +168,41 @@ You can configure placeholder text for block using the [placeholder](https://ej2
     blockType: 'Heading',
     properties: { 
         level: 1,
-        placeholder: 'Heading1'
+        placeholder: 'Enter heading...'
     }
 }
 ```
 
 ## Configure divider block
 
-A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
+A Divider block inserts a horizontal line to visually separate content sections. Render it by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
 
 ### Block type & properties
 
 ```typescript
-// Adding divider block
-{
+// Adding divider block between paragraphs
+[
     {
         blockType: 'Paragraph',
-        content: [
+        content: [{
             contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
+            content: 'This is the first paragraph.'
+        }]
     },
     {
         blockType: 'Divider' 
     },
     {
         blockType: 'Paragraph',
-        content: [
+        content: [{
             contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
+            content: 'This is the second paragraph.'
+        }]
     }
-}
+]
 ```
 
-This sample shows how to place a divider between two blocks.
+The following sample demonstrates how to use a divider block between content sections.
 
 
 {% if page.publishingplatform == "typescript" %}
