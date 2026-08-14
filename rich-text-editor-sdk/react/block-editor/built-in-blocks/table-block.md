@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Table Blocks in React Block Editor
 
-The React Block Editor allows you to render structured data in rows and columns by setting the block's [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
+The Block Editor allows you to render structured data in rows and columns by setting the block's [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
 ## Configure table block
 

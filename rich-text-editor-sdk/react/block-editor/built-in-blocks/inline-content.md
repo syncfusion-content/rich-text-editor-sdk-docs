@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Inline Content in React Block Editor
 
-In the React Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel#content) items that define the text and functionality within that block.
+In the Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockModel#content) items that define the text and functionality within that block.
 
 Before using inline content, import the ContentType enum from the Block Editor package:
 

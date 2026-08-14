@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Built-in Block Types and Configuration in React Block Editor
 
-The React Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blocks) property.
+The Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blocks) property.
 
 > **Prerequisites:** Before using block types, ensure you've set up the Block Editor component as described in [Getting Started](./getting-started.md). The blocks property accepts an array of block objects with configuration details.
 

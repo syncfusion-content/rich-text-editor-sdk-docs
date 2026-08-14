@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Read-Only Mode in React Block Editor
 
-The React Block Editor provides a read-only mode to control user interaction with the editor. This allows users to view formatted content without editing capability. Read-only mode is useful for displaying published content, archived documents, or preventing accidental modifications during review or approval workflows.
+The Block Editor provides a read-only mode to control user interaction with the editor. This allows users to view formatted content without editing capability. Read-only mode is useful for displaying published content, archived documents, or preventing accidental modifications during review or approval workflows.
 
 ## Read-only mode
 
