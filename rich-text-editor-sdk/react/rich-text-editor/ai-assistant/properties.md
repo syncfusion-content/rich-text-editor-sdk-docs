@@ -39,7 +39,7 @@ The `aiAssistantSettings` property of the Rich Text Editor allows you to configu
 
 To configure the items displayed in the AI Commands Dropdown menu, use the `commands` property of the `aiAssistantSettings`. The `commands` property can be configured to add items or modify the default dropdown menu.
 
-### AICommands Interface
+### AICommands interface
 
 The `commands` property accepts an array of objects with the following structure:
 
@@ -88,7 +88,7 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/commands-cs2" %}
 
-## Preloading Prompts, Responses, and Suggestions
+## Preloading prompts, responses, and suggestions
 
 To preload conversations and add suggested prompts to the AI Assistant, use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful for:
 
@@ -235,15 +235,13 @@ In the following example, the popup width and maximum height are configured:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/popup-dimensions-cs2" %}
 
-## Conversation History Management
+## Conversation history management
 
-### Setting Maximum History Length
+### Setting maximum history length
 
 Use the `maxPromptHistory` property to control how many prompts are retained in the conversation history (default: `20`). When the maximum is exceeded, older prompts are removed.
 
-> **Note:** Conversation history is cleared when the popup closes. To persist history, retrieve and save it using the `getAIPromptHistory()` method (documented in [integration.md](./integration.md)).
-
-### Retrieving and Persisting History
+### Retrieving and persisting history
 
 The `getAIPromptHistory()` method returns the current conversation history as an array of `PromptModel[]` objects. This is useful for:
 
@@ -292,7 +290,7 @@ In the following example, the maximum prompt history is configured to `30`, and 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/prompt-history-cs2" %}
 
-## Configuring the Banner
+## Configuring the banner
 
 The `bannerTemplate` property allows you to display a custom banner at the top of the AI Assistant popup. This is useful for:
 
@@ -301,7 +299,7 @@ The `bannerTemplate` property allows you to display a custom banner at the top o
 - Warnings or guidelines
 - Branding/UI customization
 
-### Banner Template Format
+### Banner template format
 
 The `bannerTemplate` accepts either:
 

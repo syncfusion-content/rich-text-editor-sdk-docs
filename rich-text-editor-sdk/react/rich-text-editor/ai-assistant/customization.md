@@ -14,34 +14,23 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate programmatic workflows.
 
-## Prerequisites
-
-Before implementing custom toolbars or methods, ensure the following are configured:
-
-- The AI Assistant is enabled via the `aiAssistantSettings` property in the Rich Text Editor configuration.
-- A backend AI service endpoint is configured (set via `aiAssistantSettings.serviceUrl`).
-- Required imports: `import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Image, Link, QuickToolbar, AIAssistant } from '@syncfusion/ej2-react-richtexteditor';` (if using AI-specific features, also import `DropDownButton` from `@syncfusion/ej2-react-dropdowns` for custom templates).
-
-For AI service setup instructions, refer to the [AI Assistant Getting Started guide](link-to-ai-assistant-getting-started).
-
 ## Custom Toolbar Buttons in AI Assistant
 
 To add custom toolbar items to the AI Assistant Header, Prompt, and Response toolbars, use the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties within the `aiAssistantSettings` object. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
 
-### Base Configuration
+### Base configuration
 
 The AI Assistant settings are configured as shown below:
 
 ```tsx
 const aiAssistantSettings: AIAssistantSettings = {
-  serviceUrl: '<your-ai-service-url>',
   headerToolbarSettings: [ /* custom header toolbar items */ ],
   promptToolbarSettings: [ /* custom prompt toolbar items */ ],
   responseToolbarSettings: [ /* custom response toolbar items */ ]
 };
 ```
 
-### Toolbar Item Properties
+### Toolbar item properties
 
 Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` using the following properties:
 
@@ -60,7 +49,7 @@ Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, a
 | `template`   | Specifies a custom template for rendering the toolbar item; can be a string or a function depending on the framework. |
 | `tabIndex`   | Specifies the tab order of the toolbar item for keyboard navigation (default is `-1`).                                |
 
-### AI Assistant Events Reference
+### AI Assistant events reference
 
 | Event | Description |
 | --- | --- |
@@ -68,18 +57,16 @@ Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, a
 | `beforePopupOpen` | Triggered before the AI Assistant popup opens. Use this to initialize custom components (e.g., `DropDownButton`). |
 | `beforePopupClose` | Triggered before the AI Assistant popup closes. Use this to clean up resources (e.g., destroy dynamically created components). |
 
-### Examples
+#### Custom header toolbar item
 
-#### Custom Header Toolbar Item
-
-A **User Profile** dropdown can be added as a custom header toolbar item using a template. The `beforePopupOpen` and `beforePopupClose` events manage the lifecycle of the Syncfusion `DropDownButton` component.
+A **User Profile** dropdown can be added as a custom header toolbar item using a template. The `beforePopupOpen` and `beforePopupClose` events manage the life cycle of the Syncfusion `DropDownButton` component.
 
 **Key steps:**
 1. Define a `template` property that returns a JSX element with an ID placeholder.
 2. Initialize the `DropDownButton` component in the `beforePopupOpen` event.
 3. Destroy the component instance in the `beforePopupClose` event to prevent memory leaks.
 
-**Class-based Component Example:**
+`[Class-component]`
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -113,12 +100,9 @@ A **User Profile** dropdown can be added as a custom header toolbar item using a
 
 ## Styling the Popup
 
-The AI Assistant popup can be styled using CSS. The following are Syncfusion-provided CSS selector hooks:
+The AI Assistant Popup can be styled by using the following css.
 
-- `.e-rte-aiquery-popup` — Applied to the main popup container.
-- `.e-rte-aiquery-popup.processing` — Applied to the popup while an AI request is in progress.
-
-### CSS Styling Example
+### CSS styling example
 
 ```css
 /* Base popup styling */
@@ -171,7 +155,7 @@ The following example applies a CSS animation to the popup during AI request pro
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/popup-styling-cs2" %}
 
-## Public Methods / Programmatic Use Case
+## Public methods / programmatic use case
 
 Use the following public methods to build custom workflows with the AI Assistant. You can retrieve conversation history, execute prompts, add responses, show/hide the popup, and clear history programmatically.
 
