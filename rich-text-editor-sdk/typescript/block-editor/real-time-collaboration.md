@@ -55,7 +55,7 @@ npm install yjs y-websocket
 
 ### Step 3: Create a simple WebSocket server
 
-Install the WebSocket server package:
+The WebSocket server acts as a central hub that synchronizes document updates across all connected clients. Install the WebSocket server package:
 
 ```powershell
 npm install @y/websocket-server
@@ -118,6 +118,8 @@ const provider = new WebsocketProvider(
 
 /**
  * Get or create room ID and store in URL hash
+ * Rooms are isolated collaboration spaces; users with the same room ID share the same document
+ * Example: https://yourapp.com#abc12 and https://yourapp.com#abc12 are in the same room
  */
 function getRoomName(): string {
     if (typeof window === 'undefined') {

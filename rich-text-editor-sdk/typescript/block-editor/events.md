@@ -30,7 +30,7 @@ The [blockChanged](https://ej2.syncfusion.com/documentation/api/blockeditor/inde
 
 ```typescript
 const editor = new BlockEditor({
-    contentChanged: (args: BlockChangedEventArgs) => {
+    blockChanged: (args: BlockChangedEventArgs) => {
         // You may implement auto-save functionality
     }
 });
@@ -67,7 +67,7 @@ The [blockDragging](https://ej2.syncfusion.com/documentation/api/blockeditor/ind
 
 ```typescript
 const editor = new BlockEditor({
-    blockDrag: (args: BlockDraggingEventArgs) => {
+    blockDragging: (args: BlockDraggingEventArgs) => {
         // You may trigger custom actions during a block drag operation based on the current position
     }
 });
@@ -79,7 +79,7 @@ The [blockDropped](https://ej2.syncfusion.com/documentation/api/blockeditor/inde
 
 ```typescript
 const editor = new BlockEditor({
-    blockDrop: (args: BlockDroppedEventArgs) => {
+    blockDropped: (args: BlockDroppedEventArgs) => {
         // You may trigger custom actions when blocks are dropped
     }
 });
@@ -115,7 +115,7 @@ The [beforePasteCleanup](https://ej2.syncfusion.com/documentation/api/blockedito
 
 ```typescript
 const editor = new BlockEditor({
-    beforePaste: (args: BeforePasteCleanupEventArgs) => {
+    beforePasteCleanup: (args: BeforePasteCleanupEventArgs) => {
         // You may cancel paste if content contains restricted elements
     }
 });
@@ -127,7 +127,7 @@ The [afterPasteCleanup](https://ej2.syncfusion.com/documentation/api/blockeditor
 
 ```typescript
 const editor = new BlockEditor({
-    afterPaste: (args: AfterPasteCleanupEventArgs) => {
+    afterPasteCleanup: (args: AfterPasteCleanupEventArgs) => {
         // Process pasted content or update UI
     }
 });

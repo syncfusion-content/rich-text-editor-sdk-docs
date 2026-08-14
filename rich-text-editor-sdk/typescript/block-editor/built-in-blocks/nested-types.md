@@ -10,6 +10,8 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Nested Blocks in TypeScript Block Editor
 
+The Block Editor supports nested content through parent-child block relationships, allowing blocks such as `Quote`, `Callout`, and `Collapsible` blocks to contain other blocks within them.
+
 ## Configure children
 
 The Block Editor supports hierarchical content structures through the [children](https://ej2.syncfusion.com/documentation/api/blockeditor/basechildrenprop#children) property. This can be achieved by using the `properties` property that allows you to create nested blocks, which is applicable only for `Quote`, `Callout` and `Collapsible` blocks.
@@ -17,13 +19,13 @@ The Block Editor supports hierarchical content structures through the [children]
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ## Configure parent id
-To establish a clear parent-child relationship, the [parentId](https://ej2.syncfusion.com/documentation/api/blockeditor/blockModel#parentid) of each child block must match the [id](../../api/blockeditor/blockModel#id) of its parent block.
+To establish a clear parent-child relationship, the [parentId](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#parentid) of each child block must match the [id](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#id) of its parent block.
 
 This structure is essential for maintaining nested relationships within the editor.
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockModel#blocktype) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
@@ -31,7 +33,7 @@ You can configure the CollapsibleHeading using the property `level` inside the `
 
 ### Configure expanded state
 
-You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `Collapsible` blocks.
+You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `CollapsibleHeading` and `CollapsibleParagraph` blocks.
 
 ### Block type & properties
 
@@ -124,10 +126,10 @@ Quote blocks are styled for displaying quotations or excerpts. Render a Quote bl
     properties:{
         children:[{
             blockType: 'Paragraph',
-            content: [
+            content: [{
                 contentType: 'Text',
                 content: ''
-            ]
+            }]
         }]
     }
 }

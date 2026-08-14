@@ -126,6 +126,8 @@ After the packages are installed, open the **~/_Imports.razor** file and import 
 {% endhighlight %}
 {% endtabs %}
 
+This adds the necessary namespaces to all Razor pages in your application, so you don't need to add `@using` directives individually in each page.
+
 ## Register the Blazor service
 
 Open the **Program.cs** file in Blazor WebAssembly App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
@@ -169,62 +171,63 @@ Open a Razor file located in the **~/Pages/*.razor** (for example, **Home.razor*
 
 @using Syncfusion.Blazor.BlockEditor
 
-<SfBlockEditor @bind-Blocks="blockDataOverview"> </SfBlockEditor>
+<SfBlockEditor @bind-Blocks="blockDataOverview"></SfBlockEditor>
 
 @code 
 {
-private List<BlockModel> blockDataOverview = new EditorBlockData().GetBlockDataOverview();
-public class EditorBlockData
-{
-    public List<BlockModel> GetBlockDataOverview()
+    private List<BlockModel> blockDataOverview = new EditorBlockData().GetBlockDataOverview();
+    
+    public class EditorBlockData
     {
-        List<BlockModel> blockDataOverview = new List<BlockModel>
+        public List<BlockModel> GetBlockDataOverview()
         {
-            new BlockModel
+            List<BlockModel> blockDataOverview = new()
             {
-                BlockType = BlockType.Heading,
-                Properties = new HeadingBlockSettings { Level = 2 },
-                Content =
+                new BlockModel
                 {
-                    new ContentModel
+                    BlockType = BlockType.Heading,
+                    Properties = new HeadingBlockSettings { Level = 2 },
+                    Content = new()
                     {
-                        ContentType = ContentType.Text,
-                        Content = "Getting Started with Block Editor"
-                    }
-                }
-            },
-            new BlockModel
-            {
-                BlockType = BlockType.Paragraph,
-                Content =
-                {
-                    new ContentModel { ContentType = ContentType.Text, Content = "Welcome to" },
-                    new ContentModel
-                    {
-                        ContentType = ContentType.Text,
-                        Content = " Block Editor",
-                        Properties = new TextContentSettings
+                        new ContentModel
                         {
-                            Styles = new StyleModel { Bold = true }
+                            ContentType = ContentType.Text,
+                            Content = "Getting Started with Block Editor"
                         }
-                    },
-                    new ContentModel
-                    {
-                        ContentType = ContentType.Text,
-                        Content = " - your flexible, modular workspace for creating rich, structured content. Whether you're drafting documents, brainstorming ideas, or collaborating with your team, Block Editor makes it simple and intuitive."
                     }
+                },
+                new BlockModel
+                {
+                    BlockType = BlockType.Paragraph,
+                    Content = new()
+                    {
+                        new ContentModel { ContentType = ContentType.Text, Content = "Welcome to" },
+                        new ContentModel
+                        {
+                            ContentType = ContentType.Text,
+                            Content = " Block Editor",
+                            Properties = new TextContentSettings
+                            {
+                                Styles = new StyleModel { Bold = true }
+                            }
+                        },
+                        new ContentModel
+                        {
+                            ContentType = ContentType.Text,
+                            Content = " - your flexible, modular workspace for creating rich, structured content. Whether you're drafting documents, brainstorming ideas, or collaborating with your team, Block Editor makes it simple and intuitive."
+                        }
+                    }
+                },
+                new BlockModel
+                {
+                    BlockType = BlockType.Paragraph,
+                    Content = new()
                 }
-            },
-            new BlockModel
-            {
-                BlockType = BlockType.Paragraph,
-                Content = new List<ContentModel>()
-            }
-        };
+            };
 
-        return blockDataOverview;
+            return blockDataOverview;
+        }
     }
-}
 }
 
 {% endhighlight %}
