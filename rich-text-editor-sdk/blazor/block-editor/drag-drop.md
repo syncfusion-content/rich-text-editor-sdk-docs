@@ -19,9 +19,9 @@ You can control the drag and drop functionality within the Block Editor using th
 
 When drag and drop is enabled, users can rearrange blocks using drag handles:
 
-- **Single block dragging**: Hover over a block to reveal the drag handle. Click and hold the handle, then drag the block to reposition it within the editor.
+- **Single block dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
 
-- **Multiple block dragging**: Select multiple blocks using checkbox selection, then click and hold on any selected block's drag handle to move the entire group to a new location.
+- **Multiple block dragging**: To move multiple blocks, first select the desired blocks. Once selected, click and drag the entire group to a new location.
 
 During dragging, a visual indicator shows a drop preview line indicating exactly where blocks will be positioned when released.
 
