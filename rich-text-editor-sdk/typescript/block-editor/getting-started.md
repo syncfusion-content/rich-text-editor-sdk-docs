@@ -19,7 +19,7 @@ This guide uses Vite as the bundler and development environment. Install Node.js
 
 ## Create a TypeScript application
 
-To set up a TypeScript application in a TypeScript environment, run the following command.
+To set up a TypeScript project with Vite, run the following command:
 
 ```bash
 npm create vite@latest my-app -- --template vanilla-ts

@@ -46,7 +46,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The example below demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/paste-cleanup/allowedstyle" %}
 {% endif %}
 
-## Disable Keep format
+## Disable keep format
 
 By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
 
@@ -99,7 +99,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The example below demonstrates the usage of paste settings that disables the keep format and allows plain text.
 
 {% if page.publishingplatform == "typescript" %}
 
