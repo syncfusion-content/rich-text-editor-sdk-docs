@@ -48,7 +48,7 @@ The Block Editor supports multiple block types. Each block type offers different
 
 ### Indent
 
-You can specify the indentation level of individual blocks using the `indent` property on the `e-block` element. This property accepts a numeric value (0 or higher) that determines how deeply a block is nested from the left margin. By default, the `indent` property is `0`. Maximum indent depth depends on the block type and editor configuration.
+You can specify the indentation level of individual blocks using the `indent` property on the `e-block` element. This property accepts a numeric value (0 or higher) that determines how deeply a block is nested from the left margin.
 
 By default, the `indent` property is set to `0`.
 
