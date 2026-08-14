@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Integrating the AI Assistant in React Rich Text Editor
 
-> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v33.2.19 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v33.2.19, @syncfusion/ej2-interactive-chat, @syncfusion/ej2-notifications, and @syncfusion/ej2-markdown-converter.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v31.2.19 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v31.2.19, @syncfusion/ej2-interactive-chat, @syncfusion/ej2-notifications, and @syncfusion/ej2-markdown-converter.
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a popup interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
@@ -74,7 +74,7 @@ The AI Assistant interface can be opened through the following options:
 * Keyboard shortcut: **Alt + Enter** (Windows/Linux) or **⌥ (Option) + Enter** (Mac)
 * This option is used to process content based on user-defined queries.
 
-## Request and Response Handling
+## Request and Response handling
 
 ### Events
 
@@ -85,7 +85,7 @@ Executing a prompt triggers two key events:
 | `aiAssistantPromptRequest` | Triggered when the user submits a prompt. The event provides the `prompt` and `text` (selected content). | `{ prompt: string; text: string }` |
 | `aiAssistantStopRespondingClick` | Triggered when the user clicks the **Stop Responding** button. Use this to cancel streaming or pending requests. | `{}` |
 
-### Response Methods
+### Response methods
 
 Once a response is received from your AI service (either as a stream or a complete response), add it to the AssistView using the `addAIPromptResponse()` method:
 
@@ -98,7 +98,7 @@ editor.addAIPromptResponse(response: string | Object, finalUpdate?: boolean): vo
 
 > The `addAIPromptResponse` method converts Markdown responses to HTML using the `@syncfusion/ej2-markdown-converter` package (included in the prerequisites).
 
-## Streaming Responses
+## Streaming responses
 
 Responses can be streamed into the AssistView to provide a typewriter like effect. The `finalUpdate` parameter of `addAIPromptResponse` determines when the final chunk is processed and the stream ends.
 

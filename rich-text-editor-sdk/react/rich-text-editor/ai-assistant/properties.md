@@ -192,7 +192,7 @@ In the below sample, the toolbar settings are configured to modify the order and
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/toolbar-settings-cs2" %}
 
-## Popup Dimensions
+## Popup dimensions
 
 To customize the dimensions of the AI Assistant popup, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`:
 

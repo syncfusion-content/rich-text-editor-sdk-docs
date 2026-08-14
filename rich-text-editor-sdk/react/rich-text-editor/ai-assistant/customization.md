@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Customization of AI Assistant in React Rich Text Editor
 
-> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v33.2.19 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v33.2.19, and an AI service endpoint configured with a valid API key.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v32.1.19, and an AI service endpoint configured with a valid API key.
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate programmatic workflows.
 
-## Custom Toolbar Buttons in AI Assistant
+## Custom toolbar buttons in AI Assistant
 
 To add custom toolbar items to the AI Assistant Header, Prompt, and Response toolbars, use the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties within the `aiAssistantSettings` object. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
 
@@ -98,7 +98,7 @@ A **User Profile** dropdown can be added as a custom header toolbar item using a
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/custom-toolbar-items-cs2" %}
 
-## Styling the Popup
+## Styling the popup
 
 The AI Assistant Popup can be styled by using the following css.
 
@@ -159,7 +159,7 @@ The following example applies a CSS animation to the popup during AI request pro
 
 Use the following public methods to build custom workflows with the AI Assistant. You can retrieve conversation history, execute prompts, add responses, show/hide the popup, and clear history programmatically.
 
-### Available Methods
+### Available methods
 
 | **Method**                                                                       | **Description**                    |
 | -------------------------------------------------------------------------------- | ---------------------------------- |
@@ -170,7 +170,7 @@ Use the following public methods to build custom workflows with the AI Assistant
 | `hideAIAssistantPopup()`                                                         | Hide the AI Assistant popup.       |
 | `clearAIPromptHistory()`                                                         | Clear all conversation history.    |
 
-### Proofread Use Case Example
+### Proofread use case example
 
 The following example demonstrates a **Proofread** workflow using a button outside the editor. On clicking the Proofread button:
 
