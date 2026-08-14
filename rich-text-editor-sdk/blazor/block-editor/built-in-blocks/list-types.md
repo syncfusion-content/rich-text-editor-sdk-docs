@@ -22,7 +22,7 @@ You can render a Bullet List block by setting the [BlockType](https://help.syncf
     new BlockModel
     {
         BlockType = BlockType.BulletList,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -35,8 +35,8 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
     new BlockModel
     {
         BlockType = BlockType.BulletList,
-        Properties = new BulletListBlockSettings {Placeholder = "bullet"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Properties = new BulletListBlockSettings { Placeholder = "bullet" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -49,7 +49,7 @@ You can render a Numbered List block by setting the [BlockType](https://help.syn
     new BlockModel
     {
         BlockType = BlockType.NumberedList,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -61,9 +61,9 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
 // Adding placeholder value
     new BlockModel
     {
-        BlockType = BlockType.BulletList,
-        Properties = new NumberedListBlockSettings {Placeholder = "number"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        BlockType = BlockType.NumberedList,
+        Properties = new NumberedListBlockSettings { Placeholder = "number" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -141,8 +141,8 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
     new BlockModel
     {
         BlockType = BlockType.Checklist,
-        Properties = new ChecklistBlockSettings {Placeholder = "check"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Properties = new ChecklistBlockSettings { Placeholder = "check" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 

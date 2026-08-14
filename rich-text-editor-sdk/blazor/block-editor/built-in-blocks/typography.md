@@ -9,7 +9,7 @@ documentation: ug
 
 # Text Block Types in Blazor Block Editor
 
-Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
+Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Divider, Quote, and Callout—to help you format and structure content effectively. For collapsible block types, refer to the [Nested block types documentation](../nested-types.md).
 
 ## Configure paragraph block
 
@@ -22,16 +22,16 @@ Paragraph blocks are the most common type, used for standard text content. They 
     new BlockModel
     {
         BlockType = BlockType.Paragraph,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "This is a paragraph block example."}}
+        Content = new() {new ContentModel{ContentType = ContentType.Text, Content = "This is a paragraph block example."}}
     }
 ```
 
-The below sample demonstrates the configuration of paragraph block in the Block Editor.
+The following sample demonstrates the configuration of paragraph block in the Block Editor.
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
 
-<SfBlockEditor Blocks="BlockData"></SfBlockEditor>
+<SfBlockEditor Blocks="@BlockData"></SfBlockEditor>
 
 @code {
     private List<BlockModel> BlockData = new()
@@ -59,11 +59,12 @@ You can configure placeholder text for block using the [Placeholder](https://hel
     new BlockModel
     {
         BlockType = BlockType.Paragraph,
-        Properties = new ParagraphBlockSettings {Placeholder = "Start typing..."}
+        Properties = new ParagraphBlockSettings {Placeholder = "Start typing..."},
+        Content = new() {new ContentModel{ContentType = ContentType.Text, Content = ""}}
     }
 ```
 
-The below sample demonstrates the configuration of placeholder in the Block Editor for the paragraph block.
+The following sample demonstrates the configuration of placeholder in the Block Editor for the paragraph block.
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
@@ -81,7 +82,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Properties = new ParagraphBlockSettings { Placeholder = "Start typing your notes or press \" /\" for commands..." }
+            Properties = new ParagraphBlockSettings { Placeholder = "Start typing your notes or press \"/\" for commands..." }
         },
     };
 }
@@ -91,11 +92,11 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Heading](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Heading).
+Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. To render a Heading block, set the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Heading](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Heading).
 
 ### Configuring levels
 
-Set the heading level using the [Level](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.HeadingBlockSettings.html#Syncfusion_Blazor_BlockEditor_HeadingBlockSettings_Level) property, with `1` being the highest level (title) and `4` being the lowest (subsection).
+Set the heading level using the [Level](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.HeadingBlockSettings.html#Syncfusion_Blazor_BlockEditor_HeadingBlockSettings_Level) property, with `1` being the highest level (H1 title) and `4` being the lowest (H4 subsection). Each level renders as the corresponding HTML heading tag.
 
 ### BlockType and Properties
 
@@ -164,9 +165,9 @@ You can configure placeholder text for block using the [Placeholder](https://hel
 
 ## Configure divider block
 
-A Divider block inserts a horizontal line to separate content. Render it by setting the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) to [Divider](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Divider).
+A Divider block inserts a horizontal line to separate content. To render a Divider block, set the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) to [Divider](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Divider).
 
-This sample shows how to place a divider between two blocks.
+The following sample demonstrates how to place a divider between two blocks.
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor

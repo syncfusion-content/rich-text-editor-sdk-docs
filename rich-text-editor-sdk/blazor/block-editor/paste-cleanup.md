@@ -91,7 +91,7 @@ The following example demonstrates configuring paste settings to allow only spec
     private SfBlockEditor blockEditor;
     private string output = "";
 
-    private List<BlockModel> blockData = new List<BlockModel>()
+    private List<BlockModel> blockData = new()
     {
         new BlockModel { BlockType = BlockType.Paragraph }
     };
@@ -181,7 +181,7 @@ To paste content as plain text, stripping all HTML tags and inline styles, set t
 
 <div class="container">
     <SfBlockEditor>
-        <BlockEditorPasteCleanup PlainText="false"></BlockEditorPasteCleanup>
+        <BlockEditorPasteCleanup PlainText="true"></BlockEditorPasteCleanup>
     </SfBlockEditor>
 </div>
 
@@ -222,7 +222,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
     private SfBlockEditor blockEditor;
     private string output = "";
 
-    private List<BlockModel> blockData = new List<BlockModel>()
+    private List<BlockModel> blockData = new()
     {
         new BlockModel { BlockType = BlockType.Paragraph }
     };
@@ -295,7 +295,7 @@ The Block Editor provides events to monitor and interact with the paste action.
 |[PasteCleanupStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupStarting)|PasteCleanupStartingEventArgs|Triggers before the content is pasted into the editor.|
 |[PasteCleanupCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupCompleted)|PasteCleanupCompletedEventArgs|Triggers after the content is pasted into the editor.|
 
-Below example demonstrates how to configure above events in the editor.
+The following example demonstrates how to handle paste cleanup events:
 
 ```cshtml
 

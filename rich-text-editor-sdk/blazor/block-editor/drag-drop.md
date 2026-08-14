@@ -13,45 +13,42 @@ The drag and drop feature in the Block Editor allows users to intuitively rearra
 
 ## Enable Drag and Drop
 
-You can control the drag and drop functionality within the Block Editor using the [EnableDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_EnableDragAndDrop) property. This feature is enabled by default.
+You can control the drag and drop functionality within the Block Editor using the [EnableDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_EnableDragAndDrop) property. This feature is enabled by default. Set it to `false` to disable drag and drop functionality.
 
 ## Dragging blocks
 
-When drag and drop is enabled, users can rearrange blocks in the following ways:
+When drag and drop is enabled, users can rearrange blocks using drag handles:
 
-The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
+- **Single block dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
 
-- **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
+- **Multiple block dragging**: To move multiple blocks, first select the desired blocks. Once selected, click and drag the entire group to a new location.
 
-- **Multiple Block Dragging**: To move multiple blocks, first select the desired blocks. Once selected, click and drag the entire group to a new location.
+During dragging, a visual indicator shows a drop preview line indicating exactly where blocks will be positioned when released.
 
-During the drag operation, a visual indicator will show precisely where the blocks will be placed when dropped, ensuring accurate placement.
-
-Below sample demonstrates the usage of drag and drop feature in the editor.
+The following sample demonstrates the drag and drop feature in the editor:
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
 
-<SfBlockEditor Blocks="BlockData" EnableDragAndDrop="true"> </SfBlockEditor>
+<SfBlockEditor Blocks="@BlockData"> </SfBlockEditor>
 
 @code {
-
     private List<BlockModel> BlockData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new() {new ContentModel {ContentType = ContentType.Text, Content = "Block 1" }}
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Block 1" } }
         },
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new() {new ContentModel {ContentType = ContentType.Text, Content = "Block 2" }}
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Block 2" } }
         },
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new() {new ContentModel {ContentType = ContentType.Text, Content = "Block 3" }}
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Block 3" } }
         }
     };
 }
