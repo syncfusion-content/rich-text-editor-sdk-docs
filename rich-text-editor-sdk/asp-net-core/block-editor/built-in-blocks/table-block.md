@@ -25,6 +25,58 @@ For Table blocks, you can configure layout and structure using the `properties` 
 | columns | Defines the columns of the table, including their types and headers. | `[]` |
 | rows | Defines the rows of the table, each containing cells tied to columns. | `[]` |
 
+### Column and Row Structure
+
+```csharp
+// Complete table example with columns and rows
+new BlockModel
+{
+    blockType = "Table",
+    properties = new
+    {
+        columns = new List<object>
+        {
+            new { headerText = "Name" },
+            new { headerText = "Age" },
+            new { headerText = "Gender" }
+        },
+        rows = new List<object>
+        {
+            new
+            {
+                cells = new List<object>
+                {
+                    new { blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "John Doe" } 
+                            } 
+                        } 
+                    } },
+                    new { blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "30" } 
+                            } 
+                        } 
+                    } },
+                    new { blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "Male" } 
+                            } 
+                        } 
+                    } }
+                }
+            }
+        }
+    }
+}
+```
+
 This sample demonstrates the configuration of the `Table` block in the Block Editor.
 
 {% tabs %}
@@ -40,9 +92,9 @@ This sample demonstrates the configuration of the `Table` block in the Block Edi
 
 ## Table resizing
 
-The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
+The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically. Only columns can be resized; row height is not adjustable. If resizing exceeds the layout width, a horizontal scrollbar will appear to maintain structure and layout integrity. Column widths have a minimum of 50 pixels, and the maximum is determined by the overall table width.
 
-## Table multiple row column selection and deletion
+## Table multiple row and column selection and deletion
 
 The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
 
