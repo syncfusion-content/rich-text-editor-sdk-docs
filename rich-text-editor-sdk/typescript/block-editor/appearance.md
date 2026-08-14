@@ -29,7 +29,7 @@ const editor = new BlockEditor({
 });
 ```
 
-## Setting readonly mode
+## Setting read-only mode
 
 You can utilize the [readOnly](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
