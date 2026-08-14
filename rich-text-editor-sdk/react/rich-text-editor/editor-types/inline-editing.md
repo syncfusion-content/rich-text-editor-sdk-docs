@@ -13,37 +13,28 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 Inline editing enables users to edit content directly within the editor where it is displayed. Unlike traditional editors with separate toolbars, inline editing provides a seamless, on-the-spot editing experience. The toolbar appears contextually when you click or select text.
 
-### Setup
+## Setup
 
 To enable inline editing, import the necessary modules and set the `inlineMode` property:
 
 ```tsx
-import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, InlineMode } from '@syncfusion/ej2-react-richtexteditor';
+import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent
   inlineMode={{ enable: true, onSelection: true }}
 >
-  <Inject services={[HtmlEditor, Toolbar]} />
+  <Inject services={[HtmlEditor, Toolbar, QuickToolbar ]} />
 </RichTextEditorComponent>
 ```
 
-## Toolbar Trigger Behavior
+## Toolbar trigger behavior
 
 The inline toolbar appears based on the [`onSelection`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/inlinemode#onselection) property within `inlineMode` settings.
 
 | Setting | Behavior |
 |---------|----------|
 | `onSelection: true` | Toolbar appears only when text is selected |
-| `onSelection: false` | Toolbar appears when the editor is focused, regardless of selection |
-
-### Inline Toolbar Properties
-
-```tsx
-inlineMode={{
-  enable: true,
-  onSelection: true  // Show toolbar on text selection
-}}
-```
+| `onSelection: false` | Toolbar appears when the editor is focused |
 
 `[Class-component]`
 

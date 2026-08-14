@@ -12,12 +12,12 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Rich Text Editor component supports two editing modes for creating and editing content in different formats. You can access the edited content via the `value` property or capture changes in the `change` event.
 
-## Supported Editor Modes
+## Supported editor modes
 
 * **HTML editor** — Default WYSIWYG mode for editing and formatting content as HTML
 * **Markdown editor** — For editing and viewing content in Markdown format
 
-## HTML Editor
+## HTML editor
 
 HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor returns valid HTML markup.
 
@@ -63,7 +63,7 @@ To explicitly set the HTML editor mode, set the [`editorMode`](https://ej2.syncf
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs4" %}
 
-## Markdown Editor
+## Markdown editor
 
 To edit content in Markdown format, set the [`editorMode`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#editormode) property to `'Markdown'`. You can then apply Markdown-compatible formatting and view the rendered output.
 
@@ -79,7 +79,7 @@ import { RichTextEditorComponent, Inject, MarkdownEditor, Toolbar } from '@syncf
 </RichTextEditorComponent>
 ```
 
-### Supported Markdown Tags
+### Supported Markdown tags
 
 The following HTML tags are generated from Markdown syntax:
 
@@ -97,7 +97,7 @@ The following HTML tags are generated from Markdown syntax:
 | `1. Item` | `<ol>` | Ordered list |
 | `- Item` | `<ul>` | Unordered list |
 
-### Selection Formatting Tags
+### Selection formatting tags
 
 The following text formatting options are available in Markdown mode:
 
@@ -117,8 +117,6 @@ The following text formatting options are available in Markdown mode:
 Markdown content is converted to HTML using the `@syncfusion/ej2-markdown-converter` package. Ensure this package is installed in your project.
 
 For more details on Markdown editing, refer to the [Markdown Editor Getting Started](../../markdown-editor/getting-started) guide.
-
-### Examples
 
 `[Class-component]`
 
@@ -148,5 +146,5 @@ For more details on Markdown editing, refer to the [Markdown Editor Getting Star
 
 ## See Also
 
-* [Rich Text Editor API Reference](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/)
-* [Markdown Editor Documentation](https://ej2.syncfusion.com/react/documentation/markdown-editor/getting-started)
+* [Rich Text Editor API Reference](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor)
+* [Markdown Editor Documentation](https://help.syncfusion.com/rich-text-editor-sdk/react/markdown-editor/getting-started)

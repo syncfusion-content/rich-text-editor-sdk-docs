@@ -45,7 +45,7 @@ The following example demonstrates enabling iframe mode:
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs27" %}
 
-## Customizing IFrame Attributes
+## Customizing IFrame attributes
 
 Custom attributes can be applied to the iframe's body element using the `attributes` field of the [iframeSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
@@ -75,7 +75,7 @@ Custom attributes can be applied to the iframe's body element using the `attribu
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs29" %}
 
-## Integrating External CSS and Scripts
+## Integrating external css and scripts
 
 You can apply external CSS and script files to the iframe by using the `resources` property of `iframeSettings`. This allows you to customize the appearance and functionality of the editor's content while maintaining style isolation.
 
@@ -165,7 +165,7 @@ Here's an example of how to integrate Mention with Iframe editor,
 
 > You can also explore our [iframe in React Rich Text Editor example](https://ej2.syncfusion.com/react/demos/#/tailwind3/rich-text-editor/iframe) that shows how to render the iframe in React Rich Text Editor.
 
-## See Also
+## See also
 
 * [Implementing Inline Editing](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-types/inline-editing)
 * [Using the Markdown Editor](https://ej2.syncfusion.com/react/documentation/markdown-editor/getting-started)
