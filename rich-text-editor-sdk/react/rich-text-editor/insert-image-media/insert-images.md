@@ -87,11 +87,11 @@ The code snippet below illustrates the configuration of the [insertImageSettings
 
 > The default `saveFormat` property is set to `Blob` format.
 
-## Inserting images from web URLs
+## Inserting Images from Web URLs
 
 The `Image` toolbar item opens a dialog with an input field for inserting images from a web URL. The provided URL is set as the `src` attribute of the `<img>` tag.
 
-## Uploading images from local machine
+## Uploading Images from Local Machine
 
 The image dialog includes a `browse` option to select images from a local machine, which are then inserted into the editor's content.
 
@@ -106,9 +106,9 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 > To use File Manager feature, inject file manager module using the `<Inject services={[FileManager]} />`.
 
-## Maximum file size restriction
+## Maximum File Size Restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
+You can restrict image uploads from your local machine using the [maxFileSize](https://help.syncfusion.com/react/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB) per image.
 
 In the following example, the image size has been validated before uploading and determined whether the image has been uploaded or not.
 

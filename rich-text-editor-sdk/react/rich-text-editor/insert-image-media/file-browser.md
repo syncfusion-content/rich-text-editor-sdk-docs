@@ -12,20 +12,24 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The File Browser in the Rich Text Editor enables browsing and inserting files, such as images, in the edit panel. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 
-## Required additional dependency
+## Required Dependencies
 
-The following list of additional dependencies are required to use the file browser feature in the Rich Text Editor.
+Install the FileManager package and related dependencies:
 
-```js
-
-|-- @syncfusion/ej2-react-richtexteditor
-    |-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-grids
-    |-- @syncfusion/ej2-filemanager
-
+```bash
+npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-grids
 ```
 
-## Additional CSS reference
+### Dependency Structure
+
+```
+@syncfusion/ej2-react-richtexteditor
+├── @syncfusion/ej2-layouts
+├── @syncfusion/ej2-grids
+└── @syncfusion/ej2-filemanager
+```
+
+## CSS Theme Reference
 
 Additionally add the below styles in the `[src/App.css]` file.
 
@@ -35,10 +39,15 @@ Additionally add the below styles in the `[src/App.css]` file.
   @import "../../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 ```
 
-The following example explains about how to configure the file browser within the Rich Text Editor component.
 
-* Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set `enable` property as `true` on [fileManagerSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#filemanagersettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
+## Setup Steps
+
+The following example demonstrates how to configure the file browser within the Rich Text Editor:
+
+1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
+2. **Enable file browser** — Set the `enable` property to `true` in the [fileManagerSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#filemanagersettings) property
+3. **Inject module** — Add `FileManager` to the `<Inject services={[FileManager]} />` array
+4. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, inject the `FileManager` module using services.
 
@@ -67,3 +76,10 @@ The following example explains about how to configure the file browser within th
 {% endtabs %}
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/file-browser-cs2" %}
+
+## See Also
+
+* [FileManager Documentation](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started/)
+* [Image Insertion](./insert-images)
+* [Video Insertion](./video)
+* [Audio Insertion](./audio)
