@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # List Blocks in TypeScript Block Editor
 
-The TypeScript Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
 ## Configuring the Bullet List
 
