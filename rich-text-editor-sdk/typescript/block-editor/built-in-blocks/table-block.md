@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The TypeScript Block Editor allows you to render structured data in rows and columns by setting the block's [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure table block
+## Configure table block
 
 For Table blocks, you can configure layout and structure using the [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#properties) property. This property supports the following options:
 
@@ -94,11 +94,11 @@ This sample demonstrates the configuration of the `Table` block in the Block Edi
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/blocks/block-types/table-block" %}
 {% endif %}
 
-### Table resizing
+## Table resizing
 
 The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
 
-### Table multiple row column selection and deletion
+## Table multiple row column selection and deletion
 
 The Block Editor supports selecting full rows, single or multiple, using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift-based multiple selection is also supported: select a row, hold Shift, and click a non-adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
 
