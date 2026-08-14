@@ -58,12 +58,12 @@ The following example demonstrates how to customize the Slash Command menu with 
 </div>
 
 @code {
-    private List<BlockModel> BlocksData = new List<BlockModel>
+    private List<BlockModel> BlocksData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -74,7 +74,7 @@ The following example demonstrates how to customize the Slash Command menu with 
         }
     };
 
-    private List<CommandItemModel> Commands = new List<CommandItemModel>
+    private List<CommandItemModel> Commands = new()
     {
         new CommandItemModel
         {
@@ -150,13 +150,13 @@ The following example demonstrates how to customize the Context menu with additi
 </div>
 
 @code {
-    private List<BlockModel> BlocksData = new List<BlockModel>
+    private List<BlockModel> BlocksData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Heading,
             Properties = new HeadingBlockSettings { Level = 1 },
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -168,7 +168,7 @@ The following example demonstrates how to customize the Context menu with additi
         new BlockModel
         {
             BlockType = BlockType.Quote,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -179,14 +179,14 @@ The following example demonstrates how to customize the Context menu with additi
         }
     };
 
-    private List<ContextMenuItemModel> CustomContextMenuItems = new List<ContextMenuItemModel>
+    private List<ContextMenuItemModel> CustomContextMenuItems = new()
     {
         new ContextMenuItemModel
         {
             ID = "format-menu",
             Text = "Format",
             IconCss = "e-icons e-format-painter",
-            Items = new List<ContextMenuItemModel>
+            Items = new()
             {
                 new ContextMenuItemModel { ID = "bold-item", Text = "Bold", IconCss = "e-icons e-bold" },
                 new ContextMenuItemModel { ID = "italic-item", Text = "Italic", IconCss = "e-icons e-italic" },
@@ -205,7 +205,7 @@ The following example demonstrates how to customize the Context menu with additi
             ID = "export-item",
             Text = "Export Options",
             IconCss = "e-icons e-export",
-            Items = new List<ContextMenuItemModel>
+            Items = new()
             {
                 new ContextMenuItemModel { ID = "export-json", Text = "Export as JSON", IconCss = "e-icons e-file-json" },
                 new ContextMenuItemModel { ID = "export-html", Text = "Export as HTML", IconCss = "e-icons e-file-html" },

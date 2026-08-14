@@ -19,8 +19,6 @@ Specify the width and height for the Block Editor component using the [Width](ht
 @using Syncfusion.Blazor.BlockEditor
 
 <SfBlockEditor Width="100%" Height="80vh"></SfBlockEditor>
-
-@* Or with specific pixel values *@
 <SfBlockEditor Width="800px" Height="500px"></SfBlockEditor>
 ```
 
@@ -36,7 +34,7 @@ Use the [ReadOnly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Block
 
 ## Customization using CSS class
 
-Use the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_CssClass) property to customize the appearance of the Block Editor component with custom styles.
+Use the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_CssClass) property to customize the appearance of the Block Editor component with custom CSS styles.
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
@@ -44,7 +42,7 @@ Use the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Block
 <SfBlockEditor Width="600px" Height="400px" CssClass="custom-editor-theme"></SfBlockEditor>
 ```
 
-The following example demonstrates the usage of [ReadOnly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_ReadOnly) and [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_CssClass) properties.
+The following example demonstrates combining [ReadOnly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_ReadOnly) mode with [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_CssClass) for custom theme styling:
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
@@ -82,53 +80,34 @@ The following example demonstrates the usage of [ReadOnly](https://help.syncfusi
     private string OutputMessage { get; set; } = "";
     private string CssClasses => $"{CurrentTheme} {(IsReadonly ? "readonly-mode" : "")}".Trim();
 
-    private List<BlockModel> Blocks => new List<BlockModel>
+    private List<BlockModel> Blocks => new()
     {
         new BlockModel
         {
             BlockType = BlockType.Heading,
             Properties = new HeadingBlockSettings { Level = 1 },
-            Content = new List<ContentModel>
-            {
-                new ContentModel { ContentType = ContentType.Text, Content = "Appearance Configuration Demo" }
-            }
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Appearance Configuration Demo" } }
         },
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
-            {
-                new ContentModel { ContentType = ContentType.Text, Content = "This demo showcases different appearance configurations including read-only mode and a custom CSS theme." }
-            }
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "This demo showcases different appearance configurations including read-only mode and a custom CSS theme." } }
         },
         new BlockModel
         {
             BlockType = BlockType.Heading,
             Properties = new HeadingBlockSettings { Level = 2 },
-            Content = new List<ContentModel>
-            {
-                new ContentModel { ContentType = ContentType.Text, Content = "Configured Custom Theme" }
-            }
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Configured Custom Theme" } }
         },
         new BlockModel
         {
             BlockType = BlockType.BulletList,
-            Content = new List<ContentModel>
-            {
-                new ContentModel { ContentType = ContentType.Text, Content = "Gradient background with modern styling" }
-            }
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Gradient background with modern styling" } }
         },
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
-            {
-                new ContentModel
-                {
-                    ContentType = ContentType.Text,
-                    Content = "Use the read-only toggle to switch between editable and read-only modes. In read-only mode, content can be viewed but not modified."
-                }
-            }
+            Content = new() { new ContentModel { ContentType = ContentType.Text, Content = "Use the read-only toggle to switch between editable and read-only modes. In read-only mode, content can be viewed but not modified." } }
         }
     };
 

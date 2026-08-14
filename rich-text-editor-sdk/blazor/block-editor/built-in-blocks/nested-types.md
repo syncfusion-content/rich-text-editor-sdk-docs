@@ -13,12 +13,12 @@ documentation: ug
 
 The Block Editor supports hierarchical content structures through the `Children` property. This property can be achieved through [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
-Child blocks can be configured with all the same properties as top-level blocks.
+Child blocks can be configured with all the same properties as top-level blocks. You define child blocks using the `Children` collection within the block's Properties, making them appear nested within the parent block.
 
 ## Configure parent id
 To establish a clear parent-child relationship, the [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_ParentID) of each child block must match the [ID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_ID) of its parent block.
 
-This structure is essential for maintaining nested relationships within the editor.
+This structure is essential for maintaining nested relationships within the editor. When using the `Children` collection, the ParentID links child blocks back to their parent for proper hierarchy management.
 
 ## Configure collapsible blocks
 
@@ -35,17 +35,17 @@ You can control whether a block is expanded or collapsed using the [IsExpanded](
 ### BlockType and Properties
 
 ```cshtml
-//Configure collapsibleHeading block
+// Configure collapsibleHeading block
     new BlockModel
     {
         BlockType = BlockType.CollapsibleHeading,
-        Properties = new CollapsibleHeadingBlockSettings { Level = 1, IsExpanded = true, Children = new List<BlockModel> { //Your content to be here.. } }
+        Properties = new CollapsibleHeadingBlockSettings { Level = 1, IsExpanded = true, Children = new() { /* child blocks */ } }
     }
-// Configuring CollapsibleParagraph block
+// Configure CollapsibleParagraph block
     new BlockModel
     {
         BlockType = BlockType.CollapsibleParagraph,
-        Properties = new CollapsibleParagraphBlockSettings { Children = new List<BlockModel> { //Your content to be here.. } }
+        Properties = new CollapsibleParagraphBlockSettings { Children = new() { /* child blocks */ } }
     }
 ```
 
@@ -93,7 +93,7 @@ This example shows how to configure [CollapsibleHeading](https://help.syncfusion
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [CollapsibleHeading Placeholder][https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CollapsibleHeadingBlockSettings.html#Syncfusion_Blazor_BlockEditor_CollapsibleHeadingBlockSettings_Placeholder] and [CollapsibleParagraph Placeholder][https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CollapsibleParagraphBlockSettings.html#Syncfusion_Blazor_BlockEditor_CollapsibleParagraphBlockSettings_Placeholder] property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for block using the [CollapsibleHeading Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CollapsibleHeadingBlockSettings.html#Syncfusion_Blazor_BlockEditor_CollapsibleHeadingBlockSettings_Placeholder) and [CollapsibleParagraph Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CollapsibleParagraphBlockSettings.html#Syncfusion_Blazor_BlockEditor_CollapsibleParagraphBlockSettings_Placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
 
 ```cshtml
 // Adding placeholder value to collapsible heading
