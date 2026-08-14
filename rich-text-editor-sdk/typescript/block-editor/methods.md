@@ -22,10 +22,10 @@ Add a new block to the editor at a specified position using the [addBlock](https
 // Add a new paragraph block after a specific block
 const newBlock: BlockModel = {
     id: 'new-block',
-    type: 'Paragraph',
+    blockType: 'Paragraph',
     content: [
         {
-            type: ContentType.Text,
+            contentType: ContentType.Text,
             content: 'This is a newly added block'
         }
     ]
@@ -58,7 +58,7 @@ Update the properties of an existing block with the [updateBlock](https://ej2.sy
 
 ```typescript
 // Update block properties
-editor.updateBlock('block-id', {
+const isUpdated: boolean = editor.updateBlock('block-id', {
     isChecked: true
 });
 ```
@@ -78,10 +78,10 @@ Use the [getBlockCount](https://ej2.syncfusion.com/documentation/api/blockeditor
 
 ```typescript
 // Get total block count
-editor.getBlockCount();
+const count: number = editor.getBlockCount();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -175,7 +175,7 @@ Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusi
 editor.selectAllBlocks();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -262,7 +262,7 @@ editor.disableToolbarItems('bold');
 editor.disableToolbarItems(['bold', 'italic', 'underline']);
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -350,7 +350,7 @@ Print the editor content using the [print](https://ej2.syncfusion.com/documentat
 editor.print();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
