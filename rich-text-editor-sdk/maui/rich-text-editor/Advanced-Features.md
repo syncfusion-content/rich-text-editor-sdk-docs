@@ -309,7 +309,7 @@ xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Sync
 using Syncfusion.Maui.RichTextEditor;
 
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.HtmlText = "<p>Visit the <a href='https://www.syncfusion.com'>Syncfusion</a> website.</p>";
+richTextEditor.HtmlText = "<p>Visit the <a href='https://www.syncfusion.com' aria-label='syncfusion page'>Syncfusion</a> website.</p>";
 richTextEditor.HyperlinkClicked += OnHyperlinkClicked;
 
 
