@@ -30,9 +30,9 @@ The accessibility compliance for the Block Editor component is summarized in the
 
 | Icon | Meaning |
 |------|---------|
-| ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) | All features of the component meet the requirement. |
-| ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) | Some features of the component do not meet the requirement. |
-| ![No](https://cdn.syncfusion.com/content/images/documentation/not-supported.png) | The component does not meet the requirement. |
+| <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> | All features of the component meet the requirement. |
+| <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> | Some features of the component do not meet the requirement. |
+| <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> | The component does not meet the requirement. |
 
 > The **Color Contrast** row reflects the component's built-in default theme. If you apply a custom theme, ensure the text/background combinations in the editor, menus, and toolbars meet your target WCAG contrast ratio (4.5:1 for normal text).
 
