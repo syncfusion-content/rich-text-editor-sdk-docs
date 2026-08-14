@@ -15,13 +15,13 @@ The following table summarizes the available events:
 
 | Event | Description |
 |-------|-------------|
-| [Created](#created) | Triggers when the editor is initialized and ready for use. |
-| [BlockChanged](#blockchanged) | Triggers when blocks are added, removed, or modified. |
-| [SelectionChanged](#selectionchanged) | Triggers when the user's text selection changes. |
-| [Focus](#focus) | Triggers when the editor gains focus. |
-| [Blur](#blur) | Triggers when the editor loses focus. |
-| [PasteCleanupStarting](#pastecleanupstarting) | Triggers before pasted content is processed. |
-| [PasteCleanupCompleted](#pastecleanupcompleted) | Triggers after pasted content has been processed and inserted. |
+| [Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Created) | Triggers when the editor is initialized and ready for use. |
+| [BlockChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_BlockChanged) | Triggers when blocks are added, removed, or modified. |
+| [SelectionChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_SelectionChanged) | Triggers when the user's text selection changes. |
+| [Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Focus) | Triggers when the editor gains focus. |
+| [Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blur) | Triggers when the editor loses focus. |
+| [PasteCleanupStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupStarting) | Triggers before pasted content is processed. |
+| [PasteCleanupCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupCompleted) | Triggers after pasted content has been processed and inserted. |
 
 > **Note:** Event handlers can be declared as either `void` or `async Task` methods. Use `async Task` when the handler performs asynchronous work, such as calling an API or awaiting JS interop.
 
