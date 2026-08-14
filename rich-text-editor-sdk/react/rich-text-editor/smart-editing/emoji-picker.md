@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Emoji Picker is a tool that simplifies adding emojis or emoticons to text content within the Syncfusion React Rich Text Editor. It appears as a popup panel displaying a variety of emojis organized into categories such as Smilies & People, Animals & Nature, and more. Users can select an emoji by clicking it or searching for it by name using the built-in search box.
 
-## Configuring Emoji Picker Tool in the Toolbar
+## Configuring emoji picker tool in the toolbar
 
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#toolbarsettings) property.
 
@@ -142,7 +142,7 @@ The following example demonstrates how to add the Emoji Picker tool to the Rich 
 
 > To use Emoji Picker feature, inject Emoji Picker module using the `<Inject services={[EmojiPicker]} />`.
 
-## Keyboard Interaction
+## Keyboard interaction
 
 The Emoji Picker supports efficient keyboard navigation and selection, enhancing accessibility and user experience. Users can open the picker, navigate emojis, and select them using keyboard shortcuts.
 
