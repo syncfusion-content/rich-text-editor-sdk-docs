@@ -11,6 +11,20 @@ documentation: ug
 
 The Block Editor component provides a comprehensive set of events to monitor and respond to various user interactions and editor state changes. These events enable implementation of custom behaviors, validation, logging, and integration with other systems.
 
+The following table summarizes the available events:
+
+| Event | Description |
+|-------|-------------|
+| [Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Created) | Triggers when the editor is initialized and ready for use. |
+| [BlockChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_BlockChanged) | Triggers when blocks are added, removed, or modified. |
+| [SelectionChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_SelectionChanged) | Triggers when the user's text selection changes. |
+| [Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Focus) | Triggers when the editor gains focus. |
+| [Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blur) | Triggers when the editor loses focus. |
+| [PasteCleanupStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupStarting) | Triggers before pasted content is processed. |
+| [PasteCleanupCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupCompleted) | Triggers after pasted content has been processed and inserted. |
+
+> **Note:** Event handlers can be declared as either `void` or `async Task` methods. Use `async Task` when the handler performs asynchronous work, such as calling an API or awaiting JS interop.
+
 ## Created
 
 The [Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Created) event triggers when the Block Editor component is successfully initialized and ready for use. This event is useful for performing setup operations or initializing additional features after the editor is created.
@@ -75,6 +89,8 @@ The [SelectionChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.B
 
 The [Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Focus) event triggers when the editor gains focus. This is useful for updating UI states, showing toolbars, or managing editor interactions.
 
+> **Note:** The `FocusEventArgs` parameter belongs to the `Syncfusion.Blazor.BlockEditor` namespace. If your component also imports `Microsoft.AspNetCore.Components.Web`, which defines a type with the same name, qualify the type explicitly to avoid ambiguity.
+
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
 
@@ -94,6 +110,8 @@ The [Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.
 ## Blur
 
 The [Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blur) event triggers when the editor loses focus. This is commonly used for auto-saving content, hiding UI elements that should only be visible when the editor is active, or validating content.
+
+> **Note:** The `BlurEventArgs` parameter belongs to the `Syncfusion.Blazor.BlockEditor` namespace. If your component also imports `Microsoft.AspNetCore.Components.Web`, which defines a type with the same name, qualify the type explicitly to avoid ambiguity.
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
