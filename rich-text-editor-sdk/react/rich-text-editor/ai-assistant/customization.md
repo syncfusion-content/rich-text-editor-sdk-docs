@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Customization of AI Assistant in React Rich Text Editor
 
-> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v33.2.10 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v33.2.10+, and an AI service endpoint configured with a valid API key.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v33.2.19 and later. Requires React 16.8+, @syncfusion/ej2-react-richtexteditor v33.2.19, and an AI service endpoint configured with a valid API key.
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate programmatic workflows.
 
