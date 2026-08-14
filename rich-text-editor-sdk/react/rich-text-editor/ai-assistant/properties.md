@@ -88,17 +88,6 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/commands-cs2" %}
 
-## PromptModel Interface
-
-The `prompts` property accepts an array of preloaded conversations. Each prompt has the following structure:
-
-```tsx
-interface PromptModel {
-  prompt: string;   // The user's prompt text
-  response: string; // The AI-generated response
-}
-```
-
 ## Preloading Prompts, Responses, and Suggestions
 
 To preload conversations and add suggested prompts to the AI Assistant, use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful for:
