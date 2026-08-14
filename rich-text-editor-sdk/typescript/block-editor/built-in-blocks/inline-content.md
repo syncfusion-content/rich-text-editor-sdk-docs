@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Inline Content in TypeScript Block Editor
 
-In the TypeScript Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
+In the Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
 
 Each [contentModel](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel) is an object with properties such as [id](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#id), [contentType](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#contentType), [content](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#content), and [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#properties), allowing for granular control over its appearance and behavior.
 
