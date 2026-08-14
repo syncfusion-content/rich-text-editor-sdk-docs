@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Nested Blocks in TypeScript Block Editor
 
-The TypeScript Block Editor supports nested content through parent-child block relationships, allowing blocks such as `Quote`, `Callout`, and `Collapsible` blocks to contain other blocks within them.
+The Block Editor supports nested content through parent-child block relationships, allowing blocks such as `Quote`, `Callout`, and `Collapsible` blocks to contain other blocks within them.
 
 ## Configure children
 
