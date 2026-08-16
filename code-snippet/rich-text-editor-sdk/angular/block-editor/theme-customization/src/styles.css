@@ -44,45 +44,51 @@ h2 {
    THEME SWITCHER
    ===================================== */
 
-/* Theme button container */
 .theme-switcher {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-/* Theme buttons */
-.theme-switcher button {
+.theme-button {
   padding: 10px 16px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
   background: #fff;
   color: #303030;
   font-weight: 600;
+  font-size: 14px;
   transition: all 0.3s ease;
 }
 
-/* Theme button hover state */
-.theme-switcher button:hover {
+.theme-button:hover {
   background-color: #f0f0f0;
   border-color: #999;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Active theme button */
-.theme-switcher button.active {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #fff;
-  border-color: #1d4ed8;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+.theme-button.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 /* =====================================
    SLATE LIGHT THEME
    ===================================== */
 
-/* Block Editor appearance */
+.slateLightTheme {
+  background: #f8f7f4 !important;
+}
+
+.slateLightTheme .container {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 .slateLightTheme .e-blockeditor {
   /* Background Colors */
   --color-sf-content-bg-color: #f8f7f4;
@@ -116,7 +122,7 @@ h2 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Context menu and popup styling */
+/* Slate Light - Context menu and popup styling */
 body.slateLightTheme #blockeditor_contextmenu,
 body.slateLightTheme .e-content .e-dropdownbase,
 body.slateLightTheme #blockeditor_code-ddl_popup {
@@ -125,26 +131,26 @@ body.slateLightTheme #blockeditor_code-ddl_popup {
   color: #2f3437;
 }
 
-/* Dropdown items */
+/* Slate Light - Dropdown items */
 body.slateLightTheme #blockeditor_code-ddl_popup .e-list-item {
   background: #ffffff !important;
   color: #2f3437 !important;
 }
 
-/* Dropdown hover state */
+/* Slate Light - Dropdown hover state */
 body.slateLightTheme #blockeditor_code-ddl_popup .e-list-item:hover {
   background: #efede7 !important;
   color: #1f2328 !important;
 }
 
-/* Selected dropdown item */
+/* Slate Light - Selected dropdown item */
 body.slateLightTheme #blockeditor_code-ddl_popup .e-selected,
 body.slateLightTheme #blockeditor_code-ddl_popup .e-active {
   background: #2563eb !important;
   color: #ffffff !important;
 }
 
-/* Table headers */
+/* Slate Light - Table headers */
 .slateLightTheme .e-blockeditor .e-table-element thead th {
   background: #2563eb !important;
   color: #ffffff !important;
@@ -154,7 +160,14 @@ body.slateLightTheme #blockeditor_code-ddl_popup .e-active {
    SAGE GREEN THEME
    ===================================== */
 
-/* Block Editor appearance */
+.sageGreenTheme {
+  background: #f6f8f4 !important;
+}
+
+.sageGreenTheme .container {
+  background: rgba(255, 255, 255, 0.75);
+}
+
 .sageGreenTheme .e-blockeditor {
   /* Background Colors */
   --color-sf-content-bg-color: #f6f8f4;
@@ -188,7 +201,7 @@ body.slateLightTheme #blockeditor_code-ddl_popup .e-active {
   box-shadow: 0 8px 24px rgba(107, 142, 35, 0.12);
 }
 
-/* Context menu and popup styling */
+/* Sage Green - Context menu and popup styling */
 body.sageGreenTheme #blockeditor_contextmenu,
 body.sageGreenTheme .e-content .e-dropdownbase,
 body.sageGreenTheme #blockeditor_code-ddl_popup {
@@ -197,26 +210,26 @@ body.sageGreenTheme #blockeditor_code-ddl_popup {
   color: #2f3e2f;
 }
 
-/* Dropdown items */
+/* Sage Green - Dropdown items */
 body.sageGreenTheme #blockeditor_code-ddl_popup .e-list-item {
   background: #fbfcfa !important;
   color: #2f3e2f !important;
 }
 
-/* Dropdown hover state */
+/* Sage Green - Dropdown hover state */
 body.sageGreenTheme #blockeditor_code-ddl_popup .e-list-item:hover {
   background: #edf2e8 !important;
   color: #4d6530 !important;
 }
 
-/* Selected dropdown item */
+/* Sage Green - Selected dropdown item */
 body.sageGreenTheme #blockeditor_code-ddl_popup .e-selected,
 body.sageGreenTheme #blockeditor_code-ddl_popup .e-active {
   background: #6b8e23 !important;
   color: #ffffff !important;
 }
 
-/* Table headers */
+/* Sage Green - Table headers */
 .sageGreenTheme .e-blockeditor .e-table-element thead th {
   background: #6b8e23 !important;
   color: #ffffff !important;
@@ -226,7 +239,20 @@ body.sageGreenTheme #blockeditor_code-ddl_popup .e-active {
    DARK PRO THEME
    ===================================== */
 
-/* Block Editor appearance */
+.darkProTheme {
+  background: #0d1117 !important;
+  color: #e6edf3;
+}
+
+.darkProTheme .container {
+  background: rgba(22, 27, 34, 0.5);
+  color: #e6edf3;
+}
+
+.darkProTheme h2 {
+  color: #ffffff;
+}
+
 .darkProTheme .e-blockeditor {
   /* Background Colors */
   --color-sf-content-bg-color: #0d1117;
@@ -260,7 +286,7 @@ body.sageGreenTheme #blockeditor_code-ddl_popup .e-active {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
 }
 
-/* Context menu and popup styling */
+/* Dark Pro - Context menu and popup styling */
 body.darkProTheme #blockeditor_contextmenu,
 body.darkProTheme .e-content .e-dropdownbase,
 body.darkProTheme #blockeditor_code-ddl_popup {
@@ -271,38 +297,61 @@ body.darkProTheme #blockeditor_code-ddl_popup {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Dropdown items */
+/* Dark Pro - Dropdown items */
 body.darkProTheme #blockeditor_code-ddl_popup .e-list-item {
   background: #161b22 !important;
   color: #e6edf3 !important;
 }
 
-/* Dropdown hover state */
+/* Dark Pro - Dropdown hover state */
 body.darkProTheme #blockeditor_code-ddl_popup .e-list-item:hover {
   background: #21262d !important;
   color: #ffffff !important;
 }
 
-/* Selected dropdown item */
+/* Dark Pro - Selected dropdown item */
 body.darkProTheme #blockeditor_code-ddl_popup .e-selected,
 body.darkProTheme #blockeditor_code-ddl_popup .e-active {
   background: #1f6feb !important;
   color: #ffffff !important;
 }
 
-/* Table headers */
+/* Dark Pro - Table headers */
 .darkProTheme .e-blockeditor .e-table-element thead th {
   background: #1f6feb !important;
   color: #ffffff !important;
 }
 
-/* Active editor elements */
+/* Dark Pro - Active editor elements */
 .darkProTheme .e-blockeditor .e-active,
 .darkProTheme .e-blockeditor .e-selected {
   color: #58a6ff !important;
 }
 
-/* Links */
+/* Dark Pro - Links */
 .darkProTheme .e-blockeditor a {
   color: #58a6ff !important;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .theme-switcher {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .theme-button {
+    width: 100%;
+  }
 }
