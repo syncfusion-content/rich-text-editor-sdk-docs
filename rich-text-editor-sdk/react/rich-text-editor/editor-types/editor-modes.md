@@ -10,18 +10,32 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Editor Modes in React Rich Text Editor
 
-The Rich Text Editor component allows you to create and edit content, returning it as either valid HTML or Markdown (MD). It supports the following two editing formats:
+The Rich Text Editor component supports two editing modes for creating and editing content in different formats. You can access the edited content via the `value` property or capture changes in the `change` event.
 
-* HTML editor
-* Markdown editor
+## Supported editor modes
+
+* **HTML editor** — Default WYSIWYG mode for editing and formatting content as HTML
+* **Markdown editor** — For editing and viewing content in Markdown format
 
 ## HTML editor
 
-Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
+HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor returns valid HTML markup.
 
-HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor will return valid HTML markup. To explicitly set this mode, set the [editorMode](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#editormode) property as `HTML`.
+### Setup
 
-> To create Rich Text Editor with HTML editing feature, inject the `HtmlEditor` module to the RTE using the `RichTextEditor.Inject(HtmlEditor)` method.
+To use the HTML editor mode, import and inject the `HtmlEditor` module:
+
+```tsx
+import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Image, Link, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
+
+<RichTextEditorComponent>
+  <Inject services={[HtmlEditor, Toolbar, Image, Link, QuickToolbar]} />
+</RichTextEditorComponent>
+```
+
+To explicitly set the HTML editor mode, set the [`editorMode`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#editormode) property to `'HTML'`:
+
+### Examples
 
 `[Class-component]`
 
@@ -49,22 +63,60 @@ HTML editing is the default mode of the Rich Text Editor. In this mode, you can 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs4" %}
 
-## IFrame editor
-
-The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
-
-For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/react/documentation/rich-text-editor/editor-types/iframe) documentation.
-
 ## Markdown editor
 
-To create or edit content in Markdown format, set the [editorMode](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#editormode) property as **Markdown**, to create or edit the content and apply formatting to view markdown formatted content.
+To edit content in Markdown format, set the [`editorMode`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#editormode) property to `'Markdown'`. You can then apply Markdown-compatible formatting and view the rendered output.
 
-The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
+### Setup
 
-* The Supported Tags are `h6`, `h5`, `h4`, `h3`, `h2`, `h1`, `blockquote`, `pre`, `p`, `ol`, `ul`.
-* Supported selection tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, and `LowerCase`.
+To use the Markdown editor mode, import and inject the `MarkdownEditor` module:
 
-> To create Rich Text Editor with Markdown editing feature, inject the `MarkdownEditor` module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
+```tsx
+import { RichTextEditorComponent, Inject, MarkdownEditor, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
+
+<RichTextEditorComponent editorMode="Markdown">
+  <Inject services={[MarkdownEditor, Toolbar]} />
+</RichTextEditorComponent>
+```
+
+### Supported Markdown tags
+
+The following HTML tags are generated from Markdown syntax:
+
+| Markdown Syntax | HTML Tag | Example |
+|-----------------|----------|---------|
+| `# Heading` | `<h1>` | `# Main Title` |
+| `## Heading` | `<h2>` | `## Subtitle` |
+| `### Heading` | `<h3>` | `### Section` |
+| `#### Heading` | `<h4>` | `#### Subsection` |
+| `##### Heading` | `<h5>` | `##### Minor` |
+| `###### Heading` | `<h6>` | `###### Tiny` |
+| `> Blockquote` | `<blockquote>` | `> Quote text` |
+| `` ``` code ``` `` | `<pre>` | `` ``` code block ``` `` |
+| `Paragraph` | `<p>` | Regular text |
+| `1. Item` | `<ol>` | Ordered list |
+| `- Item` | `<ul>` | Unordered list |
+
+### Selection formatting tags
+
+The following text formatting options are available in Markdown mode:
+
+| Format | Markdown | Example |
+|--------|----------|---------|
+| Bold | `**text**` | `**bold text**` |
+| Italic | `*text*` | `*italic text*` |
+| Strikethrough | `~~text~~` | `~~strikethrough~~` |
+| Inline Code | `` `code` `` | `` `code` `` |
+| Subscript | `~text~` | `H~2~O` |
+| Superscript | `^text^` | `E=mc^2^` |
+| Uppercase | (selection formatting) | Converts selected text to uppercase |
+| Lowercase | (selection formatting) | Converts selected text to lowercase |
+
+### Markdown Conversion
+
+Markdown content is converted to HTML using the `@syncfusion/ej2-markdown-converter` package. Ensure this package is installed in your project.
+
+For more details on Markdown editing, refer to the [Markdown Editor Getting Started](../../markdown-editor/getting-started) guide.
 
 `[Class-component]`
 
@@ -92,8 +144,7 @@ The third-party library such as `Marked` or any other library is used to convert
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/markdown-cs2" %}
 
-For further details on Markdown editing, refer to the [Markdown](../../markdown-editor/getting-started) section.
+## See Also
 
-## See also
-
-* [Markdown Editor](https://ej2.syncfusion.com/react/documentation/markdown-editor/getting-started)
+* [Rich Text Editor API Reference](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor)
+* [Markdown Editor Documentation](https://help.syncfusion.com/rich-text-editor-sdk/react/markdown-editor/getting-started)
