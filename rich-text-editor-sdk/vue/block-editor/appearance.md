@@ -4,7 +4,6 @@ title: Appearance  in Vue Block Editor Component | Syncfusion
 description: Vue Block Editor style and appearance provides a consolidated guide to built-in themes, CSS customization, dimensions, and appearance-related properties.
 platform: rich-text-editor-sdk
 control: Block Editor 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
