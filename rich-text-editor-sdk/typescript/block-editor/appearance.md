@@ -86,11 +86,11 @@ The following example demonstrates the usage of `readOnly` and `cssClass` proper
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance" %}
 {% endif %}
 
-# Theme Customization
+## Theme Customization
 
 The Block Editor provides flexible theme customization options to help match the editor appearance with your application design. You can customize built-in themes by overriding CSS variables or create a fully customized theme using Syncfusion Theme Studio.
 
-## Default CSS Override
+### Default CSS Override
 
 The Block Editor uses CSS variables with the unified `--sf` naming convention. These variables control colors, typography, backgrounds, borders, icons, and other visual elements across the editor.
 
@@ -111,7 +111,7 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 | `--color-sf-primary-text-color` | Controls text color displayed on primary elements |
 | `--color-sf-icon-color` | Defines toolbar and action icon colors |
 
-## Theme Customization Example
+### Theme Customization Example
 
 The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
 
