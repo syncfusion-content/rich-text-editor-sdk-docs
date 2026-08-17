@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure AI Assistant in React Rich Text Editor | Syncfusion
+title: Configure of AI Assistant in React Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the React Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -37,20 +37,7 @@ The `aiAssistantSettings` property of the Rich Text Editor allows you to configu
 
 ## Adding items to the AI Commands Dropdown menu
 
-To configure the items displayed in the AI Commands Dropdown menu, use the `commands` property of the `aiAssistantSettings`. The `commands` property can be configured to add items or modify the default dropdown menu.
-
-### AICommands interface
-
-The `commands` property accepts an array of objects with the following structure:
-
-```tsx
-interface AICommand {
-  text: string;           // Display text for the command
-  command: string;        // Command identifier
-  description?: string;   // Optional description/tooltip
-  subCommands?: AICommand[]; // Optional nested commands
-}
-```
+To configure the items displayed in the AI Commands Dropdown menu, the `commands` property of the `aiAssistantSettings` can be used. The commands come with predefined prompts for writing, summarizing, and translating content. The `commands` property can be configured to add items or nested items to the dropdown menu.
 
 **Example**
 
@@ -88,15 +75,9 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/commands-cs2" %}
 
-## Preloading prompts, responses, and suggestions
+## Preloading Prompts, Response and Suggestions
 
-To preload conversations and add suggested prompts to the AI Assistant, use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful for:
-
-- Loading conversation history for returning users
-- Displaying default prompts for new users
-- Restoring previous chat sessions
-
-The `prompts` property loads predefined prompt-response pairs, while `suggestions` shows helpful prompt starters.
+To preload conversations and add suggested prompts to the AI Assistant use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful when conversation history needs to be loaded for a returning user, or to load the AI Assistant with default prompts for a new user.
 
 **Example**
 
@@ -192,16 +173,13 @@ In the below sample, the toolbar settings are configured to modify the order and
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/toolbar-settings-cs2" %}
 
-## Popup dimensions
+## Popup Dimensions
 
-To customize the dimensions of the AI Assistant popup, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`:
-
-- **`popupWidth`** — Sets the popup width . Accepts CSS values or pixel numbers.
-- **`popupMaxHeight`** — Sets the maximum height . Content scrolls if it exceeds this height. Minimum height is `100px`.
+To customize the dimensions of the AI Assistant popup based on the editor width, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`. The default minimum height of the popup is `100px`, and the `popupMaxHeight` property customizes the maximum height of the popup up to which the content can grow.
 
 **Example**
 
-In the following example, the popup width and maximum height are configured:
+In the below sample, the popup width and maximum height are configured.
 
 `[Class-component]`
 
@@ -235,28 +213,13 @@ In the following example, the popup width and maximum height are configured:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/popup-dimensions-cs2" %}
 
-## Conversation history management
+## Setting Maximum Conversation History Length
 
-### Setting maximum history length
-
-Use the `maxPromptHistory` property to control how many prompts are retained in the conversation history (default: `20`). When the maximum is exceeded, older prompts are removed.
-
-### Retrieving and persisting history
-
-The `getAIPromptHistory()` method returns the current conversation history as an array of `PromptModel[]` objects. This is useful for:
-
-- Saving conversation history before closing
-- Restoring previous sessions
-- Populating the `prompts` property on reload
-
-**Method Signature:**
-```tsx
-getAIPromptHistory(): PromptModel[]
-```
+To set the maximum conversation history length, use the `maxPromptHistory` property of the `aiAssistantSettings`. The default amount of conversation that can be loaded is `20` prompts. The conversation will be cleared when closing the popup. To retrieve all conversation history, use the `getAIPromptHistory()` method. This method is useful for loading previous conversations and populating the `prompts` property when you need to restore or display earlier chat sessions.
 
 **Example**
 
-In the following example, the maximum prompt history is configured to `30`, and a save button retrieves the conversation history using the `getAIPromptHistory()` method:
+In the below sample, the maximum prompt history is configured to `30`, and when a save button is clicked the conversation history is retrieved using the `getAIPromptHistory()` method.
 
 `[Class-component]`
 
@@ -290,25 +253,13 @@ In the following example, the maximum prompt history is configured to `30`, and 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/ai-assistant/prompt-history-cs2" %}
 
-## Configuring the banner
+## Setting the Banner
 
-The `bannerTemplate` property allows you to display a custom banner at the top of the AI Assistant popup. This is useful for:
+To set the banner content displayed on top of the AI Assistant popup, use the `bannerTemplate` property of the `aiAssistantSettings`. This can be used to display welcome messages, instructions, or other relevant information.
 
-- Welcome messages
-- Usage instructions
-- Warnings or guidelines
-- Branding/UI customization
+**Example**
 
-### Banner template format
-
-The `bannerTemplate` accepts either:
-
-- **HTML String**: `bannerTemplate: '<div class="custom-banner">Welcome to AI Assistant</div>'`
-- **React Function** (for functional components): Returns JSX that will be rendered as the banner
-
-### Example
-
-In the following example, a custom banner template is applied to the AI Assistant:
+In the below sample, a custom banner template is applied to the AI Assistant.
 
 `[Class-component]`
 

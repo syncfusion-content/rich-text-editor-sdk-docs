@@ -10,18 +10,18 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Tables in React Rich Text Editor
 
-The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/tablesettingsmodel)
+The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows inserting tables in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related actions. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/tablesettingsmodel).
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add a `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
 Tables can also be inserted through the `Insert Table` option in the pop-up where the number of rows and columns can be provided manually, and this is the default way in devices.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To use table tool,
-inject table module using the `<Inject services={[Table]} />`.
+> Rich Text Editor features are segregated into individual feature-wise modules. To use the table tool,
+inject the Table module using the `<Inject services={[Table]} />`.
 
 In the following sample, the table feature has been injected from table module.
 
@@ -132,7 +132,7 @@ The Rich Text Editor provides a simple and intuitive way to select table rows, c
 
 ### Selecting an Entire Row
 
-Entire rows can be selected using the icons that appears on hover.
+Entire rows can be selected using the icons that appear on hover.
 
 **To select a row:**
 - **Where to hover**: Move the mouse pointer over the first column of the table..
@@ -143,7 +143,7 @@ Entire rows can be selected using the icons that appears on hover.
 
 ### Selecting an Entire Column
 
-Entire columns can be selected using the icons that appears on hover.
+Entire columns can be selected using the icons that appear on hover.
 
 **To select a column:**
 

@@ -16,19 +16,7 @@ The Rich Text Editor enables insertion of video from online sources and local ma
 
 The video feature is enabled by adding the `Video` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-### Setup
-
-Import and inject the `Video` module:
-
-```tsx
-import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
-
-<RichTextEditorComponent toolbarSettings={{ items: ['Video'] }}>
-  <Inject services={[HtmlEditor, Toolbar, Video, QuickToolbar]} />
-</RichTextEditorComponent>
-```
-
-> Rich Text Editor features use individual feature-wise modules. To enable video insertion, inject the `Video` module in the services array.
+> Rich Text Editor features are segregated into individual feature-wise modules. To use audio, inject the `Video` module in `services`.
 
 The following example demonstrates configuring the `Video` toolbar item:
 
@@ -58,7 +46,7 @@ The following example demonstrates configuring the `Video` toolbar item:
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/video-cs2" %}
 
-## Video Save Formats
+## Video save formats
 
 The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -76,11 +64,11 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 ```
 
-## Inserting Video
+## Inserting video
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Inserting Video from Embedded Code
+### Inserting video from embed URL
 
 The `Video` toolbar item opens a dialog with options to insert videos via an embedded code or web URL. The `Embedded code` option is selected by default, allowing insertion of embed codes from platforms like YouTube.
 
@@ -88,19 +76,19 @@ The `Video` toolbar item opens a dialog with options to insert videos via an emb
 
 ### Inserting video from web URL
 
-Switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
+You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
 
 ![React Rich Text Editor Video insert](../images/react-richtexteditor-video-web.png)
 
-## Uploading Video from Local Machine
+## Uploading video from a local machine
 
 The video dialog includes a `browse` option to select video files from a local machine and insert it into the Rich Text Editor content.
 
 If the [insertVideoSettings.path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertvideosettings) is not specified, the video is converted to a `Blob` or `Base64` URL and inserted into the Rich Text Editor.
 
-## Restricting Maximum File Size
+## Restricting maximum file size
 
-You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes (approximately 300 MB).
+You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 

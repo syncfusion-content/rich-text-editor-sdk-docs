@@ -108,7 +108,7 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 ## Maximum file size restriction
 
-You can restrict image uploads from your local machine using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB) per image.
+You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
 
 In the following example, the image size has been validated before uploading and determined whether the image has been uploaded or not.
 
