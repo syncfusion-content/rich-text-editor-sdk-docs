@@ -16,20 +16,23 @@ To get start quickly about Inserting Images in the Angular Rich Text Editor Usin
 
 {% youtube "https://www.youtube.com/watch?v=teTOxZx4MCc" %}
 
-## Required additional dependency
+## Required dependencies
+Install the FileManager package and related dependencies:
 
-The following list of additional dependencies are required to use the file browser feature in the Rich Text Editor.
-
-```js
-
-|-- @syncfusion/ej2-angular-richtexteditor
-    |-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-grids
-    |-- @syncfusion/ej2-filemanager
-
+```bash
+npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-grids
 ```
 
-## Additional CSS references
+### Dependency structure
+
+```
+@syncfusion/ej2-angular-richtexteditor
+├── @syncfusion/ej2-layouts
+├── @syncfusion/ej2-grids
+└── @syncfusion/ej2-filemanager
+```
+
+## CSS theme reference
 
 Additionally add below styles in the `[src/styles.css]` file.
 
@@ -40,11 +43,14 @@ Additionally add below styles in the `[src/styles.css]` file.
   @import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
 
 ```
+## Setup steps
 
-The following example explains about how to configure the file browser within the Rich Text Editor.
+The following example demonstrates how to configure the file browser within the Rich Text Editor:
 
-* Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set the `enable` property as `true` on [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#filemanagersettings) property to make the file browser in the  Rich Text Editor to appear on the `FileManager` toolbar click action.
+1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
+2. **Enable file browser** — Set the `enable` property to `true` in the [fileManagerSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#filemanagersettings) property
+3. **Inject module** — Add `FileManager` to the `<Inject services={[FileManager]} />` array
+4. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, configure `FileManagerService` in providers.
 
@@ -59,3 +65,10 @@ The following example explains about how to configure the file browser within th
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/file-browser-cs1" %}
+
+## See also
+
+* [FileManager Documentation](https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started)
+* [Image Insertion](./insert-images)
+* [Video Insertion](./video)
+* [Audio Insertion](./audio)
