@@ -22,11 +22,11 @@ The following example demonstrates configuring the audio toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/audio-cs1/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/audio-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/audio-cs1/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/audio-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -224,7 +224,7 @@ You can use the [insertAudioSettings](https://ej2.syncfusion.com/angular/documen
 
 <ejs-richtexteditor [toolbarSettings]='toolbarSettings' [insertAudioSettings] = 'insertAudioSettings' (fileUploadSuccess) = 'onAudioUploadSuccess($event)' >
 <ng-template #valueTemplate>
-    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup value">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown value">markdown</a> of the content</p>
 </ng-template>
 </ejs-richtexteditor>
 
@@ -411,11 +411,11 @@ In the following sample, you can see feature demo.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs34/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs34/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs34/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
