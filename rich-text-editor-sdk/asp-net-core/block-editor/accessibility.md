@@ -54,18 +54,6 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 | `aria-haspopup` / `aria-expanded` | Used by menus and popups (command/context/action menus). `aria-expanded` reflects open/closed state. |
 | `aria-hidden` | Hides non-interactive or offscreen content (e.g., closed popups) from assistive technologies. |
 
-## Implementing accessibility
-
-To ensure accessibility, apply appropriate ARIA attributes and ensure proper labeling in your Block Editor implementation. See the following example:
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" aria-label="Content editor" aria-disabled="false"></ejs-blockeditor>
-</div>
-
-```
-
 ## Keyboard interaction
 
 The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, enabling easy use for people with assistive technologies or those relying on keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
