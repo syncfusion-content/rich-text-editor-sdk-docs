@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Inline Content in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Inline Content with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Inline Content in JavaScript Block Editor | Syncfusion
+description: Learn how to add inline content in JavaScript Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Content  in JavaScript Block Editor control
+# Inline Content in JavaScript Block Editor
 
-In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
+In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) items that define the text and functionality within that block.
 
 Each [contentModel](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel) is an object with properties such as [id](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#id), [contentType](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#contentType), [content](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#content), and [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#properties), allowing for granular control over its appearance and behavior.
 
@@ -83,10 +82,12 @@ Link settings accepts the following options:
 To render labels, set the [contentType](https://ej2.syncfusion.com/documentation/api/blockeditor/contentmodel#contenttype) property to [Label](https://ej2.syncfusion.com/documentation/api/blockeditor/contenttype). The `properties` property allows you to specify which label to display.
 ### Built-in items
 
-The Block Editor comes with offers different built-in options. These include:
+By default, the Block Editor offers the following built-in label options:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
+
+> **Adding custom categories:** Use the `items` property under [labelSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/labelsettings) to define additional label groups beyond the built-in Progress and Priority.
 
 ### Customize label
 
@@ -101,7 +102,7 @@ You can customize the labels by using the `properties` property along with conte
     content: [
         {
             contentType: 'Label',
-            properties: { lableId: 'progress' }
+            properties: { labelId: 'progress' }
         }
     ]
 }
@@ -129,9 +130,9 @@ When users type the trigger character followed by text, a popup will appear show
 
 ### Using labels with group headers
 
-Labels with the same [groupBy](https://ej2.syncfusion.com/documentation/api/blockeditor/labelitemmodel#groupby) value will be grouped together in the label selection popup:
+Labels with the same [groupBy](https://ej2.syncfusion.com/documentation/api/blockeditor/labelitemmodel#groupby) value will be grouped together in the label selection popup. For example, setting `groupBy: 'Priority'` on the High, Medium, and Low label items displays them under a single "Priority" group heading in the popup.
 
-The below sample demonstrates the customization of labels in the Block Editor.
+The sample below demonstrates the customization of labels in the Block Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -169,7 +170,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 ### ContentType
 
 ```typescript
-// Adding inline code
+// Adding inline mention
 {
     blockType: 'Paragraph',
     content: [
@@ -228,7 +229,7 @@ The `styles` property supports the following options:
 | [subscript](https://ej2.syncfusion.com/documentation/api/blockeditor/stylemodel#subscript)               | Renders the text as subscript.             | `false`       |
 | [uppercase](https://ej2.syncfusion.com/documentation/api/blockeditor/stylemodel#uppercase)               | Converts the text to uppercase.            | `false`       |
 | [lowercase](https://ej2.syncfusion.com/documentation/api/blockeditor/stylemodel#lowercase)               | Converts the text to lowercase.            | `false`       |
-| [inlineCode](https://ej2.syncfusion.com/documentation/api/blockeditor/stylemodel#inlinecode)             | Converts the text to InlineCode.           | `false`          |
+| [inlineCode](https://ej2.syncfusion.com/documentation/api/blockeditor/stylemodel#inlinecode)             | Formats the text as inline code.           | `false`          |
 
 You can apply one or more of these styles to any supported content element for rich text formatting.
 

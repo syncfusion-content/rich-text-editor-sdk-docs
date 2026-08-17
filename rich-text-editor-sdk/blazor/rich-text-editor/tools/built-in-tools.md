@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Built-in tools in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about built-in tools in Blazor Rich Text Editor component with examples and much more details.
+title: Toolbar Items in Blazor Rich Text Editor | Syncfusion®
+description: Learn about all available toolbar items in Blazor Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Built-in Tools in Blazor Rich Text Editor Component
+# Built-in Tools in Blazor Rich Text Editor
 
 By default, the Rich Text Editor displays the following toolbar items:
 

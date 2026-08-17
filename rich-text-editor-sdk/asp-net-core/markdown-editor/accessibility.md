@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Accessibility in ASP.NET Core Markdown Editor Control | Syncfusion
-description: Checkout and learn about Accessibility in ASP.NET Core Markdown Editor control of Syncfusion Essential JS 2 and more details.
+description: Learn about accessibility features in the ASP.NET Core Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Accessibility
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Accessibility in the ASP.NET Core Markdown Editor Control
+# Accessibility in ASP.NET Core Markdown Editor
 
 The Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 
@@ -86,7 +85,7 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 The Markdown Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Markdown Editor control.
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/keyboard-support) documentation.
+For more details on keyboard navigation, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/keyboard-support) documentation.
 
 ## Ensuring accessibility
 

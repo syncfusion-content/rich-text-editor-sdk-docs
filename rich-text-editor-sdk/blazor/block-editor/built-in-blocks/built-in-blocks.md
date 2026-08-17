@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blocks in Blazor Block Editor Component | Syncfusion®
-description: Learn about blocks and content organization in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Block Types and Configuration in Blazor Block Editor | Syncfusion
+description: Learn how to use the built-in block types in Blazor Block Editor, including paragraphs, headings, lists, tables, images, code blocks, and block customization.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Blocks in Blazor Block Editor Component
+# Built-in Block Types and Configuration in Blazor Block Editor
 
 The Block Editor uses [Blocks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blocks) as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [Blocks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_Blocks) property.
 
@@ -43,6 +43,8 @@ The Block Editor supports multiple block types, each offering different formatti
 You can specify the indentation level of a block using the [Indent](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
 
 By default, the [Indent](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Indent) property is set to `0`.
+
+The following example demonstrates how to configure block indentation:
 
 ```cshtml
 
@@ -89,7 +91,7 @@ By default, the [Indent](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor
 
 You can apply custom styling to individual blocks using the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_CssClass) property. This property accepts a string containing one or more CSS class names.
 
-Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
+Custom CSS classes allow you to define specialized styling for specific blocks in your editor. The following example demonstrates how to apply CSS classes to blocks:
 
 ```cshtml
 

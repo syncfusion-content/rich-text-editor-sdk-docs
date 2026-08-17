@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in React Rich Text Editor component | Syncfusion
-description: Learn here all about Style in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Style 
+title: Style and Appearance in React Rich Text Editor | Syncfusion
+description: Learn how to customize the React Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style Appearance Customization in the React Rich Text Editor component
+# Style and Appearance in React Rich Text Editor
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
@@ -85,7 +85,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
     color: red;
     font-family: segoe ui;
     font-size: 18px;
-    opacity: 00.54;
+    opacity: 0.54;
     padding-bottom: 2px;
     padding-right: 14px;
 }

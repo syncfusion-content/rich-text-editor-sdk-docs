@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Toolbar types in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Toolbar types in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Types in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the JavaScript Rich Text Editor for different layout requirements.
 platform: rich-text-editor-sdk
-control: Toolbar types
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Toolbar in JavaScript Rich Text Editor control
+# Toolbar Types in JavaScript Rich Text Editor
 
 The JavaScript Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 

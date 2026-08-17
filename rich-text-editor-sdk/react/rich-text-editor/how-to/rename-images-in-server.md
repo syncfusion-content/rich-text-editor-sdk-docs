@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Rename images in server in React Rich text editor component | Syncfusion
-description: Learn here all about Rename images in server in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Rename images in server 
+title: Rename Uploaded Images in React Rich Text Editor | Syncfusion
+description: Learn how to rename uploaded images in the React Rich Text Editor using the image upload success event and a custom server-side upload handler.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Rename images in server in React Rich text editor component
+# Rename Uploaded Images in React Rich Text Editor
 
-By using the [`insertImageSettings`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/imagesettings#imageSettings) property, you can specify the server handler to upload the selected image. Then you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/imagesuccesseventargs#imageSuccessEventArgs) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
+By using the [`insertImageSettings`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/imagesettings#imagesettings) property, you can specify the server handler to upload the selected image. Then you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/imagesuccesseventargs#imagesuccesseventargs) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
 `[Class-component]`
 
@@ -130,7 +130,7 @@ public void Rename()
                 Response.Clear();
                 Response.Headers.Add("name", imageFile);
                 Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusDescription = "File uploaded succesfully";
+                Response.StatusDescription = "File uploaded successfully";
                 Response.End();
             }
         }

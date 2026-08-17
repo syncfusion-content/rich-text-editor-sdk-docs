@@ -2,13 +2,13 @@
 layout: post
 title: Get Started with Blazor Rich Text Editor in Server App | Syncfusion
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor"
-description: Check out and learn about getting started with Blazor Rich Text Editor component in Blazor Server Application.
+description: Learn how to get started with the Blazor Rich Text Editor component in Blazor Server Application and explore setup, configuration, and core feature examples.
 platform: rich-text-editor-sdk
 component: Rich Text Editor
 documentation: ug
 ---
 
-# Getting Started with Blazor Rich Text Editor in Blazor Server App
+# Getting Started with Rich Text Editor in Blazor Server App
 
 This section explains how to add the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component to a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
@@ -233,7 +233,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 
 1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
 2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
-3. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=bootstrap5)
-4. [Accessibility in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/accessibility)
-5. [Keyboard support in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support)
-6. [Globalization in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/globalization)
+3. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
+4. [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
+5. [Keyboard support in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
+6. [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)

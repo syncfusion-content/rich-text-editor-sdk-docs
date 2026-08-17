@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Third party integration in React Rich text editor | Syncfusion
-description: Learn here all about Third party integration in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Third party integration 
+title: Third-Party Integrations in React Rich Text Editor | Syncfusion
+description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the React Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Third Party Integration in React Rich Text Editor component
+# Third-Party Integration in React Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit the application scenario.
 
 ## CodeMirror integration
 
@@ -18,7 +18,7 @@ Rich Text Editor comes with a basic HTML source editor through the view-source p
 
 Import necessary CSS and JS files of CodeMirror to the HTML page.
 
-Required JS files of code mirror.
+Required JS files of CodeMirror.
 
   ``` javascript
     <script src="scripts/CodeMirror/codemirror.js" type="text/javascript"></script>
@@ -27,13 +27,13 @@ Required JS files of code mirror.
     <script src="scripts/CodeMirror/htmlmixed.js" type="text/javascript"></script>
   ```
 
-Required CSS file of code mirror.
+Required CSS file of CodeMirror.
  
    ``` javascript
     <link href="scripts/CodeMirror/codemirror.min.css" rel="stylesheet" />
    ```
 
-Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [actionComplete](/api/js/global#actioncomplete) event.
+Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the CodeMirror plugin, and then pass the Rich Text Editor content as argument in the [actionComplete](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#actioncomplete) event.
 
 `[Class-component]`
 
@@ -59,7 +59,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 ## Embedly integration
 
-This can be achieved by binding the [actionComplete](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [toolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
+This can be achieved by binding the [actionComplete](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [toolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script has to be added in the sample to embed the content.
 
 Include `embedly` javascript.
 

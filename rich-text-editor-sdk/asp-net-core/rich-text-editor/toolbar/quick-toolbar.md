@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Quick toolbars in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Quick toolbars in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Quick Toolbars in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to customize Quick Toolbars in the ASP.NET Core Rich Text Editor for images, links, tables, audio, video, and text editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Quick toolbars
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Quick Toolbars in the ASP.NET Core Rich Text Editor Control
+# Quick Toolbars in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
@@ -200,7 +199,7 @@ Quick commands are opened as context-menu on clicking the corresponding element.
 |----------------|---------|
 |image | 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
 | link | 'Open', 'Edit', 'UnLink'.|
-| text | null <br> (Any toolbar [items](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/toolbar/toolbar-types#toolbar-items) in the Rich Text Editor can be configured here).|
+| text | null <br> (Any toolbar [items](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/toolbar/toolbar-types#toolbar-items) in the Rich Text Editor can be configured here).|
 | table| 'TableHeader', 'TableRows', 'TableColumns', 'BackgroundColor', '-', 'TableRemove', 'Alignments', 'TableCellVerticalAlign', 'Styles'.|
 
 Custom tool can be added to the corresponding quick toolbar, using [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Inline content in Blazor Block Editor Component | Syncfusion®
-description: Learn about inline content types, styling, and formatting in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Inline Content in Blazor Block Editor | Syncfusion®
+description: Learn how to add inline content in the Blazor Block Editor, blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Inline Content in Blazor Block Editor Component
+# Inline Content in Blazor Block Editor
 
 In the Block Editor, all content is organized within blocks. Each block contains a [Content](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentModel.html#Syncfusion_Blazor_BlockEditor_ContentModel_Content) property, which is a list of [ContentModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentModel.html) that defines the text and functionality within that block.
 
@@ -30,15 +30,15 @@ By default, the content type is set to [Text](https://help.syncfusion.com/cr/bla
 
 To configure text content, set the [ContentType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentModel.html#Syncfusion_Blazor_BlockEditor_ContentModel_ContentType) property to [Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.ContentType.html#Syncfusion_Blazor_BlockEditor_ContentType_Text). This is the default content type if none is specified.
 
-### ContentType
+### ContentType and Properties
 
 ```cshtml
 // Adding inline text
     new BlockModel
     {
         BlockType = BlockType.Paragraph,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "Inline text"}}
-    }   
+        Content = new() [new ContentModel{ContentType = ContentType.Text, Content = "Inline text"}]
+    }
 ```
 
 ## Configure hyperlink
@@ -69,7 +69,7 @@ To render labels, set the [ContentType](https://help.syncfusion.com/cr/blazor/Sy
 
 ### Built-in items
 
-The Block Editor comes with different built-in label items. These includes:
+The Block Editor comes with different built-in label items. These include:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
@@ -83,7 +83,7 @@ The [BlockEditorLabel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.B
 | Property | Description |
 |----------|-------------|
 | TriggerChar | Specifies the character that opens the label suggestions popup. |
-| Items | Specifies the label items. |
+| Items | Specifies the list of [LabelItemModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.LabelItemModel.html) objects available for selection. |
 
 #### Trigger character configuration
 
@@ -117,15 +117,15 @@ You can customize the labels by using the [Properties](https://help.syncfusion.c
     new BlockModel
     {
         BlockType = BlockType.Paragraph,
-        Content = {new ContentModel{ContentType = ContentType.Label, Properties = new LabelContentSettings {
+        Content = new() [new ContentModel{ContentType = ContentType.Label, Properties = new LabelContentSettings {
             LabelID = "progress"
-        }}}
+        }}]
     }
 ```
 
 #### Using labels with group headers
 
-Labels with the same [GroupBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.LabelItemModel.html#Syncfusion_Blazor_BlockEditor_LabelItemModel_GroupBy) value will be grouped together in the label selection popup:
+Labels with the same [GroupBy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.LabelItemModel.html#Syncfusion_Blazor_BlockEditor_LabelItemModel_GroupBy) value will be grouped together in the label selection popup. For example, setting `GroupBy = "Priority"` on the High, Medium, and Low label items will display them under a single "Priority" group heading in the popup.
 
 ## Configure mention
 

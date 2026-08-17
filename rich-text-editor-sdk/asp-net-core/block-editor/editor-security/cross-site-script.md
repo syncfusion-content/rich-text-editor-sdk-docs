@@ -1,18 +1,24 @@
 ---
 layout: post
-title: Cross-Site scripting in ASP.NET Core Block Editor | Syncfusion
-description: Checkout and learn about Cross-Site scripting with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: XSS Prevention in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to enable XSS prevention in the ASP.NET Core BlockEditor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Prevent XSS in ASP.NET Core Block Editor Control
+# XSS Prevention in ASP.NET Core Block Editor
 
-The Block Editor control allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
+The Block Editor control allows users to edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove potentially dangerous elements from editor content. The editor sanitizes content based on element tags and attributes that could execute malicious scripts.
 
 ## Enabling XSS prevention
 
-The [enableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableHtmlSanitizer), enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
-The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:
+The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableHtmlSanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes dangerous elements like `<script>` tags and unsafe attributes like `onclick`, `onmouseover`, etc. from the content.
+
+```csharp
+// Enable XSS prevention (enabled by default)
+new BlockEditor
+{
+    EnableHtmlSanitizer = true  // Removes potentially dangerous content
+}
+```

@@ -1,16 +1,22 @@
 ---
 layout: post
-title: Editor Menus in React Block Editor component | Syncfusion
-description: Checkout and learn about Editor Menus with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Menus in React Block Editor | Syncfusion
+description: Learn how to use the editor menus in the React Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in React Block Editor component
+# Editor Menus in React Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
+
+Before using the Block Editor menus, ensure the component is imported:
+
+```typescript
+import { BlockEditorComponent } from '@syncfusion/ej2-react-blockeditor';
+```
 
 ## Slash command menu
 
@@ -18,7 +24,7 @@ The Slash Command menu allows users to quickly insert or transform blocks by typ
 
 ### Built-in items
 
-The Slash Command menu comes with a set of pre-defined commands for all block types:
+The Slash Command menu comes with a set of pre-defined commands for all block types. Trigger the menu by typing `/` within the editor:
 
 -   **Headings (Level 1 to 4)**: Inserts a heading block of the corresponding level.
 -   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type.
@@ -57,7 +63,7 @@ The following example demonstrates how to customize the Slash Command menu.
 
 ## Context menu
 
-The Context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
+The Context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content. This menu adapts based on the block type and selected content.
 
 ### Built-in items
 
@@ -113,7 +119,7 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 You can use the [blockActionMenuSettings](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#blockactionmenusettings) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
 
-Below example demonstrates how to customize the Block action menu.
+The following example demonstrates how to customize the Block action menu.
 
 #### Show or hide tooltip
 
@@ -148,7 +154,7 @@ The Inline Toolbar appears when a text is selected in the editor, providing quic
 
 ### Built-in items
 
-The Inline Toolbar includes the following built-in formatting options:
+The Inline Toolbar appears when text is selected in the editor, providing quick access to common formatting options:
 
 -   **Text Styles**: Bold, Italic, Underline, and Strikethrough.
 -   **Superscript/Subscript**: For mathematical or scientific notations.
@@ -166,15 +172,15 @@ The inline toolbar now includes `transform` options to quickly convert blocks be
 
 #### Built-in default transform block options
 
-Below are the built-in transform block options available:
+Below are the built-in `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#transformSettings) property to customize the transform menu. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
 
-| Built-in transform Block Types          |
-|-----------------------------------------|
-| Paragraph                               |
-| Heading1 to Heading4                    |
-| Checklist                               |
-| BulletList                              |
-| NumberedList                            |
+**Block Type |
+|---|
+| Paragraph |
+| Heading1, Heading2, Heading3, Heading4 |
+| Checklist |
+| BulletList |
+| NumberedList |
 
 > For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible` transform options not available. Instead they will be added as a new block.
 

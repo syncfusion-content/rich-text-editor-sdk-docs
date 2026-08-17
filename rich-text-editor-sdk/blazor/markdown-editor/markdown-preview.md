@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Markdown preview in Blazor Markdown Editor Component | Syncfusion®
-description: Checkout and learn here all about Markdown preview in Blazor Markdown Editor component and much more details.
+title: Markdown Preview in Blazor Markdown Editor | Syncfusion®
+description: Learn how to enable Markdown preview in the Blazor Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
 platform: rich-text-editor-sdk
-control: MarkdownEditor
+control: Markdown Editor
 documentation: ug
 ---
 

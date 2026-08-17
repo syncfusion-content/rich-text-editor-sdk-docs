@@ -1,16 +1,27 @@
 ---
 layout: post
-title: Lists in React Block Editor Component | Syncfusion
-description: Checkout and learn about List Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: List Blocks in React Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the React Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in the React Block Editor component
+# List Blocks in React Block Editor
 
-The Syncfusion React Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`.
+
+Before using list blocks, import the ContentType enum:
+
+```typescript
+import { ContentType } from '@syncfusion/ej2-react-blockeditor';
+```
+
+**Choose the appropriate list type:**
+- **BulletList**: For unordered items without sequence (e.g., feature lists, bullet points)
+- **NumberedList**: For ordered items requiring sequence (e.g., steps, procedures)
+- **Checklist**: For interactive to-do lists with checkable items
 
 ## Configuring the Bullet List
 
@@ -36,10 +47,10 @@ You can render a Bullet List block by setting the [blockType](https://ej2.syncfu
 The [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
 
 ```typescript
-// Adding a placeholder value 
+// Adding a custom placeholder
 {
     blockType: 'BulletList',
-    properties: { placeholder: 'bullet'},
+    properties: { placeholder: 'Add bullet point'},
     content: [
         {
             contentType: ContentType.Text,
@@ -73,10 +84,10 @@ You can render a Numbered List block by setting the [blockType](https://ej2.sync
 The [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
 
 ```typescript
-// Adding a placeholder value 
+// Adding a custom placeholder
 {
     blockType: 'NumberedList',
-    properties: { placeholder: 'number'},
+    properties: { placeholder: 'Add numbered item'},
     content: [
         {
             contentType: ContentType.Text,
@@ -127,7 +138,7 @@ By default, the [isChecked](https://ej2.syncfusion.com/angular/documentation/api
 The [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a checklist is `Todo`.
 
 ```typescript
-// Adding a placeholder value 
+// Adding a custom placeholder
 {
     blockType: 'Checklist',
     properties: { placeholder: 'check'},

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in React Block Editor component | Syncfusion
-description: Checkout and learn about Drag and drop with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in React Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the React Block Editor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Drag and drop in the React Block Editor component
+# Drag and Drop in React Block Editor
 
 The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
 
@@ -16,9 +16,7 @@ The drag and drop feature in the Block Editor allows users to intuitively rearra
 
 You can control the drag and drop functionality within the Block Editor using the [enableDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#enabledraganddrop) property. This feature is enabled by default (`true`).
 
-When drag and drop is enabled, users can rearrange blocks in the following ways:
-
-The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
+When drag and drop is enabled, users can rearrange single or multiple blocks in the following ways:
 
 - **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
 
@@ -34,5 +32,5 @@ During the drag operation, a visual indicator will show precisely where the bloc
 {% include code-snippet/rich-text-editor-sdk/react/block-editor/drag-drop/app/index.tsx %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/block-editor/drag-drop" %}

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Image in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Image in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Insert Images in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to insert and manage images in the ASP.NET Core Rich Text Editor with uploads, resizing, alignment, captions, storage, and File Manager support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Image
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Images in ASP.NET Core Rich Text Editor Control
+# Insert Images in ASP.NET Core Rich Text Editor
 
 Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings)
 
@@ -111,7 +110,7 @@ Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetco
 
 You can use the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings) property, to specify the server handler to upload the selected image. Then by binding the [ImageUploadSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
-Refer the section [Rename images before inserting it in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
+Refer the section [Rename images before inserting it in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
 
 ### Secure Image Upload with Authentication
 

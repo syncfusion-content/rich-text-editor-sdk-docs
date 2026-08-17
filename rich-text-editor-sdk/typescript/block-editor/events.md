@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Events in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Events with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Events in TypeScript Block Editor | Syncfusion
+description: Learn how to handle events in the TypeScript Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Events in TypeScript Block Editor control
+# Events in TypeScript Block Editor
 
 The Block Editor control provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 
@@ -31,7 +30,7 @@ The [blockChanged](https://ej2.syncfusion.com/documentation/api/blockeditor/inde
 
 ```typescript
 const editor = new BlockEditor({
-    contentChanged: (args: BlockChangedEventArgs) => {
+    blockChanged: (args: BlockChangedEventArgs) => {
         // You may implement auto-save functionality
     }
 });
@@ -68,7 +67,7 @@ The [blockDragging](https://ej2.syncfusion.com/documentation/api/blockeditor/ind
 
 ```typescript
 const editor = new BlockEditor({
-    blockDrag: (args: BlockDraggingEventArgs) => {
+    blockDragging: (args: BlockDraggingEventArgs) => {
         // You may trigger custom actions during a block drag operation based on the current position
     }
 });
@@ -80,7 +79,7 @@ The [blockDropped](https://ej2.syncfusion.com/documentation/api/blockeditor/inde
 
 ```typescript
 const editor = new BlockEditor({
-    blockDrop: (args: BlockDroppedEventArgs) => {
+    blockDropped: (args: BlockDroppedEventArgs) => {
         // You may trigger custom actions when blocks are dropped
     }
 });
@@ -116,7 +115,7 @@ The [beforePasteCleanup](https://ej2.syncfusion.com/documentation/api/blockedito
 
 ```typescript
 const editor = new BlockEditor({
-    beforePaste: (args: BeforePasteCleanupEventArgs) => {
+    beforePasteCleanup: (args: BeforePasteCleanupEventArgs) => {
         // You may cancel paste if content contains restricted elements
     }
 });
@@ -128,7 +127,7 @@ The [afterPasteCleanup](https://ej2.syncfusion.com/documentation/api/blockeditor
 
 ```typescript
 const editor = new BlockEditor({
-    afterPaste: (args: AfterPasteCleanupEventArgs) => {
+    afterPasteCleanup: (args: AfterPasteCleanupEventArgs) => {
         // Process pasted content or update UI
     }
 });

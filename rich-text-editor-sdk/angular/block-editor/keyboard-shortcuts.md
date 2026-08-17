@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Keyboard Shortcuts in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Keyboard Shortcuts with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in Angular Block Editor | Syncfusion
+description: Learn the keyboard shortcuts available in the Angular Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Shortcuts in Angular Block Editor component
+# Keyboard Shortcuts in Angular Block Editor
 
 The Block Editor component provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 
 ## Content editing and formatting
 
-These keyboard shortcuts allow for quick access to content editing features like bold, italic, and text formatting options.
+These shortcuts cover inline text formatting and link insertion for the currently selected content:
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -26,7 +26,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 
 ## Block creation and management
 
-These shortcuts enable quick creation of different block types and management of existing blocks.
+These shortcuts create new blocks of a specific type at the current cursor position, or insert them as a sibling block:
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -44,10 +44,9 @@ These shortcuts enable quick creation of different block types and management of
 | Insert Image | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>/</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>/</kbd> |
 | Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> |<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
 
-## Block level actions
+## Block-level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement. Both keyboard chords are supported for indent and outdent — <kbd>Ctrl</kbd> + <kbd>]</kbd> / <kbd>Ctrl</kbd> + <kbd>[</kbd> and <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> all produce the same result:
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -60,7 +59,7 @@ These shortcuts provide quick access to block-specific actions like duplication,
 
 ## General editor operations
 
-These shortcuts cover general editor functionality including undo/redo operations and clipboard actions.
+These shortcuts cover editor-wide actions such as undo/redo, the clipboard, and printing:
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -73,28 +72,28 @@ These shortcuts cover general editor functionality including undo/redo operation
 
 ## Customizing keyboard shortcuts
 
-You can customize shortcuts for menu-based actions, such as the `Slash Command Menu`, `Block Action Menu`, and `Context Menu`, by modifying the `shortcut` property in their respective menu settings.
+You can customize shortcuts in two ways:
 
-For other operations, you can customize the keyboard shortcuts by configuring the [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#keyconfig) property when initializing the Block Editor component. This allows you to override default shortcuts or add new ones according to your application's requirements.
+* **Menu-based actions** — slash command, block action, and context menu items each expose a `shortcut` property in their respective settings models (for example, `commandMenuSettings`).
+* **Editor-level actions** — bold, italic, undo, redo, and other core actions are configured through the editor's [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#keyconfig) property. Pass a map from action name to a shortcut string (for example `'alt+b'`) to override the default or add a new binding.
 
-In the example below, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
+The example below overrides **Bold** to <kbd>Alt</kbd> + <kbd>B</kbd> and **Italic** to <kbd>Alt</kbd> + <kbd>I</kbd>:
 
 ```typescript
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 
 @Component({
-    imports: [ BlockEditorModule ],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <ejs-blockeditor [keyConfig]="keyConfig" />
-    </div>`
+    template: `
+        <div class="container" style="margin: 50px;">
+            <ejs-blockeditor [keyConfig]="keyConfig" />
+        </div>`
 })
-
 export class AppComponent {
-    keyConfig = {
+    public keyConfig = {
         bold: 'alt+b',
         italic: 'alt+i'
     };

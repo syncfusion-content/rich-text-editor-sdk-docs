@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Markdown Editor Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Markdown Editor control of Essential JS 2 and more details.
-platform: rich-text-editor-sdk
+title: Getting Started with ASP.NET Core Markdown Editor | Syncfusion
+description: Learn how to get started with ASP.NET Core Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 control: Markdown Editor
-publishingplatform: rich-text-editor-sdk
+platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Markdown Editor Control
+# Getting Started with ASP.NET Core Markdown Editor
 
 The [ASP.NET Core Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor)is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET Core Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -104,9 +103,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/Forums#/bootstrap5)
-4. [How to change the editor type](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/editor-types/editor-mode)
-5. [How to render the iframe](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/editor-types/iframe)
-6. [Accessibility in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/accessibility)
-7. [Keyboard support in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/keyboard-support)
-8. [Globalization in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/globalization)
+3. [Blog posting using Rich Text Editor](https://ej2aspnetcore-prod.azurewebsites.net/aspnetcore/richtexteditor/forums#/fluent2)
+4. [How to change the editor type](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/editor-types/editor-mode)
+5. [How to render the iframe](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/editor-types/iframe)
+6. [Accessibility in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/accessibility)
+7. [Keyboard support in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/keyboard-support)
+8. [Globalization in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/globalization)

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Appearance in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about appearance with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in TypeScript Block Editor | Syncfusion
+description: Learn how to customize the TypeScript Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Appearance in TypeScript Block Editor control
+# Style and Appearance in TypeScript Block Editor
 
 The Block Editor control provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 
@@ -30,7 +29,7 @@ const editor = new BlockEditor({
 });
 ```
 
-## Setting readonly mode
+## Setting read-only mode
 
 You can utilize the [readOnly](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 

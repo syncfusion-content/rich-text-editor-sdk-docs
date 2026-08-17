@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accessibility in React Block Editor component | Syncfusion
-description:  Checkout and learn about Accessibility with React Block Editor component of Syncfusion Essential JS 2 and more details.
+title: Accessibility in React Block Editor | Syncfusion
+description: Learn about accessibility in the React Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in React Block Editor component
+# Accessibility in React Block Editor
 
-The Block Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Block Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Block Editor component is outlined below.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the Block Editor component is outlined below.
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are recommended for the Block Editor to improve discoverability and operable by assistive technologies.
+The following ARIA attributes are recommended for the Block Editor to improve discoverability and operability by assistive technologies.
 
 | Attribute | Purpose |
 |---|---|
@@ -56,7 +56,7 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 
 ## Keyboard interaction
 
-The Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
+The Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
 
 For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/react/documentation/block-editor/keyboard-shortcuts) documentation.
 

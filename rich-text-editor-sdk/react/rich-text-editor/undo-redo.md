@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo and Redo in React Rich Text Editor component | Syncfusion
-description: Learn how to use and customize Undo and Redo features in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Undo redo 
+title: Undo and Redo in React Rich Text Editor | Syncfusion
+description: Learn how to use Undo and Redo in the React Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo and Redo in the React Rich Text Editor Component
+# Undo and Redo in React Rich Text Editor
 
 The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 
@@ -25,7 +25,7 @@ By default, the time interval for storing Undo/Redo actions is 300 milliseconds.
 
 ## Configuring Undo/Redo steps
 
-The [undoRedoSteps](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#undoredosteps) property defines the maximum number of Undo/Redo actions stored, allows up to 30.
+The [undoRedoSteps](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#undoredosteps) property defines the maximum number of Undo/Redo actions stored, allowing up to 30.
 
 Here's an example of how to customize both the Undo/Redo timer and steps:
 
@@ -59,7 +59,7 @@ Here's an example of how to customize both the Undo/Redo timer and steps:
 
 The Rich Text Editor automatically maintains an undo/redo stack, allowing users to revert or redo changes made during editing.
 
-To clear the entire undo and redo stack, use the public [clearUndoRedo](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#clearUndoRedo) method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
+To clear the entire undo and redo stack, use the public [clearUndoRedo](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#clearundoredo) method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
 
 The following example demonstrates clearing the stack:
 

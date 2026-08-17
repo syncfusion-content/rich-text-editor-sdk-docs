@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Using Format Painter in Blazor RichTextEditor | Syncfusion®
-description: Checkout and learn here all about Format Painter in Blazor Rich Text Editor component with examples and much more details.
+title: Format Painter in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to use the Blazor Rich Text Editor Format Painter to copy and apply formatting, customize formats, and use shortcuts.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
@@ -55,7 +55,7 @@ Below is an example illustrating how to define the `AllowedFormats` and `DeniedF
 
 ### Shortcut keys for copy and paste format
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support) documentation.
+For more details on keyboard navigation, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support) documentation.
 
 N> The Format Painter retains formatting after application, allowing you to apply the same styles multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 

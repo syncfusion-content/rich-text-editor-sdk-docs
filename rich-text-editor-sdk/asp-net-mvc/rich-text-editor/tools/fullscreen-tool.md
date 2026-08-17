@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Fullscreen Mode in ASP.NET MVC Rich Text Editor Control | Syncfusion
-description: Learn here all about Fullscreen Mode in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Fullscreen Mode in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to enable fullscreen mode in the ASP.NET MVC Rich Text Editor for distraction-free editing and an expanded content editing workspace.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Fullscreen Mode
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Fullscreen Mode in ASP.NET MVC Rich Text Editor Control
+# Fullscreen Mode in ASP.NET MVC Rich Text Editor
 
 The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 

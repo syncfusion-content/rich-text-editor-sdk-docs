@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Slash Menu in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Slash Menu in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Slash Commands in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to use slash commands in the TypeScript Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Slash Menu
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Slash Commands in TypeScript Rich text editor control
+# Slash Commands in TypeScript Rich Text Editor
 
 The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 

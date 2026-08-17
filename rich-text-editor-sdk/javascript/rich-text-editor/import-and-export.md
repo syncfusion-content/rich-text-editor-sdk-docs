@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Import/Export in JavaScript Rich Text Editor | Syncfusion
-description: Learn here all about Content Import/Export in Syncfusion JavaScript Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title:  Import and Export Content in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in JavaScript applications.
 platform: rich-text-editor-sdk
-control: IContent Import/Export
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Content Import/Export in JavaScript Rich Text Editor control
+# Import and Export Content in JavaScript Rich Text Editor
 
 ## Importing content from Microsoft Word
 

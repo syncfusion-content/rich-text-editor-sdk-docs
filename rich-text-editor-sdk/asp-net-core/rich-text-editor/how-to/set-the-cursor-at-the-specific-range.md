@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Set The Cursor At The Specific Range in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Set The Cursor At The Specific Range in Syncfusion ASP.NET Core Rich Text Editor component of syncfusion and more.
+title: Set Cursor Position in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to set the cursor position at a specific range in the ASP.NET Core Rich Text Editor using the NodeSelection and setRange methods.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Set The Cursor At The Specific Range
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Set the cursor at the specific range
+# Set Cursor Position by Range in ASP.NET Core Rich Text Editor
 
 This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, we have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
 
