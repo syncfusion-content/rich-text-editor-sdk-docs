@@ -130,9 +130,7 @@ If you do not want telemetry to be collected during development, disable it befo
 If you are using npm packages and ES module imports, call `Telemetry.disable()` from `@syncfusion/ej2-base` before creating the editor.
 
 ```typescript
-import {
-  RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar
-} from '@syncfusion/ej2-react-richtexteditor';
+import { RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 import { Telemetry } from '@syncfusion/ej2-base';
 
 Telemetry.disable();
@@ -154,9 +152,7 @@ export default function App() {
 If you prefer per-component control, pass the `disableTelemetry` prop on the editor instance. The prop is applied at the component level and works the same in Vite, Next.js, Gatsby, and Remix projects.
 
 ```typescript
-import {
-  RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar
-} from '@syncfusion/ej2-react-richtexteditor';
+import { RichTextEditorComponent, Inject, Toolbar, Image, Link, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 export default function App() {
   return (
