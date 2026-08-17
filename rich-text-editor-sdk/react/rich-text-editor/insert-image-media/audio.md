@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Insert Audio in React Rich Text Editor
 
-The Rich Text Editor enables insertion of audio files from online sources or local machines. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
+The Rich Text Editor enables insertion of audio files from online sources or local machines. You can insert audio with the following options using the [insertAudioSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 
 ## Configuring the audio toolbar item
 
@@ -50,7 +50,7 @@ The following example demonstrates configuring the audio toolbar item:
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
-> By default, the `saveFormat` is set to `Blob`.
+> By default, `saveFormat` is set to `Blob`.
 
 ```html
 
@@ -66,11 +66,11 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 ## Inserting audio
 
-You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
+You can insert audio from either a hosted link or a local machine by clicking the audio button in the editor's toolbar. A dialog opens allowing you to insert audio from a web URL or upload from your device.
 
 ### Inserting audio from web URLs
 
-By default, the audio toolbar item opens a dialog for inserting audio from an online source. Entering a valid URL will be added to the `src` attribute of the `<source>` tag.
+By default, the audio toolbar item opens a dialog for inserting audio from an online source. Entering a valid URL adds it to the `src` attribute of the `<source>` tag.
 
 ![React Rich Text Editor Audio insert](../images/react-richtexteditor-audio-web.png)
 
@@ -82,7 +82,7 @@ If the [insertAudioSettings.path](https://ej2.syncfusion.com/react/documentation
 
 ## Maximum file size restriction
 
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict audio uploads from your local machine using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB).
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
@@ -145,11 +145,14 @@ export default App;
 
 ## Saving audio to the server
 
-[saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#saveformat) sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
+### Configuration properties
 
-[saveUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#saveurl) provides URL to map the action result method to save the audio.
-
-[removeUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#removeurl) provides URL to map the action result method to remove the audio.
+| Property | Description |
+|----------|-------------|
+| [saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#saveformat) | Sets the default save format when audio is inserted (`Blob` or `Base64`) |
+| [saveUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#saveurl) | URL endpoint that receives the audio file for server-side processing |
+| [removeUrl](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettings#removeurl) | URL endpoint for deleting audio files from the server |
+| [path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/audiosettingsmodel#path) | Destination path on server where audio files are stored |
 
 ### Server-side action
 
@@ -321,7 +324,7 @@ class App extends React.Component<{},{}> {
     return (
       <RichTextEditorComponent height={450} toolbarSettings={this.toolbarSettings} fileUploadSuccess={this.onFileUploadSuccess} insertAudioSettings={this.insertAudioSettings} >
         <Inject services={[Toolbar, Audio, Link, HtmlEditor, QuickToolbar]} />
-        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup value">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown value">markdown</a> of the content</p>
       </RichTextEditorComponent>
     );
   }
@@ -359,7 +362,7 @@ function App (){
   return (
     <RichTextEditorComponent height={450} toolbarSettings={toolbarSettings} fileUploadSuccess={this.onFileUploadSuccess} insertAudioSettings={insertAudioSettings} >
       <Inject services={[Toolbar, Audio, Link, HtmlEditor, QuickToolbar]} />
-      <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+      <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank"  aria-label="HTML markup value">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank"  aria-label="markdown value">markdown</a> of the content</p>
     </RichTextEditorComponent>
   );
 }
