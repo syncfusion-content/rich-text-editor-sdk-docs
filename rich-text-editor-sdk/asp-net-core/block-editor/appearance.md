@@ -13,7 +13,7 @@ The Block Editor control provides various appearance customization options to ma
 
 ## Setting width and height
 
-You can specify the width and height for the Block Editor control using the [Width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Width) and [Height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Height) properties.
+You can specify the width and height for the Block Editor control using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Width) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Height) properties.
 
 ```cshtml
 
@@ -30,9 +30,7 @@ You can specify the width and height for the Block Editor control using the [Wid
 
 ## Setting readonly mode
 
-You can utilize the [ReadOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
-
-For comprehensive documentation on read-only mode, see [Read-Only Mode](editor-security/read-only-mode).
+You can utilize the [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
 ```cshtml
 
@@ -44,25 +42,7 @@ For comprehensive documentation on read-only mode, see [Read-Only Mode](editor-s
 
 ## Customization using CSS Class
 
-You can use the [CssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property to customize the appearance of the Block Editor control by applying your own CSS styles.
-
-**Example CSS definition:**
-
-```css
-.custom-editor-theme {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.custom-editor-theme .e-block {
-    margin-bottom: 12px;
-}
-```
-
-**Block Editor markup:**
+You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property to customize the appearance of the Block Editor control.
 
 ```cshtml
 

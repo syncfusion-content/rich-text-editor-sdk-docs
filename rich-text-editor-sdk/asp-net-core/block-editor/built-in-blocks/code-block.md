@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 
 # Code Blocks in ASP.NET Core Block Editor
 
-You can render code blocks by setting the `blockType` property to `Code`. Use the `properties` property on the block model to configure the default language for an individual code block. The default language is `plaintext`.
+You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 
 ## Global Code Settings
 
@@ -29,19 +29,19 @@ Each language object in the `languages` array should have:
 
 ## Configure code properties
 
-For individual code blocks, you can configure the default language using the `properties` property in the block model.
+For Individual Code blocks, you can configure default language using the `properties` property in the block model.
 
 The property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| `language` | The default language to use for syntax highlighting | `''` |
+| language | The default language to use for syntax highlighting | '' |
 
-The example below illustrates how to render the code block in the Block Editor.
+Below example illustrates how to render the code block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/code-block/tagHelper %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Code.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/code-block/code.cs %}

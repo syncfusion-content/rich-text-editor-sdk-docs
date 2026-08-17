@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 
 # Image Blocks in ASP.NET Core Block Editor
 
-Block Editor supports adding embeds to help you organize, showcase contents and format your content effectively.
+Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
 
 ## Adding an image block
 
@@ -49,7 +49,7 @@ You can restrict the image uploaded from the local machine when the uploaded ima
 {% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
 <div id='blockeditor-container'>
     <ejs-blockeditor height="300px" id="block-editor">
-        <e-blockeditor-imagesettings maxFileSize="10000000"></e-blockeditor-imagesettings>
+        <e-blockeditor-imagesettings maxFileSize=10000000></e-blockeditor-imagesettings>
     </ejs-blockeditor>
 </div>
 ....
@@ -59,7 +59,7 @@ You can restrict the image uploaded from the local machine when the uploaded ima
 
 #### Configuring allowed image types
 
-You can allow specific image types to be uploaded using the `allowedTypes` property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure these formats as follows.
+You can allow the specific images alone to be uploaded using the the allowedTypes property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure this formats as follows.
 
 {% tabs %}
 {% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
@@ -102,21 +102,21 @@ The `Image` block `properties` property in the block model supports the followin
 
 The following example demonstrates how to pre-configure an `Image` block in the editor.
 
-```csharp
+```typescript
 // Adding image block
-{
+ {
     blockType = "Image",
     properties = new
     {
         src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
-        width = "200px",
-        height = "100px",
-        altText = "",
+        width = '200px',
+        height = '100px',
+        altText = '',
     }
 }
 ```
 
-The sample below demonstrates the configuration of image block in the Block Editor.
+The below sample demonstrates the configuration of image block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,7 +135,7 @@ To insert an image from your local machine, render the `Image` block. It opens a
 
 ## Saving images to server
 
-Upload the selected image to a specified destination using the controller action specified in `imageBlockSettings.saveUrl`. Ensure to map this method name appropriately and provide the required destination path through the `imageBlockSettings.path` property.
+Upload the selected image to a specified destination using the controller action specified in `imageBlockSettings.saveUrl`. Ensure to map this method name appropriately and provide the required destination path through the `imageBlockSettings.path` properties.
 
 Set the `imageBlockSettings.saveFormat` property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
@@ -152,7 +152,7 @@ Set the `imageBlockSettings.saveFormat` property to determine whether the image 
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `fileUploading` event and its arguments, you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `fileUploading` event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

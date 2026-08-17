@@ -13,29 +13,11 @@ The drag and drop feature in Block Editor allows users to easily rearrange block
 
 ## Enable Drag and Drop
 
-You can control drag-and-drop operations within Block Editor using the [EnableDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableDragAndDrop) property. By default, it is set to `true`.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" enableDragAndDrop="true"></ejs-blockeditor>
-</div>
-
-```
-
-To disable drag-and-drop, set the property to `false`:
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" enableDragAndDrop="false"></ejs-blockeditor>
-</div>
-
-```
+You can control drag and drop operations within Block Editor using the [enableDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableDragAndDrop) property. By default, it is set to `true`.
 
 ## Dragging blocks
 
-When drag-and-drop is enabled, users can rearrange blocks in the following ways:
+When drag and drop is enabled, users can rearrange blocks in the following ways:
 
 The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
 
