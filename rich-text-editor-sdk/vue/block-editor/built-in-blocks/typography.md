@@ -32,7 +32,7 @@ Paragraph blocks are the most common type, used for standard text content. They 
 }
 ```
 
-The below sample demonstrates the configuration of paragraph block in the Block Editor.
+The sample below demonstrates the configuration of the paragraph block in the Block Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -59,7 +59,7 @@ You can configure placeholder text for block using the [placeholder](https://ej2
 }
 ```
 
-The below sample demonstrates the configuration of placeholder in the Block Editor for the paragraph block.
+The sample below demonstrates the configuration of the placeholder in the Block Editor for the paragraph block.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -74,11 +74,11 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property to `Heading`.
+Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property to `Heading1`, `Heading2`, `Heading3`, or `Heading4`, depending on the desired heading level.
 
 ### Configure levels
 
-By using the [properties](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#properties), you can set the heading level using the `level` property, with `1` being the highest level (title) and `4` being the lowest (subsection).
+The heading level is determined by the `blockType` value: `Heading1` is the highest level (title) and `Heading4` is the lowest (subsection).
 
 ### Block type & properties
 
@@ -97,7 +97,7 @@ By using the [properties](https://ej2.syncfusion.com/vue/documentation/api/block
 }
 ```
 
-The below sample demonstrates the configuration of heading block in the Block Editor.
+The sample below demonstrates the configuration of the heading block in the Block Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -112,7 +112,7 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading {level}`.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -129,29 +129,33 @@ You can configure placeholder text for block using the [placeholder](https://ej2
 
 A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
 
-	### Block type & properties
+### Block type & properties
 
 ```typescript
 // Adding divider block
-{
+[
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            {
+                contentType: 'Text',
+                content: 'This is paragraph 1.'
+            }
         ]
     },
     {
-        blockType: 'Divider' 
+        blockType: 'Divider'
     },
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            {
+                contentType: 'Text',
+                content: 'This is paragraph 2.'
+            }
         ]
     }
-}
+]
 ```
 
 This sample shows how to place a divider between two blocks.
