@@ -67,7 +67,7 @@ body {
 
 /* THEME 1 */
 .theme1.e-rte-toolbar .e-icons {
-    --color-sf-content-text-color: #ff3d8b;
+    --color-sf-content-text-color: #f1deef;
 }
 
 .theme1.e-rte-dropdown-menu {
@@ -141,7 +141,7 @@ body {
 
     /* Primary button (Insert Link, etc.) */
     --color-sf-primary: #CFC7B8;
-    --color-sf-primary-text: #FFFFFF;
+    --color-sf-primary-text: #323437;
     --color-sf-primary-bg-color: #E2B714;
     --color-sf-primary-border-color: #E2B714;
     --color-sf-primary-bg-color-hover: #C89F12;
@@ -199,7 +199,7 @@ body {
 .theme3.e-richtexteditor {
     /* insertlink button */
     --color-sf-primary: #d1d0c5;
-    --color-sf-primary-text: #fff;
+    --color-sf-primary-text: #2c2e31;
     /* --color-sf-primary-text:red;  */
     /* --color-sf-primary-text-hover:red; */
     --color-sf-primary-bg-color: #e2b714;

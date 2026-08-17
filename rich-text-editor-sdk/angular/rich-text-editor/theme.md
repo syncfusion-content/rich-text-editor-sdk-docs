@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Themes in TypeScript Rich Text Editor | Syncfusion
-description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2 
+title: Customize Themes in Angular Rich Text Editor | Syncfusion
+description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -34,33 +34,35 @@ N> Custom CSS variable overrides must be declared **after** the theme stylesheet
 
 The following example demonstrates custom theme variants for the Rich Text Editor using CSS variable overrides.
 
-{% if page.publishingplatform == "typescript" %}
+{% if page.publishingplatform == "angular" %}
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.ts %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/theme/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.html %}
+{% highlight css tabtitle="app.style.css" %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/theme/src/app.style.css %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.css %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/theme/src/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/theme/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/angular/rich-text-editor/theme" %}
 
 ## Switching Themes
 
-The Rich Text Editor supports dynamic theme switching at runtime by updating the `cssClass` property and calling `dataBind()`. This enables theme changes without reinitializing the component, making it suitable for user-driven theme selection such as a theme picker.
+The Rich Text Editor supports dynamic theme switching at runtime by updating the `cssClass` property. This enables theme changes without reinitializing the component, making it suitable for user-driven theme selection such as a theme picker.
 
-T> Theme switching is a two-step operation. After updating the `cssClass` property, `dataBind()` must be called to apply the change to the editor's DOM.
+T> In Angular, theme switching is handled by updating the `cssClass` property on the component reference. Angular's change detection automatically reflects the updated class in the editor's DOM.
 
 {% highlight ts hl_lines="1 2" %}
-rte.cssClass = 'custom ' + theme;
-rte.dataBind();
+this.rteObj.cssClass = 'custom ' + theme;
 {% endhighlight %}
 
 ### Theme Variable Reference

@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Customize Themes in TypeScript Rich Text Editor | Syncfusion
+title: Customize Themes in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Customize Themes
@@ -34,23 +33,37 @@ N> Custom CSS variable overrides must be declared **after** the theme stylesheet
 
 The following example demonstrates custom theme variants for the Rich Text Editor using CSS variable overrides.
 
-{% if page.publishingplatform == "typescript" %}
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.ts %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/tagHelper %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.html %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/controller.cs %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.css %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/controller.cs %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme" %}
 
 ## Switching Themes
 

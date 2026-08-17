@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Themes in TypeScript Rich Text Editor | Syncfusion
-description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2 
+title: Customize Themes in Vue Rich Text Editor | Syncfusion
+description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -34,33 +34,25 @@ N> Custom CSS variable overrides must be declared **after** the theme stylesheet
 
 The following example demonstrates custom theme variants for the Rich Text Editor using CSS variable overrides.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.ts %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/theme/app-composition.vue %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes/index.css %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/theme/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
-{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/themes" %}
+{% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/theme" %}
 
 ## Switching Themes
 
-The Rich Text Editor supports dynamic theme switching at runtime by updating the `cssClass` property and calling `dataBind()`. This enables theme changes without reinitializing the component, making it suitable for user-driven theme selection such as a theme picker.
+The Rich Text Editor supports dynamic theme switching at runtime by updating the `cssClass` property. This enables theme changes without reinitializing the component, making it suitable for user-driven theme selection such as a theme picker.
 
-T> Theme switching is a two-step operation. After updating the `cssClass` property, `dataBind()` must be called to apply the change to the editor's DOM.
+T> In Vue, theme switching is handled by binding the `cssClass` property to a reactive value. Vue's reactivity automatically reflects the updated class in the editor's DOM.
 
-{% highlight ts hl_lines="1 2" %}
-rte.cssClass = 'custom ' + theme;
-rte.dataBind();
+{% highlight html hl_lines="1 2" %}
+<ejs-richtexteditor :cssClass="cssClass"></ejs-richtexteditor>
 {% endhighlight %}
 
 ### Theme Variable Reference

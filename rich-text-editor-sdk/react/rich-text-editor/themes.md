@@ -2,7 +2,7 @@
 layout: post
 title: Customize Themes in React Rich Text Editor | Syncfusion
 description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2 React Rich Text Editor control using CSS variables and dynamic theme switching.
-control: Rich Text Editor Themes
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
