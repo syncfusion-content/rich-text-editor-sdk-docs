@@ -10,11 +10,18 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Cross-Site scripting(XSS) prevention in Vue Block Editor component
 
-The Block Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
+The Block Editor lets users edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements and attributes from the editor content that could be used to execute a script.
 
 ## Enabling XSS prevention
 
-The [enableHtmlSanitizer](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enablehtmlsanitizer), enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
+The [enableHtmlSanitizer](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enablehtmlsanitizer) property controls XSS prevention and is `true` (enabled) by default. When active, the editor automatically removes disallowed elements, such as `<script>`, and disallowed attributes, such as `onmouseover`, from the content.
+
+```typescript
+enableHtmlSanitizer: true
+```
+
+> **Note:** Disabling `enableHtmlSanitizer` (setting it to `false`) removes this protection and can expose your application to XSS attacks. Only disable it if you sanitize content through another trusted mechanism.
+
 The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:
 
 {% tabs %}
