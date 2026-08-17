@@ -394,7 +394,7 @@ Imports a previously exported snapshot back into the version history storage.
 
 ### Events
 
-Use the following event callbacks in `versionHistory` settings to respond to snapshot lifecycle events.
+Use the following event callbacks in `versionHistory` settings to respond to snapshot life cycle events.
 
 #### snapshotCreated
 
