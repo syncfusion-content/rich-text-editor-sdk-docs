@@ -9,7 +9,7 @@ documentation: ug
 
 # Accessibility in ASP.NET Core Block Editor
 
-The Block Editor control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Block Editor control follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Block Editor control is outlined below.
 
@@ -54,11 +54,23 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 | `aria-haspopup` / `aria-expanded` | Used by menus and popups (command/context/action menus). `aria-expanded` reflects open/closed state. |
 | `aria-hidden` | Hides non-interactive or offscreen content (e.g., closed popups) from assistive technologies. |
 
+## Implementing accessibility
+
+To ensure accessibility, apply appropriate ARIA attributes and ensure proper labeling in your Block Editor implementation. See the following example:
+
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor" aria-label="Content editor" aria-disabled="false"></ejs-blockeditor>
+</div>
+
+```
+
 ## Keyboard interaction
 
-The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
+The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, enabling easy use for people with assistive technologies or those relying on keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/aspnetcore/documentation/block-editor/keyboard-shortcuts)
+For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/aspnetcore/documentation/block-editor/keyboard-shortcuts) documentation.
 
 ## Ensuring accessibility
 
