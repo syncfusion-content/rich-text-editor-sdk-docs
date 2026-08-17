@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Browser Support for React Rich Text Editor SDK | Syncfusion
-description: Learn about browser support and required polyfills for the Syncfusion React Rich Text Editor SDK, including CDN and Node.js setup for IE 11.
+title: Browser Support for Rich Text Editor SDK | Syncfusion
+description: Learn about browser support and required polyfills for the Syncfusion Rich Text Editor SDK, including CDN and Node.js setup for IE 11.
 platform: rich-text-editor-sdk
 control: Browser Support
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Browser support for the React Rich Text Editor SDK
+# Browser support for the Rich Text Editor SDK
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK is supported in all modern browsers. The following table lists the supported browser families for the React Rich Text Editor, Block Editor, and Markdown Editor components.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor SDK is supported in all modern browsers. The following table lists the supported browser families for the Rich Text Editor, Block Editor, and Markdown Editor components.
 
 | Browser | Supported versions |
 |---|---|
@@ -26,7 +26,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor SDK 
 
 ## Required polyfills
 
-The following polyfills are required to run the React Rich Text Editor in certain browsers:
+The following polyfills are required to run the Rich Text Editor in certain browsers:
 
 | Browser | Required polyfills |
 |---:|:---|
@@ -49,7 +49,7 @@ To include the ES6 Promise polyfill via CDN, add one of the following `<script>`
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 ```
 
-In a Vite / CRA / Next.js app, add the script tag to the top of `public/index.html` (CRA) or to your root layout (`<head>` in App Router) so it is present before the React Rich Text Editor module loads.
+In a Vite / CRA / Next.js app, add the script tag to the top of `public/index.html` (CRA) or to your root layout (`<head>` in App Router) so it is present before the Rich Text Editor module loads.
 
 ## Node.js
 
@@ -74,5 +74,5 @@ For more details, refer to the polyfill project: https://github.com/stefanpenner
 ## See also
 
 * [System requirements](./system-requirements)
-* [Quick Start for React Rich Text Editor](../react/rich-text-editor/getting-started)
-* [Version compatibility for React Rich Text Editor SDK](./version-compatibility)
+* [Quick Start for Rich Text Editor](../react/rich-text-editor/quick-start)
+* [Version compatibility for Rich Text Editor SDK](./version-compatibility)
