@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Customize Placeholder Text Style in React Rich Text Editor
 
-By using `e-rte-placeholder` class, you can customize the placeholder style.
+By using the `e-rte-placeholder` class, you can customize the placeholder style.
 
 `[Class-component]`
 
