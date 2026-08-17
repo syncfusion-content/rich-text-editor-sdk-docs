@@ -10,11 +10,20 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Resizable Editor in React Rich Text Editor
 
-The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 
-> To use the Resizable feature, inject resize module using the `RichTextEditor.Inject(Resize)`.
+The resizable editor feature allows users to dynamically resize the editor. When enabled, a resize handle appears at the bottom right corner for intuitive diagonal resizing.
 
-The following sample demonstrates enabling the resizable feature:
+### Setup
+
+To use the resizable feature, import and inject the `Resize` module:
+
+```tsx
+import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Resize } from '@syncfusion/ej2-react-richtexteditor';
+
+<RichTextEditorComponent enableResize={true}>
+  <Inject services={[HtmlEditor, Toolbar, Resize]} />
+</RichTextEditorComponent>
+```
 
 `[Class-component]`
 
@@ -50,15 +59,13 @@ By default, the control resizes up to the current viewport size. Apply these sty
 
 For example, add the following to the `app.component.css` file:
 
-```CSS
-
+```css
 .e-richtexteditor {
   max-width: 880px;
   min-width: 250px;
   min-height: 250px;
   max-height: 400px;
 }
-
 ```
 
 `[Class-component]`
@@ -85,7 +92,7 @@ For example, add the following to the `app.component.css` file:
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/resizable-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/resizable-cs2" %}
 
 
 ## See also
