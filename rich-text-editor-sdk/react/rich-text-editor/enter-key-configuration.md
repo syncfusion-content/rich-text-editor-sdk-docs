@@ -53,7 +53,7 @@ When you customize the Enter key, the editor will create the specified tag when 
 
 ## Shift+Enter key configuration
 
-By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [shiftEnterKey](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#shiftEnterkey) property.
+By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [shiftEnterKey](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#shiftenterkey) property.
 
 **Available Options**
 | Value | Description |

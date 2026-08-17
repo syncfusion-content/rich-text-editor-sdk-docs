@@ -79,10 +79,10 @@ These modules can be injected as `services` using Vue's `provide` function as de
 
 {% tabs %}
 {% highlight html hl_lines="9" tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/markdown-editor/vue/markdown-editor/getting-started-cs1/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/markdown-editor/getting-started-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html hl_lines="16 17 18" tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/markdown-editor/vue/markdown-editor/getting-started-cs1/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/markdown-editor/getting-started-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
