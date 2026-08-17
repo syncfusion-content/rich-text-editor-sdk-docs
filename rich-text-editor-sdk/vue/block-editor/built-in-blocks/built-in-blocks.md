@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Blocks in Vue Block Editor component
 
-The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#blocks) property.
+The Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#blocks) property.
 
 ## Blocks
 
@@ -35,7 +35,8 @@ The Block Editor supports multiple block types, each offering different formatti
 | Quote                                   | Styled block for quotations.                                                |
 | Callout                                 | Highlighted block for important information.                                |
 | Divider                                 | Horizontal separator line.                                                  |
-| CollapsibleParagraph and CollapsibleHeading1-4    | Content blocks that can be expanded or collapsed to show or hide their children. |
+| CollapsibleParagraph                    | Content block that can be expanded or collapsed to show or hide its children. |
+| CollapsibleHeading1 to CollapsibleHeading4 | Heading variants that can be expanded or collapsed to show or hide their children. |
 | Image                                   | Block for displaying images.                                                |
 | Template                                | Renders custom content using predefined templates, allowing for user-defined block structures. |
 
