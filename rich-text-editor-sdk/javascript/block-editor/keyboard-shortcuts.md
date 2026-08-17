@@ -14,7 +14,7 @@ The Block Editor control provides comprehensive keyboard shortcuts to enhance pr
 
 ## Content editing and formatting
 
-These keyboard shortcuts allow for quick access to content editing features like bold, italic, and text formatting options.
+Apply bold, italic, underline, and other text formatting with these shortcuts. These work when text is selected inside an editable region.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -26,7 +26,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 
 ## Block creation and management
 
-These shortcuts enable quick creation of different block types and management of existing blocks.
+Create and manage blocks quickly with these shortcuts. These work when the cursor is inside an empty block or at the start of a new line.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -42,12 +42,15 @@ These shortcuts enable quick creation of different block types and management of
 | Create Code Block | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>K</kbd> |
 | Create Callout | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>C</kbd> |
 | Insert Image | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>/</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>/</kbd> |
-| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> |<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
+| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+Apply block-specific actions such as duplication, deletion, indentation, and movement with these shortcuts.
+
+> **Note:** The following shortcuts support alternative key combinations:
+> - **Indent:** `Ctrl + ]` or `Tab`
+> - **Outdent:** `Ctrl + [` or `Shift + Tab`
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
