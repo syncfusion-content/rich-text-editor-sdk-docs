@@ -16,7 +16,7 @@ The Block Editor control provides several properties to customize its visual app
 
 You can specify the width and height for the Block Editor control using the [width](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#width) and [height](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#height) properties.
 
-Accept values in any valid CSS unit (px, %, vh, em). Recommended minimum dimensions: 300px width, 100px height for usability.
+Accept values in any valid CSS unit. Recommended minimum dimensions: 300px width, 100px height for usability.
 
 ```typescript
 // Responsive using viewport units
