@@ -65,7 +65,7 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 
 The link quick toolbar appears when you click on a link in the editor. You can customize its items using the `link` property in the  [quickToolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/quicktoolbarsettingsmodel#link).
 
-The Rich Text Editor provides essential tools in the link quick toolbar, including `Open`, `Edit`, and `UnLink`. You can also add a custom tool.
+The Rich Text Editor provides essential tools in the link quick toolbar, including `Open`, `Edit`, and `Remove`. You can also add a custom tool.
 
 The following example demonstrates how to customize the link quick toolbar using the [quickToolbarSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/quicktoolbarsettingsmodel#link) property.
 
