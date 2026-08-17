@@ -194,7 +194,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ## Font and background color
 
-You can add the `FontColor` and `BackgroundColor` tool s to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add the `FontColor` and `BackgroundColor` tools to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 `[Class-component]`
 
