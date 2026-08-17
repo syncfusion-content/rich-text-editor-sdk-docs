@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The following sample demonstrates how to get the Rich Text Editor value in button click.
 
-Render the Rich Text Editor in form.
+Render the Rich Text Editor in a form.
 
 ```ts
   <form id="myForm" class="form-vertical">
