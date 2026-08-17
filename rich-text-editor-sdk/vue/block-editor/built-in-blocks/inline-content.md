@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Inline Content in Vue Block Editor component
 
-In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
+In the Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#content) properties that define the text and functionality within that block.
 
 Each [contentModel](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contentmodel) is an object with properties such as [id](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#id), [contentType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contentmodel#contenttype), [content](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contentmodel#content), and [properties](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contentmodel#properties), allowing for granular control over its appearance and behavior.
 
@@ -84,7 +84,7 @@ To render labels, set the [contentType](https://ej2.syncfusion.com/vue/documenta
 
 ### Built-in items
 
-The Block Editor comes with offers different built-in options. These include:
+The Block Editor comes with different built-in options. These include:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
@@ -130,9 +130,9 @@ When users type the trigger character followed by text, a popup will appear show
 
 ### Using labels with group headers
 
-Labels with the same [groupBy](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/labelitemmodel#groupby) value will be grouped together in the label selection popup:
+Labels with the same [groupBy](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/labelitemmodel#groupby) value will be grouped together in the label selection popup. For example, setting `groupBy: 'Priority'` on the High, Medium, and Low label items displays them under a single "Priority" group heading in the popup.
 
-The below sample demonstrates the customization of labels in the Block Editor.
+The sample below demonstrates the customization of labels in the Block Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -154,7 +154,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 ### ContentType
 
 ```typescript
-// Adding inline code
+// Adding inline mention
 {
     blockType: 'Paragraph',
     content: [
@@ -197,7 +197,7 @@ The `styles` property supports the following options:
 | [subscript](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/stylemodel#subscript)               | Renders the text as subscript.             | `false`       |
 | [uppercase](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/stylemodel#uppercase)               | Converts the text to uppercase.            | `false`       |
 | [lowercase](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/stylemodel#lowercase)               | Converts the text to lowercase.            | `false`       |
-| [inlineCode](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/stylemodel#inlinecode)             | Converts the text to InlineCode.           | `false`          |
+| [inlineCode](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/stylemodel#inlinecode)             | Formats the text as inline code.           | `false`          |
 
 You can apply one or more of these styles to any supported content element for rich text formatting.
 
