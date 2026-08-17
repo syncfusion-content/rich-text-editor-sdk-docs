@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Block Editor - Theme Customization</h2>
+
+  <div class="theme-switcher">
+    <button
+      *ngFor="let theme of availableThemes"
+      [class.active]="currentTheme === theme.value"
+      (click)="applyTheme(theme.value)"
+      class="theme-button">
+      {{ theme.name }}
+    </button>
+  </div>
+
+  <ejs-blockeditor
+    id="blockeditor"
+    width="100%"
+    height="600px"
+    [blocks]="blockData"
+    [users]="users">
+  </ejs-blockeditor>
+</div>
