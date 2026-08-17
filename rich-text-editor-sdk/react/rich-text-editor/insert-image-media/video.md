@@ -58,7 +58,7 @@ The following example demonstrates configuring the `Video` toolbar item:
 
  {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/rich-text-editor/video-cs2" %}
 
-## Video Save Formats
+## Video save formats
 
 The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -76,11 +76,11 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 ```
 
-## Inserting Video
+## Inserting video
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Inserting Video from Embedded Code
+### Inserting video from embedded code
 
 The `Video` toolbar item opens a dialog with options to insert videos via an embedded code or web URL. The `Embedded code` option is selected by default, allowing insertion of embed codes from platforms like YouTube.
 
@@ -92,15 +92,15 @@ Switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a vi
 
 ![React Rich Text Editor Video insert](../images/react-richtexteditor-video-web.png)
 
-## Uploading Video from Local Machine
+## Uploading video from local machine
 
 The video dialog includes a `browse` option to select video files from a local machine and insert it into the Rich Text Editor content.
 
 If the [insertVideoSettings.path](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#insertvideosettings) is not specified, the video is converted to a `Blob` or `Base64` URL and inserted into the Rich Text Editor.
 
-## Restricting Maximum File Size
+## Restricting maximum file size
 
-You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes (approximately 300 MB).
+You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 
