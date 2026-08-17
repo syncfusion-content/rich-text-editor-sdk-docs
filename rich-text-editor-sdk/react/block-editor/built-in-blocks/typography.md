@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Typography Blocks in React Block Editor Component | Syncfusion
-description: Checkout and learn about Typography Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Text Block Types in React Block Editor | Syncfusion
+description: Learn how to configure text block types in the React Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in React Block Editor component
+# Text Block Types in React Block Editor
 
-Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
+Text block types are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 
 ## Configure paragraph block
 
@@ -111,7 +111,7 @@ The following sample demonstrates the configuration of a heading block in the Bl
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block follows the pattern `Heading` followed by the level number (e.g., `Heading1`, `Heading2`).
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -137,18 +137,23 @@ A Divider block inserts a horizontal line to separate content. Render it by sett
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            {
+                contentType: 'Text',
+                content: 'This is a paragraph 1.'
+            }
         ]
     },
     {
+        // Divider block separates content sections
         blockType: 'Divider' 
     },
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            {
+                contentType: 'Text',
+                content: 'This is a paragraph 2.'
+            }
         ]
     }
 }

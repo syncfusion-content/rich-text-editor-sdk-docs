@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Content in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Inline Content with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Inline Content in Angular Block Editor | Syncfusion
+description: Learn how to add inline content in Angular Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Content in Angular Block Editor component
+# Inline Content in Angular Block Editor
 
 In the Syncfusion Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#content) property that define the text and functionality within that block.
 
@@ -31,7 +31,7 @@ By default, the content type is `Text`.
 
 To configure text content, set the `contentType` property to `Text`. This is the default content type if none is specified.
 
-### ContentType 
+### Content type
 
 ```typescript
 // Adding inline text
@@ -52,13 +52,11 @@ To create a hyperlink, set the `contentType` property to `Link`. You can configu
 
 ### Configure link properties
 
-Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contentmodel#properties) property.
+You can configure a hyperlink's behavior through the content item's [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contentmodel#properties) object. The supported options are:
 
-Link settings accepts the following options:
-
-| Option                     | Description                                                       | Default Value |
-| -------------------------  | ----------------------------------------------------------------- | ------------- |
-|[url](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/ilinkcontentsettings#url)| Specifies the destination URL of the link.     | `''`          |
+| Property | Description | Default Value |
+|----------|-------------|---------------|
+| [url](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/ilinkcontentsettings#url) | Destination URL the link navigates to. | `''` |
 
 ### ContentType & Properties
 
@@ -77,13 +75,13 @@ Link settings accepts the following options:
 }
 ```
 
-## Configure Label
+## Configure labels
 
-To render labels, set the [contentType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contentmodel#contenttype) property to [Label](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contenttype). The `properties` property allows you to specify which label to display.
+To render a label inline, set the [contentType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contentmodel#contenttype) of a content item to [Label](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/contenttype). The content item's `properties.labelId` selects which label definition to render.
 
 ### Built-in items
 
-The Block Editor comes with offers different built-in options. These include:
+The Block Editor ships with the following built-in label groups, ready to use without any custom configuration:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
@@ -117,22 +115,33 @@ Define the labels using the [items](https://ej2.syncfusion.com/angular/documenta
 
 Each item in the [items](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelsettings#items) array supports the following properties:
 
-| Property                                          | Description                                         |
-| --------------------------------------------------| --------------------------------------------------- |
-| [id](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#id)                   | A unique identifier for the label.                  |
-| [text](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#text)               | The display text for the label.                     |
-| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#groupby)         | The category name for grouping similar labels.      |
-| [labelColor](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#labelcolor)   | The background color of the label.                  |
-| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#iconcss)         | A CSS class for an icon to display with the label.  |
+| Property | Description |
+|----------|-------------|
+| [id](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#id) | A unique identifier for the label. |
+| [text](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#text) | The display text for the label. |
+| [groupBy](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#groupby) | The category name for grouping similar labels. |
+| [labelColor](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#labelcolor) | The background color of the label. |
+| [iconCss](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#iconcss) | A CSS class for an icon to display with the label. |
 
-
-When users type the trigger character followed by text, a popup will appear showing matching label items from which they can select. The selected label will be inserted into the content as a Label content item.
+When users type the trigger character followed by text, a popup will appear showing matching label items from which they can select. The selected label will be inserted into the content as a `Label` content item.
 
 ### Using labels with group headers
 
-Labels with the same [groupBy](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#groupby) value will be grouped together in the label selection popup:
+Label items that share the same [groupBy](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/labelitemmodel#groupby) value are grouped together under a header in the label selection popup, as shown in the following `labelSettings` example:
 
-The below sample demonstrates the customization of labels in the Block Editor.
+```typescript
+public labelSettings: LabelSettingsModel = {
+    triggerChar: '#',
+    items: [
+        { id: 'bug',     text: 'Bug',          labelColor: '#ff5252', groupBy: 'Status' },
+        { id: 'task',    text: 'Task',         labelColor: '#90caf9', groupBy: 'Status' },
+        { id: 'low',     text: 'Low Priority', labelColor: '#c5e1a5', groupBy: 'Priority' },
+        { id: 'high',    text: 'High Priority',labelColor: '#ffab91', groupBy: 'Priority' }
+    ]
+};
+```
+
+The complete sample below demonstrates label customization in the Block Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -153,12 +162,12 @@ The below sample demonstrates the customization of labels in the Block Editor.
 
 Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the `contentType` property to `Mention`.
 
-Mentions are typically triggered by the `@` character and are linked to the [users](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#users) collection defined in the Block Editor.
+Mentions are typically triggered by the `@` character and are linked to the [users](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#users) collection defined on the Block Editor component. Each mention in your content references a user by `userId` and the editor resolves it to the corresponding user record.
 
 ### ContentType
 
 ```typescript
-// Adding inline code
+// Adding an inline mention
 {
     blockType: 'Paragraph',
     content: [
@@ -170,7 +179,14 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 }
 ```
 
-The sample below demonstrates how to configure mentions and other content types.
+The sample below also configures the editor's `users` and `labelSettings` inputs so that `Mention` and `Label` items resolve correctly:
+
+```html
+<ejs-blockeditor id="blockeditor"
+                 [blocks]="blocksData"
+                 [users]="users"
+                 [labelSettings]="labelSettings" />
+```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,11 +203,9 @@ The sample below demonstrates how to configure mentions and other content types.
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/content-types" %}
 
-## Applying Inline Styles
+## Applying inline styles
 
-The Block Editor allows you to apply rich formatting to block contents using the [styles](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/basestylesprop) property.
-
-The `styles` property supports the following options:
+The Block Editor allows you to apply rich formatting to a content item by setting `properties.styles` on that content model. The `styles` object supports the following options:
 
 | Style Property                                     | Description                                | Default Value |
 | -------------------------------------------------  | ------------------------------------------ | ------------- |
@@ -205,7 +219,7 @@ The `styles` property supports the following options:
 | [subscript](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/stylemodel#subscript)               | Renders the text as subscript.             | `false`       |
 | [uppercase](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/stylemodel#uppercase)               | Converts the text to uppercase.            | `false`       |
 | [lowercase](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/stylemodel#lowercase)               | Converts the text to lowercase.            | `false`       |
-| [inlineCode](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/stylemodel#inlinecode)             | Converts the text to InlineCode.           | `false`          |
+| [inlineCode](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/stylemodel#inlinecode)             | Renders the text as an inline code span.    | `false`          |
 
 You can apply one or more of these styles to any supported content element for rich text formatting.
 

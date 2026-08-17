@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Real-Time Collabortion in React Block Editor component | Syncfusion
-description: Enable real-time collaborative editing in the React Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+title: Real-Time Collaboration in React Block Editor | Syncfusion
+description: Learn how to enable real-time collaboration in the React Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in React Block Editor component
+# Real-Time Collaboration in React Block Editor
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -30,7 +30,13 @@ Get real-time collaboration working in just a few minutes using `y-websocket` an
 
 ### Step 1: Set up a basic Vite React Block Editor component
 
-Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/react/block-editor/getting-started) to create a Vite-based React project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
+Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/react/block-editor/getting-started) to create a Vite-based React project with the Block Editor component. Ensure the following import is included:
+
+```typescript
+import { BlockEditorComponent } from '@syncfusion/ej2-react-blockeditor';
+```
+
+This ensures you have all required dependencies and the correct project structure before adding collaboration.
 
 ### Step 2: Install Yjs and the WebSocket provider
 
@@ -69,7 +75,7 @@ npm install @y/websocket-server
 set HOST=localhost&& set PORT=1234&& npx y-websocket
 
 {% endhighlight %}
-{% highlight bash tabtitle="Powershell" %}
+{% highlight bash tabtitle="PowerShell" %}
 
 $env:HOST="localhost"; $env:PORT="1234"; npx y-websocket
 
@@ -82,13 +88,15 @@ You should see the message:
 running at 'localhost' on port 1234
 ```
 
+The WebSocket server listens on `ws://localhost:1234` and creates collaboration "rooms" based on room names passed by clients. Each room maintains a separate shared document state.
+
 ### Step 4: Create a collaboration configuration file
 
 - Create a shared Yjs document and XML fragment.
 - Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 - Create a provider that connects users to the same shared document.
 
-Create a `collaboration.ts` file in the src folder and add the following code to configure the Yjs document, provider, collaboration adapter and room allocation logic.
+Create a `collaboration.ts` file in the src folder with the following code:
 
 ```typescript
 import * as Y from 'yjs';

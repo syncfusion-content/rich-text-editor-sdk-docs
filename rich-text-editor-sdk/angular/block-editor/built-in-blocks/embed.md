@@ -1,45 +1,45 @@
 ---
 layout: post
-title: Embed Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Embed Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Image Blocks in Angular Block Editor | Syncfusion
+description: Learn how to add and configure image blocks in Angular Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Embed Blocks in Angular Block Editor component
+# Image Blocks in Angular Block Editor
 
-The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
+The Block Editor supports the [Image](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype) block for adding visual content. This page covers pre-configuring an `Image` block, configuring upload behavior at the editor level, server-side save handlers, and resizing.
 
 ## Adding an image block
 
-You can use the [Image](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype) block to showcase an image content within your editor.
+You can use the `Image` block to display an image inside your editor.
 
 ### Configure image block
 
-You can render an `Image` block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model. The [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can render an `Image` block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to `Image` in the block model. The block's [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) configure the image source and display dimensions for that specific block. Upload behavior (file size limit, allowed types, save format, server endpoint) is configured globally on the editor through `imageBlockSettings`, described below.
 
 #### Global image settings
 
-You can configure global settings for image blocks using the [imageBlockSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/iimageblocksettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [imageBlockSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#imageblocksettings) input on the Block Editor component. This ensures consistent behavior for image uploads, resizing, and display.
 
 The `imageBlockSettings` property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| saveUrl | Specifies the server endpoint URL for uploading images. | `''` |
-| maxFileSize | Specifies the maximum file size allowed for image uploads in bytes. | `30000000` |
-| path | Specifies the base path for storing and displaying images on the server. | `''` |
-| saveFormat | Specifies the format to save the image. | `Base64` |
-| allowedTypes | Specifies allowed image file types for upload. | `['.jpg', '.jpeg', '.png']` |
-| width | Specifies the default display width of the image. | `auto` |
-| height | Specifies the default display height of the image. | `auto` |
-| enableResize | Enables or disables image resizing. | `true` |
-| minWidth | Minimum width allowed for resizing. | `''` |
-| maxWidth | Maximum width allowed for resizing. | `''` |
-| minHeight | Minimum height allowed for resizing. | `''` |
-| maxHeight | Maximum height allowed for resizing. | `''` |
+| [saveUrl](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#saveurl) | Specifies the server endpoint URL for uploading images. If empty, server upload functionality is disabled. | `''` |
+| [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#maxfilesize) | Specifies the maximum file size allowed for image uploads in bytes. Files exceeding this size are rejected during validation. | `30000000` |
+| [path](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#path) | Specifies the base path for storing and displaying images on the server. This path is appended to the server URL for image storage organization. | `''` |
+| [saveFormat](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#saveformat) | Specifies the format in which the image is saved. Accepts `'Blob'` (uploaded to the server) or `'Base64'` (embedded inline). | `'Blob'` |
+| [allowedTypes](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#allowedtypes) | Specifies the allowed image file extensions that can be uploaded. | `['.jpg', '.jpeg', '.png']` |
+| [width](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#width) | Default display width of the image. Can be defined in pixels or as a percentage. | `'auto'` |
+| [height](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#height) | Default display height of the image. Can be defined in pixels or as a percentage. | `'auto'` |
+| [enableResize](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#enableresize) | Specifies whether resizing the image is enabled. | `true` |
+| [minWidth](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#minwidth) | Minimum width allowed when resizing, in pixels or as a string unit. | `''` |
+| [maxWidth](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#maxwidth) | Maximum width allowed when resizing, in pixels or as a string unit. | `''` |
+| [minHeight](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#minheight) | Minimum height allowed when resizing, in pixels or as a string unit. | `''` |
+| [maxHeight](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#maxheight) | Maximum height allowed when resizing, in pixels or as a string unit. | `''` |
 
 #### Maximum file size restriction
 
@@ -76,19 +76,19 @@ The `Image` block [properties](https://ej2.syncfusion.com/angular/documentation/
 | height | Specifies the display height of the image. | `''` |
 | altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
 
-### Block type & properties
+### Block type and properties
 
-The following example demonstrates how to pre-configure an `Image` block in the editor.
+The following example demonstrates how to pre-configure an `Image` block in the editor. Unlike text-based blocks, an `Image` block does not use a `content` array — its source and dimensions are stored entirely in `properties`.
 
 ```typescript
 // Adding an Image block
- {
+{
     blockType: 'Image',
     properties: {
         src: '',
         width: '200px',
         height: '100px',
-        altText: '',
+        altText: 'Sample image'
     }
 }
 ```
@@ -107,18 +107,18 @@ This sample demonstrates the configuration of the `Image` block in the Block Edi
 {% include code-snippet/rich-text-editor-sdk/angular/block-editor/blocks/block-types/image-block/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/block-types/image-block" %}
 
 ## Uploading images from local machine
 
-To insert an image from your local machine, render the `Image` block. It opens a popup where you can browse and select an image to insert from your local machine.
+When the editor's `imageBlockSettings` is configured, focus an empty block and use the `+` menu to insert an `Image` block. A popup opens with a **Upload** tab where you can browse and select an image from your local machine. The selected file is then processed according to the `imageBlockSettings.saveFormat` and `imageBlockSettings.saveUrl` (see next section).
 
 ## Saving images to server
 
-Upload the selected image to a specified destination using the controller action specified in [imageBlockSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageBlockSettings#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [imageBlockSettings.path](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#path) properties.
+Upload the selected image to a specified destination using the controller action specified in [imageBlockSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [imageBlockSettings.path](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#path) property.
 
-Set the [imageBlockSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
+Set the [imageBlockSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/imageblocksettings#saveformat) property to determine how the image is saved. By default it is `'Blob'` (uploaded to the server); set it to `'Base64'` to embed the image inline in the document. Choose the format that aligns with your application's requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,6 +135,10 @@ Set the [imageBlockSettings.saveFormat](https://ej2.syncfusion.com/angular/docum
 
 ```csharp
 
+// Note: IHostingEnvironment was deprecated in ASP.NET Core 3.0.
+// In modern projects, inject IWebHostEnvironment instead:
+//   private readonly IWebHostEnvironment _env;
+//   public HomeController(IWebHostEnvironment env) { _env = env; }
 public class HomeController : Controller
     {
         private IHostingEnvironment hostingEnv;
@@ -196,7 +200,7 @@ public class HomeController : Controller
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#fileuploading) event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can attach extra data (for example, an authorization token) to an image upload by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#fileuploading) event on the Block Editor. The event's `currentRequest` argument exposes the underlying XMLHttpRequest, so you can set custom headers (such as `Authorization`) before the request is sent. On the server side, you can read those headers from the form collection of the current request, as in the `SaveFiles` controller method shown below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -226,6 +230,6 @@ To insert an image from an online source, render the `Image` block. Switch to th
 
 ## Image resizing
 
-Block Editor has a built-in image inserting support.  The resize points will be appearing on each corner of image when focus. So, users can resize the image using mouse points or thumb through the resize points easily. Also, the resize calculation will be done based on aspect ratio.
+The Block Editor has built-in image-resizing support. Resize handles appear at each corner of an image when it is focused, and the user can drag any handle with the mouse or touch to resize the image. The resize calculation preserves the image's aspect ratio by default. You can disable resizing globally with `imageBlockSettings.enableResize = false`, and you can constrain the resize range with `minWidth`/`maxWidth`/`minHeight`/`maxHeight` (see the [Global image settings](#global-image-settings) table above).
 
 ![Block Editor image resize](../images/image-resize.png)

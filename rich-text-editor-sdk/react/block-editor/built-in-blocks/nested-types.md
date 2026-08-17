@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nested blocks in React Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with React Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in React Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in React Block Editor using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in React Block Editor control
+# Nested Blocks in React Block Editor
 
 ## Configure children
 
@@ -78,42 +77,48 @@ This example shows how to configure `CollapsibleHeading` and `CollapsibleParagra
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for collapsible blocks using the [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. Default placeholders are:
+- **CollapsibleHeading**: `Collapsible Heading1`, `Collapsible Heading2`, etc. (based on level)
+- **CollapsibleParagraph**: `Collapsible Paragraph`
 
 ```typescript
-// Adding placeholder value to collapsible heading
+// Adding custom placeholder to collapsible heading
 {
     blockType: 'CollapsibleHeading',
     properties: {
         level: 2,
-        placeholder: 'Heading block'
+        placeholder: 'Click to expand details'
     }
 }
-//Adding placeholder value for collapsible paragraph
+// Adding custom placeholder to collapsible paragraph
 {
     blockType: 'CollapsibleParagraph',
-    properties: { placeholder: 'Collapsible Paragraph'}
+    properties: { placeholder: 'Expandable content'}
 }
 ```
 
 ## Configure quote block
 
-Quote blocks are styled for displaying quotations or excerpts. Render a Quote block by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) to `Quote`. Editing is now more natural with multi‑line support—pressing Enter creates a new line inside the block, and pressing Enter again on an empty line exits the quote.
+Quote blocks are styled for displaying quotations, citations, or excerpts. Render a Quote block by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) to `Quote`. Multi-line support is enabled: pressing Enter creates a new line inside the block, and pressing Enter on an empty line exits the quote.
 
 ### Block type & properties
 
 ```typescript
-// Adding quote block
+// Adding a quote block with child paragraph
 {
     blockType: 'Quote',
-    properties:{
-        children:[{
-            blockType: 'Paragraph',
-            content: [
-                contentType: 'Text',
-                content: ''
-            ]
-        }]
+    properties: {
+        children: [
+            {
+                blockType: 'Paragraph',
+                content: [
+                    {
+                        contentType: 'Text',
+                        content: 'This is a quoted text'
+                    }
+                ]
+            }
+        ]
     }
 }
 ```
@@ -132,7 +137,7 @@ The following sample demonstrates how to configure quote block.
 
 ## Configure callout block
 
-Callout blocks highlight important information such as notes, warnings, or tips. Render one by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) to `Callout`.
+Callout blocks highlight important information such as notes, warnings, tips, or important notices. Render one by setting the [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) to `Callout`.
 
 ### Block type & properties
 

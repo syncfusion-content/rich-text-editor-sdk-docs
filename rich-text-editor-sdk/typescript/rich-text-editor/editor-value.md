@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor value in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Editor value in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Editor Value in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the TypeScript Rich Text Editor with placeholders, auto save, character count, and source code editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Editor value
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Editor value in TypeScript Rich Text Editor control
+# Editor Value in TypeScript Rich Text Editor
 
 ## Set placeholder text 
 
@@ -563,7 +563,7 @@ You can add the `SourceCode` tool in the Rich Text Editor using the `toolbarSett
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/code-mirror-cs1" %}
 {% endif %}
 
->This functionality can also be enabled through the use of the [CodeMirror](https://codemirror.net/) plugin. It helps to highlight the HTML content and ensures that any modifications in the code view are instantly reflected in the preview mode.
+>This functionality can also be enabled through the use of the [CodeMirror](https://codemirror.net) plugin. It helps to highlight the HTML content and ensures that any modifications in the code view are instantly reflected in the preview mode.
 
 The Rich Text Editor provides the [showSourceCode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#showsourcecode) method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
 

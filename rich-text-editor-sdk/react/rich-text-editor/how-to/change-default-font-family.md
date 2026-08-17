@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Change default font family in React Rich text editor component | Syncfusion
-description: Learn here all about Change default font family in Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Change default font family 
+title: Set Default Font Family in React Rich Text Editor | Syncfusion
+description: Learn how to set the default font family in the React Rich Text Editor using custom fonts and CSS customization for editor content.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Change default font family in React Rich text editor component
+# Set Default Font Family in React Rich Text Editor
 
-By using [`default`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#fontfamily) property, you can change the default font-family of the RTE. To change the font-family of the RTE content while loading, we need to give the font-family in the style section with the help of [`cssClass`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#cssclass) property.
+By using the [`fontFamily`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#fontfamily) property, you can change the default font-family of the RTE. To change the font-family of the editor content while loading, we need to give the font-family in the style section with the help of the [`cssClass`](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#cssclass) property.
 
 `[Class-component]`
 

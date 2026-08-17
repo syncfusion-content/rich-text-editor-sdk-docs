@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Insert image in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all about Insert image in Blazor Rich Text Editor component with examples and much more details.
+title: Insert images in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to insert and manage images in the Blazor Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, and storage.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
@@ -26,7 +26,7 @@ The image selected from the local machine will be uploaded and saved to the spec
 A generated `blob` URL is assigned to the `<img>` tag as shown below:
 
 ```
-<img src="blob:http://blazor.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" >
+<img src="blob:https://blazor.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" >
 ```
 
 A generated `base64` URL is assigned to the `<img>` tag as shown below:

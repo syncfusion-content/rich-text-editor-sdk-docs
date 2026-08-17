@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo redo in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Undo redo with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Undo and redo in Blazor Block Editor | Syncfusion®
+description: Learn how to configure undo and redo in Blazor Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Undo Redo in Blazor Block Editor Component
+# Undo Redo in Blazor Block Editor
 
 The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
 
@@ -20,7 +20,7 @@ The undo/redo feature in Block Editor enables users to revert or reapply changes
 
 ## Configuring undo/redo stack
 
-The Block Editor stores a history of actions, allowing users to perform undo and redo operations. By default, it saves up to `30` actions. You can customize this limit using the [UndoRedoStack](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_UndoRedoStack) property to control the maximum number of steps that can be undone or redone.
+The Block Editor stores a history of actions, allowing users to perform undo and redo operations. By default, it saves up to `30` actions. Actions that are tracked include text edits, block additions, block deletions, block movements, block duplications, and formatting changes. You can customize this limit using the [UndoRedoStack](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_UndoRedoStack) property to control the maximum number of steps that can be undone or redone.
 
 The following example demonstrates how to set the undo/redo history limit to `20` actions.
 
@@ -33,13 +33,13 @@ The following example demonstrates how to set the undo/redo history limit to `20
     <SfBlockEditor Blocks="@BlocksData" UndoRedoStack="20"></SfBlockEditor>
 </div>
 @code {
-    private List<BlockModel> BlocksData = new List<BlockModel>
+    private List<BlockModel> BlocksData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Heading,
             Properties = new HeadingBlockSettings { Level = 1 },
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -51,7 +51,7 @@ The following example demonstrates how to set the undo/redo history limit to `20
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -63,7 +63,7 @@ The following example demonstrates how to set the undo/redo history limit to `20
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Editor Value in React Rich Text Editor component | Syncfusion
-description: Learn how to manage editor content in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Editor value
+title: Editor Value in React Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the React Rich Text Editor with placeholders, auto save, character count, and source code editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Value in React Rich Text Editor Component
+# Editor Value in React Rich Text Editor
 
-The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively
+The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively.
 
 ## Set placeholder text 
 
@@ -60,7 +60,7 @@ Set initial content in the Rich Text Editor using one of these approaches:
 
 * The [value](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#value) property directly sets the editor's content as a string.
 
-* The [valuetemplate](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
+* The [valueTemplate](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
@@ -283,13 +283,13 @@ By default, the content styles of the Rich Text Editor are not included when ret
 }
 
 .e-rte-content h5 {
-  font-size: 00.8em;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0;
 }
 
 .e-rte-content h6 {
-  font-size: 00.65em;
+  font-size: 0.65em;
   font-weight: 400;
   margin: 0;
 }

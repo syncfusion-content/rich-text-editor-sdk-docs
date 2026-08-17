@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Quick Toolbars in Angular Rich Text Editor component | Syncfusion
-description: Learn how to customize the Quick toolbars in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Quick Toolbars in Angular Rich Text Editor | Syncfusion
+description: Learn how to customize Quick Toolbars in the Angular Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Quick Toolbars
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Quick Toolbars in Angular Rich Text Editor component
+# Quick Toolbars in Angular Rich Text Editor
 
 The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings) property.
 

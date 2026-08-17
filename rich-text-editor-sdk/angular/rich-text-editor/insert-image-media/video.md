@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Videos in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert and manage videos in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Videos in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert, upload, embed, resize, and manage videos in the Angular Rich Text Editor from local files, URLs, and online sources.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Videos
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Videos in the Angular Rich Text Editor Component
+# Insert Videos in Angular Rich Text Editor
 
 The Rich Text Editor enables insertion of video from online sources and local machines, into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 
@@ -261,7 +261,10 @@ You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documen
 
 ```HTML
 
-<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] = 'insertVideoSettings' (fileUploadSuccess) = 'onVideoUploadSuccess($event)' [value]='value'>
+<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] = 'insertVideoSettings' (fileUploadSuccess) = 'onVideoUploadSuccess($event)'>
+<ng-template #valueTemplate>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">markdown</a> of the content</p>
+</ng-template>
 </ejs-richtexteditor>
 
 ```
@@ -279,7 +282,6 @@ import { RichTextEditorModule, ToolbarService, QuickToolbarService, LinkService,
   providers: [ ToolbarService, QuickToolbarService, LinkService, VideoService, HtmlEditorService, ImageService, TableService, PasteCleanupService ],
 })
 export class AppComponent {
-    public value: string = "<p>The Rich Text Editor is WYSIWYG (\"what you see is what you get\") editor useful to create and edit content, and return the valid <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\">HTML markup</a> or <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\">markdown</a> of the content</p>";
     public toolbarSettings: ToolbarSettingsModel = {
         items: ['Video'],
     };

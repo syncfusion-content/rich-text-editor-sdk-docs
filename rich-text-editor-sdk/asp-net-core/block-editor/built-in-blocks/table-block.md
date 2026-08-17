@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Table Block in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Table Blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Table Block in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to add and configure table blocks in the ASP.NET Core Block Editor with rows, columns, headers, cell content, resizing, selection, and deletion.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Table Blocks in ASP.NET Core Block Editor control
+# Table Blocks in ASP.NET Core Block Editor
 
 The Block Editor control allows you to render structured data in rows and columns by setting the block's `blockType` property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure table block
+## Configure table block
 
 For Table blocks, you can configure layout and structure using the `properties` property. This property supports the following options:
 
@@ -25,6 +24,58 @@ For Table blocks, you can configure layout and structure using the `properties` 
 | readOnly | Specifies whether to render the table in read-only mode, disabling edits. | `false` |
 | columns | Defines the columns of the table, including their types and headers. | `[]` |
 | rows | Defines the rows of the table, each containing cells tied to columns. | `[]` |
+
+### Column and Row Structure
+
+```csharp
+// Complete table example with columns and rows
+new BlockModel
+{
+    blockType = "Table",
+    properties = new
+    {
+        columns = new List<object>
+        {
+            new { id = "col1", headerText = "Name" },
+            new { id = "col2", headerText = "Age" },
+            new { id = "col3", headerText = "Gender" }
+        },
+        rows = new List<object>
+        {
+            new
+            {
+                cells = new List<object>
+                {
+                    new { columnId = "col1", blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "John Doe" } 
+                            } 
+                        } 
+                    } },
+                    new { columnId = "col2", blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "30" } 
+                            } 
+                        } 
+                    } },
+                    new { columnId = "col3", blocks = new List<BlockModel> { 
+                        new BlockModel { 
+                            blockType = "Paragraph", 
+                            content = new List<object> { 
+                                new { contentType = "Text", content = "Male" } 
+                            } 
+                        } 
+                    } }
+                }
+            }
+        }
+    }
+}
+```
 
 This sample demonstrates the configuration of the `Table` block in the Block Editor.
 
@@ -39,11 +90,11 @@ This sample demonstrates the configuration of the `Table` block in the Block Edi
 
 ![Table Block](../images/block-table.png)
 
-### Table resizing
+## Table resizing
 
-The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
+The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically. Only columns can be resized; row height is not adjustable. If resizing exceeds the layout width, a horizontal scrollbar will appear to maintain structure and layout integrity. Column widths have a minimum of 50 pixels, and the maximum is determined by the overall table width.
 
-### Table multiple row column selection and deletion
+## Table multiple row and column selection and deletion
 
 The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
 
@@ -59,3 +110,4 @@ This sample demonstrates the `Table` block multiple row and column selection and
 {% endtabs %}
 
 ![Table Block](../images/table-resize.png)
+ 

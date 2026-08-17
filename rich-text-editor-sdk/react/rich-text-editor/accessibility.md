@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in React Rich Text Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in React Rich Text Editor | Syncfusion
+description: Learn about accessibility features in the React Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in the React Rich Text Editor Component
+# Accessibility in React Rich Text Editor
 
 The Rich Text Editor component is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
@@ -53,7 +53,7 @@ The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includ
 | aria-disabled       | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/react/documentation/rich-text-editor/keyboard-support) documentation.
+For more details on keyboard navigation, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/keyboard-support) documentation.
 
 * The Rich Text Editor element is assigned the role of `application`.
 
@@ -62,6 +62,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
 | aria-disabled       | Indicates the disabled state of the ToolBar. |
 
+The following example demonstrates the ARIA attributes and accessibility support in the Rich Text Editor:
 
 `[Class-component]`
 
@@ -91,13 +92,13 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 ## Keyboard navigation
 
-The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
+The Rich Text Editor component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/react/documentation/rich-text-editor/keyboard-support) documentation.
+For detailed information on supported keyboard shortcuts, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/keyboard-support) documentation.
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#formatter) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 `[Class-component]`
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Inline Content in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Inline Content with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Inline Content in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to add inline content in ASP.NET Core Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Inline Content  in ASP.NET Core Block Editor control
+# Inline Content in ASP.NET Core Block Editor
 
 Content in the Block Editor is managed through the `content` property of blocks.
 
@@ -30,7 +29,7 @@ You can specify the type of content using the `contentType` property. The Block 
 
 ### ContentType 
 
-```typescript
+```csharp
 // Adding inline text
 {
     blockType = "Paragraph",
@@ -43,7 +42,11 @@ You can specify the type of content using the `contentType` property. The Block 
 
 ## Configure text content
 
-You can configure Text content by setting the `contentType` property to `Text`. The default content type is `Text`.
+You can configure Text content by setting the `contentType` property to `Text`. This is the default content type for plain text within blocks.
+
+```csharp
+new { contentType = "Text", content = "This is plain text" }
+```
 
 ## Configure hyperlink
 
@@ -55,13 +58,14 @@ Link settings control the behavior and properties of hyperlinks in your content.
 
 Link settings accepts the following options:
 
-| Option                     | Description                                                       | Default Value |
-| -------------------------  | ----------------------------------------------------------------- | ------------- |
-|`url`| Specifies the destination URL of the link.     | `''`          |
+| Option | Description | Default Value |
+|--------|-------------|---------------|
+| `url` | Specifies the destination URL of the link. | `''` |
+| `target` | Specifies the link target behavior ('_self', '_blank', '_parent', '_top'). | `''` (same window) |
 
 ### ContentType & Properties
 
-```typescript
+```csharp
 {
     blockType = "Paragraph",
     content = new List<object>()
@@ -77,14 +81,13 @@ Link settings accepts the following options:
     }
 }
 ```
+## Configure label
 
-## Configure Label
-
-You can render labels by setting the `contentType` property as `Label`. Additionally, by configuring the `properties` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
+You can render labels by setting the `contentType` property to `Label`. Additionally, by configuring the `properties` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
 
 ### Built-in items
 
-The Block Editor comes with offers different built-in options. These include:
+The Block Editor offers different built-in options. These include:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
@@ -95,13 +98,13 @@ You can customize the labels by using the `properties` property with type `Label
 
 ### ContentType & Properties
 
-```typescript
+```csharp
 // Adding inline label
 {
     blockType = "Paragraph",
     content = new List<object>()
         {
-        new {contentType = 'Label', properties = { lableId = "progress" }}
+        new {contentType = 'Label', properties = { id = "progress" }}
         }
 }
 ```
@@ -128,7 +131,7 @@ When users type the trigger character followed by text, a popup will appear show
 
 Labels with the same `groupHeader` value will be grouped together in the label selection popup:
 
-The below sample demonstrates the customization of labels in the Block Editor.
+The sample below demonstrates the customization of labels in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -149,8 +152,8 @@ Mentions are typically triggered by the `@` character and are linked to the `use
 
 ### ContentType
 
-```typescript
-// Adding inline code
+```csharp
+// Adding inline mention
 {
     blockType = "Paragraph",
     content = new List<object>()

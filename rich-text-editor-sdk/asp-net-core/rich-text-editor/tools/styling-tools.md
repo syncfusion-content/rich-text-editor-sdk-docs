@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Styling tools in ASP.NET Core Rich Text Editor Control | Syncfusion
-description: Learn here all about Styling tools in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Font Styling in ASP.NET Core Rich Text Editor | Syncfusion
+description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the ASP.NET Core Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Styling tools
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Styling Tools in the ASP.NET Core Rich Text Editor Control
+# Font Styling in ASP.NET Core Rich Text Editor
 
 To get start quickly with ASP.NET Core Rich Text Editor with styling tools, you can check on this video:
 

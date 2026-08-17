@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Iframe in ASP.NET Core Rich Text Editor Component | Syncfusion
-description: Learn here all about Iframe in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: IFrame Editing Mode in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to enable IFrame editing mode in the ASP.NET Core Rich Text Editor to isolate styles and scripts within the editor surface.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Iframe
 documentation: ug
 ---
 
-# IFrame Editing Mode in ASP.NET Core Rich Text Editor Control
+# IFrame Editing Mode in ASP.NET Core Rich Text Editor
 
 The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
@@ -99,7 +99,7 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 {% endtabs %}
 {% endif %}
 
-> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/tailwind3) that shows how to render the iframe in Angular Rich Text Editor.
+> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/fluent2) that shows how to render the iframe in Angular Rich Text Editor.
 
 
 ## See Also

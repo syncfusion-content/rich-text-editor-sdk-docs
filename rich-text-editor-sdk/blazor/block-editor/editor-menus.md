@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editor Menus in Blazor Block Editor Component | Syncfusion®
-description: Learn to configure Slash Command menu, Context menu, Block Action menu, and Inline Toolbar in Blazor Block Editor.
+title: Editor Menus in Blazor Block Editor | Syncfusion®
+description: Learn how to use the editor menus in the Blazor Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Editor Menus in Blazor Block Editor Component
+# Editor Menus in Blazor Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 
@@ -58,12 +58,12 @@ The following example demonstrates how to customize the Slash Command menu with 
 </div>
 
 @code {
-    private List<BlockModel> BlocksData = new List<BlockModel>
+    private List<BlockModel> BlocksData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Paragraph,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -74,7 +74,7 @@ The following example demonstrates how to customize the Slash Command menu with 
         }
     };
 
-    private List<CommandItemModel> Commands = new List<CommandItemModel>
+    private List<CommandItemModel> Commands = new()
     {
         new CommandItemModel
         {
@@ -150,13 +150,13 @@ The following example demonstrates how to customize the Context menu with additi
 </div>
 
 @code {
-    private List<BlockModel> BlocksData = new List<BlockModel>
+    private List<BlockModel> BlocksData = new()
     {
         new BlockModel
         {
             BlockType = BlockType.Heading,
             Properties = new HeadingBlockSettings { Level = 1 },
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -168,7 +168,7 @@ The following example demonstrates how to customize the Context menu with additi
         new BlockModel
         {
             BlockType = BlockType.Quote,
-            Content = new List<ContentModel>
+            Content = new()
             {
                 new ContentModel
                 {
@@ -179,14 +179,14 @@ The following example demonstrates how to customize the Context menu with additi
         }
     };
 
-    private List<ContextMenuItemModel> CustomContextMenuItems = new List<ContextMenuItemModel>
+    private List<ContextMenuItemModel> CustomContextMenuItems = new()
     {
         new ContextMenuItemModel
         {
             ID = "format-menu",
             Text = "Format",
             IconCss = "e-icons e-format-painter",
-            Items = new List<ContextMenuItemModel>
+            Items = new()
             {
                 new ContextMenuItemModel { ID = "bold-item", Text = "Bold", IconCss = "e-icons e-bold" },
                 new ContextMenuItemModel { ID = "italic-item", Text = "Italic", IconCss = "e-icons e-italic" },
@@ -205,7 +205,7 @@ The following example demonstrates how to customize the Context menu with additi
             ID = "export-item",
             Text = "Export Options",
             IconCss = "e-icons e-export",
-            Items = new List<ContextMenuItemModel>
+            Items = new()
             {
                 new ContextMenuItemModel { ID = "export-json", Text = "Export as JSON", IconCss = "e-icons e-file-json" },
                 new ContextMenuItemModel { ID = "export-html", Text = "Export as HTML", IconCss = "e-icons e-file-html" },

@@ -1,23 +1,29 @@
 ---
 layout: post
-title: Undo redo in ASP.NET Core Block Editor Control | Syncfusion
-description: Checkout and learn about undo redo with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: Undo and Redo in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to configure undo and redo in ASP.NET Core BlockEditor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Undo redo in ASP.NET Core Block Editor control
+# Undo and Redo in ASP.NET Core Block Editor
 
-The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
+Undo/redo lets users revert and reapply changes made to the editor content, providing a safety net for edits.
+
+The Block Editor tracks the following types of actions in the undo/redo stack:
+- Text content changes (typing, deletion)
+- Block additions, deletions, and duplication
+- Block movements and reordering (via drag-and-drop or shortcuts)
+- Inline formatting changes (bold, italic, underline, color)
+- Block transformations (paragraph to heading, etc.)
 
 ## Keyboard shortcuts
 
 | Action | Windows | Mac | Description |
-|------------|--------------|---------|-----------------|
-| Undo       | Ctrl + Z     | ⌘ + Z   | Reverts the last action. |
-| Redo       | Ctrl + Y     | ⌘ + Y | Reapplies the last undone action. |
+|--------|---------|-----|-------------|
+| Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Reverts the last action. |
+| Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>Y</kbd> | Reapplies the last undone action. |
 
 ## Configuring Undo/Redo stack
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: File Attachment in ASP.NET Core Rich Text Editor Component
-description: Learn here all about File Attachment in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Manage File Attachments in ASP.NET Core Rich Text Editor | Syncfusion
+description: Learn how to manage file attachments in the ASP.NET Core Rich Text Editor using file upload, drag-and-drop support, upload services, and attachment links.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: File Attachment
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# File Attachments
+# Manage File Attachments in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 

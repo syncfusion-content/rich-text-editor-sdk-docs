@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Typography Blocks in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Typography Blocks with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Text Block Types in TypeScript Block Editor | Syncfusion
+description: Learn how to configure text block types in the TypeScript Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in TypeScript Block Editor control
+# Text Block Types in TypeScript Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor control supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 
@@ -161,7 +160,7 @@ The following sample demonstrates the configuration of a heading block in the Bl
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for a block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading blocks is `Heading1`, `Heading2`, `Heading3`, or `Heading4` depending on the level set.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -169,41 +168,41 @@ You can configure placeholder text for block using the [placeholder](https://ej2
     blockType: 'Heading',
     properties: { 
         level: 1,
-        placeholder: 'Heading1'
+        placeholder: 'Enter heading...'
     }
 }
 ```
 
 ## Configure divider block
 
-A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
+A Divider block inserts a horizontal line to visually separate content sections. Render it by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
 
 ### Block type & properties
 
 ```typescript
-// Adding divider block
-{
+// Adding divider block between paragraphs
+[
     {
         blockType: 'Paragraph',
-        content: [
+        content: [{
             contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
+            content: 'This is the first paragraph.'
+        }]
     },
     {
         blockType: 'Divider' 
     },
     {
         blockType: 'Paragraph',
-        content: [
+        content: [{
             contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
+            content: 'This is the second paragraph.'
+        }]
     }
-}
+]
 ```
 
-This sample shows how to place a divider between two blocks.
+The following sample demonstrates how to use a divider block between content sections.
 
 
 {% if page.publishingplatform == "typescript" %}

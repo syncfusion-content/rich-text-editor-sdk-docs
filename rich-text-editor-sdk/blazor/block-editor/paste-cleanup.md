@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paste Cleanup in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Paste Cleanup with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Paste Cleanup in Blazor Block Editor | Syncfusion®
+description: Learn how to configure paste cleanup in Blazor Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Paste Cleanup in Blazor Block Editor Component
+# Paste Cleanup in Blazor Block Editor
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
@@ -91,7 +91,7 @@ The following example demonstrates configuring paste settings to allow only spec
     private SfBlockEditor blockEditor;
     private string output = "";
 
-    private List<BlockModel> blockData = new List<BlockModel>()
+    private List<BlockModel> blockData = new()
     {
         new BlockModel { BlockType = BlockType.Paragraph }
     };
@@ -181,7 +181,7 @@ To paste content as plain text, stripping all HTML tags and inline styles, set t
 
 <div class="container">
     <SfBlockEditor>
-        <BlockEditorPasteCleanup PlainText="false"></BlockEditorPasteCleanup>
+        <BlockEditorPasteCleanup PlainText="true"></BlockEditorPasteCleanup>
     </SfBlockEditor>
 </div>
 
@@ -222,7 +222,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
     private SfBlockEditor blockEditor;
     private string output = "";
 
-    private List<BlockModel> blockData = new List<BlockModel>()
+    private List<BlockModel> blockData = new()
     {
         new BlockModel { BlockType = BlockType.Paragraph }
     };
@@ -295,7 +295,7 @@ The Block Editor provides events to monitor and interact with the paste action.
 |[PasteCleanupStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupStarting)|PasteCleanupStartingEventArgs|Triggers before the content is pasted into the editor.|
 |[PasteCleanupCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_PasteCleanupCompleted)|PasteCleanupCompletedEventArgs|Triggers after the content is pasted into the editor.|
 
-Below example demonstrates how to configure above events in the editor.
+The following example demonstrates how to handle paste cleanup events:
 
 ```cshtml
 

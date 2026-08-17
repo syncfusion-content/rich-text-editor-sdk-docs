@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Quick Toolbars in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to use and configure quick toolbars in Blazor Rich Text Editor for fast formatting access.
+description: Learn how to customize Quick Toolbars in the Blazor Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Quick Toolbars in Blazor Rich Text Editor Component
+# Quick Toolbars in Blazor Rich Text Editor
 
 The Rich text editor has quick toolbars that are open as context-menu on clicking the image, link, audio, video and table elements. By default, the below quick toolbar items show on click on the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
 
@@ -150,7 +150,7 @@ N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/ric
 
 By activating the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Rich Text Editor offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus on editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
 
-Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://blazor.syncfusion.com/documentation/rich-text-editor/tools/built-in-tools)
+Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/tools/built-in-tools)
 
 {% tabs %}
 {% highlight razor %}

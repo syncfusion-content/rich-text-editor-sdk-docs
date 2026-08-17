@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste Clean-up in React Block Editor component | Syncfusion
-description: Checkout and learn about Paste Clean-up with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in React Block Editor | Syncfusion
+description: Learn how to configure paste cleanup in React Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Clean-up in React Block Editor component
+# Paste Cleanup in React Block Editor
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
@@ -20,9 +20,12 @@ The [allowedStyles](https://ej2.syncfusion.com/react/documentation/api/blockedit
 
 By default, the following styles are allowed:
 
-['font-weight', 'font-style', 'text-decoration', 'text-transform'].
+- `font-weight` — Bold/normal text weight
+- `font-style` — Italic/oblique text style
+- `text-decoration` — Underline, overline, line-through
+- `text-transform` — Uppercase, lowercase, capitalize transformations
 
-In the below example, only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
+The following example retains only `font-weight` and `font-style` styles. All other inline styles will be removed.
 
 {% raw %}
 ```typescript
@@ -32,9 +35,9 @@ In the below example, only `font-weight` and `font-style` styles will be retaine
 
 ## Setting denied tags
 
-The [deniedTags](https://ej2.syncfusion.com/react/documentation/api/blockeditor/pasteCleanupSettingsModel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
+The [deniedTags](https://ej2.syncfusion.com/react/documentation/api/blockeditor/pasteCleanupSettingsModel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. For security, certain tags are automatically removed by default: `<script>`, `<iframe>`, `<form>`, and event handlers. By specifying additional `deniedTags`, you can extend this default list to remove other potentially problematic elements.
 
-In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
+The following example adds `<script>` and `<iframe>` to the denied tags (in addition to the automatically blocked tags), preventing unwanted behavior or security issues.
 
 {% raw %}
 ```typescript
@@ -42,7 +45,7 @@ In the below example, any `<script>` or `<iframe>` tags found in the pasted cont
 ```
 {% endraw %}
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The following example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -75,7 +78,7 @@ To paste content as plain text, stripping all HTML tags and inline styles, set t
 ```
 {% endraw %}
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The following example demonstrates the usage of paste settings that disables the keep format and allows plain text.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -88,7 +91,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/block-editor/paste-cleanup/plaintext" %}
 
-### Events
+## Events
 
 The Block Editor provides events to monitor and interact with the paste action.
 

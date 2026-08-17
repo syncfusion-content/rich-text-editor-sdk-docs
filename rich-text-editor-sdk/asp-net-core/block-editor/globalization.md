@@ -1,18 +1,19 @@
 ---
 layout: post
-title: Globalization in ASP.NET Core Block Editor Control | Syncfusion
-description: Checkout and learn about Globalization with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: Globalization in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to localize the ASP.NET Core BlockEditor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Globalization in ASP.NET Core Block Editor control
+# Globalization in ASP.NET Core Block Editor
+
+The Block Editor control supports localization, right-to-left (RTL) text direction, and culture-specific formatting to provide a global user experience.
 
 ## Localization
 
-The Block Editor can be localized to any culture by defining the text of the Block Editor in the corresponding culture. The default locale of the Block Editor is `en` (English). The following table represents the default text of the Block Editor in `en` culture.
+The Block Editor can be localized to any culture by defining the text in the corresponding culture. The default locale is `en` (English). The following table shows the default text of the Block Editor in the `en` culture, which can be overridden for other locales.
 
 |KEY|Text|
 |----|----|
@@ -57,11 +58,11 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
 
-![Locale](./../images/locale.png)
+![Locale](images/locale.png)
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableRtl) property to `true`.
+RTL switches the text direction and layout of the Block Editor control from right to left by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableRtl) property to `true`. When enabled, icons, layouts, and text alignment are automatically mirrored to support RTL languages such as Arabic, Hebrew, and Persian.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

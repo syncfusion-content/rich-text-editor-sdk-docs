@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Nested blocks in ASP.NET Core Block Editor control | Syncfusion
-description: Checkout and learn about Nested blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to create nested blocks in ASP.NET Core Block Editor using parent-child relationships, collapsible sections, quote blocks, and callouts.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Nested blocks in ASP.NET Core Block Editor control
+# Nested Blocks in ASP.NET Core Block Editor
 
 ## Configure children
 
@@ -37,33 +36,31 @@ You can control whether a block is expanded or collapsed using the `isExpanded` 
 
 ### Block type & properties
 
-```typescript
-	// Configuring CollapsibleHeading block
-    new BlockModel
+```csharp
+// Configuring CollapsibleParagraph block
+new BlockModel
+{
+    blockType = "CollapsibleParagraph",
+    content = new List<object>
     {
-        blockType = "CollapsibleHeading",
-        properties = new
-        {
-                level=1,
-                isExpanded = true,
-                children = new List<BlockModel>(){ 
-                    // your actions
-                }
-        }
+        new { contentType = "Text", content = "Click to expand" }
     },
-    // Configuring CollapsibleParagraph block
-    new BlockModel
+    properties = new
     {
-        blockType = "CollapsibleParagraph",
-        properties = new
+        isExpanded = false,
+        children = new List<object>
         {
-                isExpanded = false,
-                children = new List<BlockModel>()
+            new BlockModel
+            {
+                blockType = "Paragraph",
+                content = new List<object>
                 {
-                    // your actions
+                    new { contentType = "Text", content = "Hidden content" }
                 }
+            }
         }
-        }
+    }
+}
 ```
 
 The below sample demonstrates the configuration of collapsibleHeading and collapsibleParagraph blocks in the Block Editor.
@@ -81,30 +78,19 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `CollapsibleParagraph` and `CollapsibleHeading` respectively.
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for CollapsibleHeading is `CollapsibleHeading` and for CollapsibleParagraph is `CollapsibleParagraph`.
 
-```typescript
-	// Configuring CollapsibleHeading block
-    new BlockModel
+```csharp
+// Configuring CollapsibleParagraph with custom placeholder
+new BlockModel
+{
+    blockType = "CollapsibleParagraph",
+    properties = new
     {
-        blockType = "CollapsibleHeading",
-        properties = new
-        {
-                level=1,
-                isExpanded = true,
-                placeholder = "collapsible heading"
-        }
-    },
-    // Configuring CollapsibleParagraph block
-    new BlockModel
-    {
-        blockType = "CollapsibleParagraph",
-        properties = new
-        {
-                isExpanded = false,
-                placeholder = "collapsible paragraph"
-        }
-        }
+        isExpanded = false,
+        placeholder = "Click to expand section"
+    }
+}
 ```
 
 ## Configure quote block
@@ -113,24 +99,24 @@ You can render Quote blocks by setting the `blockType` property as `Quote`. Quot
 
 ### Block type & properties
 
-```typescript
+```csharp
 // Adding Quote block
+new BlockModel
 {
     blockType = "Quote",
-    properties = new {
-    children = new List<BlockModel>()
+    properties = new
     {
-        new BlockModel()
+        children = new List<object>
         {
-            blockType = "Paragraph",
-            content = new List<object>(){
-                    new{
-                        contentType = "Text",
-                        content = ""
-                    }
+            new BlockModel
+            {
+                blockType = "Paragraph",
+                content = new List<object>
+                {
+                    new { contentType = "Text", content = "This is a quote" }
+                }
             }
         }
-    }
     }
 }
 ```
@@ -146,7 +132,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Quote Block](./../../images/block-quote.png)
+![Quote Block](../images/block-quote.png)
 
 ## Configure callout block
 
@@ -154,27 +140,26 @@ You can render Callout blocks by setting the `blockType` property as `Callout`. 
 
 ### Block type & properties
 
-```typescript
+```csharp
 // Adding callout block
-  {
+new BlockModel
+{
     blockType = "Callout",
-    properties = new {
-    children = new List<BlockModel>()
+    properties = new
     {
-            new BlockModel()
+        children = new List<object>
+        {
+            new BlockModel
             {
-                    blockType = "Paragraph",
-                    content = new List<object>(){
-                            new{
-                                    contentType = "Text",
-                                    content = "Important information: This is a callout block used to highlight important content"
-                            }
-                    }
+                blockType = "Paragraph",
+                content = new List<object>
+                {
+                    new { contentType = "Text", content = "Important information: This is a callout block used to highlight important content" }
+                }
             }
+        }
     }
-    }
-  }
-
+}
 ```
 
 The below sample demonstrates the configuration of callout block in the Block Editor.
@@ -188,4 +173,4 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Callout Block](./../../images/block-callout.png)
+![Callout Block](../images/block-callout.png)

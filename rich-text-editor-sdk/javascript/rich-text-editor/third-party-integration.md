@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Third party integration JavaScript Rich text editor | Syncfusion
-description: Learn here all about Third party integration in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Third-Party Integrations in JavaScript Rich Text Editor | Syncfusion
+description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the JavaScript Rich Text Editor.
 platform: rich-text-editor-sdk
-control: Third party integration 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Third party integration in JavaScript Rich text editor control
+# Third-Party Integration in JavaScript Rich Text Editor
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 

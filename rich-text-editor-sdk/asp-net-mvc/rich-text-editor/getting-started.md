@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Getting Started with ASP.NET MVC Rich Text Editor | Syncfusion
-description: Check out and learn about getting started with ASP.NET MVC Rich Text Editor control of Essential JS 2 and more details.
-platform: rich-text-editor-sdk
+description: Learn how to get started with the ASP.NET MVC Rich Text Editor and explore setup, configuration, and core feature examples.
 control: Rich Text Editor
-publishingplatform: rich-text-editor-sdk
+canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor"
+platform: rich-text-editor-sdk
 documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with ASP.NET MVC Rich Text Editor Control
+# Getting Started with ASP.NET MVC Rich Text Editor
 
 The [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains how to include [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -106,9 +107,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 1. [Getting Started with ASP.NET MVC using HTML Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [How to change the editor type](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/editor-mode)
-4. [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)
-5. [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/inline-editing)
-6. [Accessibility in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/accessibility)
-7. [Keyboard support in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/keyboard-support)
-8. [Globalization in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/globalization)
+3. [How to change the editor type](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/editor-mode)
+4. [How to render the iframe](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/iframe)
+5. [How to render the toolbar in inline mode](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/inline-editing)
+6. [Accessibility in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility)
+7. [Keyboard support in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/keyboard-support)
+8. [Globalization in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization)

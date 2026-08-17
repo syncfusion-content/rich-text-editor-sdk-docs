@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Style Encapsulation in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Style Encapsulation in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Style Encapsulation in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to isolate or apply application styles in the JavaScript Rich Text Editor using iframe mode and control CSS styling behavior.
 platform: rich-text-editor-sdk
-control: Style Encapsulation
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Style Encapsulation in JavaScript Rich Text Editor control
+# Style Encapsulation in JavaScript Rich Text Editor
 
 Style encapsulation determines how styles are applied within the Syncfusion **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
 

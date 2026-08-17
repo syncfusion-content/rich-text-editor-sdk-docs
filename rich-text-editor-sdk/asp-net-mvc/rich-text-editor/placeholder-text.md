@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Placeholder Text in ASP.NET MVC Rich Text Editor Control
-description: Learn here all about Placeholder Text in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Placeholder in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to add and customize placeholder text in the ASP.NET MVC Rich Text Editor to guide users before entering content.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Placeholder Text
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Placeholder in ASP.NET MVC Rich Text Editor Control
+# Placeholder in ASP.NET MVC Rich Text Editor
 
 Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Placeholder) property.
 

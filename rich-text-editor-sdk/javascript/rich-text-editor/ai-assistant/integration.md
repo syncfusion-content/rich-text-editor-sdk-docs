@@ -1,15 +1,14 @@
 ---
 layout: post
 title: AI Assistant in JavaScript Rich Text Editor | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 JavaScript Rich Text Editor control.
+description: Learn how to enable and configure the JavaScript Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
 platform: rich-text-editor-sdk
-control: Integrating the AI Assistant
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in JavaScript Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 

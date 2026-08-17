@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Editor Modes in ASP.NET MVC Syncfusion Rich Text Editor Component
-description: Learn here all about Formation in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Editor Modes in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the ASP.NET MVC Rich Text Editor to create and edit content in different formats.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Formation
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Working with Editor Mode in ASP.NET MVC Rich Text Editor control
+# Editor Modes in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor control used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 
@@ -81,5 +80,5 @@ For further details on Markdown editing, refer to the [`Markdown`](https://ej2.s
 
 ## See Also
 
-* [How to integrate the third party library](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/third-party-integration)
-* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)
+* [How to integrate the third party library](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/third-party-integration)
+* [How to render the iframe](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/iframe)

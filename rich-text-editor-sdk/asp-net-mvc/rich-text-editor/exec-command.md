@@ -1,15 +1,14 @@
 ---
 layout: post
-title: ExecuteCommand in ASP.NET MVC RichTextEditor Control| Syncfusion
-description: Learn here all about Execute Command in Syncfusion ASP.NET MVC Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Execute Command in ASP.NET MVC Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the ASP.NET MVC Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Execute Command
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# ExecuteCommand in Rich Text Editor
+# Execute Command in ASP.NET MVC Rich Text Editor
 
 In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area.
 The executeCommand will perform the following commands.
@@ -39,8 +38,8 @@ The executeCommand will perform the following commands.
 | insertHTML | Insert the html content to the current cursor position. | `rteObj.executeCommand('insertHTML', 'inserted an html');`|
 | insertOrderedList | Create a new list item(numbered). | `rteObj.executeCommand('insertOrderedList');`|
 | insertUnorderedList | Create a new list item(bulleted). |`rteObj.executeCommand('insertUnorderedList');`|
-| numberFormatList | Creates an ordered list with customizable numbering styles. The available formats are listed [here](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/tools/text-formatting#available-numbering-styles).|`rteObj.executeCommand('numberFormatList', 'decimal');`|
-| bulletFormatList | Creates an unordered list with customizable bullet styles. The available formats are listed [here](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/tools/text-formatting#available-bullet-styles). |`rteObj.executeCommand('bulletFormatList', 'disc');`|
+| numberFormatList | Creates an ordered list with customizable numbering styles. The available formats are listed [here](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/tools/text-formatting#available-numbering-styles).|`rteObj.executeCommand('numberFormatList', 'decimal');`|
+| bulletFormatList | Creates an unordered list with customizable bullet styles. The available formats are listed [here](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/tools/text-formatting#available-bullet-styles). |`rteObj.executeCommand('bulletFormatList', 'disc');`|
 | outdent | Allows to decrease the indent level of the content. | `rteObj.executeCommand('outdent');`|
 | redo | Allows to redo the actions | `rteObj.executeCommand('redo');`|
 | removeFormat | remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. |`rteObj.executeCommand('removeFormat');`|

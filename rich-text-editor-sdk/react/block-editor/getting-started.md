@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React Block Editor component | Syncfusion
-description: Checkout and learn about Getting started with React Block Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with React Block Editor | Syncfusion
+description: Learn how to get started with the React Block Editor and explore setup, configuration, and core feature examples.
 control: Block Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the React Block Editor Component
+# Getting Started with React Block Editor
 
 This section explains how to create a simple Block Editor and configure its available functionalities in the React environment.
 
@@ -62,7 +62,7 @@ I> To apply the application-specific styles correctly, import **App.css** into *
 
 ## Add the Block Editor Component
 
-Now, You can add the Block Editor component to your application. Replace the default contents of `src/App.tsx` with the following code, which uses the `<BlockEditorComponent>` directive to render the editor.
+Add the BlockEditorComponent to your application. Replace the contents of `src/App.tsx` with the following code:
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}

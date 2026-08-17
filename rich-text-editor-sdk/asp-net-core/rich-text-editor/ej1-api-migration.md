@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ASP.NET Core Rich Text Editor Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Migrate Essential JS 1 Rich Text Editor to ASP.NET Core | Syncfusion
+description: Learn how to migrate from Essential JS 1 to the ASP.NET Core Rich Text Editor by mapping APIs, features, and configuration settings.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Ej1 Api Migration
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migrate Essential JS 1 Rich Text Editor to ASP.NET Core
 
 This article describes the API migration process of Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -152,8 +151,8 @@ This article describes the API migration process of Rich Text Editor control fro
 | Rounded Corner | **Property:** show-rounded-corner<br/> <br/>`<ej-rte show-rounded-corner = "true"></ej-rte>` | Not Applicable |
 | Tooltip | **Property:** tooltip-settings<br/> <br/>`<ej-rte tooltip-settings = "viewBag.tooltip"></ej-rte>` | Not Applicable |
 | value | **Property:** value<br/> <br/>`<ej-rte value = "ViewBag.value"></ej-rte>` | **Property:** value<br/> <br/>`<ejs-richtexteditor value="ViewBag.value"></ejs-richtexteditor>`  |
-| Validation Rules | **Property:** validation-rules<br/> <br/>`<ej-rte validation-rules= "ViewBag.validation"></ej-rte>` | Achieved in sample level. <br/> <br/>[https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-rules](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-rules) |
-| Validation Message | **Property:** validation-message<br/> <br/>`<ej-rte validation-message= "ViewBag.validation ></ej-rte>` | Achieved in sample level.<br/> <br/>[https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-message](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-message) |
+| Validation Rules | **Property:** validation-rules<br/> <br/>`<ej-rte validation-rules= "ViewBag.validation"></ej-rte>` | Achieved in sample level. <br/> <br/>[https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-rules](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-rules) |
+| Validation Message | **Property:** validation-message<br/> <br/>`<ej-rte validation-message= "ViewBag.validation ></ej-rte>` | Achieved in sample level.<br/> <br/>[https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-message](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-message) |
 | Zoom Step | **Property:** zoom-step<br/> <br/>`<ej-rte zoom-step = "0.5"></ej-rte>` | Not Applicable |
 | Disable | **Method:**  disable() <br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");` <br/> <br/>`rteObj.disable()` | **Property:** enabled<br/> <br/>`<ejs-richtexteditor enabled = "false"></ejs-richtexteditor>` |
 | Enable | **Method:**  enable()<br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");`<br/> <br/>` rteObj.enable()` | **Property:** enabled<br/> <br/>`<ejs-richtexteditor enabled = "true"></ejs-richtexteditor>` |

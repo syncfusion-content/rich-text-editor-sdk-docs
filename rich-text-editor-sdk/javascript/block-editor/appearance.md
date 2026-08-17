@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Appearance in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about appearance with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in JavaScript Block Editor | Syncfusion
+description: Learn how to customize the JavaScript Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Appearance in JavaScript Block Editor control
+# Style and Appearance in JavaScript Block Editor
 
 The Block Editor control provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 
@@ -17,13 +16,16 @@ The Block Editor control provides several properties to customize its visual app
 
 You can specify the width and height for the Block Editor control using the [width](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#width) and [height](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#height) properties.
 
+Accept values in any valid CSS unit. Recommended minimum dimensions: 300px width, 100px height for usability.
+
 ```typescript
+// Responsive using viewport units
 const editor = new BlockEditor({
     width: '100%',
     height: '80vh'
 });
 
-// Or with specific pixel values
+// Fixed pixel dimensions
 const editor = new BlockEditor({
     width: '800px',
     height: '500px'
@@ -32,13 +34,15 @@ const editor = new BlockEditor({
 
 ## Setting readonly mode
 
-You can utilize the [readOnly](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+You can use the [readOnly](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
 ```typescript
 const editor = new BlockEditor({
     readOnly: true
 });
 ```
+
+> See [Read-Only Mode](./editor-security/read-only-mode) for complete behavior details and programmatic toggle examples.
 
 ## Customization using CSS Class
 
@@ -50,6 +54,22 @@ const editor = new BlockEditor({
     height: '400px',
     cssClass: 'custom-editor-theme'
 });
+```
+
+**Example CSS definition:**
+
+```css
+.custom-editor-theme {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-editor-theme .e-block {
+    margin-bottom: 12px;
+}
 ```
 
 The following example demonstrates the usage of `readOnly` and `cssClass` properties of the Block Editor.

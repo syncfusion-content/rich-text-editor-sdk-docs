@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Keyboard Shortcuts in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn here all about Keyboard Shortcuts with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Keyboard Shortcuts in Blazor Block Editor | Syncfusion®
+description: Learn the keyboard shortcuts available in the Blazor Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
@@ -45,8 +45,7 @@ These shortcuts enable quick creation of different block types and management of
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement. For indent, both <kbd>Ctrl</kbd> + <kbd>]</kbd> and <kbd>Tab</kbd> are supported. For outdent, both <kbd>Ctrl</kbd> + <kbd>[</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> are supported.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -88,7 +87,7 @@ In the example below, the shortcut for bold formatting is changed to <kbd>Alt</k
 
 @code {
 
-    private Dictionary<string, string> KeyConfig = new Dictionary<string, string>
+    private Dictionary<string, string> KeyConfig = new()
     {
         { "Bold", "alt+b" },
         { "Italic", "alt+i" }

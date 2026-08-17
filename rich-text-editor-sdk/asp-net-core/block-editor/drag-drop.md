@@ -1,24 +1,41 @@
 ---
 layout: post
-title: Drag and drop in ASP.NET Core Block Editor Control | Syncfusion
-description: Checkout and learn about Drag and drop with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+title: Drag and Drop in ASP.NET Core Block Editor | Syncfusion
+description: Learn how to enable drag and drop in the ASP.NET Core BlockEditor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: BlockEditor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Drag and drop in ASP.NET Core Block Editor control
+# Drag and Drop in ASP.NET Core Block Editor
 
 The drag and drop feature in Block Editor allows users to easily rearrange blocks within the editor by dragging them to different positions.
 
 ## Enable Drag and Drop
 
-You can control drag and drop operations within Block Editor using the [enableDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableDragAndDrop) property. By default, it is set to `true`.
+You can control drag-and-drop operations within Block Editor using the [EnableDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableDragAndDrop) property. By default, it is set to `true`.
+
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor" enableDragAndDrop="true"></ejs-blockeditor>
+</div>
+
+```
+
+To disable drag-and-drop, set the property to `false`:
+
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor" enableDragAndDrop="false"></ejs-blockeditor>
+</div>
+
+```
 
 ## Dragging blocks
 
-When drag and drop is enabled, users can rearrange blocks in the following ways:
+When drag-and-drop is enabled, users can rearrange blocks in the following ways:
 
 The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization in Blazor Block Editor Component | Syncfusion®
-description: Checkout and learn about Globalization with Blazor Block Editor component in Blazor Server App and Blazor WebAssembly App.
+title: Globalization in Blazor Block Editor | Syncfusion®
+description: Learn how to localize the Blazor Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Globalization in Blazor Block Editor Component
+# Globalization in Blazor Block Editor
 
 The Blazor Block Editor component supports globalization features like `Localization` and `Right-to-Left (RTL)` alignment, enabling it to be adapted for different cultures and languages.
 
@@ -47,8 +47,18 @@ Block Editor can be localized for any culture by translating its static text lab
 |`linkCancel`|Cancel|
 |`codeCopyTooltip`|Copy code|
 
-Refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation for detailed steps on implementing localization in Blazor components.
+Refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation for detailed steps on registering translated resource strings and implementing localization in Blazor components.
 
 ## Right-to-Left (RTL)
 
-The Right-to-Left (RTL) feature reverses the component's layout and text direction to support languages that are read from right to left, such as Arabic or Hebrew. Refer to [Blazor RTL](https://blazor.syncfusion.com/documentation/common/right-to-left) topic to provide RTL support for the Blazor components.
+The Right-to-Left (RTL) feature reverses the component's layout and text direction to support languages that are read from right to left, such as Arabic or Hebrew. Set the `EnableRtl` property to `true` to enable RTL rendering:
+
+```cshtml
+@using Syncfusion.Blazor.BlockEditor
+
+<div id="container">
+    <SfBlockEditor EnableRtl="true"></SfBlockEditor>
+</div>
+```
+
+Refer to the [Blazor RTL](https://blazor.syncfusion.com/documentation/common/right-to-left) topic to provide RTL support for the Blazor components.

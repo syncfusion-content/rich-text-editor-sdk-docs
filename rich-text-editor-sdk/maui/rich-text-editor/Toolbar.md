@@ -2,12 +2,12 @@
 layout: post
 title: Toolbar in .NET MAUI Rich Text Editor | Syncfusion®
 description: Learn here all about Toolbar features in Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control.
-platform: maui 
+platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Toolbar in .NET MAUI Rich Text Editor (SfRichTextEditor)
+# Toolbar in .NET MAUI Rich Text Editor
 
 ## Toolbar position
 
@@ -34,7 +34,7 @@ richTextEditor.ToolbarPosition = RichTextEditorToolbarPosition.Bottom;
 
 ## Inline tooltip for link
 
-The link tooltip appears when you click a link in the editor. The Rich Text Editor provides essential tools in the link tooltip, including "Open", "Edit Link", and "Remove Link".
+The link tooltip appears when you click a link in the editor. The Rich Text Editor provides essential tools in the link tooltip, including **Open**, **Edit Link**, and **Remove Link**.
 
 ![.NET MAUI Rich Text Editor link quick tooltip](images/richtexteditor-link-quick-tooltip.png)
 

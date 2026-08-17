@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Xhtml Validation in React Rich text editor component | Syncfusion
-description: Learn how to enable XHTML validation and XSS prevention in the Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Xhtml Validation
+title: XHTML Validation in React Rich Text Editor | Syncfusion
+description: Learn how to validate XHTML content and prevent XSS attacks in the React Rich Text Editor using built-in sanitization and custom filtering.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# XHTML validation in React Rich Text Editor Component
+# XHTML Validation in React Rich Text Editor
 
 The Syncfusion React Rich Text Editor provides features to ensure content complies with XHTML standards and is secure against cross-site scripting (XSS) attacks. The `enableXhtml` property enforces continuous XHTML validation, while `enableHtmlSanitizer` and the `beforeSanitizeHtml` event protect against XSS vulnerabilities. These features are essential for maintaining standards-compliant and secure content, particularly when `editorMode` is set to `HTML`.
 
@@ -21,7 +21,7 @@ The editor includes an [`enableXhtml`](https://ej2.syncfusion.com/react/document
 When `enableXhtml` is set to `true`, the editor enforces the following attribute rules:
 
 * **Case Sensitivity**: Attributes must be lowercase (e.g., `class`, not `CLASS`).
-* **Quotation Marks**: Attribute values must be enclosed in quotation marks..
+* **Quotation Marks**: Attribute values must be enclosed in quotation marks.
 * **Validity**: Only valid attributes for corresponding HTML elements are allowed.
 * **Required Attributes**: Required attributes for HTML elements must be included (e.g., `alt` for `<img>`).
 
@@ -105,7 +105,7 @@ The following example shows XSS prevention removing a `<script>` tag and `onmous
 
 For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
 
-### Implementing custom cross-site scripting and fililtering in Rich Text Editor
+### Implementing custom cross-site scripting and filtering in Rich Text Editor
 
 1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.

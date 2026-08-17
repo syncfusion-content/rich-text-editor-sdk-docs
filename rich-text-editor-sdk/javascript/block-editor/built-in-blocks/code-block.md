@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Code Block in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Code Block with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Code Blocks in JavaScript Block Editor | Syncfusion
+description: Learn how to add and configure code blocks in the JavaScript Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in JavaScript Block Editor control
+# Code Blocks in JavaScript Block Editor
 
 The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#properties) property.
 
@@ -22,7 +21,7 @@ The `codeBlockSettings` property supports the following options:
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | [languages](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#languages) | Specifies the array of language options for syntax highlighting. | [] |
-| [defaultLanguage](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguages) | Defines the default language to use for syntax highlighting. | 'plaintext' |
+| [defaultLanguage](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguage) | Defines the default language to use for syntax highlighting. | 'plaintext' |
 
 ## Configure code properties
 
@@ -37,11 +36,12 @@ For Code blocks, you can specify the language for syntax highlighting using the 
     blockType: 'Code',
     content: [
         {
-            const x = 10;
+            contentType: 'Text',
+            content: 'const x = 10;'
         }
     ],
     properties: {
-       language: 'javascript'
+        language: 'javascript'
     }
 }
 ```

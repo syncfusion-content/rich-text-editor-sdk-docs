@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Feature Modules with Angular Rich Text Editor component | Syncfusion
-description: Learn about feature modules in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Feature Modules in Angular Rich Text Editor | Syncfusion
+description: Learn how to inject feature modules in the Angular Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Modules
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Modules in Angular Rich Text Editor
+# Feature Modules in Angular Rich Text Editor
 
 The Angular Rich Text Editor employs a modular architecture, allowing selective inclusion of features to optimize performance and customize functionality. This approach reduces bundle size and enhances flexibility for developers adapting the editor to specific use cases.
 
