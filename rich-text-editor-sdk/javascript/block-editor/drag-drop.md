@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Drag and Drop in JavaScript Block Editor
 
-The drag and drop feature in the Block Editor allows users to intuitively rearrange content blocks by dragging them to different positions within the editor.
+Drag-and-drop lets users rearrange blocks in the Block Editor by dragging them to different positions. Most block types support drag-and-drop, including Paragraph, Heading, List, Image, Code, and Quote blocks. Nested blocks within Callout and Collapsible containers can also be rearranged.
 
 ## Enable Drag and Drop
 
@@ -18,15 +18,17 @@ You can control the drag and drop functionality within the Block Editor using th
 
 ## Dragging blocks
 
-When drag and drop is enabled, users can rearrange blocks in the following ways:
+When drag-and-drop is enabled, users can rearrange blocks in the following ways:
 
 The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
 
-- **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
+- **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle (a six-dot icon on the left). Click and hold the handle, then drag the block to a new position.
 
-- **Multiple Block Dragging**: To move multiple blocks, first select the desired blocks. Once selected, click and drag the entire group to a new location.
+- **Multiple Block Dragging**: To move multiple blocks, first select them, then drag the entire group to a new location.
 
-During the drag operation, a visual indicator will show precisely where the blocks will be placed when dropped, ensuring accurate placement.
+During the drag operation, a visual indicator shows precisely where the blocks will be placed when dropped, ensuring accurate placement.
+
+**Accessibility Note:** For keyboard users, use `Alt + Shift + Up/Down Arrow` keys to move blocks without dragging. Ensure this alternative is documented for users with motor disabilities.
 
 {% if page.publishingplatform == "typescript" %}
 
