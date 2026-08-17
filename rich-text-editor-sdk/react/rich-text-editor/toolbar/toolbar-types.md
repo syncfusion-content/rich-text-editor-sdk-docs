@@ -144,7 +144,7 @@ By default, the toolbar remains fixed at the top of the Rich Text Editor when th
 
 To control the vertical distance (in pixels) between the sticky toolbar and the top of the viewport, set [floatingToolbarOffset](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#floatingtoolbaroffset) to a numeric value. The default is `0`.
 
-Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#enablefloating) propertyrty.
+Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/toolbarsettings#enablefloating) property.
 
 `[Class-component]`
 
