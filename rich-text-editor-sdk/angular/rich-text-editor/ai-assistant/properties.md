@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure of AI Assistant in Angular Rich Text Editor | Syncfusion
+title: Configuring the AI Assistant in Angular Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the Angular Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -8,7 +8,9 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Configure AI Assistant in Angular Rich Text Editor
+# Configuring the AI Assistant in Angular Rich Text Editor
+
+> **Prerequisite:** Before configuring these properties, ensure the AI Assistant is enabled. See [Integrating the AI Assistant](integration.md) for the required `AIAssistantService` provider and toolbar items.
 
 The [AIAssistantSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/aiassistantsettingsmodel) class provides the following properties for complete customization:
 
@@ -83,7 +85,7 @@ The following table lists the available toolbar items for the Header, Prompt, an
 
 | Toolbar | Items & Their Use |
 |---------|-------------------|
-| **Header** | **AIcommands** – Opens AI-related command options.<br>**Close** – Closes the current panel or window. <br> **Clear** - Clear the current conversations. |
+| **Header** | **AICommands** – Opens AI-related command options.<br>**Close** – Closes the current panel or window. <br> **Clear** – Clears the current conversation. |
 | **Prompt** | **Edit** – Allows you to modify the prompt text.<br>**Copy** – Copies the prompt to your clipboard. |
 | **Response** | **Regenerate** – Produces a new response for the same prompt.<br>**Copy** – Copies the AI response.<br>**\|** – Visual separator between actions.<br>**Insert** – Inserts the generated response into the target editor or field. |
 
@@ -91,13 +93,13 @@ The following table lists the available toolbar items for the Header, Prompt, an
 
 The default toolbar configurations are:
 
-- **Header Toolbar**: `['AIcommands', 'Close']`
+- **Header Toolbar**: `['AICommands', 'Close']`
 - **Prompt Toolbar**: `['Edit', 'Copy']`
 - **Response Toolbar**: `['Regenerate', 'Copy', '|', 'Insert']`
 
 **Example**
 
-In the below sample, the toolbar settings are configured to modify the order and items are displayed.
+In the sample below, the toolbar settings are configured to modify the order of the displayed items.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
