@@ -98,7 +98,7 @@ For detailed information on supported keyboard shortcuts, refer to the [Keyboard
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://help.syncfusion.com/rich-text-editor-sdk/react/rich-text-editor/rich-text-editor-properties#formatter) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/index-default#formatter) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 `[Class-component]`
 
