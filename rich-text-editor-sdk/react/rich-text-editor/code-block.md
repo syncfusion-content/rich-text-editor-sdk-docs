@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Code Blocks in React Rich Text Editor
 
-The Code Block feature in the Rich Text Editor, enabling users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the frontend.
+The Code Block feature in the Rich Text Editor enables users to insert and format code snippets effectively. This feature covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live syntax highlighting during editing is not supported, syntax highlighting can be applied when content is displayed on the frontend.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use Code Block tool,
 inject Code Block module using the `<Inject services={[CodeBlock]} />`.
