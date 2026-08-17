@@ -282,6 +282,7 @@ import { RichTextEditorModule, ToolbarService, QuickToolbarService, LinkService,
   providers: [ ToolbarService, QuickToolbarService, LinkService, VideoService, HtmlEditorService, ImageService, TableService, PasteCleanupService ],
 })
 export class AppComponent {
+    public value: string = "<p>The Rich Text Editor is WYSIWYG (\"what you see is what you get\") editor useful to create and edit content, and return the valid <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\" aria-label=\"HTML markup value\" >HTML markup</a> or <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\" aria-label=\"markdown value\">markdown</a> of the content</p>";
     public toolbarSettings: ToolbarSettingsModel = {
         items: ['Video'],
     };
