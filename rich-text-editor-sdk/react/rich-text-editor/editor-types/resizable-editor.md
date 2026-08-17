@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The resizable editor feature allows users to dynamically resize the editor. When enabled, a resize handle appears at the bottom right corner for intuitive diagonal resizing.
 
-### Setup
+## Setup
 
 To use the resizable feature, import and inject the `Resize` module:
 
