@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Mentions in React Rich Text Editor
 
-The Mention feature, integrated with the Syncfusion React Rich Text Editor via the [Mention](https://ej2.syncfusion.com/react/documentation/mention/getting-started) component , enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
+The Mention feature, integrated with the Syncfusion React Rich Text Editor via the [Mention](https://ej2.syncfusion.com/react/documentation/mention/getting-started) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
 
 ## Setup and configuration
 
@@ -18,7 +18,7 @@ Use the [target](https://ej2.syncfusion.com/react/documentation/api/mention#targ
 
 ## Using mentions
 
-When users type the `@` symbol followed by a character the Rich Text Editor, a suggestion list appears, Users can then select an item from the list by:
+When users type the `@` symbol followed by a character in the Rich Text Editor, a suggestion list appears. Users can then select an item from the list by:
 
 * Clicking on it
 * Typing the name of the item they want to tag
