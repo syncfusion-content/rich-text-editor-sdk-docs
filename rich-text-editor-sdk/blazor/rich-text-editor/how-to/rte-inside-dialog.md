@@ -34,15 +34,15 @@ While rendering the Rich Text Editor inside the [Dialog](https://blazor.syncfusi
 @code {
     SfDialog DialogObj;
     SfRichTextEditor RteObj;
-    private void OpenDialog()
+    private async Task OpenDialog()
     {
-        this.DialogObj.ShowAsync();
+        await this.DialogObj.ShowAsync();
     }
-    private void DialogOpen()
+    private async Task DialogOpen()
     {
-        this.RteObj.RefreshUIAsync();
+        await this.RteObj.RefreshUIAsync();
     }
-} 
+}
 
 {% endhighlight %}
 
