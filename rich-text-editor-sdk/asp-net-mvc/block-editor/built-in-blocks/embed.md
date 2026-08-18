@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Blocks in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the ASP.NET MVC Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
+description: Learn how to add and configure image blocks in the ASP.NET MVC Block Editor, including uploads, server storage, authentication, and resizing.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
@@ -22,9 +22,9 @@ You can render an `Image` block by setting the `blockType` property to `Image` i
 
 #### Global image settings
 
-You can configure global settings for image blocks using the [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#ImageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
 
-The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property supports the following options:
+The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#ImageBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
