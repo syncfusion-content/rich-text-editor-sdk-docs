@@ -3,8 +3,7 @@ layout: post
 title: Editor Menus in Vue Block Editor Component | Syncfusion
 description: Checkout and learn about Editor Menus with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -15,7 +14,7 @@ The Block Editor component includes several intuitive, context-aware menus that 
 
 ## Slash command menu
 
-The Slash Command menu allows users to quickly insert or transform blocks by typing `/` followed by a command. This provides an efficient, keyboard-driven way to interact with the editor.
+The slash command menu allows users to quickly insert or transform blocks by typing `/` followed by a command. This provides an efficient, keyboard-driven way to interact with the editor.
 
 ### Built-in items
 
@@ -41,7 +40,7 @@ The following events are available for the Slash Command menu:
 |Name|Args|Description|
 |---|---|---|
 |[filtering](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/commandmenusettingsmodel#filtering)|CommandFilteringEventArgs|Triggers when the user types to filter the command menu items.|
-|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/commandmenusettingsmodel#itemselect)|CommandItemSelectEventArgs|Triggers when the user clicks on a command menu item.|
+|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/commandmenusettingsmodel#itemselect)|CommandItemSelectEventArgs|Triggers when a command menu item is selected.|
 
 The following example demonstrates how to customize the Slash Command menu.
 
@@ -58,7 +57,7 @@ The following example demonstrates how to customize the Slash Command menu.
 
 ## Context menu
 
-The Context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
+The context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
 
 ### Built-in items
 
@@ -80,9 +79,9 @@ The following events are available for the Context menu:
 
 |Name|Args|Description|
 |---|---|---|
-|[beforeOpen](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#beforeclose)|ContextMenuOpeningEventArgs|Triggers before the context menu opens.|
+|[beforeOpen](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#beforeopen)|ContextMenuOpeningEventArgs|Triggers before the context menu opens.|
 |[beforeClose](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#beforeclose)|ContextMenuClosingEventArgs|Triggers before the context menu closes.|
-|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#itemselect)|ContextMenuItemSelectEventArgs|Triggers when a context menu item is clicked.|
+|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#itemselect)|ContextMenuItemSelectEventArgs|Triggers when a context menu item is selected.|
 
 The following example demonstrates how to customize the Context menu.
 
@@ -99,7 +98,7 @@ The following example demonstrates how to customize the Context menu.
 
 ## Block action menu
 
-The Block Action menu appears next to a block when you hover over it and click the drag handle icon, offering quick actions specific to that block.
+The block action menu appears next to a block when you hover over it and click the drag handle icon, offering quick actions specific to that block.
 
 ### Built-in items
 
@@ -124,9 +123,9 @@ The following events are available for the Block action menu:
 
 |Name|Args|Description|
 |---|---|---|
-|[beforeOpen](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#beforeopen)|BlockActionMenuOpeningEventArgs|Triggers when the block action menu is opened.|
-|[beforeClose](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/contextmenusettingsmodel#beforeclose)|BlockActionMenuClosingEventArgs|Triggers when the block action menu is closed.|
-|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockactionmenusettingsmodel#itemselect)|BlockActionItemSelectEventArgs|Triggers when a block action menu item is clicked.|
+|[beforeOpen](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockactionmenusettingsmodel#beforeopen)|BlockActionMenuOpeningEventArgs|Triggers when the block action menu is opened.|
+|[beforeClose](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockactionmenusettingsmodel#beforeclose)|BlockActionMenuClosingEventArgs|Triggers when the block action menu is closed.|
+|[itemSelect](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockactionmenusettingsmodel#itemselect)|BlockActionItemSelectEventArgs|Triggers when a block action menu item is selected.|
 
 The following example demonstrates how to customize the Block action menu.
 
@@ -167,13 +166,13 @@ The inline toolbar now includes `transform` options to quickly convert blocks be
 
 Below are the built-in transform block options available:
 
-| Built-in transform Block Types          |
-|-----------------------------------------|
-| Paragraph                               |
-| Heading1 to Heading4                    |
-| Checklist                               |
-| BulletList                              |
-| NumberedList                            |
+| Built-in transform block type | Description                                |
+|--------------------------------|--------------------------------------------|
+| Paragraph                      | Converts the block to a paragraph.         |
+| Heading 1 – Heading 4          | Converts the block to the chosen heading.  |
+| Checklist                      | Converts the block to a checklist.         |
+| BulletList                     | Converts the block to a bulleted list.     |
+| NumberedList                   | Converts the block to a numbered list.     |
 
 > For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible` transform options not available. Instead they will be added as a new block.
 
@@ -225,7 +224,7 @@ The following example demonstrates how to customize the font and background colo
 
 ### Customize Inline Toolbar
 
-You can use the [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs.
+You can use the [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs. Built-in item keys that can be passed in the `items` array include `Bold`, `Italic`, `Underline`, `Strikethrough`, `Superscript`, `Subscript`, `Uppercase`, `Lowercase`, `Color`, `Backgroundcolor`, `Transform`, `InlineCode`, and `Link`.
 
 ### Events
 
@@ -233,7 +232,7 @@ The following events are available for the Inline Toolbar:
 
 |Name|Args|Description|
 |---|---|---|
-|[itemClick](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/inlinetoolbarsettingsmodel#itemclick)|ToolbarItemClickEventArgs|Triggers when the user clicks on an inline toolbar item.|
+|[itemClick](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/inlinetoolbarsettingsmodel#itemclick)|ToolbarItemClickEventArgs|Triggers when an inline toolbar item is selected.|
 
 The following example demonstrates how to customize the Inline Toolbar.
 
