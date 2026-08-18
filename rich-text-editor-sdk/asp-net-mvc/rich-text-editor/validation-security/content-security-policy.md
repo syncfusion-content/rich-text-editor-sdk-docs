@@ -21,7 +21,7 @@ The ASP.NET MVC Rich Text Editor supports CSP-enabled applications. When the edi
 >
 > Without this directive, some editor features and UI components may not render or function correctly.
 
-## Rich Text Editor CSP Requirements
+## Rich Text Editor CSP requirements
 
 The Rich Text Editor requires the following Content Security Policy directives to render and function correctly.
 
@@ -65,7 +65,7 @@ img-src 'self' data: blob:
 
 The Rich Text Editor supports inserting images from the local origin, data URIs, and blob URLs. Allowing the same origin, inline data URIs, and blob URLs in the image source directive ensures that inserted images and previews render correctly.
 
-## Recommended CSP Configuration
+## Recommended CSP configuration
 
 The following example shows a recommended Content Security Policy configuration for an ASP.NET MVC application that hosts the Rich Text Editor. Configure the policy by adding the `Content-Security-Policy` response header in `Global.asax` or an `ActionFilter` so that the browser enforces it for every response.
 
@@ -143,7 +143,7 @@ namespace MvcApplication.Filters
 >
 > Additional CSP directives may be required depending on the Rich Text Editor features you enable, such as image upload, media embedding, external resources, custom fonts, or server-side integrations.
 
-## Rich Text Editor Example
+## Rich Text Editor example
 
 The following example shows the Rich Text Editor configured with a Content Security Policy that meets the requirements described in this document.
 
@@ -208,7 +208,7 @@ In addition, the following UI-related limitations may occur when inline styles a
 >
 > Allowing `'unsafe-inline'` under `style-src` enables inline CSS only and does not allow inline JavaScript execution. Applications that enforce a strict CSP without `'unsafe-inline'` should validate Rich Text Editor functionality and formatting behavior.
 
-## Strict CSP Considerations
+## Strict CSP considerations
 
 Applications that do not allow:
 
@@ -218,7 +218,7 @@ may experience limitations in editor rendering, formatting functionality, and UI
 
 If your application enforces a strict CSP, validate all required Rich Text Editor features under the configured policy and enable only the directives required for your scenario.
 
-## Image Upload Considerations
+## Image Upload considerations
 
 When configuring the Rich Text Editor to upload images, additional Content Security Policy directives may be required depending on the upload destination.
 
@@ -256,7 +256,7 @@ HttpContext.Current.Response.Headers.Add(
 >
 > Always validate the destination URLs of image upload services and add only the trusted origins required by your application.
 
-## Security Considerations
+## Security considerations
 
 When configuring Content Security Policy for the Rich Text Editor, follow these security best practices:
 
