@@ -244,7 +244,7 @@ Server upload: Use the `SaveUrl` property to upload audio files to your server b
 
 ### Disabling audio drag and drop
 
-You can prevent drag-and-drop action by setting the `OnMediaDrop` argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent drag-and-drop action by setting the [OnMediaDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnMediaDrop) argument's `Cancel` property to `true`. The following code shows how to prevent the drag-and-drop.
 
 {% tabs %}
 {% highlight razor %}
@@ -370,7 +370,7 @@ namespace RenameAudio.Controllers
 
 The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-N> By default it doesn't support `UseDefaultCredentials` property, we need to manually append the default credentials with the upload request.
+N> By default, it doesn't support the `UseDefaultCredentials` property; you need to manually append the default credentials to the upload request.
 
 {% tabs %}
 {% highlight razor %}

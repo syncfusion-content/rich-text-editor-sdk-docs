@@ -58,7 +58,7 @@ By default, the video tool opens the video dialog, allowing you to insert an emb
 
 In the video dialog, by using the `browse` option, select the video from the local machine and insert it into the Rich Text Editor content.
 
-If the path field is not specified in the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html), the video will be converted into `Blob` url or `Base64` and inserted inside the Rich Text Editor.
+If the path field is not specified in the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html), the video will be converted to a `Blob` or `Base64` URL and inserted inside the Rich Text Editor.
 
 ### Server-side action
 
@@ -198,7 +198,7 @@ The example below shows how video is saved in `Blob` and `Base64` formats.
 
 ## Maximum file size restriction
 
-By using the Rich Text Editor's [RichTextEditorVideoSettings.MaxFileSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MaxFileSize) property, you can restrict the video to upload when the given video size is greater than the allowed fileSize.
+By using the Rich Text Editor's [RichTextEditorVideoSettings.MaxFileSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MaxFileSize) property, you can restrict the video upload when the video size exceeds the allowed fileSize. The value is specified in bytes.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 
@@ -236,7 +236,7 @@ Change the width and height of the [RichTextEditorQuickToolbarSettings](https://
 
 ## Display Position
 
-Sets the default display for a video when it is inserted in the Rich Text Editor using the [RichTextEditorMediaSettings.layoutOption](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_LayoutOption). It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
+Sets the default display for a video when it is inserted in the Rich Text Editor using the [RichTextEditorMediaSettings.layoutOption](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_LayoutOption). It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video element's layout position.
 
 ![Blazor RichTextEditor video display](../images/blazor-richtexteditor-video-display.webp)
 
@@ -266,7 +266,7 @@ Server upload: Use the `SaveUrl` property to upload video files to your server b
 
 ### Disabling videos drag and drop
 
-You can prevent drag-and-drop action by setting the `OnMediaDrop` argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent the drag-and-drop action by setting the [OnMediaDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnMediaDrop) argument's `Cancel` property to `true`. The following code shows how to prevent the drag-and-drop.
 
 {% tabs %}
 {% highlight razor %}
@@ -301,7 +301,7 @@ N> If the [RichTextEditorVideoSettings.MinWidth](https://help.syncfusion.com/cr/
 
 ## Rename video before inserting
 
-By using the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html) property, you can specify the server handler to upload the selected video. Then by binding the `FileUploadSuccess` event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
+By using the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html) property, you can specify the server handler to upload the selected video. Then by binding the `FileUploadSuccess` event, you receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
 Refer `RenameController.cs` controller file for configure the server-side.
 
