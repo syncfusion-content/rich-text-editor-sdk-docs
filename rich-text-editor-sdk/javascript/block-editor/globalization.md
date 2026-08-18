@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Globalization in JavaScript Block Editor
 
-Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor control provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
+Globalization enables applications to adapt to different cultures and languages. The Syncfusion Block Editor supports localization and right-to-left (RTL) layouts, allowing you to serve users from diverse linguistic backgrounds.
 
 ## Localization
 
-The Block Editor can be localized for any culture by translating its static text labels. The default locale is `en` (English). The following table lists the default text values for the `en` culture that can be translated.
+Localize the Block Editor for any culture by translating its static text labels. The default locale is `en` (English). The following table lists the default text values for the `en` culture that can be translated.
 
 |KEY|Text|
 |----|----|
@@ -48,7 +48,7 @@ The Block Editor can be localized for any culture by translating its static text
 |`linkCancel`|Cancel|
 |`codeCopyTooltip`|Copy code|
 
-The below example shows adding the German culture locale(`de-DE`)
+The example below shows how to add the German culture locale (`de-DE`).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,13 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## RTL
 
-The Block Editor supports Right-to-Left (RTL) mode, which reverses the layout of the control to accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. This feature can be enabled by setting the [enableRtl](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#enablertl) property to `true`.
+The Block Editor supports Right-to-Left (RTL) mode, which reverses the layout of the control to accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. When enabled, icons, toolbars, and text alignment are automatically mirrored to support RTL languages. Enable RTL by setting the [enableRtl](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#enablertl) property to `true`.
+
+```typescript
+const editor = new BlockEditor({
+    enableRtl: true
+});
+```
 
 {% if page.publishingplatform == "typescript" %}
 

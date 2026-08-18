@@ -3,8 +3,7 @@ layout: post
 title: Drag and drop in Vue Block Editor Component | Syncfusion
 description: Checkout and learn about Drag and drop with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -19,9 +18,7 @@ You can control the drag and drop functionality within the Block Editor using th
 
 ## Dragging blocks
 
-When drag and drop is enabled, users can rearrange blocks in the following ways:
-
-The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position.
+When drag and drop is enabled, users can rearrange single or multiple blocks in the following ways:
 
 - **Single Block Dragging**: To drag a single block, hover over it to reveal the drag handle. Click and hold the handle, then drag the block to a new position.
 
