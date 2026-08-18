@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Vue Block Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started with Vue Block Editor component | Syncfusion
+description: Learn here all about Getting started with the Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
 control: Block Editor
 platform: ej2-vue
