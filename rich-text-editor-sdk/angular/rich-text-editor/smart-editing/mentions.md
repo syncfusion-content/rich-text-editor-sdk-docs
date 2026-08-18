@@ -18,16 +18,16 @@ Use the [target](https://ej2.syncfusion.com/angular/documentation/api/mention/in
 
 ## Using mentions
 
-When users type the `@` symbol followed by a character the Rich Text Editor, a suggestion list appears, Users can then select an item from the list by:
+When users type the `@` symbol followed by a character in the Rich Text Editor, a suggestion list appears. Users can then select an item from the list by:
 
-* Clicking on it
-* Typing the name of the item they want to tag
+* Clicking on it.
+* Typing the name of the item they want to tag.
 
-## Customizing suggestion list 
+## Customize the suggestion list
 
-### Minimum input length for Mention suggestions
+### Set the minimum input length for Mention suggestions
 
-You can control when the suggestion list appears by setting the [minLength](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#minLength) property in the Mention component. This property defines the minimum number of characters a user must type after the mention character (@) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
+You can control when the suggestion list appears by setting the [`minLength`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#minlength) property in the Mention component. This property defines the minimum number of characters a user must type after the mention character (`@`) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
 
 By default, minLength is set to 0, which means the suggestion list appears immediately after the mention character is entered. However, you can increase this value to delay the search until the user has typed a specific number of characters.
 
@@ -45,9 +45,9 @@ In the following example, the minLength is set to 3, so the suggestion list will
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/mention-min-length" %}
 
-### Customizing suggestion list count
+### Customize the suggestion list count
 
-You can control the number of items displayed in the Mention suggestion list using the [suggestionCount](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#suggestionCount) property. This is particularly useful when working with large datasets, allowing you to limit the number of suggestions shown to the user.
+You can control the number of items displayed in the Mention suggestion list using the [`suggestionCount`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#suggestionCount) property. This is particularly useful when working with large datasets, letting you limit the number of suggestions shown to the user.
 
 By default, the suggestion list displays 25 items. You can customize this value to show fewer or more items based on your application's needs.
 
@@ -65,11 +65,11 @@ In the example below, the `suggestionCount` is set to 5, so only 5 items will be
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/mention-suggestion-count" %}
 
-### Customizing suggestion list using templates
+### Customize the suggestion list using templates
 
 #### Item template
 
-You can customize how each item appears in the suggestion list using the [itemTemplate](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#itemTemplate) property. This allows you to display additional details such as email, role, or profile image alongside the mention name.
+You can customize how each item appears in the suggestion list using the [`itemTemplate`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#itemTemplate) property. This lets you display additional details such as email, role, or profile image alongside the mention name.
 
 #### Display template
 
