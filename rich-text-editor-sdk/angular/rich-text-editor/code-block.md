@@ -10,22 +10,22 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Code Blocks in Angular Rich Text Editor
 
-The Code Block feature in the Rich Text Editor, enabling users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the frontend.
+The Code Block feature in the Rich Text Editor enables users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the frontend.
 
 > To use the Code Block feature, configure `CodeBlockService` in the provider section.
 
 ## Inserting a code block
 
 The Code Block feature allows users to embed formatted code snippets within the Rich Text Editor. To insert a code block:
-- **Using the Toolbar**: Click the **CodeBlock** button in the editor’s toolbar, typically represented by a code icon.
-- **Using the Shortcut**: Press `Ctrl+Shift+B` (or `Cmd+Shift+B` on macOS) to insert a code block at the cursor’s position.
-- A dropdown menu appears, allowing selection of the programming language for the code block, such as **JavaScript**, **Python**, **HTML**, or others configured in the system.
+- **Using the Toolbar**: Click the `CodeBlock` button in the editor's toolbar, typically represented by a code icon.
+- **Using the Shortcut**: Press `Ctrl+Shift+B` (or `Cmd+Shift+B` on macOS) to insert a code block at the cursor's position.
+- A dropdown appears for selecting the programming language for the code block, such as **JavaScript**, **Python**, **HTML**, or others configured in the system.
 
 The code block is rendered with a monospaced font and preserved indentation for readability. Language selection applies syntax-specific formatting and prepares the block for syntax highlighting when displayed on the frontend.
 
 ## Configuring code block languages
 
-The Code Block feature supports customizable programming languages via the `codeBlockSettings` property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
+The Code Block feature supports customizable programming languages via the [`codeBlockSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/codeBlockSettings) property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
 
 Below is an example of how to configure the `codeBlockSettings` using the Rich Text Editor:
 
@@ -49,7 +49,7 @@ In this example:
 
 ## Integrating syntax highlighters
 
-To enhance code block readability, integrate third-party syntax highlighters like [Prism.js](https://prismjs.com/) or [Highlight.js](https://highlightjs.org/), which supports numerous languages and customizable themes. Although live code block highlighting (real-time syntax highlighting during editing) is not possible in the Rich Text Editor, The highlighter can apply color-coded formatting to code blocks when the content is displayed on the frontend, such as in blog posts, website content, or preview mode. This ensures a polished presentation for end users.
+To enhance code block readability, integrate third-party syntax highlighters like [Prism.js](https://prismjs.com/) or [Highlight.js](https://highlightjs.org/), which support numerous languages and customizable themes. Although live code block highlighting (real-time syntax highlighting during editing) is not possible in the Rich Text Editor, the highlighter can apply color-coded formatting to code blocks when the content is displayed on the frontend, such as in blog posts, website content, or preview mode. This ensures a polished presentation for end users.
 
 ## Tips for editing around code blocks
 
@@ -63,7 +63,7 @@ Editing content around code blocks requires care to preserve code integrity and 
 
 ## Enabling tab-based indentation
 
-The Code Block feature supports tab-based indentation to align code properly, crucial for languages like Python where indentation is syntactically significant. The Rich Text Editor does not provide a specific property to configure the indentation character, but indentation can be enabled using the editor’s default behavior for the Tab key, toolbar commands, or custom event handling.
+The Code Block feature supports tab-based indentation to align code properly, crucial for languages like Python where indentation is syntactically significant. The Rich Text Editor does not provide a specific property to configure the indentation character, but indentation can be enabled using the editor's default behavior for the Tab key, toolbar commands, or custom event handling.
 
 To enable tab-based indentation:
 
