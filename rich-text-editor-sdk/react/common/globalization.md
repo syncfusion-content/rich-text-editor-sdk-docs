@@ -277,7 +277,7 @@ export default function App() {
 
 ## See also
 
-* [Quick Start for the React Rich Text Editor](../components/rich-text-editor/quick-start)
+* [Quick Start for the React Rich Text Editor](../rich-text-editor/getting-started)
 * [Accessibility](../../common/accessibility)
 * [Browser support](../../common/browser-support)
 * [Version compatibility](../../common/version-compatibility)

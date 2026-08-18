@@ -16,7 +16,7 @@ The integration pattern is to render MUI components through a `template` slot on
 
 ## Set up the React project
 
-1. Use an existing React project or create one. For setup help, see the [Quick Start for the React Rich Text Editor](../components/rich-text-editor/quick-start).
+1. Use an existing React project or create one. For setup help, see the [Quick Start for the React Rich Text Editor](../rich-text-editor/getting-started).
 2. Install the React Rich Text Editor, the Syncfusion Material theme, and the MUI dependencies:
 
 ```bash
@@ -33,7 +33,7 @@ import '@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 The example below adds a custom toolbar item whose `template` is a plain `<button>` placeholder. Once the editor is created, the `created` event fires and mounts a MUI `Button` into that placeholder with `ReactDOM.createRoot`. Clicking the button calls `rteObj.executeCommand('insertText', …)` to insert text at the cursor.
 
-```tsx
+```typescript
 import ReactDOM from 'react-dom/client';
 import { Button } from '@mui/material';
 import { RichTextEditorComponent, HtmlEditor, Toolbar, Inject, ToolbarSettingsModel } from '@syncfusion/ej2-react-richtexteditor';
@@ -118,5 +118,5 @@ The output shows the React Rich Text Editor with a MUI "Insert Text" button in t
 
 ## See also
 
-* [Quick Start for the React Rich Text Editor](../components/rich-text-editor/quick-start)
+* [Quick Start for the React Rich Text Editor](../rich-text-editor/getting-started)
 * [Built-in Themes](../themes/built-in-themes)
