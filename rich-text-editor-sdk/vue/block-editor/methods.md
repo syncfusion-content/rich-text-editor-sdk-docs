@@ -4,7 +4,6 @@ title: Methods in Vue Block Editor Component | Syncfusion
 description: Checkout and learn about Methods with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
