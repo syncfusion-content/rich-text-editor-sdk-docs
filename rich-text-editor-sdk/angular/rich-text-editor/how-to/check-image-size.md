@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Validate Image Size Before Upload in Angular Rich Text Editor
 
-By using the Rich Text Editor's [imageUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#imageuploading) event, you can get the image size before uploading and restrict the upload if the image size is greater than the allowed size.
+By using the Rich Text Editor's `imageUploading` event, you can get the image size before uploading and restrict the image from being uploaded when the given image size is greater than the allowed size.
 
 In the following example, we validate the image size before uploading and determine whether the image is uploaded or not.
 
