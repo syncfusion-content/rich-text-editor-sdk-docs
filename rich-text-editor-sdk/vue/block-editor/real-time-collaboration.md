@@ -42,7 +42,7 @@ See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choos
 | -------- | ---- | -------- |
 | [y-websocket](https://docs.yjs.dev/ecosystem/connection-provider/y-websocket) | Self-hosted | Production deployments with your own WebSocket server. |
 | [y-webrtc](https://docs.yjs.dev/ecosystem/connection-provider/y-webrtc) | Peer-to-peer | Quick local testing and development; no server required. |
-| [y-indexeddb](https://docs.yjs.dev/ecosystem/connection-provider/y-indexeddb) | Local storage | Offline persistence within a single browser. |
+| `y-indexeddb` | Local storage | Offline persistence within a single browser. |
 | [Hocuspocus](https://tiptap.dev/docs/hocuspocus/getting-started/overview) | Open-source server | Scalable Node.js server with pluggable storage and Redis support. |
 | [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
 | [PartyKit](https://www.partykit.io/) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
