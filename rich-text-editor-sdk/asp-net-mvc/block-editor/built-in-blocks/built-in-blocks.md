@@ -3,7 +3,7 @@ layout: post
 title: Block Types and Configuration in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to use built-in block types in the ASP.NET MVC Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -16,7 +16,7 @@ The Block Editor control enables you to create block-based content editing solut
 
 Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit such as a `Paragraph`, `Heading`, `List`, or specialized content like `Code Snippets` or `Images`. The Block Editor organizes content as a collection of `blocks`, allowing for better structure and formatting options.
 
-You can configure blocks with various properties such as `id`, `blockType`, `content` and more to create rich and structured editor.
+You can configure blocks with various properties such as `id`, `blockType`, `content` and more to create a rich, structured editing experience.
 
 ## Block types
 
@@ -35,6 +35,7 @@ The Block Editor supports multiple block types. Each block type offers different
 | Divider                                 | Horizontal separator line.                        |
 | CollapsibleParagraph and CollapsibleHeading1-4    | Collapsible content blocks.                       |
 | Image                                   | Block for displaying images.                      |
+| Table                                   | Block for displaying tabular data in rows and columns. |
 | Template                                | Predefined custom templates.                      |
 
 > For blocks such as `Code`, `Callout`, `Table`, `Image`, and `Collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
