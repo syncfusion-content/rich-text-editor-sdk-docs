@@ -58,7 +58,7 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 
 The Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](../block-editor/keyboard-shortcuts) documentation.
+For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/vue/documentation/block-editor/keyboard-shortcuts) documentation.
 
 ## Ensuring accessibility
 

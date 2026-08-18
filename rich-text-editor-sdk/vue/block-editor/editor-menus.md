@@ -31,7 +31,7 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 ### Customize Slash command menu
 
-You can use the [commandMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#commandmenusettings) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
+You can use the [commandMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#commandmenusettings) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
 
 ### Events
 
@@ -71,7 +71,7 @@ The Context menu offers the following built-in options:
 
 ### Customize Context menu
 
-You can use the [contextMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#contextmenusettings) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
+You can use the [contextMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#contextmenusettings) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
 
 ### Events
 
@@ -111,7 +111,7 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can use the [blockActionMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#blockactionmenusettings) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
+You can use the [blockActionMenuSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#blockactionmenusettings) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
 
 #### Show or hide tooltip
 
@@ -156,11 +156,11 @@ The Inline Toolbar includes the following built-in formatting options:
 
 ### Optional items
 
-The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `items` property in [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#inlinetoolbarsettings).
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `items` property in [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#inlinetoolbarsettings).
 
 #### Transform block options
 
-The inline toolbar now includes `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#transformsettings) property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+The inline toolbar now includes `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#transformsettings) property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
 
 #### Built-in default transform block options
 
@@ -207,7 +207,7 @@ The following example demonstrates how to customize the transform, inline code, 
 
 #### Font and background color support
 
-Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#fontcolorsettings), [backgroundColorSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#backgroundcolorsettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#fontcolorsettings), [backgroundColorSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#backgroundcolorsettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
 
@@ -224,7 +224,7 @@ The following example demonstrates how to customize the font and background colo
 
 ### Customize Inline Toolbar
 
-You can use the [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs. Built-in item keys that can be passed in the `items` array include `Bold`, `Italic`, `Underline`, `Strikethrough`, `Superscript`, `Subscript`, `Uppercase`, `Lowercase`, `Color`, `Backgroundcolor`, `Transform`, `InlineCode`, and `Link`.
+You can use the [inlineToolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#inlinetoolbarsettings) property to customize the Inline Toolbar by adding or removing formatting options based on your application's needs. Built-in item keys that can be passed in the `items` array include `Bold`, `Italic`, `Underline`, `Strikethrough`, `Superscript`, `Subscript`, `Uppercase`, `Lowercase`, `Color`, `Backgroundcolor`, `Transform`, `InlineCode`, and `Link`.
 
 ### Events
 
