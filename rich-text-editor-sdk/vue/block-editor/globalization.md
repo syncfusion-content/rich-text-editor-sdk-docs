@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Globalization  in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Globalization  with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Globalization in Vue Block Editor Component | Syncfusion
+description: Check out and learn about Globalization with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -64,7 +63,7 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## RTL
 
-The Block Editor supports Right-to-Left (RTL) mode, which reverses the layout of the component to accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. This feature can be enabled by setting the [enableRtl](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enablertl) property to `true`.
+The Block Editor supports Right-to-Left (RTL) mode, which reverses the layout of the component to accommodate languages read from right to left, such as Arabic, Hebrew, and Persian. This feature can be enabled by setting the [enableRtl](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enablertl) property to `true`. You should also set `dir="rtl"` on the editor's host element or on a parent so the surrounding page layout flows in the RTL direction.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
