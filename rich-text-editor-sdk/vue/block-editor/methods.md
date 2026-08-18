@@ -3,7 +3,7 @@ layout: post
 title: Methods in Vue Block Editor Component | Syncfusion
 description: Checkout and learn about Methods with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
-control: Block Editor 
+control: Block Editor
 publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -32,7 +32,7 @@ Add a new block to the editor at a specified position using the [addBlock](https
 </template>
 
 <script>
-import { BlockEditorComponent, ContentType, AfterPasteEventArgs  } from "@syncfusion/ej2-vue-blockeditor";
+import { BlockEditorComponent, ContentType } from "@syncfusion/ej2-vue-blockeditor";
 
 export default {
     components: {
@@ -181,13 +181,12 @@ Export the editor content in HTML format using the [getDataAsHtml](https://ej2.s
 
 ### Rendering Blocks from JSON
 
-Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
+Render blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position. Access the editor instance through the component ref's `ej2Instances` property.
 
 ```typescript
 // Replace all existing content
 const replaceAllBlocks = editor.renderBlocksFromJson(jsonData, true);
 
-// Insert at cursor (default behavior)
 // Insert at cursor without replacing existing blocks (default behavior)
 const insertedAtCursor = editor.renderBlocksFromJson(jsonData);
 
