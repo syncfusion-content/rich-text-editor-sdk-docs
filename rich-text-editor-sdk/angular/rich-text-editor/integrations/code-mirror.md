@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CodeMirror in Angular Rich Text Editor component | Syncfusion
+title: CodeMirror in Angular Rich Text Editor | Syncfusion
 description: Learn here all about CodeMirror integration in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate CodeMirror into Angular Rich Text Editor Component
+# Integrate CodeMirror into Angular Rich Text Editor
 
 RichTextEditor offers a basic HTML source view through the `view-source` property. For enhanced source editing features such as syntax highlighting, `CodeMirror` can be integrated with the Rich Text Editor.
 
