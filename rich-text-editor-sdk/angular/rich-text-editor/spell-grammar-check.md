@@ -21,7 +21,7 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 ## Set up the WProofreader
 
-To integrate the [WProofreader](https://webspellchecker.com), install the [`@webspellchecker/wproofreader-sdk-js`](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js) package using npm or yarn:
+To integrate the [WProofreader](https://webspellchecker.com), install the [@webspellchecker/wproofreader-sdk-js](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js) package using npm or yarn:
 
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
