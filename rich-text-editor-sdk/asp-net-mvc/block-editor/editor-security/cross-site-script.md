@@ -15,4 +15,4 @@ The Block Editor control allows users to edit content securely by preventing cro
 
 The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableHtmlSanitizer) property, enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
 
-To disable XSS prevention, set `EnableHtmlSanitizer` to `false`. Disabling sanitization is not recommended for production content that may include untrusted user input.
+To disable XSS prevention, set `EnableHtmlSanitizer` to `false`. This is not recommended for production content that may include untrusted user input.
