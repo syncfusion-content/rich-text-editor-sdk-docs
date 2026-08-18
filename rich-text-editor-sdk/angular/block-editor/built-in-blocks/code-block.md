@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Code Blocks in Angular Block Editor
 
-The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property.
+The Syncfusion Block Editor allows you to render code with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language through the root-level [codeBlockSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeblocksettings) property, or override the language for an individual block via the block's [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property.
 
 ## Global Code Settings
 
@@ -20,29 +20,30 @@ The `codeBlockSettings` property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| [languages](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeblocksettingsmodel#languages) | Specifies the array of language options for syntax highlighting. | [] |
-| [defaultLanguage](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguages) | Defines the default language to use for syntax highlighting. | 'plaintext' |
+| [languages](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeblocksettingsmodel#languages) | Specifies the array of language options shown in the language dropdown. | [] |
+| [defaultLanguage](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguage) | Defines the default language to use for syntax highlighting when a Code block is created. | `'plaintext'` |
 
 ## Configure code properties
 
-For Code blocks, you can specify the language for syntax highlighting using the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel) property. This property supports the following options:
+For individual Code blocks, you can override the language used for syntax highlighting through the [properties](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#properties) property. This property supports the following option:
 
-- [language](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/codeLanguageModel#language): The default language value used for syntax highlighting.
+- `language`: The language identifier used for syntax highlighting of the block. Must match one of the `language` values supplied in `codeBlockSettings.languages`.
 
-### Block type & properties
+### Block type and properties
 ```typescript
-// Adding Code block
+// Adding a Code block
 {
     blockType: 'Code',
     content: [
         {
-            const x = 10;
+            contentType: ContentType.Text,
+            content: 'const x = 10;'
         }
     ],
     properties: {
         language: 'javascript'
     }
-    }
+}
 ```
 
 The following example demonstrates how to configure and render a Code block within the Block Editor.

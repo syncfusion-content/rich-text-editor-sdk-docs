@@ -55,7 +55,7 @@ You can restrict the image uploaded from the local machine when the uploaded ima
 
 #### Configuring allowed image types
 
-You can allow the specific images alone to be uploaded using the the allowedTypes property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure this formats as follows.
+You can allow specific image types to be uploaded using the `allowedTypes` property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure these formats as follows.
 
 ```ts
 
@@ -108,11 +108,11 @@ This sample demonstrates the configuration of the `Image` block in the Block Edi
 
 ## Uploading images from local machine
 
-To insert an image from your local machine, render the `Image` block. It opens a popup where you can browse and select an image to insert from your local machine.
+To insert an image from your local machine, use the slash command or insert menu to add an `Image` block. It opens a popup where you can browse and select an image to insert from your local machine.
 
 ## Saving images to server
 
-Upload the selected image to a specified destination using the controller action specified in [imageBlockSettings.saveUrl](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/imageblocksettings#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [imageBlockSettings.path](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/imageblocksettings#path) properties.
+Upload the selected image to a specified destination using the controller action specified in [imageBlockSettings.saveUrl](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/imageblocksettings#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [imageBlockSettings.path](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/imageblocksettings#path) property.
 
 Set the [imageBlockSettings.saveFormat](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/imageblocksettings#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
@@ -188,7 +188,7 @@ public class HomeController : Controller
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#fileuploading) event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#fileuploading) event and its arguments, you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -214,6 +214,6 @@ To insert an image from an online source, render the `Image` block. Switch to th
 
 ## Image resizing
 
-Block Editor has a built-in image inserting support.  The resize points will be appearing on each corner of image when focus. So, users can resize the image using mouse points or thumb through the resize points easily. Also, the resize calculation will be done based on aspect ratio.
+The Block Editor has built-in image resizing support. Resize handles appear at each corner of the image when it is focused. Users can resize the image by dragging the resize handles, and the resize calculation is done based on the aspect ratio.
 
 ![Block Editor image resize](../images/image-resize.png)

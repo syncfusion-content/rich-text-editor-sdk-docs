@@ -7,7 +7,7 @@ control: Markdown Editor
 documentation: ug
 ---
 
-# Toolbar Configuration in Blazor Markdown Editor
+# Toolbar configuration in Blazor Markdown Editor Component
 
 The Blazor Markdown Editor provides a flexible toolbar that enhances the editing experience. Users can choose from multiple toolbar layouts, enable sticky behavior, and add custom tools based on their application requirements. This guide explains the available toolbar types, configuration options, and customization techniques.
 
@@ -130,7 +130,7 @@ Refer to the following code sample for the custom tool with the tooltip text, wh
 
 @code {
     
-    private string MarkdownValue { get; set; } = @"Rich Text Editor formats text instantly using toolbar actions, whereas Markdown uses syntax to apply formatting. Markdown editing is supported when editorMode is set to **markdown**, allowing formatting via toolbar or keyboard. Custom Markdown syntax can also be added. This sample uses the <b>Marked</b> library to convert Markdown to HTML. [Sample link](https://blazor.syncfusion.com/demos/markdown-editor/overview).";
+    private string MarkdownValue { get; set; } = @"Rich Text Editor formats text instantly using toolbar actions, whereas Markdown uses syntax to apply formatting. Markdown editing is supported when editorMode is set to **markdown**, allowing formatting via toolbar or keyboard. Custom Markdown syntax can also be added. This sample uses the <b>Marked</b> library to convert Markdown to HTML. [Sample link](https://blazor.syncfusion.com/demos/markdown-editor/overview?theme=fluent2).";
 
     private List<ToolbarItemModel> Tools = new List<ToolbarItemModel>()
     {

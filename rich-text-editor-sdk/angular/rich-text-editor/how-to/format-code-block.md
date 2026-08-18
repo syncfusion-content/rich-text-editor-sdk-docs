@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Add Code Block Formatting in Angular Rich Text Editor
 
-You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
+You can configure code block formatting as a separate toolbar button by adding the `InsertCode` keyword within the `items` array of the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings) property.
 
-The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
+The `InsertCode` button has a toggle state: click it once to apply code block formatting to the selected content, and click it again to remove the code block formatting.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
+The following sample demonstrates how to configure the `InsertCode` button in the toolbar and set a background color for the `pre` tag to highlight the code block.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

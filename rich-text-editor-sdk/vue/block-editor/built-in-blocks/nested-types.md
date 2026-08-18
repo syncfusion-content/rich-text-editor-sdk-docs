@@ -10,6 +10,8 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Nested Blocks in Vue Block Editor
 
+The Block Editor supports nested content through parent-child block relationships, allowing blocks such as `Quote`, `Callout`, and `Collapsible` blocks to contain other blocks within them.
+
 ## Configure children
 
 The Block Editor supports hierarchical content structures through the [children](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/basechildrenprop#children) property. This can be achieved by using the `properties` property that allows you to create nested blocks, which is applicable only for `Quote`, `Callout` and `Collapsible` blocks.
@@ -27,11 +29,11 @@ You can render Collapsible blocks by setting the [blockType](https://ej2.syncfus
 
 ### Configure levels
 
-You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
+You can configure the CollapsibleHeading using the property `level` inside the `properties` property. The levels can be varied from `level: 1` to `level: 4`.
 
 ### Configure expanded state
 
-You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `Collapsible` blocks.
+You can control whether a block is expanded or collapsed using the [isExpanded](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/icollapsibleblocksettings#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to `CollapsibleHeading` and `CollapsibleParagraph` blocks.
 
 ### Block type & properties
 
@@ -105,12 +107,14 @@ Quote blocks are styled for displaying quotations or excerpts. Render a Quote bl
 // Adding quote block
 {
     blockType: 'Quote',
-    properties:{
-        children:[{
+    properties: {
+        children: [{
             blockType: 'Paragraph',
             content: [
-                contentType: 'Text',
-                content: ''
+                {
+                    contentType: 'Text',
+                    content: ''
+                }
             ]
         }]
     }

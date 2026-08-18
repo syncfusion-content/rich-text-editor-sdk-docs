@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Image Blocks in TypeScript Block Editor
 
-The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
+The Block Editor supports the addition of images to help you organize and showcase visual content effectively.
 
 ## Adding an image block
 
@@ -32,7 +32,7 @@ The `imageBlockSettings` property supports the following options:
 | saveUrl | Specifies the server endpoint URL for uploading images. | `''` |
 | maxFileSize | Specifies the maximum file size allowed for image uploads in bytes. | `30000000` |
 | path | Specifies the base path for storing and displaying images on the server. | `''` |
-| saveFormat | Specifies the format to save the image. | `Base64` |
+| saveFormat | Specifies the format to save the image. Can be 'Base64' or 'Blob'. | `Base64` |
 | allowedTypes | Specifies allowed image file types for upload. | `['.jpg', '.jpeg', '.png']` |
 | width | Specifies the default display width of the image. | `auto` |
 | height | Specifies the default display height of the image. | `auto` |
@@ -86,10 +86,10 @@ The following example demonstrates how to pre-configure an `Image` block in the 
  {
     blockType: 'Image',
     properties: {
-        src: '',
+        src: 'https://example.com/image.jpg',
         width: '200px',
         height: '100px',
-        altText: '',
+        altText: 'Description of the image',
     }
 }
 ```
@@ -125,7 +125,7 @@ This sample demonstrates the configuration of the `Image` block in the Block Edi
 
 ## Uploading images from local machine
 
-To insert an image from your local machine, render the `Image` block. It opens a popup where you can browse and select an image to insert from your local machine.
+To insert an image from your local machine, render the `Image` block in the editor. Click on the image block or use the image insertion button to open a file browser dialog where you can browse and select an image from your local file system. The selected image will be inserted into the editor based on your `imageBlockSettings` configuration.
 
 ## Saving images to server
 

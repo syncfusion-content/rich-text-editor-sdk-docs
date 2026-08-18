@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # List Blocks in Vue Block Editor
 
-The Syncfusion Vue Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
-## Configure bullet list 
+## Configure bullet list
 
 You can render a Bullet List block by setting the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property to `BulletList`. This block type is used to display unordered lists.
 
@@ -142,7 +142,7 @@ The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/b
 
 ## Configure list blocks
 
-Below example illustrates how to render the different types of list blocks in the Block Editor.
+The example below illustrates how to render the different types of list blocks in the Block Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

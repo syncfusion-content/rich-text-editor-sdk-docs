@@ -98,7 +98,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Grid Component](./images/cli-rte.png)
+![Rich Text Editor Component](./images/cli-rte.png)
 
 {% endtabcontent %}
 
@@ -169,10 +169,10 @@ These modules can be injected as `services` using Vue's `provide` function as de
 
 {% tabs %}
 {% highlight html hl_lines="9" tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html hl_lines="13 14 15" tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,13 +184,13 @@ Now, you can start adding the Vue Rich Text Editor component in the application.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app.vue %}
 {% endhighlight %}
 {% highlight css tabtitle="style.css" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/index.css %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/index.css %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -204,7 +204,7 @@ The Inline Toolbar includes the following built-in formatting options:
 
 ### Optional items
 
-The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `items` property in [inlineToolbarSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#inlinetoolbarsettings).
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, and `Link` by passing an array of string values in the `items` property of [inlineToolbarSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#inlinetoolbarsettings).
 
 #### Transform block options
 

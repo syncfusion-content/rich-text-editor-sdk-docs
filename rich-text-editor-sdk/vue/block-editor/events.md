@@ -3,7 +3,7 @@ layout: post
 title: Events in Vue Block Editor | Syncfusion
 description: Learn how to handle events in the Vue Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
-control: Block Editor 
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -18,7 +18,7 @@ The [created](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index
 
 ## BlockChanged
 
-The [blockChanged](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#blockchanged) event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
+The [blockChanged](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#blockchanged) event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. The event arguments provide details about the changed blocks and the type of modification.
 
 ## SelectionChanged
 

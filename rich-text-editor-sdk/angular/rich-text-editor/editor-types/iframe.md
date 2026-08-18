@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # IFrame Editing Mode in Angular Rich Text Editor
 
-The iframe editor in the Rich Text Editor provides an isolated environment for content editing by using an iframe element as the content area. This ensures separation from the parent page's styles and scripts, preventing conflicts and enhancing compatibility.In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
+The iframe editor in the Rich Text Editor provides an isolated environment for content editing by using an iframe element as the content area. This ensures separation from the parent page's styles and scripts, preventing conflicts and enhancing compatibility. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
 ## Configuring the Iframe editor
 
-Iframe editing mode is enabled using the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
+Iframe editing mode is enabled using the [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
 
 The following example demonstrates enabling iframe mode:
 
@@ -48,9 +48,7 @@ Custom attributes can be applied to the iframe's body element using the `attribu
 
 ## Integrating external CSS and scripts
 
-The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#iframesettings) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor's content to meet your specific requirements.
-
-Likewise, add the external script file to the `< iframe >` element using the [scripts](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#iframesettings) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
+You can apply external CSS and script files to the iframe by using the `resources` property of [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#iframesettings). This allows you to customize the appearance and functionality of the editor's content while maintaining style isolation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -68,9 +66,9 @@ Likewise, add the external script file to the `< iframe >` element using the [sc
 
 ## Integrating Mention with Iframe
 
-Rich Text Editor supports advanced features such as Mention component, even when it is rendered inside an iframe. To enable mention functionality within the iframe-mode Rich Text Editor, you need to correctly set the [target](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#target) of the Mention component.
+The Rich Text Editor supports the Mention component even when rendered inside an iframe. To enable mention functionality in iframe mode, you must set the Mention component's [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/index-default#target) property to the Rich Text Editor's input element.
 
-Specifically, assign the `inputElement` of the Rich Text Editor to the target property of the Mention component. This ensures that the Mention popup is triggered correctly when the user types a designated character (such as @) inside the Rich Text Editor's editable area.
+The Mention popup is triggered when the user types a designated character (e.g., `@`) inside the Rich Text Editor's editable area.
 
 Here's an example of how to integrate Mention with Iframe editor,
 

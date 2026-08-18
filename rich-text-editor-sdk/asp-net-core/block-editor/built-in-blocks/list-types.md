@@ -5,7 +5,7 @@ description: Learn how to add and configure bullet, numbered, and checklist bloc
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # List Blocks in ASP.NET Core Block Editor
@@ -18,30 +18,30 @@ You can render Bullet List block by setting the `blockType` property as `BulletL
 
 ### BlockType
 
-```typescript
-// Adding bulletlist block
+```csharp
+// Adding bullet list block
+new BlockModel
 {
-    blockType = 'BulletList',
-    content = new List<object>()
-        {
-        new 
-        {
-            contentType = "Text"
-            content = 'your content'
-        }
+    blockType = "BulletList",
+    content = new List<object>
+    {
+        new { contentType = "Text", content = "Bullet item 1" },
+        new { contentType = "Text", content = "Bullet item 2" }
     }
 }
 ```
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder is  `Add item`.
 
-```typescript
+```csharp
 // Adding placeholder value 
+new BlockModel
 {
-    blockType = 'BulletList',
-    properties = new { placeholder = "Add item" }
+    blockType = "BulletList",
+    properties = new { placeholder = "Add item" },
+    content = new List<object>()
 }
 ```
 
@@ -51,30 +51,30 @@ You can render Numbered List block by setting the `blockType` property as  `Numb
 
 ### BlockType
 
-```typescript
-// Adding bulletlist block
+```csharp
+// Adding numbered list block
+new BlockModel
 {
-    blockType = 'NumberedList',
-    content = new List<object>()
+    blockType = "NumberedList",
+    content = new List<object>
     {
-        new 
-        {
-            contentType = "Text"
-            content = 'your content'
-        }
+        new { contentType = "Text", content = "Ordered item 1" },
+        new { contentType = "Text", content = "Ordered item 2" }
     }
 }
 ```
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder is  `Add item`.
 
-```typescript
+```csharp
 // Adding placeholder value 
+new BlockModel
 {
-    blockType = 'NumberedList',
-    properties = new { placeholder = "Add item" }
+    blockType = "NumberedList",
+    properties = new { placeholder = "Add item" },
+    content = new List<object>()
 }
 ```
 
@@ -84,23 +84,21 @@ You can render Check List block by setting the `blockType` property property as 
 
 ### BlockType
 
-```typescript
-// Adding bulletlist block
+```csharp
+// Adding checklist block
+new BlockModel
 {
-    blockType = 'CheckList',
-    content = new List<object>()
+    blockType = "Checklist",
+    content = new List<object>
     {
-        new 
-        {
-            contentType = "Text"
-            content = 'your content'
-        }
+        new { contentType = "Text", content = "Task item 1" },
+        new { contentType = "Text", content = "Task item 2" }
     }
 }
 ```
 
 ### Configure checked state
-
+use the `isChecked` property within `properties` to configure the checked state
 For blocks that support selection states such as `Checklist`, you can configure the checked state using the `properties` property with `isChecked`.
 
 By default, the `isChecked` property is set to `false`.
@@ -120,11 +118,13 @@ By default, the `isChecked` property is set to `false`.
 
 You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for check list is  `Todo`.
 
-```typescript
+```csharp
 // Adding placeholder value 
+new BlockModel
 {
-    blockType = 'Checklist',
-    properties = new { placeholder = "Todo" }
+    blockType = "Checklist",
+    properties = new { placeholder = "Todo" },
+    content = new List<object>()
 }
 ```
 

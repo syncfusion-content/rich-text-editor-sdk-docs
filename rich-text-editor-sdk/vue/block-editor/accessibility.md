@@ -40,7 +40,7 @@ The accessibility compliance for the Block Editor component is outlined below.
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are recommended for the Block Editor to improve discoverability and operable by assistive technologies.
+The following ARIA attributes are recommended for the Block Editor to improve discoverability and operability by assistive technologies.
 
 | Attribute | Purpose |
 |---|---|

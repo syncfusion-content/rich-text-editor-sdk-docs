@@ -5,7 +5,7 @@ description: Learn how to configure text block types in the ASP.NET Core Block E
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Text Block Types in ASP.NET Core Block Editor
@@ -18,17 +18,14 @@ You can render Paragraph blocks by setting the `blockType` property as `Paragrap
 
 ### BlockType  
 
-```typescript
+```csharp
 // Adding paragraph block
+new BlockModel
 {
-    blockType = 'Paragraph',
+    blockType = "Paragraph",
     content = new List<object>
     {
-        new 
-            {
-                contentType = 'Text',
-                content = 'This is a paragraph block example.'
-            }
+        new { contentType = "Text", content = "This is a paragraph block example." }
     }
 }
 ```
@@ -52,11 +49,13 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ### Block type & properties
 
-```typescript
+```csharp
 // Adding placeholder
- {
-    blockType = 'Paragraph',
-    properties = new { placeholder = "Start typing ..." }
+new BlockModel
+{
+    blockType = "Paragraph",
+    properties = new { placeholder = "Start typing ..." },
+    content = new List<object>()
 }
 ```
 
@@ -80,17 +79,18 @@ You can render Heading blocks by setting the `blockType` property as `Heading`. 
 ### Configure levels
 
 You can configure the heading blocks using the property `level` in the `properties` property.
-The heading level representing a title `level: 1`, heading `level: 2`, subheading `level: 3` and a subsection by `level: 4`.
+The heading levels range from `level: 1` (title) to `level: 4` (subsection). Level values must be between 1 and 4.
 
 ### Block type & properties
 
-```typescript
-// Adding heading block
+```csharp
+// Adding heading block (levels range from 1 to 4)
+new BlockModel
 {
     blockType = "Heading",
     content = new List<object>
     {
-        new { contentType = "Text", content = "Heading" }
+        new { contentType = "Text", content = "Section Heading" }
     },
      // levels range from 1 to 4
     properties = new { level = 4 }
@@ -101,7 +101,7 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/heading-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Heading.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/heading-block/heading.cs %}
@@ -116,11 +116,13 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ### Block type & properties
 
-```typescript
-// Adding placeholder
- {
-    blockType = 'Paragraph',
-    properties = new {level = 4 , placeholder = "Heading block" }
+```csharp
+// Adding placeholder for heading
+new BlockModel
+{
+    blockType = "Heading",
+    properties = new { level = 2, placeholder = "Enter heading..." },
+    content = new List<object>()
 }
 ```
 
@@ -130,18 +132,19 @@ Divider blocks insert horizontal lines that separate different sections of conte
 
 ### BlockType 
 
-```typescript
+```csharp
 // Adding divider block
+new BlockModel
 {
     blockType = "Divider"
-},
+}
 ```
 
 The below sample demonstrates the configuration of divider block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/divider-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Divider.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/block-editor/blocks/blockTypes/divider-block/divider.cs %}

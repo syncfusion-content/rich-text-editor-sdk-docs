@@ -11,20 +11,20 @@ documentation: ug
 
 The Block Editor allows you to render structured data in rows and columns by setting the block's [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure table block
+## Configure table block
 
 For Table blocks, you can configure layout and structure using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property. This property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | Width | Specifies the display width of the table. | `100%` |
-| EnableHeader | Specifies whether to enable header for the table. | `true` |
+| EnableHeader | Specifies whether to enable a header row for the table. When `true`, the first row becomes a header row. | `true` |
 | EnableRowNumbers | Specifies whether to enable row numbers for the table. | `true` |
 | ReadOnly | Specifies whether to render the table in read-only mode, disabling edits. | `false` |
 | Columns | Defines the columns of the table, including their types and headers. | `[]` |
 | Rows | Defines the rows of the table, each containing cells tied to columns. | `[]` |
 
-The following example demonstrates how to pre-configure a [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Table) block in the editor.
+The following example demonstrates how to pre-configure a [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Table) block in the editor with columns and rows:
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
@@ -132,15 +132,19 @@ The following example demonstrates how to pre-configure a [Table](https://help.s
 
 ![Blazor Block Editor Table Block](./../images/table-block.webp)
 
-### Table resizing
+## Table resizing
 
-The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
+The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized (rows have fixed heights), and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
 
-### Table multiple row column selection and deletion
+## Table cell content
 
-The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
+You can add various block types inside table cells using the `Blocks` collection within each `TableCellModel`. Supported content includes paragraphs, text formatting, links, and inline content. Use slash commands inside cells to insert additional blocks.
 
-This sample demonstrates the `Table` block's both resize scenario and multi row/column selection in the Block Editor.
+## Table multiple row column selection and deletion
+
+The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift-based multiple selection is also supported: select a row, hold Shift, and click a non-adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
+
+This sample demonstrates the `Table` block's resize scenario and multi row/column selection in the Block Editor:
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor
