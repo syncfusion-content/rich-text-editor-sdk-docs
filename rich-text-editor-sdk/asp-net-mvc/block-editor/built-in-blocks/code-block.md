@@ -14,9 +14,9 @@ You can render Code blocks by setting the `blockType` property as `Code`. By set
 
 ## Global Code Settings
 
-You can configure global settings for code blocks using the [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
+You can configure global settings for code blocks using the [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#CodeBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
 
-The [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property supports the following options:
+The [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#CodeBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -37,7 +37,7 @@ The property supports the following options:
 |----------|-------------|---------------|
 | `language` | The default language to use for syntax highlighting | '' |
 
-The following example illustrates how to render a code block in the Block Editor.
+Below example illustrates how to render the different code block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
