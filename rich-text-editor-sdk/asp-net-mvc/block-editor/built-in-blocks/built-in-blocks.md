@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Built-in Block Types and Configuration in ASP.NET MVC Block Editor
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) property allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Blocks) property allows you to define and manage the content structure of your editor.
 
 ## Blocks
 
@@ -59,7 +59,7 @@ By default, the `indent` property is set to `0`.
 
 ## Configure CSS Class
 
-You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#CssClass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
