@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content Security Policy in Vue Rich text editor | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Content Security Policy in Vue Rich Text Editor | Syncfusion
+description: Learn how to configure Content Security Policy directives for the Vue Rich Text Editor to enable CSP-compliant applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 Content Security Policy (CSP) is a security standard that helps prevent cross-site scripting (XSS) and other code-injection attacks by restricting the sources from which content can be loaded and executed in a web application.
 
-The Syncfusion Vue Rich Text Editor supports CSP-enabled applications. When the editor is used in an environment that enforces a Content Security Policy, the policy must include the directives required by the editor so that the editor's content, formatting, themes, and UI elements render and function as expected.
+The Vue Rich Text Editor supports CSP-enabled applications. When the editor is used in an environment that enforces a Content Security Policy, the policy must include the directives required by the editor so that the editor's content, formatting, themes, and UI elements render and function as expected.
 
 > IMPORTANT
 >
@@ -40,11 +40,11 @@ The Rich Text Editor uses inline styles for certain formatting features and UI r
 font-src 'self' data:
 ```
 
-Syncfusion font icons used by the Rich Text Editor toolbar and UI elements must be allowed through the font source directive. The `'self'` source covers same-origin font files, and `data:` covers inline data URIs used for icon fonts.
+Font icons used by the Rich Text Editor toolbar and UI elements must be allowed through the font source directive. The `'self'` source covers same-origin font files, and `data:` covers inline data URIs used for icon fonts.
 
 ### Material and Tailwind Themes
 
-The Rich Text Editor is compatible with the Syncfusion Material and Tailwind themes. These themes load font resources from Google Fonts, so the following URLs must be allowed through the appropriate CSP directives:
+The Rich Text Editor is compatible with the Material and Tailwind themes. These themes load font resources from Google Fonts, so the following URLs must be allowed through the appropriate CSP directives:
 
 * `https://fonts.googleapis.com` — must be allowed in `style-src` so the theme can load its stylesheets from Google Fonts.
 * `https://fonts.gstatic.com` — must be allowed in `font-src` so the theme can load the font files hosted by Google Fonts.
@@ -68,7 +68,7 @@ The Rich Text Editor supports inserting images from the local origin, data URIs,
 
 ## Recommended CSP Configuration
 
-The following example shows a recommended Content Security Policy configuration for a Vue application that hosts the Syncfusion Rich Text Editor:
+The following example shows a recommended Content Security Policy configuration for a Vue application that hosts the Rich Text Editor:
 
 ```html
 <meta http-equiv="Content-Security-Policy"
@@ -105,8 +105,8 @@ app.use((req, res, next) => {
 | Directive | Value | Purpose |
 |---|---|---|
 | `default-src` | `'self'` | Restricts all resource loading to the same origin by default. |
-| `script-src` | `'self' https://cdn.syncfusion.com` | Allows scripts from the same origin and the Syncfusion CDN, which hosts the editor's JavaScript runtime. |
-| `style-src` | `'self' 'unsafe-inline' https://cdn.syncfusion.com https://fonts.googleapis.com` | Permits inline styles used by the editor, along with the Syncfusion CDN and Google Fonts stylesheets. |
+| `script-src` | `'self' https://cdn.syncfusion.com` | Allows scripts from the same origin and the CDN, which hosts the editor's JavaScript runtime. |
+| `style-src` | `'self' 'unsafe-inline' https://cdn.syncfusion.com https://fonts.googleapis.com` | Permits inline styles used by the editor, along with the CDN and Google Fonts stylesheets. |
 | `font-src` | `'self' data: https://fonts.gstatic.com` | Allows fonts loaded from the same origin, inline data URIs, and Google Fonts. |
 | `img-src` | `'self' data: blob:` | Permits images from the same origin, data URIs, and blob URLs. |
 | `connect-src` | `'self'` | Controls network requests such as remote image uploads and server-side integrations. |
@@ -181,8 +181,8 @@ provide('richtexteditor', [Toolbar, Link, Image, HtmlEditor, QuickToolbar]);
 In this example:
 
 * The `<meta>` tag (or, preferably, the equivalent `Content-Security-Policy` response header) defines the Content Security Policy.
-* The `script-src` directive allows scripts from the same origin and the Syncfusion CDN, where the editor's JavaScript runtime is hosted.
-* The `style-src` directive includes `'unsafe-inline'` to support Rich Text Editor styling, along with the Syncfusion CDN and Google Fonts.
+* The `script-src` directive allows scripts from the same origin and the CDN, where the editor's JavaScript runtime is hosted.
+* The `style-src` directive includes `'unsafe-inline'` to support Rich Text Editor styling, along with the CDN and Google Fonts.
 * The `font-src` directive allows fonts from the same origin, data URIs, and Google Fonts.
 * The `img-src` directive supports image insertion from the local origin, data URIs, and blob URLs.
 
