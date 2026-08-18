@@ -3,8 +3,7 @@ layout: post
 title: Undo redo in Vue Block Editor Component | Syncfusion
 description: Checkout and learn about Undo redo with Syncfusion Essential Vue Block Editor component, its elements, and more details.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -16,9 +15,9 @@ The undo/redo feature in Block Editor enables users to revert or reapply changes
 ## Keyboard shortcuts
 
 | Action | Windows | Mac | Description |
-|------------|--------------|---------|-----------------|
-| Undo       | Ctrl + Z     | ⌘ + Z   | Reverts the last action. |
-| Redo       | Ctrl + Y     | ⌘ + Y | Reapplies the last undone action. |
+|--------|---------|-----|-------------|
+| Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Reverts the last action. |
+| Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>Y</kbd> | Reapplies the last undone action. |
 
 ## Configuring Undo/Redo stack
 
