@@ -3,14 +3,14 @@ layout: post
 title: Code Block in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to add and configure code blocks in the ASP.NET MVC Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Code Blocks in ASP.NET MVC Block Editor
 
-You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
+You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `'plaintext'`.
 
 ## Global Code Settings
 
@@ -35,13 +35,13 @@ The property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| language | The default language to use for syntax highlighting | '' |
+| `language` | The default language to use for syntax highlighting | '' |
 
-Below example illustrates how to render the different code block in the Block Editor.
+The following example illustrates how to render a code block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/block-editor/blocks/blockTypes/code-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Code.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/block-editor/blocks/blockTypes/code-block/code.cs %}
