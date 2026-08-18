@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Highlight.js in Angular Rich Text Editor | Syncfusion
-description: Learn here all about Highlight.js in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Highlight.js integration in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Highlight.js
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Integrate Highlight.js into the Angular Rich Text Editor
 
-The [Highlight.js](https://highlightjs.org/) integration with the Syncfusion Angular Rich Text Editor allows for syntax highlighting, ensuring that code blocks remain highlighted during editing, previewing, and exporting.
+The [Highlight.js](https://highlightjs.org/) integration with the Syncfusion Angular Rich Text Editor enables syntax highlighting, so code blocks remain highlighted during editing, previewing, and exporting.
 
 ## Prerequisites
 
@@ -18,13 +18,13 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 
 ## Key features
 
-- Highlight language-aware code blocks inside the editor content and preview
-- Keep highlighting after edits, inserts, and exports
-- Register only the languages you need to reduce bundle size
+- Highlight language-aware code blocks inside the editor content and preview.
+- Keep highlighting after edits, inserts, and exports.
+- Register only the languages you need to reduce bundle size.
 
-## Setup or Installation
+## Setup
 
-Install the highlight.js package using the following command:
+Install the `highlight.js` package using the following command:
 
 ```bash
 npm install highlight.js
@@ -32,18 +32,19 @@ npm install highlight.js
 
 ## Configure Highlight.js for the Rich Text Editor
 
-### Step 1: Configure editor content target
+### Step 1: Configure the editor content target
 
-- Use the `ViewChild` decorator to access the Angular Rich Text Editor instance. 
-- The RichTextEditor renders editable content inside an element with class `.e-rte-content`. You will run highlight.js against `pre code` elements inside that container.
+- Use the `ViewChild` decorator to access the Angular Rich Text Editor instance.
+- The Rich Text Editor renders editable content inside an element with the class `.e-rte-content`. You will run Highlight.js against `pre code` elements inside that container.
 
-### Step 2: Register languages and load theme
+### Step 2: Register languages and load the theme
 
 - Import the `highlight.js` core and the language modules you need into your Angular component.
 
 ```typescript
 import highlight from 'highlight.js/lib/common';
 ```
+
 - Then call `highlight.registerLanguage(name, module)` for each language.
 
 ```typescript
@@ -70,10 +71,10 @@ Option B — import from `src/styles.css`:
 @import 'highlight.js/styles/atom-one-dark.min.css';
 ```
 
-### Step 3: Wire the RichTextEditor events
+### Step 3: Wire the Rich Text Editor events
 
 - Use the Rich Text Editor's `created` event to highlight existing blocks at startup.
-- Use `change` event to re-run highlighting after edits.
+- Use the `change` event to re-run highlighting after edits.
 
 ### Step 4: Add Highlight.js Styles to Ensure Proper Code Block Rendering
 To ensure that Highlight.js styles correctly apply inside the Rich Text Editor and override the default Rich Text Editor code block formatting, include the following Highlight.js style rules in your app.css file.
