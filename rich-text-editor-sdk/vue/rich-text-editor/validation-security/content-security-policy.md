@@ -42,7 +42,7 @@ font-src 'self' data:
 
 Font icons used by the Rich Text Editor toolbar and UI elements must be allowed through the font source directive. The `'self'` source covers same-origin font files, and `data:` covers inline data URIs used for icon fonts.
 
-### Material and Tailwind Themes
+### Material and Tailwind themes
 
 The Rich Text Editor is compatible with the Material and Tailwind themes. These themes load font resources from Google Fonts, so the following URLs must be allowed through the appropriate CSP directives:
 
