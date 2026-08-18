@@ -3,7 +3,7 @@ layout: post
 title: Keyboard Shortcuts in Vue Block Editor | Syncfusion
 description: Learn the keyboard shortcuts available in the Vue Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
-control: Block Editor 
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -42,12 +42,11 @@ These shortcuts enable quick creation of different block types and management of
 | Create Code Block | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>K</kbd> |
 | Create Callout | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>C</kbd> |
 | Insert Image | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>/</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>/</kbd> |
-| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> |<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
+| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement. For indent, both `Ctrl + ]` and `Tab` are supported. For outdent, both `Ctrl + [` and `Shift + Tab` are supported.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
