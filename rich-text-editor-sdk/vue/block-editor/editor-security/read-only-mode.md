@@ -14,7 +14,7 @@ The Block Editor provides a read-only mode to control user interaction with the 
 
 ## Read-only mode
 
-To enable read-only mode, set the [readOnly](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#readonly) property to `true`. The content remains viewable with its formatting intact, but editing is restricted.
+To enable read-only mode, set the [readOnly](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#readonly) property to `true`. The content remains viewable with its formatting intact, but editing is restricted.
 
 ```typescript
 readOnly: true

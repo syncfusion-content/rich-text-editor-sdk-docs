@@ -16,7 +16,7 @@ The Block Editor component provides a comprehensive set of public methods to pro
 
 ### Adding a block
 
-Add a new block to the editor at a specified position using the [addBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#addblock) method. This method can also insert the block before or after a target block.
+Add a new block to the editor at a specified position using the [addBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#addblock) method. This method can also insert the block before or after a target block.
 
 ```
 <template>
@@ -63,23 +63,23 @@ export default {
 
 ### Removing a block
 
-Remove a block from the editor using the [removeBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#removeblock) method.
+Remove a block from the editor using the [removeBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#removeblock) method.
 
 ### Moving a block
 
-Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#moveblock) method.
+Move a block from one position to another within the editor using the [moveBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#moveblock) method.
 
 ### Updating a block
 
-Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#updateblock) method. Only the specified properties are modified, while others remain unchanged. It returns `true` if the update was successful and `false` otherwise.
+Update the properties of an existing block with the [updateBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#updateblock) method. Only the specified properties are modified, while others remain unchanged. It returns `true` if the update was successful and `false` otherwise.
 
 ### Getting a block
 
-Retrieve a block model by its unique identifier using the [getBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getblock) method. It returns `null` if the block is not found.
+Retrieve a block model by its unique identifier using the [getBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getblock) method. It returns `null` if the block is not found.
 
 ### Getting block count
 
-Use the [getBlockCount](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getblockcount) method to retrieve the total number of blocks in the editor.
+Use the [getBlockCount](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getblockcount) method to retrieve the total number of blocks in the editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -96,31 +96,31 @@ Use the [getBlockCount](https://ej2.syncfusion.com/vue/documentation/api/blocked
 
 ### Setting text selection
 
-Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#setselection) method.
+Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#setselection) method.
 
 ### Setting cursor position
 
-Place the cursor at a specific position within a block using the [setCursorPosition](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#setcursorposition) method.
+Place the cursor at a specific position within a block using the [setCursorPosition](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#setcursorposition) method.
 
 ### Getting selected blocks
 
-Retrieve the currently selected blocks in the editor with the [getSelectedBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getselectedblocks) method. It returns `null` if no blocks are selected.
+Retrieve the currently selected blocks in the editor with the [getSelectedBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getselectedblocks) method. It returns `null` if no blocks are selected.
 
 ### Getting selection range
 
-Get the current selection range in the editor using the [getRange](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getrange) method. This method returns a `Range` object representing the selected text, or `null` if no selection is active.
+Get the current selection range in the editor using the [getRange](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getrange) method. This method returns a `Range` object representing the selected text, or `null` if no selection is active.
 
 ### Setting selection range
 
-Set the selection range in the editor using the [selectRange](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#selectrange) method. This method accepts a `Range` object that defines the start and end positions of the selection.
+Set the selection range in the editor using the [selectRange](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#selectrange) method. This method accepts a `Range` object that defines the start and end positions of the selection.
 
 ### Selecting a block
 
-Select a specific block in the editor using the [selectBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#selectblock) method.
+Select a specific block in the editor using the [selectBlock](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#selectblock) method.
 
 ### Selecting all blocks
 
-Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#selectallblocks) method.
+Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#selectallblocks) method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -137,25 +137,25 @@ Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusi
 
 ### FocusIn
 
-Use the [focusIn](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#focusin) method to programmatically set focus on the editor, making it ready for user input.
+Use the [focusIn](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#focusin) method to programmatically set focus on the editor, making it ready for user input.
 
 ### FocusOut
 
-Use the [focusOut](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#focusout) method to programmatically remove focus from the editor. This clears any active selections and makes the editor inactive.
+Use the [focusOut](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#focusout) method to programmatically remove focus from the editor. This clears any active selections and makes the editor inactive.
 
 ## Formatting Methods
 
 ### Executing toolbar action
 
-Execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#executetoolbaraction) method. Use this to apply formatting such as bold, italic, or color to the selected text.
+Execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#executetoolbaraction) method. Use this to apply formatting such as bold, italic, or color to the selected text.
 
 ### Enabling toolbar items
 
-Enable specific items in the inline toolbar using the [enableToolbarItems](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enabletoolbaritems) method. This method accepts a single item or an array of items to enable.
+Enable specific items in the inline toolbar using the [enableToolbarItems](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#enabletoolbaritems) method. This method accepts a single item or an array of items to enable.
 
 ### Disabling toolbar items
 
-Disable specific items in the inline toolbar using the [disableToolbarItems](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#disabletoolbaritems) method. This method accepts a single item or an array of items to disable.
+Disable specific items in the inline toolbar using the [disableToolbarItems](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#disabletoolbaritems) method. This method accepts a single item or an array of items to disable.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -172,15 +172,15 @@ Disable specific items in the inline toolbar using the [disableToolbarItems](htt
 
 ### Getting data as JSON
 
-Export the editor content in JSON format using the [getDataAsJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getdataasjson) method. This method allows exporting all blocks or a specific block.
+Export the editor content in JSON format using the [getDataAsJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getdataasjson) method. This method allows exporting all blocks or a specific block.
 
 ### Getting data as HTML
 
-Export the editor content in HTML format using the [getDataAsHtml](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#getdataashtml) method. This method allows exporting all blocks or a specific block.
+Export the editor content in HTML format using the [getDataAsHtml](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#getdataashtml) method. This method allows exporting all blocks or a specific block.
 
 ### Rendering Blocks from JSON
 
-Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
+Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
 
 ```typescript
 // Replace all existing content
@@ -195,7 +195,7 @@ const insertedAfterTarget = editor.renderBlocksFromJson(jsonData, false, 'target
 ```
 
 ### Parsing HTML to Blocks
-Convert an HTML string into an array of `BlockModel` objects using the [parseHtmlToBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#parsehtmltoblocks) method. This method allows transforming HTML content into structured editor blocks.
+Convert an HTML string into an array of `BlockModel` objects using the [parseHtmlToBlocks](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#parsehtmltoblocks) method. This method allows transforming HTML content into structured editor blocks.
 
 ```typescript
 // Parse HTML into block
@@ -204,7 +204,7 @@ const blocks: BlockModel[] = editor.parseHtmlToBlocks(html);
 
 ### Printing editor content
 
-Print the editor content using the [print](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#print) method. This action opens the browser's print dialog with the current editor content.
+Print the editor content using the [print](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#print) method. This action opens the browser's print dialog with the current editor content.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

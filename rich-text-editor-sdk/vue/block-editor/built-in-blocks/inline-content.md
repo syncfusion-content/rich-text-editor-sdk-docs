@@ -148,7 +148,7 @@ The sample below demonstrates the customization of labels in the Block Editor.
 
 Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the `contentType` property to `Mention`.
 
-Mentions are typically triggered by the `@` character and are linked to the [users](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#users) collection defined in the Block Editor.
+Mentions are typically triggered by the `@` character and are linked to the [users](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#users) collection defined in the Block Editor.
 
 ### ContentType
 

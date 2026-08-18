@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
-You can configure the paste behavior using the [pasteCleanupSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#pastecleanupsettings) property, which allows you to define how content is handled when pasted into the editor.
+You can configure the paste behavior using the [pasteCleanupSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#pastecleanupsettings) property, which allows you to define how content is handled when pasted into the editor.
 
 ## Configuring allowed styles
 
@@ -47,7 +47,7 @@ By default, the editor retains the formatting of pasted content (e.g., bold, ita
 
 ## Allowing plain text
 
-To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#pastecleanupsettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#pastecleanupsettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -66,8 +66,8 @@ The Block Editor provides events to monitor and interact with the paste action.
 
 |Name|Args|Description|
 |---|---|---|
-|[beforePasteCleanup](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
-|[afterPasteCleanup](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
+|[beforePasteCleanup](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
+|[afterPasteCleanup](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
 
 Below snippet demonstrates how to configure above events in the editor.
 

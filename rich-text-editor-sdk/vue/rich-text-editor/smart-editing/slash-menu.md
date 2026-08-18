@@ -16,7 +16,7 @@ The Slash Menu in the Rich Text Editor provides users with an efficient way to a
 
 To use the Slash Menu feature, inject SlashMenu in the provider section.
 
-To enable the Slash Menu, set the `enable` property within [`slashMenuSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#slashmenusettings) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
+To enable the Slash Menu, set the `enable` property within [`slashMenuSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor#slashmenusettings) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
 
 ## Configuring the slash menu items
 

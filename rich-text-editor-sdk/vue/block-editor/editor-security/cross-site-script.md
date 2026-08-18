@@ -14,7 +14,7 @@ The Block Editor lets users edit content securely by preventing cross-site scrip
 
 ## Enabling XSS prevention
 
-The [enableHtmlSanitizer](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#enablehtmlsanitizer) property controls XSS prevention and is `true` (enabled) by default. When active, the editor automatically removes disallowed elements, such as `<script>`, and disallowed attributes, such as `onmouseover`, from the content.
+The [enableHtmlSanitizer](https://ej2.syncfusion.com/vue/documentation/api/blockeditor#enablehtmlsanitizer) property controls XSS prevention and is `true` (enabled) by default. When active, the editor automatically removes disallowed elements, such as `<script>`, and disallowed attributes, such as `onmouseover`, from the content.
 
 ```typescript
 enableHtmlSanitizer: true
