@@ -42,9 +42,6 @@ The following example demonstrates custom theme variants for the Rich Text Edito
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/controller.cs %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/styles.css %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -55,9 +52,6 @@ The following example demonstrates custom theme variants for the Rich Text Edito
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/controller.cs %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/theme/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,9 +65,12 @@ The Rich Text Editor supports dynamic theme switching at runtime by updating the
 
 T> Theme switching is a two-step operation. After updating the `cssClass` property, `dataBind()` must be called to apply the change to the editor's DOM.
 
-{% highlight ts hl_lines="1 2" %}
-rte.cssClass = 'custom ' + theme;
-rte.dataBind();
+{% highlight razor hl_lines="1 2" %}
+<script>
+    var rteObj = $("#defaultRTE").data("ej2_instances")[0];
+    rteObj.cssClass = 'custom ' + theme;
+    rteObj.dataBind();
+</script>
 {% endhighlight %}
 
 ### Theme Variable Reference
