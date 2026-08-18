@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Accessibility in Angular Rich Text Editor
 
-The Rich Text Editor component is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
+The Rich Text Editor component is designed with accessibility in mind. It adheres to WAI-ARIA specifications and implements ARIA roles, states, and properties, ensuring full accessibility support for people who rely on assistive technologies (AT) or keyboard navigation.
 
 The accessibility compliance for the Rich Text Editor component is outlined below.
 
@@ -41,7 +41,7 @@ The accessibility compliance for the Rich Text Editor component is outlined belo
 
 ## ARIA attributes
 
-The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includes the following attributes.
+The toolbar in the Rich Text Editor is assigned the role of `Toolbar` and includes the following attributes.
 
 | **Property** | **Functionalities** |
 | --- | --- |
@@ -80,7 +80,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#keyconfig) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,9 +94,9 @@ You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/how-to/cut-copy-cs1" %}
 
-## Implementing accessibility best practices
+## Implement accessibility best practices
 
-The Rich Text Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Rich Text Editor component's accessibility levels are ensured through the [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Rich Text Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rich-text-editor.html) in a new window to evaluate the accessibility of the Rich Text Editor component with accessibility tools.
 
