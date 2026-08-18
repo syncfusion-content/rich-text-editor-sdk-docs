@@ -13,7 +13,7 @@ The Block Editor control provides several interactive menus to enhance content c
 
 ## Slash command menu
 
-The Slash Command menu allows users to quickly insert or transform blocks by typing `/` followed by a command. This provides an efficient, keyboard-driven way to interact with the editor.
+The slash command menu allows users to quickly insert or transform blocks by typing `/` followed by a command. This provides an efficient, keyboard-driven way to interact with the editor.
 
 ### Built-in items
 
@@ -30,7 +30,7 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 ### Customize Slash command menu
 
-You can utilize the [CommandMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CommandMenuSettings) property on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
+You can use the [CommandMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CommandMenuSettings) property on the Block Editor control to customize the slash command menu to include your own custom commands and other modifications.
 
 #### Show or hide tooltip
 
@@ -45,7 +45,7 @@ The following events are available in the Slash Command menu.
 |`Filtering`|CommandFilteringEventArgs|Triggers when the user types to filter the command menu items.|
 |`ItemSelect`|CommandItemSelectEventArgs|Triggers when the user clicks on a command menu item.|
 
-Below example demonstrates the customization of the Slash Command menu.
+The following example demonstrates the customization of the slash command menu.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -60,7 +60,7 @@ Below example demonstrates the customization of the Slash Command menu.
 
 ## Context menu
 
-The Context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
+The context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
 
 ### Built-in items
 
@@ -74,7 +74,7 @@ The Context menu offers different built-in options:
 
 ### Customize Context menu
 
-You can utilize the [ContextMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html) property on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
+You can use the [ContextMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html) property on the Block Editor to customize the context menu to add specific actions or modify existing ones based on the application needs.
 
 ### Events
 
@@ -86,7 +86,7 @@ The following events are available in the Context menu.
 |`Closing`|ContextMenuClosingEventArgs|Triggers before the context menu closes.|
 |`ItemSelect`|ContextMenuItemSelectEventArgs|Triggers when a context menu item is clicked.|
 
-Below example demonstrates the customization of the Context menu.
+The following example demonstrates the customization of the context menu.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -101,7 +101,7 @@ Below example demonstrates the customization of the Context menu.
 
 ## Block action menu
 
-The Block Action menu typically appears next to a block when you hover over it and click on the drag handle icon, offering quick actions specific to that block.
+The block action menu typically appears next to a block when you hover over it and click on the drag handle icon, offering quick actions specific to that block.
 
 ### Built-in items
 
@@ -114,7 +114,7 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can utilize the [BlockActionsMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html) property on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
+You can use the [BlockActionMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html) property on the block editor to customize the block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
 
 #### Show or hide tooltip
 
@@ -130,7 +130,7 @@ The following events are available in the Block action menu.
 |`Closing`|BlockActionMenuClosingEventArgs|Triggers when the block action menu is closed.|
 |`ItemSelect`|BlockActionItemSelectEventArgs|Triggers when a block action menu item is clicked.|
 
-Below example demonstrates the customization of the Block action menu.
+The following example demonstrates the customization of the block action menu.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -145,7 +145,7 @@ Below example demonstrates the customization of the Block action menu.
 
 ## Inline Toolbar
 
-The Inline Toolbar appears when a text is selected in the editor, providing quick access to common text formatting actions that apply to the inline content.
+The inline toolbar appears when a text is selected in the editor, providing quick access to common text formatting actions that apply to the inline content.
 
 ### Built-in items
 
@@ -159,11 +159,11 @@ The Inline Toolbar includes below built-in formatting options:
 
 ### Optional items
 
-The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `Items` property in `InlineToolbarSettings`.
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, and `Link` by passing an array of string values in the `Items` property of `InlineToolbarSettings`.
 
 #### Transform block options
 
-The inline toolbar now includes `Transform` options to quickly convert blocks between different types. You can use the [TransformSettings] property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+The inline toolbar now includes `Transform` options to quickly convert blocks between different types. You can use the [TransformSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_TransformSettings) property to customize the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
 
 #### Built-in default transform block options
 
@@ -189,11 +189,11 @@ The following events are available for the transform toolbar item menu:
 
 #### Inline code support
 
-Added inline code formatting in the toolbar, with light syntax highlighting and seamless integration with other text formatting options.
+The inline toolbar includes an inline code formatting option with light syntax highlighting and seamless integration with other text formatting options.
 
 #### Inline link support
 
-Added inline link formatting in the toolbar, by link item click, link dialog opens and with proper value updation, link can be inserted on text.
+The inline toolbar includes an inline link formatting option. Clicking the link item opens a link dialog where you can enter the URL and related values to insert or edit a link on the selected text.
 
 The following example demonstrates how to customize the transform, inline code, link items.
 
@@ -227,7 +227,7 @@ The following example demonstrates how to customize the font and background colo
 
 ### Customize Inline Toolbar
 
-You can utilize the [InlineToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_InlineToolbarSettings) property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
+You can use the [InlineToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_InlineToolbarSettings) property on the Block Editor to customize the inline toolbar to add or remove formatting options based on your application's needs.
 
 Below example demonstrates how to customize the Inline Toolbar.
 
@@ -243,7 +243,7 @@ The following events are available in the Inline Toolbar.
 |---|---|---|
 |`ItemClick`|ToolbarItemClickEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
-Below example demonstrates the customization of the Inline Toolbar.
+The following example demonstrates the customization of the inline toolbar.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
