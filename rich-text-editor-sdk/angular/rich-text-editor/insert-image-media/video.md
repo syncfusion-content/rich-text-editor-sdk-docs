@@ -22,11 +22,11 @@ The following example demonstrates configuring the `Video` toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/video-cs1/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/video-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/video-cs1/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/video-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,11 +62,11 @@ The `Video` toolbar item opens a dialog with options to insert videos via an emb
 
 ### Inserting video from web URL
 
-You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+Switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
 
 ![Angular Rich Text Editor Video insert](../images/angular-richtexteditor-video-web.png)
 
-## Uploading video from a local machine
+## Uploading video from local machine
 
 The video dialog includes a `browse` option to select video files from a local machine and insert it into the Rich Text Editor content.
 
@@ -74,7 +74,7 @@ If the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentati
 
 ## Restricting maximum file size
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 
@@ -261,7 +261,10 @@ You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documen
 
 ```HTML
 
-<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] = 'insertVideoSettings' (fileUploadSuccess) = 'onVideoUploadSuccess($event)' [value]='value'>
+<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings' [insertVideoSettings] = 'insertVideoSettings' (fileUploadSuccess) = 'onVideoUploadSuccess($event)'>
+<ng-template #valueTemplate>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Open in new window">markdown</a> of the content</p>
+</ng-template>
 </ejs-richtexteditor>
 
 ```
@@ -279,7 +282,6 @@ import { RichTextEditorModule, ToolbarService, QuickToolbarService, LinkService,
   providers: [ ToolbarService, QuickToolbarService, LinkService, VideoService, HtmlEditorService, ImageService, TableService, PasteCleanupService ],
 })
 export class AppComponent {
-    public value: string = "<p>The Rich Text Editor is WYSIWYG (\"what you see is what you get\") editor useful to create and edit content, and return the valid <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\">HTML markup</a> or <a href=\"https://ej2.syncfusion.com/home/\" target=\"_blank\">markdown</a> of the content</p>";
     public toolbarSettings: ToolbarSettingsModel = {
         items: ['Video'],
     };
@@ -454,11 +456,11 @@ In the following sample, you can see feature demo.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs35/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs35/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/angular/rich-text-editor/getting-started-cs35/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

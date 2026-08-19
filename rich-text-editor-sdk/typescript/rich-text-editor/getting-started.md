@@ -76,7 +76,7 @@ The following modules provide the basic features of the Rich Text Editor.
 These modules should be injected into the Rich Text Editor using the `RichTextEditor.Inject` method as demonstrated in the following example:
 
 {% tabs %}
-{% highlight ts ts hl_lines="4" tabtitle="main.ts" %}
+{% highlight ts hl_lines="4" tabtitle="main.ts" %}
 
 import './style.css';
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Vue Block Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started with Vue 3 Block Editor component | Syncfusion
+description: Learn here all about Getting started with the Syncfusion Vue 3 Block Editor component of Syncfusion Essential JS 2 and more.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
 control: Block Editor
 platform: ej2-vue
@@ -19,7 +19,7 @@ The `Options API` is the traditional way of writing Vue.js components, where the
 
 ## Prerequisites
 
-This guide uses Vite as the bundler and development environment. Install Node.js 24.13.0 or higher before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
+This guide uses Vite as the bundler and development environment. Install Node.js 18 or higher before proceeding (check the [Vite documentation](https://vitejs.dev/) for the current minimum supported version). For detailed information about Vite's capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
 
 ## Create a Vue Application
 
@@ -29,7 +29,7 @@ To set up a Vue application, run the following command.
 npm create vite@latest my-app -- --template vue
 ```
 
-This command prompts you to install the required packages and start the application. Select the options shown in the prompt, and confirm that the `my-app` folder is created before continuing.
+This command prompts you to select project configuration options and scaffolds the project. Select the options shown in the prompt, and confirm that the `my-app` folder is created before continuing.
 
 ![Vite project creation prompt](images/initial-setup.png)
 
@@ -114,7 +114,7 @@ export default {
 
 ## Run the application
 
-Use the following command to run the application in the browser.
+Use the following command to run the application in the browser. The app starts on `http://localhost:5173` by default; if that port is in use, Vite will pick the next free port and print it in the console.
 
 ```bash
 npm run dev

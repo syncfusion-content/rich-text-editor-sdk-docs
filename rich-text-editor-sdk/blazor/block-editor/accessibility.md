@@ -56,9 +56,9 @@ The following ARIA attributes are recommended for the Blazor Block Editor to imp
 
 ## Keyboard interaction
 
-The Blazor Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
+The Blazor Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://blazor.syncfusion.com/documentation/block-editor/keyboard-shortcuts) documentation.
+For a complete list of keyboard shortcuts, refer to the [Keyboard Support](./keyboard-shortcuts.md) documentation.
 
 ## Ensuring accessibility
 

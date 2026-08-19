@@ -21,7 +21,7 @@ The `codeBlockSettings` property supports the following options:
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | [languages](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#languages) | Specifies the array of language options for syntax highlighting. | [] |
-| [defaultLanguage](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguages) | Defines the default language to use for syntax highlighting. | 'plaintext' |
+| [defaultLanguage](https://ej2.syncfusion.com/documentation/api/blockeditor/codeblocksettingsmodel#defaultlanguage) | Defines the default language to use for syntax highlighting. | 'plaintext' |
 
 ## Configure code properties
 
@@ -36,11 +36,12 @@ For Code blocks, you can specify the language for syntax highlighting using the 
     blockType: 'Code',
     content: [
         {
-            const x = 10;
+            contentType: 'Text',
+            content: 'const x = 10;'
         }
     ],
     properties: {
-       language: 'javascript'
+        language: 'javascript'
     }
 }
 ```

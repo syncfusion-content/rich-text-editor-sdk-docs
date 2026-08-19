@@ -48,7 +48,7 @@ The Block Editor can be localized for any culture by translating its static text
 |`linkCancel`|Cancel|
 |`codeCopyTooltip`|Copy code|
 
-The below example shows adding the German culture locale(`de-DE`)
+The example below shows how to add the German culture locale (`de-DE`).
 
 {% if page.publishingplatform == "typescript" %}
 

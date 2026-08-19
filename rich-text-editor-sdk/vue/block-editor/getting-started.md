@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting started in Vue Block Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started with Vue Block Editor component | Syncfusion
+description: Learn here all about Getting started with the Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
-control: Getting started 
+control: Block Editor
 platform: ej2-vue
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
@@ -11,11 +11,12 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Getting Started with the Vue Block Editor component in Vue 2
 
-This section explains how to create a simple Block Editor and configure its available functionalities in the Vue environment.
+This section explains how to create a simple Block Editor and configure its available functionalities in a Vue 2 environment. It requires the `@syncfusion/ej2-vue-blockeditor` package and Vue 2.6 or higher. For Vue 3, see the [Getting Started with Vue 3](vue-3-getting-started.md) page.
 
 ## Prerequisites
 
-[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Vue UI components](https://ej2.syncfusion.com/vue/documentation/system-requirements)
+- [System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Vue UI components](https://ej2.syncfusion.com/vue/documentation/system-requirements)
+- Node.js and npm (or Yarn) installed on your machine.
 
 ## Create a Vue Application
 
@@ -107,4 +108,4 @@ or
 yarn run serve
 ```
 
-For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.
+For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation. Vue CLI has been deprecated; existing Vue 2 projects can continue to use `@vue/cli`, but new projects should use Vite as described in the [Vue 3 getting started](vue-3-getting-started.md) guide.

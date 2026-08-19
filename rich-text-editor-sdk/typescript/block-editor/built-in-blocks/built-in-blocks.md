@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Built-in Block Types and Configuration in TypeScript Block Editor
 
-The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
+The Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
 
 ## Blocks
 
@@ -36,9 +36,9 @@ The Block Editor supports multiple block types, each offering different formatti
 | Divider                                 | Horizontal separator line.                                                  |
 | CollapsibleParagraph and CollapsibleHeading1-4    | Content blocks that can be expanded or collapsed to show or hide their children. |
 | Image                                   | Block for displaying images.                                                |
-| Template                                | Renders custom content using predefined templates, allowing for user-defined block structures. |
+| Template                                | Renders custom content using predefined template definitions for specialized block layouts. |
 
-> For blocks such as `code`, `callout`, `table`, `image`, and `collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
+> For blocks such as `code`, `callout`, `table`, `image`, and `collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This behavior ensures consistent and predictable handling of block deletion for these complex types and may differ from simple text blocks.
 
 ## Configure indent
 
