@@ -20,7 +20,7 @@ Syncfusion's TypeScript Rich Text Editor offers two rendering modes for controll
    - When enabled, the Rich Text Editor is rendered inside an `<iframe>`.  
    - The application's global CSS rules will **not** affect the content inside the editor.  
    - This ensures that the editor's content remains styled independently.  
-   - **Usage:** `iframeSettings: {enable: true}`
+   - **Usage:** `iframeSettings: {enable: false}`
 
 2. **Non-Encapsulated Mode (Default)**  
    - The Rich Text Editor is rendered **without an `<iframe>`**.  
