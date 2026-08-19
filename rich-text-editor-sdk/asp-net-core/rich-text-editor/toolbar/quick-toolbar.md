@@ -197,14 +197,14 @@ Quick commands are opened as context-menu on clicking the corresponding element.
 
 | Target Element | Default Quick Toolbar items |
 |----------------|---------|
-|image | 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
+| image | 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
 | link | 'Open', 'Edit', 'UnLink'.|
 | text | null <br> (Any toolbar [items](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/toolbar/toolbar-types#toolbar-items) in the Rich Text Editor can be configured here).|
 | table| 'TableHeader', 'TableRows', 'TableColumns', 'BackgroundColor', '-', 'TableRemove', 'Alignments', 'TableCellVerticalAlign', 'Styles'.|
 
-Custom tool can be added to the corresponding quick toolbar, using [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
+Custom tools can be added to the corresponding quick toolbar using the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
-The below sample demonstrates the option to insert the image to the Rich Text Editor content as well as option to rotate the image through the quick toolbar.
+The sample below demonstrates inserting an image into the Rich Text Editor and rotating it via the quick toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
