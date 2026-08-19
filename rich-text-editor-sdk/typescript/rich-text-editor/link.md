@@ -1,69 +1,111 @@
 ---
 layout: post
-title: Feature Modules in TypeScript Rich Text Editor | Syncfusion
-description: Learn how to inject feature modules in the TypeScript Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+title: Links in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the TypeScript Rich Text Editor for better content navigation and user experiences.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Feature Modules in TypeScript Rich Text Editor
+# Links in TypeScript Rich Text Editor
 
-The Rich Text Editor component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
+A hyperlink can be inserted into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## What is a module in Rich Text Editor?
+## Insert link
 
-In the Rich Text Editor, a module refers to a self-contained feature or functionality that can be selectively enabled or disabled. These modules are provided as part of the @syncfusion/ej2-richtexteditor package and can be injected to extend the editor's capabilities.
+To insert a hyperlink:
 
-For example, modules such as `Toolbar`, `Link`, `Image`, `HtmlEditor`, and `QuickToolbar` enable specific tools and behavior in the Rich Text Editor interface.
+1. Position your cursor where you want to insert the link, or select the text or image you wish to convert into a hyperlink.
+2. Click the "Insert HyperLink" tool on the toolbar.
+3. In the Insert Link Dialog that appears, fill in the following options.
 
-## How to import and inject modules
+> Rich Text Editor features are segregated into individual feature-wise modules. To use image and link tool, inject link module using the `RichTextEditor.Inject(Link)`.
 
-To use a module in the Rich Text Editor, you must:
+| Options | Description |
+|----------------|--------------------------------------|
+| Web Address | Enter or paste the destination URL for your link |
+| Display Text | Enter or edit the required text that you want to display text for the link|
+| Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
+| Open Link in New Window | Specify whether, the given link will be open in new window or not |
 
-* Import the required module from the Syncfusion package.
-
-* Inject it using the `RichTextEditor.Inject` method.
-
-The following example demonstrates how to import and inject modules.
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs2/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs2" %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14" %}
 
-## Available modules in Rich Text Editor
+{% elsif page.publishingplatform == "javascript" %}
 
-| Module | Description |
-|------|-------------|
-| `Toolbar` | Inject this module to enable the toolbar to access text formatting and Rich Text Editor features like bold, italic, font settings, and alignment tools. |
-| `Link` | Inject this module to insert, edit, and remove hyperlinks within the content. |
-| `Image` | Inject this module to insert and manage images in the Rich Text Editor. |
-| `Table` | Inject this module for inserting and editing HTML tables in the Rich Text Editor. |
-| `Count` | Inject this module to enable live character counting capabilities in the Rich Text Editor. |
-| `HtmlEditor` | Inject this module to support the HTML source editing view, allowing users to switch between preview and source code modes. |
-| `MarkdownEditor` | Inject this module to enable editing support, allowing users to write and preview content using standard Markdown syntax |
-| `QuickToolbar` | Inject this module to display a floating toolbar near selected content like images or links for quick actions. |
-| `Resize` | Injecting this module enables users to resize the height and width of the editor area interactively using a resizable handle in the Rich Text Editor. |
-| `FileManager` | Injecting this module provides users with a dialog interface to browse, upload, and insert files (especially images) from a server or cloud storage provider directly into the Rich Text Editor. |
-| `PasteCleanup` | Inject this module to keep or clean up the formatting of pasted content in Rich Text Editor. |
-| `FormatPainter` | Injecting this module allows users to copy formatting (like bold, italic, font size, color, etc.) from one section of text and apply it to another in the Rich Text Editor. |
-| `EmojiPicker` | Injecting this module allows users to search, and insert emojis into the Rich Text Editor. |
-| `SlashMenu` | Injecting this module allows users to apply formats, open dialogs by typing "/" in the Rich Text Editor. |
-| `ImportExport` | Injecting this module allows users to import content from Word documents into the Rich Text Editor and export the Rich Text Editor's content into Word and PDF files |
-| `CodeBlock` | Injecting this module allows users to format the selected text as a code block, highlighting code snippets within the text in the Rich Text Editor. |
-| `AutoFormat` | Injecting this module automatically converts Markdown syntax into HTML as you type, supporting inline and block-level formatting for a seamless editing experience. |
-| `Audio` | Injecting this module allows users to insert and manage audios in the Rich Text Editor. |
-| `Video` | Injecting this module allows users to insert and manage videos in the Rich Text Editor. |
-| `ClipboardCleanup` | Injecting this module allows to automatically clean clipboard content during copy and cut—removing unwanted inline styles while preserving structure. |
-| `AIAssistant` | Injecting this module provides AI Assistant functionalities to the Rich Text Editor. |
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs14" %}
+{% endif %}
 
-These modules should be injected into the richtexteditor using the `RichTextEditor.Inject` method.
+> The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
+
+## Edit and remove link
+
+To remove a hyperlink:
+
+1. Select the linked text or image.
+2. Click the "Remove Hyperlink" tool in the toolbar.
+
+This action will remove the hyperlink while keeping the original text or image intact.
+
+## Auto link generation
+
+The Rich Text Editor supports automatic link generation. When you type a URL and press Space or Enter, the editor automatically converts the typed URL into a clickable hyperlink.
+
+## Inserting a related link
+
+By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
+
+However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/relative-url-cs1" %}
+{% endif %}
+
+## See also
+
+* [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
+* [Image with links](./insert-images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachments)
