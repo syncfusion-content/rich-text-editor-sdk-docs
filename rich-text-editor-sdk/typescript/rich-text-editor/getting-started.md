@@ -38,8 +38,8 @@ npm install
 
 ## Adding Rich Text Editor packages
 
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
-To install the Rich Text Editor control, use the following command
+All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
+To install the Rich Text Editor control, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-richtexteditor
