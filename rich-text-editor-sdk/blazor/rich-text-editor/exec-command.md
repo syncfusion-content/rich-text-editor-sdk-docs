@@ -13,7 +13,7 @@ In the Rich Text Editor, the [ExecuteCommand](https://help.syncfusion.com/cr/bla
 
 ## HTML editor commands
 
-The [ExecuteCommand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ExecuteCommandOption.html#constructors) method supports the following HTML editor commands.
+The [ExecuteCommandAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ExecuteCommandAsync_Syncfusion_Blazor_RichTextEditor_CommandName_) method supports the following HTML editor commands.
 
 <table>
 <tr>
@@ -132,7 +132,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.BackgroundColor, "red");
 
 <tr>
 <td><p>JustifyCenter</p></td>
-<td><p>Align the content with the centre margin.</p></td>
+<td><p>Aligns the content with the center margin.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.JustifyCenter);
@@ -141,7 +141,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.JustifyCenter);
 
 <tr>
 <td><p>JustifyFull</p></td>
-<td><p>Align the content with justify margin.</p></td>
+<td><p>Aligns the content with the justify margin.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.JustifyFull);
@@ -150,7 +150,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.JustifyFull);
 
 <tr>
 <td><p>JustifyLeft</p></td>
-<td><p>Align the content with the left margin.</p></td>
+<td><p>Aligns the content with the left margin.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.JustifyLeft);
@@ -159,7 +159,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.JustifyLeft);
 
 <tr>
 <td><p>JustifyRight</p></td>
-<td><p>Align the content with the margin on the right.</p></td>
+<td><p>Aligns the content with the right margin.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.JustifyRight);
@@ -195,7 +195,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.InsertHTML,"<div>Syncfusion Ri
 
 <tr>
 <td><p>InsertOrderedList</p></td>
-<td><p>Creates a new numbered list item.</p></td>
+<td><p>Creates a new ordered (numbered) list item.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertOrderedList);
@@ -204,7 +204,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.InsertOrderedList);
 
 <tr>
 <td><p>InsertUnorderedList</p></td>
-<td><p>Creates a new bulleted list item.</p></td>
+<td><p>Creates a new unordered (bulleted) list item.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertUnorderedList);
@@ -249,7 +249,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Redo);
 
 <tr>
 <td><p>RemoveFormat</p></td>
-<td><p>Remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from the currently selected text.</p></td>
+<td><p>Removes all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from the currently selected text.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.RemoveFormat);
@@ -418,9 +418,9 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Checklist);
 </tr>
 </table>
 
-N> Provided support to apply execute commands which do not require direct DOM access.
+N> The commands listed in the table above do not require direct DOM access; the editor handles the underlying content updates.
 
-The following code block demonstrates the usage of the [ExecuteCommand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ExecuteCommandOption.html#constructors) in Rich Text Editor.
+The following code block demonstrates the usage of the [ExecuteCommandAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ExecuteCommandAsync_Syncfusion_Blazor_RichTextEditor_CommandName_) method in the Rich Text Editor.
 
 {% tabs %}
 {% highlight razor %}
@@ -432,7 +432,7 @@ The following code block demonstrates the usage of the [ExecuteCommand](https://
 
 ![Blazor RichTextEditor execute command](./images/blazor-richtexteditor-execute-command.webp)
 
-## Markdown editor commands  
+## Markdown editor commands
 
 The [ExecuteCommand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ExecuteCommandOption.html#constructors) methods support following markdown commands.
 
@@ -445,16 +445,16 @@ The [ExecuteCommand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Ric
 
 <tr>
 <td><p>Bold</p></td>
-<td><p>Make the selected content bold.</p></td>
+<td><p>Makes the selected content bold.</p></td>
 <td>
 {% highlight cshtml %}
-await this.RteObj.ExecuteCommandAsync(CommandName.Bold); 
+await this.RteObj.ExecuteCommandAsync(CommandName.Bold);
 {% endhighlight %}</td>
 </tr>
 
 <tr>
 <td><p>Italic</p></td>
-<td><p>Apply the italic style to the selected content.</p></td>
+<td><p>Applies italic style to the selected content.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.Italic);
@@ -463,7 +463,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Italic);
 
 <tr>
 <td><p>StrikeThrough</p></td>
-<td><p>Apply single-line strikethrough formatting for the selected content.</p></td>
+<td><p>Applies single-line strikethrough formatting to the selected content.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.StrikeThrough);
@@ -472,7 +472,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.StrikeThrough);
 
 <tr>
 <td><p>Superscript</p></td>
-<td><p>Makes the selected content as superscript (higher).</p></td>
+<td><p>Applies superscript (higher) formatting to the selected content.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.Superscript);
@@ -481,7 +481,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Superscript);
 
 <tr>
 <td><p>Subscript</p></td>
-<td><p>Makes the selected content as subscript (lower).</p></td>
+<td><p>Applies subscript (lower) formatting to the selected content.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.Subscript);
@@ -508,7 +508,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Lowercase);
 
 <tr>
 <td><p>CreateLink</p></td>
-<td><p>Creates a hyperlink from a text or image to a specific location in the content.</p></td>
+<td><p>Creates a hyperlink from text or an image to a specific location in the content.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.CreateLink, new LinkCommandsArgs() { Text = "Links", Url= "http://", Title = "Link"});
@@ -517,7 +517,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.CreateLink, new LinkCommandsAr
 
 <tr>
 <td><p>InsertOrderedList</p></td>
-<td><p>Create a new list item(numbered).</p></td>
+<td><p>Creates a new ordered (numbered) list item.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertOrderedList);
@@ -526,7 +526,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.InsertOrderedList);
 
 <tr>
 <td><p>InsertUnorderedList</p></td>
-<td><p>Create a new list item(bulleted).</p></td>
+<td><p>Creates a new unordered (bulleted) list item.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertUnorderedList);
@@ -544,7 +544,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.Redo);
 
 <tr>
 <td><p>InsertText</p></td>
-<td><p>Text will be inserted at the current cursor position.</p></td>
+<td><p>Inserts text at the current cursor position.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertText, "Inserted text");
@@ -553,7 +553,7 @@ await this.RteObj.ExecuteCommandAsync(CommandName.InsertText, "Inserted text");
 
 <tr>
 <td><p>InsertImage</p></td>
-<td><p>Insert an image to the current cursor position.</p></td>
+<td><p>Inserts an image at the current cursor position.</p></td>
 <td>
 {% highlight cshtml %}
 await this.RteObj.ExecuteCommandAsync(CommandName.InsertImage, new ImageCommandsArgs() { Url = "https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png", CssClass = "rte-img" });

@@ -9,9 +9,9 @@ documentation: ug
 
 # Clipboard Cleanup in Blazor Rich Text Editor
 
-The Rich Text Editor now provides automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are removed while preserving important structural elements such as tables, lists, and images. This feature is enabled by default through [EnableClipboardCleanup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableClipboardCleanup) property.
+The Rich Text Editor provides automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are removed while preserving important structural elements such as tables, lists, and images. This feature is enabled by default through the [EnableClipboardCleanup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableClipboardCleanup) property.
 
-It can be verified by following the below steps:
+You can verify the behavior with the following steps
 
 - Copy or cut content within the Rich Text Editor.
 - Paste the content back into the editor.
@@ -29,7 +29,7 @@ By default, `EnableClipboardCleanup` is set to `true`. Check with the below demo
 
 ![Blazor RichTextEditor with default clipboard cleanup](./images/blazor-richtexteditor-clipboard-cleanup-default.webp)
 
-When set to `false`, the browser’s default copy and cut behavior applies. Check with the below demonstration:
+When set to `false`, the editor preserves the browser's default copy and cut behavior. Check with the below demonstration:
 
 {% tabs %}
 {% highlight razor %}
