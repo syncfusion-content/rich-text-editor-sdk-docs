@@ -14,7 +14,7 @@ The Rich Text Editor supports automatic cleanup of clipboard content during copy
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use clipboard cleanup, inject ClipboardCleanup module using the `RichTextEditor.Inject(ClipboardCleanup)`.
 
-When `enableClipboardCleanup` is set to `true`, copy and cut operations are intercepted to remove unwanted inline styles. When set to `false` the browser’s default copy and cut behavior applies.
+When `enableClipboardCleanup` is set to `true`, copy and cut operations are intercepted to remove unwanted inline styles. When set to `false`, the browser's default copy and cut behavior applies.
 
 > For a cleaner editing experience, `enableClipboardCleanup` is `true` by default.
 
@@ -82,11 +82,11 @@ In this example, the `beforeClipboardWrite` event is used to customize the selec
 
 ### Best Practices
 
-- Always include `ClipboardCleanup` in production application - it’s the #1 way to prevent style explosion.
-- Combine with Paste Cleanup module for even stricter incoming paste handling.
-- Use `beforeClipboardWrite` sparingly — heavy processing can slightly delay `Ctrl+C`.
+- Always include `ClipboardCleanup` in production applications to prevent unwanted style retention.
+- Combine with the Paste Cleanup module for stricter control over incoming paste content.
+- Use `beforeClipboardWrite` judiciously—complex processing can introduce slight delays during copy operations.
 
 ### Common Issues
 
-- “Copied content still has inline styles” → Confirm `ClipboardCleanup` is in providers.
-- “Event not firing” → Make sure you’re using the correct event name `beforeClipboardWrite` (camelCase in TypeScript & JavaScript).
+- **Copied content still has inline styles** — Verify that `ClipboardCleanup` is included in the Inject statement.
+- **Event not firing** — Ensure you are using the correct event name `beforeClipboardWrite` with proper camelCase in TypeScript and JavaScript.
