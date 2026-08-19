@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Process large HTML content without increasing maximum message size
+# Process Large HTML Content Without Increasing Maximum Message Size
 
 The Blazor **Rich Text Editor** component supports processing large HTML content without increasing the SignalR hub maximum receive message size (`MaximumReceiveMessageSize`, default 32 KB) by enabling chunk messaging.
 
