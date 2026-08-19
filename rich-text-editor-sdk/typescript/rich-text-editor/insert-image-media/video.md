@@ -63,7 +63,7 @@ The following example demonstrates configuring the `Video` toolbar item:
 
 {% endif %}
 
-## Video Save Formats
+## Video save formats
 
 The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -81,7 +81,7 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 ```
 
-## Inserting Video
+## Inserting video
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
@@ -97,13 +97,13 @@ You can switch to the `Web URL` option by selecting the Web URL checkbox. Insert
 
 ![Javascript Rich Text Editor Video insert](../images/javascript-richtexteditor-video-web.png)
 
-## Uploading Video from Local Machine
+## Uploading video from local machine
 
 You can use the `browse` option on the video dialog to select the video from the local machine and insert it into the Rich Text Editor content.
 
 If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
-## Restricting Maximum File Size
+## Restricting maximum file size
 
 You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes (approximately 300 MB).
 
