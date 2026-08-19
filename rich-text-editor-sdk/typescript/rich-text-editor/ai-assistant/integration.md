@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Integrating the AI Assistant in TypeScript Rich Text Editor
 
-> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires TypeScript 3.x+, @syncfusion/ej2-richtexteditor v32.1.19, @syncfusion/ej2-interactive-chat, @syncfusion/ej2-notifications, and @syncfusion/ej2-markdown-converter.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires @syncfusion/ej2-richtexteditor v32.1.19, @syncfusion/ej2-interactive-chat, @syncfusion/ej2-notifications, and @syncfusion/ej2-markdown-converter.
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a popup interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
