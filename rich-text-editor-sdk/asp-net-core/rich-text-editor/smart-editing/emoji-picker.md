@@ -29,7 +29,7 @@ The following code example shows how to customize icons in the emoji picker.
 {% endhighlight %}
 {% endtabs %}
 
-Additionally, you can customize the icons of toolbar items using the `iconCss` and [code](../api/rich-text-editor/emojiIconsSet/#code) properties. The `iconCss` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
+Additionally, you can customize the icons of toolbar items using the `iconCss` and `code` properties. The `iconCss` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
 
 When both `iconCss` and `code` properties are provided, the `iconCss` property takes precedence in determining the appearance of the toolbar item icon.
 
