@@ -3,7 +3,7 @@ layout: post
 title: Inline Content in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to add inline content in ASP.NET MVC Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -24,18 +24,19 @@ You can specify the type of content using the `contentType` property. The Block 
 | Link                   | Represents a hyperlink.             |
 | Mention                | Represents a user mention.          |
 | Label                  | Represents a label or tag.          |
+| InlineCode             | Represents an inline code span.     |
 
 > By default, the content type is set to `Text`.
 
 ### ContentType 
 
-```typescript
+```csharp
 // Adding inline text
 {
     blockType = "Paragraph",
     content = new List<object>()
-        {
-        new { contentType = 'Text', content = "Inline Text" }
+    {
+        new { contentType = "Text", content = "Inline Text" }
     }
 }
 ```
@@ -60,17 +61,17 @@ Link settings accepts the following options:
 
 ### ContentType & Properties
 
-```typescript
+```csharp
 {
     blockType = "Paragraph",
     content = new List<object>()
+    {
+        new
         {
-        new 
-        {
-            contentType = 'Link',
-            content = 'hyperlinks',
+            contentType = "Link",
+            content = "hyperlinks",
             properties = {
-                url = 'https://ej2.syncfusion.com/documentation',
+                url = "https://ej2.syncfusion.com/documentation",
             }
         }
     }
@@ -83,7 +84,7 @@ You can render labels by setting the `contentType` property as `Label`. Addition
 
 ### Built-in items
 
-The Block Editor comes with offers different built-in options. These include:
+The Block Editor offers the following built-in options:
 
 -   **Progress**: In-progress, On-hold, Done
 -   **Priority**: High, Medium, Low
@@ -94,14 +95,14 @@ You can customize the labels by using the `properties` property with type `Label
 
 ### ContentType & Properties
 
-```typescript
+```csharp
 // Adding inline label
 {
     blockType = "Paragraph",
     content = new List<object>()
-        {
-        new {contentType = 'Label', properties = { lableId = "progress" }}
-        }
+    {
+        new { contentType = "Label", properties = { labelId = "progress" } }
+    }
 }
 ```
 
@@ -120,6 +121,8 @@ The `labelItems` array allows you to define the available labels in your editor.
 | `groupHeader` | Category/group name for organizing labels   |
 | `labelColor`  | Background color of the label               |
 | `iconCss`  | CSS class for an icon to display with label |
+
+When inserting a Label content item, reference the desired label by its `id` using the `labelId` property in the content item's `properties` object.
 
 When users type the trigger character followed by text, a popup will appear showing matching label items from which they can select. The selected label will be inserted into the content as a Label content item.
 
@@ -148,13 +151,13 @@ Mentions are typically triggered by the `@` character and are linked to the `Use
 
 ### ContentType
 
-```typescript
-// Adding inline code
+```csharp
+// Adding inline mention
 {
     blockType = "Paragraph",
     content = new List<object>()
     {
-        new { 
+        new {
             contentType = "Mention", properties = new { userId = "user1" }
         }
     }

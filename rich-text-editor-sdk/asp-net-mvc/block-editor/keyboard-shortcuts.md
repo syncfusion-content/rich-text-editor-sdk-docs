@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Keyboard Shortcuts in ASP.NET MVC Block Editor | Syncfusion
-description: Learn the keyboard shortcuts available in the ASP.NET MVC BlockEditor for block creation, navigation, formatting, and undo/redo.
+description: Learn the keyboard shortcuts available in the ASP.NET MVC Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
@@ -30,7 +30,7 @@ These shortcuts enable quick creation of different block types and management of
 | Actions | Windows | Mac |
 |---------|---------|-----|
 | Create Paragraph | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>P</kbd> |
-| Create CheckList | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>7</kbd> |
+| Create Checklist | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>7</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>7</kbd> |
 | Create Bullet List | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>8</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>8</kbd> |
 | Create Numbered List | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>9</kbd> |
 | Create Heading 1 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>1</kbd> |
@@ -41,12 +41,13 @@ These shortcuts enable quick creation of different block types and management of
 | Create Code Block | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>K</kbd> |
 | Create Callout | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>C</kbd> |
 | Insert Image | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>/</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>/</kbd> |
-| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> |<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
+| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
+
+> For indent, both `Ctrl+]` and `Tab` are supported. For outdent, both `Ctrl+[` and `Shift+Tab` are supported.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -72,26 +73,27 @@ These shortcuts cover general editor functionality including undo/redo operation
 
 ## Customizing keyboard shortcuts
 
-You can customize menu level shortcuts such as `Slash Command Menu`, `Block Action Menu` and `Context Menu` on the respective menu settings config by modifying it's `shortcut` property.
+You can customize menu-level shortcuts such as `Slash Command Menu`, `Block Action Menu`, and `Context Menu` on the respective menu settings config by modifying their `shortcut` property.
 
 For other operations, you can customize the keyboard shortcuts by configuring the [KeyConfig](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyConfig) property when initializing the Block Editor control. This allows you to override default shortcuts or add new ones according to your application's requirements.
 
-In the below example, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
+The following example changes the shortcut for bold formatting to <kbd>Alt</kbd> + <kbd>B</kbd> and the shortcut for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
 
 ```cshtml
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").KeyConfig(ViewData["keyConfig"]).Render()
 </div>
 ```
-```cs
+
+```csharp
 using Syncfusion.EJ2.BlockEditor;
 
 public object keyConfig { get; set; }
 
 public ActionResult Result()
 {
-    keyConfig = new 
-    { 
+    keyConfig = new
+    {
         bold = "alt+b",
         italic = "alt+i"
     };

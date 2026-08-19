@@ -20,7 +20,7 @@ You can customize the toolbar configurations by using the [RichTextEditorToolbar
 
 ## Expand toolbar
 
-The [Expand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarType.html#Syncfusion_Blazor_RichTextEditor_ToolbarType_Expand) toolbar hides overflowing items in the next line using the  property. By clicking the expand arrow, you can view the overflowing toolbar items. The default mode of toolbar is `Expand`.
+The [Expand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarType.html#Syncfusion_Blazor_RichTextEditor_ToolbarType_Expand) toolbar hides overflowing items in the next line. By clicking the expand arrow, you can view the overflowing toolbar items. The default mode of the toolbar is `Expand`.
 
 {% tabs %}
 {% highlight razor %}
@@ -58,7 +58,7 @@ The [Scrollable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTex
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor multirow toolbar](./images/blazor-richtexteditor-scrollable-toolbar.webp)
+![Blazor RichTextEditor scrollable toolbar](./images/blazor-richtexteditor-scrollable-toolbar.webp)
 
 ## Popup toolbar
 
@@ -72,7 +72,7 @@ The [Popup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEdit
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor multirow toolbar](./images/blazor-richtexteditor-popup-toolbar.webp)
+![Blazor RichTextEditor popup toolbar](./images/blazor-richtexteditor-popup-toolbar.webp)
 
 ## Configuring a Floating toolbar
 
