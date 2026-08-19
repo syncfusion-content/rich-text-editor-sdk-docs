@@ -99,7 +99,7 @@ Use the `displayTemplate` to customize how the selected mention appears when ins
 
 ```html
 <ng-template #displayTemplate let-data>
-    <a href=mailto:{{data.email}} title={{data.email}}>&#64;{{data.name}}</a>
+    <a href=mailto:{{data.email}} title={{data.email}} aria-label="Email data">&#64;{{data.name}}</a>
 </ng-template>
 ```
 
