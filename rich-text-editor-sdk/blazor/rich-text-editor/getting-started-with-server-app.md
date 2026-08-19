@@ -165,7 +165,7 @@ Include the required [script references](https://blazor.syncfusion.com/documenta
 
 ## Add Blazor Rich Text Editor component
 
-Open a Razor file located in the **/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component inside the razor file.
+Open a Razor file located in the **/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor Rich TextEditor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component inside the razor file.
 
 N> If the interactivity location is set to `Per page/component`, define a render mode at the top of the razor file. (For example `InteractiveServer`). If the Interactivity is set to `Global`, the render mode is automatically configured in the `App.razor` file by default.
 
@@ -177,9 +177,9 @@ N> If the interactivity location is set to `Per page/component`, define a render
 @using Syncfusion.Blazor.RichTextEditor
 
 <SfRichTextEditor>
-    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
-    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
+    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
+    <p><b>Get started Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
 </SfRichTextEditor>
 
 {% endhighlight %}
@@ -234,6 +234,6 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 1. [Getting Started with Blazor Web App](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
 2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
 3. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
-4. [Accessibility in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
-5. [Keyboard support in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
-6. [Globalization in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)
+4. [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
+5. [Keyboard support in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
+6. [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)

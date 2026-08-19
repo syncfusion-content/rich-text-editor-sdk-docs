@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import and Export Content in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to import Word documents and export Blazor Rich Text Editor content to PDF and Word formats.
+description: Learn how to import Word documents and export Blazor Rich Text Editor content to PDF and Word formats in React applications.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Import to HTML file
 
-The Rich Text Editor allows you to load an external HTML file in the editor's content, which contains the text with styling and images. Read the HTML file from your path using the [StreamReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader) class and assign it to the editor with the `@bind-Value` property.
+The Rich Text Editor allows you to load an external HTML file in the editor's content, which contains the text with styling and images. Read the HTML file from your path using the [Stream Reader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader?view=net-6.0) class and assign it to the editor with the `@bind-Value` property.
 
 {% tabs %}
 {% highlight razor %}
@@ -20,9 +20,9 @@ The Rich Text Editor allows you to load an external HTML file in the editor's co
 @using Syncfusion.Blazor.RichTextEditor
 
 <SfRichTextEditor @bind-Value="@HtmlString">
-    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
-    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
+    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
+    <p><b>Get started Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
 </SfRichTextEditor>
 
 @code { 
@@ -303,9 +303,9 @@ namespace WordUpload.Controllers
 
 ## Export to RTF file
 
-Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to the RTF format.
+Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to the RTF format. Ensure the Syncfusion.DocIO.NET NuGet package is installed in your project.
 
-Click **Export** to convert the Rich Text Editor content to an RTF file using the Syncfusion.DocIO libraries. The following code shows the export handler.
+Click **Export**, and use **Syncfusion.DocIO** libraries to convert the Rich Text Editor content to an RTF file. Use the following code to export the RTF file.
 
 {% tabs %}
 {% highlight razor %}
@@ -346,9 +346,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/blazor-rich-tex
 
 ## Export to HTML file
 
-Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to HTML format. Make sure the required NuGet package is referenced in your project.
+Use [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to HTML format. Make sure the required NuGet package is referenced in your project.
 
-When you click the export button, the editor calls the Export to HTML service.
+While clicking on the export button, it makes a call to the Export to HTML service.
 
 {% tabs %}
 {% highlight razor %}
@@ -473,7 +473,7 @@ public FileStreamResult ExportToDocx([FromBody] ExportParam args)
     string htmlString = args?.html;
     if (string.IsNullOrEmpty(htmlString)) // Fixed: Added closing parenthesis
     {
-        return null;
+        return null; 
     }
     // Fixed: Removed the 'using' block from MemoryStream so it stays open for the file transfer
     MemoryStream stream = new MemoryStream();

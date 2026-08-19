@@ -121,7 +121,7 @@ After the packages are installed, open the **~/Components/_Imports.razor** file 
 {% tabs %}
 {% highlight razor tabtitle="~/_Imports.razor" %}
 
-@using Syncfusion.Blazor
+@using Syncfusion.Blazor 
 @using Syncfusion.Blazor.RichTextEditor
 
 {% endhighlight %}

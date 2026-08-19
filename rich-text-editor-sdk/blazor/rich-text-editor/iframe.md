@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# IFrame Editing Mode in Blazor Rich Text Editor
+# Iframe Editing Mode in Blazor Rich Text Editor
 
 The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
@@ -48,7 +48,7 @@ Add additional attributes to the body element of the iframe document using the [
 
 ![Blazor Rich Text Editor with iframe attribute](./images/blazor-richtexteditor-iframe-attribute.webp)
 
-## Integrating external CSS and script
+## Integrating external CSS and Script
 
 The editor supports adding external CSS files to style the iframe document by using the [RichTextEditorIframeSettings.Resources](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorIFrameSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorIFrameSettings_Resources) property. This allows changing the appearance of the editor content with an external stylesheet.
 
@@ -61,9 +61,9 @@ Similarly, add external script files to the iframe document using the same `Rich
 
 <SfRichTextEditor>
     <RichTextEditorIFrameSettings Enable="true" Resources="@Resources" />
-    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
-    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
+    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
+    <p><b>Get started Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
     <img alt='Logo' style='width: 300px; height: 300px; transform: rotate(0deg);' src='https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Portrait.png' />
 </SfRichTextEditor>
 
@@ -79,10 +79,5 @@ Similarly, add external script files to the iframe document using the same `Rich
 {% endtabs %}
 
 ![Blazor Rich Text Editor with external CSS and script](./images/blazor-richtexteditor-iframe-external-CSS-script.webp)
-
-## See also
-
-* [Editor Modes](./editor-modes)
-* [Customizing the IFrame content area](#customizing-iframe-attributes)
 
 N> Visit the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour for an overview of its capabilities. Explore the [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) demo to learn how to render and configure the editor tools.
