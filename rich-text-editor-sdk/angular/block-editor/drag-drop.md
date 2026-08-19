@@ -14,7 +14,7 @@ The drag and drop feature in the Block Editor allows users to intuitively rearra
 
 ## Enable drag and drop
 
-You can control the drag-and-drop functionality of the Block Editor using the [enableDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#enabledraganddrop) input on the component. The feature is enabled by default (`true`).
+You can control the drag-and-drop functionality of the Block Editor using the [enableDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#enabledraganddrop) property on the component. The feature is enabled by default (`true`).
 
 The Block Editor supports both single and multiple block dragging. Users can drag individual blocks or select multiple blocks and drag them together to a new position:
 

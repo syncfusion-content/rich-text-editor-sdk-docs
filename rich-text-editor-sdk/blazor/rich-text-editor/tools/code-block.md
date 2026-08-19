@@ -74,7 +74,6 @@ Below is an example of how to configure the `RichTextEditorCodeBlockSettings` us
         new ToolbarItemModel() { Command = ToolbarCommand.FontColor },
         new ToolbarItemModel() { Command = ToolbarCommand.BackgroundColor },
         new ToolbarItemModel() { Command = ToolbarCommand.FontName },
-        new ToolbarItemModel() { Command = ToolbarCommand.FontColor },
         new ToolbarItemModel() { Command = ToolbarCommand.Separator },
         new ToolbarItemModel() { Command = ToolbarCommand.LowerCase },
         new ToolbarItemModel() { Command = ToolbarCommand.UpperCase },
@@ -88,7 +87,7 @@ Below is an example of how to configure the `RichTextEditorCodeBlockSettings` us
 
 In this example:
 
-* The **Languages** array defines four supported languages: JavaScript, Plaintext, HTML, and CSS.
+* The **Languages** array defines four supported languages: HTML, JavaScript, CSS, and Plain Text.
 * The **DefaultLanguage** is set to **javascript**, so new code blocks default to JavaScript.
 * Each language object specifies a **Language** (for internal use, e.g., syntax highlighting) and a **Label** (displayed in the dropdown).
 
@@ -111,5 +110,5 @@ The Code Block feature supports tab-based indentation to align code properly, cr
 
 To enable tab-based indentation:
 
-* **Using the Tab Key**: Pressing `Tab` within a code block typically inserts a tab character (\t) or spaces (usually four, depending on the editor’s default configuration). Use `Shift+Tab` to outdent selected lines.
+* **Using the Tab Key**: Pressing `Tab` within a code block inserts a tab character (`\t`) or spaces. Use `Shift+Tab` to outdent selected lines.
 * **Toolbar Commands**: Include the `Indent` and `Outdent` buttons in the toolbar to increase or decrease indentation.
