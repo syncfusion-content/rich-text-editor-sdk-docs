@@ -16,7 +16,7 @@ To get started quickly with third-party integrations for the Angular Rich Text E
 
 {% youtube "https://www.youtube.com/watch?v=F4UATDBVxXM" %}
 
-## CodeMirror integration
+## Code Mirror integration
 
 RichTextEditor comes with a basic HTML source editor through the view-source property. CodeMirror plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
 
