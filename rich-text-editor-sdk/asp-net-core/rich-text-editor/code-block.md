@@ -23,9 +23,9 @@ The code block is rendered with a monospaced font and preserved indentation for 
 
 ## Configuring code block languages
 
-The Code Block feature supports customizable programming languages via the [e-richtexteditor-codeblocksettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
+The Code Block feature supports customizable programming languages via the [`codeBlockSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
 
-Below is an example of how to configure the [e-richtexteditor-codeblocksettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) using the Rich Text Editor:
+Below is an example of how to configure the [`codeBlockSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) using the Rich Text Editor:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -63,11 +63,12 @@ To enhance code block readability, integrate a third-party syntax highlighter li
 ## Tips for editing around code blocks
 
 Editing content around code blocks requires care to preserve code integrity and maintain clean formatting. Follow these tips for a smooth editing experience:
-* **Inserting Text Before a Code Block**: Place the cursor at the start of the code block’s first line and press `Enter` to create an empty line above. Press Enter again to start a new paragraph for text.
-* **Inserting Text After a Code Block**: Place the cursor at the end of the code block’s last line and press `Enter` three times to exit the code block and create a new paragraph below.
-* **Preserving Formatting When Pasting**: Paste code into a code block using `Ctrl+Shift+V` (or `Cmd+Shift+V` on macOS) to avoid external formatting (e.g., fonts or colors) and maintain the monospaced style.
+
+* **Inserting Text Before a Code Block**: Place the cursor at the start of the code block's first line and press `Enter` to create an empty line above. Press `Enter` again to start a new paragraph for text.
+* **Inserting Text After a Code Block**: Place the cursor at the end of the code block's last line and press `Enter` three times to exit the code block and create a new paragraph below.
+* **Preserving Formatting When Pasting**: Paste code into a code block using `Ctrl+Shift+V` (or `Cmd+Shift+V` on macOS) to avoid external formatting (e.g. fonts or colors) and maintain the monospaced style.
 * **Changing Languages**: When switching the language of a code block via the dropdown, verify that the code aligns with the new language for accurate syntax highlighting in the rendered output.
-* **Previewing Content**: Since live syntax highlighting is not available during editing, use the editor’s preview mode to verify how code blocks render with syntax highlighting before publishing.
+* **Previewing Content**: Since live syntax highlighting is not available during editing, use the editor's preview mode to verify how code blocks render with syntax highlighting before publishing.
 
 ## Enabling tab-based line indentation in code blocks
 
@@ -75,5 +76,5 @@ The Code Block feature supports tab-based indentation to align code properly, cr
 
 To enable tab-based indentation:
 
-* **Using the Tab Key**: Pressing `Tab` within a code block typically inserts a tab character (\t) or spaces (usually four, depending on the editor’s default configuration). Use `Shift+Tab` to outdent selected lines.
+* **Using the Tab Key**: Pressing `Tab` within a code block typically inserts a tab character (`\t`) or spaces (usually four, depending on the editor's default configuration). Use `Shift+Tab` to outdent selected lines.
 * **Toolbar Commands**: Include the `Indent` and `Outdent` buttons in the toolbar to increase or decrease indentation.

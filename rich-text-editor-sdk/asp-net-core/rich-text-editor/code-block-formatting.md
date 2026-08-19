@@ -13,9 +13,9 @@ The Rich Text Editor control offers a powerful feature to format text as preform
 
 ### Enabling Code Block Formatting
 
-To enable code block formatting, ensure that the Formats item is included in the toolbar items of your Rich Text Editor configuration.
+To enable code block formatting, ensure that the `Formats` item is included in the toolbar items of your Rich Text Editor configuration. Selecting **Preformatted Text** in the dropdown wraps the current selection in a `<pre>` block; selecting it again removes the formatting.
 
-Below are examples and code snippets demonstrating how to add and effectively use the code block formatting option in the Rich Text Editor.
+Below is an example demonstrating how to add and use the code block formatting option in the Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
