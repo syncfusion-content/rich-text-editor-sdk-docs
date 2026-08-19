@@ -29,6 +29,26 @@ npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-
 └── @syncfusion/ej2-filemanager
 ```
 
+Map the above packages style and script reference in sample as like below
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="systemjs.config.js" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-config/systemjs.config.js %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-config/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## CSS theme reference
 
 Additionally add the below styles in the `index.html` file.
