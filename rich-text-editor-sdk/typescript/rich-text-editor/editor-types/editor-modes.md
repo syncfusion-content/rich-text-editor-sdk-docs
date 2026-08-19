@@ -10,18 +10,35 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Editor Modes in TypeScript Rich Text Editor
 
-The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
+The Rich Text Editor component supports two editing modes for creating and editing content in different formats. You can access the edited content via the `value` property or capture changes in the `change` event.
 
-* HTML Editor
-* Markdown Editor
+## Supported editor modes
+
+* **HTML editor** — Default WYSIWYG mode for editing and formatting content as HTML
+* **Markdown editor** — For editing and viewing content in Markdown format
 
 ## HTML editor
 
-Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
+HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor returns valid HTML markup.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property as `HTML`.
+### Setup
 
-> To create Rich Text Editor with HTML editing feature, inject the `HtmlEditor` module to the Rich Text Editor using the `RichTextEditor.Inject(HtmlEditor)` method.
+To use the HTML editor mode, inject the `HtmlEditor` module:
+
+```typescript
+import { RichTextEditor, HtmlEditor, Toolbar, Image, Link, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
+
+RichTextEditor.Inject(HtmlEditor, Toolbar, Image, Link, QuickToolbar);
+
+let editor: RichTextEditor = new RichTextEditor({
+  // ...
+});
+editor.appendTo('#defaultRTE');
+```
+
+To explicitly set the HTML editor mode, set the [`editorMode`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property to `'HTML'`:
+
+### Examples
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,23 +67,64 @@ The HTML editing mode is the default mode of Rich Text Editor. Which is used for
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs2" %}
 {% endif %}
 
-## IFrame editor
-
-The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
-
-For more details, refer to the [Iframe Editor](./iframe) documentation.
-
 ## Markdown editor
 
-Set the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
+To edit content in Markdown format, set the [`editorMode`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) property to `'Markdown'`. You can then apply Markdown-compatible formatting and view the rendered output.
 
-The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
+### Setup
 
-* The Supported Tags are  `h6`,`h5`,`h4`,`h3`,`h2`,`h1`,`blockquote`,`pre`,`p`,`ol`,`ul`.
-* The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
-* The supported insert commands are `Image`, `Link` and `Table`.
+To use the Markdown editor mode, inject the `MarkdownEditor` module:
 
-> To create Rich Text Editor with Markdown editing feature, inject the `MarkdownEditor` module to the Rich Text Editor using the `RichTextEditor.Inject(MarkdownEditor)` method.
+```typescript
+import { RichTextEditor, MarkdownEditor, Toolbar } from '@syncfusion/ej2-richtexteditor';
+
+RichTextEditor.Inject(MarkdownEditor, Toolbar);
+
+let editor: RichTextEditor = new RichTextEditor({
+  editorMode: 'Markdown',
+  // ...
+});
+editor.appendTo('#defaultRTE');
+```
+
+### Supported Markdown tags
+
+The following HTML tags are generated from Markdown syntax:
+
+| Markdown Syntax | HTML Tag | Example |
+|-----------------|----------|---------|
+| `# Heading` | `<h1>` | `# Main Title` |
+| `## Heading` | `<h2>` | `## Subtitle` |
+| `### Heading` | `<h3>` | `### Section` |
+| `#### Heading` | `<h4>` | `#### Subsection` |
+| `##### Heading` | `<h5>` | `##### Minor` |
+| `###### Heading` | `<h6>` | `###### Tiny` |
+| `> Blockquote` | `<blockquote>` | `> Quote text` |
+| `` ``` code ``` `` | `<pre>` | `` ``` code block ``` `` |
+| `Paragraph` | `<p>` | Regular text |
+| `1. Item` | `<ol>` | Ordered list |
+| `- Item` | `<ul>` | Unordered list |
+
+### Selection formatting tags
+
+The following text formatting options are available in Markdown mode:
+
+| Format | Markdown | Example |
+|--------|----------|---------|
+| Bold | `**text**` | `**bold text**` |
+| Italic | `*text*` | `*italic text*` |
+| Strikethrough | `~~text~~` | `~~strikethrough~~` |
+| Inline Code | `` `code` `` | `` `code` `` |
+| Subscript | (selection formatting) | Converts selected text to Subscript |
+| Superscript | (selection formatting) | Converts selected text to Superscript ||
+| Uppercase | (selection formatting) | Converts selected text to uppercase |
+| Lowercase | (selection formatting) | Converts selected text to lowercase |
+
+### Markdown Conversion
+
+Markdown content is converted to HTML using the `@syncfusion/ej2-markdown-converter` package. Ensure this package is installed in your project.
+
+For more details on Markdown editing, refer to the [Markdown Editor Getting Started](../../markdown-editor/getting-started) guide.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -95,8 +153,7 @@ The third-party library such as `Marked` or any other library is used to convert
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs3" %}
 {% endif %}
 
-For further details on Markdown editing, refer to the [Markdown](https://ej2.syncfusion.com/documentation/markdown-editor/getting-started)
+## See Also
 
-## See also
-
-* [Markdown Editor](https://ej2.syncfusion.com/documentation/markdown-editor/getting-started)
+* [Rich Text Editor API Reference](https://ej2.syncfusion.com/documentation/api/rich-text-editor)
+* [Markdown Editor Documentation](https://help.syncfusion.com/rich-text-editor-sdk/typescript/markdown-editor/getting-started)
