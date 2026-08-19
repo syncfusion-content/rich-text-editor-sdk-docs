@@ -23,7 +23,7 @@ The `AIAssistantSettings` class provides the following properties for complete c
 | `responseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
 | `suggestions` | `string[]` | `[]` | Defines suggestion prompts displayed to the user as guidance. |
-| `bannerTemplate` | `string \| Function` | `''` | Specifies the template for the banner in the AI Assistant control. |
+| `bannerTemplate` | `string \| Function` | `''` | Specifies the template for the banner in the AI Assistant component. |
 | `maxPromptHistory` | `number` | `20` | Defines the maximum number of prompts that can be stored in the editor's history stack. |
 
 The `aiAssistantSettings` property of the Rich Text Editor allows you to configure the following:
@@ -37,7 +37,20 @@ The `aiAssistantSettings` property of the Rich Text Editor allows you to configu
 
 ## Adding items to the AI Commands Dropdown menu
 
-To configure the items displayed in the AI Commands Dropdown menu, the `commands` property of the `aiAssistantSettings` can be used. The commands come with predefined prompts for writing, summarizing, and translating content. The `commands` property can be configured to add items or nested items to the dropdown menu.
+To configure the items displayed in the AI Commands Dropdown menu, use the `commands` property of the `aiAssistantSettings`. The `commands` property can be configured to add items or modify the default dropdown menu.
+
+### AICommands interface
+
+The `commands` property accepts an array of objects with the following structure:
+
+```typescript
+interface AICommand {
+  text: string;           // Display text for the command
+  command: string;        // Command identifier
+  description?: string;   // Optional description/tooltip
+  subCommands?: AICommand[]; // Optional nested commands
+}
+```
 
 **Example**
 
@@ -70,9 +83,15 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands" %}
 {% endif %}
 
-## Preloading Prompts, Response and Suggestions
+## Preloading prompts, responses, and suggestions
 
-To preload conversations and add suggested prompts to the AI Assistant use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful when conversation history needs to be loaded for a returning user, or to load the AI Assistant with default prompts for a new user.
+To preload conversations and add suggested prompts to the AI Assistant, use the `prompts` and `suggestions` properties of the `aiAssistantSettings`. This is helpful for:
+
+- Loading conversation history for returning users
+- Displaying default prompts for new users
+- Restoring previous chat sessions
+
+The `prompts` property loads predefined prompt-response pairs, while `suggestions` shows helpful prompt starters.
 
 **Example**
 
@@ -115,9 +134,9 @@ The following table lists the available toolbar items for the Header, Prompt, an
 
 | Toolbar | Items & Their Use |
 |---------|-------------------|
-| **Header** | **AIcommands** – Opens AI-related command options.<br>**Close** – Closes the current panel or window. <br> **Clear** - Clear the current conversations. |
-| **Prompt** | **Edit** – Allows you to modify the prompt text.<br>**Copy** – Copies the prompt to your clipboard. |
-| **Response** | **Regenerate** – Produces a new response for the same prompt.<br>**Copy** – Copies the AI response.<br>**\|** – Visual separator between actions.<br>**Insert** – Inserts the generated response into the target editor or field. |
+| **Header** | `AIcommands` – Opens AI-related command options.<br>`Close` – Closes the current panel or window. <br> `Clear` - Clear the current conversations. |
+| **Prompt** | `Edit` – Allows you to modify the prompt text.<br>`Copy` – Copies the prompt to your clipboard. |
+| **Response** | `Regenerate` – Produces a new response for the same prompt.<br>`Copy` – Copies the AI response.<br>**\|** – Visual separator between actions.<br>`Insert` – Inserts the generated response into the target editor or field. |
 
 ### Default Toolbar Items
 
@@ -141,7 +160,7 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -158,13 +177,16 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings" %}
 {% endif %}
 
-## Popup Dimensions
+## Popup dimensions
 
-To customize the dimensions of the AI Assistant popup based on the editor width, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`. The default minimum height of the popup is `100px`, and the `popupMaxHeight` property customizes the maximum height of the popup up to which the content can grow.
+To customize the dimensions of the AI Assistant popup, use the `popupWidth` and `popupMaxHeight` properties of the `aiAssistantSettings`:
+
+- **`popupWidth`** — Sets the popup width . Accepts CSS values or pixel numbers.
+- **`popupMaxHeight`** — Sets the maximum height . Content scrolls if it exceeds this height. Minimum height is `100px`.
 
 **Example**
 
-In the below sample, the popup width and maximum height are configured.
+In the following example, the popup width and maximum height are configured:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -193,13 +215,28 @@ In the below sample, the popup width and maximum height are configured.
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions" %}
 {% endif %}
 
-## Setting Maximum Conversation History Length
+## Conversation history management
 
-To set the maximum conversation history length, use the `maxPromptHistory` property of the `aiAssistantSettings`. The default amount of conversation that can be loaded is `20` prompts. The conversation will be cleared when closing the popup. To retrieve all conversation history, use the `getAIPromptHistory()` method. This method is useful for loading previous conversations and populating the `prompts` property when you need to restore or display earlier chat sessions.
+### Setting maximum history length
+
+Use the `maxPromptHistory` property to control how many prompts are retained in the conversation history (default: `20`). When the maximum is exceeded, older prompts are removed.
+
+### Retrieving and persisting history
+
+The `getAIPromptHistory()` method returns the current conversation history as an array of `PromptModel[]` objects. This is useful for:
+
+- Saving conversation history before closing
+- Restoring previous sessions
+- Populating the `prompts` property on reload
+
+**Method Signature:**
+```typescript
+getAIPromptHistory(): PromptModel[]
+```
 
 **Example**
 
-In the below sample, the maximum prompt history is configured to `30`, and when a save button is clicked the conversation history is retrieved using the `getAIPromptHistory()` method.
+In the following example, the maximum prompt history is configured to `30`, and a save button retrieves the conversation history using the `getAIPromptHistory()` method:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -228,13 +265,25 @@ In the below sample, the maximum prompt history is configured to `30`, and when 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history" %}
 {% endif %}
 
-## Setting the Banner
+## Configuring the banner
 
-To set the banner content displayed on top of the AI Assistant popup, use the `bannerTemplate` property of the `aiAssistantSettings`. This can be used to display welcome messages, instructions, or other relevant information.
+The `bannerTemplate` property allows you to display a custom banner at the top of the AI Assistant popup. This is useful for:
 
-**Example**
+- Welcome messages
+- Usage instructions
+- Warnings or guidelines
+- Branding/UI customization
 
-In the below sample, a custom banner template is applied to the AI Assistant.
+### Banner template format
+
+The `bannerTemplate` accepts an **HTML String**:
+
+- **HTML String**: `bannerTemplate: '<div class="custom-banner">Welcome to AI Assistant</div>'`
+
+### Example
+
+In the following example, a custom banner template is applied to the AI Assistant:
+
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
