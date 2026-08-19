@@ -29,9 +29,9 @@ The Rich Text Editor provides the functionality of character counting and its va
 
 | Rules | Description |
 |----------------|---------|
-| [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-7.0) | Requires a value for the Rich Text Editor. |
-| [MinLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.minlengthattribute?view=net-7.0) | Enforces a minimum character count. |
-| [MaxLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.maxlengthattribute?view=net-7.0) | Enforces a maximum character count. |
+| [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-8.0) | Requires a value for the Rich Text Editor. |
+| [MinLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.minlengthattribute?view=net-8.0) | Enforces a minimum character count. |
+| [MaxLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.maxlengthattribute?view=net-8.0) | Enforces a maximum character count. |
 
 {% tabs %}
 {% highlight razor %}
@@ -57,4 +57,10 @@ The validation error message can be displayed in a custom location instead of th
 
 ![Blazor Rich Text Editor validation message in custom placement](./images/blazor-richtexteditor-validation-placement.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Data Binding](./data-binding)
+* [Events](./events)
+* [Getting Started with Blazor Rich Text Editor](./getting-started)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
