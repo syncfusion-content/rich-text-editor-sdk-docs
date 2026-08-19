@@ -9,7 +9,7 @@ documentation: ug
 
 # Retrieve the number of characters
 
-To retrieve the number of characters in the Rich Text Editor content, use the [GetCharCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetCharCountAsync) method.
+To retrieve the number of characters in the Rich Text Editor content, use the [GetCharCountAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetCharCountAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

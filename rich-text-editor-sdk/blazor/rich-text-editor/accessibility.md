@@ -57,7 +57,7 @@ The Blazor Rich Text Editor element is assigned the `application` role.
 | **Property** | **Functionalities** |
 | --- | --- |
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
-| aria-disabled | Indicates the disabled state of the toolbar. |
+| aria-disabled | Indicates the disabled state of the Rich Text Editor. |
 
 {% tabs %}
 {% highlight razor %}

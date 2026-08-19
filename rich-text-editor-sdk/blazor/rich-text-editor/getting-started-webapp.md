@@ -179,9 +179,9 @@ N> If the interactivity location is set to `Per page/component` in the Web App, 
 @using Syncfusion.Blazor.RichTextEditor
 
 <SfRichTextEditor>
-    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
-    <p><b>Get started Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
+    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
+    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
 </SfRichTextEditor>
 
 {% endhighlight %}
@@ -237,20 +237,14 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 
 ## See also
 
-* [Getting Started with Blazor for client-side in .NET Core CLI](../getting-started/blazor-webassembly-app)
-
-* [Getting Started with Blazor for server-side in Visual Studio](../getting-started/blazor-server-side-visual-studio)
-
-* [Getting Started with Blazor for server-side in .NET Core CLI](../getting-started/blazor-web-app)
-
+* [Getting Started with Blazor WebAssembly App](./getting-started)
+* [Getting Started with Blazor Server App](./getting-started-with-server-app)
 * [How to insert Emoticons](https://blazor.syncfusion.com/demos/rich-text-editor/insert-emoticons?theme=fluent2)
 
 * [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
-
-* [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
-
-* [Keyboard support in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
-
-* [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)
+* [Events in Rich Text Editor](./events)
+* [Accessibility in Rich Text Editor](./accessibility)
+* [Keyboard support in Rich Text Editor](./keyboard-shortcuts)
+* [Globalization in Rich Text Editor](./globalization)
 
 N> Looking for the full Blazor Rich Text Editor component overview, features, pricing, and documentation? Visit the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) page.
