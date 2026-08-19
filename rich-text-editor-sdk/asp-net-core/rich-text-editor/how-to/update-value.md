@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor | Syncfusion
+title: Set Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor
 description: Learn how to bind a keyboard shortcut (Ctrl+S) in the ASP.NET Core Rich Text Editor to call updateValue and persist the editor content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Update Editor Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor
+# Set Editor Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its `keyCode`.
 
