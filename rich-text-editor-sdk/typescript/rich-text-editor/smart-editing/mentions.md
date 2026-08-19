@@ -14,14 +14,14 @@ By integrating the [Mention](https://ej2.syncfusion.com/documentation/mention/ge
 
 ## Setup and configuration
 
-Use the [target](https://ej2.syncfusion.com/documentation/api/mention/index-default#target) property of the Mention control to specify the `ID` of the content editable div element within the Rich Text Editor. When setting the target, make sure to append the suffix `_rte-edit-view` to the ID. This allows you to enable the Mention functionality within the Rich Text Editor, so that users can mention or tag other users or objects from the suggested list while editing the text.
+Use the [target](https://ej2.syncfusion.com/documentation/api/mention/index-default#target) property of the Mention control to specify the `ID` of the content-editable div element within the Rich Text Editor. When setting the target, make sure to append the suffix `_rte-edit-view` to the ID. This enables the Mention functionality within the Rich Text Editor, so that users can mention or tag other users or objects from the suggested list while editing the text.
 
 ## Using mentions
 
 When the user types the `@` symbol followed by a character, the Rich Text Editor displays a list of suggestions. Users can then select an item from the list by:
 
-* Clicking on it
-* Typing the name of the item they want to tag
+* Clicking on it.
+* Typing the name of the item they want to tag.
 
 ## Customizing suggestion list 
 
