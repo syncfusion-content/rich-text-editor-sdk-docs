@@ -9,7 +9,7 @@ documentation: ug
 
 # Retrieve the formatted content
 
-To retrieve the editor contents in HTML format, use the [Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Value) property of Rich Text Editor, and to fetch the editor content as plain text, use the [GetText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetTextAsync) method of Rich Text Editor.
+To retrieve the editor contents in HTML format, use the [Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Value) property of the Rich Text Editor, and to fetch the editor content as plain text, use the [GetTextAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetTextAsync) method of the Rich Text Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -46,7 +46,7 @@ To retrieve the editor contents in HTML format, use the [Value](https://help.s
     private async Task GetText()
     {
         this.Content = await this.RteObj.GetTextAsync();
-        this.DialogObj.ShowAsync();
+        await this.DialogObj.ShowAsync();
     }
     private async Task DlgButtonClick(object arg)
     {
