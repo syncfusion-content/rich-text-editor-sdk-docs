@@ -3,7 +3,7 @@ layout: post
 title: Undo and Redo in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to configure undo and redo in ASP.NET MVC BlockEditor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
@@ -16,11 +16,11 @@ The undo/redo feature in Block Editor enables users to revert or reapply changes
 | Action | Windows | Mac | Description |
 |------------|--------------|---------|-----------------|
 | Undo       | Ctrl + Z     | ⌘ + Z   | Reverts the last action. |
-| Redo       | Ctrl + Y     | ⌘ + Y | Reapplies the last undone action. |
+| Redo       | Ctrl + Y     | ⌘ + Y   | Reapplies the last undone action. |
 
 ## Configuring Undo/Redo stack
 
-Block Editor allows up to `30` Undo/Redo actions by default. You can modify the number of undo/redo steps using the [UndoRedoStack](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_UndoRedoStack) property.
+The Block Editor allows up to `30` undo/redo actions by default. You can modify the number of undo/redo steps using the [UndoRedoStack](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_UndoRedoStack) property. The same value is used for both undo and redo — for example, `UndoRedoStack = 20` keeps 20 steps available in each direction.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -3,20 +3,20 @@ layout: post
 title: Block Types and Configuration in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to use built-in block types in the ASP.NET MVC Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Built-in Block Types and Configuration in ASP.NET MVC Block Editor
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) property allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Blocks) property allows you to define and manage the content structure of your editor.
 
 ## Blocks
 
 Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit such as a `Paragraph`, `Heading`, `List`, or specialized content like `Code Snippets` or `Images`. The Block Editor organizes content as a collection of `blocks`, allowing for better structure and formatting options.
 
-You can configure blocks with various properties such as `id`, `blockType`, `content` and more to create rich and structured editor.
+You can configure blocks with various properties such as `id`, `blockType`, `content` and more to create a rich, structured editing experience.
 
 ## Block types
 
@@ -35,6 +35,7 @@ The Block Editor supports multiple block types. Each block type offers different
 | Divider                                 | Horizontal separator line.                        |
 | CollapsibleParagraph and CollapsibleHeading1-4    | Collapsible content blocks.                       |
 | Image                                   | Block for displaying images.                      |
+| Table                                   | Block for displaying tabular data in rows and columns. |
 | Template                                | Predefined custom templates.                      |
 
 > For blocks such as `Code`, `Callout`, `Table`, `Image`, and `Collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
@@ -58,7 +59,7 @@ By default, the `indent` property is set to `0`.
 
 ## Configure CSS Class
 
-You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#CssClass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 

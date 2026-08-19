@@ -10,12 +10,12 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Attach Files in TypeScript Rich Text Editor
 
-The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
+The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload is successful, the attachment link is inserted into the content.
 
-In the below sample, configure the saveUrl and path properties to achieve file attachments.
+In the below sample, configure the `saveUrl` and `path` properties to achieve file attachments.
 
-        1. saveUrl: Provides service URL to save the files.
-        2. path: Specifies the location to store the image.
+        1. `saveUrl`: Specifies the service URL where files will be saved.
+        2. `path`: Defines the location where uploaded files will be stored.
 
 The following sample illustrates how to attach a file in the Rich Text Editor.
 
@@ -96,7 +96,7 @@ string file;
                         Response.Clear();
                         Response.Headers.Add("name", file);
                         Response.ContentType = "application/json; charset=utf-8";
-                        Response.StatusDescription = "File uploaded succesfully";
+                        Response.StatusDescription = "File uploaded successfully";
                         Response.Headers.Add("url", fileSavePath);
                         Response.End();
                     }
