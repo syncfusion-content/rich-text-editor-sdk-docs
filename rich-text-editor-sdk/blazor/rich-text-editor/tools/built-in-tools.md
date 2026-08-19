@@ -11,7 +11,7 @@ documentation: ug
 
 By default, the Rich Text Editor displays the following toolbar items:
 
-> `Bold` , `Italic` , `Underline` , `|` , `Formats` , `Alignments` , `OrderedList` , `UnorderedList` , `|` , `CreateLink` , `Image` , `|` , `SourceCode` , `Undo` , `Redo`
+> `Bold` , `Italic` , `Underline` , `|` , `Formats` , `Alignments` , `Blockquote`, `OrderedList` , `UnorderedList` , `|` , `CreateLink` , `Image` , `|` , `SourceCode` , `Undo` , `Redo`
 
 These default items cover essential text editing features, such as text formatting, lists, alignment, and linking.
 
