@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Third-Party Integration in TypeScript Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit the application scenario.
 
 ## CodeMirror integration
 
-Rich Text Editor comes with a basic HTML source editor through view-source property. [`Code mirror`](https://codemirror.net) plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
+Rich Text Editor comes with a basic HTML source editor through view-source property. [`CodeMirror`](https://codemirror.net) plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
 
 Import necessary CSS and JS files of CodeMirror to the HTML page.
 
-Required JS files of code mirror.
+Required JS files of CodeMirror.
 
 ```ts
  <script src="scripts/CodeMirror/codemirror.js" type="text/javascript"></script>
@@ -28,7 +28,7 @@ Required JS files of code mirror.
 
 ```
 
-Required CSS file of code mirror.
+Required CSS file of CodeMirror.
 
 ```ts
  <link href="scripts/CodeMirror/codemirror.min.css" rel="stylesheet" />
@@ -68,7 +68,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 Rich Text Editor easily integrate with [`Embed.ly`](https://embed.ly) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook and lots of other publishing platform embeds.
 
-This can be achieved by binding the [actionComplete](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content.
+This can be achieved by binding the [actionComplete](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script has to be added in the sample to embed the content.
 
 ```ts
 
