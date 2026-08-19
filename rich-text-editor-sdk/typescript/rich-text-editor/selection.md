@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in TypeScript Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the TypeScript Rich Text Editor for advanced editing workflows.
+description: Learn how to select text, nodes, table cells, and content programmatically in the TypeScript Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 ## Text selection
 
-The Rich Text Editor supports character range-based text selection using the **Syncfusion Slider** control. This feature allows users to select a specific range of characters (e.g., 33–45) within the editor content, which is then automatically highlighted.
+The Rich Text Editor supports character range-based text selection using the **Syncfusion Slider** control. This feature allows users to select a specific range of characters (for example, 33–45) within the editor content, which is then automatically highlighted.
 
 ### Adding a Slider for character range selection
 
