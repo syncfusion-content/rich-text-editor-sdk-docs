@@ -6,7 +6,7 @@ control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
-
+ 
 
 # Customize Placeholder Text Style in ASP.NET Core Rich Text Editor
 

@@ -12,7 +12,7 @@ documentation: ug
 
 The RichTextEditorFor control can be rendered by passing values from the controller. The formatted Rich Text Editor value is retrieved when submitting the form using the post method.
 
-In the following sample, the RichTextEditorFor control is rendered.
+In the following sample, the RichTextEditor control is rendered.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
