@@ -78,5 +78,5 @@ Include `embedly` javascript.
 ## See also
 
 * [CodeMirror integration](./integrations/code-mirror.md)
-* [Emdedly integration](./integrations/embedly.md)
+* [Embedly integration](./integrations/embedly.md)
 * [Highlight.js integration](./integrations/highlightjs.md)
