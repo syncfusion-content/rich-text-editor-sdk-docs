@@ -9,15 +9,11 @@ documentation: ug
 
 # Custom Toolbar Items in ASP.NET Core Rich Text Editor
 
-To quickly get started with the ASP.NET Core Rich Text Editor with a custom toolbar, watch this video:
+The Rich Text Editor allows you to configure your own commands to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The command can be plain text, an icon, or an HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
 
-{% youtube "youtube:https://www.youtube.com/watch?v=AnHsErOlU1A"%}
+This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The `Ω` command is added to insert special characters in the editor. Clicking the `Ω` command opens a dialog where the user can choose the character to be inserted.
 
-The Rich Text Editor allows you to configure your own commands to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
-
-This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The “Ω” command is added to insert special characters in the editor. By clicking the “Ω” command, it will show the special characters list, and then choose the character to be inserted in the editor.
-
-The following code snippet illustrates custom tool with tooltip text which will be included in [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) field of the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property.
+The following code snippet illustrates a custom tool with a tooltip text, included in the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) field of the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property.
 
 
 ```csharp
@@ -60,7 +56,7 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 {% endtabs %}
 {% endif %}
 
-> When rendering any control for the custom toolbar, like a dropdown, the focus may be lost, causing it to render outside the Rich Text Editor and triggering a blur event. This can interfere with proper functionalities like cursor focus. To prevent this issue, it is recommended to assign the `e-rte-elements` class to the control rendered in the custom toolbar.
+> When rendering any control for the custom toolbar, like a dropdown, the focus may be lost, causing it to render outside the Rich Text Editor and triggering a blur event. This can interfere with proper functionality such as cursor focus. To prevent this issue, it is recommended to assign the `e-rte-elements` class to the control rendered in the custom toolbar.
 
 ## Enabling and disabling toolbar items
 
