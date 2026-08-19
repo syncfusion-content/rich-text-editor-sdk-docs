@@ -8,10 +8,9 @@ documentation: ug
 ---
 
 # Text Formatting in Blazor Rich Text Editor
-
 ## Basic text styling
 
-The Rich Text Editor's basic styles feature provides essential formatting options, including bold, italic, underline, strikethrough, subscript, superscript, and case changes. These fundamental tools enable users to enhance and customize their text effortlessly. By leveraging these options, users can ensure their content is both visually appealing and well-structured.
+The Rich Text Editor provides essential formatting options such as bold, italic, underline, strikethrough, subscript, superscript, and case changes. These tools enable users to enhance and customize their text while keeping the content visually appealing and well-structured.
 
 ### Available text styles
 
@@ -43,7 +42,7 @@ Please refer to the sample below to add these basic text styling options in the 
 
 ## Text alignments
 
-The Rich Text Editor offers various text alignment options, including left, center, right, and justify. To utilize these alignment options, add the Alignments item to the items property in the toolbarSettings.
+The Rich Text Editor offers text alignment options including left, center, right, and justify. To enable these alignment options, add the `Alignments` toolbar item to the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 > **Important Note:** Text alignment is applied to the entire block element containing the cursor or selected text, not just to the selected text itself. When you apply an alignment, it affects the whole paragraph or block, even if you've only selected a portion of the text.
 
@@ -213,7 +212,7 @@ The Rich Text Editor provides powerful indentation features for both bullet and 
 To increase the indent of a list item:
 
 1. Select the list item you want to indent.
-2. Click the "Increase Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>]</Kbd>.
+2. Click the "Increase Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>]</kbd>.
 3. The selected item will be indented, creating a nested list.
 
 #### Decreasing indent
@@ -221,7 +220,7 @@ To increase the indent of a list item:
 To decrease the indent of a list item:
 
 1. Select the indented list item.
-2. Click the "Decrease Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>[</Kbd>.
+2. Click the "Decrease Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>[</kbd>.
 3. The selected item will move back to the previous indentation level.
 
 #### Using tab key for indentation
@@ -346,7 +345,7 @@ Example: Add the LineHeight tool and configure items
 
 ## Horizontal line
 
-The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` toolbar item. Horizontal lines (`<hr>`) help visually separate sections of content, enhancing readability and structural clarity.
 
 To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
 
@@ -370,7 +369,7 @@ The format painter tool enables users to replicate formatting from one text segm
 
 You can add the `FormatPainter` tool in the Rich Text Editor using the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
-Double-clicking the Format Painter toolbar button enables **sticky mode**, allowing multiple formatting applications until the `Escape` key is pressed. In sticky mode, the format painter remains active until the `Escape` key is pressed again to disable it.
+Double-clicking the Format Painter toolbar button enables **sticky mode**, which keeps the format painter active so you can apply the copied formatting to multiple selections. Press the `Escape` key to exit sticky mode.
 
 The following example demonstrates how to add the Format Painter tool to the Rich Text Editor toolbar.
 
@@ -384,7 +383,7 @@ The following example demonstrates how to add the Format Painter tool to the Ric
 
 ## Clear formatting
 
-The Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
+The Rich Text Editor component offers a powerful `ClearFormat` feature to remove any applied formatting from selected text.
 
 This feature is particularly useful when you need to:
 
@@ -396,7 +395,7 @@ This feature is particularly useful when you need to:
 
 The Clear Format feature allows users to remove all formatting (like bold, italic, font styles, etc.) from selected text in the Rich Text Editor. To enable this feature, you need to include it in the toolbar configuration.
 
-Steps to Configure:
+Steps to configure:
 
 - Open the component file where the Rich Text Editor is implemented.
 - Locate the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property in your editor configuration.
@@ -436,7 +435,7 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 
 ## Markdown Auto Format
 
-The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the `EnableMarkdownAutoFormat` property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [EnableMarkdownAutoFormat](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableMarkdownAutoFormat) property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
 
 By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
 
@@ -456,7 +455,7 @@ The following block formatting options are available:
 - **Bulleted list** – Start a line with `*` or `-` followed by a space.
 - **Numbered list** – Start a line with `1.` followed by a space.
 - **Check List** – Start a line with `[ ]` or `[x]` followed by a space to insert an unchecked or checked list item, respectively.
-- **Headings** – Start a line with `#`, `##`, or `###` followed by a space to create Heading 1, Heading 2, or Heading 3. You can use up to six levels of headings
+- **Headings** – Start a line with one to six `#` characters followed by a space (e.g., `#`, `##`, `###`) to create Heading 1 through Heading 6.
 - **Block quote** – Start a line with `>` followed by a space.
 - **Code block** – Start a line with ` ``` ` followed by a space.
 - **Horizontal line** – Start a line with `---` followed by a space.
