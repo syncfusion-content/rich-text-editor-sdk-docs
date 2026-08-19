@@ -59,26 +59,4 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 N> The Format Painter retains formatting after application in sticky mode, allowing you to apply the same styles multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
-### Programmatic usage
-
-You can perform the format painter actions programmatically by calling [ExecuteCommandAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ExecuteCommandAsync_Syncfusion_Blazor_RichTextEditor_CommandName_) with the `FormatPainter` command.
-
-{% tabs %}
-{% highlight razor %}
-
-@code {
-    SfRichTextEditor RteObj;
-    private async Task CopyFormat()
-    {
-        // Copies the formatting from the current selection.
-        await RteObj.ExecuteCommandAsync(CommandName.CopyFormatPainter);
-    }
-    private async Task ApplyFormat()
-    {
-        // Applies the previously copied formatting to the current selection.
-        await RteObj.ExecuteCommandAsync(CommandName.ApplyFormatPainter);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
+Additionally, users can perform the format painter actions programmatically using the [ExecuteCommandAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ExecuteCommandAsync_Syncfusion_Blazor_RichTextEditor_CommandName_) public method.
