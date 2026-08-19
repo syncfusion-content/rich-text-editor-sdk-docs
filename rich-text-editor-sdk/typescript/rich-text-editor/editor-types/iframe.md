@@ -23,27 +23,27 @@ The following example demonstrates enabling iframe mode:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26" %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26/index.js %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs26" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs1" %}
 {% endif %}
 
 ## Customizing IFrame attributes
@@ -54,7 +54,7 @@ Custom attributes can be applied to the iframe's body element using the `attribu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/basic-cs28/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/iframe-cs2/index.html %}
