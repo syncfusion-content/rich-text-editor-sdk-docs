@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
+title: Customize AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize the AI Assistant in the ASP.NET Core Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
