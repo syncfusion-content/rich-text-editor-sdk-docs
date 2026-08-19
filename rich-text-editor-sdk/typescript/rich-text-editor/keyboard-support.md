@@ -24,7 +24,7 @@ The toolbar shortcuts allow quick navigation and interaction with the toolbar el
 |----------------|---------| --------- |
 | Focus on toolbar | <kbd>Alt</kbd> + <kbd>F10</kbd> | <kbd>⌥</kbd> + <kbd>F10</kbd> |
 | Move to the next tool | <kbd>→</kbd> | <kbd>→</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd>  |
-| Move to the previous tool | 	<kbd>←</kbd> | <kbd>←</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd> |
+| Move to the previous tool | <kbd>←</kbd> | <kbd>←</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd> |
 | Close dropdowns/menu and dialogs | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Execute the currently focused tool action | <kbd>Enter</kbd>, <kbd>Space</kbd> | <kbd>Enter</kbd>, <kbd>Space</kbd> |
 
@@ -126,7 +126,7 @@ These shortcuts allow you to quickly undo and redo changes to your content.
 
 These miscellaneous shortcuts help with actions like toggling fullscreen, clearing formatting, and accessing the HTML source.
 
-| Actions | PC | Mac | 
+| Actions | Windows | Mac |
 |----------------|---------| --------- |
 | View HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> |
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
@@ -162,9 +162,9 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#keyconfig) property.
+Customize the key config for the keyboard interaction of the Rich Text Editor by using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#keyconfig) property.
 
-In the below sample, you have customize the bold, italic, underline toolbar action with `ctrl+alt+b`, `ctrl+alt+i` and `ctrl+alt+u` respectively.
+In the following sample, the bold, italic, and underline toolbar actions are customized with `ctrl+alt+b`, `ctrl+alt+i`, and `ctrl+alt+u`, respectively.
 
 The following table lists all available `keyConfig` options in the Rich Text Editor along with their default keyboard shortcut values. You can customize these shortcut keys based on your requirements by using the `keyConfig` property.
 
@@ -249,5 +249,5 @@ The following table lists all available `keyConfig` options in the Rich Text Edi
 
 ## See also
 
-* [Globalization](./globalization)
-* [Accessibility](./accessibility)
+* [Globalization](./globalization.md)
+* [Accessibility](./accessibility.md)
