@@ -45,11 +45,11 @@ By default, a predefined set of emojis is configured. However, these icons can b
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/emoji-picker-cs2" %}
 {% endif %}
 
-Additionally, you have the option to customize the icons of toolbar items using the [iconCss](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#iconCss) and [code](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#code) properties. The `iconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
+Additionally, you have the option to customize the icons of toolbar items using the [iconCss](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#iconCss) and [code](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#code) properties. The `iconCss` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
 
-When both `iconCSS` and `code` properties are provided, the `iconCSS` property takes precedence in determining the appearance of the toolbar item icon.
+When both `iconCss` and `code` properties are provided, the `iconCss` property takes precedence in determining the appearance of the toolbar item icon.
 
-Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojisettings#showsearchbox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
+Additionally, you can enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojisettings#showsearchbox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
 
 The following code example shows how to add the emoji picker tool in the Rich Text Editor.
 
@@ -82,7 +82,7 @@ The following code example shows how to add the emoji picker tool in the Rich Te
 
 ## Using shortcut keys to open the emoji picker
 
-Quickly access the emoji picker by pressing the colon (:) key while typing a word prefix in an editor, allowing instant emoji selection and display. Moreover, continue typing in the editor after the colon (:) to filter and refine your search for the desired emojis.
+Quickly access the emoji picker by pressing the colon (`:`) key while typing a word prefix in the editor, allowing instant emoji selection and display. Moreover, continue typing in the editor after the colon (`:`) to filter and refine your search for the desired emojis.
 
 ![JavaScript Rich Text Editor Emoji Picker](../images/javascript-richtexteditor-emoji-picker-shortcut.png)
 
@@ -92,6 +92,6 @@ The emoji picker popup offers keyboard navigation options, allowing you to move 
 
 `Arrow keys`: Use the arrow keys (up, down, left, right) to move the emoji focus in the corresponding direction.
 
-`Enter`: Press Enter key to select the currently focused emoji.
+`Enter`: Press the Enter key to select the currently focused emoji.
 
 `Escape`: Press Escape to close the emoji picker popup without selecting an emoji.
