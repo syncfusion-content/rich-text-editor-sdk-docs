@@ -59,7 +59,7 @@ The editor checks the following rules during validation:
 
 ## Cross-Site scripting (XSS)
 
-The Rich Text Editor helps secure your content by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements from editor content that could be used to execute malicious scripts. The sanitization runs whenever content is entered, pasted, or programmatically updated.
+The Rich Text Editor helps secure your content by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements from editor content that could be used to execute malicious scripts. This process runs whenever content is entered, pasted, or programmatically updated.
 
 ### Enable XSS validation
 
