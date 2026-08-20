@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controlled Access in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Controlling Editor Access with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Read-Only Mode in Vue Block Editor | Syncfusion
+description: Learn how to enable read-only mode in the Vue Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Controlling Editor Access in Vue Block Editor component
+# Read-Only Mode in Vue Block Editor
 
 The Block Editor provides a read-only mode to control user interaction with the editor. This feature is useful when you want to display formatted content without permitting modifications, or to temporarily restrict input.
 

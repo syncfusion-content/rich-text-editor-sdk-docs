@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Blocks with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Events in Vue Block Editor | Syncfusion
+description: Learn how to handle events in the Vue Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Events in Vue Block Editor component
+# Events in Vue Block Editor
 
 The Block Editor component provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

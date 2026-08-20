@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrating Rich Text Editor in Dialog Components | Syncfusion
-description: Learn here all about Rich Text Editor Inside Dialog in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Render Rich Text Editor in Vue Dialog | Syncfusion
+description: Learn how to render the Vue Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Dialog Components
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating Rich Text Editor in Dialog Components
+# Integrating the Vue Rich Text Editor in Dialog
 
 When rendering the Rich Text Editor inside a Dialog component, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 

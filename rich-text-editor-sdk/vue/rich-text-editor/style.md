@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style Appearance Customization | Syncfusion
-description: Learn here all about Style in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Style Appearance Customization 
+title: Style and Appearance in Vue Rich Text Editor | Syncfusion
+description: Learn how to customize the Vue Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Style Appearance Customization in the Vue Rich Text Editor component
+# Style and Appearance in Vue Rich Text Editor
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Module in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Module in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Module
+title: Feature Modules in Vue Rich Text Editor | Syncfusion
+description: Learn how to inject feature modules in the Vue Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Module in Vue Rich Text Editor Component
+# Feature Modules in Vue Rich Text Editor
 
 The [Vue Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/vue-rich-text-editor) component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
 
