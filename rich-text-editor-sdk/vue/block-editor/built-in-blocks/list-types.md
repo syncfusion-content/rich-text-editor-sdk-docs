@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Lists in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about List Blocks with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: List Blocks in Vue Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the Vue Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in Vue Block Editor component
+# List Blocks in Vue Block Editor
 
 The Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 

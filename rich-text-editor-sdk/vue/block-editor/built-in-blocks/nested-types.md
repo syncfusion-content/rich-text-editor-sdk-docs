@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nested blocks in Vue Block Editor control | Syncfusion
-description: Checkout and learn about Nested Blocks with Vue Block Editor control of Syncfusion Essential JS 2 and more.
+title: Nested Blocks in Vue Block Editor | Syncfusion
+description: Learn how to create and configure nested blocks in Vue Block Editor using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nested blocks in Vue Block Editor control
+# Nested Blocks in Vue Block Editor
 
 The Block Editor supports nested content through parent-child block relationships, allowing blocks such as `Quote`, `Callout`, and `Collapsible` blocks to contain other blocks within them.
 

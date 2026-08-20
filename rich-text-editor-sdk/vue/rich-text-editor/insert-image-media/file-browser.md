@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File browser in Vue Rich text editor component | Syncfusion
-description: Learn here all about File browser in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: File browser 
+title: File Browser in Vue Rich Text Editor | Syncfusion
+description: Learn how to browse, select, and insert files from server folders and cloud storage using the File Browser in the Vue Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# File browser in Vue Rich text editor component
+# File browser in Vue Rich Text Editor
 
 Rich Text Editor allows to browse and insert images in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 

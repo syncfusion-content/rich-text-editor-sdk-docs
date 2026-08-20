@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Shortcuts in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Keyboard Shortcuts with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Keyboard Shortcuts in Vue Block Editor | Syncfusion
+description: Learn the keyboard shortcuts available in the Vue Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Shortcuts in Vue Block Editor component
+# Keyboard Shortcuts in Vue Block Editor
 
 The Block Editor component provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in Vue Rich text editor component | Syncfusion
-description: Learn here all about Validation in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Validation 
+title: Form Validation in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate Vue Rich Text Editor input in forms using required, minimum, and maximum length rules with custom validation messages.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Validation in Vue Rich text editor component
+# Form Validation in Vue Rich Text Editor
 
 ## Validation rules
 

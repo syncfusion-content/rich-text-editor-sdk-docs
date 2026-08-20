@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in Vue Rich Text Editor | Syncfusion
+description: Learn about accessibility features in the Vue Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Vue Rich Text Editor Component
+# Accessibility in Vue Rich Text Editor
 
 The Rich Text Editor component is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 

@@ -37,7 +37,7 @@ Render the Rich Text Editor in form as below.
 
 ## Obtain the Value
 
-Upon submitting the form, `getValue` method will be triggered. Through the `FormData` class, Rich Text Editor value obtained as below.
+Upon submitting the form, the `getValue` method is triggered. The Rich Text Editor's value is captured via the `FormData` class as shown in the sample below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

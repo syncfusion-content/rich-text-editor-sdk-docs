@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Vue Rich text editor component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Globalization 
+title: Globalization in Vue Rich Text Editor | Syncfusion
+description: Learn how to localize the Vue Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in the Vue Rich Text Editor Component
+# Globalization in Vue Rich Text Editor
 
 ## Localization
 

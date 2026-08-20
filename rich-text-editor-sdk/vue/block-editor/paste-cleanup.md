@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paste Clean-up in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Paste Clean-up with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Paste Cleanup in Vue Block Editor | Syncfusion
+description: Learn how to configure paste cleanup in Vue Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Clean-up in Vue Block Editor component
+# Paste Cleanup in Vue Block Editor
 
 The Block Editor component provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Real-Time Collaboration in Vue Block Editor control | Syncfusion
-description: Enable real-time collaborative editing in the Vue Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+title: Real-Time Collaboration in Vue Block Editor | Syncfusion
+description: Learn how to enable real-time collaboration in the Vue Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in Vue Block Editor component
+# Real-Time Collaboration in Vue Block Editor
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
