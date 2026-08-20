@@ -16,6 +16,36 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 You can add the `Video` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
+To configure the `Video` toolbar item, refer to the below code.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs5" %}
+
+{% endif %}
+
 ## Video save formats
 
 The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
