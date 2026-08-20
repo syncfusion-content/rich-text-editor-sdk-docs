@@ -39,6 +39,6 @@ In the following sample, the RichTextEditorFor control is rendered.
 
 
 
-The output will be as follows.
+The output is shown below.
 
 ![RichTextEditorFor](../../rich-text-editor/images/rteFor.PNG)

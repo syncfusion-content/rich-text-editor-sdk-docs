@@ -14,7 +14,7 @@ You can configure code block formatting as a separate toolbar button by adding t
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
+The following sample demonstrates how to configure the **InsertCode** button in the toolbar and set the background color on the `pre` tag to highlight the code block.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,6 +41,6 @@ The following sample demonstrates how to config the InsertCode button in toolbar
 
 
 
-The output will be as follows.
+The output is shown below.
 
 ![Code Format](../../rich-text-editor/images/format-code-block.png)
