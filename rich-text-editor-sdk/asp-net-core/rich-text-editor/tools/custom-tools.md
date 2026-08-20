@@ -9,9 +9,9 @@ documentation: ug
 
 # Custom Toolbar Items in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows you to configure your own commands to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The command can be plain text, an icon, or an HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
+The Rich Text Editor allows you to configure custom tools to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. A custom tool can be plain text, an icon, or an HTML template. Bind the action to the custom tool by getting its instance.
 
-This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The `Ω` command is added to insert special characters in the editor. Clicking the `Ω` command opens a dialog where the user can choose the character to be inserted.
+This sample shows how to add a custom tool to the toolbar of the Rich Text Editor. The `Ω` custom tool is added to insert special characters in the editor. Clicking the `Ω` custom tool opens a dialog where the user can choose the character to be inserted.
 
 The following code snippet illustrates a custom tool with a tooltip text, included in the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) field of the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property.
 
@@ -29,7 +29,7 @@ The following code snippet illustrates a custom tool with a tooltip text, includ
 
 ```
 
-The Rich Text Editor provides options to customize tool functionalities. Use the `undo` property to enable or disable the undo function for specific tools. Additionally, the click property lets you configure and bind the onclick event of a tool to a specific method.
+The Rich Text Editor provides options to customize tool functionalities. Use the `undo` property to enable or disable the undo function for specific custom tools. Additionally, the click property lets you configure and bind the onclick event of a custom tool to a specific method.
 
 This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking on this icon opens a dialog where you can insert special characters into the editor. It also shows how to enable undo and redo functionalities.
 
@@ -62,4 +62,4 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 
 You can use the `enableToolbarItem` and `disableToolbarItem` methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
->You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
+>You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations. The `Custom` command name is used internally to identify user-defined custom tools.
