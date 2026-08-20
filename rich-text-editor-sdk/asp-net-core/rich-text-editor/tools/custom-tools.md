@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Toolbar Items in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows you to configure custom tools to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. A custom tool can be plain text, an icon, or an HTML template. Bind the action to the custom tool by getting its instance.
+The Rich Text Editor allows you to configure custom tools to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. Bind the action to the custom tool by getting its instance.
 
 This sample shows how to add a custom tool to the toolbar of the Rich Text Editor. The `Ω` custom tool is added to insert special characters in the editor. Clicking the `Ω` custom tool opens a dialog where the user can choose the character to be inserted.
 
