@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Import and Export Content in ASP.NET Core Rich Text Editor | Syncfusion
+title: Import and Export Content in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in ASP.NET Core applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -15,7 +15,7 @@ The Rich Text Editor provides functionality to import content directly from Micr
 
 To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) using the items property in toolbarSettings.
 
-The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
+The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
