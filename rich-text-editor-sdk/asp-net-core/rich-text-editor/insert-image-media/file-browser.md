@@ -7,14 +7,14 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# File browser in ASP.NET Core Rich Text Editor
+# File Browser in ASP.NET Core Rich Text Editor
 
-Rich Text Editor allows to browse and insert images in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
+The Rich Text Editor allows you to browse and insert images into the edit panel using the file browser. The file browser enables users to browse and select a file or folder from the file system, and it supports various cloud services.
 
 The following example explains how to configure the file browser within the Rich Text Editor control.
 
-* Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFileManagerSettings_Enable) property as `true` on [fileManagerSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
+* Add the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
+* Set the [`enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFileManagerSettings_Enable) property to `true` in the [`fileManagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html) property so the file browser appears when the `FileManager` toolbar item is clicked.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Toolbar position in ASP.NET Core Rich Text Editor
+# Toolbar Position in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor allows you to configure the toolbar's position using the [position](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Position) field in the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The available positions are:
 

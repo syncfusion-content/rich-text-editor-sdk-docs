@@ -3,14 +3,14 @@ layout: post
 title: Spell Checker in Angular Rich Text Editor | Syncfusion
 description: Learn here all about Spell Checker in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Spell and Grammar Check 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Integrate WProofreader into the Angular Rich Text Editor
 
-[WProofreader](https://wproofreader.com/sdk) enables real-time spelling, grammar, and style checks inside the Rich Text Editor editable area. The SDK attaches to the editor content element and provides suggestions without changing the editor workflow.
+[WProofreader](https://wproofreader.com/sdk) enables real-time spelling, grammar, and style checks inside the Rich Text Editor's editable area. The SDK attaches to the editor's content element and provides suggestions without changing the editor workflow.
 
 ## Prerequisites
 
@@ -18,9 +18,9 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 
 ## Key features
 
-- Real-time spelling and grammar suggestions
-- Multilingual support and custom dictionaries
-- Cloud and on-premise deployment options
+- Real-time spelling and grammar suggestions.
+- Multilingual support and custom dictionaries.
+- Cloud and on-premise deployment options.
 
 ## Set up the WProofreader SDK
 
@@ -30,11 +30,11 @@ Install the WProofreader SDK package using the following command:
 npm install @webspellchecker/wproofreader-sdk-js
 ```
 
-> Note: Register for a [WProofreader](https://wproofreader.com/sdk) cloud service key and keep the `serviceId` ready. For self-hosted deployment, prepare the service endpoint settings.
+> **Note:** Register for a [WProofreader](https://wproofreader.com/sdk) cloud service key and keep the `serviceId` ready. For self-hosted deployment, prepare the service endpoint settings.
 
 ## Configure WProofreader for the Rich Text Editor
 
-After installing the package, you can integrate WProofreader with the Angular Rich Text Editor by following these steps:
+After installing the package, integrate WProofreader with the Angular Rich Text Editor by following these steps:
 
 1. Import the `WProofreader` module into your Angular component.
 2. Configure the `container` property of WProofreader to the editable element of the Rich Text Editor component.
@@ -80,8 +80,8 @@ export class App {
 }
 ```
 
-## Additional resources
+## See also
 
-- WProofreader SDK: [WebSpellChecker npm package](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js)
-
-- GitHub Repository: [Angular Rich Text Editor with Web Spell Checker](https://github.com/SyncfusionExamples/angular-richtexteditor-webspellchecker/tree/master)
+- [WProofreader SDK on npm](https://www.npmjs.com/package/@webspellchecker/wproofreader-sdk-js)
+- [WProofreader SDK reference](https://wproofreader.com/sdk)
+- [GitHub Repository: Angular Rich Text Editor with Web Spell Checker](https://github.com/SyncfusionExamples/angular-richtexteditor-webspellchecker/tree/master)

@@ -14,13 +14,13 @@ Rich Text Editor allows you to customize the behavior of the Enter key and Shift
 
 **Available Options**
 
-The enterKey property accepts the following values:
+The `enterKey` property accepts the following values:
 
 * `P` (default)
 * `DIV`
 * `BR`
 
-The shiftEnterKey property accepts the following values:
+The `shiftEnterKey` property accepts the following values:
 
 * `BR` (default)
 * `P`
@@ -94,7 +94,7 @@ When you customize the Shift+Enter key, the editor will create the specified tag
 
 ## Preventing enter key actions
 
-In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the `actionBegin event`. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
+In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the `actionBegin` event. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
 
 {% if page.publishingplatform == "typescript" %}
 
