@@ -12,7 +12,7 @@ documentation: ug
 
 By using the Rich Text Editor's `ImageUploading` event, you can read the image dimensions before upload and restrict the image from being uploaded when it exceeds the allowed size.
 
-In the following example, the image size is validated before uploading, and the upload is cancelled if the image exceeds the configured limit.
+In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
