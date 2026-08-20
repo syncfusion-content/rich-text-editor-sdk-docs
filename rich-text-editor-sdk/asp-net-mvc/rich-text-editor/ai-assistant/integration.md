@@ -37,7 +37,7 @@ The AI Assistant interface can be opened through the following options:
 ## Request and Response Handling
 
 Executing a prompt triggers the `AiAssistantPromptRequest` event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
-Once a response is received either as a stream or as a single output it can be added to the AssistView using the `addAIPromptResponse` method.
+Once a response is received, either as a stream or as a single output, it can be added to the AssistView using the `addAIPromptResponse` method.
 
 If the *Stop Responding* button is clicked, the `AiAssistantStopRespondingClick` event is raised to cancel the streaming operation.
 
