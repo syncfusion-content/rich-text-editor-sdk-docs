@@ -119,7 +119,7 @@ editor.appendTo('#editor');
 
 ### Precise selection using DOM range
 
-The selection logic is implemented in the [change](https://ej2.syncfusion.com/documentation/api/slider/slider#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions.
+The selection logic is implemented in the [change](https://help.syncfusion.com/cr/rich-text-editor-sdk/documentation/api/slider/slider/#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions.
 
 A Range object is created using these offsets and applied to the current selection using the browser’s `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
 
