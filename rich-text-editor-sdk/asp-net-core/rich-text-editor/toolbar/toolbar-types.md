@@ -11,18 +11,21 @@ documentation: ug
 
 The Syncfusion ASP.NET Core Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 
-To learn about the different types of toolbars in the ASP.NET Core Rich Text Editor, watch this video:
 
-{% youtube "youtube:https://www.youtube.com/watch?v=09tBgKpjgjU"%}
+The Rich Text Editor allows you to configure different types of toolbar using the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Type) field in [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The available types are:
 
-The Rich Text Editor allows you to configure different types of toolbar using [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Type) field in [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The types of toolbar are:
+| Type | Behavior |
+|------|----------|
+| `Expand` | Items that do not fit are collapsed into a single expandable overflow menu. |
+| `MultiRow` | Items wrap to multiple rows so all configured items are visible. |
+| `Scrollable` | Items stay in a single row with horizontal scrolling. |
+| `Popup` | Overflowing items are grouped into a popup. |
 
-1. Expand
-2. MultiRow
-3. Scrollable
-4. Popup
+The default value of `type` is `Expand`.
 
-## Expanding the toolbar
+## Expanding the Toolbar
+
+The `Expand` type collapses toolbar items that do not fit into an overflow menu.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
