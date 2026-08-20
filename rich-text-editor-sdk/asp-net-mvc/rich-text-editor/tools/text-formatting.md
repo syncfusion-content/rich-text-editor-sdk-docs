@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
-description: Learn how to format text in the ASP.NET MVC Rich Text Editor with bold, italic, headings, lists, checklists, blockquotes, line height, Markdown auto-format, format painter, indentation, and clear formatting.
+description: Learn how to format text in the ASP.NET MVC Rich Text Editor with bold, italic, headings, lists, checklists, blockquotes, indentation, and clear formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -25,9 +25,9 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 | StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Applies a line through the text. |toolbarSettings: { items: ['StrikeThrough']}|
 | InlineCode |![InlineCode icon](../images/inlineCode.png) | Formats text as inline code | toolbarSettings: { items: ['InlineCode']} | `<code>inline code</code>`|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Positions text slightly below the normal line |toolbarSettings: { items: ['SubScript']}|
-| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript’']}|
+| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) |  Converts text to lowercase |toolbarSettings: { items: ['LowerCase']}|
-| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase’']}|
+| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase']}|
 
 Please refer to the sample below to add these basic text styling options in the Rich Text Editor.
 
