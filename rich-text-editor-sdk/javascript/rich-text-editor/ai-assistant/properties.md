@@ -23,7 +23,7 @@ The `AIAssistantSettings` class provides the following properties for complete c
 | `responseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
 | `suggestions` | `string[]` | `[]` | Defines suggestion prompts displayed to the user as guidance. |
-| `bannerTemplate` | `string \| Function` | `''` | Specifies the template for the banner in the AI Assistant component. |
+| `bannerTemplate` | `string \| Function` | `''` | Specifies the template for the banner in the AI Assistant control. |
 | `maxPromptHistory` | `number` | `20` | Defines the maximum number of prompts that can be stored in the editor's history stack. |
 
 The `aiAssistantSettings` property of the Rich Text Editor allows you to configure the following:
