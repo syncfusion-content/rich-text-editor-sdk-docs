@@ -10,9 +10,9 @@ documentation: ug
 
 # Manage File Attachments in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
+The Rich Text Editor allows you to attach a file using the file upload. You can attach files using the upload dialog or by drag-and-drop from your local file system. When the file upload succeeds, an attachment link is inserted in the content.
 
-In the below sample, configure the saveUrl and path properties to achieve file attachments.
+In the sample below, the `saveUrl` and `path` properties are configured to enable file attachments.
 
         1. saveUrl: Provides service URL to save the files.
         2. path: Specifies the location to store the image.

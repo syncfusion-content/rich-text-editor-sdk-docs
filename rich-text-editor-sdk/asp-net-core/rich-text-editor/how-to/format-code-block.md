@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Add Code Block Formatting in ASP.NET Core Rich Text Editor | Syncfusion
+title: Add Code Block Formatting in ASP.NET Core Rich Text Editor
 description: Learn how to add code block formatting in the ASP.NET Core Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
 
+# Implement Code Block Formatting in ASP.NET Core Rich Text Editor
 
-# Add Code Block Formatting in ASP.NET Core Rich Text Editor
-
-You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) items property.
+You can configure code block formatting as a separate toolbar button by adding the `InsertCode` keyword within the [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) items property.
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
+The following sample demonstrates how to add the `InsertCode` button to the toolbar and apply a background color to the `pre` tag to highlight the code block.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validate Image Size Before Upload in ASP.NET Core Rich Text Editor | Syncfusion
+title: Validate Image Size Before Upload in ASP.NET Core Rich Text Editor
 description: Learn how to validate image dimensions before uploading in the ASP.NET Core Rich Text Editor and restrict images that exceed the allowed size.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -10,7 +10,7 @@ documentation: ug
 
 # Validate Image Size Before Upload in ASP.NET Core Rich Text Editor
 
-By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
+By using the Rich Text Editor's [`imageUploading`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploading) event, you can read the image size before uploading and cancel the upload when the image exceeds the allowed size. To cancel the upload, set the `cancel` argument to `true`.
 
 In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 
