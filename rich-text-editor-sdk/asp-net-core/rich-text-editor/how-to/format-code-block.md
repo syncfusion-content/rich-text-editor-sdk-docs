@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Code Block Formatting in ASP.NET Core Rich Text Editor
+title: Format Code Block in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add code block formatting in the ASP.NET Core Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
