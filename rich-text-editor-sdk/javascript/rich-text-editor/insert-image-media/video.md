@@ -16,6 +16,10 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 You can add the `Video` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
+### Setup
+
+> Rich Text Editor features use individual feature-wise modules. To enable video insertion, inject the `Video` module in the services array.
+
 To configure the `Video` toolbar item, refer to the below code.
 
 {% if page.publishingplatform == "typescript" %}
@@ -68,7 +72,7 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Inserting video from embed URL
+### Inserting video from embedded code
 
 The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
 
@@ -76,7 +80,7 @@ The insert video dialog opens with the `Embedded code` option selected by defaul
 
 ### Inserting video from web URL
 
-You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
 
 ![Javascript Rich Text Editor Video insert](../images/javascript-richtexteditor-video-web.png)
 
@@ -84,11 +88,11 @@ You can switch to the `Web URL` option by selecting the Web URL checkbox. Insert
 
 You can use the `browse` option on the video dialog to select the video from the local machine and insert it into the Rich Text Editor content.
 
-If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
+If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertvideosettings), the video is converted to a `Blob` or `Base64` URL and inserted into the Rich Text Editor.
 
 ## Maximum file size restrictions
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict video uploads from your local machine using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#maxfilesize) property. By default, the maximum file size is 300000000 bytes. You can configure this size as follows.
 
 ```ts
 
