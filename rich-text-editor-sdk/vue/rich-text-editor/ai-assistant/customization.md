@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize AI Assistant in Vue Rich Text Editor | Syncfusion
-description:  Learn about AI Assistant customization in the Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Customization of AI Assistant
+title: Customization of AI Assistant in Vue Rich Text Editor | Syncfusion
+description: Learn how to customize the AI Assistant in the Vue Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customization of AI Assistant
+# Customization of AI Assistant in Vue Rich Text Editor
 
 > **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires @syncfusion/ej2-vue-richtexteditor v32.1.19, and an AI service endpoint configured with a valid API key.
 
@@ -62,29 +62,9 @@ Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, a
 A **User Profile** dropdown can be added as a custom header toolbar item using a template. The `beforePopupOpen` and `beforePopupClose` events manage the life cycle of the Syncfusion `DropDownButton` component.
 
 **Key steps:**
-1. Define a `template` property that returns a Vue template/JSX-style element with an ID placeholder.
+1. Define a `template` property that returns an HTML string with an ID placeholder.
 2. Initialize the `DropDownButton` component in the `beforePopupOpen` event.
 3. Destroy the component instance in the `beforePopupClose` event to prevent memory leaks.
-
-**Example**
-
-In the following example, **custom toolbar items** are added to the **Header**, **Prompt**, and **Response** toolbars of the AI Assistant, along with corresponding event handling logic.
-
-1. **Custom Header Toolbar Item**
-
-   * A **User Profile** dropdown is added as a custom header toolbar item using a template.
-   * The **DropDownButton** component is dynamically initialized in the `beforePopupOpen` event when the AI Assistant popup opens.
-   * The dropdown instance is properly destroyed in the `beforePopupClose` event to ensure clean resource management.
-
-2. **Custom Prompt Toolbar Item**
-
-   * A **Search in Google** toolbar button is added to the prompt toolbar.
-   * When the button is clicked, the current prompt text is retrieved and used to open a new browser tab with the corresponding **Google search results**.
-
-3. **Custom Response Toolbar Item**
-
-   * A **Save** toolbar button is added to the response toolbar.
-   * On clicking the button, the generated AI response content is extracted from the response container and can be processed further (for example, saving it to a database or local storage).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -94,7 +74,7 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/custom-toolbar-items/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/custom-toolbar-items" %}
 
 ## Styling the popup
@@ -130,7 +110,7 @@ The following example applies a CSS animation to the popup during AI request pro
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-styling/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-styling" %}
 
 ## Public methods / programmatic use case
@@ -164,5 +144,5 @@ The following example demonstrates a **Proofread** workflow using a button outsi
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/usecase/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/usecase" %}
