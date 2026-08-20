@@ -159,7 +159,7 @@ You can get the pasted text as HTML using the [afterPasteCleanup](https://ej2.sy
 
 ## Customizing pasted content
 
-The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [afterPasteCleanUp](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#afterpastecleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
+The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [afterPasteCleanup](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#afterpastecleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
 
 In the following example, the `afterPasteCleanUp` event is configured to remove images from the copied content. To understand this feature better, try pasting content that includes an image into the editor.
 
