@@ -3,7 +3,7 @@ layout: post
 title: Mention in Angular Rich Text Editor component | Syncfusion
 description: Learn how to integrate and customize the Mention in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Mentions
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Integrate Mention Component into the Angular Rich Text Editor
 
-The [Mention Component](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) used to display a list of items that the users can select or tag from the list suggested. When integrated with the Rich Text Editor, it provides inline recommendations within the editable area, enabling seamless mentioning and tagging.
+The [Mention Component](https://ej2.syncfusion.com/angular/documentation/mention/getting-started) displays a list of items that users can select or tag from the suggestions. When integrated with the Rich Text Editor, it provides inline recommendations within the editable area, enabling seamless mentioning and tagging.
 
 ## Prerequisites
 
@@ -19,12 +19,12 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 
 ## Key features
 
-- Provides inline mention suggestions directly inside the editable area
-- Supports both local arrays and remote data sources for loading mention suggestions
-- Allows customizing the popup appearance using item templates and display templates
-- Offers flexible configuration options such as `minLength`, `suggestionCount`, and `allowSpaces` to control search behavior and suggestion filtering
+- Provides inline mention suggestions directly inside the editable area.
+- Supports both local arrays and remote data sources for loading mention suggestions.
+- Allows customizing the popup appearance using item templates and display templates.
+- Offers flexible configuration options such as `minLength`, `suggestionCount`, and `allowSpaces` to control search behavior and suggestion filtering.
 
-## Set up the Mention Component
+## Set up the Mention component
 
 Install the Syncfusion Mention package using the following command:
 
@@ -36,15 +36,15 @@ npm install @syncfusion/ej2-angular-dropdowns
 
 Follow the steps below to set up the Mention component inside the Syncfusion Angular Rich Text Editor.
 
-### Step 1: Configure Mention Target
-Link the Mention component to the Rich Text Editor’s editable area by setting the target property.
-The Rich Text Editor automatically appends `_rte-edit-view` to its editable element ID.
-This ensures that the Mention popup appears at the correct cursor position inside the editor.
+### Step 1: Configure the Mention target
+
+Link the Mention component to the Rich Text Editor's editable area by setting the `target` property. The Rich Text Editor automatically appends `_rte-edit-view` to its editable element ID. This ensures the Mention popup appears at the correct cursor position inside the editor.
 
 ```html
 <ejs-mention target="#YourEditorID_rte-edit-view"></ejs-mention>
 ```
-### Step 2: Configure Data Source
+
+### Step 2: Configure the data source
 
 Provide the list of items that should appear in the suggestion popup.
 
@@ -59,7 +59,7 @@ Bind the data source to the Mention component:
 <ejs-mention [dataSource]="userData"></ejs-mention>
 ```
 
-### Step 3: Configure Fields
+### Step 3: Configure the fields
 
 Map your data model fields to define how items are displayed and what value is inserted into the editor content.
 
@@ -71,9 +71,9 @@ public fields = { text: 'name', value: 'id' };
 <ejs-mention [fields]="fields"></ejs-mention>
 ```
 
-### Step 4: Configure Item Template
+### Step 4: Configure the item template
 
-Use the itemTemplate to customize how each suggestion item is displayed in the Mention popup. This allows you to show additional details such as avatar initials, name, and email in a structured layout.
+Use the `itemTemplate` to customize how each suggestion item is displayed in the Mention popup. This allows you to show additional details such as avatar initials, name, and email in a structured layout.
 
 ```html
 <ejs-mention #editorMention>
@@ -93,22 +93,25 @@ Use the itemTemplate to customize how each suggestion item is displayed in the M
 </ejs-mention>
 ```
 
-### Step 5: Configure Display Template
-Use displayTemplate to customize how the selected mention appears when inserted into the Rich Text Editor content.
+### Step 5: Configure the display template
+
+Use the `displayTemplate` to customize how the selected mention appears when inserted into the Rich Text Editor content.
 
 ```html
 <ng-template #displayTemplate let-data>
-    <a href=mailto:{{data.email}} title={{data.email}}>&#64;{{data.name}}</a>
+    <a href=mailto:{{data.email}} title={{data.email}} aria-label="Email data">&#64;{{data.name}}</a>
 </ng-template>
 ```
-### Step 6: Configure SuffixText
-It is suggested to use the suffixText property to add a space after the inserted mention, which helps maintain a smooth typing flow in the Rich Text Editor.
+
+### Step 6: Configure the suffix text
+
+Use the suffixText property to add a space after the inserted mention, which helps maintain a smooth typing flow in the Rich Text Editor.
 
 ```html
 <ejs-mention suffixText="&nbsp;"></ejs-mention>
 ```
 
-### Example: Integrate Mention with Syncfusion Rich Text Editor (app.ts)
+### Example: Integrate Mention with the Syncfusion Rich Text Editor
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -130,13 +133,13 @@ It is suggested to use the suffixText property to add a space after the inserted
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/Integrations/mention-integration" %}
 
-## Using Remote Data with Mention in Rich Text Editor
+## Use remote data with Mention
 
 You can bind Mention to a remote data source so suggestions are fetched from your server as the user types. Use Syncfusion's `DataManager` + `Query` (with a suitable adaptor such as `WebApiAdaptor`) as the Mention `dataSource`.
 
-### Install the DataManager package for remote data operations
+### Install the DataManager package
 
-Install the Syncfusion Data package required for remote data binding:
+Install the Syncfusion data package required for remote data binding:
 
 ```bash
 npm install @syncfusion/ej2-data
@@ -148,7 +151,7 @@ Then import the required classes in your component:
 import { DataManager, Query, WebApiAdaptor } from '@syncfusion/ej2-data';
 ```
 
-### Example: Integrate Remote Data With Syncfusion Rich Text Editor (app.ts)
+### Example: Integrate Mention with remote data and the Syncfusion Rich Text Editor
 
 > Note: When using `DataManager` with `WebApiAdaptor`, the server must return a JSON object containing:
 
