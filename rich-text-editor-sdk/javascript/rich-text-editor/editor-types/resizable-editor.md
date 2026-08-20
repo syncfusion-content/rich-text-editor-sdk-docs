@@ -10,9 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Resizable Editor in JavaScript Rich Text Editor
 
-The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
-
-> To use the Resizable feature, inject the Resize module to the Rich Text Editor using the `RichTextEditor.Inject(Resize)` method.
+The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 
 The following sample demonstrates the resizable feature.
 
@@ -45,9 +43,9 @@ The following sample demonstrates the resizable feature.
 
 ## Restrict resize
 
-To restrict the resizable area of the Rich Text Editor, set the `min-width`, `max-width`, `min-height`, and `max-height` CSS properties for the component's wrapper element. 
+To restrict the resizable area of the Rich Text Editor, set the `min-width`, `max-width`, `min-height`, and `max-height` CSS properties for the component's wrapper element.
 
-By default, the control resizes up to the current viewport size. Apply these styles using the `e-richtexteditor`  CSS class in the component's wrapper. 
+By default, the control resizes up to the current viewport size. Apply these styles using the `e-richtexteditor` CSS class in the component's wrapper. 
 
 ```CSS
 
@@ -89,5 +87,5 @@ By default, the control resizes up to the current viewport size. Apply these sty
 
 ## See also
 
-* [Working with IFrame Editing Mode](./iframe)
-* [Using the Markdown Editor](../../markdown-editor/js/getting-started)
+* [Working with IFrame Editing Mode](./iframe.md)
+* [Using the Markdown Editor](../../markdown-editor/js/getting-started.md)
