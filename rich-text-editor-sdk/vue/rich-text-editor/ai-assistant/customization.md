@@ -1,22 +1,38 @@
 ---
 layout: post
-title: Customization of AI Assistant in Vue Rich Text Editor | Syncfusion
-description: Learn how to customize the AI Assistant in the Vue Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
-control: Rich Text Editor
+title: Customize AI Assistant in Vue Rich Text Editor | Syncfusion
+description:  Learn about AI Assistant customization in the Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+control: Customization of AI Assistant
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customization of AI Assistant in Vue Rich Text Editor
+# Customization of AI Assistant
 
-The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires Vue 3, @syncfusion/ej2-vue-richtexteditor v32.1.19, and an AI service endpoint configured with a valid API key.
 
-## Custom Toolbar Buttons in AI Assistant
+The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate programmatic workflows.
 
-To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties of the `aiAssistantSettings` can be used. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
+## Custom toolbar buttons in AI Assistant
 
-The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` with the following properties.
+To add custom toolbar items to the AI Assistant Header, Prompt, and Response toolbars, use the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties within the `aiAssistantSettings` object. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
+
+### Base configuration
+
+The AI Assistant settings are configured as shown below:
+
+```typescript
+const aiAssistantSettings: AIAssistantSettings = {
+  headerToolbarSettings: [ /* custom header toolbar items */ ],
+  promptToolbarSettings: [ /* custom prompt toolbar items */ ],
+  responseToolbarSettings: [ /* custom response toolbar items */ ]
+};
+```
+
+### Toolbar item properties
+
+Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` using the following properties:
 
 | Property     | Description                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -32,6 +48,23 @@ The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSett
 | `cssClass`   | Specifies additional CSS classes applied to the toolbar item for styling.                                             |
 | `template`   | Specifies a custom template for rendering the toolbar item; can be a string or a function depending on the framework. |
 | `tabIndex`   | Specifies the tab order of the toolbar item for keyboard navigation (default is `-1`).                                |
+
+### AI Assistant events reference
+
+| Event | Description |
+| --- | --- |
+| `aiAssistantToolbarClick` | Triggered when a custom toolbar button is clicked. Receives the `command` and `subCommand` properties. |
+| `beforePopupOpen` | Triggered before the AI Assistant popup opens. Use this to initialize custom components (e.g., `DropDownButton`). |
+| `beforePopupClose` | Triggered before the AI Assistant popup closes. Use this to clean up resources (e.g., destroy dynamically created components). |
+
+#### Custom header toolbar item
+
+A **User Profile** dropdown can be added as a custom header toolbar item using a template. The `beforePopupOpen` and `beforePopupClose` events manage the life cycle of the Syncfusion `DropDownButton` component.
+
+**Key steps:**
+1. Define a `template` property that returns a Vue template/JSX-style element with an ID placeholder.
+2. Initialize the `DropDownButton` component in the `beforePopupOpen` event.
+3. Destroy the component instance in the `beforePopupClose` event to prevent memory leaks.
 
 **Example**
 
@@ -61,33 +94,33 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/custom-toolbar-items/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/custom-toolbar-items" %}
 
-## Styling the Popup
+## Styling the popup
 
 The AI Assistant Popup can be styled by using the following css.
 
+### CSS styling example
+
 ```css
+/* Base popup styling */
 .e-rte-aiquery-popup {
-    padding:2px;
+    padding: 2px;
 }
-```
 
-The AI Assistant Popup processing state can be styled by using the following css.
-
-```css
+/* Processing state — when a request is pending */
 .e-rte-aiquery-popup.processing {
-    padding:2px;
+    padding: 2px;
     color: white;
     background: white;
     z-index: 1;
 }
 ```
 
-**Example**
+**Example with Animation:**
 
-In the following example, a CSS animation is applied to the popup while the request is in progress.
+The following example applies a CSS animation to the popup during AI request processing:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -97,12 +130,14 @@ In the following example, a CSS animation is applied to the popup while the requ
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-styling/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-styling" %}
 
-## Use Case
+## Public methods / programmatic use case
 
-Using the public methods, you can build custom workflows with the AI Assistant. Actions such as retrieving conversation history, executing prompts, adding responses, showing or hiding the AI Assistant, and clearing conversation history can all be achieved using the following public methods programmatically.
+Use the following public methods to build custom workflows with the AI Assistant. You can retrieve conversation history, execute prompts, add responses, show/hide the popup, and clear history programmatically.
+
+### Available methods
 
 | **Method**                                                                       | **Description**                    |
 | -------------------------------------------------------------------------------- | ---------------------------------- |
@@ -113,12 +148,13 @@ Using the public methods, you can build custom workflows with the AI Assistant. 
 | `hideAIAssistantPopup()`                                                         | Hide the AI Assistant popup.       |
 | `clearAIPromptHistory()`                                                         | Clear all conversation history.    |
 
-**Example**
+### Proofread use case example
 
-The following example demonstrates a Proofread use case by rendering a button outside the editor. On clicking the Proofread button:
+The following example demonstrates a **Proofread** workflow using a button outside the editor. On clicking the Proofread button:
 
-1. Launches the AI Assistant popup using the `showAIAssistantPopup` method.
-2. Executes a prompt using the `executeAIPrompt` method.
+1. The AI Assistant popup is launched using `showAIAssistantPopup()`.
+2. A proofreading prompt is executed using `executeAIPrompt()`.
+3. The AI response is displayed in the popup (automatic via `executeAIPrompt()`).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -128,5 +164,5 @@ The following example demonstrates a Proofread use case by rendering a button ou
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/usecase/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/usecase" %}
