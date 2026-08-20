@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Add Code Block Formatting in ASP.NET Core Rich Text Editor
+# Configure Code Block Formatting in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor control offers a powerful feature to format text as preformatted code blocks, making it ideal for displaying programming snippets or structured contents.
 
