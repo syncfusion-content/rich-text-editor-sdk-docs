@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Links in JavaScript Rich Text Editor
 
-A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
+A hyperlink can be inserted into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
 ## Insert link
 
