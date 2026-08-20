@@ -45,7 +45,7 @@ By default, a predefined set of emojis is configured. However, these emojis can 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/emoji-picker-cs2" %}
 {% endif %}
 
-You can also customize the icons of the emoji categories using the [iconCss](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconset#iconCss) and [code](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconset#code) properties. The `iconCss` property allows you to define a custom CSS class for the category icon, while the `code` property enables you to specify the Unicode character code for the icon.
+You can also customize the icons of the emoji categories using the [iconCss](https://help.syncfusion.com/cr/rich-text-editor-sdk/documentation/api/rich-text-editor/emojiIconSet/#iconCss) and [code](https://help.syncfusion.com/cr/rich-text-editor-sdk/documentation/api/rich-text-editor/emojiIconSet/#code) properties.
 
 When both `iconCss` and `code` properties are provided, the `iconCss` property takes precedence in determining the appearance of the category icon.
 
