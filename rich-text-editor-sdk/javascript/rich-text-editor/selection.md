@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in JavaScript Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the JavaScript Rich Text Editor for advanced editing workflows.
+description: Learn how to select text, nodes, table cells, and content programmatically in the JavaScript Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -119,7 +119,7 @@ editor.appendTo('#editor');
 
 ### Precise selection using DOM range
 
-The selection logic is implemented in the [change](https://ej2.syncfusion.com/documentation/api/slider/index-default#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions. 
+The selection logic is implemented in the [change](https://ej2.syncfusion.com/documentation/api/slider/slider#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions.
 
 A Range object is created using these offsets and applied to the current selection using the browser’s `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
 
@@ -192,7 +192,7 @@ function onChange(args) {
 
 ### Helper function for accurate offset calculation
 
-The `getTextNodeAtOffset()` function uses a `TreeWalker` to traverse text nodes inside the editor and determine the exact node and offset for a given character index. This ensures that even complex content structures are handled correctly.
+The `getTextNodeAtOffset()` function uses a `TreeWalker` to traverse text nodes inside the editor and determine the exact node and offset for a given character index. This ensures that even complex content structures are handled correctly. The function returns `{ node, offset }` on success or `null` if the offset lies beyond the total text length.
 
 {% if page.publishingplatform == "typescript" %}
 
