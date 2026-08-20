@@ -12,8 +12,6 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [quickToolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#quicktoolbarsettings) property.
 
-> To use the QuickToolbar feature, include the `QuickToolbar` in your application by referencing the `ej2-richtexteditor` script along with the necessary dependent scripts.
-
 ## Prerequisites
 
 Before using the quick toolbar, ensure the Syncfusion theme CSS is imported in your application. For example, with Tailwind 3:
