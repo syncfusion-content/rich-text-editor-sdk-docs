@@ -57,9 +57,8 @@ Map the above packages style and script reference in sample as like below
 The following example explains about how to configure the file browser within the Rich Text Editor component.
 
 1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
-2. **Enable file browser** — Set the [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property to `true` in the [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileManagerSettings) property
-3. **Inject module** — Add `FileManager` to the `RichTextEditor.Inject(FileManager)` array
-4. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing
+2. **Enable file browser** — Set the [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property to `true` in the [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileManagerSettings) property.
+3. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing.
 
 {% if page.publishingplatform == "typescript" %}
 
