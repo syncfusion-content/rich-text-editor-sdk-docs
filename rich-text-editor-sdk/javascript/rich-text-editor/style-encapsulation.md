@@ -63,4 +63,5 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 
 ## See also
 
-* [Iframe Editor](./iframe)
+* [Iframe Editor](./editor-types/iframe)
+* [Editor Modes](./editor-types/editor-modes)
