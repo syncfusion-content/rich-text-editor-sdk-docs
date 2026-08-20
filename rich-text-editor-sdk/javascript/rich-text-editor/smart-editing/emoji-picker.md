@@ -12,8 +12,6 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 
-> Before using the `EmojiPicker` tool, inject the `EmojiPicker` module into the Rich Text Editor: `RichTextEditor.Inject(EmojiPicker)`.
-
 ## Configuring the emoji picker tool in the toolbar
 
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
