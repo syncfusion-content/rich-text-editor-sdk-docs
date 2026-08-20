@@ -546,7 +546,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
                 </ul><p>
                     Feel free to invite your colleagues and peers who might benefit from this enriching experience. Simply forward this email to them or share the event details.
                 </p><p>
-                    We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href="mailto:webinar@company.com">webinar@company.com</a>.</p><p>
+                    We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href="mailto:webinar@company.com" aria-label="Email address">webinar@company.com</a>.</p><p>
                 <br></p><p>Warm regards,</p><p>John Doe<br>Event Coordinator<br>ABC Company</p>
                 <RichTextEditorToolbarSettings Items="@Tools"></RichTextEditorToolbarSettings>
                  <RichTextEditorExportPdf ServiceUrl="https://blazor.syncfusion.com/services/production/api/RichTextEditor/ExportToPdf" FileName="RichTextEditor.pdf"></RichTextEditorExportPdf>

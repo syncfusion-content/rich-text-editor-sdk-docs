@@ -70,7 +70,7 @@ Use the [DisplayTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 For example, by default, the mention chip renders as:
 
 ```
-<span contenteditable="false" class="e-mention-chip">@Selma Rose</span>
+<span contenteditable="false" class="e-mention-chip" aria-label="Email Selma Rose">@Selma Rose</span>
 
 ```
 
