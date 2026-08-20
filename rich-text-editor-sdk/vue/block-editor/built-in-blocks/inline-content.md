@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Content in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Inline Content with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Inline Content in Vue Block Editor | Syncfusion
+description: Learn how to add inline content in Vue Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Inline Content in Vue Block Editor component
+# Inline Content in Vue Block Editor
 
 In the Block Editor, all content is organized within blocks. Each block contains an array of [content](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#content) properties that define the text and functionality within that block.
 

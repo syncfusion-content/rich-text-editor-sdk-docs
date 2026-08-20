@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor mode in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Editor modes in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Editor mode
+title: Editor Modes in Vue Rich Text Editor | Syncfusion
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the Vue Rich Text Editor to create and edit content in different formats.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Mode in Vue Rich Text Editor Component
+# Editor Modes in Vue Rich Text Editor
 
 The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Built-in Tools in Vue Rich text editor component | Syncfusion
-description: Learn here all about Built-in Tools in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Built-in Tools
+title: Toolbar Items in Vue Rich Text Editor | Syncfusion
+description: Learn about all available toolbar items in Vue Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Built-in Tools in Vue Rich Text Editor Component
+# Built-in Tools in Vue Rich Text Editor
 
 By default, the Vue Rich Text Editor displays the following toolbar items:
 

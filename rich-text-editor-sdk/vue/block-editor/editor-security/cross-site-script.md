@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cross-Site scripting in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Cross-Site scripting with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: XSS Prevention in Vue Block Editor | Syncfusion
+description: Learn how to enable XSS prevention in the Vue Block Editor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Cross-Site scripting(XSS) prevention in Vue Block Editor component
+# XSS Prevention in Vue Block Editor
 
 The Block Editor lets users edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements and attributes from the editor content that could be used to execute a script.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard support in Vue Rich text editor component | Syncfusion
-description: Learn here all about Keyboard support in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Keyboard support 
+title: Keyboard Support in Vue Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the Vue Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard support in Vue Rich text editor component
+# Keyboard Support in Vue Rich Text Editor
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Implementing Ctrl+s Shortcut for Value Updates | Syncfusion
-description: Learn here all about Update value in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Handle Ctrl+S Shortcut in Vue Rich Text Editor | Syncfusion
+description: Learn how to implement the Ctrl+S keyboard shortcut in the Vue Rich Text Editor to update values and save editor content programmatically.
 platform: rich-text-editor-sdk
-control: Implementing Ctrl+s Shortcut for Value Updates
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Implementing Ctrl+s Shortcut for Value Updates in Vue Rich Text Editor Component
+# Implement Ctrl+S Shortcut to Save Content in Vue Rich Text Editor
 
 To implement this functionality, you bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
 

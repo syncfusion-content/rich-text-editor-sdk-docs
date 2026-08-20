@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Blocks in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Code Blocks with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Code Blocks in Vue Block Editor | Syncfusion
+description: Learn how to add and configure code blocks in the Vue Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in Vue Block Editor component
+# Code Blocks in Vue Block Editor
 
 The Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property to [Code](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blocktype). You can customize the available programming languages and set a default language using the [properties](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#properties) property.
 

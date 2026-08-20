@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Table in Vue Rich text editor component | Syncfusion
-description: Learn here all about Table in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Table 
+title: Tables in Vue Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the Vue Rich Text Editor with row, column, and cell customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table in Vue Rich Text Editor Component
+# Tables in Vue Rich Text Editor
 
 Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/tablesettingsmodel)
 

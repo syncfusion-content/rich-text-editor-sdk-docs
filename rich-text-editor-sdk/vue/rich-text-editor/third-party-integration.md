@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Third party integration in Vue Rich text editor component | Syncfusion
-description: Learn here all about Third party integration in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Third party integration 
+title: Third-Party Integrations in Vue Rich Text Editor | Syncfusion
+description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the Vue Rich Text Editor.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Third Party Integration in Vue Rich Text Editor Component
+# Third-Party Integration in Vue Rich Text Editor
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 
