@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure AI Assistant in Vue Rich Text Editor | Syncfusion
-description: Learn about the AI Assistant feature configuration in the Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Properties of AI Assistant
+title: Configure of AI Assistant in Vue Rich Text Editor | Syncfusion
+description: Learn how to configure the AI Assistant in the Vue Rich Text Editor with prompt templates, response actions, and toolbar settings.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Properties of AI Assistant
+# Configure AI Assistant in Vue Rich Text Editor
 
 The `AIAssistantSettings` class provides the following properties for complete customization:
 
@@ -64,7 +64,7 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/commands/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/commands" %}
 
 ## Preloading prompts, responses, and suggestions
@@ -89,7 +89,7 @@ In the below sample, the `prompts` and `suggestions` properties of the `aiAssist
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/prompts/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/prompts" %}
 
 ## Header, Prompt and Response Toolbar
@@ -126,7 +126,7 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/toolbar-settings/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/toolbar-settings" %}
 
 ## Popup dimensions
@@ -148,7 +148,7 @@ In the following example, the popup width and maximum height are configured:
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-dimensions/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/popup-dimensions" %}
 
 ## Conversation history management
@@ -182,7 +182,7 @@ In the following example, the maximum prompt history is configured to `30`, and 
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/prompt-history/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/prompt-history" %}
 
 ## Configuring the banner
@@ -199,7 +199,7 @@ The `bannerTemplate` property allows you to display a custom banner at the top o
 The `bannerTemplate` accepts either:
 
 - **HTML String**: `bannerTemplate: '<div class="custom-banner">Welcome to AI Assistant</div>'`
-- **Vue Function** (for functional components): Returns a render function / template string that will be rendered as the banner
+- **Vue Function**: A function that returns an HTML string to be rendered as the banner
 
 ### Example
 
@@ -213,5 +213,5 @@ In the following example, a custom banner template is applied to the AI Assistan
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/banner/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-
+        
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/ai-assistant/banner" %}
