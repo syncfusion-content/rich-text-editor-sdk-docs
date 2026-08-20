@@ -14,13 +14,13 @@ The Rich Text Editor control is WYSIWYG ("what you see is what you get") editor;
 
 ## Key Features
 
-* Provides &lt;IFRAME&gt; and &lt;DIV&gt; mode.
-* Handles markdown editing.
-* Contains a modular library to load the necessary functionality on demand.
+* Provides `<IFRAME>` and `<DIV>` modes.
+* Supports Markdown editing.
+* Loads functionality on demand through a modular library.
 * Provides a fully customizable toolbar.
-* HTML view to edit the source directly for developers.
-* Supports to integrate third-party library.
-* Preview the modified content before saving it.
-* Handles images, hyperlinks, video, hyperlinks, uploads, and more.
-* Contains undo/redo manager.
+* Switches to an HTML source view for direct editing.
+* Supports integration with third-party libraries.
+* Previews modified content before saving.
+* Handles images, hyperlinks, video, and file uploads.
+* Includes undo/redo manager.
 * Creates bulleted and numbered lists.
