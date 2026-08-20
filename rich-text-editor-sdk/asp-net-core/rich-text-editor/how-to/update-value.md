@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Set Editor Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor
+# Update Value via Keyboard Shortcut in ASP.NET Core Rich Text Editor
 
 To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its `keyCode`.
 
