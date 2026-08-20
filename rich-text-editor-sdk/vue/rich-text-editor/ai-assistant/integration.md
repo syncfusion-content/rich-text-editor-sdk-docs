@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI Assistant in Vue Rich Text Editor component | Syncfusion
-description: Learn about the AI Assistant feature in the Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Integrating the AI Assistant
+title: AI Assistant in Vue Rich Text Editor | Syncfusion
+description: Learn how to enable and configure the Vue Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in Vue Rich Text Editor
 
 > **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires @syncfusion/ej2-vue-richtexteditor v32.1.19, @syncfusion/ej2-interactive-chat, @syncfusion/ej2-notifications, and @syncfusion/ej2-markdown-converter.
 
@@ -16,13 +16,12 @@ The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities
 
 ## Prerequisites
 
-* Ensure the following packages are installed:
-* `@syncfusion/ej2-vue-richtexteditor`
-* `@syncfusion/ej2-interactive-chat`
-* `@syncfusion/ej2-notifications`
-* `@syncfusion/ej2-markdown-converter`
-
-* A backend AI service endpoint is required (e.g., OpenAI, custom service) that accepts POST requests with the prompt and text content.
+- Ensure the following packages are installed:
+  - `@syncfusion/ej2-vue-richtexteditor`
+  - `@syncfusion/ej2-interactive-chat`
+  - `@syncfusion/ej2-notifications`
+  - `@syncfusion/ej2-markdown-converter`
+- A backend AI service endpoint is required (e.g., OpenAI, custom service) that accepts POST requests with the prompt and text content.
 
 ## Importing Styles
 
@@ -31,7 +30,7 @@ The Rich Text Editor **AI Assistant** is provided as an injectable module and re
 Along with the default Rich Text Editor styles, the **Interactive Chat** and **Notifications** styles are necessary for the proper rendering of the AI AssistView.
 
 Add the following style references to the **src/App.vue** file:
-
+ 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
@@ -41,7 +40,7 @@ Add the following style references to the **src/App.vue** file:
 @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
-
+ 
 /* Required for AI Assistant */
 @import '../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
