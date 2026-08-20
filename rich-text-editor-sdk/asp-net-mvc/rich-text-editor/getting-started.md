@@ -93,7 +93,7 @@ Add the [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-edit
 {% endhighlight %}
 {% endtabs %}
 
-I> Replace the existing content in the `Index.cshtml` file with the above code snippet. Ensure that the Rich Text Editor control is assigned a valid ID (for example, `"editor"`), as the control will not render without it.
+> Replace the existing content in the `Index.cshtml` file with the above code snippet. Ensure that the Rich Text Editor control is assigned a valid ID (for example, `"editor"`), as the control will not render without it.
 
 ## Run the Application
 
@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Rich Text Editor Control](images/richtexteditor-control.webp)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See Also
 

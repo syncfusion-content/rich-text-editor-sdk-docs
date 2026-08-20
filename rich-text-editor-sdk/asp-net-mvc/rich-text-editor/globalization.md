@@ -251,7 +251,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
 
 ```
 
-To localize the editor’s strings with your own localization, copy the default language information and localize the strings in the values column. For example, to localize the editor in German (“de-DE”).
+To localize the editor's strings with your own localization, copy the default language information and localize the strings in the values column. For example, to localize the editor in German (`de-DE`):
 
 ```typescript
 {

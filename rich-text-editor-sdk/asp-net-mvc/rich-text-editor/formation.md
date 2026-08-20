@@ -10,7 +10,7 @@ documentation: ug
 
 # Content Formatting in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor control used to create and edit the content and return valid HTML markup or markdown (MD) of the content. It supports the following two editing formation.
+The Rich Text Editor control is used to create and edit content and return valid HTML markup or Markdown (MD). It supports the following two editing formats:
 
 * HTML Editor
 * Markdown Editor
@@ -18,7 +18,7 @@ The Rich Text Editor control used to create and edit the content and return vali
 ## HTML Editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
-The HTML editing mode is the default mode in Rich Text Editor to format the content through the available toolbar items to return the valid HTML markup. Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property as `HTML`.
+The HTML editing mode is the default mode in Rich Text Editor to format the content through the available toolbar items to return the valid HTML markup. Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property to `HTML`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,13 +47,13 @@ The HTML editing mode is the default mode in Rich Text Editor to format the cont
 
 ## Markdown Editor
 
-Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property as Markdown, to create or edit the content and apply formatting to view markdown formatted content.
+Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property to `Markdown` to create or edit the content and apply formatting for markdown-formatted output.
 
 * The Supported Tags are  `h6`,`h5`,`h4`,`h3`,`h2`,`h1`,`blockquote`,`pre`,`p`,`ol`,`ul`.
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-N> The third-party library such as [`Marked`](https://marked.js.org/#/README.md#README.md) or any other library is used to convert markdown into HTML content.
+> The Markdown Converter library is used to convert markdown into HTML content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
