@@ -14,7 +14,9 @@ By using the [`insertImageSettings`](https://ej2.syncfusion.com/documentation/ap
 
 ```html
 <div id='defaultRTE'>
-    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid 
+<a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Learn more about HTML markup on Syncfusion">HTML markup</a> or 
+<a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Learn more about markdown on Syncfusion">markdown</a> of the content</p>
     <p><b>Key features:</b></p>
     <ul>
         <li>
