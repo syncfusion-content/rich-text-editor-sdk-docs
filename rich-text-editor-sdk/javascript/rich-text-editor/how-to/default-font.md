@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Default Font in JavaScript Rich Text Editor
 
-By using [`default`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fontfamily) property, you can change the default font-family of the Rich Text Editor. To change the font-family of the Rich Text Editor content while loading, we need to give the font-family in the style section with the help of [`cssClass`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#cssclass) property.
+By using the [`fontFamily`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fontfamily) property, you can change the default font-family of the Rich Text Editor. To change the font-family of the Rich Text Editor content while loading, you need to give the font-family in the style section with the help of the [`cssClass`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#cssclass) property.
 
 {% if page.publishingplatform == "typescript" %}
 

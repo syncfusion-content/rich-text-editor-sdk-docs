@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Placeholder in JavaScript Rich Text Editor
 
-By using `e-rte-placeholder` class, you can customize the placeholder style.
+By using the `e-rte-placeholder` CSS class, you can customize the placeholder style.
 
 {% if page.publishingplatform == "typescript" %}
 
