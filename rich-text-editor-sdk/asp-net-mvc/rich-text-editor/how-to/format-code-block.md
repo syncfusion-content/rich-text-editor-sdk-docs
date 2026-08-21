@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Add Code Block Formatting in ASP.NET MVC Rich Text Editor
+# Configure Code Block Formatting in ASP.NET MVC Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`ToolbarSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) items property.
 
