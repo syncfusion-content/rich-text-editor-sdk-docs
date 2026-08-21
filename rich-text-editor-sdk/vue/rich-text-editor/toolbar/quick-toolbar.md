@@ -26,7 +26,7 @@ Before using the quick toolbar, ensure the Syncfusion theme CSS is imported in y
 @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css';
 ```
 
 ## Customizing the image quick toolbar
