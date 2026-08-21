@@ -114,7 +114,7 @@ public void Rename()
                 Response.Clear();
                 Response.Headers.Add("name", imageFile);
                 Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusDescription = "File uploaded succesfully";
+                Response.StatusDescription = "File uploaded successfully";
                 Response.End();
             }
         }
