@@ -12,7 +12,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 
-You can enable fullscreen mode using the FullScreen icon toolbar button. Once activated, the editor transitions into fullscreen view, hiding other page elements and maximizing the editing area.
+## Enable fullscreen mode
+
+You can enable fullscreen mode by adding the `FullScreen` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property. Once activated, the editor transitions into fullscreen view, hiding other page elements and maximizing the editing area.
 
 ## How it works
 
