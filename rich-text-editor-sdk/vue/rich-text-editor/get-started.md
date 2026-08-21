@@ -164,7 +164,7 @@ Here is the summarized code for the above steps in the **src/App.vue** file:
     </div>
 </template>
 <script setup>
-import { provide } from 'vue';
+import { provide, ref } from 'vue';
 import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, Link, Image, HtmlEditor } from "@syncfusion/ej2-vue-richtexteditor";
 const rteInstance = ref(null);
 const value = ref("<p>The Rich Text Editor component is a WYSIWYG editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p>");
@@ -246,6 +246,6 @@ The output will appear as follows:
 
 ![vue-3-js-richtexteditor](./images/vue-3-js-richtexteditor.png)
 
-> **Sample**: [vue-3-richtexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
+> **Sample**: [vue-3-richtexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-richtexteditor-getting-started).
 
 For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.
