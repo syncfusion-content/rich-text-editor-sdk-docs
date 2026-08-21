@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Audios in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [InsertAudioSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property.
+The Rich Text Editor allows you to insert audio from online sources and the local computer, and then embed it in your content. You can configure the audio insertion options through the [InsertAudioSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property.
 
 ## Configuring the Audio Tool in the Toolbar
 
@@ -49,11 +49,11 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [InsertAudio
 ```typescript
 
 <audio>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" >
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3">
 </audio>
 
 <audio>
-    <source src="data:audio/mp3;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="audio/mp3" >
+    <source src="data:audio/mp3;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="audio/mp3">
 </audio>
 
 ```
@@ -115,7 +115,7 @@ The selected audio can be uploaded to the required destination using the control
 
 You can use the [InsertAudioSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property, to specify the server handler to upload the selected audio. Then by binding the [FileUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -144,7 +144,7 @@ Refer `rename.cs` controller file for configure the server-side.
 
 You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-N> By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
+> By default, the `UseDefaultCredentials` property is not supported; you must manually append the default credentials to the upload request.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
