@@ -30,7 +30,7 @@ To restrict the resizable area of the Rich Text Editor, define the `min-width`, 
 
 @using Syncfusion.Blazor.RichTextEditor
 
-<SfRichTextEditor EnableResize="true" CssClass='.e-richtexteditor'>
+<SfRichTextEditor EnableResize="true" CssClass="e-richtexteditor">
     <p>The Rich Text Editor component is a WYSIWYG ("what you see is what you get") editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p>
 </SfRichTextEditor>
 <style>
@@ -47,4 +47,10 @@ To restrict the resizable area of the Rich Text Editor, define the `min-width`, 
 
 ![Blazor RichTextEditor restrict resize](./images/blazor-richtexteditor-restrict-resize.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Toolbar customization](./tools/built-in-tools)
+* [Read-only mode](./read-only-mode)
+* [Editor Modes](./editor-modes)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
