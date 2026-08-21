@@ -14,7 +14,6 @@ The Rich Text Editor component is used to create, edit, and return the content i
 
 * HTML Editor
 * Markdown Editor
-* IFrame Editor
 
 ## HTML editor
 
