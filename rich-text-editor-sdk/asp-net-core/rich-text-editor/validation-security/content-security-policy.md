@@ -231,7 +231,7 @@ If your application enforces a strict CSP, validate all required Rich Text Edito
 
 When configuring the Rich Text Editor to upload images, additional Content Security Policy directives may be required depending on the upload destination.
 
-### Local Image Upload
+### Local image upload
 
 For local image upload, previews may be generated using Blob URLs. To ensure these previews render correctly, the image source directive must allow blob URLs:
 
@@ -239,7 +239,7 @@ For local image upload, previews may be generated using Blob URLs. To ensure the
 img-src 'self' data: blob:
 ```
 
-### Remote Image Upload
+### Remote image upload
 
 When images are uploaded to a remote service or loaded from a different origin, additional sources may be required:
 
