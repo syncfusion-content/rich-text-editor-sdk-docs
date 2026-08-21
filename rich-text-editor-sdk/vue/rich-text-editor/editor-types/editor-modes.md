@@ -10,16 +10,16 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Editor Modes in Vue Rich Text Editor
 
-The Rich Text Editor component used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
+The Rich Text Editor component is used to create, edit, and return the content in valid HTML markup or Markdown (MD) format. It supports the following three editing modes:
 
 * HTML Editor
 * Markdown Editor
 
 ## HTML editor
 
-Rich Text Editor is a WYSIWYG editing component for formatting the word content as HTML.
+Rich Text Editor is a WYSIWYG editing component for formatting the text content as HTML.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [editorMode](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#editormode) property as `HTML`.
+The HTML editing mode is the default mode of Rich Text Editor. It is used to format the content through the available toolbar items and returns the valid HTML markup. Set the [editorMode](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#editormode) property to `HTML`.
 
 >To use HTML editing feature, inject `HtmlEditor` in the provider section.
 
@@ -42,7 +42,7 @@ For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/vue/do
 
 ## Markdown editor
 
-Set the [editorMode](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
+Set the [editorMode](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#editormode) property to `Markdown` to create or edit content and view it in Markdown formatted syntax.
 
 The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
 
@@ -63,7 +63,7 @@ The third-party library such as `Marked` or any other library is used to convert
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/markdown-cs1" %}
 
-For further details on Markdown editing, refer to the [`Markdown`](../markdown-editor/getting-started)
+For further details on Markdown editing, refer to the [Markdown editor](../markdown-editor/getting-started.md)
 
 ## See also
 
