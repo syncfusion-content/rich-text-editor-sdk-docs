@@ -9,7 +9,7 @@ documentation: ug
 
 # Heading Styles in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor control provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings allow for structuring content hierarchically, improving readability, and organizing information effectively.
+The Rich Text Editor provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings let you structure content hierarchically, improve readability, and organize information effectively.
 
 ## Applying Heading Styles
 
@@ -57,7 +57,7 @@ To customize the format dropdown:
 1. Define a `formats` array in your component configuration.
 2. Specify each format option with a display name and corresponding value.
 
-This customization enhances the editor’s functionality, enabling users to structure content with appropriate headings, improving readability and organization.
+This customization lets users structure content with appropriate headings, improving readability and organization.
 
 Below are examples demonstrating how to customize the format dropdown.
 
