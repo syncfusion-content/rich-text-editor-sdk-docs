@@ -60,6 +60,8 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
 | aria-disabled       | Indicates the disabled state of the ToolBar. |
 
+The following example demonstrates the ARIA attributes and accessibility support in the Rich Text Editor:
+
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs1/app-composition.vue %}
@@ -73,13 +75,13 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 ## Keyboard navigation
 
-The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
+The Rich Text Editor component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/vue/documentation/rich-text-editor/keyboard-support) documentation.
+For detailed information on supported keyboard shortcuts, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/vue/rich-text-editor/keyboard-support) documentation.
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#formatter) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
