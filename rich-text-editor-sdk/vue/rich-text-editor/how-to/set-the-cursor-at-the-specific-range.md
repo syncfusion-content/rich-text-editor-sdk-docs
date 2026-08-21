@@ -10,7 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Set Cursor Position by Range in Vue Rich Text Editor
 
-This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, we have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
+You can set the cursor position at a specific range by using the `setRange` method on the Rich Text Editor's `NodeSelection` instance. In the sample below, we pass the text node (at a specific location in the Rich Text Editor content) to the `setStart` method and then call `setRange` with the desired range on the Rich Text Editor instance.
+
+> You need to import `NodeSelection` from the `@syncfusion/ej2-richtexteditor` library to access the `setRange` method programmatically.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
