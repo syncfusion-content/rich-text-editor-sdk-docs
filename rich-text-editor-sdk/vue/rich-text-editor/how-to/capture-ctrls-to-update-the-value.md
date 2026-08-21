@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Implement Ctrl+S Shortcut to Save Content in Vue Rich Text Editor
 
-To implement this functionality, you bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
+To implement this functionality, bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
 
-In the `keydown` event handler, the `updateValue` method is called to update the [value](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#value) property and then you can save the content in the required database using the same.
+In the `keydown` event handler, the `updateValue` method is called to update the [value](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#value) property, and then you can save the content to the required database using the same.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -20,7 +20,7 @@ The Rich Text Editor provides the functionality of character count and its valid
 | minlength | Requires the value to be of given minimum characters count.|
 | maxlength | Requires the value to be of given maximum characters count.|
 
-This sample is used to validate form using the obtrusive Validation. Type the values in Rich Text Editor and the form enables the validation with the formvalidator rules by clicking on the submit externally. All rules are validated by the formvalidator rules.
+This sample is used to validate a form using the obtrusive Validation. Type the values in the Rich Text Editor and the form enables the validation with the FormValidator rules by clicking on the submit externally. All rules are validated by the FormValidator rules.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -35,9 +35,9 @@ This sample is used to validate form using the obtrusive Validation. Type the va
 
 ## Validation message
 
-The default error message for a rule can be customizable by defining it along with the concern rule object as follows.
+The default error message for a rule can be customized by defining it along with the concerned rule object as follows.
 
-In the following sample, customize the error message along with the concern rule.
+In the following sample, customize the error message along with the concerned rule.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

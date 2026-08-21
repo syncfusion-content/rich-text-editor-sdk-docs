@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Third-Party Integrations in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET MVC Rich Text Editor.
+description: Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET MVC Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Third-Party Integration in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit your application scenario.
 
 ## CodeMirror Integration
 

@@ -14,7 +14,7 @@ The following sample demonstrates how to get the Rich Text Editor value in butto
 
 ## Render the Rich Text Editor
 
-Render the Rich Text Editor in form.
+Render the Rich Text Editor in a form.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

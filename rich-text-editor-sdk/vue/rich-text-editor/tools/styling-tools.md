@@ -81,7 +81,7 @@ The below font style links are referred in the page.
 
 ## Font size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font size for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the selected size value.
 
 ### Built-in font size
 
@@ -102,7 +102,7 @@ The Rich Text Editor includes a default set of [fontSize](https://ej2.syncfusion
 
 ### Custom font size
 
-The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [fontSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#fontsize) property. This allows you to extend the available font options beyond the default selection.
+The Rich Text Editor supports providing custom font sizes along with the existing list. To add additional font sizes to the font size dropdown, you can configure the items field of the [fontSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#fontsize) property. This allows you to extend the available font size options beyond the default selection.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -138,9 +138,9 @@ The Rich Text Editor offers custom font and background colors along with the exi
 
 Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/fontcolormodel#modeswitcher) feature.
 
-We can specify the number of columns in the color palette for both `FontColor` and `BackgroundColor` using the [columns](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/backgroundcolormodel#columns) property.
+We can specify the number of columns in the color palette for both `FontColor` and `BackgroundColor` using the [columns](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/backgroundcolormodel#columns) property.
 
-The [default](hhttps://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/backgroundcolormodel#default) property specifies the default `FontColor` and `BackgroundColor` that is applied when no color is explicitly selected by the user. This color will be preselected in the `FontColor` and `BackgroundColor` color palettes and used as the initial highlight color for text.
+The [default](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/backgroundcolormodel#default) property specifies the default `FontColor` and `BackgroundColor` that is applied when no color is explicitly selected by the user. This color will be preselected in the `FontColor` and `BackgroundColor` color palettes and used as the initial highlight color for text.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -155,7 +155,7 @@ The [default](hhttps://helpej2.syncfusion.com/vue/documentation/api/rich-text-ed
 
 ### Show recent color
 
-The [showRecentColors](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
+The [showRecentColors](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
 
 This feature can be enabled separately for the [fontColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor#fontcolor) and [backgroundColor](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor#backgroundcolor) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
 

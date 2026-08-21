@@ -85,9 +85,11 @@ I> Ensure that all Rich Text Editor script files are loaded in the correct order
 
 ## Adding Rich Text Editor control
 
-Now, you can start adding the Rich Text Editor control to the application. For getting started, add the Rich Text Editor initialization code in the **index.js** file and add the target element in the **index.html** file using the following sample.
+Add the Rich Text Editor control to the application as follows. Place the target element in **index.html** and the initialization code in **index.js** using the sample below.
 
-Rich Text Editor can be initialized on a div element as shown below
+> Add a target element such as `<div id="defaultRTE"></div>` in `index.html` before calling `appendTo` in `index.js`.
+
+The Rich Text Editor can be initialized on a `div` element, as shown below:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -100,7 +102,7 @@ Rich Text Editor can be initialized on a div element as shown below
 
 ## Run the Application
 
-Now, run the `index.html` file in a web browser.
+Run the `index.html` file through a local web server (for example, `npx http-server` or VS Code Live Server). Opening the file directly with `file://` may break script loading.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rich Text Editor is displayed as shown below.
 

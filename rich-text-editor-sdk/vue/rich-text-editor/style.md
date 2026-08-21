@@ -85,7 +85,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
     color: red;
     font-family: segoe ui;
     font-size: 18px;
-    opacity: 00.54;
+    opacity: 0.54;
     padding-bottom: 2px;
     padding-right: 14px;
 }

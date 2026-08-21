@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Placeholder Text in Vue Rich Text Editor
 
-Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [placeholder](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#placeholder) property.
+Specifies the placeholder for the Rich Text Editor's content, which is displayed when the editor's content area is empty, through the [placeholder](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#placeholder) property.
 
 You can customize the appearance of the placeholder text by targeting the `e-rte-placeholder` class in your CSS. This allows you to modify properties such as font family, color, and other styles.
 

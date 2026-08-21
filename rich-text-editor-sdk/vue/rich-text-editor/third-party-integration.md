@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Third-Party Integration in Vue Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit the application scenario.
 
 ## CodeMirror integration
 
@@ -18,7 +18,7 @@ Rich Text Editor comes with a basic HTML source editor through the view-source p
 
 Import necessary CSS and JS files of CodeMirror to the HTML page.
 
-Required JS files of code mirror.
+Required JS files of CodeMirror.
 
 ```ts
   import CodeMirror from "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.js";
@@ -29,13 +29,13 @@ Required JS files of code mirror.
 
 ```
 
-Required CSS file of code mirror
+Required CSS file of CodeMirror
 
 ```ts
  @import "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css";
 ```
 
-Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the code mirror plugin, and then pass the Rich Text Editor content as argument in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#actioncomplete) event.
+Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of ToolbarSettings, define the CodeMirror plugin, and then pass the Rich Text Editor content as argument in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#actioncomplete) event.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
