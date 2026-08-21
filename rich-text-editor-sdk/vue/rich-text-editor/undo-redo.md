@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Undo and Redo in Vue Rich Text Editor
 
-The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
+The Undo and Redo features in the Rich Text Editor allow you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 
 There are two ways to perform Undo and Redo operations:
 
@@ -26,6 +26,8 @@ By default, the time interval for storing Undo/Redo actions is 300 milliseconds.
 ## Configuring Undo/Redo steps
 
 The editor allows up to 30 Undo/Redo actions by default. You can modify the number of undo/redo steps using the [undoRedoSteps](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#undoredosteps) property.
+
+> If you set `undoRedoSteps` to a lower value, older history entries will be discarded to maintain the configured limit. Setting it to `0` disables the Undo/Redo functionality entirely.
 
 Here's an example of how to customize both the Undo/Redo timer and steps:
 

@@ -16,7 +16,7 @@ The iframe editor in the Rich Text Editor component provides an isolated environ
 
 To enable the iframe editor, you can use the [iframeSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
 
-Here's an example of how to enable the iframe editor:
+The following example demonstrates how to enable the iframe editor:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -48,7 +48,7 @@ You can add custom attributes to the body tag of the iframe using the attributes
 
 The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#iframesettings) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
-Likewise, add the external script file to the `< iframe >` element using the [scripts](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#iframesettings) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
+Likewise, add the external script file to the `<iframe>` element using the [scripts](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#iframesettings) field of iframeSettings to provide additional functionalities to the Rich Text Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

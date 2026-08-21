@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paste Cleanup in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn how to clean and manage pasted content in the ASP.NET MVC Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+description: Learn how to clean and manage pasted content in the ASP.NET MVC Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Paste Cleanup in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_PasteCleanupSettings)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
+The Rich Text Editor simplifies converting Microsoft Word content to HTML, preserving formatting and styles. The [PasteCleanupSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_PasteCleanupSettings) property lets you control the formatting and styles applied when pasting content. The following settings are available:
 
 | API | Description | Default Value | Type |
 |:----------------:|:---------:|:-----------------------------:|:---------:|
@@ -24,19 +24,19 @@ The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML
 
 When `Prompt` is set to true, pasting the content in the editor will open a dialog box that contains three options `Keep`, `Clean`, and `Plain Text` as radio buttons:
 
-![Rich Text Editor Paste options prompt dialog ](../images/richtexteditor-paste-prompt.png)
+![Rich Text Editor Paste options prompt dialog ](./images/richtexteditor-paste-prompt.png)
 
 1. `Keep`: Maintains the same format as the copied content.
 2. `Clean`: Clears all style formats from the copied content.
 3. `Plain Text`: Pastes the copied content as plain text without any formatting or style. (including the removal of all tags).
 
-> When `Prompt` value is set true, the API properties [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_PlainText) and [KeepFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_KeepFormat) will not be considered for processing when pasting the content.
+> When `Prompt` is set to `true`, the [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_PlainText) and [KeepFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_KeepFormat) properties are ignored when processing pasted content.
 
 ## Plain text pasting
 
 Setting `PlainText` to true converts the copied content to plain text by removing all HTML tags and styles. Only the plain text is pasted into the editor.
 
->When `PlainText` is set to true, set `Prompt` to false. The `KeepFormat` property will not be considered.
+> When `PlainText` is set to `true`, set `Prompt` to `false`. The `KeepFormat` property is ignored.
 
 ## Keep format
 
@@ -48,13 +48,13 @@ When `KeepFormat` is set to `true`, the pasted content retains its original form
 
 This ensures that while the formatting is retained, it remains clean, safe, and consistent with your application's styling rules.
 
->When `keepFormat` is set to true, set both `Prompt` and `PlainText` to false.
+> When `KeepFormat` is set to `true`, set both `Prompt` and `PlainText` to `false`.
 
 ## Clean Formatting
 
-When the `Prompt`, `PlainText`, and `keepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
+When the `Prompt`, `PlainText`, and `keepFormat` options are all set to `false`, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
-Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
+Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content. However, the formatting is still subject to filtering based on the `DeniedTags` and `DeniedAttrs` settings:
 
 - **`DeniedTags`**: Tags listed here will still be removed from the pasted content.
 - **`DeniedAttrs`**: Attributes listed here will also be stripped from the pasted content.

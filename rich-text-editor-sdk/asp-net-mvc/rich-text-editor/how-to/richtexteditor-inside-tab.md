@@ -9,7 +9,7 @@ documentation: ug
 
 # Render Rich Text Editor in ASP.NET MVC Tab
 
-Integrating a Rich Text Editor within Tab control provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
+Integrating a Rich Text Editor within a Tab control provides a versatile and organized user interface for text formatting and content creation across multiple tabs. Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to apply text styles, insert formatting and media, and manage content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

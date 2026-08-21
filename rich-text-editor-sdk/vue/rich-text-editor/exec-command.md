@@ -21,7 +21,7 @@ The executeCommand is used to perform command for the modification of content in
 | superscript | Makes the selected text as superscript (higher). |`rteObj.executeCommand('superscript');`|
 | subscript | Makes the selected text as subscript (lower). |`rteObj.executeCommand('subscript');`|
 | uppercase | Change the case of selected text to upper  in the content. |`rteObj.executeCommand('uppercase');`|
-| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('uppercase');`|
+| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('lowercase');`|
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
@@ -30,7 +30,7 @@ The executeCommand is used to perform command for the modification of content in
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
 | justifyLeft | Align the content with left margin. | `rteObj.executeCommand('justifyLeft');`|
-| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyLeft');`|
+| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyRight');`|
 | undo | Allows to undo the actions. | `rteObj.executeCommand('undo');`|
 | createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link' });` |
 | indent | Allows to increase the indent level of the content. | `rteObj.executeCommand('indent');`|

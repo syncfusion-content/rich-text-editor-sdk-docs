@@ -11,7 +11,7 @@ documentation: ug
 
 ## Font Family
   
-The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display "Font Name". However, for other font families, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. Use the font family dropdown in the toolbar to change the font of the selected text. When the default font family is selected, the toolbar displays `Font Name`. For other font families, the toolbar shows the name of the selected font.
 
 To apply a different font style to a specific section of the content, follow these steps:
 
@@ -105,18 +105,16 @@ To use web fonts in Rich Text Editor, it is not needed for the web fonts to be p
 
 The below font style links are referred in the page.
 
-```typescript
-
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">
-
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 ```
 
-N> In the above sample, you can see that we have added two Google web fonts (`Roboto` and `Great vibes`) to `Rich Text Editor`.
+> In the above sample, two Google web fonts (`Roboto` and `Great Vibes`) are added to the Rich Text Editor.
 
 ## Font Size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. Use the font size dropdown in the toolbar to change the size of the selected text. When the default font size is selected, the toolbar displays `Font Size`. For other font sizes, the toolbar shows size of the selected font.
 
 ### Configuring the Font Size Tool in the Toolbar
 
@@ -178,7 +176,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ### Configuring the Font and Background Color Tool in the Toolbar
 
-You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add the `FontColor` and `BackgroundColor` tools in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

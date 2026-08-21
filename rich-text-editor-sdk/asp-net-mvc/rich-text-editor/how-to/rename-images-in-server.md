@@ -10,11 +10,11 @@ documentation: ug
 
 # Rename Uploaded Images in ASP.NET MVC Rich Text Editor
 
-By using the [`InsertImageSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property, you can specify the server handler to upload the selected image. Then you can bind the [`ImageUploadSuccess`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
+By using the [`InsertImageSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property, you can specify the server handler to upload the selected image. Then bind the [`ImageUploadSuccess`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event to receive the modified file name from the server and update the **Insert Image** dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
-N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-rename-image) repository.
+> A runnable demo application is available in this [GitHub](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-rename-image) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
