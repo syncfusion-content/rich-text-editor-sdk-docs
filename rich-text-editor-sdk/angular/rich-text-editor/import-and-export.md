@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Import and Export Content in Angular Rich Text Editor | Syncfusion
+title: Import and Export Content in Angular Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in Angular applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -144,7 +144,7 @@ public class RichTextEditorController : Controller
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [`toolbarSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 
@@ -239,7 +239,7 @@ public class RichTextEditorController : Controller
             // Read custom form data (from args.customFormData)
             var formData = args.CustomFormData;
             string htmlString = args.html;
-            if (htmlString == null && htmlString == "")
+            if (string.IsNullOrEmpty(htmlString))
             {
                 return null;
             }
@@ -266,7 +266,7 @@ public class RichTextEditorController : Controller
         public FileStreamResult ExportToDocx([FromBody] ExportParam args)
         {
             string htmlString = args.html;
-            if (htmlString == null && htmlString == "")
+            if (string.IsNullOrEmpty(htmlString))
             {
                 return null;
             }
@@ -325,7 +325,7 @@ By default, when exporting content from the Angular Rich Text Editor to generate
 
 To preserve the intended appearance of the content, you should manually apply the following CSS styles to the exported HTML container.
 
-> Make sure to add a CSS class `e-rte-content` to the content container.
+> Make sure to add the `e-rte-content` class to the content container.
 
 ```CSS
 
