@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure of AI Assistant in Vue Rich Text Editor | Syncfusion
+title: Configure AI Assistant in Vue Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the Vue Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -18,7 +18,7 @@ The `AIAssistantSettings` class provides the following properties for complete c
 | `popupMaxHeight` | `string \| number` | `'400px'` | Sets the maximum height of the AI Assistant popup. Accepts CSS height values or numbers (treated as pixels). |
 | `popupWidth` | `string \| number` | `'600px'` | Sets the width of the AI Assistant popup. Accepts CSS width values or numbers (treated as pixels). |
 | `placeholder` | `string` | `'Ask AI to rewrite or generate content.'` | Specifies the placeholder text shown in the AI prompt textarea. |
-| `headerToolbarSettings` | `(AssitantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
+| `headerToolbarSettings` | `(AssistantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
 | `promptToolbarSettings` | `(AssistantPromptToolbarItems \| IAIAssistantToolbarItem)[]` | `['Edit', 'Copy']` | Configures the toolbar in the prompt editor (user input) section. |
 | `responseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
@@ -97,7 +97,7 @@ The default toolbar configurations are:
 
 **Example**
 
-In the below sample, the toolbar settings are configured to modify the order and items are displayed.
+In the sample below, the toolbar settings are configured to modify the order of items displayed.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

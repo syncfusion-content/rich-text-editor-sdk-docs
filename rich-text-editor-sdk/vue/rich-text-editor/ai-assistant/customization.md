@@ -16,7 +16,7 @@ The AI Assistant feature is designed to be easily customizable using its propert
 
 To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties of the `aiAssistantSettings` can be used. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
 
-The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` with the following properties.
+Custom items can be added to the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` with the following properties.
 
 | Property     | Description                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -66,21 +66,21 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 
 ## Styling the Popup
 
-The AI Assistant Popup can be styled by using the following css.
+The AI Assistant popup can be styled using the following CSS.
 
 ```css
 .e-rte-aiquery-popup {
-    padding:2px;
+    padding: 2px;
 }
 ```
 
-The AI Assistant Popup processing state can be styled by using the following css.
+The AI Assistant popup's processing state can be styled using the following CSS.
 
 ```css
 .e-rte-aiquery-popup.processing {
-    padding:2px;
+    padding: 2px;
     color: white;
-    background: white;
+    background: #333;
     z-index: 1;
 }
 ```
