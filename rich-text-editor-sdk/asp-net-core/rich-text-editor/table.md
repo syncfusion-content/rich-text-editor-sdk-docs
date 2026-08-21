@@ -13,7 +13,7 @@ Rich Text Editor allows to insert table of content in edit panel and provides an
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add a `CreateTable` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -119,10 +119,10 @@ The Rich Text Editor provides a simple and intuitive way to select table rows, c
 
 ### Selecting an Entire Row
 
-Entire rows can be selected using the icons that appears on hover.
+Entire rows can be selected using the icons that appear on hover.
 
 **To select a row:**
-- **Where to hover**: Move the mouse pointer over the first column of the table..
+- **Where to hover**: Move the mouse pointer over the first column of the table.
 - **What you'll see**: A selection handle appears on the left side of the corresponding row.
 - **How to select**: Click the handle to select the entire row.
 
@@ -130,7 +130,7 @@ Entire rows can be selected using the icons that appears on hover.
 
 ### Selecting an Entire Column
 
-Entire columns can be selected using the icons that appears on hover.
+Entire columns can be selected using the icons that appear on hover.
 
 **To select a column:**
 
