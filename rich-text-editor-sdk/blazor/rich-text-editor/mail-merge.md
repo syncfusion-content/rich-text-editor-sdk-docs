@@ -7,9 +7,9 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Mail merge in Blazor Rich Text Editor
+# Mail Merge in Blazor Rich Text Editor
 
-The Mail merge feature in the Blazor Rich Text Editor enables developers to create dynamic, personalized documents by inserting placeholders (merge fields) into the editor content. These placeholders are later replaced with actual data at runtime, making it ideal for generating letters, invoices, and bulk communication templates.
+The Mail Merge feature in the Blazor Rich Text Editor enables developers to create dynamic, personalized documents by inserting placeholders (merge fields) into the editor content. These placeholders are later replaced with actual data at runtime, making it ideal for generating letters, invoices, and bulk communication templates.
 
 ## Rendering custom toolbar items
 
