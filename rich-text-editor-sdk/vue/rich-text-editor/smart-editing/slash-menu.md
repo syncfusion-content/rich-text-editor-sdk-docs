@@ -56,7 +56,7 @@ Custom items can be added by defining the items property inside slashMenuSetting
 
 - Paragraph
 - Heading 1, Heading 2, Heading 3, Heading 4, Heading 5, Heading 6
-- Bold List (Unordered List)
+- Bulleted List (Unordered List)
 - Numbered List (Ordered List)
 - Code Block
 - Blockquote
