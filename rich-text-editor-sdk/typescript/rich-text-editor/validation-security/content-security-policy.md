@@ -266,7 +266,7 @@ The following table lists common Content Security Policy issues that can affect 
 
 > NOTE
 >
-> For additional guidance on resolving CSP errors in Syncfusion EJ2 controls, refer to the [Resolve CSP errors in EJ2 TypeScript Common control](https://help.syncfusion.com/typescript/common/how-to/resolve-csp-errors) documentation.
+> For additional guidance on resolving CSP errors in Syncfusion EJ2 controls, refer to the [Resolve CSP errors in EJ2 TypeScript Common control](https://ej2.syncfusion.com/documentation/common/how-to/csp-errors) documentation.
 
 ## See Also
 
@@ -274,5 +274,5 @@ The following table lists common Content Security Policy issues that can affect 
 * [Cross-Site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
 * [Form support](./form-support)
 * [Read-only mode](./read-only-mode)
-* [Security Considerations in EJ2 TypeScript Common control](https://help.syncfusion.com/typescript/common/security-considerations)
-* [Resolve CSP errors in EJ2 TypeScript Common control](https://help.syncfusion.com/typescript/common/how-to/resolve-csp-errors)
+* [Security Considerations in EJ2 TypeScript Common control](https://ej2.syncfusion.com/documentation/common/security#security-considerations)
+* [Resolve CSP errors in EJ2 TypeScript Common control](https://ej2.syncfusion.com/documentation/common/how-to/csp-errors)

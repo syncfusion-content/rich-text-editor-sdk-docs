@@ -296,7 +296,7 @@ The following table lists common Content Security Policy issues that can affect 
 
 > NOTE
 >
-> For additional guidance on resolving CSP errors in Syncfusion EJ2 controls, refer to the [Resolve CSP errors in EJ2 Angular Common control](https://help.syncfusion.com/angular/common/how-to/resolve-csp-errors) documentation.
+> For additional guidance on resolving CSP errors in Syncfusion EJ2 controls, refer to the [Resolve CSP errors in EJ2 Angular Common control](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/csp-errors) documentation.
 
 ## See Also
 
@@ -304,5 +304,5 @@ The following table lists common Content Security Policy issues that can affect 
 * [Cross-Site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
 * [Form validation](./form-validation)
 * [Read-only mode](./read-only-mode)
-* [Security Considerations in EJ2 Angular Common control](https://help.syncfusion.com/angular/common/security-considerations)
-* [Resolve CSP errors in EJ2 Angular Common control](https://help.syncfusion.com/angular/common/how-to/resolve-csp-errors)
+* [Security Considerations in EJ2 Angular Common control](https://ej2.syncfusion.com/angular/documentation/common/security#security-features-and-considerations)
+* [Resolve CSP errors in EJ2 Angular Common control](https://ej2.syncfusion.com/angular/documentation/common/troubleshooting/csp-errors)

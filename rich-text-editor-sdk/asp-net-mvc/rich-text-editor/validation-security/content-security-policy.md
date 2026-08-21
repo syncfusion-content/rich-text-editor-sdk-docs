@@ -286,15 +286,11 @@ The following table lists common Content Security Policy issues that can affect 
 | Local image upload previews do not display. | `img-src 'self' data: blob:` |
 | Remote image upload fails or the upload request is blocked. | `connect-src 'self'` plus the trusted upload endpoint URL in `img-src` and `connect-src` |
 
-> NOTE
->
-> For additional guidance on resolving CSP errors in Syncfusion EJ2 controls, refer to the [Resolve CSP errors in EJ2 ASP.NET MVC Common control](https://help.syncfusion.com/aspnetmvc/common/how-to/resolve-csp-errors) documentation.
-
 ## See Also
 
 * [XHTML validation](./xhtml-validation)
 * [Cross-Site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
 * [Form support](./form-support)
 * [Read-only mode](./read-only-mode)
-* [Security Considerations in EJ2 ASP.NET MVC Common control](https://help.syncfusion.com/aspnetmvc/common/security-considerations)
-* [Resolve CSP errors in EJ2 ASP.NET MVC Common control](https://help.syncfusion.com/aspnetmvc/common/how-to/resolve-csp-errors)
+* [CSP in EJ2 ASP.NET MVC Common control](https://ej2.syncfusion.com/aspnetmvc/documentation/common/content-security-policy)
+
