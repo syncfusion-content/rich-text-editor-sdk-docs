@@ -38,8 +38,6 @@ The HTML editing mode is the default mode of Rich Text Editor. It is used to for
 
 The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
 
-> To use the IFrame editing feature, inject `HtmlEditor` in the provider section.
-
 For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/vue/documentation/rich-text-editor/editor-types/iframe) documentation.
 
 ## Markdown editor
