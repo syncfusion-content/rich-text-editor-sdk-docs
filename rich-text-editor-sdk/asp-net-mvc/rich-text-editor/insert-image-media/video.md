@@ -49,11 +49,11 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [InsertVide
 ```typescript
 
 <video>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4" >
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4">
 </video>
 
 <video>
-    <source src="data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="video/mp4" >
+    <source src="data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="video/mp4">
 </video>
 
 ```
@@ -88,7 +88,7 @@ Configure [InsertVideoSettings.RemoveUrl](https://help.syncfusion.com/cr/aspnetm
 
 Set the [InsertVideoSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
 
-> If you want to insert lower-sized video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
+> If you want to insert smaller video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
 
 In the following code blocks, you can insert the video files which are saved in the specified path.
 
@@ -120,7 +120,7 @@ In the following code blocks, you can insert the video files which are saved in 
 
 You can use the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property to specify the server handler to upload the selected video. Then, by binding the [FileUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -149,7 +149,7 @@ Refer `rename.cs` controller file for configure the server-side.
 
 You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-N> By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
+> By default, the `UseDefaultCredentials` property is not supported; you must manually append the default credentials to the upload request.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,7 +205,7 @@ In the following example, the video size has been validated before uploading and
 
 ## Video Replacement Functionality
 
-Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `VideoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
+Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `VideoReplace` option. You can replace the video file by using the embedded code, the web URL, or the browse option in the video dialog.
 
 ![Rich Text Editor Embed Video replace](../images/video-replace-embed.png)
 
@@ -265,7 +265,7 @@ The Rich Text Editor supports pasting video files directly into the editor conte
 
 By default, the Rich Text Editor allows you to insert videos by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the videos to the server before inserting into the editor by configuring the saveUrl property.
 
-In the following sample, you can see feature demo.
+In the following sample, you can see the feature demo.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
