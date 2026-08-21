@@ -28,6 +28,8 @@ Syncfusion's Vue Rich Text Editor offers two rendering modes for controlling sty
    - This mode allows seamless integration with existing styles.  
    - **Usage:** `:iframeSettings="{ enable: false }"`
 
+> The `iframeSettings` property accepts additional configuration options such as `attributes` and `resources` for further customization of the iframe. Refer to the [iframeSettings API](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/iframesettings) for more details.
+
 ### Default behavior
 
 By default, the Rich Text Editor uses **non-encapsulated mode** (`:iframeSettings="{ enable: false }"`), allowing the application's styles to affect the editor's content.
@@ -48,3 +50,5 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 ## See also
 
 * [Iframe Editor](./iframe)
+
+> Switching between encapsulated and non-encapsulated modes at runtime may cause the editor to lose its current content or selection state. Reload the content after changing the mode if needed.
