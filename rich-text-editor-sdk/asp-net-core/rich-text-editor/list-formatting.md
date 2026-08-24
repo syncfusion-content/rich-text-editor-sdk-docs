@@ -116,7 +116,7 @@ The Rich Text Editor provides powerful indentation features for both bullet and 
 To increase the indent of a list item:
 
 1. Select the list item you want to indent.
-2. Click the "Increase Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>]</Kbd>.
+2. Click the "Increase Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>]</kbd>.
 3. The selected item will be indented, creating a nested list.
 
 ### Decreasing Indent
@@ -124,7 +124,7 @@ To increase the indent of a list item:
 To decrease the indent of a list item:
 
 1. Select the indented list item.
-2. Click the "Decrease Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>[</Kbd>.
+2. Click the "Decrease Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>[</kbd>.
 3. The selected item will move back to the previous indentation level.
 
 ### Using Tab Key for Indentation

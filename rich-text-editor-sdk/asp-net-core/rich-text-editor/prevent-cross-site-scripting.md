@@ -9,11 +9,12 @@ documentation: ug
 
 # Prevent XSS in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
+The Rich Text Editor allows users to edit content securely by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements from editor content that could cause XSS attacks. The editor removes elements based on their attributes if it is possible to execute a script through them.
 
-The [enableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlSanitizer) property determines whether XSS prevention is active. It's set to `true` by default.
 
-In the following sample, we removed the `script` tag and `onmouseover` attribute from the content of the Rich Text Editor.
+The [enableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlSanitizer) property determines whether XSS prevention is active. It is set to `true` by default.
+
+In the following sample, the `script` tag and `onmouseover` attribute are removed from the content of the Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +40,7 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 {% endif %}
 
 
-> The XSS prevention feature is only applicable when the [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlSanitizer) is set to HTML.
+> The XSS prevention feature is only applicable when the [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) is set to `HTML`.
 
 
 ## Custom Cross-Site Scripting Prevention
