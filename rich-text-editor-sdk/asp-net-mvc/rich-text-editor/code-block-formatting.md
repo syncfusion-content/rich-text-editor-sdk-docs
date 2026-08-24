@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Code Block Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Enable Code Block in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add code block formatting in the ASP.NET MVC Rich Text Editor using toolbar options to apply and remove code styles.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
