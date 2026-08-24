@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Import and Export Content in React Rich Text Editor | Syncfusion
-description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in React applications.
+description: Learn how to import Word documents and export content to PDF and Word formats in React Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Import and Export Content in JavaScript Rich Text Editor | Syncfusion
-description: Learn how to import Word documents and export JavaScript Rich Text Editor content to PDF and Word formats
+description: Learn how to import Word documents and export content to PDF and Word formats in JavaScript Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug

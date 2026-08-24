@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to in Vue Rich text editor component | Syncfusion
-description: Learn how to customize, configure, and implement common Vue Rich Text Editor scenarios.
+description: Learn how to customize, configure, and implement common scenarios in Vue Rich Text Editor for seamless content creation and editing.
 control: How to 
 platform: rich-text-editor-sdk
 documentation: ug
