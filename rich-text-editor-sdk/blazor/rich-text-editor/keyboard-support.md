@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Support in Blazor Rich Text Editor | Syncfusion
+title: Keyboard Support in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to use keyboard shortcuts in the Blazor Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
@@ -23,7 +23,7 @@ The toolbar shortcuts allow quick navigation and interaction with the toolbar el
 |----------------|---------| --------- |
 | Focus on toolbar | <kbd>Alt</kbd> + <kbd>F10</kbd> | <kbd>⌥</kbd> + <kbd>F10</kbd> |
 | Move to the next tool | <kbd>→</kbd> | <kbd>→</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd>  |
-| Move to the previous tool | 	<kbd>←</kbd> | <kbd>←</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd> |
+| Move to the previous tool | <kbd>←</kbd> | <kbd>←</kbd>, <kbd>⌘</kbd> + <kbd>F</kbd> |
 | Close dropdowns/menu and dialogs | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Execute the currently focused tool action | <kbd>Enter</kbd>, <kbd>Space</kbd> | <kbd>Enter</kbd>, <kbd>Space</kbd> |
 
@@ -149,4 +149,10 @@ In the following code block, customize the bold and italic, toolbar actions with
 
 ![Blazor Rich Text Editor custom key configuration](./images/blazor-richtexteditor-shortcutkey.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Accessibility in Rich Text Editor](./accessibility)
+* [Enter key customization](./enter-key)
+* [Events in Rich Text Editor](./events)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.

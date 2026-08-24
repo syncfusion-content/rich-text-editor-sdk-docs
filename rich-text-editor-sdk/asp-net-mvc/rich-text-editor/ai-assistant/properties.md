@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure of AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Configure AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the ASP.NET MVC Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -13,11 +13,11 @@ The `AIAssistantSettings` class provides the following properties for complete c
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
+| `Commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
 | `PopupMaxHeight` | `string \| number` | `'400px'` | Sets the maximum height of the AI Assistant popup. Accepts CSS height values or numbers (treated as pixels). |
 | `PopupWidth` | `string \| number` | `'600px'` | Sets the width of the AI Assistant popup. Accepts CSS width values or numbers (treated as pixels). |
 | `Placeholder` | `string` | `'Ask AI to rewrite or generate content.'` | Specifies the placeholder text shown in the AI prompt textarea. |
-| `HeaderToolbarSettings` | `(AssitantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
+| `HeaderToolbarSettings` | `(AssistantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
 | `PromptToolbarSettings` | `(AssistantPromptToolbarItems \| IAIAssistantToolbarItem)[]` | `['Edit', 'Copy']` | Configures the toolbar in the prompt editor (user input) section. |
 | `ResponseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `Prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
@@ -114,7 +114,7 @@ The default toolbar configurations are:
 
 **Example**
 
-In the below sample, the toolbar settings are configured to modify the order and items are displayed.
+In the below sample, the toolbar settings are configured to modify the order of items displayed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

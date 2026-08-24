@@ -14,15 +14,15 @@ Rich Text Editor allows to insert table of content in edit panel and provides an
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add a `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
 Tables can also be inserted through the `Insert Table` option in the pop-up where the number of rows and columns can be provided manually, and this is the default way in devices.
 
-> To use Table feature, inject `Table` in the provider section.
+> To use the Table feature, inject the `Table` module in the provider section.
 
-In the following sample, the table feature has been provided from table module.
+In the following sample, the table feature has been provided from the Table module.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

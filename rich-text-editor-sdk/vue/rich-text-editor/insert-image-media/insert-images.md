@@ -79,7 +79,7 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 ## Maximum file size restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict image uploads from your local machine using the [maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB) per image.
 
 In the following example, the Image size has been validated before uploading and determined whether the Image has been uploaded or not.
 

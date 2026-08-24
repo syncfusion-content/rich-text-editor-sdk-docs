@@ -14,8 +14,7 @@ When the editable content is focused or selected, the inline toolbar appears aut
 
 ## Customizing Inline Toolbar Items
 
-You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
+You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property. This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
 
 {% tabs %}
 {% highlight razor %}

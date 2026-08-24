@@ -16,7 +16,7 @@ This feature simplifies the creation of dynamic documents by allowing users to i
 
 ## Adding custom toolbar items for inserting merge fields
 
-To enable mail merge functionality, the Rich Text Editor toolbar is extended with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [toolbarSettings.items](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (#insertField and #merge_data).
+To enable mail merge functionality, the Rich Text Editor toolbar is extended with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [toolbarSettings.items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (#insertField and #merge_data).
 
 - **Insert Field:** Opens a dropdown list of merge fields for inserting placeholders like <code>&#123;&#123;FirstName&#125;&#125;</code> into the editor.
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
@@ -135,7 +135,7 @@ export default {
     data: function() {
         return {
             fieldsData: { text: 'text', value: 'value' },
-            mentionChar: <code>&#123;&#123;</code>,
+            mentionChar: '{{',
             mergeData: [
                 { text: 'First Name', value: 'FirstName' },
                 { text: 'Last Name', value: 'LastName' },
@@ -168,7 +168,7 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 {% raw %}
 
 <template>
-    <button class="e-control e-lib e-btn e-formats-tbar-btn e-rte-elements e-tbar-btn e-tbar-btn" tabindex="-1" id="merge_data" style="width: 100%" @click="onClickHandler">
+    <button class="e-control e-lib e-btn e-formats-tbar-btn e-rte-elements e-tbar-btn" tabindex="-1" id="merge_data" style="width: 100%" @click="onClickHandler">
             <span style="display: inline-flex"><span class="e-tbar-btn-text">Merge Data</span></span>
     </button>
 </template>

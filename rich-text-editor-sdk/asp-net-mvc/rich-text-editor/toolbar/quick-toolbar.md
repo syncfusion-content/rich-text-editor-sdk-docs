@@ -13,7 +13,7 @@ The Rich Text Editor has quick toolbars that act as context-menus, appearing whe
 
 ## Image quick toolbar
 
-You can customize the quick toolbar options for images using the `image` property within the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Image). The Rich Text Editor provides essential tools such as 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension' allowing seamless image management and editing directly within the content.
+You can customize the quick toolbar options for images using the `image` property within the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Image). The Rich Text Editor provides essential tools such as `Replace`, `Align`, `WrapText`, `Caption`, `Remove`, `InsertLink`, `Display`, `AltText`, and `Dimension`, allowing seamless image management and editing directly within the content.
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Image) property, you can enhance the editor’s functionality, ensuring a user-friendly experience for efficiently handling image elements.
 
@@ -193,7 +193,7 @@ Customize the quick toolbar items using the `text` property in the [quickToolbar
 
 ## Quick inline toolbar
 
-Quick commands are opened as context-menu on clicking the corresponding element. The commands must be passed as string collection to image, text, link and table attributes of the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
+Quick commands open as context menus when the corresponding element is clicked. The commands must be passed as a string collection to the `image`, `text`, `link`, and `table` attributes of the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
 | Target Element | Default Quick Toolbar items |
 |----------------|---------|
@@ -204,7 +204,7 @@ Quick commands are opened as context-menu on clicking the corresponding element.
 
 Custom tool can be added to the corresponding quick toolbar, using [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
-The below sample demonstrates the option to insert the image to the Rich Text Editor content as well as option to rotate the image through the quick toolbar.
+The sample below demonstrates inserting an image into the Rich Text Editor and rotating it via the quick toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

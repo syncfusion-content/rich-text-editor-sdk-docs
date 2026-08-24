@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
-description: Learn how to enable and configure the AI Assistant in the ASP.NET MVC Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming responses.
+title: AI Assistant in ASP.NET MVC Syncfusion Rich Text Editor | Syncfusion
+description: Learn how to enable the AI Assistant in the ASP.NET MVC Rich Text Editor for AI-powered content creation, editing, prompts, and streaming responses.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -37,7 +37,7 @@ The AI Assistant interface can be opened through the following options:
 ## Request and Response Handling
 
 Executing a prompt triggers the `AiAssistantPromptRequest` event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
-Once a response is received either as a stream or as a single output it can be added to the AssistView using the `addAIPromptResponse` method.
+Once a response is received, either as a stream or as a single output, it can be added to the AssistView using the `addAIPromptResponse` method.
 
 If the *Stop Responding* button is clicked, the `AiAssistantStopRespondingClick` event is raised to cancel the streaming operation.
 

@@ -18,9 +18,9 @@ The Rich Text Editor is a textarea control. The Rich Text Editor also provides t
 
 | Rules | Description |
 |----------------|---------|
-| required | Requires value for the Rich Text Editor control.|
-| minlength | Requires the value to be of given minimum characters count.|
-| maxlength | Requires the value to be of given maximum characters count.|
+| required | Requires a value for the Rich Text Editor control. |
+| minlength | Requires the value to be of a given minimum character count. |
+| maxlength | Requires the value to be of a given maximum character count. |
 
 This sample is used to validate form using the obtrusive Validation. Type the values in Rich Text Editor and the form enables the validation with the formvalidator rules by clicking on the submit externally. All rules are validated by the formvalidator rules.
 

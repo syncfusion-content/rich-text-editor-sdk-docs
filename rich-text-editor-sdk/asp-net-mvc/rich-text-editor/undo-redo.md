@@ -9,7 +9,7 @@ documentation: ug
 
 # Undo and Redo in ASP.NET MVC Rich Text Editor
 
-The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
+The Undo and Redo features in the Rich Text Editor let you reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 
 There are two ways to perform Undo and Redo operations:
 
@@ -57,7 +57,7 @@ The Rich Text Editor automatically maintains an undo/redo stack, allowing users 
 
 To clear the entire undo and redo stack, use the public `clearUndoRedo` method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
 
-Here's an example of how to customize both the Undo/Redo timer and steps:
+The following example demonstrates how to clear the undo and redo stack:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

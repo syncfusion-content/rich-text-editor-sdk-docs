@@ -164,7 +164,7 @@ Here is the summarized code for the above steps in the **src/App.vue** file:
     </div>
 </template>
 <script setup>
-import { provide } from 'vue';
+import { provide, ref } from 'vue';
 import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, Link, Image, HtmlEditor } from "@syncfusion/ej2-vue-richtexteditor";
 const rteInstance = ref(null);
 const value = ref("<p>The Rich Text Editor component is a WYSIWYG editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p>");
