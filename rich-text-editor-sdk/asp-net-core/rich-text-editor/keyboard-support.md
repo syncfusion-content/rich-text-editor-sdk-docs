@@ -9,8 +9,7 @@ documentation: ug
 
 # Keyboard Support in ASP.NET Core Rich Text Editor
 
-The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
-
+The editor has full keyboard accessibility that includes shortcuts to open and interact with toolbar items, drop-down lists, and dialogs.
 ## HTML editor shortcut keys
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) as `HTML`.
@@ -157,9 +156,9 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom Key Config
 
-You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
+You can customize the key config for the keyboard interaction of the Rich Text Editor using the [keyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
 
-In the following sample, customize the bold, italic, underline toolbar action with <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`b`</kbd>, <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`i`</kbd> and <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`u`</kbd> respectively.
+In the following sample, the bold, italic, and underline toolbar actions are customized with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>, <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd>, and <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>, respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
