@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Font Family, Size, and Color in ASP.NET Core Rich Text Editor
+title: Font and Color Tools in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize font family, font size, and text color in the ASP.NET Core Rich Text Editor to enhance content formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -47,7 +47,7 @@ You can add the `FontName` tool in the Rich Text Editor toolbar using the `toolb
 {% endtabs %}
 {% endif %}
 
-The Rich Text Editor comes with a pre-configured set of [fontFamily](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
+The Rich Text Editor comes with a pre-configured set of [`fontFamily`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
 
 ### Adding Custom Font Families
 
@@ -107,8 +107,8 @@ The below font style links are referred in the page.
 
 ```typescript
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 
 ```
 
@@ -116,7 +116,7 @@ N> In the above sample, you can see that we have added two Google web fonts (`Ro
 
 ## Font Size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the size of the selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar displays "Font Size". For other font sizes, the toolbar shows the size of the selected font.
 
 ### Configuring the Font Size Tool in the Toolbar
 
@@ -145,7 +145,7 @@ You can add the `FontSize` tool in the Rich Text Editor toolbar using the `toolb
 {% endtabs %}
 {% endif %}
 
-The Rich Text Editor includes a default set of [fontSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontSize) property.
+The Rich Text Editor includes a default set of [`fontSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontSize) property.
 
 ### Defining Custom Font Sizes
 
@@ -178,7 +178,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ### Configuring the Font and Background Color Tool in the Toolbar
 
-You can add the `FontName` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add the `FontColor` and `BackgroundColor` tools in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
