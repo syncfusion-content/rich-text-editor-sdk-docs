@@ -11,7 +11,7 @@ documentation: ug
 
 ## Placeholder Text Customization
 
-Defines placeholder text for the Rich Text Editor when the content area is empty using the `Placeholder` property.
+Defines placeholder text for the Rich Text Editor when the content area is empty using the [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Placeholder) property.
 
 Customize the placeholder's font style and color using the `e-rte-placeholder` CSS class.
 
@@ -72,7 +72,7 @@ The character count indicator changes color based on usage thresholds:
 
 ## Code view
 
-The Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you made any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. So, the users will have more flexibility over the content they have created.
+The Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you make any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. This gives the user more flexibility over the content they create.
 
 ```cshtml
 
@@ -93,7 +93,7 @@ The Rich Text Editor includes the ability for users to directly edit HTML code v
 
 ## Number and Bullet Format Lists
 
-This feature allows the user to change the appearance of the Numbered and Bulleted lists. Users can also apply different numbering or bullet formats lists such as lowercase greek, upper Alpha, square and circles. You can also customize the style type of the lists to be populated in the dropdown from the toolbar by using the `NumberFormatList` and `BulletFormatList` properties in the Rich Text Editor.
+This feature allows the user to change the appearance of the numbered and bulleted lists. Users can apply different numbering or bullet formats such as lowercase Greek, upper Alpha, square, and circles. Customize the style types available in the dropdown using the `RichTextEditorNumberFormatList` and `RichTextEditorBulletFormatList` settings.
 
 ```cshtml
 
@@ -101,12 +101,9 @@ This feature allows the user to change the appearance of the Numbered and Bullet
 
 <SfRichTextEditor>
     <RichTextEditorToolbarSettings Items="@Tools" />
-    <p>The Rich Text Editor component is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p>
-    <p><b> Key features:</b></p>
-    <ul>
-    <li><p> Provides <b>IFRAME</b> and <b>DIV</b> modes </p></li>
-    <li><p> Capable of handling markdown editing.</p></li>
-    </ul>
+    <RichTextEditorNumberFormatList Formats="@NumberFormats" />
+    <RichTextEditorBulletFormatList Formats="@BulletFormats" />
+    <p>The Rich Text Editor component is WYSIWYG ('what you see is what you get') editor that provides the best user experience.</p>
 </SfRichTextEditor>
 
 @code {
@@ -115,6 +112,9 @@ This feature allows the user to change the appearance of the Numbered and Bullet
         new ToolbarItemModel() { Command = ToolbarCommand.NumberFormatList },
         new ToolbarItemModel() { Command = ToolbarCommand.BulletFormatList }
     };
+
+    private List<string> NumberFormats = new() { "LowerRoman", "LowerAlpha", "Decimal" };
+    private List<string> BulletFormats = new() { "Disc", "Square", "Circle" };
 }
 
 ```

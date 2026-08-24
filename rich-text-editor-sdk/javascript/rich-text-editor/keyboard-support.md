@@ -45,7 +45,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
-| Insert tab space (when [enableTabKey](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Insert tab space (when [enableTabKey](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#enableTabKey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
 
 ### Inserting
 
@@ -126,7 +126,7 @@ These shortcuts allow you to quickly undo and redo changes to your content.
 
 These miscellaneous shortcuts help with actions like toggling fullscreen, clearing formatting, and accessing the HTML source.
 
-| Actions | PC | Mac | 
+| Actions | Windows | Mac | 
 |----------------|---------| --------- |
 | View HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> |
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
@@ -162,9 +162,9 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Custom key config
 
-Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#keyconfig) property.
+Customize the keyboard interactions using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#keyConfig) property. The following sample customizes the bold, italic, and underline toolbar actions to `ctrl+alt+b`, `ctrl+alt+i`, and `ctrl+alt+u` respectively.
 
-In the below sample, you have customize the bold, italic, underline toolbar action with `ctrl+alt+b`, `ctrl+alt+i` and `ctrl+alt+u` respectively.
+> Supported key tokens include `ctrl`, `shift`, `alt`, `meta` (or `cmd`), `a`–`z`, `0`–`9`, and special keys such as `enter`, `escape`, `tab`, `space`, `backspace`, `delete`, and `home`/`end`.
 
 The following table lists all available `keyConfig` options in the Rich Text Editor along with their default keyboard shortcut values. You can customize these shortcut keys based on your requirements by using the `keyConfig` property.
 

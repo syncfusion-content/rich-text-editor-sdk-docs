@@ -13,7 +13,7 @@ The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire 
 
 You can enable fullscreen mode using the FullScreen icon toolbar button. Once activated, the editor transitions into fullscreen view, hiding other page elements and maximizing the editing area.
 
-## How it works
+## How fullscreen mode works
 
 Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled, the editor:
 

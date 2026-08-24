@@ -17,7 +17,7 @@ The Rich Text Editor allows you to configure the toolbar's position using the [p
 
 ## Configuring the toolbar position
 
-The Rich Text Editor allows you to position the toolbar at the top or bottom of the content area, depending on your layout requirements.
+The Rich Text Editor allows you to position the toolbar at the top or at the bottom of the content area, depending on your layout requirements.
 
 By default, the toolbar is displayed at the top of the editor, making all formatting and editing tools immediately accessible above the content.
 

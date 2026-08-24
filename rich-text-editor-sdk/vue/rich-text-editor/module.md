@@ -14,7 +14,7 @@ The [Vue Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/vue-r
 
 ## What is a module in Vue Rich Text Editor?
 
-In the Vue Rich Text Editor, a module refers to a self-contained feature or functionality that can be selectively enabled or disabled. These modules are provided as part of the @syncfusion/ej2-vue-richtexteditor package and can be injected to extend the editor's capabilities.
+In the Vue Rich Text Editor, a module refers to a self-contained feature or functionality that can be selectively enabled or disabled. These modules are provided as part of the `@syncfusion/ej2-vue-richtexteditor` package and can be injected to extend the editor's capabilities.
 
 For example, modules such as `Toolbar`, `Link`, `Image`, `HtmlEditor`, and `QuickToolbar` enable specific tools and behavior in the Rich Text Editor interface.
 
@@ -50,7 +50,7 @@ The following example demonstrates how to import and inject modules.
 | `Count` | Inject this module to enable live character counting capabilities in the Rich Text Editor. |
 | `HtmlEditor` | Inject this module to support the HTML source editing view, allowing users to switch between preview and source code modes. |
 | `MarkdownEditor` | Inject this module to enable editing support, allowing users to write and preview content using standard Markdown syntax |
-| `QuickToolbar` | Inject this module to displays a floating toolbar near selected content like images or links for quick actions. |
+| `QuickToolbar` | Inject this module to display a floating toolbar near selected content like images or links for quick actions. |
 | `Resize` | Injecting this module enables users to resize the height and width of the editor area interactively using a resizable handle in the Rich Text Editor. |
 | `FileManager` | Injecting this module provides users with a dialog interface to browse, upload, and insert files (especially images) from a server or cloud storage provider directly into the Rich Text Editor. |
 | `PasteCleanup` | Inject this module to keep or clean up the formatting of pasted content in Rich Text Editor. |
@@ -58,7 +58,7 @@ The following example demonstrates how to import and inject modules.
 | `EmojiPicker` | Injecting this module allows users to search, and insert emojis into the Rich Text Editor. |
 | `SlashMenu` | Injecting this module allows users to apply formats, open dialogs by typing "/" in the Rich Text Editor. |
 | `ImportExport` | Injecting this module allows users to import content from Word documents into the Rich Text Editor and export the Rich Text Editor's content into Word and PDF files |
-| `CodeBlock` | Injecting this module allows users to format the selected text as inline code, highlighting code snippets within the text in the Rich Text Editor. |
+| `CodeBlock` | Injecting this module allows users to format the selected text as a code block, highlighting code snippets within the text in the Rich Text Editor. |
 | `AutoFormat` | Injecting this module automatically converts Markdown syntax into HTML as you type, supporting inline and block-level formatting for a seamless editing experience. |
 | `Audio` | Injecting this module allows users to insert and manage audios in the Rich Text Editor. |
 | `Video` | Injecting this module allows users to insert and manage videos in the Rich Text Editor. |

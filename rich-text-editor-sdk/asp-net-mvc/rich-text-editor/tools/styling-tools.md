@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Styling in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the ASP.NET MVC Rich Text Editor.
+description: Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the ASP.NET MVC Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Font family
   
-The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display "Font Name". However, for other font families, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar displays `Font Name`. For other font families, the toolbar shows the name of the selected font.
 
 To apply a different font style to a specific section of the content, follow these steps:
 
@@ -106,17 +106,15 @@ To use web fonts in Rich Text Editor, it is not needed for the web fonts to be p
 The below font style links are referred in the page.
 
 ```typescript
-
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 ```
 
-N> In the above sample, you can see that we have added two Google web fonts (`Roboto` and `Great vibes`) to `Rich Text Editor`.
+> In the above sample, two Google web fonts (`Roboto` and `Great Vibes`) are added to the Rich Text Editor.
 
 ## Font size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the size of the selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar displays `Font Size`. For other font sizes, the toolbar shows the size of selected font.
 
 ### Built-in font size
 

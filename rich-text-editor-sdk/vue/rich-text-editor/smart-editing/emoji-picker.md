@@ -14,9 +14,11 @@ An emoji picker is a tool designed for adding emojis or emoticons to text with e
 
 ## Configuring emoji picker tool in the toolbar
 
+> Rich Text Editor features are segregated into individual feature-wise modules. To use emojis, inject the `EmojiPicker` module in the `provide` section.
+
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-By default, a predefined set of emojis is configured. However, these icons can be customized according to specific needs by using the  [emojiPickerSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/richtexteditormodel#emojiPickerSettings) property.
+By default, a predefined set of emojis is configured. However, these emojis can be customized according to specific needs by using the [emojiPickerSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/richtexteditormodel#emojiPickerSettings) property.
 
 ```
 <template>
@@ -140,7 +142,7 @@ The following code example shows how to add the emoji picker tool in the Rich Te
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/emoji-picker-cs1" %}
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To use emojis, inject the `EmojiPicker` module in `provide` section.
+
 
 ## Using shortcut keys to open the emoji picker
 

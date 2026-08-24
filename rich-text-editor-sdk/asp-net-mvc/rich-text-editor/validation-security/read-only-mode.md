@@ -9,13 +9,11 @@ documentation: ug
 
 # Read-Only Mode in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor control offers a read-only mode that prevents you from editing the content while still allowing them to view it. This feature is particularly useful when you want to display formatted content without permitting modifications.
+The Rich Text Editor offers a read-only mode that prevents users from editing the content while still allowing them to view it. This is useful when you want to display formatted content without permitting modifications.
 
 To enable the read-only mode, set the [Readonly](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Readonly) property to `true`. 
 
-This will allow you to view the content without making any modifications.
-
-Please refer to the sample and code snippets below to demonstrate how to enable the read-only mode in the Rich Text Editor.
+Refer to the sample and code snippets below to see how to enable the read-only mode in the Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

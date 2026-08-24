@@ -9,9 +9,9 @@ documentation: ug
 
 # Placeholder in ASP.NET MVC Rich Text Editor
 
-Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Placeholder) property.
+Use the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Placeholder) property to specify the placeholder text shown when the editor's content area is empty.
 
-You can customize the appearance of the placeholder text by targeting the `e-rte-placeholder` class in your CSS. This allows you to modify properties such as font family, color, and other styles.
+You can customize the appearance of the placeholder text by targeting the `e-rte-placeholder` CSS class to modify properties such as font family, color, and other styles.
 
 ```css
 
