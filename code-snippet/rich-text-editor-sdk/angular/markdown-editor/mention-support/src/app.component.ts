@@ -14,7 +14,7 @@ import {
 } from '@syncfusion/ej2-angular-richtexteditor';
 import { MarkdownFormatter } from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement } from '@syncfusion/ej2-base';
-import { marked } from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 import {
     MentionComponent,
@@ -218,13 +218,14 @@ export class AppComponent {
         let htmlPreview: Element = this.rteObj!.element.querySelector(
           '#' + id
         ) as Element;
-        htmlPreview.innerHTML = await marked(
+        htmlPreview.innerHTML = (await MarkdownConverter.toHtml(
           (
             (
               this.rteObj!.contentModule as ContentRender
             ).getEditPanel() as HTMLTextAreaElement
-          ).value
-        );
+          ).value,
+          { lineBreak: true }
+        )) as string;
       }
     }
     public async fullPreview(): Promise<void> {
@@ -247,13 +248,14 @@ export class AppComponent {
         }
         this.textArea!.style.display = 'none';
         htmlPreview.style.display = 'block';
-        htmlPreview.innerHTML = await marked(
+        htmlPreview.innerHTML = (await MarkdownConverter.toHtml(
           (
             (
               this.rteObj!.contentModule as ContentRender
             ).getEditPanel() as HTMLTextAreaElement
-          ).value
-        );
+          ).value,
+          { lineBreak: true }
+        )) as string;
         this.mdsource!.parentElement!.title = 'Code View';
       }
     }
