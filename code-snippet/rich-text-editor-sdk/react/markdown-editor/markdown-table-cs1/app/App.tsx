@@ -2,6 +2,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
 import { Image, Link, MarkdownEditor, RichTextEditor, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 RichTextEditor.Inject(Image, Link, MarkdownEditor, Toolbar);
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import * as React from 'react';
 import { L10n } from '@syncfusion/ej2-base';
 
@@ -110,7 +111,7 @@ class App extends React.Component<{},{}> {
     if (this.mdSplit.classList.contains('e-active')) {
       const id: string = this.defaultRTE.getID() + 'html-preview';
       const htmlPreview: any = this.defaultRTE.element.querySelector('#' + id);
-      htmlPreview.innerHTML = marked(((this.defaultRTE as any).contentModule.getEditPanel()).value);
+      htmlPreview.innerHTML = MarkdownConverter.toHtml(((this.defaultRTE as any).contentModule.getEditPanel()).value, { lineBreak: true }) as string;
     }
   }
 
@@ -141,7 +142,7 @@ class App extends React.Component<{},{}> {
         this.htmlPreview.style.width = '50%';
       }
       this.htmlPreview.style.display = 'block';
-      this.htmlPreview.innerHTML = marked(((this as any).defaultRTE.contentModule.getEditPanel()).value);
+      this.htmlPreview.innerHTML = MarkdownConverter.toHtml(((this as any).defaultRTE.contentModule.getEditPanel()).value, { lineBreak: true }) as string;
       this.mdSource.parentElement.title = 'Code View';
     }
   }
