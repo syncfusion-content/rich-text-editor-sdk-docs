@@ -9,7 +9,7 @@ documentation: ug
 
 # Undo and Redo in ASP.NET Core Rich Text Editor
 
-The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
+The Undo and Redo features in the Rich Text Editor allow you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 
 There are two ways to perform Undo and Redo operations:
 
