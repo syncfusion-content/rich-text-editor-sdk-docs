@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Emoji Picker in ASP.NET Core RichTextEditor | Syncfusion
+title: Emoji Picker in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add emojis in the ASP.NET Core Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
 control: Rich Text Editor
 platform: rich-text-editor-sdk

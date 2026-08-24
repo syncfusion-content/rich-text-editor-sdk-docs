@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Rich Text Editor in React Dialog | Syncfusion
+title: Render React Rich Text Editor in Dialog | Syncfusion
 description: Learn how to render the React Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Render Rich Text Editor in React Dialog
+# Render React Rich Text Editor in Dialog Component
 
 When rendering the Rich Text Editor inside a Dialog component, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 

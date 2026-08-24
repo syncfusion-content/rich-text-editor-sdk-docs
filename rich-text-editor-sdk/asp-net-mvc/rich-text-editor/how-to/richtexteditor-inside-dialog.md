@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Render Rich Text Editor in ASP.NET MVC Dialog | Syncfusion
+title: Render ASP.NET MVC Rich Text Editor in Dialog | Syncfusion
 description: Learn how to render the ASP.NET MVC Rich Text Editor inside a Dialog and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Render Rich Text Editor in ASP.NET MVC Dialog
+# Render ASP.NET MVC Rich Text Editor in Dialog Component
 
 When rendering the Rich Text Editor inside a Dialog Control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 
