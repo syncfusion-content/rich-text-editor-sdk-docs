@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Third-Party Integrations in ASP.NET Core Rich Text Editor | Syncfusion
-description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET Core Rich Text Editor.
+description: Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET Core Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Third-Party Integration in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit the application scenario.
 
 ## CodeMirror integration
 
-RichTextEditor comes with a basic HTML source editor through the view-source property. CodeMirror plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
+The Rich Text Editor comes with a basic HTML source editor through the `view-source` property. The CodeMirror plugin can be used to highlight the syntax of HTML. The CodeMirror plugin for the Rich Text Editor makes editing HTML source code a pleasant experience.
 
-Import necessary CSS and JS files of CodeMirror to the HTML page.
+Import the necessary CSS and JS files of CodeMirror to the HTML page.
 
-Required JS files of code mirror.
+Required JS files of CodeMirror:
 
 ```html
  <script src="scripts/CodeMirror/codemirror.js" type="text/javascript"></script>
@@ -27,14 +27,14 @@ Required JS files of code mirror.
 
 ```
 
-Required CSS file of code mirror
+Required CSS file of CodeMirror:
 
 ```html
  <link href="scripts/CodeMirror/codemirror.min.css" rel="stylesheet" />
 
 ```
 
-Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings), define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ActionComplete) event.
+Add a custom icon for the HTML source editor in the toolbar of the Rich Text Editor using the template option of [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings), define the CodeMirror plugins, and then pass the Rich Text Editor content as an argument in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ActionComplete) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -61,7 +61,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 ## At.js Integration
 
-Rich Text Editor can easily be integrated with [`At.js`](https://github.com/ichord/At.js) library. To display the autocomplete list, type ‘@’.
+The Rich Text Editor can be easily integrated with the [`At.js`](https://github.com/ichord/At.js) library. To display the autocomplete list, type '@'.
 
 Include `At.JS` style.
 
@@ -81,7 +81,7 @@ Include At.JS javascript.
 
 Define the `At.js` configuration
 
-N> In below configuration, email id of employees list - email id of employees from the data source.
+> In the following configuration, the email IDs of employees are used as the data source.
 
 ```typescript
 

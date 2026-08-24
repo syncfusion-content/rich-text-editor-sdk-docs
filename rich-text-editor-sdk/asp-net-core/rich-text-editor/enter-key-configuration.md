@@ -13,17 +13,17 @@ Rich Text Editor allows you to customize the behavior of the Enter key and Shift
 
 **Available Options**
 
-The enterKey property accepts the following values:
+The `enterKey` property accepts the following values:
 
-* `P` (default)
-* `DIV`
-* `BR`
+* `P` (default) — inserts a `<p>` element
+* `DIV` — inserts a `<div>` element
+* `BR` — inserts a `<br>` element
 
-The shiftEnterKey property accepts the following values:
+The `shiftEnterKey` property accepts the following values:
 
-* `BR` (default)
-* `P`
-* `DIV`
+* `BR` (default) — inserts a `<br>` element
+* `P` — inserts a `<p>` element
+* `DIV` — inserts a `<div>` element
 
 ## Enter key configuration
 

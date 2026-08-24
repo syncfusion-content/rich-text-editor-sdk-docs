@@ -16,7 +16,7 @@ This article describes the API migration process of Rich Text Editor control fro
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 |------------|-------------------------|-------------------------|
-| Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate Property for enable/disable keyboard navigation. Its enabled by default. |
+| Keyboard Navigation | **Property:** AllowKeyboardNavigation <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").AllowKeyboardNavigation(true).Render();}` | No separate property to enable or disable keyboard navigation. It's enabled by default. |
 | Localization | **Property:** Locale <br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").Locale("en-US").Render();}` | **Property:** Locale <br/> <br/>`@Html.EJS().RichTextEditor("default").Locale("en-US").Render()` |
 | RTL | **Property:** EnableRtl<br/> <br/>` @{Html.EJ().RichTextEditor("rteSample").EnableRTL(true).Render();}` | **Property:** EnableRtl <br/> <br/>`@Html.EJS().RichTextEditor("rtl").EnableRtl(true).Render()` |
 | Key Config | Not Applicable | **Property:**  KeyConfig<br/> <br/>`@Html.EJS().RichTextEditor("default").KeyConfig((object)ViewBag.keyConfig).Render()` |
@@ -134,18 +134,18 @@ This article describes the API migration process of Rich Text Editor control fro
 | Height | **Property:** Height <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Height("350px").Render();}` | **Property:** Height<br/> <br/>`@Html.EJS().RichTextEditor("default").Height("300px").Render()` |
 | Width | **Property:** Width  <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("500px").Render();}` | **Property:** Width  <br/> <br/>`@Html.EJS().RichTextEditor("default").Width("500px").Render()` |
 | Html Attributes | **Property:** HtmlAttributes <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").Width("800px").HtmlAttributes(htmlattr).Render();}` | **Property:** HtmlAttributes<br/> <br/>`@Html.EJS().RichTextEditor("default").HtmlAttributes((object)ViewBag.attr)).Render()` |
-| Is Responsive | **Property:** IsResponsive <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").IsResponsive(true).Render();}` | No separate Property for responsive, provided default. |
+| Is Responsive | **Property:** IsResponsive <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").IsResponsive(true).Render();}` | No separate property for responsive; it is provided by default. |
 | Maximum Height | **Property:** MaxHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MaxHeight("500px").Render();}` | Not Applicable |
 | Maximum Width | **Property:** MaxWidth <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MaxWidth("500px").Render();}` | Not Applicable |
 | Minimum Height | **Property:** MinHeight <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MinHeight("300px").Render();}` | Not Applicable |
 | Minimum Width | **Property:** MinWidth <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").MinWidth("300px").Render();}` | Not Applicable |
 | name | **Property:** name <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").name("commentBlog").Render();}` | Not Applicable |
 | Clear All | **Property:** ShowClearAll <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearAll(true).Render();}` | Not Applicable |
-| Clear Format | **Property:** ShowClearFormat <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearFormat(true).Render();}` | No separate Property for clear Format. Its Provided in toolbar command.<br/> <br/>` viewBag.item = new[] {"ClearFormat"}` <br/> <br/>`@Html.EJS().RichTextEditor("default").ToolbarSettings(e => e.Items((object)ViewBag.item)).Render()` |
+| Clear Format | **Property:** ShowClearFormat <br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowClearFormat(true).Render();}` | No separate property for Clear Format. It's provided as a toolbar command.<br/> <br/>` viewBag.item = new[] {"ClearFormat"}` <br/> <br/>`@Html.EJS().RichTextEditor("default").ToolbarSettings(e => e.Items((object)ViewBag.item)).Render()` |
 | Place holder | Not Applicable | **Property:** Placeholder<br/> <br/>`@Html.EJS().RichTextEditor("default").Placeholder("Enter the text").Render()` |
 | Context Menu | **Property:** ShowContextMenu<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowContextMenu(true).Render();}` | Not Applicable |
 | Dimensions | **Property:** ShowDimensions<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowDimensions(true).Render();}` | Not Applicable |
-| Show Footer | **Property:** ShowFooter<br/> <br/>`<@{Html.EJ().RichTextEditor("rteSample").ShowFooter(true).Render();}` | Not Applicable |
+| Show Footer | **Property:** ShowFooter<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowFooter(true).Render();}` | Not Applicable |
 | Html Source | **Property:** ShowHtmlSource<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowHtmlSource(true).Render();}` | **Method:** showSourceCode() <br/> <br/>` var rteObj = document.getElementById("richtexteditor").ej2_Instances[0];`<br/> <br/>`rteObj.showSourceCode();` |
 | Html Tag Info | **Property:** ShowHtmlTagInfo<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowHtmlTagInfo(true).Render();}` | Not Applicable |
 | Rounded Corner | **Property:** ShowRoundedCorner<br/> <br/>`@{Html.EJ().RichTextEditor("rteSample").ShowRoundedCorner(true).Render();}` | Not Applicable |
