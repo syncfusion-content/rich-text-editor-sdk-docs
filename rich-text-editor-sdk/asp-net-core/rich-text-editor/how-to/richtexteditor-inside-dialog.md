@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Render the ASP.NET Core Rich Text Editor in a Dialog Component
+# Render the ASP.NET Core Rich Text Editor in a Dialog
 
 When rendering the Rich Text Editor inside a Dialog control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width, causing the toolbar to render incorrectly and appear above the edit area.
 
