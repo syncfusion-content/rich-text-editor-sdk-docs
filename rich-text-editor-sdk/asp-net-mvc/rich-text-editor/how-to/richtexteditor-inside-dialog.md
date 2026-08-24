@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render ASP.NET MVC Rich Text Editor in Dialog | Syncfusion
+title: Render ASP.NET MVC Rich Text Editor in a Dialog | Syncfusion
 description: Learn how to render the ASP.NET MVC Rich Text Editor inside a Dialog and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
