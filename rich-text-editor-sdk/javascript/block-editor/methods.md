@@ -12,6 +12,15 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Block Editor control provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 
+## Prerequisites
+
+The `editor` reference used throughout this document comes from the Block Editor instance:
+
+```typescript
+const editor = new BlockEditor({});
+editor.appendTo('#blockeditor_default');
+```
+
 ## Block Management Methods
 
 ### Adding a block
@@ -22,10 +31,10 @@ Add a new block to the editor at a specified position using the [addBlock](https
 // Add a new paragraph block after a specific block
 const newBlock: BlockModel = {
     id: 'new-block',
-    type: 'Paragraph',
+    blockType: 'Paragraph',
     content: [
         {
-            type: ContentType.Text,
+            contentType: ContentType.Text,
             content: 'This is a newly added block'
         }
     ]
@@ -81,7 +90,7 @@ Use the [getBlockCount](https://ej2.syncfusion.com/documentation/api/blockeditor
 editor.getBlockCount();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -175,7 +184,7 @@ Select all blocks in the editor using the [selectAllBlocks](https://ej2.syncfusi
 editor.selectAllBlocks();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -231,6 +240,8 @@ editor.focusOut();
 You can execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#executetoolbaraction) method. This method is used to apply formatting such as bold, italic, or color to the selected text.
 
 ```typescript
+import { BuiltInToolbar } from '@syncfusion/ej2-blockeditor';
+
 // Apply bold formatting
 editor.executeToolbarAction(BuiltInToolbar.Bold);
 
@@ -262,7 +273,7 @@ editor.disableToolbarItems('bold');
 editor.disableToolbarItems(['bold', 'italic', 'underline']);
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -350,7 +361,7 @@ Print the editor content using the [print](https://ej2.syncfusion.com/documentat
 editor.print();
 ```
 
-Below example demonstrates the usage of the above methods.
+The example below demonstrates the usage of the above methods.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Selection in Vue Rich Text Editor component | Syncfusion
-description: Learn how to select a character range using Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Selection in Vue Rich Text Editor | Syncfusion
+description:  Learn how to select text, nodes, table cells, and content programmatically in the Vue Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
-control: Text Selection
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Selection in Vue Rich Text Editor Component
+# Selection in Vue Rich Text Editor
 
 ## Text selection
 
@@ -16,7 +16,7 @@ The Rich Text Editor supports character range-based text selection using the **S
 
 ### Adding a Slider for character range selection
 
-The Rich Text Editor can be integrated with the **Slider** component to enable precise character range-based text selection. The slider is configured in `range` type, allowing users to select a start and end index within the editor content. When the slider values change, the corresponding text range is highlighted automatically. 
+The Rich Text Editor can be integrated with the **Slider** component to enable precise character range-based text selection. The slider is configured with the `Range` type, allowing users to select a start and end index within the editor content. When the slider values change, the corresponding text range is highlighted automatically. 
 
 This approach is particularly useful for scenarios where exact character-level selection is required for operations such as copying, formatting, or analysis.
 
@@ -243,6 +243,8 @@ The following example demonstrates how to select a table cell programmatically u
 ## Select all content
 
 To select all content within the Rich Text Editor, use the [selectAll](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#selectall) method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
+
+> When all the content is selected, you can use other built-in toolbar commands such as `Bold`, `Italic`, or `Underline` to format the selected content in a single action.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Audios in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property.
+The Rich Text Editor allows you to insert audio from online sources and from the local computer, and then insert it into your content. Audio is configured through the [insertAudioSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property.
 
 ## Configuring the Audio Tool in the Toolbar
 
@@ -103,7 +103,7 @@ The selected audio can be uploaded to the required destination using the control
 {% endtabs %}
 {% endif %}
 
-## Saving Audio to the Server 
+## Saving Audio to the Server
 
 [saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_SaveFormat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
 
@@ -115,7 +115,7 @@ The selected audio can be uploaded to the required destination using the control
 
 You can use the [insertAudioSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertAudioSettings) property, to specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -171,7 +171,7 @@ N> By default, it doesn't support the `UseDefaultCredentials` property; we need 
 
 ## Maximum file size restriction
 
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [InsertAudioSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes..
+You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [InsertAudioSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes.
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started with Vue Rich Text Editor | Syncfusion
+description: Learn how to get started with the Vue Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/vue-components/vue-wysiwyg-rich-text-editor"
 control: Get started 
 platform: rich-text-editor-sdk
@@ -194,7 +194,7 @@ Now, you can start adding the Vue Rich Text Editor component in the application.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21" %}
 
 ## Run the Application
 

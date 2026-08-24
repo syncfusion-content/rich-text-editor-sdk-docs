@@ -15,7 +15,7 @@ The format painter tool enables users to replicate formatting from one text segm
 
 You can add the `FormatPainter` tool in the Rich Text Editor using the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
-Double-clicking the Format Painter toolbar button enables **sticky mode**, allowing multiple formatting applications until the `Escape` key is pressed. In sticky mode, the format painter remains active until the `Escape` key is pressed again to disable it.
+Double-clicking the Format Painter toolbar button enables **sticky mode**, which keeps the format painter active so you can apply the copied formatting to multiple selections. Press the `Escape` key to exit sticky mode.
 
 The following example demonstrates how to add the Format Painter tool to the Rich Text Editor toolbar.
 
@@ -37,9 +37,9 @@ Similarly, with the [DeniedFormats](https://help.syncfusion.com/cr/blazor/Syncfu
 
 | Type | Description        | Selector                           | Usage                                                              |
 |------|--------------------|------------------------------------|--------------------------------------------------------------------|
-| ()   | Class Selector     | h3(e-rte-block-blue-text)          | The class name `e-rte-block-blue-text` of H3 element is not copied. |
-| []   | Attribute Selector | span[title]                        | The title attribute of span element is not copied.                 |
-| {}   | Style Selector     | span{background-color, color}      | The background-color and color styles of span element is not copied. |
+| ()   | Class Selector     | h3(e-rte-block-blue-text)          | The class name `e-rte-block-blue-text` of the H3 element is not copied. |
+| []   | Attribute Selector | span[title]                        | The `title` attribute of the span element is not copied.                 |
+| {}   | Style Selector     | span{background-color, color}      | The `background-color` and `color` styles of the span element are not copied. |
 
 Using the `DeniedFormats` property following styles are denied copying from the selected text such as `h3(e-rte-block-blue-text){background-color,padding}[title];` `li{color};` `span(e-inline-text-highlight)[title];` `strong{color}(e-rte-strong-bg)`.
 
@@ -57,6 +57,6 @@ Below is an example illustrating how to define the `AllowedFormats` and `DeniedF
 
 For more details on keyboard navigation, refer to the [Keyboard support](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support) documentation.
 
-N> The Format Painter retains formatting after application, allowing you to apply the same styles multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
+N> The Format Painter retains formatting after application in sticky mode, allowing you to apply the same styles multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
 Additionally, users can perform the format painter actions programmatically using the [ExecuteCommandAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ExecuteCommandAsync_Syncfusion_Blazor_RichTextEditor_CommandName_) public method.

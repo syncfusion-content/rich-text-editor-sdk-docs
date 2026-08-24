@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Import and Export Content in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Import and Export Content in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in ASP.NET MVC applications.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Importing Content from Microsoft Word
 
-The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, preserving the original formatting and structure. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
+The Rich Text Editor can import content directly from Microsoft Word documents, preserving the original formatting and structure, including headings, lists, tables, and text styles.
 
-To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) using the items property in toolbarSettings.
+Add an `ImportWord` toolbar item by configuring the `items` property of the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items).
 
 The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
 
@@ -73,9 +73,9 @@ The following example demonstrates how to configure `wordImporting` for secure i
 
 ## Exporting Content to PDF and Microsoft Word
 
-The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
+The Rich Text Editor's export functionality converts edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the toolbarSettings [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+Add the `ExportWord` and `ExportPdf` toolbar items using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 

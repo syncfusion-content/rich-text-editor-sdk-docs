@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Clipboard cleanup in Vue Rich text editor component | Syncfusion
-description: Learn here all about Clipboard cleanup in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Clipboard cleanup 
+title: Clipboard Cleanup in Vue Rich Text Editor | Syncfusion
+description: Learn how to clean and customize clipboard content in the Vue Rich Text Editor by removing unwanted styles while preserving formatting.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Clipboard Cleanup in Vue Rich Text Editor Component
+# Clipboard Cleanup in Vue Rich Text Editor
 
 The Rich Text Editor supports automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are automatically removed from the clipboard content while preserving important structural elements such as tables, lists, and images. You can enable this behavior using the [enableClipboardCleanup](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enableClipboardCleanup) property.
 
-> To use Clipboard cleanup feature, inject `ClipboardCleanup` in the provider section.
+> To use ClipboardCleanup feature, inject the `ClipboardCleanup` module in the provider section.
 
-When `enableClipboardCleanup` is set to `true`, copy and cut operations are intercepted to remove unwanted inline styles. When set to `false` the browser’s default copy and cut behavior applies.
+When `enableClipboardCleanup` is set to `true`, copy and cut operations are intercepted to remove unwanted inline styles. When set to `false`, the browser's default copy and cut behavior applies.
 
 > For a cleaner editing experience, `enableClipboardCleanup` is `true` by default.
 
@@ -50,11 +50,11 @@ In this example, the `beforeClipboardWrite` event is used to customize the selec
 
 ### Best Practices
 
-- Always include `ClipboardCleanup` in production application - it’s the #1 way to prevent style explosion.
-- Combine with Paste Cleanup module for even stricter incoming paste handling.
-- Use `beforeClipboardWrite` sparingly — heavy processing can slightly delay `Ctrl+C`.
+- Always include `ClipboardCleanup` in production applications to prevent unwanted style retention.
+- Combine with the Paste Cleanup module for stricter control over incoming paste content.
+- Use `beforeClipboardWrite` judiciously—complex processing can introduce slight delays during copy operations.
 
 ### Common Issues
 
-- “Copied content still has inline styles” → Confirm `ClipboardCleanup` is in providers.
-- “Event not firing” → Make sure you’re using the correct event name `beforeClipboardWrite` (camelCase in Vue).
+- **Copied content still has inline styles** — Verify that `ClipboardCleanup` is included in the provider section.
+- **Event not firing** — Ensure you are using the correct event name `beforeClipboardWrite` with proper camelCase in Vue components.

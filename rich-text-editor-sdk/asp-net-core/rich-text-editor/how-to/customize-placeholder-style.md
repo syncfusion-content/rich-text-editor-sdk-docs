@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Customize Placeholder Style in ASP.NET Core Rich Text Editor | Syncfusion
+title: Customize Placeholder in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize the placeholder text style in the ASP.NET Core Rich Text Editor using CSS classes to modify its appearance.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
-
 
 # Customize Placeholder Text Style in ASP.NET Core Rich Text Editor
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the ASP.NET MVC Rich Text Editor for advanced editing workflows.
+description: Learn how to select text, nodes, table cells, and content programmatically in the ASP.NET MVC Rich Text Editor for advanced editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -40,7 +40,7 @@ This functionality is useful for scenarios where precise text selection is neede
 
 ## Node selection
 
-Node selection allows users to programmatically select entire HTML elements (nodes) such as paragraphs, images, or tables within the Rich Text Editor. This is useful when you want to highlight or manipulate specific content blocks without relying on manual user selection.
+Node selection lets you programmatically select entire HTML elements (nodes) such as paragraphs, images, or tables within the Rich Text Editor. It is useful when you want to highlight or manipulate specific content blocks without manual user selection.
 
 The following example demonstrates how to select a paragraph node programmatically using the browser's native `Range` and `Selection` API.
 
@@ -69,7 +69,7 @@ The following example demonstrates how to select a paragraph node programmatical
 
 ## Cell selection
 
-Cell selection allows users to programmatically select specific table cells within the Rich Text Editor. This is useful for highlighting or manipulating content inside tables without requiring manual user interaction.
+Cell selection lets you programmatically select specific table cells within the Rich Text Editor. It is useful for highlighting or manipulating content inside tables without manual user interaction.
 
 The following example demonstrates how to select a table cell programmatically using the browser's native `Range` and `Selection` APIs.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text formatting in Vue Rich text editor component | Syncfusion
-description: Learn here all about Text formatting in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Text formatting
+title: Text Formatting in Vue Rich Text Editor | Syncfusion
+description: Learn how to format text in the Vue Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting and Structure in the Vue Rich Text Editor Component
+# Text Formatting in Vue Rich Text Editor
 
 ## Basic text styling
 
@@ -26,9 +26,9 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 | StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Applies a line through the text. |toolbarSettings: { items: ['StrikeThrough']}|
 | InlineCode |![InlineCode icon](../images/inlineCode.png) | Formats text as inline code | toolbarSettings: { items: ['InlineCode']} | `<code>inline code</code>`|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Positions text slightly below the normal line |toolbarSettings: { items: ['SubScript']}|
-| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript’']}|
+| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) |  Converts text to lowercase |toolbarSettings: { items: ['LowerCase']}|
-| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase’']}|
+| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase']}|
 
 Please refer to the sample below to add these basic text styling options in the Rich Text Editor.
 
@@ -432,7 +432,7 @@ You can customize the format painter tool in the Rich Text Editor using the [for
 
 The [allowedFormats](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/formatpaintersettingsmodel#allowedformats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
-Similarly, with the [deniedFormats](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/formatpaintersettingsmodel#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
+Similarly, with the [deniedFormats](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/formatpaintersettingsmodel#deniedformats) property, you can utilize the selectors to prevent specific formats from being pasted onto the selected text. The table below illustrates the selectors and their respective usage.
 
 | Type | Description        | Selector                                                | Usage                                                                  |
 |------|--------------------|---------------------------------------------------------|------------------------------------------------------------------------|

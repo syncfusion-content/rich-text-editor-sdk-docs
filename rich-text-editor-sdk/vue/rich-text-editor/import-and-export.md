@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Import/Export in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about  Import/Export in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control:  Import/Export
+title:  Import and Export Content in Vue Rich Text Editor | Syncfusion
+description: Learn how to import Word documents and export Rich Text Editor content to PDF and Word formats in Vue applications.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Content Import/Export in Vue Rich Text Editor component
+# Import and Export Content in Vue Rich Text Editor
 
 ## Importing content from Microsoft Word
 
@@ -158,7 +158,7 @@ public class RichTextEditorController : Controller
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the toolbarSettings [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 

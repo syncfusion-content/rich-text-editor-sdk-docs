@@ -22,7 +22,7 @@ You can render an `Image` block by setting the [blockType](https://ej2.syncfusio
 
 #### Global image settings
 
-You can configure global settings for image blocks using the [imageBlockSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#imageblocksettings) input on the Block Editor component. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [imageBlockSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor#imageblocksettings) property on the Block Editor component. This ensures consistent behavior for image uploads, resizing, and display.
 
 The `imageBlockSettings` property supports the following options:
 

@@ -107,8 +107,8 @@ The following text formatting options are available in Markdown mode:
 | Italic | `*text*` | `*italic text*` |
 | Strikethrough | `~~text~~` | `~~strikethrough~~` |
 | Inline Code | `` `code` `` | `` `code` `` |
-| Subscript | `~text~` | `H~2~O` |
-| Superscript | `^text^` | `E=mc^2^` |
+| Subscript | (selection formatting) | Converts selected text to Subscript |
+| Superscript | (selection formatting) | Converts selected text to Superscript ||
 | Uppercase | (selection formatting) | Converts selected text to uppercase |
 | Lowercase | (selection formatting) | Converts selected text to lowercase |
 

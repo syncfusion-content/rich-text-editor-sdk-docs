@@ -13,9 +13,9 @@ Inline editing is a feature of the Rich Text Editor that allows users to edit co
 
 Enable inline editing in the Rich Text Editor by using the [InlineMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InlineMode) with the `Enable` property as `true`. This configuration activates the feature, allowing direct content editing within its displayed context.
 
-## Toolbar on Selection
+## Toolbar on selection
 
-The inline toolbar in the Rich Text Editor is triggered based on the [OnSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorInlineMode.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorInlineMode_OnSelection) option within the inlineMode settings. 
+The inline toolbar in the Rich Text Editor is triggered based on the [OnSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorInlineMode.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorInlineMode_OnSelection) option within the `InlineMode` settings.
 
 When `OnSelection` is set to `true`, the toolbar appears only when text is selected. If `OnSelection` is set to `false`, the inline toolbar appears when editable text is focused, regardless of selection.
 

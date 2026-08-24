@@ -9,7 +9,8 @@ documentation: ug
 
 # Emoji Picker in the ASP.NET Core Rich Text Editor
 
-An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
+An emoji picker is a tool for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
+
 
 ## Configuring emoji picker tool in the toolbar
 
@@ -28,9 +29,9 @@ The following code example shows how to customize icons in the emoji picker.
 {% endhighlight %}
 {% endtabs %}
 
-Additionally, you have the option to customize the icons of toolbar items using the `iconCss` and [code](../api/rich-text-editor/emojiIconsSet/#code) properties. The `iconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
+Additionally, you can customize the icons of toolbar items using the `iconCss` and `code` properties. The `iconCss` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
 
-When both `iconCSS` and `code` properties are provided, the `iconCSS` property takes precedence in determining the appearance of the toolbar item icon.
+When both `iconCss` and `code` properties are provided, the `iconCss` property takes precedence in determining the appearance of the toolbar item icon.
 
 Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorEmojiSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorEmojiSettings_ShowSearchBox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
 

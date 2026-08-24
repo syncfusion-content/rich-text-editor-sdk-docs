@@ -9,31 +9,29 @@ documentation: ug
 
 # Style and Appearance in ASP.NET MVC Rich Text Editor
 
-The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
+Use the following CSS structures to customize the editor's appearance.
 
 ## Styling the placeholder text
 
-Use the following CSS to customize the default color in the Rich Text Editor's placeholder.
+Use the following CSS to customize the placeholder text color:
 
-```CSS
-
+```css
 .e-richtexteditor .e-rte-placeholder {
     color: blue;
     font-family: monospace;
 }
-
 ```
 
 ## Styling the editor content area
 
-Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
+Use the following CSS to modify the default style of the editor's content area, including font properties, background, and text color.
 
-```CSS
+```css
 /* To change font family and font size */
 .e-richtexteditor .e-rte-content .e-content,
 .e-richtexteditor .e-source-content .e-content {
     font-size: 20px;
-    font-family: Segoe ui;
+    font-family: "Segoe UI";
 }
 
 /* To change font color and content background */
@@ -46,10 +44,9 @@ Use the following CSS to modify the default style of the Rich Text Editor's cont
 
 ## Customizing the toolbar appearance
 
-Use the following CSS to customize the default color in the Rich Text Editor's toolbar icon.
+Use the following CSS to customize the toolbar icon color.
 
-
-```CSS
+```css
 /* To change font color for toolbar icon */
 .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-icons,
 .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-icons:active {
@@ -77,15 +74,14 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 
 ## Styling the character count display
 
-Use the following CSS to customize the default color in the Rich Text Editor's character count.
+Use the following CSS to customize the character count styling:
 
-```CSS
-/* To change font color, font family, font size and opacity  */
+```css
 .e-richtexteditor .e-rte-character-count {
     color: red;
-    font-family: segoe ui;
+    font-family: "Segoe UI";
     font-size: 18px;
-    opacity: 00.54;
+    opacity: 0.54;
     padding-bottom: 2px;
     padding-right: 14px;
 }
@@ -93,20 +89,18 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
 
 ## Modifying the editor container border
 
-Use the following CSS to customize the border color in the Rich Text Editor's container.
+Use the following CSS to customize the editor container border.
 
-```CSS
-
-.e-richtexteditor .e-rte-container{
+```css
+.e-richtexteditor .e-rte-container {
     border: 2px solid #454bc1;
     border-radius: 4px;
 }
-
 ```
 
 ## Highlighting specific text programmatically
 
-Programmatically highlight a portion of the text in the editor by setting the background color. This can be achieved by applying a background style to the selected text using the Rich Text Editor's `executeCommand` method.
+Programmatically highlight a portion of the text in the editor by setting the background color. Apply a background style to the selected text using the Rich Text Editor's `executeCommand` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

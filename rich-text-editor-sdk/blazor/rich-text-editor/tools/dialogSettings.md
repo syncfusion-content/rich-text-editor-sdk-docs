@@ -35,5 +35,5 @@ The following example demonstrates how to configure dialog settings in the Blazo
 
 ## See also
 
-* [How to edit the quick toolbar settings](../toolbar#audio-quick-toolbar)
-* [How to use link editing option in the toolbar items](../tools#insert-link)
+* [How to configure the audio tool in the toolbar](./audio)
+* [How to use link editing options in the toolbar items](./built-in-tools#hyperlinks)

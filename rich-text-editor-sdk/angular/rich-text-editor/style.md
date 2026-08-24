@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Style and Appearance in Angular Rich Text Editor
 
-The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
+Below are the CSS selectors you can use to customize the Rich Text Editor's appearance.
 
-## Styling the placeholder text
+## Style the placeholder text
 
 Use the following CSS to customize the default color in the Rich Text Editor's placeholder.
 
@@ -25,7 +25,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's p
 
 ```
 
-## Styling the editor content area
+## Style the editor content area
 
 Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
 
@@ -45,7 +45,7 @@ Use the following CSS to modify the default style of the Rich Text Editor's cont
 }
 ```
 
-## Customizing the toolbar appearance
+## Customize the toolbar appearance
 
 Use the following CSS to customize the default color in the Rich Text Editor's toolbar icon.
 
@@ -75,7 +75,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 }
 ```
 
-## Styling the character count display
+## Style the character count display
 
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 
@@ -85,13 +85,13 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
     color: red;
     font-family: segoe ui;
     font-size: 18px;
-    opacity: 00.54;
+    opacity: 0.54;
     padding-bottom: 2px;
     padding-right: 14px;
 }
 ```
 
-##  Modifying the editor container border
+## Modify the editor container border
 
 Use the following CSS to customize the border color in the Rich Text Editor's container.
 
@@ -104,7 +104,7 @@ Use the following CSS to customize the border color in the Rich Text Editor's co
 
 ```
 
-## Highlighting specific text programmatically
+## Highlight specific text programmatically
 
 Programmatically highlight a portion of the text in the editor by setting the background color. This can be achieved by applying a background style to the selected text using the Rich Text Editor's `executeCommand` method.
 
@@ -123,4 +123,5 @@ Programmatically highlight a portion of the text in the editor by setting the ba
 
 ## See also
 
-* [Text Styling and Formatting](./tools/styling-tools)
+* [Text styling and formatting](./tools/styling-tools)
+* [Style encapsulation](./style-encapsulation.md)

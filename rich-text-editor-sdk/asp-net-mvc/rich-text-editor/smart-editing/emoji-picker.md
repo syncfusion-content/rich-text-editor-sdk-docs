@@ -9,13 +9,13 @@ documentation: ug
 
 # Emoji Picker in the ASP.NET MVC Rich Text Editor
 
-An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
+An emoji picker is a tool for adding emojis or emoticons to text easily. It usually appears as a small window or panel that showcases a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking it or typing its name into a search bar.
 
 ## Configuring Emoji Picker Tool with Custom Emojis in the Toolbar
 
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
-By default, a predefined set of emojis is configured. However, these icons can be customized according to specific needs by using the  [EmojiPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EmojiPickerSettings) property.
+By default, a predefined set of emojis is configured. However, these emojis can be customized according to specific needs by using the [EmojiPickerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EmojiPickerSettings) property.
 
 The following code example shows how to customize icons in the emoji picker.
 
@@ -28,9 +28,9 @@ The following code example shows how to customize icons in the emoji picker.
 {% endhighlight %}
 {% endtabs %}
 
-Additionally, you have the option to customize the icons of toolbar items using the `IconCss` and `Code` properties. The `IconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `Code` property enables you to specify the Unicode character code for the icon.
+Additionally, you can customize the icons of toolbar items using the `IconCss` and `Code` properties. The `IconCss` property allows you to define a custom CSS class for the toolbar item icon, while the `Code` property enables you to specify the Unicode character code for the icon.
 
-When both `IconCSS` and `Code` properties are provided, the `IconCSS` property takes precedence in determining the appearance of the toolbar item icon.
+When both `IconCss` and `Code` properties are provided, the `IconCss` property takes precedence in determining the appearance of the toolbar item icon.
 
 Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [ShowSearchBox](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorEmojiSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorEmojiSettings_ShowSearchBox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
 

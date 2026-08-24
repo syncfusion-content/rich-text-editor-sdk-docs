@@ -13,7 +13,7 @@ The hyperlink can be inserted into the editor for quick access to the related in
 
 ## Insert link
 
-Point the cursor anywhere within the editor where you want to insert the link. It is also possible to select a text or an image within the editor that can be converted to the hyperlink. Click the insert hyperLink tool on the toolbar. The insert link dialog will open. The dialog has the following options.
+Point the cursor anywhere within the editor where you want to insert the link. It is also possible to select a text or an image within the editor that can be converted to a hyperlink. Click the `InsertLink` tool on the toolbar to open the insert link dialog. The dialog has the following options.
 
 ![Blazor Rich Text Editor insert link](../images/blazor-richtexteditor-insert-link.webp)
 
@@ -60,4 +60,4 @@ Add the custom tools on the selected link inside the Rich Text Editor through th
 
 ## See also
 
-* [How to insert link editing option in the toolbar items](../toolbar#link-quick-toolbar)
+* [How to use link editing options in the toolbar items](./built-in-tools#hyperlinks)

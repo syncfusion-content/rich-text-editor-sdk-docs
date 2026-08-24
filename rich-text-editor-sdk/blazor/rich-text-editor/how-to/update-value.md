@@ -7,9 +7,9 @@ control: RichTextEditor
 documentation: ug
 ---
 
-# Capture ctrl+s to update the value
+# Capture Ctrl+S to update the value
 
-To achieve this, the `onkeydown` event can be bound to the `div` element that contains the Rich Text Editor. When the `Ctrl + S` key press is detected, the [GetXhtmlAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetXhtmlAsync) method is called to update the value, and the content is then saved in the required database.
+To achieve this, the `onkeydown` event can be bound to the `div` element that contains the Rich Text Editor. When the `Ctrl + S` key press is detected, the [GetXhtmlAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetXhtmlAsync) method is called to update the value, and the content can then be persisted to the required database.
 
 ```cshtml
 
@@ -31,7 +31,7 @@ To achieve this, the `onkeydown` event can be bound to the `div` element that co
                     e.preventDefault();  // Prevent default Ctrl+S save behavior
                 }
             });
-        } 
+        }
     };
 </script>
 

@@ -100,12 +100,12 @@ Apply the following CSS to modify the default color of toolbar icons in the Rich
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 
 ```css
-/* To change font color, font family, font size and opacity  */
+/* To change font color, font family, font size and opacity */
 .e-richtexteditor .e-rte-character-count {
     color: red;
-    font-family: segoe ui;
+    font-family: "Segoe UI";
     font-size: 18px;
-    opacity: 00.54;
+    opacity: 0.54;
     padding-bottom: 2px;
     padding-right: 14px;
 }
@@ -213,4 +213,10 @@ Now, add the RichTextEditor component in the razor file. The RichTextEditor comp
 
 ![Blazor RichTextEditor with highlight the specific lines](./images/blazor-richtexteditor-highlight-line.webp)
 
-N> Refer to the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. Also, explore [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Execute Command in Rich Text Editor](./exec-command)
+* [Events in Rich Text Editor](./events)
+* [Style encapsulation](./style-encapsulation)
+
+N> Refer to the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. Also, explore [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
