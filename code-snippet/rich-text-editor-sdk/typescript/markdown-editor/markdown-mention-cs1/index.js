@@ -243,5 +243,3 @@ function fullPreview() {
     mdsource.parentElement.title = 'Code View';
   }
 }
-
-loadExternalFile();
