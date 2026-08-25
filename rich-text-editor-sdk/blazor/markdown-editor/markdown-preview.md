@@ -16,7 +16,7 @@ The Blazor Markdown Editor includes a live preview panel that renders the Markdo
 
 ## Enable Markdown Preview in Blazor Markdown Editor  
 
-To enable the Markdown preview feature, the `Markdig` package is used to convert Markdown content into HTML. The following example demonstrates how to enable Markdown-to-HTML preview in the Blazor Markdown Editor.
+To enable the Markdown preview feature, the Syncfusion Markdown package is used to convert Markdown content into HTML. The following example demonstrates how to enable Markdown-to-HTML preview in the Blazor Markdown Editor.
 
 {% tabs %}
 {% highlight razor %}
