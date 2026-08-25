@@ -80,7 +80,7 @@ The following example shows a recommended Content Security Policy configuration 
                img-src 'self' data: blob:;" />
 ```
 
-In a Vue application, the recommended way to configure a Content Security Policy is through response headers (for example, by using a server-side middleware such as Express, Nginx, or a hosting-provider configuration such as Vercel or Netlify) rather than the `<meta>` tag. The header-based policy is applied by the browser before any HTML is parsed and is the most secure approach.
+In a Vue application, the recommended way to configure a Content Security Policy is through response headers (for example, by using a server-side middleware such as Express, Nginx, or a hosting-provider configuration) rather than the `<meta>` tag. The header-based policy is applied by the browser before any HTML is parsed and is the most secure approach.
 
 Example for an Express / Node server:
 
