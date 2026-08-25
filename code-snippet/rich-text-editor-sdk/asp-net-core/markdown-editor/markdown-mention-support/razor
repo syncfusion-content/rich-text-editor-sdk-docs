@@ -114,9 +114,10 @@
 
 
 <script>
-    var rteObj, textArea, mdsource, mentionObj;
+    var rteObj, textArea, mdsource, mentionObj, markdownConverter;
     function created() {
         rteObj = this;
+        markdownConverter = ej.markdownconverter.MarkdownConverter;
         textArea = rteObj.contentModule.getEditPanel();
         textArea.addEventListener('keyup', function (e) {
             markdownConversion();
@@ -133,12 +134,6 @@
                     'UnorderedList', 'CreateTable', 'CreateLink', 'Image', 'Formats', 'Blockquote', 'Undo', 'Redo', 'SuperScript', 'SubScript']);
             }
         });
-    }
-    loadExternalFile();
-    function loadExternalFile() {
-        var script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-        document.getElementsByTagName('head')[0].appendChild(script);
     }
     function fullPreview() {
         var id = rteObj.getID() + 'html-preview';
@@ -164,7 +159,7 @@
             }
             textArea.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = markdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
             mdsource.parentElement.title = 'Code View';
         }
     }
@@ -172,7 +167,7 @@
         if (mdsource.classList.contains('e-active')) {
             var id = rteObj.getID() + 'html-preview';
             var htmlPreview = rteObj.element.querySelector('#' + id);
-            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = markdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
         }
     }
     function MentionCreated() {
