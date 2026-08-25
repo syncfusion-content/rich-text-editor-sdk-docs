@@ -19,7 +19,7 @@ RichTextEditor supports markdown editing when the editorMode set as **markdown**
 
 We can add our own custom formation syntax for the Markdown formation.
 
-The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content";
+The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content";
         return View();
     }
 }

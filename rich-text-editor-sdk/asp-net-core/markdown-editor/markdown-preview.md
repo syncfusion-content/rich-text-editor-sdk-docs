@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Preview in ASP.NET Core Markdown Editor | Syncfusion
-description: Learn how to enable Markdown preview in the ASP.NET Core Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
+description: Learn how to enable Markdown preview in ASP.NET Core Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -13,7 +13,7 @@ The Markdown Editor provides an instant preview of Markdown changes, allowing us
 
 ## Enable Markdown Preview in ASP.NET Core Markdown Editor  
 
-To enable the Markdown preview feature, integrate the third-party [Marked](https://marked.js.org/) library, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Markdown Editor.
+To enable the Markdown preview feature, the Syncfusion `MarkdownConverter` is used to convert Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Markdown Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
