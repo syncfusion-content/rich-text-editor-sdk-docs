@@ -14,7 +14,7 @@ The Markdown Editor provides an instant preview of Markdown changes, allowing us
 
 ## Enable Markdown Preview in Vue Markdown Editor  
 
-To enable the Markdown preview feature, integrate the third-party [Marked](https://marked.js.org/) library, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion Vue Markdown Editor.
+To enable the Markdown preview feature, use the Syncfusion `MarkdownConverter` from the `@syncfusion/ej2-markdown-converter` package, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion Vue Markdown Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
