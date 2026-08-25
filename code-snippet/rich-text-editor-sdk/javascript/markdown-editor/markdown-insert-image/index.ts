@@ -10,7 +10,7 @@ import {
   Toolbar,
 } from '@syncfusion/ej2-richtexteditor';
 import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
-import Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 
 RichTextEditor.Inject(Link, Image, MarkdownEditor, Table, Toolbar);
 
@@ -19,7 +19,7 @@ let mdsource: HTMLElement;
 let htmlPreview: HTMLElement;
 
 let markdownRTE: RichTextEditor = new RichTextEditor({
-  value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.`,
+  value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content.`,
   height: 250,
   editorMode: 'Markdown',
   toolbarSettings: {
@@ -56,9 +56,10 @@ function markDownConversion(): void {
   if (mdsource.classList.contains('e-active')) {
     let id: string = markdownRTE.getID() + 'html-view';
     let htmlPreview: HTMLElement = markdownRTE.element.querySelector('#' + id);
-    htmlPreview.innerHTML = Marked(
-      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
-    );
+    htmlPreview.innerHTML = MarkdownConverter.toHtml(
+      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value,
+      { lineBreak: true }
+    ) as string;
   }
 }
 function fullPreview(): void {
@@ -88,9 +89,10 @@ function fullPreview(): void {
     }
     textArea.style.display = 'none';
     htmlPreview.style.display = 'block';
-    htmlPreview.innerHTML = Marked(
-      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value
-    );
+    htmlPreview.innerHTML = MarkdownConverter.toHtml(
+      (markdownRTE.contentModule.getEditPanel() as HTMLTextAreaElement).value,
+      { lineBreak: true }
+    ) as string;
     mdsource.parentElement.title = 'Code View';
   }
 }
