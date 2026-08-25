@@ -14,7 +14,7 @@ The Markdown Editor provides an instant preview of Markdown changes, allowing us
 
 ## Enable Markdown Preview in React Markdown Editor  
 
-To enable the Markdown preview feature, integrate the third-party [Marked](https://marked.js.org/) library, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion React Markdown Editor.example demonstrates how to enable and preview Markdown changes within the Rich Text Editor.
+To enable the Markdown preview feature, use the Syncfusion `MarkdownConverter` from the `@syncfusion/ej2-markdown-converter` package, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion React Markdown Editor.
 
 `[Class-component]`
 

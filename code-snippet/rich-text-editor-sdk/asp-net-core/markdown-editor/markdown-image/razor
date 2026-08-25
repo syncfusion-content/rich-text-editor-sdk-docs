@@ -5,9 +5,10 @@
 </div>
 
 <script type="text/javascript">
-    var rteObj, textArea, mdsource;
+    var rteObj, textArea, mdsource, markdownConverter;
     function created() {
         rteObj = this;
+        markdownConverter = ej.markdownconverter.MarkdownConverter;
         rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
         rteObj.dataBind();
         textArea = rteObj.contentModule.getEditPanel();
@@ -25,17 +26,11 @@
             }
         });
     }
-    loadExternalFile();
-    function loadExternalFile() {
-        var script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-        document.getElementsByTagName('head')[0].appendChild(script);
-    }
     function markdownConversion() {
         if (mdsource.classList.contains('e-active')) {
             var id = rteObj.getID() + 'html-preview';
             var htmlPreview = rteObj.element.querySelector('#' + id);
-            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = markdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
         }
     }
     function fullPreview() {
@@ -62,7 +57,7 @@
             }
             textArea.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = markdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
             mdsource.parentElement.title = 'Code View';
         }
     }

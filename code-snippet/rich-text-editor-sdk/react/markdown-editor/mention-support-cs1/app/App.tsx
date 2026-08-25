@@ -1,11 +1,15 @@
 import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
 import { Image, Inject, Link, Table, MarkdownEditor, IToolbarItems, ToolbarSettingsModel, MarkdownFormatter, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
-import * as Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import { MentionComponent } from '@syncfusion/ej2-react-dropdowns';
 
 class App extends React.Component<{},{}> {
     private rteObj: RichTextEditorComponent;
+    constructor(props: {}) {
+      super(props);
+      this.rendereComplete = this.rendereComplete.bind(this);
+  }
     private mention: MentionComponent;
 
     // set the value to Rich Text Editor
@@ -53,7 +57,7 @@ class App extends React.Component<{},{}> {
         if (this.mdsource.classList.contains('e-active')) {
             let id: string = this.rteObj.getID() + 'html-view';
             let htmlPreview: HTMLElement = this.rteObj.element.querySelector('#' + id);
-            htmlPreview.innerHTML = Marked.marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true }) as string;
         }
     }
     public fullPreview() {
@@ -73,7 +77,7 @@ class App extends React.Component<{},{}> {
             }
             this.textArea.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = Marked.marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true }) as string;
             this.mdsource.parentElement.title = 'Code View';
         }
     }
