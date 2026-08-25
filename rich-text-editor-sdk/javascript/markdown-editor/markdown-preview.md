@@ -14,7 +14,7 @@ The Markdown Editor provides an instant preview of Markdown changes, allowing us
 
 ## Enable Markdown Preview in JavaScript Markdown Editor  
 
-To enable the Markdown preview feature, integrate the third-party [Marked](https://marked.js.org/) library, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Markdown Editor.
+To enable the Markdown preview feature, the Syncfusion `MarkdownConverter` is used to convert Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Markdown Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
