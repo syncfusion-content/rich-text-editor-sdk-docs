@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Toolbars in Blazor Rich Text Editor
 
-The Rich text editor has quick toolbars that are open as context-menu on clicking the image, link, audio, video and table elements. By default, the below quick toolbar items show on click on the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
+The Rich Text Editor has quick toolbars that open as context menus when the user clicks image, link, audio, video, and table elements. By default, the below quick toolbar items show when the user clicks the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
 
 | Target Element | Default Quick Toolbar items |
 |----------------|---------|
@@ -18,13 +18,13 @@ The Rich text editor has quick toolbars that are open as context-menu on clickin
 | [Table](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#fields) | TableHeader, TableRows, TableColumns, BackgroundColor, TableRemove, Alignments, TableCellVerticalAlign, Styles |
 | [Audio](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.AudioToolbarCommand.html#fields) | AudioReplace, AudioRemove, AudioLayoutOption |
 | [Video](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.VideoToolbarCommand.html#fields) | VideoReplace, VideoAlign, VideoRemove, VideoLayoutOption, VideoDimension |
-| [Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.VideoToolbarCommand.html#fields) | There are no default items provided. It supports all toolbar items. |
+| [Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) | There are no default items provided. It supports all toolbar items. |
 
 ## Image quick toolbar
 
 Customize the inserted image using the [RichTextEditorQuickToolbarSettings.Image](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Image) property. The image quick toolbar has the following items.
 
-| Image Toolabr items | Description |
+| Image Toolbar items | Description |
 | --------------------| ------------- |
 | [Replace](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ImageToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ImageToolbarCommand_Replace) | Can replace the image with some other image |
 | [Align](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ImageToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ImageToolbarCommand_Align) | Align the image with left, right and justify |
@@ -83,7 +83,7 @@ The table quick toolbar appears when clicking on a table. You can customize the 
 | [BackgroundColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_BackgroundColor) | Can be set each table cell background color |
 | [TableRemove](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableRemove) | Can be delete the entire table from editor |
 | [Alignments](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_Alignments) |  Can be aligned the table content|
-| [Styles](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_Alignments) | Can be style the table border |
+| [Styles](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_Styles) | Applies a predefined table border style |
 | [TableCellVerticalAlign](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableCellVerticalAlign) | Can be used to set the vertical alignment of content within the selected table cells |
 | [TableCell](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableCell) | Provides options to merge or split table cells |
 | [TableEditProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableEditProperties) | Allows editing of table properties such as size, border, and alignment |
@@ -122,7 +122,7 @@ Customize the inserted audio using the [RichTextEditorQuickToolbarSettings.Audio
 
 ## Video quick toolbar
 
-Customize the inserted video using the [RichTextEditorQuickToolbarSettings.video](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) property. The video quick toolbar has the following items.
+Customize the inserted video using the [RichTextEditorQuickToolbarSettings.Video](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) property. The video quick toolbar has the following items.
 
 | Tools | Description |
 |----------------|--------------------------------------|
@@ -144,11 +144,9 @@ Customize the inserted video using the [RichTextEditorQuickToolbarSettings.video
 
 ![Blazor RichTextEditor video quick toolbar](./images/blazor-richtexteditor-video-quick-toolbar.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to knows how to render and configure the rich text editor tools.
-
 ## Text quick toolbar
 
-By activating the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Rich Text Editor offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus on editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
+By setting the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Rich Text Editor offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
 
 Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/tools/built-in-tools)
 
@@ -187,3 +185,9 @@ Refer to the following link for a complete list of available toolbar items: [Bui
 {% endtabs %}
 
 ![Blazor RichTextEditor removed default toolbar items](./images/blazor-richtexteditor-text-quick-toolbar.webp)
+
+## See also
+
+* [Toolbar customization](./tools/built-in-tools)
+* [Events in Rich Text Editor](./events)
+* [Accessibility in Rich Text Editor](./accessibility)

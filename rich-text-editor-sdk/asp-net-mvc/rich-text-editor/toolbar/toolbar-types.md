@@ -11,16 +11,14 @@ documentation: ug
 
 The Syncfusion ASP.NET MVC Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
 
-To learn about the different types of toolbars in the ASP.NET MVC Rich Text Editor, watch this video:
+The Rich Text Editor allows you to configure different toolbar types using the [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Type) field in the [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The available types are:
 
-{% youtube "youtube:https://www.youtube.com/watch?v=09tBgKpjgjU"%}
+1. `Expand`
+2. `MultiRow`
+3. `Scrollable`
+4. `Popup`
 
-The Rich Text Editor allows you to configure different types of toolbar using [type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Type) field in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The types of toolbar are:
-
-1. Expand
-2. MultiRow
-3. Scrollable
-4. Popup
+The default value of `type` is `Expand`.
 
 ## Expanding the toolbar
 
@@ -76,7 +74,7 @@ Setting the `type` as `MultiRow` in [`toolbarSettings`](https://help.syncfusion.
 
 ## Implementing a scrollable toolbar
 
-Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) will display the toolbar items in a single line, enabling horizontal scrolling in the toolbar.
+Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) keeps all toolbar items in a single row with horizontal scrolling.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -103,7 +101,7 @@ Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.
 
 ## Configuring a popup toolbar
 
-Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
+Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) groups overflowing toolbar items into a popup container, optimizing the layout for limited space and smaller screens.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

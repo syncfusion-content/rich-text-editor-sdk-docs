@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Cursor in JavaScript Rich Text Editor
 
-This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, we have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
+This can be achieved by using the `setRange` method on a `NodeSelection` instance in the Rich Text Editor. In the following sample, the text node (at a specific location in the Rich Text Editor content) is passed to the `setStart` method, and the resulting range is passed to the `setRange` method of the Rich Text Editor.
 
 {% if page.publishingplatform == "typescript" %}
 

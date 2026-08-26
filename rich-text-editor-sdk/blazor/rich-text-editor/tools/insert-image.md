@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Insert image in Rich Text Editor
+# Insert Images in Blazor Rich Text Editor
 
 ## Inserting images from web urls
 
@@ -19,7 +19,7 @@ To insert an image from an online source like Google, Bing, and more, enable the
 
 Through the browse option in the image dialog, select the image from the local machine and insert it into the Rich Text Editor content.
 
-If the path field is not specified in [RichTextEditorImageSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html), the image will be converted to `base64`, or a `blob` URL, and the generated URL will be set as the `src` property of the `<img>` tag as follows:
+If the path field is not specified in [RichTextEditorImageSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html), the image will be converted to a `base64` or `blob` URL, and the generated URL will be set as the `src` property of the `<img>` tag as follows:
 
 The image selected from the local machine will be uploaded and saved to the specified location.
 
@@ -243,7 +243,7 @@ Using the [RichTextEditorImageSettings.Path](https://help.syncfusion.com/cr/blaz
 
 ### Image save format
 
-By default, the Rich Text Editor inserts the images in [Blob](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SaveFormat.html#Syncfusion_Blazor_RichTextEditor_SaveFormat_Blob) format, but you can also change the save format by setting the [RichTextEditorImageSettings.SaveFormat](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property as `SaveFormat.Base64`.
+By default, the Rich Text Editor inserts the images in [Blob](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SaveFormat.html#Syncfusion_Blazor_RichTextEditor_SaveFormat_Blob) format, but you can also change the save format by setting the [RichTextEditorImageSettings.SaveFormat](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property to `SaveFormat.Base64`.
 
 {% tabs %}
 {% highlight razor %}
@@ -259,7 +259,7 @@ By default, the Rich Text Editor inserts the images in [Blob](https://help.syncf
 
 ## Restricting maximum image file size
 
-Using the Rich Text Editor's [RichTextEditorImageSettings.MaxFileSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property, you can get the image size before uploading and restrict the image to upload when the given image size is greater than the allowed size.
+Using the Rich Text Editor's [RichTextEditorImageSettings.MaxFileSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property, you can validate the image size before uploading and restrict the upload when the image size exceeds the allowed limit. The value is specified in bytes.
 
 In the following code, the image size has been validated before uploading and it has been determined whether the image has been uploaded or not.
 
@@ -291,7 +291,7 @@ In the following code, the image size has been validated before uploading and it
 
 N> You can't restrict while uploading an image as a hyperlink in the insert image dialog. When inserting images using the link, the editor does not allow you to limit the image size. You could not identify the image file size when the image was provided as a link.
 
-## Delete image 
+## Delete image
 
 To delete an image from the Rich Text Editor, select the image and click the `Remove` tool from the quick toolbar. It will delete the image from the Rich Text Editor content.
 
@@ -491,7 +491,7 @@ When you click the `Image Caption` button, the image is wrapped in an image elem
 
 ## Setting image display position
 
-Configure the default display behavior for inserted images when it is inserted in the Rich Text Editor using the [RichTextEditorImageSettings.Display](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_Display) property.
+Configure the default display behavior for inserted images using the [RichTextEditorImageSettings.Display](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorImageSettings_Display) property.
 
 N> It has two possible options: `Inline` and `Break`.
 

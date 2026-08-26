@@ -9,7 +9,7 @@ documentation: ug
 
 # Slash Commands in ASP.NET Core Rich Text Editor
 
-The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
+The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the `/` character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
 ## Enabling the slash menu
 

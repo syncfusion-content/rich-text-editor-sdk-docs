@@ -370,7 +370,7 @@ To localize the editor’s strings with your own localization, copy the default 
         'removeTable': "Tabelle entfernen",
         'tableHeader': "Kopfzeile",
         'tableRemove': "Tabelle löschen",
-        'tableCellBackgroun': "Tabellenzellenhintergrund",
+        'tableCellBackground': "Tabellenzellenhintergrund",
         'tableEditProperties': "Tabelle Eigenschaften bearbeiten",
         'styles': "Stile",
         'insertColumnLeft': "Spalte links einfügen",

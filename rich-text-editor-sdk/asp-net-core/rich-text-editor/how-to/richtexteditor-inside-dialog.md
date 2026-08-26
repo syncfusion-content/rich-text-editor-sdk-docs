@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Render Rich Text Editor in ASP.NET Core Dialog | Syncfusion
+title: Render the ASP.NET Core Rich Text Editor in a Dialog | Syncfusion
 description: Learn how to render the ASP.NET Core Rich Text Editor inside a Dialog and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Render Rich Text Editor in ASP.NET Core Dialog
+# Render the ASP.NET Core Rich Text Editor in a Dialog
 
-When rendering the Rich Text Editor inside a Dialog Control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
+When rendering the Rich Text Editor inside a Dialog control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width, causing the toolbar to render incorrectly and appear above the edit area.
 
-To resolve this issue, we can utilize the `refreshUI` method of the Rich Text Editor in conjunction with the [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
+To resolve this issue, call the `refreshUI` method of the Rich Text Editor in the [open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event of the Dialog. This ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog becomes visible.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

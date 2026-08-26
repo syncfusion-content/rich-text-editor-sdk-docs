@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Videos in ASP.NET Core Rich Text Editor
 
-The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property.
+The Rich Text Editor allows you to insert videos from online sources and from the local computer into your content. Video is configured through the [insertVideoSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property.
 
 ## Configuring the video tool in the toolbar
 
@@ -88,7 +88,7 @@ Configure [insertVideoSettings.removeUrl](https://help.syncfusion.com/cr/aspnetc
 
 Set the [insertVideoSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
 
-> If you want to insert lower-sized video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
+> If you want to insert smaller video files in the editor and don't require a specific physical location for saving the video, you can save the format as `Base64`.
 
 In the following code blocks, you can insert the video files which are saved in the specified path.
 
@@ -120,7 +120,7 @@ In the following code blocks, you can insert the video files which are saved in 
 
 You can use the [insertVideoSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property to specify the server handler to upload the selected video. Then, by binding the [fileUploadSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,7 +205,7 @@ In the following example, the video size has been validated before uploading and
 
 ## Video replacement functionality
 
-Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
+Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `videoReplace` option. You can replace the video file either by using the embedded code, the web URL, or the browse option in the video dialog.
 
 ![Rich Text Editor Embed Video replace](../images/video-replace-embed.png)
 
@@ -213,7 +213,7 @@ Once a video file has been inserted, you can replace it using the Rich Text Edit
 
 ## Deleting video
 
-To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` button from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [insertVideoSettings.removeUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_RemoveUrl) is given.
+To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` button from the quick toolbar. It deletes the video from the Rich Text Editor content and from the service location if the [insertVideoSettings.removeUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_RemoveUrl) is configured.
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
@@ -292,7 +292,7 @@ In the following sample, you can see feature demo.
 
 ### Disabling Drag and Drop for Videos
 
-You can prevent drag-and-drop action by setting the actionBegin argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent the drag-and-drop action by setting the `cancel` property of the `actionBegin` event arguments to `true`. The following code shows how to prevent the drag-and-drop.
 
 <script>
 

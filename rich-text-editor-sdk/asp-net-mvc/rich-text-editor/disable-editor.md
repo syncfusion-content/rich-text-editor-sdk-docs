@@ -9,11 +9,11 @@ documentation: ug
 
 # Disable ASP.NET MVC Rich Text Editor
 
-The Angular Rich Text Editor component offers a feature to disable the editor, preventing any user interaction.This functionality is particularly useful when you need to display content without allowing modifications or when you want to temporarily restrict user input.
+The ASP.NET MVC Rich Text Editor component offers a feature to disable the editor, preventing any user interaction. This functionality is particularly useful when you need to display content without allowing modifications or when you want to temporarily restrict user input.
 
-### How to Disable the Editor
+## How to Disable the Editor
 
-To disable the editor, set the [Enabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Enabled) property to `false`.
+To disable the editor, set the [Enabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Enabled) property to `false`. The default value is `true`.
 
 When disabled, the editor becomes non-interactive, ensuring that users cannot edit or modify the content.
 

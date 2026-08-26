@@ -14,9 +14,9 @@ The Rich Text Editor can be customized to implement **Mail Merge** functionality
 
 This feature simplifies the creation of dynamic documents by allowing users to insert merge fields that are automatically populated with real data during content generation.
 
-## Adding custom toolbar items for inserting merge fields
+## Add custom toolbar items for inserting merge fields
 
-To enable mail merge functionality, the Rich Text Editor toolbar is extended with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [toolbarSettings.items](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (#insertField and #merge_data).
+Extend the Rich Text Editor toolbar with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [`toolbarSettings.items`](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (`#insertField` and `#merge_data`).
 
 - **Insert Field:** Opens a dropdown list of merge fields for inserting placeholders like `{{FirstName}}` into the editor.
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
@@ -49,7 +49,7 @@ export class AppComponent {
 
 ```
 
-## Using DropDownButton for selecting placeholders
+## Use the DropDownButton for selecting placeholders
 
 The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., {{FirstName}}) is inserted at the current cursor position using the `insertHTML` command.
 
@@ -86,9 +86,9 @@ export class AppComponent {
 {% endraw %}
 
 ```
-## Populating merge fields using Mention
+## Populate merge fields using Mention
 
-The **Mention** component provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
+The **Mention** component provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, letting you select an entry quickly without using the toolbar.
 
 ```typescript
 {% raw %}
@@ -128,7 +128,7 @@ export class AppComponent {
 
 ```
 
-## Replacing placeholders with actual data dynamically
+## Replace placeholders with actual data dynamically
 
 When the **Merge Data** button is clicked, the editor content is processed to replace all placeholders with actual values from the `placeholderData` object. This is done using a regular expression in the `replacePlaceholders()` function.
 

@@ -21,7 +21,7 @@ The Rich Text Editor allows you to position the toolbar at the top or bottom of 
 
 By default, the toolbar is displayed at the top of the editor, making all formatting and editing tools immediately accessible above the content.
 
-To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) property in the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
+To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) property in the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
 
 {% if page.publishingplatform == "typescript" %}
 

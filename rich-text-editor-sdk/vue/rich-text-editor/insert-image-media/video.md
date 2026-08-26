@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Video in Vue Rich text editor component | Syncfusion
-description: Learn here all about Video in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Video 
+title: Insert Videos in Vue Rich Text Editor | Syncfusion
+description: Learn how to insert, upload, embed, resize, and manage videos in the Vue Rich Text Editor from local files, URLs, and online sources.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Videos in the Vue Rich Text Editor Component
+# Insert Videos in Vue Rich Text Editor
 
 The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 
@@ -16,7 +16,17 @@ The Rich Text Editor allows you to insert videos from online sources and local c
 
 You can add the `Video` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-> To use Video feature, inject `Video` in the provider section.
+### Setup
+
+Import and inject the `Video` module:
+
+```typescript
+import { RichTextEditorComponent, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-vue-richtexteditor';
+
+provide('richtexteditor', [HtmlEditor, Toolbar, Video, QuickToolbar]);
+```
+
+> Rich Text Editor features use individual feature-wise modules. To enable video insertion, inject the `Video` module in the provider array.
 
 To configure the `Video` toolbar item, refer to the below code.
 
@@ -53,15 +63,15 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Inserting video from embed URL
+### Inserting video from embedded code
 
-The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
+The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code from platforms like YouTube.
 
 ![Vue Rich Text Editor Embed URL Video insert](../images/vue-richtexteditor-video-embed.png)
 
 ### Inserting video from web URL
 
-You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
 
 ![Vue Rich Text Editor Video insert](../images/vue-richtexteditor-video-web.png)
 
@@ -73,7 +83,7 @@ If the path field is not specified in the [insertVideoSettings](https://ej2.sync
 
 ## Maximum file size restrictions
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 

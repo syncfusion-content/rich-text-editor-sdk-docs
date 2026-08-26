@@ -19,15 +19,15 @@ The [Target](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.S
 
 Typing the `@` symbol followed by a character displays a list of suggestions for selection. Users can select an item by clicking or typing its name.
 
-## Customizing suggestion list 
+## Customizing suggestion list
 
 ### Minimum input length for Mention suggestions
 
-You can control when the suggestion list appears by setting the [MinLength](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfMention-1.html#Syncfusion_Blazor_DropDowns_SfMention_1_MinLength) property in the Mention control. This property defines the minimum number of characters a user must type after the mention character (@) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
+You can control when the suggestion list appears by setting the [MinLength](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfMention-1.html#Syncfusion_Blazor_DropDowns_SfMention_1_MinLength) property in the Mention control. This property defines the minimum number of characters a user must type after the mention character (`@`) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
 
 By default, `MinLength` is set to 0, which means the suggestion list appears immediately after the mention character is entered. However, you can increase this value to delay the search until the user has typed a specific number of characters.
 
-In the following example, the `MinLength` is set to 3, so the suggestion list will only appear once the user types three or more characters after the @ symbol.
+In the following example, the `MinLength` is set to 3, so the suggestion list will only appear once the user types three or more characters after the `@` symbol.
 
 {% tabs %}
 {% highlight razor %}
@@ -45,7 +45,7 @@ You can control the number of items displayed in the Mention suggestion list usi
 
 By default, the suggestion list displays 25 items. You can customize this value to show fewer or more items based on your application's needs.
 
-In the example below, the `SuggestionCount` is set to 5, so only 5 items will be displayed in the suggestion list when the user types the mention character (@).
+In the example below, the `SuggestionCount` is set to 5, so only 5 items will be displayed in the suggestion list when the user types the mention character (`@`).
 
 {% tabs %}
 {% highlight razor %}
@@ -55,7 +55,7 @@ In the example below, the `SuggestionCount` is set to 5, so only 5 items will be
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor mention minimum length](./images/blazor-richtexteditor-mention-suggestion-count.webp)
+![Blazor RichTextEditor mention suggestion count](./images/blazor-richtexteditor-mention-suggestion-count.webp)
 
 ### Customizing suggestion list using templates
 
@@ -70,14 +70,14 @@ Use the [DisplayTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 For example, by default, the mention chip renders as:
 
 ```
-<span contenteditable="false" class="e-mention-chip">@Selma Rose</span>
+<span contenteditable="false" class="e-mention-chip" aria-label="Email Selma Rose">@Selma Rose</span>
 
 ```
 
 Using the `DisplayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com" aria-label="Email Selma Rose">@Selma Rose</a>
 
 ```
 
@@ -105,3 +105,5 @@ In the following sample, we configured the following properties:
 ## See also
 
 * [Mention](https://blazor.syncfusion.com/documentation/mention/getting-started)
+* [Mail Merge](./mail-merge)
+* [Toolbar customization](./tools/built-in-tools)

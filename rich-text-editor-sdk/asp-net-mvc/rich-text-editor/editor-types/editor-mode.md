@@ -9,7 +9,7 @@ documentation: ug
 
 # Editor Modes in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor control used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
+The Rich Text Editor control is used to create, edit, and return the content in valid HTML markup or Markdown (MD). It supports the following two editing formats.
 
 * HTML Editor
 * Markdown Editor
@@ -18,7 +18,7 @@ The Rich Text Editor control used to create, edit and return the content in vali
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property as `HTML`.
+The HTML editing mode is the default mode of the Rich Text Editor. It is used to format the content through the available toolbar items and returns valid HTML markup. Set the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property to `HTML`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,7 +76,7 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 {% endtabs %}
 {% endif %}
 
-For further details on Markdown editing, refer to the [`Markdown`](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started)
+For further details on Markdown editing, refer to the [Markdown editor documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started).
 
 ## See Also
 

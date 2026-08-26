@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
+title: Customize AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize the AI Assistant in the ASP.NET Core Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -15,7 +15,7 @@ The AI Assistant feature is designed to be easily customizable using its propert
 
 To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` properties of the `AiAssistantSettings` can be used. The `AiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
 
-The Custom items can be added to the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` with the following properties.
+Custom items can be added to the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` with the following properties.
 
 | Property     | Description                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -73,7 +73,7 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% endif %}
 
 ## Styling the Popup
-The AI Assistant Popup can be styled by using the following css.
+The AI Assistant popup can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup {
@@ -81,7 +81,7 @@ The AI Assistant Popup can be styled by using the following css.
 }
 ```
 
-The AI Assistant Popup processing state can be styled by using the following css.
+The AI Assistant popup processing state can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup.processing {

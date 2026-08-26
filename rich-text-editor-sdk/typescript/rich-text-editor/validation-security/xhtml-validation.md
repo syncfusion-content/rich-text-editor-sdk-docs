@@ -135,9 +135,9 @@ The following sample demonstrates how to filter the `script` tag by value.
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/xss-attack-event-cs1" %}
 {% endif %}
 
-You can also filter out the [`e.selectors.tags`](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributes`](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
+You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributes`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear.
 
-For instance, if you want to display `<iframe>`, By manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframe while preventing potential security risks associated with XSS vulnerabilities.
+For instance, if you want to display `<iframe>`, by manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframe while preventing potential security risks associated with XSS vulnerabilities.
 
 The following sample demonstrates how to filter the `iframe` tag.
 

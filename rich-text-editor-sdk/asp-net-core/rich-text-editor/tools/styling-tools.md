@@ -15,14 +15,14 @@ To get start quickly with ASP.NET Core Rich Text Editor with styling tools, you 
 
 ## Font family
   
-The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display "Font Name". However, for other font families, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display `Font Name`. However, for other font families, the toolbar will show the name of the selected font.
 
 To apply a different font style to a specific section of the content, follow these steps:
 
 1. Select the text you want to change.
-2. Choose the desired font style from the drop-down menu in the toolbar.
+2. Choose the desired font style from the dropdown in the toolbar.
 
-These steps will apply the selected font style to the chosen text, allowing you to customize the appearance of your content easily.
+These steps apply the selected font style to the chosen text, allowing you to customize the appearance of your content.
 
 ### Built-in font family
 
@@ -51,7 +51,7 @@ You can add the `FontName` tool in the Rich Text Editor toolbar using the `toolb
 {% endtabs %}
 {% endif %}
 
-The Rich Text Editor comes with a pre-configured set of [fontFamily](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
+The Rich Text Editor comes with a pre-configured set of fonts in the [`fontFamily`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
 
 ### Custom font family
 
@@ -120,7 +120,7 @@ N> In the above sample, you can see that we have added two Google web fonts (`Ro
 
 ## Font size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the size of the selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar displays `Font Size`. For other font sizes, the toolbar shows the name of the selected size.
 
 ### Built-in font size
 
@@ -180,7 +180,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ## Font and background color
 
-You can add the `FontColor` and `BackgroundColor` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](ps://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add the `FontColor` and `BackgroundColor` tools to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -209,9 +209,9 @@ You can add the `FontColor` and `BackgroundColor` tool in the Rich Text Editor t
 
 To apply `font color` or `background color` to selected content in the Rich Text Editor, use the font color and background color tools.
 
-The Rich Text Editor offers custom font and background colors along with the existing list through the [colorCode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ColorCode) field of the [fontColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontColor) and [backgroundColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BackgroundColor) properties.
+The Rich Text Editor offers custom font and background colors along with the existing list through the [`colorCode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ColorCode) field of the [`fontColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontColor) and [`backgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BackgroundColor) properties.
 
-Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ModeSwitcher) feature.
+Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [`modeSwitcher`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ModeSwitcher) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -238,9 +238,9 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 
 ### Show recent color
 
-The [ShowRecentColors](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ShowRecentColors) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
+The [`ShowRecentColors`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ShowRecentColors) feature in the Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible, improving styling efficiency and consistency.
 
-This feature can be enabled separately for the [RichTextEditorFontColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html) and [RichTextEditorBackgroundColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBackgroundColor.html) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
+This feature can be enabled separately for the [`RichTextEditorFontColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html) and [`RichTextEditorBackgroundColor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBackgroundColor.html) tools, giving flexibility based on formatting needs. It is especially helpful when working with consistent color themes, eliminating the need to repeatedly search through the full palette.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

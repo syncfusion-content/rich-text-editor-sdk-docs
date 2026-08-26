@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Rich Text Editor in WebAssembly App | Syncfusion®
+title: Getting Started with Blazor Rich Text Editor in WASM App | Syncfusion®
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor"
-description: Learn how to get started with the Rich Text Editor in Blazor WebAssembly Application and explore setup, configuration, and core feature examples.
+description: Learn how to get started with the Blazor Rich Text Editor in WebAssembly Application and explore setup, configuration, and core feature examples.
 platform: rich-text-editor-sdk
 component: Rich Text Editor
 documentation: ug
@@ -10,9 +10,10 @@ documentation: ug
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Rich Text Editor in Blazor WASM App
+# Getting Started with Blazor Rich Text Editor in WebAssembly App
 
-This guide briefly explains about how to include [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
+This guide explains how to include the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
+
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, CodeStudio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview)
 
@@ -173,9 +174,9 @@ Open a Razor file located in the **~/Pages/*.razor** (for example, **Home.razor*
 @using Syncfusion.Blazor.RichTextEditor
 
 <SfRichTextEditor>
-    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
-    <p><b>Get started Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
+    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
+    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
 </SfRichTextEditor>
 
 {% endhighlight %}
@@ -223,7 +224,7 @@ dotnet run
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BtBdjohZVVUMIRjO?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" backgroundimage "[Blazor Rich Text Editor Component](./images/blazor-richtexteditor.webp)" %}
 
-N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/RichTextEditor).
+[View the sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/RichTextEditor).
 
 ## See also
 
@@ -231,6 +232,6 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-
 2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
 3. [How to insert Emoticons](https://blazor.syncfusion.com/demos/rich-text-editor/insert-emoticons?theme=fluent2)
 4. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
-5. [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
-6. [Keyboard support in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
-7. [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)
+5. [Accessibility in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
+6. [Keyboard support in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support)
+7. [Globalization in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)

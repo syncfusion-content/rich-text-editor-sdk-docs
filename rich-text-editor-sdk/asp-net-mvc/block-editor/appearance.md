@@ -16,40 +16,34 @@ The Block Editor control provides various appearance customization options to ma
 You can specify the width and height for the Block Editor control using the [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Width) and [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Height) properties.
 
 ```cshtml
-
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").Width("100%").Height("80vh").Render()
 </div>
 
-// Or with specific pixel values
+@* Or with specific pixel values *@
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").Width("800px").Height("500px").Render()
 </div>
-
 ```
 
-## Setting readonly mode
+## Setting read-only mode
 
-You can utilize the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+You can use the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it. The default value is `false`. For more details, see the [Read-Only Mode](editor-security/read-only-mode.md) doc.
 
 ```cshtml
-
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").ReadOnly(true).Render()
 </div>
-
 ```
 
-## Customization using CSS Class
+## Customization using CSS class
 
-You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property to customize the appearance of the Block Editor control.
+You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property to customize the appearance of the Block Editor control with one or more custom CSS class names.
 
 ```cshtml
-
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CssClass("custom-editor-theme").Width("600px").Height("400px").Render()
 </div>
-
 ```
 
 {% tabs %}

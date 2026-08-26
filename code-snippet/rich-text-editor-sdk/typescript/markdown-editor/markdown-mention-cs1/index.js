@@ -3,7 +3,7 @@ ej.base.enableRipple(true);
 var textArea;
 var mdsource;
 var htmlPreview;
-
+var markdownConverter = ej.markdownconverter.MarkdownConverter;
 var markdownMention = new ej.richtexteditor.RichTextEditor({
   value: `Hello [@Maria](mailto:maria@gmail.com)\n\nWelcome to the mention integration with markdown editor demo. Type @ character and tag user from the suggestion list.`,
   height: 250,
@@ -205,9 +205,10 @@ function markdownConversion() {
     var htmlPreview = document.body.querySelector(
       '#markdownMentionhtml-preview'
     );
-    htmlPreview.innerHTML = marked(
-      markdownMention.contentModule.getEditPanel().value
-    );
+    htmlPreview.innerHTML = markdownConverter.toHtml(
+  markdownMention.contentModule.getEditPanel().value,
+  { lineBreak: true }
+);
   }
 }
 function fullPreview() {
@@ -235,17 +236,10 @@ function fullPreview() {
     }
     textArea.style.display = 'none';
     htmlPreview.style.display = 'block';
-    htmlPreview.innerHTML = marked(
-      markdownMention.contentModule.getEditPanel().value
+    htmlPreview.innerHTML = markdownConverter.toHtml(
+      markdownMention.contentModule.getEditPanel().value,
+      { lineBreak: true }
     );
     mdsource.parentElement.title = 'Code View';
   }
-}
-
-loadExternalFile();
-// Dynamically load the marked.js file
-function loadExternalFile() {
-  var script = document.createElement('script');
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-  document.getElementsByTagName('head')[0].appendChild(script);
 }

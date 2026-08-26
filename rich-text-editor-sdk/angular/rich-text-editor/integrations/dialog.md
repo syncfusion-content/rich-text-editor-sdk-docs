@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Dialog in Angular Rich text editor component | Syncfusion
-description: Learn here all about dialog integration in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Dialog in Angular Rich Text Editor component | Syncfusion
+description: Learn here all about Dialog integration in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Dialog
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 When rendering the Rich Text Editor inside a Dialog component, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor’s toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 
-To resolve this issue, we can utilize the [refreshUI](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#open) event. This approach ensures that the Rich Text Editor’s UI is properly refreshed and rendered once the Dialog is visible.
+To resolve this issue, use the [`refreshUI`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#refreshui) method of the Rich Text Editor in conjunction with the [`open`](https://ej2.syncfusion.com/angular/documentation/api/dialog/index-default#open) event of the Dialog. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
 
 ## Prerequisites
 
@@ -21,9 +21,9 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 ## Key features
 
 - Host a Rich Text Editor or a custom source editor inside a modal Dialog.
-- Ensure correct toolbar layout by refreshing the editor UI after Dialog open.
+- Ensure the correct toolbar layout by refreshing the editor UI after the Dialog is opened.
 - Reuse editor instances inside the Dialog to retain state and performance.
-- Configure Dialog size and behavior to suit editing scenarios.
+- Configure the Dialog size and behavior to suit the editing scenario.
 
 ## Setup or Installation
 
@@ -35,8 +35,9 @@ npm install @syncfusion/ej2-angular-popups @syncfusion/ej2-angular-buttons
 
 ## Configure Dialog for the rich text editor
 
-### Step 1: import packages and providers
-- Import Dialog and Button modules along with the Rich Text Editor module and provide editor services in the component.
+### Step 1: Import modules and register providers
+
+- Import the `Dialog` and `Button` modules along with the `RichTextEditor` module, and register the required editor services in the component's `providers` array.
 
 ```typescript
 import { DialogModule, DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -73,9 +74,9 @@ public onDialogClose(): void {
 }
 ```
 
-## Example for dialog integration
+## Example for Dialog integration
 
-Below is the example integration of dialog with the Angular Rich Text Editor.
+The following sample demonstrates the Dialog integration with the Angular Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

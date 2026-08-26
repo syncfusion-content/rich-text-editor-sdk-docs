@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Render Rich Text Editor in Blazor Dialog | Syncfusion®
+title: Render Blazor Rich Text Editor in Dialog | Syncfusion®
 description: Learn how to render the Blazor Rich Text Editor inside a Dialog and refresh the editor UI for proper toolbar rendering.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Render Rich Text Editor in Blazor Dialog
+# Render Blazor Rich Text Editor in Dialog
 
 The Blazor Rich Text Editor provides enhanced customization for built-in dialogs through the [RichTextEditorDialogSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorDialogSettings.html) property. This feature allows developers to control the appearance, behavior, and positioning of dialogs such as image, link, and audio insertion dialogs.
 
@@ -35,5 +35,5 @@ The following example demonstrates how to configure dialog settings in the Blazo
 
 ## See also
 
-* [How to edit the quick toolbar settings](../toolbar#audio-quick-toolbar)
-* [How to use link editing option in the toolbar items](../tools#insert-link)
+* [How to configure the audio tool in the toolbar](./audio)
+* [How to use link editing options in the toolbar items](./built-in-tools#hyperlinks)

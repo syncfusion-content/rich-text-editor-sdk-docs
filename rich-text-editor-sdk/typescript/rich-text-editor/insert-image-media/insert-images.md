@@ -28,7 +28,7 @@ To configure the `Image` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -70,7 +70,7 @@ The code snippet below illustrates the configuration of the [insertImageSettings
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/image-save-format/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/image-save-format" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -110,7 +110,7 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 ## Maximum file size restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict image uploads from your local machine using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB) per image.
 
 ```ts
 
@@ -281,7 +281,7 @@ The following sample explains, how to configure the `removeUrl` to remove a save
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -380,7 +380,7 @@ Images in the Rich Text Editor can be aligned using the alignment options in the
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/image-alignment-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/image-alignment-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -411,7 +411,7 @@ The Rich Text Editor provides control over how text flows around images using th
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/wrap-text-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/wrap-text-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -472,7 +472,7 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -519,7 +519,7 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-image-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-image-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

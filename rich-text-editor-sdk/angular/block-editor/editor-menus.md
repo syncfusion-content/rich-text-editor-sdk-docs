@@ -31,7 +31,7 @@ The slash command menu comes with a set of pre-defined commands for all block ty
 
 ### Customize the slash command menu
 
-You can use the [commandMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#commandmenusettings) input to modify the slash command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
+You can use the [commandMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#commandmenusettings) property to modify the slash command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
 
 ### Events
 
@@ -172,7 +172,7 @@ The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link
 
 #### Transform block options
 
-The inline toolbar includes `Transform` options to quickly convert blocks between different types. Use the [transformSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#transformsettings) input to customize the transform menu — for example, to define which block types appear in the menu, set custom labels and icons, or wire up custom behavior.
+The inline toolbar includes `Transform` options to quickly convert blocks between different types. Use the [transformSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#transformsettings) property to customize the transform menu — for example, to define which block types appear in the menu, set custom labels and icons, or wire up custom behavior.
 
 #### Built-in transform block options
 
@@ -223,7 +223,7 @@ The following example demonstrates how to customize the transform, inline code, 
 
 #### Font and background color support
 
-The inline toolbar provides `Color` and `BackgroundColor` items, each integrated with a ColorPicker. Use the [fontColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#fontcolorsettings) and [backgroundColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#backgroundcolorsettings) inputs to control text color, highlighting, predefined palettes, custom colors, and live previews.
+The inline toolbar provides `Color` and `BackgroundColor` items, each integrated with a ColorPicker. Use the [fontColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#fontcolorsettings) and [backgroundColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#backgroundcolorsettings) properties to control text color, highlighting, predefined palettes, custom colors, and live previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
 

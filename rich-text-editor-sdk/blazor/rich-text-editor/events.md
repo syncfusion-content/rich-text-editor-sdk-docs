@@ -81,7 +81,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## DialogOpened
 
-[DialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_DialogOpened) event triggers when a dialog is opened.
+[DialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_DialogOpened) event triggers after a dialog is opened.
 
 {% tabs %}
 {% highlight razor %}
@@ -127,7 +127,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## DialogClosed
 
-[DialogClosed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_DialogClosed) event triggers after the dialog has been closed.
+[DialogClosed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_DialogClosed) event triggers after a dialog is closed.
 
 {% tabs %}
 {% highlight razor %}
@@ -172,7 +172,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## QuickToolbarOpened
 
-[QuickToolbarOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_QuickToolbarOpened) event triggers when a quick toolbar is opened.
+[QuickToolbarOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_QuickToolbarOpened) event triggers after the quick toolbar is opened.
 
 {% tabs %}
 {% highlight razor %}
@@ -194,7 +194,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## QuickToolbarClosed
 
-[QuickToolbarClosed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_QuickToolbarClosed) event triggers after the quick toolbar has been closed.
+[QuickToolbarClosed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_QuickToolbarClosed) event triggers after the quick toolbar is closed.
 
 {% tabs %}
 {% highlight razor %}
@@ -350,7 +350,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Created
 
-[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Created) event triggers when the Rich Text Editor is rendered.
+[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Created) event triggers when the Rich Text Editor is rendered. Use this event to perform post-render actions, such as attaching custom event listeners or focusing the editor.
 
 {% tabs %}
 {% highlight razor %}
@@ -394,7 +394,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Blur
 
-[Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Blur) event triggers when Rich Text Editor is focused out.
+[Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Blur) event triggers when the Rich Text Editor loses focus.
 
 {% tabs %}
 {% highlight razor %}
@@ -416,7 +416,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## OnToolbarClick
 
-[OnToolbarClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnToolbarClick) event triggers when Rich Text Editor Toolbar items is clicked.
+[OnToolbarClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnToolbarClick) event triggers when a Rich Text Editor toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor %}
@@ -438,7 +438,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Focus
 
-[Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Focus) event triggers when Rich Text Editor is focused in.
+[Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Focus) event triggers when the Rich Text Editor receives focus.
 
 {% tabs %}
 {% highlight razor %}

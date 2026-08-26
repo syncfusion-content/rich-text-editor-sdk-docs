@@ -14,7 +14,7 @@ Rich Text Editor allows to insert table of content in edit panel and provides an
 
 ## Configuring the table tool in toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
+You can add a `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -132,7 +132,7 @@ The Rich Text Editor provides a simple and intuitive way to select table rows, c
 
 ### Selecting an Entire Row
 
-Entire rows can be selected using the icons that appears on hover.
+Entire rows can be selected using the icons that appear on hover.
 
 **To select a row:**
 - **Where to hover**: Move the mouse pointer over the first column of the table..
@@ -143,7 +143,7 @@ Entire rows can be selected using the icons that appears on hover.
 
 ### Selecting an Entire Column
 
-Entire columns can be selected using the icons that appears on hover.
+Entire columns can be selected using the icons that appear on hover.
 
 **To select a column:**
 

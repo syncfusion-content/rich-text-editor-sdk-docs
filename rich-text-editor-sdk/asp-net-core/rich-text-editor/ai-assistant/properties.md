@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure of AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
+title: Configure AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the ASP.NET Core Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -13,11 +13,11 @@ The `AIAssistantSettings` class provides the following properties for complete c
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
+| `Commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
 | `PopupMaxHeight` | `string \| number` | `'400px'` | Sets the maximum height of the AI Assistant popup. Accepts CSS height values or numbers (treated as pixels). |
 | `PopupWidth` | `string \| number` | `'600px'` | Sets the width of the AI Assistant popup. Accepts CSS width values or numbers (treated as pixels). |
 | `Placeholder` | `string` | `'Ask AI to rewrite or generate content.'` | Specifies the placeholder text shown in the AI prompt textarea. |
-| `HeaderToolbarSettings` | `(AssitantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
+| `HeaderToolbarSettings` | `(AssistantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
 | `PromptToolbarSettings` | `(AssistantPromptToolbarItems \| IAIAssistantToolbarItem)[]` | `['Edit', 'Copy']` | Configures the toolbar in the prompt editor (user input) section. |
 | `ResponseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `Prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
@@ -169,7 +169,8 @@ In the below sample, the popup width and maximum height are configured.
 To set the maximum conversation history length, use the `MaxPromptHistory` property of the `AiAssistantSettings`. The default amount of conversation that can be loaded is `20` prompts. The conversation will be cleared when closing the popup. To retrieve all conversation history, use the `getAIPromptHistory()` method. This method is useful for loading previous conversations and populating the `Prompts` property when you need to restore or display earlier chat sessions.
 
 **Example**
-In the below sample, the maximum prompt history is configured to `30`, and when a save button is clicked the conversation history is retrieved using the `getAIPromptHistory()` method.
+
+In the below sample, the maximum prompt history is configured to `30`, and when a save button is clicked, the conversation history is retrieved using the `getAIPromptHistory()` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # XHTML Validation in JavaScript Rich Text Editor
 
-The editor includes an [`enableXhtml`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enablexhtml) property that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
+The editor includes an [`enableXhtml`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#enableXhtml) property (default: `false`) that allows for continuous validation of the Rich Text Editor's source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
 
-The editor checks the following settings on validation:
+The editor checks the following rules during validation:
 
 ## Validating attributes
 
@@ -59,11 +59,11 @@ The editor checks the following settings on validation:
 
 ## Cross-Site scripting (XSS)
 
-The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
+The Rich Text Editor helps secure your content by preventing cross-site scripting (XSS) attacks. By default, it provides built-in support to remove elements from editor content that could be used to execute malicious scripts. This process runs whenever content is entered, pasted, or programmatically updated.
 
 ### Enable XSS validation
 
-The [enableHtmlSanitize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enablehtmlsanitizer) property determines whether XSS prevention is active. It's set to `true` by default.
+The [enableHtmlSanitize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#enableHtmlSanitizer) property determines whether XSS prevention is active. It's set to `true` by default.
 
 In the following sample, we removed the `script` tag and `onmouseover` attribute from the content of the Rich Text Editor. 
 
@@ -94,15 +94,15 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1" %}
 {% endif %}
 
-> The XSS prevention feature is only applicable when the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#editormode) is set to HTML.
+> The XSS prevention feature is only applicable when the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#editorMode) is set to `EditorMode.HTML` (TypeScript) or `'HTML'` (JavaScript).
 
 ### Custom cross-site scripting prevention
 
-For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event.
+For more precise control over XSS prevention, you can implement custom filtering logic using the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#beforeSanitizeHtml) event.
 
 ### Implementing custom cross-site scripting and filtering in Rich Text Editor
 
-1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to define custom filtering rules.
+1. Use the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#beforeSanitizeHtml) event to define custom filtering rules.
 2. Utilize the `helper` function from the event argument to apply your custom filters.
 3. Set the `cancel` argument to `true` if you want to override the built-in XSS prevention entirely.
 
@@ -135,9 +135,9 @@ The following sample demonstrates how to filter the `script` tag by value.
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1" %}
 {% endif %}
 
-You can also filter out the [`e.selectors.tags`](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#tags) and [`e.selector.attributes`](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeselectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#beforesanitizehtml) event to control which HTML tags and attributes are allowed to appear. 
+You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeSelectors#tags) and [`e.selectors.attributes`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeSelectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#beforeSanitizeHtml) event to control which HTML tags and attributes are allowed to appear.
 
-For instance, if you want to display `<iframe>`, By manipulating the `e.selectors.tags` property in this event, you can selectively remove tags like `<iframe>`. This approach ensures that your application can safely display iframe while preventing potential security risks associated with XSS vulnerabilities.
+For instance, to allow or block `<iframe>`, manipulate the `e.selectors.tags` property inside the event. This approach lets you safely include or exclude iframes while preventing potential XSS vulnerabilities.
 
 The following sample demonstrates how to filter the `iframe` tag.
 
