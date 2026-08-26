@@ -1,6 +1,6 @@
 @using Syncfusion.Blazor.RichTextEditor
 @using Syncfusion.Blazor.DropDowns
-@using Markdig
+@using Syncfusion.Office.Markdown;
 
 <div class="control-section">
     @if (!IsPreview)
@@ -62,7 +62,7 @@
 @code {
     private bool IsPreview { get; set; }
     private string HtmlValue { get; set; }
-    private MarkdownPipeline Pipeline { get; set; }
+    private MarkdownToHtmlConverter markdownToHtmlConverter = new MarkdownToHtmlConverter();
     private string MarkdownValue { get; set; } = @"Hello [@Albert](mailto:albert@gmail.com)
     Welcome to the mention integration with markdown editor demo. Type @ character and tag user from the suggestion list.";
     private List<ToolbarItemModel> Items = new List<ToolbarItemModel>()
@@ -94,8 +94,7 @@
     };
     protected override void OnInitialized()
     {
-        Pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-        this.HtmlValue = Markdig.Markdown.ToHtml(MarkdownValue, Pipeline);
+        this.HtmlValue = markdownToHtmlConverter.ToHtml(MarkdownValue);
         base.OnInitialized();
     }
     private void OnValueChange(Syncfusion.Blazor.RichTextEditor.ChangeEventArgs args)
@@ -106,7 +105,7 @@
         }
         else
         {
-            this.HtmlValue = Markdig.Markdown.ToHtml(args.Value, Pipeline);
+            this.HtmlValue = markdownToHtmlConverter.ToHtml(args.Value);
         }
     }
     private void PreviewClick()
