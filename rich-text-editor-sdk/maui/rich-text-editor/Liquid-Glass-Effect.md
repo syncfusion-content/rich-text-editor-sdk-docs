@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Liquid Glass Effect on .NET MAUI RichTextEditor control | Syncfusion®
+title: Liquid Glass Effect on .NET MAUI Rich Text Editor control | Syncfusion®
 description: Learn here all about how to enable cupertino theme for Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: rich-text-editor-sdk 
 control: SfRichTextEditor
 documentation: ug
 ---
 
-# Liquid Glass Effect in .NET MAUI RichTextEditor
+# Liquid Glass Effect in .NET MAUI Rich Text Editor
 
 The Liquid Glass Effect is a modern design style that provides a sleek, minimalist appearance with clean lines, subtle visual effects, and elegant styling. It features smooth rounded corners, refined color palettes, and sophisticated visual treatments that create a polished, professional look for your RichTextEditor.
 
