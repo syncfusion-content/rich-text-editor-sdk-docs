@@ -9,7 +9,7 @@ documentation: ug
 
 # Advanced Features in .NET MAUI Rich Text Editor
 
-This section covers the essential properties, methods, and events of the .NET MAUI [SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html) for handling content and user interactions.
+This section covers the essential properties, methods, and events of the [.NET MAUI Rich Text Editor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html) for handling content and user interactions.
 
 ## Setting Plain Text
 
