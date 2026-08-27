@@ -3,7 +3,7 @@ layout: post
 title: Table Block in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to add and configure table blocks in the ASP.NET Core Block Editor with rows, columns, headers, cell content, resizing, selection, and deletion.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
