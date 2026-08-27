@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Keyboard Support in Angular Rich Text Editor
 
-The Rich Text Editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists and dialogs.
+The Rich Text Editor has full keyboard accessibility, including shortcuts to open and perform actions with toolbar items, drop-down lists, and dialogs.
 
 ## HTML editor shortcut keys
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) as `HTML`.
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) `HTML`.
 
 ### Toolbar
 
@@ -143,13 +143,13 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs13" %}
 
-## Custom key config
+## Customize the key config
 
-You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#keyconfig) property.
+You can customize the key config for the keyboard interaction of the Rich Text Editor using the [`keyConfig`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#keyconfig) property.
 
-In the below sample, you have customize the bold, italic, underline toolbar action with ctrl+alt+b, ctrl+alt+i and ctrl+alt+u respectively.
+In the sample below, the bold, italic, and underline toolbar actions are customized with `ctrl+alt+b`, `ctrl+alt+i`, and `ctrl+alt+u` respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,4 +161,4 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs15" %}
