@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Editor Menus in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to use the editor menus in the ASP.NET MVC BlockEditor to add blocks via slash commands and contextual actions.
+description: Learn how to use the editor menus in the ASP.NET MVC Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

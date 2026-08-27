@@ -1,9 +1,9 @@
 ---
 layout: post
 title: XSS Prevention in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to enable XSS prevention in the ASP.NET MVC BlockEditor to sanitize script tags and unsafe attributes from content.
+description: Learn how to enable XSS prevention in the ASP.NET MVC Block Editor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 

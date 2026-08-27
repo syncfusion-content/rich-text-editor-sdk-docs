@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Rich Text Editor supports character range-based text selection using the **Syncfusion Slider** component. This feature allows users to select a specific range of characters (e.g., 33–45) within the editor content, which is then automatically highlighted.
 
-### Adding a Slider for character range selection
+### Add a Slider for character range selection
 
 The Rich Text Editor can be integrated with the **Slider** component to enable precise character range-based text selection. The slider is configured in `range` type, allowing users to select a start and end index within the editor content. When the slider values change, the corresponding text range is highlighted automatically. 
 
@@ -41,7 +41,7 @@ export class AppComponent {
 
 ### Dynamic range adjustment based on content
 
-When the editor is created, the actual length of the text content is calculated, and the slider’s maximum value is updated dynamically to match this length. This ensures that the slider range always reflects the current content size. The editor is also focused programmatically to make the selection visible, and an initial selection is applied based on the slider’s default values.
+When the editor is created, the actual length of the text content is calculated, and the slider's maximum value is updated dynamically to match this length. This ensures the slider range always reflects the current content size. The editor is also focused programmatically to make the selection visible, and an initial selection is applied based on the slider's default values.
 
 ```typescript
 
@@ -77,9 +77,9 @@ export class AppComponent {
 
 ### Precise selection using DOM range
 
-The selection logic is implemented in the [change](https://ej2.syncfusion.com/angular/documentation/api/slider/index-default#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions. 
+The selection logic is implemented in the [`change`](https://ej2.syncfusion.com/angular/documentation/api/slider/index-default#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions.
 
-A Range object is created using these offsets and applied to the current selection using the browser’s `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
+A Range object is created using these offsets and applied to the current selection using the browser's `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
 
 ```typescript
 
@@ -170,7 +170,7 @@ export class AppComponent {
 
 ## Node selection
 
-Node selection allows users to programmatically select entire HTML elements (nodes) such as paragraphs, images, or tables within the Rich Text Editor. This is useful when you want to highlight or manipulate specific content blocks without relying on manual user selection.
+Node selection lets you programmatically select entire HTML elements (nodes) such as paragraphs, images, or tables within the Rich Text Editor. This is useful when you want to highlight or manipulate specific content blocks without relying on manual user selection.
 
 The following example demonstrates how to select a paragraph node programmatically using the browser's native `Range` and `Selection` APIs.
 
@@ -188,7 +188,7 @@ The following example demonstrates how to select a paragraph node programmatical
 
 ## Cell selection
 
-Cell selection allows users to programmatically select specific table cells within the Rich Text Editor. This is useful for highlighting or manipulating content inside tables without requiring manual user interaction.
+Cell selection lets you programmatically select specific table cells within the Rich Text Editor. This is useful for highlighting or manipulating content inside tables without requiring manual user interaction.
 
 The following example demonstrates how to select a table cell programmatically using the browser's native `Range` and `Selection` APIs.
 
@@ -206,7 +206,7 @@ The following example demonstrates how to select a table cell programmatically u
 
 ## Select all content
 
-To select all content within the Rich Text Editor, use the [selectAll](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#selectall) method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
+To select all content within the Rich Text Editor, use the [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#selectall) method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
