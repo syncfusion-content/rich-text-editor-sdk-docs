@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Liquid Glass Effect on .NET MAUI Rich Text Editor control | Syncfusion®
+title: Liquid Glass Effect on .NET MAUI Rich Text Editor | Syncfusion®
 description: Learn here all about how to enable cupertino theme for Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: rich-text-editor-sdk 
 control: SfRichTextEditor
@@ -65,7 +65,7 @@ richTextEditor.ToolbarSettings = new RichTextEditorToolbarSettings()
 
 {% endtabs %}
 
-#### Customize Toolbar and Editor Corner Radius
+### Customize Toolbar and Editor Corner Radius  
 
 The toolbar corner radius, toolbar selection corner radius, and editor corner radius are not exposed as public properties, so they are customized by overriding the Syncfusion theme resource keys, which target the internal styling used by the RichTextEditor renderer.
 
