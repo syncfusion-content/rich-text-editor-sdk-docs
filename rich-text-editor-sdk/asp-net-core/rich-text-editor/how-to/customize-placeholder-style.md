@@ -9,8 +9,6 @@ documentation: ug
 
 # Customize Placeholder Text Style in ASP.NET Core Rich Text Editor
 
-# Customize Placeholder Text Style in ASP.NET Core Rich Text Editor
-
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 
 {% if page.publishingplatform == "aspnet-core" %}

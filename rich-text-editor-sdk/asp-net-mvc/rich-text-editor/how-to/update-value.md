@@ -9,8 +9,6 @@ documentation: ug
 
 # Update Value via Keyboard Shortcut in ASP.NET MVC Rich Text Editor
 
-# Implement Ctrl+S Shortcut in ASP.NET MVC Rich Text Editor
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
