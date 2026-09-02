@@ -17,7 +17,7 @@ The Block Editor control provides a comprehensive set of public methods that all
 
 You can add a new block to the editor at a specified position using the `addBlock` method. You can also insert the block before or after a target block.
 
-```cs
+```javascript
 // Add a new paragraph block after a specific block
 const newBlock = {
     id: 'new-block',
@@ -25,20 +25,19 @@ const newBlock = {
     content: [
         {
             contentType: "Text",
-            content: 'This is a newly added block'
+            content: "This is a newly added block"
         }
     ]
 };
 
 blockEditorObj.addBlock(newBlock, 'target-block-id', true); // true = after, false = before
-
 ```
 
 ### Removing a block
 
 You can remove a block from the editor using the `removeBlock` method.
 
-```cs
+```javascript
 // Remove a block by its ID
 blockEditorObj.removeBlock('block-to-remove-id');
 ```
@@ -74,7 +73,7 @@ blockEditorObj.getBlock('block-id');
 
 ### Getting block count
 
-You can utilize the `getBlockCount` method to retrieve the total number of blocks in the editor.
+You can use the `getBlockCount` method to retrieve the total number of blocks in the editor.
 
 ```cs
 // Get total block count
@@ -176,7 +175,7 @@ Below example demonstrates the usage of the above methods.
 
 ### FocusIn
 
-You can utilize the `focusIn` method to give focus to the editor. This method ensures that the editor is ready for user input.
+You can use the `focusIn` method to give focus to the editor. This method ensures that the editor is ready for user input.
 
 ```cs
 // Focus the editor
@@ -185,7 +184,7 @@ blockEditorObj.focusIn();
 
 ### FocusOut
 
-You can remove focus from the editor using the focusOut method. This method clears any active selections and makes the editor inactive for user input.
+You can remove focus from the editor using the `focusOut` method. This method clears any active selections and makes the editor inactive for user input.
 
 ```cs
 // Remove focus from the editor

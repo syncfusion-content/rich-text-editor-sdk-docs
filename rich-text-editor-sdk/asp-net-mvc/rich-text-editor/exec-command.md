@@ -10,8 +10,7 @@ documentation: ug
 
 # Execute Command in ASP.NET MVC Rich Text Editor
 
-In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area.
-The executeCommand will perform the following commands.
+Use the `executeCommand` method to perform commands that modify content in the editable area. The following commands are supported:
 
 | Commands | Description | Code snippets |
 |----------------|---------| -----------|
@@ -22,7 +21,7 @@ The executeCommand will perform the following commands.
 | superscript | Makes the selected text as superscript (higher). |`rteObj.executeCommand('superscript');`|
 | subscript | Makes the selected text as subscript (lower). |`rteObj.executeCommand('subscript');`|
 | uppercase | Change the case of selected text to upper  in the content. |`rteObj.executeCommand('uppercase');`|
-| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('uppercase');`|
+| lowercase | Changes the case of selected text to lower in the content. |`rteObj.executeCommand('lowercase');`|
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
@@ -31,15 +30,15 @@ The executeCommand will perform the following commands.
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
 | justifyLeft | Align the content with left margin. | `rteObj.executeCommand('justifyLeft');`|
-| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyLeft');`|
+| justifyRight | Align the content with the right margin. | `rteObj.executeCommand('justifyRight');`|
 | undo | Allows to undo the actions. | `rteObj.executeCommand('undo');`|
 | createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link' });` |
 | indent | Allows to increase the indent level of the content. | `rteObj.executeCommand('indent');`|
 | insertHTML | Insert the html content to the current cursor position. | `rteObj.executeCommand('insertHTML', 'inserted an html');`|
 | insertOrderedList | Create a new list item(numbered). | `rteObj.executeCommand('insertOrderedList');`|
 | insertUnorderedList | Create a new list item(bulleted). |`rteObj.executeCommand('insertUnorderedList');`|
-| numberFormatList | Creates an ordered list with customizable numbering styles. The available formats are listed [here](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/tools/text-formatting#available-numbering-styles).|`rteObj.executeCommand('numberFormatList', 'decimal');`|
-| bulletFormatList | Creates an unordered list with customizable bullet styles. The available formats are listed [here](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/tools/text-formatting#available-bullet-styles). |`rteObj.executeCommand('bulletFormatList', 'disc');`|
+| numberFormatList | Creates an ordered list with customizable numbering styles. The available formats are listed [here](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/tools/text-formatting#available-numbering-styles).|`rteObj.executeCommand('numberFormatList', 'decimal');`|
+| bulletFormatList | Creates an unordered list with customizable bullet styles. The available formats are listed [here](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/tools/text-formatting#available-bullet-styles). |`rteObj.executeCommand('bulletFormatList', 'disc');`|
 | outdent | Allows to decrease the indent level of the content. | `rteObj.executeCommand('outdent');`|
 | redo | Allows to redo the actions | `rteObj.executeCommand('redo');`|
 | removeFormat | remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. |`rteObj.executeCommand('removeFormat');`|

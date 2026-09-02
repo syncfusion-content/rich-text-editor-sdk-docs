@@ -1,26 +1,25 @@
 ---
 layout: post
-title: Getting started with TypeScript Block Editor control | Syncfusion
-description: Checkout and learn how to create and run a Block Editor using a Vite-based TypeScript project and Syncfusion Essential JS 2.
+title: Getting Started with TypeScript Block Editor | Syncfusion
+description: Learn how to get started with the TypeScript Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor"
 platform: ej2-javascript
 control: Getting started 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting started in TypeScript Block Editor control
+# Getting Started with TypeScript Block Editor
 
 This section explains the steps to create a simple Block Editor and demonstrates the basic usage of the Block Editor control using a Vite-based TypeScript project scaffolded with latest vite version.
 
 ## Prerequisites
 
-This guide uses Vite as the bundler and development environment. Install Node.js 24.13.0 or higher before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev/).
+This guide uses Vite as the bundler and development environment. Install Node.js 24.13.0 or higher before proceeding. For detailed information about Vite’s capabilities and configuration options, refer to the [Vite documentation](https://vitejs.dev).
 
 ## Create a TypeScript application
 
-To set up a TypeScript application in a TypeScript environment, run the following command.
+To set up a TypeScript project with Vite, run the following command:
 
 ```bash
 npm create vite@latest my-app -- --template vanilla-ts

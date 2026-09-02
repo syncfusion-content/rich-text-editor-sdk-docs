@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Toolbar position in TypeScript Rich text editor | Syncfusion
-description: Learn here all about Toolbar position in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Toolbar Position in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to position the toolbar at the top or bottom of the TypeScript Rich Text Editor to match your application layout and editing experience.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Toolbar position
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Toolbar position in TypeScript Rich Text Editor control
+# Toolbar Position in TypeScript Rich Text Editor
 
 The Rich Text Editor allows you to configure the toolbar's position using the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) field in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property. The available positions are:
 
@@ -22,7 +21,7 @@ The Rich Text Editor allows you to position the toolbar at the top or bottom of 
 
 By default, the toolbar is displayed at the top of the editor, making all formatting and editing tools immediately accessible above the content.
 
-To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) property in the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
+To position the toolbar at the bottom, use the [position](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#position) property in the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) configuration and set its value to `Bottom`. This places the toolbar below the content area, which can help maintain a cleaner top layout and improve accessibility in certain use cases.
 
 {% if page.publishingplatform == "typescript" %}
 

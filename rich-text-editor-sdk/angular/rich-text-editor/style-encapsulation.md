@@ -1,38 +1,38 @@
 ---
 layout: post
-title: Style Encapsulation | Syncfusion
-description: Learn here all about Style Encapsulation Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Style Encapsulation in Angular Rich Text Editor | Syncfusion
+description: Learn how to isolate or apply application styles in the Angular Rich Text Editor using iframe mode and control CSS styling behavior.
 platform: rich-text-editor-sdk
-control: Style Encapsulation
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Style Encapsulation in Angular Rich Text Editor
 
-Style encapsulation determines how styles are applied within the Syncfusion Angular **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
+Style encapsulation determines how styles are applied within the Syncfusion Angular Rich Text Editor. This feature helps control whether the component's content inherits global styles from the application or remains isolated.
 
 ## Encapsulation modes
 
 Syncfusion's Angular Rich Text Editor offers two rendering modes for controlling style encapsulation:
 
-1. **Encapsulated Mode (Iframe Mode)**  
-   - When enabled, the Rich Text Editor is rendered inside an `<iframe>`.  
-   - The application's global CSS rules will **not** affect the content inside the editor.  
-   - This ensures that the editor's content remains styled independently.  
-   - **Usage:** `[iframeSettings]="{ enable: true }"`
+1. **Encapsulated mode (iframe mode)**
+   - When enabled, the Rich Text Editor is rendered inside an `<iframe>`.
+   - The application's global CSS rules will not affect the content inside the editor.
+   - This ensures that the editor's content remains styled independently.
+   - **Usage:** bind `[iframeSettings]="iframeSettings"` and set `iframeSettings = { enable: true }` on the component.
 
-2. **Non-Encapsulated Mode (Default)**  
-   - The Rich Text Editor is rendered **without an `<iframe>`**.  
-   - The application's global CSS **will apply** to the content inside the editor.  
-   - This mode allows seamless integration with existing styles.  
-   - **Usage:** `[iframeSettings]="{ enable: false }"`
+2. **Non-encapsulated mode (default)**
+   - The Rich Text Editor is rendered without an `<iframe>`.
+   - The application's global CSS will apply to the content inside the editor.
+   - This mode allows seamless integration with existing styles.
+   - **Usage:** bind `[iframeSettings]="iframeSettings"` and set `iframeSettings = { enable: false }` on the component.
 
 ### Default behavior
 
-By default, the Rich Text Editor uses **non-encapsulated mode** (`[iframeSettings]="{ enable: false }"`), allowing the application's styles to affect the editor's content.
+By default, the Rich Text Editor uses non-encapsulated mode (`iframeSettings = { enable: false }`), allowing the application's styles to affect the editor's content.
 
-Below is a sample implementation of both **encapsulated** and **non-encapsulated** modes.
+Below is a sample implementation of both encapsulated and non-encapsulated modes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,3 +49,4 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 ## See also
 
 * [Iframe Editor](./editor-types/iframe.md)
+* [Style and Appearance](./style.md)

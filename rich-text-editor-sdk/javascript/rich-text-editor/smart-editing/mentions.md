@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Mentions in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Mentions in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Mentions in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add user mentions in the JavaScript Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
 platform: rich-text-editor-sdk
-control: Mentions
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Mentions in JavaScript Rich Text Editor control
+# Mentions in JavaScript Rich Text Editor
 
-By integrating the [Mention](https://ej2.syncfusion.com/documentation/mention/getting-started) control with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
+The Mention feature, integrated with the JavaScript Rich Text Editor via the [Mention](https://ej2.syncfusion.com/documentation/mention/getting-started) component, enables users to tag or mention users or objects from a suggestion list. This functionality streamlines tagging by eliminating manual entry of names or identifiers, enhancing efficiency and accuracy.
 
 ## Setup and configuration
 
@@ -19,7 +18,7 @@ Use the [target](https://ej2.syncfusion.com/documentation/api/mention/index-defa
 
 ## Using mentions
 
-When the user types the `@` symbol followed by a character, the Rich Text Editor displays a list of suggestions. Users can then select an item from the list by:
+When users type the `@` symbol followed by a character in the Rich Text Editor, a suggestion list appears. Users can then select an item from the list by:
 
 * Clicking on it
 * Typing the name of the item they want to tag
@@ -116,7 +115,7 @@ For example, by default, the mention chip renders as:
 Using the `displayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com" aria-label="Email Selma Rose">@Selma Rose</a>
 
 ```
 
@@ -160,4 +159,4 @@ In the following sample, we configured the following properties:
 
 ## See also
 
-* [Getting Started with Mention](https://ej2.syncfusion.com/documentation/mention/getting-started)
+* [Mention](https://ej2.syncfusion.com/documentation/mention/getting-started)

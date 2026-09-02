@@ -17,11 +17,11 @@ You can configure the paste settings using the [PasteCleanupSettings](https://he
 
 The [AllowedStyles](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_AllowedStyles) property in the [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) model allows you to define which CSS styles are permitted when content is pasted into the editor. Any style not included in this list will be stripped from the pasted content. This ensures that only desired visual attributes are preserved, maintaining a clean and consistent look.
 
-By default, following styles are allowed:
+By default, the following styles are allowed:
 
-['font-weight', 'font-style', 'text-decoration', 'text-transform'].
+`['font-weight', 'font-style', 'text-decoration', 'text-transform']`.
 
-In the below example, only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
+The following example retains only `font-weight` and `font-style` styles from the pasted content. All other inline styles will be removed.
 
 ```cshtml
 @{
@@ -36,7 +36,7 @@ In the below example, only `font-weight` and `font-style` styles will be retaine
 
 The [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_DeniedTags) property in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) enables you to specify HTML tags that should be completely removed from the pasted content. This is particularly useful for stripping out potentially problematic or irrelevant tags, such as `script` tags, `iframe`s, or any other elements you don't want to allow in the editor. By default, the [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_DeniedTags) property is an empty array, meaning no tags are removed by default.
 
-In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
+The following example removes any `<script>` or `<iframe>` tags found in the pasted content, preventing unwanted behavior or styling issues.
 
 ```cshtml
 @{
@@ -47,7 +47,7 @@ In the below example, any `<script>` or `<iframe>` tags found in the pasted cont
 </div>
 ```
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The following example demonstrates the usage of paste settings that allow only specific styles and also remove specific tags from the pasted content.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -84,7 +84,7 @@ To paste content purely as plain text, stripping all HTML tags and inline styles
 
 ```
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The following example demonstrates the usage of paste settings that disable the keep format and allow plain text.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -106,7 +106,7 @@ The following events are available when pasting content into the editor.
 |`BeforePasteCleanup`|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
 |`AfterPasteCleanup`|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
 
-Below snippet demonstrates how to configure above events in the editor.
+The following snippet demonstrates how to configure the above events in the editor.
 
 ```cshtml
 

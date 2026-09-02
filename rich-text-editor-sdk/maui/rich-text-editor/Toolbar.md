@@ -34,7 +34,7 @@ richTextEditor.ToolbarPosition = RichTextEditorToolbarPosition.Bottom;
 
 ## Inline tooltip for link
 
-The link tooltip appears when you click a link in the editor. The Rich Text Editor provides essential tools in the link tooltip, including "Open", "Edit Link", and "Remove Link".
+The link tooltip appears when you click a link in the editor. The Rich Text Editor provides essential tools in the link tooltip, including **Open**, **Edit Link**, and **Remove Link**.
 
 ![.NET MAUI Rich Text Editor link quick tooltip](images/richtexteditor-link-quick-tooltip.png)
 

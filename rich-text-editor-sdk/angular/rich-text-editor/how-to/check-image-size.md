@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Check image size in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about checking image size in the Syncfusion Angular Rich Text Editor component of Essential JS 2 and more.
+title: Validate Image Size in Angular Rich Text Editor | Syncfusion
+description: Learn how to validate image dimensions before uploading in the Angular Rich Text Editor and restrict images that exceed the allowed size.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Check image size 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Check the Image Size in the Angular Rich Text Editor Component
+# Validate Image Size Before Upload in Angular Rich Text Editor
 
-By using the Rich Text Editor's [imageUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#imageuploading) event, you can get the image size before uploading and restrict the upload if the image size is greater than the allowed size.
+By using the Rich Text Editor's `imageUploading` event, you can get the image size before uploading and restrict the image from being uploaded when the given image size is greater than the allowed size.
 
 In the following example, we validate the image size before uploading and determine whether the image is uploaded or not.
 

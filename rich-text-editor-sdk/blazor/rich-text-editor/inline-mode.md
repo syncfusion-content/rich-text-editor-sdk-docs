@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Inline Mode in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to use inline editing mode in Blazor Rich Text Editor for compact, dialog-free content editing.
+title: Inline Editing in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to enable inline editing in the Blazor Rich Text Editor to edit content directly in place with an inline toolbar for quick formatting.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Inline Editor in Blazor Rich Text Editor Component
+# Inline Editing in Blazor Rich Text Editor
 
 The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) provides an option to display a floating toolbar on demand by enabling the [RichTextEditorInlineMode.Enable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorInlineMode.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorInlineMode_Enable) property.
 When the editable content is focused or selected, the inline toolbar appears automatically. This floating toolbar allows users to access formatting commands directly where they are working.
 
 ## Customizing Inline Toolbar Items
 
-You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
+You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property. This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
 
 {% tabs %}
 {% highlight razor %}

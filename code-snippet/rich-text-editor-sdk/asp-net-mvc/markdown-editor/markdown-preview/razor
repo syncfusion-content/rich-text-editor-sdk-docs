@@ -97,13 +97,13 @@
 
 </style>
 <script>
-  var rteObj, textArea, srcArea, splitObj;
+    var rteObj, textArea, srcArea, splitObj;
     function onCreate() {
         rteObj = this;
-        loadExternalFile();
         textArea = rteObj.contentModule.getEditPanel();
         srcArea = document.querySelector('.source-code');
-        setTimeout(() => { rteObj.refreshUI(); },10)
+        updateValue();
+        setTimeout(() => { rteObj.refreshUI(); }, 10)
     }
     function onChange() {
         updateValue();
@@ -112,7 +112,8 @@
         rteObj.refreshUI();
     }
     function updateValue(e) {
-        srcArea.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+        // The Syncfusion MarkdownConverter is used here to convert markdown into HTML content.
+        srcArea.innerHTML = ej.markdownConverter.MarkdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
     }
     function onCreateSplitter() {
         splitObj = this;
@@ -121,14 +122,5 @@
             splitObj.orientation = 'Vertical';
             document.body.querySelector('.heading').style.width = 'auto';
         }
-    }
-    function loadExternalFile() {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-        script.onload = function () {
-            updateValue();
-        };
-        document.getElementsByTagName('head')[0].appendChild(script);
     }
 </script>

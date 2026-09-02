@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Lists in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about List Blocks with Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: List Blocks in Vue Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the Vue Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in Vue Block Editor component
+# List Blocks in Vue Block Editor
 
-The Syncfusion Vue Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
+The Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
-## Configure bullet list 
+## Configure bullet list
 
 You can render a Bullet List block by setting the [blockType](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/blockmodel#blocktype) property to `BulletList`. This block type is used to display unordered lists.
 
@@ -34,7 +33,7 @@ You can render a Bullet List block by setting the [blockType](https://ej2.syncfu
 
 ### Configure placeholder
 
-The [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
+The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a bullet list is `Add item`.
 
 ```typescript
 // Adding placeholder value 
@@ -71,7 +70,7 @@ You can render a Numbered List block by setting the [blockType](https://ej2.sync
 
 ### Configure placeholder
 
-The [placeholder](https://ej2.syncfusion.com/react/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
+The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/baseplaceholderprop#placeholder) property sets the text that appears when the block is empty. The default placeholder for a numbered list is `Add item`.
 
 ```typescript
 // Adding placeholder value 
@@ -143,7 +142,7 @@ The [placeholder](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/b
 
 ## Configure list blocks
 
-Below example illustrates how to render the different types of list blocks in the Block Editor.
+The example below illustrates how to render the different types of list blocks in the Block Editor.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

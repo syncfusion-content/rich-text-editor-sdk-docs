@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Save in JavaScript Rich text editor | Syncfusion
-description: Learn here all about Save in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Save in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to save content in the JavaScript Rich Text Editor by handling the Ctrl+S keyboard shortcut and updating the editor value.
 platform: rich-text-editor-sdk
-control: Save 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Save in JavaScript Rich text editor control
+# Save in JavaScript Rich Text Editor
 
-To achieve this, we need to bind the `keydown` event to the Rich Text Editor content and capture the `ctrl + s` key press using its keyCode.
-In the `keydown` event handler, the `updateValue` method is called to update the [`value`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#value) property and then we can save the content in the required database using the same.
+To achieve this, bind the `keydown` event to the Rich Text Editor content and capture the `Ctrl + S` key press using its `keyCode`.
+In the `keydown` event handler, the `updateValue` method is called to update the [`value`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#value) property, and then you can save the content in the required database using the same.
 
 {% if page.publishingplatform == "typescript" %}
 

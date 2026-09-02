@@ -37,7 +37,7 @@ The AI Assistant interface can be opened through the following options:
 ## Request and Response Handling
 
 Executing a prompt triggers the `AiAssistantPromptRequest` event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
-Once a response is received either as a stream or as a single output it can be added to the AssistView using the `addAIPromptResponse` method.
+Once a response is received either as a stream or as a single output, it can be added to the AssistView using the `addAIPromptResponse` method.
 
 If the *Stop Responding* button is clicked, the `AiAssistantStopRespondingClick` event is raised to cancel the streaming operation.
 
@@ -45,7 +45,7 @@ If the *Stop Responding* button is clicked, the `AiAssistantStopRespondingClick`
 
 ## Streaming Responses
 
-Responses can be streamed into the AssistView to provide a typewriter like effect. The `finalUpdate` parameter of `addAIPromptResponse` determines when the final chunk is processed and the stream ends.
+Responses can be streamed into the AssistView to provide a typewriter-like effect. The `finalUpdate` parameter of `addAIPromptResponse` determines when the final chunk is processed and the stream ends.
 
 **Example: Streaming Response**
 
@@ -105,6 +105,6 @@ this.editor.addAIPromptResponse(data, true);
 
 A working demonstration of the AI Assistant, showcasing real-time chunk streaming, is available in the following resources:
 
-* **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
+* **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK.
 
-* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/tailwind3):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/aspnetcore/richtexteditor/aiassistant#/fluent2):** Implementation using the `gpt-4o-mini` model.

@@ -1,23 +1,22 @@
 ---
 layout: post
-title: Emoji Picker in JavaScript RichTextEditor | Syncfusion
-description: Learn about Emoji Picker in Syncfusion JavaScript RichTextEditor control of Syncfusion Essential JS 2 and more.
+title: Emoji Picker in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add emojis in the JavaScript Rich Text Editor with search, categories, keyboard support, and a better content creation experience.
 platform: rich-text-editor-sdk
-control: Emoji Picker
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Emoji Picker in JavaScript Rich Text Editor control
+# Emoji Picker in JavaScript Rich Text Editor
 
 An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 
-## Configuring emoji picker tool in the toolbar
+## Configuring the emoji picker tool in the toolbar
 
 Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-By default, a predefined set of emojis is configured. However, these icons can be customized according to specific needs by using the  [emojiPickerSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richtexteditormodel#emojiPickerSettings) property.
+By default, a predefined set of emojis is configured. However, these emojis can be customized according to specific needs by using the [emojiPickerSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiPickerSettings) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,13 +45,13 @@ By default, a predefined set of emojis is configured. However, these icons can b
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/emoji-picker-cs2" %}
 {% endif %}
 
-Additionally, you have the option to customize the icons of toolbar items using the [iconCss](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#iconCss) and [code](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#code) properties. The `iconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `code` property enables you to specify the Unicode character code for the icon.
+You can also customize the icons of the emoji categories using the [iconCss](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#iconCss) and [code](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiiconsset#code) properties.
 
-When both `iconCSS` and `code` properties are provided, the `iconCSS` property takes precedence in determining the appearance of the toolbar item icon.
+When both `iconCss` and `code` properties are provided, the `iconCss` property takes precedence in determining the appearance of the category icon.
 
-Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojisettings#showSearchBox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
+You can also enable a filtering feature to efficiently manage a large dataset of emojis. By setting the [showSearchBox](https://ej2.syncfusion.com/documentation/api/rich-text-editor/emojiPickerSettings#showSearchBox) property to `true` (the default value), users can use a search box to filter the displayed emojis.
 
-The following code example shows how to add the emoji picker tool in the Rich Text Editor.
+The following code example shows how to add the emoji picker tool in the Rich Text Editor with a customized set of emojis.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,8 +90,6 @@ Quickly access the emoji picker by pressing the colon (:) key while typing a wor
 
 The emoji picker popup offers keyboard navigation options, allowing you to move the emoji focus from one emoji to another. The following keys are used for navigation:
 
-`Arrow keys`: Use the arrow keys (up, down, left, right) to move the emoji focus in the corresponding direction.
-
-`Enter`: Press Enter key to select the currently focused emoji.
-
-`Escape`: Press Escape to close the emoji picker popup without selecting an emoji.
+- **Arrow keys**: Use the arrow keys (up, down, left, right) to move the emoji focus in the corresponding direction.
+- **Enter**: Press the Enter key to select the currently focused emoji.
+- **Escape**: Press Escape to close the emoji picker popup without selecting an emoji.

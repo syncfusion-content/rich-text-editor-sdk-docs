@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Embedly in Angular Rich text editor component | Syncfusion
-description: Learn here all about embedly integration in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Embedly in Angular Rich Text Editor component | Syncfusion
+description: Learn here all about Embedly integration in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: Embedly
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Integrate Embedly into the Angular Rich Text Editor
 
-- Rich Text Editor easily integrate with [Embed.ly](https://embed.ly/) which is probably the best service when it comes to embed the rich content such as Twitter, Facebook and lots of other publishing platform embeds. This integration allows users to insert links that render as interactive embed cards, enhancing the visual presentation and user experience when sharing web content.
+- The Rich Text Editor easily integrates with [Embed.ly](https://embed.ly/), a service that lets you embed rich content such as Twitter, Facebook, and many other publishing platform embeds. This integration allows users to insert links that render as interactive embed cards, enhancing the visual presentation and user experience when sharing web content.
 
 - This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#toolbarsettings) property. In the event handler, create an element and add the appropriate class.
 
@@ -21,22 +21,23 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 ## Key features
 
 - Automatic conversion of inserted links into rich Embedly cards.
-- Processes links after editor view initialization via `ngAfterViewInit`.
-- Integrates with the editor's `actionComplete` to detect and wrap links.
-- Minimal setup: include the platform script.
+- Process links after the editor view initializes via `ngAfterViewInit`.
+- Integrate with the editor's `actionComplete` event to detect and wrap inserted links.
+- Minimal setup: include the Embedly platform script.
 
-## Setup / Installation
+## Setup
 
-- Include Embedly’s platform script in index.html so cards render on the page:
+- Include Embedly's platform script in `src/index.html` so cards render on the page:
 
 ```html
-<script async src="//cdn.embedly.com/widgets/platform.js"></script>
+<script async src="https://cdn.embedly.com/widgets/platform.js"></script>
 ```
 
 ## Configure Embedly for the Rich Text Editor
 
-### Step 1: Configure imports and packages
-- Import the Rich Text Editor module and required services in your Angular module or standalone component (ToolbarService, LinkService, HtmlEditorService, etc.).
+### Step 1: Configure imports
+
+- Import the Rich Text Editor module and the required services (`ToolbarService`, `LinkService`, `HtmlEditorService`, etc.) in your Angular standalone component.
 
 ```typescript
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
@@ -86,9 +87,9 @@ public ngAfterViewInit(): void {
 }
 ```
 
-## Example for embedly integration
+## Example for Embedly integration
 
-Below is the example integration of Embedly with the Angular Rich Text Editor.
+The following sample demonstrates the Embedly integration with the Angular Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

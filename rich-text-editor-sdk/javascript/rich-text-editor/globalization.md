@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Globalization in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Globalization in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Globalization in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to localize the JavaScript Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 platform: rich-text-editor-sdk
-control: Globalization 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Globalization in the JavaScript Rich Text Editor control
+# Globalization with JavaScript Rich Text Editor
 
 ## Localization
 
@@ -371,7 +370,7 @@ To localize the editor’s strings with your own localization, copy the default 
         'removeTable': "Tabelle entfernen",
         'tableHeader': "Kopfzeile",
         'tableRemove': "Tabelle löschen",
-        'tableCellBackgroun': "Tabellenzellenhintergrund",
+        'tableCellBackground': "Tabellenzellenhintergrund",
         'tableEditProperties': "Tabelle Eigenschaften bearbeiten",
         'styles': "Stile",
         'insertColumnLeft': "Spalte links einfügen",

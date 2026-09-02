@@ -18,16 +18,16 @@ You can render Bullet List block by setting the `blockType` property as `BulletL
 
 ### BlockType
 
-```typescript
+```csharp
 // Adding bulletlist block
 {
-    blockType = 'BulletList',
+    blockType = "BulletList",
     content = new List<object>()
+    {
+        new
         {
-        new 
-        {
-            contentType = "Text"
-            content = 'your content'
+            contentType = "Text",
+            content = "your content"
         }
     }
 }
@@ -35,12 +35,12 @@ You can render Bullet List block by setting the `blockType` property as `BulletL
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
+You can configure placeholder text for a block using the `placeholder` property in the `properties` property. This text appears when the block is empty. The default placeholder for a bullet list is `Add item`.
 
-```typescript
-// Adding placeholder value 
+```csharp
+// Adding placeholder value
 {
-    blockType = 'BulletList',
+    blockType = "BulletList",
     properties = new { placeholder = "Add item" }
 }
 ```
@@ -51,16 +51,16 @@ You can render Numbered List block by setting the `blockType` property as `Numbe
 
 ### BlockType
 
-```typescript
-// Adding bulletlist block
+```csharp
+// Adding numberedlist block
 {
-    blockType = 'NumberedList',
+    blockType = "NumberedList",
     content = new List<object>()
     {
-        new 
+        new
         {
-            contentType = "Text"
-            content = 'your content'
+            contentType = "Text",
+            content = "your content"
         }
     }
 }
@@ -68,12 +68,12 @@ You can render Numbered List block by setting the `blockType` property as `Numbe
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
+You can configure placeholder text for a block using the `placeholder` property in the `properties` property. This text appears when the block is empty. The default placeholder for a numbered list is `Add item`.
 
-```typescript
-// Adding placeholder value 
+```csharp
+// Adding placeholder value
 {
-    blockType = 'NumberedList',
+    blockType = "NumberedList",
     properties = new { placeholder = "Add item" }
 }
 ```
@@ -84,16 +84,16 @@ You can render Checklist block by setting the `blockType` property as `Checklist
 
 ### BlockType
 
-```typescript
-// Adding bulletlist block
+```csharp
+// Adding checklist block
 {
-    blockType = 'CheckList',
+    blockType = "Checklist",
     content = new List<object>()
     {
-        new 
+        new
         {
-            contentType = "Text"
-            content = 'your content'
+            contentType = "Text",
+            content = "your content"
         }
     }
 }
@@ -118,19 +118,19 @@ By default, the `isChecked` property is set to `false`.
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for check list is  `Todo`.
+You can configure placeholder text for a block using the `placeholder` property in the `properties` property. This text appears when the block is empty. The default placeholder for a checklist is `Todo`.
 
-```typescript
-// Adding placeholder value 
+```csharp
+// Adding placeholder value
 {
-    blockType = 'Checklist',
+    blockType = "Checklist",
     properties = new { placeholder = "Todo" }
 }
 ```
 
 ## Configure list blocks
 
-Below example illustrates how to render the different types of list blocks in the Block Editor.
+The following example illustrates how to render the different types of list blocks in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

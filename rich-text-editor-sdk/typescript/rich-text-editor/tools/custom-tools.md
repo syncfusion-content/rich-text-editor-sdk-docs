@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Custom Toolbar in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Custom Toolbar in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Custom Toolbar Items in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the TypeScript Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Custom Toolbar
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Custom Toolbar Items in TypeScript Rich Text Editor control
+# Custom Toolbar Items in TypeScript Rich Text Editor
 
 The Rich Text Editor allows you to customize the toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings) property. You can add custom commands with text, icons, or HTML templates and define their position in the toolbar.
 
-## Adding a custom command  
+## Adding a custom command
 
-This example demonstrates how to add a custom “Ω” command to the toolbar for inserting special characters. Clicking the Ω icon opens a special character list, allowing users to insert symbols into the editor.
+This example demonstrates how to add a custom `Ω` command to the toolbar for inserting special characters. Clicking the Ω icon opens a special character list, allowing users to insert symbols into the editor.
 
 ### Custom toolbar configuration
 
@@ -64,6 +63,6 @@ To add a custom tool with a tooltip, define it in the [`items`](https://ej2.sync
 
 ## Enabling and disabling toolbar items
 
-You can use the [enableToolbarItem](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](https://ej2.syncfusion.com/documentation/rich-text-editor/tools/built-in-tools#available-toolbar-items) as parameter.
+You can use the [enableToolbarItem](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#disabletoolbaritem) methods to control the state of toolbar items. These methods take a single item or an array of [items](https://ej2.syncfusion.com/documentation/rich-text-editor/tools/built-in-tools#available-toolbar-items) as a parameter.
 
 > You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.

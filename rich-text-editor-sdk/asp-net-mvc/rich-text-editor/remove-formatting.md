@@ -11,8 +11,6 @@ documentation: ug
 
 The ASP.NET MVC Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
 
-This feature is particularly useful when you need to:
-
 - Remove multiple styles at once
 - Quickly standardize text formatting
 - Prepare text for new styling
@@ -52,13 +50,13 @@ Here's an example of how to configure the Clear Format feature:
 
 ## Using Clear Format
 
-Once configured, you can use the Clear Format feature as follows:
+Once configured, use the Clear Format feature as follows:
 
 1. Select the text with formatting you want to remove.
 2. Click the `Clear Format` button in the toolbar.
-3. The selected text will revert to its original, unformatted state.
+3. The selected text reverts to its original, unformatted state.
 
-Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. Examples and code snippets below show how to use 'Clear Format' effectively in the Rich Text Editor.
+The following example shows how to use `ClearFormat` effectively in the Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

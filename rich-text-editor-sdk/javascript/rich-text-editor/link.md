@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Link in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Link in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Links in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the JavaScript Rich Text Editor for better content navigation and user experiences.
 platform: rich-text-editor-sdk
-control: Link 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Link in JavaScript Rich Text Editor Control
+# Links in JavaScript Rich Text Editor
 
-A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
+A hyperlink can be inserted into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
 ## Insert link
 
@@ -76,7 +75,7 @@ The Rich Text Editor supports automatic link generation. When you type a URL and
 
 By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
 
-However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
+However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,28 +1,34 @@
 ---
 layout: post
-title: Undo redo in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about Undo redo with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Undo and Redo in JavaScript Block Editor | Syncfusion
+description: Learn how to configure undo and redo in JavaScript Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Undo redo in JavaScript Block Editor control
+# Undo and Redo in JavaScript Block Editor
 
-The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
+Undo/redo lets users revert and reapply changes made to the editor content, providing a safety net for edits.
+
+The Block Editor tracks the following types of actions in the undo/redo stack:
+- Text content changes (typing, deletion)
+- Block additions, deletions, and duplication
+- Block movements and reordering (via drag-and-drop or shortcuts)
+- Inline formatting changes (bold, italic, underline, color)
+- Block transformations (paragraph to heading, etc.)
 
 ## Keyboard shortcuts
 
 | Action | Windows | Mac | Description |
-|------------|--------------|---------|-----------------|
-| Undo       | Ctrl + Z     | ⌘ + Z   | Reverts the last action. |
-| Redo       | Ctrl + Y     | ⌘ + Y | Reapplies the last undone action. |
+|--------|---------|-----|-------------|
+| Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Reverts the last action. |
+| Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>Y</kbd> | Reapplies the last undone action. |
 
 ## Configuring Undo/Redo stack
 
-The Block Editor stores a history of actions, allowing users to perform undo and redo operations. By default, it saves up to `30` actions. You can customize this limit using the [undoRedoStack](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#undoredostack) property to control the maximum number of steps that can be undone or redone.
+By default, the editor saves up to `30` actions in its undo/redo history. You can customize this limit using the [undoRedoStack](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#undoredostack) property.
 
 The example below sets the undo/redo history limit to `20` actions.
 

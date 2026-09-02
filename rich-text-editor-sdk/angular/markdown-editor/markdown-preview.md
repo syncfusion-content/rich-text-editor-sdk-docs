@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Markdown Preview in Angular Markdown Editor component | Syncfusion
-description: Learn how to enable real-time Markdown-to-HTML preview in the Syncfusion Angular Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Markdown Preview in Angular Markdown Editor | Syncfusion
+description: Learn how to enable Markdown preview in the Angular Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Markdown Preview
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Markdown Preview in Angular Markdown Editor Component
+# Markdown Preview in Angular Markdown Editor
 
 The Markdown Editor provides an instant preview of Markdown changes, allowing users to see the formatted output while typing or editing text. This enhances the editing experience by enabling real-time visualization of Markdown formatting.
 
 ## Enable Markdown Preview in Angular Markdown Editor  
 
-To enable the Markdown preview feature, integrate the third-party [Marked](https://marked.js.org/) library, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion Angular Markdown Editor.
+To enable the Markdown preview feature, use the Syncfusion `MarkdownConverter` from the `@syncfusion/ej2-markdown-converter` package, which converts Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Syncfusion Angular Markdown Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

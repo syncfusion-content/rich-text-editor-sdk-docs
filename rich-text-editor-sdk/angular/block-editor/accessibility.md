@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Accessibility in Angular Block Editor component | Syncfusion
-description:  Checkout and learn about Accessibility with Angular Block Editor component of Syncfusion Essential JS 2 and more details.
+title: Accessibility in Angular Block Editor | Syncfusion
+description: Learn about accessibility in the Angular Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Angular Block Editor component
+# Accessibility in Angular Block Editor
 
-The Block Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Block Editor component is designed to be accessible and follows widely accepted guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and the [WAI-ARIA roles](https://www.w3.org/TR/wai-aria#roles) specification.
 
-The accessibility compliance for the Block Editor component is outlined below.
+The accessibility compliance for the Block Editor component is summarized in the table below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -26,17 +26,15 @@ The accessibility compliance for the Block Editor component is outlined below.
 | [Accessibility Checker Validation](https://ej2.syncfusion.com/angular/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Axe-core Accessibility Validation](https://ej2.syncfusion.com/angular/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
-<style>
-    .post .post-content img {
-        display: inline-block;
-        margin: 0.5em 0;
-    }
-</style>
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
+**Legend**
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+| Icon | Meaning |
+|------|---------|
+| <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> | All features of the component meet the requirement. |
+| <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> | Some features of the component do not meet the requirement. |
+| <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> | The component does not meet the requirement. |
 
-<div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
+> The **Color Contrast** row reflects the component's built-in default theme. If you apply a custom theme, ensure the text/background combinations in the editor, menus, and toolbars meet your target WCAG contrast ratio (4.5:1 for normal text).
 
 ## WAI-ARIA attributes
 
@@ -48,21 +46,21 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 | `role="toolbar"` | Applied to inline formatting toolbars and action-menu containers to group related controls for assistive technologies. |
 | `role="grid"` | Table blocks are exposed as a grid/table for screen readers and keyboard navigation; ensure header cells (`th`) and proper `scope`/`headers` attributes are present. |
 | `role="img"` | Ensure accessible name is present for informative images. |
-| `aria-label` / `aria-labelledby` | Provides the accessible name for the editor, toolbar, or specific editable region. The running sample is missing this on the main editable container (axe reports `aria-input-field-name`). |
+| `aria-label` / `aria-labelledby` | Provides the accessible name for the editor, toolbar, or specific editable region. |
 | `aria-orientation` | Specifies the orientation of the toolbar. |
 | `aria-disabled` | Indicates whether the toolbar or element is currently disabled and not interactive. |
 | `aria-haspopup` / `aria-expanded` | Used by menus and popups (command/context/action menus). `aria-expanded` reflects open/closed state. |
-| `aria-hidden` | Hides non-interactive or offscreen content (e.g., closed popups) from assistive technologies. |
+| `aria-hidden` | Hides non-interactive or off screen content (e.g., closed popups) from assistive technologies. |
 
 ## Keyboard interaction
 
-The Block Editor component follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions.
+The Block Editor component follows the [WAI-ARIA Authoring Practices keyboard interaction](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/) guidelines, making it easier for people who use assistive technologies (AT) or rely solely on keyboard navigation. The component supports a variety of keyboard shortcuts for common actions such as inserting, navigating, formatting, and removing blocks.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/angular/documentation/block-editor/keyboard-shortcuts) documentation.
+For a complete list of keyboard shortcuts, refer to the [Keyboard shortcuts](https://ej2.syncfusion.com/angular/documentation/block-editor/keyboard-shortcuts) page.
 
 ## Ensuring accessibility
 
-The accessibility of the Block Editor component is continuously verified using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The accessibility of the Block Editor component is continuously verified with [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) during automated testing.
 
 ## See also
 

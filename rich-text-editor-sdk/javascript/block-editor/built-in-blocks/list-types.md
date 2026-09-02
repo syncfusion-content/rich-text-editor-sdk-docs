@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Lists in JavaScript Block Editor control | Syncfusion
-description: Checkout and learn about List Blocks with JavaScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: List Blocks in JavaScript Block Editor | Syncfusion
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the JavaScript Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Lists in JavaScript Block Editor control
+# List Blocks in JavaScript Block Editor
 
 The Syncfusion Block Editor control uses list blocks to organize content into structured lists. To render a specific list type, set the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property of the `BlockModel` to `BulletList`, `NumberedList`, or `Checklist`. Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
@@ -20,7 +19,7 @@ You can render a Bullet List block by setting the [blockType](https://ej2.syncfu
 ### BlockType
 
 ```typescript
-// Adding bulletlist block
+// Adding BulletList block
 {
     blockType: 'BulletList',
     content: [
@@ -57,7 +56,7 @@ You can render a Numbered List block by setting the [blockType](https://ej2.sync
 ### Type
 
 ```typescript
-// Adding numberedlist block
+// Adding NumberedList block
 {
     blockType: 'NumberedList',
     content: [
@@ -91,10 +90,12 @@ The [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/basep
 
 You can render a Checklist block by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to `Checklist`. This block type is used for creating interactive to-do lists.
 
+> **Converting between list types:** Use the inline toolbar Transform option or slash command to convert a list to another type (e.g., BulletList to NumberedList). For keyboard navigation and indent shortcuts, see [Keyboard Shortcuts](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/keyboard-shortcuts).
+
 ### BlockType
 
 ```typescript
-    // Adding checklist block 
+    // Adding Checklist block
 {
     blockType: 'Checklist',
     content: [
@@ -159,7 +160,7 @@ The [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/basep
 
 ## Configure list blocks
 
-Below example illustrates how to render the different types of list blocks in the Block Editor.
+The example below illustrates how to render the different types of list blocks in the Block Editor.
 
 {% if page.publishingplatform == "typescript" %}
 

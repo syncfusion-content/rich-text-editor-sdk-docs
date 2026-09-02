@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Typography Blocks in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Typography Blocks with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Text Block Types in Angular Block Editor | Syncfusion
+description: Learn how to configure text block types in the Angular Block Editor, including paragraphs, headings, dividers, quotes, callouts, and collapsible blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Typography Blocks in Angular Block Editor component
+# Text Block Types in Angular Block Editor
 
 Typography blocks are essential for organizing and presenting text-based content. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible (CollapsibleParagraph and CollapsibleHeading), Divider, Quote, and Callout—to help you format and structure content effectively.
 
-## Configure paragraph block
+## Configuring the paragraph block
 
 Paragraph blocks are the most common type, used for standard text content. They serve as the default block type and provide basic text formatting options. To render a Paragraph block, set the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Paragraph](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype).
 
-### BlockType 
+### Block type
 
 ```typescript
 // Adding a paragraph block
@@ -24,7 +24,7 @@ Paragraph blocks are the most common type, used for standard text content. They 
     blockType: 'Paragraph',
     content: [
         {
-            contentType: 'Text',
+            contentType: ContentType.Text, // or simply 'Text'
             content: 'This is a paragraph block example.'
         }
     ]
@@ -45,20 +45,25 @@ The following sample demonstrates the configuration of a paragraph block in the 
 {% include code-snippet/rich-text-editor-sdk/angular/block-editor/blocks/block-types/paragraph-block/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/block-types/paragraph-block" %}
 
 ### Configure placeholder
 
 You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
-### Block type & properties
+### Block type and properties
 
 ```typescript
-// Adding placeholder
- {
+// Adding a Paragraph block with a custom placeholder.
+// The block still needs a content array; you can pass an empty
+// Text content item so the editor renders the placeholder.
+{
     blockType: 'Paragraph',
-    properties: {placeholder: 'Start typing ...'}
+    properties: { placeholder: 'Start typing ...' },
+    content: [
+        { contentType: 'Text', content: '' }
+    ]
 }
 ```
 
@@ -79,7 +84,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/placeholder" %}
 
-## Configure heading block
+## Configuring the heading block
 
 Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) property to [Heading](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blocktype).
 
@@ -90,11 +95,10 @@ By using the [properties](https://ej2.syncfusion.com/angular/documentation/api/b
 ### Block type & properties
 
 ```typescript
-// Adding heading block
+// Adding a heading block (level can be 1 through 4)
 {
     blockType: 'Heading',
     properties: { level: 1 },
-    // levels range from 1 to 4
     content: [
         {
             contentType: 'Text',
@@ -118,51 +122,50 @@ The following sample demonstrates the configuration of a heading block in the Bl
 {% include code-snippet/rich-text-editor-sdk/angular/block-editor/blocks/block-types/heading-block/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/block-types/heading-block" %}
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/iheadingblocksettings#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for a Heading block using the [placeholder](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/icollapsibleblocksettings#placeholder) property. The text appears when the block is empty. The default placeholder for a heading block is `Heading {level}` — for example, `Heading 1` for `level: 1`, `Heading 2` for `level: 2`, and so on.
 
 ```typescript
-// Adding placeholder value to blocktype
+// Adding a placeholder for a Heading block
 {
     blockType: 'Heading',
-    properties: { 
+    properties: {
         level: 1,
-        placeholder: 'Heading1'
-    }
+        placeholder: 'Heading 1'
+    },
+    content: [
+        { contentType: 'Text', content: '' }
+    ]
 }
 ```
 
-## Configure divider block
+## Configuring the divider block
 
 A Divider block inserts a horizontal line to separate content. Render it by setting the [blockType](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockmodel#blocktype) to `Divider`.
 
 ### Block type & properties
 
 ```typescript
-// Adding divider block
-{
+// Placing a divider between two Paragraph blocks
+[
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            { contentType: 'Text', content: 'Section before the divider.' }
         ]
     },
-    {
-        blockType: 'Divider' 
-    },
+    { blockType: 'Divider' },
     {
         blockType: 'Paragraph',
         content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
+            { contentType: 'Text', content: 'Section after the divider.' }
         ]
     }
-}
+]
 ```
 
 This sample shows how to place a divider between two blocks.
@@ -179,5 +182,5 @@ This sample shows how to place a divider between two blocks.
 {% include code-snippet/rich-text-editor-sdk/angular/block-editor/blocks/block-types/divider-block/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/blocks/block-types/divider-block" %}

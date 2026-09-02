@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Controlling Editor Access in Blazor Block Editor | Syncfusion®
-description: Learn how to control editor access and implement read-only mode in the Blazor Block Editor component.
+title: Read-Only Mode in Blazor Block Editor | Syncfusion®
+description: Learn how to enable read-only mode in the Blazor Block Editor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Controlling Editor Access in Blazor Block Editor Component
+# Read-Only Mode in Blazor Block Editor
 
-The Blazor Block Editor provides a read-only mode to control user interaction with the editor. This allows users to view formatted content without editing. These features are useful for displaying content without modifications or temporarily restricting input, such as when presenting archived documents, previewing content, or restricting editing permissions.
+The Blazor Block Editor provides a read-only mode to display formatted content without allowing user edits. This feature is useful for presenting archived documents, previewing content, or restricting editing permissions while preserving the ability to view formatted text with full styling intact.
 
 ## Read-only mode
 
-Read-only mode prevents users from editing the content in the Block Editor while preserving the ability to view formatted text. This feature is particularly useful when you want to display formatted content without permitting modifications.
-
-To enable the read-only mode, set the [ReadOnly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_ReadOnly) property to `true`. The content remains viewable with its formatting intact, but editing is restricted.
+Read-only mode disables editing while allowing users to view and interact with formatted content. To enable read-only mode, set the [ReadOnly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.SfBlockEditor.html#Syncfusion_Blazor_BlockEditor_SfBlockEditor_ReadOnly) property to `true`. In this mode, users can view formatted content and select/copy text, but all editing actions and toolbar controls are disabled.
 
 The following example demonstrates how to enable read-only mode in the Block Editor:
 

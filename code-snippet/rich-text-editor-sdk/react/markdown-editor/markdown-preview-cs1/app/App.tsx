@@ -14,7 +14,7 @@ import {
   PanesDirective,
   SplitterComponent,
 } from '@syncfusion/ej2-react-layouts';
-import * as Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import * as React from 'react';
 
 class App extends React.Component<{},{}> {
@@ -29,7 +29,7 @@ Rich Text Editor supports markdown editing when the editorMode set as **markdown
   
 We can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/).
   
-The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content`;
+The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content`;
 
   // Rich Text Editor items list
   public items: (string | IToolbarItems)[] = ['Bold', 'Italic', 'StrikeThrough', '|',
@@ -56,7 +56,7 @@ The third-party library <b>Marked</b> is used in this sample to convert markdown
       this.rteObj.refreshUI();
   }
   public async updateValue() {
-      this.srcArea.innerHTML = await Marked.parse((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+      this.srcArea.innerHTML = await MarkdownConverter.toHtml((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
   }
   public updateOrientation() { 
       if (Browser.isDevice) {

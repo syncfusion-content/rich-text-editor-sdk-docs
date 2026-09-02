@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Check image size in Vue Rich text editor component | Syncfusion
-description: Learn here all about Check image size in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Check image size 
+title: Validate Image Size in Vue Rich Text Editor | Syncfusion
+description: Learn how to validate image dimensions before uploading in the Vue Rich Text Editor and restrict images that exceed the allowed size.
+control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Check image size in Vue Rich text editor component
+# Validate Image Size Before Upload in Vue Rich Text Editor
 
-By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
+By using the Rich Text Editor's `imageUploading` event, you can get the image size before uploading and restrict the image from being uploaded when the given image size is greater than the allowed size.
 
-In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
+In the following example, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

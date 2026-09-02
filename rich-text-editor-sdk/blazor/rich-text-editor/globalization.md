@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Globalization in Blazor Rich Text Editor | Syncfusion®
-description: Learn about globalization and localization in Blazor Rich Text Editor to support multiple languages and cultures.
+description: Learn how to localize the Blazor Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Globalization and Localization
+# Globalization in Blazor Rich Text Editor
 
 ## Localization
 
@@ -17,7 +17,7 @@ The [Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-ri
 
 ### Enable RTL mode
 
-Specify the direction of the Rich Text Editor component using the [EnableRtl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableRtl) property. Writing systems will require Arabic, Hebrew, and more. The direction can be switched to right-to-left.
+Specify the direction of the Rich Text Editor component using the [EnableRtl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableRtl) property. RTL writing systems include Arabic, Hebrew, and others; setting `EnableRtl="true"` switches the editor to right-to-left.
 
 N> The `EnableRtl` property does not change automatically based on the current culture. Enable it explicitly when RTL is required.
 
@@ -33,4 +33,10 @@ N> The `EnableRtl` property does not change automatically based on the current c
 
 ![Blazor Rich Text Editor right to left toolbar](./images/blazor-richtexteditor-right-to-left.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour for an overview of its capabilities. Explore the [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Events in Rich Text Editor](./events)
+* [Keyboard support in Rich Text Editor](./keyboard-shortcuts)
+* [Accessibility in Rich Text Editor](./accessibility)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour for an overview of its capabilities. Explore the [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Mail Merge in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to perform mail merge operations in Blazor Rich Text Editor to generate personalized content.
+description: Learn how to create personalized documents in the Blazor Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Mail merge in Blazor Rich Text Editor Control
+# Mail Merge in Blazor Rich Text Editor
 
-The Mail merge feature in Blazor Rich Text Editor enables developers to create dynamic, personalized documents by inserting placeholders (merge fields) into the editor content. These placeholders are later replaced with actual data at runtime, making it ideal for generating letters, invoices, and bulk communication templates.
+The Mail Merge feature in the Blazor Rich Text Editor enables developers to create dynamic, personalized documents by inserting placeholders (merge fields) into the editor content. These placeholders are later replaced with actual data at runtime, making it ideal for generating letters, invoices, and bulk communication templates.
 
 ## Rendering custom toolbar items
 
@@ -99,7 +99,7 @@ public async Task OnItemSelect(MenuEventArgs args)
         var value = _mergeData.FirstOrDefault(md => md.Text == args.Item.Text)?.Value;
         string htmlContent = $"<span contenteditable=\"false\" class=\"e-mention-chip\"><span>{{{{{value}}}}}</span></span>";
         var undoOption = new ExecuteCommandOption { Undo = true };
-        this._mailMergeEditor.ExecuteCommandAsync(CommandName.InsertHTML, htmlContent, undoOption);
+        await this._mailMergeEditor.ExecuteCommandAsync(CommandName.InsertHTML, htmlContent, undoOption);
         await this._mailMergeEditor.SaveSelectionAsync();
     }
 }
@@ -135,8 +135,8 @@ This feature is ideal for users who prefer keyboard-driven workflows.
 
 When the `Insert Field` dropdown opens, the editor loses its current selection because focus shifts to the popup. To ensure the placeholder is inserted at the correct position:
 
-- **SaveSelectionAsync()** is called when the dropdown opens. This stores the current cursor position in the editor before focus changes.
-- **RestoreSelectionAsync()** is called when the dropdown closes. This restores the saved cursor position so that the next insertion happens exactly where the user intended.
+- **SaveSelectionAsync()** is called when the dropdown opens. It stores the current cursor position in the editor before focus changes.
+- **RestoreSelectionAsync()** is called when the dropdown closes. It restores the saved cursor position so that the next insertion happens exactly where the user intended.
 
 **Why is this important?** Without saving and restoring the selection, placeholders might be inserted at the wrong location (e.g., at the end of the content), breaking the user experience.
 
@@ -228,4 +228,7 @@ This ensures all placeholders are dynamically replaced without manual editing.
 
 ## Related resources
 
-[Mention Control Guide](https://blazor.syncfusion.com/documentation/mention/getting-started-webapp)
+* [Mention Control Guide](https://blazor.syncfusion.com/documentation/mention/getting-started-webapp)
+* [Mentions in Rich Text Editor](./mention-integration)
+* [Execute Command in Rich Text Editor](./exec-command)
+* [Events in Rich Text Editor](./events)

@@ -1,25 +1,27 @@
 ---
 layout: post
-title: Editor mode in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Editor mode in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Modes in Angular Rich Text Editor | Syncfusion
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the Angular Rich Text Editor to create and edit content in different formats.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Editor mode 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Modes in Angular Rich Text Editor Component
+# Editor Modes in Angular Rich Text Editor
 
-The Rich Text Editor component allows you to create and edit content, returning it as either valid HTML or Markdown (MD). It supports the following two editing formats:
+The Rich Text Editor component supports two editing modes for creating and editing content in different formats. You can access the edited content via the `value` property or capture changes in the `change` event.
 
-* HTML editor
-* Markdown editor
+## Supported editor modes
+
+* **HTML editor** — Default WYSIWYG mode for editing and formatting content as HTML
+* **Markdown editor** — For editing and viewing content in Markdown format
 
 ## HTML editor
 
-Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
+HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor returns valid HTML markup.
 
-HTML editing is the default mode of the Rich Text Editor. In this mode, you can format content using the available toolbar commands, and the editor will return valid HTML markup. To explicitly set this mode, set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) property as `HTML`.
+To explicitly set the HTML editor mode, set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) property to `HTML`.
 
 >To use HTML editing feature, inject `HtmlEditorService` in the provider section.
 
@@ -37,15 +39,46 @@ HTML editing is the default mode of the Rich Text Editor. In this mode, you can 
 
 ## Markdown editor
 
-To create or edit content in Markdown format, set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) property value as `Markdown`.
+To create or edit content in Markdown format, set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#editormode) property to `Markdown`. You can then apply Markdown-compatible formatting and view the rendered output.
 
-The third-party library such as `Marked` or any other library is used to convert markdown into HTML content.
+### Supported Markdown tags
 
-* The Supported Tags are `h6`, `h5`, `h4`, `h3`, `h2`, `h1`, `blockquote`, `pre`, `p`, `ol`, `ul`.
-* The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
-* The supported insert commands are `Image`, `Link` and `Table`.
+The following HTML tags are generated from Markdown syntax:
 
-For further details on Markdown editing, refer to the [Markdown](../../markdown-editor/getting-started)
+| Markdown Syntax | HTML Tag | Example |
+|-----------------|----------|---------|
+| `# Heading` | `<h1>` | `# Main Title` |
+| `## Heading` | `<h2>` | `## Subtitle` |
+| `### Heading` | `<h3>` | `### Section` |
+| `#### Heading` | `<h4>` | `#### Subsection` |
+| `##### Heading` | `<h5>` | `##### Minor` |
+| `###### Heading` | `<h6>` | `###### Tiny` |
+| `> Blockquote` | `<blockquote>` | `> Quote text` |
+| `` ``` code ``` `` | `<pre>` | `` ``` code block ``` `` |
+| `Paragraph` | `<p>` | Regular text |
+| `1. Item` | `<ol>` | Ordered list |
+| `- Item` | `<ul>` | Unordered list |
+
+### Selection formatting tags
+
+The following text formatting options are available in Markdown mode:
+
+| Format | Markdown | Example |
+|--------|----------|---------|
+| Bold | `**text**` | `**bold text**` |
+| Italic | `*text*` | `*italic text*` |
+| Strikethrough | `~~text~~` | `~~strikethrough~~` |
+| Inline Code | `` `code` `` | `` `code` `` |
+| Subscript | (selection formatting) | Converts selected text to Subscript |
+| Superscript | (selection formatting) | Converts selected text to Superscript ||
+| Uppercase | (selection formatting) | Converts selected text to uppercase |
+| Lowercase | (selection formatting) | Converts selected text to lowercase |
+
+### Markdown Conversion
+
+Markdown content is converted to HTML using the `@syncfusion/ej2-markdown-converter` package. Ensure this package is installed in your project.
+
+For more details on Markdown editing, refer to the [Markdown Editor Getting Started](../../markdown-editor/getting-started) guide.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

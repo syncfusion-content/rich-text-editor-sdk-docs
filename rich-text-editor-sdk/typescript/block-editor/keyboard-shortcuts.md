@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Keyboard Shortcuts in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Keyboard Shortcuts with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Keyboard Shortcuts in TypeScript Block Editor | Syncfusion
+description: Learn the keyboard shortcuts available in the TypeScript Block Editor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Keyboard Shortcuts in TypeScript Block Editor control
+# Keyboard Shortcuts in TypeScript Block Editor
 
 The Block Editor control provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 
@@ -43,12 +42,11 @@ These shortcuts enable quick creation of different block types and management of
 | Create Code Block | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>K</kbd> |
 | Create Callout | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>C</kbd> |
 | Insert Image | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>/</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>/</kbd> |
-| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> |<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
+| Insert Divider | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>-</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> |
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation, and movement. For indentation, both `Ctrl+]`/`Tab` (increase indent) and `Ctrl+[`/`Shift+Tab` (decrease indent) are supported.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|

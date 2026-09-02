@@ -73,7 +73,7 @@ You can add custom attributes to the body tag of the iframe using the attributes
 
 The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the `styles` field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
-Likewise, add the external script file to the `< iframe >` element using the `scripts` field of iframeSettings to provide the additional functionalities to the RichTextEditor.
+Likewise, add the external script file to the `<iframe>` element using the `scripts` field of `iframeSettings` to provide additional functionalities to the Rich Text Editor.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -99,10 +99,10 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 {% endtabs %}
 {% endif %}
 
-> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/tailwind3) that shows how to render the iframe in Angular Rich Text Editor.
+> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/fluent2) that shows how to render the iframe in the ASP.NET Core Rich Text Editor.
 
 
 ## See Also
 
 * [Implementing Inline Editing](./inline-editing)
-* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.NETCORE/getting-started)
+* [Using the Markdown Editor](../../markdown-editor/getting-started)

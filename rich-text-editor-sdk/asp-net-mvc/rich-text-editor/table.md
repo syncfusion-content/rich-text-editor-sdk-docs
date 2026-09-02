@@ -9,7 +9,7 @@ documentation: ug
 
 # Tables in ASP.NET MVC Rich Text Editor
 
-Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [TableSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings)
+The Rich Text Editor lets you insert a table in the editor and provides options to add, edit, and remove the table, as well as perform other table related actions. The following table-related options are available through the [TableSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings) property.
 
 ## Configuring the Table tool in Toolbar
 
@@ -122,7 +122,7 @@ The Rich Text Editor provides a simple and intuitive way to select table rows, c
 Entire rows can be selected using the icons that appears on hover.
 
 **To select a row:**
-- **Where to hover**: Move the mouse pointer over the first column of the table..
+- **Where to hover**: Move the mouse pointer over the first column of the table.
 - **What you'll see**: A selection handle appears on the left side of the corresponding row.
 - **How to select**: Click the handle to select the entire row.
 

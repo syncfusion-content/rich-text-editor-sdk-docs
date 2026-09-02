@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 ## Configure children
 
-The Block Editor supports hierarchical content structures through the `children` property. This property can be achieved through `properties` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the `children` property. This property is configured via the `properties` property and allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
@@ -24,11 +24,20 @@ This structure is essential for maintaining nested relationships within the edit
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the `blockType` property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the `blockType` property as `CollapsibleParagraph`, `CollapsibleHeading1`, `CollapsibleHeading2`, `CollapsibleHeading3`, or `CollapsibleHeading4`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
-You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
+You can configure the CollapsibleHeading using the `level` property inside the `properties` property. The levels can vary from `level: 1` to `level: 4`.
+
+### Collapsible block properties
+
+| Property | Description | Default Value |
+|----------|-------------|---------------|
+| `level` | Specifies the heading level (1–4). Only applicable to `CollapsibleHeading` blocks. | `1` |
+| `isExpanded` | Specifies whether the block is initially expanded. | `false` |
+| `children` | Specifies the child blocks nested inside the collapsible block. | `[]` |
+| `placeholder` | Specifies the placeholder text shown when the block is empty. | depends on type |
 
 ### Configure expanded state
 
@@ -36,16 +45,16 @@ You can control whether a block is expanded or collapsed using the `isExpanded` 
 
 ### Block type & properties
 
-```typescript
+```csharp
     // Configuring CollapsibleHeading block
     new BlockModel
     {
         blockType = "CollapsibleHeading",
         properties = new
         {
-                level=1,
+                level = 1,
                 isExpanded = true,
-                children = new List<BlockModel>(){ 
+                children = new List<BlockModel>() {
                     // your actions
                 }
         }
@@ -62,7 +71,7 @@ You can control whether a block is expanded or collapsed using the `isExpanded` 
                     // your actions
                 }
         }
-        }
+    }
 ```
 
 The below sample demonstrates the configuration of `CollapsibleParagraph` and `CollapsibleHeading` blocks in the Block Editor.
@@ -80,16 +89,16 @@ The below sample demonstrates the configuration of `CollapsibleParagraph` and `C
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for a block using the `placeholder` property in the `properties` property. This text appears when the block is empty. The default placeholder for a collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
 
-```typescript
+```csharp
     // Configuring CollapsibleHeading block
     new BlockModel
     {
         blockType = "CollapsibleHeading",
         properties = new
         {
-                level=1,
+                level = 1,
                 isExpanded = true,
                 placeholder = "collapsible heading"
         }
@@ -103,7 +112,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
                 isExpanded = false,
                 placeholder = "collapsible paragraph"
         }
-        }
+    }
 ```
 
 ## Configure quote block

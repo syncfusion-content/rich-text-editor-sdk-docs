@@ -3,11 +3,11 @@ layout: post
 title: Form Validation in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to implement form validation in Blazor Rich Text Editor to ensure content meets required criteria.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Edit-Form Validation
+# Form Validation in Blazor Rich Text Editor
 
 The Rich Text Editor supports validation with the [EditForm](https://learn.microsoft.com/en-us/aspnet/core/blazor/forms-and-input-components?view=aspnetcore-8.0). The user-typed text content inside the editor is validated using [data annotations](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-8.0) attributes. In the following example, the `FormModel` class has the `Description` property marked required with the `RequiredAttribute` and `MinLengthAttribute` for minimum string length validation and an error message. The `Description` property is bound to the editor via the `@bind-Value` property, and validation works based on user input.
 
@@ -29,9 +29,9 @@ The Rich Text Editor provides the functionality of character counting and its va
 
 | Rules | Description |
 |----------------|---------|
-| [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-7.0) | Requires a value for the Rich Text Editor. |
-| [MinLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.minlengthattribute?view=net-7.0) | Enforces a minimum character count. |
-| [MaxLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.maxlengthattribute?view=net-7.0) | Enforces a maximum character count. |
+| [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-8.0) | Requires a value for the Rich Text Editor. |
+| [MinLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.minlengthattribute?view=net-8.0) | Enforces a minimum character count. |
+| [MaxLength](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.maxlengthattribute?view=net-8.0) | Enforces a maximum character count. |
 
 {% tabs %}
 {% highlight razor %}
@@ -57,4 +57,10 @@ The validation error message can be displayed in a custom location instead of th
 
 ![Blazor Rich Text Editor validation message in custom placement](./images/blazor-richtexteditor-validation-placement.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Data Binding](./data-binding)
+* [Events](./events)
+* [Getting Started with Blazor Rich Text Editor](./getting-started)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Editor Value in Angular Rich Text Editor component | Syncfusion
-description: Learn how to manage editor content in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Value in Angular Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the Angular Rich Text Editor with placeholders, auto save, character count, and source code editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Editor value
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Value in Angular Rich Text Editor Component
+# Editor Value in Angular Rich Text Editor
 
 The Angular Rich Text Editor allows flexible management of content through properties and methods for setting placeholders, retrieving values, and enabling two-way binding. This section explains how to configure and access the editor's content effectively.
 
 ## Set placeholder text
 
-The [placeholder](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#placeholder) property specifies text displayed when the editor's content area is empty.
+The [`placeholder`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#placeholder) property specifies the text displayed when the editor's content area is empty.
 
 You can customize the placeholder's appearance by targeting the `e-rte-placeholder` class in your CSS. This allows you to modify properties such as font family, color, and other styles.
 
@@ -43,15 +43,15 @@ You can customize the placeholder's appearance by targeting the `e-rte-placehold
 
 Set initial content in the Rich Text Editor using one of these approaches:
 
-* The [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property directly sets the editor's content as a string.
+* The [`value`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property directly sets the editor's content as a string.
 
-* The `ng-template` as the [valuetemplate](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
+* The `ng-template` as the [`valueTemplate`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
 To get the content from the Rich Text Editor, use the following approaches:
 
-* Using the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property: This returns the current content of the editor.
+* Using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property: This returns the current content of the editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,7 +65,7 @@ To get the content from the Rich Text Editor, use the following approaches:
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/editor-value-cs1" %}
 
-* Using the [change](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#change) event: The `change` event is triggered when the Rich Text Editor loses focus and its content has been modified. This event allows you to capture and handle content changes dynamically.
+* Using the [`change`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#change) event: The `change` event is triggered when the Rich Text Editor loses focus and its content has been modified. This event allows you to capture and handle content changes dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -107,7 +107,7 @@ export class AppComponent {
     ngOnInit() {
         // You can update the content programmatically
         setTimeout(() => {
-            this.editorContent = 'Updated content after 1 seconds';
+            this.editorContent = 'Updated content after 1 second';
         }, 1000);
     }
 }
@@ -116,7 +116,7 @@ With this setup, any changes made in the Rich Text Editor will update the `edito
 
 ## Auto save
 
-The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#saveinterval) property's value, which is specified in milliseconds.
+The auto-save option in the Rich Text Editor automatically saves the content during idle periods after you have typed. Once enabled, the editor saves the content based on the [`saveInterval`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#saveInterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
 
@@ -134,24 +134,24 @@ The change event will be triggered if the content has been modified since the la
 
 ## Programmatic content access
 
-You can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#gethtml) public method to retrieve the Rich Text Editor content.
+You can use the [`getHtml`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#getHtml) public method to retrieve the Rich Text Editor content.
 
 ```typescript
 
-  let editorValue: string = this.editorObj.getHtml();
+  const editorValue: string = this.editorObj.getHtml();
 
 ```
 
-To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#gettext) method.
+To fetch the Rich Text Editor's text content, use the [`getText`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#gettext) method.
 
 ```typescript
 
-  let editorValue: string = this.editorObj.getText();
+  const editorValue: string = this.editorObj.getText();
 
 ```
 ## Encoded editor value
 
-The [enableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
+The [`enableHtmlEncode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,7 +167,7 @@ The [enableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/rich
 
 ## Styling editor content
 
-By default, the content styles of the Rich Text Editor are not included when retrieving the HTML value from the editor. This can result in the styles not being applied when using the HTML content outside of the editor. To ensure that the styles are correctly applied, you can copy and use the following styles directly in your application: These styles are used in the UI elements of the Rich Text Editor.
+By default, the content styles of the Rich Text Editor are not included when retrieving the HTML value from the editor. This can result in the styles not being applied when using the HTML content outside of the editor. To ensure that the styles are correctly applied, copy the following styles into your application's stylesheet. These styles match the UI elements of the Rich Text Editor.
 
 > Make sure to add a CSS class ‘e-rte-content’ to the content container.
 
@@ -397,7 +397,7 @@ The Character Count feature in the Rich Text Editor allows you to track and disp
 
 ### How to enable character count
 
-To enable the character count feature, set the [showCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#showcharcount) property to `true` (default: `false`) to display the character count in the bottom-right corner of the editor.
+To enable the character count feature, set the [`showCharCount`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#showcharcount) property to `true` (default: `false`) to display the character count in the bottom-right corner of the editor.
 
 >To use quick `Character Count` feature, configure `CountService` in the provider section.
 
@@ -425,30 +425,29 @@ The character count color changes based on the content length relative to the [m
 
 ### Setting maximum character limit
 
-You can restrict the number of characters entered in the editor by setting the  [maxLength](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#maxlength) property to a specific numeric value. When set, the maximum allowable character count is displayed alongside the current count at the bottom right of the editor.
+You can restrict the number of characters entered in the editor by setting the [`maxLength`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#maxlength) property to a specific numeric value. When set, the maximum allowable character count is displayed alongside the current count at the bottom right of the editor.
 
 If `maxLength` is not set, there is no limit to the character count in the editor.
 
 ### Retrieving character count programmatically
 
-You can programmatically get the current character count in the editor using the [getCharCount](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#getcharcount) public method.
+You can programmatically get the current character count in the editor using the [`getCharCount`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#getcharcount) public method.
 
 ```typescript
 
-  let editorCount: number = this.editor.getCharCount();
+  const editorCount: number = this.editor.getCharCount();
 
 ```
 
 ## Source code editing
 
-The Rich Text Editor enables you to directly edit HTML code through the `Source View` in the text area. Any changes you make in Source view are immediately reflected in the editor's content, giving you greater flexibility and control over your work.
-The source code is presented with enhanced formatting and consistent indentation for both block-level and inline HTML elements, resulting in a cleaner, more readable, and user-friendly editing experience.
+The Rich Text Editor enables you to directly edit HTML code through the `Source View` in the text area. Any changes you make in Source view are immediately reflected in the editor's content, giving you greater flexibility and control over your work. The source code is presented with enhanced formatting and consistent indentation for both block-level and inline HTML elements, resulting in a cleaner, more readable, and user-friendly editing experience.
 
 >While the visual alignment of the source code is improved, the editor's underlying value remains unchanged.
 
-### Configuring source code tool in the toolbar
+### Configure the source code tool in the toolbar
 
-You can add the `SourceCode` tool in the Rich Text Editor using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
+You can add the `SourceCode` tool in the Rich Text Editor using the [`toolbarSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -464,7 +463,7 @@ You can add the `SourceCode` tool in the Rich Text Editor using the [toolbarSett
 
 >This functionality can also be enabled through the use of the [CodeMirror](https://codemirror.net/) plugin. It helps to highlight the HTML content and ensures that any modifications in the code view are instantly reflected in the preview mode.
 
-The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#showsourcecode) method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
+The Rich Text Editor provides the [`showSourceCode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#showsourcecode) method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor's view to the opposite state.
 
 ## See also
 

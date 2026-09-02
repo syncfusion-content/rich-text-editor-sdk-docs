@@ -227,13 +227,13 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
 }
 
 .e-rte-content h5 {
-  font-size: 00.8em;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0;
 }
 
 .e-rte-content h6 {
-  font-size: 00.65em;
+  font-size: 0.65em;
   font-weight: 400;
   margin: 0;
 }
@@ -277,7 +277,7 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
 .e-rte-content h3 + h4,
 .e-rte-content h4 + h5,
 .e-rte-content h5 + h6 {
-  margin-top: 00.6em;
+  margin-top: 0.6em;
 }
 
 .e-rte-content .e-rte-table {
@@ -507,5 +507,5 @@ The Rich Text Editor provides the `showSourceCode` method, which allows you to t
 ## See also
 
 * [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
-* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](./third-party-integration#codemirror-integration)

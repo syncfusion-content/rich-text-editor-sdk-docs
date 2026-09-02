@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paste Cleanup in ASP.NET Core Rich Text Editor | Syncfusion
-description:  Learn how to clean and manage pasted content in the ASP.NET Core Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+description: Learn how to clean and manage pasted content in the ASP.NET Core Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -54,7 +54,7 @@ This ensures that while the formatting is retained, it remains clean, safe, and 
 
 When the `Prompt`, `PlainText`, and `keepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
-Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
+Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable. However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
 
 - **`DeniedTags`**: Tags listed here will still be removed from the pasted content, even when clean format is enabled.
 - **`DeniedAttrs`**: Attributes listed here will also be stripped from the pasted content.
@@ -91,7 +91,7 @@ By default, a predefined set of basic style properties are allowed when content 
 
 For Example,
 
-`AllowedStyleProps: ['color', 'margin']'`: This will allow only the style properties ‘color’ and ‘margin’ in each pasted element.
+`AllowedStyleProps: ['color', 'margin']`: This will allow only the style properties 'color' and 'margin' in each pasted element.
 
 In the following example, the paste cleanup related settings are explained with its module configuration:
 

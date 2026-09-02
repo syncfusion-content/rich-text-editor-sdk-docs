@@ -1,19 +1,53 @@
 ---
 layout: post
 title: Getting Started with Blazor Block Editor in WASM App | Syncfusion
-description: Get Started with Blazor Block Editor in Blazor WebAssembly App using Visual Studio, Visual Studio Code, or .NET CLI.
+description: Learn how to get started with the Blazor Block Editor in Blazor WebAssembly App using Visual Studio, Visual Studio Code, or .NET CLI with setup and examples.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 ---
 
-# Getting Started with Blazor Block Editor Component in Blazor WASM App
+# Getting Started with Blazor Block Editor in Blazor WASM App
 
 The [Blazor Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-block-editor) is a modular, block-based content editor component that enables rich, structured content creation. It provides an intuitive interface for building documents and articles content using customizable blocks such as headings, paragraphs, lists, and more. The WebAssembly deployment model allows the editor to run entirely in the browser, providing a responsive client-side experience.
 
 This section explains briefly how to include the [Blazor Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-block-editor) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
-## Create a new Blazor WebAssembly (Standalone) App
+## Using .NET CLI Templates
+
+Quickly set up a Blazor application using the preconfigured [Syncfusion WebAssembly App Template](https://help.syncfusion.com/extension/syncfusion-blazor-webassemblyapp-template-via-nuget/installation).
+
+First, install the template using the .NET CLI.
+
+{% tabs %}
+{% highlight razor tabtitle=".NET CLI" %}
+
+dotnet new install Syncfusion.Blazor.WebAssemblyApp.Templates
+
+{% endhighlight %}
+{% endtabs %}
+
+Next, create a new project with following command.
+
+{% tabs %}
+{% highlight razor tabtitle="WebAssembly" %}
+
+dotnet new syncfusionblazorwasmapp --name MyApp --pwa true
+
+{% endhighlight %}
+
+{% endtabs %}
+
+After creating the project, navigate to the main project folder (for example, `MyApp`) and run the following command.
+
+{% highlight razor tabtitle=".NET CLI" %}
+
+cd MyApp
+dotnet run
+
+{% endhighlight %}
+
+## Manually creating a new Blazor WebAssembly (Standalone) App
 
 {% tabcontents %}
 
@@ -40,24 +74,9 @@ Alternatively, create a **Blazor WebAssembly App** using Visual Studio Code via 
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Run the following command to create a new Blazor WebAssembly App.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet new blazorwasm -o BlazorApp
-cd BlazorApp
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
-## Install the required Blazor packages
+### Install the required Blazor packages
 
 Install the [Syncfusion.Blazor.BlockEditor](https://www.nuget.org/packages/Syncfusion.Blazor.BlockEditor/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages. All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details.
 
@@ -96,29 +115,14 @@ dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Open the command prompt and run the following commands.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet add package Syncfusion.Blazor.BlockEditor -v {{ site.releaseversion }}
-dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
-## Add import namespaces
+### Add import namespaces
 
 After the packages are installed, open the **~/_Imports.razor** file and import the `Syncfusion.Blazor` and `Syncfusion.Blazor.BlockEditor` namespaces.
 
 {% tabs %}
-{% highlight C# tabtitle="_Imports.razor" %}
+{% highlight razor tabtitle="_Imports.razor" %}
 
 @using Syncfusion.Blazor
 @using Syncfusion.Blazor.BlockEditor
@@ -126,7 +130,9 @@ After the packages are installed, open the **~/_Imports.razor** file and import 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the Blazor service
+This adds the necessary namespaces to all Razor pages in your application, so you don't need to add `@using` directives individually in each page.
+
+### Register the Blazor service
 
 Open the **Program.cs** file in Blazor WebAssembly App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
 
@@ -138,7 +144,7 @@ builder.Services.AddSyncfusionBlazor();
 {% endhighlight %}
 {% endtabs %}
 
-## Add stylesheet and script resources
+### Add stylesheet and script resources
 
 The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) at the end of the `<head>` section in the **~wwwroot/index.html** file.
 
@@ -160,7 +166,7 @@ Include the required [script references](https://blazor.syncfusion.com/documenta
 {% endhighlight %}
 {% endtabs %}
 
-## Add Blazor Block Editor component
+### Add Blazor Block Editor component
 
 Open a Razor file located in the **~/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-block-editor) component inside the razor file.
 
@@ -169,68 +175,69 @@ Open a Razor file located in the **~/Pages/*.razor** (for example, **Home.razor*
 
 @using Syncfusion.Blazor.BlockEditor
 
-<SfBlockEditor @bind-Blocks="blockDataOverview"> </SfBlockEditor>
+<SfBlockEditor @bind-Blocks="blockDataOverview"></SfBlockEditor>
 
 @code 
 {
-private List<BlockModel> blockDataOverview = new EditorBlockData().GetBlockDataOverview();
-public class EditorBlockData
-{
-    public List<BlockModel> GetBlockDataOverview()
+    private List<BlockModel> blockDataOverview = new EditorBlockData().GetBlockDataOverview();
+    
+    public class EditorBlockData
     {
-        List<BlockModel> blockDataOverview = new List<BlockModel>
+        public List<BlockModel> GetBlockDataOverview()
         {
-            new BlockModel
+            List<BlockModel> blockDataOverview = new()
             {
-                BlockType = BlockType.Heading,
-                Properties = new HeadingBlockSettings { Level = 2 },
-                Content =
+                new BlockModel
                 {
-                    new ContentModel
+                    BlockType = BlockType.Heading,
+                    Properties = new HeadingBlockSettings { Level = 2 },
+                    Content = new()
                     {
-                        ContentType = ContentType.Text,
-                        Content = "Getting Started with Block Editor"
-                    }
-                }
-            },
-            new BlockModel
-            {
-                BlockType = BlockType.Paragraph,
-                Content =
-                {
-                    new ContentModel { ContentType = ContentType.Text, Content = "Welcome to" },
-                    new ContentModel
-                    {
-                        ContentType = ContentType.Text,
-                        Content = " Block Editor",
-                        Properties = new TextContentSettings
+                        new ContentModel
                         {
-                            Styles = new StyleModel { Bold = true }
+                            ContentType = ContentType.Text,
+                            Content = "Getting Started with Block Editor"
                         }
-                    },
-                    new ContentModel
-                    {
-                        ContentType = ContentType.Text,
-                        Content = " - your flexible, modular workspace for creating rich, structured content. Whether you're drafting documents, brainstorming ideas, or collaborating with your team, Block Editor makes it simple and intuitive."
                     }
+                },
+                new BlockModel
+                {
+                    BlockType = BlockType.Paragraph,
+                    Content = new()
+                    {
+                        new ContentModel { ContentType = ContentType.Text, Content = "Welcome to" },
+                        new ContentModel
+                        {
+                            ContentType = ContentType.Text,
+                            Content = " Block Editor",
+                            Properties = new TextContentSettings
+                            {
+                                Styles = new StyleModel { Bold = true }
+                            }
+                        },
+                        new ContentModel
+                        {
+                            ContentType = ContentType.Text,
+                            Content = " - your flexible, modular workspace for creating rich, structured content. Whether you're drafting documents, brainstorming ideas, or collaborating with your team, Block Editor makes it simple and intuitive."
+                        }
+                    }
+                },
+                new BlockModel
+                {
+                    BlockType = BlockType.Paragraph,
+                    Content = new()
                 }
-            },
-            new BlockModel
-            {
-                BlockType = BlockType.Paragraph,
-                Content = new List<ContentModel>()
-            }
-        };
+            };
 
-        return blockDataOverview;
+            return blockDataOverview;
+        }
     }
-}
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+### Run the application
 
 {% tabcontents %}
 
@@ -246,20 +253,6 @@ Open the terminal and run the following command.
 
 {% tabs %}
 {% highlight razor tabtitle="Terminal" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% tabcontent .NET CLI %}
-
-Open the command prompt and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
 
 dotnet run
 

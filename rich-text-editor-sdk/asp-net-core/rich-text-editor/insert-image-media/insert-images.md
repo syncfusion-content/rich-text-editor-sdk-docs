@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Images in ASP.NET Core Rich Text Editor
 
-Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings)
+The Rich Text Editor allows you to insert images in your content from online sources as well as from the local computer. For inserting an image into the Rich Text Editor, the following list of options is provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property.
 
 ## Configuring Image Tool in the Toolbar
 
@@ -42,7 +42,7 @@ To configure the `Image` toolbar item, refer to the below code.
 
 ## Supported Image Save Formats
 
-The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property, which is of enum type, and the generated URL is set to the `src` attribute of the `<img>` tag.
 
 ```HTML
 
@@ -110,7 +110,7 @@ Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetco
 
 You can use the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings) property, to specify the server handler to upload the selected image. Then by binding the [ImageUploadSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImageUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
-Refer the section [Rename images before inserting it in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
+Refer the section [Rename images before inserting it in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename-images-in-server) for code snippets and examples.
 
 ### Secure Image Upload with Authentication
 
@@ -145,7 +145,7 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 
 You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [InsertImageSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
-In the following example, the image  size has been validated before uploading and determined whether the image  has been uploaded or not.
+In the following example, the image size has been validated before uploading, and the upload is canceled when the size exceeds the configured limit.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,13 +172,13 @@ In the following example, the image  size has been validated before uploading an
 
 ## Image Replacement Functionality
 
-Once a image file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) `imageReplace` option. You can replace the image file either by using the web URL or the browse option in the image dialog.
+Once an image file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) `imageReplace` option. You can replace the image file either by using the web URL or the browse option in the image dialog.
 
 ## Deleting Images
 
-To remove an image from the Rich Text Editor content, select the image and click `Remove` tool from the quick toolbar. It will delete the image from the Rich Text Editor content as well as from the service location if the `removeUrl` is given.
+To remove an image from the Rich Text Editor content, select the image and click the `Remove` tool from the quick toolbar. It deletes the image from the Rich Text Editor content and from the service location if the `removeUrl` is configured.
 
-Once you select the image from the local machine, the URL for the image will be generate. From there, you can remove the image from the service location by clicking the cross icon.
+Once an image is uploaded from the local machine, a URL is generated for it. You can remove the image from the service location by clicking the cross icon.
 
 ![Rich Text Editor Image delete](../images/image-del.png)
 
@@ -214,7 +214,7 @@ The following sample explains, how to configure `removeUrl` to remove a saved im
 
 ## Adjusting Image Dimensions
 
-Sets the default width and height of the image when it is inserted in the Rich Text Editor using [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Width) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Height) of the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property.
+Sets the default width and height of the image when it is inserted in the Rich Text Editor using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Height) properties of [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings).
 
 Through the quick toolbar, change the width and height using `Change Size` option. Once you click, the Image Size dialog box will open as follows. In that you can specify the width and height of the image in pixel.
 
@@ -233,7 +233,7 @@ The `Alternative Text` option lets you provide descriptive text that appears whe
 
 ## Configuring Image Display Position
 
-Sets the default display for an image when it is inserted in the Rich Text Editor using [display](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Display) field in [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings). It has two possible options: 'inline' and 'block'.
+Sets the default display for an image when it is inserted in the Rich Text Editor using the [`display`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Display) field in [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings). It has two possible options: `inline` and `block`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -314,7 +314,7 @@ The Rich Text Editor provides control over how text flows around images using th
 
 ## Hyperlinking Images
 
-The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, remove, edit and open link will be added to the quick toolbar of image. For further details about link, see the [`link documentation`](./link) documentation.
+The hyperlink itself can be an image in the Rich Text Editor. When an image is given as a hyperlink, the `Remove`, `Edit`, and `Open link` items are added to the image's quick toolbar. For further details, see the [link documentation](../link.md).
 
 ![Rich Text Editor image with link](../images/image-link.png)
 
@@ -370,7 +370,7 @@ In the following sample, you can see feature demo.
 
 ### Disabling Drag and Drop for Images
 
-You can prevent drag-and-drop action by setting the actionBegin argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent the drag-and-drop action by setting the `cancel` property of the `actionBegin` event arguments to `true`. The following code shows how to prevent the drag-and-drop.
 
 <script>
 

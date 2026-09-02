@@ -22,9 +22,9 @@ To insert a hyperlink:
 | Options | Description |
 |----------------|--------------------------------------|
 | Web Address | Enter or paste the destination URL for your link |
-| Display Text | Enter or edit the required text that you want to display text for the link|
-| Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
-| Open Link in New Window | Specify whether, the given link will be open in new window or not |
+| Display Text | Enter the text to display for the link |
+| Tooltip | Type additional helpful information displayed when the pointer hovers over the hyperlink |
+| Open Link in New Window | Specify whether the link should open in a new window |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,7 +66,7 @@ The Rich Text Editor supports automatic link generation. When you type a URL and
 
 ## Inserting a related link
 
-By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
+By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with `https://` for hyperlinks. This ensures the URL is properly formatted and accessible when used as a hyperlink.
 
 However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [EnableAutoUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableAutoUrl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
@@ -96,5 +96,5 @@ However, if you want to accept the given URL without validating it for hyperlink
 ## See also
 
 * [Link Quick Toolbar](./toolbar/quick-toolbar#link-quick-toolbar)
-* [Image with links](./insert-images#hyperlinking-images)
-* [Insert File Attachments](./how-to/file-attachments)
+* [Image with links](./insert-image-media/insert-images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachment)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Markdown Editor in Server App | Syncfusion®
-description: Check out the documentation for getting started with Blazor Markdown Editor Components in Blazor Server App.
+description: Learn how to get started with Blazor Markdown Editor in a Blazor Server App by installing packages and running your first app.
 platform: rich-text-editor-sdk
-component: MarkdownEditor
+component: Markdown Editor
 documentation: ug
 ---
 
-# Getting Started with Blazor Markdown Editor in Blazor Server App
+# Getting Started with Blazor Markdown Editor in Server App
 
 This section briefly explains how to include the [Blazor Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
@@ -176,7 +176,7 @@ N> If the interactivity location is set to `Per page/component`, define a render
 <SfRichTextEditor EditorMode="EditorMode.Markdown" value="@MarkdownValue"></SfRichTextEditor>
 
 @code {
-    private string MarkdownValue { get; set; } = @"Rich Text Editor formats text instantly using toolbar actions, whereas Markdown uses syntax to apply formatting. Markdown editing is supported when editorMode is set to **markdown**, allowing formatting via toolbar or keyboard. Custom Markdown syntax can also be added. This sample uses the <b>Marked</b> library to convert Markdown to HTML. [Sample link](https://blazor.syncfusion.com/demos/markdown-editor/overview).";
+    private string MarkdownValue { get; set; } = @"Rich Text Editor formats text instantly using toolbar actions, whereas Markdown uses syntax to apply formatting. Markdown editing is supported when editorMode is set to **markdown**, allowing formatting via toolbar or keyboard. Custom Markdown syntax can also be added. This sample uses the <b>Marked</b> library to convert Markdown to HTML. [Sample link](https://blazor.syncfusion.com/demos/markdown-editor/overview?theme=fluent2).";
 
 }
 
@@ -229,7 +229,7 @@ dotnet run
 
 1. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
 2. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)
-3. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=bootstrap5)
-4. [Accessibility in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/accessibility)
-5. [Keyboard support in Markdown editor](https://blazor.syncfusion.com/documentation/markdown-editor/keyboard-support)
-6. [Globalization in Rich text editor](https://blazor.syncfusion.com/documentation/rich-text-editor/globalization)
+3. [Blog posting using Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/usecase?theme=fluent2)
+4. [Accessibility in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/accessibility)
+5. [Keyboard support in Markdown editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/markdown-editor/keyboard-support)
+6. [Globalization in Rich text editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/globalization)

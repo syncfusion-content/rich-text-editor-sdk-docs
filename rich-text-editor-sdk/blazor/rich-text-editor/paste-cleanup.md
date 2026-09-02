@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paste Clean-up in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to clean up pasted content in Blazor Rich Text Editor, removing unwanted formatting from MS Word and other sources.
+title: Paste Cleanup in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to clean and manage pasted content in the Blazor Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Paste Clean-up in Blazor Rich Text Editor
+# Paste Cleanup in Blazor Rich Text Editor
 
 The Rich Text Editor provides built-in option to paste content from Microsoft Word, Microsoft Outlook, Microsoft Excel, and other websites by filtering out tags, attributes, and styles. Copy content from Microsoft Office or other websites and paste it into the editor, where it is cleaned up and pasted based on the settings in the [PasteCleanupSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorPasteCleanupSettings.html) property values.
 
@@ -82,11 +82,11 @@ This ensures that while the formatting is retained, it remains clean, safe, and 
 
 >When `KeepFormat` is set to true, set both `Prompt` and `PlainText` to false.
 
-## Clean formating
+## Clean formatting
 
 When the `Prompt`, `PlainText`, and `KeepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
-Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttributes` settings:
+Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable. However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttributes` settings:
 
 - **`DeniedTags`**: Tags listed here will still be removed from the pasted content.
 - **`DeniedAttributes`**: Attributes listed here will also be stripped from the pasted content.
@@ -172,10 +172,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSyncfusionBlazor();
-services.AddSignalR(e => { e.MaximumReceiveMessageSize = 1024000000; });
+builder.Services.AddSignalR(e => { e.MaximumReceiveMessageSize = 1024000000; });
 
 var app = builder.Build();
-....
+app.Run();
 
 {% endhighlight %}
 {% endtabs %}
@@ -200,7 +200,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddSignalR(e => { e.MaximumReceiveMessageSize = 1024000000; });
 await builder.Build().RunAsync();
-....
 
 {% endhighlight %}
 {% endtabs %}
@@ -231,4 +230,10 @@ You can get the pasted text as HTML text using the [AfterPasteCleanup](https://h
 {% endtabs %}
 
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+## See also
+
+* [Clipboard Cleanup](./clipboard-cleanup)
+* [Events in Rich Text Editor](./events)
+* [Toolbar customization](./tools/built-in-tools)
+
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.

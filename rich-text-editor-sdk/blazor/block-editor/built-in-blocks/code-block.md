@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Code Block in Blazor Block Editor Component | Syncfusion®
-description: Learn about Code Block in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Code Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure code blocks in the Blazor Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Code Block in Blazor Block Editor component
+# Code Blocks in Blazor Block Editor
 
 The Block Editor allows you to render code snippets with syntax highlighting by setting the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property to [Code](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Code). You can set a default language using the [Properties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html#Syncfusion_Blazor_BlockEditor_BlockModel_Properties) property.
+
+> To use Code blocks, ensure you have the `@using Syncfusion.Blazor.BlockEditor;` directive at the top of your component.
 
 ## Global code settings
 
@@ -28,7 +30,9 @@ For Code blocks, you can specify the language for syntax highlighting using the 
 
 - [Language](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CodeBlockSettings.html#Syncfusion_Blazor_BlockEditor_CodeBlockSettings_Language): The language value used for syntax highlighting.
 
-The following example demonstrates how to configure and render a Code block within the Block Editor.
+The [CodeLanguageModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.CodeLanguageModel.html) represents each language option with a `Language` property (language identifier) and `Label` property (display text in the language dropdown).
+
+The following example demonstrates how to configure and render a Code block within the Block Editor:
 
 ```cshtml
 @using Syncfusion.Blazor.BlockEditor

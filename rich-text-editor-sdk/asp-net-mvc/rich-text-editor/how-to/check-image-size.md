@@ -10,7 +10,7 @@ documentation: ug
 
 # Validate Image Size Before Upload in ASP.NET MVC Rich Text Editor
 
-By using the Rich text editor's `ImageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
+By using the Rich Text Editor's `ImageUploading` event, you can read the image dimensions before upload and restrict the image from being uploaded when it exceeds the allowed size.
 
 In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 

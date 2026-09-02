@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Table in Blazor Rich Text Editor Component | Syncfusion®
-description: Checkout and learn here all the features about Table in Blazor Rich Text Editor component and much more details.
+title: Tables in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to insert, format, and manage tables in the Blazor Rich Text Editor with row, column, and cell customization options.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Table in Blazor RichTextEditor Component
+# Tables in Blazor Rich Text Editor
 
-Rich Text Editor allows to insert table of content in edit panel and provide options to add, edit, and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the `RichTextEditorTableSettings`
+The Rich Text Editor allows you to insert tables into the content area and provides options to add, edit, and remove the table as well as perform other table-related actions. For inserting a table into the Rich Text Editor, the following list of options has been provided in the `RichTextEditorTableSettings`.
 
 | Options | Description | Default Value |
 |----------------|---------|-----------------------------|
 | MinWidth | Sets the default minWidth of the table. | 0 |
 | MaxWidth | Sets the default maxWidth of the table. | null |
 | EnableResize | Enables resize feature in table.| true |
-| Styles | This is an array of key value pair, on each pair, key should be name of styling and value is class name. This list will be shown on quick toolbar options to change the styles of table on designing like dashed, double bordered. | `List<DropDownItemModel>` |
+| Styles | Array of key/value pairs (key is the style label, value is the CSS class). Shown on the Quick Toolbar to apply table border styles . | `Dashed border`, `Alternate rows` |
 | Width | Sets the default width of the table. | 100% |
 
 ## Insert table
@@ -56,35 +56,35 @@ In the following sample, the table has been inserted using `CreateTable` toolbar
 
 ## Quick Toolbar
 
-Quick toolbar is opened by clicking the table. It has different sets of commands to be performed on the table which increases the feasibility to edit the table easily.
+The Quick Toolbar opens when the table is clicked. It provides a context-specific set of commands for editing the table. See [Quick Toolbars](./quick-toolbar#table-quick-toolbar) for the full list of available items.
 
 ## Table Header
 
-`Table Header` command is available with quick toolbar option through which the header row can be added or removed from the inserted table. The following image illustrates the table header.
+The `TableHeader` command is available with the Quick Toolbar option through which the header row can be added or removed from the inserted table. The following image illustrates the table header.
 
 ![Blazor RichTextEditor with Table Header](./images/blazor-richtexteditor-table-header.webp)
 
 ## Insert Rows
 
-`Rows` can be inserted above or below the required table cell through the quick toolbar. Also, focused row can be deleted. The following screenshot shows the available options of the row item.
+`Rows` can be inserted above or below the required table cell through the Quick Toolbar. The focused row can also be deleted. The following screenshot shows the available options of the row item.
 
 ![Inserting Table Rows in Blazor RichTextEditor](./images/blazor-richtexteditor-insert-table-rows.webp)
 
 ## Insert Columns
 
-`Columns` can be inserted to the left or right side of the required table cell through the quick toolbar. Also, the focused column can be deleted. The following screenshot shows the available options of the column item.
+`Columns` can be inserted to the left or right side of the required table cell through the Quick Toolbar. The focused column can also be deleted. The following screenshot shows the available options of the column item.
 
 ![Inserting Table Column in Blazor RichTextEditor](./images/blazor-richtexteditor-insert-table-column.webp)
 
 ## Set Color
 
-The Background Color can be set for each table cell through the `BackgroundColor` command available with quick toolbar.
+The Background Color can be set for each table cell through the `BackgroundColor` command available with the Quick Toolbar.
 
 ![Changing Table Background Color in Blazor RichTextEditor](./images/blazor-richtexteditor-table-background-color.webp)
 
 ## Delete Table
 
-Using the delete item in the quick toolbar, users can delete the entire table.
+Using the delete item in the Quick Toolbar, users can delete the entire table.
 
 ## Vertical Align
 
@@ -100,13 +100,12 @@ Text inside the table can be aligned left, right, or center using the `TableCell
 
 ## Table Styles
 
-Table styles provided for class name should be appended to a table element. It helps to design the table in specific CSS styles when inserting in the editor.
+Table styles provided for the class name should be appended to a table element. They help design the table in specific CSS styles when inserted in the editor.
 
-By default, provides `Dashed border` and `Alternate rows`.
+By default, the editor provides `Dashed border` and `Alternate rows` styles.
 
-**Dashed border**: Applies the dashed border to the table.
-
-**Alternate border**: Applies the alternative background to the table.
+* **Dashed border**: Applies a dashed border to the table.
+* **Alternate rows**: Applies an alternating background color to table rows.
 
 ![Displaying Table Styles in Blazor RichTextEditor](./images/blazor-richtexteditor-table-style.webp)
 
@@ -139,9 +138,9 @@ Rich Text Editor provides support to custom styles for tables. If you want to ad
 
 ## Table Properties
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of `RichTextEditorTableSettings`.
+Sets the default width of the table when it is inserted in the Rich Text Editor using the `Width` property of `RichTextEditorTableSettings`.
 
-Using the quick toolbar, users can change the width, cell padding, and cell spacing in the selected table using the `TableEditProperties` command dialog action.
+Using the Quick Toolbar, users can change the width, cell padding, and cell spacing in the selected table using the `TableEditProperties` command dialog action.
 
 ![Displaying Table Properties for Blazor RichTextEditor](./images/blazor-richtexteditor-table-properties.webp)
 
@@ -151,11 +150,11 @@ N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/ric
 
 The Rich Text Editor allows users to change the appearance of the tables by splitting or merging the table cells.
 
-`TableCell` item should be configured in the Table [quickToolbarSettings](../api/rich-text-editor/quickToolbarSettings#table) property to show the merge/split icons while selecting the table cells.
+The `TableCell` item should be configured in the Table [quickToolbarSettings](./quick-toolbar#table-quick-toolbar) property to show the merge/split icons while selecting the table cells.
 
 ### Table cell merge
 
-The table cell merge feature allows to merge two or more row and column cells into a single cell with its contents.
+The table cell merge feature allows merging two or more row and column cells into a single cell with its contents.
 
 ![Table Cell Merging in Blazor RichTextEditor](./images/blazor-richtexteditor-table-cell-merge.webp)
 
@@ -164,3 +163,8 @@ The table cell merge feature allows to merge two or more row and column cells in
 The table cell split feature allows to a selected cell can be split both horizontally and vertically.
 
 ![Table Cell Spliting in Blazor RichTextEditor](./images/blazor-richtexteditor-table-cell-split.webp)
+
+## See also
+
+* [Quick Toolbars](./quick-toolbar)
+* [Toolbar customization](./tools/built-in-tools)

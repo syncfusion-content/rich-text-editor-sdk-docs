@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Table in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert, format, and manage Table in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Tables in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the Angular Rich Text Editor with row, column, and cell customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Table
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table in Angular Rich Text Editor Component
+# Tables in Angular Rich Text Editor
 
-The Syncfusion Angular Rich Text Editor allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tablesettingsmodel)
+The Syncfusion Angular Rich Text Editor lets you insert tables in the edit panel, providing options to add, edit, format, and remove tables, as well as to perform other table-related actions. The [`tableSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tableSettings) property exposes the configuration options for inserting a table into the Rich Text Editor.
 
-## Configuring the table tool in toolbar
+## Configure the table tool in the toolbar
 
-You can add an `CreateTable` tool in the Rich Text Editor toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
+Add a `CreateTable` tool to the Rich Text Editor toolbar using the [`toolbarSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 Select the number of rows and columns on the table grid to insert the table.
 
@@ -38,31 +38,31 @@ In the following sample, the table feature has been provided from table module.
 
 ## Table headers
 
-The `TableHeader` command is available in the quick toolbar, allowing you to add or remove the header row from the inserted table. The following image illustrates the table header.
+The `TableHeader` command is available in the quick toolbar, letting you add or remove the header row from the inserted table. The following image illustrates the table header.
 
 ![Rich Text Editor table header](images/table_header.png)
 
-## Inserting rows
+## Insert rows
 
-You can insert `Rows` above or below the selected table cell using the quick toolbar. The focused row can also be deleted. The following screenshot shows the available options of the row item.
+Insert rows above or below the selected table cell using the quick toolbar. The focused row can also be deleted. The following screenshot shows the available options of the row item.
 
 ![Rich Text Editor table row](images/table_rows.png)
 
-## Inserting columns
+## Insert columns
 
-`Columns` can be inserted to the left or right of the selected table cell using the quick toolbar. The focused column can also be deleted. The following screenshot shows the available options in inserting column item.
+Insert columns to the left or right of the selected table cell using the quick toolbar. The focused column can also be deleted. The following screenshot shows the available options of the column item.
 
 ![Rich Text Editor table column](images/table_column.png)
 
-## Table column resizing
+## Resize table columns
 
-The Rich Text Editor supports resizing of table columns, allowing users to adjust the size of individual columns to better fit their content. To resize a column, hover the pointer near the edge of a table cell until the resize cursor appears. Then, click and drag the cell border to modify the column size as needed.
+The Rich Text Editor supports resizing of table columns, letting you adjust the size of individual columns to better fit their content. To resize a column, hover the pointer near the edge of a table cell until the resize cursor appears, then click and drag the cell border to modify the column size as needed.
 
 This feature provides flexibility in organizing tabular data and ensures that tables remain clear, structured, and easy to read, especially when working with varying content lengths or complex layouts.
 
-## Nesting tables
+## Nest tables
 
-The Rich Text Editor allows users to insert tables within other table cells, enabling the creation of nested tables. This feature is useful for building complex layouts such as structured forms, hierarchical data views, or detailed reports. Users can manually insert a nested table by placing the cursor inside a cell and using the table toolbar option or HTML source editing.
+The Rich Text Editor lets you insert tables within other table cells, enabling the creation of nested tables. This feature is useful for building complex layouts such as structured forms, hierarchical data views, or detailed reports. Users can manually insert a nested table by placing the cursor inside a cell and using the table toolbar option or the HTML source view.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -83,7 +83,7 @@ The Rich Text Editor offers a simple and intuitive way to add rows and columns t
 ### Insert columns instantly
 
 - **Where to hover**: Place your cursor over any cell in the **first row** of your table.
-- **What you'll see**: A small dot icon (●) will appear at the **top edge** of the cell.
+- **What you'll see**: A small dot icon (●) appears at the **top edge** of the cell.
 - **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new column to the left.
 
 ![Rich Text Editor table column quick insert](images/table_column_quick_insert.gif)
@@ -91,29 +91,30 @@ The Rich Text Editor offers a simple and intuitive way to add rows and columns t
 ### Insert rows instantly
 
 - **Where to hover**: Place your cursor over any cell in the **first column** of your table.
-- **What you'll see**: A small dot icon (●) will appear at the **left edge** of the cell.
+- **What you'll see**: A small dot icon (●) appears at the **left edge** of the cell.
 - **How to add**: Hover over the dot to reveal a **plus icon (+)**. Click it to insert a new row above.
 
 ![Rich Text Editor table row quick insert](images/table_row_quick_insert.gif)
 
 ## Table, row, and column selection
 
-The Rich Text Editor provides a simple and intuitive way to select table rows, columns, and entire table. Users can now select table rows and columns without dragging the mouse between cells.
+The Rich Text Editor provides a simple and intuitive way to select table rows, columns, and the entire table. Users can select table rows and columns without dragging the mouse between cells.
 
-### Selecting an Entire Row
+### Select an entire row
 
-Entire rows can be selected using the icons that appears on hover.
+Entire rows can be selected using the icon that appears on hover.
 
 **To select a row:**
-- **Where to hover**: Move the mouse pointer over the first column of the table..
+
+- **Where to hover**: Move the mouse pointer over the first column of the table.
 - **What you'll see**: A selection handle appears on the left side of the corresponding row.
 - **How to select**: Click the handle to select the entire row.
 
 ![Rich Text Editor table row selection](images/table_row_selection.gif)
 
-### Selecting an Entire Column
+### Select an entire column
 
-Entire columns can be selected using the icons that appears on hover.
+Entire columns can be selected using the icon that appears on hover.
 
 **To select a column:**
 
@@ -123,7 +124,7 @@ Entire columns can be selected using the icons that appears on hover.
 
 ![Rich Text Editor table column selection](images/table_column_selection.gif)
 
-### Selecting the Entire Table
+### Select the entire table
 
 The entire table can be selected using the table selection icon that appears on hover.
 
@@ -135,26 +136,26 @@ The entire table can be selected using the table selection icon that appears on 
 
 ![Rich Text Editor entire table selection](images/table_entire_selection.gif)
 
-### Keyboard Shortcuts
+### Keyboard shortcuts
 
 The `Ctrl + A` shortcut provides progressive selection behavior when used inside a table.
 
-* **First press:** Selects the current cell
-* **Second press:** Selects the row containing the current cell
-* **Third press:** Selects the entire table
-* **Fourth press:** Selects all content in the Rich Text Editor
+* **First press:** selects the current cell.
+* **Second press:** selects the row containing the current cell.
+* **Third press:** selects the entire table.
+* **Fourth press:** selects all content in the Rich Text Editor.
 
-## Setting cell background color
+## Set the cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
 
 ![Rich Text Editor table background color](images/table_bg_color.png)
 
-## Deleting table
+## Delete a table
 
 Delete the entire table using the delete item in the quick toolbar.
 
-## Table cell alignment
+## Align table cells
 
 ### Vertical alignment
 
@@ -168,33 +169,33 @@ Align text inside table cells to the left, right, or center using the `TableCell
 
 ![Rich Text Editor table horizontal alignment](images/table_horizontal.png)
 
-## Applying table styles
+## Apply table styles
 
-Table styles provided for class name should be appended to a table element. It helps to design the table in specific CSS styles when inserting in the editor.
+Table styles provided as class names should be appended to a table element. They help design the table with specific CSS styles when inserted in the editor.
 
-By Default, provides Dashed border and Alternate rows.
+By default, `Dashed border` and `Alternate rows` styles are provided.
 
 **Dashed border**: Applies a dashed border to the table.
 
-**Alternate border**: Applies an alternating background to table rows.
+**Alternate rows**: applies an alternating background to table rows.
 
 ![Rich Text Editor table styles](images/table_style.png)
 
-## Setting table and cell dimensions
+## Set table and cell dimensions
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tablesettings).
+Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [`tableSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/tablesettings).
 
 Users can modify the table width, cell padding, cell spacing, background color, border color, border style, and border width through the `TableEditProperties` option in the quick toolbar. By default, the border style is double and the border width is 1px. When users change these values in the dialog, the updates are instantly reflected in the editor as a live preview.
 
 ![Rich Text Editor table settings](images/table_properties.png)
 
-## Setting individual cell dimensions and borders
+## Set individual cell dimensions and borders
 
 The Rich Text Editor provides advanced options to customize individual table cell dimensions and borders. This feature enables fine-grained control over cell sizes, spacing, alignment, and border styling for both single and multiple cell selections.
 
-### Configuring the table cell properties in quick toolbar
+### Configure the table cell properties in the quick toolbar
 
-To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property:
+To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property:
 
 ```typescript
 quickToolbarSettings: { table: ['TableCellProperties'] }
@@ -202,7 +203,7 @@ quickToolbarSettings: { table: ['TableCellProperties'] }
 
 ### Individual cell properties dialog
 
-Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehensive dialog with the following customization options:
+Clicking the `TableCellProperties` item in the quick toolbar opens a comprehensive dialog with the following customization options:
 
 **Dimension settings:**
 
@@ -263,9 +264,9 @@ In the following sample, the table cell properties feature has been provided fro
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/table-cell-properties-sample" %}
 
-## Table cell selection and formatting
+## Select and format table cells
 
-The table cell selection feature in our editor allows for intuitive and efficient table manipulation using both mouse and keyboard interactions.
+The table cell selection feature in the Rich Text Editor allows for intuitive and efficient table manipulation using both mouse and keyboard interactions.
 
 **Mouse interaction:**
 
@@ -300,7 +301,7 @@ The text formatting feature in tables allows users to apply various styles to se
 
 ## Copy, cut, and paste table content
 
-The Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, allowing users to easily modify and manage table data within the editor.
+The Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, letting you easily modify and manage table data within the editor.
 
 Users can select multiple table cells by dragging the mouse or by holding the <kbd>Shift</kbd> key and using the <kbd>Arrow keys</kbd>. After selecting the desired cells, the following standard keyboard shortcuts can be used:
 
@@ -320,11 +321,11 @@ Users can select multiple table cells by dragging the mouse or by holding the <k
 * Maintains formatting consistency during both internal and external paste operations.
 * Supports pasting into a single clicked cell or a selected range of multiple cells.
 
-## Merging and splitting cells
+## Merge and split cells
 
 The Rich Text Editor allows users to modify table appearance by merging or splitting cells.
 
-Configure the `TableCell` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property to display merge/split icons when selecting table cells.
+Configure the `TableCell` item in the Table [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property to display merge/split icons when selecting table cells.
 
 ### Merging table cells
 

@@ -31,7 +31,7 @@ The [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockE
 
 ## BlockChanged
 
-The `BlockChanged` event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
+The [BlockChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockChanged) event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
 
 ```cshtml
 
@@ -86,7 +86,7 @@ The [BlockDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 ## BlockDragging
 
-The `BlockDragging` event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
+The [BlockDragging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDragging) event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
 
 ```cshtml
 
@@ -104,7 +104,7 @@ The `BlockDragging` event is triggered during a drag operation, providing inform
 
 ## BlockDropped
 
-The `BlockDropped` event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
+The [BlockDropped](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDropped) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
 
 ```cshtml
 
@@ -158,7 +158,7 @@ The [Blur](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEdit
 
 ## BeforePasteCleanup
 
-The `BeforePasteCleanup` event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
+The [BeforePasteCleanup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BeforePasteCleanup) event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
 
 ```cshtml
 
@@ -176,7 +176,7 @@ The `BeforePasteCleanup` event is triggered before content is pasted into the ed
 
 ## AfterPasteCleanup
 
-The `AfterPasteCleanup` event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
+The [AfterPasteCleanup](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_AfterPasteCleanup) event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
 
 ```cshtml
 

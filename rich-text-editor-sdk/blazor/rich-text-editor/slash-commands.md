@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Slash Commands in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to use slash commands in Blazor Rich Text Editor for quick content insertion and formatting.
+description: Learn how to use slash commands in the Blazor Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
 # Slash Commands in Blazor Rich Text Editor
 
-The slash menu in the Rich Text Editor offers users a streamlined way to apply formatting, insert elements, and execute custom commands by simply typing the “/” character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
+The slash menu in the Rich Text Editor offers users a streamlined way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
 ## Enabling the slash menu
 
@@ -19,7 +19,7 @@ To enable the slash menu, set the [Enable](https://help.syncfusion.com/cr/blazor
 
 The [RichTextEditorSlashMenuSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorSlashMenuSettings.html) property allows customization of the `Items` displayed in the slash menu. By setting the [Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorSlashMenuSettings_Items) property with a list of [SlashMenuItemModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SlashMenuItemModel.html), you can define which commands are available when a user types a slash (/) in the Rich Text Editor.
 
-This list can include various formatting options such as paragraph and heading levels. Here’s an code snippet of configuring the slash menu items:
+This list can include various formatting options such as paragraph and heading levels. Here's a code snippet of configuring the slash menu items:
 
 {% tabs %}
 {% highlight razor %}
@@ -51,11 +51,11 @@ Each custom slash menu item can include the following properties:
 
 | API | Description | 
 |:----------------:|:---------:|
-| Text| The label of the menu item. |
-| Command | The action to be executed when the item is clicked.|
-| GroupBy | Groups related items in the slash menu. |
-| IconCss | Specifies the CSS class for the item’s icon. | 
-| Description | Provides a short description for the item. | 
+| `Text`| The label of the menu item. |
+| `Command` | The action to be executed when the item is clicked.|
+| `GroupBy` | Groups related items in the slash menu. |
+| `IconCss` | Specifies the CSS class for the item’s icon. | 
+| `Description` | Provides a short description for the item. | 
 
 The following code demonstrates how to set up the custom slash menu item in the Rich Text Editor to insert meeting notes and signature:
 
@@ -70,4 +70,10 @@ The following code demonstrates how to set up the custom slash menu item in the 
 ![Blazor RichTextEditor slash commands](./images/smart-suggestion.webp)
 
 > [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/smart-suggestion?theme=fluent2)
+
+## See also
+
+* [Toolbar customization](./tools/built-in-tools)
+* [Custom toolbar items](./tools/custom-tool)
+* [Events in Rich Text Editor](./events)
 

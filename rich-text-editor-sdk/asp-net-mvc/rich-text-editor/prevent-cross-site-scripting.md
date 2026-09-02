@@ -13,7 +13,7 @@ The Rich Text Editor allows users to edit the content with security by preventin
 
 The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlSanitizer) property determines whether XSS prevention is active. It's set to `true` by default.
 
-In the following sample, we removed the `script` tag and `onmouseover` attribute from the content of the Rich Text Editor.
+In the following sample, the `script` tag and `onmouseover` attribute are removed from the editor's content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

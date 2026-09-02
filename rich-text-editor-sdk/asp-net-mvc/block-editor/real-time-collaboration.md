@@ -40,7 +40,7 @@ A Yjs provider handles the transport of document updates between connected users
 
 ## Configure collaboration settings
 
-Use the `collaborationSettings` property of type `CollaborationSettingsModel` to configure collaboration settings for your Block Editor. It provides properties such as `provider`, `enableAwareness`, `adapter` and `versionHistory` which allows to customize the collaboration behavior.
+Use the `collaborationSettings` property of type `CollaborationSettings` to configure collaboration settings for your Block Editor. It provides properties such as `provider`, `enableAwareness`, `adapter`, and `versionHistory` which allow you to customize the collaboration behavior.
 
 ## Getting Started
 
@@ -132,7 +132,7 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 
 ## User presence and remote cursors
 
-The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these user presence features, set `enableAwareness` to `true` in `collaborationSettings` property.
+The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these user presence features, set `enableAwareness` to `true` in the `collaborationSettings` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -148,7 +148,7 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 
 ## Configure the current user
 
-Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The `users` property includes `id`, `user`, and `avatarBgColor`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -170,7 +170,7 @@ Set the current user's display name and cursor highlight color using the `users`
 {% endhighlight %}
 {% endtabs %}
 
-N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id`, `user`, and `color` properties), or set directly on the client-side instance as shown above.
+N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id`, `user`, and `avatarBgColor` properties), or set directly on the client-side instance as shown above.
 
 ### Get active users
 
@@ -192,7 +192,7 @@ Retrieve all currently connected users using the `users` property in the block e
 
 ### Enable version history
 
-Configure the `versionHistory` property under `collaborationSettings` property.
+Configure the `versionHistory` property under the `collaborationSettings` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -386,7 +386,7 @@ Imports a previously exported snapshot back into the version history storage.
 
 ### Events
 
-Use the following event callbacks in `versionHistory` settings to respond to snapshot lifecycle events.
+Use the following event callbacks in `versionHistory` settings to respond to snapshot life cycle events.
 
 #### snapshotCreated
 

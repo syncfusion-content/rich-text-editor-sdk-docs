@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Getting started with JavaScript Rich Text Editor | Syncfusion
-description:  Check out and learn about Getting started with JavaScript Rich Text Editor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with JavaScript Rich Text Editor | Syncfusion
+description: Learn how to get started with the JavaScript Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-editor"
 platform: rich-text-editor-sdk
-control: Getting started 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Getting started in JavaScript Rich text editor control
+# Getting started in JavaScript Rich Text Editor
 
 The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be directly used in the latest web browsers.
 
@@ -86,22 +85,24 @@ I> Ensure that all Rich Text Editor script files are loaded in the correct order
 
 ## Adding Rich Text Editor control
 
-Now, you can start adding the Rich Text Editor control to the application. For getting started, add the Rich Text Editor initialization code in the **index.js** file and add the target element in the **index.html** file using the following sample.
+Add the Rich Text Editor control to the application as follows. Place the target element in **index.html** and the initialization code in **index.js** using the sample below.
 
-Rich Text Editor can be initialized on a div element as shown below
+> Add a target element such as `<div id="defaultRTE"></div>` in `index.html` before calling `appendTo` in `index.js`.
+
+The Rich Text Editor can be initialized on a `div` element, as shown below:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-area-sample-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
 ## Run the Application
 
-Now, run the `index.html` file in a web browser.
+Run the `index.html` file through a local web server (for example, `npx http-server` or VS Code Live Server). Opening the file directly with `file://` may break script loading.
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rich Text Editor is displayed as shown below.
 

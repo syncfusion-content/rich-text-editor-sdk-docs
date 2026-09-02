@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Images in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Images in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Insert Images in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to insert images in the JavaScript Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
 platform: rich-text-editor-sdk
-control: Images 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Images in JavaScript Rich text editor control
+# Insert Images in JavaScript Rich Text Editor
 
 Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesettings#imageSettings)
 
@@ -111,7 +110,7 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 ## Maximum file size restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict image uploads from your local machine using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB) per image. You can configure this size as follows.
 
 ```ts
 

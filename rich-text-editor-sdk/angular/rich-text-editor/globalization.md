@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Globalization in Angular Rich Text Editor component | Syncfusion
-description: Learn here all about Globalization in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Globalization in Angular Rich Text Editor | Syncfusion
+description: Learn how to localize the Angular Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Globalization 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in the Angular Rich Text Editor Component
+# Globalization in Angular Rich Text Editor
 
 ## Localization
 
-The Rich Text Editor offers an option to localize its strings using the locale API, allowing adaptation to a specific local language. By default, the editor uses US English (en-US). Below is a table listing the keys and their corresponding values for the default language (en-US).
+The Rich Text Editor lets you localize its strings using the locale API, adapting the UI to a specific language. By default, the editor uses US English (`en-US`). The following object lists the keys and their default (`en-US`) values.
 
 ```typescript
 
@@ -85,7 +85,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             linkTooltipLabel: "Title",
             linkWebUrl: "Web Address",
             linkTitle: "Enter a title",
-            linkurl: "http://example.com",
+            linkurl: "https://example.com",
             linkOpenInNewWindow: "Open Link in New Window",
             linkHeader: "Insert Link",
             dialogInsert: "Insert",
@@ -108,7 +108,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             imageAlternateText: "Alternate Text",
             alternateHeader: "Alternative Text",
             browse: "Browse",
-            imageUrl: "http://example.com/image.png",
+            imageUrl: "https://example.com/image.png",
             audioUrl: "https://example.com/audio.mp3",
             videoUrl: "https://example.com/video.mp4",
             webUrl: "Web URL",
@@ -202,7 +202,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             bulletFormatListCircle: "Circle",
             bulletFormatListSquare: "Square",
             numberFormatListNone: "None",
-            bulletFormatListNone:"None",
+            bulletFormatListNone: "None",
             formatPainter: "Format Painter",
             emojiPicker: "Emoji Picker",
             embeddedCode: "Embedded Code",
@@ -250,7 +250,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
 
 ```
 
-To localize the editor’s strings with your own localization, copy the default language information and localize the strings in the values column. For example, to localize the editor in German (“de-DE”).
+To localize the editor's strings, copy the default language object and replace the values with your translations. For example, the following object localizes the editor in German (`de-DE`).
 
 ```typescript
 
@@ -370,7 +370,7 @@ To localize the editor’s strings with your own localization, copy the default 
             removeTable: "Tabelle entfernen",
             tableHeader: "Kopfzeile",
             tableRemove: "Tabelle löschen",
-            tableCellBackgroun: "Tabellenzellenhintergrund",
+            tableCellBackground: "Tabellenzellenhinterground",
             tableEditProperties: "Tabelle Eigenschaften bearbeiten",
             styles: "Stile",
             insertColumnLeft: "Spalte links einfügen",
@@ -508,9 +508,9 @@ The sample below demonstrates the Rich Text Editor component rendered in German 
 
 ## Enable Right-to-Left (RTL) mode
 
-The [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablertl) property specifies the direction of the Rich Text Editor component. This property can be enabled for writing systems that require right-to-left direction, such as Arabic and Hebrew.
+The [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#enablertl) property specifies the direction of the Rich Text Editor component. This property can be enabled for writing systems that require right-to-left direction, such as Arabic and Hebrew.
 
-When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to the root element. Customizations can be made based on this class. Use the following CSS to customize the Rich Text Editor in RTL (right-to-left) mode.
+When RTL support is enabled, the `e-rtl` class is added to the root element. Customizations can be made based on this class. Use the following CSS to customize the Rich Text Editor in RTL mode.
 
 ```CSS
 .e-richtexteditor .e-rtl {

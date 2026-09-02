@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Execute command in Angular Rich text editor component | Syncfusion
-description: Learn here all about Execute command in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Execute Command in Angular Rich Text Editor | Syncfusion
+description: Learn how to programmatically modify content in the Angular Rich Text Editor using editor commands for formatting and editing operations.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Execute command 
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Execute Command in Angular Rich Text Editor Component
+# Execute Command in Angular Rich Text Editor
 
-The executeCommand is used to perform command for the modification of content in editable area. The list of valid executeCommand are given in the below table.
+The `executeCommand` is used to perform commands that modify content in the editable area. The list of valid `executeCommand` values is given in the table below.
 
-| Commands | Description | Code snippets |
+| Commands | Description | Code snippet |
 |----------------|---------| -----------|
 | bold | Bold the selected content in the Rich Text Editor. |`rteObj.executeCommand('bold');`|
 | italic | The selected text will be italics. |`rteObj.executeCommand('italic');`|
@@ -20,8 +20,8 @@ The executeCommand is used to perform command for the modification of content in
 | strikeThrough | Apply single line strike through formatting for the selected text. |`rteObj.executeCommand('strikeThrough');`|
 | superscript | Makes the selected text as superscript (higher). |`rteObj.executeCommand('superscript');`|
 | subscript | Makes the selected text as subscript (lower). |`rteObj.executeCommand('subscript');`|
-| uppercase | Change the case of selected text to upper  in the content. |`rteObj.executeCommand('uppercase');`|
-| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('uppercase');`|
+| uppercase | Change the case of selected text to upper in the content. |`rteObj.executeCommand('uppercase');`|
+| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('lowercase');`|
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
@@ -30,7 +30,7 @@ The executeCommand is used to perform command for the modification of content in
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
 | justifyLeft | Align the content with left margin. | `rteObj.executeCommand('justifyLeft');`|
-| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyLeft');`|
+| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyRight');`|
 | undo | Allows to undo the actions. | `rteObj.executeCommand('undo');`|
 | createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link', selection: selection  });` |
 | indent | Allows to increase the indent level of the content. | `rteObj.executeCommand('indent');`|
@@ -39,16 +39,16 @@ The executeCommand is used to perform command for the modification of content in
 | insertUnorderedList | Create a new list item(bulleted). |`rteObj.executeCommand('insertUnorderedList');`|
 | numberFormatList | Creates an ordered list with customizable numbering styles. The available formats are listed [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/tools/text-formatting#available-numbering-styles).|`rteObj.executeCommand('numberFormatList', 'decimal');`|
 | bulletFormatList | Creates an unordered list with customizable bullet styles. The available formats are listed [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/tools/text-formatting#available-bullet-styles). |`rteObj.executeCommand('bulletFormatList', 'disc');`|
-| outdent | Allows to decrease the indent level of the content. | `rteObj.executeCommand('outdent');`|
-| redo | Allows to redo the actions | `rteObj.executeCommand('redo');`|
-| removeFormat | remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. |`rteObj.executeCommand('removeFormat');`|
+| outdent | Decreases the indent level of the content. | `rteObj.executeCommand('outdent');`|
+| redo | Removes the last action. | `rteObj.executeCommand('redo');`|
+| removeFormat | Removes all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from the currently selected text. |`rteObj.executeCommand('removeFormat');`|
 | insertText | Insert text to the current cursor position. | `rteObj.executeCommand('insertText', 'inserted a text');` |
 | insertImage | Insert an image to the current cursor position. | `rteObj.executeCommand('insertImage', { url: 'https://ej2.syncfusion.com/javascript/demos/src/rich-text-editor/images/RTEImage-Feather.png', cssClass: 'rte-img'});` |
 | copyFormatPainter | Copy the format of selected text and apply it to another text. | `rteObj.executeCommand('copyFormatPainter', formatPainterSettings);`|
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
-| escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
+| escapeFormatPainter | Removes the previously copied format and disables the sticky mode. | `rteObj.executeCommand('escapeFormatPainter');`|
 | insertVideo | Insert a video to the current cursor position. | `rteObj.executeCommand('insertVideo', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Ocean-Waves.mp4', cssClass: 'e-rte-video'});` |
 | insertAudio | Insert an audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
 
->Note: The `ExecuteCommand` public method is not supported in Syncfusion Markdown Editor.
+>**Note:** The `executeCommand` public method is not supported in the Syncfusion Markdown Editor.

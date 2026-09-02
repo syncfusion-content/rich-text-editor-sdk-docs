@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Globalization in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Globalization with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Globalization in TypeScript Block Editor | Syncfusion
+description: Learn how to localize the TypeScript Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in TypeScript Block Editor control
+# Globalization in TypeScript Block Editor
 
 Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor control provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
 
@@ -49,7 +48,7 @@ The Block Editor can be localized for any culture by translating its static text
 |`linkCancel`|Cancel|
 |`codeCopyTooltip`|Copy code|
 
-The below example shows adding the German culture locale(`de-DE`)
+The example below shows how to add the German culture locale (`de-DE`).
 
 {% if page.publishingplatform == "typescript" %}
 

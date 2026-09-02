@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Audio in Blazor RichTextEditor Component | Syncfusion®
-description: Checkout and learn here all about insert audio in Blazor Rich Text Editor component with examples and much more details.
+title: Insert Audios in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to add, upload, manage, and customize audio content in the Blazor Rich Text Editor using online sources and local audio files.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Insert Audio in Blazor Rich Text Editor Component
+# Insert Audios in Blazor Rich Text Editor
 
 The Rich Text Editor allows inserting audio files from online sources and the local computer where you want to insert the audio in your content. For inserting audio into the Rich Text Editor, the following list of options has been provided in the [RichTextEditorAudioSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorAudioSettings.html).
 
@@ -176,7 +176,7 @@ The example below shows how audio is saved in `Blob` and `Base64` formats.
 
 ```
 <audio>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" />
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" />
 </audio>
 
 <audio>
@@ -244,7 +244,7 @@ Server upload: Use the `SaveUrl` property to upload audio files to your server b
 
 ### Disabling audio drag and drop
 
-You can prevent drag-and-drop action by setting the `OnMediaDrop` argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent drag-and-drop action by setting the [OnMediaDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnMediaDrop) argument's `Cancel` property to `true`. The following code shows how to prevent the drag-and-drop.
 
 {% tabs %}
 {% highlight razor %}
@@ -370,7 +370,7 @@ namespace RenameAudio.Controllers
 
 The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-N> By default it doesn't support `UseDefaultCredentials` property, we need to manually append the default credentials with the upload request.
+N> By default, it doesn't support the `UseDefaultCredentials` property; you need to manually append the default credentials to the upload request.
 
 {% tabs %}
 {% highlight razor %}

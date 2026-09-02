@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text Formatting and Structure in Angular Rich Text Editor | Syncfusion
-description: Learn here all about Text formatting and Structure in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Text Formatting in Angular Rich Text Editor | Syncfusion
+description: Learn how to format text in the Angular Rich Text Editor with bold, italic, headings, lists, blockquotes, format painter, indentation, and more.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Text formatting and Structure
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Text Formatting in the Angular Rich Text Editor
+# Text Formatting in Angular Rich Text Editor
 
 The Angular Rich Text Editor provides a comprehensive set of tools to format and structure text, enabling users to create professional, well-organized content. This guide details the key styling features and their configuration options.
 
@@ -30,7 +30,7 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 | SubScript | ![SubScript icon](../images/sub-script.png) | Positions text slightly below the normal line |toolbarSettings: { items: ['SubScript']}|
 | SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) |  Converts text to lowercase |toolbarSettings: { items: ['LowerCase']}|
-| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase’']}|
+| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase']}|
 
 Refer to the sample below to configure these basic text styling options in the Rich Text Editor.
 

@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Code Block in TypeScript Rich Text Editor control | Syncfusion
-description: Learn here all about Code Block in Syncfusion TypeScript Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Code Blocks in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to insert and configure code blocks in the TypeScript Rich Text Editor with language selection, formatting options, and syntax highlighting support.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Code Block 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Code Block in TypeScript Rich Text Editor control
+# Code Blocks in TypeScript Rich Text Editor
 
-The Code Block feature in the Rich Text Editor, enabling users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the front end.
+The Code Block feature in the Rich Text Editor enables users to insert and format code snippets effectively. This feature covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live syntax highlighting during editing is not supported, syntax highlighting can be applied when content is displayed on the frontend.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -69,7 +68,7 @@ In this example:
 
 ## Integrating syntax highlighters
 
-To enhance code block readability, integrate a third-party syntax highlighter like [Prism.js](https://prismjs.com/) or [Highlight.js](https://highlightjs.org/), which supports numerous languages and customizable themes. Although live code block highlighting (real-time syntax highlighting during editing) is not possible in the Rich Text Editor, The highlighter can apply color-coded formatting to code blocks when the content is displayed on the front end, such as in blog posts, website content, or preview mode. This ensures a polished presentation for end users.
+To enhance code block readability, integrate a third-party syntax highlighter like [Prism.js](https://prismjs.com) or [Highlight.js](https://highlightjs.org), which supports numerous languages and customizable themes. Although live code block highlighting (real-time syntax highlighting during editing) is not possible in the Rich Text Editor, The highlighter can apply color-coded formatting to code blocks when the content is displayed on the front end, such as in blog posts, website content, or preview mode. This ensures a polished presentation for end users.
 
 ## Tips for editing around code blocks
 

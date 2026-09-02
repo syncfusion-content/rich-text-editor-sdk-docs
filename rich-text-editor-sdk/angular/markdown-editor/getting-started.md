@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular Markdown Editor component | Syncfusion
-description:  Check out and learn about Getting started with Angular Markdown Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Markdown Editor | Syncfusion
+description: Learn how to get started with Angular Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
+control: Markdown Editor
 platform: rich-text-editor-sdk
-control: Getting Started
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with Angular Markdown Editor Component
+# Getting Started with Angular Markdown Editor
 
 The Syncfusion Angular Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section explains the steps required to create a simple Angular Markdown Editor component and configure its available functionalities.
 
@@ -105,7 +105,7 @@ These modules can be injected as `services` through the component's `providers` 
 
 {% tabs %}
 {% highlight ts hl_lines="9" tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -117,14 +117,14 @@ Modify the template in the [src/app/app.ts] file to render the Markdown Editor c
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/main.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/angular/markdown-editor/markdown-cs2/src/styles.css %}
+{% include code-snippet/rich-text-editor-sdk/angular/markdown-editor/markdown-cs2/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 

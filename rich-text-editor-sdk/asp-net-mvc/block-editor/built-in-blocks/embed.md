@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Image Blocks in ASP.NET MVC Block Editor
 
-Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
+Block Editor supports image blocks to help you organize, showcase, and format visual content inside the editor.
 
 ## Adding an image block
 
@@ -22,9 +22,9 @@ You can render an `Image` block by setting the `blockType` property to `Image` i
 
 #### Global image settings
 
-You can configure global settings for image blocks using the [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#ImageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
 
-The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property supports the following options:
+The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#ImageBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -46,14 +46,14 @@ The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the `MaxFileSize` property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
+{% highlight razor tabtitle="CSHTML" hl_lines="3" %}
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").Height("300px").ImageBlockSettings((ImageBlockSettings)ViewData["ImageBlockSettings"]).Render()
 </div>
 ....
 
 {% endhighlight %}
-{% highlight C# tabtitle="Index.cs" hl_lines="3 11" %}
+{% highlight c# tabtitle="Index.cs" hl_lines="3" %}
 
 public ImageBlockSettings ImageBlockSettings { get; set; }
 
@@ -73,17 +73,17 @@ public ActionResult Index()
 
 #### Configuring allowed image types
 
-You can allow the specific images alone to be uploaded using the the allowedTypes property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure this formats as follows.
+You can allow only the specified image types to be uploaded using the `AllowedTypes` property. By default, the Block Editor allows the JPG, JPEG, and PNG formats. You can configure these formats as follows.
 
 {% tabs %}
-{% highlight C# tabtitle="CSHTML" hl_lines="3 10" %}
+{% highlight razor tabtitle="CSHTML" hl_lines="3" %}
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").Height("300px").ImageBlockSettings((ImageBlockSettings)ViewData["ImageBlockSettings"]).Render()
 </div>
 ....
 
 {% endhighlight %}
-{% highlight C# tabtitle="Index.cs" hl_lines="3 11" %}
+{% highlight c# tabtitle="Index.cs" hl_lines="3" %}
 
 public ImageBlockSettings ImageBlockSettings { get; set; }
 public string[] AllowedTypes { get; set; }
@@ -117,16 +117,16 @@ The `Image` block `properties` property in the block model supports the followin
 
 The following example demonstrates how to pre-configure an `Image` block in the editor.
 
-```typescript
+```csharp
 // Adding image block
  {
     blockType = "Image",
     properties = new
     {
         src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
-        width = '200px',
-        height = '100px',
-        altText = '',
+        width = "200px",
+        height = "100px",
+        altText = "",
     }
 }
 ```
@@ -167,7 +167,7 @@ Set the `ImageBlockSettings.saveFormat` property to determine whether the image 
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `FileUploading` event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `FileUploading` event and its arguments you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

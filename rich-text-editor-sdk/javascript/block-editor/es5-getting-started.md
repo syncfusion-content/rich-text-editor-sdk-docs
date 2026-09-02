@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Es5 getting started with JavaScript Block Editor | Syncfusion
-description:  Checkout and learn about Es5 getting started with JavaScript Block Editor control of Syncfusion Essential JS 2 and more details.
+description:  Learn how to get started with the JavaScript (ES5) Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor"
 platform: ej2-javascript
-control: Es5 getting started
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# ES5 getting started in JavaScript Block Editor control
+# ES5 getting started in JavaScript Block Editor
 
 The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaScript framework that can be used directly in modern web browsers.
 
@@ -31,6 +30,8 @@ The list of dependencies required to use the BlockEditor control in your applica
 ```
 
 ## Setup for local development
+
+**Prerequisites:** A modern web browser (Chrome 90+, Firefox 88+, Safari 14+, or Edge 90+). Visual Studio Code (recommended) or any text editor.
 
 Refer to the following steps to set up your local environment.
 
@@ -71,8 +72,8 @@ Add the following scripts inside the `my-app/index.html` file to include the Blo
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+<script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
 <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-blockeditor/dist/global/ej2-blockeditor.min.js" type="text/javascript"></script>
@@ -88,7 +89,7 @@ Make sure the required base and dependent scripts are included along with the Bl
 
 To get started, add Block Editor control in `index.js` and `index.html` files.
 
-Block Editor can be initialized on a div element as shown below
+Block Editor can be initialized on a div element as shown below. This example uses the single bundled `ej2.min.js` file, which includes all Essential JS 2 packages, as a convenient alternative to loading each dependent package script individually as shown in the previous section.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

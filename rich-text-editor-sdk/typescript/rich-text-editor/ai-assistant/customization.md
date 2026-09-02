@@ -1,23 +1,38 @@
 ---
 layout: post
 title: Customize AI Assistant in TypeScript Rich Text Editor | Syncfusion
-description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 TypeScript Rich Text Editor control.
+description: Learn how to customize the AI Assistant in the TypeScript Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 platform: rich-text-editor-sdk
-control: Customization of AI Assistant
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Customization of AI Assistant
+# Customization of AI Assistant in TypeScript Rich Text Editor
 
-The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
+> **Version Compatibility**: The AI Assistant feature is available from Syncfusion v32.1.19 and later. Requires @syncfusion/ej2-richtexteditor v32.1.19, and an AI service endpoint configured with a valid API key.
 
-## Custom Toolbar Buttons in AI Assistant
+The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate programmatic workflows.
 
-To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties of the `aiAssistantSettings` can be used. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
+## Custom toolbar buttons in AI Assistant
 
-The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` with the following properties.
+To add custom toolbar items to the AI Assistant Header, Prompt, and Response toolbars, use the `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` properties within the `aiAssistantSettings` object. The `aiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
+
+### Base configuration
+
+The AI Assistant settings are configured as shown below:
+
+```typescript
+const aiAssistantSettings: AIAssistantSettings = {
+  headerToolbarSettings: [ /* custom header toolbar items */ ],
+  promptToolbarSettings: [ /* custom prompt toolbar items */ ],
+  responseToolbarSettings: [ /* custom response toolbar items */ ]
+};
+```
+
+### Toolbar item properties
+
+Custom items can be added to `headerToolbarSettings`, `promptToolbarSettings`, and `responseToolbarSettings` using the following properties:
 
 | Property     | Description                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -34,25 +49,22 @@ The Custom items can be added to the `headerToolbarSettings`, `promptToolbarSett
 | `template`   | Specifies a custom template for rendering the toolbar item; can be a string or a function depending on the framework. |
 | `tabIndex`   | Specifies the tab order of the toolbar item for keyboard navigation (default is `-1`).                                |
 
-**Example**
+### AI Assistant events reference
 
-In the following example, **custom toolbar items** are added to the **Header**, **Prompt**, and **Response** toolbars of the AI Assistant, along with corresponding event handling logic.
+| Event | Description | Event Args |
+| --- | --- | --- |
+| `aiAssistantToolbarClick` | Triggered when a custom toolbar button is clicked. Receives the `command` and `subCommand` properties. | `{ command: string; subCommand?: string }` |
+| `beforePopupOpen` | Triggered before the AI Assistant popup opens. Use this to initialize custom components (e.g., `DropDownButton`). | `{}` |
+| `beforePopupClose` | Triggered before the AI Assistant popup closes. Use this to clean up resources (e.g., destroy dynamically created components). | `{}` |
 
-1. **Custom Header Toolbar Item**
+#### Custom header toolbar item
 
-   * A **User Profile** dropdown is added as a custom header toolbar item using a template.
-   * The **DropDownButton** control is dynamically initialized in the `beforePopupOpen` event when the AI Assistant popup opens.
-   * The dropdown instance is properly destroyed in the `beforePopupClose` event to ensure clean resource management.
+A **User Profile** dropdown can be added as a custom header toolbar item using a template. The `beforePopupOpen` and `beforePopupClose` events manage the life cycle of the Syncfusion `DropDownButton` component.
 
-2. **Custom Prompt Toolbar Item**
-
-   * A **Search in Google** toolbar button is added to the prompt toolbar.
-   * When the button is clicked, the current prompt text is retrieved and used to open a new browser tab with the corresponding **Google search results**.
-
-3. **Custom Response Toolbar Item**
-
-   * A **Save** toolbar button is added to the response toolbar.
-   * On clicking the button, the generated AI response content is extracted from the response container and can be processed further (for example, saving it to a database or local storage).
+**Key steps:**
+1. Define a `template` property that returns an HTML string with an ID placeholder.
+2. Initialize the `DropDownButton` component in the `beforePopupOpen` event.
+3. Destroy the component instance in the `beforePopupClose` event to prevent memory leaks.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -81,30 +93,30 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items" %}
 {% endif %}
 
-## Styling the Popup
+## Styling the popup
 
 The AI Assistant Popup can be styled by using the following css.
 
+### CSS styling example
+
 ```css
+/* Base popup styling */
 .e-rte-aiquery-popup {
-    padding:2px;
+    padding: 2px;
 }
-```
 
-The AI Assistant Popup processing state can be styled by using the following css.
-
-```css
+/* Processing state — when a request is pending */
 .e-rte-aiquery-popup.processing {
-    padding:2px;
+    padding: 2px;
     color: white;
     background: white;
     z-index: 1;
 }
 ```
 
-**Example**
+**Example with Animation:**
 
-In the following example, a CSS animation is applied to the popup while the request is in progress.
+The following example applies a CSS animation to the popup during AI request processing:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -139,9 +151,11 @@ In the following example, a CSS animation is applied to the popup while the requ
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling" %}
 {% endif %}
 
-## Use case
+## Public methods / programmatic use case
 
-Using the public methods, you can build custom workflows with the AI Assistant. Actions such as retrieving conversation history, executing prompts, adding responses, showing or hiding the AI Assistant, and clearing conversation history can all be achieved using the following public methods programmatically.
+Use the following public methods to build custom workflows with the AI Assistant. You can retrieve conversation history, execute prompts, add responses, show/hide the popup, and clear history programmatically.
+
+### Available methods
 
 | **Method**                                                                       | **Description**                    |
 | -------------------------------------------------------------------------------- | ---------------------------------- |
@@ -152,12 +166,13 @@ Using the public methods, you can build custom workflows with the AI Assistant. 
 | `hideAIAssistantPopup()`                                                         | Hide the AI Assistant popup.       |
 | `clearAIPromptHistory()`                                                         | Clear all conversation history.    |
 
-**Example**
+### Proofread use case example
 
-The following example demonstrates a Proofread use case by rendering a button outside the editor. On clicking the Proofread button:
+The following example demonstrates a **Proofread** workflow using a button outside the editor. On clicking the Proofread button:
 
-1. Launches the AI Assistant popup using the `showAIAssistantPopup` method.
-2. Executes a prompt using the `executeAIPrompt` method.
+1. The AI Assistant popup is launched using `showAIAssistantPopup()`.
+2. A proofreading prompt is executed using `executeAIPrompt()`.
+3. The AI response is displayed in the popup (automatic via `executeAIPrompt()`).
 
 {% if page.publishingplatform == "typescript" %}
 

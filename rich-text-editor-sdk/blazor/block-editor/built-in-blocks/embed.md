@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Embed in Blazor Block Editor Component | Syncfusion®
-description: Learn about embedding images and visual content in the Blazor Block Editor component for Blazor Server and WebAssembly applications.
+title: Image Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure image blocks in Blazor Block Editor, including image uploads, server storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Embed Blocks in Blazor Block Editor Component
+# Image Blocks in Blazor Block Editor
 
-The Block Editor supports the addition of embeds to help you organize and showcase visual content effectively.
+The Block Editor supports the addition of image blocks to help you organize and showcase visual content effectively.
 
 ## Adding an image block
 
@@ -48,6 +48,16 @@ The [Image](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.
 | Height | Specifies the display height of the image. | `''` |
 | AltText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
 
+You can configure resize constraints by setting the `MinWidth`, `MaxWidth`, `MinHeight`, and `MaxHeight` properties in the global [BlockEditorImageBlock](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockEditorImageBlock.html) settings:
+
+```cshtml
+<SfBlockEditor Blocks="BlockData">
+    <BlockEditorImageBlock MinWidth="100" MaxWidth="800" MinHeight="100" MaxHeight="600"></BlockEditorImageBlock>
+</SfBlockEditor>
+```
+
+The following example demonstrates how to configure and render an Image block within the Block Editor:
+
 ```cshtml
 
 @using Syncfusion.Blazor.BlockEditor
@@ -78,6 +88,6 @@ The [Image](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.
 
 ## Image resizing
 
-Block Editor has a built-in image inserting support.  The resize points will be appearing on each corner of image when focus. So, users can resize the image using mouse points or thumb through the resize points easily. Also, the resize calculation will be done based on aspect ratio.
+The Block Editor has built-in image insertion and resizing support. Resize points appear at the corners of an image when it receives focus, allowing users to resize the image using mouse drag or touch. Resize calculations are performed based on the image's aspect ratio to maintain proportions.
 
 ![Blazor Block Editor image resize](./../images/image-resize.webp)

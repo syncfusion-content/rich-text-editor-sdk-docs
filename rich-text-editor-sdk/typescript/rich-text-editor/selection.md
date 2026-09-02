@@ -1,23 +1,26 @@
 ---
 layout: post
-title: Slider-Based Text Selection in TypeScript Editor | Syncfusion
-description:  Learn how to select a character range using TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Selection in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to select text, nodes, table cells, and content programmatically in the TypeScript Rich Text Editor for advanced editing workflows.
 platform: rich-text-editor-sdk
-control: Text Selection
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Selection in TypeScript Rich Text Editor Control
+# Selection in TypeScript Rich Text Editor
 
 ## Text selection
 
-The Rich Text Editor supports character range-based text selection using the **Syncfusion Slider** control. This feature allows users to select a specific range of characters (e.g., 33–45) within the editor content, which is then automatically highlighted.
+The Rich Text Editor supports character range-based text selection using the **Syncfusion Slider** control. This feature allows users to select a specific range of characters (for example, 33–45) within the editor content, which is then automatically highlighted.
+
+### Prerequisites
+
+Import the `Slider` module from `@syncfusion/ej2-inputs` and inject the required Rich Text Editor modules (`Toolbar`, `HtmlEditor`) before creating the editor.
 
 ### Adding a Slider for character range selection
 
-The Rich Text Editor can be integrated with the **Slider** control to enable precise character range-based text selection. The slider is configured in `range` type, allowing users to select a start and end index within the editor content. When the slider values change, the corresponding text range is highlighted automatically. 
+The Rich Text Editor can be integrated with the **Slider** control to enable precise character range-based text selection. The slider is configured with `type: 'Range'`, allowing users to select a start and end index within the editor content. When the slider values change, the corresponding text range is highlighted automatically.
 
 This approach is particularly useful for scenarios where exact character-level selection is required for operations such as copying, formatting, or analysis.
 
@@ -120,9 +123,9 @@ editor.appendTo('#editor');
 
 ### Precise selection using DOM range
 
-The selection logic is implemented in the [change](https://ej2.syncfusion.com/documentation/api/slider/index-default#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions. 
+The selection logic is implemented in the [change](https://ej2.syncfusion.com/documentation/api/slider/index-default#change) event of the slider. It retrieves the start and end positions from the slider and ensures they are within valid bounds. The code then uses a helper function, `getTextNodeAtOffset()`, which employs a `TreeWalker` to traverse text nodes and locate the exact node and offset for the given character positions.
 
-A Range object is created using these offsets and applied to the current selection using the browser’s `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
+A `Range` object is created using these offsets and applied to the current selection using the browser’s `Selection` API. This guarantees accurate highlighting even when the content spans multiple text nodes.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -271,7 +274,7 @@ function getTextNodeAtOffset(root, offset) {
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/selection/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/selection" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -356,7 +359,7 @@ The following example demonstrates how to select a table cell programmatically u
 
 ## Select all content
 
-To select all content within the Rich Text Editor, use the [selectAll](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#selectall) method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
+To select all content within the Rich Text Editor, use the [`selectAll`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#selectall) method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
 
 {% if page.publishingplatform == "typescript" %}
 

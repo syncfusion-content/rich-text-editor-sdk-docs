@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Editor Menus in Angular Block Editor Component | Syncfusion
-description: Checkout and learn about Editor Menus with Angular Block Editor component of Syncfusion Essential JS 2 and more.
+title: Editor Menus in Angular Block Editor | Syncfusion
+description: Learn how to use the editor menus in the Angular Block Editor to add blocks via slash commands and contextual actions.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Menus in Angular Block Editor component
+# Editor Menus in Angular Block Editor
 
 The Block Editor component includes several intuitive, context-aware menus that streamline content creation and editing. These menus provide quick access to formatting options and commands, improving user productivity.
 
 ## Slash command menu
 
-The Slash Command menu allows users to quickly insert or transform blocks by typing `/` followed by a command. This provides an efficient, keyboard-driven way to interact with the editor.
+The slash command menu lets users quickly insert or transform blocks by typing the trigger character `/` (forward slash) at the start of an empty block or paragraph, followed by a command name. This provides an efficient, keyboard-driven way to interact with the editor. The trigger character is configurable through the `commandMenuSettings` model.
 
 ### Built-in items
 
-The Slash Command menu comes with a set of pre-defined commands for all block types:
+The slash command menu comes with a set of pre-defined commands for all block types:
 
 -   **Headings (Level 1 to 4)**: Inserts a heading block of the corresponding level.
 -   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type.
@@ -29,9 +29,9 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 -   **Callout**: Inserts a block for highlighting important information.
 -   **Utility (Divider, Quote, Code)**: Inserts a utility block like a divider, quote, or code block.
 
-### Customize Slash command menu
+### Customize the slash command menu
 
-You can use the [commandMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#commandmenusettings) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
+You can use the [commandMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#commandmenusettings) property to modify the slash command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
 
 ### Events
 
@@ -61,11 +61,11 @@ The following example demonstrates how to customize the Slash Command menu.
 
 ## Context menu
 
-The Context menu appears when a user right-clicks within a specific block. It provides context-aware actions relevant to the clicked block or content.
+The context menu appears when a user right-clicks within a block. It provides context-aware actions relevant to the clicked block or the current selection.
 
 ### Built-in items
 
-The Context menu offers the following built-in options:
+The context menu offers the following built-in options:
 
 -  **Undo/Redo**: Reverses or re-applies the last action.
 -  **Cut/Copy/Paste**: Standard clipboard actions for selected content.
@@ -106,11 +106,11 @@ The following example demonstrates how to customize the Context menu.
 
 ## Block action menu
 
-The Block Action menu appears next to a block when you hover over it and click the drag handle icon, offering quick actions specific to that block.
+The block action menu appears next to a block when you hover over its drag handle and click the menu icon. It offers quick actions specific to that block, including duplicate, delete, and move up/down.
 
 ### Built-in items
 
-The Block Action menu provides convenient actions for managing individual blocks:
+The block action menu provides the following built-in actions for managing individual blocks:
 
 -   **Duplicate**: Creates an exact copy of the current block.
 -   **Delete**: Removes the block from the editor.
@@ -152,9 +152,9 @@ The following example demonstrates how to customize the Block action menu.
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/editor-menus/block-action" %}
 
-## Inline Toolbar
+## Inline toolbar
 
-The Inline Toolbar appears when a text is selected in the editor, providing quick access to common text formatting actions that apply to inline content.
+The Inline toolbar appears when text is selected in the editor, providing quick access to common text formatting actions that apply to inline content.
 
 ### Built-in items
 
@@ -172,21 +172,21 @@ The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link
 
 #### Transform block options
 
-The inline toolbar now includes `transform` options to quickly convert blocks between different types. You can use the [transformSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#transformSettings) property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+The inline toolbar includes `Transform` options to quickly convert blocks between different types. Use the [transformSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#transformsettings) property to customize the transform menu — for example, to define which block types appear in the menu, set custom labels and icons, or wire up custom behavior.
 
-#### Built-in default transform block options
+#### Built-in transform block options
 
-Below are the built-in transform block options available:
+By default, the transform menu includes the following block types:
 
-| Built-in transform Block Types          |
-|-----------------------------------------|
-| Paragraph                               |
-| Heading1 to Heading4                    |
-| Checklist                               |
-| BulletList                              |
-| NumberedList                            |
+| Block type |
+|------------|
+| Paragraph |
+| Heading 1 to Heading 4 |
+| Checklist |
+| BulletList |
+| NumberedList |
 
-> For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible` transform options not available. Instead they will be added as a new block.
+> For blocks such as `Code`, `Callout`, `Quote`, `Divider`, `Image`, `Table`, and `Collapsible*` blocks, transform options are **not** offered. Choosing the transform action on one of these blocks inserts a new block of the target type instead of converting the current block in place.
 
 #### Events
 
@@ -198,13 +198,13 @@ The following events are available for the transform toolbar item menu:
 
 #### Inline code support
 
-Added inline code formatting in the toolbar, with light syntax highlighting and seamless integration with other text formatting options.
+The `InlineCode` toolbar item formats the selected text as an inline code span (using the `ContentType.Text` content item with `properties.styles.inlineCode = true`). It renders with light syntax highlighting and can be combined with other inline styles such as **Bold** and *Italic*.
 
 #### Inline link support
 
-Added inline link formatting in the toolbar, by link item click, link dialog opens and with proper value updation, link can be inserted on text.
+The `Link` toolbar item opens a link dialog when clicked. Provide a URL and an optional display text, and the link is inserted on the selected text. The inserted link can be edited, opened, copied, or removed later through the context menu.
 
-The following example demonstrates how to customize the transform, inline code, link items.
+The following example demonstrates how to customize the transform, inline code, and link items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -223,7 +223,7 @@ The following example demonstrates how to customize the transform, inline code, 
 
 #### Font and background color support
 
-Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#fontColorSettings), [backgroundColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#backgroundColorSettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+The inline toolbar provides `Color` and `BackgroundColor` items, each integrated with a ColorPicker. Use the [fontColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#fontcolorsettings) and [backgroundColorSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#backgroundcolorsettings) properties to control text color, highlighting, predefined palettes, custom colors, and live previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
 

@@ -10,13 +10,13 @@ documentation: ug
 
 # Migrate Essential JS 1 Rich Text Editor to ASP.NET Core
 
-This article describes the API migration process of Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of the Rich Text Editor control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Accessibility
 
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | ------------ | ------------------------- | ------------------------- |
-| Keyboard Navigation | **Property:** allow-keyboard-navigation <br/> <br/>`<ej-rte allow-keyboard-navigation="true"></ej-rte>` | No separate Property for enable/disable keyboard navigation.  Its enabled by default. |
+| Keyboard Navigation | **Property:** allow-keyboard-navigation <br/> <br/>`<ej-rte allow-keyboard-navigation="true"></ej-rte>` | No separate property for enable/disable keyboard navigation. It is enabled by default. |
 | Localization | **Property:** locale <br/> <br/>` <ej-rte locale="en-US"></ej-rte>` | **Property:** locale <br/> <br/>` <ejs-richtexteditor locale="en-US"></ejs-richtexteditor>` |
 | RTL | **Property:** enable-rtl<br/> <br/>` <ej-rte enable-rtl="true "></ej-rte>` | **Property:** enableRtl <br/> <br/>`<ejs- Rich Text Editor enableRtl="true" ></ejs- richtexteditor>` |
 | Key Config | Not Applicable | **Property:**  keyConfig<br/> <br/>`<ejs-richtexteditor keyConfig="@ViewBag.keyConfig"></ejs-richtexteditor>` |
@@ -151,8 +151,8 @@ This article describes the API migration process of Rich Text Editor control fro
 | Rounded Corner | **Property:** show-rounded-corner<br/> <br/>`<ej-rte show-rounded-corner = "true"></ej-rte>` | Not Applicable |
 | Tooltip | **Property:** tooltip-settings<br/> <br/>`<ej-rte tooltip-settings = "viewBag.tooltip"></ej-rte>` | Not Applicable |
 | value | **Property:** value<br/> <br/>`<ej-rte value = "ViewBag.value"></ej-rte>` | **Property:** value<br/> <br/>`<ejs-richtexteditor value="ViewBag.value"></ejs-richtexteditor>`  |
-| Validation Rules | **Property:** validation-rules<br/> <br/>`<ej-rte validation-rules= "ViewBag.validation"></ej-rte>` | Achieved in sample level. <br/> <br/>[https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-rules](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-rules) |
-| Validation Message | **Property:** validation-message<br/> <br/>`<ej-rte validation-message= "ViewBag.validation ></ej-rte>` | Achieved in sample level.<br/> <br/>[https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-message](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation#validation-message) |
+| Validation Rules | **Property:** validation-rules<br/> <br/>`<ej-rte validation-rules= "ViewBag.validation"></ej-rte>` | Achieved in sample level. <br/> <br/>[https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-rules](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-rules) |
+| Validation Message | **Property:** validation-message<br/> <br/>`<ej-rte validation-message= "ViewBag.validation ></ej-rte>` | Achieved at sample level. See the [Validation page](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation#validation-message) for details. |
 | Zoom Step | **Property:** zoom-step<br/> <br/>`<ej-rte zoom-step = "0.5"></ej-rte>` | Not Applicable |
 | Disable | **Method:**  disable() <br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");` <br/> <br/>`rteObj.disable()` | **Property:** enabled<br/> <br/>`<ejs-richtexteditor enabled = "false"></ejs-richtexteditor>` |
 | Enable | **Method:**  enable()<br/> <br/>` var rteObj = $("#rte ").data("ejRTE ");`<br/> <br/>` rteObj.enable()` | **Property:** enabled<br/> <br/>`<ejs-richtexteditor enabled = "true"></ejs-richtexteditor>` |
@@ -174,7 +174,7 @@ This article describes the API migration process of Rich Text Editor control fro
 | Set Html | **Method:** setHtml() <br/> <br/>`var rteObj = $("#rte ").data("ejRTE ");`<br/> <br/>`rteObj.setHtml("rictexteditor content")` | Not Applicable |
 | Destroy | Not Applicable | **Method:** destroy() <br/> <br/>`var rteObj = document.getElementById('richtexteditor').ej2_Instances[0];`<br/> <br/>`rteObj.destroy();` |
 | Change | **Event:** change<br/> <br/>`<ej-rte change = "onChange"></ej-rte>` | **Event:** change <br/> <br/>`<ejs-richtexteditor change = "onChange"></ejs-richtexteditor>` |
-| create | **Event:** create<br/> <br/>`<ej-rte create = "onCreate"></ej-rte>` | **Event:** created <br/> <br/>`<ejs-richtexteditor change = "onCreated"></ejs-richtexteditor>` |
+| create | **Event:** create<br/> <br/>`<ej-rte create = "onCreate"></ej-rte>` | **Event:** created <br/> <br/>`<ejs-richtexteditor created = "onCreated"></ejs-richtexteditor>` |
 | Context Menu Click | **Event:** contextMenuClick<br/> <br/>`<ej-rte contextMenuClick = "onClick"></ej-rte>` | Not Applicable |
 | destroy | **Event:** destroy<br/> <br/>`<ej-rte destroy = "onDestroy"></ej-rte>` | **Event:** destroyed <br/> <br/>`<ejs-richtexteditor destroyed = "onDestroy"></ejs-richtexteditor>` |
 | Pre Render | **Event:** preRender<br/> <br/>`<ej-rte preRender = "onPreRender"></ej-rte>` | Not Applicable |

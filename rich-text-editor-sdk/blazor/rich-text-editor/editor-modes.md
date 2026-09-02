@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Editor Modes in Blazor Rich Text Editor | Syncfusion®
-description: Learn about the different editor modes in Blazor Rich Text Editor, including both Markdown and HTML editing modes.
+description: Learn how to use HTML, Markdown, and IFrame editing modes in the Blazor Rich Text Editor to create and edit content in different formats.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
@@ -18,7 +18,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 
 The Rich Text Editor is a [WYSIWYG Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) that enables users to format content as HTML. This is the default editing mode, allowing content formatting through toolbar options and returning valid HTML markup.
 
-To enable HTML mode, set the [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.EditorMode.html) property to `HTML`.
+To enable HTML mode, set the [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.EditorMode.html) property to `EditorMode.HTML`.
 
 {% tabs %}
 {% highlight razor %}
@@ -43,20 +43,14 @@ To enable HTML mode, set the [EditorMode](https://help.syncfusion.com/cr/blazor/
 
 ![Blazor RichTextEditor with HTML Editor](./images/blazor-richtexteditor-with-html-editor.webp)
 
-## IFrame editor
-
-The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
-
-For more details, refer to the [Iframe Editor](./iframe) documentation.
-
 ## Markdown editor
 
-To enable Markdown editing, set the [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.EditorMode.html#Syncfusion_Blazor_RichTextEditor_EditorMode_Markdown) property to `Markdown`. This mode allows users to create and format content using Markdown syntax. A third-party library such as `Marked` is used to convert Markdown into HTML.
+To enable Markdown editing, set the [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.EditorMode.html#Syncfusion_Blazor_RichTextEditor_EditorMode_Markdown) property to `EditorMode.Markdown`. This mode allows users to create and format content using Markdown syntax.The Markdown Converter is used to convert Markdown content into HTML
 
-**Supported Tags:**
+**Supported block tags:**
 
 - Headings: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
-- Block elements: `blockquote`, `pre`, `p`, `OL`, `UL`
+- Block elements: `blockquote`, `pre`, `p`, `ol`, `ul`
 
 **Supported Selection Tags:**
 

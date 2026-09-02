@@ -1,23 +1,39 @@
 ---
 layout: post
-title: Videos in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Videos in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Insert Videos in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to insert, upload, embed, resize, and manage videos in the TypeScript Rich Text Editor from local files, URLs, and online sources.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Videos 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Videos in TypeScript Rich text editor control
+# Insert Videos in TypeScript Rich Text Editor
 
 The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertvideosettings) property.
 
 ## Configuring the video tool in the toolbar
 
-You can add the `Video` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
+The video feature is enabled by adding the `Video` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-To configure the `Video` toolbar item, refer to the below code.
+### Setup
+
+Inject the `Video` module:
+
+```typescript
+import { RichTextEditor, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
+
+RichTextEditor.Inject(HtmlEditor, Toolbar, Video, QuickToolbar);
+
+let defaultRTE: RichTextEditor = new RichTextEditor({
+  toolbarSettings: { items: ['Video'] }
+});
+defaultRTE.appendTo('#defaultRTE');
+```
+
+> Rich Text Editor features use individual feature-wise modules. To enable video insertion, inject the `Video` module in the services array.
+
+The following example demonstrates configuring the `Video` toolbar item:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -49,7 +65,7 @@ To configure the `Video` toolbar item, refer to the below code.
 
 ## Video save formats
 
-The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
 > The default `saveFormat` property is set to `Blob` format.
 
@@ -65,11 +81,11 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 ```
 
-## Inserting video from web
+## Inserting video
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Inserting video from embed URL
+### Inserting Video from Embedded Code
 
 The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
 
@@ -77,7 +93,7 @@ The insert video dialog opens with the `Embedded code` option selected by defaul
 
 ### Inserting video from web URL
 
-You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
 
 ![Javascript Rich Text Editor Video insert](../images/javascript-richtexteditor-video-web.png)
 
@@ -87,9 +103,9 @@ You can use the `browse` option on the video dialog to select the video from the
 
 If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
-## Maximum file size restrictions
+## Restricting maximum file size
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [maxFileSize](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes (approximately 300 MB).
 
 ```ts
 
@@ -127,11 +143,11 @@ In the following example, the video size has been validated before uploading and
 
 ## Saving video to the server
 
-Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#path) properties.
+Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#path) properties.
 
-Configure [insertVideoSettings.removeUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#removeurl) to point to the endpoint responsible for deleting video files.
+Configure [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#removeurl) to point to the endpoint responsible for deleting video files.
 
-Set the [insertVideoSettings.saveFormat](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
+Set the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#saveformat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
 
 > If you want to insert lower-sized video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
 
@@ -375,7 +391,7 @@ Once you select the video from the local machine, the URL for the video will be 
 
 Set the default width, minWidth, height, and minHeight of the video element when it is inserted in the Rich Text Editor using the [width](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#width), [minWidth](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#minwidth), [height](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#height), [minHeight](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/videosettingsmodel#minheight) properties.
 
-Through the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/quicktoolbarsettings), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
+Through the [quickToolbarSettings](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/quicktoolbarsettings), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
 ![Javascript Rich Text Editor Video dimension](../images/javaScript-richtexteditor-video-size.png)
 

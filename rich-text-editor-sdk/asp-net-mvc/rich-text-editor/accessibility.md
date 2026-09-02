@@ -45,7 +45,7 @@ The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includ
 | --- | --- |
 | role="toolbar" | This attribute added to the toolbar element describes the actual role of the element. |
 | aria-orientation | Indicates the toolbar orientation. Default value is horizontal. |
-| aria-haspopup | Indicates the popup mode of the toolbar. The default value is false. When popup mode is enabled, attribute value has to be changed to true. |
+| aria-haspopup | Indicates the popup mode of the toolbar. The default value is false. When popup mode is enabled, set this attribute to `true`. |
 | aria-disabled | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
@@ -92,8 +92,6 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 The Rich Text Editor control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Rich Text Editor control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rich-text-editor.html) in a new window to evaluate the accessibility of the Rich Text Editor control with accessibility tools.
-
-{% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
 ## See Also
 

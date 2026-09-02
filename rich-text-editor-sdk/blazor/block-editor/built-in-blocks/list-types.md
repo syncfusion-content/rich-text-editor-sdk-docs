@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Lists in Blazor Block Editor Component | Syncfusion®
-description: Learn about list blocks including bullet lists, numbered lists, and checklists in the Blazor Block Editor component.
+title: List Blocks in Blazor Block Editor | Syncfusion®
+description: Learn how to add and configure bullet, numbered, and checklist blocks in the Blazor Block Editor component, including placeholders and checked states.
 platform: rich-text-editor-sdk
-control: BlockEditor
+control: Block Editor
 documentation: ug
 ---
 
-# Lists in Blazor Block Editor Component
+# List Blocks in Blazor Block Editor
 
 The Blazor Block Editor component uses list blocks to organize content into structured lists. To render a specific list type, set the [BlockType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html) property of the [BlockModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockModel.html) to [BulletList](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Bulletlist), [NumberedList](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Numberedlist), or [Checklist](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockEditor.BlockType.html#Syncfusion_Blazor_BlockEditor_BlockType_Checklist). Bullet lists are ideal for unordered items, numbered lists for ordered items, and checklists for interactive to-do lists.
 
@@ -22,7 +22,7 @@ You can render a Bullet List block by setting the [BlockType](https://help.syncf
     new BlockModel
     {
         BlockType = BlockType.BulletList,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -35,8 +35,8 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
     new BlockModel
     {
         BlockType = BlockType.BulletList,
-        Properties = new BulletListBlockSettings {Placeholder = "bullet"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Properties = new BulletListBlockSettings { Placeholder = "bullet" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -49,7 +49,7 @@ You can render a Numbered List block by setting the [BlockType](https://help.syn
     new BlockModel
     {
         BlockType = BlockType.NumberedList,
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -61,9 +61,9 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
 // Adding placeholder value
     new BlockModel
     {
-        BlockType = BlockType.BulletList,
-        Properties = new NumberedListBlockSettings {Placeholder = "number"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        BlockType = BlockType.NumberedList,
+        Properties = new NumberedListBlockSettings { Placeholder = "number" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 
@@ -141,8 +141,8 @@ The [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.BlockE
     new BlockModel
     {
         BlockType = BlockType.Checklist,
-        Properties = new ChecklistBlockSettings {Placeholder = "check"},
-        Content = {new ContentModel{ContentType = ContentType.Text, Content = "your content"}}
+        Properties = new ChecklistBlockSettings { Placeholder = "check" },
+        Content = new() { new ContentModel{ ContentType = ContentType.Text, Content = "your content" } }
     }
 ```
 

@@ -73,7 +73,7 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% endif %}
 
 ## Styling the Popup
-The AI Assistant Popup can be styled by using the following css.
+The AI Assistant Popup can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup {
@@ -81,13 +81,13 @@ The AI Assistant Popup can be styled by using the following css.
 }
 ```
 
-The AI Assistant Popup processing state can be styled by using the following css.
+The AI Assistant Popup processing state can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup.processing {
     padding:2px;
     color: white;
-    background: white;
+    background: #333;
     z-index: 1;
 }
 ```

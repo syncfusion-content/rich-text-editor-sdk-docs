@@ -1,14 +1,14 @@
 ---
 layout: post
 title: AI Assistant in Angular Rich Text Editor | Syncfusion
-description: Learn about the integration of the AI Assistant feature in the Syncfusion Essential JS 2 Angular Rich Text Editor Component.
+description: Learn how to enable and configure the Angular Rich Text Editor AI Assistant for AI-powered content creation, editing, prompts, and streaming.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Integrating the AI Assistant
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating the AI Assistant
+# Integrating the AI Assistant in Angular Rich Text Editor
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
@@ -18,8 +18,9 @@ The AI Assistant feature introduces two toolbar items: **AICommands** and **AIQu
 
 To enable the AI Assistant:
 
-1. Add the `AIAssistantService` to the **providers** section.
-2. Include `AICommands` and `AIQuery` in the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
+1. Import `AIAssistantService` from `@syncfusion/ej2-angular-richtexteditor` in your component file.
+2. Add the `AIAssistantService` to the **providers** section of your component (or `NgModule`).
+3. Include `AICommands` and `AIQuery` in the [toolbarSettings.items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
 ## Importing Styles
 
@@ -54,6 +55,17 @@ The AI Assistant interface can be opened through the following options:
 * The **AI Commands** toolbar option opens a menu containing predefined prompts.
 * Available actions include improving, shortening, elaborating, simplifying, summarizing, and performing grammar checks on the selected content.
 
+The following table lists the predefined AI commands and their typical use:
+
+| Command          | Description                                                  |
+| ---------------- | ------------------------------------------------------------ |
+| **Improve**      | Rewrites the selected content to enhance clarity and flow.   |
+| **Shorten**      | Condenses the selected content while preserving meaning.     |
+| **Elaborate**    | Expands the selected content with more detail.               |
+| **Simplify**     | Rewrites the selected content using simpler language.        |
+| **Summarize**    | Produces a concise summary of the selected content.          |
+| **Grammar Check**| Corrects grammar and spelling in the selected content.        |
+
 ### 2. AI Query
 
 * The **AI Query** toolbar button or the keyboard shortcut **Alt + Enter** (Windows) / **⌥ + Enter** (Mac) opens a popup for entering custom prompts.
@@ -63,7 +75,14 @@ The AI Assistant interface can be opened through the following options:
 
 Executing a prompt triggers the [aiAssistantPromptRequest](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantpromptrequest) event. This event provides the selected text and the prompt, which can be combined and forwarded to an AI provider or backend service.
 
-Once a response is received either as a stream or as a single output it can be added to the AssistView using the [addAIPromptResponse](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#addaipromptresponse) method.
+Once a response is received, either as a stream or as a single output, it can be added to the AssistView using the [addAIPromptResponse](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#addaipromptresponse) method.
+
+The method accepts two parameters:
+
+| Parameter           | Type                | Description                                                                                       |
+| ------------------- | ------------------- | ------------------------------------------------------------------------------------------------- |
+| `outputResponse`    | `string \| Object`  | The response content to render. Markdown strings are converted to HTML.                           |
+| `isFinalUpdate`     | `boolean?`          | Optional. Set to `true` for the final chunk of a streamed response (or for a single-shot response). Defaults to `false`. |
 
 If the *Stop Responding* button is clicked, the [aiAssistantStopRespondingClick](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#aiassistantstoprespondingclick) event is raised to cancel the streaming operation.
 
@@ -71,7 +90,7 @@ If the *Stop Responding* button is clicked, the [aiAssistantStopRespondingClick]
 
 ## Streaming Responses
 
-Responses can be streamed into the AssistView to provide a typewriter like effect. The `finalUpdate` parameter of `addAIPromptResponse` determines when the final chunk is processed and the stream ends.
+Responses can be streamed into the AssistView to provide a typewriter-like effect. The `isFinalUpdate` parameter of `addAIPromptResponse` determines when the final chunk is processed and the stream ends.
 
 **Example: Streaming Response**
 

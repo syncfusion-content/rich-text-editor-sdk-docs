@@ -5,18 +5,23 @@ description: Learn how to use built-in block types in the ASP.NET Core Block Edi
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
 # Built-in Block Types and Configuration  in ASP.NET Core Block Editor
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [blocks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) tag helper allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create a block-based content editing solution using various types of blocks. The [blocks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) tag helper allows you to define and manage the content structure of your editor. For initial setup, see the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/block-editor/getting-started).
 
 ## Blocks
 
-Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit such as a `Paragraph`, `Heading`, `List`, or specialized content like `Code Snippets` or `Images`. The Block Editor organizes content as a collection of `e-block` tag helper, allowing for better structure and formatting options.
+Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit with specific properties and formatting. Common block types include:
+- Text blocks (`Paragraph`, `Heading1`-`Heading4`)
+- List blocks (`BulletList`, `NumberedList`, `Checklist`)
+- Specialized content (`Code`, `Image`, `Quote`, `Callout`, `Table`, `Divider`)
+- Collapsible blocks (`CollapsibleParagraph`, `CollapsibleHeading1`-`CollapsibleHeading4`)
+- Custom (`Template`)
 
-You can configure blocks with various properties such as `id`, `blockType`, `content` and more to create rich and structured editor.
+The Block Editor organizes content as a collection of `e-block` tag helpers, allowing for better structure and formatting options. You can configure each block with properties such as `id`, `blockType`, `content`, `indent`, and `cssClass` to create rich and structured editor content.
 
 ## Block types
 
@@ -39,9 +44,11 @@ The Block Editor supports multiple block types. Each block type offers different
 
 > For blocks such as `Code`, `Callout`, `Table`, `Image`, and `Collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
 
-## Configure indent
+## Configure block properties
 
-You can specify the indentation level of a block using the `indent` property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
+### Indent
+
+You can specify the indentation level of individual blocks using the `indent` property on the `e-block` element. This property accepts a numeric value (0 or higher) that determines how deeply a block is nested from the left margin.
 
 By default, the `indent` property is set to `0`.
 
@@ -56,10 +63,27 @@ By default, the `indent` property is set to `0`.
 
 ![Block Indent](../images/block-indent.png)
 
-## Configure CSS Class
+### CSS Class
 
-You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass)  property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks by adding the `cssClass` property to the `e-block` tag helper. This property accepts a string containing one or more CSS class names separated by spaces.
 
+Define custom CSS styles in your stylesheet and apply them to blocks:
+
+```css
+/* Custom styles for block classes */
+.highlight-block {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 4px solid #ff9800;
+}
+
+.large-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+```
+
+The Block Editor allows you to use custom templates for specialized content using the `template` block type. Templates define custom HTML structures and can include complex layouts with interactive elements. Templates are useful for creating custom content types beyond the built-in block type
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
 {% tabs %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Getting started in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Getting started with Vue Rich Text Editor | Syncfusion
+description: Learn how to get started with the Vue Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/vue-components/vue-wysiwyg-rich-text-editor"
 control: Get started 
 platform: rich-text-editor-sdk
@@ -98,7 +98,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Grid Component](./images/cli-rte.png)
+![Rich Text Editor Component](./images/cli-rte.png)
 
 {% endtabcontent %}
 
@@ -169,10 +169,10 @@ These modules can be injected as `services` using Vue's `provide` function as de
 
 {% tabs %}
 {% highlight html hl_lines="9" tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html hl_lines="13 14 15" tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,17 +184,17 @@ Now, you can start adding the Vue Rich Text Editor component in the application.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/app.vue %}
 {% endhighlight %}
 {% highlight css tabtitle="style.css" %}
-{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/vue/rich-text-editor/toolbar-cs21/index.css %}
+{% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/toolbar-cs21" %}
 
 ## Run the Application
 

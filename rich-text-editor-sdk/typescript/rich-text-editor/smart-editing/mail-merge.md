@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Mail Merge in TypeScript Rich Text Editor Control | Syncfusion
-description: Learn all about Mail Merge in the Syncfusion TypeScript Rich Text Editor control, part of Essential JS 2.
+title: Mail Merge in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to create personalized documents in the TypeScript Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 platform: rich-text-editor-sdk
-control: Mail Merge 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Mail merge in TypeScript Rich Text Editor Control
+# Mail Merge in TypeScript Rich Text Editor
 
 The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 
@@ -75,7 +74,7 @@ mailMergeEditor.appendTo('#mailMergeEditor');
 
 ## Using DropDownButton for selecting placeholders
 
-The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., {{FirstName}}) is inserted at the current cursor position using the `insertHTML` command.
+The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., `{{FirstName}}`) is inserted at the current cursor position using the `insertHTML` command.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -102,12 +101,15 @@ let insertField: DropDownButton = new DropDownButton({
 insertField.appendTo('#insertField');
 
 function onItemSelect(args: MenuEventArgs): void {
-   const value = textToValueMap[args.item.text];
-   mailMergeEditor.executeCommand(
-      'insertHTML',
-      `<span contenteditable="false" class="e-mention-chip"><span>{{${value}}}</span></span>&nbsp;`,
-      { undo: true }
-   );
+   if (args.item.text != null) {
+      const value = textToValueMap[args.item.text];
+      const trimmedValue = value.trim();
+      mailMergeEditor.executeCommand(
+         'insertHTML',
+         `<span contenteditable="false" class="e-mention-chip"><span>{{${trimmedValue}}}</span></span>&nbsp;`,
+         { undo: true }
+      );
+   }
 }
 
 {% endraw %}
@@ -161,7 +163,7 @@ function onItemSelect(args) {
 
 ## Populating merge fields using Mention
 
-The **Mention** control provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
+The **Mention** control provides an alternative way to insert placeholders by typing the `{{` character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -196,12 +198,12 @@ mentionObj.appendTo('#mentionField');
 
 var mergeObj = new ej.dropdowns.Mention({
   dataSource: mergeData,
-  fields: { text: 'Name', value: 'Field' },
-  displayTemplate: '<span>{{${Field}}}</span>',
+  fields: { text: 'text', value: 'value' },
+  displayTemplate: '<span>{{${value}}}</span>',
   popupWidth: '250px',
   popupHeight: '200px',
   target: mailMergeEditor.inputElement,
-  mentionChar: `{{` ,
+  mentionChar: `{{`,
   allowSpaces: true,
 });
 mergeObj.appendTo('#mentionField');
@@ -288,7 +290,7 @@ function replacePlaceholders(template, data) {
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/mail-merge/index.html %}
 {% endhighlight %}
 {% endtabs %}
-       
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/mail-merge-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Vue Markdown Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in Vue Markdown Editor | Syncfusion
+description: Learn about accessibility features in the Vue Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in the Vue Markdown Editor Component
+# Accessibility in Vue Markdown Editor
 
 The Vue Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 
@@ -79,7 +79,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](https:/
 
 ### Customizing Shortcut Keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

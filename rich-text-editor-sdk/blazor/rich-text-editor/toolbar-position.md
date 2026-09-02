@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Toolbar position in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Toolbar position in Blazor Rich Text Editor component with examples and much more details.
+description: Learn how to position the toolbar at the top or bottom of the Blazor Rich Text Editor to match your application layout and editing experience.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Toolbar Position in Blazor Rich Text Editor Component
+# Toolbar Position in Blazor Rich Text Editor
 
 The Rich Text Editor allows you to configure the toolbar's position using the [RichTextEditorToolbarSettings.Position](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Position) property. The available positions are:
 
@@ -30,4 +30,10 @@ To move the toolbar to the bottom, set the [RichTextEditorToolbarSettings.Positi
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor multirow toolbar](./images/blazor-richtexteditor-bottom-toolbar.webp)
+![Blazor RichTextEditor toolbar at the bottom](./images/blazor-richtexteditor-bottom-toolbar.webp)
+
+## See also
+
+* [Toolbar customization](./tools/built-in-tools)
+* [Custom toolbar items](./tools/custom-tool)
+* [Editor Modes](./editor-modes)

@@ -12,10 +12,10 @@ documentation: ug
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 
-In the below sample, configure the saveUrl and path properties to achieve file attachments.
+In the below sample, configure the `saveUrl` and `path` properties to achieve file attachments.
 
-        1. saveUrl: Provides service URL to save the files.
-        2. path: Specifies the location to store the image.
+1. `saveUrl`: Provides the service URL to save the files.
+2. `path`: Specifies the location where the uploaded file will be stored.
 
 The following sample illustrates how to attach a file in the Rich Text Editor.
 
@@ -44,7 +44,7 @@ The following sample illustrates how to attach a file in the Rich Text Editor.
 
 
 
-To config server-side handler, refer the below code.
+To configure the server-side handler, refer to the following code.
 
 ``` csharp
 int x = 0;

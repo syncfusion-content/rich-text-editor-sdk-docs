@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Module in TypeScript Rich Text Editor control | Syncfusion
-description: Learn here all about Module in Syncfusion TypeScript Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Feature Modules in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to inject feature modules in the TypeScript Rich Text Editor to enable only the toolbar, link, image, and other features your app needs.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Module 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Module in TypeScript Rich Text Editor control
+# Feature Modules in TypeScript Rich Text Editor
 
 The Rich Text Editor component follows a modular architecture, enabling users to include or exclude features as needed to ensure optimal performance and customization.
 
@@ -51,7 +50,7 @@ The following example demonstrates how to import and inject modules.
 | `Count` | Inject this module to enable live character counting capabilities in the Rich Text Editor. |
 | `HtmlEditor` | Inject this module to support the HTML source editing view, allowing users to switch between preview and source code modes. |
 | `MarkdownEditor` | Inject this module to enable editing support, allowing users to write and preview content using standard Markdown syntax |
-| `QuickToolbar` | Inject this module to displays a floating toolbar near selected content like images or links for quick actions. |
+| `QuickToolbar` | Inject this module to display a floating toolbar near selected content like images or links for quick actions. |
 | `Resize` | Injecting this module enables users to resize the height and width of the editor area interactively using a resizable handle in the Rich Text Editor. |
 | `FileManager` | Injecting this module provides users with a dialog interface to browse, upload, and insert files (especially images) from a server or cloud storage provider directly into the Rich Text Editor. |
 | `PasteCleanup` | Inject this module to keep or clean up the formatting of pasted content in Rich Text Editor. |
@@ -59,7 +58,7 @@ The following example demonstrates how to import and inject modules.
 | `EmojiPicker` | Injecting this module allows users to search, and insert emojis into the Rich Text Editor. |
 | `SlashMenu` | Injecting this module allows users to apply formats, open dialogs by typing "/" in the Rich Text Editor. |
 | `ImportExport` | Injecting this module allows users to import content from Word documents into the Rich Text Editor and export the Rich Text Editor's content into Word and PDF files |
-| `CodeBlock` | Injecting this module allows users to format the selected text as inline code, highlighting code snippets within the text in the Rich Text Editor. |
+| `CodeBlock` | Injecting this module allows users to format the selected text as a code block, highlighting code snippets within the text in the Rich Text Editor. |
 | `AutoFormat` | Injecting this module automatically converts Markdown syntax into HTML as you type, supporting inline and block-level formatting for a seamless editing experience. |
 | `Audio` | Injecting this module allows users to insert and manage audios in the Rich Text Editor. |
 | `Video` | Injecting this module allows users to insert and manage videos in the Rich Text Editor. |

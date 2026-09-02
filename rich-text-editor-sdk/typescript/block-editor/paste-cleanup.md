@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Paste Clean-up in TypeScript Block Editor control | Syncfusion
-description: Checkout and learn about Paste Clean-up with TypeScript Block Editor control of Syncfusion Essential JS 2 and more.
+title: Paste Cleanup in TypeScript Block Editor | Syncfusion
+description: Learn how to configure paste cleanup in TypeScript Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Paste Clean-up in TypeScript Block Editor control
+# Paste Cleanup in TypeScript Block Editor
 
 The Block Editor control provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
 
@@ -47,7 +46,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The example below demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -76,7 +75,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/paste-cleanup/allowedstyle" %}
 {% endif %}
 
-## Disable Keep format
+## Disable keep format
 
 By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
 
@@ -100,7 +99,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The example below demonstrates the usage of paste settings that disables the keep format and allows plain text.
 
 {% if page.publishingplatform == "typescript" %}
 

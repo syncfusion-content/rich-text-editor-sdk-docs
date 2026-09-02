@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toolbar Configuration in Blazor Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about Toolbar in Blazor Rich Text Editor component with examples and much more details.
+title: Toolbar Types in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the Blazor Rich Text Editor for different layout requirements.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Toolbar types in Blazor Rich Text Editor
+# Toolbar Types in Blazor Rich Text Editor
 
 The Rich Text Editor toolbar provides a collection of tools such as Bold, Italic, and text alignment buttons used to format the content.
 
@@ -20,7 +20,7 @@ You can customize the toolbar configurations by using the [RichTextEditorToolbar
 
 ## Expand toolbar
 
-The [Expand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarType.html#Syncfusion_Blazor_RichTextEditor_ToolbarType_Expand) toolbar hides overflowing items in the next line using the  property. By clicking the expand arrow, you can view the overflowing toolbar items. The default mode of toolbar is `Expand`.
+The [Expand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarType.html#Syncfusion_Blazor_RichTextEditor_ToolbarType_Expand) toolbar hides overflowing items in the next line. By clicking the expand arrow, you can view the overflowing toolbar items. The default mode of the toolbar is `Expand`.
 
 {% tabs %}
 {% highlight razor %}
@@ -58,7 +58,7 @@ The [Scrollable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTex
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor multirow toolbar](./images/blazor-richtexteditor-scrollable-toolbar.webp)
+![Blazor RichTextEditor scrollable toolbar](./images/blazor-richtexteditor-scrollable-toolbar.webp)
 
 ## Popup toolbar
 
@@ -72,7 +72,7 @@ The [Popup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEdit
 {% endhighlight %}
 {% endtabs %}
 
-![Blazor RichTextEditor multirow toolbar](./images/blazor-richtexteditor-popup-toolbar.webp)
+![Blazor RichTextEditor popup toolbar](./images/blazor-richtexteditor-popup-toolbar.webp)
 
 ## Configuring a Floating toolbar
 
@@ -98,6 +98,6 @@ You can enable or disable the floating toolbar using [RichTextEditorToolbarSetti
 
 ## See also
 
-* [Customizing Rich Text Editor Toolbar Styles](https://blazor.syncfusion.com/documentation/rich-text-editor/style#customizing-the-toolbar-appearance)
-* [Implementing Inline Editing](https://blazor.syncfusion.com/documentation/rich-text-editor/inline-mode)
-* [Customizing Accessibility Shortcut Keys](https://blazor.syncfusion.com/documentation/rich-text-editor/keyboard-support#custom-key-config)
+* [Customizing Rich Text Editor Toolbar Styles](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/style#customizing-the-toolbar-appearance)
+* [Implementing Inline Editing](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/inline-mode)
+* [Customizing Accessibility Shortcut Keys](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/keyboard-support#custom-key-config)

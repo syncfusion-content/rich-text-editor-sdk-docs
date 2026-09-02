@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Supported Markdown Syntax in JavaScript Markdown Editor control | Syncfusion
-description: Learn here all about Supported Markdown Syntax in Syncfusion JavaScript Markdown Editor control of Syncfusion Essential JS 2 and more.
+title: Markdown Syntax Supported in JavaScript Markdown Editor | Syncfusion
+description:  Learn the Markdown syntax supported in the JavaScript Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 platform: rich-text-editor-sdk
-control: Supported Markdown Syntax 
-publishingplatform: rich-text-editor-sdk
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Supported Markdown Syntax in JavaScript Markdown Editor Control
+# Markdown Syntax Supported in JavaScript Markdown Editor
 
 The Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
 

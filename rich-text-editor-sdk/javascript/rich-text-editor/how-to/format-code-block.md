@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Format code block in JavaScript Rich text editor | Syncfusion
-description: Learn here all about Format code block in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Add Code Block Formatting in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to add code block formatting in the JavaScript Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
 platform: rich-text-editor-sdk
-control: Format code block 
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Format code block in JavaScript Rich text editor control
+# Add Code Block Formatting in JavaScript Rich Text Editor
 
-You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
+You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
+The following sample demonstrates how to configure the InsertCode button in the toolbar and set the background color of the `pre` tag for highlighting the code block.
 
 {% if page.publishingplatform == "typescript" %}
 

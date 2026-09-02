@@ -3,15 +3,15 @@ layout: post
 title: HttpClient Instance in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to configure and use HttpClient instance in Blazor Rich Text Editor for HTTP requests and much more details.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# HttpClientInstance in Blazor RichTextEditor Component
+# HttpClientInstance in Blazor Rich Text Editor
 
-The Rich Text Editor component in Blazor enables you to utilize the `HttpClientInstance` property to append the custom HttpClient instance to all file upload and download requests. This approach offers flexibility in managing authentication and custom request configurations for Word Import, Word and PDF Export and image/audio/video insertions.
+The Rich Text Editor component in Blazor enables you to use the [HttpClientInstance](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_HttpClientInstance) property to apply a custom `HttpClient` instance to all file upload and download requests. This provides flexibility in managing authentication and custom request configurations for Word Import, Word and PDF Export, and image, audio, and video insertions.
 
-The following example illustrates how to configure the Rich Text Editor component with HttpClient in a Blazor application.
+The following example illustrates how to configure the Rich Text Editor component with a custom `HttpClient` in a Blazor application.
 
 {% tabs %}
 {% highlight razor %}
@@ -20,12 +20,9 @@ The following example illustrates how to configure the Rich Text Editor componen
 @inject HttpClient httpClient
 
 <SfRichTextEditor HttpClientInstance="@httpClient">
-    <RichTextEditorImageSettings SaveUrl="https://your_api.com/upload/image">
-    </RichTextEditorImageSettings>
-    <RichTextEditorAudioSettings SaveUrl="https://your_api.com/upload/audio">
-    </RichTextEditorAudioSettings>
-    <RichTextEditorVideoSettings SaveUrl="https://your_api.com/upload/video">
-    </RichTextEditorVideoSettings>
+    <RichTextEditorImageSettings SaveUrl="https://your_api.com/upload/image" />
+    <RichTextEditorAudioSettings SaveUrl="https://your_api.com/upload/audio" />
+    <RichTextEditorVideoSettings SaveUrl="https://your_api.com/upload/video" />
 </SfRichTextEditor>
 
 @code {
@@ -64,7 +61,15 @@ builder.Services.AddScoped(sp =>
     httpClient.DefaultRequestHeaders.Add("Custom-Header", "YourCustomValue");
     return httpClient;
 });
+
 var app = builder.Build();
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+* [Import and Export Content](./import-export)
+* [Images](./image)
+* [Video](./video) (Blazor)
+* [Audio](./audio) (Blazor)

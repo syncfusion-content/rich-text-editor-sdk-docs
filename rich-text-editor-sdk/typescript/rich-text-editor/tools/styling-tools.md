@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Styling tools in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Styling tools in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Font Styling in TypeScript Rich Text Editor | Syncfusion
+description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the TypeScript Rich Text Editor.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Styling tools
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Styling Tools in TypeScript Rich Text Editor control
+# Font Styling in TypeScript Rich Text Editor
 
 ## Font family
 
@@ -198,7 +197,7 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 
 ## Font and background color
 
-You can add the `FontColor` and `BackgroundColor` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
+You can add the `FontColor` and `BackgroundColor` tools to the Rich Text Editor toolbar using the `toolbarSettings` [items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
 {% if page.publishingplatform == "typescript" %}
 

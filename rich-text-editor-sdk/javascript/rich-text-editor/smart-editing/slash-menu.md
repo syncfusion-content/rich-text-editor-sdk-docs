@@ -1,29 +1,28 @@
 ---
 layout: post
-title: Slash Menu in JavaScript Rich text editor control | Syncfusion
-description: Learn here all about Slash Menu in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Slash Commands in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to use slash commands in the JavaScript Rich Text Editor to quickly insert content, apply formatting, and access editing actions.
 platform: rich-text-editor-sdk
-control: Slash Menu
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Slash Commands in JavaScript Rich text editor control
+# Slash Commands in JavaScript Rich Text Editor
 
-The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
+The Slash command in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
-## Enabling the slash menu
+## Enabling the Slash command
 
-To use the Slash Menu feature, inject Slash Menu module using the RichTextEditor.Inject(SlashMenu).
+To use the Slash command feature, inject Slash command module using the RichTextEditor.Inject(SlashMenu).
 
-To enable the Slash Menu, set the `enable` property within [`slashMenuSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#slashmenusettings) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
+To enable the Slash command, set the `enable` property within [`slashMenuSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#slashmenusettings) to `true`. By default, this feature is disabled. Once enabled, the Slash command will appear when the user types the "/" character in the editor.
 
-## Configuring the slash menu items
+## Configuring the Slash command items
 
-The slashMenuSettings property allows customization of the `items` displayed in the Slash Menu. By defining the [`items`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
+The slashMenuSettings property allows customization of the `items` displayed in the Slash command. By defining the [`items`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
 
-This list can include various formatting options such as paragraph and heading levels. Here’s an code snippet of configuring the Slash Menu items:
+This list can include various formatting options such as paragraph and heading levels. Here's a code snippet of configuring the Slash command items:
 
 ```typescript
 
@@ -36,9 +35,9 @@ slashMenuSettings: {
 
 ## Customizing the popup width and height
 
-The size of the Slash Menu popup can be customized using the [`popupWidth`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#popupheight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
+The size of the Slash command popup can be customized using the [`popupWidth`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel#popupheight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
 
-Below is an code snippet showing how to customize both the width and height of the popup:
+Below is a code snippet showing how to customize both the width and height of the popup:
 
 ```typescript
 
@@ -51,9 +50,21 @@ slashMenuSettings: {
 
 ```
 
-## Adding custom slash menu items
+## Adding custom Slash command items
 
-Custom items can be added by defining the items property inside slashMenuSettings. This property accepts either a string of predefined items or an array of objects representing custom menu items.
+Custom items can be added by defining the items property inside slashMenuSettings. This property accepts either a string of predefined items or an array of objects representing custom menu items. The following are the predefined Slash command items available:
+
+* Paragraph
+* Heading 1, Heading 2, Heading 3, Heading 4, Heading 5, Heading 6
+* Bold List (Unordered List)
+* Numbered List (Ordered List)
+* Code Block
+* Blockquote
+* Horizontal Rule
+
+Custom menu items can extend this list with your own actions.
+
+### Custom item properties
 
 Each custom item object can include the following properties:
 
@@ -61,12 +72,12 @@ Each custom item object can include the following properties:
 |-------------|-------------------------------------------------------|
 | text        | The label of the menu item.                           |
 | command     | The action to be executed when the item is clicked.   |
-| type        | Groups related items in the Slash Menu.               |
+| type        | Groups related items in the Slash command.               |
 | iconCss     | Specifies the CSS class for the item's icon.          |
 | description | Provides a short description for the item.            |
 
 
-The following code demonstrates how to set up the Custom Slash Menu item in the Rich Text Editor to insert meeting notes and signature:
+The following code demonstrates how to set up the Custom Slash command item in the Rich Text Editor to insert meeting notes and signature:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -94,3 +105,10 @@ The following code demonstrates how to set up the Custom Slash Menu item in the 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/slash-menu-cs1" %}
 {% endif %}
+
+## See also
+
+* [Slash command Settings API](https://ej2.syncfusion.com/documentation/api/rich-text-editor/slashmenusettingsmodel)
+* [Mention Feature](./mentions)
+* [Mail Merge](./mail-merge)
+* [Emoji Picker](./emoji-picker)

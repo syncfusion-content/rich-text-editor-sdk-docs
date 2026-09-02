@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in Angular Rich Text Editor component | Syncfusion
-description: Learn how to insert, manage, and customize images in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Images in Angular Rich Text Editor | Syncfusion
+description: Learn how to insert images in the Angular Rich Text Editor using URLs, uploads, File Manager, resizing, captions, alignment, wrapping, and storage.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Images
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Images in the Angular Rich Text Editor Component
+# Insert Images in Angular Rich Text Editor
 
 The Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel)
 
@@ -81,7 +81,7 @@ To integrate the file manager into the Rich Text Editor, follow these steps:
 
 ## Maximum file size restriction
 
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
+You can restrict image uploads from your local machine using the [maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes.
 
 In the following example, the image size has been validated before uploading and determined whether the image has been uploaded or not.
 

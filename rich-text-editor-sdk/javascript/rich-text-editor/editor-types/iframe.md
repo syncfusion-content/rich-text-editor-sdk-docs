@@ -1,15 +1,14 @@
 ---
 layout: post
-title: IFrame Editing Mode  in JavaScript Rich text editor | Syncfusion
-description: Learn here all about IFrame Editing Mode  in Syncfusion JavaScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: IFrame Editing Mode in JavaScript Rich Text Editor | Syncfusion
+description: Learn how to enable IFrame editing mode in the JavaScript Rich Text Editor to isolate styles and scripts within the editor surface.
 platform: rich-text-editor-sdk
-control: IFrame Editing Mode  
-publishingplatform: rich-text-editor-sdk
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# IFrame Editing Mode in JavaScript Rich Text Editor control
+# IFrame Editing Mode in JavaScript Rich Text Editor
 
 The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
@@ -79,9 +78,9 @@ You can add custom attributes to the body tag of the iframe using the attributes
 
 ## Integrating external CSS and scripts
 
-The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#styles) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
+The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#styles) field in the `iframeSettings` property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
-Likewise, add the external script file to the `< iframe >` element using the [scripts](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#scripts) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
+Likewise, add the external script file to the `<iframe>` element using the [scripts](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#scripts) field of `iframeSettings` to provide additional functionalities to the Rich Text Editor.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,5 +148,5 @@ Here's an example of how to integrate Mention with Iframe editor,
 
 ## See also
 
-* [Implementing Inline Editing](./inline-editing)
+* [Implementing Inline Editing](./inline-editing.md)
 * [Using the Markdown Editor](../../markdown-editor)

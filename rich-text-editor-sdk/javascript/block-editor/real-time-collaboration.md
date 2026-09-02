@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Real-Time Collaboration in JavaScript Block Editor | Syncfusion
-description: Enable real-time collaborative editing in the Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+description: Learn how to enable real-time collaboration in the JavaScript Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in JavaScript Block Editor control
+# Real-Time Collaboration in JavaScript Block Editor
 
-The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
+The Block Editor supports real-time collaborative editing, letting multiple users work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes changes across all connected users and resolves conflicts automatically.
 
 With collaboration enabled, users can:
 
@@ -29,11 +28,11 @@ With collaboration enabled, users can:
 
 Get real-time collaboration working in just a few minutes using `y-websocket` and a simple WebSocket server in our Block Editor component.
 
-### Step 1: Set up a basic Javascript Block Editor component
+### Step 1: Set up a basic JavaScript Block Editor component
 
-Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/es5-getting-started) to create a Javascript project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
+Follow the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/javascript/block-editor/es5-getting-started) to create a JavaScript project with the Block Editor component. This ensures you have all required dependencies and the correct project structure before adding collaboration.
 
-### Step 2: Creation of Yjs and Websocket provider bundle file using esbuild
+### Step 2: Create a Yjs and WebSocket provider bundle file using esbuild
 
 A Yjs provider handles the transport of document updates between connected users. Choose a provider based on your deployment requirements.
 
@@ -133,11 +132,11 @@ running at 'localhost' on port 1234
 ### Step 4: Create a collaboration configuration file
 
 - Create a shared Yjs document and XML fragment.
-- The `yjs` amd `WebsocketProvider` will be accessed from bundled globals.
+- The `yjs` and `WebsocketProvider` will be accessed from bundled globals.
 - Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 - Create a provider that connects users to the same shared document.
 
-Create a `collaboration.js` file in your project add the following code to configure the Yjs document, provider, collaboration adapter and room allocation logic.
+Create a `collaboration.js` file in your project, and add the following code to configure the Yjs document, provider, collaboration adapter, and room allocation logic.
 
 ```js
 // Access from bundled globals
@@ -239,7 +238,7 @@ var blockeditor = new ej.blockeditor.BlockEditor({
 blockeditor.appendTo('#blockeditor_default');
 ```
 
-Ensure that the following scripts are included in `index.html`:
+Ensure that the following scripts are included in `index.html`, in this order, since `index.js` references the `adapter` and `provider` created in `collaboration.js`:
 
 ```html
 <script src="yjs-bundle.js"></script>
@@ -251,9 +250,9 @@ Ensure that the following scripts are included in `index.html`:
 In your project, run the `index.html` in web browser.
  
 > **Important:** Make sure your WebSocket server is still running in another terminal window.
- 
-2. **Open a tab and duplicate it** with your Javascript application
-3. **Type in one window** — you should see the text appear in the other window instantly
+
+2. **Open a tab and duplicate it** with your JavaScript application.
+3. **Type in one window** — you should see the text appear in the other window instantly.
 
 If the text appears in both tabs, **real-time collaboration is achieved.**
 
@@ -261,7 +260,15 @@ If the text appears in both tabs, **real-time collaboration is achieved.**
 
 ## Configure the current user
 
-Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay.
+
+Each entry in the `users` array supports the following fields:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `id` | `string` | Unique identifier for the user; matched against `currentUserId` and against remote awareness state. |
+| `user` | `string` | Display name shown on the remote cursor label and hover details. |
+| `avatarBgColor` | `string` | CSS color value used for the user's remote cursor and text selection overlay. Defaults to an auto-assigned color if omitted. |
 
 ```js
 var blockEditor = new ej.blockeditor.BlockEditor({
@@ -276,7 +283,7 @@ var blockEditor = new ej.blockeditor.BlockEditor({
 
 ### Get active users
 
-Retrieve all currently connected users using the `users` property in the block editor.
+Retrieve all currently connected users using the `users` property on the Block Editor instance. This returns an array of the currently connected users' `id`, `user`, and `avatarBgColor` values.
 
 ```js
 var users = ej.blockeditor.users;
@@ -284,7 +291,7 @@ var users = ej.blockeditor.users;
 
 ## Version history
 
-`Version History` allows you to capture document snapshots and restore earlier versions. This is a built-in capability of the Block Editor and does not require a third-party service.
+Version history allows you to capture document snapshots and restore earlier versions. This is a built-in capability of the Block Editor and does not require a third-party service.
 
 ### Enable version history
 
@@ -302,13 +309,12 @@ var users = ej.blockeditor.users;
 
 - After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
 
-Before that need to create a storage service for snapshots.
-- Create `versionHistoryService.js` with `IndexedDBVersionStorage` class
-- This class implements `IVersionStorage` interface (required by Syncfusion)
+Before that, you need to create a storage service for snapshots:
+- Create `versionHistoryService.js` with an `IndexedDBVersionStorage` class.
+- This class implements the `IVersionStorage` interface (required by Syncfusion).
+- Make the storage room-specific by using `roomName` from `collaboration.js`, so that each room gets its own isolated snapshot database.
 
-Make Storage Room-Specific by using roomName from `collaboration.js` to make each room gets its own isolated snapshot database.
-
-Create a `versionHistoryService.js` file in the src folder, replace the `index.js` file to configure the BlockEditorComponent, and replace the `index.css` file with the styles required for the version history panel.
+Create a `versionHistoryService.js` file in the project folder, update the `index.js` file to configure the Block Editor with version history, and update the `index.css` file with the styles required for the version history panel.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -391,7 +397,7 @@ function deleteSnapshot(id) {
     }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="index.html" %}
+{% highlight html tabtitle="index.html" %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -436,7 +442,7 @@ function deleteSnapshot(id) {
 
 </html>
 {% endhighlight %}
-{% highlight ts tabtitle="versionHistoryService.js" %}
+{% highlight js tabtitle="versionHistoryService.js" %}
 class IndexedDBVersionStorage {
     constructor(dbName) {
         this.db = null;
@@ -509,7 +515,7 @@ class IndexedDBVersionStorage {
     }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="index.css" %}
+{% highlight css tabtitle="index.css" %}
 .app-container {
     display: flex;
     gap: 20px;
@@ -565,7 +571,7 @@ class IndexedDBVersionStorage {
 {% endhighlight %}
 {% endtabs %}
 
-Once done, run to see versionHistory panel for individual rooms.
+Once done, run the app to see the version history panel for individual rooms.
 
 ### Methods
 
@@ -614,8 +620,7 @@ var versionHistory = ej.blockeditor.getVersionHistory();
 await versionHistory.restoreSnapshot(snapshotId);
 ```
 
-> **Note:** When a snapshot is restored, the current document state is automatically 
-> backed up before the restore operation is applied.
+> **Note:** When a snapshot is restored, the current document state is automatically backed up before the restore operation is applied.
 
 #### Compare versions
 

@@ -1,27 +1,26 @@
 ---
 layout: post
-title: Enter key in TypeScript Rich text editor control | Syncfusion
-description: Learn here all about Enter key in Syncfusion TypeScript Rich text editor control of Syncfusion Essential JS 2 and more.
+title: Enter Key Configuration in TypeScript Rich Text Editor | Syncfusion
+description: Learn how to customize Enter and Shift+Enter key behavior in the TypeScript Rich Text Editor for flexible content formatting and structure.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Enter key 
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Enter key Configuration in TypeScript Rich Text Editor control
+# Enter and Shift+Enter in TypeScript Rich Text Editor
 
 Rich Text Editor allows you to customize the behavior of the Enter key and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 
 **Available Options**
 
-The enterKey property accepts the following values:
+The `enterKey` property accepts the following values:
 
 * `P` (default)
 * `DIV`
 * `BR`
 
-The shiftEnterKey property accepts the following values:
+The `shiftEnterKey` property accepts the following values:
 
 * `BR` (default)
 * `P`
@@ -95,7 +94,7 @@ When you customize the Shift+Enter key, the editor will create the specified tag
 
 ## Preventing enter key actions
 
-In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the `actionBegin event`. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
+In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the `actionBegin` event. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
 
 {% if page.publishingplatform == "typescript" %}
 

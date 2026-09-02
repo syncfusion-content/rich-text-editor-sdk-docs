@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Fullscreen Mode in Blazor RichTextEditor | Syncfusion®
-description: Checkout and learn here all about Fullscreen Mode in Blazor Rich Text Editor component with examples and much more details.
+title: Fullscreen Mode in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to enable fullscreen mode in the Blazor Rich Text Editor for distraction-free editing and an expanded content editing workspace.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Full screen Mode in Blazor Rich Text Editor Component
+# Fullscreen Mode in Blazor Rich Text Editor
 
-The Full screen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
+The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 
-You can enable full screen mode using the `Full screen` icon toolbar button. Once activated, the editor transitions into full screen view, hiding other page elements and maximizing the editing area.
+You can enable Fullscreen mode using the `Fullscreen` toolbar button. Once activated, the editor transitions into Fullscreen view, hiding other page elements and maximizing the editing area.
 
 ## How it works
 
-Click the full screen icon in the toolbar to toggle full screen mode. When enabled, the editor:
+Click the Fullscreen icon in the toolbar to toggle Fullscreen mode. When enabled, the editor:
 
 - Expands to fill the entire browser window.
-- Adjusts its layout to optimize space for content and tools.
-- Can be exited by clicking the `Minimize` icon or pressing the `Esc` key.
+- Repositions the toolbar at the top of the viewport for unobstructed access to all tools.
+- Can be exited by clicking the `Minimize` icon (which replaces the Fullscreen icon while active) or by pressing the `Esc` key.
 
 {% tabs %}
 {% highlight razor %}

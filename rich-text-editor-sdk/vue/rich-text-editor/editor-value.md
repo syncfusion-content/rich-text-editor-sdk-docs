@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Editor value in Vue Rich Text Editor component | Syncfusion
-description: Learn here all about Editor value in Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Editor value
+title: Editor Value in Vue Rich Text Editor | Syncfusion
+description: Learn how to set, retrieve, bind, and manage content in the Vue Rich Text Editor with placeholders, auto save, character count, and source code editing.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Editor Value in Vue Rich Text Editor Component
+# Editor Value in Vue Rich Text Editor
 
-## Set placeholder text 
+## Set placeholder text
 
 Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [placeholder](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#placeholder) property.
 
@@ -43,7 +43,7 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 * Using the [value](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#value) property directly.
 
-* Using the [valueTemplate](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
+* The [valueTemplate](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#valuetemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
@@ -187,13 +187,13 @@ By default, the content styles of the Rich Text Editor are not included when ret
 }
 
 .e-rte-content h5 {
-  font-size: 00.8em;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0;
 }
 
 .e-rte-content h6 {
-  font-size: 00.65em;
+  font-size: 0.65em;
   font-weight: 400;
   margin: 0;
 }

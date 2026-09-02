@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Enter key customization in Rich Text Editor | Syncfusion®
-description: Checkout and learn here all about the enter key and shift + enter key customization feature in RichTextEditor and more.
+title: Enter Key Customization in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to customize Enter and Shift+Enter key behavior in the Blazor Rich Text Editor for flexible content formatting and structure.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Enter and Shift-Enter Key Configuration
+# Enter and Shift+Enter in Blazor Rich Text Editor
 
-The Rich Text Editor allows to customize the tag that is inserted when pressing the <kbd>Enter</kbd> key and <kbd>Shift</kbd> + <kbd>Enter</kbd> key in the in the editor.
+The Rich Text Editor allows you to customize the tag that is inserted when pressing the <kbd>Enter</kbd> key or the <kbd>Shift</kbd> + <kbd>Enter</kbd> key in the editor.
 
 ## Enter key customization
 
@@ -29,7 +29,7 @@ N> The **pre** tag will be inserted when code format is applied. If the editor c
 
 ![Blazor Rich Text Editor Enter key configuration](./images/blazor-richtexteditor-enterkey.webp)
 
-## Shift-Enter key customization
+## Shift+Enter key customization
 
 By default, pressing <kbd>Shift</kbd> + <kbd>Enter</kbd> inserts a `<br>` tag. This behavior can be customized using the [ShiftEnterKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ShiftEnterKey) property. The [possible tags](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ShiftEnterKeyTag.html) are `<br>`, `<p>`, and `<div>`.
 
@@ -46,4 +46,4 @@ When configured, pressing <kbd>Shift</kbd> + <kbd>Enter</kbd> inserts the specif
 
 ![Blazor Rich Text Editor Shift+Enter key configuration](./images/blazor-richtexteditor-shiftenterkey.webp)
 
-N> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/enterkeyconfiguration)
+N> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/enterkeyconfiguration?theme=fluent2)

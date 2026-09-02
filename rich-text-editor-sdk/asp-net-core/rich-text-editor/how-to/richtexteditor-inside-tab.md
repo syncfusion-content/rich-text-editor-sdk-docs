@@ -9,7 +9,7 @@ documentation: ug
 
 # Render Rich Text Editor in ASP.NET Core Tab
 
-Integrating a Rich Text Editor within Tab control provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
+Integrating a Rich Text Editor within the Tab control provides a versatile and organized user interface for text formatting and content creation across multiple tabs. Each tab includes a dedicated editor instance configured with extensive toolbar options, enabling users to manipulate text styles, apply formatting, insert media, and manage content layout.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

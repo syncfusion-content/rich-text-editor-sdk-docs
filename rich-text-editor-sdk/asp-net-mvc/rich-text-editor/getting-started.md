@@ -93,7 +93,7 @@ Add the [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-edit
 {% endhighlight %}
 {% endtabs %}
 
-I> Replace the existing content in the `Index.cshtml` file with the above code snippet. Ensure that the Rich Text Editor control is assigned a valid ID (for example, `"editor"`), as the control will not render without it.
+> Replace the existing content in the `Index.cshtml` file with the above code snippet. Ensure that the Rich Text Editor control is assigned a valid ID (for example, `"editor"`), as the control will not render without it.
 
 ## Run the Application
 
@@ -101,15 +101,15 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Rich Text Editor Control](images/richtexteditor-control.webp)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See Also
 
 1. [Getting Started with ASP.NET MVC using HTML Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [How to change the editor type](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/editor-mode)
-4. [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)
-5. [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/inline-editing)
-6. [Accessibility in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/accessibility)
-7. [Keyboard support in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/keyboard-support)
-8. [Globalization in Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/globalization)
+3. [How to change the editor type](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/editor-mode)
+4. [How to render the iframe](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/iframe)
+5. [How to render the toolbar in inline mode](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/editor-types/inline-editing)
+6. [Accessibility in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility)
+7. [Keyboard support in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/keyboard-support)
+8. [Globalization in Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization)
