@@ -104,10 +104,10 @@ These shortcuts provide additional functionalities like fullscreen mode.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/md-keyboard/razor %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/md-keyboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/md-keyboard/controller.cs %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/md-keyboard/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
