@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Globalization in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to localize the ASP.NET MVC Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
+description: Learn how to localize the ASP.NET MVC BlockEditor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 ---
 

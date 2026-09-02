@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Keyboard Shortcuts in ASP.NET MVC Block Editor | Syncfusion
-description: Learn the keyboard shortcuts available in the ASP.NET MVC Block Editor for block creation, navigation, formatting, and undo/redo.
+description: Learn the keyboard shortcuts available in the ASP.NET MVC BlockEditor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 ---
 

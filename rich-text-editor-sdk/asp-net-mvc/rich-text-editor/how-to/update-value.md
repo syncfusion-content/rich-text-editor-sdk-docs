@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handle Ctrl+S Shortcut in ASP.NET MVC Rich Text Editor | Syncfusion
-description: Learn how to bind a keyboard shortcut (Ctrl+S) in the ASP.NET MVC Rich Text Editor to call updateValue and persist the editor content.
+description: Learn how to implement the Ctrl+S keyboard shortcut in the ASP.NET MVC Rich Text Editor to update values and save editor content programmatically.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Update Value via Keyboard Shortcut in ASP.NET MVC Rich Text Editor
 
-To achieve this, bind the `keydown` event to the Rich Text Editor's content area and detect the `Ctrl+S` keypress via its `keyCode`. In the `keydown` event handler, call the `updateValue` method to update the [`Value`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property, and then persist the content to the required database using the same.
+# Implement Ctrl+S Shortcut in ASP.NET MVC Rich Text Editor
 
 {% if page.publishingplatform == "aspnet-core" %}
 

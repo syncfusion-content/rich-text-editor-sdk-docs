@@ -3,7 +3,7 @@ layout: post
 title: Inline Content in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to add inline content in ASP.NET MVC Block Editor blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

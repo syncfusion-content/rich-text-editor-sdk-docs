@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Methods in ASP.NET MVC Block Editor | Syncfusion
-description: Learn about the public methods in ASP.NET MVC Block Editor for managing blocks, selections, formatting, focus, and data operations.
+description: Learn about the public methods in ASP.NET MVC BlockEditor for managing blocks, selections, formatting, focus, and data operations.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 ---
 
