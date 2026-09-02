@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Nested Blocks in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to create and configure nested blocks in the ASP.NET MVC Block Editor using child blocks, parent-child relationships, and collapsible blocks.
+description: Learn how to create nested blocks in the ASP.NET MVC Block Editor using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

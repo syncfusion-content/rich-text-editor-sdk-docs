@@ -9,7 +9,7 @@ documentation: ug
 
 # Remove Formatting in ASP.NET MVC Rich Text Editor
 
-The `Clear Format` feature removes any applied formatting from selected text. It is useful when you need to:
+The ASP.NET MVC Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
 
 - Remove multiple styles at once
 - Quickly standardize text formatting

@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# File Browser in ASP.NET MVC Rich Text Editor
+# File browser in ASP.NET MVC Rich Text Editor
 
 The Rich Text Editor allows you to browse and insert files into the edit panel using the file browser. The file browser lets users browse and select a file or folder from the file system, and it supports various cloud services.
 

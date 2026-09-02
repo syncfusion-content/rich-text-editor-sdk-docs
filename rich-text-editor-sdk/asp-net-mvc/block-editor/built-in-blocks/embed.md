@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Image Blocks in ASP.NET MVC Block Editor | Syncfusion
-description: Learn how to add and configure image blocks in the ASP.NET MVC Block Editor, including uploads, server storage, authentication, and resizing.
+description: Learn how to add and configure image blocks in the ASP.NET MVC Block Editor, including uploads, storage, authentication, resizing, and image properties.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

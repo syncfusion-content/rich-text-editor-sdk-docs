@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indent and Outdent Text in ASP.NET Core Rich Text Editor | Syncfusion
+title: Indent and Outdent in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to increase and decrease indentation in the ASP.NET Core Rich Text Editor to format and organize content effectively.
 control: Rich Text Editor
 platform: rich-text-editor-sdk

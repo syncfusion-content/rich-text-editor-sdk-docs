@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI Assistant in ASP.NET MVC Syncfusion Rich Text Editor | Syncfusion
-description: Learn how to enable the AI Assistant in the ASP.NET MVC Rich Text Editor for AI-powered content creation, editing, prompts, and streaming responses.
+description: Learn how to enable the AI Assistant in the ASP.NET MVC Rich Text Editor for AI-powered content creation, editing, prompt handling, and streaming.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
