@@ -172,6 +172,21 @@ builder.Services.AddSyncfusionBlazor();
 {% endhighlight %}
 {% endtabs %}
 
+### Register Syncfusion license key
+
+Register the Syncfusion license key in the `Program.cs` file after the **AddSyncfusionBlazor()** call.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register Syncfusion license key
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Add stylesheet and script resources
 
 The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) at the end of the `<head>` section in the **App.razor** file.
