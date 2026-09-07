@@ -148,6 +148,22 @@ Next, navigate to the project folder:
 ```bash
 cd my-app
 ```
+## Register your trial license key
+
+Include your license key in `src/main.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Add the Syncfusion Rich Text Editor package
 

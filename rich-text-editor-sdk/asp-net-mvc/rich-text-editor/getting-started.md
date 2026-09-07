@@ -81,6 +81,27 @@ Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
+## Register your trial license key
+
+Include your license key in `Global.asax.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected void Application_Start() 
+{ 
+    //Register Syncfusion license 
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY"); 
+    
+    RouteConfig.RegisterRoutes(RouteTable.Routes); 
+    BundleConfig.RegisterBundles(BundleTable.Bundles); 
+} 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add ASP.NET MVC Rich Text Editor control
 
 Add the [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in the **~/Views/Home/Index.cshtml** file.

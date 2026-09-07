@@ -137,6 +137,22 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
+## Register your trial license key
+
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+var app = builder.Build();
+// Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add ASP.NET Core Rich Text Editor control
 
 Add the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in the **~/Pages/Index.cshtml** file.

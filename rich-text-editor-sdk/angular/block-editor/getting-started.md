@@ -53,6 +53,23 @@ npm install -g @angular/cli
     cd my-app
     ```
 
+## Register your trial license key
+
+Include your license key in `src/main.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor package
 
 All Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. The `@syncfusion/ej2-angular-blockeditor` package supports Angular 14 and later. Install the Block Editor with the following command:

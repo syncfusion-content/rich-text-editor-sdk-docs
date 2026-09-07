@@ -97,6 +97,27 @@ Also, register the Script Manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
+## Register your trial license key
+
+Include your license key in `Global.asax.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected void Application_Start() 
+{ 
+    //Register Syncfusion license 
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY"); 
+    
+    RouteConfig.RegisterRoutes(RouteTable.Routes); 
+    BundleConfig.RegisterBundles(BundleTable.Bundles); 
+} 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add ASP.NET MVC Block Editor control
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Block Editor control to the `~/Views/Home/Index.cshtml` page.

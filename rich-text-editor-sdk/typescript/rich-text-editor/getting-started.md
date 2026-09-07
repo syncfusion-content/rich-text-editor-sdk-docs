@@ -36,6 +36,24 @@ cd my-app
 npm install
 ```
 
+## Register your trial license key
+
+Include your license key in `src/app/app.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense("YOUR LICENSE KEY");
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Rich Text Editor packages
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
