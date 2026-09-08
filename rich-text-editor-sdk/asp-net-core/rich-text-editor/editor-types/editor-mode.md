@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Editor Modes in ASP.NET Core Rich Text Editor
+# Editor modes in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor control is used to create, edit, and return content in valid HTML markup or Markdown (MD). It supports the following two editing formats.
 

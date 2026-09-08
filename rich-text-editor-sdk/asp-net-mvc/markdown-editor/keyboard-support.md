@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Shortcuts in ASP.NET MVC Markdown Editor | Syncfusion
-description: Learn the keyboard shortcuts supported in the ASP.NET MVC Markdown Editor for formatting text, inserting content, navigating the toolbar, and performing editing actions.
+description: Learn the keyboard shortcuts supported in the ASP.NET MVC Markdown Editor for formatting, inserting, navigating toolbar, and editing actions.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -93,10 +93,10 @@ These shortcuts provide additional functionalities like fullscreen mode.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/tagHelper %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/md-keyboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/controller.cs %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/md-keyboard/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,10 +104,10 @@ These shortcuts provide additional functionalities like fullscreen mode.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/razor %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/md-keyboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/controller.cs %}
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/md-keyboard/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

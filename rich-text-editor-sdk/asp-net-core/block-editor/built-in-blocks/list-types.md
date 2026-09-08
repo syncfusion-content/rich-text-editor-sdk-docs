@@ -3,7 +3,7 @@ layout: post
 title: List Blocks in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to add and configure bullet, numbered, and checklist blocks in the ASP.NET Core Block Editor, including placeholders and checked states.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---

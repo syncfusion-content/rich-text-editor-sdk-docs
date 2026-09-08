@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Model Binding in ASP.NET Core Rich Text Editor
+# Model Binding in Razor Pages for ASP.NET Core Rich Text Editor
 
 This article deals with the model binding of the Razor Pages of the ASP.NET Core platform. Refer to this [`Page Model`](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/page-model-binding) section for the detailed instructions on how to create a page model.
 

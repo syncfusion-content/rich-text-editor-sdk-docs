@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ASP.NET MVC Block Editor | Syncfusion
 description: Learn about accessibility in the ASP.NET MVC Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 ---
 

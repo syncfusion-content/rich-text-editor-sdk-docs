@@ -3,12 +3,12 @@ layout: post
 title: Built-in Block Types in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to use built-in block types in the ASP.NET Core Block Editor, including paragraphs, headings, lists, tables, images, code, and block configuration.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
 ---
 
-# Built-in Block Types in ASP.NET Core Block Editor
+# Built-in Block Types and Configuration  in ASP.NET Core Block Editor
 
 The Block Editor control enables you to create a block-based content editing solution using various types of blocks. The [blocks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) tag helper allows you to define and manage the content structure of your editor. For initial setup, see the [Getting Started guide](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/block-editor/getting-started).
 

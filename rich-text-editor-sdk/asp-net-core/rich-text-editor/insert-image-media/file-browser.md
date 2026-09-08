@@ -7,7 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# File Browser in ASP.NET Core Rich Text Editor
+# File browser in ASP.NET Core Rich Text Editor
 
 The Rich Text Editor allows you to browse and insert images into the edit panel using the file browser. The file browser enables users to browse and select a file or folder from the file system, and it supports various cloud services.
 

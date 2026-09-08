@@ -3,7 +3,7 @@ layout: post
 title: Code Block in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to add and configure code blocks in the ASP.NET MVC Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
-control: Block Editor
+control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
