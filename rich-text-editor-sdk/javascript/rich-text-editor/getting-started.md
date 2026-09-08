@@ -41,7 +41,7 @@ Refer to the following steps to set up your local environment.
 
 ## Register your trial license key
 
-Include your license key in `src/app/app.ts` before initializing any Syncfusion components.
+Include your license key in `src/app/app.js` before initializing any Syncfusion components.
 
 {% tabs %}
 
