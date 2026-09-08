@@ -238,6 +238,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Rich Text Editor is
 {% endtabcontent %}
 {% endtabcontents %}
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Angular Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See also
 
 **Documentation links**

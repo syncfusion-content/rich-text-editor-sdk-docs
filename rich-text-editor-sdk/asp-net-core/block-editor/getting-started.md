@@ -128,6 +128,15 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Block Editor Control](images/block-editor-control.webp)
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="ASP.NET Core Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See Also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)

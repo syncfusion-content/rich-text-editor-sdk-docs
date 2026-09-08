@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Vue Block Editor | Syncfusion
-description: Learn how to get started with the Vue Block Editor and explore setup, configuration, and core feature examples.
+description: Learn how to get started with the Vue 3 Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
 control: Block Editor
 platform: ej2-vue
@@ -119,6 +119,15 @@ Use the following command to run the application in the browser. The app starts 
 ```bash
 npm run dev
 ```
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Vue 3 Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See also
 

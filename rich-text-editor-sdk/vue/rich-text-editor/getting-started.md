@@ -228,6 +228,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Rich Text Editor is dis
 {% endtabcontent %}
 {% endtabcontents %}
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Vue Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See Also
 
 * [Accessibility in Rich text editor](./accessibility.md)

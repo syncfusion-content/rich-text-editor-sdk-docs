@@ -197,6 +197,15 @@ dotnet run
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="ASP.NET Core Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See Also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)

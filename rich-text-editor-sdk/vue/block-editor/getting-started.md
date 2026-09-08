@@ -125,4 +125,13 @@ or
 yarn run serve
 ```
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Vue Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation. Vue CLI has been deprecated; existing Vue 2 projects can continue to use `@vue/cli`, but new projects should use Vite as described in the [Vue 3 getting started](vue-3-getting-started.md) guide.

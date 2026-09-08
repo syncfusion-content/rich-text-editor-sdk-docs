@@ -263,6 +263,15 @@ dotnet run
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/RichTextEditor).
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Blazor Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See also
 
 * [Getting Started with Blazor WebAssembly App](./getting-started)

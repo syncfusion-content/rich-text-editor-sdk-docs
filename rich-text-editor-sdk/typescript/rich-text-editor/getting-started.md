@@ -163,6 +163,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Rich Text Editor
 
 ![Syncfusion TypeScript Rich Text Editor output](images/getting-started.png)
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="TypeScript Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 ## See Also
 
 **Documentation:**

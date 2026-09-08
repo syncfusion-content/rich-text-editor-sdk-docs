@@ -263,6 +263,15 @@ The output will appear as follows:
 
 ![vue-3-js-richtexteditor](./images/vue-3-js-richtexteditor.png)
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Vue Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
+
 > **Sample**: [vue-3-richtexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
 
 For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.

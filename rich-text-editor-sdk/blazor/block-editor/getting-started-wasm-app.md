@@ -281,3 +281,12 @@ dotnet run
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htBnZdMizKUQWADq?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" backgroundimage "[Blazor Block Editor Default.](images/blazor-block-editor-default.webp)" %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/BlockEditor)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Blazor Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
