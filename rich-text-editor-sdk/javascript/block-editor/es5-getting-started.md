@@ -41,6 +41,24 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Block Editor control.
 
+## Register your trial license key
+
+Include your license key in `src/app/app.js` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense("YOUR LICENSE KEY");
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Block Editor styles
 
 Add the following styles inside the `my-app/index.html` file to include the `tailwind3` theme styles:
@@ -138,3 +156,12 @@ blockeditor.appendTo('#blockeditor_default');
 Now, run the index.html in web browser, it will render the Essential JS 2 Block Editor control.
 
 > You can refer to our [JavaScript Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/javascript-block-editor) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Block Editor example](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/block-editor/overview.html) that shows how to render the block editor.
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Javascript Block Editor Live Sample"}
+
+{% endcol_1_iframe %}

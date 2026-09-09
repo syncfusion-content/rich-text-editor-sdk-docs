@@ -148,6 +148,22 @@ Next, navigate to the project folder:
 ```bash
 cd my-app
 ```
+## Register your trial license key
+
+Include your license key in `src/main.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Add the Syncfusion Rich Text Editor package
 
@@ -221,6 +237,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Rich Text Editor is
 
 {% endtabcontent %}
 {% endtabcontents %}
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Angular Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See also
 

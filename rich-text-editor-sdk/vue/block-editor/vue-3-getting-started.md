@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Vue Block Editor | Syncfusion
-description: Learn how to get started with the Vue Block Editor and explore setup, configuration, and core feature examples.
+description: Learn how to get started with the Vue 3 Block Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-block-editor"
 control: Block Editor
 platform: ej2-vue
@@ -41,6 +41,23 @@ npm install
 ```
 
 After installation completes, confirm that the dependencies were installed successfully before moving to the next step.
+
+## Register your trial license key
+
+Include your license key in `src/main.js` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight JS %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
@@ -119,6 +136,15 @@ Use the following command to run the application in the browser. The app starts 
 ```bash
 npm run dev
 ```
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Vue 3 Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See also
 

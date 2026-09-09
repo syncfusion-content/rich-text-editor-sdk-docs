@@ -39,6 +39,24 @@ Refer to the following steps to set up your local environment.
 
 **Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Rich Text Editor control.
 
+## Register your trial license key
+
+Include your license key in `src/app/app.js` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense("YOUR LICENSE KEY");
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Rich Text Editor styles
 
 Add the following styles inside the `my-app/index.html` file to include the `tailwind3` theme styles:
@@ -107,6 +125,15 @@ Run the `index.html` file through a local web server (for example, `npx http-ser
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Rich Text Editor is displayed as shown below.
 
 ![Syncfusion JavaScript Rich Text Editor output](images/getting-started.png)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="JavaScript Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See Also
 

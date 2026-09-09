@@ -91,6 +91,22 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
+## Register your trial license key
+
+Include your license key in `Program.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+var app = builder.Build();
+// Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add ASP.NET Core Block Editor control
 
 Add the [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control in the **~/Pages/Index.cshtml** file.
@@ -111,6 +127,15 @@ I> When the Block Editor control is rendered, the `id` attribute must be provide
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control will render in your default web browser.
 
 ![ASP.NET Core Block Editor Control](images/block-editor-control.webp)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="ASP.NET Core Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See Also
 

@@ -36,6 +36,24 @@ cd my-app
 npm install
 ```
 
+## Register your trial license key
+
+Include your license key in `src/app/app.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense("YOUR LICENSE KEY");
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Rich Text Editor packages
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
@@ -144,6 +162,15 @@ npm run dev
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Rich Text Editor is displayed in the browser as shown below.
 
 ![Syncfusion TypeScript Rich Text Editor output](images/getting-started.png)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="TypeScript Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See Also
 

@@ -97,6 +97,27 @@ Also, register the Script Manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
+## Register your trial license key
+
+Include your license key in `Global.asax.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected void Application_Start() 
+{ 
+    //Register Syncfusion license 
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY"); 
+    
+    RouteConfig.RegisterRoutes(RouteTable.Routes); 
+    BundleConfig.RegisterBundles(BundleTable.Bundles); 
+} 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Add ASP.NET MVC Block Editor control
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Block Editor control to the `~/Views/Home/Index.cshtml` page.
@@ -117,3 +138,12 @@ I> Replace the existing content in the Index.cshtml file by pasting the above co
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The app launches at `https://localhost:<port>/` (IIS Express auto-assigns the port); the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Block Editor control will be rendered in the default web browser.
 
 ![ASP.NET MVC Block Editor Control](images/block-editor-control.png)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="ASP.NET MVC Block Editor Live Sample"}
+
+{% endcol_1_iframe %}

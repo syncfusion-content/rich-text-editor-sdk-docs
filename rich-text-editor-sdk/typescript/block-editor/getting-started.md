@@ -35,6 +35,24 @@ cd my-app
 npm install
 ```
 
+## Register your trial license key
+
+Include your license key in `src/app/app.ts` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+// Registering Syncfusion license key
+import { registerLicense } from '@syncfusion/ej2-base';
+
+registerLicense("YOUR LICENSE KEY");
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Block Editor packages
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
@@ -115,3 +133,11 @@ Use the following command to run the application in the browser.
 npm run dev
 ```
 
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="TypeScript Block Editor Live Sample"}
+
+{% endcol_1_iframe %}
