@@ -128,6 +128,23 @@ cd my-app
 npm install
 ```
 
+## Register your trial license key
+
+Include your license key in `src/main.js` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight JS %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Syncfusion Rich Text Editor package
 
 All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/search?q=ej2-vue) registry. Install the Vue Rich Text Editor component with the following command:
@@ -210,6 +227,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Rich Text Editor is dis
 
 {% endtabcontent %}
 {% endtabcontents %}
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Vue Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See Also
 

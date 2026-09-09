@@ -171,6 +171,21 @@ builder.Services.AddSyncfusionBlazor();
 {% endhighlight %}
 {% endtabs %}
 
+### Register Syncfusion license key
+
+Register the Syncfusion license key in the `Program.cs` file after the **AddSyncfusionBlazor()** call.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register Syncfusion license key
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Add stylesheet and script resources
 
 The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) at the end of the `<head>` section in the **App.razor** file.
@@ -302,3 +317,12 @@ dotnet run
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htBnZdMizKUQWADq?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" backgroundimage "[Blazor Block Editor Default.](images/blazor-block-editor-default.webp)" %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/Blazor-Getting-Started-Examples/tree/main/BlockEditor)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://ej2.syncfusion.com/products/typescript/block-editor/overview/?editable=false){: aria-label="Blazor Block Editor Live Sample"}
+
+{% endcol_1_iframe %}

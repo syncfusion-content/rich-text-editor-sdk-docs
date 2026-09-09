@@ -138,6 +138,23 @@ npm install
 
 N> To set up a React application with Nextjs or Remix, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) for more details.
 
+## Register your trial license key
+
+Include your license key in `src/index.tsx` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight ts %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Rich Text Editor packages
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
@@ -219,6 +236,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor is d
 
 {% endtabcontent %}
 {% endtabcontents %}
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="React Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 ## See Also
 

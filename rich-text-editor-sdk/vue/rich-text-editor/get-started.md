@@ -97,6 +97,23 @@ or
 yarn add @syncfusion/ej2-vue-richtexteditor
 ```
 
+## Register your trial license key
+
+Include your license key in `src/main.js` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight JS %}
+
+import { registerLicense } from '@syncfusion/ej2-base';
+
+// Registering Syncfusion license key
+registerLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Import Syncfusion CSS styles
 
 You can import themes for the Syncfusion Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, [CRG](https://crg.syncfusion.com/) and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio). Refer to [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme) to know more about built-in themes and different ways to refer to themes in a Vue project.
@@ -245,6 +262,15 @@ yarn run dev
 The output will appear as follows:
 
 ![vue-3-js-richtexteditor](./images/vue-3-js-richtexteditor.png)
+
+{: .live-sample}
+{% col_1_iframe %}
+
+## Try Our Live Demo
+
+![iframe][670](https://demos.syncfusion.com/rich-text-editor-sdk/overview/index.html){: aria-label="Vue Rich Text Editor Live Sample"}
+
+{% endcol_1_iframe %}
 
 > **Sample**: [vue-3-richtexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
 
