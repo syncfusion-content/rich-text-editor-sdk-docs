@@ -9,7 +9,7 @@ documentation: ug
 
 # Tables in Blazor Rich Text Editor
 
-The Blazor Rich Text Editor  allows you to insert tables into the content area and provides options to add, edit, and remove the table as well as perform other table-related actions. For inserting a table into the Rich Text Editor, the following list of options has been provided in the `RichTextEditorTableSettings`.
+The Blazor Rich Text Editor allows you to insert tables into the content area and provides options to add, edit, and remove the table as well as perform other table-related actions. For inserting a table into the Rich Text Editor, the following list of options has been provided in the `RichTextEditorTableSettings`.
 
 | Options | Description | Default Value |
 |----------------|---------|-----------------------------|
@@ -21,7 +21,7 @@ The Blazor Rich Text Editor  allows you to insert tables into the content area a
 
 ## Insert table
 
-Using the `CreateTable` toolbar option, select a number of rows and columns to be inserted over the table grid and insert table into Blazor Rich Text Editor  content using the mouse. Tables can also be inserted through the `Insert Table` option in the pop-up where the number of rows and columns can be provided manually and this is the default way in devices.
+Using the `CreateTable` toolbar option, select a number of rows and columns to be inserted over the table grid and insert table into Blazor Rich Text Editor content using the mouse. Tables can also be inserted through the `Insert Table` option in the pop-up where the number of rows and columns can be provided manually and this is the default way in devices.
 
 In the following sample, the table has been inserted using `CreateTable` toolbar item.
 
@@ -138,17 +138,17 @@ Rich Text Editor provides support to custom styles for tables. If you want to ad
 
 ## Table Properties
 
-Sets the default width of the table when it is inserted in the Blazor Rich Text Editor  using the `Width` property of `RichTextEditorTableSettings`.
+Sets the default width of the table when it is inserted in the Blazor Rich Text Editor using the `Width` property of `RichTextEditorTableSettings`.
 
 Using the Quick Toolbar, users can change the width, cell padding, and cell spacing in the selected table using the `TableEditProperties` command dialog action.
 
 ![Displaying Table Properties for Blazor RichTextEditor](./images/blazor-richtexteditor-table-properties.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the Blazor Rich Text Editor  tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the Blazor Rich Text Editor tools.
 
 ## Table cell merge and split
 
-The Blazor Rich Text Editor  allows users to change the appearance of the tables by splitting or merging the table cells.
+The Blazor Rich Text Editor allows users to change the appearance of the tables by splitting or merging the table cells.
 
 The `TableCell` item should be configured in the Table [quickToolbarSettings](./quick-toolbar#table-quick-toolbar) property to show the merge/split icons while selecting the table cells.
 

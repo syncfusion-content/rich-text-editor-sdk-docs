@@ -11,7 +11,7 @@ documentation: ug
 
 ## Placeholder Text Customization
 
-Defines placeholder text for the Blazor Rich Text Editor  when the content area is empty using the [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Placeholder) property.
+Defines placeholder text for the Blazor Rich Text Editor when the content area is empty using the [Placeholder](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Placeholder) property.
 
 Customize the placeholder's font style and color using the `e-rte-placeholder` CSS class.
 
@@ -43,15 +43,15 @@ The following sample demonstrates the placeholder option in Rich Text Editor.
 
 ## Character count and limit enforcement
 
-The Blazor Rich Text Editor  automatically counts the number of characters in the content while typing, using the [ShowCharCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ShowCharCount) property. The characters count displayed at the bottom of the editor. You can limit the number of characters in your content using the [MaxLength](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_MaxLength) property. By default, the editor sets the characters limit value to infinity.
+The Blazor Rich Text Editor automatically counts the number of characters in the content while typing, using the [ShowCharCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_ShowCharCount) property. The characters count displayed at the bottom of the editor. You can limit the number of characters in your content using the [MaxLength](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_MaxLength) property. By default, the editor sets the characters limit value to infinity.
 
 The character count indicator changes color based on usage thresholds:
 
 | Status | Description |
 |----------------|---------|
 | Normal | Till 70% of given maxLength count reach, character count color is black.|
-| Warning | Once the number of character count in the Blazor Rich Text Editor  reached 70% of given maxLength count, the character count color will be orange, indicating that, the Blazor Rich Text Editor  value going to reach the maximum count.|
-| Error | Once the number of character count in the Blazor Rich Text Editor  reached 90% of given maxLength count, the character count color will be red, indicating that, the Blazor Rich Text Editor  value reached the maximum count.|
+| Warning | Once the number of character count in the Blazor Rich Text Editor reached 70% of given maxLength count, the character count color will be orange, indicating that, the Blazor Rich Text Editor value going to reach the maximum count.|
+| Error | Once the number of character count in the Blazor Rich Text Editor reached 90% of given maxLength count, the character count color will be red, indicating that, the Blazor Rich Text Editor value reached the maximum count.|
 
 ```cshtml
 
@@ -72,7 +72,7 @@ The character count indicator changes color based on usage thresholds:
 
 ## Code view
 
-The Blazor Rich Text Editor  includes the ability for users to directly edit HTML code via `Source View` in the text area. If you make any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. This gives the user more flexibility over the content they create.
+The Blazor Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you make any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. This gives the user more flexibility over the content they create.
 
 ```cshtml
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Fullscreen Mode in Blazor Rich Text Editor
 
-The Fullscreen mode allows the Blazor Rich Text Editor  to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
+The Fullscreen mode allows the Blazor Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 
 You can enable Fullscreen mode using the `Fullscreen` toolbar button. Once activated, the editor transitions into Fullscreen view, hiding other page elements and maximizing the editing area.
 

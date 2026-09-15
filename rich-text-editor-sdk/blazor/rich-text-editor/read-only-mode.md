@@ -11,7 +11,7 @@ documentation: ug
 
 ## Read-only mode
 
-The Blazor Rich Text Editor  control offers a read-only mode that prevents the user from editing the content while still allowing them to view it. This feature is particularly useful when you want to display formatted content without permitting modifications.
+The Blazor Rich Text Editor control offers a read-only mode that prevents the user from editing the content while still allowing them to view it. This feature is particularly useful when you want to display formatted content without permitting modifications.
 
 The default value of [Readonly](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_Readonly) is `false`. To enable the read-only mode, set the `Readonly` property to `true`. This disables editing while keeping the toolbar hidden and quick toolbars disabled.
 

@@ -24,7 +24,7 @@ Point the cursor anywhere within the editor where you want to insert the link. I
 | Tooltip |Optional text that appears when hovering over the hyperlink, type the required text in the `Tooltip` field. |
 | Open Link | Choose whether the hyperlink should open in a new browser tab or the same tab |
 
-N> The Blazor Rich Text Editor  link tool validates the URLs as you type them in the web address. URLs considered invalid will be highlighted with a red color by clicking the insert button in the [Insert Link](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateLink) dialog.
+N> The Blazor Rich Text Editor link tool validates the URLs as you type them in the web address. URLs considered invalid will be highlighted with a red color by clicking the insert button in the [Insert Link](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateLink) dialog.
 
 {% tabs %}
 {% highlight razor %}

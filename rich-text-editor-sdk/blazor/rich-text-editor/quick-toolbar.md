@@ -9,7 +9,7 @@ documentation: ug
 
 # Quick Toolbars in Blazor Rich Text Editor
 
-The Blazor Rich Text Editor  has quick toolbars that open as context menus when the user clicks image, link, audio, video, and table elements. By default, the below quick toolbar items show when the user clicks the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
+The Blazor Rich Text Editor has quick toolbars that open as context menus when the user clicks image, link, audio, video, and table elements. By default, the below quick toolbar items show when the user clicks the corresponding elements. You can customize the quick toolbar items using the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html) property.
 
 | Target Element | Default Quick Toolbar items |
 |----------------|---------|
@@ -58,8 +58,8 @@ Customize the selected link using the [RichTextEditorQuickToolbarSettings.Link](
 | Tools | Description |
 |----------------|--------------------------------------|
 | [Open](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.LinkToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_LinkToolbarCommand_Open) | The given link page will open in new window |
-| [Edit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.LinkToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_LinkToolbarCommand_Edit) | Edits the link in the Blazor Rich Text Editor  content |
-| [UnLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.LinkToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_LinkToolbarCommand_UnLink) | Removes link from the content of Blazor Rich Text Editor  |
+| [Edit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.LinkToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_LinkToolbarCommand_Edit) | Edits the link in the Blazor Rich Text Editor content |
+| [UnLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.LinkToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_LinkToolbarCommand_UnLink) | Removes link from the content of Blazor Rich Text Editor |
 
 {% tabs %}
 {% highlight razor %}
@@ -146,7 +146,7 @@ Customize the inserted video using the [RichTextEditorQuickToolbarSettings.Video
 
 ## Text quick toolbar
 
-By setting the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Blazor Rich Text Editor  offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
+By setting the [RichTextEditorQuickToolbarSettings.Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Text) property, the Blazor Rich Text Editor offers the ability to display a quick toolbar when needed. The floating toolbar shows up when you select or focus editable text. By modifying the `RichTextEditorQuickToolbarSettings.Text` property, the commands shown in the text quick toolbar can be changed.
 
 Refer to the following link for a complete list of available toolbar items: [Built-in Tools](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/tools/built-in-tools)
 

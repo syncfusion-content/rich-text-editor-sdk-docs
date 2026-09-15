@@ -48,7 +48,7 @@ Custom toolbar items are added using the [RichTextEditorCustomToolbarItems](http
 
 ## Populating and using insert field dropdown
 
-The `Insert Field` dropdown in the Blazor Rich Text Editor  is designed to let users quickly insert predefined merge fields into the editor content. This dropdown is powered by the `SfDropDownButton` control, which uses its [Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.SplitButtons.SfDropDownButton.html#Syncfusion_Blazor_SplitButtons_SfDropDownButton_Items) property to bind a collection of menu items.
+The `Insert Field` dropdown in the Blazor Rich Text Editor is designed to let users quickly insert predefined merge fields into the editor content. This dropdown is powered by the `SfDropDownButton` control, which uses its [Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.SplitButtons.SfDropDownButton.html#Syncfusion_Blazor_SplitButtons_SfDropDownButton_Items) property to bind a collection of menu items.
 
 ### How the items property works
 

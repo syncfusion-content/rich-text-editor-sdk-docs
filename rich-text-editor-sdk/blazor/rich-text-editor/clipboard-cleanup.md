@@ -9,7 +9,7 @@ documentation: ug
 
 # Clipboard Cleanup in Blazor Rich Text Editor
 
-The Blazor Rich Text Editor  provides automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are removed while preserving important structural elements such as tables, lists, and images. This feature is enabled by default through the [EnableClipboardCleanup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableClipboardCleanup) property.
+The Blazor Rich Text Editor provides automatic cleanup of clipboard content during copy (`Ctrl + C`) and cut (`Ctrl + X`) operations. When this feature is enabled, unwanted inline styles are removed while preserving important structural elements such as tables, lists, and images. This feature is enabled by default through the [EnableClipboardCleanup](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableClipboardCleanup) property.
 
 You can verify the behavior with the following steps
 

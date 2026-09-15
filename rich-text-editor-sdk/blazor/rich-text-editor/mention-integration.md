@@ -13,7 +13,7 @@ By integrating the [Mention](https://blazor.syncfusion.com/documentation/mention
 
 ## Setup and configuration
 
-The [Target](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfMention-1.html#Syncfusion_Blazor_DropDowns_SfMention_1_Target) property of the Mention component specifies the `ID` of the content-editable div element in the Blazor Rich Text Editor  to bind the Mention component. This allows you to enable the Mention functionality within the Rich Text Editor, allowing users to tag items from the suggestion list during text editing.
+The [Target](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfMention-1.html#Syncfusion_Blazor_DropDowns_SfMention_1_Target) property of the Mention component specifies the `ID` of the content-editable div element in the Blazor Rich Text Editor to bind the Mention component. This allows you to enable the Mention functionality within the Rich Text Editor, allowing users to tag items from the suggestion list during text editing.
 
 ## Using mentions
 
