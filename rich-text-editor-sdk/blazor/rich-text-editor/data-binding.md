@@ -21,7 +21,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 
 ## Auto-save
 
-The Rich Text Editor can automatically save its content based on the configuration of the [SaveInterval](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_SaveInterval) and [AutoSaveOnIdle](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_AutoSaveOnIdle) properties. By default, the content is saved when the editor loses focus.
+The Blazor Rich Text Editor  can automatically save its content based on the configuration of the [SaveInterval](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_SaveInterval) and [AutoSaveOnIdle](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_AutoSaveOnIdle) properties. By default, the content is saved when the editor loses focus.
 
 * When `AutoSaveOnIdle` is `true`, the content is saved if the editor remains idle for the duration specified in the `SaveInterval` property (in milliseconds).
 
@@ -43,7 +43,7 @@ The following example demonstrates how to use the `ValueChange` event to get a n
     private int SaveInterval { get; set; } = 5000;
     private void UpdateStatus(Syncfusion.Blazor.RichTextEditor.ChangeEventArgs args)
     {
-        // Place the codes here, which save the Rich Text Editor value into database.
+        // Place the codes here, which save the Blazor Rich Text Editor  value into database.
         this.Value = args.Value;
     }
 }

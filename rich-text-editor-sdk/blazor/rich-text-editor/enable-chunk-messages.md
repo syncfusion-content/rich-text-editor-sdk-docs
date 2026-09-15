@@ -14,7 +14,7 @@ The Blazor **Rich Text Editor** component supports processing large HTML content
 
 Enable this behavior by setting the [EnableChunkMessages](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableChunkMessages) property to `true`. The default value is `false`.
 
-When `EnableChunkMessages` is enabled, the Rich Text Editor splits large HTML content into smaller chunks and processes them sequentially. This significantly improves reliability when pasting large content under SignalR message size limits. 
+When `EnableChunkMessages` is enabled, the Blazor Rich Text Editor  splits large HTML content into smaller chunks and processes them sequentially. This significantly improves reliability when pasting large content under SignalR message size limits. 
 
 ## Example
 

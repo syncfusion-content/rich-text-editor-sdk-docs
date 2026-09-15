@@ -9,7 +9,7 @@ documentation: ug
 
 # Paste Cleanup in Blazor Rich Text Editor
 
-The Rich Text Editor provides built-in option to paste content from Microsoft Word, Microsoft Outlook, Microsoft Excel, and other websites by filtering out tags, attributes, and styles. Copy content from Microsoft Office or other websites and paste it into the editor, where it is cleaned up and pasted based on the settings in the [PasteCleanupSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorPasteCleanupSettings.html) property values.
+The Blazor Rich Text Editor  provides built-in option to paste content from Microsoft Word, Microsoft Outlook, Microsoft Excel, and other websites by filtering out tags, attributes, and styles. Copy content from Microsoft Office or other websites and paste it into the editor, where it is cleaned up and pasted based on the settings in the [PasteCleanupSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorPasteCleanupSettings.html) property values.
 
 ## Paste cleanup settings
 
@@ -84,7 +84,7 @@ This ensures that while the formatting is retained, it remains clean, safe, and 
 
 ## Clean formatting
 
-When the `Prompt`, `PlainText`, and `KeepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
+When the `Prompt`, `PlainText`, and `KeepFormat` options are all set to false, the Blazor Rich Text Editor  performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
 Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable. However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttributes` settings:
 
@@ -236,4 +236,4 @@ You can get the pasted text as HTML text using the [AfterPasteCleanup](https://h
 * [Events in Rich Text Editor](./events)
 * [Toolbar customization](./tools/built-in-tools)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the Blazor Rich Text Editor  tools.

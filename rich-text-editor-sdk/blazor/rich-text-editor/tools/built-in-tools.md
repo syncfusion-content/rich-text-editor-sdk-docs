@@ -9,7 +9,7 @@ documentation: ug
 
 # Built-in Tools in Blazor Rich Text Editor
 
-By default, the Rich Text Editor displays the following toolbar items:
+By default, the Blazor Rich Text Editor  displays the following toolbar items:
 
 > `Bold` , `Italic` , `Underline` , `|` , `Formats` , `Alignments` , `Blockquote`, `OrderedList` , `UnorderedList` , `|` , `CreateLink` , `Image` , `|` , `SourceCode` , `Undo` , `Redo`
 
@@ -171,7 +171,7 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 | InsertCode | ![InsertCode icon](../images/insert-code.webp) | Represents preformatted text which is to be presented exactly as written in the HTML file. | 
 | Print | ![Print icon](../images/print.webp) | Allows to print the editor content. |
 | ClearAll | ![ClearAll icon](../images/clear-all.webp) | Removes all styles that have been applied to the selected text.| 
-| SourceCode | ![SourceCode icon](../images/code-view.webp)  | Rich Text Editor includes the ability for users to directly edit HTML code via “Source View”. If you made any modification in Source view directly, synchronize with Design view.|
+| SourceCode | ![SourceCode icon](../images/code-view.webp)  | Blazor Rich Text Editor  includes the ability for users to directly edit HTML code via “Source View”. If you made any modification in Source view directly, synchronize with Design view.|
 | Insert Code Block | ![CodeBlock icon](../images/insert-code-block.webp) | Allows inserting code snippets in a formatted and structured way within the editor.|
 | LineHeight | ![LineHeight icon](../images/line-height.webp) | Allows adjusting the spacing between lines of text within the editor.|
 | ImportWord | ![ImportWord icon](../images/import-word.webp) | Imports content from a Word document into the editor.|
