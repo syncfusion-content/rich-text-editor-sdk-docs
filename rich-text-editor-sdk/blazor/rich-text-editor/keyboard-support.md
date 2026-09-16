@@ -13,7 +13,7 @@ The editor has full keyboard accessibility that includes shortcuts to open and o
 
 ## HTML editor shortcut keys
 
-You can use the following keyboard shortcuts when the Rich Text Editor is set to [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EditorMode) as `HTML`.
+You can use the following keyboard shortcuts when the Blazor Rich Text Editor is set to [EditorMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EditorMode) as `HTML`.
 
 ### Toolbar
 
@@ -155,4 +155,4 @@ In the following code block, customize the bold and italic, toolbar actions with
 * [Enter key customization](./enter-key)
 * [Events in Rich Text Editor](./events)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the Blazor Rich Text Editor tools.

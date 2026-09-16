@@ -9,7 +9,7 @@ documentation: ug
 
 # Slash Commands in Blazor Rich Text Editor
 
-The slash menu in the Rich Text Editor offers users a streamlined way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
+The slash menu in the Blazor Rich Text Editor offers users a streamlined way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
 ## Enabling the slash menu
 
@@ -57,7 +57,7 @@ Each custom slash menu item can include the following properties:
 | `IconCss` | Specifies the CSS class for the item’s icon. | 
 | `Description` | Provides a short description for the item. | 
 
-The following code demonstrates how to set up the custom slash menu item in the Rich Text Editor to insert meeting notes and signature:
+The following code demonstrates how to set up the custom slash menu item in the Blazor Rich Text Editor to insert meeting notes and signature:
 
 {% tabs %}
 {% highlight razor %}

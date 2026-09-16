@@ -9,7 +9,7 @@ documentation: ug
 
 # Insert Videos in Blazor Rich Text Editor
 
-The Rich Text Editor allows inserting video files from online sources as well as from the local computer, making it easy to embed videos directly into your content. To support video insertion, the following list of configuration options has been provided through the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html).
+The Blazor Rich Text Editor allows inserting video files from online sources as well as from the local computer, making it easy to embed videos directly into your content. To support video insertion, the following list of configuration options has been provided through the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html).
 
 | Options | Description |
 |----------------|---------|
@@ -56,9 +56,9 @@ By default, the video tool opens the video dialog, allowing you to insert an emb
 
 ## Upload and insert video
 
-In the video dialog, by using the `browse` option, select the video from the local machine and insert it into the Rich Text Editor content.
+In the video dialog, by using the `browse` option, select the video from the local machine and insert it into the Blazor Rich Text Editor content.
 
-If the path field is not specified in the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html), the video will be converted to a `Blob` or `Base64` URL and inserted inside the Rich Text Editor.
+If the path field is not specified in the [RichTextEditorVideoSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html), the video will be converted to a `Blob` or `Base64` URL and inserted inside the Blazor Rich Text Editor.
 
 ### Server-side action
 
@@ -212,7 +212,7 @@ In the following example, the video size has been validated before uploading and
 
 ## Replacing video
 
-After inserting a video file, you can replace it using the Rich Text Editor [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `Replace` option. Replace the video file either by using the embedded URL or the web URL and the browse option in the video dialog.
+After inserting a video file, you can replace it using the Blazor Rich Text Editor [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `Replace` option. Replace the video file either by using the embedded URL or the web URL and the browse option in the video dialog.
 
 ![Blazor RichTextEditor embed video replace](../images/blazor-richtexteditor-video-replace-embed.webp)
 
@@ -220,7 +220,7 @@ After inserting a video file, you can replace it using the Rich Text Editor [Ric
 
 ## Delete video
 
-To remove a video from the Rich Text Editor content, select the video and click the `Remove` tool from the quick toolbar. It will delete the video from the Rich Text Editor content.
+To remove a video from the Blazor Rich Text Editor content, select the video and click the `Remove` tool from the quick toolbar. It will delete the video from the Blazor Rich Text Editor content.
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the delete icon.
 
@@ -228,7 +228,7 @@ Once you select the video from the local machine, the URL for the video will be 
 
 ## Dimension
 
-Set the default `Width,` `MinWidth,` `Height,` and `MinHeight` of the video element when it is inserted in the Rich Text Editor using the [RichTextEditorMediaSettings.Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_Width), [RichTextEditorVideoSettings.MinWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MinWidth), [RichTextEditorMediaSettings.Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_Height), and [RichTextEditorVideoSettings.MinHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties.
+Set the default `Width,` `MinWidth,` `Height,` and `MinHeight` of the video element when it is inserted in the Blazor Rich Text Editor using the [RichTextEditorMediaSettings.Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_Width), [RichTextEditorVideoSettings.MinWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MinWidth), [RichTextEditorMediaSettings.Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_Height), and [RichTextEditorVideoSettings.MinHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties.
 
 Change the width and height of the [RichTextEditorQuickToolbarSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) using the `Change Size` option. Once you click on the option, the video size dialog will open as follows. In that, specify the width and height of the video in pixels.
 
@@ -236,7 +236,7 @@ Change the width and height of the [RichTextEditorQuickToolbarSettings](https://
 
 ## Display Position
 
-Sets the default display for a video when it is inserted in the Rich Text Editor using the [RichTextEditorMediaSettings.layoutOption](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_LayoutOption). It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video element's layout position.
+Sets the default display for a video when it is inserted in the Blazor Rich Text Editor using the [RichTextEditorMediaSettings.layoutOption](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorMediaSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorMediaSettings_LayoutOption). It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video element's layout position.
 
 ![Blazor RichTextEditor video display](../images/blazor-richtexteditor-video-display.webp)
 
@@ -291,7 +291,7 @@ You can prevent the drag-and-drop action by setting the [OnMediaDrop](https://he
 
 ## Resize video
 
-The Rich Text Editor has built-in video resizing support, which is enabled for the video elements added. The resize points will appear on each corner of the video when focusing so users can easily resize the video using mouse points or thumb through the resize points. Also, the resize calculation will be done based on the aspect ratio.
+The Blazor Rich Text Editor has built-in video resizing support, which is enabled for the video elements added. The resize points will appear on each corner of the video when focusing so users can easily resize the video using mouse points or thumb through the resize points. Also, the resize calculation will be done based on the aspect ratio.
 
 You can disable the resize action by configuring `false` for the [RichTextEditorVideoSettings.EnableResize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorVideoSettings_EnableResize) property.
 
@@ -401,7 +401,7 @@ namespace RenameVideo.Controllers
 
 ## Upload video with authentication
 
-The Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+The Blazor Rich Text Editor control allows you to add additional data with the File Upload, which can be received on the server side. By using the `FileUploading` event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 N> By default, it doesn't support the `UseDefaultCredentials` property, so you need to append the default credentials with the upload request manually.
 
@@ -492,4 +492,4 @@ namespace VideoUpload.Controllers
 
 ## Paste video into the editor
 
-The Rich Text Editor supports pasting video files directly into the editor content. You can paste single or multiple video files from your file system directly into the editor.
+The Blazor Rich Text Editor supports pasting video files directly into the editor content. You can paste single or multiple video files from your file system directly into the editor.
