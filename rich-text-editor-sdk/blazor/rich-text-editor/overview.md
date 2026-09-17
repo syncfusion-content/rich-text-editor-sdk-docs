@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blazor Rich Text Editor Overview and Features | Syncfusion
-description: Learn how to use Blazor Rich Text Editor for creating rich content with HTML and Markdown modes, toolbars, image, audio, video, table, import-export, and mail merge.
+description: Learn how to use Blazor Rich Text Editor for creating rich content with HTML and Markdown modes, toolbars, table, import-export, and mail merge.
 canonical_url: https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor
 platform: rich-text-editor-sdk
 control: Rich Text Editor
@@ -83,7 +83,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Insert Images](./tools/insert-image)** | Upload and embed images in content | Visual content |
-| **[Insert audio](./tools/audio)** | Embed audio players in content | Podcasts and notes |
+| **[Insert audio](./tools/audio)** | Embed audio players in content | Audio content and notes |
 | **[Insert video](./tools/video)** | Embed video players in content | Rich media storytelling |
 | **[Links](./tools/link-manipulation)** | Insert and edit hyperlinks | Connected content |
 | **[Table Manipulation](./tools/table-manipulation)** | Create and edit data tables | Structured data in documents |
