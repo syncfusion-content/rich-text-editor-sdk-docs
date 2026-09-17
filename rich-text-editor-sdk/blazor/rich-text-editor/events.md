@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in Blazor Rich Text Editor
 
-This section explains the list of events of the Rich Text Editor component which will be triggered for an appropriate Rich Text Editor actions.
+This section explains the list of events of the Blazor Rich Text Editor component which will be triggered for an appropriate Blazor Rich Text Editor actions.
 
 ## OnActionBegin
 
@@ -328,7 +328,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## ImageDelete
 
-[ImageDelete](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_ImageDelete) event triggers when the selected image is cleared from the Rich Text Editor Content.
+[ImageDelete](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_ImageDelete) event triggers when the selected image is cleared from the Blazor Rich Text Editor Content.
 
 {% tabs %}
 {% highlight razor %}
@@ -350,7 +350,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Created
 
-[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Created) event triggers when the Rich Text Editor is rendered. Use this event to perform post-render actions, such as attaching custom event listeners or focusing the editor.
+[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Created) event triggers when the Blazor Rich Text Editor is rendered. Use this event to perform post-render actions, such as attaching custom event listeners or focusing the editor.
 
 {% tabs %}
 {% highlight razor %}
@@ -372,7 +372,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Destroyed
 
-[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Destroyed) event triggers when the Rich Text Editor is destroyed.
+[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Destroyed) event triggers when the Blazor Rich Text Editor is destroyed.
 
 {% tabs %}
 {% highlight razor %}
@@ -394,7 +394,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Blur
 
-[Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Blur) event triggers when the Rich Text Editor loses focus.
+[Blur](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Blur) event triggers when the Blazor Rich Text Editor loses focus.
 
 {% tabs %}
 {% highlight razor %}
@@ -416,7 +416,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## OnToolbarClick
 
-[OnToolbarClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnToolbarClick) event triggers when a Rich Text Editor toolbar item is clicked.
+[OnToolbarClick](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_OnToolbarClick) event triggers when a Blazor Rich Text Editor toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor %}
@@ -438,7 +438,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## Focus
 
-[Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Focus) event triggers when the Rich Text Editor receives focus.
+[Focus](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_Focus) event triggers when the Blazor Rich Text Editor receives focus.
 
 {% tabs %}
 {% highlight razor %}
@@ -460,7 +460,7 @@ This section explains the list of events of the Rich Text Editor component which
 
 ## ValueChange
 
-[ValueChange](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_ValueChange) event triggers only when Rich Text Editor is blurred and changes are done to the content.
+[ValueChange](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorEvents.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorEvents_ValueChange) event triggers only when Blazor Rich Text Editor is blurred and changes are done to the content.
 
 {% tabs %}
 {% highlight razor %}
