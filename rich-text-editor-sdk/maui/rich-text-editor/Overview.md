@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion .NET MAUI Rich Text Editor Control | Syncfusion®
-canonical_url: "https://www.syncfusion.com/maui-controls/maui-rich-text-editor"
+canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor"
 description: Learn here all about introduction of Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
@@ -10,7 +10,7 @@ documentation: ug
 
 # About Syncfusion .NET MAUI Rich Text Editor Control 
 
-The Syncfusion® [.NET MAUI Rich Text Editor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor) provides a simple yet powerful editor interface to compose richly formatted text with all the common formatting options like bold and italics. The Rich Text Editor is used to create messaging applications, email composers, blog editors, forum post text boxes, feedback and review sections, notes sections, and more. It has a variety of tools to edit and format rich content and returns valid HTML markup content.
+The Syncfusion® [.NET MAUI Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor) provides a simple yet powerful editor interface to compose richly formatted text with all the common formatting options like bold and italics. The Rich Text Editor is used to create messaging applications, email composers, blog editors, forum post text boxes, feedback and review sections, notes sections, and more. It has a variety of tools to edit and format rich content and returns valid HTML markup content.
 
 ![RichTextEditor Overview Image](images/rich-text-editor-overview.png)
 
@@ -85,9 +85,9 @@ The following table summarizes the globalization support available in this contr
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui/rich-text-editor/getting-started) shows a step‑by‑step guide to begin using the Rich Text Editor control.  
-- [Toolbar](https://help.syncfusion.com/maui/rich-text-editor/toolbar) explains how to configure toolbar items and actions.  
-- [Customization](https://help.syncfusion.com/maui/rich-text-editor/customization) helps adjust look, behavior, and features to match your needs.  
+- [Getting Started](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/getting-started) shows a step‑by‑step guide to begin using the Rich Text Editor control.  
+- [Toolbar](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/toolbar) explains how to configure toolbar items and actions.  
+- [Customization](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/customization) helps adjust look, behavior, and features to match your needs.  
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples. 
 
 ## Resources
@@ -227,7 +227,7 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls/maui-rich-text-editor" class="explore-link">
+<a href="https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
