@@ -9,7 +9,7 @@ documentation: ug
 
 # Code Blocks in Blazor Rich Text Editor
 
-The Code Block feature in the Rich Text Editor enables users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. Live syntax highlighting is not supported during editing, but it can be applied when the content is rendered on the frontend.
+The Code Block feature in the Blazor Rich Text Editor enables users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. Live syntax highlighting is not supported during editing, but it can be applied when the content is rendered on the frontend.
 
 ## Inserting a code block
 
@@ -106,7 +106,7 @@ Editing content around code blocks requires care to preserve code integrity and 
 
 ## Enabling tab-based line indentation in code blocks
 
-The Code Block feature supports tab-based indentation to align code properly, crucial for languages like Python where indentation is syntactically significant. The Rich Text Editor does not provide a specific property to configure the indentation character, but indentation can be enabled using the editor’s default behavior for the Tab key, toolbar commands, or custom event handling.
+The Code Block feature supports tab-based indentation to align code properly, crucial for languages like Python where indentation is syntactically significant. The Blazor Rich Text Editor does not provide a specific property to configure the indentation character, but indentation can be enabled using the editor’s default behavior for the Tab key, toolbar commands, or custom event handling.
 
 To enable tab-based indentation:
 

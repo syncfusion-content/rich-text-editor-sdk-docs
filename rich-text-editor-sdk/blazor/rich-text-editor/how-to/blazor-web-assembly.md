@@ -142,7 +142,7 @@ Add the Blazor RichTextEditor component in the **~/Pages/Home.razor** file.
 <SfRichTextEditor>
 <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
 <p><b>Get started Quick Toolbar to click on the image</b></p>
-<p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
+<p>It is possible to add custom style on the selected image inside the Blazor Rich Text Editor through quick toolbar.</p>
 </SfRichTextEditor>
 
 {% endhighlight %}

@@ -9,9 +9,9 @@ documentation: ug
 
 # XHTML Validation in Blazor Rich Text Editor
 
-The Rich Text Editor includes an [EnableXhtml](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableXhtml) property that allows for continuous validation of the Rich Text Editor’s source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
+The Blazor Rich Text Editor includes an [EnableXhtml](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_EnableXhtml) property that allows for continuous validation of the Rich Text Editor’s source content against the XHTML standard. When content is entered or modified in the editor, this feature ensures ongoing compliance by automatically removing invalid elements and attributes.
 
-The Rich Text Editor checks the following settings on validation:
+The Blazor Rich Text Editor checks the following settings on validation:
 
 ## Validating attributes
 
@@ -39,7 +39,7 @@ The Rich Text Editor checks the following settings on validation:
 
 ![Blazor RichTextEditor XHTML Validation](./images/blazor-richtexteditor-xhtml-validation.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the rich text editor tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to learn how to render and configure the Blazor Rich Text Editor tools.
 
 ## See also
 
