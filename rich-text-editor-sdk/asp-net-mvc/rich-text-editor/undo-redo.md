@@ -28,19 +28,6 @@ The editor allows up to 30 Undo/Redo actions by default. You can modify the numb
 
 Here's an example of how to customize both the Undo/Redo timer and steps:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/undo-redo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/undo-redo/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/undo-redo/razor %}
@@ -49,7 +36,6 @@ Here's an example of how to customize both the Undo/Redo timer and steps:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/undo-redo/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Clear Undo/Redo stack
 
@@ -59,19 +45,6 @@ To clear the entire undo and redo stack, use the public `clearUndoRedo` method. 
 
 The following example demonstrates how to clear the undo and redo stack:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-undo-redo/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-undo-redo/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-undo-redo/razor %}
@@ -80,4 +53,3 @@ The following example demonstrates how to clear the undo and redo stack:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-undo-redo/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

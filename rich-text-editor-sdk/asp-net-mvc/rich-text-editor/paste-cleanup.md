@@ -95,19 +95,6 @@ For Example,
 
 In the following example, the paste cleanup related settings are explained with its module configuration:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup/razor %}
@@ -116,26 +103,12 @@ In the following example, the paste cleanup related settings are explained with 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Manual Customization of Pasted Content
 
 The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [AfterPasteCleanUp](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_AfterPasteCleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
 
 In the following example, the `AfterPasteCleanUp` event is configured to remove images from the copied content. To understand this feature better, try pasting content that includes an image into the editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup-customize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup-customize/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -145,4 +118,3 @@ In the following example, the `AfterPasteCleanUp` event is configured to remove 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/paste-cleanup-customize/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

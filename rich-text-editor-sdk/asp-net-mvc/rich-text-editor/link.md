@@ -26,19 +26,6 @@ To insert a hyperlink:
 | Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
 | Open Link in New Window | Specify whether, the given link will be open in new window or not |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link/razor %}
@@ -47,7 +34,6 @@ To insert a hyperlink:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
@@ -79,19 +65,6 @@ The quick toolbar for the Link has the following options.
 
 The following example demonstrates how to customize the link quick toolbar using the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/razor %}
@@ -100,26 +73,12 @@ The following example demonstrates how to customize the link quick toolbar using
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Inserting a Related Link
 
 By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
 
 However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [EnableAutoUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableAutoUrl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/relative-url/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/relative-url/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -129,7 +88,6 @@ However, if you want to accept the given URL without validating it for hyperlink
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/relative-url/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

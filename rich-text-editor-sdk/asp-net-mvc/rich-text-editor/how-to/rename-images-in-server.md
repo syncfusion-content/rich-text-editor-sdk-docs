@@ -16,19 +16,6 @@ Refer to the `rename.cs` controller file to configure the server-side handler.
 
 > A runnable demo application is available in this [GitHub](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-rename-image) repository.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rename/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rename.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rename/rename.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rename/razor %}
@@ -37,5 +24,4 @@ Refer to the `rename.cs` controller file to configure the server-side handler.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rename/rename.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 

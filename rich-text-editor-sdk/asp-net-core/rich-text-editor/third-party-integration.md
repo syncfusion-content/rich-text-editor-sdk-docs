@@ -36,8 +36,6 @@ Required CSS file of CodeMirror:
 
 Add a custom icon for the HTML source editor in the toolbar of the Rich Text Editor using the template option of [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings), define the CodeMirror plugins, and then pass the Rich Text Editor content as an argument in the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ActionComplete) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/tagHelper %}
@@ -46,18 +44,6 @@ Add a custom icon for the HTML source editor in the toolbar of the Rich Text Edi
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## At.js Integration
 
@@ -96,8 +82,6 @@ var config = {
 
 Populate the employee’s email id from local or remote data and set the result to the data of `At.js` configuration.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/at-integration/tagHelper %}
@@ -106,18 +90,6 @@ Populate the employee’s email id from local or remote data and set the result 
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/at-integration/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/at-integration/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/at-integration/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Embedly integration
 
@@ -133,8 +105,6 @@ Include `embedly` javascript.
 
 The above script is added to the page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/embed-ly/tagHelper %}
@@ -143,15 +113,3 @@ The above script is added to the page.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/embed-ly/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/embed-ly/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/embed-ly/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

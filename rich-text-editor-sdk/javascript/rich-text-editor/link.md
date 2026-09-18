@@ -29,21 +29,6 @@ To insert a hyperlink:
 | Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
 | Open Link in New Window | Specify whether, the given link will be open in new window or not |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs14/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs14/index.js %}
@@ -54,7 +39,6 @@ To insert a hyperlink:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs14" %}
-{% endif %}
 
 > The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
@@ -77,21 +61,6 @@ By default, the URL entered in the Web Address field is automatically converted 
 
 However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [enableAutoUrl](https://helpej2.syncfusion.com/documentation/api/rich-text-editor#enableautourl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/relative-url-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/relative-url-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/relative-url-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/relative-url-cs1/index.js %}
@@ -102,7 +71,6 @@ However, if you want to accept the given URL without validating it for hyperlink
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/relative-url-cs1" %}
-{% endif %}
 
 ## See also
 

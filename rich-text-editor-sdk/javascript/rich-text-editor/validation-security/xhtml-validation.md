@@ -30,21 +30,6 @@ The editor checks the following rules during validation:
 * **Root Element**: The content must have a single root element.
 * **Element Hierarchy**: Inline elements cannot contain block elements.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xhtml-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xhtml-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xhtml-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xhtml-cs1/index.js %}
@@ -55,7 +40,6 @@ The editor checks the following rules during validation:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xhtml-cs1" %}
-{% endif %}
 
 ## Cross-Site scripting (XSS)
 
@@ -67,21 +51,6 @@ The [enableHtmlSanitize](https://ej2.syncfusion.com/documentation/api/rich-text-
 
 In the following sample, we removed the `script` tag and `onmouseover` attribute from the content of the Rich Text Editor. 
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1/index.js %}
@@ -92,7 +61,6 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-cs1" %}
-{% endif %}
 
 > The XSS prevention feature is only applicable when the [editorMode](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#editorMode) is set to `EditorMode.HTML` (TypeScript) or `'HTML'` (JavaScript).
 
@@ -108,21 +76,6 @@ For more precise control over XSS prevention, you can implement custom filtering
 
 The following sample demonstrates how to filter the `script` tag by value.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1/index.js %}
@@ -133,28 +86,12 @@ The following sample demonstrates how to filter the `script` tag by value.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/xss-attack-event-cs1" %}
-{% endif %}
 
 You can also filter out the [`e.selectors.tags`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeSelectors#tags) and [`e.selectors.attributes`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/sanitizeSelectors#attributes) in the [beforeSanitizeHtml](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#beforeSanitizeHtml) event to control which HTML tags and attributes are allowed to appear.
 
 For instance, to allow or block `<iframe>`, manipulate the `e.selectors.tags` property inside the event. This approach lets you safely include or exclude iframes while preventing potential XSS vulnerabilities.
 
 The following sample demonstrates how to filter the `iframe` tag.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/prevent-cross-site-scripting-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/prevent-cross-site-scripting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/prevent-cross-site-scripting-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -166,4 +103,3 @@ The following sample demonstrates how to filter the `iframe` tag.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/prevent-cross-site-scripting-cs1" %}
-{% endif %}

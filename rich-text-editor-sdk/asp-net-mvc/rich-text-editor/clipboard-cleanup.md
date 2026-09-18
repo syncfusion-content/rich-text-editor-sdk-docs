@@ -15,19 +15,6 @@ When `EnableClipboardCleanup` is set to `true`, copy and cut operations are inte
 
 > For a cleaner editing experience, `EnableClipboardCleanup` is `true` by default.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup/razor %}
@@ -36,26 +23,12 @@ When `EnableClipboardCleanup` is set to `true`, copy and cut operations are inte
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customizing Copied/Cut Content
 
 You can use the [BeforeClipboardWrite](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BeforeClipboardWrite) event, which fires before content is written to the clipboard during copy or cut operations. This event lets you to modify the HTML and plain-text representations of the content and also determine whether the action is a copy or a cut.
 
 In this example, the `BeforeClipboardWrite` event is used to customize the selected content only during a copy operation, while the cut operation remains unaffected. To observe this behavior, try copying any text within the Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup-customize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup-customize/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -65,7 +38,6 @@ In this example, the `BeforeClipboardWrite` event is used to customize the selec
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clipboard-cleanup-customize/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Best Practices & Troubleshooting
 

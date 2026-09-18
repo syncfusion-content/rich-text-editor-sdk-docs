@@ -18,21 +18,6 @@ You can add an `Image` tool in the Rich Text Editor toolbar using the `toolbarSe
 
 To configure the `Image` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs6/index.js %}
@@ -43,7 +28,6 @@ To configure the `Image` toolbar item, refer to the below code.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs6" %}
-{% endif %}
 
 ## Supported image save formats
 
@@ -60,21 +44,6 @@ The images can be saved as `Blob` or `Base64` URL by using the [insertImageSetti
 The code snippet below illustrates the configuration of the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel#saveformat) property in the Rich Text Editor.
 
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-save-format/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-save-format/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-save-format" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-save-format/index.js %}
@@ -85,7 +54,6 @@ The code snippet below illustrates the configuration of the [insertImageSettings
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-save-format" %}
-{% endif %}
 
 > The default `saveFormat` property is set to `Blob` format.
 
@@ -128,19 +96,6 @@ Configure [insertImageSettings.removeUrl](https://helpej2.syncfusion.com/documen
 
 Set the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettingsmodel#saveformat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-server/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-server/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-server/index.js %}
@@ -149,7 +104,6 @@ Set the [insertImageSettings.saveFormat](https://ej2.syncfusion.com/angular/docu
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-server/index.html %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ```csharp
 
@@ -225,19 +179,6 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 
 > By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-authentication/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-authentication/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-authentication/index.js %}
@@ -246,7 +187,6 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-upload-authentication/index.html %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ```csharp
 
@@ -271,21 +211,6 @@ Once you select the image from the local machine, the URL for the image will be 
 
 The following sample explains, how to configure the `removeUrl` to remove a saved image from the remote service location, when the image is removed using the Insert Image dialog.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs1/index.js %}
@@ -296,7 +221,6 @@ The following sample explains, how to configure the `removeUrl` to remove a save
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs1" %}
-{% endif %}
 
 ## Deleting Images from Server Using Keyboard and Quick Toolbar Actions
 
@@ -308,19 +232,6 @@ To explicitly remove images from the server, use the `afterImageDelete` event. T
 
 The following sample demonstrates how to use the afterImageDelete event in Rich Text Editor to delete images from the server after they are removed from the editor content:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs6/index.js %}
@@ -329,8 +240,6 @@ The following sample demonstrates how to use the afterImageDelete event in Rich 
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-url-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ## Adjusting image dimensions
 
@@ -370,21 +279,6 @@ defaultRTE.appendTo('#defaultRTE');
 
 Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image `quickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-alignment-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-alignment-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-alignment-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-alignment-cs1/index.js %}
@@ -395,26 +289,10 @@ Images in the Rich Text Editor can be aligned using the alignment options in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/image-alignment-cs1" %}
-{% endif %}
 
 ## Text wrapping around images
 
 The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image `quickToolbarSettings`. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/wrap-text-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/wrap-text-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/wrap-text-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -426,7 +304,6 @@ The Rich Text Editor provides control over how text flows around images using th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/wrap-text-cs1" %}
-{% endif %}
 
 ## Hyperlinking images
 
@@ -462,21 +339,6 @@ By default, the Rich Text Editor allows you to insert images by drag-and-drop fr
 
 In the following sample, you can see feature demo.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs7/index.js %}
@@ -487,7 +349,6 @@ In the following sample, you can see feature demo.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs7" %}
-{% endif %}
 
 ### Disabling image drag and drop
 
@@ -509,21 +370,6 @@ The Rich Text Editor allows you to customize the image quick toolbar, providing 
 
 By configuring these options in the [quickToolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#quicktoolbarsettings) property, you can enhance the editor's functionality, enabling seamless image management and editing directly within your content. This customization ensures a user-friendly experience for efficiently manipulating image elements.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/customize-image-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/customize-image-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/customize-image-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/customize-image-cs1/index.js %}
@@ -534,7 +380,6 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/customize-image-cs1" %}
-{% endif %}
 
 ## See also
 

@@ -17,19 +17,6 @@ You can customize the quick toolbar options for images using the `image` propert
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Image) property, you can enhance the editor’s functionality, ensuring a user-friendly experience for efficiently handling image elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/razor %}
@@ -38,7 +25,6 @@ By configuring these options in the [quickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Link quick toolbar
 
@@ -48,19 +34,6 @@ The Rich Text Editor provides essential tools in the link quick toolbar, includi
 
 The following example demonstrates how to customize the link quick toolbar using the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Link) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/razor %}
@@ -69,7 +42,6 @@ The following example demonstrates how to customize the link quick toolbar using
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/link-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Table quick toolbar
 
@@ -79,19 +51,6 @@ The Rich Text Editor provides essential tools in the table quick toolbar, such a
 
 The following sample demonstrates the customization of table quick toolbar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/table-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/table-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/table-quick-toolbar/razor %}
@@ -100,26 +59,12 @@ The following sample demonstrates the customization of table quick toolbar.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/table-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Audio quick toolbar
 
 Customize the quick toolbar items for audio elements using the `audio` property in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Audio).The Rich Text Editor provides essential tools such as "AudioReplace", "Remove", and "AudioLayoutOption", allowing seamless management and editing of audio content.
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Audio) property, you can enhance the editor’s capabilities, ensuring a user-friendly experience for handling audio elements efficiently.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/audio-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/audio-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -129,7 +74,6 @@ By configuring these options in the [quickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/audio-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Video quick toolbar
 
@@ -139,19 +83,6 @@ The Rich Text Editor allows you to tailor the video quick toolbar with essential
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) property, you enhance the editor’s capabilities, ensuring a user-friendly experience for editing and customizing video elements effortlessly.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/razor %}
@@ -160,26 +91,12 @@ By configuring these options in the [quickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Text quick toolbar
 
 The text quick toolbar provides easy access to commonly used formatting tools, enabling users to apply styles and adjustments effortlessly. This enhances the editing experience by streamlining text formatting.
 
 Customize the quick toolbar items using the `text` property in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Text). Any toolbar items available in the Rich Text Editor can be configured for the text quick toolbar. The example below demonstrates its customization.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -189,7 +106,6 @@ Customize the quick toolbar items using the `text` property in the [quickToolbar
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Quick inline toolbar
 
@@ -206,19 +122,6 @@ Custom tool can be added to the corresponding quick toolbar, using [quickToolbar
 
 The sample below demonstrates inserting an image into the Rich Text Editor and rotating it via the quick toolbar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-inline/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-inline/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-inline/razor %}
@@ -227,26 +130,12 @@ The sample below demonstrates inserting an image into the Rich Text Editor and r
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-inline/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Render quick toolbar in document body
 
 To render the quick toolbar and inline toolbar in the document body, configure `enableAppendToBody` in [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings). This prevents clipping and improves visibility in constrained layouts, such as when the editor's dimensions are very small.
 
 The following example demonstrates how to render the quick toolbar directly in the document body using `enableAppendToBody` in [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-toolbar-body/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-toolbar-body/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -256,4 +145,3 @@ The following example demonstrates how to render the quick toolbar directly in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quick-toolbar-body/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

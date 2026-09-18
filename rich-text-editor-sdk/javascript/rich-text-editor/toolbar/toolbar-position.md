@@ -23,21 +23,6 @@ To position the toolbar at the bottom, set the `position` property in the [`tool
 
 > When using TypeScript, import the `ToolbarPosition` enum from `@syncfusion/ej2-richtexteditor` to take advantage of compile-time validation.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-position/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-position/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-position" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-position/index.js %}
@@ -48,7 +33,6 @@ To position the toolbar at the bottom, set the `position` property in the [`tool
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-position" %}
-{% endif %}
 
 ## See also
 

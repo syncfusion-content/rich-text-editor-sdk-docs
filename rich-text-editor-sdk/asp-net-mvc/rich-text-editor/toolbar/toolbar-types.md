@@ -22,19 +22,6 @@ The default value of `type` is `Expand`.
 
 ## Expanding the toolbar
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-expand/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-expand/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-expand/razor %}
@@ -43,24 +30,10 @@ The default value of `type` is `Expand`.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-expand/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Configuring a multi-row toolbar
 
 Setting the `type` as `MultiRow` in [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-multi/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-multi/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,24 +43,10 @@ Setting the `type` as `MultiRow` in [`toolbarSettings`](https://help.syncfusion.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-multi/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Implementing a scrollable toolbar
 
 Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) keeps all toolbar items in a single row with horizontal scrolling.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/scrollable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/scrollable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -97,24 +56,10 @@ Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/scrollable/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Configuring a popup toolbar
 
 Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) groups overflowing toolbar items into a popup container, optimizing the layout for limited space and smaller screens.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-popup/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-popup/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -124,26 +69,12 @@ Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/c
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/toolbar-popup/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Creating a sticky toolbar
 
 By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FloatingToolbarOffset) to adjust its offset from the top of the document.
 
 Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_EnableFloating) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/floating-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/floating-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -153,7 +84,6 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/floating-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See also
 

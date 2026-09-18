@@ -21,8 +21,6 @@ When `onSelection` is set to `true`, the toolbar appears only when text is selec
 
 This feature enhances the inline editing experience by providing immediate access to formatting options.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/inline/tagHelper %}
@@ -31,18 +29,6 @@ This feature enhances the inline editing experience by providing immediate acces
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/inline/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/inline/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/inline/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Rich Text Editor InlineMode](../images/inline.png)
 

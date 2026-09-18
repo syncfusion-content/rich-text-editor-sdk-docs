@@ -66,19 +66,6 @@ Each custom item object can include the following properties:
 
 The following code demonstrates how to set up the Custom Slash Menu item in the Rich Text Editor to insert meeting notes and signature:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/razor %}
@@ -87,4 +74,3 @@ The following code demonstrates how to set up the Custom Slash Menu item in the 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

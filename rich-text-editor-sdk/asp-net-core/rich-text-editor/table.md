@@ -19,8 +19,6 @@ Select the number of rows and columns on the table grid to insert the table.
 
 Tables can also be inserted through the `Insert Table` option in the pop-up where the number of rows and columns can be provided manually, and this is the default way in devices.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table/tagHelper %}
@@ -29,18 +27,6 @@ Tables can also be inserted through the `Insert Table` option in the pop-up wher
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Table headers
 
@@ -70,8 +56,6 @@ This feature provides flexibility in organizing tabular data and ensures that ta
 
 The Rich Text Editor allows users to insert tables within other table cells, enabling the creation of nested tables. This feature is useful for building complex layouts such as structured forms, hierarchical data views, or detailed reports. Users can manually insert a nested table by placing the cursor inside a cell and using the table toolbar option or HTML source editing.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nesting-table/tagHelper %}
@@ -80,18 +64,6 @@ The Rich Text Editor allows users to insert tables within other table cells, ena
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nesting-table/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nesting-table/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nesting-table/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Quick insert for table rows and columns
 
@@ -266,8 +238,6 @@ All changes made in the Table Cell Properties dialog are instantly reflected in 
 
 In the following sample, the table cell properties feature has been provided from table module.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell-properties/tagHelper %}
@@ -276,18 +246,6 @@ In the following sample, the table cell properties feature has been provided fro
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell-properties/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell-properties/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell-properties/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Table cell selection and formatting
 
@@ -312,8 +270,6 @@ The table cell selection feature in our editor allows for intuitive and efficien
 
 The text formatting feature in tables allows users to apply various styles to selected cells, enhancing the appearance and readability of data. This includes the application of headings, paragraphs, lists, and inline styles such as bold, italic, and strikethrough. Users can efficiently format multiple cells simultaneously by selecting entire rows or columns.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-row-and-column-selection/tagHelper %}
@@ -322,18 +278,6 @@ The text formatting feature in tables allows users to apply various styles to se
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-row-and-column-selection/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-row-and-column-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-row-and-column-selection/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Copy, cut, and paste table rows and columns
 
@@ -379,8 +323,6 @@ The following image explains the table split action.
 
 ![Rich Text Editor table cell split](./images/table_split.png)
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell/tagHelper %}
@@ -389,18 +331,6 @@ The following image explains the table split action.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/table-cell/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See also
 
