@@ -16,19 +16,6 @@ The following example explains how to configure the file browser within the Rich
 1. Add the `FileManager` toolbar item in the `ToolbarSettings.Items` property.
 2. Set the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFileManagerSettings_Enable) property to `true` on the [FileManagerSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFileManagerSettings.html) to show the file browser when the `FileManager` toolbar item is clicked.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/file-browser/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/file-browser/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/file-browser/razor %}
@@ -37,4 +24,3 @@ The following example explains how to configure the file browser within the Rich
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/file-browser/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

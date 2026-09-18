@@ -496,8 +496,6 @@ To localize the editor’s strings with your own localization, copy the default 
 
 The sample below demonstrates the Rich Text Editor control rendered in German ("de-DE") using the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Locale) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/globalization/tagHelper %}
@@ -506,18 +504,6 @@ The sample below demonstrates the Rich Text Editor control rendered in German ("
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/globalization/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/globalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/globalization/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Enable Right-to-Left (RTL) mode
 
@@ -534,8 +520,6 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 > This direction does not change based on the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Locale) property.
 
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/rtl/tagHelper %}
@@ -544,15 +528,3 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/rtl/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/rtl/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

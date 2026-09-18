@@ -18,21 +18,6 @@ To enable the iframe editor, you can use the [iframeSettings](https://ej2.syncfu
 
 Here's an example of how to enable the iframe editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs1/index.js %}
@@ -43,26 +28,10 @@ Here's an example of how to enable the iframe editor:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs1" %}
-{% endif %}
 
 ## Customizing IFrame attributes
 
 You can add custom attributes to the body tag of the iframe using the attributes field of the [iframeSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -74,28 +43,12 @@ You can add custom attributes to the body tag of the iframe using the attributes
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs2" %}
-{% endif %}
 
 ## Integrating external CSS and scripts
 
 The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [styles](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#styles) field in the `iframeSettings` property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
 Likewise, add the external script file to the `<iframe>` element using the [scripts](https://ej2.syncfusion.com/documentation/api/rich-text-editor/resources#scripts) field of `iframeSettings` to provide additional functionalities to the Rich Text Editor.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -107,7 +60,6 @@ Likewise, add the external script file to the `<iframe>` element using the [scri
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/iframe-cs3" %}
-{% endif %}
 
 > You can also explore our [iframe in JavaScript Rich Text Editor example](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/iframe.html) that shows how to render the iframe in JavaScript Rich Text Editor.
 
@@ -119,21 +71,6 @@ Specifically, assign the `inputElement` of the Rich Text Editor to the target pr
 
 Here's an example of how to integrate Mention with Iframe editor,
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-iframe/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-iframe/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-iframe" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-iframe/index.js %}
@@ -144,7 +81,6 @@ Here's an example of how to integrate Mention with Iframe editor,
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-iframe" %}
-{% endif %}
 
 ## See also
 

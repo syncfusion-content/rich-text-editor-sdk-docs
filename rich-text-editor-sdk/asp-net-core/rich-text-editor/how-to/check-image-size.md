@@ -14,8 +14,6 @@ By using the Rich Text Editor's [`imageUploading`](https://help.syncfusion.com/c
 
 In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/check-image-size/tagHelper %}
@@ -24,16 +22,4 @@ In the following, we have validated the image size before uploading and determin
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/check-image-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/check-image-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/check-image-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

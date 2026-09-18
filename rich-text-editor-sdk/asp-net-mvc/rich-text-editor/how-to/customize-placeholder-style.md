@@ -12,19 +12,6 @@ documentation: ug
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/razor %}
@@ -33,5 +20,4 @@ By using `e-rte-placeholder` class, you can customize the placeholder style.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 

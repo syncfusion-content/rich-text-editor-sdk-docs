@@ -19,19 +19,6 @@ When disabled, the editor becomes non-interactive, ensuring that users cannot ed
 
 Below are examples and code snippets demonstrating how to disable the Rich Text Editor by setting the `Enabled` property to `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/disable-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/disable-editor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/disable-editor/razor %}
@@ -40,7 +27,6 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/disable-editor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### See Also
 

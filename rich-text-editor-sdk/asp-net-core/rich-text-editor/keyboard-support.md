@@ -131,8 +131,6 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 | Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/html-keyboard/tagHelper %}
@@ -142,25 +140,11 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/html-keyboard/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/html-keyboard/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Custom Key Config
 
 You can customize the key config for the keyboard interaction of the Rich Text Editor using the [keyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
 
 In the following sample, the bold, italic, and underline toolbar actions are customized with <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>, <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd>, and <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>, respectively.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -170,15 +154,3 @@ In the following sample, the bold, italic, and underline toolbar actions are cus
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-key/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-key/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-key/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

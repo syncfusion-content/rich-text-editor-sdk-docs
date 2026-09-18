@@ -15,19 +15,6 @@ The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusio
 
 In the following sample, the `script` tag and `onmouseover` attribute are removed from the editor's content.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/cross/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/cross/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/cross/razor %}
@@ -36,7 +23,6 @@ In the following sample, the `script` tag and `onmouseover` attribute are remove
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/cross/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 > The XSS prevention feature is only applicable when the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) is set to HTML.
@@ -54,19 +40,6 @@ For more precise control over XSS prevention, you can implement custom filtering
 
 The following sample demonstrates how to filter the `script` tag by value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-cross/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-cross/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-cross/razor %}
@@ -75,26 +48,12 @@ The following sample demonstrates how to filter the `script` tag by value.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-cross/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 You can also filter out the `e.selectors.tags` and `e.selector.attributes` in the [BeforeSanitizeHtml](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_BeforeSanitizeHtml) event to control which HTML tags and attributes are allowed to appear. 
 
 For instance, if you want to display `<iframe>`, you can manipulate the `e.selectors.tags` property in this event to selectively remove tags like `<iframe>`. This approach ensures that your application can safely display an iframe while preventing potential security risks associated with XSS vulnerabilities.
 
 The following sample demonstrates how to filter the `iframe` tag.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/prevent-cross-site-scripting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/prevent-cross-site-scripting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -104,4 +63,3 @@ The following sample demonstrates how to filter the `iframe` tag.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/prevent-cross-site-scripting/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

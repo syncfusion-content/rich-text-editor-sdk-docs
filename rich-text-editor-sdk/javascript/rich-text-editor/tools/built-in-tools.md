@@ -177,21 +177,6 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 Remove the build-in tools from the toolbar by using the [toolbarSettings.items](https://helpej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-buildin-tool-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-buildin-tool-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-buildin-tool-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-buildin-tool-cs1/index.js %}
@@ -202,4 +187,3 @@ Remove the build-in tools from the toolbar by using the [toolbarSettings.items](
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-buildin-tool-cs1" %}
-{% endif %}

@@ -16,19 +16,6 @@ The InsertCode button has a toggle state to apply code block formatting to the e
 
 The following sample demonstrates how to configure the **InsertCode** button in the toolbar and set the background color on the `pre` tag to highlight the code block.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/razor %}
@@ -37,7 +24,6 @@ The following sample demonstrates how to configure the **InsertCode** button in 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

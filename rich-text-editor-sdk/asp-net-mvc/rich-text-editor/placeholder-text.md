@@ -23,19 +23,6 @@ You can customize the appearance of the placeholder text by targeting the `e-rte
 
 The below sample demonstrates the `Placeholder` option in Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/placeholder/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/placeholder/razor %}
@@ -44,7 +31,6 @@ The below sample demonstrates the `Placeholder` option in Rich Text Editor.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/placeholder/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

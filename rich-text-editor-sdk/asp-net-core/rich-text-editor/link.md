@@ -26,8 +26,6 @@ To insert a hyperlink:
 | Tooltip | Type additional helpful information displayed when the pointer hovers over the hyperlink |
 | Open Link in New Window | Specify whether the link should open in a new window |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/link/tagHelper %}
@@ -36,18 +34,6 @@ To insert a hyperlink:
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/link/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/link/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/link/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 N> The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
@@ -70,8 +56,6 @@ By default, the URL entered in the Web Address field is automatically converted 
 
 However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [EnableAutoUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableAutoUrl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/relative-url/tagHelper %}
@@ -80,18 +64,6 @@ However, if you want to accept the given URL without validating it for hyperlink
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/relative-url/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/relative-url/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/relative-url/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See also
 

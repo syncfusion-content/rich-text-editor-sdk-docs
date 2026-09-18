@@ -25,8 +25,6 @@ You can customize the appearance of the placeholder text by targeting the `e-rte
 
 The below sample demonstrates the `placeholder` option in Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/placeholder/tagHelper %}
@@ -35,18 +33,6 @@ The below sample demonstrates the `placeholder` option in Rich Text Editor.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/placeholder/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/placeholder/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/placeholder/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Get and set value
 
@@ -64,8 +50,6 @@ To get the content from the Rich Text Editor, use the following approaches:
 
 * Using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property: This returns the current content of the editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/retrieve-value/tagHelper %}
@@ -75,21 +59,7 @@ To get the content from the Rich Text Editor, use the following approaches:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/retrieve-value/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/retrieve-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 * Using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Change) event: The `change` event is triggered when the Rich Text Editor loses focus and its content has been modified. This event allows you to capture and handle content changes dynamically.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -100,25 +70,11 @@ To get the content from the Rich Text Editor, use the following approaches:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/change-retrieve-value/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/change-retrieve-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Auto save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,18 +84,6 @@ The change event will be triggered if the content has been modified since the la
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save-interval/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save-interval/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save-interval/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Programmatic content access
 
@@ -161,8 +105,6 @@ To fetch the Rich Text Editor's text content, use `getText` method.
 
 The [enableHtmlEncode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlEncode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/encoded-editor-value/tagHelper %}
@@ -171,18 +113,6 @@ The [enableHtmlEncode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/encoded-editor-value/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/encoded-editor-value/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/encoded-editor-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Styling editor content
 
@@ -430,8 +360,6 @@ The character count color will be modified based on the characters in the Rich T
 | warning | When the character count reaches 70% of the maxLength, the color changes to orange, indicating that the maximum limit is approaching.|
 | error |Once the character count hits 90% of the maxLength, the color turns red, signaling that the limit is nearly reached.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/tagHelper %}
@@ -440,18 +368,6 @@ The character count color will be modified based on the characters in the Rich T
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Setting maximum character limit
 
@@ -479,8 +395,6 @@ You can add the `SourceCode` tool in the Rich Text Editor using the `toolbarSett
 
 This sample used [`Code mirror`](https://codemirror.net/) plugin helps to highlight the HTML content and when changes happens in code view, the same has been reflected in preview mode.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/tagHelper %}
@@ -489,18 +403,6 @@ This sample used [`Code mirror`](https://codemirror.net/) plugin helps to highli
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-mirror/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 The Rich Text Editor provides the `showSourceCode` method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
 

@@ -31,23 +31,11 @@ npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-
 
 Map the above packages style and script reference in sample as like below
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="systemjs.config.js" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-config/systemjs.config.js %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-config/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ## CSS theme reference
 
@@ -72,8 +60,6 @@ The following example demonstrates how to configure the file browser within the 
 
 The following example demonstrates configuring the file browser within the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs3/index.ts %}
@@ -84,21 +70,6 @@ The following example demonstrates configuring the file browser within the Rich 
 {% endtabs %}
           
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2" %}
-
-{% endif %}
 
 ## See also
 
