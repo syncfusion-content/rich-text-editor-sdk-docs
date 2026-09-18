@@ -91,5 +91,5 @@ However, if you want to accept the given URL without validating it for hyperlink
 
 ## See Also
 
-* [Image with links](./image/#image-with-link)
+* [Image with links](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/insert-image-media/insert-images#hyperlinking-images)
 * [Insert File Attachments](./how-to/file-attachment)
