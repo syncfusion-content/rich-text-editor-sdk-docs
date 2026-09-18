@@ -21,8 +21,6 @@ Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled
 - Adjusts its layout to optimize space for content and tools.
 - Can be exited by clicking the same icon again or pressing the `Esc` key.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/fullscreen/tagHelper %}
@@ -31,15 +29,3 @@ Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/fullscreen/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/fullscreen/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/fullscreen/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

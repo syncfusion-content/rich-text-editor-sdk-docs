@@ -33,21 +33,6 @@ By default, `minLength` is set to 0, which means the suggestion list appears imm
 
 In the following example, the `minLength` is set to 3, so the suggestion list will only appear once the user types three or more characters after the @ symbol.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-min-char/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-min-char/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-min-char" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-min-char/index.js %}
@@ -58,7 +43,6 @@ In the following example, the `minLength` is set to 3, so the suggestion list wi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-min-char" %}
-{% endif %}
 
 ### Customizing suggestion list count
 
@@ -67,21 +51,6 @@ You can control the number of items displayed in the Mention suggestion list usi
 By default, the suggestion list displays 25 items. You can customize this value to show fewer or more items based on your application's needs.
 
 In the example below, the `suggestionCount` is set to 5, so only 5 items will be displayed in the suggestion list when the user types the mention character (@).
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-suggestion-count/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-suggestion-count/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-suggestion-count" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -93,7 +62,6 @@ In the example below, the `suggestionCount` is set to 5, so only 5 items will be
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-suggestion-count" %}
-{% endif %}
 
 ### Customizing suggestion list using templates
 
@@ -128,21 +96,6 @@ In the following sample, we configured the following properties:
 * [allowSpaces](https://ej2.syncfusion.com/documentation/api/mention/index-default#allowspaces) - Allow to continue search action if user enter space after mention character while searching.
 * [suggestionCount](https://ej2.syncfusion.com/documentation/api/mention/index-default#suggestioncount) - The maximum number of items that will be displayed in the suggestion list.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-integration-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-integration-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-integration-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-integration-cs1/index.js %}
@@ -153,7 +106,6 @@ In the following sample, we configured the following properties:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mention-integration-cs1" %}
-{% endif %}
 
 > [View Sample](https://ej2.syncfusion.com/demos/#/bootstrap5/rich-text-editor/mention-integration.html)
 

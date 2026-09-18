@@ -35,8 +35,6 @@ Render the Rich Text Editor in a form.
 
 Upon submitting the form, the `getValue` method will be triggered. Through the `FormData` class, get the Rich Text Editor value.
 
-{% if page.publishingplatform == "typescript" %}
-
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/form-sample-cs1/index.ts %}
@@ -47,20 +45,6 @@ Upon submitting the form, the `getValue` method will be triggered. Through the `
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/form-sample-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/form-sample-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/form-sample-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/form-sample-cs1" %}
-{% endif %}
 
 ## See also
 

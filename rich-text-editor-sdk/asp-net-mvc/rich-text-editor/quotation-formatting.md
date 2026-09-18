@@ -13,19 +13,6 @@ The Rich Text Editor facilitates quotation formatting through the `Blockquote` t
 
 To format text as a quotation, select the text and click the `Blockquote` icon in the toolbar. The selected text is then formatted as a blockquote, typically indented and styled differently from the surrounding content.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quotation-formatting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quotation-formatting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quotation-formatting/razor %}
@@ -34,7 +21,6 @@ To format text as a quotation, select the text and click the `Blockquote` icon i
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/quotation-formatting/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 

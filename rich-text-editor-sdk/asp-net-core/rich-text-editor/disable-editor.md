@@ -17,8 +17,6 @@ To disable the editor, set the [enabled](https://help.syncfusion.com/cr/aspnetco
 
 Below is an example demonstrating how to disable the Rich Text Editor by setting the `enabled` property to `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/disable-editor/tagHelper %}
@@ -27,18 +25,6 @@ Below is an example demonstrating how to disable the Rich Text Editor by setting
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/disable-editor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/disable-editor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/disable-editor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ## See Also

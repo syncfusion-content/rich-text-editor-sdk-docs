@@ -40,19 +40,6 @@ You can customize the available number formats using the [NumberFormatList](http
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/number-format-list/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/number-format-list/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/number-format-list/razor %}
@@ -61,7 +48,6 @@ The following example demonstrates how to customize the number format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/number-format-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Unordered Lists
 
@@ -84,19 +70,6 @@ For more control over the bullet style, use the `BulletFormatList` dropdown in t
 
 The following example demonstrates how to customize the bullet format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/format-lists/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/format-lists/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/format-lists/razor %}
@@ -105,7 +78,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/format-lists/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Indentation in Lists
 

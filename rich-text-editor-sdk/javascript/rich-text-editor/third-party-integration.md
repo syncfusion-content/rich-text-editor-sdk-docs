@@ -37,21 +37,6 @@ Required CSS file of CodeMirror.
 
 Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using template option of [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#toolbarsettings) and define the code mirror plugins, and then pass the Rich Text Editor content as argument in [`actionComplete`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#actioncomplete) event.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-mirror-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-mirror-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-mirror-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-mirror-cs2/index.js %}
@@ -62,7 +47,6 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-mirror-cs2" %}
-{% endif %}
 
 ## Embedly integration
 
@@ -78,21 +62,6 @@ This can be achieved by binding the [actionComplete](https://ej2.syncfusion.com/
 
 The above script is added to the page.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-embedly-integration-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-embedly-integration-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-embedly-integration-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-embedly-integration-cs1/index.js %}
@@ -103,4 +72,3 @@ The above script is added to the page.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-embedly-integration-cs1" %}
-{% endif %}

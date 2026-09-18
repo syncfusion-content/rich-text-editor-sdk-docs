@@ -19,8 +19,6 @@ In the sample below, the `saveUrl` and `path` properties are configured to enabl
 
 The following sample illustrates how to attach a file in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/file-attachment/tagHelper %}
@@ -29,18 +27,6 @@ The following sample illustrates how to attach a file in the Rich Text Editor.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/file-attachment/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/file-attachment/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/file-attachment/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

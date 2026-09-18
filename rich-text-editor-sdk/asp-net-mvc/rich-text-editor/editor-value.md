@@ -23,19 +23,6 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 To retrieve the editor contents, use the `Value` property of the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/razor %}
@@ -44,26 +31,12 @@ To retrieve the editor contents, use the `Value` property of the Rich Text Edito
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Auto save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. When enabled, the editor saves the content based on the [SaveInterval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -73,7 +46,6 @@ The change event will be triggered if the content has been modified since the la
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Programmatic Content Access 
 
@@ -95,19 +67,6 @@ To fetch the Rich Text Editor's text content, use `GetText` method.
 
 The [EnableHtmlEncode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlEncode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/razor %}
@@ -116,7 +75,6 @@ The [EnableHtmlEncode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Styling Editor Content
 

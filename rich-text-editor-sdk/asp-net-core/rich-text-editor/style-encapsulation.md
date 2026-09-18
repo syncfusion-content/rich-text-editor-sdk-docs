@@ -33,8 +33,6 @@ By default, the Rich Text Editor uses **non-encapsulated mode** (`<e-richtextedi
 
 Below is a sample implementation of both **encapsulated** and **non-encapsulated** modes.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/style-encapsulation/tagHelper %}
@@ -43,18 +41,6 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/style-encapsulation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/style-encapsulation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/style-encapsulation/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See also
 
