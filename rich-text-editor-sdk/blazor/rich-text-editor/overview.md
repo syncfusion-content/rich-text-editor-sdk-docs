@@ -187,7 +187,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 ## Support & Resources
 
 - **Questions?** Visit the [Syncfusion Support Portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) and [Samples](https://blazor.syncfusion.com/demos/rich-text-editor/overview)
+- **Code Examples?** Browse [Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview) and samples.
 - **API Details?** See [Rich Text Editor API Reference](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html)
 - **Community?** Join the [Syncfusion Community Forum](https://www.syncfusion.com/forums/blazor-components)
 - **What's New?** Check [Release Notes](https://help.syncfusion.com/rich-text-editor-sdk/release-notes)
