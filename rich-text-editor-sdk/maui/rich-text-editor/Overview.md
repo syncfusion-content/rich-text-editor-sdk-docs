@@ -68,7 +68,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/rich-text-editor/overview">Rich Text Editor</a></td>
+<td><a href="/maui/rich-text-editor/overview" aria-label="Overview of RichTextEditor">Rich Text Editor</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
@@ -88,7 +88,7 @@ The following table summarizes the globalization support available in this contr
 - [Getting Started](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/getting-started) shows a step‑by‑step guide to begin using the Rich Text Editor control.  
 - [Toolbar](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/toolbar) explains how to configure toolbar items and actions.  
 - [Customization](https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/customization) helps adjust look, behavior, and features to match your needs.  
-- [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples. 
+- [UI Kit](https://www.syncfusion.com/demos/maui) provides interactive demos and ready‑made UI examples. 
 
 ## Resources
 
