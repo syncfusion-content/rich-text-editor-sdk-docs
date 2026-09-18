@@ -13,19 +13,6 @@ The resizable editor feature allows dynamic resizing of the editor. Enable or di
 
 The following sample demonstrates the resizable feature.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/resizable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/resizable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/resizable/razor %}
@@ -34,7 +21,6 @@ The following sample demonstrates the resizable feature.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/resizable/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Rich Text Editor Resizable support](../images/Resizable-Editor.png)
 
@@ -53,19 +39,6 @@ By default, the control resizes up to the current viewport size. Apply these sty
 }
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/max-resizable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/max-resizable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/max-resizable/razor %}
@@ -74,7 +47,6 @@ By default, the control resizes up to the current viewport size. Apply these sty
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/max-resizable/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

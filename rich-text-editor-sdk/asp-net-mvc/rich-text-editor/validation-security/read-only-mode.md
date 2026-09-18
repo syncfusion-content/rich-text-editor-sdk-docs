@@ -15,19 +15,6 @@ To enable the read-only mode, set the [Readonly](https://help.syncfusion.com/cr/
 
 Refer to the sample and code snippets below to see how to enable the read-only mode in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/read-only/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/read-only/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/read-only/razor %}
@@ -36,7 +23,6 @@ Refer to the sample and code snippets below to see how to enable the read-only m
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/read-only/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

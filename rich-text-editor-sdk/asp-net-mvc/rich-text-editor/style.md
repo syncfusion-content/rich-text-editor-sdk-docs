@@ -102,19 +102,6 @@ Use the following CSS to customize the editor container border.
 
 Programmatically highlight a portion of the text in the editor by setting the background color. Apply a background style to the selected text using the Rich Text Editor's `executeCommand` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/highlight-specific-line/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/highlight-specific-line/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/highlight-specific-line/razor %}
@@ -123,4 +110,3 @@ Programmatically highlight a portion of the text in the editor by setting the ba
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/highlight-specific-line/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

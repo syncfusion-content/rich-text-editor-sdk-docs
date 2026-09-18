@@ -13,8 +13,6 @@ The Rich Text Editor can be customized to implement **Mail Merge** functionality
 
 This feature simplifies the creation of dynamic documents by allowing users to insert merge fields that are automatically populated with real data during content generation.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/mail-merge/tagHelper %}
@@ -23,15 +21,3 @@ This feature simplifies the creation of dynamic documents by allowing users to i
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/mail-merge/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/mail-merge/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/mail-merge/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

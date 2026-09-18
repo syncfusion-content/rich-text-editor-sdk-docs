@@ -27,8 +27,6 @@ The Code Block feature supports customizable programming languages via the [`cod
 
 Below is an example of how to configure the [`codeBlockSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) using the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-block/tagHelper %}
@@ -37,18 +35,6 @@ Below is an example of how to configure the [`codeBlockSettings`](https://help.s
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-block/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-block/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/code-block/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 In this example:
 

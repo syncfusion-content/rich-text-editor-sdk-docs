@@ -20,19 +20,6 @@ Rich Text Editor is a WYSIWYG editing control for formatting the word content as
 
 The HTML editing mode is the default mode of the Rich Text Editor. It is used to format the content through the available toolbar items and returns valid HTML markup. Set the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property to `HTML`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/html-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/html-editor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/html-editor/razor %}
@@ -41,7 +28,6 @@ The HTML editing mode is the default mode of the Rich Text Editor. It is used to
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/html-editor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Markdown Editor
 
@@ -53,19 +39,6 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
 * The supported insert commands are `Image`, `Link` and `Table`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/markdown-editor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/markdown-editor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/markdown-editor/razor %}
@@ -74,7 +47,6 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/markdown-editor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 For further details on Markdown editing, refer to the [Markdown editor documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started).
 

@@ -27,19 +27,6 @@ The Code Block feature supports customizable programming languages via the `Code
 
 Below is an example of how to configure the `CodeBlockSettings` using the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-block/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-block/razor %}
@@ -48,7 +35,6 @@ Below is an example of how to configure the `CodeBlockSettings` using the Rich T
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-block/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 In this example:
 

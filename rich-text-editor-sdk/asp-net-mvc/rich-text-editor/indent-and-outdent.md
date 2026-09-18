@@ -26,19 +26,6 @@ To adjust the text indentation:
 
 To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/indent-and-outdent/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/indent-and-outdent/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/indent-and-outdent/razor %}
@@ -47,4 +34,3 @@ To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/indent-and-outdent/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

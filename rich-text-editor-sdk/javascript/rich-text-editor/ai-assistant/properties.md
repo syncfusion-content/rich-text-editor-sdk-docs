@@ -56,21 +56,6 @@ interface AICommand {
 
 In the below example, a set of prompts and texts are configured to demonstrate the commands property usage.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands/index.js %}
@@ -81,7 +66,6 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/commands" %}
-{% endif %}
 
 ## Preloading prompts, responses, and suggestions
 
@@ -97,21 +81,6 @@ The `prompts` property loads predefined prompt-response pairs, while `suggestion
 
 In the below sample, the `prompts` and `suggestions` properties of the `aiAssistantSettings` are used to preload the prompts, responses, and suggestions.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompts/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompts/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompts" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompts/index.js %}
@@ -122,7 +91,6 @@ In the below sample, the `prompts` and `suggestions` properties of the `aiAssist
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompts" %}
-{% endif %}
 
 ## Header, Prompt and Response Toolbar
 
@@ -150,21 +118,6 @@ The default toolbar configurations are:
 
 In the below sample, the toolbar settings are configured to modify the order and items are displayed.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings/index.js %}
@@ -175,7 +128,6 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/toolbar-settings" %}
-{% endif %}
 
 ## Popup dimensions
 
@@ -188,21 +140,6 @@ To customize the dimensions of the AI Assistant popup, use the `popupWidth` and 
 
 In the following example, the popup width and maximum height are configured:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions/index.js %}
@@ -213,7 +150,6 @@ In the following example, the popup width and maximum height are configured:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/popup-dimensions" %}
-{% endif %}
 
 ## Conversation history management
 
@@ -238,21 +174,6 @@ getAIPromptHistory(): PromptModel[]
 
 In the following example, the maximum prompt history is configured to `30`, and a save button retrieves the conversation history using the `getAIPromptHistory()` method:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history/index.js %}
@@ -263,7 +184,6 @@ In the following example, the maximum prompt history is configured to `30`, and 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/prompt-history" %}
-{% endif %}
 
 ## Configuring the banner
 
@@ -284,21 +204,6 @@ The `bannerTemplate` accepts an **HTML String**:
 
 In the following example, a custom banner template is applied to the AI Assistant:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/banner/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/banner/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/banner" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/banner/index.js %}
@@ -309,4 +214,3 @@ In the following example, a custom banner template is applied to the AI Assistan
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/ai-assistant/banner" %}
-{% endif %}

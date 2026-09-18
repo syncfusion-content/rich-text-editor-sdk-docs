@@ -17,8 +17,6 @@ You can add an `Audio` tool in the Rich Text Editor toolbar using the `toolbarSe
 
 To configure the `Audio` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-import/tagHelper %}
@@ -27,18 +25,6 @@ To configure the `Audio` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-import/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-import/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-import/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Audio Save Formats
 
@@ -80,8 +66,6 @@ The selected audio can be uploaded to the required destination using the control
 
 > If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving the audio, you can opt to save the format as `Base64`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-save/tagHelper %}
@@ -90,18 +74,6 @@ The selected audio can be uploaded to the required destination using the control
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-save/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-save/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SaveFile.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-save/saveFile.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Saving Audio to the Server
 
@@ -117,8 +89,6 @@ You can use the [insertAudioSettings](https://help.syncfusion.com/cr/aspnetcore-
 
 Refer to the `rename.cs` controller file to configure the server-side handler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-rename/tagHelper %}
@@ -128,25 +98,11 @@ Refer to the `rename.cs` controller file to configure the server-side handler.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-rename/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rename.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-rename/rename.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Uploading Audio with Authentication
 
 You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [fileUploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 N> By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -157,25 +113,11 @@ N> By default, it doesn't support the `UseDefaultCredentials` property; we need 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-authenticate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SaveFile.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-authenticate/saveFile.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Maximum file size restriction
 
 You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [InsertAudioSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes.
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -185,18 +127,6 @@ In the following illustration, the audio size has been validated before uploadin
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/check-audio-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/check-audio-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/check-audio-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Audio Replacement Functionality
 
@@ -218,8 +148,6 @@ Sets the default display property for audio when it is inserted in the Rich Text
 
 > The default `layoutOption` property is set to `Inline`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-settings/tagHelper %}
@@ -228,18 +156,6 @@ Sets the default display property for audio when it is inserted in the Rich Text
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-settings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-settings/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-settings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Paste audio files into the editor
 
@@ -251,8 +167,6 @@ By default, the Rich Text Editor allows you to insert audios by drag-and-drop fr
 
 In the following sample, you can see feature demo.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/audio/tagHelper %}
@@ -261,18 +175,6 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/audio/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/audio/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/audio/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ### Disabling Drag and Drop for Audios
@@ -295,8 +197,6 @@ The Rich Text Editor enables customization of the audio quick toolbar, allowing 
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Audio) property, you enhance the editor's capabilities, facilitating seamless management and editing of audio directly within your content. This customization ensures a user-friendly experience for manipulating audio elements efficiently.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-quick-toolbar/tagHelper %}
@@ -305,18 +205,6 @@ By configuring these options in the [quickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-quick-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/audio-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 
