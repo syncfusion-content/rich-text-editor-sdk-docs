@@ -9,7 +9,7 @@ documentation: ug
 
 # Render Blazor Rich Text Editor inside the Dialog
 
-While rendering the Rich Text Editor inside the [Dialog](https://blazor.syncfusion.com/documentation/dialog/getting-started-with-web-app) component, the dialog container and its wrapper elements are styled with display as none, so the editor’s toolbar does not get proper offset width and will render above the edit area container. To resolve this issue, you can call the [RefreshUIAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_RefreshUIAsync) method of RichTextEditor in the [Dialog Opened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Popups.DialogEvents.html#Syncfusion_Blazor_Popups_DialogEvents_Opened) event.
+While rendering the Blazor Rich Text Editor inside the [Dialog](https://blazor.syncfusion.com/documentation/dialog/getting-started-with-web-app) component, the dialog container and its wrapper elements are styled with display as none, so the editor’s toolbar does not get proper offset width and will render above the edit area container. To resolve this issue, you can call the [RefreshUIAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_RefreshUIAsync) method of Blazor RichTextEditor in the [Dialog Opened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Popups.DialogEvents.html#Syncfusion_Blazor_Popups_DialogEvents_Opened) event.
 
 {% highlight cshtml %}
 

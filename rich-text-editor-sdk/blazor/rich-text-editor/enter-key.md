@@ -9,7 +9,7 @@ documentation: ug
 
 # Enter and Shift+Enter in Blazor Rich Text Editor
 
-The Rich Text Editor allows you to customize the tag that is inserted when pressing the <kbd>Enter</kbd> key or the <kbd>Shift</kbd> + <kbd>Enter</kbd> key in the editor.
+The Blazor Rich Text Editor allows you to customize the tag that is inserted when pressing the <kbd>Enter</kbd> key or the <kbd>Shift</kbd> + <kbd>Enter</kbd> key in the editor.
 
 ## Enter key customization
 
