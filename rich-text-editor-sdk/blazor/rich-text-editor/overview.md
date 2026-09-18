@@ -96,7 +96,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Mentions](./mention-integration)** | Tag users with @mention suggestions | Person-aware content |
-| **[Enabling the slash menu](./slash-commands#enabling-the-slash-menu)** | Insert blocks by typing / | Rapid block insertion |
+| **[Enabling the slash menu](./slash-commands#enabling-the-slash-menu)** | Insert blocks by typing (/) | Rapid block insertion |
 | **[Mail Merge](./mail-merge)** | Merge dynamic fields into templates | Bulk personalized content |
 | **[Paste cleanup settings](./paste-cleanup#paste-cleanup-settings)** | Control how pasted content is sanitized | Clean, consistent content |
 | **[Clipboard Clean-up](./clipboard-cleanup)** | Sanitize content copied from external sources | Safe cross-app pasting |
