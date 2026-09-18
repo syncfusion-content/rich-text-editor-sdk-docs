@@ -34,23 +34,11 @@ npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-
 
 Map the above packages style and script reference in sample as like below
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="systemjs.config.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-config/systemjs.config.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-config/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ## Setup steps
 
@@ -59,21 +47,6 @@ The following example explains about how to configure the file browser within th
 1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
 2. **Enable file browser** — Set the [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property to `true` in the [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileManagerSettings) property.
 3. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,8 +58,6 @@ The following example explains about how to configure the file browser within th
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs2" %}
-
-{% endif %}
 
 ## See also
 

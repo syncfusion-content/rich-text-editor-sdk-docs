@@ -25,8 +25,6 @@ Here are the available alignment options:
 
 Please refer to the sample and code snippets below to add these alignment options in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/tagHelper %}
@@ -35,15 +33,3 @@ Please refer to the sample and code snippets below to add these alignment option
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

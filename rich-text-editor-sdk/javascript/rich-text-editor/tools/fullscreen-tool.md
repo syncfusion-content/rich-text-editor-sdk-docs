@@ -24,21 +24,6 @@ Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled
 
 > In `iframe` mode, the fullscreen view is applied to the iframe element rather than the parent page, so other page elements remain visible.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/fullscreen-mode/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/fullscreen-mode/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/fullscreen-mode" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/fullscreen-mode/index.js %}
@@ -49,7 +34,6 @@ Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/fullscreen-mode" %}
-{% endif %}
 
 ## See also
 

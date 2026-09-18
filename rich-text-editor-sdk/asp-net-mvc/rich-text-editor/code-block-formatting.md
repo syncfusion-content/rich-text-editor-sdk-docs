@@ -17,19 +17,6 @@ To enable code block formatting, ensure that the `Formats` item is included in t
 
 Below are examples and code snippets demonstrating how to add and use the code block formatting option in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-format/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-format/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-format/razor %}
@@ -38,7 +25,6 @@ Below are examples and code snippets demonstrating how to add and use the code b
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-format/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

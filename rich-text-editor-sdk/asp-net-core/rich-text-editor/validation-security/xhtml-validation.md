@@ -29,8 +29,6 @@ The editor checks the following settings on validation:
 * **Root Element**: The content must have a single root element.
 * **Element Hierarchy**: Inline elements cannot contain block elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/xhtml-validation/tagHelper %}
@@ -39,15 +37,3 @@ The editor checks the following settings on validation:
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/xhtml-validation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/xhtml-validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/xhtml-validation/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

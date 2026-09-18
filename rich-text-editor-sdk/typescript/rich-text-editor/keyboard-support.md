@@ -133,8 +133,6 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 | Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
 
-{% if page.publishingplatform == "typescript" %}
-
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs12/index.ts %}
@@ -145,20 +143,6 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs12" %}
-{% endif %}
 
 ## Custom key config
 
@@ -220,8 +204,6 @@ The following table lists all available `keyConfig` options in the Rich Text Edi
 | checklist-toggle | `ctrl+enter` |
 | select-all | `ctrl+a` |
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs13/index.ts %}
@@ -232,20 +214,6 @@ The following table lists all available `keyConfig` options in the Rich Text Edi
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs13" %}
-{% endif %}
 
 ## See also
 

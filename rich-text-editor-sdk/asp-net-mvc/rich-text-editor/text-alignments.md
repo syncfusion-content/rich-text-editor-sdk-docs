@@ -29,19 +29,6 @@ To fully justify your text, place the cursor in the desired paragraph or select 
 
 Refer to the sample below to add these alignment options in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/razor %}
@@ -50,4 +37,3 @@ Refer to the sample below to add these alignment options in the Rich Text Editor
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

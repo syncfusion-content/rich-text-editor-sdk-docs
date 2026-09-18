@@ -17,19 +17,6 @@ To enable the iframe editor, you can use the [IframeSettings](https://help.syncf
 
 Here's an example of how to enable the iframe editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe/razor %}
@@ -38,26 +25,12 @@ Here's an example of how to enable the iframe editor:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ## Customizing IFrame Attributes
 
 You can add custom attributes to the body tag of the iframe using the attributes field of the [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorIFrameSettings.html) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe-attributes/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe-attributes/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -67,7 +40,6 @@ You can add custom attributes to the body tag of the iframe using the attributes
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/iframe-attributes/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Integrating External CSS and Scripts
 
@@ -75,19 +47,6 @@ The Rich Text Editor allows you to apply an external CSS file to style the ifram
 
 Likewise, add an external script file to the `<iframe>` element using the `scripts` field of `iframeSettings` to provide additional functionalities to the Rich Text Editor.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/external-css/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/external-css/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -97,7 +56,6 @@ Likewise, add an external script file to the `<iframe>` element using the `scrip
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/external-css/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > You can also explore our [IFrame in ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/iframe#/tailwind3) that shows how to render the iframe in the ASP.NET MVC Rich Text Editor.
 

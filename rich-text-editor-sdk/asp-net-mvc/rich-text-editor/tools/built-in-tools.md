@@ -176,19 +176,6 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 Remove the build-in tools from the toolbar by using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/razor %}
@@ -197,4 +184,3 @@ Remove the build-in tools from the toolbar by using the [toolbarSettings](https:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

@@ -17,19 +17,6 @@ You can add an `Image` tool in the Rich Text Editor toolbar using the `ToolbarSe
 
 To configure the `Image` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image/razor %}
@@ -38,7 +25,6 @@ To configure the `Image` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Supported Image Save Formats
 
@@ -83,19 +69,6 @@ Set the [InsertImageSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmv
 
 > A runnable demo application is available in this [GitHub](https://github.com/SyncfusionExamples/aspnet-mvc-richtexteditor-image-upload) repository.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save/razor %}
@@ -104,7 +77,6 @@ Set the [InsertImageSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmv
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Image Renaming Feature
 
@@ -118,19 +90,6 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 
 > By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-authenticate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-authenticate/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-authenticate/razor %}
@@ -139,26 +98,12 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-authenticate/saveFile.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Maximum file size restriction
 
 You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [InsertImageSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
 In the following example, the image  size has been validated before uploading and determined whether the image has been uploaded or not.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-image-size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-image-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -168,7 +113,6 @@ In the following example, the image  size has been validated before uploading an
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-image-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ## Image Replacement Functionality
@@ -190,19 +134,6 @@ The following sample explains, how to configure `RemoveUrl` to remove a saved im
 * Removing uploaded image file from the insert image dialog.
 * Deleting image using the quick toolbar `Remove` option.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-url/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-url/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-url/razor %}
@@ -211,7 +142,6 @@ The following sample explains, how to configure `RemoveUrl` to remove a saved im
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-url/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Adjusting Image Dimensions
 
@@ -236,19 +166,6 @@ The `Alternative Text` option lets you provide descriptive text that appears whe
 
 Sets the default display for an image when it is inserted in the Rich Text Editor using [Display](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Display) field in [InsertImageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings). It has two possible options: 'inline' and 'block'.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-settings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-settings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-settings/razor %}
@@ -257,24 +174,10 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-settings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Configuring image alignment
 
 Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image `QuickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-alignment-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-alignment-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -284,24 +187,10 @@ Images in the Rich Text Editor can be aligned using the alignment options in the
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-alignment-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Text wrapping around images
 
 The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image `QuickToolbarSettings`. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/wrap-text-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/wrap-text-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -311,7 +200,6 @@ The Rich Text Editor provides control over how text flows around images using th
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/wrap-text-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Hyperlinking Images
 
@@ -345,19 +233,6 @@ By default, the Rich Text Editor allows you to insert images by drag-and-drop fr
 
 In the following sample, you can see feature demo.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/razor %}
@@ -366,7 +241,6 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ### Disabling Drag and Drop for Images
@@ -389,19 +263,6 @@ The Rich Text Editor allows you to customize the image quick toolbar, providing 
 
 By configuring these options in the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) property, you can enhance the editor's functionality, enabling seamless image management and editing directly within your content. This customization ensures a user-friendly experience for efficiently manipulating image elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/razor %}
@@ -410,7 +271,6 @@ By configuring these options in the [QuickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/image-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 
