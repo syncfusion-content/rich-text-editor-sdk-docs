@@ -23,33 +23,6 @@ To enable mail merge functionality, the Rich Text Editor toolbar is extended wit
 - **Insert Field:** Opens a list of merge fields for inserting placeholders like {{FirstName}} into the editor.
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-{% raw %}
-
-const mailMergeEditor: RichTextEditor = new RichTextEditor({
-   toolbarSettings: {
-      items: [
-         'Bold', 'Italic', 'Underline', '|',
-         'Formats', 'Alignments', '|',
-         { tooltipText: 'Merge Data', template: '#merge_data', command: 'Custom' },
-         { tooltipText: 'Insert Field', template: '#insertField', command: 'Custom' },
-         'SourceCode', '|', 'Undo', 'Redo'
-      ],
-   },
-});
-mailMergeEditor.appendTo('#mailMergeEditor');
-
-{% endraw %}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 
@@ -72,51 +45,10 @@ mailMergeEditor.appendTo('#mailMergeEditor');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Using DropDownButton for selecting placeholders
 
 The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., {{FirstName}}) is inserted at the current cursor position using the `insertHTML` command. The `textToValueMap` object used below maps the displayed item text to the placeholder key.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-{% raw %}
-
-let insertField: DropDownButton = new DropDownButton({
-   items: [
-      { text: 'First Name' },
-      { text: 'Last Name' },
-      { text: 'Support Email' },
-      { text: 'Company Name' },
-      { text: 'Promo Code' },
-      { text: 'Support Phone Number' },
-      { text: 'Customer ID' },
-      { text: 'Expiration Date' },
-      { text: 'Subscription Plan' },
-   ],
-   content: `<span style="display:inline-flex;"><span class="e-rte-dropdown-btn-text">Insert Field</span></span>`,
-   select: onItemSelect,
-});
-insertField.appendTo('#insertField');
-
-function onItemSelect(args: MenuEventArgs): void {
-   const value = textToValueMap[args.item.text];
-   mailMergeEditor.executeCommand(
-      'insertHTML',
-      `<span contenteditable="false" class="e-mention-chip"><span>{{${value}}}</span></span>&nbsp;`,
-      { undo: true }
-   );
-}
-
-{% endraw %}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -158,37 +90,10 @@ function onItemSelect(args) {
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Using Mention to insert placeholders
 
 The **Mention** control provides an alternative way to insert placeholders by typing the `{{` character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-{% raw %}
-
-const mentionObj: Mention = new Mention({
-   dataSource: mergeData,
-   target: '#mailMergeEditor',
-   mentionChar: `{{`,
-   fields: { text: 'text' },
-   allowSpaces: true,
-   popupWidth: '250px',
-   popupHeight: '200px',
-   displayTemplate: '<span> {{${value}}} </span>',
-});
-mentionObj.appendTo('#mentionField');
-
-{% endraw %}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -211,37 +116,10 @@ mergeObj.appendTo('#mentionField');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Replacing placeholders dynamically
 
 When the **Merge Data** button is clicked, the editor content is processed to replace all placeholders with actual values from the `placeholderData` object. This is done using a regular expression in the `replacePlaceholders()` function.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="app.ts" %}
-
-{% raw %}
-
-document.getElementById('merge_data')?.addEventListener('click', onClickHandler);
-
-function onClickHandler(): void {
-   let editorContent = mailMergeEditor.value;
-   let mergedContent = replacePlaceholders(editorContent, placeholderData);
-   mailMergeEditor.value = mergedContent;
-}
-
-function replacePlaceholders(template: string, data: { [key: string]: string }): string {
-   return template.replace(/{{\s*(\w+)\s*}}/g, (match, key) => data[key.trim()] || match);
-}
-
-{% endraw %}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -277,22 +155,6 @@ function replacePlaceholders(template, data) {
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mail-merge/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mail-merge/index.html %}
-{% endhighlight %}
-{% endtabs %}
-       
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mail-merge-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -304,4 +166,3 @@ function replacePlaceholders(template, data) {
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/mail-merge-cs1" %}
-{% endif %}

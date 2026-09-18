@@ -18,21 +18,6 @@ This will allow you to view the content without making any modifications.
 
 Please refer to the sample and code snippets below to demonstrate how to enable the read-only mode in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/read-only-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/read-only-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/read-only-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/read-only-cs1/index.js %}
@@ -43,7 +28,6 @@ Please refer to the sample and code snippets below to demonstrate how to enable 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/read-only-cs1" %}
-{% endif %}
 
 ## Disabled mode
 
@@ -55,21 +39,6 @@ When disabled, the editor becomes non-interactive, ensuring that users cannot ed
 
 Below are examples and code snippets demonstrating how to disable the Rich Text Editor by setting the `enabled` property to `false`.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/disable-editor-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/disable-editor-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/disable-editor-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/disable-editor-cs1/index.js %}
@@ -80,4 +49,3 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/disable-editor-cs1" %}
-{% endif %}

@@ -66,8 +66,6 @@ A **User Profile** dropdown can be added as a custom header toolbar item using a
 2. Initialize the `DropDownButton` component in the `beforePopupOpen` event.
 3. Destroy the component instance in the `beforePopupClose` event to prevent memory leaks.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items/index.ts %}
@@ -78,20 +76,6 @@ A **User Profile** dropdown can be added as a custom header toolbar item using a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/custom-toolbar-items" %}
-{% endif %}
 
 ## Styling the popup
 
@@ -118,8 +102,6 @@ The AI Assistant Popup can be styled by using the following css.
 
 The following example applies a CSS animation to the popup during AI request processing:
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight css tabtitle="index.css" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling/index.css %}
@@ -133,23 +115,6 @@ The following example applies a CSS animation to the popup during AI request pro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling/index.css %}
-{% endhighlight %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/popup-styling" %}
-{% endif %}
 
 ## Public methods / programmatic use case
 
@@ -174,8 +139,6 @@ The following example demonstrates a **Proofread** workflow using a button outsi
 2. A proofreading prompt is executed using `executeAIPrompt()`.
 3. The AI response is displayed in the popup (automatic via `executeAIPrompt()`).
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/usecase/index.ts %}
@@ -186,17 +149,3 @@ The following example demonstrates a **Proofread** workflow using a button outsi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/usecase" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/usecase/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/usecase/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/ai-assistant/usecase" %}
-{% endif %}

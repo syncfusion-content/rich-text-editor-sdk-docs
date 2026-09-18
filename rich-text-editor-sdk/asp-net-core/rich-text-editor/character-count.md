@@ -27,8 +27,6 @@ The character count color will be modified based on the characters in the Rich T
 | warning | When the character count reaches 70% of the maxLength, the color changes to orange, indicating that the maximum limit is approaching.|
 | error |Once the character count hits 90% of the maxLength, the color turns red, signaling that the limit is nearly reached.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/tagHelper %}
@@ -37,18 +35,6 @@ The character count color will be modified based on the characters in the Rich T
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/character-count/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Setting Maximum Character Limit
 

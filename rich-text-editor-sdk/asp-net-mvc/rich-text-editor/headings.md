@@ -25,19 +25,6 @@ This action will format the selected text with the chosen heading style, helping
 
 Below are examples and code snippets demonstrating how to integrate and utilize heading formatting options effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/razor %}
@@ -46,7 +33,6 @@ Below are examples and code snippets demonstrating how to integrate and utilize 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customizing Format Dropdown Items
 
@@ -61,19 +47,6 @@ This customization lets users structure content with appropriate headings, impro
 
 Below are examples demonstrating how to customize the format dropdown.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/razor %}
@@ -82,7 +55,6 @@ Below are examples demonstrating how to customize the format dropdown.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

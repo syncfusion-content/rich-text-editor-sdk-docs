@@ -29,19 +29,6 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 
 Refer to the sample below to add these basic text styling options in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/basic-text-styling/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/basic-text-styling/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/basic-text-styling/razor %}
@@ -50,7 +37,6 @@ Refer to the sample below to add these basic text styling options in the Rich Te
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/basic-text-styling/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

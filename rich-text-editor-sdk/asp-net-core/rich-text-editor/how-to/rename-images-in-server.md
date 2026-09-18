@@ -16,8 +16,6 @@ Refer `controller` file for configure the server-side.
 
 N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-rename-image) repository.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename/tagHelper %}
@@ -26,16 +24,4 @@ N> The runnable demo application is available in this [Github](https://github.co
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/how-to/rename/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

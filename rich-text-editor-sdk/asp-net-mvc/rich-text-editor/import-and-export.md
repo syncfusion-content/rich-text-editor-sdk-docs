@@ -17,19 +17,6 @@ Add an `ImportWord` toolbar item by configuring the `items` property of the [Too
 
 The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/import/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/import/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/import/razor %}
@@ -38,7 +25,6 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/import/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Secure importing with authentication
 
@@ -48,19 +34,6 @@ The [wordImporting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.
 
 The following example demonstrates how to configure `wordImporting` for secure importing:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureimport/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureimport/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureimport/razor %}
@@ -69,7 +42,6 @@ The following example demonstrates how to configure `wordImporting` for secure i
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureimport/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Exporting Content to PDF and Microsoft Word
 
@@ -79,19 +51,6 @@ Add the `ExportWord` and `ExportPdf` toolbar items using the `ToolbarSettings` [
 
 The following example demonstrates how to configure the `ExportWord` and `ExportPdf` tools in the Rich Text Editor, facilitating the export of content into Word or PDF documents:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/export/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/export/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/export/razor %}
@@ -100,7 +59,6 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/export/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Secure exporting with authentication
 
@@ -110,19 +68,6 @@ The [documentExporting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 
 The following example demonstrates how to configure `documentExporting` for secure exporting:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureexport/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureexport/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureexport/razor %}
@@ -131,4 +76,3 @@ The following example demonstrates how to configure `documentExporting` for secu
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/secureexport/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

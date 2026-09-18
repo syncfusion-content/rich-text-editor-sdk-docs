@@ -16,8 +16,6 @@ The InsertCode button has a toggle state to apply code block formatting to the e
 
 The following sample demonstrates how to configure the InsertCode button in the toolbar and set the background color of the `pre` tag for highlighting the code block.
 
-{% if page.publishingplatform == "typescript" %}
-
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-format-code-cs1/index.ts %}
@@ -28,17 +26,3 @@ The following sample demonstrates how to configure the InsertCode button in the 
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-format-code-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-format-code-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-format-code-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-format-code-cs1" %}
-{% endif %}

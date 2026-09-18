@@ -20,19 +20,6 @@ You can add the `SourceCode` tool in the Rich Text Editor using the `ToolbarSett
 
 This sample used [`CodeMirror`](https://codemirror.net/) plugin helps to highlight the HTML content and when changes happens in code view, the same has been reflected in preview mode.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/razor %}
@@ -41,7 +28,6 @@ This sample used [`CodeMirror`](https://codemirror.net/) plugin helps to highlig
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The Rich Text Editor provides the `ShowSourceCode` method, which allows you to toggle programmatically between the code view and the formatted text view. When invoked, this method switches the editor’s view to the opposite state.
 

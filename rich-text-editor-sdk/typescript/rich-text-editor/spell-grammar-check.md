@@ -48,8 +48,6 @@ After installing the package, you can integrate WProofreader with the Rich Text 
 
 Below is an example code snippet to integrate WProofreader with the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/spell-check-cs1/index.ts %}
@@ -58,19 +56,6 @@ Below is an example code snippet to integrate WProofreader with the Rich Text Ed
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/spell-check-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/spell-check-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/spell-check-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 Below is a GIF demonstrating how to integrate WProofreader with the Rich Text Editor.
 
