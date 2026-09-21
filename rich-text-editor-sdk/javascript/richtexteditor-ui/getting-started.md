@@ -87,10 +87,10 @@ The Modern Rich Text Editor can be initialized on a `div` element, as shown belo
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/modern-editor/getting-started/index.js %}
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/getting-started/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/modern-editor/getting-started/index.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/getting-started/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
