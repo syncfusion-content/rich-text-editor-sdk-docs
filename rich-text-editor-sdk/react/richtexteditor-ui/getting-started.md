@@ -10,6 +10,8 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Getting started in React Modern Rich Text Editor
 
+The React Modern Rich Text Editor is a WYSIWYG editor that provides a modern editing experience for creating, editing, and formatting rich text content. This section explains how to create a simple Modern Rich Text Editor using a Vite-based React project.
+
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> React development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> React components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/mcp-server/ai-coding-assistant/getting-started)
 
 {% tabcontents %}
@@ -66,7 +68,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 √ Choose Framework: » React
 √ Choose Build Tool: » Vite
 √ Choose Language: » Typescript
-√ Choose Template: » Modern Rich Text Editor
+√ Choose Template: » Rich Text Editor UI
 √ Choose Theme: » Tailwind3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
@@ -94,7 +96,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Rich Text Editor Component](images/cli-rte.png)
+![Modern Rich Text Editor Component](images/cli-rte.png)
 
 {% endtabcontent %}
 
@@ -116,7 +118,7 @@ npm create vite@latest my-app -- --template react-ts
 
 This command prompts you to configure the React application. When prompted to choose a linter, select either Oxlint or ESLint based on your preference.
 
-!Modern [Rich Text Editor Linter configuration](images/linter-config.png)
+![Modern Rich Text Editor Linter configuration](images/linter-config.png)
 
 Continue with the project setup and select the options as shown below.
 
@@ -153,7 +155,7 @@ npm install @syncfusion/ej2-tailwind3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into **src/App.css**:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor-ui/index.css';
 ```
 
 I> To apply the application-specific styles correctly, import **App.css** into **src/App.tsx** and remove all the default styles from **src/index.css**.
@@ -171,7 +173,7 @@ Now, you can start adding the React Modern Rich Text Editor component in the app
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor-ui/index.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -183,17 +185,9 @@ Now run the `npm run dev` command in the console to start the development server
 ```bash
 npm run dev
 ```
-The Syncfusion<sup style="font-size:70%">&reg;</sup> React Rich Text Editor is displayed in the browser as shown below.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> React Modern Rich Text Editor is displayed in the browser as shown below.
 
-![Syncfusion React Rich Text Editor output](images/getting-started.png)
+![Syncfusion React Modern Rich Text Editor output](images/getting-started.png)
 
 {% endtabcontent %}
 {% endtabcontents %}
-
-## See Also
-
-* [Accessibility in Rich Text Editor](./accessibility.md)
-* [Keyboard support in Rich Text Editor](./keyboard-support.md)
-* [Globalization in Rich Text Editor](./globalization.md)
-
-N> Looking for the full React Rich Text Editor component overview, features, pricing, and documentation? Visit the [React Rich Text Editor](https://www.syncfusion.com/react-components/react-rich-text-editor) page.
