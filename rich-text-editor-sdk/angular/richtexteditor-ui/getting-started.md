@@ -192,7 +192,7 @@ ng serve --open
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Modern Rich Text Editor is displayed in the browser as shown below.
 
-![Syncfusion Angular Modern Rich Text Editor output](images.png)
+![Syncfusion Angular Modern Rich Text Editor output](images/getting-started.png.png)
 
 {% endtabcontent %}
 {% endtabcontents %}
