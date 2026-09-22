@@ -164,10 +164,10 @@ Now, you can start adding the React Modern Rich Text Editor component in the app
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor-ui/getting-started/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/basic-cs7/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/rich-text-editor-ui/getting-started/app/App.jsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
