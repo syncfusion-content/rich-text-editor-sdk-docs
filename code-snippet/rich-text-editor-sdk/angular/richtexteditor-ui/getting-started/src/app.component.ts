@@ -5,7 +5,7 @@ import { RichTextEditorUIModule } from '@syncfusion/ej2-angular-richtexteditor-u
     imports: [RichTextEditorUIModule],
     selector: 'app-root',
     standalone: true,
-    templateUrl: `<ejs-richtexteditor-ui></ejs-richtexteditor-ui>`
+    templateUrl: `<ejs-richtexteditor-ui placeholder="Type something ..."></ejs-richtexteditor-ui>`
 })
 export class App {
 }
