@@ -14,7 +14,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaS
 
 ## Dependencies
 
-The following list of dependencies are required to use the `Headless Editor` control in the application.
+The following list of dependencies are required to use the `Headless Editor` library in the application.
 
 ```javascript
 |-- @syncfusion/ej2-headless-editor
@@ -40,7 +40,7 @@ Refer to the following steps to set up your local environment.
 
 **Step 2:** Create a `my-app/resources` folder to store local script and style files.
 
-**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Headless Editor control.
+**Step 3:** Open Visual Studio Code and create `my-app/index.js` and `my-app/index.html` files for initializing the Essential JS 2 Headless Editor library.
 
 ## Adding Headless Editor styles
 
@@ -73,9 +73,9 @@ Add the following scripts inside the `my-app/index.html` file to include the Hea
 
 I> Ensure that all Headless Editor script files are loaded in the correct order and included before initializing the control. The order is important because the scripts have dependencies, and loading them incorrectly may prevent the Headless Editor from working properly or cause runtime errors. Make sure the required base and dependent scripts are included along with the Headless Editor script.
 
-## Adding Headless Editor control
+## Adding Headless Editor library
 
-Add the Headless Editor control to the application as follows. Place the target element in **index.html** and the initialization code in **index.js** using the sample below.
+Add the Headless Editor library to the application as follows. Place the target element in **index.html** and the initialization code in **index.js** using the sample below.
 
 > Add a target element such as `<div id="editor"></div>` in `index.html` before calling `mount()` in `index.js`.
 
