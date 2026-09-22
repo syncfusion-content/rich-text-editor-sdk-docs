@@ -13,10 +13,6 @@ The Syncfusion Angular Modern Rich Text Editor is a WYSIWYG editor that enables 
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
-To get started quickly with the Angular Modern Rich Text Editor using CLI and Schematics, refer to this video tutorial:
-
-{% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
-
 {% tabcontents %}
 
 {% tabcontent Syncfusion CLI %}
@@ -178,11 +174,11 @@ Modify the template in the `src/app/app.ts` file to render the Modern Rich Text 
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started/basic-editor/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/getting-started/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs1/src/styles.css %}
+{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/getting-started/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
 
