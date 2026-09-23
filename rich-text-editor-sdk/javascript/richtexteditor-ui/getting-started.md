@@ -101,11 +101,3 @@ Run the `index.html` file through a local web server (for example, `npx http-ser
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Modern Rich Text Editor is displayed as shown below.
 
 ![Syncfusion JavaScript Modern Rich Text Editor output](images/getting-started.png)
-
-## See Also
-
-**Live examples:**
-
-* `Syncfusion JavaScript Modern Rich Text Editor demos`
-
-N> You can refer to our `JavaScript Modern Rich Text Editor` feature tour page for its groundbreaking feature representations. You can also explore our `JavaScript Modern Rich Text Editor example` that shows how to render the modern rich text editor tools.

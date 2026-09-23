@@ -97,11 +97,3 @@ Run the `index.html` file through a local web server (for example, `npx http-ser
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Headless Editor is displayed as shown below.
 
 ![Syncfusion JavaScript Headless Editor output](images/getting-started.png)
-
-## See Also
-
-**Live examples:**
-
-* `Syncfusion JavaScript Headless Editor demos`
-
-N> You can refer to our `JavaScript Headless Editor` feature tour page for its groundbreaking feature representations. You can also explore our `JavaScript Headless Editor example` that shows how to render the headless editor.
