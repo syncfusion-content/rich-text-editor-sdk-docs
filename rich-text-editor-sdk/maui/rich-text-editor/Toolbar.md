@@ -53,6 +53,7 @@ N> Populating the `ToolbarItems` collection **replaces** the default toolbar ite
 The following items are available to be added to the `ToolbarItems` collection:
 *   `Bold`, `Italic`, `Underline`, `Strikethrough`
 *   `SubScript`, `SuperScript`
+*   `TextTransform`
 *   `FontFamily`, `FontSize`, `TextColor`, `HighlightColor`
 *   `ParagraphFormat`, `Alignment`
 *   `NumberList`, `BulletList`
