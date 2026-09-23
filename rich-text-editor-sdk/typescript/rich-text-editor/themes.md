@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Themes in TypeScript Rich Text Editor | Syncfusion
-description: Learn how to create and apply custom themes in the Syncfusion Essential JS 2 
+description: Learn how to create and apply custom themes in the Syncfusion TypeScript Rich Text Editor using CSS variables for dynamic switching.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
