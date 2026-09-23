@@ -112,6 +112,6 @@ yarn run serve
 
 ## See also
 
-For additional Vue examples and related topics, see the [Vue documentation](https://ej2.syncfusion.com/vue/documentation/).
+For additional Vue examples and related topics, see the [Vue documentation](https://ej2.syncfusion.com/vue/documentation).
 
 You can also explore the [Vue Headless Editor example](https://ej2.syncfusion.com/vue/demos/) that shows how to render the Headless Editor.

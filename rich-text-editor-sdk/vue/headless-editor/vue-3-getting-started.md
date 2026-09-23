@@ -72,10 +72,10 @@ Now, add the Vue Headless Editor component to the **src/App.vue** file using the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue3/headless-editor/getting-started/app-composition.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/getting-started/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue3/headless-editor/getting-started/app.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/getting-started/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,7 +95,7 @@ The Syncfusion Vue 3 Headless Editor is displayed as shown below.
 
 ## See also
 
-For additional Vue 3 examples and related topics, see the [Vue documentation](https://ej2.syncfusion.com/vue/documentation/).
+For additional Vue 3 examples and related topics, see the [Vue documentation](https://ej2.syncfusion.com/vue/documentation).
 
 For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.
 
