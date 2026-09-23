@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Paste Cleanup in JavaScript Block Editor
 
-The Block Editor control provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains styling and structural consistency. This feature helps remove unwanted formatting, scripts, and elements copied from external sources like web pages or word processors.
+The Block Editor provides paste cleanup features that maintain content consistency and strip unwanted formatting, scripts, and elements from external sources such as web pages or word processors.
 
 You can configure the paste behavior using the [pasteCleanupSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#pastecleanupsettings) property, which allows you to define how content is handled when pasted into the editor.
 
@@ -18,11 +18,9 @@ You can configure the paste behavior using the [pasteCleanupSettings](https://ej
 
 The [allowedStyles](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#allowedstyles) property lets you define which CSS styles are permitted in pasted content. Any style not in this list is stripped out, ensuring that only desired visual attributes are preserved.
 
-By default, the following styles are allowed:
+By default, the following styles are allowed: `font-weight`, `font-style`, `text-decoration`, and `text-transform`.
 
-['font-weight', 'font-style', 'text-decoration', 'text-transform'].
-
-In the below example, only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
+The example below shows how only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
 
 ```typescript
 const editor = new BlockEditor({
@@ -36,7 +34,7 @@ const editor = new BlockEditor({
 
 The [deniedTags](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
 
-In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
+The example below removes any `<script>` or `<iframe>` tags found in the pasted content, preventing unwanted behavior or styling issues.
 
 ```typescript
 const editor = new BlockEditor({
@@ -46,7 +44,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The example below demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -77,7 +75,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 ## Disable Keep format
 
-By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
+By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor pastes content primarily as plain text, regardless of the `allowedStyles` configuration.
 
 ```typescript
 const editor = new BlockEditor({
@@ -89,7 +87,7 @@ const editor = new BlockEditor({
 
 ## Allowing plain text
 
-To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#pastecleanupsettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
 
 ```typescript
 const editor = new BlockEditor({
@@ -99,7 +97,7 @@ const editor = new BlockEditor({
 });
 ```
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The example below demonstrates the usage of paste settings that disables the keep format and allows plain text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,16 +135,16 @@ The Block Editor provides events to monitor and interact with the paste action.
 |[beforePasteCleanup](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
 |[afterPasteCleanup](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
 
-Below snippet demonstrates how to configure above events in the editor.
+The snippet below demonstrates how to configure the above events in the editor.
 
 ```typescript
 const editor = new BlockEditor({
-    beforePasteCleanup: onBeforePasteCleanup()
+    beforePasteCleanup: onBeforePasteCleanup
 });
 ```
 
 ```typescript
 const editor = new BlockEditor({
-    afterPasteCleanup: onAfterPasteCleanup()
+    afterPasteCleanup: onAfterPasteCleanup
 });
 ```

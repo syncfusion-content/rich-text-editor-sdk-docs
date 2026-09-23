@@ -24,14 +24,14 @@
   overflow: hidden;
 }
 .e-md-preview::before {
-  content: '\e345';
+  content: '\\e345';
 }
 
 .e-rte-content .e-content.e-pre-source {
   width: 100%;
 }
 .e-icon-btn.e-active .e-md-preview.e-icons::before {
-  content: '\e350';
+  content: '\\e350';
 }
 </style>
 
@@ -43,8 +43,8 @@ import {
   Image,Table,
   MarkdownEditor,
 } from '@syncfusion/ej2-vue-richtexteditor';
-import { marked } from 'marked';
 import { L10n } from '@syncfusion/ej2-base';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 
 L10n.load({
   'en-US': {
@@ -62,7 +62,7 @@ export default {
     },
     data: function() {
         return {
-            rteValue: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.',
+            rteValue: 'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content.',
             id: '',
             mdsource: null,
             htmlPreview: null,
@@ -105,7 +105,7 @@ export default {
         },
         markDownConversion: function () {
             if (this.mdsource.classList.contains('e-active')) {
-                this.htmlPreview.innerHTML = marked(this.textArea.value);
+                this.htmlPreview.innerHTML = MarkdownConverter.toHtml(this.textArea.value, { lineBreak: true });
             }
         },
         fullPreview: function () {
@@ -128,7 +128,7 @@ export default {
                 }
                 this.textArea.style.display = 'none';
                 this.htmlPreview.style.display = 'block';
-                this.htmlPreview.innerHTML = marked(this.textArea.value);
+                this.htmlPreview.innerHTML = MarkdownConverter.toHtml(this.textArea.value, { lineBreak: true });
                 this.mdsource.parentElement.title = 'Code View';
             }
         },

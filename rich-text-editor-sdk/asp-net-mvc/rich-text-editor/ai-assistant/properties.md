@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure of AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Configure AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to configure the AI Assistant in the ASP.NET MVC Rich Text Editor with prompt templates, response actions, and toolbar settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -13,11 +13,11 @@ The `AIAssistantSettings` class provides the following properties for complete c
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
-| `commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
+| `Commands` | `AICommands[]` | Predefined commands | Defines the predefined AI command options displayed in the command dropdown menu. |
 | `PopupMaxHeight` | `string \| number` | `'400px'` | Sets the maximum height of the AI Assistant popup. Accepts CSS height values or numbers (treated as pixels). |
 | `PopupWidth` | `string \| number` | `'600px'` | Sets the width of the AI Assistant popup. Accepts CSS width values or numbers (treated as pixels). |
 | `Placeholder` | `string` | `'Ask AI to rewrite or generate content.'` | Specifies the placeholder text shown in the AI prompt textarea. |
-| `HeaderToolbarSettings` | `(AssitantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
+| `HeaderToolbarSettings` | `(AssistantHeaderToolbarItems \| IAIAssistantToolbarItem)[]` | `['AIcommands', 'Close']` | Configures the toolbar in the header section of the AI Assistant interface. |
 | `PromptToolbarSettings` | `(AssistantPromptToolbarItems \| IAIAssistantToolbarItem)[]` | `['Edit', 'Copy']` | Configures the toolbar in the prompt editor (user input) section. |
 | `ResponseToolbarSettings` | `(AssistantResponseToolbarItems \| IAIAssistantToolbarItem)[]` | `['Regenerate', 'Copy', '\|', 'Insert']` | Configures the toolbar in the AI response viewer section. |
 | `Prompts` | `PromptModel[]` | `[]` | Defines the collection of predefined prompts and their corresponding responses. |
@@ -42,16 +42,6 @@ To configure the items displayed in the AI Commands Dropdown menu, the `Commands
 
 In the below example, a set of prompts and texts are configured to demonstrate the commands property usage.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/commands/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/commands/razor %}
@@ -60,7 +50,6 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/commands/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Preloading Prompts, Response and Suggestions
 
@@ -70,16 +59,6 @@ To preload conversations and add suggested prompts to the AI Assistant use the `
 
 In the below sample, the `Prompts` and `Suggestions` properties of the `AiAssistantSettings` are used to preload the prompts, responses, and suggestions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/prompts/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/prompts/razor %}
@@ -88,7 +67,6 @@ In the below sample, the `Prompts` and `Suggestions` properties of the `AiAssist
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/prompts/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Header, Prompt and Response Toolbar
 
@@ -114,17 +92,7 @@ The default toolbar configurations are:
 
 **Example**
 
-In the below sample, the toolbar settings are configured to modify the order and items are displayed.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/toolbar-settings/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the below sample, the toolbar settings are configured to modify the order of items displayed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -134,7 +102,6 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/toolbar-settings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Popup Dimensions
 
@@ -144,16 +111,6 @@ To customize the dimensions of the AI Assistant popup based on the editor width,
 
 In the below sample, the popup width and maximum height are configured.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/popup-dimensions/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/popup-dimensions/razor %}
@@ -162,7 +119,6 @@ In the below sample, the popup width and maximum height are configured.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/popup-dimensions/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Setting Maximum Conversation History Length
 
@@ -170,16 +126,6 @@ To set the maximum conversation history length, use the `MaxPromptHistory` prope
 
 **Example**
 In the below sample, the maximum prompt history is configured to `30`, and when a save button is clicked the conversation history is retrieved using the `getAIPromptHistory()` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/prompt-history/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -189,23 +135,12 @@ In the below sample, the maximum prompt history is configured to `30`, and when 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/prompt-history/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Setting the Banner
 
 To set the banner content displayed on top of the AI Assistant popup, use the `BannerTemplate` property of the `AiAssistantSettings`. This can be used to display welcome messages, instructions, or other relevant information.
 
 **Example**
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/banner/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -215,4 +150,3 @@ To set the banner content displayed on top of the AI Assistant popup, use the `B
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/banner/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

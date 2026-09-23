@@ -5,7 +5,7 @@ var mdsource;
 var htmlPreview;
 
 var markdownRTE = new ej.richtexteditor.RichTextEditor({
-  value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.`,
+  value: `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content.`,
   height: 250,
   editorMode: 'Markdown',
   toolbarSettings: {
@@ -41,8 +41,9 @@ function markDownConversion() {
   if (mdsource.classList.contains('e-active')) {
     var id = markdownRTE.getID() + 'html-view';
     var htmlPreview = document.body.querySelector('#markdownRTEhtml-preview');
-    htmlPreview.innerHTML = marked(
-      markdownRTE.contentModule.getEditPanel().value
+    htmlPreview.innerHTML = ej.markdownconverter.MarkdownConverter.toHtml(
+      markdownRTE.contentModule.getEditPanel().value,
+      { lineBreak: true }
     );
   }
 }
@@ -72,17 +73,10 @@ function fullPreview(e) {
     }
     textArea.style.display = 'none';
     htmlPreview.style.display = 'block';
-    htmlPreview.innerHTML = marked(
-      markdownRTE.contentModule.getEditPanel().value
+    htmlPreview.innerHTML = ej.markdownconverter.MarkdownConverter.toHtml(
+      markdownRTE.contentModule.getEditPanel().value,
+      { lineBreak: true }
     );
     mdsource.parentElement.title = 'Code View';
   }
-}
-
-loadExternalFile();
-// Dynamically load the marked.js file
-function loadExternalFile() {
-  var script = document.createElement('script');
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-  document.getElementsByTagName('head')[0].appendChild(script);
 }

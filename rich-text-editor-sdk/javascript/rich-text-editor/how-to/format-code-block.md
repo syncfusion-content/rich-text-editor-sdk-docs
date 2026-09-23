@@ -10,26 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Add Code Block Formatting in JavaScript Rich Text Editor
 
-You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
+You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) items property.
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-format-code-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-format-code-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-format-code-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following sample demonstrates how to configure the InsertCode button in the toolbar and set the background color of the `pre` tag for highlighting the code block.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,4 +26,3 @@ The following sample demonstrates how to config the InsertCode button in toolbar
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-format-code-cs1" %}
-{% endif %}

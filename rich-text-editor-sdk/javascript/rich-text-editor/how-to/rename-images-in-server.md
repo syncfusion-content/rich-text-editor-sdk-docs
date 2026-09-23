@@ -10,11 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Rename Uploaded Images in JavaScript Rich Text Editor
 
-By using the [`insertImageSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesettings#imageSettings) property, you can specify the server handler to upload the selected images. Then you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesuccesseventargs#imageSuccessEventArgs) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
+By using the [`insertImageSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesettings#imagesettings) property, you can specify the server handler to upload the selected images. Then you can bind the [`imageUploadSuccess`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/imagesuccesseventargs#imagesuccesseventargs) event, to receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
 ```html
 <div id='defaultRTE'>
-    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+    <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid 
+<a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Learn more about HTML markup on Syncfusion">HTML markup</a> or 
+<a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="Learn more about markdown on Syncfusion">markdown</a> of the content</p>
     <p><b>Key features:</b></p>
     <ul>
         <li>
@@ -99,7 +101,7 @@ public void Rename()
                 Response.Clear();
                 Response.Headers.Add("name", imageFile);
                 Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusDescription = "File uploaded succesfully";
+                Response.StatusDescription = "File uploaded successfully";
                 Response.End();
             }
         }

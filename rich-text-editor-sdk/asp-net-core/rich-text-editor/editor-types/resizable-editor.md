@@ -13,8 +13,6 @@ The resizable editor feature allows dynamic resizing of the editor. Enable or di
 
 The following sample demonstrates the resizable feature.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/resizable/tagHelper %}
@@ -24,25 +22,13 @@ The following sample demonstrates the resizable feature.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/resizable/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/resizable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Rich Text Editor Resizable support](../images/Resizable-Editor.png)
 
 ## Setting Editor Resize Limits
 
 To restrict the resizable area of the Rich Text Editor, set the `min-width`, `max-width`, `min-height`, and `max-height` CSS properties for the component's wrapper element. 
 
-By default, the control resizes up to the current viewport size. Apply these styles using the `e-richtexteditor`  CSS class in the component's wrapper.
+By default, the control resizes up to the current viewport size. Apply these styles using the `e-richtexteditor` CSS class in the component's wrapper.
 
 ```CSS
 
@@ -55,8 +41,6 @@ By default, the control resizes up to the current viewport size. Apply these sty
 
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/max-resizable/tagHelper %}
@@ -66,19 +50,7 @@ By default, the control resizes up to the current viewport size. Apply these sty
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/max-resizable/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/max-resizable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## See Also
 
 * [Working with IFrame Editing Mode](./iframe)
-* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.NETCORE/getting-started)
+* [Using the Markdown Editor](../../markdown-editor/getting-started)

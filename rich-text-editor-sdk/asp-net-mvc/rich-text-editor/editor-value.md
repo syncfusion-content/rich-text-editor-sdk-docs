@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editor Value in ASP.NET MVC Rich Text Editor | Syncfusion
-description: Learn how to set, retrieve, bind, and manage content in the ASP.NET MVC Rich Text Editor with placeholders, auto save, character count, and source code editing.
+description: Learn how to set, retrieve, bind, and manage content in the ASP.NET MVC Rich Text Editor with placeholders, auto save, character count, and source view.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -21,20 +21,7 @@ You can set the initial content of the Rich Text Editor using the `value` proper
 
 **Retrieving Values**
 
-To retrieve the editor contents, use the value property of Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To retrieve the editor contents, use the `Value` property of the Rich Text Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -44,26 +31,12 @@ To retrieve the editor contents, use the value property of Rich Text Editor.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/retrieve-value/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Auto save
 
-The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [SaveInterval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
+The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. When enabled, the editor saves the content based on the [SaveInterval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -73,7 +46,6 @@ The change event will be triggered if the content has been modified since the la
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/save-interval/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Programmatic Content Access 
 
@@ -95,19 +67,6 @@ To fetch the Rich Text Editor's text content, use `GetText` method.
 
 The [EnableHtmlEncode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlEncode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/razor %}
@@ -116,13 +75,12 @@ The [EnableHtmlEncode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/encoded-editor-value/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Styling Editor Content
 
 By default, the content styles of the Rich Text Editor are not included when retrieving the HTML value from the editor. This can result in the styles not being applied when using the HTML content outside of the editor. To ensure that the styles are correctly applied, you can copy and use the following styles directly in your application: These styles are used in the UI elements of the Rich Text Editor.
 
-N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
+> Make sure to add a CSS class `e-rte-content` to the content container.
 
 ```css
 

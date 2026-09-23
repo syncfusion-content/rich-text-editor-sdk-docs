@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Tailwind Preflight in Angular Rich Text Editor | Syncfusion
-description: Learn here all about integrating Tailwind preflight in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to integrate Tailwind CSS Preflight with the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2.
 platform: rich-text-editor-sdk
-control: Tailwind Preflight Integration
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
@@ -18,13 +18,13 @@ Before proceeding, ensure you have completed the base Rich Text Editor setup des
 
 ## Key features
 
-- Browser normalization: Resets inconsistent default browser styles (margins, headings, lists, form elements) to a predictable baseline.
-- Sensible typography defaults: Provides reasonable defaults for headings, paragraphs, lists, blockquotes, and code blocks so content displays consistently.
-- Easy to override: Rules are intentionally minimal and can be overridden or extended to match your design system.
-- Component compatibility: Safe to layer component or theme styles on top (import component styles after Preflight when necessary).
-- Predictable form styling: Normalizes form elements so utilities and component styles behave consistently across browsers.
+- **Browser normalization**: resets inconsistent default browser styles (margins, headings, lists, form elements) to a predictable baseline.
+- **Sensible typography defaults**: provides reasonable defaults for headings, paragraphs, lists, blockquotes, and code blocks.
+- **Easy to override**: rules are intentionally minimal and can be overridden or extended to match your design system.
+- **Component compatibility**: safe to layer component or theme styles on top (import component styles after Preflight when necessary).
+- **Predictable form styling**: normalizes form elements so utilities and component styles behave consistently across browsers.
 
-## Setup or Installation
+## Setup
 
 Install the required packages for Tailwind CSS using the following commands:
 
@@ -48,7 +48,7 @@ In your global styles file (`src/styles.css`), add the Tailwind directives:
 
 ### Step 2: Isolate Tailwind CSS Preflight from editor content
 
-To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content area, add the preflight‑reset CSS directly into `app.css` or `styles.css`.
+To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content area, add the Preflight reset CSS to your `app.css` or `styles.css` file.
 
 ```css
 .e-rte-content li {
@@ -112,9 +112,9 @@ To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content ar
 
 ```
 
-## Example: Integrate Tailwind CSS with Syncfusion Rich Text Editor
+## Example: Integrate Tailwind CSS with the Syncfusion Rich Text Editor
 
-Here's a complete working example demonstrating Tailwind CSS Preflight integration with the Angular Rich Text Editor:
+The following sample demonstrates Tailwind CSS Preflight integration with the Angular Rich Text Editor:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -136,9 +136,9 @@ Here's a complete working example demonstrating Tailwind CSS Preflight integrati
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/tailwind-preflight" %}
 
-## Configuring Tailwind CSS Preflight Styles with the IFrame Editor
+## Configure Tailwind CSS Preflight styles with the IFrame editor
 
-When the Rich Text Editor is running in IFrame mode (`[iframeMode]="true"`), the editable content is rendered inside a separate document. Tailwind CSS Preflight does not automatically apply inside that IFrame — you must inject the editor-specific reset rules into the IFrame head so content renders as expected.
+When the Rich Text Editor is running in IFrame mode, the editable content is rendered inside a separate document. Tailwind CSS Preflight does not automatically apply inside that IFrame, so you must inject the editor-specific reset rules into the IFrame head.
 
 ### Step 1: Enable IFrame mode
 
@@ -156,16 +156,16 @@ Component example (`app.ts`):
 public iframe: IFrameSettingsModel = { 
     enable: true, 
     resources: {
-        styles:['../styles.css']
+        styles: ['../styles.css']
     }
 };
 ```
 
-> Notes: Using `iframeSettings.styles` is the preferred approach — Syncfusion will load the listed CSS files into the IFrame automatically.
+> **Note:** Using `iframeSettings.styles` is the preferred approach. Syncfusion loads the listed CSS files into the IFrame automatically.
 
 ### Step 2: Add Tailwind directives to your global styles
 
-In `src/styles.css` include Tailwind directives and import Syncfusion theme after them so component styles override Preflight where needed:
+In `src/styles.css`, include the Tailwind directives and import the Syncfusion theme after them so component styles override Preflight where needed:
 
 ```css
 @layer theme, base, components, utilities;
@@ -176,7 +176,7 @@ In `src/styles.css` include Tailwind directives and import Syncfusion theme afte
 
 ### Step 3: Isolate Tailwind CSS Preflight from editor content
 
-To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content area, add the preflight‑reset CSS directly into `styles.css`.
+To prevent Tailwind CSS Preflight from affecting the Rich Text Editor content area, add the Preflight reset CSS to your `styles.css` file.
 
 ```css
 body.e-content li {
@@ -240,7 +240,7 @@ body.e-content ol[style*="list-style-type: lower-roman"]{
 
 ```
 
-### Example: Integrate Tailwind CSS with Syncfusion Rich Text Editor in IFrame mode
+### Example: Integrate Tailwind CSS with the Syncfusion Rich Text Editor in IFrame mode
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -258,8 +258,9 @@ body.e-content ol[style*="list-style-type: lower-roman"]{
   
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/tailwind-preflight" %}
 
-## Additional Resources
+## See also
 
 - GitHub Repository: [Angular Rich Text Editor Examples](https://github.com/SyncfusionExamples/angular-richtexteditor-tailwind/tree/master)
-- Tailwind CSS Preflight Reference: [https://tailwindcss.com/docs/preflight](https://tailwindcss.com/docs/preflight)
-- Angular Rich Text Editor Documentation: [https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started)
+- [Tailwind CSS Preflight Reference](https://tailwindcss.com/docs/preflight)
+- [Angular Rich Text Editor Documentation](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started)
+- [IFrame editing mode](../editor-types/iframe.md)

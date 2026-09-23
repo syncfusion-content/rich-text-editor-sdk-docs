@@ -14,7 +14,7 @@ import {
   PanesDirective,
   SplitterComponent,
 } from '@syncfusion/ej2-react-layouts';
-import * as Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import * as React from 'react';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
        
    We can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/).
        
-   The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content`;
+   The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content`;
   // Rich Text Editor items list
   const items = [
     'Bold', 'Italic', 'StrikeThrough', '|', 'Formats', 'OrderedList', 'UnorderedList', '|',
@@ -56,7 +56,7 @@ function App() {
   }
   async function updateValue() {
     if (rteObj?.contentModule) {
-      srcArea.innerHTML = await Marked.parse(rteObj.contentModule.getEditPanel().value);
+      srcArea.innerHTML = await MarkdownConverter.toHtml(rteObj.contentModule.getEditPanel().value);
     }
   }
   function updateOrientation() {

@@ -18,61 +18,59 @@ You can configure the paste behavior using the [pasteCleanupSettings](https://ej
 
 The [allowedStyles](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#allowedstyles) property lets you define which CSS styles are permitted in pasted content. Any style not in this list is stripped out, ensuring that only desired visual attributes are preserved.
 
-By default, the following styles are allowed:
+By default, the following styles are allowed: `font-weight`, `font-style`, `text-decoration`, and `text-transform`.
 
-['font-weight', 'font-style', 'text-decoration', 'text-transform'].
-
-In the below example, only `font-weight` and `font-style` styles will be retained from the pasted content. All other inline styles will be removed.
+In the following example, only `font-weight` and `font-style` are retained from the pasted content. All other inline styles are removed:
 
 ```typescript
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { PasteCleanupSettingsModel } from '@syncfusion/ej2-blockeditor';
 
 @Component({
-    imports: [ BlockEditorModule ],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
-    </div>`
+    template: `
+        <div class="container" style="margin: 50px;">
+            <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
+        </div>`
 })
-
 export class AppComponent {
-    pasteCleanupSettings: {
+    public pasteCleanupSettings: PasteCleanupSettingsModel = {
         allowedStyles: ['font-weight', 'font-style']
-    }
+    };
 }
 ```
 
 ## Setting denied tags
 
-The [deniedTags](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements like `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
+The [deniedTags](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#deniedtags) property specifies a list of HTML tags to be removed from pasted content. This is useful for stripping potentially problematic elements such as `<script>` or `<iframe>` tags. By default, this property is an empty array, so no tags are removed.
 
-In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
+In the following example, any `<script>` or `<iframe>` tags found in the pasted content are removed, preventing unwanted behavior or styling issues:
 
 ```typescript
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { PasteCleanupSettingsModel } from '@syncfusion/ej2-blockeditor';
 
 @Component({
-    imports: [ BlockEditorModule ],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
-    </div>`
+    template: `
+        <div class="container" style="margin: 50px;">
+            <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
+        </div>`
 })
-
 export class AppComponent {
-    pasteCleanupSettings: {
+    public pasteCleanupSettings: PasteCleanupSettingsModel = {
         deniedTags: ['script', 'iframe']
-    }
+    };
 }
 ```
 
-Below example demonstrates the usage of paste settings that allows only specific styles and also removes the specific tags from the pasted content.
+The example below demonstrates the usage of paste settings that allow only specific styles and also remove specific tags from the pasted content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,57 +87,58 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/paste-cleanup/allowedstyle" %}
 
-## Disable Keep format
+## Disable keep format
 
-By default, the editor retains the formatting of pasted content (e.g., bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor primarily pastes content as plain text, regardless of the `allowedStyles` configuration.
+By default, the editor retains the formatting of pasted content (for example, bold, italics, links). You can disable this by setting the [keepFormat](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#keepformat) property to `false`. When disabled, the editor pastes content as plain text, regardless of the `allowedStyles` configuration:
 
 ```typescript
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { PasteCleanupSettingsModel } from '@syncfusion/ej2-blockeditor';
 
 @Component({
-    imports: [ BlockEditorModule ],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
-    </div>`
+    template: `
+        <div class="container" style="margin: 50px;">
+            <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
+        </div>`
 })
-
 export class AppComponent {
-    pasteCleanupSettings: {
+    public pasteCleanupSettings: PasteCleanupSettingsModel = {
         keepFormat: false
-    }
+    };
 }
 ```
 
-## Allowing plain text
+## Allow plain text
 
-To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#pastesettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+To paste content as plain text, stripping all HTML tags and inline styles, set the [plainText](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/pastecleanupsettingsmodel#plaintext) property to `true` in [pasteCleanupSettings](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#pastecleanupsettings). This ensures that only raw text is inserted, which is ideal for maintaining strict content consistency. By default, this property is `false`.
+
 
 ```typescript
-import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
 import { Component } from '@angular/core';
+import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { PasteCleanupSettingsModel } from '@syncfusion/ej2-blockeditor';
 
 @Component({
-    imports: [ BlockEditorModule ],
+    imports: [BlockEditorModule],
     standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render BlockEditor component. -->
-    <div class="container" style="width: 40px; margin: 50px auto;">
-        <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
-    </div>`
+    template: `
+        <div class="container" style="margin: 50px;">
+            <ejs-blockeditor [pasteCleanupSettings]="pasteCleanupSettings" />
+        </div>`
 })
-
 export class AppComponent {
-    pasteCleanupSettings: {
+    public pasteCleanupSettings: PasteCleanupSettingsModel = {
         plainText: true
-    }
+    };
 }
 ```
 
-Below example demonstrates the usage of paste settings that disables the keep format and allows plain text.
+The example below demonstrates the usage of paste settings that disable keep format and allow plain text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -158,19 +157,29 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 
 ### Events
 
-The Block Editor provides events to monitor and interact with the paste action.
+The Block Editor provides events to monitor and interact with the paste action:
 
-|Name|Args|Description|
-|---|---|---|
-|[beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#beforepastecleanup)|BeforePasteCleanupEventArgs|Triggers before the content is pasted into the editor.|
-|[afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#afterpastecleanup)|AfterPasteCleanupEventArgs|Triggers after the content is pasted into the editor.|
+| Event | Args | Description |
+|-------|------|-------------|
+| [beforePasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#beforepastecleanup) | `BeforePasteCleanupEventArgs` | Triggers before the content is pasted into the editor. |
+| [afterPasteCleanup](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#afterpastecleanup) | `AfterPasteCleanupEventArgs` | Triggers after the content has been pasted into the editor. |
 
-Below snippet demonstrates how to configure above events in the editor.
+Bind the events on the editor element and pass `$event` to your handler if you want to inspect the args:
 
-```typescript
-<ejs-blockeditor (beforePasteCleanup)="onBeforePasteCleanup()" />
+```html
+<ejs-blockeditor
+    (beforePasteCleanup)="onBeforePasteCleanup($event)"
+    (afterPasteCleanup)="onAfterPasteCleanup($event)" />
 ```
 
 ```typescript
-<ejs-blockeditor (afterPasteCleanup)="onAfterPasteCleanup()" />
+import { BeforePasteCleanupEventArgs, AfterPasteCleanupEventArgs } from '@syncfusion/ej2-blockeditor';
+
+public onBeforePasteCleanup(args: BeforePasteCleanupEventArgs): void {
+    // Inspect or rewrite args.blocks before they are inserted.
+}
+
+public onAfterPasteCleanup(args: AfterPasteCleanupEventArgs): void {
+    // React to the inserted content, e.g. log the paste for analytics.
+}
 ```

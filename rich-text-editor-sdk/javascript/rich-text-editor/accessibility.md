@@ -60,20 +60,7 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
 | aria-disabled       | Indicates the disabled state of the ToolBar. |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates the ARIA attributes and accessibility support in the Rich Text Editor:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,32 +72,16 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs1" %}
-{% endif %}
 
 ## Keyboard navigation
 
-The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
+The Rich Text Editor component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 
-For more details on keyboard navigation, refer to the [Keyboard support](./keyboard-support) documentation.
+For detailed information on supported keyboard shortcuts, refer to the [Keyboard support](./keyboard-support) documentation.
 
 ### Customizing shortcut keys
 
-You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#formatter) property. This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -122,7 +93,6 @@ You can customize shortcut keys using the [formatter](https://ej2.syncfusion.com
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/how-to-cs3" %}
-{% endif %}
 
 > We need to import `IHtmlFormatterModel` and `HTMLFormatter` to configure the shortcut key.
 

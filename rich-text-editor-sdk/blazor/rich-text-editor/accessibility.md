@@ -48,7 +48,7 @@ The toolbar of the Blazor Rich Text Editor is assigned the `toolbar` role and su
 | aria-orientation | Indicates the toolbar's orientation. The default value is `horizontal`. |
 | aria-haspopup | Indicates if the toolbar has a popup. When popup mode is enabled, this value is set to `true`. The default is `false`. |
 | aria-disabled | Indicates the disabled state of the toolbar. |
-| aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
+| aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Blazor Rich Text Editor to indicate the popup as a child element. |
 
 For more details on toolbar WAI-ARIA attributes, refer to the [accessibility of Toolbar](https://blazor.syncfusion.com/documentation/toolbar/accessibility) documentation.
 
@@ -56,8 +56,8 @@ The Blazor Rich Text Editor element is assigned the `application` role.
 
 | **Property** | **Functionalities** |
 | --- | --- |
-| role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
-| aria-disabled | Indicates the disabled state of the toolbar. |
+| role="application" | This attribute added to the Blazor Rich Text Editor element describes the actual role of the element. |
+| aria-disabled | Indicates the disabled state of the Rich Text Editor. |
 
 {% tabs %}
 {% highlight razor %}
@@ -79,7 +79,7 @@ For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https
 
 The Blazor Rich Text Editor component's accessibility is validated using the [axe-core](https://www.npmjs.com/package/axe-core) software tool during automated testing.
 
-The accessibility compliance of the Rich Text Editor component is demonstrated in the following sample. Open the [sample](https://blazor.syncfusion.com/accessibility/rich-text-editor) in a new window to evaluate the component with accessibility tools.
+The accessibility compliance of the Blazor Rich Text Editor component is demonstrated in the following sample. Open the [sample](https://blazor.syncfusion.com/accessibility/rich-text-editor) in a new window to evaluate the component with accessibility tools.
 
 N> You can explore the [Blazor Rich Text Editor feature tour page](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) to see its capabilities. You can also refer to the [Blazor Rich Text Editor demo](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) to learn how to render and configure the component and its tools.
 

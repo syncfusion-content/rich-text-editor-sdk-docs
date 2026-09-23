@@ -45,7 +45,7 @@ The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includ
 | --- | --- |
 | role="toolbar" | This attribute added to the toolbar element describes the actual role of the element. |
 | aria-orientation | Indicates the toolbar orientation. Default value is horizontal. |
-| aria-haspopup | Indicates the popup mode of the toolbar. The default value is false. When popup mode is enabled, attribute value has to be changed to true. |
+| aria-haspopup | Indicates the popup mode of the toolbar. The default value is false. When popup mode is enabled, set this attribute to `true`. |
 | aria-disabled | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
@@ -58,19 +58,6 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
 | aria-disabled | Indicates the disabled state of the Rich Text Editor. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility/razor %}
@@ -79,7 +66,6 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/accessibility/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Keyboard Navigation
 

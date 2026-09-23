@@ -9,7 +9,7 @@ documentation: ug
 
 # Real-time Collaboration in ASP.NET Core Block Editor
 
-The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
+The Block Editor supports real-time collaborative editing, letting multiple users edit the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes updates and resolves conflicts automatically.
 
 With collaboration enabled, users can:
 
@@ -31,9 +31,9 @@ A Yjs provider handles the transport of document updates between connected users
 
 | Provider | Type | Use Case |
 | -------- | ---- | -------- |
-| `y-websocket` | Self-hosted | Production deployments with your own WebSocket server. |
-| `y-webrtc` | Peer-to-peer | Quick local testing and development; no server required. |
-| `y-indexeddb` | Local storage | Offline persistence within a single browser. |
+| [y-websocket](https://github.com/yjs/y-websocket) | Self-hosted | Production deployments with your own WebSocket server. |
+| [y-webrtc](https://github.com/yjs/y-webrtc) | Peer-to-peer | Quick local testing and development; no server required. |
+| [y-indexeddb](https://github.com/yjs/y-indexeddb) | Local storage | Offline persistence within a single browser. |
 | [Hocuspocus](https://tiptap.dev/docs/hocuspocus/getting-started/overview) | Open-source server | Scalable Node.js server with pluggable storage and Redis support. |
 | [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
 | [PartyKit](https://www.partykit.io/) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
@@ -108,8 +108,8 @@ Create a provider that connects users to the same shared document. The following
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <script>
-	var WebrtcProvider = window.WebrtcProvider;
-    
+    var WebrtcProvider = window.WebrtcProvider;
+
     var provider = new WebrtcProvider('document-room-id', yDoc);
 </script>
 
@@ -135,7 +135,7 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 
 ## User presence and remote cursors
 
-The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these user presence features, set `enableAwareness` to `true` in `collaborationSettings` property.
+The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these features, set `enableAwareness` to `true` in the `collaborationSettings` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -196,7 +196,7 @@ Retrieve all currently connected users using the `users` property in the block e
 
 ### Enable version history
 
-Configure the `versionHistory` property under `collaborationSettings` property by passing the storage instance and snapshot interval as attributes, similar to the `adapter` and `provider` properties.
+Configure the `versionHistory` property under `collaborationSettings` by passing a settings object that includes the storage instance and snapshot interval, similar to how the `adapter` and `provider` properties are configured. The `snapshotInterval` value (in milliseconds) controls how frequently the editor automatically captures a snapshot of the document.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -299,10 +299,10 @@ Retrieves all saved snapshots or a paginated subset. Snapshots are returned in c
 
 <script>
     // Retrieve all snapshots
-    var snapshots = versionHistory.getSnapshots();
+    var allSnapshots = versionHistory.getSnapshots();
 
     // Retrieve a paginated subset — getSnapshots(skip, take)
-    var snapshots = versionHistory.getSnapshots(20, 40);
+    var pagedSnapshots = versionHistory.getSnapshots(20, 40);
 </script>
 
 {% endhighlight %}
@@ -394,7 +394,7 @@ Imports a previously exported snapshot back into the version history storage.
 
 ### Events
 
-Use the following event callbacks in `versionHistory` settings to respond to snapshot lifecycle events.
+Use the following event callbacks in `versionHistory` settings to respond to snapshot life cycle events.
 
 #### snapshotCreated
 

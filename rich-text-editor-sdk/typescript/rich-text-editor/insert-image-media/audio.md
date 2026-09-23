@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Insert Audios in TypeScript Rich Text Editor
 
-The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
+The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert audio with the following options using the [insertAudioSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 
-## Configuring the audio tool in the toolbar
+## Configuring the audio toolbar item
 
-You can add an `Audio` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
+The audio feature is enabled by adding the `Audio` item to the toolbar using the [toolbarSettings.items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
 
-To configure the `Audio` toolbar item, refer to the below code.
+> To use the audio feature, inject the audio module using the `RichTextEditor.Inject(Audio)` method.
 
-{% if page.publishingplatform == "typescript" %}
+The following example demonstrates configuring the audio toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -31,30 +31,16 @@ To configure the `Audio` toolbar item, refer to the below code.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-url-cs2" %}
-{% endif %}
-
 ## Audio save formats
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
-> The default `saveFormat` property is set to `Blob` format.
+> By default, `saveFormat` is set to `Blob`.
 
-```HTML
+```html
 
 <audio>
-    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" >
+    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="audio/mp3" >
 </audio>
 
 <audio>
@@ -63,37 +49,27 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 ```
 
-## Insert audio from the Web
+## Inserting audio
 
-You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
+You can insert audio from either a hosted link or a local machine by clicking the audio button in the editor's toolbar. A dialog opens allowing you to insert audio from a web URL or upload from your device.
 
 ### Inserting audio from web URLs
 
-By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
+By default, the audio toolbar item opens a dialog for inserting audio from an online source. Entering a valid URL adds it to the `src` attribute of the `<source>` tag.
 
 ![JavaScript Rich Text Editor Audio insert](../images/javascript-richtexteditor-audio-web.png)
 
-## Uploading audio from local machine
+### Uploading audio from local machine
 
-You can use the `browse` option on the audio dialog, to select the audio from the local machine and insert it into the Rich Text Editor content.
+The audio dialog includes a `browse` option to select audio file from a local machine and insert it into the Rich Text Editor content.
 
-If the path field is not specified in the [insertAudioSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings), the audio will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
+If the [insertAudioSettings.path](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings) is not specified, the audio is converted to a `Blob` or `Base64` URL and inserted into the editor.
 
 ## Maximum file size restriction
 
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
-
-```ts
-
-    insertAudioSettings: {
-      maxFileSize: 10000000
-    }
-
-```
+You can restrict audio uploads from your local machine using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB).
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -104,26 +80,16 @@ In the following illustration, the audio size has been validated before uploadin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-size/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-size/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
-
 ## Saving audio to the server
 
-[saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
+### Configuration properties
 
-[saveUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#saveurl) provides URL to map the action result method to save the audio.
-
-[removeUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#removeurl) provides URL to map the action result method to remove the audio.
+| Property | Description |
+|----------|-------------|
+| [saveFormat](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettings#saveformat) | Sets the default save format when audio is inserted (`Blob` or `Base64`) |
+| [saveUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettings#saveurl) | URL endpoint that receives the audio file for server-side processing |
+| [removeUrl](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettings#removeurl) | URL endpoint for deleting audio files from the server |
+| [path](https://ej2.syncfusion.com/documentation/api/rich-text-editor/audiosettingsmodel#path) | Destination path on server where audio files are stored |
 
 ### Server-side action
 
@@ -133,8 +99,6 @@ The selected audio can be uploaded to the required destination using the control
 
 In the following code blocks, the audio module has been injected and can insert the audio files saved in the specified path.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-server/index.ts %}
@@ -143,20 +107,6 @@ In the following code blocks, the audio module has been injected and can insert 
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-server/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-server/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-server/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-
-{% endif %}
 
 ```c#
 
@@ -236,8 +186,6 @@ namespace FileUpload.Controllers
 
 You can use the [insertAudioSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#insertaudiosettings) property, to specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-file-rename/index.ts %}
@@ -246,20 +194,6 @@ You can use the [insertAudioSettings](https://ej2.syncfusion.com/documentation/a
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-file-rename/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-file-rename/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-file-rename/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-
-{% endif %}
 
 To configure server-side handler, refer to the below code.
 
@@ -320,8 +254,6 @@ You can add additional data with the audio uploaded from the Rich Text Editor on
 
 > By default, it doesn't support the `UseDefaultCredentials` property; we need to manually append the default credentials with the upload request.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-authentication/index.ts %}
@@ -330,19 +262,6 @@ You can add additional data with the audio uploaded from the Rich Text Editor on
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-authentication/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-authentication/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-authentication/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ```c#
 
@@ -373,8 +292,6 @@ Sets the default display property for audio when it is inserted in the Rich Text
 
 > The default `layoutOption` property is set to `Inline`.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-display/index.ts %}
@@ -384,26 +301,11 @@ Sets the default display property for audio when it is inserted in the Rich Text
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-display/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/audio-display/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
-
 ## Drag and drop audio insertion
 
 By default, the Rich Text Editor allows you to insert audios by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the audios to the server before inserting into the editor by configuring the saveUrl property.
 
 In the following sample, you can see feature demo.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -415,20 +317,6 @@ In the following sample, you can see feature demo.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs25" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs25/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs25/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs25" %}
-{% endif %}
 
 ### Disabling audio drag and drop
 
@@ -450,10 +338,8 @@ The Rich Text Editor enables customization of the audio quick toolbar, allowing 
 
 By configuring these options in the [quickToolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#quicktoolbarsettings) property, you enhance the editor's capabilities, facilitating seamless management and editing of audio directly within your content. This customization ensures a user-friendly experience for manipulating audio elements efficiently.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
+{% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -462,21 +348,6 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1" %}
-
-{% endif %}
 
 ## See Also
 

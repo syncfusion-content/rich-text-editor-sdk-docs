@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Mail Merge in Vue Rich Text Editor | Syncfusion
-description: Learn how to use and customize the Mail Merge in the Syncfusion Vue Rich Text Editor component of Syncfusion Essential JS 2 and more.
+description: Learn how to create personalized documents in the Vue Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 platform: rich-text-editor-sdk
-control: Mail Merge
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mail merge in Vue Rich Text Editor component
+# Mail Merge in Vue Rich Text Editor
 
-The Rich Text Editor can be customized to implement **Mail Merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
+The Rich Text Editor can be customized to implement **Mail merge** functionality by inserting placeholders into the editor using custom toolbar items. These placeholders are later replaced with actual data to generate personalized content such as letters, invoices, and reports.
 
 This feature simplifies the creation of dynamic documents by allowing users to insert merge fields that are automatically populated with real data during content generation.
 
 ## Adding custom toolbar items for inserting merge fields
 
-To enable mail merge functionality, the Rich Text Editor toolbar is extended with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [toolbarSettings.items](https://helpej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (#insertField and #merge_data).
+To enable mail merge functionality, the Rich Text Editor toolbar is extended with two custom buttons: `Insert Field` and `Merge Data`. These buttons are added using the `template` property in [toolbarSettings.items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettingsmodel#items), which points to custom HTML elements (#insertField and #merge_data).
 
 - **Insert Field:** Opens a dropdown list of merge fields for inserting placeholders like <code>&#123;&#123;FirstName&#125;&#125;</code> into the editor.
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
@@ -135,7 +135,7 @@ export default {
     data: function() {
         return {
             fieldsData: { text: 'text', value: 'value' },
-            mentionChar: <code>&#123;&#123;</code>,
+            mentionChar: '{{',
             mergeData: [
                 { text: 'First Name', value: 'FirstName' },
                 { text: 'Last Name', value: 'LastName' },
@@ -168,7 +168,7 @@ When the **Merge Data** button is clicked, the editor content is processed to re
 {% raw %}
 
 <template>
-    <button class="e-control e-lib e-btn e-formats-tbar-btn e-rte-elements e-tbar-btn e-tbar-btn" tabindex="-1" id="merge_data" style="width: 100%" @click="onClickHandler">
+    <button class="e-control e-lib e-btn e-formats-tbar-btn e-rte-elements e-tbar-btn" tabindex="-1" id="merge_data" style="width: 100%" @click="onClickHandler">
             <span style="display: inline-flex"><span class="e-tbar-btn-text">Merge Data</span></span>
     </button>
 </template>

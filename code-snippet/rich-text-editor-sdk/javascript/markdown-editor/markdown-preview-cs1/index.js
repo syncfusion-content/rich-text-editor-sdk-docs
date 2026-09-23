@@ -2,7 +2,7 @@ ej.base.enableRipple(true);
 
 var textArea;
 var srcArea;
-
+var markdownConverter = ej.markdownconverter.MarkdownConverter;
 var splitObj = new ej.layouts.Splitter({
   height: '450px',
   resizing: onResizing,
@@ -68,7 +68,7 @@ function onCreate() {
   srcArea = document.querySelector('.source-code');
 }
 function updateValue() {
-  srcArea.innerHTML = marked(markdownRTE.contentModule.getEditPanel().value);
+  srcArea.innerHTML = markdownConverter.toHtml(markdownRTE.contentModule.getEditPanel().value, { lineBreak: true });
 }
 function updateOrientation() {
   if (ej.base.Browser.isDevice) {

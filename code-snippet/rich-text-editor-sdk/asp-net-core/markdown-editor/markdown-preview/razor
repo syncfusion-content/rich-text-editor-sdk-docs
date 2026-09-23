@@ -97,12 +97,13 @@
 
 </style>
 <script>
-  var rteObj, textArea, srcArea, splitObj;
+  var rteObj, textArea, srcArea, splitObj, markdownConverter;
     function onCreate() {
         rteObj = this;
-        loadExternalFile();
+        markdownConverter = ej.markdownconverter.MarkdownConverter;
         textArea = rteObj.contentModule.getEditPanel();
         srcArea = document.querySelector('.source-code');
+        updateValue();
         setTimeout(() => { rteObj.refreshUI(); },10)
     }
     function onChange() {
@@ -112,7 +113,7 @@
         rteObj.refreshUI();
     }
     function updateValue(e) {
-        srcArea.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+        srcArea.innerHTML = markdownConverter.toHtml(rteObj.contentModule.getEditPanel().value, { lineBreak: true });
     }
     function onCreateSplitter() {
         splitObj = this;
@@ -121,14 +122,5 @@
             splitObj.orientation = 'Vertical';
             document.body.querySelector('.heading').style.width = 'auto';
         }
-    }
-    function loadExternalFile() {
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
-        script.onload = function () {
-            updateValue();
-        };
-        document.getElementsByTagName('head')[0].appendChild(script);
     }
 </script>

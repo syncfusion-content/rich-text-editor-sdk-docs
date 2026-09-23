@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Implement Ctrl+S Shortcut to Save Content in Angular Rich Text Editor
 
-To implement this functionality, you need to bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>S</kbd> key press using the keyCode.
+To implement this functionality, need to bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>S</kbd> key press using the keyCode.
 
 In the `keydown` event handler, the `updateValue` method is called to update the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#value) property, and then you can save the content to the required database using the same.
 

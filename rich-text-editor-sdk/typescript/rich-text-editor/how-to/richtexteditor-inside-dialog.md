@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Rich Text Editor in TypeScript Dialog | Syncfusion
+title: Render TypeScript Rich Text Editor in Dialog | Syncfusion
 description: Learn how to render the TypeScript Rich Text Editor inside a Dialog component and refresh the editor UI for proper toolbar rendering.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -8,13 +8,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Render Rich Text Editor in TypeScript Dialog
+# Render TypeScript Rich Text Editor in Dialog
 
 When rendering the Rich Text Editor inside a Dialog control, the dialog container and its wrapper elements are initially styled with `display: none`. This styling prevents the editor's toolbar from calculating the proper offset width. As a result, the toolbar may render incorrectly, appearing above the edit area container.
 
-To resolve this issue, we can utilize the [refreshUI](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/documentation/api/dialog/index-default#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
-
-{% if page.publishingplatform == "typescript" %}
+To resolve this issue, use the [refreshUI](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#refreshui) method of the Rich Text Editor in conjunction with the [open](https://ej2.syncfusion.com/documentation/api/dialog/index-default#open) event. This approach ensures that the Rich Text Editor's UI is properly refreshed and rendered once the Dialog is visible.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -26,17 +24,3 @@ To resolve this issue, we can utilize the [refreshUI](https://ej2.syncfusion.com
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/richtexteditor-inside-dialog" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/richtexteditor-inside-dialog/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/richtexteditor-inside-dialog/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/richtexteditor-inside-dialog" %}
-{% endif %}

@@ -13,26 +13,13 @@ The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire 
 
 You can enable fullscreen mode using the FullScreen icon toolbar button. Once activated, the editor transitions into fullscreen view, hiding other page elements and maximizing the editing area.
 
-## How it works
+## How fullscreen mode works
 
 Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled, the editor:
 
 - Expands to fill the entire browser window.
 - Adjusts its layout to optimize space for content and tools.
 - Can be exited by clicking the same icon again or pressing the `Esc` key.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/fullscreen/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/fullscreen/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,4 +29,3 @@ Click the fullscreen icon in the toolbar to toggle fullscreen mode. When enabled
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/fullscreen/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

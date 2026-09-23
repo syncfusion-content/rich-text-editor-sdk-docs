@@ -24,7 +24,7 @@ WProofreader is a powerful tool that enhances content quality by detecting and c
 
 ## Set up the WProofreader
 
-For integrating the `WProofreader` refer the following link : https://webspellchecker.com, you need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
+For integrating the `WProofreader`, refer to the following link: https://webspellchecker.com. You need to install the `@webspellchecker/wproofreader-sdk-js` package using NPM or Yarn:
 
 ```bash
 npm install @webspellchecker/wproofreader-sdk-js
@@ -48,19 +48,6 @@ After installing the package, you can integrate WProofreader with the Rich Text 
 
 Below is an example code snippet to integrate WProofreader with the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/spell-check-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/spell-check-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/spell-check-cs1/index.js %}
@@ -69,8 +56,6 @@ Below is an example code snippet to integrate WProofreader with the Rich Text Ed
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/spell-check-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 Below is a GIF demonstrating how to integrate WProofreader with the Rich Text Editor.
 

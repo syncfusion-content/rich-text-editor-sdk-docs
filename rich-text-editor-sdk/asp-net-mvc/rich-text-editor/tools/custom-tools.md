@@ -37,19 +37,6 @@ The Rich Text Editor provides options to customize tool functionalities. Use the
 
 This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking on this icon opens a dialog where you can insert special characters into the editor. It also shows how to enable undo and redo functionalities.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-tool/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-tool/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-tool/razor %}
@@ -58,7 +45,6 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-tool/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > When rendering any control for the custom toolbar, like a dropdown, the focus may be lost, causing it to render outside the Rich Text Editor and triggering a blur event. This can interfere with proper functionalities like cursor focus. To prevent this issue, it is recommended to assign the `e-rte-elements` class to the control rendered in the custom toolbar.
 
@@ -66,4 +52,4 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 
 You can use the `enableToolbarItem` and `disableToolbarItem` methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
->You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
+> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.

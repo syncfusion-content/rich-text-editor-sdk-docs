@@ -10,11 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # File size in TypeScript Rich text editor
 
-By using the Rich text editor's `imageUploading` event, you can get the image size before uploading and restrict the image to upload, when the given image size is greater than the allowed size.
+By using the Rich Text Editor's `imageUploading` event, you can get the image size before uploading and restrict the image from being uploaded when the given image size is greater than the allowed size.
 
-In the following, we have validated the image size before uploading and determined whether the image has been uploaded or not.
-
-{% if page.publishingplatform == "typescript" %}
+In the following example, we have validated the image size before uploading and determined whether the image has been uploaded or not.
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -26,17 +24,3 @@ In the following, we have validated the image size before uploading and determin
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-check-file-size-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-check-file-size-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-check-file-size-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-check-file-size-cs1" %}
-{% endif %}

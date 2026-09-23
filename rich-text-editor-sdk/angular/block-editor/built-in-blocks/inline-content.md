@@ -179,7 +179,7 @@ Mentions are typically triggered by the `@` character and are linked to the [use
 }
 ```
 
-The sample below also configures the editor's `users` and `labelSettings` inputs so that `Mention` and `Label` items resolve correctly:
+The sample below also configures the editor's `users` and `labelSettings` properties so that `Mention` and `Label` items resolve correctly:
 
 ```html
 <ejs-blockeditor id="blockeditor"

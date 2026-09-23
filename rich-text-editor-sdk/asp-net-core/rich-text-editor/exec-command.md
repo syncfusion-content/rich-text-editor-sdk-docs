@@ -7,9 +7,9 @@ platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Execute Command in ASP.NET Core Rich text editor
+# Execute Command in ASP.NET Core Rich Text Editor
 
-In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area. The executeCommand will perform the following commands.
+In the Rich Text Editor, `executeCommand` is used to perform commands that modify the content in the editable area. The `executeCommand` method supports the following commands.
 
 | Commands | Description | Code snippets |
 |----------------|---------| -----------|
@@ -20,7 +20,7 @@ In Rich Text Editor, executeCommand used to perform commands for the modificatio
 | superscript | Makes the selected text as superscript (higher). |`rteObj.executeCommand('superscript');`|
 | subscript | Makes the selected text as subscript (lower). |`rteObj.executeCommand('subscript');`|
 | uppercase | Change the case of selected text to upper  in the content. |`rteObj.executeCommand('uppercase');`|
-| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('uppercase');`|
+| lowercase | Change the case of selected text to lower in the content. |`rteObj.executeCommand('lowercase');`|
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
@@ -29,7 +29,7 @@ In Rich Text Editor, executeCommand used to perform commands for the modificatio
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
 | justifyLeft | Align the content with left margin. | `rteObj.executeCommand('justifyLeft');`|
-| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyLeft');`|
+| justifyRight | Align the content with right margin. | `rteObj.executeCommand('justifyRight');`|
 | undo | Allows to undo the actions. | `rteObj.executeCommand('undo');`|
 | createLink | Creates a hyperlink to a text or image to a specific location in the content. | `rteObj.executeCommand('createLink',{ text: 'Links', url: 'http://', title : 'Link' });` |
 | indent | Allows to increase the indent level of the content. | `rteObj.executeCommand('indent');`|

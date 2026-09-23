@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar Items in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn about all available toolbar items in the ASP.NET MVC Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
+description: Learn about the built-in toolbar items in the ASP.NET MVC Rich Text Editor, including text formatting, images, tables, links, lists, and customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -32,11 +32,11 @@ It provides tools for applying text styles such as bold, italic, underline, stri
 | Underline | ![Underline icon](../images/under-line.png) | The underline is added to the selected text. | toolbarSettings: { items: ['Underline']} |
 | StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Apply double line strike through formatting for the selected text. |toolbarSettings: { items: ['StrikeThrough']}|
 | ClearFormat | ![ClearFormat icon](../images/clear-format.png) | The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles.|toolbarSettings: { items: ['ClearFormat']}|
-| Blockquote | ![Blockquote icon](../images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toobarSettings: { items: ['Blockquote']}|
+| Blockquote | ![Blockquote icon](../images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toolbarSettings: { items: ['Blockquote']}|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Makes the selected text as subscript (lower).|toolbarSettings: { items: ['SubScript']}|
 | SuperScript | ![SuperScript icon](../images/super-script.png) | Makes the selected text as superscript (higher).|toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) | Change the case of selected text to lower in the content. |toolbarSettings: { items: ['LowerCase']}|
-| UpperCase | ![UpperCase icon](../images/upper-case.png) | Change the case of selected text to upper  in the content.|toolbarSettings: { items: ['UpperCase’']}|
+| UpperCase | ![UpperCase icon](../images/upper-case.png) | Change the case of selected text to upper in the content. | toolbarSettings: { items: ['UpperCase']} |
 
 ### Font & styling
 
@@ -146,7 +146,7 @@ Horizontal lines visually separate sections of content in the editor, enhancing 
 
 | Name | Icons | Summary | Initialization |
 |----------------|---------|---------|------------------------------------------|
-| Horizontal Line | ![HorizontalLine icon](../../images/horizontal-icon.png) | Allows you to insert horizontal line.|toolbarSettings: { items: ['HorizontalLine']} |
+| Horizontal Line | ![HorizontalLine icon](../images/horizontal-icon.png) | Allows you to insert horizontal line.|toolbarSettings: { items: ['HorizontalLine']} |
 
 ### Undo & redo
 
@@ -176,19 +176,6 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 Remove the build-in tools from the toolbar by using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/razor %}
@@ -197,4 +184,3 @@ Remove the build-in tools from the toolbar by using the [toolbarSettings](https:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/remove-buildin-tool/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

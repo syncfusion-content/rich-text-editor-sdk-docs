@@ -1,52 +1,54 @@
 ---
 layout: post
-title: Tab component in Rich text editor component | Syncfusion
-description: Learn about tab integration in the Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Tab Component in Angular Rich Text Editor component | Syncfusion
+description: Learn how to integrate the Syncfusion Tab component with the Angular Rich Text Editor component of Syncfusion Essential JS 2.
 platform: rich-text-editor-sdk
-control: tab
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Integrate Tab component into the Angular Rich Text Editor
 
-The integration of Tab component with Rich Text Editor component offers versatile functionality for content management scenarios. Users can leverage this combination for multi-document editing where different tabs contain separate RTE instances, allowing simultaneous work on multiple content pieces without context switching.
+Integrating the Tab component with the Rich Text Editor offers versatile functionality for content management scenarios. Use this combination for multi-document editing where different tabs contain separate Rich Text Editor instances, letting you work on multiple content pieces simultaneously without context switching.
 
 ## Prerequisites
-Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with angular Rich Text Editor](getting-started.md).
+
+Before proceeding, complete the base Rich Text Editor setup described in the Getting Started guide. The guide covers Angular CLI setup, package installation, CSS imports, module injection, and basic editor markup: [Getting Started with Angular Rich Text Editor](getting-started.md).
 
 ## Key features
 
-- Provides organized content display – Tabs group different sections of the editor (e.g., formatting options, media insertion, code view) neatly, reducing clutter.
-- Provides scalability – New features or plugins can be added as separate tabs without disrupting the existing editor layout.
-- Offers consistency across UI – Tabs establish a familiar navigation pattern, aligning with modern UI/UX practices and making the editor intuitive.
+- **Organized content display**: Tabs group different sections of the editor (e.g., formatting options, media insertion, code view), reducing clutter.
+- **Scalability**: New features or plugins can be added as separate tabs without disrupting the existing editor layout.
+- **Consistent UI**: Tabs establish a familiar navigation pattern, aligning with modern UI/UX practices and making the editor intuitive.
 
-## Setup the Tab Component
+## Set up the Tab component
 
-Install the Tabs package if not present:
+Install the Tab package if not present:
 
 ```bash
 npm install @syncfusion/ej2-angular-navigations
 ```
 
-## Configure Tab component for the Rich Text Editor
+## Configure the Tab component for the Rich Text Editor
 
-Step 1: Import packages and providers
-Import TabModule together with RichTextEditorModule and provide the editor services in the component:
+### Step 1: Import packages and register providers
 
-``` typescript
-import { TabModule } from '@syncfusion/ej2-angular-navigations'
+Import `TabModule` together with `RichTextEditorModule` and register the editor services in the component:
+
+```typescript
+import { TabModule } from '@syncfusion/ej2-angular-navigations';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 ```
 
+### Step 2: Configure Tabs and the Rich Text Editor
 
-Step 2: Configure Tabs and RTE
-
-``` html
+```html
 <ejs-tab>
   <e-tabitems>
     <e-tabitem>
       <ng-template #headerText>
-        <div> RichTextEditor Tab 1 </div>
+        <div>RichTextEditor Tab 1</div>
       </ng-template>
       <ng-template #content>
         <ejs-richtexteditor></ejs-richtexteditor>
@@ -54,7 +56,7 @@ Step 2: Configure Tabs and RTE
     </e-tabitem>
     <e-tabitem>
       <ng-template #headerText>
-        <div> RichTextEditor Tab 2 </div>
+        <div>RichTextEditor Tab 2</div>
       </ng-template>
       <ng-template #content>
         <ejs-richtexteditor></ejs-richtexteditor>
@@ -63,11 +65,12 @@ Step 2: Configure Tabs and RTE
   </e-tabitems>
 </ejs-tab>
 ```
-> Note: It is recommended to use ng-template inside the tab component for smooth rendering of the rich text editor.
 
-## Example for tab integration
+> **Note:** Use `ng-template` inside the Tab component for smooth rendering of the Rich Text Editor.
 
-Below is the example integration of tab with the Angular Rich Text Editor.
+## Example for Tab integration
+
+The following sample demonstrates the Tab integration with the Angular Rich Text Editor.
 
 ```
 

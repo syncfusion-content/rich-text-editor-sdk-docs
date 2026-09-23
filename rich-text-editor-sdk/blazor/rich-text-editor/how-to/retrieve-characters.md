@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to Get Character Count in Blazor RichTextEditor | Syncfusion®
-description: Learn how to retrieve the character count in Blazor RichTextEditor component with examples and detailed steps.
+title: How to Get Character Count in Blazor Rich Text Editor | Syncfusion®
+description: Learn how to retrieve the character count in Blazor Rich Text Editor component with examples and detailed steps.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
-# Retrieve the number of characters
+# Get Character Count in Blazor Rich Text Editor
 
-To retrieve the number of characters in the Rich Text Editor content, use the [GetCharCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetCharCountAsync) method.
+To retrieve the number of characters in the Blazor Rich Text Editor content, use the [GetCharCountAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.SfRichTextEditor.html#Syncfusion_Blazor_RichTextEditor_SfRichTextEditor_GetCharCountAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -32,7 +32,7 @@ To retrieve the number of characters in the Rich Text Editor content, use the [G
     private string Content;
     private bool Visibility = false;
     private string Header = "Rich Text Editor's Value";
-    private string RteValue = @"<p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p><p><b>Get started Quick Toolbar to click on the image</b></p><p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p><img alt='Logo' style='width: 300px; height: 300px; transform: rotate(0deg);' src='https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Portrait.png' />";
+    private string RteValue = @"<p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p><p><b>Get started Quick Toolbar to click on the image</b></p><p>It is possible to add custom style on the selected image inside the Blazor Rich Text Editor through quick toolbar.</p><img alt='Logo' style='width: 300px; height: 300px; transform: rotate(0deg);' src='https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Portrait.png' />";
     private async Task GetCharCount()
     {
         double charCount = await this.RteObj.GetCharCountAsync();

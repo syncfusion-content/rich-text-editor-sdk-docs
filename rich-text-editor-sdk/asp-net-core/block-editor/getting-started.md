@@ -10,9 +10,14 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Block Editor
 
-This section briefly explains how to include the [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section explains how to add the [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control to your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
-> **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, CodeStudio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
+**Prerequisites:**
+- .NET 6.0 or later (compatible up to .NET 10.0)
+- Visual Studio 2019 or later with ASP.NET and web development workload
+- Basic familiarity with ASP.NET Core Razor Pages
+
+> **AI Coding Assistant:** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
 ## Create an ASP.NET Core Web App with Razor pages
 
@@ -20,9 +25,15 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core packages
 
-To add [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.BlockEditor](https://www.nuget.org/packages/Syncfusion.AspNetCore.BlockEditor/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add the [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor) control to your application, open the NuGet Package Manager in Visual Studio by going to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*. Search for and install the following packages:
+- [Syncfusion.AspNetCore.BlockEditor](https://www.nuget.org/packages/Syncfusion.AspNetCore.BlockEditor/)
+- [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/)
 
-Alternatively, you can install the same package using the Package Manager Console with the following command.
+All Syncfusion ASP.NET Core packages are available at [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). For more information, see the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) documentation.
+
+**Note:** The version placeholder `{{ site.releaseversion }}` will be replaced with the actual version during documentation build. For the latest version, check the [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes).
+
+Alternatively, install the packages using the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager Console" %}
@@ -31,7 +42,7 @@ Install-Package Syncfusion.AspNetCore.BlockEditor -Version {{ site.releaseversio
 Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
 
 ## Add the ASP.NET Core Tag Helpers
 

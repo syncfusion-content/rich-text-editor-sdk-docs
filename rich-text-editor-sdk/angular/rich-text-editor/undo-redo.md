@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Undo and Redo in Angular Rich Text Editor
 
-The Undo and Redo features in the Rich Text Editor allowing you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
+The Undo and Redo features in the Rich Text Editor allow you to reverse or restore recent changes, providing a safety net for text edits and enhancing the overall editing experience.
 
 There are two ways to perform Undo and Redo operations:
 
@@ -19,14 +19,13 @@ There are two ways to perform Undo and Redo operations:
    - **Undo**: `Ctrl + Z` (Windows) or `Cmd + Z` (Mac)
    - **Redo**: `Ctrl + Y` (Windows) or `Cmd + Shift + Z` (Mac)
 
-## Configuring Undo/Redo timer
+## Configure the Undo/Redo timer
 
-By default, the time interval for storing Undo/Redo actions is 300 milliseconds. You can adjust this interval using the [undoRedoTimer](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#undoredotimer) property.
+By default, the time interval for storing Undo/Redo actions is 300 milliseconds. You can adjust this interval using the [`undoRedoTimer`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#undoredotimer) property.
 
+## Configure the Undo/Redo steps
 
-## Configuring Undo/Redo steps
-
-The [undoRedoSteps](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#undoredosteps) property defines the maximum number of Undo/Redo actions stored, allows up to 30. 
+The [`undoRedoSteps`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#undoredosteps) property defines the maximum number of Undo/Redo actions stored, allowing up to 30 actions .
 
 Here's an example of how to customize both the Undo/Redo timer and steps:
 
@@ -42,11 +41,11 @@ Here's an example of how to customize both the Undo/Redo timer and steps:
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs21" %}
 
-## Clearing the Undo/Redo stack
+## Clear the Undo/Redo stack
 
-The Rich Text Editor automatically maintains an undo/redo stack, allowing users to revert or redo changes made during editing.
+The Rich Text Editor automatically maintains an undo/redo stack, letting you revert or redo changes made during editing.
 
-To clear the entire undo and redo stack, use the public [clearUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#clearundoredo) method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
+To clear the entire undo and redo stack, use the public [`clearUndoRedo`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#clearundoredo) method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
 
 The following example demonstrates clearing the stack:
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Block Editor
 
-This section briefly explains about how to include `ASP.NET MVC BlockEditor` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the `ASP.NET MVC BlockEditor` control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -114,6 +114,6 @@ I> Replace the existing content in the Index.cshtml file by pasting the above co
 
 ## Run the application
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Block Editor control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The app launches at `https://localhost:<port>/` (IIS Express auto-assigns the port); the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Block Editor control will be rendered in the default web browser.
 
 ![ASP.NET MVC Block Editor Control](images/block-editor-control.png)

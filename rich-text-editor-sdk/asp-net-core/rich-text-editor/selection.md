@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in ASP.NET Core Rich Text Editor | Syncfusion
-description:  Learn how to select text, nodes, table cells, and content programmatically in the ASP.NET Core Rich Text Editor for advanced editing workflows.
+description: Learn how to select text, nodes, table cells, and content programmatically in the ASP.NET Core Rich Text Editor for advanced editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -15,8 +15,6 @@ The Rich Text Editor supports character range-based text selection using the **S
 
 This functionality is useful for scenarios where precise text selection is needed for operations such as copying, formatting, or analysis.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/selection/tagHelper %}
@@ -26,25 +24,11 @@ This functionality is useful for scenarios where precise text selection is neede
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/selection/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Node selection
 
 Node selection allows users to programmatically select entire HTML elements (nodes) such as paragraphs, images, or tables within the Rich Text Editor. This is useful when you want to highlight or manipulate specific content blocks without relying on manual user selection.
 
 The following example demonstrates how to select a paragraph node programmatically using the browser's native `Range` and `Selection` API.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -55,25 +39,11 @@ The following example demonstrates how to select a paragraph node programmatical
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/node-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/node-selection/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Cell selection
 
 Cell selection allows users to programmatically select specific table cells within the Rich Text Editor. This is useful for highlighting or manipulating content inside tables without requiring manual user interaction.
 
 The following example demonstrates how to select a table cell programmatically using the browser's native `Range` and `Selection` APIs.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -84,23 +54,9 @@ The following example demonstrates how to select a table cell programmatically u
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/cell-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/cell-selection/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Select all content
 
 To select all content within the Rich Text Editor, use the `selectAll` method. This method highlights all the text and elements inside the editor, allowing users to perform actions such as formatting or deleting the entire content.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -110,15 +66,3 @@ To select all content within the Rich Text Editor, use the `selectAll` method. T
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/select-all/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/select-all/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/select-all/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

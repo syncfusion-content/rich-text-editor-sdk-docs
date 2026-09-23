@@ -62,11 +62,11 @@ The `Video` toolbar item opens a dialog with options to insert videos via an emb
 
 ### Inserting video from web URL
 
-You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
+Switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option adds the video URL as the `src` attribute of the `<source>` tag and provides direct video file playback.
 
 ![Angular Rich Text Editor Video insert](../images/angular-richtexteditor-video-web.png)
 
-## Uploading video from a local machine
+## Uploading video from local machine
 
 The video dialog includes a `browse` option to select video files from a local machine and insert it into the Rich Text Editor content.
 
@@ -74,7 +74,7 @@ If the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentati
 
 ## Restricting maximum file size
 
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict video uploads from your local machine using the [insertVideoSettings.maxFileSize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videosettings#maxfilesize) property. By default, the maximum file size is 300000000 bytes.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
 

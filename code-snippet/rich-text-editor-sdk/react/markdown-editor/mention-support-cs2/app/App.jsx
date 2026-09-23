@@ -1,7 +1,7 @@
 import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
 import { Image, Inject, Link, Table, MarkdownEditor, IToolbarItems, ToolbarSettingsModel, MarkdownFormatter, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
-import * as Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import { MentionComponent } from '@syncfusion/ej2-react-dropdowns';
 
 function App() {
@@ -132,8 +132,9 @@ function App() {
       if (mdsource.classList.contains('e-active')) {
         let id = rteObj.getID() + 'html-view';
         let htmlPreview = rteObj.element.querySelector('#' + id);
-        htmlPreview.innerHTML = Marked.marked(
-          rteObj.contentModule.getEditPanel().value
+        htmlPreview.innerHTML = MarkdownConverter.toHtml(
+          rteObj.contentModule.getEditPanel().value,
+          { lineBreak: true }
         );
       }
     }
@@ -156,8 +157,9 @@ function App() {
         }
         textArea.style.display = 'none';
         htmlPreview.style.display = 'block';
-        htmlPreview.innerHTML = Marked.marked(
-          rteObj.contentModule.getEditPanel().value
+        htmlPreview.innerHTML = MarkdownConverter.toHtml(
+          rteObj.contentModule.getEditPanel().value,
+          { lineBreak: true }
         );
         mdsource.parentElement.title = 'Code View';
       }

@@ -12,25 +12,12 @@ documentation: ug
 
 The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload gets success, the attachment link inserts into the content.
 
-In the below sample, configure the saveUrl and path properties to achieve file attachments.
+In the below sample, configure the `saveUrl` and `path` properties to achieve file attachments.
 
-        1. saveUrl: Provides service URL to save the files.
-        2. path: Specifies the location to store the image.
+1. `saveUrl`: Provides the service URL to save the files.
+2. `path`: Specifies the location where the uploaded file will be stored.
 
 The following sample illustrates how to attach a file in the Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/file-attachment/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/file-attachment/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -40,11 +27,10 @@ The following sample illustrates how to attach a file in the Rich Text Editor.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/file-attachment/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
-To config server-side handler, refer the below code.
+To configure the server-side handler, refer to the following code.
 
 ``` csharp
 int x = 0;

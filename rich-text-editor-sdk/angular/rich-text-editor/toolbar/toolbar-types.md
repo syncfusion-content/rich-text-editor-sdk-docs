@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Toolbar Types in Angular Rich Text Editor
 
-The Syncfusion Angular Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
+The Rich Text Editor toolbar provides formatting, styling, and editing tools. Use the [type](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) field in the [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings) property to change the toolbar layout.
 
 > To use toolbar feature, configure `ToolbarService` in the provider section.
 
@@ -20,16 +20,11 @@ To get start quickly about customizing the toolbar in Angular Rich Text Editor c
 
 ## Toolbar types
 
-The Rich Text Editor allows you to configure different types of toolbar using [type](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) field in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings) property. The types of toolbar are:
-
-1. Expand 
-2. MultiRow
-3. Scrollable
-4. Popup
+The accepted values for `type` are `Expand` (default), `MultiRow`, `Scrollable`, and `Popup`. Use the value that matches the layout you need.
 
 ## Expanding the toolbar
 
-The default mode of the toolbar is `Expand`, configured through [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) with `type: 'Expand'`. This mode hides any overflowing toolbar items in the next row, which can viewed by clicking the expand arrow.
+Setting the `type` to `Expand` in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) groups the toolbar items so that they fit on a single row. Items that do not fit are collapsed into an expand menu.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,7 +40,7 @@ The default mode of the toolbar is `Expand`, configured through [toolbarSettings
 
 ## Configuring a multi-row toolbar
 
-Setting the `type` as `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
+Setting the `type` to `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#type) arranges the toolbar items across multiple rows, displaying every configured toolbar item without collapsing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,7 +88,9 @@ Setting the `type` to `Popup` in [toolbarSettings](https://ej2.syncfusion.com/an
 
 ## Creating a sticky toolbar
 
-By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#floatingtoolbaroffset) to adjust its offset from the top of the document.
+By default, the toolbar remains fixed at the top of the Rich Text Editor when the page is scrolled. You can enable or disable this behavior using the [enableFloating](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#enablefloating) property of [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings). The default value is `true`.
+
+To control the vertical distance (in pixels) between the sticky toolbar and the top of the viewport, set [floatingToolbarOffset](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/index-default#floatingtoolbaroffset) to a numeric value. The default is `0`.
 
 Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarsettings#enablefloating) property.
 
@@ -111,6 +108,7 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 
 ## See also
 
-* [Customizing Rich Text Editor Toolbar Styles](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/style#customizing-the-rich-text-editors-toolbar)
-* [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-types/inline-editing)
+
+* [Toolbar Position in Angular Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/angular/rich-text-editor/toolbar/toolbar-position)
+* [Quick Toolbars in Angular Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/angular/rich-text-editor/toolbar/quick-toolbar)
 * [Customizing Accessibility Shortcut Keys](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility#keyboard-interaction)

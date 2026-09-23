@@ -27,20 +27,7 @@ To right-align your text, place the cursor in the desired paragraph or select an
 * Align Justify:
 To fully justify your text, place the cursor in the desired paragraph or select any text within it, then click the `Align Justify` icon in the toolbar. This will distribute the entire paragraph evenly across the line, aligning it with both the left and right margins.
 
-Please refer to the sample and code snippets below to add these alignment options in the Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Refer to the sample below to add these alignment options in the Rich Text Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -50,4 +37,3 @@ Please refer to the sample and code snippets below to add these alignment option
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/text-alignments/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

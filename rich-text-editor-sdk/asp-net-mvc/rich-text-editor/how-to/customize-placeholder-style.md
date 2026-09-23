@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize Placeholder Style in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Customize Placeholder in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to customize the placeholder text style in the ASP.NET MVC Rich Text Editor using CSS classes to modify its appearance.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-control: Customize Placeholder Style
 documentation: ug
 ---
 
@@ -12,19 +11,6 @@ documentation: ug
 # Customize Placeholder Text Style in ASP.NET MVC Rich Text Editor
 
 By using `e-rte-placeholder` class, you can customize the placeholder style.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,5 +20,4 @@ By using `e-rte-placeholder` class, you can customize the placeholder style.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/placeholder/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 

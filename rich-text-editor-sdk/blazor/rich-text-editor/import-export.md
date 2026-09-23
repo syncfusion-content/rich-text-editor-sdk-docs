@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Import and Export Content in Blazor Rich Text Editor | Syncfusion®
-description: Learn how to import Word documents and export Blazor Rich Text Editor content to PDF and Word formats in React applications.
+title: Import and Export Content Blazor Rich Text Editor | Syncfusion®
+description: Learn how to import Word documents and export content to PDF and Word formats in Blazor Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Import to HTML file
 
-The Rich Text Editor allows you to load an external HTML file in the editor's content, which contains the text with styling and images. Read the HTML file from your path using the [Stream Reader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader?view=net-6.0) class and assign it to the editor with the `@bind-Value` property.
+The Rich Text Editor allows you to load an external HTML file in the editor's content, which contains the text with styling and images. Read the HTML file from your path using the [StreamReader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader) class and assign it to the editor with the `@bind-Value` property.
 
 {% tabs %}
 {% highlight razor %}
@@ -20,9 +20,9 @@ The Rich Text Editor allows you to load an external HTML file in the editor's co
 @using Syncfusion.Blazor.RichTextEditor
 
 <SfRichTextEditor @bind-Value="@HtmlString">
-    <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
-    <p><b>Get started Quick Toolbar to click on the image</b></p>
-    <p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
+    <p>Rich Text Editor allows you to insert images from an online source as well as from a local computer where you want to insert the image in your content.</p>
+    <p><b>Get started with the Quick Toolbar to click on the image</b></p>
+    <p>It is possible to add a custom style to the selected image inside the Rich Text Editor through the Quick Toolbar.</p>
 </SfRichTextEditor>
 
 @code { 
@@ -89,7 +89,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/import-rtf-file
 
 ## Import text file to editor
 
-The Rich Text Editor allows you to load an external text file into the editor. Read the text file from your path using the [Stream Reader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader?view=net-6.0) class and assign it to the editor with the `@bind-Value` property.
+The Blazor Rich Text Editor allows you to load an external text file into the editor. Read the text file from your path using the [Stream Reader](https://learn.microsoft.com/en-us/dotnet/api/system.io.streamreader?view=net-6.0) class and assign it to the editor with the `@bind-Value` property.
 
 {% tabs %}
 {% highlight razor %}
@@ -131,11 +131,11 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/import-text-fil
 
 ## Importing content from Microsoft Word
 
-The Rich Text Editor provides functionality to import content directly from Microsoft Word documents, while preserving the original formatting, structure, and styles. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
+The Blazor Rich Text Editor provides functionality to import content directly from Microsoft Word documents, while preserving the original formatting, structure, and styles. This feature ensures a smooth transition of content from Word to the editor, maintaining elements such as headings, lists, tables, and text styles.
 
-To integrate an `ImportWord` option into the Rich Text Editor toolbar, you can add it as a custom toolbar [items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) using the items property in toolbarSettings.
+To integrate an `ImportWord` option into the Blazor Rich Text Editor toolbar, you can add it as a custom toolbar [items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) using the items property in toolbarSettings.
 
-The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
+The following example illustrates how to set up the `ImportWord` in the Blazor Rich Text Editor to facilitate content importation from Word documents:
 
 {% tabs %}
 {% highlight razor %}
@@ -219,7 +219,7 @@ You can restrict the word uploaded from the local machine when the uploaded word
 
 ### Secure word file upload with authentication
 
-You can add additional data with the word file uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the `FileUploading`  event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the word file uploaded from the Blazor Rich Text Editor on the client side, which can even be received on the server side. By using the `FileUploading`  event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 {% tabs %}
 {% highlight razor %}
@@ -303,9 +303,9 @@ namespace WordUpload.Controllers
 
 ## Export to RTF file
 
-Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to the RTF format. Ensure the Syncfusion.DocIO.NET NuGet package is installed in your project.
+Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Blazor Rich Text Editor content to the RTF format.
 
-Click **Export**, and use **Syncfusion.DocIO** libraries to convert the Rich Text Editor content to an RTF file. Use the following code to export the RTF file.
+Click **Export** to convert the Blazor Rich Text Editor content to an RTF file using the Syncfusion.DocIO libraries. The following code shows the export handler.
 
 {% tabs %}
 {% highlight razor %}
@@ -346,9 +346,9 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/blazor-rich-tex
 
 ## Export to HTML file
 
-Use [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Rich Text Editor content to HTML format. Make sure the required NuGet package is referenced in your project.
+Use the [Syncfusion.DocIO](https://libraries.io/nuget/Syncfusion.DocIO.NET) libraries to export the Blazor Rich Text Editor content to HTML format. Make sure the required NuGet package is referenced in your project.
 
-While clicking on the export button, it makes a call to the Export to HTML service.
+When you click the export button, the editor calls the Export to HTML service.
 
 {% tabs %}
 {% highlight razor %}
@@ -426,7 +426,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/blazor-rich-tex
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
 
-You can add `ExportWord` and `ExportPdf` tools to the Rich Text Editor toolbar using the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
+You can add `ExportWord` and `ExportPdf` tools to the Blazor Rich Text Editor toolbar using the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 To enable the `ExportWord` and `ExportPdf` functionality, the `ServiceUrl` property must be correctly configured within the `RichTextEditorExportWord` and `RichTextEditorExportPdf`. These API endpoints handle the export process and manage the server-side generation of Word and PDF files, respectively.
 
@@ -473,7 +473,7 @@ public FileStreamResult ExportToDocx([FromBody] ExportParam args)
     string htmlString = args?.html;
     if (string.IsNullOrEmpty(htmlString)) // Fixed: Added closing parenthesis
     {
-        return null; 
+        return null;
     }
     // Fixed: Removed the 'using' block from MemoryStream so it stays open for the file transfer
     MemoryStream stream = new MemoryStream();
@@ -546,7 +546,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
                 </ul><p>
                     Feel free to invite your colleagues and peers who might benefit from this enriching experience. Simply forward this email to them or share the event details.
                 </p><p>
-                    We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href="mailto:webinar@company.com">webinar@company.com</a>.</p><p>
+                    We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href="mailto:webinar@company.com" aria-label="Email address">webinar@company.com</a>.</p><p>
                 <br></p><p>Warm regards,</p><p>John Doe<br>Event Coordinator<br>ABC Company</p>
                 <RichTextEditorToolbarSettings Items="@Tools"></RichTextEditorToolbarSettings>
                  <RichTextEditorExportPdf ServiceUrl="https://blazor.syncfusion.com/services/production/api/RichTextEditor/ExportToPdf" FileName="RichTextEditor.pdf"></RichTextEditorExportPdf>

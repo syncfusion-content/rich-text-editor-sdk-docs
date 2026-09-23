@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Block Editor component provides a comprehensive set of public methods to programmatically interact with and manipulate the editor content. These methods enable adding, removing, updating, and managing blocks, as well as controlling selection, formatting, and other editor operations.
 
-## Block Management Methods
+## Block management methods
 
 ### Adding a block
 
@@ -98,15 +98,16 @@ The following example demonstrates the usage of the block editor methods.
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/methods/block" %}
 
-## Selection and Cursor Methods
+## Selection and cursor methods
 
 ### Setting text selection
 
-Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#setselection) method.
+Set the text selection within a specific content element using start and end positions with the [setSelection](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#setselection) method. The first argument is the DOM `Node` (or content element) the selection will be applied to — pass a `Node` you obtained from the editor, not just a string id.
 
 ```typescript
 // Select text from position 5 to 15 in a content element
-editor.setSelection('content-element-id', 5, 15);
+const node: Node = /* obtain a content element from the editor, e.g. via document.querySelector */;
+editor.setSelection(node, 5, 15);
 ```
 
 ### Setting cursor position
@@ -180,7 +181,7 @@ The following example demonstrates the usage of the selection and cursor methods
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/methods/selection" %}
 
-## Focus Management Methods
+## Focus management methods
 
 ### FocusIn
 
@@ -200,9 +201,9 @@ Use the [focusOut](https://ej2.syncfusion.com/angular/documentation/api/blockedi
 editor.focusOut();
 ```
 
-## Formatting Methods
+## Formatting methods
 
-### Executing toolbar action
+### Executing a toolbar action
 
 Execute a built-in toolbar formatting command using the [executeToolbarAction](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#executetoolbaraction) method. Use this to apply formatting such as bold, italic, or color to the selected text.
 
@@ -255,7 +256,7 @@ The following example demonstrates the usage of the formatting and focus methods
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/methods/formatting" %}
 
-## Data Export Methods
+## Data export methods
 
 ### Getting data as JSON
 
@@ -281,7 +282,7 @@ const allBlocksHtml: string = editor.getDataAsHtml();
 const specificBlockHtml: string = editor.getDataAsHtml('block-id');
 ```
 
-### Rendering Blocks from Json
+### Rendering blocks from JSON
 
 Renders blocks from JSON data using the [renderBlocksFromJson](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#renderblocksfromjson) method. This method allows either replacing all existing content or inserting at the cursor position.
 
@@ -296,7 +297,7 @@ const insertedAtCursor = editor.renderBlocksFromJson(jsonData);
 const insertedAfterTarget = editor.renderBlocksFromJson(jsonData, false, 'target-block-id');
 ```
 
-### Parsing HTML to Blocks
+### Parsing HTML to blocks
 
 Convert an HTML string into an array of `BlockModel` objects using the [parseHtmlToBlocks](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#parsehtmltoblocks) method. This method allows transforming HTML content into structured editor blocks.
 
@@ -307,7 +308,7 @@ const blocks: BlockModel[] = editor.parseHtmlToBlocks(html);
 
 ### Printing editor content
 
-Print the editor content using the [print](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#print) method. This action opens the browser's print dialog with the current editor content.
+Print the editor content using the [print](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#print) method. Internally the editor invokes the browser's print dialog with the current document rendered as it appears in the editor, so the output respects your custom themes and any custom block templates.
 
 ```typescript
 // Print the editor content

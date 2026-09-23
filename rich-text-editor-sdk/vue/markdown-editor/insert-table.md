@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Table in Vue Markdown Editor component | Syncfusion
-description: Learn here all about Insert Table in Syncfusion Vue Markdown Editor component of Syncfusion Essential JS 2 and more.
+title: Insert Tables in Vue Markdown Editor | Syncfusion
+description: Learn how to insert and customize tables in the Vue Markdown Editor by configuring rows, columns, and Markdown table content.
 platform: rich-text-editor-sdk
-control: Insert Table
+control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Insert Table in Vue Markdown Editor Component
+# Insert Tables in Vue Markdown Editor
 
 To enable the table insertion feature, add the `CreateTable` option to the toolbar items. Once added, users can click the Insert Table icon in the toolbar to insert a table into the editor.
 

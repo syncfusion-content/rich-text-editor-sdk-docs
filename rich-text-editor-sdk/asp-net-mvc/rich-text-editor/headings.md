@@ -9,7 +9,7 @@ documentation: ug
 
 # Heading Styles in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor control provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings allow for structuring content hierarchically, improving readability, and organizing information effectively.
+The Rich Text Editor provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings let you structure content hierarchically, improve readability, and organize information effectively.
 
 ## Applying Heading Styles
 
@@ -25,19 +25,6 @@ This action will format the selected text with the chosen heading style, helping
 
 Below are examples and code snippets demonstrating how to integrate and utilize heading formatting options effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/razor %}
@@ -46,7 +33,6 @@ Below are examples and code snippets demonstrating how to integrate and utilize 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/headings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customizing Format Dropdown Items
 
@@ -57,22 +43,9 @@ To customize the format dropdown:
 1. Define a `formats` array in your component configuration.
 2. Specify each format option with a display name and corresponding value.
 
-This customization enhances the editor’s functionality, enabling users to structure content with appropriate headings, improving readability and organization.
+This customization lets users structure content with appropriate headings, improving readability and organization.
 
 Below are examples demonstrating how to customize the format dropdown.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -82,7 +55,6 @@ Below are examples demonstrating how to customize the format dropdown.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-headings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

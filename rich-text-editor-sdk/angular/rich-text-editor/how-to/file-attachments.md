@@ -10,12 +10,12 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Manage File Attachments in Angular Rich Text Editor
 
-The Rich Text Editor allows you to attach files through the file upload feature. You can upload files either by selecting them via the file upload dialog or by dragging and dropping them from your local system. When the file upload succeeds, the editor automatically inserts an attachment link into the content.
+The Rich Text Editor allows you to attach a file based on the file upload. You can attach your files using the file upload or drag-and-drop from your local path. When the file upload is successful, the attachment link is inserted into the content.
 
-In the example below, configure the saveUrl and path properties to enable file attachments:
+In the below sample, configure the `saveUrl` and `path` properties to achieve file attachments.
 
-1. saveUrl: Specifies the server endpoint where uploaded files will be saved.
-2. path: Defines the location on the server where the uploaded files will be stored.
+        1. `saveUrl`: Specifies the service URL where files will be saved.
+        2. `path`: Defines the location where uploaded files will be stored.
 
 The following sample demonstrates how to attach a file in the Rich Text Editor.
 
@@ -64,7 +64,7 @@ string file;
                         Response.Clear();
                         Response.Headers.Add("name", file);
                         Response.ContentType = "application/json; charset=utf-8";
-                        Response.StatusDescription = "File uploaded succesfully";
+                        Response.StatusDescription = "File uploaded successfully";
                         Response.Headers.Add("url", fileSavePath);
                         Response.End();
                     }

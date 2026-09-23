@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with RichTextEditor in WebAssembly | Syncfusion®
-description: Learn how to get started with Blazor RichTextEditor in a WebAssembly application with Visual Studio and detailed examples.
+title: Getting Started with Blazor Rich Text Editor in WASM | Syncfusion®
+description: Learn how to get started with Blazor Rich Text Editor in a WebAssembly application with Visual Studio and detailed examples.
 platform: rich-text-editor-sdk
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD024 -->
 
-# Blazor RichTextEditor Component in WebAssembly App using Visual Studio
+# Blazor RichTextEditor in WebAssembly App using Visual Studio
 
-This article provides a step-by-step instructions for building Blazor WebAssembly App with Blazor RichTextEditor component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This article provides a step-by-step guide for building a Blazor WebAssembly App with the Blazor RichTextEditor component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ You can install these packages using different methods as shown below:
 
 {% tabcontent Visual Studio %}
 
-1. In Visual Studio Navigate to:
+1. In Visual Studio, navigate to:
 
    **Tools → NuGet Package Manager → Manage NuGet Packages for Solution**
 2. Search for the required packages.
@@ -44,7 +44,7 @@ You can install these packages using different methods as shown below:
 
 {% tabcontent Visual Studio (Package Manager Console) %}
 
-1. In Visual Studio Navigate to:
+1. In Visual Studio, navigate to:
 
    **Tools → NuGet Package Manager → Package Manager Console**
 2. Run the following commands:
@@ -113,7 +113,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddSyncfusionBlazor();
 await builder.Build().RunAsync();
-....
 
 {% endhighlight %}
 {% endtabs %}
@@ -143,7 +142,7 @@ Add the Blazor RichTextEditor component in the **~/Pages/Home.razor** file.
 <SfRichTextEditor>
 <p>Rich Text Editor allows to insert images from online source as well as local computer where you want to insert the image in your content.</p>
 <p><b>Get started Quick Toolbar to click on the image</b></p>
-<p>It is possible to add custom style on the selected image inside the Rich Text Editor through quick toolbar.</p>
+<p>It is possible to add custom style on the selected image inside the Blazor Rich Text Editor through quick toolbar.</p>
 </SfRichTextEditor>
 
 {% endhighlight %}

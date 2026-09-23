@@ -19,8 +19,8 @@ The Slash Command menu allows users to quickly insert or transform blocks by typ
 
 The Slash Command menu comes with a set of pre-defined commands for all block types:
 
--   **Headings(Level 1 to 4)**: to insert respective heading blocks.
--   **Lists(Bullet, Numbered, Checklist)**: for different list types.
+-   **Headings (Level 1 to 4)**: to insert respective heading blocks.
+-   **Lists (Bullet, Numbered, Checklist)**: for different list types.
 -   **Paragraph**: for standard text blocks.
 -   **Image**: for media insertion.
 -   **Table**: Inserts a table block.
@@ -32,9 +32,19 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 You can utilize the [e-blockeditor-commandmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html) tag helper on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
 
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor">
+        <e-blockeditor-commandmenusettings enableTooltip="true" items="@Model.SlashCommandItems"></e-blockeditor-commandmenusettings>
+    </ejs-blockeditor>
+</div>
+
+```
+
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the [enableTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_EnableTooltip) property on the [e-blockeditor-commandmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html) tag helper.
+By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the [EnableTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_EnableTooltip) property on the [e-blockeditor-commandmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html) tag helper.
 
 ### Events
 
@@ -76,6 +86,16 @@ The Context menu offers different built-in options:
 
 You can utilize the [e-blockeditor-contextmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html) tag helper on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
 
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor">
+        <e-blockeditor-contextmenusettings items="@Model.ContextMenuItems"></e-blockeditor-contextmenusettings>
+    </ejs-blockeditor>
+</div>
+
+```
+
 ### Events
 
 The following events are available in the Context menu.
@@ -115,6 +135,16 @@ The Block Action menu provides convenient actions for managing individual blocks
 ### Customize Block action menu
 
 You can utilize the [e-blockeditor-blockactionmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html) tag helper on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
+
+```cshtml
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor">
+        <e-blockeditor-blockactionmenusettings enableTooltip="true" items="@Model.BlockActionItems"></e-blockeditor-blockactionmenusettings>
+    </ejs-blockeditor>
+</div>
+
+```
 
 #### Show or hide tooltip
 
@@ -163,7 +193,7 @@ The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link
 
 #### Transform block options
 
-The inline toolbar now includes `Transform` options to quickly convert blocks between different types. You can use the [transformSettings] property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+The inline toolbar includes `Transform` options to quickly convert blocks between different types. You can use the `TransformSettings` property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
 
 #### Built-in default transform block options
 

@@ -8,25 +8,28 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# File Browser in TypeScript Rich text editor
+# File Browser in TypeScript Rich Text Editor
 
-Rich Text Editor allows to browse and insert an image in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
+The File Browser in the Rich Text Editor enables browsing and inserting files, such as images, in the edit panel. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 
-## Required additional package styles and scripts reference
+## Required dependencies
 
-The following additional dependencies are required to use the file browser feature in Rich Text Editor.
+Install the FileManager package and related dependencies:
 
-```javascript
-|-- @syncfusion/ej2-richtexteditor
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-layouts
-    |-- @syncfusion/ej2-grids
-    |-- @syncfusion/ej2-filemanager
+```bash
+npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-grids
+```
+
+### Dependency structure
+
+```
+@syncfusion/ej2-richtexteditor
+├── @syncfusion/ej2-layouts
+├── @syncfusion/ej2-grids
+└── @syncfusion/ej2-filemanager
 ```
 
 Map the above packages style and script reference in sample as like below
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="systemjs.config.js" %}
@@ -34,22 +37,28 @@ Map the above packages style and script reference in sample as like below
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
+## CSS theme reference
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-config/index.html %}
-{% endhighlight %}
-{% endtabs %}
+Additionally add the below styles in the `index.html` file.
 
-{% endif %}
+```css
+  @import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
+  @import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
+  @import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+```
 
-The following example explains about how to configure the file browser within the Rich Text Editor component.
+## Setup steps
 
-* Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property as `true` on [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#filemanagersettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
+The following example demonstrates how to configure the file browser within the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
+1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
+2. **Enable file browser** — Set the `enable` property to `true` in the [fileManagerSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#filemanagersettings) property
+3. **Inject module** — Add `FileManager` to the `RichTextEditor.Inject(FileManager)` array
+4. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing
+
+> Rich Text Editor features are segregated into individual feature-wise modules. To use the file browser tool, inject the `FileManager` module using `RichTextEditor.Inject(FileManager)`.
+
+The following example demonstrates configuring the file browser within the Rich Text Editor:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -62,17 +71,9 @@ The following example explains about how to configure the file browser within th
           
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
+## See also
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs2" %}
-
-{% endif %}
+* [FileManager Documentation](https://ej2.syncfusion.com/documentation/file-manager/getting-started)
+* [Image Insertion](./insert-images)
+* [Video Insertion](./video)
+* [Audio Insertion](./audio)

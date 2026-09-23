@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Rename Uploaded Images in Angular Rich Text Editor
 
-By using the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettings#imageSettings) property, you can specify the server handler that uploads the selected image. Then, by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesuccesseventargs#imageSuccessEventArgs) event, you can receive the renamed file from the server and update it in the Rich Text Editor’s insert image dialog.
+By using the [insertImageSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesettings#imagesettings) property, you can specify the server handler that uploads the selected image. Then, by binding the [imageUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/imagesuccesseventargs#imageauccesseventargs) event, you can receive the renamed file from the server and update it in the Rich Text Editor’s insert image dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ public void Rename()
                 Response.Clear();
                 Response.Headers.Add("name", imageFile);
                 Response.ContentType = "application/json; charset=utf-8";
-                Response.StatusDescription = "File uploaded succesfully";
+                Response.StatusDescription = "File uploaded successfully";
                 Response.End();
             }
         }

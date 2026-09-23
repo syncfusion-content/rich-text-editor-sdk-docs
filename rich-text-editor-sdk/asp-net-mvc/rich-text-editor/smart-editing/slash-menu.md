@@ -15,13 +15,13 @@ The Slash Menu in the Rich Text Editor provides users with an efficient way to a
 
 To use the Slash Menu feature, inject SlashMenuService in the provider section of AppComponent.
 
-To enable the Slash Menu, set the `Enable` property within [SlashMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
+To enable the Slash Menu, set the `Enable` property within [SlashMenuSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu appears when the user types the `/` character in the editor.
 
 ## Configuring the Slash Menu Items
 
 The slashMenuSettings property allows customization of the `Items` displayed in the Slash Menu. By defining the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_Items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
 
-This list can include various formatting options such as paragraph and heading levels. Here’s an code snippet of configuring the Slash Menu items:
+This list can include various formatting options such as paragraph and heading levels. Here's a code snippet of configuring the Slash Menu items:
 
 ```
 ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings
@@ -34,9 +34,9 @@ ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlas
 
 ## Customizing the Popup Width and Height
 
-The size of the Slash Menu popup can be customized using the [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupWidth) and [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupHeight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
+The size of the Slash Menu popup can be customized using the [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupWidth) and [PopupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupHeight) properties within `SlashMenuSettings`. Adjust these values to control the menu dimensions.
 
-Below is an code snippet showing how to customize both the width and height of the popup:
+Below is a code snippet showing how to customize both the width and height of the popup:
 
 ```
 ViewBag.SlashMenuSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings
@@ -66,19 +66,6 @@ Each custom item object can include the following properties:
 
 The following code demonstrates how to set up the Custom Slash Menu item in the Rich Text Editor to insert meeting notes and signature:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/razor %}
@@ -87,4 +74,3 @@ The following code demonstrates how to set up the Custom Slash Menu item in the 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/slashmenu/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

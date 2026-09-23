@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Vue Block Editor component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Block Editor component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Vue Block Editor | Syncfusion
+description: Learn about accessibility in the Vue Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Accessibility in Vue Block Editor component
+# Accessibility in Vue Block Editor
 
 The Block Editor component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the Block Editor component is outlined below.
 
 ## WAI-ARIA attributes
 
-The following ARIA attributes are recommended for the Block Editor to improve discoverability and operable by assistive technologies.
+The following ARIA attributes are recommended for the Block Editor to improve discoverability and operability by assistive technologies.
 
 | Attribute | Purpose |
 |---|---|

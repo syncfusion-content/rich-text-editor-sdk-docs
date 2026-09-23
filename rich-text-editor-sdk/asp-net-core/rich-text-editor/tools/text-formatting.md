@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Formatting in ASP.NET Core Rich Text Editor | Syncfusion
-description: Learn how to format text in the ASP.NET Core Rich Text Editor with bold, italic, headings, lists, checklists, blockquotes, line height, Markdown auto-format, format painter, indentation, and clear formatting.
+description: Learn how to format text in the ASP.NET Core Rich Text Editor using bold, italic, headings, lists, checklists, blockquotes, and Markdown auto-format.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -31,8 +31,6 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 
 Please refer to the sample below to add these basic text styling options in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/basic-text-styling/tagHelper %}
@@ -41,18 +39,6 @@ Please refer to the sample below to add these basic text styling options in the 
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/basic-text-styling/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/basic-text-styling/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/basic-text-styling/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Text alignments
 
@@ -76,8 +62,6 @@ To fully justify your text, place the cursor in the desired paragraph or select 
 
 Please refer to the sample and code snippets below to add these alignment options in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/tagHelper %}
@@ -86,18 +70,6 @@ Please refer to the sample and code snippets below to add these alignment option
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/text-alignments/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Number and bullet format list
 
@@ -132,8 +104,6 @@ You can customize the available number formats using the [numberFormatList](http
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/tagHelper %}
@@ -142,18 +112,6 @@ The following example demonstrates how to customize the number format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Unordered lists
 
@@ -176,8 +134,6 @@ For more control over the bullet style, use the `bulletFormatList` dropdown in t
 
 The following example demonstrates how to customize the bullet format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/tagHelper %}
@@ -186,18 +142,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Checklist
 
@@ -217,8 +161,6 @@ To enable the Checklist feature in your editor, add the `Checklist` toolbar item
 
 Below is an example of how to configure the Checklist in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/checklist-cs1/tagHelper %}
@@ -227,18 +169,6 @@ Below is an example of how to configure the Checklist in the Rich Text Editor:
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/checklist-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/checklist-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/checklist-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Nested list creation using Tab key
 
@@ -267,8 +197,6 @@ To adjust the text indentation:
 
 To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/tagHelper %}
@@ -277,18 +205,6 @@ To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Indentation in lists
 
@@ -337,8 +253,6 @@ This action will format the selected text with the chosen heading style, helping
 
 Below are examples and code snippets demonstrating how to integrate and utilize heading formatting options effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/headings/tagHelper %}
@@ -347,18 +261,6 @@ Below are examples and code snippets demonstrating how to integrate and utilize 
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/headings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/headings/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Custom format
 
@@ -373,8 +275,6 @@ This customization enhances the editor’s functionality, enabling users to stru
 
 Below are examples demonstrating how to customize the format dropdown.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-headings/tagHelper %}
@@ -384,18 +284,6 @@ Below are examples demonstrating how to customize the format dropdown.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-headings/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/custom-headings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Quotation formatting
 
 The Rich Text Editor facilitates quotation formatting through the `Blockquote` tool available in the toolbar. Blockquotes are designed to visually highlight significant text, emphasizing key information or quotations by setting them apart from the main content for added emphasis and clarity.
@@ -403,8 +291,6 @@ The Rich Text Editor facilitates quotation formatting through the `Blockquote` t
 To format text as a quotation, select the desired text and click on the `Blockquote` icon in the toolbar. The selected text will be formatted as a blockquote, typically indented and styled differently from the surrounding content.
 
 Use the `Blockquote` tool in the editor below to see the feature in action.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -414,18 +300,6 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/quotation-formatting/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/quotation-formatting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/quotation-formatting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
@@ -439,8 +313,6 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 2. **Pre-loading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
 3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nested-quotation-formatting/tagHelper %}
@@ -450,18 +322,6 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nested-quotation-formatting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/nested-quotation-formatting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Horizontal line
 
 The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
@@ -469,8 +329,6 @@ The Rich Text Editor enables users to insert horizontal dividers using the `Hori
 To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
 
 Use the `HorizontalLine` tool in the editor below to see the feature in action.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -480,18 +338,6 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/horizontal-line/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/horizontal-line/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/horizontal-line/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Format painter
 
@@ -569,8 +415,6 @@ To enable the Clear Format feature in your Rich Text Editor, you need to add it 
 
 Here's an example of how to configure the Clear Format feature:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/tagHelper %}
@@ -579,18 +423,6 @@ Here's an example of how to configure the Clear Format feature:
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Using clear format
 
@@ -602,8 +434,6 @@ Once configured, you can use the Clear Format feature as follows:
 
 Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. Examples and code snippets below show how to use 'Clear Format' effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/tagHelper %}
@@ -612,18 +442,6 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Markdown Auto Format
 
@@ -663,8 +481,6 @@ Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are co
 Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
 **Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/markdown-autoformat/tagHelper %}
@@ -673,15 +489,3 @@ Elements such as headings, lists, blockquotes, and code block are converted **on
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/markdown-autoformat/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/markdown-autoformat/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

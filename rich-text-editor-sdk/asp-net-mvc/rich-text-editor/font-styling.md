@@ -11,7 +11,7 @@ documentation: ug
 
 ## Font Family
   
-The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display "Font Name". However, for other font families, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. Use the font family dropdown in the toolbar to change the font of the selected text. When the default font family is selected, the toolbar displays `Font Name`. For other font families, the toolbar shows the name of the selected font.
 
 To apply a different font style to a specific section of the content, follow these steps:
 
@@ -24,19 +24,6 @@ These steps will apply the selected font style to the chosen text, allowing you 
 
 You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-family/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-family/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-family/razor %}
@@ -45,26 +32,12 @@ You can add the `FontName` tool in the Rich Text Editor toolbar using the `Toolb
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-family/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The Rich Text Editor comes with a pre-configured set of [FontFamily](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
 
 ### Adding Custom Font Families
 
 The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [FontFamily](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property. This allows you to extend the available font options beyond the default selection.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font-family/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font-family/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,24 +47,10 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font-family/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Supporting Google Fonts
 
 To use web fonts in Rich Text Editor, it is not needed for the web fonts to be present in local machine. To add the web fonts to Rich Text Editor, you need to refer the web font links and add the font names in the [FontFamily](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontFamily) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/google-webfonts/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/google-webfonts/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -101,39 +60,23 @@ To use web fonts in Rich Text Editor, it is not needed for the web fonts to be p
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/google-webfonts/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The below font style links are referred in the page.
 
-```typescript
-
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">
-
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
 ```
 
-N> In the above sample, you can see that we have added two Google web fonts (`Roboto` and `Great vibes`) to `Rich Text Editor`.
+> In the above sample, two Google web fonts (`Roboto` and `Great Vibes`) are added to the Rich Text Editor.
 
 ## Font Size
 
-The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
+The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. Use the font size dropdown in the toolbar to change the size of the selected text. When the default font size is selected, the toolbar displays `Font Size`. For other font sizes, the toolbar shows size of the selected font.
 
 ### Configuring the Font Size Tool in the Toolbar
 
 You can add the `FontSize` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/styling/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/styling/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -143,26 +86,12 @@ You can add the `FontSize` tool in the Rich Text Editor toolbar using the `Toolb
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/styling/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The Rich Text Editor includes a default set of [FontSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontSize) property.
 
 ### Defining Custom Font Sizes
 
 The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [FontSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FontSize) property. This allows you to extend the available font options beyond the default selection.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-style/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-style/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -172,26 +101,12 @@ The Rich Text Editor supports providing custom fonts along with the existing lis
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-style/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Font and Background Color
 
 ### Configuring the Font and Background Color Tool in the Toolbar
 
-You can add the `FontName` tool in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-background-color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-background-color/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can add the `FontColor` and `BackgroundColor` tools in the Rich Text Editor toolbar using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -201,7 +116,6 @@ You can add the `FontName` tool in the Rich Text Editor toolbar using the `Toolb
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/font-background-color/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Setting Custom Font and Background Colors
 
@@ -211,19 +125,6 @@ The Rich Text Editor offers custom font and background colors along with the exi
 
 Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` and `Palette`. The Palette mode provides a predefined set of colors, while the Picker mode includes a color scheme to choose custom colors. You can switch between these options using the [ModeSwitcher](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ModeSwitcher) feature.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font/razor %}
@@ -232,7 +133,6 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/custom-font/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

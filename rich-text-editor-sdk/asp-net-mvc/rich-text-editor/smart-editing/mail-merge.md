@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mail Merge in ASP.NET MVC RichTextEditor | Syncfusion
+title: Mail Merge in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to create personalized documents in the ASP.NET MVC Rich Text Editor using dynamic fields, placeholders, and automated content generation.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -13,19 +13,6 @@ The Rich Text Editor can be customized to implement **Mail Merge** functionality
 
 This feature simplifies the creation of dynamic documents by allowing users to insert merge fields that are automatically populated with real data during content generation.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/mail-merge/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/mail-merge/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/mail-merge/razor %}
@@ -34,4 +21,3 @@ This feature simplifies the creation of dynamic documents by allowing users to i
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/mail-merge/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

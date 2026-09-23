@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Audios in Vue Rich text editor component | Syncfusion
-description: Learn here all about Audios in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Audios
+title: Insert Audio in Vue Rich Text Editor | Syncfusion
+description: Learn how to add, upload, manage, and customize audio content in the Vue Rich Text Editor using online sources and local audio files.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Audios in Vue Rich Text Editor Component
+# Insert Audio in Vue Rich Text Editor
 
-The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
+The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert audio with the following options using the [insertAudioSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#insertaudiosettings) property.
 
 ## Configuring the audio tool in the toolbar
 
@@ -35,7 +35,7 @@ To configure the `Audio` toolbar item, refer to the below code.
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettingsmodel#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
-> The default `saveFormat` property is set to `Blob` format.
+> By default, `saveFormat` is set to `Blob`.
 
 ```HTML
 
@@ -51,11 +51,11 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 ## Insert audio from the Web
 
-You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
+You can insert audio from either a hosted link or a local machine by clicking the audio button in the editor's toolbar. A dialog opens allowing you to insert audio from a web URL or upload from your device.
 
 ### Inserting audio from web URLs
 
-By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
+By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting a valid URL adds it to the `src` attribute of the `<source>` tag.
 
 ![Vue Rich Text Editor Audio insert](../images/vue-richtexteditor-audio-web.png)
 
@@ -67,7 +67,7 @@ If the path field is not specified in the [insertAudioSettings](https://ej2.sync
 
 ## Maximum file size restriction
 
-You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+You can restrict audio uploads from your local machine using the [insertAudioSettings.maxFileSize](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettingsmodel#maxfilesize) property. By default, the maximum file size is 30000000 bytes (approximately 30 MB).
 
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
@@ -117,11 +117,14 @@ provide('richtexteditor', [Toolbar, Link, Image, QuickToolbar, HtmlEditor, Table
 
 ## Saving audio to the server 
 
-[saveFormat](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
+### Configuration properties
 
-[saveUrl](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#saveurl) provides URL to map the action result method to save the audio.
-
-[removeUrl](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#removeurl) provides URL to map the action result method to remove the audio.
+| Property | Description |
+|----------|-------------|
+| [saveFormat](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#saveformat) | Sets the default save format when audio is inserted (`Blob` or `Base64`) |
+| [saveUrl](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#saveurl) | URL endpoint that receives the audio file for server-side processing |
+| [removeUrl](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettings#removeurl) | URL endpoint for deleting audio files from the server |
+| [path](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/audiosettingsmodel#path) | Destination path on server where audio files are stored |
 
 ### Server-side action
 

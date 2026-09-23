@@ -1,10 +1,15 @@
 import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
 import { Image, Inject, Link, Table, MarkdownEditor, IToolbarItems, ToolbarSettingsModel, MarkdownFormatter, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import * as React from 'react';
-import * as Marked from 'marked';
 
 class App extends React.Component<{},{}> {
   private rteObj: RichTextEditorComponent;
+
+  constructor(props: {}) {
+      super(props);
+      this.rendereComplete = this.rendereComplete.bind(this);
+  }
 
   // set the value to Rich Text Editor
   private template: string = `The sample is added to showcase **markdown editing**.
@@ -13,7 +18,7 @@ Type or edit the content and apply formatting to view markdown formatted content
   
 We can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/).
   
-The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content`;
+The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content`;
   // Rich Text Editor items list
   private items: (string | IToolbarItems)[] = ['Bold', 'Italic', 'StrikeThrough', '|',
         'Formats', 'OrderedList', 'UnorderedList', '|',
@@ -43,7 +48,7 @@ The third-party library <b>Marked</b> is used in this sample to convert markdown
       if (this.mdsource.classList.contains('e-active')) {
           let id: string = this.rteObj.getID() + 'html-view';
           let htmlPreview: HTMLElement = this.rteObj.element.querySelector('#' + id);
-          htmlPreview.innerHTML = Marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+          htmlPreview.innerHTML = MarkdownConverter.toHtml((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true }) as string;
       }
   }
   public fullPreview(): void {
@@ -63,7 +68,7 @@ The third-party library <b>Marked</b> is used in this sample to convert markdown
           }
           this.textArea.style.display = 'none';
           htmlPreview.style.display = 'block';
-          htmlPreview.innerHTML = Marked((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value);
+          htmlPreview.innerHTML = MarkdownConverter.toHtml((this.rteObj.contentModule.getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true }) as string;
           this.mdsource.parentElement.title = 'Code View';
       }
   }

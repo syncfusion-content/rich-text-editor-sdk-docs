@@ -40,8 +40,6 @@ You can customize the available number formats using the [numberFormatList](http
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/tagHelper %}
@@ -50,18 +48,6 @@ The following example demonstrates how to customize the number format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/number-format-list/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Unordered Lists
 
@@ -84,8 +70,6 @@ For more control over the bullet style, use the `bulletFormatList` dropdown in t
 
 The following example demonstrates how to customize the bullet format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/tagHelper %}
@@ -94,18 +78,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/format-lists/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Indentation in Lists
 
@@ -116,7 +88,7 @@ The Rich Text Editor provides powerful indentation features for both bullet and 
 To increase the indent of a list item:
 
 1. Select the list item you want to indent.
-2. Click the "Increase Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>]</Kbd>.
+2. Click the "Increase Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>]</kbd>.
 3. The selected item will be indented, creating a nested list.
 
 ### Decreasing Indent
@@ -124,7 +96,7 @@ To increase the indent of a list item:
 To decrease the indent of a list item:
 
 1. Select the indented list item.
-2. Click the "Decrease Indent" button in the toolbar or press <Kbd>Ctrl</Kbd> + <Kbd>[</Kbd>.
+2. Click the "Decrease Indent" button in the toolbar or press <kbd>Ctrl</kbd> + <kbd>[</kbd>.
 3. The selected item will move back to the previous indentation level.
 
 ### Using Tab Key for Indentation

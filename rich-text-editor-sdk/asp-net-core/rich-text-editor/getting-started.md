@@ -13,6 +13,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
+
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, CodeStudio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
 To get started quickly with ASP.NET Core Rich Text Editor, you can check on this video:
@@ -80,7 +81,7 @@ Open the terminal and run the following commands.
 {% highlight C# tabtitle="Terminal" %}
 
 dotnet add package Syncfusion.AspNetCore.RichTextEditor --version {{ site.releaseversion }}
-dotnet add package Syncfusion.AspNetCore.Themes -Version --version {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}

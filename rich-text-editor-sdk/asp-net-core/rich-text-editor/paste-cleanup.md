@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paste Cleanup in ASP.NET Core Rich Text Editor | Syncfusion
-description:  Learn how to clean and manage pasted content in the ASP.NET Core Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
+description: Learn how to clean and manage pasted content in the ASP.NET Core Rich Text Editor for consistent formatting, secure HTML, and better editing workflows.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -54,7 +54,7 @@ This ensures that while the formatting is retained, it remains clean, safe, and 
 
 When the `Prompt`, `PlainText`, and `keepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
-Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
+Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable. However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
 
 - **`DeniedTags`**: Tags listed here will still be removed from the pasted content, even when clean format is enabled.
 - **`DeniedAttrs`**: Attributes listed here will also be stripped from the pasted content.
@@ -91,11 +91,9 @@ By default, a predefined set of basic style properties are allowed when content 
 
 For Example,
 
-`AllowedStyleProps: ['color', 'margin']'`: This will allow only the style properties ‘color’ and ‘margin’ in each pasted element.
+`AllowedStyleProps: ['color', 'margin']`: This will allow only the style properties 'color' and 'margin' in each pasted element.
 
 In the following example, the paste cleanup related settings are explained with its module configuration:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -106,23 +104,9 @@ In the following example, the paste cleanup related settings are explained with 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/paste-cleanup/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/paste-cleanup/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Get pasted content
 
 You can get the pasted text as HTML using the [afterPasteCleanup](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_AfterPasteCleanup) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -133,25 +117,11 @@ You can get the pasted text as HTML using the [afterPasteCleanup](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/get-pasted-content/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/get-pasted-content/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Customization of pasted content
 
 The Rich Text Editor enables the customization of copied content prior to pasting it into the editor. By configuring the [afterPasteCleanUp](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_AfterPasteCleanup) event, users can exercise precise control over formatting and content modifications after the paste action is executed.
 
 In the following example, the `afterPasteCleanUp` event is configured to remove images from the copied content. To understand this feature better, try pasting content that includes an image into the editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -161,15 +131,3 @@ In the following example, the `afterPasteCleanUp` event is configured to remove 
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/paste-cleanup-customize/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/paste-cleanup-customize/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/paste-cleanup-customize/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

@@ -14,19 +14,6 @@ The RichTextEditorFor control can be rendered by passing values from the control
 
 In the following sample, the RichTextEditorFor control is rendered.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rtefor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rtefor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rtefor/razor %}
@@ -35,10 +22,9 @@ In the following sample, the RichTextEditorFor control is rendered.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/rtefor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
-The output will be as follows.
+The output is shown below.
 
 ![RichTextEditorFor](../../rich-text-editor/images/rteFor.PNG)

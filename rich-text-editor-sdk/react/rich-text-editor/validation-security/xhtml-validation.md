@@ -21,7 +21,7 @@ The editor includes an [`enableXhtml`](https://ej2.syncfusion.com/react/document
 When `enableXhtml` is set to `true`, the editor enforces the following attribute rules:
 
 * **Case Sensitivity**: Attributes must be lowercase (e.g., `class`, not `CLASS`).
-* **Quotation Marks**: Attribute values must be enclosed in quotation marks..
+* **Quotation Marks**: Attribute values must be enclosed in quotation marks.
 * **Validity**: Only valid attributes for corresponding HTML elements are allowed.
 * **Required Attributes**: Required attributes for HTML elements must be included (e.g., `alt` for `<img>`).
 

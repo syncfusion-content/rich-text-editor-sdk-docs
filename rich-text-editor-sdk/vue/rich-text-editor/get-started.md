@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Get started in Vue Rich text editor component | Syncfusion
-description: Learn here all about Get started in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Get started 
+title: Getting Started with Vue Rich Text Editor | Syncfusion
+description: Learn how to get started with the Vue Rich Text Editor and explore setup, configuration, and core feature examples.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Getting Started with the Vue richtexteditor Component in Vue 3
+# Getting Started with Vue Rich Text Editor in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vite.dev/) project with a JavaScript environment and integrating the Syncfusion Vue Rich Text Editor component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
 The `Composition API` is a new feature introduced in Vue.js 3 that provides an alternative way to organize and reuse component logic. It allows developers to write components as functions that use smaller, reusable functions called composition functions to manage their properties and behavior.
 
-The `Options API` is the traditional way of writing Vue.js components, where the component logic is organized into a series of options that define the component's properties and behavior. These options include data, methods, computed properties, watchers, lifecycle hooks, and more.
+The `Options API` is the traditional way of writing Vue.js components, where the component logic is organized into a series of options that define the component's properties and behavior. These options include data, methods, computed properties, watchers, life cycle hooks, and more.
 
 ## Prerequisites
 
@@ -164,7 +164,7 @@ Here is the summarized code for the above steps in the **src/App.vue** file:
     </div>
 </template>
 <script setup>
-import { provide } from 'vue';
+import { provide, ref } from 'vue';
 import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, Link, Image, HtmlEditor } from "@syncfusion/ej2-vue-richtexteditor";
 const rteInstance = ref(null);
 const value = ref("<p>The Rich Text Editor component is a WYSIWYG editor that provides the best user experience to create and update the content. Users can format their content using standard toolbar commands.</p>");
@@ -246,6 +246,6 @@ The output will appear as follows:
 
 ![vue-3-js-richtexteditor](./images/vue-3-js-richtexteditor.png)
 
-> **Sample**: [vue-3-richrexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
+> **Sample**: [vue-3-richtexteditor-getting-started](https://github.com/SyncfusionExamples/vue3-grid-getting-started).
 
-For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue3-tutorial#migration-from-vue-2-to-vue-3) documentation.
+For migrating from Vue 2 to Vue 3, refer to the [`migration`](https://ej2.syncfusion.com/vue/documentation/getting-started/vue-3-vue-cli#migration-from-vue-2-to-vue-3) documentation.

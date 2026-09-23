@@ -12,29 +12,27 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 Rich Text Editor allows to browse and insert an image in the edit panel using the file browser. File browser allows the users to browse and select a file or folder from the file system and it supports various cloud services.
 
-## Required additional package styles and scripts reference
+## Required dependencies
 
-The following additional dependencies are required to use the file browser feature in Rich Text Editor.
+Install the FileManager package and related dependencies:
 
-```javascript
-|-- @syncfusion/ej2-richtexteditor
+```bash
+npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-grids
+```
+
+### Dependency structure
+
+```
+@syncfusion/ej2-richtexteditor
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-layouts
     |-- @syncfusion/ej2-grids
     |-- @syncfusion/ej2-filemanager
 ```
 
+## CSS theme reference
+
 Map the above packages style and script reference in sample as like below
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="systemjs.config.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-config/systemjs.config.js %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -42,27 +40,13 @@ Map the above packages style and script reference in sample as like below
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
+## Setup steps
 
 The following example explains about how to configure the file browser within the Rich Text Editor component.
 
-* Configure the `FileManager` toolbar item in the `toolbarSettings` API `items` property.
-* Set [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property as `true` on [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileManagerSettings) property to make the file browser in the Rich Text Editor to appear on the `FileManager` toolbar click action.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-          
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+1. **Add FileManager to toolbar** — Configure the `FileManager` toolbar item in the `toolbarSettings.items` property
+2. **Enable file browser** — Set the [`enable`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/filemanagersettings#enable) property to `true` in the [`fileManagerSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fileManagerSettings) property.
+3. **Configure endpoints** — Map server endpoints for file upload, deletion, and browsing.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -75,4 +59,9 @@ The following example explains about how to configure the file browser within th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/file-browser-cs2" %}
 
-{% endif %}
+## See also
+
+* [FileManager Documentation](https://ej2.syncfusion.com/documentation/file-manager/getting-started)
+* [Image Insertion](./insert-images)
+* [Video Insertion](./video)
+* [Audio Insertion](./audio)

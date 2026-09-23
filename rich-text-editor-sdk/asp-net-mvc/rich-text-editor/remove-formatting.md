@@ -9,9 +9,7 @@ documentation: ug
 
 # Remove Formatting in ASP.NET MVC Rich Text Editor
 
-The ASP.NET MVC Rich Text Editor component offers a powerful `Clear Format` feature to remove any applied formatting from selected text.
-
-This feature is particularly useful when you need to:
+The `Clear Format` feature removes any applied formatting from selected text. It is useful when you need to:
 
 - Remove multiple styles at once
 - Quickly standardize text formatting
@@ -27,19 +25,6 @@ To enable the Clear Format feature in your Rich Text Editor, you need to add it 
 
 Here's an example of how to configure the Clear Format feature:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs1/razor %}
@@ -48,30 +33,16 @@ Here's an example of how to configure the Clear Format feature:
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Using Clear Format
 
-Once configured, you can use the Clear Format feature as follows:
+Once configured, use the Clear Format feature as follows:
 
 1. Select the text with formatting you want to remove.
 2. Click the `Clear Format` button in the toolbar.
-3. The selected text will revert to its original, unformatted state.
+3. The selected text reverts to its original, unformatted state.
 
-Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. Examples and code snippets below show how to use 'Clear Format' effectively in the Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs2/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs2/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following example shows how to use `ClearFormat` effectively in the Rich Text Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -81,7 +52,6 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/clear-format-cs2/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

@@ -5,7 +5,7 @@ description: Learn how to enable real-time collaboration in the Angular Block Ed
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://www.syncfusion.com/angular-components/angular-block-editor/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
 # Real-Time Collaboration in Angular Block Editor
@@ -20,11 +20,9 @@ With collaboration enabled, users can:
 * Perform collaboration-aware undo and redo operations.
 * Create, restore, compare, export, and import document versions.
 
-{% doccards %}
-{% doccard text="Live Demo" link="https://ej2.syncfusion.com/showcase/angular/blockeditor-collaborative-editing/" %}
-{% enddoccards %}
+> **Live demo:** See a working end-to-end collaboration setup in the [Angular Block Editor collaborative editing showcase](https://ej2.syncfusion.com/showcase/angular/blockeditor-collaborative-editing/).
 
-## Quick Start
+## Quick start
 
 Get real-time collaboration working in just a few minutes using `y-websocket` and a simple WebSocket server in our Block Editor component.
 
@@ -38,7 +36,7 @@ A Yjs provider handles the transport of document updates between connected users
 
 See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choose the right provider for your use case.
 
-| Provider | Type | Use Case |
+| Provider | Type | Use case |
 | -------- | ---- | -------- |
 | [y-websocket](https://docs.yjs.dev/ecosystem/connection-provider/y-websocket) | Self-hosted | Production deployments with your own WebSocket server. |
 | `y-webrtc` | Peer-to-peer | Quick local testing and development; no server required. |
@@ -47,7 +45,7 @@ See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choos
 | [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
 | [PartyKit](https://www.partykit.io/) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
 
-Install the required libraries using npm:
+This guide uses `y-websocket` for the transport, which is the simplest option for getting started. Install the required libraries using npm:
 
 ```powershell
 npm install yjs y-websocket
@@ -55,13 +53,11 @@ npm install yjs y-websocket
 
 ### Step 3: Create a simple WebSocket server
 
-Install the WebSocket server package:
+The `y-websocket` package ships with a reference WebSocket server you can run with `npx`. There is no separate `npm install` step for the server itself — it is part of `y-websocket`, which you installed in the previous step.
 
-```powershell
-npm install @y/websocket-server
-```
+#### Run the WebSocket server
 
-#### Run the WebSocket Server
+Open a new terminal and run:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -69,7 +65,7 @@ npm install @y/websocket-server
 set HOST=localhost&& set PORT=1234&& npx y-websocket
 
 {% endhighlight %}
-{% highlight bash tabtitle="Powershell" %}
+{% highlight bash tabtitle="PowerShell" %}
 
 $env:HOST="localhost"; $env:PORT="1234"; npx y-websocket
 
@@ -80,7 +76,7 @@ You should see the message:
 
 ```
 running at 'localhost' on port 1234
-``` 
+```
 
 ### Step 4: Create a collaboration configuration file
 
@@ -214,15 +210,16 @@ ng serve
 
 If the text appears in both tabs, **real-time collaboration is achieved.**
 
-> **Note:** The BroadcastChannel mechanism only handles synchronization locally across tabs of the same browser. To synchronize data across entirely different browsers (e.g., Chrome to Firefox), you must utilize the WebSocket provider layer and connect both environments to a properly configured, centralized backend WebSocket server.
+> **Cross-browser note:** The setup above uses a single `y-websocket` server, so two tabs of the *same* browser on the *same* machine will sync. To synchronize across different browsers, machines, or networks, run the same `npx y-websocket` server (or your production equivalent) on a host that all clients can reach, and replace `ws://localhost:1234` in `collaboration.ts` with the public `wss://` URL of that server.
 
 ## Configure the current user
 
-Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The `UserModel` type includes `id`, `user`, and `avatarBgColor`:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
+import { UserModel, CollaborationSettingsModel } from '@syncfusion/ej2-angular-blockeditor';
 
 @Component({
     selector: 'app-root',
@@ -235,16 +232,17 @@ import { BlockEditorModule } from '@syncfusion/ej2-angular-blockeditor';
     `
 })
 export class App implements OnInit {
-    users: any[] = [{
+    public users: UserModel[] = [{
         id: 'user-1',
         user: 'John Doe',
         avatarBgColor: '#e74c3c'
     }];
 
-    currentUserId: string = 'user-1';
+    public currentUserId: string = 'user-1';
+    public collaborationSettings!: CollaborationSettingsModel;
 
-    ngOnInit() {
-        // Initialize with users configuration
+    ngOnInit(): void {
+        // Initialize collaboration settings here.
     }
 }
 ```
@@ -545,15 +543,16 @@ this.versionHistory.createSnapshot({
 
 #### List snapshots
 
-Retrieves all saved snapshots or a paginated subset. Snapshots are returned in chronological order.
+Retrieves all saved snapshots, or a paginated subset, in chronological order. The optional `skip` and `take` parameters let you page through large history lists:
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
-// Retrieve all snapshots
-const snapshots = this.versionHistory.getSnapshots();
 
-// Retrieve a paginated subset — getSnapshots(skip, take)
-const paginatedSnapshots = this.versionHistory.getSnapshots(20, 40);
+// Retrieve all snapshots
+const snapshots: VersionSnapshot[] = this.versionHistory.getSnapshots();
+
+// Skip the first 20 and take the next 40 (for paging)
+const paginatedSnapshots: VersionSnapshot[] = this.versionHistory.getSnapshots(20, 40);
 ```
 
 #### Rename a snapshot
@@ -579,33 +578,31 @@ this.versionHistory.restoreSnapshot(snapshotId);
 
 #### Compare versions
 
-Compares two snapshots to identify differences such as added, removed, or modified content.
+Compares two snapshots to identify differences such as added, removed, or modified content. The result is a `VersionDiff` object that summarizes the changes — for example, which blocks were added, removed, or had their text changed between the two snapshots:
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
 this.versionHistory.compareVersions(snapshotIdA, snapshotIdB);
 ```
-
 The returned `VersionDiff` object provides a summary of the differences between the two selected versions.
 
 #### Export a snapshot
 
-Serializes a snapshot into a portable format that can be stored externally or transferred between systems.
+Serializes a snapshot into a portable format (a JSON string) that can be stored externally or transferred between systems:
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
-this.versionHistory.exportSnapshot(snapshotId);
+const exported: string = this.versionHistory.exportSnapshot(snapshotId);
+// Store `exported` in your database, send it to another user, etc.
 ```
-
-Exported snapshots can be stored externally or transferred between systems.
 
 #### Import a snapshot
 
-Imports a previously exported snapshot back into the version history storage.
+Imports a previously exported snapshot back into the version history storage and returns the new snapshot's id:
 
 ```typescript
 this.versionHistory = this.blockEditor.getVersionHistory();
-const imported = this.versionHistory.importSnapshot(exported);
+const importedId: string = this.versionHistory.importSnapshot(exported);
 ```
 
 ### Events

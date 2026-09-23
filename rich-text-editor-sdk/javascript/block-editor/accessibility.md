@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Accessibility in JavaScript Block Editor
 
-The Block Editor control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The Block Editor control follows accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Block Editor control is outlined below.
 
@@ -57,7 +57,7 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 
 ## Keyboard interaction
 
-The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guidelines, making it easy for people who use assistive technologies (AT) or rely solely on keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
+The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guidelines, enabling access via assistive technologies and keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
 
 For a complete list of keyboard shortcuts, refer to the [Keyboard Support](./keyboard-shortcuts) documentation.
 

@@ -26,26 +26,11 @@ The table below lists the available text styles in the Rich Text Editor's toolba
 | StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Applies a line through the text. |toolbarSettings: { items: ['StrikeThrough']}|
 | InlineCode |![InlineCode icon](../images/inlineCode.png) | Formats text as inline code | toolbarSettings: { items: ['InlineCode']} | `<code>inline code</code>`|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Positions text slightly below the normal line |toolbarSettings: { items: ['SubScript']}|
-| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript’']}|
+| SuperScript | ![SuperScript icon](../images/super-script.png) | Positions text slightly above the normal line |toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) |  Converts text to lowercase |toolbarSettings: { items: ['LowerCase']}|
-| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase’']}|
+| UpperCase | ![UpperCase icon](../images/upper-case.png) | Converts text to uppercase |toolbarSettings: { items: ['UpperCase']}|
 
 Please refer to the sample below to add these basic text styling options in the Rich Text Editor.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/basic-text-styling-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/basic-text-styling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/basic-text-styling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -57,7 +42,6 @@ Please refer to the sample below to add these basic text styling options in the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/basic-text-styling-cs1" %}
-{% endif %}
 
 ## Text alignments
 
@@ -81,21 +65,6 @@ To fully justify your text, place the cursor in the desired paragraph or select 
 
 Please refer to the sample and code snippets below to add these alignment options in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-alignment-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-alignment-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-alignment-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-alignment-cs1/index.js %}
@@ -106,7 +75,6 @@ Please refer to the sample and code snippets below to add these alignment option
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/text-alignment-cs1" %}
-{% endif %}
 
 ## Number and bullet format list
 
@@ -141,21 +109,6 @@ You can customize the available number formats using the [numberFormatList](http
 
 The following example demonstrates how to customize the number format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs1/index.js %}
@@ -166,7 +119,6 @@ The following example demonstrates how to customize the number format lists in t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs1" %}
-{% endif %}
 
 ### Unordered lists
 
@@ -189,21 +141,6 @@ For more control over the bullet style, use the `bulletFormatList` dropdown in t
 
 The following example demonstrates how to customize the bullet format lists in the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs2/index.js %}
@@ -214,7 +151,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-lists-cs2" %}
-{% endif %}
 
 ### Checklist
 
@@ -235,21 +171,6 @@ To enable the Checklist feature in your editor, add the `Checklist` toolbar item
 
 Below is an example of how to configure the Checklist in the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/checklist-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/checklist-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/checklist-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/checklist-cs1/index.js %}
@@ -260,7 +181,6 @@ Below is an example of how to configure the Checklist in the Rich Text Editor:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/checklist-cs1" %}
-{% endif %}
 
 ## Nested list creation using Tab key
 
@@ -289,21 +209,6 @@ To adjust the text indentation:
 
 To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/indent-and-outdent-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/indent-and-outdent-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/indent-and-outdent-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/indent-and-outdent-cs1/index.js %}
@@ -314,7 +219,6 @@ To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/indent-and-outdent-cs1" %}
-{% endif %}
 
 ### Indentation in lists
 
@@ -363,21 +267,6 @@ This action will format the selected text with the chosen heading style, helping
 
 Below are examples and code snippets demonstrating how to integrate and utilize heading formatting options effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-format-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-format-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-format-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-format-cs1/index.js %}
@@ -388,7 +277,6 @@ Below are examples and code snippets demonstrating how to integrate and utilize 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-format-cs1" %}
-{% endif %}
 
 ### Custom format
 
@@ -403,21 +291,6 @@ This customization enhances the editor’s functionality, enabling users to stru
 
 Below are examples demonstrating how to customize the format dropdown.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/custom-code-format-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/custom-code-format-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/custom-code-format-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/custom-code-format-cs1/index.js %}
@@ -428,7 +301,6 @@ Below are examples demonstrating how to customize the format dropdown.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/custom-code-format-cs1" %}
-{% endif %}
 
 ## Quotation formatting
 
@@ -437,21 +309,6 @@ The Rich Text Editor facilitates quotation formatting through the `Blockquote` t
 To format text as a quotation, select the desired text and click on the `Blockquote` icon in the toolbar. The selected text will be formatted as a blockquote, typically indented and styled differently from the surrounding content.
 
 Use the `Blockquote` tool in the editor below to see the feature in action.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/quotation-formatting-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/quotation-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/quotation-formatting-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -463,7 +320,6 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/quotation-formatting-cs1" %}
-{% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
@@ -477,21 +333,6 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 2. **Pre-loading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
 3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/nested-blockquote/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/nested-blockquote/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/nested-blockquote" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/nested-blockquote/index.js %}
@@ -502,7 +343,6 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/nested-blockquote" %}
-{% endif %}
 
 ## Line Height
 
@@ -511,21 +351,6 @@ The Rich Text Editor supports line height feature which allows users to adjust t
 ### Built-in line height
 
 You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#items) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -537,7 +362,6 @@ You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height" %}
-{% endif %}
 
 The Rich Text Editor comes with a pre-configured set of [`lineHeight`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#lineheight) property.
 
@@ -546,21 +370,6 @@ The Rich Text Editor comes with a pre-configured set of [`lineHeight`](https://e
 The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [`lineHeight`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#lineheight) property. This allows you to extend the available line height options beyond the default selection.
 
 The [`supportAllValues`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/lineheight#supportallvalues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -572,7 +381,6 @@ The [`supportAllValues`](https://ej2.syncfusion.com/documentation/api/rich-text-
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/line-height-cs1" %}
-{% endif %}
 
 ## Horizontal line
 
@@ -581,21 +389,6 @@ The Rich Text Editor enables users to insert horizontal dividers using the `Hori
 To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
 
 Use the `HorizontalLine` tool in the editor below to see the feature in action.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/horizontal-line/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/horizontal-line/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/horizontal-line" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -607,7 +400,6 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/horizontal-line" %}
-{% endif %}
 
 ## Format painter
 
@@ -623,23 +415,8 @@ By double-clicking the format painter toolbar button, `sticky mode` will be enab
 
 The following code example shows how to add the format painter tool in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.js" %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -648,7 +425,6 @@ The following code example shows how to add the format painter tool in the Rich 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs1" %}
-{% endif %}
 
 ### Customizing copy and paste format
 
@@ -668,23 +444,8 @@ Using the `deniedFormats` property following styles are denied copying from the 
 
 Below is an example illustrating how to define the `allowedFormats` and `deniedFormats` settings for the Format Painter in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.js" %}
+{% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
@@ -693,7 +454,6 @@ Below is an example illustrating how to define the `allowedFormats` and `deniedF
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/format-painter-cs2" %}
-{% endif %}
 
 ### Shortcut keys for copy and paste format
 
@@ -723,19 +483,6 @@ To enable the Clear Format feature in your Rich Text Editor, you need to add it 
 
 Here's an example of how to configure the Clear Format feature:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs1/index.js %}
@@ -744,7 +491,6 @@ Here's an example of how to configure the Clear Format feature:
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Using clear format
 
@@ -756,21 +502,6 @@ Once configured, you can use the Clear Format feature as follows:
 
 Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. Examples and code snippets below show how to use 'Clear Format' effectively in the Rich Text Editor.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs2/index.js %}
@@ -781,7 +512,6 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/remove-format-cs2" %}
-{% endif %}
 
 ## Markdown Auto Format
 
@@ -822,21 +552,6 @@ Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are co
 Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
 **Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/markdown-autoformat-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/markdown-autoformat-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/markdown-autoformat-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/markdown-autoformat-cs1/index.js %}
@@ -847,4 +562,3 @@ Elements such as headings, lists, blockquotes, and code block are converted **on
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/markdown-autoformat-cs1" %}
-{% endif %}

@@ -251,7 +251,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
 
 ```
 
-To localize the editor’s strings with your own localization, copy the default language information and localize the strings in the values column. For example, to localize the editor in German (“de-DE”).
+To localize the editor's strings with your own localization, copy the default language information and localize the strings in the values column. For example, to localize the editor in German (`de-DE`):
 
 ```typescript
 {
@@ -496,19 +496,6 @@ To localize the editor’s strings with your own localization, copy the default 
 
 The sample below demonstrates the Rich Text Editor control rendered in German ("de-DE") using the [Locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Locale) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization/razor %}
@@ -517,7 +504,6 @@ The sample below demonstrates the Rich Text Editor control rendered in German ("
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/globalization/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ## Enable Right-to-Left (RTL) Mode
@@ -535,19 +521,6 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 > This direction does not change based on the [Locale](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Locale) property.
 
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/rtl/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/rtl/razor %}
@@ -556,4 +529,3 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/rtl/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

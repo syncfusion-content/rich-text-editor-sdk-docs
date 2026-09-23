@@ -36,7 +36,7 @@ By default, the control resizes up to the current viewport size. Apply these sty
 
 For example, add the following to the `app.component.css` file:
 
-```CSS
+```css
 
 .e-richtexteditor {
   max-width: 880px;

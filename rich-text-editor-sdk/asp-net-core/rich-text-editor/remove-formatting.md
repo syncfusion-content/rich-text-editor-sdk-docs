@@ -23,11 +23,9 @@ To enable the Clear Format feature in your Rich Text Editor, you need to add it 
 
 1. Open your component file where you've implemented the Rich Text Editor.
 2. Locate the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property in your Rich Text Editor configuration.
-3. Add `'ClearFormat'` to the `items` array within `toolbarSettings`.
+3. Add `ClearFormat` to the `items` array within `toolbarSettings`.
 
 Here's an example of how to configure the Clear Format feature:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,18 +36,6 @@ Here's an example of how to configure the Clear Format feature:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Using Clear Format
 
 Once configured, you can use the Clear Format feature as follows:
@@ -58,9 +44,7 @@ Once configured, you can use the Clear Format feature as follows:
 2. Click the `Clear Format` button in the toolbar.
 3. The selected text will revert to its original, unformatted state.
 
-Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. Examples and code snippets below show how to use 'Clear Format' effectively in the Rich Text Editor.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Using `Clear Format` makes it easy to undo styling changes and keep your text looking consistent. The examples and code snippets below show how to use `Clear Format` effectively in the Rich Text Editor.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -71,18 +55,6 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/clear-format-cs2/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## See Also
 
-[Copy and Apply Formatting](./format-painter)
+* [Copy and Apply Formatting](./format-painter)

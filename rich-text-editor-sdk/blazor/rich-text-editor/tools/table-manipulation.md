@@ -9,7 +9,7 @@ documentation: ug
 
 # Table Manipulation in Blazor Rich Text Editor
 
-The Rich Text Editor allows you to insert the table of content in the edit panel and provide options to add, edit, and remove the table as well as to perform other table-related actions. For inserting the table into the Rich Text Editor, the following list of options has been provided in the [RichTextEditorTableSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html).
+The Blazor Rich Text Editor allows you to insert a table in the editor and provides options to add, edit, and remove the table as well as to perform other table-related actions. For inserting a table into the Rich Text Editor, the following list of options has been provided in the [RichTextEditorTableSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html).
 
 | Options | Description | Default Value |
 |----------------|---------|-----------------------------|
@@ -21,7 +21,7 @@ The Rich Text Editor allows you to insert the table of content in the edit panel
 
 ## Insert table
 
-Using the [ToolbarCommand.CreateTable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateTable) toolbar option, select a number of rows and columns to be inserted over the table grid and insert the table into the Rich Text Editor content using the mouse. Tables can also be inserted through the option in the pop-up where the number of rows and columns can be provided manually, and this is the default way in devices.
+Using the [ToolbarCommand.CreateTable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateTable) toolbar option, select a number of rows and columns from the table grid and insert the table into the Blazor Rich Text Editor content using the mouse. Tables can also be inserted through the pop-up where the number of rows and columns is provided manually; this is the default way in devices.
 
 {% tabs %}
 {% highlight razor %}
@@ -37,11 +37,11 @@ Using the [ToolbarCommand.CreateTable](https://help.syncfusion.com/cr/blazor/Syn
 
 The quick toolbar is opened by clicking the table. It has different sets of commands to be performed on the table, which increases the feasibility of editing the table easily.
 
-N> For more details about quick toolbar, refer to this [documentation section](../quick-toolbar).
+N> For more details about the quick toolbar, refer to the [Built-in Tools](./built-in-tools#tables) topic.
 
 ## Table properties
 
-Sets the default width of the table when it is inserted in the Rich Text Editor using the width of the `RichTextEditorTableSettings`.
+Sets the default width of an inserted table using the [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorTableSettings_Width) property of `RichTextEditorTableSettings`.
 
 Using the quick toolbar, users can change the width, cell padding, and cell spacing in the selected table using the [TableToolbarCommand.TableEditProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableEditProperties) command dialog action.
 
@@ -128,9 +128,9 @@ The text formatting feature in tables allows users to apply various styles to se
 
 ### Cell merge and split
 
-The Rich Text Editor allows users to change the appearance of the tables by splitting or merging the table cells.
+The Blazor Rich Text Editor allows users to change the appearance of the tables by splitting or merging the table cells.
 
-The `TableCell` item should be configured in the Table [quickToolbarSettings](../quick-toolbar) property to show the merge or split icons while selecting the table cells.
+The `TableCell` item should be configured in the Table [quickToolbarSettings](./built-in-tools#Table-quicktoolbar-items) property to show the merge or split icons while selecting the table cells.
 
 ### Cell merging
 
@@ -164,13 +164,13 @@ The [TableCommandsArgs.Columns](https://help.syncfusion.com/cr/blazor/Syncfusion
 
 ## Table column resizing
 
-The Rich Text Editor supports resizing of table columns, allowing users to adjust the size of individual columns to better fit their content. To resize a column, hover the pointer near the edge of a table cell until the resize cursor appears. Then, click and drag the cell border to modify the column size as needed.
+The Blazor Rich Text Editor supports resizing of table columns, allowing users to adjust the size of individual columns to better fit their content. To resize a column, hover the pointer near the edge of a table cell until the resize cursor appears. Then, click and drag the cell border to modify the column size as needed.
 
 This feature provides flexibility in organizing tabular data and ensures that tables remain clear, structured, and easy to read, especially when working with varying content lengths or complex layouts.
 
 ## Nesting tables
 
-The Rich Text Editor allows users to insert tables within other table cells, enabling the creation of nested tables. This feature is useful for building complex layouts such as structured forms, hierarchical data views, or detailed reports. Users can manually insert a nested table by placing the cursor inside a cell and using the table toolbar option or HTML source editing.
+The Blazor Rich Text Editor allows users to insert tables within other table cells, enabling the creation of nested tables. This feature is useful for building complex layouts such as structured forms, hierarchical data views, or detailed reports. Users can manually insert a nested table by placing the cursor inside a cell and using the table toolbar option or HTML source editing.
 
 {% tabs %}
 {% highlight razor %}
@@ -184,7 +184,7 @@ The Rich Text Editor allows users to insert tables within other table cells, ena
 
 ## Quick insert for table rows and columns
 
-The Rich Text Editor offers a simple and intuitive way to add rows and columns to your tables without interrupting your workflow. You can expand tables directly from the interface, no need to use toolbar buttons.
+The Blazor Rich Text Editor offers a simple and intuitive way to add rows and columns to your tables without interrupting your workflow. You can expand tables directly from the interface, no need to use toolbar buttons.
 
 ### Insert columns instantly
 
@@ -202,19 +202,19 @@ The Rich Text Editor offers a simple and intuitive way to add rows and columns t
 
 ![Blazor RichTextEditor table row quick insert](../images/table_row_quick_insert.webp)
 
-## Vertical align
+## Vertical alignment
 
 The text inside the table can be aligned to the top, middle, or bottom using the [TableToolbarCommand.TableCellVerticalAlign](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.TableToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_TableToolbarCommand_TableCellVerticalAlign) command of the quick toolbar.
 
 ![Blazor RichTextEditor changing vertical alignment](../images/blazor-richtexteditor-vertical-alignment.webp)
 
-## Horizontal align
+## Horizontal alignment
 
 The text inside the table can be aligned left, right, or center using the `TableCellHorizontalAlign` command of the quick toolbar.
 
 ![Blazor RichTextEditor changing horizontal alignment](../images/blazor-richtexteditor-horizontal-alignment.webp)
 
-## Border Styles
+## Border styles
 
 Table styles provided for the class name should be appended to a table element. It helps to design the table in specific CSS styles when inserted in the editor.
 
@@ -222,13 +222,13 @@ By default, it provides `Dashed border` and `Alternate rows`.
 
 `Dashed border`: Applies the dashed border to the table.
 
-`Alternate border`: Applies the alternative background to the table.
+`Alternate rows`: Applies an alternating background color to table rows.
 
 ![Blazor RichTextEditor displaying table styles](../images/blazor-richtexteditor-table-style.webp)
 
 ### Custom Styles
 
-The Rich Text Editor provides support to custom styles for tables. If you want to add additional styles, pass the styles information as `List<DropDownItemModel>` data to the [RichTextEditorTableSettings.Styles](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorTableSettings_Styles)  property.
+The Blazor Rich Text Editor provides support to custom styles for tables. If you want to add additional styles, pass the styles information as `List<DropDownItemModel>` data to the [RichTextEditorTableSettings.Styles](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorTableSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorTableSettings_Styles)  property.
 
 {% tabs %}
 {% highlight razor %}
@@ -248,7 +248,7 @@ The background color can be set for each table cell through the [TableToolbarCom
 
 ## Copy, cut, and paste table rows and columns
 
-The Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, allowing users to easily modify and manage table data within the editor.
+The Blazor Rich Text Editor supports copying, cutting, and pasting table content, significantly improving the efficiency of table data manipulation. This feature is ideal for applications that require dynamic table content management, allowing users to easily modify and manage table data within the editor.
 
 Users can select multiple table cells by dragging the mouse or by holding the <kbd>Shift</kbd> key and using the <kbd>Arrow keys</kbd>. After selecting the desired cells, the following standard keyboard shortcuts can be used:
 
@@ -268,7 +268,7 @@ Users can select multiple table cells by dragging the mouse or by holding the <k
 * Maintains formatting consistency during both internal and external paste operations.
 * Supports pasting into a single clicked cell or a selected range of multiple cells.
 
-N> Refer to the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. Also, explore the [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+N> Refer to the [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. Also, explore the [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the Blazor Rich Text Editor tools.
 
 ## See also
 

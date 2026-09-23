@@ -13,7 +13,7 @@ The Block Editor control provides comprehensive keyboard shortcuts to enhance pr
 
 ## Content editing and formatting
 
-These keyboard shortcuts allow for quick access to content editing features like bold, italic, and text formatting options.
+Apply bold, italic, underline, and other text formatting quickly with these shortcuts.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -25,7 +25,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 
 ## Block creation and management
 
-These shortcuts enable quick creation of different block types and management of existing blocks.
+Create and manage blocks quickly with these shortcuts.
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -45,8 +45,11 @@ These shortcuts enable quick creation of different block types and management of
 
 ## Block level actions
 
-These shortcuts provide quick access to block-specific actions like duplication, deletion, indentation and movement.
-[For indent, both ctrl+] and tab are supported. For outdent, both ctrl+[ and shift+tab are supported.]
+Apply block-specific actions such as duplication, deletion, indentation, and movement with these shortcuts.
+
+> **Note:** The following shortcuts support alternative key combinations:
+> - **Indent:** `Ctrl + ]` or `Tab`
+> - **Outdent:** `Ctrl + [` or `Shift + Tab`
 
 | Actions | Windows | Mac |
 |---------|---------|-----|
@@ -72,9 +75,9 @@ These shortcuts cover general editor functionality including undo/redo operation
 
 ## Customizing keyboard shortcuts
 
-You can customize menu level shortcuts such as `Slash Command Menu`, `Block Action Menu` and `Context Menu` on the respective menu settings config by modifying it's `shortcut` property.
+You can customize menu level shortcuts such as `Slash Command Menu`, `Block Action Menu`, and `Context Menu` by modifying the `shortcut` property on the respective menu settings config.
 
-For other operations, you can customize the keyboard shortcuts by configuring the [keyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyConfig) property when initializing the Block Editor control. This allows you to override default shortcuts or add new ones according to your application's requirements.
+For other operations, customize the keyboard shortcuts by configuring the [KeyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyConfig) property when initializing the Block Editor control. This allows you to override default shortcuts or add new ones according to your application's requirements.
 
 In the below example, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
 

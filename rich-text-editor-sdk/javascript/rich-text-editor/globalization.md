@@ -370,7 +370,7 @@ To localize the editor’s strings with your own localization, copy the default 
         'removeTable': "Tabelle entfernen",
         'tableHeader': "Kopfzeile",
         'tableRemove': "Tabelle löschen",
-        'tableCellBackgroun': "Tabellenzellenhintergrund",
+        'tableCellBackground': "Tabellenzellenhintergrund",
         'tableEditProperties': "Tabelle Eigenschaften bearbeiten",
         'styles': "Stile",
         'insertColumnLeft': "Spalte links einfügen",
@@ -494,21 +494,6 @@ To localize the editor’s strings with your own localization, copy the default 
 
 The sample below demonstrates the Rich Text Editor component rendered in German ("de-DE") using the [locale](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#locale) property.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs4/index.js %}
@@ -519,7 +504,6 @@ The sample below demonstrates the Rich Text Editor component rendered in German 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs4" %}
-{% endif %}
 
 ## Enable Right-to-Left (RTL) mode
 
@@ -535,21 +519,6 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 
 > This direction does not change based on the `locale` property.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs5/index.js %}
@@ -560,4 +529,3 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs5" %}
-{% endif %}

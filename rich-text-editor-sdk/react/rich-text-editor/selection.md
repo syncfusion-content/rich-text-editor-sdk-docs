@@ -132,7 +132,7 @@ function App() {
     }
     return null;
   };
-   return()
+   return();
 }
 
 export default App;

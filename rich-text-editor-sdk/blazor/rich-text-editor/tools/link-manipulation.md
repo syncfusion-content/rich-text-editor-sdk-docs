@@ -13,7 +13,7 @@ The hyperlink can be inserted into the editor for quick access to the related in
 
 ## Insert link
 
-Point the cursor anywhere within the editor where you want to insert the link. It is also possible to select a text or an image within the editor that can be converted to the hyperlink. Click the insert hyperLink tool on the toolbar. The insert link dialog will open. The dialog has the following options.
+Point the cursor anywhere within the editor where you want to insert the link. It is also possible to select a text or an image within the editor that can be converted to a hyperlink. Click the `InsertLink` tool on the toolbar to open the insert link dialog. The dialog has the following options.
 
 ![Blazor Rich Text Editor insert link](../images/blazor-richtexteditor-insert-link.webp)
 
@@ -24,7 +24,7 @@ Point the cursor anywhere within the editor where you want to insert the link. I
 | Tooltip |Optional text that appears when hovering over the hyperlink, type the required text in the `Tooltip` field. |
 | Open Link | Choose whether the hyperlink should open in a new browser tab or the same tab |
 
-N> The Rich Text Editor link tool validates the URLs as you type them in the web address. URLs considered invalid will be highlighted with a red color by clicking the insert button in the [Insert Link](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateLink) dialog.
+N> The Blazor Rich Text Editor link tool validates the URLs as you type them in the web address. URLs considered invalid will be highlighted with a red color by clicking the insert button in the [Insert Link](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.ToolbarCommand.html#Syncfusion_Blazor_RichTextEditor_ToolbarCommand_CreateLink) dialog.
 
 {% tabs %}
 {% highlight razor %}
@@ -60,4 +60,4 @@ Add the custom tools on the selected link inside the Rich Text Editor through th
 
 ## See also
 
-* [How to insert link editing option in the toolbar items](../toolbar#link-quick-toolbar)
+* [How to use link editing options in the toolbar items](./built-in-tools#hyperlinks)

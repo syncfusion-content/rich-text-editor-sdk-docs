@@ -22,15 +22,15 @@ When the user types the `@` symbol followed by a character, the Rich Text Editor
 * Clicking on it
 * Typing the name of the item they want to tag
 
-## Customizing suggestion list 
+## Customizing suggestion list
 
 ### Minimum input length for Mention suggestions
 
 You can control when the suggestion list appears by setting the [MinLength](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MinLength) property in the Mention control. This property defines the minimum number of characters a user must type after the mention character (@) to trigger the search action. This is especially useful when working with large datasets, as it helps reduce unnecessary queries and improves performance.
 
-By default, `MinLength` is set to 0, which means the suggestion list appears immediately after the mention character is entered. However, you can increase this value to delay the search until the user has typed a specific number of characters.
+By default, `MinLength` is set to `0`, which means the suggestion list appears immediately after the mention character is entered. Increase this value to delay the search until the user has typed a specific number of characters.
 
-In the following example, the `MinLength` is set to 3, so the suggestion list will only appear once the user types three or more characters after the @ symbol.
+In the following example, the `MinLength` is set to `3`, so the suggestion list appears only after the user types three or more characters after the `@` symbol.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -47,7 +47,7 @@ You can control the number of items displayed in the Mention suggestion list usi
 
 By default, the suggestion list displays 25 items. You can customize this value to show fewer or more items based on your application's needs.
 
-In the example below, the `SuggestionCount` is set to 5, so only 5 items will be displayed in the suggestion list when the user types the mention character (@).
+In the example below, the `SuggestionCount` is set to `5`, so only 5 items are displayed in the suggestion list when the user types the mention character (`@`).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -78,13 +78,13 @@ For example, by default, the mention chip renders as:
 Using the `DisplayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com" aria-label="Email Selma Rose">@Selma Rose</a>
 
 ```
 
 This allows you to create more interactive and informative mentions within the editor.
 
-In the following sample, we configured the following properties:
+The following properties are configured in the sample:
 
 * [DisplayTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DisplayTemplate) -Used to customize how the selected value appears in the editor content.
 * [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) - Allow to continue search action if user enter space after mention character while searching.

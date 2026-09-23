@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Third-Party Integrations in ASP.NET MVC Rich Text Editor | Syncfusion
-description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET MVC Rich Text Editor.
+description: Learn how to integrate CodeMirror, Embedly, Highlight.js, and other third-party libraries with the ASP.NET MVC Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Third-Party Integration in ASP.NET MVC Rich Text Editor
 
-The Rich Text Editor can be integrated with third-party to suite the application scenario.
+The Rich Text Editor can be integrated with third-party libraries to suit your application scenario.
 
 ## CodeMirror Integration
 
@@ -36,19 +36,6 @@ Required CSS file of code mirror
 
 Add a custom icon for HTML source editor in the toolbar of Rich Text Editor using the template option of [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings), define the code mirror plugins, and then pass the Rich Text Editor content as argument in the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ActionComplete) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/razor %}
@@ -57,7 +44,6 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/code-mirror/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## At.js Integration
 
@@ -96,19 +82,6 @@ var config = {
 
 Populate the employee’s email id from local or remote data and set the result to the data of `At.js` configuration.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/at-integration/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/at-integration/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/at-integration/razor %}
@@ -117,7 +90,6 @@ Populate the employee’s email id from local or remote data and set the result 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/at-integration/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Embedly Integration
 
@@ -133,19 +105,6 @@ Include `embedly` javascript.
 
 The above script is added to the page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/embed-ly/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/embed-ly/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/embed-ly/razor %}
@@ -154,4 +113,3 @@ The above script is added to the page.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/embed-ly/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

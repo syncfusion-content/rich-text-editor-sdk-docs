@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Code Block Formatting in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Enable Code Block in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to add code block formatting in the ASP.NET MVC Rich Text Editor using the InsertCode toolbar button to apply and remove code styles.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -8,26 +8,13 @@ documentation: ug
 ---
 
 
-# Add Code Block Formatting in ASP.NET MVC Rich Text Editor
+# Configure Code Block Formatting in ASP.NET MVC Rich Text Editor
 
 You can configure code block formatting as a separate toolbar button by adding the **InsertCode** keyword within the [`ToolbarSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) items property.
 
 The InsertCode button has a toggle state to apply code block formatting to the editor and remove code block formatting from the editor.
 
-The following sample demonstrates how to config the InsertCode button in toolbar and set the background color to “pre” tag for highlighting the code block.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following sample demonstrates how to configure the **InsertCode** button in the toolbar and set the background color on the `pre` tag to highlight the code block.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,10 +24,9 @@ The following sample demonstrates how to config the InsertCode button in toolbar
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/format-code-block/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
-The output will be as follows.
+The output is shown below.
 
 ![Code Format](../../rich-text-editor/images/format-code-block.png)

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Custom Toolbar in Vue Rich text editor component | Syncfusion
-description: Learn here all about Custom Toolbar in Syncfusion Vue Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Custom Toolbar
+title: Custom Toolbar Items in Vue Rich Text Editor | Syncfusion
+description: Learn how to create custom toolbar items in the Vue Rich Text Editor with custom commands, icons, templates, tooltips, and click actions.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Custom Toolbar Items in Vue Rich Text Editor Component
+# Custom Toolbar Items in Vue Rich Text Editor
 
-The Rich Text Editor allows you to configure your own commands to its toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
+The Rich Text Editor allows you to configure your own commands to its toolbar using the [`toolbarSettings`](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property. The command can be plain text, an icon, or an HTML template. You can also define the order and the group in which the command should be included. Bind the action to the command by getting the editor's instance.
 
 This sample shows how to add your own commands to the toolbar of the Rich Text Editor. The “Ω” command is added to insert special characters in the editor. By clicking the “Ω” command, it will show the special characters list, and then choose the character to be inserted in the editor.
 
-The following code snippet illustrates custom tool with tooltip text which will be included in [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) field of the [toolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property.
+The following code snippet illustrates a custom tool with tooltip text, which will be included in the [items](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#items) field of the [toolbarSettings](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property.
 
 ```javascript
 {
@@ -47,6 +47,6 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 
 ## Enabling and disabling toolbar items
 
-You can use the [enableToolbarItem](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
+You can use the [enableToolbarItem](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#enabletoolbaritem) and [disableToolbarItem](https://ej2.syncfusion.com/vue/documentation/api/rich-text-editor/index-default#disabletoolbaritem) methods to control the state of toolbar items. These methods take a single item or an array of [items](#available-toolbar-items) as parameter.
 
 >You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.

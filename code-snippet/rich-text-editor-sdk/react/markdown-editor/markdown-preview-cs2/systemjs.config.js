@@ -38,21 +38,23 @@ System.config({
         "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
         "@syncfusion/ej2-filemanager": "syncfusion:ej2-filemanager/dist/ej2-filemanager.umd.min.js",
         "@syncfusion/ej2-richtexteditor": "syncfusion:ej2-richtexteditor/dist/ej2-richtexteditor.umd.min.js",
-        "@syncfusion/ej2-notifications":"syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
-        
+        "@syncfusion/ej2-notifications": "syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
+
         "@syncfusion/ej2-react-base": "syncfusion:ej2-react-base/dist/ej2-react-base.umd.min.js",
         "@syncfusion/ej2-react-popups": "syncfusion:ej2-react-popups/dist/ej2-react-popups.umd.min.js",
         "@syncfusion/ej2-react-buttons": "syncfusion:ej2-react-buttons/dist/ej2-react-buttons.umd.min.js",
         "@syncfusion/ej2-react-richtexteditor": "syncfusion:ej2-react-richtexteditor/dist/ej2-react-richtexteditor.umd.min.js",
         "@syncfusion/ej2-react-layouts": "syncfusion:ej2-react-layouts/dist/ej2-react-layouts.umd.min.js",
-        "@syncfusion/ej2-interactive-chat":"syncfusion:ej2-interactive-chat/dist/ej2-interactive-chat.umd.min.js",
-        "@syncfusion/ej2-markdown-converter":"syncfusion:ej2-markdown-converter/dist/ej2-markdown-converter.umd.min.js",
+        "@syncfusion/ej2-interactive-chat": "syncfusion:ej2-interactive-chat/dist/ej2-interactive-chat.umd.min.js",
+        "@syncfusion/ej2-markdown-converter": "syncfusion:ej2-markdown-converter/dist/ej2-markdown-converter.umd.min.js",
         "react-dom": "https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js",
         "react": "https://unpkg.com/react@18.2.0/umd/react.production.min.js",
-        "marked": "https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js",
     },
     packages: {
-        'app': { main: 'index', defaultExtension: 'tsx' },
+        'app': {
+            main: 'index',
+            defaultExtension: 'tsx'
+        },
     }
 
 });

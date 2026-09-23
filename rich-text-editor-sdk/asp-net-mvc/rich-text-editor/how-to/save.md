@@ -9,20 +9,7 @@ documentation: ug
 
 # Save Content to a Server File in ASP.NET MVC Rich Text Editor
 
-Rich Text Editor content can be passed from view to controller through `XMLHttpRequest` post. Content will be sent to the corresponding method into the controller and this value can be saved in a text file or any other format using `streamWriter`. Refer to the following given code.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/savefile/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Savefile.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/savefile/savefile.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Rich Text Editor content can be passed from the view to the controller through an `XMLHttpRequest` post. The content is sent to the corresponding action method in the controller, where it can be saved to a text file or any other format using `StreamWriter`. Refer to the following code.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,5 +19,4 @@ Rich Text Editor content can be passed from view to controller through `XMLHttpR
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/how-to/savefile/savefile.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 

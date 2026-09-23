@@ -10,13 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Code Blocks in JavaScript Rich Text Editor
 
-The Code Block feature in the Rich Text Editor, enabling users to insert and format code snippets effectively. It covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live code block highlighting is not supported during editing, syntax highlighting can be applied when content is displayed on the front end.
-
-{% if page.publishingplatform == "typescript" %}
-
-> Rich Text Editor features are segregated into individual feature-wise modules. To use `CodeBlock` tool, inject `CodeBlock` module using the `RichTextEditor.Inject(CodeBlock)`.
-
-{% endif %}
+The Code Block feature in the Rich Text Editor enables users to insert and format code snippets effectively. This feature covers configuring supported languages, integrating syntax highlighters, editing tips, and enabling tab-based indentation, making it ideal for technical documentation, tutorials, and code-heavy content. While live syntax highlighting during editing is not supported, syntax highlighting can be applied when content is displayed on the frontend.
 
 ## Inserting a code block
 
@@ -33,21 +27,6 @@ The Code Block feature supports customizable programming languages via the `code
 
 Below is an example of how to configure the `codeBlockSettings` using the Rich Text Editor:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-block-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-block-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
- 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-block-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-block-cs1/index.js %}
@@ -58,7 +37,6 @@ Below is an example of how to configure the `codeBlockSettings` using the Rich T
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/code-block-cs1" %}
-{% endif %}
 
 In this example:
 

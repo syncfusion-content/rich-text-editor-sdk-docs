@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown Syntax Supported in Blazor Editor | Syncfusion®
+title: Markdown Syntax Supported in Blazor Markdown Editor | Syncfusion®
 description: Learn the Markdown syntax supported in the Blazor Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 platform: rich-text-editor-sdk
 control: Markdown Editor

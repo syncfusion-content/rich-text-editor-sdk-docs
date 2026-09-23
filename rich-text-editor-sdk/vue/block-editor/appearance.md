@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Appearance  in Vue Block Editor Component | Syncfusion
-description: Checkout and learn about Appearance  with Syncfusion Essential Vue Block Editor component, its elements, and more details.
+title: Style and Appearance in Vue Block Editor | Syncfusion
+description: Learn how to customize the Vue Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
 platform: rich-text-editor-sdk
-control: Block Editor 
-publishingplatform: rich-text-editor-sdk
+control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Appearance in Vue Block Editor component
+# Style and Appearance in Vue Block Editor
 
 The Block Editor component provides several properties to customize its visual appearance, allowing you to control its dimensions, styling, and behavior.
 
@@ -17,9 +16,17 @@ The Block Editor component provides several properties to customize its visual a
 
 You can specify the width and height for the Block Editor component using the [width](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#width) and [height](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#height) properties.
 
+```html
+<ejs-blockeditor :width="'650px'" :height="'500px'"></ejs-blockeditor>
+```
+
 ## Setting readonly mode
 
 You can utilize the [readOnly](https://ej2.syncfusion.com/vue/documentation/api/blockeditor/index-default#readonly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+
+```html
+<ejs-blockeditor :readOnly="true"></ejs-blockeditor>
+```
 
 ## Customization using CSS Class
 

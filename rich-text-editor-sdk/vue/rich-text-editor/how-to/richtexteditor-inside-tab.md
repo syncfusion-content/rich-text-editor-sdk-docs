@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Integrating Rich Text Editor in Tab Components | Syncfusion
-description: Learn here all about Rich Text Editor Inside Tab in Syncfusion VUe Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Render Vue Rich Text Editor in Tab | Syncfusion
+description: Learn how to render multiple Vue Rich Text Editor instances inside a Tab component with toolbar configuration and content editing support.
 platform: rich-text-editor-sdk
-control: Integrating Rich Text Editor in Tab Components 
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrating Rich Text Editor in Tab Components
+# Render Vue Rich Text Editor in Tab
 
-Integrating a Rich Text Editor within Tab components provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
+Integrating a Rich Text Editor within Tab components provides a versatile and organized user interface for text formatting and content creation across multiple tabs. Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
+
+> Ensure that the `@syncfusion/ej2-vue-navigations` package (which provides the Tab component) is installed in addition to `@syncfusion/ej2-vue-richtexteditor`. Refer to the [Tab component documentation](https://ej2.syncfusion.com/vue/documentation/tab/getting-started) for setup details.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

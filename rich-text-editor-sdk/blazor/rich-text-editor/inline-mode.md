@@ -14,8 +14,7 @@ When the editable content is focused or selected, the inline toolbar appears aut
 
 ## Customizing Inline Toolbar Items
 
-You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
+You can customize the commands displayed in the inline toolbar by setting the [RichTextEditorToolbarSettings.Items](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_Blazor_RichTextEditor_RichTextEditorToolbarSettings_Items) property. This flexibility allows you to tailor the toolbar to include only the tools relevant to your application's needs.
 
 {% tabs %}
 {% highlight razor %}
@@ -41,4 +40,4 @@ The inline toolbar will appear only for the selected text by enabling the [RichT
 
 ![Blazor Rich Text Editor enabling selection](./images/blazor-richtexteditor-enable-selection.webp)
 
-N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the rich text editor tools.
+N> You can refer to our [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) example to know how to render and configure the Blazor Rich Text Editor tools.

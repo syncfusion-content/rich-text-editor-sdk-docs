@@ -10,35 +10,15 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Toolbar Types in JavaScript Rich Text Editor
 
-The JavaScript Rich Text Editor provides a powerful toolbar that enables users to format, style, and edit content efficiently. The toolbar includes essential editing tools such as bold, italic, underline, alignment, and lists, along with customization options to suit different use cases.
+The Rich Text Editor toolbar provides formatting, styling, and editing tools. Use the [type](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#type) field in the [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings) property to change the toolbar layout.
 
 > To create Rich Text Editor with Toolbar feature, inject the [Toolbar](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings) module to the Rich Text Editor using the `RichTextEditor.Inject(Toolbar)` method.
 
-The Rich Text Editor allows you to configure different types of toolbar using [type](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbartype#toolbartype) field in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) property. The types of toolbar are:
-
-1. Expand 
-2. MultiRow
-3. Scrollable
-4. Popup
+The accepted values for `type` are `Expand` (default), `MultiRow`, `Scrollable`, and `Popup`. Use the value that matches the layout you need.
 
 ## Expanding the toolbar
 
-The default mode of the toolbar is `Expand`, configured through [`toolbarSettings`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbartype#toolbartype) with `type: 'Expand'`. This mode hides any overflowing toolbar items in the next row, which can viewed by clicking the expand arrow.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+Setting the `type` to `Expand` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#type) groups the toolbar items so that they fit on a single row. Items that do not fit are collapsed into an expand menu.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -50,26 +30,10 @@ The default mode of the toolbar is `Expand`, configured through [`toolbarSetting
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs3" %}
-{% endif %}
 
 ## Configuring a multi-row toolbar
 
-Setting the `type` as `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+Setting the `type` to `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#type) arranges the toolbar items across multiple rows, displaying every configured toolbar item without collapsing.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -81,26 +45,10 @@ Setting the `type` as `MultiRow` in [toolbarSettings](https://ej2.syncfusion.com
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs4" %}
-{% endif %}
 
 ## Implementing a scrollable toolbar
 
 Setting the `type` to `Scrollable` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) will display the toolbar items in a single line, enabling horizontal scrolling in the toolbar.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -112,26 +60,10 @@ Setting the `type` to `Scrollable` in [toolbarSettings](https://ej2.syncfusion.c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-cs5" %}
-{% endif %}
 
 ## Configuring a popup toolbar
 
 Setting the `type` to `Popup` in [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#toolbarsettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-popup/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-popup/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-popup" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -143,28 +75,14 @@ Setting the `type` to `Popup` in [toolbarSettings](https://ej2.syncfusion.com/do
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/toolbar-popup" %}
-{% endif %}
 
 ## Creating a sticky toolbar
 
-By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [floatingToolbarOffset](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#floatingtoolbaroffset) to adjust its offset from the top of the document.
+By default, the toolbar remains fixed at the top of the Rich Text Editor when the page is scrolled. You can enable or disable this behavior using the [enableFloating](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#enablefloating) property of [toolbarSettings](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings). The default value is `true`.
+
+To control the vertical distance (in pixels) between the sticky toolbar and the top of the viewport, set [floatingToolbarOffset](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#floatingtoolbaroffset) to a numeric value. The default is `0`.
 
 Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettings#enablefloating) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/floating-toolbar-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/floating-toolbar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/floating-toolbar-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -176,10 +94,9 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/floating-toolbar-cs1" %}
-{% endif %}
 
 ## See also
 
-* [Customizing Rich Text Editor Toolbar Styles](../style#customizing-editor-toolbar)
-* [Implementing Inline Editing](../inline-editing)
+* [Toolbar Position in JavaScript Rich Text Editor](./toolbar-position)
+* [Quick Toolbars in JavaScript Rich Text Editor](./quick-toolbar)
 * [Customizing Accessibility Shortcut Keys](../accessibility#keyboard-navigation)

@@ -13,7 +13,7 @@ import {
   EditorMode,
 } from '@syncfusion/ej2-angular-richtexteditor';
 import { Browser } from '@syncfusion/ej2-base';
-import { marked } from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import {
   SplitterComponent,
   SplitterModule,
@@ -81,7 +81,7 @@ export class AppComponent {
     };
 
     public value: string =
-        'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.';
+        'In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content.';
 
     public srcArea: any;
     public mode: EditorMode = 'Markdown';
@@ -114,12 +114,12 @@ export class AppComponent {
     }
 
     public async updateValue(): Promise<void> {
-        this.srcArea.innerHTML = await marked(
+        this.srcArea.innerHTML = (await MarkdownConverter.toHtml(
         (
             (
             this.editorObj!.contentModule as ContentRender
             ).getEditPanel() as HTMLTextAreaElement
         ).value
-        );
+        )) as string;
     }
 }

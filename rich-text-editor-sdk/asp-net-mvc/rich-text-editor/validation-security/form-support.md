@@ -14,7 +14,7 @@ This below sample demonstrate how to get the Rich Text Editor value in button cl
 
 ## Render the Rich Text Editor
 
-Render the Rich Text Editor in form as below.
+Render the Rich Text Editor inside a form as shown below.
 
 ```html
 
@@ -33,20 +33,7 @@ Render the Rich Text Editor in form as below.
 
 ## Obtain the Value
 
-Upon submitting the form, `getValue` method will be triggered. Through the `FormData` class, Rich Text Editor value obtained as below.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/form-sample/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/form-sample/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Upon submitting the form, the `getValue` method is triggered. The Rich Text Editor's value is captured via the `FormData` class as shown in the sample below.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -56,7 +43,6 @@ Upon submitting the form, `getValue` method will be triggered. Through the `Form
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/form-sample/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

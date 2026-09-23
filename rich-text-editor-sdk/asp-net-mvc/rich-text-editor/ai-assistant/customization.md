@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
+title: Customize AI Assistant in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to customize the AI Assistant in the ASP.NET MVC Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 ---
 
-# Customizations of AI Assistant in ASP.NET MVC Rich Text Editor
+# Customization of AI Assistant in ASP.NET MVC Rich Text Editor
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
 
@@ -52,16 +52,6 @@ In the following example, **custom toolbar items** are added to the **Header**, 
    * A **Save** toolbar button is added to the response toolbar.
    * On clicking the button, the generated AI response content is extracted from the response container and can be processed further (for example, saving it to a database or local storage).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/custom-toolbar-items/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/custom-toolbar-items/razor %}
@@ -70,10 +60,9 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/custom-toolbar-items/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Styling the Popup
-The AI Assistant Popup can be styled by using the following css.
+The AI Assistant Popup can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup {
@@ -81,13 +70,13 @@ The AI Assistant Popup can be styled by using the following css.
 }
 ```
 
-The AI Assistant Popup processing state can be styled by using the following css.
+The AI Assistant Popup processing state can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup.processing {
     padding:2px;
     color: white;
-    background: white;
+    background: #333;
     z-index: 1;
 }
 ```
@@ -95,16 +84,6 @@ The AI Assistant Popup processing state can be styled by using the following css
 **Example**
 
 In the following example, a CSS animation is applied to the popup while the request is in progress.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/popup-styling/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -114,7 +93,6 @@ In the following example, a CSS animation is applied to the popup while the requ
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/popup-styling/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Use Case
 Using the public methods, you can build custom workflows with the AI Assistant. Actions such as retrieving conversation history, executing prompts, adding responses, showing or hiding the AI Assistant, and clearing conversation history can all be achieved using the following public methods programmatically.
@@ -135,16 +113,6 @@ The following example demonstrates a Proofread use case by rendering a button ou
 1. Launches the AI Assistant popup using the `showAIAssistantPopup` method.
 2. Executes a prompt using the `executeAIPrompt` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/usecase/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/usecase/razor %}
@@ -153,4 +121,3 @@ The following example demonstrates a Proofread use case by rendering a button ou
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/ai-assistant/usecase/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

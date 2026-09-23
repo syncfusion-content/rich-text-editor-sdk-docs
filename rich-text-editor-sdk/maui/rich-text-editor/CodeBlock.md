@@ -10,7 +10,7 @@ keywords: maui rich text editor code block, code block language maui rte, syncfu
 
 # Code block support in .NET MAUI Rich Text Editor
 
-The [.NET MAUI SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html) includes built-in support for inserting and managing code blocks. This feature enables developers and end users to embed formatted code snippets within rich text content while preserving structure, readability, and formatting consistency.
+The [.NET MAUI Rich Text Editor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html) includes built-in support for inserting and managing code blocks. This feature enables developers and end users to embed formatted code snippets within rich text content while preserving structure, readability, and formatting consistency.
 
 Code blocks are especially useful in applications that involve technical documentation, blogging platforms, or developer-centric tools.
 

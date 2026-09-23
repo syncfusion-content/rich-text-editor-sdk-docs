@@ -9,15 +9,13 @@ documentation: ug
 
 # Insert Images in ASP.NET Core Rich Text Editor
 
-Rich Text Editor allows to insert images in your content from online sources as well as local computer. For inserting an image to the Rich Text Editor, the following list of options have been provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings)
+The Rich Text Editor allows you to insert images in your content from online sources as well as from the local computer. For inserting an image into the Rich Text Editor, the following list of options is provided in the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property.
 
 ## Configuring Image Tool in the Toolbar
 
 You can add an `Image` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 To configure the `Image` toolbar item, refer to the below code.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,21 +26,9 @@ To configure the `Image` toolbar item, refer to the below code.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Supported Image Save Formats
 
-The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
+The images can be saved as `Blob` or `Base64` URL by using the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property, which is of enum type, and the generated URL is set to the `src` attribute of the `<img>` tag.
 
 ```HTML
 
@@ -83,8 +69,6 @@ Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetco
 
 > The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save/tagHelper %}
@@ -93,18 +77,6 @@ Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetco
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/save/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Image Renaming Feature
 
@@ -118,8 +90,6 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 
 > By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-authenticate/tagHelper %}
@@ -129,25 +99,11 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-authenticate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SaveFile.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-authenticate/saveFile.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Maximum file size restriction
 
 You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [InsertImageSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
-In the following example, the image  size has been validated before uploading and determined whether the image  has been uploaded or not.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following example, the image size has been validated before uploading, and the upload is canceled when the size exceeds the configured limit.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -158,27 +114,15 @@ In the following example, the image  size has been validated before uploading an
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/check-image-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/check-image-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Image Replacement Functionality
 
-Once a image file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) `imageReplace` option. You can replace the image file either by using the web URL or the browse option in the image dialog.
+Once an image file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) `imageReplace` option. You can replace the image file either by using the web URL or the browse option in the image dialog.
 
 ## Deleting Images
 
-To remove an image from the Rich Text Editor content, select the image and click `Remove` tool from the quick toolbar. It will delete the image from the Rich Text Editor content as well as from the service location if the `removeUrl` is given.
+To remove an image from the Rich Text Editor content, select the image and click the `Remove` tool from the quick toolbar. It deletes the image from the Rich Text Editor content and from the service location if the `removeUrl` is configured.
 
-Once you select the image from the local machine, the URL for the image will be generate. From there, you can remove the image from the service location by clicking the cross icon.
+Once an image is uploaded from the local machine, a URL is generated for it. You can remove the image from the service location by clicking the cross icon.
 
 ![Rich Text Editor Image delete](../images/image-del.png)
 
@@ -189,8 +133,6 @@ The following sample explains, how to configure `removeUrl` to remove a saved im
 * Removing uploaded image file from the insert image dialog.
 * Deleting image using the quick toolbar `remove` option.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/remove-url/tagHelper %}
@@ -200,21 +142,9 @@ The following sample explains, how to configure `removeUrl` to remove a saved im
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/remove-url/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/remove-url/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Adjusting Image Dimensions
 
-Sets the default width and height of the image when it is inserted in the Rich Text Editor using [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Width) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Height) of the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings) property.
+Sets the default width and height of the image when it is inserted in the Rich Text Editor using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Height) properties of [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings).
 
 Through the quick toolbar, change the width and height using `Change Size` option. Once you click, the Image Size dialog box will open as follows. In that you can specify the width and height of the image in pixel.
 
@@ -233,9 +163,7 @@ The `Alternative Text` option lets you provide descriptive text that appears whe
 
 ## Configuring Image Display Position
 
-Sets the default display for an image when it is inserted in the Rich Text Editor using [display](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Display) field in [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings). It has two possible options: 'inline' and 'block'.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Sets the default display for an image when it is inserted in the Rich Text Editor using the [`display`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_Display) field in [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings). It has two possible options: `inline` and `block`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -246,23 +174,9 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-settings/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-settings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Configuring image alignment
 
 Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image `QuickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -273,23 +187,9 @@ Images in the Rich Text Editor can be aligned using the alignment options in the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-alignment-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-alignment-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Text wrapping around images
 
 The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image `QuickToolbarSettings`. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -300,21 +200,9 @@ The Rich Text Editor provides control over how text flows around images using th
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/wrap-text-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/wrap-text-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Hyperlinking Images
 
-The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, remove, edit and open link will be added to the quick toolbar of image. For further details about link, see the [`link documentation`](./link) documentation.
+The hyperlink itself can be an image in the Rich Text Editor. When an image is given as a hyperlink, the `Remove`, `Edit`, and `Open link` items are added to the image's quick toolbar. For further details, see the [link documentation](../link.md).
 
 ![Rich Text Editor image with link](../images/image-link.png)
 
@@ -344,8 +232,6 @@ By default, the Rich Text Editor allows you to insert images by drag-and-drop fr
 
 In the following sample, you can see feature demo.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/tagHelper %}
@@ -355,22 +241,10 @@ In the following sample, you can see feature demo.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/drag-drop/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ### Disabling Drag and Drop for Images
 
-You can prevent drag-and-drop action by setting the actionBegin argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+You can prevent the drag-and-drop action by setting the `cancel` property of the `actionBegin` event arguments to `true`. The following code shows how to prevent the drag-and-drop.
 
 <script>
 
@@ -388,8 +262,6 @@ The Rich Text Editor allows you to customize the image quick toolbar, providing 
 
 By configuring these options in the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) property, you can enhance the editor's functionality, enabling seamless image management and editing directly within your content. This customization ensures a user-friendly experience for efficiently manipulating image elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-quick-toolbar/tagHelper %}
@@ -398,18 +270,6 @@ By configuring these options in the [quickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-quick-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/image-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 

@@ -56,16 +56,16 @@
   overflow: hidden;
 }
 .rte-markdown-overview .e-md-preview::before {
-  content: '\e345';
+  content: '\\e345';
 }
 .rte-markdown-overview .e-icon-btn.e-active .e-md-preview.e-icons::before {
-  content: '\e350';
+  content: '\\e350';
 }
 .bootstrap4 .rte-markdown-overview .e-icon-btn.e-active .e-md-preview::before {
-  content: '\e790';
+  content: '\\e790';
 }
 .bootstrap4 .rte-markdown-overview .e-icon-btn .e-md-preview::before {
-  content: '\e787';
+  content: '\\e787';
 }
 .fluent .rte-markdown-overview .e-icon-btn.e-active .e-md-preview::before,
 .fluent-dark .rte-markdown-overview .e-icon-btn.e-active .e-md-preview::before,
@@ -103,7 +103,7 @@
   .rte-markdown-overview
   .e-icon-btn.e-active
   .e-md-preview::before {
-  content: '\e80e';
+  content: '\\e80e';
 }
 .tailwind .rte-markdown-overview .e-icon-btn .e-md-preview::before,
 .tailwind-dark .rte-markdown-overview .e-icon-btn .e-md-preview::before,
@@ -120,7 +120,7 @@
 .fluent2-highcontrast .rte-markdown-overview .e-icon-btn .e-md-preview::before,
 .material3 .rte-markdown-overview .e-icon-btn .e-md-preview::before,
 .material3-dark .rte-markdown-overview .e-icon-btn .e-md-preview::before {
-  content: '\e7de';
+  content: '\\e7de';
 }
 /** Mention template styles **/
 .editor-mention-item-template {
@@ -188,7 +188,7 @@ import {
 } from '@syncfusion/ej2-vue-richtexteditor';
 import { MarkdownFormatter } from '@syncfusion/ej2-vue-richtexteditor';
 import { MentionComponent } from '@syncfusion/ej2-vue-dropdowns';
-import { marked } from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 
 export default {
     name: "App",
@@ -339,7 +339,7 @@ export default {
             },
           ],
         };
-    };
+    },
     methods: {
         created: function () {
           this.rteObj = this.$refs.rteInstance.ej2Instances;
@@ -389,7 +389,7 @@ export default {
         },
       markDownConversion: function () {
         if (this.mdsource.classList.contains('e-active')) {
-          this.htmlPreview.innerHTML = marked(this.textArea.value);
+          this.htmlPreview.innerHTML = MarkdownConverter.toHtml(this.textArea.value, { lineBreak: true });
         }
       },
       fullPreview: function () {
@@ -412,7 +412,7 @@ export default {
           }
           this.textArea.style.display = 'none';
           this.htmlPreview.style.display = 'block';
-          this.htmlPreview.innerHTML = marked(this.textArea.value);
+          this.htmlPreview.innerHTML = MarkdownConverter.toHtml(this.textArea.value, { lineBreak: true });
           this.mdsource.parentElement.title = 'Code View';
         }
       },

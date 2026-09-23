@@ -20,18 +20,27 @@ The Slash Command menu allows users to quickly insert or transform blocks by typ
 
 The Slash Command menu comes with a set of pre-defined commands for all block types:
 
--   **Headings (Level 1 to 4)**: Inserts a heading block of the corresponding level.
--   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type.
--   **Paragraph**: Inserts a standard text block.
--   **Image**: Inserts a media block for images.
--   **Table**: Inserts a table block.
--   **Toggle**: Creates a collapsible content block.
--   **Callout**: Inserts a block for highlighting important information.
--   **Utility (Divider, Quote, Code)**: Inserts a utility block like a divider, quote, or code block.
+-   **Headings (Level 1 to 4)**: Inserts a heading block of the corresponding level. Type `/Heading 1`, `/Heading 2`, etc.
+-   **Lists (Bullet, Numbered, Checklist)**: Creates a block for the specified list type. Type `/bullet`, `/numbered`, or `/checklist`.
+-   **Paragraph**: Inserts a standard text block. Type `/paragraph`.
+-   **Image**: Inserts an image block. Type `/image`.
+-   **Table**: Inserts a table block. Type `/table`.
+-   **Toggle**: Creates a collapsible content block. Type `/toggle` or `/collapsible`.
+-   **Callout**: Inserts a block for highlighting important information. Type `/callout`.
+-   **Utility (Divider, Quote, Code)**: Inserts a utility block. Type `/divider`, `/quote`, or `/code`.
 
 ### Customize Slash command menu
 
 You can use the [commandMenuSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#commandmenusettings) property to modify the Slash Command menu. This allows you to add custom commands, remove default items, or change the behavior of existing commands to fit your application's requirements.
+
+```typescript
+const editor = new BlockEditor({
+    commandMenuSettings: {
+        enableTooltip: true,
+        items: ['Heading1', 'Paragraph', 'BulletList', 'Checklist']
+    }
+});
+```
 
 ### Events
 
@@ -83,11 +92,20 @@ The Context menu offers the following built-in options:
 -  **Cut/Copy/Paste**: Standard clipboard actions for selected content.
 -  **Indent**: Increases or decreases the indent level of the selected block.
 -  **Link**: Allows you to add or edit a hyperlink for the selected text. When a link is present, the context menu provides options such as `Open Link`, `Edit Link`, `Copy Link`, and `Remove Link`.
--  **Table**: Provides built-in table actions such as `Insert` and `Delete`. These options appear in the context menu when the cursor is focused within a table cell and the context menu is opened
+-  **Table**: Provides built-in table actions such as `Insert` and `Delete`. These options appear in the context menu when the cursor is focused within a table cell and the context menu is opened.
 
 ### Customize Context menu
 
 You can use the [contextMenuSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#contextmenusettings) property to customize the Context menu. This allows you to add specific actions or modify existing items based on your application needs.
+
+```typescript
+const editor = new BlockEditor({
+    contextMenuSettings: {
+        enableTooltip: true,
+        items: ['Cut', 'Copy', 'Paste', 'Link']
+    }
+});
+```
 
 ### Events
 
@@ -143,11 +161,19 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can use the [blockActionMenuSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blockactionmenusettings) property to customize the Block action menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
+You can use the [blockActionMenuSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blockactionmenusettings) property to customize the Block Action Menu. This enables you to add block-specific commands that are relevant to your application, allowing for a highly tailored user experience.
 
 #### Show or hide tooltip
 
 By default, a tooltip is displayed when the user hovers over an action item. You can show or hide the tooltip using the [enableTooltip](https://ej2.syncfusion.com/documentation/api/blockeditor/blockactionmenusettingsmodel#enabletooltip) property in the block action menu settings.
+
+```typescript
+const editor = new BlockEditor({
+    blockActionMenuSettings: {
+        enableTooltip: false  // hide tooltip
+    }
+});
+```
 
 ### Events
 
@@ -156,7 +182,7 @@ The following events are available for the Block action menu:
 |Name|Args|Description|
 |---|---|---|
 |[beforeOpen](https://ej2.syncfusion.com/documentation/api/blockeditor/blockactionmenusettingsmodel#beforeopen)|BlockActionMenuBeforeOpenEventArgs|Triggers before the block action menu opens.|
-|[beforeClose](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/blockactionmenusettingsmodel#beforeclose)|BlockActionMenuBeforeCloseEventArgs|Triggers before the block action menu closes.|
+|[beforeClose](https://ej2.syncfusion.com/documentation/api/blockeditor/blockactionmenusettingsmodel#beforeclose)|BlockActionMenuBeforeCloseEventArgs|Triggers before the block action menu closes.|
 |[itemSelect](https://ej2.syncfusion.com/documentation/api/blockeditor/blockactionmenusettingsmodel#itemselect)|BlockActionItemSelectEventArgs|Triggers when a block action menu item is clicked.|
 
 The following example demonstrates how to customize the Block action menu.
@@ -204,7 +230,7 @@ The Inline Toolbar includes the following built-in formatting options:
 
 ### Optional items
 
-The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `items` property in [inlineToolbarSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#inlinetoolbarsettings).
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing an array of string values in the `items` property in [inlineToolbarSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#inlinetoolbarsettings).
 
 #### Transform block options
 
@@ -214,7 +240,7 @@ The inline toolbar now includes `transform` options to quickly convert blocks be
 
 Below are the built-in transform block options available:
 
-| Built-in transform Block Types          |
+| Built-in Transform Block Types          |
 |-----------------------------------------|
 | Paragraph                               |
 | Heading1 to Heading4                    |
@@ -222,7 +248,7 @@ Below are the built-in transform block options available:
 | BulletList                              |
 | NumberedList                            |
 
-> For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible` transform options not available. Instead they will be added as a new block.
+> For blocks such as `code`, `callout`, `quote`, `divider`, `image`, `table` and `collapsible`, transform options are not available. Instead they will be added as a new block.
 
 #### Events
 
@@ -271,7 +297,7 @@ The following example demonstrates how to customize the transform, inline code, 
 
 #### Font and background color support
 
-Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#fontColorSettings), [backgroundColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#backgroundColorSettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the [fontColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#fontcolorsettings), [backgroundColorSettings](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#backgroundcolorsettings) properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
 

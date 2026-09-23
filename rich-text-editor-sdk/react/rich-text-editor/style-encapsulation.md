@@ -26,11 +26,11 @@ Syncfusion's React Rich Text Editor offers two rendering modes for controlling s
    - The Rich Text Editor is rendered **without an `<iframe>`**.  
    - The application's global CSS **will apply** to the content inside the editor.  
    - This mode allows seamless integration with existing styles.  
-   - **Usage:** <code>iframeSettings=&#123;&#123; enable: true &#125;&#125;</code>
+   - **Usage:** <code>iframeSettings=&#123;&#123; enable: false &#125;&#125;</code>
 
 ### Default behavior
 
-By default, the Rich Text Editor uses **non-encapsulated mode** (<code>iframeSettings = &#123;&#123; enable: true &#125;&#125;</code>), allowing the application's styles to affect the editor's content.
+By default, the Rich Text Editor uses **non-encapsulated mode** (<code>iframeSettings = &#123;&#123; enable: false &#125;&#125;</code>), allowing the application's styles to affect the editor's content.
 
 Below is a sample implementation of both **encapsulated** and **non-encapsulated** modes.
 

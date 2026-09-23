@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Built-in Block Types and Configuration in JavaScript Block Editor
 
-The Syncfusion Block Editor uses **blocks** as the fundamental units for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
+The Syncfusion Block Editor uses `Block` as the fundamental unit for creating and managing content. The entire editor content is structured as a collection of these blocks, which are configured and managed through the [blocks](https://ej2.syncfusion.com/documentation/api/blockeditor/index-default#blocks) property.
 
 ## Blocks
 
-Blocks are the core building elements of the editor, where each block represents a distinct content unit, such as a `Paragraph`, `Heading`, `List`, or specialized content like a `Code Snippet` or `Image`. This block-based architecture makes it easy for users to rearrange, format, and manage discrete pieces of content independently.
+Blocks are the core building elements of the editor, where each block represents a distinct content unit, such as `Paragraph`, `Heading`, `List`, or specialized content like `Code Snippet` or `Image`. This block-based architecture makes it easy for users to rearrange, format, and manage discrete pieces of content independently.
 
 You can configure blocks with various properties such as [id](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#id), [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype), [content](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#content) to create a rich and structured editor.
 
@@ -34,7 +34,8 @@ The Block Editor supports multiple block types, each offering different formatti
 | Quote                                   | Styled block for quotations.                                                |
 | Callout                                 | Highlighted block for important information.                                |
 | Divider                                 | Horizontal separator line.                                                  |
-| CollapsibleParagraph and CollapsibleHeading1-4    | Content blocks that can be expanded or collapsed to show or hide their children. |
+| CollapsibleParagraph                    | Content block that can be expanded or collapsed to show or hide its children. |
+| CollapsibleHeading1 to CollapsibleHeading4 | Heading variants that can be expanded or collapsed to show or hide their children. |
 | Image                                   | Block for displaying images.                                                |
 | Template                                | Renders custom content using predefined templates, allowing for user-defined block structures. |
 
@@ -78,6 +79,16 @@ By default, the [indent](https://ej2.syncfusion.com/documentation/api/blockedito
 You can apply custom styling to individual blocks using the [cssClass](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#cssclass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
+
+**CSS example:**
+
+```css
+.highlight-block {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 8px 12px;
+}
+```
 
 {% if page.publishingplatform == "typescript" %}
 

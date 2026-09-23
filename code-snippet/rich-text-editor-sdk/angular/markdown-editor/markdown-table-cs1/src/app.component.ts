@@ -1,7 +1,7 @@
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
 import { Component, ViewChild } from '@angular/core';
 import { RichTextEditorModule, ToolbarSettingsModel, ContentRender, RichTextEditorComponent, ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
-import { marked } from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 enableRipple(true);
 
 @Component({
@@ -27,7 +27,7 @@ export class AppComponent {
             }]
     };
     public mode: string = 'Markdown';
-    public value: string = "In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.";
+    public value: string = "In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The Syncfusion <b>MarkdownConverter</b> library is used in this sample to convert markdown into HTML content.";
     public onCreate(): void {
         this.textArea = (this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement;
         this.textArea.addEventListener('keyup', () => {
@@ -42,7 +42,7 @@ export class AppComponent {
         if (this.mdsource ?.classList.contains('e-active')) {
             let id: string = this.editorObj ?.getID() + 'html-view';
             let htmlPreview: Element = this.editorObj!.element.querySelector('#' + id) as Element;
-            htmlPreview.innerHTML = await marked(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = (await MarkdownConverter.toHtml(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true })) as string;
         }
     }
     public async fullPreview(): Promise<void> {
@@ -61,7 +61,7 @@ export class AppComponent {
             }
             this.textArea!.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = await marked(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = (await MarkdownConverter.toHtml(((this.editorObj!.contentModule as ContentRender).getEditPanel() as HTMLTextAreaElement).value, { lineBreak: true })) as string;
             this.mdsource!.parentElement!.title = 'Code View';
         }
     }

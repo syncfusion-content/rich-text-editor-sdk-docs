@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Real-Time Collaboration in Vue Block Editor control | Syncfusion
-description: Enable real-time collaborative editing in the Vue Block Editor component of Syncfusion Essential JS 2 with user presence and version history.
+title: Real-Time Collaboration in Vue Block Editor | Syncfusion
+description: Learn how to enable real-time collaboration in the Vue Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-publishingplatform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Real-Time Collaboration in Vue Block Editor component
+# Real-Time Collaboration in Vue Block Editor
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by [**Yjs**](https://yjs.dev/), an open-source Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -42,7 +41,7 @@ See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choos
 | Provider | Type | Use Case |
 | -------- | ---- | -------- |
 | [y-websocket](https://docs.yjs.dev/ecosystem/connection-provider/y-websocket) | Self-hosted | Production deployments with your own WebSocket server. |
-| `y-webrtc` | Peer-to-peer | Quick local testing and development; no server required. |
+| [y-webrtc](https://docs.yjs.dev/ecosystem/connection-provider/y-webrtc) | Peer-to-peer | Quick local testing and development; no server required. |
 | `y-indexeddb` | Local storage | Offline persistence within a single browser. |
 | [Hocuspocus](https://tiptap.dev/docs/hocuspocus/getting-started/overview) | Open-source server | Scalable Node.js server with pluggable storage and Redis support. |
 | [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
@@ -70,7 +69,7 @@ npm install @y/websocket-server
 set HOST=localhost&& set PORT=1234&& npx y-websocket
 
 {% endhighlight %}
-{% highlight bash tabtitle="Powershell" %}
+{% highlight bash tabtitle="PowerShell" %}
 
 $env:HOST="localhost"; $env:PORT="1234"; npx y-websocket
 
@@ -181,7 +180,7 @@ In your Vue component file, replace the existing Block Editor with the following
 <script setup>
 import { BlockEditorComponent as EjsBlockeditor, Collaboration } from '@syncfusion/ej2-vue-blockeditor';
 import { provide, markRaw } from 'vue';
-import {adapter, provider} from './collaboration.ts';
+import {adapter, provider} from './collaboration';
 
   provide('blockeditor', [Collaboration]);
 
@@ -229,7 +228,7 @@ Set the current user's display name and cursor highlight color using the `users`
 <script setup>
 import { BlockEditorComponent as EjsBlockeditor, Collaboration } from '@syncfusion/ej2-vue-blockeditor';
 import { provide, markRaw } from 'vue';
-import { adapter, provider } from './collaboration.ts';
+import { adapter, provider } from './collaboration';
 
 provide('blockeditor', [Collaboration]);
 
@@ -476,7 +475,7 @@ Once done, run the app to see versionHistory panel for individual rooms.
 
 ### Methods
 
-The following are the methods available in the `IVersionHistory`:
+The following are the methods available on the `VersionHistory` instance:
 
 #### Create a snapshot
 

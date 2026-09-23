@@ -31,9 +31,9 @@ It provides tools for applying text styles such as bold, italic, underline, stri
 | Bold  | ![Bold icon](../images/bold.png) | Text that is thicker and darker than usual. | toolbarSettings: { items: ['Bold']} |
 | Italic | ![Italic icon](../images/italic.png) | Shows a text that is leaned to the right. | toolbarSettings: { items: ['Italic']} |
 | Underline | ![Underline icon](../images/under-line.png) | The underline is added to the selected text. | toolbarSettings: { items: ['Underline']} |
-| StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Apply double line strike through formatting for the selected text. |toolbarSettings: { items: ['StrikeThrough']}|
+| StrikeThrough | ![StrikeThrough icon](../images/strikethrough.png) | Applies a line through the text. |toolbarSettings: { items: ['StrikeThrough']}|
 | ClearFormat | ![ClearFormat icon](../images/clear-format.png) | The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles.|toolbarSettings: { items: ['ClearFormat']}|
-| Blockquote | ![Blockquote icon](../images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toobarSettings: { items: ['Blockquote']}|
+| Blockquote | ![Blockquote icon](../images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toolbarSettings: { items: ['Blockquote']}|
 | SubScript | ![SubScript icon](../images/sub-script.png) | Makes the selected text as subscript (lower).|toolbarSettings: { items: ['SubScript']}|
 | SuperScript | ![SuperScript icon](../images/super-script.png) | Makes the selected text as superscript (higher).|toolbarSettings: { items: ['SuperScript']}|
 | LowerCase | ![LowerCase icon](../images/lower-case.png) | Change the case of selected text to lower in the content. |toolbarSettings: { items: ['LowerCase']}|
@@ -177,8 +177,6 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 Remove the build-in tools from the toolbar by using the [toolbarSettings.items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-buildin-tool-cs1/index.ts %}
@@ -189,17 +187,3 @@ Remove the build-in tools from the toolbar by using the [toolbarSettings.items](
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-buildin-tool-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-buildin-tool-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-buildin-tool-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/remove-buildin-tool-cs1" %}
-{% endif %}

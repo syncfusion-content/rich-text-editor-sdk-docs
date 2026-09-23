@@ -13,8 +13,8 @@ import {
   Table,
   Toolbar,
 } from '@syncfusion/ej2-richtexteditor';
-import Marked from 'marked';
 import { Mention } from '@syncfusion/ej2-dropdowns';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 
 RichTextEditor.Inject(Link, Image, MarkdownEditor, Table, Toolbar);
 
@@ -221,10 +221,11 @@ function markDownConversion(): void {
     let htmlPreview: HTMLElement = markdownMention.element.querySelector(
       '#' + id
     );
-    htmlPreview.innerHTML = Marked(
-      (markdownMention.contentModule.getEditPanel() as HTMLTextAreaElement)
-        .value
-    );
+    htmlPreview.innerHTML = MarkdownConverter.toHtml(
+  (markdownMention.contentModule.getEditPanel() as HTMLTextAreaElement)
+    .value,
+  { lineBreak: true }
+) as string;
   }
 }
 function fullPreview(): void {
@@ -256,10 +257,11 @@ function fullPreview(): void {
     }
     textArea.style.display = 'none';
     htmlPreview.style.display = 'block';
-    htmlPreview.innerHTML = Marked(
-      (markdownMention.contentModule.getEditPanel() as HTMLTextAreaElement)
-        .value
-    );
+    htmlPreview.innerHTML = MarkdownConverter.toHtml(
+  (markdownMention.contentModule.getEditPanel() as HTMLTextAreaElement)
+    .value,
+  { lineBreak: true }
+) as string;
     mdsource.parentElement.title = 'Code View';
   }
 }

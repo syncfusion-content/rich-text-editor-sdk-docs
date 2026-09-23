@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
+title: Customize AI Assistant in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize the AI Assistant in the ASP.NET Core Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -15,7 +15,7 @@ The AI Assistant feature is designed to be easily customizable using its propert
 
 To add the custom toolbar items to the AI Assistant Header, Prompt, and Response toolbar, the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` properties of the `AiAssistantSettings` can be used. The `AiAssistantToolbarClick` event allows you to execute custom logic when toolbar buttons are clicked.
 
-The Custom items can be added to the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` with the following properties.
+Custom items can be added to the `HeaderToolbarSettings`, `PromptToolbarSettings`, and `ResponseToolbarSettings` with the following properties.
 
 | Property     | Description                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------- |
@@ -52,28 +52,14 @@ In the following example, **custom toolbar items** are added to the **Header**, 
    * A **Save** toolbar button is added to the response toolbar.
    * On clicking the button, the generated AI response content is extracted from the response container and can be processed further (for example, saving it to a database or local storage).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/custom-toolbar-items/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/custom-toolbar-items/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/custom-toolbar-items/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Styling the Popup
-The AI Assistant Popup can be styled by using the following css.
+The AI Assistant popup can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup {
@@ -81,7 +67,7 @@ The AI Assistant Popup can be styled by using the following css.
 }
 ```
 
-The AI Assistant Popup processing state can be styled by using the following css.
+The AI Assistant popup processing state can be styled by using the following CSS.
 
 ```css
 .e-rte-aiquery-popup.processing {
@@ -96,25 +82,11 @@ The AI Assistant Popup processing state can be styled by using the following css
 
 In the following example, a CSS animation is applied to the popup while the request is in progress.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/popup-styling/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/popup-styling/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/popup-styling/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Use Case
 Using the public methods, you can build custom workflows with the AI Assistant. Actions such as retrieving conversation history, executing prompts, adding responses, showing or hiding the AI Assistant, and clearing conversation history can all be achieved using the following public methods programmatically.
@@ -135,22 +107,8 @@ The following example demonstrates a Proofread use case by rendering a button ou
 1. Launches the AI Assistant popup using the `showAIAssistantPopup` method.
 2. Executes a prompt using the `executeAIPrompt` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/usecase/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/usecase/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/ai-assistant/usecase/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

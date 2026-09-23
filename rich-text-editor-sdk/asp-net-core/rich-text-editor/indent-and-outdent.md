@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Increase and Decrease Indent in ASP.NET Core Rich Text Editor
+title: Indent and Outdent Text in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to increase and decrease indentation in the ASP.NET Core Rich Text Editor to format and organize content effectively.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
@@ -26,8 +26,6 @@ To adjust the text indentation:
 
 To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/tagHelper %}
@@ -36,15 +34,3 @@ To configure the `Indent` and `Outdent` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/indent-and-outdent/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

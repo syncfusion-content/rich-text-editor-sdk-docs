@@ -7,7 +7,7 @@ component: Markdown Editor
 documentation: ug
 ---
 
-# Getting Started with Markdown Editor in Blazor Web App
+# Getting Started with Blazor Markdown Editor in Web App
 
 This section explains how to integrate the [Blazor Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor) component in your Blazor Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 

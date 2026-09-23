@@ -45,7 +45,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
-| Insert tab space (when [enableTabKey](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#enabletabkey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Insert tab space (when [enableTabKey](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#enableTabKey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
 
 ### Inserting
 
@@ -126,27 +126,12 @@ These shortcuts allow you to quickly undo and redo changes to your content.
 
 These miscellaneous shortcuts help with actions like toggling fullscreen, clearing formatting, and accessing the HTML source.
 
-| Actions | PC | Mac | 
+| Actions | Windows | Mac | 
 |----------------|---------| --------- |
 | View HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> |
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
 | Exit Fullscreen | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Clear all formatting | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>R</kbd> |
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -158,13 +143,12 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs12" %}
-{% endif %}
 
 ## Custom key config
 
-Customize the key config for the keyboard interaction of Rich Text Editor, using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#keyconfig) property.
+Customize the keyboard interactions using the [`keyConfig`](https://ej2.syncfusion.com/documentation/api/rich-text-editor/richTextEditor#keyConfig) property. The following sample customizes the bold, italic, and underline toolbar actions to `ctrl+alt+b`, `ctrl+alt+i`, and `ctrl+alt+u` respectively.
 
-In the below sample, you have customize the bold, italic, underline toolbar action with `ctrl+alt+b`, `ctrl+alt+i` and `ctrl+alt+u` respectively.
+> Supported key tokens include `ctrl`, `shift`, `alt`, `meta` (or `cmd`), `a`–`z`, `0`–`9`, and special keys such as `enter`, `escape`, `tab`, `space`, `backspace`, `delete`, and `home`/`end`.
 
 The following table lists all available `keyConfig` options in the Rich Text Editor along with their default keyboard shortcut values. You can customize these shortcut keys based on your requirements by using the `keyConfig` property.
 
@@ -220,21 +204,6 @@ The following table lists all available `keyConfig` options in the Rich Text Edi
 | checklist-toggle | `ctrl+enter` |
 | select-all | `ctrl+a` |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs13/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs13/index.js %}
@@ -245,7 +214,6 @@ The following table lists all available `keyConfig` options in the Rich Text Edi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/rich-text-editor/getting-started-cs13" %}
-{% endif %}
 
 ## See also
 

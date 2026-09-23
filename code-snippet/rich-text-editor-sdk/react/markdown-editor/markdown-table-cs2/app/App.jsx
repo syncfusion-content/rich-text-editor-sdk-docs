@@ -2,6 +2,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { createElement } from '@syncfusion/ej2-base';
 import { Image, Link, MarkdownEditor, RichTextEditor, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 RichTextEditor.Inject(Image, Link, MarkdownEditor, Toolbar);
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import * as React from 'react';
 import { useEffect } from "react";
 import { L10n } from '@syncfusion/ej2-base';
@@ -112,7 +113,7 @@ function App() {
         if (mdSplit.classList.contains('e-active')) {
             const id = defaultRTE.getID() + 'html-preview';
             const htmlPreview = defaultRTE.element.querySelector('#' + id);
-            htmlPreview.innerHTML = marked((defaultRTE.contentModule.getEditPanel()).value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml((defaultRTE.contentModule.getEditPanel()).value, { lineBreak: true });
         }
     }
     function fullPreview(e) {
@@ -145,7 +146,7 @@ function App() {
                 htmlPreview.style.width = '50%';
             }
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = marked((defaultRTE.contentModule.getEditPanel()).value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml((defaultRTE.contentModule.getEditPanel()).value, { lineBreak: true });
             mdSource.parentElement.title = 'Code View';
         }
     }

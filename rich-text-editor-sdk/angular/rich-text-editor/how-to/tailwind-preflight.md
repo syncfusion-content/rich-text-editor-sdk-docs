@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 When combining the Rich Text Editor with Tailwind CSS, you may encounter unintended style conflicts. Tailwind’s Preflight, a base reset layer, can override default element styles used by the Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In the Rich Text Editor, it affects ordered and unordered lists, which are unformatted by default, with no bullets or numbers.
 
-To resolve this issue and ensure that the list styles are correctly applied, you can copy and use the following styles directly in your application.
+To resolve this issue and ensure that the list styles are correctly applied, copy and use the following styles directly in your application.
 
 ```css
 

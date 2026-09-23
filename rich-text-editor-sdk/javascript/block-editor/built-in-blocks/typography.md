@@ -16,6 +16,8 @@ Typography blocks are essential for organizing and presenting text-based content
 
 Paragraph blocks are the most common type, used for standard text content. They serve as the default block type and provide basic text formatting options. To render a Paragraph block, set the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to `Paragraph`.
 
+> **Setup prerequisite:** Before using block types, ensure the Block Editor is initialized in your application. See the [Getting Started](../getting-started) guide for setup steps.
+
 ### BlockType  
 
 ```typescript
@@ -106,7 +108,16 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-Heading blocks create document titles and section headers. These blocks help structure content hierarchically, making it easier to read and navigate. Render a Heading block by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to `Heading`.
+Heading blocks create document titles and section headers. These blocks structure content hierarchically for better readability. Render a Heading block by setting the [blockType](https://ej2.syncfusion.com/documentation/api/blockeditor/blockmodel#blocktype) property to `Heading`.
+
+**Visual hierarchy by level:**
+
+| Level | Default style | Typical use |
+|-------|---------------|-------------|
+| 1 | Largest (h1) | Document title |
+| 2 | Large (h2) | Section heading |
+| 3 | Medium (h3) | Subsection |
+| 4 | Smallest (h4) | Sub-subsection |
 
 ### Configuring levels
 
@@ -160,7 +171,7 @@ The following sample demonstrates the configuration of a heading block in the Bl
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
+You can configure placeholder text for a block using the [placeholder](https://ej2.syncfusion.com/documentation/api/blockeditor/baseplaceholderprop#placeholder) property. This text appears when the block is empty. The default placeholder for a heading block is `Heading{level}` — for example, `Heading1` for level 1, `Heading2` for level 2, and so on.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -180,25 +191,23 @@ A Divider block inserts a horizontal line to separate content. Render it by sett
 ### Block type & properties
 
 ```typescript
-// Adding divider block
+// Adding a divider between two paragraphs
 {
-    {
-        blockType: 'Paragraph',
-        content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
-    },
-    {
-        blockType: 'Divider' 
-    },
-    {
-        blockType: 'Paragraph',
-        content: [
-            contentType: 'Text',
-            content: 'This is a paragraph 1.'
-        ]
-    }
+    blockType: 'Paragraph',
+    content: [{
+        contentType: 'Text',
+        content: 'This is a paragraph 1.'
+    }]
+},
+{
+    blockType: 'Divider'
+},
+{
+    blockType: 'Paragraph',
+    content: [{
+        contentType: 'Text',
+        content: 'This is a paragraph 2.'
+    }]
 }
 ```
 

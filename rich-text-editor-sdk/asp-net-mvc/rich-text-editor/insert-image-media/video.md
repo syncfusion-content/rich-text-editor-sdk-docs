@@ -17,19 +17,6 @@ You can add the `Video` tool in the Rich Text Editor toolbar using the `ToolbarS
 
 To configure the `Video` toolbar item, refer to the below code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-import/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-import/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-import/razor %}
@@ -38,7 +25,6 @@ To configure the `Video` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-import/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Video Save Formats
 
@@ -49,11 +35,11 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [InsertVide
 ```typescript
 
 <video>
-    <source src="blob:http://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4" >
+    <source src="blob:https://ej2.syncfusion.com/3ab56a6e-ec0d-490f-85a5-f0aeb0ad8879" type="video/mp4">
 </video>
 
 <video>
-    <source src="data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="video/mp4" >
+    <source src="data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHA" type="video/mp4">
 </video>
 
 ```
@@ -88,22 +74,9 @@ Configure [InsertVideoSettings.RemoveUrl](https://help.syncfusion.com/cr/aspnetm
 
 Set the [InsertVideoSettings.SaveFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_SaveFormat) property to determine whether the video should be saved as Blob or Base64, aligning with your application's requirements.
 
-> If you want to insert lower-sized video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
+> If you want to insert smaller video files in the editor and don’t require a specific physical location for saving the video, you can save the format as `Base64`.
 
 In the following code blocks, you can insert the video files which are saved in the specified path.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-save/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-save/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -113,27 +86,13 @@ In the following code blocks, you can insert the video files which are saved in 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-save/saveFile.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ### Renaming Video Before Inserting
 
 You can use the [InsertVideoSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertVideoSettings) property to specify the server handler to upload the selected video. Then, by binding the [FileUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
-Refer `rename.cs` controller file for configure the server-side.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-rename/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-rename/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Refer to the `rename.cs` controller file to configure the server-side handler.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -143,26 +102,12 @@ Refer `rename.cs` controller file for configure the server-side.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-rename/rename.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Uploading Video with Authentication
 
 You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-N> By default, it doesn't support the `UseDefaultCredentials` property, you can manually append the default credentials with the upload request.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-authenticate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-authenticate/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+> By default, the `UseDefaultCredentials` property is not supported; you must manually append the default credentials to the upload request.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -172,26 +117,12 @@ N> By default, it doesn't support the `UseDefaultCredentials` property, you can 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-authenticate/saveFile.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Maximum file size restrictions
 
 You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [InsertVideoSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
 
 In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-video-size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-video-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -201,11 +132,10 @@ In the following example, the video size has been validated before uploading and
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/check-video-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Video Replacement Functionality
 
-Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `VideoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
+Once a video file has been inserted, you can replace it using the Rich Text Editor [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `VideoReplace` option. You can replace the video file by using the embedded code, the web URL, or the browse option in the video dialog.
 
 ![Rich Text Editor Embed Video replace](../images/video-replace-embed.png)
 
@@ -234,19 +164,6 @@ Sets the default display property for the video when it is inserted in the Rich 
 
 > The default `LayoutOption` property is set to `Inline`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-settings/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-settings/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-settings/razor %}
@@ -255,7 +172,6 @@ Sets the default display property for the video when it is inserted in the Rich 
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-settings/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Paste video files into the editor
 
@@ -265,20 +181,7 @@ The Rich Text Editor supports pasting video files directly into the editor conte
 
 By default, the Rich Text Editor allows you to insert videos by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the videos to the server before inserting into the editor by configuring the saveUrl property.
 
-In the following sample, you can see feature demo.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/video/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/video/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the following sample, you can see the feature demo.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -288,7 +191,6 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/drag-drop/video/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 ### Disabling Drag and Drop for Videos
@@ -321,19 +223,6 @@ The Rich Text Editor enables customization of the video quick toolbar, allowing 
 
 By configuring these options in the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) property, you enhance the editor's capabilities, facilitating seamless management and editing of embedded videos directly within your content. This customization ensures a user-friendly experience for manipulating video elements efficiently.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/razor %}
@@ -342,7 +231,6 @@ By configuring these options in the [QuickToolbarSettings](https://help.syncfusi
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/video-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See Also
 

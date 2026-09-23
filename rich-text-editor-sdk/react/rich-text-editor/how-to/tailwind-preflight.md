@@ -8,11 +8,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-#  Fix Tailwind CSS Preflight in React Rich Text Editor
+# Fix Tailwind CSS Preflight in React Rich Text Editor
 
-When combining Rich Text Editor with Tailwind CSS, you may often encounter unintended style conflicts. Tailwind’s Preflight, a base reset layer can override default element styles used by Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In Rich Text Editor, it affects the ordered and unordered lists, which are Unformatted by default, with no bullets or numbers.
+When combining Rich Text Editor with Tailwind CSS, you may often encounter unintended style conflicts. Tailwind's Preflight, a base reset layer, can override default element styles used by Rich Text Editor, leading to formatting inconsistencies. This guide documents the integration process, offering solutions to maintain design integrity and functionality. In Rich Text Editor, it affects the ordered and unordered lists, which are unformatted by default, with no bullets or numbers.
 
-To resolve this issue and to ensure that the list styles are correctly applied, you can copy and use the following styles directly in your application,
+To resolve this issue and to ensure that the list styles are correctly applied, copy and use the following styles directly in your application,
 
 ```css
 

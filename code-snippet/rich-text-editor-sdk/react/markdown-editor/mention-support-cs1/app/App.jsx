@@ -1,11 +1,15 @@
 import { createElement } from '@syncfusion/ej2-base';
 import { Image, Inject, Link, Table, MarkdownEditor, MarkdownFormatter, RichTextEditorComponent, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
-import * as Marked from 'marked';
+import { MarkdownConverter } from '@syncfusion/ej2-markdown-converter';
 import { MentionComponent } from '@syncfusion/ej2-react-dropdowns';
 
 class App extends React.Component {
     rteObj;
+    constructor(props) {
+        super(props);
+        this.rendereComplete = this.rendereComplete.bind(this);
+    }
     mention;
     value = 'Hello [@Maria](mailto:maria@gmail.com)\n\nWelcome to the mention integration with markdown editor demo. Type @ character and tag user from the suggestion list.';
 
@@ -44,7 +48,7 @@ class App extends React.Component {
         if (this.mdsource.classList.contains('e-active')) {
             let id = this.rteObj.getID() + 'html-view';
             let htmlPreview = this.rteObj.element.querySelector('#' + id);
-            htmlPreview.innerHTML = Marked(this.rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml(this.rteObj.contentModule.getEditPanel().value, { lineBreak: true });
         }
     }
     fullPreview() {
@@ -65,7 +69,7 @@ class App extends React.Component {
             }
             this.textArea.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = Marked(this.rteObj.contentModule.getEditPanel().value);
+            htmlPreview.innerHTML = MarkdownConverter.toHtml(this.rteObj.contentModule.getEditPanel().value, { lineBreak: true });
             this.mdsource.parentElement.title = 'Code View';
         }
     }

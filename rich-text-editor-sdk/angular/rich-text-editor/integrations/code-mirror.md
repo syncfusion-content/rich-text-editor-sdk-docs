@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Mirror in Angular Rich text editor component | Syncfusion
-description: Learn here all about code mirror integration in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: CodeMirror in Angular Rich Text Editor | Syncfusion
+description: Learn here all about CodeMirror integration in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
-control: CodeMirror
+control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Integrate Code Mirror into Angular Rich Text Editor Component
+# Integrate CodeMirror into Angular Rich Text Editor
 
 RichTextEditor offers a basic HTML source view through the `view-source` property. For enhanced source editing features such as syntax highlighting, `CodeMirror` can be integrated with the Rich Text Editor.
 
@@ -18,9 +18,9 @@ Before proceeding, complete the base Rich Text Editor setup described in the Get
 
 ## Key features
 
-- Replace the RTE source textarea with a CodeMirror EditorView.  
-- Preserve editor undo/redo by inserting source changes via the RTE APIs.
-- Support light/dark themes and minimize bundle size via dynamic imports.
+- Replace the Rich Text Editor source textarea with a CodeMirror EditorView.
+- Preserve the editor undo/redo history by inserting source changes through the Rich Text Editor APIs.
+- Support light and dark themes and minimize bundle size via dynamic imports.
 
 ## Setup or Installation
 
@@ -32,11 +32,13 @@ npm install codemirror @codemirror/state @codemirror/view @codemirror/lang-html 
 
 ## Configure CodeMirror for the rich text editor
 
-### Step 1: import packages and providers
-- import CodeMirror modules in the component where the integration runs. Provide ToolbarService, HtmlEditorService, ImageService, etc., as needed.
+### Step 1: Import packages and register providers
 
-### Step 2: Configure actionComplete event
-- Configure the actionComplete event to call `mirrorConversion` method while toggling between `SourceCode` and `Preview`.
+- Import the CodeMirror modules in the component where the integration runs. Provide `ToolbarService`, `HtmlEditorService`, and `ImageService` in the component's `providers` array.
+
+### Step 2: Configure the actionComplete event
+
+- Configure the `actionComplete` event to call the `mirrorConversion` method when toggling between `SourceCode` and `Preview`.
 
 ```typescript
 public actionCompleteHandler(e: any): void {
@@ -46,15 +48,15 @@ public actionCompleteHandler(e: any): void {
 }
 ```
 
-- On `SourceCode`: create a temporary element and append to the rich text editor root cause and call renderCodeMirror method to render the code mirror.
+- On `SourceCode`: create a temporary element, append it to the Rich Text Editor's root container, and call the `renderCodeMirror` method to render the CodeMirror.
 
 ```typescript
-mirrorView = createElement('div', { className: 'rte-code-mirror', id: id, styles: 'display: none;' });
+const mirrorView: HTMLElement = createElement('div', { className: 'rte-code-mirror', id: id, styles: 'display: none;' });
 this.rteObj!.rootContainer.appendChild(mirrorView);
-this.renderCodeMirror(mirrorView, editorVlaue === null ? '' : editorVlaue);
+this.renderCodeMirror(mirrorView, editorValue === null ? '' : editorValue);
 ```
 
-- On `Preview`: serialize the EditorView document (state.doc.toString()) and set it as the RTE value, call dataBind(), and restore RTE focus.
+- On `Preview`: serialize the EditorView state (`state.doc.toString()`), set it as the Rich Text Editor value, call `dataBind()`, and restore the editor focus.
 
 ```typescript
 this.rteObj!.value = this.myCodeMirror!.state.doc.toString();
@@ -63,22 +65,14 @@ this.rteObj!.rootContainer.classList.remove('e-rte-code-mirror-enabled');
 this.rteObj!.focusIn();
 ```
 
-### Step 3: Configure renderCodeMirror method
-- Create a reusable renderCodeMirror function that builds an EditorState with desired extensions: basicSetup, html(), EditorView.lineWrapping, and optional theme extension.
+### Step 3: Configure the renderCodeMirror method
+
+- Create a reusable `renderCodeMirror` function that builds an `EditorState` with the desired extensions (`basicSetup`, `html()`, `EditorView.lineWrapping`, and an optional theme extension), then stores the resulting `EditorView` on the component so it can be reused on subsequent `SourceCode` activations.
 
 ```typescript
 const state = EditorState.create({
     doc: content,
     extensions: [ basicSetup, html(), EditorView.lineWrapping ]
-});
-```
-
-- Store the EditorView instance on the component and reuse it on subsequent SourceCode activations to preserve state.
-
-```typescript
-const state = EditorState.create({
-    doc: content,
-    extensions: extensions
 });
 
 this.myCodeMirror = new EditorView({
@@ -87,10 +81,11 @@ this.myCodeMirror = new EditorView({
 });
 ```
 
-### Step 4: how to implement dark theme
-- Detect application or Syncfusion dark mode classes (for example, document.body.classList.contains('e-dark-mode')).  
-- When dark mode is active, include the oneDark extension (or alternative theme) in the CodeMirror extensions array when creating the EditorState.  
-- Toggle theme only when recreating or updating the EditorState; prefer reusing the same EditorView and apply theme changes via state replacement if necessary.
+### Step 4: Implement the dark theme
+
+- Detect the application or Syncfusion dark mode classes (for example, `document.body.classList.contains('e-dark-mode')`).
+- When dark mode is active, include the `oneDark` extension (or another theme) in the CodeMirror extensions array when creating the `EditorState`.
+- Toggle the theme only when recreating or updating the `EditorState`; prefer reusing the same `EditorView` and applying theme changes via state replacement if necessary.
 
 ```typescript
 let extensions;
@@ -101,9 +96,9 @@ if (document.body.classList && document.body.classList.contains('tailwind3-dark'
 }
 ```
 
-## Example for Code Mirror integration
+## Example for CodeMirror integration
 
-Below is the example integration of Code Mirror with the Angular Rich Text Editor.
+The following sample demonstrates the CodeMirror integration with the Angular Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

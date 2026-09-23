@@ -10,9 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Cursor in TypeScript Rich text editor
 
-This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, we have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
-
-{% if page.publishingplatform == "typescript" %}
+This can be achieved by using the `setRange` method on a `NodeSelection` instance in the Rich Text Editor. In the following sample, the text node (at a specific location in the Rich Text Editor content) is passed to the `setStart` method, and the resulting range is passed to the `setRange` method of the Rich Text Editor.
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -24,17 +22,3 @@ This can be achieved by using `setRange` method in the Rich Text Editor using `N
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-cursor-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-cursor-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-cursor-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/how-to-cursor-cs1" %}
-{% endif %}
