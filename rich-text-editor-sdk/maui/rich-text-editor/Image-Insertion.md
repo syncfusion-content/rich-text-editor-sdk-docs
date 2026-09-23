@@ -70,7 +70,7 @@ private async void OnImageInserting(object sender, RichTextEditorImageRequestedE
     e.IsHandled = true;
     RichTextEditorImageSource richTextEditorImageSource = new();
     richTextEditorImageSource.ImageFormat = RichTextEditorImageFormat.Base64;
-    richTextEditorImageSource.Source = ImageSource.FromUri(new Uri("https://raw.githubusercontent.com/dotnet/maui-samples/main/Images/campus.jpg"));
+    richTextEditorImageSource.Source = ImageSource.FromUri(new Uri("https://aka.ms/campus.jpg"));
     richTextEditorImageSource.Width = 250;
     richTextEditorImageSource.Height = 100;
     richTextEditor.InsertImage(richTextEditorImageSource);
