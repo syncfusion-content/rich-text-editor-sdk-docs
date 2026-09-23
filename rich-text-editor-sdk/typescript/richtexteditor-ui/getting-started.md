@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Getting started in TypeScript Modern Rich Text Editor
 
-The TypeScript Modern Rich Text Editor is a WYSIWYG component for creating, editing, and formatting rich text content. This section explains how to set up and use the Modern Rich Text Editor in a Vite-based TypeScript project.
+The TypeScript Modern Rich Text Editor is a WYSIWYG control for creating, editing, and formatting rich text content. This section explains how to set up and use the Modern Rich Text Editor in a Vite-based TypeScript project.
 
 ## Prerequisites
 
