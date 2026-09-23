@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customize Themes
+# Customize Themes in React Rich Text Editor
 
 The Rich Text Editor uses CSS custom properties (CSS variables) for theming, which allows you to create and apply custom themes to match your brand identity. This guide demonstrates how to design, implement, and switch between themes dynamically.
 
