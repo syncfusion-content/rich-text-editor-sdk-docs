@@ -10,15 +10,12 @@ import { HeadlessEditor, basicExtensions, placeholderExtension } from "@syncfusi
 
 const editorElement = ref(null);
 let headlessEditor;
-
 onMounted(() => {
     headlessEditor = HeadlessEditor.create({
         extensions: [basicExtensions, placeholderExtension]
     });
-
     headlessEditor.mount(editorElement.value);
 });
-
 onBeforeUnmount(() => {
     if (headlessEditor && typeof headlessEditor.destroy === "function") {
         headlessEditor.destroy();

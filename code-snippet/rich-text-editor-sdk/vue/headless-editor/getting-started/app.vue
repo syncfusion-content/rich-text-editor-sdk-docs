@@ -6,14 +6,12 @@
 
 <script>
 import { HeadlessEditor, basicExtensions, placeholderExtension } from "@syncfusion/ej2-headless-editor";
-
 export default {
     name: "App",
     mounted() {
         this.headlessEditor = HeadlessEditor.create({
             extensions: [basicExtensions, placeholderExtension]
         });
-
         this.headlessEditor.mount(this.$refs.editorElement);
     },
     beforeUnmount() {
