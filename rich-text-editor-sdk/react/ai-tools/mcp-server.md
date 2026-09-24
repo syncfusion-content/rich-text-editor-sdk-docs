@@ -27,7 +27,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Server accelerates Reac
 - **Node.js** version 18 or higher.
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, and so on).
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key).
-- A **React application** (existing or new); see the [Quick Start](../components/rich-text-editor/quick-start).
+- A **React application** (existing or new); see the [Quick Start](../rich-text-editor/getting-started).
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (Commercial, Free Community, or Free Trial).
 
 ### Getting your API key
