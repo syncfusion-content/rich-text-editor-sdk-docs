@@ -17,7 +17,7 @@ Inline editing enables users to edit content directly within the editor where it
 
 To enable inline editing, import the necessary modules and set the `inlineMode` property:
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent
