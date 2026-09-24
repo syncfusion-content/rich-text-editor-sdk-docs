@@ -12,31 +12,19 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 This article describes the API migration process from the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor (`@syncfusion/ej2-richtexteditor`) to the Modern Rich Text Editor (`@syncfusion/ej2-richtexteditor-ui`).
 
-## Package Import Changes
+## Component Initialization Changes
 
-### Previous Import
-
-```javascript
-import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
-```
-
-### Updated Import
+### Previous Initialization
 
 ```javascript
-import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+var editor = new ej.richtexteditor.RichTextEditor({});
 ```
 
-### Additional Changes
+### Updated Initialization
 
-- No need to import the following modules separately:
-  - Toolbar
-  - Link
-  - Image
-  - Table
-  - QuickToolbar
-  - AutoFormat
-
-- No need to inject these modules into `RichTextEditorUI`.
+```javascript
+var editor = new ej.richtexteditor.RichTextEditorUI({});
+```
 
 ---
 
@@ -90,10 +78,6 @@ The following toolbar items are currently not supported in RichTextEditorUI:
 ---
 
 ## Slash Command Changes
-
-### Module Registration
-
-`SlashCommand` must be imported and injected into the `RichTextEditorUI` component.
 
 ### Property Changes
 
