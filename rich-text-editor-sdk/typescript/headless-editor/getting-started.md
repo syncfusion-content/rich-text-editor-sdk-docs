@@ -131,11 +131,3 @@ npm run dev
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Headless Editor is displayed as shown below.
 
 ![Syncfusion TypeScript Headless Editor output](images/getting-started.png)
-
-## See Also
-
-**Live examples:**
-
-* `Syncfusion TypeScript Headless Editor demos`
-
-N> You can refer to our `TypeScript Headless Editor` feature tour page for its feature representations. You can also explore our `TypeScript Headless Editor example` that shows how to render the headless editor.
