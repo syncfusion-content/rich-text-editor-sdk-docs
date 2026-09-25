@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content Serialization | Syncfusion TypeScript Headless Editor
+title: Content Serialization in TypeScript Headless Editor | Syncfusion
 description: Learn how the Syncfusion TypeScript Headless Editor reads and writes content as a document tree, JSON, HTML, and plain text using its public serialization APIs.
 platform: rich-text-editor-sdk
 control: Headless Editor

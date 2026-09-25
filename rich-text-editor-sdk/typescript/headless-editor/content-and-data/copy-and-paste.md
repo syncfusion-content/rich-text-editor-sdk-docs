@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Copy and Paste | Syncfusion TypeScript Headless Editor
+title: Copy and Paste in TypeScript Headless Editor | Syncfusion
 description: Learn how the Syncfusion TypeScript Headless Editor handles paste through lifecycle events, paste transformation hooks, and built-in clipboard security.
 platform: rich-text-editor-sdk
 control: Headless Editor
