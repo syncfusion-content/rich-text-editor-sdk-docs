@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Link Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Link mark in the TypeScript Headless Editor, including attributes, commands, setLink and unsetLink, keyboard shortcuts, and input rules.
+description: Learn how to configure the Link mark in the TypeScript Headless Editor, including setLink, unsetLink, and URL validation.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -77,7 +77,7 @@ The Link mark supports Markdown-style input rules using `[label](url)` syntax. B
 
 ```text
 Type:    [Syncfusion](https://www.syncfusion.com)
-Result:  <a href="https://www.syncfusion.com">Syncfusion</a>
+Result:  <a href="https://www.syncfusion.com" aria-label="Syncfusion">Syncfusion</a>
 ```
 
 ## Link validation

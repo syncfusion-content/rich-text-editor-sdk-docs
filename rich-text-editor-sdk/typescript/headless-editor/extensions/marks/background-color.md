@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Background Color Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Background Color mark in the TypeScript Headless Editor, including attributes, setHighlight and unsetHighlight commands, supported color formats, and HTML output.
+description: Learn how to configure the Background Color mark in the TypeScript Headless Editor, including setHighlight, unsetHighlight commands, and HTML output.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The `backgroundColorExtension` registers the `backgroundColor` capability, which applies a background highlight to text. Color values are stored using the shared `textStyle` mark, allowing background color to coexist with other text style attributes such as font family, font size, and font color. It contributes the `setHighlight` and `unsetHighlight` commands.
 
-Supported color formats include hex values (`#ffff00`), RGB/RGBA values (`rgb(255, 255, 0)`), HSL values (`hsl(60, 100%, 50%)`), and named CSS colors (`yellow`).
+Supported color formats include hex values (`#ffff00`), RGB/RGBA values (`rgb(255, 255, 0)`), and named CSS colors (`yellow`).
 
 ## Register the extension
 

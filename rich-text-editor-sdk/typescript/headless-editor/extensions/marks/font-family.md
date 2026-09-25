@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Family Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Font Family mark in the TypeScript Headless Editor, including attributes, setFontFamily and unsetFontFamily commands, and HTML output.
+description: Learn how to configure the Font Family mark in the TypeScript Headless Editor, including setFontFamily, unsetFontFamily commands, and HTML output.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

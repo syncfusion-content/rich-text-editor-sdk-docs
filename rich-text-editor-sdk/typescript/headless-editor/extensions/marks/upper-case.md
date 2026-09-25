@@ -22,26 +22,6 @@ const editor = HeadlessEditor.create({
 });
 ```
 
-## Configure the extension
-
-The `toUpperCase` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the surrounding container. Use `.configure()` to set it:
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the surrounding container. |
-
-```typescript
-import { HeadlessEditor, toUpperCaseExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [
-        toUpperCaseExtension.configure({
-            htmlAttributes: { class: 'my-custom-class' }
-        })
-    ]
-});
-```
-
 ## Commands
 
 | Command | Description |

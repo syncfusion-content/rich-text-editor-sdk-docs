@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Size Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Font Size mark in the TypeScript Headless Editor, including attributes, setFontSize and unsetFontSize commands, supported size formats, and HTML output.
+description: Learn how to configure the Font Size mark in the TypeScript Headless Editor, including setFontSize, unsetFontSize commands, and HTML output.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
