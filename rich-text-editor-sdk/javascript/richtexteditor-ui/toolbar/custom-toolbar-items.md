@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Toolbar Items in JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to add custom toolbar items, handle the itemClicked and updatedToolbarStatus events, and update toolbar items at runtime in the JavaScript Modern Rich Text Editor.
+title: Custom Toolbar Item in JavaScript Modern Rich Text Editor | Syncfusion
+description: Learn how to add custom toolbar items, handle itemClicked and updatedToolbarStatus events, and update them in the JavaScript Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
