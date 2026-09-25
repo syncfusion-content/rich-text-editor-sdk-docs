@@ -15,14 +15,14 @@ The `listExtension` provides built-in support for unordered bullet lists (`<ul>`
 ## Register the extension
 
 ```typescript
-import { HeadlessEditor, listExtension, listKeymapExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, listExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [listExtension, listKeymapExtension]
+    extensions: [listExtension]
 });
 ```
 
-I> Include `listKeymapExtension` to enable list navigation keys such as <kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>.
+I> The editor automatically registers `listKeymapExtension` whenever `listExtension` or `taskListExtension` is registered, so list navigation keys (<kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>) are enabled without an extra import.
 
 ## Node attributes
 

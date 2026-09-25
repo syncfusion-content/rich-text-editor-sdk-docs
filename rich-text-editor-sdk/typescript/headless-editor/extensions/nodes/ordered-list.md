@@ -15,14 +15,14 @@ The `listExtension` provides built-in support for numbered lists (`<ol>`) and li
 ## Register the extension
 
 ```typescript
-import { HeadlessEditor, listExtension, listKeymapExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, listExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [listExtension, listKeymapExtension]
+    extensions: [listExtension]
 });
 ```
 
-I> Include `listKeymapExtension` to enable list navigation keys such as <kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>.
+I> The editor automatically registers `listKeymapExtension` whenever `listExtension` or `taskListExtension` is registered, so list navigation keys (<kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>) are enabled without an extra import.
 
 ## Node attributes
 
@@ -61,7 +61,6 @@ const editor = HeadlessEditor.create({
 | `setOrderedListType({ listStyleType })` | Sets the numbering format (`decimal`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`) for the active list. |
 | `indentListItem()` | Indents the active list item to create a nested sub-list. |
 | `outdentListItem()` | Outdents the active list item to the parent list level or converts it back to a standard block. |
-| `splitListItem()` | Splits the current list item at the cursor into a new list item. |
 
 ```typescript
 // Toggle default ordered list (decimal)

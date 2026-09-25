@@ -15,14 +15,14 @@ The `collapsibleExtension` registers the `collapsible` block container along wit
 ## Register the extension
 
 ```typescript
-import { HeadlessEditor, collapsibleExtension, collapsibleKeymapExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [collapsibleExtension, collapsibleKeymapExtension]
+    extensions: [collapsibleExtension]
 });
 ```
 
-I> Include `collapsibleKeymapExtension` to enable collapsible navigation keys such as <kbd>Enter</kbd>, <kbd>Backspace</kbd>, and <kbd>Delete</kbd> inside collapsible sections.
+I> The editor automatically registers `collapsibleKeymapExtension` when `collapsibleExtension` is registered, so <kbd>Enter</kbd>, <kbd>Backspace</kbd>, and <kbd>Delete</kbd> handling inside collapsible sections is enabled without an extra import.
 
 ## Node attributes
 
@@ -52,24 +52,12 @@ const editor = HeadlessEditor.create({
 
 ## Commands
 
-### Toggle and state
-
 | Command | Description |
 |---------|--------------|
 | `toggleCollapsible({ triggerType, level? })` | Wraps the current block in a collapsible, or unwraps it if the selection is already inside one. `triggerType` selects the block type of the collapsible trigger child: `heading` or `paragraph`. When `triggerType` is `heading`, `level` sets the heading level (1 to 6) and defaults to `1`. |
 | `collapse({ pos? })` | Sets `collapsed` to `true` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
 | `expand({ pos? })` | Sets `collapsed` to `false` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
 
-### Editing
-
-| Command | Description |
-|---------|--------------|
-| `enterCollapsible()` | Handles the <kbd>Enter</kbd> key when the cursor is in a collapsible header. Behavior depends on the collapsed state and the cursor position: creates a paragraph inside the body, creates a paragraph above or below the collapsible, or splits the collapsible into two. |
-| `splitCollapsible()` | Splits the current collapsible into two collapsibles at the cursor position. |
-| `backspaceCollapsible()` | Handles the <kbd>Backspace</kbd> key when the cursor is in a collapsible. Preserves collapsible state across the delete. |
-| `deleteCollapsible()` | Handles the <kbd>Delete</kbd> key when the cursor is in a collapsible. Multi-stage fallthrough: deletes empty collapsibles, merges adjacent blocks, or falls through to default delete behavior. |
-| `mergeCollapsibleBackward()` | Merges the current collapsible with the preceding block at the cursor position. |
-| `mergeCollapsibleForward()` | Merges the next sibling block into the current collapsible at the cursor position. |
 
 ```typescript
 // Wrap the current block as a heading-triggered collapsible (level 1)
@@ -87,10 +75,10 @@ editor.commands.expand();
 
 ## Keyboard shortcuts
 
-Provided by `collapsibleKeymapExtension` when registered alongside `collapsibleExtension`:
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Toggle Collapsible (paragraph trigger) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>[</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>[</kbd> |
+| Collapse nearest collapsible | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>,</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>,</kbd> |
+| Expand nearest collapsible | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>.</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>.</kbd> |
 
-| Action | Shortcut |
-|--------|----------|
-| Handle Enter in header | <kbd>Enter</kbd> |
-| Handle Backspace in collapsible | <kbd>Backspace</kbd> / <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> |
-| Handle Delete in collapsible | <kbd>Delete</kbd> / <kbd>Ctrl</kbd> + <kbd>Delete</kbd> |
+I> To create a heading-triggered collapsible via keyboard, call `toggleCollapsible({ triggerType: 'heading', level: N })` programmatically. The `Mod-Alt-[` shortcut always toggles a paragraph-triggered collapsible.

@@ -23,28 +23,7 @@ Node extensions register the schema nodes used by the editor to model content. E
 | Media | [Image](nodes/image) |
 | Collapsible Content | [Collapsible](nodes/collapsible) |
 
-## Register node extensions
-
-Register each node extension individually, or combine `basicExtensions` with the node extensions you need:
-
-```typescript
-import {
-    HeadlessEditor,
-    basicExtensions,
-    tableExtension,
-    imageExtension,
-    collapsibleExtension
-} from '@syncfusion/ej2-headless-editor';
-
-const headlessEditor: HeadlessEditor = HeadlessEditor.create({
-    extensions: [
-        basicExtensions,
-        tableExtension,
-        imageExtension,
-        collapsibleExtension
-    ]
-});
-```
+## Preview sample
 
 The example below mounts an editor with all available node extensions.
 

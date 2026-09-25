@@ -13,7 +13,7 @@ const headlessEditor: HeadlessEditor = HeadlessEditor.create({
         indentOutdentExtension,
         placeholderExtension
     ],
-    config: { enableTabKey: true }
+    enableTabKey: true
 });
 
 const container: HTMLElement | null = document.getElementById('headless-editor');

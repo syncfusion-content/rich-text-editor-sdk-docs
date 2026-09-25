@@ -42,7 +42,7 @@ const editor = HeadlessEditor.create({
 
 | Command | Description |
 |---------|--------------|
-| `setHorizontalRule()` | Inserts a horizontal rule at the current cursor position, replacing the current block if empty. |
+| `setHorizontalRule()` | Inserts a horizontal rule at the current cursor position. When the current block is empty, the empty block is replaced with the rule. Otherwise, the rule is inserted below the target block at the cursor position. |
 
 ```typescript
 editor.commands.setHorizontalRule();

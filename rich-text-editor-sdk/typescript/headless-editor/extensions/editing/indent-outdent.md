@@ -15,29 +15,31 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 ## Register the extension
 
 ```typescript
-import { HeadlessEditor, indentOutdentExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [indentOutdentExtension]
+    extensions: []
 });
 ```
 
-The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
+The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, the editor automatically registers `indentOutdentExtension` and plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
 
 ```typescript
-import { HeadlessEditor, indentOutdentExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [indentOutdentExtension],
-    config: { enableTabKey: true }
+    extensions: [],
+    enableTabKey: true
 });
 ```
+
+I> When `config.enableTabKey` is `true`, the editor automatically registers `indentOutdentExtension`. Register it manually only if you need to call `indent()` or `outdent()` programmatically without enabling the Tab key.
 
 ## Commands
 
 | Command | Description |
 |---------|--------------|
-| `indent()` | Increases the indentation of the current block or selection by one step. Supports paragraphs, headings, callouts, collapsibles, list items, table cells, and images. |
+| `indent()` | Increases the indentation of the current block or selection by one step.|
 | `outdent()` | Decreases the indentation of the current block or selection by one step. When the block is already at the root indent, the call has no effect. |
 
 ```typescript
@@ -50,13 +52,10 @@ editor.commands.outdent();
 
 ## Keyboard shortcuts
 
-The <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> handlers dispatch by the active content shape in this priority order:
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Increase indent | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Decrease indent | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>Shift</kbd> + <kbd>Tab</kbd> |
+| Outdent at the start of an indented block | <kbd>Backspace</kbd> | <kbd>Backspace</kbd> |
 
-| Priority | Shape | <kbd>Tab</kbd> | <kbd>Shift</kbd> + <kbd>Tab</kbd> |
-|----------|-------|----------------|----------------------------------|
-| 1 | List item | `indentListItem()` (or 4-space insert when `enableTabKey` is true) | `outdentListItem()` |
-| 2 | Table cell | `moveToNextCell()`, or `insertRowAfter()` + `moveToNextCell()` at table end | `moveToPreviousCell()` |
-| 3 | Indentable block | Structural `indent()` (or 4-space insert when `enableTabKey` is true and the cursor is mid-text) | Structural `outdent()` |
-| 4 | Plain block | 4-space insert when `enableTabKey` is true | Strip 4 trailing spaces when present |
-
-The <kbd>Backspace</kbd> key at the start of an indented block triggers an `outdent` step.
+I> When `enableTabKey` is `true` and the cursor is not at a structural position, <kbd>Tab</kbd> inserts 4 spaces and <kbd>Shift</kbd> + <kbd>Tab</kbd> removes 4 trailing spaces.

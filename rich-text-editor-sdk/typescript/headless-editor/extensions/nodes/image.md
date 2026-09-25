@@ -123,9 +123,15 @@ const editor = HeadlessEditor.create({
 
 | Command | Description |
 |---------|--------------|
-| `addCaption()` | Adds an editable caption to the selected image. |
-| `removeCaption()` | Removes the caption from the selected image. |
-| `toggleCaption()` | Toggles the caption on the selected image. |
+| `addCaption({ caption? })` | Adds an editable caption to the selected image. When the selection is an inline image, it is first converted to a block image. Accepts an optional `caption` string; if omitted or empty, the placeholder text `Insert caption` is used and the cursor is placed inside the caption. |
+| `removeCaption()` | Removes the caption text and disables the `caption` attribute on the selected image. |
+| `toggleCaption({ caption? })` | Toggles the caption on the selected image. When a caption already exists, it is removed; otherwise, a new one is added. Accepts the same optional `caption` payload as `addCaption` to seed the new caption text. |
+
+The optional `caption` payload for `addCaption` and `toggleCaption` is `CaptionPayload`:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `caption` | `string` | Initial text for the new caption. When omitted or whitespace-only, the placeholder text `Insert caption` is used. |
 
 ```typescript
 // Insert a single block image
@@ -155,8 +161,14 @@ editor.commands.setImageDimension({ width: 600, height: 400 });
 // Convert the selected image to inline display
 editor.commands.setImageDisplay({ mode: 'inline' });
 
-// Toggle a caption
-editor.commands.toggleCaption();
+// Add a caption with custom text
+editor.commands.addCaption({ caption: 'Sunset over the lake' });
+
+// Add a caption with the default placeholder text
+editor.commands.addCaption();
+
+// Toggle a caption, seeding it with text when adding
+editor.commands.toggleCaption({ caption: 'Figure 1' });
 ```
 
 ## Resize events

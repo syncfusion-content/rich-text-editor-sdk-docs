@@ -21,29 +21,7 @@ Editing extensions add the commands, keyboard shortcuts, and runtime behavior th
 | [Text Alignment](editing/text-align) | `setTextAlign` and `unsetTextAlign` commands, `Ctrl/Cmd+Shift+L/E/R/J` shortcuts. |
 | [Indent and Outdent](editing/indent-outdent) | `indent` and `outdent` commands, shape-aware <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> handling. |
 
-`basicExtensions` already includes the Undo and Redo extension. Register Text Alignment, Indent and Outdent, and Placeholder individually to add their behavior.
-
-## Register editing extensions
-
-```typescript
-import {
-    HeadlessEditor,
-    basicExtensions,
-    textAlignExtension,
-    indentOutdentExtension,
-    placeholderExtension
-} from '@syncfusion/ej2-headless-editor';
-
-const headlessEditor: HeadlessEditor = HeadlessEditor.create({
-    extensions: [
-        basicExtensions,
-        textAlignExtension,
-        indentOutdentExtension,
-        placeholderExtension
-    ],
-    config: { enableTabKey: true }
-});
-```
+## Preview sample
 
 The example below mounts an editor with the editing extensions enabled.
 

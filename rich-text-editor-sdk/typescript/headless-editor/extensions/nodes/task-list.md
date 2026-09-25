@@ -15,14 +15,14 @@ The `taskListExtension` registers the `taskList` container and `taskItem` nodes 
 ## Register the extension
 
 ```typescript
-import { HeadlessEditor, taskListExtension, listKeymapExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, taskListExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [taskListExtension, listKeymapExtension]
+    extensions: [taskListExtension]
 });
 ```
 
-I> Include `listKeymapExtension` to enable list navigation keys such as <kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>.
+I> The editor automatically registers `listKeymapExtension` whenever `listExtension` or `taskListExtension` is registered, so list navigation keys (<kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>) are enabled without an extra import.
 
 ## Node attributes
 
@@ -57,12 +57,18 @@ const editor = HeadlessEditor.create({
 
 | Command | Description |
 |---------|--------------|
-| `toggleTaskList()` | Toggles the task list container on the current selection. |
+| `toggleTaskList({ keepMarks?, checked? })` | Toggles the task list container on the current selection. Accepts an optional `keepMarks` to retain active formatting marks, and `checked` to set the initial checked state of the new task items. |
 | `toggleTaskChecked({ pos? })` | Toggles the checked state of the active task item or the task item at the given document position. |
 
 ```typescript
 // Toggle task list on selection
 editor.commands.toggleTaskList();
+
+// Toggle task list and seed new items as checked
+editor.commands.toggleTaskList({ checked: true });
+
+// Toggle task list while keeping active marks
+editor.commands.toggleTaskList({ keepMarks: true });
 
 // Toggle check state of current item
 editor.commands.toggleTaskChecked();
