@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Format Commands in TypeScript Modern Rich Text Editor | Syncfusion
+title: Inline Format Commands in TS Modern Rich Text Editor | Syncfusion
 description: Learn how to invoke inline format commands programmatically in the TypeScript Modern Rich Text Editor using executeCommand and the fluent commands builder.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
@@ -28,7 +28,7 @@ Toggle commands carry no payload. They flip the mark for the selection or set th
 
 ### Programmatic
 
-```typescript
+```ts
 editor.executeCommand('bold');
 editor.executeCommand('italic');
 editor.executeCommand('underline');
@@ -43,7 +43,7 @@ editor.executeCommand('lowercase'); // range only
 
 ### Fluent builder
 
-```typescript
+```ts
 editor.commands().bold().apply();
 editor.commands().italic().apply();
 editor.commands().underline().apply();
@@ -62,24 +62,24 @@ Both color commands share the `ColorCommand { color: string }` payload. An empty
 
 ### Apply a color
 
-```typescript
+```ts
 editor.executeCommand('fontColor', { color: '#DC2626' });
 editor.executeCommand('backgroundColor', { color: '#FFF7C7' });
 ```
 
-```typescript
+```ts
 editor.commands().fontColor().color('#DC2626').apply();
 editor.commands().backgroundColor().color('rgba(255, 247, 199, 1)').apply();
 ```
 
 ### Remove a color
 
-```typescript
+```ts
 editor.executeCommand('fontColor', { color: '' });
 editor.executeCommand('backgroundColor', { color: '' });
 ```
 
-```typescript
+```ts
 editor.commands().fontColor().color('').apply();
 editor.commands().backgroundColor().color('').apply();
 ```
@@ -90,12 +90,12 @@ The empty-string signal is the documented convention for removing a color mark. 
 
 ### Font size
 
-```typescript
+```ts
 editor.executeCommand('fontSize', { size: '16px' });
 editor.executeCommand('fontSize', { size: '' }); // remove the font size
 ```
 
-```typescript
+```ts
 editor.commands().fontSize().size('16px').apply();
 editor.commands().fontSize().size('').apply(); // remove the font size
 ```
@@ -104,12 +104,12 @@ editor.commands().fontSize().size('').apply(); // remove the font size
 
 ### Font family
 
-```typescript
+```ts
 editor.executeCommand('fontName', { family: 'Arial, Helvetica, sans-serif' });
 editor.executeCommand('fontName', { family: '' }); // remove the font family
 ```
 
-```typescript
+```ts
 editor.commands().fontName().family('Georgia, serif').apply();
 editor.commands().fontName().family('').apply(); // remove the font family
 ```
@@ -118,7 +118,7 @@ The toolbar item label is `FontName`, but the command name and mark type are bot
 
 ## Insertion command — HorizontalLine
 
-```typescript
+```ts
 editor.executeCommand('horizontalLine');
 editor.commands().horizontalLine().apply();
 ```
@@ -127,7 +127,7 @@ editor.commands().horizontalLine().apply();
 
 ## Programmatic end-to-end example
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({

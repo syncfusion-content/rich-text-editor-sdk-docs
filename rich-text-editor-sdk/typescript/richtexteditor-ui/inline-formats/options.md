@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Format Options in TypeScript Modern Rich Text Editor | Syncfusion
+title: Inline Format Options in TS Modern Rich Text Editor | Syncfusion
 description: Learn how to configure font family, font size, font color, background color, and other inline format options in the TypeScript Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
@@ -20,7 +20,7 @@ The Rich Text Editor initializes with a default font family, which inherits the 
 
 You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -35,7 +35,7 @@ editor.appendTo('#editor');
 
 The Modern Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, configure the `items` field of the [fontFamily](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fontfamily) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -59,7 +59,7 @@ editor.appendTo('#editor');
 
 To use web fonts in the Modern Rich Text Editor, the web fonts do not need to be present on the local machine. To add web fonts to the editor, refer the web font links in your page and add the font names to the [fontFamily](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fontfamily) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -92,7 +92,7 @@ The Rich Text Editor initializes with a default font size, which inherits the fo
 
 You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -107,7 +107,7 @@ editor.appendTo('#editor');
 
 The Modern Rich Text Editor supports providing custom sizes along with the existing list. To add additional sizes to the font size dropdown, configure the `items` field of the [fontSize](https://ej2.syncfusion.com/documentation/api/rich-text-editor/fontsize#fontsize) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -134,7 +134,7 @@ editor.appendTo('#editor');
 
 You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/rich-text-editor/toolbarsettingsmodel#items) property.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -151,7 +151,7 @@ The `FontColor` and `BackgroundColor` properties offer two modes — `Picker` an
 
 The number of columns in the color palette for both `FontColor` and `BackgroundColor` can be configured using the [columns](https://ej2.syncfusion.com/documentation/api/rich-text-editor/backgroundcolormodel#columns) property. The [default](https://ej2.syncfusion.com/documentation/api/rich-text-editor/backgroundcolormodel#default) property specifies the default color that is applied when no color is explicitly selected by the user.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -178,7 +178,7 @@ editor.appendTo('#editor');
 
 The [showRecentColors](https://ej2.syncfusion.com/documentation/api/rich-text-editor/fontcolor#showrecentcolor) feature in the Modern Rich Text Editor provides quick access to a row of recently used colors displayed below the main palette. This streamlines editing by keeping frequently used colors easily accessible. This feature can be enabled separately for the [fontColor](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#fontcolor) and [backgroundColor](https://ej2.syncfusion.com/documentation/api/rich-text-editor/index-default#backgroundcolor) tools.
 
-```typescript
+```ts
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
