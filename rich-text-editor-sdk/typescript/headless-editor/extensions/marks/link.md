@@ -77,7 +77,7 @@ The Link mark supports Markdown-style input rules using `[label](url)` syntax. B
 
 ```text
 Type:    [Syncfusion](https://www.syncfusion.com)
-Result:  <a href="https://www.syncfusion.com" aria-label="Syncfusion">Syncfusion</a>
+Result:  <a href="https://www.syncfusion.com" aria-label="Visit Syncfusion website">Syncfusion</a>
 ```
 
 ## Link validation
