@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Indent and Outdent Extension in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Indent and Outdent extension in the TypeScript Headless Editor, including structural indentation, Tab handling, and shape-aware dispatch.
+title: Indent Outdent Extension in TypeScript Headless Editor | Syncfusion
+description: Learn how to configure the Indent and Outdent extension in the TypeScript Headless Editor, including structural indentation and Tab handling.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

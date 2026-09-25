@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Alignment Extension in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Text Alignment extension in the TypeScript Headless Editor, including left, center, right, and justify alignment with commands and shortcuts.
+description: Learn how to configure the Text Alignment extension in the TypeScript Headless Editor, including left, center, right, and justify alignment.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
