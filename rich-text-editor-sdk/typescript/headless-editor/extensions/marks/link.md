@@ -83,7 +83,7 @@ editor.commands.unsetLink();
 
 ## Markdown input rules
 
-The Link mark supports Markdown-style input rules using `[label](url)` syntax. Bare URLs, `www.` hostnames, and email addresses are also recognized.
+The Link mark supports Markdown-style input rules using `[label](url)` syntax. Bare URLs, `www.` host names, and email addresses are also recognized.
 
 ```text
 Type:    [Syncfusion](https://www.syncfusion.com)
@@ -92,13 +92,7 @@ Result:  <a href="https://www.syncfusion.com" aria-label="Visit Syncfusion websi
 
 ## Link validation
 
-URLs passed to `setLink` are validated against a protocol allow list before being applied. Validation is performed by the internal `isValidUrl` helper and rejects empty input and unsafe schemes that could be used to execute arbitrary code on click.
-
-The following protocols are blocked:
-
-- `javascript:`
-- `data:`
-- `vbscript:`
+URLs passed to `setLink` are validated against a protocol allow list before being applied. Validation is performed by the internal `isValidUrl` helper.
 
 The following protocols are allowed:
 
