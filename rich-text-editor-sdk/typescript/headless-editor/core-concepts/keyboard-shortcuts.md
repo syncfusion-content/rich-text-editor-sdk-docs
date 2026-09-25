@@ -66,7 +66,7 @@ These shortcuts require the `list` extension (or a listKeyMap extension) to be r
 
 ### Blocks via input rules
 
-Block shortcuts in Headless Editor are surfaced through **input rules** rather than raw keybindings. The text you type(followed by a space) is converted to a block when the rule matches.
+Block shortcuts in Headless Editor are surfaced through **input rules** rather than raw key bindings. The text you type(followed by a space) is converted to a block when the rule matches.
 
 | Action | Pattern | Requires |
 |--------|---------|----------|

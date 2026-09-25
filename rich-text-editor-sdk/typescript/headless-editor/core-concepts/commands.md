@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands in TypeScript Headless Editor | Syncfusion
-description: Use the Headless Editor command facade to execute, check availability, and chain generic built-in commands.
+description: Use the Headless Editor command api to execute, check availability, and chain generic built-in commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 A command is a named action the editor knows how to perform. Commands are the only way to change the editor's state. Every formatting toggle, every block transform, and every selection move is implemented as a command.
 
-There are two kinds of commands in the codebase:
+There are two kinds of commands in the editor:
 
 - **Generic built-in commands** — listed on this page. They are not tied to any particular feature and are always available.
 - **Extension commands** — owned by their extension (for example, `toggleBold` on the Bold extension, `toggleHeading` on the Heading extension, etc).

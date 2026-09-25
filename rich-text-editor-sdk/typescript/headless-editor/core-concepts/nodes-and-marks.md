@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nodes and Marks in TypeScript Headless Editor | Syncfusion
-description: Understand nodes, marks, attributes, and how to read them in the TypeScript Headless Editor.
+description: Understand nodes, marks, attributes, inline vs block composition and how to read them in the TypeScript Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
