@@ -14,19 +14,28 @@ The `hardBreakExtension` registers the `hard_break` inline node, which inserts a
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, hardBreakExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [hardBreakExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure hard break options
 
 The `hardBreak` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered `<br>` elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, hardBreakExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -36,6 +45,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -44,7 +54,7 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `setHardBreak()` | Inserts a hard line break (`<br>`) at the current selection, maintaining the current paragraph or block context. |
 
-```typescript
+```ts
 editor.commands.setHardBreak();
 ```
 

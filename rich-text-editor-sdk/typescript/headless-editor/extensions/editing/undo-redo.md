@@ -14,12 +14,17 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [undoRedoExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure undo and redo options
@@ -31,7 +36,11 @@ The `undoRedo` extension exposes options for tuning the history stack:
 | `depth` | Maximum depth of the undo history stack. | `30` |
 | `newGroupDelay` | Time in milliseconds after which a new edit forms a new history group. | `300` |
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -42,6 +51,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -51,7 +61,7 @@ const editor = HeadlessEditor.create({
 | `undo()` | Reverts the last change in the editor history. |
 | `redo()` | Re-applies the most recently undone change. |
 
-```typescript
+```ts
 // Undo the last change
 editor.commands.undo();
 

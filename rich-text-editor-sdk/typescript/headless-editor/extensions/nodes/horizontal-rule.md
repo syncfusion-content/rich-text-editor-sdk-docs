@@ -14,19 +14,28 @@ The `horizontalRuleExtension` registers the `horizontalRule` leaf node for visua
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, horizontalRuleExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [horizontalRuleExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure horizontal rule options
 
 The `horizontalRule` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered `<hr>` elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, horizontalRuleExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -36,6 +45,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -44,7 +54,7 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `setHorizontalRule()` | Inserts a horizontal rule at the current cursor position. When the current block is empty, the empty block is replaced with the rule. Otherwise, the rule is inserted below the target block at the cursor position. |
 
-```typescript
+```ts
 editor.commands.setHorizontalRule();
 ```
 

@@ -14,19 +14,28 @@ The `blockquoteExtension` registers the `blockquote` block container node, which
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, blockquoteExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [blockquoteExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure block quote options
 
 The `blockquote` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the rendered `<blockquote>` element. It defaults to an empty object. Use `.configure()` to set it:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, blockquoteExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -36,6 +45,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -44,7 +54,7 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `toggleBlockQuote()` | Toggles the block quote wrapper on the current block or selection. If the selection is already inside a block quote, it unwraps the content back to regular blocks. |
 
-```typescript
+```ts
 editor.commands.toggleBlockQuote();
 ```
 

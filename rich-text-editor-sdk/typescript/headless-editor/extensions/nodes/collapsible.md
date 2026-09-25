@@ -14,12 +14,17 @@ The `collapsibleExtension` registers the `collapsible` block container along wit
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [collapsibleExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 I> The editor automatically registers `collapsibleKeymapExtension` when `collapsibleExtension` is registered, so <kbd>Enter</kbd>, <kbd>Backspace</kbd>, and <kbd>Delete</kbd> handling inside collapsible sections is enabled without an extra import.
@@ -38,7 +43,11 @@ I> The editor automatically registers `collapsibleKeymapExtension` when `collaps
 
 The `collapsible` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the outer collapsible `<div>` container. The `data-type` and `data-collapsed` attributes are always applied. It defaults to an empty object.
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -48,6 +57,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -59,7 +69,7 @@ const editor = HeadlessEditor.create({
 | `expand({ pos? })` | Sets `collapsed` to `false` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
 
 
-```typescript
+```ts
 // Wrap the current block as a heading-triggered collapsible (level 1)
 editor.commands.toggleCollapsible({ triggerType: 'heading', level: 2 });
 

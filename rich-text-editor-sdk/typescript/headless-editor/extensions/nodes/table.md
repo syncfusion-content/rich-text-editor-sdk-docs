@@ -14,12 +14,17 @@ The `tableExtension` registers the `table`, `tableRow`, `tableCell`, and `tableH
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, tableExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [tableExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -45,7 +50,11 @@ The `table` extension exposes options that control table behavior:
 |--------|-------------|---------|
 | `resize` | When `true`, table columns can be resized by dragging the column separator handles in the header row. | `true` |
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, tableExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -55,6 +64,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -88,7 +98,7 @@ const editor = HeadlessEditor.create({
 | `moveToNextCell()` | Moves the cursor to the next table cell. If the cursor is in the last cell, a new row is appended automatically. |
 | `moveToPreviousCell()` | Moves the cursor to the previous table cell. |
 
-```typescript
+```ts
 // Insert a 3x3 table at the cursor
 editor.commands.insertTable({ rows: 3, columns: 3 });
 

@@ -16,12 +16,17 @@ The `textExtension` registers the inline `text` node used to represent plain tex
 
 The `text` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [documentExtension, paragraphExtension, textExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 Marks such as bold, italic, or links are applied on top of `text` nodes. Refer to the [Marks](../marks) concept page for more details on how marks attach to text.

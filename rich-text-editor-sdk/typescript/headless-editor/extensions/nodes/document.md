@@ -16,12 +16,17 @@ The `documentExtension` registers the root `document` node of the editor schema.
 
 The `document` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [documentExtension, paragraphExtension, textExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 The `document` node itself does not carry any attributes. It is the schema root and is owned by the editor — you do not create, update, or remove it directly. It is rendered as a `<div>` and automatically wraps whatever block-level content you insert, such as paragraphs, headings, or lists. You manage its content indirectly by inserting, updating, or removing the block nodes it contains.

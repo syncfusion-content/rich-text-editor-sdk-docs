@@ -14,12 +14,17 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [textAlignExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure text alignment options
@@ -31,7 +36,11 @@ The `textAlign` extension exposes options for choosing which block types accept 
 | `types` | Block node type names where text alignment is allowed. | `['paragraph', 'heading', 'listItem', 'taskItem']` |
 | `htmlAttributes` | HTML attributes applied to the aligned block elements. | `{}` |
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -41,6 +50,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -50,7 +60,7 @@ const editor = HeadlessEditor.create({
 | `setTextAlign({ align })` | Applies the specified alignment to the current block or selection. Accepted values: `left`, `center`, `right`, `justify`. |
 | `unsetTextAlign()` | Removes the alignment attribute from the current block or selection. |
 
-```typescript
+```ts
 // Apply center alignment to the current block
 editor.commands.setTextAlign({ align: 'center' });
 

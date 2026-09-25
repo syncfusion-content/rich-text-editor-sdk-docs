@@ -14,12 +14,17 @@ The `paragraphExtension` registers the `paragraph` block node, which is the defa
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [paragraphExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -33,7 +38,11 @@ const editor = HeadlessEditor.create({
 
 The `paragraph` extension exposes an `htmlAttributes` option that adds custom HTML attributes to every rendered `<p>` element. It defaults to an empty object. Use `.configure()` to set it:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -43,6 +52,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -51,7 +61,7 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `setParagraph()` | Converts the current block into a paragraph. If the source block had `align` or `indent` attributes, they are preserved on the resulting paragraph. |
 
-```typescript
+```ts
 editor.commands.setParagraph();
 ```
 

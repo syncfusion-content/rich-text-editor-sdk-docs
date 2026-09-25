@@ -14,17 +14,22 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 ## Register the preset
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [basicExtensions]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 All commands, keyboard shortcuts, and input rules contributed by the composed extensions become available immediately:
 
-```typescript
+```ts
 editor.commands.toggleBold();
 editor.commands.setHeading({ level: 2 });
 editor.commands.undo();
@@ -47,24 +52,34 @@ I> `basicExtensions` does not include every available node extension, such as `t
 
 You can combine `basicExtensions` with additional individual extensions:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, basicExtensions, tableExtension, imageExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [basicExtensions, tableExtension, imageExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Registering extensions individually
 
 If you need full control over which node types and behavior are available, register the required extensions individually instead of using the preset:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [documentExtension, paragraphExtension, textExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 Note that `document` and `text` are mandatory for a valid schema, The Headless Editor automatically adds the required `document` and `text` extensions if they are not registered.

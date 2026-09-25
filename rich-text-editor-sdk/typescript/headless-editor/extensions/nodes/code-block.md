@@ -14,12 +14,17 @@ The `codeBlockExtension` registers the `codeBlock` node for displaying preformat
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, codeBlockExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [codeBlockExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -45,7 +50,11 @@ The `codeBlock` extension provides several options for indentation, language pre
 
 Use `.configure()` to apply custom settings:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, codeBlockExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -57,6 +66,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -71,12 +81,13 @@ const editor = HeadlessEditor.create({
 | `clearCodeBlock()` | Clears the code block formatting, converting it back to a standard paragraph. |
 | `exitCode()` | Exits the code block and creates a new paragraph below it. |
 
-```typescript
+```ts
 // Convert block to a TypeScript code block
 editor.commands.setCodeBlock({ language: 'typescript' });
 
 // Change the active code block's language
 editor.commands.setCodeBlockLanguage({ language: 'javascript' });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcuts
@@ -95,6 +106,6 @@ editor.commands.setCodeBlockLanguage({ language: 'javascript' });
 
 Type triple backticks or triple tildes at the start of a line, optionally followed by a language identifier and a space or newline:
 
-* ```` ```typescript ```` followed by space creates a code block with language set to `typescript`
+* ```` ```ts ```` followed by space creates a code block with language set to `typescript`
 * ```` ``` ```` followed by space creates a code block with the default language
 * `~~~csharp ` followed by space creates a code block with language set to `csharp`

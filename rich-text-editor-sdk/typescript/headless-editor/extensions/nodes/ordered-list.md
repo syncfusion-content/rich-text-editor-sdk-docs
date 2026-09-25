@@ -14,12 +14,17 @@ The `listExtension` provides built-in support for numbered lists (`<ol>`) and li
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, listExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [listExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 I> The editor automatically registers `listKeymapExtension` whenever `listExtension` or `taskListExtension` is registered, so list navigation keys (<kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>) are enabled without an extra import.
@@ -40,7 +45,11 @@ The `list` extension supports custom HTML attributes for both the list container
 | `htmlAttributes` | Custom HTML attributes applied to the outer `<ol>` element. | `{}` |
 | `itemHtmlAttributes` | Custom HTML attributes applied to every child `<li>` element. | `{}` |
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, listExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -51,6 +60,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -62,7 +72,7 @@ const editor = HeadlessEditor.create({
 | `indentListItem()` | Indents the active list item to create a nested sub-list. |
 | `outdentListItem()` | Outdents the active list item to the parent list level or converts it back to a standard block. |
 
-```typescript
+```ts
 // Toggle default ordered list (decimal)
 editor.commands.toggleOrderedList();
 

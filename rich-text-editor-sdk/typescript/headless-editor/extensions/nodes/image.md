@@ -14,12 +14,17 @@ The `imageExtension` registers the `image` block and `imageInline` inline nodes 
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [imageExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -62,7 +67,11 @@ The `image` extension exposes options for default image behavior, persistence, a
 | `minWidth` | Minimum allowed width in pixels during a resize drag. | `8` |
 | `minHeight` | Minimum allowed height in pixels during a resize drag. | `8` |
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -81,6 +90,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -133,7 +143,7 @@ The optional `caption` payload for `addCaption` and `toggleCaption` is `CaptionP
 |-------|------|-------------|
 | `caption` | `string` | Initial text for the new caption. When omitted or whitespace-only, the placeholder text `Insert caption` is used. |
 
-```typescript
+```ts
 // Insert a single block image
 editor.commands.insertImage({
     src: 'https://example.com/photo.png',
@@ -169,6 +179,7 @@ editor.commands.addCaption();
 
 // Toggle a caption, seeding it with text when adding
 editor.commands.toggleCaption({ caption: 'Figure 1' });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Resize events

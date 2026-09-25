@@ -14,12 +14,17 @@ The `calloutExtension` registers the `callout` block container node for renderin
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [calloutExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -39,7 +44,11 @@ The `callout` extension provides options to set the default variant and add cust
 
 Use `.configure()` to apply custom settings:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -50,6 +59,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -58,12 +68,13 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `toggleCallout({ variant? })` | Toggles a callout wrapper around the current block or selection. Accepts an optional `variant` (`info`, `warning`, `note`, `success`, `error`, or `tip`). If already inside a callout, unwraps the content. |
 
-```typescript
+```ts
 // Toggle with default variant
 editor.commands.toggleCallout();
 
 // Toggle with a warning variant
 editor.commands.toggleCallout({ variant: 'warning' });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcut

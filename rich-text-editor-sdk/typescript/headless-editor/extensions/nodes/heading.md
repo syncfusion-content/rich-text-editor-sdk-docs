@@ -14,12 +14,17 @@ The `headingExtension` registers the `heading` block node, which renders semanti
 
 ## Register the extension
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, headingExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [headingExtension]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Node attributes
@@ -34,7 +39,11 @@ const editor = HeadlessEditor.create({
 
 The `heading` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered heading elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```typescript
+```html
+<div id="editor"></div>
+```
+
+```ts
 import { HeadlessEditor, headingExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -44,6 +53,7 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
@@ -52,9 +62,10 @@ const editor = HeadlessEditor.create({
 |---------|--------------|
 | `setHeading({ level })` | Converts the current block into a heading at the specified level (`1` to `6`). Existing block attributes like `align` and `indent` are preserved. |
 
-```typescript
+```ts
 // Convert the current block to an <h2>
 editor.commands.setHeading({ level: 2 });
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcuts
