@@ -62,8 +62,6 @@ The Headless Editor does not add ARIA roles or labels automatically. Add the fol
 | `aria-label` or `aria-labelledby` | Provide an accessible name for the editor. |
 | `aria-readonly="true"` | Apply when `readOnly: true` is configured. |
 | `aria-describedby` | Associate instructions or validation messages. |
-| `role="toolbar"`, `aria-orientation` | Identify and describe an application-provided toolbar. |
-| `aria-disabled`, `aria-haspopup`, `aria-expanded` | Describe disabled controls, menus, and popup state. |
 
 The following example applies the recommended attributes:
 
