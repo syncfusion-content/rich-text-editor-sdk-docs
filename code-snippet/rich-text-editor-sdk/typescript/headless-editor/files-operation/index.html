@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syncfusion TypeScript Headless Editor - File Operations</title>
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-headless-editor/styles/tailwind3.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="control-section">
+        <div class="file-ops-panel">
+            <div class="file-ops-row">
+                <button id="select-button" type="button" class="e-btn e-outline">Select File</button>
+                <span id="file-info" class="file-ops-info">No file selected</span>
+                <input id="file-input" type="file" accept="image/*" style="display:none" />
+            </div>
+            <div class="file-ops-row">
+                <button id="upload-button" type="button" class="e-btn e-outline" disabled>Upload</button>
+                <button id="insert-button" type="button" class="e-btn e-outline" disabled>Insert</button>
+                <button id="cancel-button" type="button" class="e-btn e-outline" disabled>Cancel</button>
+            </div>
+            <div class="file-ops-row">
+                <div class="file-ops-progress-track">
+                    <div id="progress-bar" class="file-ops-progress-bar"></div>
+                </div>
+                <span id="progress-text" class="file-ops-info">0%</span>
+            </div>
+            <div id="status-message" class="file-ops-status">Idle</div>
+        </div>
+
+        <div class="headless-editor-surface">
+            <div id="headless-editor"></div>
+        </div>
+    </div>
+
+    <script type="module" src="index.ts"></script>
+</body>
+</html>
