@@ -60,3 +60,12 @@ For a long document, losing the toolbar off-screen as the user scrolls down is d
 #### Floating toolbar offset
 
 If your page already has a sticky header, use `toolbarSettings.floatingOffset` to push the floating toolbar down by that many pixels so the two don't overlap. Default `0`.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-type/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-config/type.html %}
+{% endhighlight %}
+{% endtabs %}
