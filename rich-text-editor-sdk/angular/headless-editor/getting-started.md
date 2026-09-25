@@ -122,19 +122,19 @@ ng new my-app
 ```
 This command will prompt you for a few settings for the new project, such as which stylesheet format to use.
 
-![Initial_Setup](images/getting-started/Initial-setup.png)
+![Initial_Setup](images/Initial-setup.png)
 
 By default, the Angular CLI creates a CSS-based application.
 
 Then the CLI also displays an additional prompt asking whether to enable Server‑Side Rendering (SSR) and Static Site Generation (SSG), as shown below:
 
-![Server_Side_Rendering_Setup](images/getting-started/SSR.png)
+![Server_Side_Rendering_Setup](images/SSR.png)
 
 For this setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
 Then the CLI displays another prompt related to AI tooling support, as shown below:
 
-![AI_Tool_Setup](images/getting-started/AI-Tool.png)
+![AI_Tool_Setup](images/AI-Tool.png)
 
 Any preferred option can be selected based on the development workflow or project needs.
 
