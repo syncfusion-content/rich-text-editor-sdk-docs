@@ -24,26 +24,6 @@ const editor = HeadlessEditor.create({
 });
 ```
 
-## Configure the extension
-
-The `fontColor` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the rendered `<span>` element. Use `.configure()` to set it:
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<span>` element. |
-
-```typescript
-import { HeadlessEditor, fontColorExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [
-        fontColorExtension.configure({
-            htmlAttributes: { class: 'my-custom-class' }
-        })
-    ]
-});
-```
-
 ## Commands
 
 | Command | Description |

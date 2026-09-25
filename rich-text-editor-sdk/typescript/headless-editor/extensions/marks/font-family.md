@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Family Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Font Family mark in the TypeScript Headless Editor, including setFontFamily, unsetFontFamily commands, and HTML output.
+description: Learn how to configure the Font Family mark in the TypeScript Headless Editor, including setFontFamily and unsetFontFamily commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -19,26 +19,6 @@ import { HeadlessEditor, fontFamilyExtension } from '@syncfusion/ej2-headless-ed
 
 const editor = HeadlessEditor.create({
     extensions: [fontFamilyExtension]
-});
-```
-
-## Configure the extension
-
-The `fontFamily` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the rendered `<span>` element. Use `.configure()` to set it:
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<span>` element. |
-
-```typescript
-import { HeadlessEditor, fontFamilyExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [
-        fontFamilyExtension.configure({
-            htmlAttributes: { class: 'my-custom-class' }
-        })
-    ]
 });
 ```
 

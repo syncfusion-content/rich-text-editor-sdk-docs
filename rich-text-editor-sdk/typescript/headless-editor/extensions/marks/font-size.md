@@ -24,26 +24,6 @@ const editor = HeadlessEditor.create({
 });
 ```
 
-## Configure the extension
-
-The `fontSize` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the rendered `<span>` element. Use `.configure()` to set it:
-
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<span>` element. |
-
-```typescript
-import { HeadlessEditor, fontSizeExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [
-        fontSizeExtension.configure({
-            htmlAttributes: { class: 'my-custom-class' }
-        })
-    ]
-});
-```
-
 ## Commands
 
 | Command | Description |
@@ -54,9 +34,6 @@ const editor = HeadlessEditor.create({
 ```typescript
 // Apply 14px font size to the current selection
 editor.commands.setFontSize({ size: '14px' });
-
-// Apply a relative font size
-editor.commands.setFontSize({ size: '1.2em' });
 
 // Remove the font size from the current selection
 editor.commands.unsetFontSize();

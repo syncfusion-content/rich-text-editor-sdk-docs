@@ -48,8 +48,18 @@ const editor = HeadlessEditor.create({
 
 | Command | Description |
 |---------|-------------|
-| `setLink({ href, title?, target?, rel?, text? })` | Adds or updates a link on the current selection. The optional `text` argument replaces the selection with the provided display text. |
+| `setLink({ href, title?, target?, rel?, displayText? })` | Adds or updates a link on the current selection. The optional `displayText` argument replaces the selection with the provided display text. |
 | `unsetLink()` | Removes the link from the current selection while preserving the text. |
+
+### `setLink` payload
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `href` | `string` | Yes | Destination URL. Validated against the protocol allow list. |
+| `title` | `string` | No | Tooltip text shown on hover. |
+| `target` | `string` | No | Where to open the link (e.g., `_blank`, `_self`). |
+| `rel` | `string` | No | Link relationship metadata (e.g., `noopener noreferrer`). |
+| `displayText` | `string` | No | When provided, the current selection is replaced with this text in the same transaction so the link mark wraps the new text. |
 
 ```typescript
 // Add a link to the current selection
@@ -58,7 +68,7 @@ editor.commands.setLink({ href: 'https://example.com' });
 // Add a link with display text
 editor.commands.setLink({
     href: 'https://example.com',
-    text: 'Visit Example'
+    displayText: 'Visit Example'
 });
 
 // Remove the link from the current selection
@@ -97,6 +107,3 @@ The following protocols are allowed:
 - `mailto:`
 - `tel:`
 - `ftp://`
-- Root-relative paths beginning with `/`
-
-Relative paths beginning with `.` and in-page anchors beginning with `#` are also allowed. Bare hostnames that contain a dot and no spaces (for example, `example.com`) are accepted and resolved by the browser. Any other input is rejected.
