@@ -18,7 +18,7 @@ The set of available inline formats is on [Supported Formats](supported-formats.
 
 Toggle commands carry no payload. They flip the mark for the selection or set the active typing mark for a collapsed caret.
 
-### Fluent builder
+## Fluent builder
 
 ```ts
 editor.commands().bold().apply();
