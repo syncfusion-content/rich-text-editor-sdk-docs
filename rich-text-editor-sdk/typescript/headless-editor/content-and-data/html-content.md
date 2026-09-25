@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML Content | TypeScript Headless Editor
+title: HTML Content | Syncfusion TypeScript Headless Editor
 description: Learn how the Syncfusion TypeScript Headless Editor loads and exports HTML through the schema-driven parsing and serialization pipeline.
 platform: rich-text-editor-sdk
 control: Headless Editor

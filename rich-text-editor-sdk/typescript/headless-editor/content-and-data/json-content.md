@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JSON Content | TypeScript Headless Editor
+title: JSON Content | Syncfusion TypeScript Headless Editor
 description: Learn the public document model used by the Syncfusion TypeScript Headless Editor, and how to load and export JSON content through DocumentRoot.
 platform: rich-text-editor-sdk
 control: Headless Editor

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Content | TypeScript Headless Editor
+title: Working with Content | Syncfusion TypeScript Headless Editor
 description: Learn how to get, set, and update content in the Syncfusion TypeScript Headless Editor using the public content APIs and built-in commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
