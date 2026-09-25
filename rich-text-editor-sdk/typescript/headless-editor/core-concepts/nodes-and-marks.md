@@ -23,7 +23,7 @@ A node is one element in the document tree. Every node has:
 
 A text node has a `text` string and no `children`.
 
-```typescript
+```ts
 import { EditorNode, TextNode } from '@syncfusion/ej2-headless-editor';
 
 // A block node — has children.
@@ -65,7 +65,7 @@ The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'contain
 
 Every node has an `attrs` property. The schema decides which keys exist on a given node type and what each key's value type is. A heading has a `level` number. A link has an `href` string. A list item may have a `listType`.
 
-```typescript
+```ts
 {
     type: 'heading',
     attrs: { level: 2 },
@@ -90,7 +90,7 @@ A mark has:
 - a `type` — the mark's name,
 - an `attrs` — mark-specific values such as an `href` for a link or a `color` for text color.
 
-```typescript
+```ts
 import { Mark } from '@syncfusion/ej2-headless-editor';
 
 const link: Mark = {
@@ -109,7 +109,7 @@ A text node carries its marks in the `marks` array. Adjacent text nodes can carr
 
 Marks have the same shape as node attributes: a `type` and an `attrs` property. The mark's `type` selects the formatting (`'bold'`, `'italic'`, `'link'`, `'underline'`, …), and the `attrs` carry the values the mark needs.
 
-```typescript
+```ts
 const textColor: Mark = {
     type: 'textColor',
     attrs: { color: '#ff0000' }
@@ -132,7 +132,7 @@ A document is composed in two layers:
 
 Most blocks (paragraphs, headings) accept only inline content. A few blocks (list items, table cells, callouts) accept other blocks inside them. The schema's content rule is what determines this.
 
-```typescript
+```ts
 // A paragraph that mixes bold and plain text:
 {
     type: 'paragraph',

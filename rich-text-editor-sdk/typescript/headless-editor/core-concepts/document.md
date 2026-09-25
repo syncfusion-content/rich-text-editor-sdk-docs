@@ -37,7 +37,7 @@ The document root has below fields:
 | `attrs` | Reserved for future root-level attributes. Typically empty. |
 | `children` | The top-level block nodes. |
 
-```typescript
+```ts
 import { DocumentRoot } from '@syncfusion/ej2-headless-editor';
 
 const document: DocumentRoot = {
@@ -72,7 +72,7 @@ A document contains two layers of content:
 
 Blocks are the top-level children of the document root. A text node is always inside a block — it never appears directly under the document root.
 
-```typescript
+```ts
 {
     type: 'paragraph',
     attrs: { align: 'left', indent: 0 },

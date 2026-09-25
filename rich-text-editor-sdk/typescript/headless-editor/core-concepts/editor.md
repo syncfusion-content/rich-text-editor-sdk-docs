@@ -16,7 +16,7 @@ The `HeadlessEditor` class is the single entry point for the Headless Editor. Yo
 
 Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal — `create()` is the only public way to obtain an instance.
 
-```typescript
+```ts
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -34,7 +34,7 @@ The `create()` call returns a fully initialized editor that is ready to mount. I
 
 Use `document` or `content` to provide a starting document, and `extensions` to enable features such as bold, headings, lists, and tables.
 
-```typescript
+```ts
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -53,7 +53,7 @@ const editor = HeadlessEditor.create({
 | `enableTabKey` | Enable Tab and Shift+Tab behavior (default `true`). |
 | `autoSaveSelectionOnBlur` | Save the selection when the editor loses focus. |
 
-```typescript
+```ts
 const editor = HeadlessEditor.create({
     extensions: [basicExtensions],
     autofocus: 'start',
@@ -66,7 +66,7 @@ const editor = HeadlessEditor.create({
 
 `EditorConfig` exposes lifecycle callbacks such as `created`, `destroyed`, `contentChanged`, `selectionChanged`, `focus`, and `blur`. These are wired to the same-named public events on the editor instance.
 
-```typescript
+```ts
 const editor = HeadlessEditor.create({
     extensions: [basicExtensions],
     created: () => {
@@ -84,13 +84,13 @@ For the full list of events and their payloads, see the `Events` api.
 
 Use `mount()` to attach the editor to a DOM container, and `unmount()` to detach it.
 
-```typescript
+```ts
 const container = document.getElementById('editor');
 
 editor.mount(container);
 ```
 
-```typescript
+```ts
 editor.unmount();
 ```
 
@@ -100,7 +100,7 @@ After `unmount()`, the editor's state — document, selection, and history — i
 
 Use `destroy()` to release the editor and all of its resources. After `destroy()` the instance is unusable; create a new one with `HeadlessEditor.create()` if you need another editor.
 
-```typescript
+```ts
 editor.destroy();
 ```
 
@@ -110,7 +110,7 @@ editor.destroy();
 
 A small set of behavior toggles can be updated at runtime with `setOptions()`. Updates take effect immediately on the live editor.
 
-```typescript
+```ts
 editor.setOptions({
     readOnly: true,
     autoSaveSelectionOnBlur: true

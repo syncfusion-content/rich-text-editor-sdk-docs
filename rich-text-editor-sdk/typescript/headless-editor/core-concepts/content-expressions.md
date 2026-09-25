@@ -16,7 +16,7 @@ Every node in the schema declares how its content should be. Headless Editor use
 
 Content expressions describe allowed children with a small grammar. For ex, `block*`, etc. Writing that grammar as a raw string is error-prone. `NodeContent` exposes each piece as user friendly method so your content rules are type-checked and easy to read.
 
-```typescript
+```ts
 import { defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
 import type { NodeDefinition } from '@syncfusion/ej2-headless-editor';
 
@@ -45,7 +45,7 @@ Start an expression with one of the four factory methods. By default the resulti
 | `NodeContent.text()` | The `text` leaf node. |
 | `NodeContent.node(name)` | A specific named node type. |
 
-```typescript
+```ts
 NodeContent.node('paragraph');     // exactly one paragraph
 NodeContent.inline();              // exactly one inline node
 ```
@@ -54,7 +54,7 @@ NodeContent.inline();              // exactly one inline node
 
 Append `.optional()` to make the expression match zero or one of its target.
 
-```typescript
+```ts
 NodeContent.node('caption').optional();   // zero or one caption
 ```
 
@@ -70,7 +70,7 @@ Append a quantifier method to allow the expression to repeat.
 | `.exactly(n)` | Exactly `n` | `name{n}` |
 | `.atLeast(n)` | `n` or more | `name{n,}` |
 
-```typescript
+```ts
 NodeContent.inline().zeroOrMore();          // inline*
 NodeContent.node('listItem').oneOrMore();   // listItem+
 NodeContent.node('column').exactly(3);      // column{3}
@@ -81,7 +81,7 @@ NodeContent.node('row').atLeast(2);         // row{2,}
 
 Use `NodeContent.choice(...)` to express that any one of the given alternatives is allowed. Choices can be combined with quantifiers.
 
-```typescript
+```ts
 NodeContent.choice(
     NodeContent.node('paragraph'),
     NodeContent.node('heading')
@@ -99,7 +99,7 @@ When a quantifier is applied to a choice or a sequence, the group is automatical
 
 Use `NodeContent.sequence(...)` to require several expressions to appear in order.
 
-```typescript
+```ts
 NodeContent.sequence(
     NodeContent.node('tableRow').oneOrMore(),
     NodeContent.node('caption').optional()
@@ -108,7 +108,7 @@ NodeContent.sequence(
 
 A sequence may itself be nested inside another sequence or inside a choice.
 
-```typescript
+```ts
 NodeContent.sequence(
     NodeContent.node('tableRow').oneOrMore(),
     NodeContent.choice(
@@ -122,7 +122,7 @@ NodeContent.sequence(
 
 A few real-world cases:
 
-```typescript
+```ts
 // The document root — one or more blocks.
 NodeContent.block().oneOrMore()                  // block+
 

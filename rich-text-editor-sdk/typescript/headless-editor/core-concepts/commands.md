@@ -27,7 +27,7 @@ There are three ways to call a command.
 
 The typed facade is the common path. Every command is exposed as a method on `editor.commands`. The method returns `true` when a change happened, `false` otherwise.
 
-```typescript
+```ts
 // Select the entire document.
 editor.commands.selectAll();
 
@@ -42,7 +42,7 @@ editor.commands.setSelection({ from: 1, to: 5 });
 
 Use `editor.execute(name, payload)` when the command name is dynamic (for example, when it comes from a configuration or a user action).
 
-```typescript
+```ts
 const commandName = 'selectAll';
 editor.execute(commandName);
 
@@ -56,7 +56,7 @@ The string form returns the same `boolean` as the typed facade.
 
 Use `editor.chain()` to run several commands as one atomic step. Every step is collected, availability-checked, and dispatched together as single action.
 
-```typescript
+```ts
 editor.chain()
     .setSelection({ from: 1, to: 5 })
     .insertText({ text: 'Hello' })
@@ -69,7 +69,7 @@ Chaining is described in brief here [Command chaining](#command-chaining).
 
 Use `editor.can()` to check whether a command would run successfully without changing state. This is the standard way to update toolbar and menu state.
 
-```typescript
+```ts
 if (editor.can().selectAll()) {
     // Enable the select-all action.
 }
@@ -83,7 +83,7 @@ if (editor.can().setSelection({ from: 1, to: 5 })) {
 
 You can also dry-run a whole chain with `editor.chain().<a>().<b>().canRun()`.
 
-```typescript
+```ts
 if (editor.chain().clearSelection().setSelection({ from: 1, to: 5 }).canRun()) {
     // Safe to run the same chain.
 }
@@ -100,7 +100,7 @@ if (editor.chain().clearSelection().setSelection({ from: 1, to: 5 }).canRun()) {
 
 `editor.chain().run()` returns a richer result:
 
-```typescript
+```ts
 const result = editor.chain().setSelection({ from: 1, to: 5 }).insertText({ text: 'Hi' }).run();
 
 if (result.success) {
@@ -166,7 +166,7 @@ The following generic built-in commands are always available. Each entry lists t
 
 `editor.chain()` collects commands and dispatches them as one atomic step. Every step is run through the same availability guard that a single-command execution would use.
 
-```typescript
+```ts
 editor.chain()
     .setSelection({ from: 1, to: 5 })
     .insertText({ text: 'Hello' })
