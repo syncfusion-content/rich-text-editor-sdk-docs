@@ -14,7 +14,7 @@ The TypeScript Headless Editor provides file operation support for receiving fil
 
 The upload implementation is provided by the application through the `FileUploadHandler` interface. This keeps the editor independent of the application's server, storage provider, and HTTP implementation.
 
-### File upload example
+## File upload example
 
 The following example uses a file input to select a file and demonstrates upload handler registration, progress reporting, and cancellation.
 
