@@ -59,8 +59,6 @@ const editor = new RichTextEditor({
 });
 ```
 
-For detailed information on configuring toolbar items, refer to the **Toolbar Module** documentation.
-
 ---
 
 ## 4. Common Commands
@@ -70,8 +68,6 @@ All list operations use the following commands:
 - **`bulletList`** - Create a bulleted list
 - **`taskList`** - Create a checklist
 - **`setListStyle`** - Change the current list style
-- **`increaseListLevel`** - Increase list item indentation
-- **`decreaseListLevel`** - Decrease list item indentation
 - **`toggleTaskItemDone`** - Toggle checklist item completion state
 
 **Example:**
@@ -83,8 +79,8 @@ editor.executeCommand('numberedList', { listType: 'decimal' });
 // Change to Roman numerals
 editor.executeCommand('setListStyle', { listType: 'upper-roman' });
 
-// Increase indentation
-editor.executeCommand('increaseListLevel');
+// Toggle checklist item completion
+editor.executeCommand('toggleTaskItemDone');
 ```
 
 ---
@@ -148,3 +144,4 @@ Checklists display items with interactive checkboxes, allowing users to mark ite
 - [NumberFormat List Configuration](./list-numberformat.md) - Detailed NumberFormat List setup and usage
 - [BulletFormat List Configuration](./list-bulletformat.md) - Detailed BulletFormat List setup and usage
 - [Checklist Configuration](./list-checklist.md) - Detailed Checklist setup and usage
+- [Rich Text Editor API Reference](./reference.md) - Complete API documentation

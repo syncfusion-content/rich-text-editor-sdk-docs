@@ -69,12 +69,6 @@ const editor = new RichTextEditor({
     ]
   }
 });
-
-// Modify at runtime
-editor.listSettings.numberFormatListItems = [
-  { text: 'Decimal', listType: 'decimal' },
-  { text: 'Greek', listType: 'lower-greek' }
-];
 ```
 
 ---
@@ -91,24 +85,12 @@ Commands provide programmatic control over NumberFormat List operations. Use the
 
 **Options:**
 - `listType` (optional) - Specify the numbering format (e.g., `'decimal'`, `'lower-roman'`, `'upper-alpha'`)
-- `keepMarks` (optional) - When `true`, preserves active text formatting (bold, italic, etc.) in the new list item
 
 **Example:**
 
 ```typescript
 // Insert a numbered list with default decimal format
-editor.executeCommand('numberedList');
-
-// Insert with Roman numeral format
-editor.executeCommand('numberedList', {
-  listType: 'lower-roman'
-});
-
-// Preserve text formatting when creating list
-editor.executeCommand('numberedList', {
-  listType: 'upper-alpha',
-  keepMarks: true
-});
+editor.commands().numberedList().apply();
 ```
 
 ### 4.2 Change Number Format
@@ -127,51 +109,12 @@ editor.executeCommand('numberedList', {
 - `'lower-roman'` - Lowercase Roman numerals (i, ii, iii, ...)
 - `'upper-roman'` - Uppercase Roman numerals (I, II, III, ...)
 - `'lower-greek'` - Greek letters (α, β, γ, ...)
-- `'none'` - Remove numbering
 
 **Example:**
 
 ```typescript
-// Change current list to Roman numerals
-editor.executeCommand('setListStyle', {
-  listType: 'upper-roman'
-});
-
-// Change to Greek letters
-editor.executeCommand('setListStyle', {
-  listType: 'lower-greek'
-});
-
-// Remove numbering
-editor.executeCommand('setListStyle', {
-  listType: 'none'
-});
-```
-
-### 4.3 Increase List Item Indentation
-
-**Command:** `increaseListLevel`
-
-**Description:** Increases the indentation level of list items, creating nested numbered lists.
-
-**Example:**
-
-```typescript
-// Increase indentation level
-editor.executeCommand('increaseListLevel');
-```
-
-### 4.4 Decrease List Item Indentation
-
-**Command:** `decreaseListLevel`
-
-**Description:** Decreases the indentation level of list items, removing nesting from numbered lists.
-
-**Example:**
-
-```typescript
-// Decrease indentation level
-editor.executeCommand('decreaseListLevel');
+// Change current list to numbers
+editor.commands().numberedList().options({ listType: 'Decimal' }).apply();
 ```
 
 ---
@@ -181,3 +124,4 @@ editor.executeCommand('decreaseListLevel');
 - [List Formatting and Configuration Overview](./list-formatting-and-configuration.md) - General list feature overview
 - [BulletFormat List Configuration](./list-bulletformat.md) - Bulleted list setup and usage
 - [Checklist Configuration](./list-checklist.md) - Checklist setup and usage
+- [Rich Text Editor API Reference](./reference.md) - Complete API documentation

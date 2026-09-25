@@ -57,17 +57,10 @@ You can customize which bullet styles are available in the toolbar by modifying 
 const editor = new RichTextEditor({
   listSettings: {
     bulletFormatListItems: [
-      { text: 'Disc', listType: 'disc' },
-      { text: 'Circle', listType: 'circle' }
+      { text: 'Malayalam', listType: '-moz-malayalam' }
     ]
   }
 });
-
-// Modify at runtime
-editor.listSettings.bulletFormatListItems = [
-  { text: 'Disc', listType: 'disc' },
-  { text: 'Square', listType: 'square' }
-];
 ```
 
 ---
@@ -84,24 +77,12 @@ Commands provide programmatic control over BulletFormat List operations. Use the
 
 **Options:**
 - `listType` (optional) - Specify the bullet style (e.g., `'disc'`, `'circle'`, `'square'`)
-- `keepMarks` (optional) - When `true`, preserves active text formatting (bold, italic, etc.) in the new list item
 
 **Example:**
 
 ```typescript
 // Insert a bulleted list with default disc bullets
-editor.executeCommand('bulletList');
-
-// Insert with circle bullet style
-editor.executeCommand('bulletList', {
-  listType: 'circle'
-});
-
-// Preserve text formatting when creating list
-editor.executeCommand('bulletList', {
-  listType: 'square',
-  keepMarks: true
-});
+this.parent.commands().numberedList().apply();
 ```
 
 ### 4.2 Change Bullet Style
@@ -117,51 +98,12 @@ editor.executeCommand('bulletList', {
 - `'disc'` - Filled circle bullet (●)
 - `'circle'` - Hollow circle bullet (○)
 - `'square'` - Square bullet (■)
-- `'none'` - Remove bullets
 
 **Example:**
 
 ```typescript
-// Change current list to circle bullets
-editor.executeCommand('setListStyle', {
-  listType: 'circle'
-});
-
-// Change to square bullets
-editor.executeCommand('setListStyle', {
-  listType: 'square'
-});
-
-// Remove bullets
-editor.executeCommand('setListStyle', {
-  listType: 'none'
-});
-```
-
-### 4.3 Increase List Item Indentation
-
-**Command:** `increaseListLevel`
-
-**Description:** Increases the indentation level of list items, creating nested bulleted lists.
-
-**Example:**
-
-```typescript
-// Increase indentation level
-editor.executeCommand('increaseListLevel');
-```
-
-### 4.4 Decrease List Item Indentation
-
-**Command:** `decreaseListLevel`
-
-**Description:** Decreases the indentation level of list items, removing nesting from bulleted lists.
-
-**Example:**
-
-```typescript
-// Decrease indentation level
-editor.executeCommand('decreaseListLevel');
+// Change to disc bullets
+editor.commands().bulletList().options({ listType: 'Disc' }).apply();
 ```
 
 ---
@@ -171,3 +113,4 @@ editor.executeCommand('decreaseListLevel');
 - [List Formatting and Configuration Overview](./list-formatting-and-configuration.md) - General list feature overview
 - [NumberFormat List Configuration](./list-numberformat.md) - Numbered list setup and usage
 - [Checklist Configuration](./list-checklist.md) - Checklist setup and usage
+- [Rich Text Editor API Reference](./reference.md) - Complete API documentation

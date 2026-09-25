@@ -47,103 +47,28 @@ editor.listSettings.checklistType = 'Square';
 
 ---
 
-## 3. Custom List Items
-
-Checklist items do not have additional custom configuration beyond the checkbox shape. Once a checklist is created, you can manage items and their completion states using the available commands.
-
----
-
-## 4. Commands Support
+## 3. Commands Support
 
 Commands provide programmatic control over Checklist operations. Use these commands to create, modify, and manage checklists within the editor.
 
-### 4.1 Create Checklist
+### 3.1 Create Checklist
 
 **Command:** `taskList`
 
-**Description:** Inserts a checklist at the current cursor position or applies checklist formatting to selected content.
-
-**Options:**
-- `keepMarks` (optional) - When `true`, preserves active text formatting (bold, italic, etc.) in the new list item
+**Description:** Inserts a checklist at the current cursor position or applies checklist formatting to the selected content. If the selected content is already formatted as a checklist, executing the same command again removes the checklist formatting and reverts it to a normal paragraph.
 
 **Example:**
 
 ```typescript
 // Insert a checklist with default settings
-editor.executeCommand('taskList');
-
-// Insert checklist and preserve text formatting
-editor.executeCommand('taskList', {
-  keepMarks: true
-});
-```
-
-### 4.2 Convert List to Checklist
-
-**Command:** `setListStyle`
-
-**Description:** Converts an existing numbered or bulleted list to a checklist.
-
-**Options:**
-- `listType` (required) - Use `'task'` to convert to a checklist
-
-**Example:**
-
-```typescript
-// Convert current list to a checklist
-editor.executeCommand('setListStyle', {
-  listType: 'task'
-});
-
-// Remove checklist formatting (convert to normal text)
-editor.executeCommand('setListStyle', {
-  listType: 'none'
-});
-```
-
-### 4.3 Toggle Checkbox
-
-**Command:** `toggleTaskItemDone`
-
-**Description:** Toggles the checked state of a checklist item (marks it as complete or incomplete).
-
-**Example:**
-
-```typescript
-// Toggle checkbox state at current cursor position
-editor.executeCommand('toggleTaskItemDone');
-```
-
-### 4.4 Increase Checklist Item Indentation
-
-**Command:** `increaseListLevel`
-
-**Description:** Increases the indentation level of checklist items, creating nested checklists.
-
-**Example:**
-
-```typescript
-// Increase indentation level
-editor.executeCommand('increaseListLevel');
-```
-
-### 4.5 Decrease Checklist Item Indentation
-
-**Command:** `decreaseListLevel`
-
-**Description:** Decreases the indentation level of checklist items, removing nesting from checklists.
-
-**Example:**
-
-```typescript
-// Decrease indentation level
-editor.executeCommand('decreaseListLevel');
+editor.commands().toggleTaskList().apply();
 ```
 
 ---
 
-## 5. Related Resources
+## 4. Related Resources
 
 - [List Formatting and Configuration Overview](./list-formatting-and-configuration.md) - General list feature overview
 - [NumberFormat List Configuration](./list-numberformat.md) - Numbered list setup and usage
 - [BulletFormat List Configuration](./list-bulletformat.md) - Bulleted list setup and usage
+- [Rich Text Editor API Reference](./reference.md) - Complete API documentation
