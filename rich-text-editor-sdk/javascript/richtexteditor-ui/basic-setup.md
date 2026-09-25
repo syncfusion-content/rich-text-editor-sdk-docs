@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Basic setup in JavaScript Modern Rich Text Editor
 
-Once the editor is rendering (see [Getting Started](getting-started)), these four properties are usually the first things you configure — what content it starts with, what format that content is in, which tools appear on the toolbar, and how inserted images are handled.
+After initializing the Modern Rich Text Editor (see [Getting Started](getting-started)), configure the properties that define its initial content, content format, toolbar options, image handling behavior, and editing experience. These settings establish the editor's default configuration and provide a foundation for further customization based on application requirements.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -21,9 +21,9 @@ Once the editor is rendering (see [Getting Started](getting-started)), these fou
 {% endhighlight %}
 {% endtabs %}
 
-## value
+## Set Editor content.
 
-Set `value` to load initial content into the editor when it's created:
+Configure the `value` property to preload content when the editor is initialized. This is commonly used to display existing content for editing or to provide starter content.
 
 ```js
 value: '<p>Getting started with the Rich Text Editor UI.</p>'
@@ -31,15 +31,21 @@ value: '<p>Getting started with the Rich Text Editor UI.</p>'
 
 ## valueFormat
 
-`valueFormat` determines whether `value` is treated as an HTML string or a structured `EditorDocument` JSON object. Set it to `'html'` if you're working with HTML strings, or leave it at its default `'json'` to work with the structured document model instead.
+Before setting editor content, choose the appropriate `valueFormat`. Use html when working with HTML strings and json when storing or exchanging content using the editor's structured document model.
 
 ```js
 valueFormat: 'html'
 ```
+### supported values
+
+* 'json' - Uses the structured document model.
+* 'html' - Uses HTML string content.
+
+> **Note**: `valueFormat` is set to **'json'** by default. Set it to **'html'** when loading editor content as an HTML string.
 
 ## toolbarSettings
 
-`toolbarSettings.items` sets the ordered list of buttons (and `'|'` separators) shown on the main toolbar. Configure it with just the tools your application actually needs, rather than the full default set:
+Configure `toolbarSettings.items` to display only the editing tools required by your application. Keeping the toolbar focused helps simplify the editing experience and reduces unnecessary commands
 
 ```js
 toolbarSettings: {
@@ -51,13 +57,33 @@ See [Toolbar](toolbar) for layout, floating behavior, and toolbar events.
 
 ## imageSettings
 
-`imageSettings` controls how images are validated when a reader inserts one — most commonly, which file types are accepted and how large a file can be:
+Configure `imageSettings` to control how images are uploaded and validated. You can specify accepted file types, file size limits, and server endpoints used for upload and removal operations.
 
 ```js
+var hostUrl = 'https://services.syncfusion.com/js/production/';
 imageSettings: {
     allowedTypes: ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp'],
-    maxFileSize: 30000000
+    maxFileSize: 30000000,
+    uploadUrl: hostUrl + 'api/RichTextEditor/SaveFile',
+    removeUrl: hostUrl + 'api/RichTextEditor/DeleteFile',
+    imageUrl: hostUrl + 'RichTextEditor/'
 }
 ```
 
 See [Insert Image](insert-image) for upload, storage, and display configuration beyond this basic validation.
+
+## Set placeholder text 
+
+Use the `placeholder` property to display instructional text when the editor is empty. This helps users understand what content is expected before they start typing.
+
+```js
+placeholder: 'Type something.'
+```
+
+## set save Interval
+
+When `enableAutoSave` is enabled, use `saveInterval` to control how long the editor waits before automatically saving unsaved changes. The value is specified in milliseconds and is triggered after the user becomes idle.
+
+```js
+saveInterval: 1000
+```
