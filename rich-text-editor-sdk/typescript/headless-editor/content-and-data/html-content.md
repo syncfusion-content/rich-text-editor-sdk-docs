@@ -57,7 +57,7 @@ Both `EditorConfig.content` and `editor.setContent(html)` parse HTML through the
 
 This means which HTML elements are recognized depends on the schema and extensions you register. There is no public, fixed allow-list or deny-list of HTML tags — tags that no extension recognizes are simply not part of the document model.
 
-N> HTML loading is not run through the clipboard sanitizer. Paste sanitization is handled separately by the clipboard pipeline and does not apply to `setContent()` or `EditorConfig.content`.
+N> HTML loading is not run through the clipboard sanitizer. The clipboard sanitizer is handled separately by the clipboard pipeline and does not apply to `setContent()` or `EditorConfig.content`.
 
 The HTML recognized during loading depends on the schema and extensions registered with the editor.
 

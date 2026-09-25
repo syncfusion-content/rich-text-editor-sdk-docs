@@ -28,7 +28,7 @@ When a user pastes content into the editor, the editor processes the clipboard p
 
 Two lifecycle callbacks are exposed via `EditorConfig` and as named events on the editor instance.
 
-The `beforePaste` callback fires before the paste is inserted. It receives the parsed clipboard content plus the original DOM event and is cancellable — calling `preventDefault()` aborts the insertion:
+The `beforePaste` callback fires before the paste is inserted. It receives the parsed clipboard content plus the original DOM event and can be canceled — calling `preventDefault()` aborts the insertion:
 
 ```ts
 import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
@@ -62,12 +62,12 @@ editor.on('afterPaste', (payload) => {
 });
 ```
 
-| Event / callback | Cancellable? | When it fires |
+| Event / callback | Can be canceled? | When it fires |
 | --- | --- | --- |
 | `beforePaste` / `'beforePaste'` | Yes | Before the paste is inserted into the document. |
 | `afterPaste` / `'afterPaste'` | No | After the paste has been inserted; reports the inserted position and length. |
 
-The `beforePaste` and `afterPaste` callbacks receive paste event payloads. The `beforePaste` payload can be cancelled with `preventDefault()`. The `afterPaste` payload reports the inserted position and length along with the paste content and original DOM event.
+The `beforePaste` and `afterPaste` callbacks receive paste event payloads. The `beforePaste` payload can be canceled with `preventDefault()`. The `afterPaste` payload reports the inserted position and length along with the paste content and original DOM event.
 
 ### Paste Formats
 

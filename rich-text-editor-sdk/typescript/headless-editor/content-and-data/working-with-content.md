@@ -123,7 +123,7 @@ In-place changes are dispatched through typed commands on the command facade. Th
 - `replaceText` – replace the text in an offset-based range.
 - `insertNode` – insert a structured `EditorNode` into a parent at a given index.
 
-All three commands execute in a single transaction, participate in undo/redo, and honour the active selection snapshot.
+All three commands execute in a single transaction, participate in undo/redo, and honor the active selection snapshot.
 
 ### Insert Text
 
