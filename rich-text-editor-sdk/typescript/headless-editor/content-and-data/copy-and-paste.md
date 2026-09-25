@@ -28,7 +28,7 @@ When a user pastes content into the editor, the editor processes the clipboard p
 
 Two lifecycle callbacks are exposed via `EditorConfig` and as named events on the editor instance.
 
-The `beforePaste` callback fires before the paste is inserted. It receives the parsed clipboard content plus the original DOM event and can be canceled — calling `preventDefault()` aborts the insertion:
+The `beforePaste` callback fires before the paste is inserted and lets you inspect the paste payload:
 
 ```ts
 import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
@@ -37,10 +37,8 @@ const editor = HeadlessEditor.create({
   schema,
   extensions,
   beforePaste: (payload) => {
-    // Inspect payload.content, or cancel:
-    if (shouldAbort(payload)) {
-      payload.preventDefault();
-    }
+    console.log('Pasting content:', payload.content);
+    console.log('Paste event:', payload.event);
   },
   afterPaste: (payload) => {
     console.log('Inserted at', payload.insertPosition, 'length', payload.insertedLength);
@@ -52,9 +50,8 @@ The same callbacks are available as named events through `editor.on(...)`:
 
 ```ts
 editor.on('beforePaste', (payload) => {
-  if (shouldAbort(payload)) {
-    payload.preventDefault();
-  }
+  console.log('Pasting content:', payload.content);
+  console.log('Paste event:', payload.event);
 });
 
 editor.on('afterPaste', (payload) => {
@@ -64,10 +61,10 @@ editor.on('afterPaste', (payload) => {
 
 | Event / callback | Can be canceled? | When it fires |
 | --- | --- | --- |
-| `beforePaste` / `'beforePaste'` | Yes | Before the paste is inserted into the document. |
+| `beforePaste` / `'beforePaste'` | No | Before the paste is inserted into the document. |
 | `afterPaste` / `'afterPaste'` | No | After the paste has been inserted; reports the inserted position and length. |
 
-The `beforePaste` and `afterPaste` callbacks receive paste event payloads. The `beforePaste` payload can be canceled with `preventDefault()`. The `afterPaste` payload reports the inserted position and length along with the paste content and original DOM event.
+The `beforePaste` and `afterPaste` callbacks receive paste event payloads. The public `beforePaste` API allows applications to inspect the paste before insertion but does not expose a cancellation property. The `afterPaste` payload reports the inserted position and length along with the paste content and original DOM event.
 
 ### Paste Formats
 
@@ -108,8 +105,6 @@ const editor = HeadlessEditor.create({
   }
 });
 ```
-
-N> `transformHTML` runs after Headless's built-in security sanitizer, so the HTML it receives has already been stripped of unsafe tags, event-handler attributes, and unsafe URL schemes. The hook cannot bypass the sanitizer.
 
 ### Transforming Content
 
