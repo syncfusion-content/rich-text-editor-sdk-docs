@@ -23,7 +23,7 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 ## Set Editor content.
 
-Configure the `value` property to preload content when the editor is initialized. This is commonly used to display existing content for editing or to provide starter content.
+Configure the `value` property to load content when the editor is initialized. This is commonly used to display existing content for editing or to provide starter content.
 
 ```js
 value: '<p>Getting started with the Rich Text Editor UI.</p>'
