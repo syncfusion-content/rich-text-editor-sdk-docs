@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Inline Formats in TypeScript Modern Rich Text Editor
 
-The Modern Rich Text Editor ships a curated set of inline formats that apply character-level marks to the selected text without changing the surrounding block. The toolbar palette exposes these formats through built-in items, and the same formats are reachable from code through `executeCommand` or the fluent `commands()` builder.
+The Modern Rich Text Editor ships a curated set of inline formats that apply character-level marks to the selected text without changing the surrounding block. The toolbar palette exposes these formats through built-in items, and the same formats are reachable from code through the fluent `commands()` builder.
 
 This page lists every inline format the component supports, the toolbar item that triggers it, and how it is exposed in code. For configuration of the inline dropdowns and color pickers, see [Options](options.md). For runtime invocation, see [Commands](commands.md).
 
@@ -34,7 +34,24 @@ The table below lists the inline formats available in the Modern Rich Text Edito
 | FontColor | Applies a foreground color to the selected text. | toolbarSettings: { items: ['FontColor'] } |
 | BackgroundColor | Applies a highlight (background) color to the selected text. | toolbarSettings: { items: ['BackgroundColor'] } |
 | ClearFormat | Removes all inline formatting from the selected text. | toolbarSettings: { items: ['ClearFormat'] } |
-| HorizontalLine | Inserts a horizontal line at the caret position. | toolbarSettings: { items: ['HorizontalLine'] } |
+
+{% tabs %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/InlineSupported-Formats/index.ts %}
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/InlineSupported-Formats/index.html %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/InlineSupported-Formats/" %}
 
 ## Toggle text styles
 

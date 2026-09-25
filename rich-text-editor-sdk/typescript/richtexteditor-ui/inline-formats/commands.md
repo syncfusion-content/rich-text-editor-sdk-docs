@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inline Format Commands in TS Modern Rich Text Editor | Syncfusion
-description: Learn how to invoke inline format commands programmatically in the TypeScript Modern Rich Text Editor using executeCommand and the fluent commands builder.
+description: Learn how to invoke inline format commands programmatically in the TypeScript Modern Rich Text Editor using the fluent commands builder.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
@@ -10,36 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Inline Format Commands in TypeScript Modern Rich Text Editor
 
-The Modern Rich Text Editor exposes every inline format through three equivalent surfaces — a toolbar click, the `executeCommand(name, args)` imperative call, and the fluent `editor.commands().<builder>().<setter>().apply()` chain. All three routes converge on the same `actionBegin` / `actionComplete` pipeline and share identical cancellation and history semantics.
+The Modern Rich Text Editor exposes every inline format through two equivalent surfaces — a toolbar click and the fluent `editor.commands().<builder>().<setter>().apply()` chain. Both routes converge on the same `actionBegin` / `actionComplete` pipeline and share identical cancellation and history semantics.
 
 The set of available inline formats is on [Supported Formats](supported-formats.md). The configuration surface (`fontSize`, `fontFamily`, `fontColor`, `backgroundColor`) is on [Options](options.md).
-
-## Entry points
-
-| Entry point | Shape | Best for |
-| --- | --- | --- |
-| Toolbar click | Built-in `BuiltInToolbarItem` names in `toolbarSettings.items` | End-user interaction |
-| `editor.executeCommand(name, args)` | Imperative call with a typed payload | Programmatic use, framework wrappers |
-| `editor.commands().<builder>().<setter>().apply()` | Fluent, type-safe builder | TypeScript apps and tests |
 
 ## Toggle text-style commands
 
 Toggle commands carry no payload. They flip the mark for the selection or set the active typing mark for a collapsed caret.
-
-### Programmatic
-
-```ts
-editor.executeCommand('bold');
-editor.executeCommand('italic');
-editor.executeCommand('underline');
-editor.executeCommand('strikethrough');
-editor.executeCommand('subscript');
-editor.executeCommand('superscript');
-editor.executeCommand('inlineCode');
-editor.executeCommand('clearFormat');
-editor.executeCommand('uppercase'); // range only
-editor.executeCommand('lowercase'); // range only
-```
 
 ### Fluent builder
 
@@ -63,21 +40,11 @@ Both color commands share the `ColorCommand { color: string }` payload. An empty
 ### Apply a color
 
 ```ts
-editor.executeCommand('fontColor', { color: '#DC2626' });
-editor.executeCommand('backgroundColor', { color: '#FFF7C7' });
-```
-
-```ts
 editor.commands().fontColor().color('#DC2626').apply();
 editor.commands().backgroundColor().color('rgba(255, 247, 199, 1)').apply();
 ```
 
 ### Remove a color
-
-```ts
-editor.executeCommand('fontColor', { color: '' });
-editor.executeCommand('backgroundColor', { color: '' });
-```
 
 ```ts
 editor.commands().fontColor().color('').apply();
@@ -91,11 +58,6 @@ The empty-string signal is the documented convention for removing a color mark. 
 ### Font size
 
 ```ts
-editor.executeCommand('fontSize', { size: '16px' });
-editor.executeCommand('fontSize', { size: '' }); // remove the font size
-```
-
-```ts
 editor.commands().fontSize().size('16px').apply();
 editor.commands().fontSize().size('').apply(); // remove the font size
 ```
@@ -105,75 +67,31 @@ editor.commands().fontSize().size('').apply(); // remove the font size
 ### Font family
 
 ```ts
-editor.executeCommand('fontName', { family: 'Arial, Helvetica, sans-serif' });
-editor.executeCommand('fontName', { family: '' }); // remove the font family
-```
-
-```ts
 editor.commands().fontName().family('Georgia, serif').apply();
 editor.commands().fontName().family('').apply(); // remove the font family
 ```
 
 The toolbar item label is `FontName`, but the command name and mark type are both `fontFamily`. The fluent builder is exposed as `.fontName()` to match the toolbar label.
 
-## Insertion command — HorizontalLine
-
-```ts
-editor.executeCommand('horizontalLine');
-editor.commands().horizontalLine().apply();
-```
-
-`horizontalLine` is the only inline-flavored insertion command. It is a no-op when the editor is in `readonly` mode.
-
 ## Programmatic end-to-end example
 
-```ts
-import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+{% tabs %}
 
-const editor: RichTextEditorUI = new RichTextEditorUI({
-    toolbarSettings: {
-        items: [
-            'Bold', 'Italic', 'Underline', 'StrikeThrough',
-            '|',
-            'FontSize', 'FontName', 'FontColor', 'BackgroundColor',
-            '|',
-            'InlineCode', 'ClearFormat'
-        ]
-    },
-    value: '<p>Hello world</p>',
-    valueFormat: 'html'
-});
-editor.appendTo('#editor');
+{% highlight ts tabtitle="main.ts" %}
 
-// Apply a set of inline marks at the current selection
-editor.commands().fontSize().size('18px').apply();
-editor.commands().fontColor().color('#00A3FF').apply();
-editor.commands().bold().apply();
-editor.commands().underline().apply();
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/inlineformats-commands1/index.ts %}
 
-// Remove the font color and switch to a background highlight
-editor.commands().fontColor().color('').apply();
-editor.commands().backgroundColor().color('#FFF7C7').apply();
+{% endhighlight %}
 
-// Strip every inline mark from the selection
-editor.commands().clearFormat().apply();
-```
+{% highlight html tabtitle="index.html" %}
 
-## Action pipeline
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/inlineformats-commands1/index.html %}
 
-Every command goes through the same boundaries:
+{% endhighlight %}
 
-```
-Toolbar click  ─┐
-executeCommand  ─┼─► actionBegin ─► editor engine ─► actionComplete
-commands()      ─┘
-```
+{% endtabs %}
 
-1. The editor normalizes the call and raises the cancelable `actionBegin` event.
-2. On acceptance, the typed command is dispatched to the editor engine.
-3. `actionComplete` fires after the editor engine returns. The toolbar status re-synchronizes through `updatedToolbarStatus`.
-
-Cancelling `actionBegin` (e.g. `args.cancel = true`) prevents any document mutation and no history entry is created.
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/inlineformats-commands1/" %}
 
 ## See also
 
