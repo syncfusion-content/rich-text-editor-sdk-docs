@@ -49,20 +49,21 @@ Sanitization is applied at the clipboard boundary before the content reaches the
 
 ## File Upload Security
 
-The `beforeFileUpload` event is raised before processing begins. Set `event.payload.cancel` to `true` to reject a file before the upload starts.
+The `beforeFileUpload` event is raised before processing begins. The public event handler receives `BeforeFileUploadEventArgs` directly. Set `args.cancel` to `true` to reject a file before the upload starts.
 
 ```ts
-editor.eventBus.subscribe('beforeFileUpload', (event) => {
-    const payload = event.payload as { file: File; cancel?: boolean };
-    const allowedTypes: Set<string> = new Set(['image/jpeg', 'image/png']);
+import type { BeforeFileUploadEventArgs } from '@syncfusion/ej2-headless-editor';
 
-    if (!allowedTypes.has(payload.file.type) || payload.file.size > 5 * 1024 * 1024) {
-        payload.cancel = true;
-    }
+editor.on<BeforeFileUploadEventArgs>('beforeFileUpload', (args) => {
+  const allowedTypes: Set<string> = new Set(['image/jpeg', 'image/png']);
+
+  if (!allowedTypes.has(args.file.type) || args.file.size > 5 * 1024 * 1024) {
+    args.cancel = true;
+  }
 });
 ```
 
-Validate file type, size, name, and content on the server as well. Use `fileReceived` for post-validation processing and `FileHandler.cancel(uploadId)` to cancel an active upload.
+`BeforeFileUploadEventArgs` contains the `file`, its `source` (`paste`, `drop`, or `api`), and the optional `cancel` flag. Validate file type, size, name, and content on the server as well. Use `editor.on('fileReceived', handler)` for post-validation processing and `FileHandler.cancel(uploadId)` to cancel an active upload.
 
 ## Link Security
 
