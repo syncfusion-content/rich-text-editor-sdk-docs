@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Editor
+# Editor in TypeScript Headless Editor
 
 The `HeadlessEditor` class is the single entry point for the Headless Editor. You create one with `HeadlessEditor.create()`, mount it into a DOM container, interact with it through commands, observe it through events, and dispose it with `destroy()`.
 
@@ -28,7 +28,7 @@ The `create()` call returns a fully initialized editor that is ready to mount. I
 
 ## Editor configuration
 
-`HeadlessEditor.create()` accepts an `EditorConfig` object that controls initial content, extensions, behavior toggles, lifecycle hooks, and integrations. The configuration is grouped by purpose below. Detailed property descriptions live in the API reference.
+`HeadlessEditor.create()` accepts an `EditorConfig` object that controls initial content, extensions, behavior toggles, lifecycle hooks, and integrations.
 
 ### Initial content and extensions
 
@@ -42,8 +42,6 @@ const editor = HeadlessEditor.create({
     extensions: [basicExtensions]
 });
 ```
-
-See the **Content and Data** section for how to set and read content, and the **Extensions** section for the available extension packages.
 
 ### Behavior toggles
 
@@ -80,7 +78,7 @@ const editor = HeadlessEditor.create({
 });
 ```
 
-For the full list of events and their payloads, see the **Events** section.
+For the full list of events and their payloads, see the `Events` api.
 
 ## Mounting and unmounting
 
@@ -108,19 +106,6 @@ editor.destroy();
 
 `destroy()` is safe to call more than once. The recommended pattern is to destroy the editor in a teardown hook such as the `beforeunload` event, a route change, or a component-disposal lifecycle method.
 
-The example below demonstrates creating, mounting, using, and destroying an editor.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/core-concepts/editor/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/core-concepts/editor/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/core-concepts/editor" %}
-
 ## Updating configuration after creation
 
 A small set of behavior toggles can be updated at runtime with `setOptions()`. Updates take effect immediately on the live editor.
@@ -142,11 +127,3 @@ The properties supported by `setOptions()` are:
 | `enableInputRules` | Enables or disables markdown-style input rules. |
 
 Structural properties such as `document`, `content`, `extensions`, and `clipboard` cannot be changed after creation. To change them, destroy the editor and create a new one.
-
-## What's next
-
-Now that you have an editor instance, learn how to drive it:
-
-- **Document** — what the document tree looks like.
-- **Commands** — the typed facade for executing actions.
-- **Selection** — reading the current cursor and range.

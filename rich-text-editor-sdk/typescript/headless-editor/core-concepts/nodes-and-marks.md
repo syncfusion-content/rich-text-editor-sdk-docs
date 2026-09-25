@@ -8,25 +8,23 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Nodes and Marks
+# Nodes and Marks in TypeScript Headless Editor
 
 Every part of a Headless Editor document is a node. Inline formatting on text is a mark. Together, nodes and marks are the two ingredients of the document tree.
 
-If you have not read the **Document** page yet, start there for the high-level picture of how the tree is built.
-
-## What is a node?
+## Node
 
 A node is one element in the document tree. Every node has:
 
 - a `type` — the name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …),
-- an `attrs` bag — key/value pairs whose meaning depends on the node's type,
+- an `attrs` object — key/value pairs whose meaning depends on the node's type,
 - a `children` array — other nodes inside this one (empty for leaves),
 - a `marks` array — formatting marks applied to the node itself (used for block-level marks).
 
-Text inside a document is a special node called a text node. A text node has a `text` string and no `children`. It carries marks on the `marks` array.
+A text node has a `text` string and no `children`.
 
 ```typescript
-import { EditorNode, TextNode, Mark } from '@syncfusion/ej2-headless-editor';
+import { EditorNode, TextNode } from '@syncfusion/ej2-headless-editor';
 
 // A block node — has children.
 const heading: EditorNode = {
@@ -52,43 +50,20 @@ const text: TextNode = {
 };
 ```
 
-## What is a mark?
-
-A mark is inline formatting attached to text — `bold`, `italic`, `link`, and so on. Marks always live on text nodes (and on block-level nodes that support block marks). They never appear as their own nodes in the tree.
-
-A mark has:
-
-- a `type` — the mark's name,
-- an `attrs` bag — mark-specific values such as an `href` for a link or a `color` for text color.
-
-```typescript
-import { Mark } from '@syncfusion/ej2-headless-editor';
-
-const link: Mark = {
-    type: 'link',
-    attrs: {
-        href: 'https://example.com',
-        target: '_blank'
-    }
-};
-```
-
-A text node carries its marks in the `marks` array. Adjacent text nodes can carry different marks, so a single line of text may switch between formatted and unformatted runs.
-
-## Node kinds
+### Node types
 
 A node's `type` decides whether it is a block, an inline node, a leaf, or a container. These categories describe the role a node plays in the tree — they are not separate classes.
 
 - **Block nodes** appear as top-level children of the document and group other content. Examples: `paragraph`, `heading`, `blockquote`, `listItem`, `tableRow`, `tableCell`.
 - **Inline nodes** live inside blocks. Examples: `text`, `hardBreak`, and inline-level extensions.
-- **Leaf nodes** are nodes without children. Examples: `image`, `horizontalRule`, `text`.
+- **Leaf nodes** are nodes without children/content. Examples: `image`, `horizontalRule`.
 - **Container nodes** are blocks that hold other blocks. Examples: `bulletList`, `orderedList`, `table`.
 
 The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'container'`, `'root'`, `'block list'`, `'list'`) decides which category a node belongs to. You do not need to set this directly when reading a document — the category is implied by the `type` and the position of the node in the tree.
 
-## Node attributes
+### Node attributes
 
-Every node has an `attrs` bag. The schema decides which keys exist on a given node type and what each key's value type is. A heading has a `level` number. A link has an `href` string. A list item may have a `listType`.
+Every node has an `attrs` property. The schema decides which keys exist on a given node type and what each key's value type is. A heading has a `level` number. A link has an `href` string. A list item may have a `listType`.
 
 ```typescript
 {
@@ -106,11 +81,33 @@ Every node has an `attrs` bag. The schema decides which keys exist on a given no
 }
 ```
 
-If you need to know the attributes of a specific node type, see the **Schema** page for how `AttributeDefinition` declares a node's allowed attributes.
+## Mark
 
-## Mark attributes
+A mark is inline formatting attached to text — `bold`, `italic`, `link`, and so on. Marks always live on text nodes (and on block-level nodes that support block marks). They never appear as their own nodes in the tree.
 
-Marks have the same shape as node attributes: a `type` and an `attrs` bag. The mark's `type` selects the formatting (`'bold'`, `'italic'`, `'link'`, `'underline'`, …), and the `attrs` carry the values the mark needs.
+A mark has:
+
+- a `type` — the mark's name,
+- an `attrs` — mark-specific values such as an `href` for a link or a `color` for text color.
+
+```typescript
+import { Mark } from '@syncfusion/ej2-headless-editor';
+
+const link: Mark = {
+    type: 'link',
+    attrs: {
+        href: 'https://example.com',
+        target: '_blank'
+    }
+};
+```
+
+A text node carries its marks in the `marks` array. Adjacent text nodes can carry different marks, so a single line of text may switch between formatted and unformatted runs.
+
+
+### Mark attributes
+
+Marks have the same shape as node attributes: a `type` and an `attrs` property. The mark's `type` selects the formatting (`'bold'`, `'italic'`, `'link'`, `'underline'`, …), and the `attrs` carry the values the mark needs.
 
 ```typescript
 const textColor: Mark = {
@@ -133,7 +130,7 @@ A document is composed in two layers:
 - **Block layer** — the document root holds one or more block-level children. Block-level children can themselves contain other blocks when the schema allows it (for example, a `listItem` contains a `paragraph`).
 - **Inline layer** — a block that accepts inline content holds text nodes and inline nodes. Text nodes carry marks.
 
-Most blocks (paragraphs, headings, blockquotes) accept only inline content. A few blocks (list items, table cells, block quotes) accept other blocks inside them. The schema's content rule is what determines this.
+Most blocks (paragraphs, headings) accept only inline content. A few blocks (list items, table cells, callouts) accept other blocks inside them. The schema's content rule is what determines this.
 
 ```typescript
 // A paragraph that mixes bold and plain text:
@@ -157,10 +154,3 @@ Most blocks (paragraphs, headings, blockquotes) accept only inline content. A fe
     ]
 }
 ```
-
-## What's next
-
-Now that you know what nodes and marks are, see how the schema defines the rules they must follow:
-
-- **Schema** — `NodeDefinition`, `MarkDefinition`, and `AttributeDefinition`.
-- **Content Expressions** — how the schema describes what each node may contain.

@@ -8,15 +8,13 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Content Expressions
+# Content Expressions in TypeScript Headless Editor
 
-Every node in the schema declares what its children may be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition`'s `content` field.
-
-If you are not yet familiar with `NodeDefinition`, see the **Schema** page first.
+Every node in the schema declares how its content should be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition`'s `content` field.
 
 ## Why a builder?
 
-Content expressions describe allowed children with a small grammar: required content, optional content, repetitions, alternatives, and sequences. Writing that grammar as a raw string is error-prone. `NodeContent` exposes each piece as a method so your content rules are type-checked and easy to read.
+Content expressions describe allowed children with a small grammar. For ex, `block*`, etc. Writing that grammar as a raw string is error-prone. `NodeContent` exposes each piece as user friendly method so your content rules are type-checked and easy to read.
 
 ```typescript
 import { defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
@@ -122,7 +120,7 @@ NodeContent.sequence(
 
 ## Common content expressions
 
-A few recipes cover most real-world needs:
+A few real-world cases:
 
 ```typescript
 // The document root — one or more blocks.
@@ -146,10 +144,3 @@ NodeContent.sequence(
     NodeContent.node('caption').optional()
 )                                                // tableRow+ caption?
 ```
-
-## What's next
-
-Now that you know how content rules are written, see how the editor reads and writes selections:
-
-- **Selection** — the kinds of selection and how to read the current one.
-- **Schema** — back to `NodeDefinition` for the full shape of a node declaration.

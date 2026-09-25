@@ -8,14 +8,14 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Commands
+# Commands in TypeScript Headless Editor
 
-A command is a named action the editor knows how to perform. Commands are the only way to change the editor's state. Every typing change, every formatting toggle, every block transform, and every selection move is implemented as a command.
+A command is a named action the editor knows how to perform. Commands are the only way to change the editor's state. Every formatting toggle, every block transform, and every selection move is implemented as a command.
 
 There are two kinds of commands in the codebase:
 
 - **Generic built-in commands** — listed on this page. They are not tied to any particular feature and are always available.
-- **Extension commands** — owned by their extension page (for example, `toggleBold` on the Bold page, `toggleHeading` on the Heading page, `setImage` on the Image page).
+- **Extension commands** — owned by their extension (for example, `toggleBold` on the Bold extension, `toggleHeading` on the Heading extension, etc).
 
 If you are not yet familiar with the editor instance, see the **Editor** page first.
 
@@ -23,7 +23,7 @@ If you are not yet familiar with the editor instance, see the **Editor** page fi
 
 There are three ways to call a command.
 
-### The typed facade — `editor.commands`
+### The typed facade
 
 The typed facade is the common path. Every command is exposed as a method on `editor.commands`. The method returns `true` when a change happened, `false` otherwise.
 
@@ -38,7 +38,7 @@ editor.commands.clearSelection();
 editor.commands.setSelection({ from: 1, to: 5 });
 ```
 
-### The string form — `editor.execute`
+### The string format
 
 Use `editor.execute(name, payload)` when the command name is dynamic (for example, when it comes from a configuration or a user action).
 
@@ -54,7 +54,7 @@ The string form returns the same `boolean` as the typed facade.
 
 ### Command chaining — `editor.chain`
 
-Use `editor.chain()` to run several commands as one atomic step. Every step is collected, availability-checked, and dispatched together.
+Use `editor.chain()` to run several commands as one atomic step. Every step is collected, availability-checked, and dispatched together as single action.
 
 ```typescript
 editor.chain()
@@ -63,7 +63,7 @@ editor.chain()
     .run();
 ```
 
-Chaining is described in detail in [Command chaining](#command-chaining) below.
+Chaining is described in brief here [Command chaining](#command-chaining).
 
 ## Checking availability — `editor.can()`
 
@@ -79,7 +79,7 @@ if (editor.can().setSelection({ from: 1, to: 5 })) {
 }
 ```
 
-`editor.can()` never dispatches. It evaluates the same guard that a real execution would use, against the current document and selection, and returns `true` or `false`.
+`editor.can()` never mutates the document. It evaluates the same guard that a real execution would use, against the current document and selection, and returns `true` or `false`.
 
 You can also dry-run a whole chain with `editor.chain().<a>().<b>().canRun()`.
 
@@ -91,7 +91,7 @@ if (editor.chain().clearSelection().setSelection({ from: 1, to: 5 }).canRun()) {
 
 ## Command return values
 
-`editor.execute(...)` and `editor.commands.<name>(...)` return `boolean`:
+`editor.execute(...)` and `editor.commands.<name>(...)` returns a `boolean` value:
 
 | Value | Meaning |
 |-------|---------|
@@ -154,13 +154,6 @@ The following generic built-in commands are always available. Each entry lists t
 | `transformNode` | `TransformNodePayload` | Change a node's type while preserving its children and attributes. |
 | `splitBlock` | — | Split the current block at the selection. |
 
-### List commands
-
-| Command | Payload | Purpose |
-|---------|---------|---------|
-| `liftListItem` | — | Outdent (lift) a list item one level. |
-| `sinkListItem` | — | Indent (sink) a list item one level. |
-
 ### Selection commands
 
 | Command | Payload | Purpose |
@@ -168,15 +161,6 @@ The following generic built-in commands are always available. Each entry lists t
 | `selectAll` | — | Select the entire document. |
 | `setSelection` | `SetSelectionPayload` | Set the text selection to a from/to range. |
 | `clearSelection` | — | Collapse the selection to a cursor at the anchor. |
-
-### History commands
-
-| Command | Payload | Purpose |
-|---------|---------|---------|
-| `undo` | — | Reverse the last change. |
-| `redo` | — | Re-apply a previously undone change. |
-
-History commands are **not** allowed inside `chain()`. Calling them inside a chain throws before any change is made. Use `editor.execute('undo')` and `editor.execute('redo')` directly instead.
 
 ## Command chaining
 
@@ -196,10 +180,3 @@ Chaining has three important rules:
 - **Focus is restored.** After a successful run, focus returns to the editor automatically.
 
 A chain with no steps returns `{ success: false; reason: 'empty' }` and dispatches nothing.
-
-## What's next
-
-Now that you know how to drive the editor with commands, see what happens behind the scenes:
-
-- **Transactions** — atomicity, history grouping, and dry-run.
-- **Selection** — what the cursor and range look like to commands.

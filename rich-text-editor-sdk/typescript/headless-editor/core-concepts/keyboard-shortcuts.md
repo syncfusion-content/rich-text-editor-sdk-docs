@@ -8,15 +8,13 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts in TypeScript Headless Editor
 
-Headless Editor ships with a set of default keyboard shortcuts for selection, navigation, history, and formatting. Extensions can add more. This page lists the default shortcuts, explains how the keymap is assembled, and shows how to opt out of unwanted shortcuts.
-
-If you are not yet familiar with the editor instance, see the **Editor** page first.
+Headless Editor ships with a set of default keyboard shortcuts for selection, navigation, history, and formatting. Extensions can add their own shortcuts.
 
 ## All keyboard shortcuts
 
-The tables below list the default shortcuts that are available in the editor. Shortcuts marked as "always available" come from the base keymap and work without any extension. Shortcuts under a specific feature require that feature's extension to be registered.
+The below table lists the default shortcuts that are available in the editor. Shortcuts marked as "always available" come from the editor by default and work without any extension. Shortcuts under a specific feature require that feature's extension to be registered.
 
 ### Selection and navigation
 
@@ -24,24 +22,16 @@ These shortcuts are always available.
 
 | Action | Windows | Mac |
 |--------|---------|-----|
-| Move cursor left | <kbd>←</kbd> | <kbd>←</kbd> |
-| Move cursor right | <kbd>→</kbd> | <kbd>→</kbd> |
-| Move cursor up | <kbd>↑</kbd> | <kbd>↑</kbd> |
-| Move cursor down | <kbd>↓</kbd> | <kbd>↓</kbd> |
 | Move to start of line | <kbd>Home</kbd> | <kbd>Home</kbd> |
 | Move to end of line | <kbd>End</kbd> | <kbd>End</kbd> |
 | Move to start of document | <kbd>Ctrl</kbd> + <kbd>Home</kbd> | <kbd>⌘</kbd> + <kbd>Home</kbd> |
 | Move to end of document | <kbd>Ctrl</kbd> + <kbd>End</kbd> | <kbd>⌘</kbd> + <kbd>End</kbd> |
 | Select all | <kbd>Ctrl</kbd> + <kbd>A</kbd> | <kbd>⌘</kbd> + <kbd>A</kbd> |
-| Delete character before cursor | <kbd>Backspace</kbd> | <kbd>Backspace</kbd> |
-| Delete character after cursor | <kbd>Delete</kbd> | <kbd>Delete</kbd> |
-| Delete word before cursor | <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> | <kbd>⌥</kbd> + <kbd>Backspace</kbd> |
-| Delete word after cursor | <kbd>Ctrl</kbd> + <kbd>Delete</kbd> | <kbd>⌥</kbd> + <kbd>Delete</kbd> |
 | Insert new line / split block | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
 
 ### History
 
-These shortcuts require the `undoRedo` extension. They are part of `basicExtensions`.
+These shortcuts require the `undoRedo` extension.
 
 | Action | Windows | Mac |
 |--------|---------|-----|
@@ -50,7 +40,7 @@ These shortcuts require the `undoRedo` extension. They are part of `basicExtensi
 
 ### Formatting
 
-These shortcuts require the corresponding formatting extension. They are part of `basicExtensions`.
+These shortcuts require the corresponding formatting extension.
 
 | Action | Windows | Mac |
 |--------|---------|-----|
@@ -60,12 +50,12 @@ These shortcuts require the corresponding formatting extension. They are part of
 
 ### Lists
 
-These shortcuts require the `list` extension (or a list-family extension) to be registered. The list keymap is added automatically when a list extension is present.
+These shortcuts require the `list` extension (or a listKeyMap extension) to be registered. The list keymap is added automatically when a list extension is present.
 
 | Action | Windows | Mac |
 |--------|---------|-----|
-| Indent list item (sink) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
-| Outdent list item (lift) | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> |
+| Indent list item | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Outdent list item | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> |
 | Split list item | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
 | Delete at start of empty list item | <kbd>Backspace</kbd> | <kbd>Backspace</kbd> |
 | Delete word at start of list item | <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> | <kbd>⌥</kbd> + <kbd>Backspace</kbd> |
@@ -76,7 +66,7 @@ These shortcuts require the `list` extension (or a list-family extension) to be 
 
 ### Blocks via input rules
 
-Block shortcuts in Headless Editor are surfaced through **input rules** rather than raw keybindings. The text you type is converted to a block when the rule matches.
+Block shortcuts in Headless Editor are surfaced through **input rules** rather than raw keybindings. The text you type(followed by a space) is converted to a block when the rule matches.
 
 | Action | Pattern | Requires |
 |--------|---------|----------|
@@ -92,7 +82,7 @@ Block shortcuts in Headless Editor are surfaced through **input rules** rather t
 | Italic | `*text*` or `_text_` | `italic` extension |
 | Inline code | `` `text` `` | `inlineCode` extension |
 
-Input rules are enabled by default. They are controlled by `enableInputRules` on `EditorConfig`.
+Input rules are enabled by default. They can be controlled by `enableInputRules` property on `EditorConfig`.
 
 ## How shortcuts are matched
 
@@ -123,14 +113,3 @@ const editor = HeadlessEditor.create({
 ```
 
 Disabling a base keymap shortcut is not supported. If you need to override a base key for a single editor instance, write a custom extension that contributes a higher-priority handler for that key and let the framework's fallback chain decide what runs.
-
-## Adding your own shortcuts
-
-Custom extensions can contribute their own shortcuts through the `keyboardShortcuts()` method. The framework merges them with the base keymap, runs extension handlers first, and falls back to the base handler when no extension consumes the key. See the **Custom Extensions** section for the full contract.
-
-## What's next
-
-Now that you know how the editor's keys are wired, see how to listen for everything else that happens:
-
-- **Events** — subscribe to `contentChanged`, `documentChanged`, `selectionChanged`, and more.
-- **Commands** — back to the typed command facade.

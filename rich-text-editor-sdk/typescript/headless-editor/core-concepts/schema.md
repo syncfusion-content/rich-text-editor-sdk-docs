@@ -8,11 +8,9 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Schema
+# Schema in TypeScript Headless Editor
 
 The schema is the contract that decides which nodes and which marks the editor accepts. Every node and every mark in a document must be declared in the schema. If a node type or mark type is missing, the editor cannot create it, parse it from HTML, or apply it through a command.
-
-In Headless Editor, the schema is not something you hand-author as a single object. It is built automatically from the extensions you pass to `HeadlessEditor.create()`. Each extension contributes one or more `NodeDefinition`, `MarkDefinition`, or `AttributeDefinition` entries.
 
 ## What is a schema?
 
@@ -24,9 +22,9 @@ A schema answers three questions for every node and every mark the editor knows 
 
 The schema is the source of truth for the document's shape. As long as the editor is configured with the same schema, documents authored with it can be loaded back unchanged.
 
-## Where the schema comes from
+## Where the schema comes from?
 
-The schema is assembled from the extensions you pass to `HeadlessEditor.create()`.
+In Headless Editor, the schema is not something you hand-author as a single object. It is built automatically from the extensions you pass to `HeadlessEditor.create()`. Each extension contributes one or more `NodeDefinition`, `MarkDefinition`, or `AttributeDefinition` entries.
 
 ```typescript
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -38,20 +36,18 @@ const editor = HeadlessEditor.create({
 
 `basicExtensions` is a preset that bundles a full default schema — document, text, paragraph, heading, blockquote, code block, lists, task lists, bold, italic, underline, strikethrough, inline code, hard break, horizontal rule, and undo/redo. It is the easiest way to get a working editor.
 
-To build a smaller or custom schema, register individual extensions or use `defineExtension` to write your own. Custom extensions can contribute nodes, marks, attributes, commands, keyboard shortcuts, and input rules. See the **Custom Extensions** section for the full contract.
+To build a smaller or custom schema, register individual extensions or use `defineExtension` to write your own. Custom extensions can contribute nodes, marks, attributes, commands, keyboard shortcuts, and input rules.
 
-A small number of extensions are always registered automatically when the editor is created:
+Below extensions are always registered in editor automatically even if you never pass them:
 
 - `documentExtension` and `textExtension` are required by every editor instance.
-- `listKeymapExtension` is auto-registered when a list extension is present.
-- `collapsibleKeymapExtension` is auto-registered when the collapsible extension is present.
+- `listKeymapExtension` is auto-registered when `listExtension` is present.
+- `collapsibleKeymapExtension` is auto-registered when the `collapsibleExtension` is present.
 - `indentOutdentExtension` is auto-registered when `enableTabKey` is `true` and the user has not already registered one.
 
-You do not need to add these to your `extensions` array.
+## Nodes in a schema
 
-## Nodes in a schema — `NodeDefinition`
-
-A `NodeDefinition` describes one node type. It has six fields:
+A `NodeDefinition` describes one node type and it has below fields:
 
 | Field | Purpose |
 |-------|---------|
@@ -80,9 +76,9 @@ const customParagraph = defineExtension({
 });
 ```
 
-## Marks in a schema — `MarkDefinition`
+## Marks in a schema
 
-A `MarkDefinition` describes one mark type. It has five fields:
+A `MarkDefinition` describes one mark type and it has below fields:
 
 | Field | Purpose |
 |-------|---------|
@@ -109,9 +105,9 @@ const bold = defineExtension({
 });
 ```
 
-## Attributes — `AttributeDefinition`
+## Attributes
 
-An `AttributeDefinition` declares a single typed attribute on a node or a mark. It has five fields:
+An `AttributeDefinition` declares a single typed attribute on a node or a mark and it has below fields:
 
 | Field | Purpose |
 |-------|---------|
@@ -139,11 +135,4 @@ The editor validates the schema when the editor is created. Two rules apply:
 - The schema must include a node named `'document'`. This is the root of every document.
 - Node and mark names must be unique within their respective collections. Two nodes cannot share a name, and two marks cannot share a name.
 
-If either rule is broken, `HeadlessEditor.create()` throws and the editor is not created. The error message names the offending definition.
-
-## What's next
-
-Now that you know how the schema is structured, see how the content rule decides what each node may contain:
-
-- **Content Expressions** — the `NodeContent` builder for content rules.
-- **Custom Extensions** — how to author your own nodes and marks.
+If either rule is broken, `HeadlessEditor.create()` throws error and the editor is not created. The error message clearly names the broken definition.
