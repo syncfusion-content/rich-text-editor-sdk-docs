@@ -137,7 +137,7 @@ Each upload is tracked through an upload state with one of the following statuse
 * `uploading`
 * `completed`
 * `failed`
-* `cancelled`
+* `cancel`
 
 The upload state can also contain the number of bytes loaded, total size, percentage, upload result, or an error.
 
@@ -172,7 +172,7 @@ headlessEditor.getFileHandler().cancel(uploadId);
 
 The editor uses an `AbortController` for the upload and passes its signal to the upload handler. The handler should respect the signal and abort its underlying request when cancellation is requested.
 
-If the upload is aborted, the editor records the upload state as `cancelled`.
+If the upload is aborted, the editor records the upload state as `cancel`.
 
 ## Upload errors
 
