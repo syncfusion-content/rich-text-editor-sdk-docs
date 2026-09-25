@@ -20,7 +20,7 @@ The video feature is enabled by adding the `Video` item to the toolbar using the
 
 Import and inject the `Video` module:
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent toolbarSettings={{ items: ['Video'] }}>

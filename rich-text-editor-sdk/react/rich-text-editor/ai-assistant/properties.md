@@ -43,7 +43,7 @@ To configure the items displayed in the AI Commands Dropdown menu, use the `comm
 
 The `commands` property accepts an array of objects with the following structure:
 
-```tsx
+```ts
 interface AICommand {
   text: string;           // Display text for the command
   command: string;        // Command identifier
@@ -250,7 +250,7 @@ The `getAIPromptHistory()` method returns the current conversation history as an
 - Populating the `prompts` property on reload
 
 **Method Signature:**
-```tsx
+```ts
 getAIPromptHistory(): PromptModel[]
 ```
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Toolbar position
 
-The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor) allows you to position the toolbar at the top or bottom of the content area 
+The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor) allows you to position the toolbar at the top or bottom of the content area 
 using the [ToolbarPosition](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToolbarPosition) property, depending on your layout requirements. By default, the toolbar appears at the top on Windows and macOS, and at the bottom on Android and iOS for better accessibility.
 
 {% tabs %}
@@ -53,6 +53,7 @@ N> Populating the `ToolbarItems` collection **replaces** the default toolbar ite
 The following items are available to be added to the `ToolbarItems` collection:
 *   `Bold`, `Italic`, `Underline`, `Strikethrough`
 *   `SubScript`, `SuperScript`
+*   `TextTransform`
 *   `FontFamily`, `FontSize`, `TextColor`, `HighlightColor`
 *   `ParagraphFormat`, `Alignment`
 *   `NumberList`, `BulletList`

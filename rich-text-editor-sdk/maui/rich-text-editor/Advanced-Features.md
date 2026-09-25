@@ -13,14 +13,14 @@ This section covers the essential properties, methods, and events of the [.NET M
 
 ## Setting Plain Text
 
-The Rich Text Editor control displays plain text, which can be set using the [Text](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Text) property.
+The Rich Text Editor control displays plain text content through the `Value` property. To work with text-based content, set the `TValue` property to `Html` and assign plain text to the `Value` property.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
 
- <richTextEditor:SfRichTextEditor Text="The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content"/>
+ <richTextEditor:SfRichTextEditor Value="The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content" TValue="HTML"/>
 
 {% endhighlight %}
 
@@ -28,7 +28,8 @@ xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Sync
 using Syncfusion.Maui.RichTextEditor;
 
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.Text = "The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
+richTextEditor.Value = "The rich text editor component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
+richTextEditor.TValue = RichTextEditorValueType.HTML;
 
 {% endhighlight %}
 
@@ -38,14 +39,14 @@ richTextEditor.Text = "The rich text editor component is a WYSIWYG (what you see
 
 ## Setting HTML Formatted Text
 
-The [HtmlText](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_HtmlText) property of the `SfRichTextEditor` control is used to set HTML formatted text.
+The `Value` property of the `SfRichTextEditor` control is used to set HTML formatted content. To render HTML content correctly, set the `TValue` property to `Html`.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
 
- <richTextEditor:SfRichTextEditor HtmlText= "The &lt;b&gt; rich text editor &lt;/b&gt; component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content"/>
+ <richTextEditor:SfRichTextEditor Value= "The &lt;b&gt; rich text editor &lt;/b&gt; component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content" TValue="HTML"/>
 
 {% endhighlight %}
 
@@ -53,7 +54,8 @@ xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Sync
 using Syncfusion.Maui.RichTextEditor;
 
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.HtmlText = "The <b>rich text editor</b> component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
+richTextEditor.Value = "The <b>rich text editor</b> component is a WYSIWYG (what you see is what you get) editor that provides the best user experience to create and update the content";
+richTextEditor.TValue = RichTextEditorValueType.HTML;
 
 {% endhighlight %}
 
@@ -74,37 +76,6 @@ string selectedText = await richTextEditor.GetSelectedText();
 {% endhighlight %}
 
 {% endtabs %}
-
-## Default Text Style
-
-You can define the default appearance for any new text typed into the editor. These settings apply to text that does not have any other specific formatting applied.
-
-*   [DefaultFontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontFamily): Sets the default font family for the content. Default value is "Arial" (string).
-*   [DefaultFontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontSize): Sets the default font size. Default value is 12.0d (double).
-*   [DefaultTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultTextColor): Sets the default color of the text. Default value is Colors.Black (Color).
-
-{% tabs %}
-{% highlight xaml %}
-xmlns:richTextEditor="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
-
-<richTextEditor:SfRichTextEditor DefaultFontFamily="Impact"
-                      DefaultFontSize="14"
-                      DefaultTextColor="DarkGreen"/>
-
-{% endhighlight %}
-{% highlight c# %}
-using Syncfusion.Maui.RichTextEditor;
-
-SfRichTextEditor richTextEditor = new SfRichTextEditor();
-richTextEditor.DefaultFontFamily = "Impact";
-richTextEditor.DefaultFontSize = 14;
-richTextEditor.DefaultTextColor = Colors.DarkGreen;
-
-{% endhighlight %}
-{% endtabs %}
-
-![.NET MAUI Rich Text Editor with Default text style](images/richtexteditor-text.png)
-
 
 ## Placeholder
 

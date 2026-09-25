@@ -110,9 +110,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Markdown Editor 
 
 **Documentation:**
 
-* [How to change the editor type](../rich-text-editor/editor-types/editor-modes.md)
-* [How to render the iframe](../rich-text-editor/editor-types/iframe.md)
-* [How to render the toolbar in inline mode](../rich-text-editor/editor-types/inline-editing.md)
+* [How to change the editor type](../rich-text-editor/editor-types/editor-modes)
+* [How to render the iframe](../rich-text-editor/editor-types/iframe)
+* [How to render the toolbar in inline mode](../rich-text-editor/editor-types/inline-editing)
 * [Accessibility in Markdown Editor](./accessibility)
 * [Keyboard support in Markdown Editor](./keyboard-support)
 * [Globalization in Markdown Editor](../rich-text-editor/globalization)
