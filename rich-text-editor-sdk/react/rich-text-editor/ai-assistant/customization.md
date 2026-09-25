@@ -22,7 +22,7 @@ To add custom toolbar items to the AI Assistant Header, Prompt, and Response too
 
 The AI Assistant settings are configured as shown below:
 
-```tsx
+```ts
 const aiAssistantSettings: AIAssistantSettings = {
   headerToolbarSettings: [ /* custom header toolbar items */ ],
   promptToolbarSettings: [ /* custom prompt toolbar items */ ],
