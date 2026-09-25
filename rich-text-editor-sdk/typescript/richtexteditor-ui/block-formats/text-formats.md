@@ -68,7 +68,7 @@ and collapsible headings.
 
 ## Supported formats
 
-The editor recognises the following block-level formats. Each entry lists the
+The editor recognizes the following block-level formats. Each entry lists the
 toolbar identifier (where one exists) and the slash-command identifier (where
 one exists).
 

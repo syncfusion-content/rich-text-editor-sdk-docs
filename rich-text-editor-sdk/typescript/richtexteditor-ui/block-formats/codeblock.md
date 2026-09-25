@@ -21,7 +21,7 @@ through the toolbar or through the `codeBlock` command.
 The `codeBlock` command accepts a `CodeBlockCommand` payload
 (`{ language: string }`). The `language` value is the language identifier
 applied to the block — common values include `"javascript"`, `"typescript"`,
-`"html"`, `"css"`, `"python"`, and `"plaintext"`. An empty string applies a
+`"html"`, `"css"`, `"python"`, and `"plain text"`. An empty string applies a
 plain code block with no specific language annotation.
 
 | Command | Payload | Toolbar item | Keyboard shortcut |

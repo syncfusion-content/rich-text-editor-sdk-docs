@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Collapsible Headings in TypeScript Modern Rich Text Editor
 
-Collapsible sections wrap a block of text in a foldable container that the
+Collapsible sections wrap a block of text in a fold able container that the
 user can expand or collapse. The Modern Rich Text Editor ships five
 collapsible variants — `Collapsible Paragraph` and
 `Collapsible Heading 1` through `Collapsible Heading 4`. Collapsible
