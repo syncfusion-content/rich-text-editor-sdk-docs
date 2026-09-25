@@ -2,10 +2,10 @@
 layout: post
 title: Block Quote in TypeScript Modern Rich Text Editor | Syncfusion
 description: Learn how to configure the block quote toolbar item and slash command in the TypeScript Modern Rich Text Editor.
-platform:
+platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl:
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Block Quote in TypeScript Modern Rich Text Editor

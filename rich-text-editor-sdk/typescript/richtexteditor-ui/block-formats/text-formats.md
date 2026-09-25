@@ -2,10 +2,10 @@
 layout: post
 title: Text Formats in TypeScript Modern Rich Text Editor | Syncfusion
 description: Learn how to configure paragraph, heading, blockquote, code block, horizontal line, callout, and collapsible heading formats in the TypeScript Modern Rich Text Editor.
-platform:
+platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl:
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Text Formats in TypeScript Modern Rich Text Editor
@@ -118,7 +118,7 @@ Five entries: `Collapsible Paragraph`, `Collapsible Heading 1` …
 the slash-command popup — there is no dedicated public toolbar item. See
 [Collapsible Headings](collapsable-heading.md) for the dedicated page.
 
-## Command support
+## Commands support
 
 The block-format commands are dispatched through the editor's command
 pipeline. The following table maps each command to its payload shape and
@@ -141,3 +141,9 @@ All command names above are members of `EditorCommandMap` and are dispatched
 by the editor when the matching toolbar identifier or slash-command entry is
 activated.
 
+## See also
+
+* [Block Quote](blockquote.md) — wraps a block in a `<blockquote>`.
+* [Code Block](codeblock.md) — inserts a syntax-highlighted `<pre>` block.
+* [Callouts](callout.md) — highlights a block with `Info`, `Success`, `Warning`, `Error`, or `Note`.
+* [Collapsible Headings](collapsable-heading.md) — foldable paragraphs and headings.

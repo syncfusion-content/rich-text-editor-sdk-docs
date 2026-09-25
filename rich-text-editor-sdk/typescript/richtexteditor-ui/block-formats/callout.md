@@ -2,10 +2,10 @@
 layout: post
 title: Callouts in TypeScript Modern Rich Text Editor | Syncfusion
 description: Learn how to configure the five callout variants (Info, Success, Warning, Error, Note) in the TypeScript Modern Rich Text Editor through the toolbar and slash commands.
-platform:
+platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl:
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Callouts in TypeScript Modern Rich Text Editor
@@ -58,7 +58,7 @@ enable `slashCommandSettings` and list the matching entries in
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/blockformats-callout/" %}
 
-## Command support
+## Commands support
 
 The `callout` command accepts a `CalloutCommand` payload
 (`{ callout: 'info' | 'success' | 'warning' | 'error' | 'note' }`). The

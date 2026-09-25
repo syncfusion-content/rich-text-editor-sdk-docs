@@ -2,10 +2,10 @@
 layout: post
 title: Code Block in TypeScript Modern Rich Text Editor | Syncfusion
 description: Learn how to insert and configure code blocks in the TypeScript Modern Rich Text Editor using the CodeBlock toolbar item and the codeBlock command.
-platform:
+platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl:
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Code Block in TypeScript Modern Rich Text Editor
@@ -16,7 +16,7 @@ through the `CodeBlock` built-in toolbar identifier in the Modern Rich Text
 Editor. There is no slash-command entry for the code block; users reach it
 through the toolbar or through the `codeBlock` command.
 
-## Command support
+## Commands support
 
 The `codeBlock` command accepts a `CodeBlockCommand` payload
 (`{ language: string }`). The `language` value is the language identifier

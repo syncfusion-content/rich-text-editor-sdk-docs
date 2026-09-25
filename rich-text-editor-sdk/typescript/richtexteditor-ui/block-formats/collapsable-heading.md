@@ -2,10 +2,10 @@
 layout: post
 title: Collapsible Headings in TypeScript Modern Rich Text Editor | Syncfusion
 description: Learn how to configure collapsible sections (paragraph and heading 1–4) in the TypeScript Modern Rich Text Editor through slash commands.
-platform:
+platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl:
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Collapsible Headings in TypeScript Modern Rich Text Editor
