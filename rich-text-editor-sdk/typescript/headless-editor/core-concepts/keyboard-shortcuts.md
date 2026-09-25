@@ -102,14 +102,4 @@ A small number of config options let you opt out of editor behavior that may col
 | `enableInputRules` (`true` by default) | When `false`, markdown-style input rules are disabled. The `**bold**`, `# heading`, and similar patterns are no longer converted into formatted content. |
 | `enableTabKey` (`true` by default) | When `false`, `Tab` and `Shift+Tab` are not used by the editor. The `indentOutdentExtension` is not auto-registered. |
 
-```ts
-import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [basicExtensions],
-    enableInputRules: false,
-    enableTabKey: false
-});
-```
-
 Disabling a base keymap shortcut is not supported. If you need to override a base key for a single editor instance, write a custom extension that contributes a higher-priority handler for that key and let the framework's fallback chain decide what runs.
