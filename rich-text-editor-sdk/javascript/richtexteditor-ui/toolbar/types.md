@@ -66,6 +66,6 @@ If your page already has a sticky header, use `toolbarSettings.floatingOffset` t
 {% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-type/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-config/type.html %}
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-type/index.html %}
 {% endhighlight %}
 {% endtabs %}
