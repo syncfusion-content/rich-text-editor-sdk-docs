@@ -14,53 +14,6 @@ The TypeScript Headless Editor provides file operation support for receiving fil
 
 The upload implementation is provided by the application through the `FileUploadHandler` interface. This keeps the editor independent of the application's server, storage provider, and HTTP implementation.
 
-## Required dependencies
-
-Install the Headless Editor package using the following command:
-
-```bash
-npm install @syncfusion/ej2-headless-editor
-```
-
-## CSS theme reference
-
-Include the required Syncfusion styles in the HTML page:
-
-```html
-<link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-headless-editor/styles/tailwind3.css" rel="stylesheet" />
-```
-
-## Setup steps
-
-The following steps demonstrate how to configure file upload operations in the TypeScript Headless Editor.
-
-**1. Create the Headless Editor**
-
-Create the editor with the required extensions and mount it to a DOM element.
-
-**2. Configure the upload handler**
-
-Register a `FileUploadHandler` by using `setFileUploadHandler`. The handler is responsible for uploading the selected file and returning a `FileUploadResult`.
-
-**3. Select and upload a file**
-
-Applications can provide their own file-selection UI and start an upload through the editor's file handler. The `startUpload` method returns an upload ID that can be used to track or cancel the upload.
-
-**4. Track upload progress**
-
-The upload handler can report progress through the `onProgress` callback. The editor uses this information to update the upload state.
-
-**5. Cancel an upload**
-
-Use the upload ID returned by `startUpload` with the `cancel` method to cancel an active upload.
-
-**6. Handle upload errors**
-
-Reject the upload promise when the application detects an upload or response error. The editor records the upload as failed and exposes the error through the upload state.
-
-> **Note:** Register the upload handler before starting file operations.
-
 ### File upload example
 
 The following example uses a file input to select a file and demonstrates upload handler registration, progress reporting, and cancellation.
