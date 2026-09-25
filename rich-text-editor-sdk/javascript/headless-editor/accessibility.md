@@ -68,14 +68,18 @@ The Headless Editor does not add ARIA roles or labels automatically. Add the fol
 The following example applies the recommended attributes:
 
 ```ts
-const container = document.querySelector('#editor') as HTMLElement;
-const readOnly = false;
+import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
 
-const editor = HeadlessEditor.create({
-	readOnly
+const readOnly = true;
+const editor: HeadlessEditor = HeadlessEditor.create({
+  extensions: [basicExtensions],
+  readOnly
 });
+const container: HTMLElement | null = document.getElementById('headless-editor');
 
-editor.mount(container);
+if (container) {
+  editor.mount(container);
+}
 
 const editableElement = container.querySelector('.ProseMirror');
 if (editableElement instanceof HTMLElement) {
@@ -184,22 +188,32 @@ Custom node views control the DOM rendered for embedded content and widgets. Acc
 This node view exposes a live status message while keeping its content separate from the editable text:
 
 ```ts
-import { defineExtension, type NodeViewDescriptor } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, basicExtensions, defineExtension, NodeContent, type DocumentRoot, type TextNode } from '@syncfusion/ej2-headless-editor';
 
-const statusNodeViewExtension = defineExtension({
-	name: 'accessible-status-view',
+const noteExtension = defineExtension({
+    name: 'accessible-note',
 
-	nodeViews() {
-		return {
-			accessibleStatus: (): NodeViewDescriptor => {
-				const dom: HTMLElement = document.createElement('div');
-				dom.setAttribute('role', 'status');
-				dom.setAttribute('aria-live', 'polite');
+    nodes() {
+        return [{
+            name: 'accessibleNote',
+            group: 'block',
+            content: NodeContent.block().oneOrMore()
+        }];
+    },
 
-				return { dom };
-			}
-		};
-	}
+    domSpecs() {
+        return {
+            nodes: {
+                accessibleNote: {
+                    toDOM: () => ['aside', { 'aria-label': 'Note' }, 0]
+                }
+            }
+        };
+    }
+});
+
+const editor = HeadlessEditor.create({
+    extensions: [basicExtensions, noteExtension]
 });
 ```
 

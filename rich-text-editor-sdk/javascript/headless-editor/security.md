@@ -25,10 +25,11 @@ Pasted HTML is sanitized before it is parsed into the editor document. The sanit
 Application clipboard transformations run after the built-in sanitizer:
 
 ```ts
-const editor = HeadlessEditor.create({
-    clipboard: {
-        transformHTML: (html: string) => html.replace(/\sdata-source="external"/g, '')
-    }
+const editor: HeadlessEditor = HeadlessEditor.create({
+  extensions: [basicExtensions],
+  clipboard: {
+    transformHTML: (html: string) => html.replace(/\sdata-source="external"/g, '')
+  }
 });
 ```
 
@@ -68,9 +69,20 @@ Validate file type, size, name, and content on the server as well. Use `fileRece
 The link command validates URLs before applying a link mark. It rejects empty values and dangerous protocols such as `javascript:`, `data:`, and `vbscript:`. Common safe protocols include `http:`, `https:`, `mailto:`, `tel:`, `ftp:`, relative paths, and in-page anchors.
 
 ```ts
+import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor: HeadlessEditor = HeadlessEditor.create({
+  extensions: [linkExtension]
+});
+
 const accepted = editor.execute('setLink', {
     href: 'https://www.example.com',
     displayText: 'Open example'
+});
+
+const rejected = editor.execute('setLink', {
+  href: 'javascript:alert(1)',
+  displayText: 'Unsafe link'
 });
 ```
 
