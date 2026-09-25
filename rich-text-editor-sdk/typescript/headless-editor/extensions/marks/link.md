@@ -18,7 +18,7 @@ The `linkExtension` registers the `link` mark, which applies hyperlink formattin
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -41,7 +41,7 @@ The `link` extension exposes the following options. Use `.configure()` to set th
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -73,7 +73,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `rel` | `string` | No | Link relationship metadata (e.g., `noopener noreferrer`). |
 | `displayText` | `string` | No | When provided, the current selection is replaced with this text in the same transaction so the link mark wraps the new text. |
 
-```typescript
+```ts
 // Add a link to the current selection
 editor.commands.setLink({ href: 'https://example.com' });
 

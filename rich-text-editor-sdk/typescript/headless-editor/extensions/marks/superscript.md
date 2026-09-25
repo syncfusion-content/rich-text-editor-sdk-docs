@@ -18,7 +18,7 @@ The `superscriptExtension` registers the `superscript` mark, which applies super
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `superscript` extension exposes an `htmlAttributes` option that adds custom 
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleSuperscript()` | Toggles superscript formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleSuperscript();
 ```
 

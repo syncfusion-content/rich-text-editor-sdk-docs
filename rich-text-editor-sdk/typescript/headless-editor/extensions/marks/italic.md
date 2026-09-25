@@ -18,7 +18,7 @@ The `italicExtension` registers the `italic` mark, which applies semantic italic
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, italicExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `italic` extension exposes an `htmlAttributes` option that adds custom HTML 
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, italicExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleItalic()` | Toggles italic formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleItalic();
 ```
 

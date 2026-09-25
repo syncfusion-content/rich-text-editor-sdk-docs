@@ -20,7 +20,7 @@ Supported size formats include absolute units (`14px`, `12pt`), relative units (
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, fontSizeExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -37,7 +37,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `setFontSize({ size })` | Applies the specified font size to the current selection. |
 | `unsetFontSize()` | Removes the font size from the current selection. |
 
-```typescript
+```ts
 // Apply 14px font size to the current selection
 editor.commands.setFontSize({ size: '14px' });
 

@@ -18,7 +18,7 @@ The `underlineExtension` registers the `underline` mark, which applies underline
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, underlineExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `underline` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, underlineExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleUnderline()` | Toggles underline formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleUnderline();
 ```
 

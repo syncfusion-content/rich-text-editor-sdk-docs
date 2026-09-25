@@ -18,7 +18,7 @@ The `toLowerCaseExtension` registers the `toLowerCase` command, which transforms
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, toLowerCaseExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -34,7 +34,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toLowerCase()` | Converts the literal text characters of the current selection to lowercase. |
 
-```typescript
+```ts
 // Convert the current selection to lowercase
 editor.commands.toLowerCase();
 ```

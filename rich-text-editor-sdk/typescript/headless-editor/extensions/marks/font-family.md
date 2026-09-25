@@ -18,7 +18,7 @@ The `fontFamilyExtension` registers the `fontFamily` capability, which applies a
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, fontFamilyExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -35,7 +35,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `setFontFamily({ family })` | Applies the specified font family to the current selection. |
 | `unsetFontFamily()` | Removes the font family from the current selection. |
 
-```typescript
+```ts
 // Apply Arial to the current selection
 editor.commands.setFontFamily({ family: 'Arial' });
 

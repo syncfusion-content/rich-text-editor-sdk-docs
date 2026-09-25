@@ -20,7 +20,7 @@ Supported color formats include hex values (`#ff0000`), RGB/RGBA values (`rgb(25
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, fontColorExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -37,7 +37,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `setColor({ color })` | Applies the specified color to the current selection. |
 | `unsetColor()` | Removes the font color from the current selection. |
 
-```typescript
+```ts
 // Apply red color to the current selection
 editor.commands.setColor({ color: '#ff0000' });
 

@@ -18,7 +18,7 @@ The `inlineCodeExtension` registers the `code` mark, which applies inline code f
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `inlineCode` extension exposes an `htmlAttributes` option that adds custom H
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleCodeMark()` | Toggles inline code formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleCodeMark();
 ```
 

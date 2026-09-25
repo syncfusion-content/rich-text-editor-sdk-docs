@@ -18,7 +18,7 @@ The `strikethroughExtension` registers the `strikethrough` mark, which applies s
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `strikethrough` extension exposes an `htmlAttributes` option that adds custo
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleStrikethrough()` | Toggles strikethrough formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleStrikethrough();
 ```
 

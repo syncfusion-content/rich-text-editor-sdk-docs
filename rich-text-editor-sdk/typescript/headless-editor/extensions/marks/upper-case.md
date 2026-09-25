@@ -18,7 +18,7 @@ The `toUpperCaseExtension` registers the `toUpperCase` command, which transforms
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, toUpperCaseExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -34,7 +34,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toUpperCase()` | Converts the literal text characters of the current selection to UPPERCASE. |
 
-```typescript
+```ts
 // Convert the current selection to uppercase
 editor.commands.toUpperCase();
 ```

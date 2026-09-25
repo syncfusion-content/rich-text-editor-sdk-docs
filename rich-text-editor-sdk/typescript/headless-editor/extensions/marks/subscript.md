@@ -18,7 +18,7 @@ The `subscriptExtension` registers the `subscript` mark, which applies subscript
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, subscriptExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -40,7 +40,7 @@ The `subscript` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, subscriptExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -60,7 +60,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 |---------|-------------|
 | `toggleSubscript()` | Toggles subscript formatting on the current selection. |
 
-```typescript
+```ts
 editor.commands.toggleSubscript();
 ```
 

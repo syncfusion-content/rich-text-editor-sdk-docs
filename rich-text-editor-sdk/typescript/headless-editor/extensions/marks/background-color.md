@@ -20,7 +20,7 @@ Supported color formats include hex values (`#ffff00`), RGB/RGBA values (`rgb(25
 <div id="editor"></div>
 ```
 
-```typescript
+```ts
 import { HeadlessEditor, backgroundColorExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
@@ -37,7 +37,7 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `setHighlight({ color })` | Applies the specified background color to the current selection. |
 | `unsetHighlight()` | Removes the background color from the current selection. |
 
-```typescript
+```ts
 // Apply yellow highlight to the current selection
 editor.commands.setHighlight({ color: '#ffff00' });
 
