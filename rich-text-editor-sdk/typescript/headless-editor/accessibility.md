@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in JavaScript Headless Editor | Syncfusion
-description: Learn about accessibility in the JavaScript Headless Editor, including WAI-ARIA attributes, keyboard navigation, screen reader support, and accessible custom content.
-platform: headless-editor
+title: Accessibility in TypeScript Headless Editor | Syncfusion
+description: Learn about accessibility in the TypeScript Headless Editor, including WAI-ARIA, keyboard navigation, screen readers, and custom content.
+platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/headless-editor
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Accessibility in JavaScript Headless Editor
+# Accessibility in TypeScript Headless Editor
 
 The Headless Editor supports keyboard interaction, focus management, semantic content, read-only content, and accessible custom nodes. The consuming application must provide the surrounding labels, roles, toolbar, and controls.
 

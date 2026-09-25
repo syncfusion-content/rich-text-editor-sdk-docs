@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Security in JavaScript Headless Editor | Syncfusion
-description: Learn about content security, clipboard sanitization, file upload validation, and link security in the JavaScript Headless Editor.
-platform: headless-editor
+title: Security in TypeScript Headless Editor | Syncfusion
+description: Learn about content security, clipboard sanitization, file upload validation, and link security in the TypeScript Headless Editor.
+platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/headless-editor
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Security in JavaScript Headless Editor
+# Security in TypeScript Headless Editor
 
 The Headless Editor treats external content as untrusted input. It provides built-in clipboard sanitization, link validation, and upload lifecycle events. Applications must also validate content and files before storing or serving them.
 
