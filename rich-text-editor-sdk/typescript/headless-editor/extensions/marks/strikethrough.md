@@ -14,12 +14,18 @@ The `strikethroughExtension` registers the `strikethrough` mark, which applies s
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [strikethroughExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -29,6 +35,10 @@ The `strikethrough` extension exposes an `htmlAttributes` option that adds custo
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<s>` element. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
@@ -40,6 +50,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

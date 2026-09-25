@@ -14,12 +14,18 @@ The `linkExtension` registers the `link` mark, which applies hyperlink formattin
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [linkExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -30,6 +36,10 @@ The `link` extension exposes the following options. Use `.configure()` to set th
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<a>` element. |
 | `openOnClick` | `boolean` | `true` | Determines whether clicking a link opens it in a new tab. When disabled, the cursor is placed inside the link for in-place editing. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
@@ -42,6 +52,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

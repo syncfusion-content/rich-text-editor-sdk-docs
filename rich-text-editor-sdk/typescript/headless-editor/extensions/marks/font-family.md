@@ -14,12 +14,18 @@ The `fontFamilyExtension` registers the `fontFamily` capability, which applies a
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, fontFamilyExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [fontFamilyExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

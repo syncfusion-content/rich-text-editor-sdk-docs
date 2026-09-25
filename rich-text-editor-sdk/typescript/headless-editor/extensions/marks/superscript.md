@@ -14,12 +14,18 @@ The `superscriptExtension` registers the `superscript` mark, which applies super
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [superscriptExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -29,6 +35,10 @@ The `superscript` extension exposes an `htmlAttributes` option that adds custom 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<sup>` element. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
@@ -40,6 +50,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

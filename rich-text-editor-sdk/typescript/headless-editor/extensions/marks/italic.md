@@ -14,12 +14,18 @@ The `italicExtension` registers the `italic` mark, which applies semantic italic
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, italicExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [italicExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -29,6 +35,10 @@ The `italic` extension exposes an `htmlAttributes` option that adds custom HTML 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<em>` element. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, italicExtension } from '@syncfusion/ej2-headless-editor';
@@ -40,6 +50,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

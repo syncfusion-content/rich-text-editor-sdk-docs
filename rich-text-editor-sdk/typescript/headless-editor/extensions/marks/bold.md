@@ -14,12 +14,18 @@ The `boldExtension` registers the `bold` mark, which applies semantic bold forma
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [boldExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -29,6 +35,10 @@ The `bold` extension exposes an `htmlAttributes` option that adds custom HTML at
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<strong>` element. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
@@ -40,6 +50,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands

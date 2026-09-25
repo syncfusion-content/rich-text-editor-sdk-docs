@@ -14,12 +14,18 @@ The `inlineCodeExtension` registers the `code` mark, which applies inline code f
 
 ## Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```typescript
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [inlineCodeExtension]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Configure the extension
@@ -29,6 +35,10 @@ The `inlineCode` extension exposes an `htmlAttributes` option that adds custom H
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<code>` element. |
+
+```html
+<div id="editor"></div>
+```
 
 ```typescript
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
@@ -40,6 +50,8 @@ const editor = HeadlessEditor.create({
         })
     ]
 });
+
+editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Commands
