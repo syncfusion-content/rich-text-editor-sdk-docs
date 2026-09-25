@@ -90,7 +90,7 @@ Each upload is tracked through an upload state with one of the following statuse
 * `uploading`
 * `completed`
 * `failed`
-* `cancel`
+* `cancelled`
 
 The upload state can also contain the number of bytes loaded, total size, percentage, upload result, or an error.
 
@@ -117,6 +117,7 @@ The `total` and `percentage` values are optional. When the total size is known, 
 The `startUpload` method returns an upload ID. Pass this ID to the file handler's `cancel` method to cancel the upload.
 
 ```ts
+// Assume `file` is a File obtained from a file input, drop event, or paste event.
 const uploadId: string =
     headlessEditor.getFileHandler().startUpload(file);
 
@@ -125,7 +126,7 @@ headlessEditor.getFileHandler().cancel(uploadId);
 
 The editor uses an `AbortController` for the upload and passes its signal to the upload handler. The handler should respect the signal and abort its underlying request when cancellation is requested.
 
-If the upload is aborted, the editor records the upload state as `cancel`.
+If the upload is aborted, the editor records the upload state as `cancelled`.
 
 ## Upload errors
 
