@@ -17,7 +17,7 @@ The resizable editor feature allows users to dynamically resize the editor. When
 
 To use the resizable feature, import and inject the `Resize` module:
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Resize } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent enableResize={true}>
