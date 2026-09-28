@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Schema in JavaScript Headless Editor | Syncfusion
-description: Understand the Headless Editor schema in the JavaScript platform — NodeDefinition, MarkDefinition, and AttributeDefinition — and how extensions contribute to it.
+description: Learn how the JavaScript Headless Editor schema defines NodeDefinition, MarkDefinition, and AttributeDefinition through extensions.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
