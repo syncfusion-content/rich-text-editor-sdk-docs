@@ -80,7 +80,7 @@ Use the `placeholder` property to display instructional text when the editor is 
 placeholder: 'Type something.'
 ```
 
-## set save Interval
+## Configure auto-save behavior
 
 When `enableAutoSave` is enabled, use `saveInterval` to control how long the editor waits before automatically saving unsaved changes. The value is specified in milliseconds and is triggered after the user becomes idle.
 
