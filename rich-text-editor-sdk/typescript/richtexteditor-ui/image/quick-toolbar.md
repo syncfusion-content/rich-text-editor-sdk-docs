@@ -1,0 +1,176 @@
+---
+layout: post
+title: Image Quick Toolbar in TypeScript RichTextEditorUI | Syncfusion
+description: Configure and customize the image quick toolbar in TypeScript RichTextEditorUI. Access operations like Alt Text, Caption, Alignment, Resize, Replace, and Remove instantly.
+control: RichTextEditorUI
+platform: rich-text-editor-ui-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-ui-sdk/
+---
+
+# Image Quick Toolbar
+
+The Image Quick Toolbar provides instant access to common image operations when an image is selected in the editor. It offers a streamlined interface for managing image properties, alignment, sizing, and other aspects without requiring modal dialogs.
+
+### Available Quick Toolbar Items
+
+The Image Quick Toolbar appears automatically when an image is selected. It provides quick access to common image operations through dedicated toolbar buttons.
+
+#### Caption
+
+**Purpose**: Add or edit image captions
+
+Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
+
+**HTML Output:**
+```html
+<figure>
+    <img src="image.png" alt="Sample" class="e-img-inline" />
+    <figcaption>Image Caption Text</figcaption>
+</figure>
+```
+
+**Configuration:**
+```typescript
+// Enable Caption in quick toolbar
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['Caption']
+    }
+});
+editor.appendTo('#editor');
+```
+
+---
+
+#### Alt Text
+
+**Purpose**: Add alternative text for accessibility and semantic HTML
+
+Use the Alt Text quick toolbar item to add descriptive alternative text for the image.
+
+**Configuration:**
+```typescript
+// Enable Alt Text in quick toolbar (default)
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['AltText']
+    }
+});
+editor.appendTo('#editor');
+```
+
+---
+
+#### Replace
+
+**Purpose**: Replace the selected image with a different one
+
+Use the Replace quick toolbar item to replace the currently selected image with a new image source.
+
+**Configuration:**
+```typescript
+// Enable Replace in quick toolbar
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['Replace']
+    }
+});
+editor.appendTo('#editor');
+```
+
+---
+
+#### Text Wrap
+
+**Purpose**: Control how text flows around the image
+
+**Configuration:**
+```typescript
+// Enable WrapText in quick toolbar
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['WrapText']
+    }
+});
+editor.appendTo('#editor');
+```
+
+**Text Wrap Modes:**
+- `'left'` - Wraps text to the right of the image
+- `'right'` - Wraps text to the left of the image
+- `'none'` - No text wrapping (default)
+
+---
+
+#### Alignment
+
+**Purpose**: Set horizontal alignment of the selected image
+
+**Configuration:**
+```typescript
+// Enable Align in quick toolbar
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['Align']
+    }
+});
+editor.appendTo('#editor');
+```
+
+**Available Alignment Options:**
+- `'left'` - Align image to the left
+- `'center'` - Center the image
+- `'right'` - Align image to the right
+- `'none'` - Remove alignment (default)
+
+---
+
+#### Remove
+
+**Purpose**: Delete the selected image from the editor
+
+Use the Remove quick toolbar item to delete the currently selected image from the editor.
+
+**Configuration:**
+```typescript
+// Enable Remove in quick toolbar (recommended)
+const editor = new RichTextEditorUI({
+    quickToolbarSettings: {
+        image: ['Remove']
+    }
+});
+editor.appendTo('#editor');
+```
+
+---
+
+### Customizing Quick Toolbar Items
+
+**Purpose**: Configure which toolbar items appear and in what order when an image is selected.
+
+The RichTextEditorUI provides comprehensive customization options for the image quick toolbar, offering a rich set of tools including 'AltText', 'Caption', 'Align', 'Display', 'WrapText', 'Dimension', 'Replace', and 'Remove'. By configuring these toolbar items through the `quickToolbarSettings` property, you can create a tailored editing experience that streamlines image operations. This flexibility enables developers to build interfaces that align with their specific workflow requirements while maintaining an intuitive user experience for content editing and image manipulation.
+
+**Default Quick Toolbar Items for Images:**
+The default image quick toolbar includes:
+- `AltText` - Edit alternative text
+- `Caption` - Add/edit image caption
+- `Align` - Align image (left, center, right, none)
+- `Display` - Change display mode (inline, block)
+- `WrapText` - Set text wrapping (left, right, none)
+- `Dimension` - Adjust width and height
+- `Replace` - Replace with a different image
+- `Remove` - Delete the image
+
+**Basic Customization:**
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar-customize-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar-customize-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar-customize-cs1" %}
