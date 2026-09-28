@@ -8,12 +8,10 @@ var headlessEditor = ej.headlesseditor.HeadlessEditor.create({
         ej.headlesseditor.placeholderExtension
     ]
 });
-
 var container = document.getElementById('headless-editor');
 if (container) {
     headlessEditor.mount(container);
 }
-
 // -----------------------------------------------------------------------------
 // 2. Register the file upload handler before any file operation begins.
 // -----------------------------------------------------------------------------
@@ -22,13 +20,11 @@ var uploadHandler = {
         var total = request.file.size;
         var loaded = 0;
         var chunkSize = Math.max(Math.ceil(total / 10), 1);
-
         var pump = function (resolve) {
             if (request.signal && request.signal.aborted) {
                 resolve({ aborted: true });
                 return;
             }
-
             window.setTimeout(function () {
                 loaded = Math.min(loaded + chunkSize, total);
                 var progress = {
@@ -46,7 +42,6 @@ var uploadHandler = {
                 }
             }, 100);
         };
-
         return new window.Promise(function (resolve, reject) {
             pump(function (result) {
                 if (result.aborted) {
@@ -62,14 +57,11 @@ var uploadHandler = {
             });
         });
     },
-
     cancel: function (uploadId) {
         setStatus('Cancelling upload: ' + uploadId);
     }
 };
-
 headlessEditor.setFileUploadHandler(uploadHandler);
-
 // -----------------------------------------------------------------------------
 // 3. UI references.
 // -----------------------------------------------------------------------------
@@ -83,7 +75,6 @@ var selectButton = document.getElementById('select-button');
 var uploadButton = document.getElementById('upload-button');
 var insertButton = document.getElementById('insert-button');
 var cancelButton = document.getElementById('cancel-button');
-
 // -----------------------------------------------------------------------------
 // 4. State and helpers.
 // -----------------------------------------------------------------------------
@@ -133,7 +124,6 @@ function formatFileInfo(file) {
         : (kb / 1024).toFixed(2) + ' MB';
     return file.name + ' (' + sizeText + ')';
 }
-
 // -----------------------------------------------------------------------------
 // 5. Select File button — opens the file picker.
 // -----------------------------------------------------------------------------
@@ -147,7 +137,6 @@ fileInput.addEventListener('change', function () {
     if (!file) {
         return;
     }
-
     selectedFile = file;
     lastUploadedUrl = null;
     fileInfo.textContent = 'Selected: ' + formatFileInfo(file);
@@ -163,12 +152,10 @@ uploadButton.addEventListener('click', function () {
     if (!selectedFile) {
         return;
     }
-
     resetProgress();
     setStatus('Uploading...');
     currentUploadId = headlessEditor.getFileHandler().startUpload(selectedFile);
     updateButtonStates();
-
     pollUploadState();
 });
 
@@ -180,14 +167,12 @@ function pollUploadState() {
     if (!pending) {
         return;
     }
-
     if (pending.status === 'uploading' || pending.status === 'pending') {
         var pct = pending.progress && pending.progress.percentage ? pending.progress.percentage : 0;
         setProgress(pct, 'uploading');
         window.setTimeout(pollUploadState, 100);
         return;
     }
-
     if (pending.status === 'completed') {
         setProgress(100, 'completed');
         lastUploadedUrl = pending.result && pending.result.url ? pending.result.url : null;
@@ -197,7 +182,6 @@ function pollUploadState() {
         updateButtonStates();
         return;
     }
-
     if (pending.status === 'failed') {
         setProgress(0, 'failed');
         var errMsg = pending.error && pending.error.message ? pending.error.message : 'Unknown error';
@@ -206,7 +190,6 @@ function pollUploadState() {
         updateButtonStates();
         return;
     }
-
     if (pending.status === 'cancelled') {
         setProgress(0, 'cancelled');
         setStatus('Upload cancelled.');
@@ -215,7 +198,6 @@ function pollUploadState() {
         return;
     }
 }
-
 // -----------------------------------------------------------------------------
 // 7. Cancel button — aborts the in-flight upload via AbortSignal, OR
 //    discards the completed upload so the user can pick a different file.
@@ -227,7 +209,6 @@ cancelButton.addEventListener('click', function () {
         setStatus('Cancellation requested...');
         return;
     }
-
     // Case B: an upload already completed (or failed/cancelled) and the
     // result has not been inserted yet — discard the result and reset
     // the panel so the user can choose a different file.
@@ -246,7 +227,6 @@ function discardSelection() {
     setStatus('Discarded. Click Select File to choose another.');
     updateButtonStates();
 }
-
 // -----------------------------------------------------------------------------
 // 8. Insert button — places the uploaded file into the editor.
 // -----------------------------------------------------------------------------
@@ -254,7 +234,6 @@ insertButton.addEventListener('click', function () {
     if (!lastUploadedUrl || !selectedFile) {
         return;
     }
-
     // Insert the uploaded URL as an image node so the result is visible
     // to the customer immediately after the file operation completes.
     headlessEditor.commands.insertImage([
@@ -266,9 +245,7 @@ insertButton.addEventListener('click', function () {
             wrap: 'none'
         }
     ]);
-
     setStatus('Inserted "' + selectedFile.name + '" into the editor.');
-
     // Briefly hold the 100% state so the user can see the upload completed,
     // then clear the panel so the next file selection starts fresh.
     window.setTimeout(resetForNextSelection, 1200);
@@ -283,7 +260,6 @@ function resetForNextSelection() {
     setStatus('Inserted. Click Select File to upload another.');
     updateButtonStates();
 }
-
 // Initial UI state.
 setStatus('Idle. Click Select File to begin.');
 updateButtonStates();
