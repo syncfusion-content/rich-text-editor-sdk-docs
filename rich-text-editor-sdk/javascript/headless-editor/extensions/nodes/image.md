@@ -18,7 +18,7 @@ The `imageExtension` registers the `image` block and `imageInline` inline nodes 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.imageExtension]
 });
@@ -69,7 +69,7 @@ The `image` extension exposes options for default image behavior, persistence, a
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.imageExtension.configure({
@@ -139,7 +139,7 @@ The optional `caption` payload for `addCaption` and `toggleCaption` is `CaptionP
 |-------|------|-------------|
 | `caption` | `string` | Initial text for the new caption. When omitted or whitespace-only, the placeholder text `Insert caption` is used. |
 
-```javascript
+```js
 // Insert a single block image
 editor.commands.insertImage({
   src: 'https://example.com/photo.png',

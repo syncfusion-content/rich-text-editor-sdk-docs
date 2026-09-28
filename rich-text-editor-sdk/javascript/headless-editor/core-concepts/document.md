@@ -37,7 +37,7 @@ The document root has below fields:
 | `attrs` | Reserved for future root-level attributes. Typically empty. |
 | `children` | The top-level block nodes. |
 
-```javascript
+```js
 var document = {
   type: 'document',
   schemaVersion: 1,
@@ -70,7 +70,7 @@ A document contains two layers of content:
 
 Blocks are the top-level children of the document root. A text node is always inside a block — it never appears directly under the document root.
 
-```javascript
+```js
 {
   type: 'paragraph',
   attrs: { align: 'left', indent: 0 },

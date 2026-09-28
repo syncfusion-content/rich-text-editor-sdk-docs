@@ -16,7 +16,7 @@ Every node in the schema declares how its content should be. Headless Editor use
 
 Content expressions describe allowed children with a small grammar. For ex, `block*`, etc. Writing that grammar as a raw string is error-prone. `NodeContent` exposes each piece as user friendly method so your content rules are type-checked and easy to read.
 
-```javascript
+```js
 var customParagraph = ej.headlesseditor.defineExtension({
   name: 'paragraph',
   nodes: function () {
@@ -42,7 +42,7 @@ Start an expression with one of the four factory methods. By default the resulti
 | `NodeContent.text()` | The `text` leaf node. |
 | `NodeContent.node(name)` | A specific named node type. |
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.node('paragraph');     // exactly one paragraph
 ej.headlesseditor.NodeContent.inline();              // exactly one inline node
 ```
@@ -51,7 +51,7 @@ ej.headlesseditor.NodeContent.inline();              // exactly one inline node
 
 Append `.optional()` to make the expression match zero or one of its target.
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.node('caption').optional();   // zero or one caption
 ```
 
@@ -67,7 +67,7 @@ Append a quantifier method to allow the expression to repeat.
 | `.exactly(n)` | Exactly `n` | `name{n}` |
 | `.atLeast(n)` | `n` or more | `name{n,}` |
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.inline().zeroOrMore();          // inline*
 ej.headlesseditor.NodeContent.node('listItem').oneOrMore();   // listItem+
 ej.headlesseditor.NodeContent.node('column').exactly(3);      // column{3}
@@ -78,7 +78,7 @@ ej.headlesseditor.NodeContent.node('row').atLeast(2);         // row{2,}
 
 Use `NodeContent.choice(...)` to express that any one of the given alternatives is allowed. Choices can be combined with quantifiers.
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.choice(
   ej.headlesseditor.NodeContent.node('paragraph'),
   ej.headlesseditor.NodeContent.node('heading')
@@ -96,7 +96,7 @@ When a quantifier is applied to a choice or a sequence, the group is automatical
 
 Use `NodeContent.sequence(...)` to require several expressions to appear in order.
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.sequence(
   ej.headlesseditor.NodeContent.node('tableRow').oneOrMore(),
   ej.headlesseditor.NodeContent.node('caption').optional()
@@ -105,7 +105,7 @@ ej.headlesseditor.NodeContent.sequence(
 
 A sequence may itself be nested inside another sequence or inside a choice.
 
-```javascript
+```js
 ej.headlesseditor.NodeContent.sequence(
   ej.headlesseditor.NodeContent.node('tableRow').oneOrMore(),
   ej.headlesseditor.NodeContent.choice(
@@ -119,7 +119,7 @@ ej.headlesseditor.NodeContent.sequence(
 
 A few real-world cases:
 
-```javascript
+```js
 // The document root — one or more blocks.
 ej.headlesseditor.NodeContent.block().oneOrMore()                  // block+
 

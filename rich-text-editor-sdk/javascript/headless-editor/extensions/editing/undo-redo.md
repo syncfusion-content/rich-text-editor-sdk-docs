@@ -18,7 +18,7 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.undoRedoExtension]
 });
@@ -38,7 +38,7 @@ The `undoRedo` extension exposes options for tuning the history stack:
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.undoRedoExtension.configure({
@@ -57,7 +57,7 @@ editor.mount(document.getElementById('editor'));
 | `undo()` | Reverts the last change in the editor history. |
 | `redo()` | Re-applies the most recently undone change. |
 
-```javascript
+```js
 // Undo the last change
 editor.commands.undo();
 

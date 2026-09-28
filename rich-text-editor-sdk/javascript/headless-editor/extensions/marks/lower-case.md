@@ -18,7 +18,7 @@ The `toLowerCaseExtension` registers the `toLowerCase` command, which transforms
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.toLowerCaseExtension]
 });
@@ -32,7 +32,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toLowerCase()` | Converts the literal text characters of the current selection to lowercase. |
 
-```javascript
+```js
 // Convert the current selection to lowercase
 editor.commands.toLowerCase();
 ```

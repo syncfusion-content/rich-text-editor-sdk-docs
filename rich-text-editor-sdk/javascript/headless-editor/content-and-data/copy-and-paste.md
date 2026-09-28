@@ -30,7 +30,7 @@ Two lifecycle callbacks are exposed via `EditorConfig` and as named events on th
 
 The `beforePaste` callback fires before the paste is inserted and lets you inspect the paste payload:
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   schema: schema,
   extensions: extensions,
@@ -46,7 +46,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
 
 The same callbacks are available as named events through `editor.on(...)`:
 
-```javascript
+```js
 editor.on('beforePaste', function (payload) {
   console.log('Pasting content:', payload.content);
   console.log('Paste event:', payload.event);
@@ -80,7 +80,7 @@ Use `EditorConfig.clipboard` to register transformation hooks for clipboard cont
 
 The two hooks receive a shared `ClipboardTransformContext` with the active editor and the detected `source`:
 
-```javascript
+```js
 // ClipboardTransformContext shape:
 // { editor: HeadlessEditor, source: 'html' | 'text' | 'unknown' }
 ```
@@ -89,7 +89,7 @@ The two hooks receive a shared `ClipboardTransformContext` with the active edito
 
 `transformHTML` runs after the editor's built-in security sanitizer has stripped unsafe content and before the HTML is parsed by ProseMirror. It receives the sanitized HTML plus the context, and returns the (possibly rewritten) HTML string to feed into the schema parser:
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   schema: schema,
   extensions: extensions,
@@ -106,7 +106,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
 
 `transformContent` runs after ProseMirror has parsed the HTML into a schema-aware slice. It receives a `ClipboardContent` payload whose `slice` field can be replaced, and returns the replacement to insert:
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   schema: schema,
   extensions: extensions,

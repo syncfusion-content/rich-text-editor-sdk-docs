@@ -18,7 +18,7 @@ The `hardBreakExtension` registers the `hard_break` inline node, which inserts a
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.hardBreakExtension]
 });
@@ -33,7 +33,7 @@ The `hardBreak` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.hardBreakExtension.configure({
@@ -50,7 +50,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `setHardBreak()` | Inserts a hard line break (`<br>`) at the current selection, maintaining the current paragraph or block context. |
 
-```javascript
+```js
 editor.commands.setHardBreak();
 ```
 

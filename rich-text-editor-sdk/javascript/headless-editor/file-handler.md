@@ -54,7 +54,7 @@ The upload handler receives a `FileUploadRequest` containing the file, upload ID
 
 The handler must return a promise that resolves to a `FileUploadResult`. The result must contain a non-empty `url`. Additional file metadata such as file name, MIME type, size, width, and height can also be returned.
 
-```javascript
+```js
 var uploadHandler = {
   upload: function (request) {
     return window.Promise.resolve({
@@ -100,7 +100,7 @@ For extension-driven UI, the upload state can be associated with the extension's
 
 The upload handler reports progress by calling the `onProgress` callback supplied in the `FileUploadRequest`.
 
-```javascript
+```js
 if (request.onProgress) {
   request.onProgress({
     loaded: 500,
@@ -118,7 +118,7 @@ The `total` and `percentage` values are optional. When the total size is known, 
 
 The `startUpload` method returns an upload ID. Pass this ID to the file handler's `cancel` method to cancel the upload.
 
-```javascript
+```js
 // Assume `file` is a File obtained from a file input, drop event, or paste event.
 var uploadId = headlessEditor.getFileHandler().startUpload(file);
 
@@ -135,7 +135,7 @@ When the upload handler rejects its promise, the editor records the upload as `f
 
 The resulting upload state contains the error that was raised by the upload handler.
 
-```javascript
+```js
 var uploadHandler = {
   upload: function (request) {
     return fetch('/api/upload', {

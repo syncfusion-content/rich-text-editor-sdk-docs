@@ -18,7 +18,7 @@ The `codeBlockExtension` registers the `codeBlock` node for displaying preformat
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.codeBlockExtension]
 });
@@ -52,7 +52,7 @@ Use `.configure()` to apply custom settings:
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.codeBlockExtension.configure({
@@ -77,7 +77,7 @@ editor.mount(document.getElementById('editor'));
 | `clearCodeBlock()` | Clears the code block formatting, converting it back to a standard paragraph. |
 | `exitCode()` | Exits the code block and creates a new paragraph below it. |
 
-```javascript
+```js
 // Convert block to a TypeScript code block
 editor.commands.setCodeBlock({ language: 'typescript' });
 

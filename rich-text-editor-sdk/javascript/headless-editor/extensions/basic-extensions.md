@@ -18,7 +18,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions]
 });
@@ -27,7 +27,7 @@ editor.mount(document.getElementById('editor'));
 
 All commands, keyboard shortcuts, and input rules contributed by the composed extensions become available immediately:
 
-```javascript
+```js
 editor.commands.toggleBold();
 editor.commands.setHeading({ level: 2 });
 editor.commands.undo();
@@ -54,7 +54,7 @@ You can combine `basicExtensions` with additional individual extensions:
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.basicExtensions,
@@ -73,7 +73,7 @@ If you need full control over which node types and behavior are available, regis
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.documentExtension,

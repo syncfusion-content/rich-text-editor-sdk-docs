@@ -24,7 +24,7 @@ Pasted HTML is sanitized before it is parsed into the editor document. The sanit
 
 Application clipboard transformations run after the built-in sanitizer:
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions],
   clipboard: {
@@ -53,7 +53,7 @@ Sanitization is applied at the clipboard boundary before the content reaches the
 
 The `beforeFileUpload` event is raised before processing begins. The public event handler receives `BeforeFileUploadEventArgs` directly. Set `args.cancel` to `true` to reject a file before the upload starts.
 
-```javascript
+```js
 editor.on('beforeFileUpload', function (args) {
   var allowedTypes = ['image/jpeg', 'image/png'];
 
@@ -69,7 +69,7 @@ editor.on('beforeFileUpload', function (args) {
 
 The link command validates URLs before applying a link mark. It rejects empty values and dangerous protocols such as `javascript:`, `data:`, and `vbscript:`. Common safe protocols include `http:`, `https:`, `mailto:`, `tel:`, `ftp:`, relative paths, and in-page anchors.
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.linkExtension]
 });

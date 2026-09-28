@@ -18,7 +18,7 @@ The `toUpperCaseExtension` registers the `toUpperCase` command, which transforms
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.toUpperCaseExtension]
 });
@@ -32,7 +32,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toUpperCase()` | Converts the literal text characters of the current selection to UPPERCASE. |
 
-```javascript
+```js
 // Convert the current selection to uppercase
 editor.commands.toUpperCase();
 ```

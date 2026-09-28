@@ -18,7 +18,7 @@ The `paragraphExtension` registers the `paragraph` block node, which is the defa
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.paragraphExtension]
 });
@@ -40,7 +40,7 @@ The `paragraph` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.paragraphExtension.configure({
@@ -57,7 +57,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `setParagraph()` | Converts the current block into a paragraph. If the source block had `align` or `indent` attributes, they are preserved on the resulting paragraph. |
 
-```javascript
+```js
 editor.commands.setParagraph();
 ```
 

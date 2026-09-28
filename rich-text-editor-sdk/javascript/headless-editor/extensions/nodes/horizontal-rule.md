@@ -18,7 +18,7 @@ The `horizontalRuleExtension` registers the `horizontalRule` leaf node for visua
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.horizontalRuleExtension]
 });
@@ -33,7 +33,7 @@ The `horizontalRule` extension exposes an `htmlAttributes` option that adds cust
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.horizontalRuleExtension.configure({
@@ -50,7 +50,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `setHorizontalRule()` | Inserts a horizontal rule at the current cursor position. When the current block is empty, the empty block is replaced with the rule. Otherwise, the rule is inserted below the target block at the cursor position. |
 
-```javascript
+```js
 editor.commands.setHorizontalRule();
 ```
 

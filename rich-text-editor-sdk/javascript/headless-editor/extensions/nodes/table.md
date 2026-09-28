@@ -18,7 +18,7 @@ The `tableExtension` registers the `table`, `tableRow`, `tableCell`, and `tableH
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.tableExtension]
 });
@@ -52,7 +52,7 @@ The `table` extension exposes options that control table behavior:
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.tableExtension.configure({
@@ -94,7 +94,7 @@ editor.mount(document.getElementById('editor'));
 | `moveToNextCell()` | Moves the cursor to the next table cell. If the cursor is in the last cell, a new row is appended automatically. |
 | `moveToPreviousCell()` | Moves the cursor to the previous table cell. |
 
-```javascript
+```js
 // Insert a 3x3 table at the cursor
 editor.commands.insertTable({ rows: 3, columns: 3 });
 

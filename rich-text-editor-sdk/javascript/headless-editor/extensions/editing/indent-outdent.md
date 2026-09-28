@@ -18,7 +18,7 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: []
 });
@@ -31,7 +31,7 @@ The Tab key behavior is controlled by the `enableTabKey` editor configuration. W
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [],
   enableTabKey: true
@@ -48,7 +48,7 @@ I> When `config.enableTabKey` is `true`, the editor automatically registers `ind
 | `indent()` | Increases the indentation of the current block or selection by one step.|
 | `outdent()` | Decreases the indentation of the current block or selection by one step. When the block is already at the root indent, the call has no effect. |
 
-```javascript
+```js
 // Increase indentation of the current block
 editor.commands.indent();
 

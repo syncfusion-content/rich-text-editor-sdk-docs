@@ -26,7 +26,7 @@ The schema is the source of truth for the document's shape. As long as the edito
 
 In Headless Editor, the schema is not something you hand-author as a single object. It is built automatically from the extensions you pass to `HeadlessEditor.create()`. Each extension contributes one or more `NodeDefinition`, `MarkDefinition`, or `AttributeDefinition` entries.
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions]
 });
@@ -56,7 +56,7 @@ A `NodeDefinition` describes one node type and it has below fields:
 | `inline` | `true` if the node is inline (lives inside a block). |
 | `leaf` | `true` if the node is a leaf with no content (for example, `image` or `horizontalRule`). |
 
-```javascript
+```js
 var customParagraph = ej.headlesseditor.defineExtension({
   name: 'paragraph',
   nodes: function () {
@@ -83,7 +83,7 @@ A `MarkDefinition` describes one mark type and it has below fields:
 | `spanning` | Whether the mark can span across block boundaries. |
 | `excludes` | The names of marks that cannot coexist with this mark. |
 
-```javascript
+```js
 var bold = ej.headlesseditor.defineExtension({
   name: 'bold',
   marks: function () {
@@ -109,7 +109,7 @@ An `AttributeDefinition` declares a single typed attribute on a node or a mark a
 | `required` | If `true`, the attribute must be supplied explicitly and has no default. |
 | `values` | Allowed values for an `enum` type. Required when `type` is `'enum'`. |
 
-```javascript
+```js
 var textAlign = {
   name: 'align',
   type: 'enum',

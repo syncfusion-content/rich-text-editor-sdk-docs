@@ -20,7 +20,7 @@ The `text` extension has no configurable options. Add it to the `extensions` arr
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.documentExtension,

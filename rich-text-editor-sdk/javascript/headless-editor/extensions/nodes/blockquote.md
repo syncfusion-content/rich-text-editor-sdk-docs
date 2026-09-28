@@ -18,7 +18,7 @@ The `blockquoteExtension` registers the `blockquote` block container node, which
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.blockquoteExtension]
 });
@@ -33,7 +33,7 @@ The `blockquote` extension exposes an `htmlAttributes` option that adds custom H
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.blockquoteExtension.configure({
@@ -50,7 +50,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `toggleBlockQuote()` | Toggles the block quote wrapper on the current block or selection. If the selection is already inside a block quote, it unwraps the content back to regular blocks. |
 
-```javascript
+```js
 editor.commands.toggleBlockQuote();
 ```
 

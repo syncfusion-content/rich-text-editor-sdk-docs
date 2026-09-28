@@ -65,7 +65,7 @@ The Headless Editor does not add ARIA roles or labels automatically. Add the fol
 
 The following example applies the recommended attributes:
 
-```javascript
+```js
 var readOnly = true;
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions],
@@ -95,7 +95,7 @@ Use `aria-labelledby` when a visible label is available. If the editor changes t
 
 The editor supports keyboard shortcuts for formatting, headings, lists, links, undo, and redo. Custom shortcuts are defined through an extension's `keyboardShortcuts` contributor.
 
-```javascript
+```js
 var customShortcutExtension = ej.headlesseditor.defineExtension({
   name: 'custom-shortcuts',
 
@@ -140,7 +140,7 @@ Use `contenteditable="false"` for controls inside a custom node that should not 
 
 The following custom node renders semantic `aside` content with an accessible label:
 
-```javascript
+```js
 var noteExtension = ej.headlesseditor.defineExtension({
   name: 'accessible-note',
 
@@ -180,7 +180,7 @@ Custom node views control the DOM rendered for embedded content and widgets. Acc
 
 This node view exposes a live status message while keeping its content separate from the editable text:
 
-```javascript
+```js
 var noteExtension = ej.headlesseditor.defineExtension({
   name: 'accessible-note',
 

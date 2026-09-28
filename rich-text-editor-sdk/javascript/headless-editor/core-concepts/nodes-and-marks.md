@@ -23,7 +23,7 @@ A node is one element in the document tree. Every node has:
 
 A text node has a `text` string and no `children`.
 
-```javascript
+```js
 // A block node — has children.
 var heading = {
   type: 'heading',
@@ -63,7 +63,7 @@ The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'contain
 
 Every node has an `attrs` property. The schema decides which keys exist on a given node type and what each key's value type is. A heading has a `level` number. A link has an `href` string. A list item may have a `listType`.
 
-```javascript
+```js
 {
   type: 'heading',
   attrs: { level: 2 },
@@ -88,7 +88,7 @@ A mark has:
 - a `type` — the mark's name,
 - an `attrs` — mark-specific values such as an `href` for a link or a `color` for text color.
 
-```javascript
+```js
 var link = {
   type: 'link',
   attrs: {
@@ -104,7 +104,7 @@ A text node carries its marks in the `marks` array. Adjacent text nodes can carr
 
 Marks have the same shape as node attributes: a `type` and an `attrs` property. The mark's `type` selects the formatting (`'bold'`, `'italic'`, `'link'`, `'underline'`, …), and the `attrs` carry the values the mark needs.
 
-```javascript
+```js
 var textColor = {
   type: 'textColor',
   attrs: { color: '#ff0000' }
@@ -127,7 +127,7 @@ A document is composed in two layers:
 
 Most blocks (paragraphs, headings) accept only inline content. A few blocks (list items, table cells, callouts) accept other blocks inside them. The schema's content rule is what determines this.
 
-```javascript
+```js
 // A paragraph that mixes bold and plain text:
 {
   type: 'paragraph',

@@ -18,7 +18,7 @@ The `superscriptExtension` registers the `superscript` mark, which applies super
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.superscriptExtension]
 });
@@ -38,7 +38,7 @@ The `superscript` extension exposes an `htmlAttributes` option that adds custom 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.superscriptExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleSuperscript()` | Toggles superscript formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleSuperscript();
 ```
 

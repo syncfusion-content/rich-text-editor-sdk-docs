@@ -16,7 +16,7 @@ The `HeadlessEditor` class is the single entry point for the Headless Editor. Yo
 
 Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal — `create()` is the only public way to obtain an instance.
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions]
 });
@@ -32,7 +32,7 @@ The `create()` call returns a fully initialized editor that is ready to mount. I
 
 Use `document` or `content` to provide a starting document, and `extensions` to enable features such as bold, headings, lists, and tables.
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   content: '<h1>Welcome</h1><p>Start typing...</p>',
   extensions: [ej.headlesseditor.basicExtensions]
@@ -49,7 +49,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
 | `enableTabKey` | Enable Tab and Shift+Tab behavior (default `true`). |
 | `autoSaveSelectionOnBlur` | Save the selection when the editor loses focus. |
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions],
   autofocus: 'start',
@@ -62,7 +62,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
 
 `EditorConfig` exposes lifecycle callbacks such as `created`, `destroyed`, `contentChanged`, `selectionChanged`, `focus`, and `blur`. These are wired to the same-named public events on the editor instance.
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.basicExtensions],
   created: function () {
@@ -80,13 +80,13 @@ For the full list of events and their payloads, see the `Events` api.
 
 Use `mount()` to attach the editor to a DOM container, and `unmount()` to detach it.
 
-```javascript
+```js
 var container = document.getElementById('editor');
 
 editor.mount(container);
 ```
 
-```javascript
+```js
 editor.unmount();
 ```
 
@@ -96,7 +96,7 @@ After `unmount()`, the editor's state — document, selection, and history — i
 
 Use `destroy()` to release the editor and all of its resources. After `destroy()` the instance is unusable; create a new one with `HeadlessEditor.create()` if you need another editor.
 
-```javascript
+```js
 editor.destroy();
 ```
 
@@ -106,7 +106,7 @@ editor.destroy();
 
 A small set of behavior toggles can be updated at runtime with `setOptions()`. Updates take effect immediately on the live editor.
 
-```javascript
+```js
 editor.setOptions({
   readOnly: true,
   autoSaveSelectionOnBlur: true

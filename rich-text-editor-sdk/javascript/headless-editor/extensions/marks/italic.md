@@ -18,7 +18,7 @@ The `italicExtension` registers the `italic` mark, which applies semantic italic
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.italicExtension]
 });
@@ -38,7 +38,7 @@ The `italic` extension exposes an `htmlAttributes` option that adds custom HTML 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.italicExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleItalic()` | Toggles italic formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleItalic();
 ```
 

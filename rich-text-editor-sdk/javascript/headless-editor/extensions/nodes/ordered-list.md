@@ -18,7 +18,7 @@ The `listExtension` provides built-in support for numbered lists (`<ol>`) and li
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.listExtension]
 });
@@ -47,7 +47,7 @@ The `list` extension supports custom HTML attributes for both the list container
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.listExtension.configure({
@@ -68,7 +68,7 @@ editor.mount(document.getElementById('editor'));
 | `indentListItem()` | Indents the active list item to create a nested sub-list. |
 | `outdentListItem()` | Outdents the active list item to the parent list level or converts it back to a standard block. |
 
-```javascript
+```js
 // Toggle default ordered list (decimal)
 editor.commands.toggleOrderedList();
 

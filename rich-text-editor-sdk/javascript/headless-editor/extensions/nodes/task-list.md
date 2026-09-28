@@ -18,7 +18,7 @@ The `taskListExtension` registers the `taskList` container and `taskItem` nodes 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.taskListExtension]
 });
@@ -47,7 +47,7 @@ The `task-list` extension supports configuring container attributes, item attrib
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.taskListExtension.configure({
@@ -66,7 +66,7 @@ editor.mount(document.getElementById('editor'));
 | `toggleTaskList({ keepMarks?, checked? })` | Toggles the task list container on the current selection. Accepts an optional `keepMarks` to retain active formatting marks, and `checked` to set the initial checked state of the new task items. |
 | `toggleTaskChecked({ pos? })` | Toggles the checked state of the active task item or the task item at the given document position. |
 
-```javascript
+```js
 // Toggle task list on selection
 editor.commands.toggleTaskList();
 

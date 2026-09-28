@@ -18,7 +18,7 @@ The `subscriptExtension` registers the `subscript` mark, which applies subscript
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.subscriptExtension]
 });
@@ -38,7 +38,7 @@ The `subscript` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.subscriptExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleSubscript()` | Toggles subscript formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleSubscript();
 ```
 

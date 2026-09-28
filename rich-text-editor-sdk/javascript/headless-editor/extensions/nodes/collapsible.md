@@ -18,7 +18,7 @@ The `collapsibleExtension` registers the `collapsible` block container along wit
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.collapsibleExtension]
 });
@@ -45,7 +45,7 @@ The `collapsible` extension exposes an `htmlAttributes` option that adds custom 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.collapsibleExtension.configure({
@@ -64,7 +64,7 @@ editor.mount(document.getElementById('editor'));
 | `collapse({ pos? })` | Sets `collapsed` to `true` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
 | `expand({ pos? })` | Sets `collapsed` to `false` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
 
-```javascript
+```js
 // Wrap the current block as a heading-triggered collapsible (level 1)
 editor.commands.toggleCollapsible({ triggerType: 'heading', level: 2 });
 

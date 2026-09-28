@@ -18,7 +18,7 @@ The `fontFamilyExtension` registers the `fontFamily` capability, which applies a
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.fontFamilyExtension]
 });
@@ -33,7 +33,7 @@ editor.mount(document.getElementById('editor'));
 | `setFontFamily({ family })` | Applies the specified font family to the current selection. |
 | `unsetFontFamily()` | Removes the font family from the current selection. |
 
-```javascript
+```js
 // Apply Arial to the current selection
 editor.commands.setFontFamily({ family: 'Arial' });
 

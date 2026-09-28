@@ -18,7 +18,7 @@ The `calloutExtension` registers the `callout` block container node for renderin
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.calloutExtension]
 });
@@ -46,7 +46,7 @@ Use `.configure()` to apply custom settings:
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.calloutExtension.configure({
@@ -64,7 +64,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `toggleCallout({ variant? })` | Toggles a callout wrapper around the current block or selection. Accepts an optional `variant` (`info`, `warning`, `note`, `success`, `error`, or `tip`). If already inside a callout, unwraps the content. |
 
-```javascript
+```js
 // Toggle with default variant
 editor.commands.toggleCallout();
 

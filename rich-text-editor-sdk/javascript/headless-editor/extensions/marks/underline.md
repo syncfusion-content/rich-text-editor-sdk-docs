@@ -18,7 +18,7 @@ The `underlineExtension` registers the `underline` mark, which applies underline
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.underlineExtension]
 });
@@ -38,7 +38,7 @@ The `underline` extension exposes an `htmlAttributes` option that adds custom HT
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.underlineExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleUnderline()` | Toggles underline formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleUnderline();
 ```
 

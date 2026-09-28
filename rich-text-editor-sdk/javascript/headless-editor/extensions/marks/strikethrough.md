@@ -18,7 +18,7 @@ The `strikethroughExtension` registers the `strikethrough` mark, which applies s
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.strikethroughExtension]
 });
@@ -38,7 +38,7 @@ The `strikethrough` extension exposes an `htmlAttributes` option that adds custo
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.strikethroughExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleStrikethrough()` | Toggles strikethrough formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleStrikethrough();
 ```
 

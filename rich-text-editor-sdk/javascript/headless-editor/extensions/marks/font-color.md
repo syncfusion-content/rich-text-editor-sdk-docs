@@ -20,7 +20,7 @@ Supported color formats include hex values (`#ff0000`), RGB/RGBA values (`rgb(25
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.fontColorExtension]
 });
@@ -35,7 +35,7 @@ editor.mount(document.getElementById('editor'));
 | `setColor({ color })` | Applies the specified color to the current selection. |
 | `unsetColor()` | Removes the font color from the current selection. |
 
-```javascript
+```js
 // Apply red color to the current selection
 editor.commands.setColor({ color: '#ff0000' });
 

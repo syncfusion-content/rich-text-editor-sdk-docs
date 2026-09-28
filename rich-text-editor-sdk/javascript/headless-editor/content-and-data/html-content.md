@@ -25,7 +25,7 @@ HTML can be assigned to the editor at two points: when the editor is created, th
 
 Pass an HTML string as the `content` property of `EditorConfig` to seed the editor with HTML on first mount:
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   content: '<h1>Welcome</h1><p>Start typing...</p>'
 });
@@ -39,7 +39,7 @@ N> `EditorConfig.content` is read once at creation. To replace the content of a 
 
 On a mounted editor, `editor.setContent(html)` replaces the current document with the parsed HTML in a single transaction. Pass an empty or whitespace-only string to reset the document to a single empty paragraph:
 
-```javascript
+```js
 // Replace the document with HTML
 editor.setContent('<h1>New Title</h1><p>Fresh content.</p>');
 
@@ -67,7 +67,7 @@ The Headless Editor exposes a single HTML export method on a mounted editor.
 
 `editor.getHtml()` returns the current document serialized as an HTML string:
 
-```javascript
+```js
 var html = editor.getHtml();
 console.log(html); // "<p>Hello <strong>world</strong></p>"
 ```

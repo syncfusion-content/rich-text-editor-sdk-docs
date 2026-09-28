@@ -18,7 +18,7 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.textAlignExtension]
 });
@@ -38,7 +38,7 @@ The `textAlign` extension exposes options for choosing which block types accept 
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.textAlignExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 | `setTextAlign({ align })` | Applies the specified alignment to the current block or selection. Accepted values: `left`, `center`, `right`, `justify`. |
 | `unsetTextAlign()` | Removes the alignment attribute from the current block or selection. |
 
-```javascript
+```js
 // Apply center alignment to the current block
 editor.commands.setTextAlign({ align: 'center' });
 

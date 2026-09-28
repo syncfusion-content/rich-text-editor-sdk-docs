@@ -18,7 +18,7 @@ The `boldExtension` registers the `bold` mark, which applies semantic bold forma
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.boldExtension]
 });
@@ -38,7 +38,7 @@ The `bold` extension exposes an `htmlAttributes` option that adds custom HTML at
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.boldExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleBold()` | Toggles bold formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleBold();
 ```
 

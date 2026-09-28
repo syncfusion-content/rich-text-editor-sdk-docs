@@ -18,7 +18,7 @@ The `inlineCodeExtension` registers the `code` mark, which applies inline code f
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.inlineCodeExtension]
 });
@@ -38,7 +38,7 @@ The `inlineCode` extension exposes an `htmlAttributes` option that adds custom H
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.inlineCodeExtension.configure({
@@ -56,7 +56,7 @@ editor.mount(document.getElementById('editor'));
 |---------|-------------|
 | `toggleCodeMark()` | Toggles inline code formatting on the current selection. |
 
-```javascript
+```js
 editor.commands.toggleCodeMark();
 ```
 

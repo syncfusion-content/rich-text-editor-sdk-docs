@@ -18,7 +18,7 @@ The `headingExtension` registers the `heading` block node, which renders semanti
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [ej.headlesseditor.headingExtension]
 });
@@ -41,7 +41,7 @@ The `heading` extension exposes an `htmlAttributes` option that adds custom HTML
 <div id="editor"></div>
 ```
 
-```javascript
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.headingExtension.configure({
@@ -58,7 +58,7 @@ editor.mount(document.getElementById('editor'));
 |---------|--------------|
 | `setHeading({ level })` | Converts the current block into a heading at the specified level (`1` to `6`). Existing block attributes like `align` and `indent` are preserved. |
 
-```javascript
+```js
 // Convert the current block to an <h2>
 editor.commands.setHeading({ level: 2 });
 ```

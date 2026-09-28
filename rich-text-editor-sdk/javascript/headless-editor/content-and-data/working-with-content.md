@@ -35,7 +35,7 @@ The Headless Editor provides four read APIs, each returning a different represen
 
 Read the structured document. The returned `DocumentRoot` exposes the document tree through its `children` array:
 
-```javascript
+```js
 var doc = editor.getDocument();
 console.log(doc.type); // 'document'
 doc.children.forEach(function (node) { console.log(node.type); });
@@ -43,21 +43,21 @@ doc.children.forEach(function (node) { console.log(node.type); });
 
 Serialize the document to HTML:
 
-```javascript
+```js
 var html = editor.getHtml();
 console.log(html); // "<p>Hello <strong>world</strong></p>"
 ```
 
 Read the plain text of the whole document:
 
-```javascript
+```js
 var text = editor.getText();
 console.log(text); // "Hello world"
 ```
 
 Read only the currently selected text. Returns an empty string when the selection is collapsed to a caret:
 
-```javascript
+```js
 var selected = editor.getSelectionText();
 if (selected) {
   console.log('User selected: ' + selected);
@@ -77,7 +77,7 @@ Both APIs are all-or-nothing:
 
 `setContent()` accepts an HTML string. Pass an empty or whitespace-only string to clear the document to a single empty paragraph:
 
-```javascript
+```js
 // Replace the document with HTML
 editor.setContent('<h1>New Title</h1><p>Fresh content.</p>');
 
@@ -101,7 +101,7 @@ The `DocumentRoot` payload has these properties:
 | `children` | `EditorNode[]` | Top-level block children. |
 | `schemaVersion` | `number` | Schema version associated with the document. |
 
-```javascript
+```js
 editor.setDocument({
   type: 'document',
   attrs: {},
@@ -129,7 +129,7 @@ All three commands execute in a single transaction, participate in undo/redo, an
 
 `insertText` accepts a `text` payload and inserts it at the current selection. `offset` values use ProseMirror document positions. They refer to positions in the document tree rather than character indexes within an individual text node. Pass an `at` payload to target a specific offset instead:
 
-```javascript
+```js
 // Insert at the current selection
 editor.commands.insertText({ text: 'Hello world' });
 
@@ -143,7 +143,7 @@ The command is a no-op when `text` is empty.
 
 `replaceText` replaces the plain text between two offsets. Use it to update a segment of an existing paragraph or block without rebuilding the surrounding structure:
 
-```javascript
+```js
 editor.commands.replaceText({
   from: { offset: 0 },
   to: { offset: 11 },
@@ -157,7 +157,7 @@ If `from.offset` is greater than or equal to `to.offset`, the command silently n
 
 `insertNode` inserts a structured `EditorNode` into a parent at a given index. The parent is identified by its PM position (`parentPos`), the `index` is the zero-based insertion position within the parent's children, and `node` is the `EditorNode` to insert:
 
-```javascript
+```js
 editor.commands.insertNode({
   parentPos: 0,
   index: 1,
