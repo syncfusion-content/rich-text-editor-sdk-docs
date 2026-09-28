@@ -36,7 +36,7 @@ Before setting editor content, choose the appropriate `valueFormat`. Use html wh
 ```js
 valueFormat: 'html'
 ```
-### supported values
+### Supported values
 
 * 'json' - Uses the structured document model.
 * 'html' - Uses HTML string content.
