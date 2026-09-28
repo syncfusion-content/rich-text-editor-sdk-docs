@@ -9,7 +9,8 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 # Getting Started with Angular Headless Editor
 
-The Syncfusion Angular Headless Editor component is a powerful text editing solution that provides an framework-integrated way to create and manage editable content in Angular applications.
+The Syncfusion Angular Headless Editor is a powerful text editing library that provides a flexible way to create and manage editable content in Angular applications.
+
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Angular development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/angular/documentation/mcp-server/ai-coding-assistant/getting-started)
 
