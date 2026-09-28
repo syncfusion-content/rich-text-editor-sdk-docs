@@ -89,7 +89,7 @@ Executing a prompt triggers two key events:
 
 Once a response is received from your AI service (either as a stream or a complete response), add it to the AssistView using the `addAIPromptResponse()` method:
 
-```tsx
+```ts
 editor.addAIPromptResponse(response: string | Object, finalUpdate?: boolean): void
 ```
 
