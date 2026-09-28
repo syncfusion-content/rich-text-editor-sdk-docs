@@ -43,7 +43,7 @@ valueFormat: 'html'
 
 > **Note**: `valueFormat` is set to **'json'** by default. Set it to **'html'** when loading editor content as an HTML string.
 
-## toolbarSettings
+## Configure toolbar options
 
 Configure `toolbarSettings.items` to display only the editing tools required by your application. Keeping the toolbar focused helps simplify the editing experience and reduces unnecessary commands
 
@@ -55,7 +55,7 @@ toolbarSettings: {
 
 See [Toolbar](toolbar) for layout, floating behavior, and toolbar events.
 
-## imageSettings
+## Configure image settings
 
 Configure `imageSettings` to control how images are uploaded and validated. You can specify accepted file types, file size limits, and server endpoints used for upload and removal operations.
 
