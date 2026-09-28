@@ -32,13 +32,26 @@ Insert a new table into the editor content.
 - Click to insert table with selected rows and columns
 - Includes "Insert Table" button to open detailed dialog
 
+The following screenshot shows the table popup grid
+
+![Modern Rich Text Editor table popup](images/table-popup.png).
+
+
 **Insert Table Dialog:**
 - Allows custom specification of rows and columns
 - Row range: 1–100
 - Column range: 1–50
 - Optional header row configuration
 
+The following screenshot shows the table insert dialog
+
+![Modern Rich Text Editor table insert dialog ](images/table-dialog.png).
+
 ### Row Operations
+
+The following screenshot shows the available options of the row item.
+
+![Modern Rich Text Editor table row](images/table-row.png)
 
 #### Insert Row Before
 Insert a new row above the current row in the table.
@@ -57,6 +70,10 @@ Access via Quick Toolbar → **Row** dropdown menu.
 
 ### Column Operations
 
+The following screenshot shows the available options of the column item.
+
+![Modern Rich Text Editor table column](images/table-column.png)
+
 #### Insert Column Before
 Insert a new column to the left of the current column.
 
@@ -74,6 +91,10 @@ Access via Quick Toolbar → **Column** dropdown menu.
 
 ### Header Management
 
+The following image illustrates the table header.
+
+![Modern Rich Text Editor table header](images/table-header.png)
+
 #### Toggle Header Row
 Enable or disable the table header row, which applies distinct formatting to the first row.
 
@@ -86,15 +107,21 @@ Set or modify the background color of selected table cells.
 
 Access via Quick Toolbar → **CellBackgroundColor** (color picker).
 
+![Modern Rich Text Editor table backgroundcolor](images/table-bgcolor.png)
+
 #### Horizontal Alignment
 Set the text alignment within cells: **Left**, **Center**, **Right**, or **Justify**.
 
 Access via Quick Toolbar → **Align** dropdown menu.
 
+![Modern Rich Text Editor table align](images/table-horizontal-aling.png)
+
 #### Vertical Alignment
 Set the vertical alignment of cell content: **Top**, **Middle**, or **Bottom**.
 
 Access via Quick Toolbar → **VerticalAlign** dropdown menu.
+
+![Modern Rich Text Editor table verticalAlign](images/table-vertical-Align.png)
 
 ### Table Deletion
 
