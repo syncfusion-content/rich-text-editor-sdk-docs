@@ -14,7 +14,34 @@ The `superscriptExtension` registers the `superscript` mark, which applies super
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+```js
+import * as React from 'react';
+import { useRef, useEffect } from 'react';
+import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
+
+function App() {
+    const editorRef = useRef(null);
+
+    useEffect(() => {
+        const editor = HeadlessEditor.create({
+            extensions: [superscriptExtension]
+        });
+        if (editorRef.current) {
+            editor.mount(editorRef.current);
+        }
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={editorRef}></div>;
+}
+
+export default App;
+```
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
@@ -37,6 +64,8 @@ function App() {
 
 export default App;
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure the extension
 
@@ -46,7 +75,38 @@ The `superscript` extension exposes an `htmlAttributes` option that adds custom 
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<sup>` element. |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+```js
+import * as React from 'react';
+import { useRef, useEffect } from 'react';
+import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
+
+function App() {
+    const editorRef = useRef(null);
+
+    useEffect(() => {
+        const editor = HeadlessEditor.create({
+            extensions: [
+                superscriptExtension.configure({
+                    htmlAttributes: { class: 'my-custom-class' }
+                })
+            ]
+        });
+        if (editorRef.current) {
+            editor.mount(editorRef.current);
+        }
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={editorRef}></div>;
+}
+
+export default App;
+```
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
@@ -73,6 +133,8 @@ function App() {
 
 export default App;
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

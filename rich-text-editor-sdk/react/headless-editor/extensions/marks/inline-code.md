@@ -14,7 +14,34 @@ The `inlineCodeExtension` registers the `code` mark, which applies inline code f
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+```js
+import * as React from 'react';
+import { useRef, useEffect } from 'react';
+import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
+
+function App() {
+    const editorRef = useRef(null);
+
+    useEffect(() => {
+        const editor = HeadlessEditor.create({
+            extensions: [inlineCodeExtension]
+        });
+        if (editorRef.current) {
+            editor.mount(editorRef.current);
+        }
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={editorRef}></div>;
+}
+
+export default App;
+```
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
@@ -37,6 +64,8 @@ function App() {
 
 export default App;
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure the extension
 
@@ -46,7 +75,38 @@ The `inlineCode` extension exposes an `htmlAttributes` option that adds custom H
 |--------|------|---------|-------------|
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<code>` element. |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+```js
+import * as React from 'react';
+import { useRef, useEffect } from 'react';
+import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
+
+function App() {
+    const editorRef = useRef(null);
+
+    useEffect(() => {
+        const editor = HeadlessEditor.create({
+            extensions: [
+                inlineCodeExtension.configure({
+                    htmlAttributes: { class: 'my-custom-class' }
+                })
+            ]
+        });
+        if (editorRef.current) {
+            editor.mount(editorRef.current);
+        }
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={editorRef}></div>;
+}
+
+export default App;
+```
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
@@ -73,6 +133,8 @@ function App() {
 
 export default App;
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 
