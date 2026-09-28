@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands in JavaScript Headless Editor | Syncfusion
-description: Use the Headless Editor command api to execute, check availability, and chain generic built-in commands.
+description: Use the Headless Editor command api in the JavaScript platform to execute, check availability, and chain generic built-in commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
