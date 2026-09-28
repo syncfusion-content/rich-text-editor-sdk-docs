@@ -197,3 +197,5 @@ editor.setDocument(restored);
 ```
 
 This pattern is safe because `getDocument()` and `setDocument()` operate on the same `DocumentRoot` shape. To clear the document, pass a `DocumentRoot` whose `children` is a single empty paragraph.
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/json-content/" %}

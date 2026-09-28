@@ -171,3 +171,5 @@ editor.commands.insertNode({
 ```
 
 The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/" %}

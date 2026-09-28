@@ -81,3 +81,5 @@ If an error occurs during serialization, `getHtml()` returns an empty string ins
 Serialization is driven by the same schema and extensions that govern parsing. Each registered extension contributes a `toDOM` specification that defines how its node and mark types are rendered to HTML. The string returned by `getHtml()` therefore reflects the extensions you have loaded — adding an extension can change the HTML output for its node types.
 
 The HTML returned by `getHtml()` is serialized according to the same schema and extensions used when loading HTML content.
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %}
