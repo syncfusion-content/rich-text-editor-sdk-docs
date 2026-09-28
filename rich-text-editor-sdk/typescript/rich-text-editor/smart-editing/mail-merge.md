@@ -70,6 +70,7 @@ let insertField: DropDownButton = new DropDownButton({
 });
 insertField.appendTo('#insertField');
 
+{% raw %}
 function onItemSelect(args: MenuEventArgs): void {
    if (args.item.text != null) {
       const value = textToValueMap[args.item.text];
@@ -81,6 +82,7 @@ function onItemSelect(args: MenuEventArgs): void {
       );
    }
 }
+{% endraw %}
 
 {% endraw %}
 
