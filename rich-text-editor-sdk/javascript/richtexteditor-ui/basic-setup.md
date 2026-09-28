@@ -29,7 +29,7 @@ Configure the `value` property to load content when the editor is initialized. T
 value: '<p>Getting started with the Rich Text Editor UI.</p>'
 ```
 
-## valueFormat
+## Set content format
 
 Before setting editor content, choose the appropriate `valueFormat`. Use html when working with HTML strings and json when storing or exchanging content using the editor's structured document model.
 
