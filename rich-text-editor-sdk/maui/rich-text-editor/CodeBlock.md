@@ -43,7 +43,7 @@ SfRichTextEditor richTextEditor = new SfRichTextEditor
 };
 
 // Add CodeBlock toolbar item
-// For default toolbar behavior, see: https://help.syncfusion.com/maui/rich-text-editor/toolbar#customizing-the-toolbar
+// For default toolbar behavior, see: https://help.syncfusion.com/rich-text-editor-sdk/maui/rich-text-editor/toolbar
 richTextEditor.ToolbarItems.Add(new RichTextToolbarItem
 {
     Type = RichTextToolbarOptions.CodeBlock

@@ -81,7 +81,8 @@ You can apply external CSS and script files to the iframe by using the `resource
 
 **CSS and Scripts Configuration:**
 
-```tsx
+{% raw %}
+```ts
 iframeSettings={{
   enable: true,
   resources: {
@@ -90,6 +91,7 @@ iframeSettings={{
   }
 }}
 ```
+{% endraw %}
 
 `[Class-component]`
 
@@ -123,7 +125,7 @@ The Rich Text Editor supports the Mention component even when rendered inside an
 
 ### Setup
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 import { MentionComponent } from '@syncfusion/ej2-react-dropdowns';
 

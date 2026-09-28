@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in .NET MAUI Rich Text Editor
 
-The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor) control provides extensive options for customizing its appearance and functionality, from the editor area to programmatic formatting and hyperlink management.
+The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor) control provides extensive options for customizing its appearance and functionality, from the editor area to programmatic formatting and hyperlink management.
 
 ## Customizing Editor Appearance
 
@@ -44,6 +44,47 @@ richTextEditor.EnableWordWrap = true;
 
 ![.NET MAUI Customizing Rich Text Editor](images/richtexteditor-custom-editor.png)
 
+## Enable Grouped Toolbar Items
+
+The Overlay Toolbar enhances the mobile editing experience by displaying context-aware formatting options directly near the selected content. When the `IsGrouped` property is enabled, related toolbar items are organized into grouped overlay menus, providing a cleaner and more intuitive interface while optimizing screen space on mobile platforms. This allows users to quickly access formatting commands without interrupting their editing workflow.
+
+{% tabs %}
+{% highlight xaml %}
+ <richTextEditor:SfRichTextEditor x:Name="richTextEditor" ShowToolbar="True" IsGrouped="True">
+     <richTextEditor:SfRichTextEditor.ToolbarItems>
+         <richTextEditor:RichTextToolbarItem Type="Bold" />
+         <richTextEditor:RichTextToolbarItem Type="Italic" />
+         <richTextEditor:RichTextToolbarItem Type="Underline" />
+         <richTextEditor:RichTextToolbarItem Type="BulletList" />
+         <richTextEditor:RichTextToolbarItem Type="NumberList" />
+         <richTextEditor:RichTextToolbarItem Type="Alignment" />
+         <richTextEditor:RichTextToolbarItem Type="Hyperlink" />
+         <richTextEditor:RichTextToolbarItem Type="Undo" />
+         <richTextEditor:RichTextToolbarItem Type="Redo" />
+     </richTextEditor:SfRichTextEditor.ToolbarItems>
+ </richTextEditor:SfRichTextEditor>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.Maui.RichTextEditor;
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.ShowToolbar = true;
+richTextEditor.IsGrouped = true;
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Bold });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Italic });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Underline });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.NumberList });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.BulletList });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Alignment });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Hyperlink });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Undo });
+richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolbarOptions.Redo });
+
+{% endhighlight %}
+{% endtabs %}
+
+![.NET MAUI Rich Text Editor Grouped Overlay Toolbar](images/richtexteditor-isgrouped.png)
 
 ## Programmatic Formatting
 

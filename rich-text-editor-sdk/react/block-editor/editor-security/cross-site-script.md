@@ -23,7 +23,7 @@ Before running the sample below, make sure you have:
 
 The [enableHtmlSanitizer](https://ej2.syncfusion.com/react/documentation/api/blockeditor/index-default#enablehtmlsanitizer) property controls XSS prevention and is `true` (enabled) by default. When active, the editor automatically removes disallowed elements, such as `<script>`, and disallowed attributes, such as `onmouseover`, from the pasted or entered content.
 
-```jsx
+```js
 <BlockEditorComponent enableHtmlSanitizer={true} />
 ```
 
