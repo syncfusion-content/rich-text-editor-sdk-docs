@@ -15,27 +15,7 @@ The `imageExtension` registers the `image` block and `imageInline` inline nodes 
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [imageExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/app.tsx %}
 ```
 
 ## Node attributes
@@ -79,40 +59,7 @@ The `image` extension exposes options for default image behavior, persistence, a
 | `minHeight` | Minimum allowed height in pixels during a resize drag. | `8` |
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                imageExtension.configure({
-                    display: 'block',
-                    align: 'none',
-                    wrap: 'none',
-                    resize: {
-                        enabled: true,
-                        directions: ['bottom-right'],
-                        alwaysPreserveAspectRatio: true,
-                        minWidth: 50,
-                        minHeight: 50
-                    }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/configure.tsx %}
 ```
 
 ## Commands

@@ -17,27 +17,7 @@ The `textExtension` registers the inline `text` node used to represent plain tex
 The `text` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [documentExtension, paragraphExtension, textExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/text/app.tsx %}
 ```
 
 Marks such as bold, italic, or links are applied on top of `text` nodes. Refer to the [Marks](../marks) concept page for more details on how marks attach to text.

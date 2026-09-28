@@ -15,27 +15,7 @@ The `calloutExtension` registers the `callout` block container node for renderin
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [calloutExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/callout/app.tsx %}
 ```
 
 ## Node attributes
@@ -56,32 +36,7 @@ The `callout` extension provides options to set the default variant and add cust
 Use `.configure()` to apply custom settings:
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                calloutExtension.configure({
-                    defaultVariant: 'note',
-                    htmlAttributes: { class: 'custom-callout' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/callout/configure.tsx %}
 ```
 
 ## Commands

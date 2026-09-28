@@ -15,54 +15,13 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: []
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/app.tsx %}
 ```
 
 The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, the editor automatically registers `indentOutdentExtension` and plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [],
-            enableTabKey: true
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/configure.tsx %}
 ```
 
 I> When `config.enableTabKey` is `true`, the editor automatically registers `indentOutdentExtension`. Register it manually only if you need to call `indent()` or `outdent()` programmatically without enabling the Tab key.

@@ -15,27 +15,7 @@ The `headingExtension` registers the `heading` block node, which renders semanti
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, headingExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [headingExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/app.tsx %}
 ```
 
 ## Node attributes
@@ -51,31 +31,7 @@ export default App;
 The `heading` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered heading elements. It defaults to an empty object. Use `.configure()` to set it:
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, headingExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                headingExtension.configure({
-                    htmlAttributes: { class: 'custom-heading' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/configure.tsx %}
 ```
 
 ## Commands

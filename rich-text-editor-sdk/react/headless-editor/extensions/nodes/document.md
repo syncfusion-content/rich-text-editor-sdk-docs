@@ -17,27 +17,7 @@ The `documentExtension` registers the root `document` node of the editor schema.
 The `document` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [documentExtension, paragraphExtension, textExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/document/app.tsx %}
 ```
 
 The `document` node itself does not carry any attributes. It is the schema root and is owned by the editor — you do not create, update, or remove it directly. It is rendered as a `<div>` and automatically wraps whatever block-level content you insert, such as paragraphs, headings, or lists. You manage its content indirectly by inserting, updating, or removing the block nodes it contains.

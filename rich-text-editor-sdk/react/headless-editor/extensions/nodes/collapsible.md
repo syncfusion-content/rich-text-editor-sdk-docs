@@ -15,27 +15,7 @@ The `collapsibleExtension` registers the `collapsible` block container along wit
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [collapsibleExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/collapsible/app.tsx %}
 ```
 
 I> The editor automatically registers `collapsibleKeymapExtension` when `collapsibleExtension` is registered, so <kbd>Enter</kbd>, <kbd>Backspace</kbd>, and <kbd>Delete</kbd> handling inside collapsible sections is enabled without an extra import.
@@ -55,31 +35,7 @@ I> The editor automatically registers `collapsibleKeymapExtension` when `collaps
 The `collapsible` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the outer collapsible `<div>` container. The `data-type` and `data-collapsed` attributes are always applied. It defaults to an empty object.
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                collapsibleExtension.configure({
-                    htmlAttributes: { class: 'custom-collapsible' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/collapsible/configure.tsx %}
 ```
 
 ## Commands

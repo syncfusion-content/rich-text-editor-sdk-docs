@@ -15,27 +15,7 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 ## Register the extension
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [undoRedoExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/app.tsx %}
 ```
 
 ## Configure undo and redo options
@@ -48,32 +28,7 @@ The `undoRedo` extension exposes options for tuning the history stack:
 | `newGroupDelay` | Time in milliseconds after which a new edit forms a new history group. | `300` |
 
 ```tsx
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                undoRedoExtension.configure({
-                    depth: 50,
-                    newGroupDelay: 500
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/configure.tsx %}
 ```
 
 ## Commands
