@@ -16,54 +16,10 @@ The `boldExtension` registers the `bold` mark, which applies semantic bold forma
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [boldExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/bold/app.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [boldExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/bold/app.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,62 +33,10 @@ The `bold` extension exposes an `htmlAttributes` option that adds custom HTML at
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                boldExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/bold/configure.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, boldExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                boldExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/bold/configure.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

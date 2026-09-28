@@ -16,54 +16,10 @@ The `superscriptExtension` registers the `superscript` mark, which applies super
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [superscriptExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/superscript/app.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [superscriptExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/superscript/app.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,62 +33,10 @@ The `superscript` extension exposes an `htmlAttributes` option that adds custom 
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                superscriptExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/superscript/configure.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, superscriptExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                superscriptExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/superscript/configure.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -16,54 +16,10 @@ The `linkExtension` registers the `link` mark, which applies hyperlink formattin
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [linkExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/app.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [linkExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/app.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,64 +34,10 @@ The `link` extension exposes the following options. Use `.configure()` to set th
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                linkExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' },
-                    openOnClick: true
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/configure.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                linkExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' },
-                    openOnClick: true
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/configure.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

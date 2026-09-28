@@ -16,54 +16,10 @@ The `inlineCodeExtension` registers the `code` mark, which applies inline code f
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [inlineCodeExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/inline-code/app.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [inlineCodeExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/inline-code/app.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,62 +33,10 @@ The `inlineCode` extension exposes an `htmlAttributes` option that adds custom H
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                inlineCodeExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/inline-code/configure.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, inlineCodeExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                inlineCodeExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/inline-code/configure.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -16,54 +16,10 @@ The `strikethroughExtension` registers the `strikethrough` mark, which applies s
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [strikethroughExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/strikethrough/app.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [strikethroughExtension]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/strikethrough/app.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,62 +33,10 @@ The `strikethrough` extension exposes an `htmlAttributes` option that adds custo
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
-```js
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                strikethroughExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/strikethrough/configure.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.tsx" %}
-```ts
-import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { HeadlessEditor, strikethroughExtension } from '@syncfusion/ej2-headless-editor';
-
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
-            extensions: [
-                strikethroughExtension.configure({
-                    htmlAttributes: { class: 'my-custom-class' }
-                })
-            ]
-        });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
-        }
-        return () => editor.destroy();
-    }, []);
-
-    return <div ref={editorRef}></div>;
-}
-
-export default App;
-```
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/strikethrough/configure.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
