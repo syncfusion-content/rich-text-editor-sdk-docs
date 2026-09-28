@@ -16,7 +16,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaS
 
 The following list of dependencies are required to use the `Headless Editor` library in the application.
 
-```javascript
+```js
 |-- @syncfusion/ej2-headless-editor
     |-- @syncfusion/ej2-base
     |-- prosemirror-history

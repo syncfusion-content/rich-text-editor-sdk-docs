@@ -8,7 +8,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Overview in Blazor Rich Text Editor
+# Blazor Rich Text Editor Documentation Overview
 
 ## Introduction to Syncfusion Blazor Rich Text Editor
 
@@ -33,10 +33,10 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
-| **[HTML editor](./editor-modes#html-editor)** | Edit content as rich HTML with a live WYSIWYG view | Familiar word-processor experience |
+| **[HTML editor](./editor-modes#html-editor)** | Edit content as rich HTML with a live WYSIWYG view | Familiar word processor experience |
 | **[Markdown editor](./editor-modes#markdown-editor)** | Edit content in Markdown syntax | Lightweight, developer-friendly writing |
 | **[Iframe Editor](./iframe)** | Isolate the content area in an iframe | Contained, secure editing |
-| **[Inline Editor](./inline-mode)** | Edit content in place without a framed container | Natural in-context editing |
+| **[Inline Editor](./inline-mode)** | Edit content in place without a framed container | Natural in context editing |
 | **[Resizable Editor](./resizable-editor)** | Drag to resize the editor in real time | Custom dimensions on demand |
 | **[Configuring the toolbar position](./toolbar-position#configuring-the-toolbar-position)** | Place the toolbar at the top or bottom | Flexible layouts |
 
@@ -132,7 +132,7 @@ The [Blazor Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/bl
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Forms Support](./form-validation)** | Use the editor inside Blazor EditForms with validation | Integrated form workflows |
-| **[Validation attributes](./form-validation#validation-attributes)** | Enforce content rules with Data Annotations | Required-content enforcement |
+| **[Validation attributes](./form-validation#validation-attributes)** | Enforce content rules with Data Annotations | Required content enforcement |
 | **[Validating attributes](./xhtml-validation#validating-attributes)** and **[Validating HTML elements](./xhtml-validation#validating-html-elements)** | Sanitize content for XHTML safety | Secure output |
 | **[Read-only mode](./read-only-mode#read-only-mode)** | Display content without editing | Safe display mode |
 

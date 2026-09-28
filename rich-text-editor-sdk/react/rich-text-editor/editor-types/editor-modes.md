@@ -25,7 +25,7 @@ HTML editing is the default mode of the Rich Text Editor. In this mode, you can 
 
 To use the HTML editor mode, import and inject the `HtmlEditor` module:
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Image, Link, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent>
@@ -71,7 +71,7 @@ To edit content in Markdown format, set the [`editorMode`](https://ej2.syncfusio
 
 To use the Markdown editor mode, import and inject the `MarkdownEditor` module:
 
-```tsx
+```ts
 import { RichTextEditorComponent, Inject, MarkdownEditor, Toolbar } from '@syncfusion/ej2-react-richtexteditor';
 
 <RichTextEditorComponent editorMode="Markdown">
