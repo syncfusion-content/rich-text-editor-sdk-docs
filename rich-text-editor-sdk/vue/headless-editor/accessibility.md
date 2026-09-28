@@ -65,7 +65,8 @@ The Headless Editor does not add ARIA roles or labels automatically. Add the fol
 
 The following Vue component applies the recommended attributes to the editable element:
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -104,7 +105,52 @@ onBeforeUnmount(() => editor?.destroy());
 <template>
 	<div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
+
+export default defineComponent({
+	data() {
+		return {
+			editor: null as HeadlessEditor | null,
+			readOnly: true
+		};
+	},
+
+	mounted() {
+		const editor = HeadlessEditor.create({
+			extensions: [basicExtensions],
+			readOnly: this.readOnly
+		});
+		this.editor = markRaw(editor);
+		const container = this.$refs.editorContainer as HTMLDivElement;
+		editor.mount(container);
+
+		const editableElement = container.querySelector('.ProseMirror');
+		if (editableElement instanceof HTMLElement) {
+			editableElement.setAttribute('role', 'textbox');
+			editableElement.setAttribute('aria-label', 'Document editor');
+			editableElement.setAttribute('aria-multiline', 'true');
+
+			if (this.readOnly) {
+				editableElement.setAttribute('aria-readonly', 'true');
+			}
+		}
+	},
+
+	beforeUnmount() {
+		this.editor?.destroy();
+	}
+});
+</script>
+
+<template>
+	<div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 Use `aria-labelledby` when a visible label is available. If the editor changes to read-only mode, update `aria-readonly` with the editor state.
 
@@ -112,7 +158,8 @@ Use `aria-labelledby` when a visible label is available. If the editor changes t
 
 The editor supports keyboard shortcuts for formatting, headings, lists, links, undo, and redo. Custom shortcuts are defined through an extension’s `keyboardShortcuts` contributor.
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -147,7 +194,48 @@ onBeforeUnmount(() => editor?.destroy());
 <template>
 	<div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import { HeadlessEditor, basicExtensions, defineExtension } from '@syncfusion/ej2-headless-editor';
+
+const customShortcutExtension = defineExtension({
+	name: 'custom-shortcuts',
+
+	keyboardShortcuts() {
+		return {
+			'Mod-Alt-b': () => this.editor.commands.toggleBold()
+		};
+	}
+});
+
+export default defineComponent({
+	data() {
+		return {
+			editor: null as HeadlessEditor | null
+		};
+	},
+
+	mounted() {
+		const editor = HeadlessEditor.create({
+			extensions: [basicExtensions, customShortcutExtension]
+		});
+		this.editor = markRaw(editor);
+		editor.mount(this.$refs.editorContainer as HTMLDivElement);
+	},
+
+	beforeUnmount() {
+		this.editor?.destroy();
+	}
+});
+</script>
+
+<template>
+	<div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 Use `Mod` for `Ctrl` on Windows and Linux and `Cmd` on macOS.
 
@@ -179,7 +267,8 @@ Use `contenteditable="false"` for controls inside a custom node that should not 
 
 The following Vue component configures a custom node that renders semantic `aside` content with an accessible label:
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
@@ -226,7 +315,60 @@ onBeforeUnmount(() => editor?.destroy());
 <template>
 	<div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import { HeadlessEditor, basicExtensions, defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
+
+const noteExtension = defineExtension({
+	name: 'accessible-note',
+
+	nodes() {
+		return [{
+			name: 'accessibleNote',
+			group: 'block',
+			content: NodeContent.block().oneOrMore()
+		}];
+	},
+
+	domSpecs() {
+		return {
+			nodes: {
+				accessibleNote: {
+					toDOM: () => ['aside', { 'aria-label': 'Note' }, 0]
+				}
+			}
+		};
+	}
+});
+
+export default defineComponent({
+	data() {
+		return {
+			editor: null as HeadlessEditor | null
+		};
+	},
+
+	mounted() {
+		const editor = HeadlessEditor.create({
+			extensions: [basicExtensions, noteExtension]
+		});
+		this.editor = markRaw(editor);
+		editor.mount(this.$refs.editorContainer as HTMLDivElement);
+	},
+
+	beforeUnmount() {
+		this.editor?.destroy();
+	}
+});
+</script>
+
+<template>
+	<div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 ## Custom Node View Accessibility
 
@@ -242,7 +384,8 @@ Use semantic markup, accessible names, and a live region in the Vue component re
 
 The `accessibleStatus` node type must also be registered in the editor schema for this node view to be used.
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension, type NodeViewDescriptor } from '@syncfusion/ej2-headless-editor';
@@ -288,7 +431,59 @@ onBeforeUnmount(() => {
 <template>
 	<div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import {
+	HeadlessEditor,
+	basicExtensions,
+	defineExtension,
+	type NodeViewDescriptor
+} from '@syncfusion/ej2-headless-editor';
+
+const statusNodeViewExtension = defineExtension({
+	name: 'accessible-status-view',
+
+	nodeViews() {
+		return {
+			accessibleStatus: (): NodeViewDescriptor => {
+				const dom: HTMLElement = document.createElement('div');
+				dom.setAttribute('role', 'status');
+				dom.setAttribute('aria-live', 'polite');
+
+				return { dom };
+			}
+		};
+	}
+});
+
+export default defineComponent({
+	data() {
+		return {
+			editor: null as HeadlessEditor | null
+		};
+	},
+
+	mounted() {
+		const editor = HeadlessEditor.create({
+			extensions: [basicExtensions, statusNodeViewExtension]
+		});
+		this.editor = markRaw(editor);
+		editor.mount(this.$refs.editorContainer as HTMLDivElement);
+	},
+
+	beforeUnmount() {
+		this.editor?.destroy();
+	}
+});
+</script>
+
+<template>
+	<div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 ## Ensuring accessibility
 

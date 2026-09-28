@@ -24,7 +24,8 @@ Pasted HTML is sanitized before it is parsed into the editor document. The sanit
 
 Application clipboard transformations run after the built-in sanitizer:
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -54,7 +55,42 @@ onBeforeUnmount(() => editor?.destroy());
 <template>
   <div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
+
+export default defineComponent({
+  data() {
+    return {
+      editor: null as HeadlessEditor | null
+    };
+  },
+
+  mounted() {
+    const editor = HeadlessEditor.create({
+      extensions: [basicExtensions],
+      clipboard: {
+        transformHTML: (html: string) => html.replace(/\sdata-source="external"/g, '')
+      }
+    });
+
+    this.editor = markRaw(editor);
+    editor.mount(this.$refs.editorContainer as HTMLDivElement);
+  },
+
+  beforeUnmount() {
+    this.editor?.destroy();
+  }
+});
+</script>
+
+<template>
+  <div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 Use `transformHTML` only for additional product-specific rules. It must not be used to bypass the built-in sanitizer.
 
@@ -74,7 +110,8 @@ Sanitization is applied at the clipboard boundary before the content reaches the
 
 The `beforeFileUpload` event is raised before processing begins. The public event handler receives `BeforeFileUploadEventArgs` directly. Set `args.cancel` to `true` to reject a file before the upload starts.
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import {
@@ -109,7 +146,48 @@ onBeforeUnmount(() => editor?.destroy());
 <template>
   <div ref="editorContainer"></div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import {
+  HeadlessEditor,
+  basicExtensions,
+  type BeforeFileUploadEventArgs
+} from '@syncfusion/ej2-headless-editor';
+
+const allowedTypes = new Set(['image/jpeg', 'image/png']);
+
+export default defineComponent({
+  data() {
+    return {
+      editor: null as HeadlessEditor | null
+    };
+  },
+
+  mounted() {
+    const editor = HeadlessEditor.create({ extensions: [basicExtensions] });
+    this.editor = markRaw(editor);
+    editor.mount(this.$refs.editorContainer as HTMLDivElement);
+
+    editor.on<BeforeFileUploadEventArgs>('beforeFileUpload', (args) => {
+      if (!allowedTypes.has(args.file.type) || args.file.size > 5 * 1024 * 1024) {
+        args.cancel = true;
+      }
+    });
+  },
+
+  beforeUnmount() {
+    this.editor?.destroy();
+  }
+});
+</script>
+
+<template>
+  <div ref="editorContainer"></div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 `BeforeFileUploadEventArgs` contains the `file`, its `source` (`paste`, `drop`, or `api`), and the optional `cancel` flag. Validate file type, size, name, and content on the server as well. Use `editor.on('fileReceived', handler)` for post-validation processing and `FileHandler.cancel(uploadId)` to cancel an active upload.
 
@@ -117,7 +195,8 @@ onBeforeUnmount(() => editor?.destroy());
 
 The link command validates URLs before applying a link mark. It rejects empty values and dangerous protocols such as `javascript:`, `data:`, and `vbscript:`. Common safe protocols include `http:`, `https:`, `mailto:`, `tel:`, `ftp:`, relative paths, and in-page anchors.
 
-```ts
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, linkExtension } from '@syncfusion/ej2-headless-editor';
@@ -162,7 +241,60 @@ onBeforeUnmount(() => editor?.destroy());
     <p aria-live="polite">{{ linkResult }}</p>
   </div>
 </template>
-```
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+<script lang="ts">
+import { defineComponent, markRaw } from 'vue';
+import { HeadlessEditor, basicExtensions, linkExtension } from '@syncfusion/ej2-headless-editor';
+
+export default defineComponent({
+  data() {
+    return {
+      editor: null as HeadlessEditor | null,
+      linkResult: ''
+    };
+  },
+
+  mounted() {
+    const editor = HeadlessEditor.create({
+      extensions: [basicExtensions, linkExtension]
+    });
+
+    this.editor = markRaw(editor);
+    editor.mount(this.$refs.editorContainer as HTMLDivElement);
+  },
+
+  beforeUnmount() {
+    this.editor?.destroy();
+  },
+
+  methods: {
+    testLink(href: string, displayText: string) {
+      if (!this.editor) {
+        return;
+      }
+
+      const applied = this.editor.execute('setLink', { href, displayText });
+      this.linkResult = applied ? 'The link was accepted.' : 'The link was rejected.';
+    }
+  }
+});
+</script>
+
+<template>
+  <div>
+    <div ref="editorContainer"></div>
+    <button type="button" @click="testLink('https://www.example.com', 'Open example')">
+      Test a safe URL
+    </button>
+    <button type="button" @click="testLink('javascript:alert(1)', 'Unsafe link')">
+      Test an unsafe URL
+    </button>
+    <p aria-live="polite">{{ linkResult }}</p>
+  </div>
+</template>
+{% endhighlight %}
+{% endtabs %}
 
 Check the command result before reporting success. Validate or rewrite link attributes again when exporting or rendering content outside the editor.
 
