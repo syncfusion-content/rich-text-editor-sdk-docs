@@ -14,9 +14,14 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/text-align/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/text-align/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure text alignment options
 
@@ -27,9 +32,14 @@ The `textAlign` extension exposes options for choosing which block types accept 
 | `types` | Block node type names where text alignment is allowed. | `['paragraph', 'heading', 'listItem', 'taskItem']` |
 | `htmlAttributes` | HTML attributes applied to the aligned block elements. | `{}` |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/text-align/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/text-align/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

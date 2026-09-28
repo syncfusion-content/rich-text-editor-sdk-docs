@@ -14,15 +14,25 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, the editor automatically registers `indentOutdentExtension` and plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/indent-outdent/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 I> When `config.enableTabKey` is `true`, the editor automatically registers `indentOutdentExtension`. Register it manually only if you need to call `indent()` or `outdent()` programmatically without enabling the Tab key.
 

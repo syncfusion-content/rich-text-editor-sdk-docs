@@ -14,17 +14,27 @@ The `hardBreakExtension` registers the `hard_break` inline node, which inserts a
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/hard-break/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/hard-break/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure hard break options
 
 The `hardBreak` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered `<br>` elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/hard-break/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/hard-break/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

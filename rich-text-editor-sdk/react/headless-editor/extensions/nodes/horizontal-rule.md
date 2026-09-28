@@ -14,17 +14,27 @@ The `horizontalRuleExtension` registers the `horizontalRule` leaf node for visua
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/horizontal-rule/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/horizontal-rule/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure horizontal rule options
 
 The `horizontalRule` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered `<hr>` elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/horizontal-rule/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/horizontal-rule/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

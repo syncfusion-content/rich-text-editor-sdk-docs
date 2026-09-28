@@ -14,9 +14,14 @@ The `paragraphExtension` registers the `paragraph` block node, which is the defa
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/paragraph/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/paragraph/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Node attributes
 
@@ -29,9 +34,14 @@ The `paragraphExtension` registers the `paragraph` block node, which is the defa
 
 The `paragraph` extension exposes an `htmlAttributes` option that adds custom HTML attributes to every rendered `<p>` element. It defaults to an empty object. Use `.configure()` to set it:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/paragraph/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/paragraph/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

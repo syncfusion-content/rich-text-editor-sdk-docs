@@ -14,9 +14,14 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure undo and redo options
 
@@ -27,9 +32,14 @@ The `undoRedo` extension exposes options for tuning the history stack:
 | `depth` | Maximum depth of the undo history stack. | `30` |
 | `newGroupDelay` | Time in milliseconds after which a new edit forms a new history group. | `300` |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/undo-redo/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

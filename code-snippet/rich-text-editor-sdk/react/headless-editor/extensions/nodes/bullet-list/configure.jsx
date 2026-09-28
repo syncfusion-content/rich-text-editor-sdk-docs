@@ -1,0 +1,27 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { useRef, useEffect } from 'react';
+import { HeadlessEditor, listExtension } from '@syncfusion/ej2-headless-editor';
+
+function App() {
+    const editorRef = useRef(null);
+
+    useEffect(() => {
+        const editor = HeadlessEditor.create({
+            extensions: [
+                listExtension.configure({
+                    htmlAttributes: { class: 'custom-bullet-list' },
+                    itemHtmlAttributes: { class: 'custom-list-item' }
+                })
+            ]
+        });
+        if (editorRef.current) {
+            editor.mount(editorRef.current);
+        }
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={editorRef}></div>;
+}
+
+ReactDOM.render(<App />, document.getElementById('container'));

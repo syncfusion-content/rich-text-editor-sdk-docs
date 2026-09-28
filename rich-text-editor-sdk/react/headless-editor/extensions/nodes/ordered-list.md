@@ -14,9 +14,14 @@ The `listExtension` provides built-in support for numbered lists (`<ol>`) and li
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/ordered-list/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/ordered-list/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 I> The editor automatically registers `listKeymapExtension` whenever `listExtension` or `taskListExtension` is registered, so list navigation keys (<kbd>Tab</kbd>, <kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Enter</kbd>, and <kbd>Backspace</kbd>) are enabled without an extra import.
 
@@ -36,9 +41,14 @@ The `list` extension supports custom HTML attributes for both the list container
 | `htmlAttributes` | Custom HTML attributes applied to the outer `<ol>` element. | `{}` |
 | `itemHtmlAttributes` | Custom HTML attributes applied to every child `<li>` element. | `{}` |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/ordered-list/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/ordered-list/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

@@ -14,9 +14,14 @@ The `imageExtension` registers the `image` block and `imageInline` inline nodes 
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Node attributes
 
@@ -58,9 +63,14 @@ The `image` extension exposes options for default image behavior, persistence, a
 | `minWidth` | Minimum allowed width in pixels during a resize drag. | `8` |
 | `minHeight` | Minimum allowed height in pixels during a resize drag. | `8` |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/image/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

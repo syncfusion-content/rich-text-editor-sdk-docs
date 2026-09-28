@@ -16,9 +16,14 @@ The `documentExtension` registers the root `document` node of the editor schema.
 
 The `document` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/document/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/document/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 The `document` node itself does not carry any attributes. It is the schema root and is owned by the editor — you do not create, update, or remove it directly. It is rendered as a `<div>` and automatically wraps whatever block-level content you insert, such as paragraphs, headings, or lists. You manage its content indirectly by inserting, updating, or removing the block nodes it contains.
 

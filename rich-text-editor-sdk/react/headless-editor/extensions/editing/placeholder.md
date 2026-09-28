@@ -14,9 +14,14 @@ The `placeholderExtension` displays hint text inside empty editor nodes to guide
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure placeholder options
 
@@ -33,12 +38,22 @@ The `placeholder` extension exposes options for hint text and visibility rules:
 | `includeChildren` | When `true`, the placeholder is shown for parent nodes containing only empty child nodes. | `true` |
 | `showOnlyWhenEditorEmpty` | When `true`, the placeholder is shown only when the entire editor is empty. | `true` |
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 The `placeholder` and `emptyNodeClass` options accept either a string or a function that returns a string. Use a function to render context-specific hints, for example:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/configure-function.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/placeholder/configure-function.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}

@@ -16,9 +16,14 @@ The `textExtension` registers the inline `text` node used to represent plain tex
 
 The `text` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/text/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/text/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 Marks such as bold, italic, or links are applied on top of `text` nodes. Refer to the [Marks](../marks) concept page for more details on how marks attach to text.
 

@@ -14,9 +14,14 @@ The `headingExtension` registers the `heading` block node, which renders semanti
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Node attributes
 
@@ -30,9 +35,14 @@ The `headingExtension` registers the `heading` block node, which renders semanti
 
 The `heading` extension exposes an `htmlAttributes` option that adds custom HTML attributes to rendered heading elements. It defaults to an empty object. Use `.configure()` to set it:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/heading/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 

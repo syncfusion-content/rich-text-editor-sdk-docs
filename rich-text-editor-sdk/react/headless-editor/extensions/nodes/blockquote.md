@@ -14,17 +14,27 @@ The `blockquoteExtension` registers the `blockquote` block container node, which
 
 ## Register the extension
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/blockquote/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/blockquote/app.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure block quote options
 
 The `blockquote` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the rendered `<blockquote>` element. It defaults to an empty object. Use `.configure()` to set it:
 
-```tsx
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/blockquote/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/blockquote/configure.tsx %}
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 
