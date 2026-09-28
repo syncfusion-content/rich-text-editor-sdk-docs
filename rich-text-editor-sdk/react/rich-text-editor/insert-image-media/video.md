@@ -20,6 +20,7 @@ The video feature is enabled by adding the `Video` item to the toolbar using the
 
 Import and inject the `Video` module:
 
+{% raw %}
 ```ts
 import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video, QuickToolbar } from '@syncfusion/ej2-react-richtexteditor';
 
@@ -27,6 +28,7 @@ import { RichTextEditorComponent, Inject, HtmlEditor, Toolbar, Video, QuickToolb
   <Inject services={[HtmlEditor, Toolbar, Video, QuickToolbar]} />
 </RichTextEditorComponent>
 ```
+{% endraw %}
 
 > Rich Text Editor features use individual feature-wise modules. To enable video insertion, inject the `Video` module in the services array.
 
