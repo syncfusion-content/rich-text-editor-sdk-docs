@@ -1,6 +1,6 @@
 ---
 layout: post
-title: List Formatting and Configuration in Modern Rich Text Editor | Syncfusion
+title: List Styles in Modern Rich Text Editor | Syncfusion
 description: Learn how to get configure List in Modern Rich Text Editor and explore setup with core feature examples.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor

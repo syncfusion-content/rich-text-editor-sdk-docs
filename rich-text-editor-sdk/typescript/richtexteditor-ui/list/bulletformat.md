@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BulletFormat List Configuration in Modern Rich Text Editor | Syncfusion
+title: BulletFormat List in Modern Rich Text Editor | Syncfusion
 description: Learn how to get configure Bullet Format List in Modern Rich Text Editor and explore setup with core feature examples.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
