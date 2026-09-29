@@ -10,15 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # NumberFormat List Configuration
 
-## 1. Purpose
-
 The NumberFormat List feature enables users to create and manage ordered lists with numeric markers. Numbered lists are essential for presenting sequential information, step-by-step instructions, ranked items, and any content that requires a specific order.
 
 ---
 
-## 2. List Type
+## List Type
 
-### 2.1 Supported Number Formats
+### Supported Number Formats
 
 The Rich Text Editor supports the following numbering formats for ordered lists:
 
@@ -45,23 +43,23 @@ The following example demonstrates how to add the number format list in toolbar 
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List1/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List1/" %}
 
 ---
 
-## 3. Custom List Items
+## Custom List Items
 
 You can customize which number formats are available in the toolbar by modifying the `numberFormatListItems` property. This allows you to define a subset of supported formats or add custom ones tailored to your application's needs.
 
@@ -73,27 +71,27 @@ The following example demonstrates how to customize the number format list in th
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List2/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List2/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List2/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/NumberFormat-List2/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/NumberFormat-List2/" %}
 
 ---
 
-## 4. Commands Support
+## Commands Support
 
 Commands provide programmatic control over NumberFormat List operations. Use these commands to create, modify, and manage numbered lists within the editor.
 
-### 4.1 Create Numbered List
+### Create Numbered List
 
 **Command:** `numberedList`
 
@@ -109,7 +107,7 @@ Commands provide programmatic control over NumberFormat List operations. Use the
 editor.commands().numberedList().apply();
 ```
 
-### 4.2 Change Number Format
+### Change Number Format
 
 **Command:** `setListStyle`
 
@@ -135,7 +133,7 @@ editor.commands().numberedList().options({ listType: 'upper-alpha' }).apply();
 
 ---
 
-## 5. Related Resources
+## Related Resources
 
 - [List Formatting and Configuration Overview](./formatting-and-configuration.md) - General list feature overview
 - [BulletFormat List Configuration](./bulletformat.md) - Bulleted list setup and usage

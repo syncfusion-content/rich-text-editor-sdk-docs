@@ -10,15 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Checklist Configuration
 
-## 1. Purpose
-
 The Checklist feature enables users to create and manage interactive checkbox lists within the Rich Text Editor. Checklists are ideal for task management, requirements tracking, and scenarios where items need to be marked as complete or incomplete.
 
 ---
 
-## 2. List Type
+## List Type
 
-### 2.1 Checkbox Shape
+### Checkbox Shape
 
 The `checklistType` property defines the visual shape of checkboxes in checklist items.
 
@@ -51,11 +49,11 @@ editor.listSettings.checklistType = 'Square';
 
 ---
 
-## 3. Commands Support
+## Commands Support
 
 Commands provide programmatic control over Checklist operations. Use these commands to create, modify, and manage checklists within the editor.
 
-### 3.1 Create Checklist
+### Create Checklist
 
 **Command:** `taskList`
 
@@ -70,7 +68,7 @@ editor.commands().toggleTaskList().apply();
 
 ---
 
-## 4. Related Resources
+## Related Resources
 
 - [List Formatting and Configuration Overview](./formatting-and-configuration.md) - General list feature overview
 - [NumberFormat List Configuration](./numberformat.md) - Numbered list setup and usage

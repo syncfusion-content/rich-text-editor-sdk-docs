@@ -10,15 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # BulletFormat List Configuration
 
-## 1. Purpose
-
 The BulletFormat List feature enables users to create and manage unordered lists with bullet markers. Bulleted lists are ideal for presenting key points, feature lists, and any content that does not require a specific order.
 
 ---
 
-## 2. List Type
+## List Type
 
-### 2.1 Supported Bullet Styles
+### Supported Bullet Styles
 
 The Rich Text Editor supports the following bullet styles for unordered lists:
 
@@ -39,24 +37,24 @@ The following example demonstrates how to add the bullet format list in toolbar 
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List1/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List1/" %}
 
 
 ---
 
-## 3. Custom List Items
+## Custom List Items
 
 You can customize which bullet styles are available in the toolbar by modifying the `bulletFormatListItems` property. This allows you to define a subset of supported styles or add custom ones tailored to your application's needs.
 
@@ -68,27 +66,27 @@ The following example demonstrates how to customize the bullet format list in th
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List2/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List2/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List2/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/BulletFormat-List2/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/List/BulletFormat-List2/" %}
 
 ---
 
-## 4. Commands Support
+## Commands Support
 
 Commands provide programmatic control over BulletFormat List operations. Use these commands to create, modify, and manage bulleted lists within the editor.
 
-### 4.1 Create Bulleted List
+### Create Bulleted List
 
 **Command:** `bulletList`
 
@@ -104,7 +102,7 @@ Commands provide programmatic control over BulletFormat List operations. Use the
 this.parent.commands().numberedList().apply();
 ```
 
-### 4.2 Change Bullet Style
+### Change Bullet Style
 
 **Command:** `setListStyle`
 
@@ -127,7 +125,7 @@ editor.commands().bulletList().options({ listType: 'square' }).apply();
 
 ---
 
-## 5. Related Resources
+## Related Resources
 
 - [List Formatting and Configuration Overview](./formatting-and-configuration.md) - General list feature overview
 - [NumberFormat List Configuration](./numberformat.md) - Numbered list setup and usage

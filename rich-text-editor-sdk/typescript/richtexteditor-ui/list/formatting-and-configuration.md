@@ -10,15 +10,13 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # List Formatting and Configuration
 
-## 1. Purpose
-
 The List feature in the Rich Text Editor enables users to create and format different types of lists for organizing and presenting content. Lists provide structured ways to display information and improve content readability. The Rich Text Editor supports three primary list types: numbered (NumberFormat), bulleted (BulletFormat), and checklist items.
 
 **Note:** List format items are configured in the toolbar item configuration. Refer to the **Toolbar Module** documentation for toolbar setup instructions.
 
 ---
 
-## 2. List Types Overview
+## List Types Overview
 
 The Rich Text Editor provides three distinct list types, each designed for different content organization needs:
 
@@ -30,7 +28,7 @@ The Rich Text Editor provides three distinct list types, each designed for diffe
 
 ---
 
-## 3. Configuring List Items in Toolbar
+## Configuring List Items in Toolbar
 
 To configure which list format options appear in the toolbar, use the toolbar item configuration. List items are configured through the `listSettings` property when setting up toolbar items.
 
@@ -61,7 +59,7 @@ const editor = new RichTextEditorUI({
 
 ---
 
-## 4. Common Commands
+## Common Commands
 
 All list operations use the following commands:
 - **`numberedList`** - Create a numbered list
@@ -84,9 +82,9 @@ editor.commands().toggleTaskList().apply();
 
 ---
 
-## 5. List Type Details
+## List Type Details
 
-### 5.1 NumberFormat List
+### NumberFormat List
 
 Numbered lists display items in sequential order using numeric markers (1, 2, 3, etc.) or custom numbering formats (Roman numerals, letters, etc.).
 
@@ -102,7 +100,7 @@ Numbered lists display items in sequential order using numeric markers (1, 2, 3,
 
 **See Also:** [NumberFormat List Configuration](./list-numberformat.md)
 
-### 5.2 BulletFormat List
+### BulletFormat List
 
 Bulleted lists display items with bullet markers (•, ○, ■, etc.) without sequential ordering.
 
@@ -118,7 +116,7 @@ Bulleted lists display items with bullet markers (•, ○, ■, etc.) without s
 
 **See Also:** [BulletFormat List Configuration](./list-bulletformat.md)
 
-### 5.3 Checklist
+### Checklist
 
 Checklists display items with interactive checkboxes, allowing users to mark items as complete or incomplete.
 
