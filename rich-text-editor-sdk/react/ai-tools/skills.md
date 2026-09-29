@@ -15,7 +15,7 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/en/) version 16 or higher.
-- A React application (existing or new); see the [Quick Start](../components/rich-text-editor/quick-start).
+- A React application (existing or new); see the [Quick Start](../rich-text-editor/getting-started).
 - An AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, and so on).
 
 ## Key benefits

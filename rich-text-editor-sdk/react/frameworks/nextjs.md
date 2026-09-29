@@ -108,6 +108,6 @@ The Syncfusion® React Rich Text Editor is displayed in the browser as shown bel
 ## See also
 
 - [Syncfusion Rich Text Editor Demos in Next.js](https://ej2.syncfusion.com/nextjs/demos/bootstrap5/rich-text-editor/tools)
-- [Quick Start for the React Rich Text Editor SDK](../components/rich-text-editor/quick-start)
-- [Feature Module Injection](../components/rich-text-editor/module)
+- [Quick Start for the React Rich Text Editor SDK](../rich-text-editor/getting-started)
+- [Feature Module Injection](../rich-text-editor/module)
 - [Built-in Themes](../themes/built-in-themes)
