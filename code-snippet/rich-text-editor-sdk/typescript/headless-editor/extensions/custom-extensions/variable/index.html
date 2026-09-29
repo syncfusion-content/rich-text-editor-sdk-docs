@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syncfusion TypeScript Headless Editor - Document Variable</title>
+    <link href="https://cdn.syncfusion.com/ej2/35.1.1/ej2-base/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/35.1.1/ej2-headless-editor/styles/tailwind3.css" rel="stylesheet" />
+    <style>
+        .variable-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background: #f9fafb;
+        }
+        .variable-toolbar button {
+            padding: 6px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .variable-toolbar button:hover { background: #f3f4f6; }
+        .variable-chip {
+            display: inline-block;
+            padding: 1px 6px;
+            margin: 0 1px;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+        .variable-editor {
+            min-height: 160px;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+        }
+        .variable-hint {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="variable-hint">
+        Type <code>&#123;&#123;customerName&#125;&#125;</code> in the editor to convert it into a variable chip, click a button to insert one, or press <kbd>Mod</kbd>+<kbd>Alt</kbd>+<kbd>v</kbd> to cycle through the list.
+    </div>
+    <div id="variable-toolbar" class="variable-toolbar"></div>
+    <div id="headless-editor" class="variable-editor"></div>
+    <script type="module" src="index.ts"></script>
+</body>
+</html>
