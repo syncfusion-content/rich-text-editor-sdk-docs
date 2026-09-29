@@ -81,6 +81,7 @@ You can apply external CSS and script files to the iframe by using the `resource
 
 **CSS and Scripts Configuration:**
 
+{% raw %}
 ```ts
 iframeSettings={{
   enable: true,
@@ -90,6 +91,7 @@ iframeSettings={{
   }
 }}
 ```
+{% endraw %}
 
 `[Class-component]`
 
