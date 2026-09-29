@@ -143,3 +143,4 @@ NodeContent.sequence(
     NodeContent.node('tableRow').oneOrMore(),
     NodeContent.node('caption').optional()
 )                                                // tableRow+ caption?
+```

@@ -66,29 +66,40 @@ The Headless Editor does not add ARIA roles or labels automatically. Add the fol
 The following example applies the recommended attributes:
 
 ```ts
+import { useEffect, useRef } from 'react';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
 
-const readOnly = true;
-const editor: HeadlessEditor = HeadlessEditor.create({
-  extensions: [basicExtensions],
-  readOnly
-});
-const container: HTMLElement | null = document.getElementById('headless-editor');
+function AccessibleEditor() {
+    const containerRef = useRef<HTMLDivElement>(null);
+    const readOnly = true;
 
-if (container) {
-  editor.mount(container);
+    useEffect(() => {
+        const editor: HeadlessEditor = HeadlessEditor.create({
+            extensions: [basicExtensions],
+            readOnly
+        });
+        if (containerRef.current) {
+            editor.mount(containerRef.current);
+        }
+
+        const editableElement = containerRef.current?.querySelector('.ProseMirror');
+        if (editableElement instanceof HTMLElement) {
+            editableElement.setAttribute('role', 'textbox');
+            editableElement.setAttribute('aria-label', 'Document editor');
+            editableElement.setAttribute('aria-multiline', 'true');
+
+            if (readOnly) {
+                editableElement.setAttribute('aria-readonly', 'true');
+            }
+        }
+
+        return () => editor.destroy();
+    }, []);
+
+    return <div ref={containerRef} />;
 }
 
-const editableElement = container.querySelector('.ProseMirror');
-if (editableElement instanceof HTMLElement) {
-	editableElement.setAttribute('role', 'textbox');
-	editableElement.setAttribute('aria-label', 'Document editor');
-	editableElement.setAttribute('aria-multiline', 'true');
-
-	if (readOnly) {
-		editableElement.setAttribute('aria-readonly', 'true');
-	}
-}
+export default AccessibleEditor;
 ```
 
 Use `aria-labelledby` when a visible label is available. If the editor changes to read-only mode, update `aria-readonly` with the editor state.

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # File Operations in React Headless Editor
 
-The Headless Editor provides file operation support for receiving files through editor interactions and uploading them through a configurable upload handler. The file operation pipeline supports file selection, upload progress, cancellation, upload errors, and upload state management.
+The React Headless Editor provides file operation support for receiving files through editor interactions and uploading them through a configurable upload handler. The file operation pipeline supports file selection, upload progress, cancellation, upload errors, and upload state management.
 
 The upload implementation is provided by the application through the `FileUploadHandler` interface. This keeps the editor independent of the application's server, storage provider, and HTTP implementation.
 
