@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick Toolbar in TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to configure the contextual quick toolbar in the TypeScript Modern Rich Text Editor, including inline mode, append-to-body, text quick toolbar items, custom items, and available built-in items.
+description: Configure the contextual Quick Toolbar in the TypeScript Modern Rich Text Editor — inline mode, append-to-body, and text/image/link/table sub-surfaces.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
@@ -215,7 +215,7 @@ interface ToolbarItemClickedEventArgs {
 `ToolbarItemClickedEventArgs` is defined in
 `@syncfusion/ej2-richtexteditor-ui`'s toolbar settings model and is the
 declared type of the `toolbarSettings.itemClicked` event handler. If your
-import surface only re-exports it indirectly, declare the handler arg shape
+import surface only re-exports it indirectly, declare the handler args shape
 inline (the type is structural).
 
 {% tabs %}
@@ -264,7 +264,7 @@ per surface so the compiler flags unsupported items.
 type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomToolbarItem;
 ```
 
-| Identifier | Behaviour |
+| Identifier | Behavior |
 | --- | --- |
 | `Open` | Opens the link `href` in a new tab using the configured `target`. |
 | `Copy` | Copies the link `href` to the clipboard. |
@@ -279,7 +279,7 @@ type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomTo
 type TableQuickToolbarItem = 'Row' | 'Column' | 'Header' | 'CellBackgroundColor' | 'VerticalAlign' | 'Align' | 'Remove' | '|' | CustomToolbarItem;
 ```
 
-| Identifier | Behaviour |
+| Identifier | Behavior |
 | --- | --- |
 | `Row` | Opens the row sub-popup (insert above / below, delete row). |
 | `Column` | Opens the column sub-popup (insert left / right, delete column). |
@@ -297,7 +297,7 @@ type TableQuickToolbarItem = 'Row' | 'Column' | 'Header' | 'CellBackgroundColor'
 type ImageQuickToolbarItem = 'AltText' | 'Caption' | 'Align' | 'Display' | 'WrapText' | 'Dimension' | 'Replace' | 'Remove' | '|' | CustomToolbarItem;
 ```
 
-| Identifier | Behaviour |
+| Identifier | Behavior |
 | --- | --- |
 | `AltText` | Opens the Alt-Text editor for the selected image. |
 | `Caption` | Toggles the image caption. |
@@ -322,7 +322,7 @@ The Text Quick Toolbar accepts the full `ToolbarItem` union — every built-in
 toolbar identifier, built-in-with-config objects, custom items, and the
 `'|'` separator.
 
-| Identifier | Behaviour |
+| Identifier | Behavior |
 | --- | --- |
 | `Bold`, `Italic`, `Underline`, `Strikethrough` | Toggle inline marks. |
 | `Subscript`, `Superscript` | Toggle inline marks. |
@@ -359,5 +359,5 @@ toolbar identifier, built-in-with-config objects, custom items, and the
   Text Quick Toolbar re-uses.
 * [Table](table.md) — the Table Quick Toolbar rides on top of the
   `Table` toolbar item; this page covers the matching insert / resize
-  behaviour.
+  behavior.
 
