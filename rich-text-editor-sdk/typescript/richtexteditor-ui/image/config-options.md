@@ -97,14 +97,14 @@ Configure custom dimensions or preset sizes for images with min/max constraints.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-dimension-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-dimension-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-dimension-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-dimension-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-dimension-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-dimension-cs1" %}
 
 ### Image Display Options
 
@@ -120,14 +120,14 @@ Configure how images are rendered in the document - either flowing with text or 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/image/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/image/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-display-cs1" %}
 
 ---
 
@@ -141,11 +141,11 @@ The `resize` property controls whether images can be resized by users. By defaul
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/image/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/image/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-resize-cs1" %}
