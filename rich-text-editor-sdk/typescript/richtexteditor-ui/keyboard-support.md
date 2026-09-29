@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Support in TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to use keyboard shortcuts in the TypeScript Modern Rich Text Editor for Word-like editing, text formatting, navigation, accessibility, and custom actions.
+description: Learn how to use keyboard shortcuts in the TypeScript Modern Rich Text Editor for text formatting, navigation, accessibility, and editing actions.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
