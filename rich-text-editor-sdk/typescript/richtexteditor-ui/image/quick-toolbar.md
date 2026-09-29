@@ -28,7 +28,6 @@ Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
 </figure>
 ```
 
-**Configuration:**
 ```typescript
 // Enable Caption in quick toolbar
 const editor = new RichTextEditorUI({
@@ -45,7 +44,6 @@ editor.appendTo('#editor');
 
 Use the Alt Text quick toolbar item to add descriptive alternative text for the image.
 
-**Configuration:**
 ```typescript
 // Enable Alt Text in quick toolbar (default)
 const editor = new RichTextEditorUI({
@@ -62,7 +60,6 @@ editor.appendTo('#editor');
 
 Use the Replace quick toolbar item to replace the currently selected image with a new image source.
 
-**Configuration:**
 ```typescript
 // Enable Replace in quick toolbar
 const editor = new RichTextEditorUI({
@@ -79,7 +76,6 @@ editor.appendTo('#editor');
 
 Control how text flows around the selected image using the Text Wrap quick toolbar item. Configure text wrapping to position images inline with text or allow text to wrap around them.
 
-**Configuration:**
 ```typescript
 // Enable WrapText in quick toolbar
 const editor = new RichTextEditorUI({
@@ -101,7 +97,6 @@ editor.appendTo('#editor');
 
 Set horizontal alignment of the selected image using the Alignment quick toolbar item. You can align images to the left, center, or right within the editor.
 
-**Configuration:**
 ```typescript
 // Enable Align in quick toolbar
 const editor = new RichTextEditorUI({
@@ -124,7 +119,6 @@ editor.appendTo('#editor');
 
 Delete the selected image from the editor using the Remove quick toolbar item. This provides a quick way to remove images without using the delete key.
 
-**Configuration:**
 ```typescript
 // Enable Remove in quick toolbar (recommended)
 const editor = new RichTextEditorUI({
@@ -152,7 +146,6 @@ The default image quick toolbar includes:
 - `Replace` - Replace with a different image
 - `Remove` - Delete the image
 
-**Basic Customization:**
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

@@ -23,8 +23,6 @@ The `allowedTypes` property specifies the image file extensions that can be sele
 - BMP (`.bmp`)
 - WebP (`.webp`)
 
-**Custom Format Configuration:**
-
 ```typescript
 const editor = new RichTextEditorUI({
     imageSettings: {
@@ -36,8 +34,6 @@ const editor = new RichTextEditorUI({
 ### Image Size Restrictions
 
  The `maxFileSize` property specifies the maximum permitted image file size in bytes.
-
-**Configuration Options:**
 
 ```typescript
 const editor = new RichTextEditorUI({
@@ -99,8 +95,6 @@ Understanding the limitations of each format helps you choose the right approach
 
 Configure custom dimensions or preset sizes for images with min/max constraints. The `dimension` property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
 
-**Configuration:**
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-dimension-cs1/index.ts %}
@@ -124,8 +118,6 @@ Configure how images are rendered in the document - either flowing with text or 
 - `inline` (default) - Image flows within the current text line
 - `break` (block) - Image placed on a separate line
 
-**Configuration:**
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/index.ts %}
@@ -146,8 +138,6 @@ Enable and configure image resizing with constraints and event tracking.
 #### Enable Image Resize
 
 The `resize` property controls whether images can be resized by users. By default, image resizing is enabled. Use the `dimension` property to set minimum and maximum constraints for resizable images.
-
-**Configuration:**
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
