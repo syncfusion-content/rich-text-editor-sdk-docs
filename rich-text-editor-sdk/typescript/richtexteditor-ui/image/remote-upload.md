@@ -3,9 +3,9 @@ layout: post
 title: Remote Image Upload in TypeScript RichTextEditorUI | Syncfusion
 description: Learn how to implement remote image upload in TypeScript RichTextEditorUI. Configure endpoints, handle file uploads, rename images, and secure uploads with authentication.
 control: RichTextEditorUI
-platform: rich-text-editor-ui-sdk
+platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-ui-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Remote Image Upload
@@ -15,6 +15,10 @@ Remote image upload enables centralized image management on your server, providi
 ### Writing an Endpoint for Image Upload
 
 When a user uploads an image through the RichTextEditor, the component sends the file to your server using the form field name `UploadFiles`. Your server processes the file and returns a JSON response containing the filename, which the editor combines with the `imageUrl` setting to create the final image source.
+
+#### Client-Side Configuration
+
+Configure the RichTextEditorUI component with the upload endpoint and base URL:
 
 ```typescript
 // ============================================
@@ -26,153 +30,201 @@ const editor = new RichTextEditorUI({
         imageUrl: '/uploads/',                               // Base URL to resolve uploaded filenames
         removeUrl: 'https://api.example.com/images/remove',  // DELETE endpoint for removal
         allowedTypes: ['.jpg', '.jpeg', '.png', '.gif'],     // Allowed file types
-        maxFileSize: 5 * 1024 * 1024,                        // 5MB limit
-        dimension: {
-            width: '300px',                                  // Default width
-            height: '300px',                                 // Default height
-            minWidth: '50px',
-            maxWidth: '1000px',
-            minHeight: '50px',
-            maxHeight: '1000px'
-        }
+        maxFileSize: 5 * 1024 * 1024                         // 5MB limit
     }
 });
-
 editor.appendTo('#editor');
+```
 
+#### Server-Side Configuration
+
+```csharp
 // ============================================
-// SERVER-SIDE: Handle Image Upload (Node.js/Express)
+// SERVER-SIDE: Images Upload (ASP.NET Core)
 // ============================================
-// The RichTextEditor sends files with the form field name 'UploadFiles'
-app.post('/api/images/upload', (req, res) => {
-    try {
-        // Access the uploaded file using the 'UploadFiles' field name
-        const file = req.files?.UploadFiles;
-        
-        if (!file) {
-            return res.status(400).json({ error: 'No file provided' });
+[HttpPost("SaveFile")]
+[EnableCors("AllowAllOrigins")]
+public IActionResult SaveFile(IList<IFormFile> UploadFiles)
+{
+    try
+    {
+        if (UploadFiles == null)
+        {
+            return BadRequest("No files provided.");
         }
-        
-        // Generate a unique filename
-        const timestamp = Date.now();
-        const filename = `${timestamp}-${file.name}`;
-        
-        // Save the file to your uploads directory
-        const uploadPath = path.join(__dirname, 'uploads', filename);
-        
-        file.mv(uploadPath, (err) => {
-            if (err) {
-                console.error('File save error:', err);
-                return res.status(500).json({ error: 'Upload failed' });
+        if (UploadFiles.Count > 1)
+        {
+            return BadRequest("Too many files. Maximum 1 files allowed per request");
+        }
+        foreach (IFormFile uploadFile in UploadFiles)
+        {
+            var fileNameSegment = ContentDispositionHeaderValue.Parse(uploadFile.ContentDisposition).FileName;
+            string? fileName = fileNameSegment.HasValue ? fileNameSegment.Value.Trim('"') : null;
+            //  DOS PREVENTION - Filename length limit
+            if (fileName?.Length > 255)
+                return BadRequest("Filename too long. Maximum 255 characters allowed");
+            //  PATH TRAVERSAL PREVENTION - Block dangerous characters
+            if (fileName != null && (fileName.Contains("..") || fileName.Contains("/") || fileName.Contains("\\")))
+                return BadRequest("Invalid filename - path traversal detected");
+            // Construct the full path to save the file
+            string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "RichTextEditor/", fileName!);
+            // Check if the file doesn't exist and create it
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
             }
-            
-            // ⚠️ IMPORTANT: Return ONLY the filename
-            // The editor will combine it with imageUrl to create the final URL
-            // Example: /uploads/ + image-123456.jpg = /uploads/image-123456.jpg
-            res.status(200).json({
-                name: filename
-            });
-        });
-    } catch (error) {
-        console.error('Upload error:', error);
-        res.status(500).json({ error: 'Upload failed' });
+            using (FileStream fs = System.IO.File.Create(filePath))
+            {
+                uploadFile.CopyTo(fs);
+                fs.Flush();
+            }
+        }
+        return Ok("Files saved successfully.");
     }
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"An error occurred: {ex.Message}");
+    }
+}
+```
+
+Set up your ASP.NET Core application to handle image uploads with proper CORS, static file serving, and multipart body size configuration in your `program.cs` file:
+
+```csharp
+// ============================================
+// SERVER-SIDE: Images Upload (program.cs)
+// ============================================
+using Microsoft.Extensions.FileProviders;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add framework services
+builder.Services.AddControllers();
+
+// OpenAPI helper used in development (keeps API discoverable for the team)
+builder.Services.AddOpenApi();
+
+// Optional: allow directory browsing for diagnostic purposes
+builder.Services.AddDirectoryBrowser();
+
+// CORS: allow the editor during development. Restrict origins in production.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
 });
-```
 
-#### Details about Name Attribute
-
-The RichTextEditorUI component sends uploaded files using the form field name `UploadFiles`. This is a **hard-coded field name** in the component, and your server endpoint must access the file from this exact field name.
-
-**Form Field Name**
-
-When the user selects an image file in the RichTextEditorUI, the component creates a file input with:
-
-```typescript
-<input type="file" name="UploadFiles" />
-```
-
-Your server endpoint must access the uploaded file from the `UploadFiles` field:
-
-```typescript
-// Node.js/Express
-const file = req.files?.UploadFiles;
-
-// ASP.NET Core
-var file = Request.Form.Files["UploadFiles"];
-
-// PHP
-$file = $_FILES['UploadFiles'];
-```
-
-**Response Format**
-
-After processing the file on the server, you must return a JSON response with the `name` property containing **only the filename**:
-
-```typescript
-// Correct response format
-res.json({
-    name: "image-12345.jpg"
+// Increase multipart body length limit (10 MB) for image uploads
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 10 * 1024 * 1024; // 10 MB
 });
-```
 
-The editor will combine this filename with the `imageUrl` setting:
+var app = builder.Build();
 
-```typescript
-imageSettings: {
-    uploadUrl: 'https://api.example.com/images/upload',
-    imageUrl: '/uploads/'    // Base URL
+// Development helpers
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
 }
 
-// Server returns: "image-12345.jpg"
-// Final src becomes: "/uploads/image-12345.jpg"
+// Ensure HTTPS is used
+app.UseHttpsRedirection();
+
+// 1. Serve default wwwroot static files
+app.UseStaticFiles();
+
+// 2. Setup the File Provider for the custom RichTextEditor folder
+var richTextFolderProvider = new PhysicalFileProvider(
+    Path.Combine(app.Environment.ContentRootPath, "wwwroot", "RichTextEditor")
+);
+
+// FIX PART A: Actually SERVE the files from the RichTextEditor folder
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = richTextFolderProvider,
+    RequestPath = "/public"
+});
+
+// FIX PART B: Browse the directory index (HTML list) of the folder
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = richTextFolderProvider,
+    RequestPath = "/public"
+});
+
+// Routing must come before CORS/Authorization for endpoint routing to work correctly
+app.UseRouting();
+
+// Enable CORS policy
+app.UseCors("AllowAllOrigins");
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
 ```
 
 ### Rename Images Before Inserting
 
 You can implement server-side renaming to ensure all uploaded images follow your naming standards. The client receives the renamed filename and automatically inserts it using the `imageUrl` configuration.
 
-```typescript
+#### Server-Side Configuration
+
+```csharp
 // ============================================
-// SERVER-SIDE: Rename Images During Upload
+// SERVER-SIDE: Rename Images During Upload (ASP.NET Core)
 // ============================================
-app.post('/api/images/upload', authenticateUser, (req, res) => {
-    try {
-        const file = req.files?.UploadFiles;
-        const userId = req.user.id;  // From authentication middleware
+[HttpPost("SaveFile")]
+[Authorize]  // Authenticate user
+public IActionResult SaveFile([FromForm] IFormFile[] UploadFiles)
+{
+    try
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;  // From authentication middleware
         
-        if (!file) {
-            return res.status(400).json({ error: 'No file provided' });
-        }
+        if (UploadFiles == null || UploadFiles.Length == 0)
+            return BadRequest(new { error = "No file provided" });
+        
+        var file = UploadFiles[0];
         
         // Extract file extension from original name
-        const originalName = file.name;
-        const fileExtension = originalName.split('.').pop();
+        var originalName = file.FileName;
+        var fileExtension = Path.GetExtension(originalName);
         
         // Generate a standardized filename with user context
-        const timestamp = Date.now();
-        const newFilename = `img-user${userId}-${timestamp}.${fileExtension}`;
+        var timestamp = DateTime.UtcNow.ToString("yyyyMMddHHmmssfff");
+        var newFilename = $"img-user{userId}-{timestamp}{fileExtension}";
         
         // Save with renamed filename
-        const uploadPath = path.join(__dirname, 'uploads', newFilename);
+        var webRoot = _webHostEnvironment.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        var uploadsPath = Path.Combine(webRoot, "uploads");
+        Directory.CreateDirectory(uploadsPath);
         
-        file.mv(uploadPath, (err) => {
-            if (err) {
-                console.error('File save error:', err);
-                return res.status(500).json({ error: 'Upload failed' });
-            }
-            
-            // Return the renamed filename
-            res.status(200).json({
-                name: newFilename
-            });
-        });
-    } catch (error) {
-        console.error('Upload error:', error);
-        res.status(500).json({ error: 'Upload failed' });
+        var savePath = Path.Combine(uploadsPath, newFilename);
+        
+        using (var fs = System.IO.File.Create(savePath))
+        {
+            file.CopyTo(fs);
+            fs.Flush();
+        }
+        
+        // Return the renamed filename
+        return Ok(new { name = newFilename });
     }
-});
+    catch (Exception error)
+    {
+        return StatusCode(500, new { error = "Upload failed" });
+    }
+}
+```
 
+#### Client-Side Configuration
+
+```typescript
 // ============================================
 // CLIENT-SIDE: Track Upload Success
 // ============================================
@@ -183,13 +235,8 @@ const editor = new RichTextEditorUI({
     },
     fileUploadSuccess: (args) => {
         if (args.source === 'Image') {
-            // Server returns renamed filename
-            // Editor automatically combines with imageUrl
             console.log('Image uploaded successfully');
             console.log('Renamed filename:', args.response);
-            // Example flow:
-            // Server returns: 'img-user123-1701234567890.jpg'
-            // Editor creates: /uploads/img-user123-1701234567890.jpg
         }
     }
 });
@@ -197,108 +244,77 @@ const editor = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-### Secure Upload with Authentication
+### Secure image upload with authentication
 
-Implement client-side authentication token handling and server-side validation to secure your upload process.
+You can add additional data with the image uploaded from the RichTextEditorUI on the client side, which can even be received on the server side. By using the `fileUploading` event and its arguments you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+
+#### Client-Side Configuration
 
 ```typescript
-// ============================================
-// CLIENT-SIDE: Send Authentication Token
-// ============================================
+// CLIENT-SIDE: Add authentication token before upload
 const editor = new RichTextEditorUI({
     imageSettings: {
         uploadUrl: 'https://api.example.com/images/upload',
-        imageUrl: '/uploads/',
-        removeUrl: 'https://api.example.com/images/remove',
-        maxFileSize: 5 * 1024 * 1024  // 5MB limit
+        imageUrl: '/uploads/'
     },
-    beforeFileUpload: (args) => {
-        // Add authentication token before upload
-        if (args.source === 'Image') {
-            const token = localStorage.getItem('auth_token');
-            if (token && args.customFormData) {
-                args.customFormData.push({ 
-                    name: 'Authorization', 
-                    value: `Bearer ${token}`
-                });
-            }
-        }
-    },
-    fileUploadSuccess: (args) => {
-        if (args.source === 'Image') {
-            console.log('Image uploaded successfully');
-            console.log('Response:', args.response);
-        }
-    },
-    fileUploadFailed: (args) => {
-        if (args.source === 'Image') {
-            console.error('Image upload failed:', args.error);
-            // Handle different error types
-            if (args.statusCode === 401) {
-                console.error('Authentication failed - token may be expired');
-                // Redirect to login or refresh token
-            } else if (args.statusCode === 413) {
-                console.error('File too large - exceeds size limit');
-            } else if (args.statusCode === 415) {
-                console.error('Unsupported file type');
-            }
-        }
+    fileUploading: (args) => {
+        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
     }
 });
 
 editor.appendTo('#editor');
+```
 
-// ============================================
-// SERVER-SIDE: Validate and Secure Upload
-// ============================================
-app.post('/api/images/upload', 
-    authenticateToken,  // Verify JWT or session token
-    (req, res) => {
-        try {
-            const file = req.files?.UploadFiles;
-            const userId = req.user.id;  // From auth middleware
-            
-            if (!file) {
-                return res.status(400).json({ error: 'No file provided' });
-            }
-            
-            // 1. Validate file type (MIME type check)
-            const allowedMimes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
-            if (!allowedMimes.includes(file.mimetype)) {
-                return res.status(415).json({ error: 'Unsupported file type' });
-            }
-            
-            // 2. Validate file size
-            const maxSize = 5 * 1024 * 1024;  // 5MB
-            if (file.size > maxSize) {
-                return res.status(413).json({ error: 'File too large' });
-            }
-            
-            // 3. Sanitize filename
-            let filename = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-            
-            // 4. Generate secure filename with user context
-            const timestamp = Date.now();
-            const secureFilename = `img-user${userId}-${timestamp}-${filename}`;
-            
-            // 5. Save file to secure location
-            const uploadPath = path.join(__dirname, 'secure-uploads', secureFilename);
-            
-            file.mv(uploadPath, (err) => {
-                if (err) {
-                    console.error('File save error:', err);
-                    return res.status(500).json({ error: 'Upload failed' });
-                }
-                
-                // 6. Return only the filename
-                res.status(200).json({
-                    name: secureFilename
-                });
-            });
-        } catch (error) {
-            console.error('Upload error:', error);
-            res.status(500).json({ error: 'Upload failed' });
+#### Server-Side Configuration
+
+```csharp
+[HttpPost("SaveFile")]
+[EnableCors("AllowAllOrigins")]
+public IActionResult SaveFile(IList<IFormFile> UploadFiles)
+{
+    try
+    {
+        // Fetch custom authentication header from form collection
+        string authorizationHeader = Request.Headers["Authorization"].FirstOrDefault();
+        
+        if (string.IsNullOrEmpty(authorizationHeader))
+            return StatusCode(401, new { error = "Authorization header missing" });
+        if (UploadFiles == null)
+        {
+            return BadRequest("No files provided.");
         }
+        if (UploadFiles.Count > 1)
+        {
+            return BadRequest("Too many files. Maximum 1 files allowed per request");
+        }
+        foreach (IFormFile uploadFile in UploadFiles)
+        {
+            var fileNameSegment = ContentDispositionHeaderValue.Parse(uploadFile.ContentDisposition).FileName;
+            string? fileName = fileNameSegment.HasValue ? fileNameSegment.Value.Trim('"') : null;
+            //  DOS PREVENTION - Filename length limit
+            if (fileName?.Length > 255)
+                return BadRequest("Filename too long. Maximum 255 characters allowed");
+            //  PATH TRAVERSAL PREVENTION - Block dangerous characters
+            if (fileName != null && (fileName.Contains("..") || fileName.Contains("/") || fileName.Contains("\\")))
+                return BadRequest("Invalid filename - path traversal detected");
+            // Construct the full path to save the file
+            string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "RichTextEditor/", fileName!);
+            // Check if the file doesn't exist and create it
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+            using (FileStream fs = System.IO.File.Create(filePath))
+            {
+                uploadFile.CopyTo(fs);
+                fs.Flush();
+            }
+        }
+        return Ok("Files saved successfully.");
     }
-);
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"An error occurred: {ex.Message}");
+    }
+}
 ```

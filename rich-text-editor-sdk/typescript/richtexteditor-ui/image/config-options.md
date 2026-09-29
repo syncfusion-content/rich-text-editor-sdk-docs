@@ -3,9 +3,9 @@ layout: post
 title: Image Configuration Options in TypeScript RichTextEditorUI | Syncfusion
 description: Configure image insertion, storage, display, and resizing in TypeScript RichTextEditorUI. Learn about file formats, size restrictions, save formats, and dimension settings.
 control: RichTextEditorUI
-platform: rich-text-editor-ui-sdk
+platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-ui-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
 # Image Configuration Options
