@@ -1,25 +1,34 @@
 ---
 layout: post
-title: Custom Toolbar Item in JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to add custom toolbar items, handle itemClicked and updatedToolbarStatus events, and update them in the JavaScript Modern Rich Text Editor.
+title: Custom Toolbar Item in TypeScript Modern Rich Text Editor | Syncfusion
+description: Learn how to add custom toolbar items, handle itemClicked and updatedToolbarStatus events, and update them in the TypeScript Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Custom Toolbar Items in JavaScript Modern Rich Text Editor
+# Custom Toolbar Items in TypeScript Modern Rich Text Editor
 
 Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customToolbarItem) also accepts item objects for tools of your own. Give each one an `actionId` — a unique identifier you'll check for in the `itemClicked` handler — plus the usual presentation properties (`prefixIcon`/`suffixIcon`, `tooltipText`, `align`, `cssClass`, `disabled`, and so on, the same set the underlying EJ2 Toolbar item model uses).
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-custom-item/index.js %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/index.ts %}
+
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-custom-item/index.html %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/index.html %}
+
 {% endhighlight %}
+
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/" %}
 
 ## itemClicked Event
 
@@ -35,20 +44,29 @@ Where `itemClicked` tells you a button was pressed, `updatedToolbarStatus` tells
 * `args.blockFormats` — booleans for `paragraph`, `blockQuote`, `orderedList`, `bulletList`, `codeBlock`, `alignLeft`, `alignCenter`, `alignRight`, `alignJustify`, plus `heading` (a string such as `'heading1'`, or `null` when the block isn't a heading).
 * `args.styles` — the resolved `fontColor`, `backgroundColor`, `fontFamily`, and `fontSize` at the selection (each a string or `null`).
 
-This is exactly what you need to drive a completely custom formatting UI instead of the built-in toolbar — apply commands from your own controls, and use `updatedToolbarStatus` to keep them in sync with the editor's actual state.
+This is exactly what you need to drive a completely custom formatting UI instead of the built-in toolbar — apply commands from your own controls.
 
-Refer to the following sample, which drives an external ribbon component — with buttons, a dropdown, and a color picker — entirely from `commands()` and `updatedToolbarStatus`:
+Refer to the following sample, which drives an external ribbon component — with buttons, a dropdown, and a color picker — entirely from `commands()`:
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-ribbon/index.js %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/index.ts %}
+
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-ribbon/index.html %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/index.html %}
+
 {% endhighlight %}
+
 {% endtabs %}
 
-This sample turns off the built-in toolbar entirely (`toolbarSettings.enable: false`) and replaces it with a plain HTML "ribbon" — three formatting buttons, a heading `<select>`, and a color `<input>`. Each control calls the matching `commands()` method on click, and the `updatedToolbarStatus` handler keeps all three in sync: it toggles an active class on the Bold/Italic/Underline buttons from `activeMarks`, sets the heading dropdown from `blockFormats.heading`, and sets the color input from `styles.fontColor`.
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/" %}
+
+This sample turns off the built-in toolbar entirely (`toolbarSettings.enable: false`) and replaces it with a plain HTML "ribbon" — three formatting buttons, a heading `<select>`, and a color `<input>`. Each control calls the matching `commands()` method on click.
 
 ## Updating toolbar items at runtime
 

@@ -1,4 +1,8 @@
-var editor = new ej.richtexteditorui.RichTextEditorUI({
+import { RichTextEditorUI, SlashCommand } from '@syncfusion/ej2-richtexteditor-ui';
+
+RichTextEditorUI.Inject(SlashCommand);
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
     value: '<p>Getting started with the Rich Text Editor UI.</p>',
     valueFormat: 'html',
     toolbarSettings: {
@@ -9,4 +13,5 @@ var editor = new ej.richtexteditorui.RichTextEditorUI({
         maxFileSize: 30000000
     }
 });
+
 editor.appendTo('#editor');

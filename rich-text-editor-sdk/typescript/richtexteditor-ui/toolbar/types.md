@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Types in JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to configure toolbar items, layout, and floating behavior in the JavaScript Modern Rich Text Editor.
+title: Toolbar Types in TypeScript Modern Rich Text Editor | Syncfusion
+description: Learn how to configure toolbar items, layout, and floating behavior in the TypeScript Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Toolbar Types in JavaScript Modern Rich Text Editor
+# Toolbar Types in TypeScript Modern Rich Text Editor
 
 The main toolbar is the primary interaction surface for formatting commands, and its layout and contents are fully configurable through `toolbarSettings`.
 
@@ -21,13 +21,22 @@ Set `toolbarSettings.items` to the ordered list of buttons (and `'|'` separators
 If you don't want a toolbar at all — for example, when the editor is driven entirely by your own UI, as in the [ribbon sample](../toolbar/custom-toolbar-items#updatedtoolbarstatus-event) — set `toolbarSettings.enable` to `false` and no toolbar is rendered; the editor stays fully usable programmatically.
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-config/index.js %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-config/index.ts %}
+
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-config/index.html %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-config/index.html %}
+
 {% endhighlight %}
+
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-config/" %}
 
 #### Available toolbar items
 
@@ -59,10 +68,19 @@ For a long document, losing the toolbar off-screen as the user scrolls down is d
 
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-type/index.js %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-type/index.ts %}
+
 {% endhighlight %}
+
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/toolbar-type/index.html %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-type/index.html %}
+
 {% endhighlight %}
+
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-type/" %}

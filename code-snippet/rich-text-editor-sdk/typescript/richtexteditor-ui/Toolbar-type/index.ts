@@ -1,5 +1,8 @@
-var editor = new ej.richtexteditorui.RichTextEditorUI({
-    height: '350px',
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+import { CheckBox } from '@syncfusion/ej2-buttons';
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
     width: '70%',
     toolbarSettings: {
         items: [
@@ -14,57 +17,56 @@ var editor = new ej.richtexteditorui.RichTextEditorUI({
         ],
         type: 'Expanded',
         position: 'Top'
-    },
+    }
 });
 editor.appendTo('#editor');
 
-var toolbarTypeData = [
+const toolbarTypeData: Array<{ text: string; value: string }> = [
     { text: 'Expanded', value: 'Expanded' },
     { text: 'MultiRow', value: 'MultiRow' },
     { text: 'Scrollable', value: 'Scrollable' }
 ];
 
-var toolbarPositionData = [
+const toolbarPositionData: Array<{ text: string; value: string }> = [
     { text: 'Top', value: 'Top' },
     { text: 'Bottom', value: 'Bottom' }
 ];
 
-var toolbarTypeDropdown = new ej.dropdowns.DropDownList({
+const toolbarTypeDropdown: DropDownList = new DropDownList({
     dataSource: toolbarTypeData,
     fields: { text: 'text', value: 'value' },
     value: 'Expanded',
     popupHeight: '200px',
     floatLabelType: 'Auto',
-    change: function (args) {
-        toolbarRTE.toolbarSettings.type = args.value;
-        toolbarRTE.dataBind();
+    change: function (args: any) {
+        editor.toolbarSettings.type = args.value;
+        editor.dataBind();
     }
 });
 
 toolbarTypeDropdown.appendTo('#toolbarType');
 
-var toolbarPositionDropdown = new ej.dropdowns.DropDownList({
+const toolbarPositionDropdown: DropDownList = new DropDownList({
     dataSource: toolbarPositionData,
     fields: { text: 'text', value: 'value' },
     value: 'Top',
     popupHeight: '150px',
     floatLabelType: 'Auto',
-    change: function (args) {
-        toolbarRTE.toolbarSettings.position = args.value;
-        toolbarRTE.dataBind();
+    change: function (args: any) {
+        editor.toolbarSettings.position = args.value;
+        editor.dataBind();
     }
 });
 
 toolbarPositionDropdown.appendTo('#toolbarPosition');
 
-var float = new ej.buttons.CheckBox({
+const float: CheckBox = new CheckBox({
     checked: true,
     label: 'Enable Floating',
-    change: function (args) {
-        toolbarRTE.toolbarSettings.enableFloating = args.checked;
-        toolbarRTE.dataBind();
+    change: function (args: any) {
+        editor.toolbarSettings.enableFloating = args.checked;
+        editor.dataBind();
     }
 });
 
 float.appendTo('#float');
-
