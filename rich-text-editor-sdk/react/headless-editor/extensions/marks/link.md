@@ -1,32 +1,27 @@
 ---
 layout: post
-title: Link Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Link mark in the TypeScript Headless Editor, including setLink, unsetLink, and URL validation.
+title: Link Mark in React Headless Editor | Syncfusion
+description: Learn how to configure the Link mark in the React Headless Editor, including setLink, unsetLink, and URL validation.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Link Mark in TypeScript Headless Editor
+# Link Mark in React Headless Editor
 
 The `linkExtension` registers the `link` mark, which applies hyperlink formatting to text and renders the content as an `<a>` element with `href`, `title`, `target`, and `rel` attributes. It contributes the `setLink` and `unsetLink` commands, a keyboard shortcut for opening the link prompt, Markdown-style input rules that convert `[label](url)` into links, and URL validation against a protocol allow list to block unsafe schemes.
 
 ## Register the extension
 
-```html
-<div id="editor"></div>
-```
-
-```ts
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [linkExtension]
-});
-
-editor.mount(document.getElementById('editor') as HTMLElement);
-```
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/app.tsx %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure the extension
 
@@ -37,24 +32,14 @@ The `link` extension exposes the following options. Use `.configure()` to set th
 | `htmlAttributes` | `Record<string, string>` | `{}` | Custom HTML attributes applied to the rendered `<a>` element. |
 | `openOnClick` | `boolean` | `true` | Determines whether clicking a link opens it in a new tab. When disabled, the cursor is placed inside the link for in-place editing. |
 
-```html
-<div id="editor"></div>
-```
-
-```ts
-import { HeadlessEditor, linkExtension } from '@syncfusion/ej2-headless-editor';
-
-const editor = HeadlessEditor.create({
-    extensions: [
-        linkExtension.configure({
-            htmlAttributes: { class: 'my-custom-class' },
-            openOnClick: true
-        })
-    ]
-});
-
-editor.mount(document.getElementById('editor') as HTMLElement);
-```
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/configure.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/marks/link/configure.tsx %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Commands
 
