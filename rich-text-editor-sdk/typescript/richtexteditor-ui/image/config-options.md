@@ -48,23 +48,6 @@ const editor = new RichTextEditorUI({
 });
 ```
 
-**Size Validation in Events:**
-
-```typescript
-editor.addEventListener('beforeFileUpload', (args: BeforeFileUploadEventArgs) => {
-    const file = args.filesData?.[0];
-    
-    if (file) {
-        // Check file size
-        const maxSize = 5 * 1024 * 1024;  // 5MB
-        if (file.size > maxSize) {
-            args.cancel = true;
-            console.log('File too large');
-        }
-    }
-});
-```
-
 ### Image Save Formats
 
 The RichTextEditor supports two primary formats for saving images: Blob (server-based) and Base64 (embedded). Each format offers distinct advantages and trade-offs based on your use case.
