@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Schema in React Headless Editor | Syncfusion
-description: Understand the Headless Editor schema — NodeDefinition, MarkDefinition, and AttributeDefinition — and how extensions contribute to it.
+description: Understand the React Headless Editor schema, including NodeDefinition, MarkDefinition, and AttributeDefinition for defining document structure.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

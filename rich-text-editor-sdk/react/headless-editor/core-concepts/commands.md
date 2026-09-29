@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands in React Headless Editor | Syncfusion
-description: Use the Headless Editor command api to execute, check availability, and chain generic built-in commands.
+description: Learn how to use commands in the React Headless Editor to execute editor actions, check command availability, and work with built-in commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
