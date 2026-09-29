@@ -18,7 +18,7 @@ When a user uploads an image through the RichTextEditor, the component sends the
 
 #### Client-Side Configuration
 
-Configure the RichTextEditorUI component with the upload endpoint and base URL:
+Configure the Modern Rich Text Editor component with the upload endpoint and base URL:
 
 ```typescript
 // ============================================
@@ -246,7 +246,7 @@ editor.appendTo('#editor');
 
 ### Secure image upload with authentication
 
-You can add additional data with the image uploaded from the RichTextEditorUI on the client side, which can even be received on the server side. By using the `fileUploading` event and its arguments you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+You can add additional data with the image uploaded from the Modern Rich Text Editor on the client side, which can even be received on the server side. By using the `fileUploading` event and its arguments you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
 #### Client-Side Configuration
 

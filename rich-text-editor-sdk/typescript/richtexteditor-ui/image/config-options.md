@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Image Configuration Options in TypeScript Modern Rich Text Editor
 
-Comprehensive configuration options enable fine-tuned control over image insertion, storage, and display in the RichTextEditorUI. This section covers supported formats, size restrictions, save formats, and display configurations.
+Comprehensive configuration options enable fine-tuned control over image insertion, storage, and display in the Modern Rich Text Editor. This section covers supported formats, size restrictions, save formats, and display configurations.
 
 ### Allowed Image Formats
 
