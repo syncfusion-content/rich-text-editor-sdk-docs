@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to get started with the ASP.NET Core Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor"
-platform: ej2-asp-core-mvc
+platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
