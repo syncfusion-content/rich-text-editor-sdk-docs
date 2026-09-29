@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote Image Upload in TypeScript RichTextEditorUI | Syncfusion
-description: Learn how to implement remote image upload in TypeScript RichTextEditorUI. Configure endpoints, handle file uploads, rename images, and secure uploads with authentication.
-control: RichTextEditorUI
+title: Remote Image Upload in TypeScript Modern Rich Text Editor | Syncfusion
+description: Learn how to implement remote image upload in TypeScript Modern Rich Text Editor. Configure endpoints, handle file uploads, rename images, and secure uploads with authentication.
 platform: rich-text-editor-sdk
+control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Remote Image Upload
+# Remote Image Upload in TypeScript Modern Rich Text Editor
 
 Remote image upload enables centralized image management on your server, providing better control over storage, performance, and security. This section covers implementing a complete server-side upload pipeline with authentication and validation.
 

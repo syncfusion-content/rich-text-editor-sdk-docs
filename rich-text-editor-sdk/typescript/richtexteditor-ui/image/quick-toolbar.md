@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Image Quick Toolbar in TypeScript RichTextEditorUI | Syncfusion
-description: Configure and customize the image quick toolbar in TypeScript RichTextEditorUI. Access operations like Alt Text, Caption, Alignment, Resize, Replace, and Remove instantly.
-control: RichTextEditorUI
+title: Image Quick Toolbar in TypeScript Modern Rich Text Editor | Syncfusion
+description: Configure and customize the image quick toolbar in TypeScript Modern Rich Text Editor. Access operations like Alt Text, Caption, Alignment, Resize, Replace, and Remove instantly.
 platform: rich-text-editor-sdk
+control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Image Quick Toolbar
+# Image Quick Toolbar in TypeScript Modern Rich Text Editor
 
 The Image Quick Toolbar provides instant access to common image operations when an image is selected in the editor. It offers a streamlined interface for managing image properties, alignment, sizing, and other aspects without requiring modal dialogs.
 

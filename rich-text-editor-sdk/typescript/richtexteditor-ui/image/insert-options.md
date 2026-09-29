@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Insert Images in TypeScript RichTextEditorUI | Syncfusion
-description: Learn how to insert images in the TypeScript RichTextEditorUI using local storage and web URLs. Explore multiple insertion methods and configure image settings.
-control: RichTextEditorUI
+title: Insert Images in TypeScript Modern Rich Text Editor | Syncfusion
+description: Learn how to insert images in the TypeScript Modern Rich Text Editor using local storage and web URLs. Explore multiple insertion methods and configure image settings.
 platform: rich-text-editor-sdk
+control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Insert Images in TypeScript RichTextEditorUI
+# Insert Images in TypeScript Modern Rich Text Editor
 
 Image insertion in the RichTextEditorUI supports multiple methods to accommodate different workflows and use cases. The editor provides flexible options for inserting images from local storage and web URLs.
 
