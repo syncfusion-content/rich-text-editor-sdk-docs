@@ -32,10 +32,14 @@ The `checklistType` property defines the visual shape of checkboxes in checklist
 
 ```typescript
 // Create a Rich Text Editor with default square checkboxes
-const editor = new RichTextEditor({});
+const editor = new RichTextEditorUI({
+  toolbarSettings: {
+        items: ['Checklist']
+    },
+});
 
 // Use circular checkboxes
-const editor = new RichTextEditor({
+const editor = new RichTextEditorUI({
   listSettings: {
     checklistType: 'Circle'
   }

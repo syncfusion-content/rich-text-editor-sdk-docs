@@ -37,7 +37,7 @@ To configure which list format options appear in the toolbar, use the toolbar it
 **Configure in Toolbar Settings:**
 
 ```typescript
-const editor = new RichTextEditor({
+const editor = new RichTextEditorUI({
   toolbar: {
     items: [
       'NumberFormatList',  // Displays configured number formats
