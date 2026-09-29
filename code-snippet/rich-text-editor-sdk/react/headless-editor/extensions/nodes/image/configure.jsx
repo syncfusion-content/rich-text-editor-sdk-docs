@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { useRef, useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
 import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
 
 function App() {
@@ -21,13 +21,19 @@ function App() {
                         minHeight: 50
                     }
                 })
-            ]
+            ],
         });
         if (editorRef.current) {
             editor.mount(editorRef.current);
         }
         return () => editor.destroy();
     }, []);
+
+    return <div ref={editorRef} />;
+}
+
+const rootElement = document.getElementById('app') || document.body;
+createRoot(rootElement).render(<App />);
 
     return <div ref={editorRef}></div>;
 }

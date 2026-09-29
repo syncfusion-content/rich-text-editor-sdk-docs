@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { useRef, useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
 import { HeadlessEditor, blockquoteExtension } from '@syncfusion/ej2-headless-editor';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
                 blockquoteExtension.configure({
                     htmlAttributes: { class: 'custom-quote' }
                 })
-            ]
+            ],
         });
         if (editorRef.current) {
             editor.mount(editorRef.current);
@@ -20,7 +20,8 @@ function App() {
         return () => editor.destroy();
     }, []);
 
-    return <div ref={editorRef}></div>;
+    return <div ref={editorRef} />;
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+const rootElement = document.getElementById('app') || document.body;
+createRoot(rootElement).render(<App />);
