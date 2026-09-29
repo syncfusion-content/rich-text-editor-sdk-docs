@@ -114,11 +114,7 @@ Understanding the limitations of each format helps you choose the right approach
 
 ### Dimension
 
-**Purpose**: Adjust the width and height of the selected image
-
-Configure custom dimensions or preset sizes for images with min/max constraints.
-
-The `dimension` property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
+Configure custom dimensions or preset sizes for images with min/max constraints. The `dimension` property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
 
 **Configuration:**
 
@@ -135,11 +131,9 @@ The `dimension` property allows you to set default and constraint values for ima
 
 ### Image Display Options
 
-**Purpose**: Control how images are rendered and positioned within the editor content.
+Control how images are rendered and positioned within the editor content through display modes and wrapping options.
 
 #### Display
-
-**Purpose**: Change the display mode of the image (inline or block/break)
 
 Configure how images are rendered in the document - either flowing with text or on a separate line.
 
@@ -164,7 +158,7 @@ Configure how images are rendered in the document - either flowing with text or 
 
 ### Image Resizing
 
-**Purpose**: Enable and configure image resizing with constraints and event tracking.
+Enable and configure image resizing with constraints and event tracking.
 
 #### Enable Image Resize
 

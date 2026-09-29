@@ -14,8 +14,6 @@ Remote image upload enables centralized image management on your server, providi
 
 ### Writing an Endpoint for Image Upload
 
-**Purpose**: Establish a server endpoint that accepts and processes image uploads from the RichTextEditor.
-
 When a user uploads an image through the RichTextEditor, the component sends the file to your server using the form field name `UploadFiles`. Your server processes the file and returns a JSON response containing the filename, which the editor combines with the `imageUrl` setting to create the final image source.
 
 **Complete Example: Server Endpoint + Editor Configuration**
@@ -86,8 +84,6 @@ app.post('/api/images/upload', (req, res) => {
 
 #### Details about Name Attribute
 
-**Purpose**: Understand the form field name used during image upload and the response format requirements.
-
 The RichTextEditorUI component sends uploaded files using the form field name `UploadFiles`. This is a **hard-coded field name** in the component, and your server endpoint must access the file from this exact field name.
 
 **Form Field Name**
@@ -135,8 +131,6 @@ imageSettings: {
 ```
 
 ### Rename Images Before Inserting
-
-**Purpose**: Apply consistent naming conventions to uploaded images for better organization and management.
 
 You can implement server-side renaming to ensure all uploaded images follow your naming standards. The client receives the renamed filename and automatically inserts it using the `imageUrl` configuration.
 
@@ -208,8 +202,6 @@ editor.appendTo('#editor');
 ```
 
 ### Secure Upload with Authentication
-
-**Purpose**: Add authentication and validation to protect your image upload endpoint and ensure only authorized users can upload images.
 
 Implement client-side authentication token handling and server-side validation to secure your upload process.
 

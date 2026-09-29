@@ -18,8 +18,6 @@ The Image Quick Toolbar appears automatically when an image is selected. It prov
 
 #### Caption
 
-**Purpose**: Add or edit image captions
-
 Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
 
 **HTML Output:**
@@ -45,8 +43,6 @@ editor.appendTo('#editor');
 
 #### Alt Text
 
-**Purpose**: Add alternative text for accessibility and semantic HTML
-
 Use the Alt Text quick toolbar item to add descriptive alternative text for the image.
 
 **Configuration:**
@@ -63,8 +59,6 @@ editor.appendTo('#editor');
 ---
 
 #### Replace
-
-**Purpose**: Replace the selected image with a different one
 
 Use the Replace quick toolbar item to replace the currently selected image with a new image source.
 
@@ -83,7 +77,7 @@ editor.appendTo('#editor');
 
 #### Text Wrap
 
-**Purpose**: Control how text flows around the image
+Control how text flows around the selected image using the Text Wrap quick toolbar item. Configure text wrapping to position images inline with text or allow text to wrap around them.
 
 **Configuration:**
 ```typescript
@@ -105,7 +99,7 @@ editor.appendTo('#editor');
 
 #### Alignment
 
-**Purpose**: Set horizontal alignment of the selected image
+Set horizontal alignment of the selected image using the Alignment quick toolbar item. You can align images to the left, center, or right within the editor.
 
 **Configuration:**
 ```typescript
@@ -128,9 +122,7 @@ editor.appendTo('#editor');
 
 #### Remove
 
-**Purpose**: Delete the selected image from the editor
-
-Use the Remove quick toolbar item to delete the currently selected image from the editor.
+Delete the selected image from the editor using the Remove quick toolbar item. This provides a quick way to remove images without using the delete key.
 
 **Configuration:**
 ```typescript
@@ -147,9 +139,7 @@ editor.appendTo('#editor');
 
 ### Customizing Quick Toolbar Items
 
-**Purpose**: Configure which toolbar items appear and in what order when an image is selected.
-
-The RichTextEditorUI provides comprehensive customization options for the image quick toolbar, offering a rich set of tools including 'AltText', 'Caption', 'Align', 'Display', 'WrapText', 'Dimension', 'Replace', and 'Remove'. By configuring these toolbar items through the `quickToolbarSettings` property, you can create a tailored editing experience that streamlines image operations. This flexibility enables developers to build interfaces that align with their specific workflow requirements while maintaining an intuitive user experience for content editing and image manipulation.
+The RichTextEditorUI provides comprehensive customization options for the image quick toolbar, offering a rich set of tools including 'AltText', 'Caption', 'Align', 'Display', 'WrapText', 'Dimension', 'Replace', and 'Remove'. By configuring these toolbar items through the `quickToolbarSettings` property, you can create a tailored editing experience that streamlines image operations.
 
 **Default Quick Toolbar Items for Images:**
 The default image quick toolbar includes:
