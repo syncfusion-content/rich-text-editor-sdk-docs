@@ -7,7 +7,6 @@
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from "vue";
 import { HeadlessEditor, basicExtensions, placeholderExtension } from "@syncfusion/ej2-headless-editor";
-
 const editorElement = ref(null);
 let headlessEditor;
 onMounted(() => {
