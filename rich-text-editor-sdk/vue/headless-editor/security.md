@@ -32,23 +32,19 @@ import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor
 
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
-
 onMounted(() => {
   const container = editorContainer.value;
   if (!container) {
     return;
   }
-
   editor = HeadlessEditor.create({
     extensions: [basicExtensions],
     clipboard: {
       transformHTML: (html: string) => html.replace(/\sdata-source="external"/g, '')
     }
   });
-
   editor.mount(container);
 });
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -67,7 +63,6 @@ export default defineComponent({
       editor: null as HeadlessEditor | null
     };
   },
-
   mounted() {
     const editor = HeadlessEditor.create({
       extensions: [basicExtensions],
@@ -75,11 +70,9 @@ export default defineComponent({
         transformHTML: (html: string) => html.replace(/\sdata-source="external"/g, '')
       }
     });
-
     this.editor = markRaw(editor);
     editor.mount(this.$refs.editorContainer as HTMLDivElement);
   },
-
   beforeUnmount() {
     this.editor?.destroy();
   }
@@ -119,27 +112,22 @@ import {
   basicExtensions,
   type BeforeFileUploadEventArgs
 } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
 const allowedTypes = new Set(['image/jpeg', 'image/png']);
 let editor: HeadlessEditor | null = null;
-
 onMounted(() => {
   const container = editorContainer.value;
   if (!container) {
     return;
   }
-
   editor = HeadlessEditor.create({ extensions: [basicExtensions] });
   editor.mount(container);
-
   editor.on<BeforeFileUploadEventArgs>('beforeFileUpload', (args) => {
     if (!allowedTypes.has(args.file.type) || args.file.size > 5 * 1024 * 1024) {
       args.cancel = true;
     }
   });
 });
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -155,28 +143,23 @@ import {
   basicExtensions,
   type BeforeFileUploadEventArgs
 } from '@syncfusion/ej2-headless-editor';
-
 const allowedTypes = new Set(['image/jpeg', 'image/png']);
-
 export default defineComponent({
   data() {
     return {
       editor: null as HeadlessEditor | null
     };
   },
-
   mounted() {
     const editor = HeadlessEditor.create({ extensions: [basicExtensions] });
     this.editor = markRaw(editor);
     editor.mount(this.$refs.editorContainer as HTMLDivElement);
-
     editor.on<BeforeFileUploadEventArgs>('beforeFileUpload', (args) => {
       if (!allowedTypes.has(args.file.type) || args.file.size > 5 * 1024 * 1024) {
         args.cancel = true;
       }
     });
   },
-
   beforeUnmount() {
     this.editor?.destroy();
   }
@@ -200,32 +183,26 @@ The link command validates URLs before applying a link mark. It rejects empty va
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, linkExtension } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
 const linkResult = ref('');
 let editor: HeadlessEditor | null = null;
-
 onMounted(() => {
   const container = editorContainer.value;
   if (!container) {
     return;
   }
-
   editor = HeadlessEditor.create({
     extensions: [basicExtensions, linkExtension]
   });
   editor.mount(container);
 });
-
 function testLink(href: string, displayText: string) {
   if (!editor) {
     return;
   }
-
   const applied = editor.execute('setLink', { href, displayText });
   linkResult.value = applied ? 'The link was accepted.' : 'The link was rejected.';
 }
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -246,7 +223,6 @@ onBeforeUnmount(() => editor?.destroy());
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
 import { HeadlessEditor, basicExtensions, linkExtension } from '@syncfusion/ej2-headless-editor';
-
 export default defineComponent({
   data() {
     return {
@@ -254,26 +230,21 @@ export default defineComponent({
       linkResult: ''
     };
   },
-
   mounted() {
     const editor = HeadlessEditor.create({
       extensions: [basicExtensions, linkExtension]
     });
-
     this.editor = markRaw(editor);
     editor.mount(this.$refs.editorContainer as HTMLDivElement);
   },
-
   beforeUnmount() {
     this.editor?.destroy();
   },
-
   methods: {
     testLink(href: string, displayText: string) {
       if (!this.editor) {
         return;
       }
-
       const applied = this.editor.execute('setLink', { href, displayText });
       this.linkResult = applied ? 'The link was accepted.' : 'The link was rejected.';
     }

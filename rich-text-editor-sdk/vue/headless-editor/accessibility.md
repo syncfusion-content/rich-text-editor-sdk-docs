@@ -70,35 +70,29 @@ The following Vue component applies the recommended attributes to the editable e
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
 const readOnly = true;
 let editor: HeadlessEditor | null = null;
-
 onMounted(() => {
 	const container = editorContainer.value;
 	if (!container) {
 		return;
 	}
-
 	editor = HeadlessEditor.create({
 		extensions: [basicExtensions],
 		readOnly
 	});
 	editor.mount(container);
-
 	const editableElement = container.querySelector('.ProseMirror');
 	if (editableElement instanceof HTMLElement) {
 		editableElement.setAttribute('role', 'textbox');
 		editableElement.setAttribute('aria-label', 'Document editor');
 		editableElement.setAttribute('aria-multiline', 'true');
-
 		if (readOnly) {
 			editableElement.setAttribute('aria-readonly', 'true');
 		}
 	}
 });
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -110,7 +104,6 @@ onBeforeUnmount(() => editor?.destroy());
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
-
 export default defineComponent({
 	data() {
 		return {
@@ -118,7 +111,6 @@ export default defineComponent({
 			readOnly: true
 		};
 	},
-
 	mounted() {
 		const editor = HeadlessEditor.create({
 			extensions: [basicExtensions],
@@ -127,19 +119,16 @@ export default defineComponent({
 		this.editor = markRaw(editor);
 		const container = this.$refs.editorContainer as HTMLDivElement;
 		editor.mount(container);
-
 		const editableElement = container.querySelector('.ProseMirror');
 		if (editableElement instanceof HTMLElement) {
 			editableElement.setAttribute('role', 'textbox');
 			editableElement.setAttribute('aria-label', 'Document editor');
 			editableElement.setAttribute('aria-multiline', 'true');
-
 			if (this.readOnly) {
 				editableElement.setAttribute('aria-readonly', 'true');
 			}
 		}
 	},
-
 	beforeUnmount() {
 		this.editor?.destroy();
 	}
@@ -163,31 +152,25 @@ The editor supports keyboard shortcuts for formatting, headings, lists, links, u
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
-
 const customShortcutExtension = defineExtension({
 	name: 'custom-shortcuts',
-
 	keyboardShortcuts() {
 		return {
 			'Mod-Alt-b': () => this.editor.commands.toggleBold()
 		};
 	}
 });
-
 onMounted(() => {
 	if (!editorContainer.value) {
 		return;
 	}
-
 	editor = HeadlessEditor.create({
 		extensions: [basicExtensions, customShortcutExtension]
 	});
 	editor.mount(editorContainer.value);
 });
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -199,24 +182,20 @@ onBeforeUnmount(() => editor?.destroy());
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension } from '@syncfusion/ej2-headless-editor';
-
 const customShortcutExtension = defineExtension({
 	name: 'custom-shortcuts',
-
 	keyboardShortcuts() {
 		return {
 			'Mod-Alt-b': () => this.editor.commands.toggleBold()
 		};
 	}
 });
-
 export default defineComponent({
 	data() {
 		return {
 			editor: null as HeadlessEditor | null
 		};
 	},
-
 	mounted() {
 		const editor = HeadlessEditor.create({
 			extensions: [basicExtensions, customShortcutExtension]
@@ -224,7 +203,6 @@ export default defineComponent({
 		this.editor = markRaw(editor);
 		editor.mount(this.$refs.editorContainer as HTMLDivElement);
 	},
-
 	beforeUnmount() {
 		this.editor?.destroy();
 	}
@@ -272,13 +250,10 @@ The following Vue component configures a custom node that renders semantic `asid
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
-
 const noteExtension = defineExtension({
 	name: 'accessible-note',
-
 	nodes() {
 		return [{
 			name: 'accessibleNote',
@@ -286,7 +261,6 @@ const noteExtension = defineExtension({
 			content: NodeContent.block().oneOrMore()
 		}];
 	},
-
 	domSpecs() {
 		return {
 			nodes: {
@@ -297,18 +271,15 @@ const noteExtension = defineExtension({
 		};
 	}
 });
-
 onMounted(() => {
 	if (!editorContainer.value) {
 		return;
 	}
-
 	editor = HeadlessEditor.create({
 		extensions: [basicExtensions, noteExtension]
 	});
 	editor.mount(editorContainer.value);
 });
-
 onBeforeUnmount(() => editor?.destroy());
 </script>
 
@@ -320,10 +291,8 @@ onBeforeUnmount(() => editor?.destroy());
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
-
 const noteExtension = defineExtension({
 	name: 'accessible-note',
-
 	nodes() {
 		return [{
 			name: 'accessibleNote',
@@ -331,7 +300,6 @@ const noteExtension = defineExtension({
 			content: NodeContent.block().oneOrMore()
 		}];
 	},
-
 	domSpecs() {
 		return {
 			nodes: {
@@ -342,14 +310,12 @@ const noteExtension = defineExtension({
 		};
 	}
 });
-
 export default defineComponent({
 	data() {
 		return {
 			editor: null as HeadlessEditor | null
 		};
 	},
-
 	mounted() {
 		const editor = HeadlessEditor.create({
 			extensions: [basicExtensions, noteExtension]
@@ -357,7 +323,6 @@ export default defineComponent({
 		this.editor = markRaw(editor);
 		editor.mount(this.$refs.editorContainer as HTMLDivElement);
 	},
-
 	beforeUnmount() {
 		this.editor?.destroy();
 	}
@@ -389,21 +354,16 @@ The `accessibleStatus` node type must also be registered in the editor schema fo
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 import { HeadlessEditor, basicExtensions, defineExtension, type NodeViewDescriptor } from '@syncfusion/ej2-headless-editor';
-
 const editorContainer = ref<HTMLDivElement | null>(null);
-
 let editor: HeadlessEditor | null = null;
-
 const statusNodeViewExtension = defineExtension({
 	name: 'accessible-status-view',
-
 	nodeViews() {
 		return {
 			accessibleStatus: (): NodeViewDescriptor => {
 				const dom: HTMLElement = document.createElement('div');
 				dom.setAttribute('role', 'status');
 				dom.setAttribute('aria-live', 'polite');
-
 				return { dom };
 			}
 		};
@@ -411,18 +371,14 @@ const statusNodeViewExtension = defineExtension({
 });
 onMounted(() => {
 	const container = editorContainer.value;
-
 	if (!container) {
 		return;
 	}
-
 	editor = HeadlessEditor.create({
 		extensions: [basicExtensions, statusNodeViewExtension]
 	});
-
 	editor.mount(container);
 });
-
 onBeforeUnmount(() => {
 	editor?.destroy();
 });
@@ -441,30 +397,25 @@ import {
 	defineExtension,
 	type NodeViewDescriptor
 } from '@syncfusion/ej2-headless-editor';
-
 const statusNodeViewExtension = defineExtension({
 	name: 'accessible-status-view',
-
 	nodeViews() {
 		return {
 			accessibleStatus: (): NodeViewDescriptor => {
 				const dom: HTMLElement = document.createElement('div');
 				dom.setAttribute('role', 'status');
 				dom.setAttribute('aria-live', 'polite');
-
 				return { dom };
 			}
 		};
 	}
 });
-
 export default defineComponent({
 	data() {
 		return {
 			editor: null as HeadlessEditor | null
 		};
 	},
-
 	mounted() {
 		const editor = HeadlessEditor.create({
 			extensions: [basicExtensions, statusNodeViewExtension]
@@ -472,7 +423,6 @@ export default defineComponent({
 		this.editor = markRaw(editor);
 		editor.mount(this.$refs.editorContainer as HTMLDivElement);
 	},
-
 	beforeUnmount() {
 		this.editor?.destroy();
 	}
