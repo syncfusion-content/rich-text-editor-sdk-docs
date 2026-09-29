@@ -34,8 +34,3 @@ function App() {
 
 const rootElement = document.getElementById('app') || document.body;
 createRoot(rootElement).render(<App />);
-
-    return <div ref={editorRef}></div>;
-}
-
-ReactDOM.render(<App />, document.getElementById('container'));
