@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nodes and Marks Preview | TypeScript Headless Editor | Syncfusion
-description: A preview that exercises the block nodes and inline marks available in the TypeScript Headless Editor, including callout, collapsible, superscript, subscript, and link.
+description: A preview that exercises the block nodes and inline marks in the TypeScript Headless Editor, including callout, collapsible, superscript, subscript, and link.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
