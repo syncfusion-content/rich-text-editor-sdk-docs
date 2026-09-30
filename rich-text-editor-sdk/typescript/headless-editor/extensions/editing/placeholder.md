@@ -61,7 +61,11 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-The `placeholder` and `emptyNodeClass` options accept either a string or a function that returns a string. Use a function to render context-specific hints, for example:
+The `placeholder` and `emptyNodeClass` options accept either a string or a function that returns a string.
+
+## Dynamic placeholders
+
+Use a function to render context-specific hints, for example:
 
 ```html
 <div id="editor"></div>

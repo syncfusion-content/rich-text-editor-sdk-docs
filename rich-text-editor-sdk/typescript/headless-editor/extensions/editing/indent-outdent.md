@@ -29,6 +29,8 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 
 The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, the editor automatically registers `indentOutdentExtension` and plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
 
+## Configure the Tab key
+
 ```html
 <div id="editor"></div>
 ```
