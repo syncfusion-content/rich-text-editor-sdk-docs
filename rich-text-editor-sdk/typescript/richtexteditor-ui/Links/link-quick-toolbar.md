@@ -43,7 +43,7 @@ The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which narrows t
 
 | Identifier | Behaviour |
 | --- | --- |
-| `Open` | Opens the link `href` in a new tab using `window.open(href, target \|\| '_blank')`. The link's own `target` attribute is honoured when present. |
+| `Open` | Opens the link `href` in a new tab using `window.open(href, target \|\| '_blank')`. The link's own `target` attribute is honored when present. |
 | `Copy` | Copies the link `href` to the clipboard as both `text/plain` and `text/html` (using `navigator.clipboard.write` with a `ClipboardItem`). |
 | `Edit` | Opens the Insert-Link dialog pre-filled with the link's current `href`, `text`, `title`, and `target` attributes. |
 | `Remove` | Unlinks the selection — removes the `<a>` wrapper but keeps the link's text content. |
@@ -81,7 +81,7 @@ editor.appendTo('#editor');
 
 > When `link` is configured, the toolbar is positioned directly above the link element using the same tip-pointer logic as the text quick toolbar (top-position collision flipping).
 
-### Customising the items
+### Customizing the items
 
 `link` accepts any of the `LinkQuickToolbarItem` union members:
 
@@ -134,7 +134,7 @@ editor.appendTo('#editor');
 
 | Trigger | What happens |
 | --- | --- |
-| Caret enters an `<a>` (mouseup or keyup) | The toolbar opens above the link element. |
+| Caret enters an `<a>` (mouseup or key up) | The toolbar opens above the link element. |
 | Caret leaves an `<a>` | The toolbar closes. |
 | `Escape` key | The toolbar closes. |
 | Outside mouse-down | The toolbar closes. |

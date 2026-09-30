@@ -48,7 +48,7 @@ The **Link Settings** govern how hyperlinks are created, normalized, and validat
 
 `linkSettings.linkOnPaste` controls what happens when the user pastes a URL over a non-collapsed text selection inside the editor.
 
-| Value | Behaviour |
+| Value | Behavior |
 | --- | --- |
 | `true` (default) | The pasted URL replaces the selection and is converted into a hyperlink. The link uses the editor's `defaultTarget`, `defaultProtocol`, and `autoPrependProtocol` settings. |
 | `false` | The pasted URL replaces the selection as plain text. No `<a>` element is created. |
@@ -87,10 +87,10 @@ A paste whose payload contains whitespace, or that is plain text with a URL insi
 
 `linkSettings.defaultTarget` sets the `target` attribute applied to hyperlinks the editor creates through the Insert-Link dialog or through `linkOnPaste`. The supported values mirror the standard HTML `target` attribute.
 
-| Value | Behaviour |
+| Value | Behavior |
 | --- | --- |
 | `''` | No `target` attribute is set — the link navigates in the current browsing context. |
-| `'_self'` | Opens in the same browsing context (the default browser behaviour). |
+| `'_self'` | Opens in the same browsing context (the default browser behavior). |
 | `'_blank'` (default) | Opens in a new tab or window. |
 | `'_parent'` | Opens in the parent browsing context, if any. |
 | `'_top'` | Opens in the topmost browsing context, breaking out of any nested frames. |
