@@ -14,7 +14,7 @@ The `HeadlessEditor` class is the single entry point for the Headless Editor. Yo
 
 ## Creating an editor
 
-Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal — `create()` is the only public way to obtain an instance.
+Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal, and `create()` is the only public way to obtain an instance.
 
 ```ts
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -94,7 +94,7 @@ editor.mount(container);
 editor.unmount();
 ```
 
-After `unmount()`, the editor's state — document, selection, and history — is preserved. You can re-attach the same instance to the same container or to a different one with another call to `mount()`.
+After `unmount()`, the editor's state, including the document, selection, and history, is preserved. You can re-attach the same instance to the same container or to a different one by calling `mount()` again.
 
 ## Disposing an editor
 
