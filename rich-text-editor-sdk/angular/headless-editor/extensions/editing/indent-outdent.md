@@ -46,6 +46,8 @@ export class App implements AfterViewInit, OnDestroy {
 
 The Tab key behavior is controlled by the `enableTabKey` editor configuration. When `true`, the editor automatically registers `indentOutdentExtension` and plain blocks fall back to inserting 4 spaces on <kbd>Tab</kbd>.
 
+## Configure the Tab key
+
 ```html
 <div #editor></div>
 ```
