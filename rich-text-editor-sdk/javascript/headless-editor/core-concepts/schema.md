@@ -32,7 +32,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
 });
 ```
 
-`basicExtensions` is a preset that bundles a full default schema — document, text, paragraph, heading, blockquote, code block, lists, task lists, bold, italic, underline, strikethrough, inline code, hard break, horizontal rule, and undo/redo. It is the easiest way to get a working editor.
+`basicExtensions` is a preset that bundles a complete default schema, including document, text, paragraph, heading, blockquote, code block, lists, task lists, bold, italic, underline, strikethrough, inline code, hard break, horizontal rule, and undo/redo. It is the easiest way to create a working editor.
 
 To build a smaller or custom schema, register individual extensions or use `defineExtension` to write your own. Custom extensions can contribute nodes, marks, attributes, commands, keyboard shortcuts, and input rules.
 
