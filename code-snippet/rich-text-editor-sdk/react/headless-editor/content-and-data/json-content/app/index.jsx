@@ -5,19 +5,15 @@ import { HeadlessEditor, basicExtensions, placeholderExtension } from '@syncfusi
 
 function App() {
     const editorRef = useRef(null);
-
     useEffect(() => {
         const headlessEditor = HeadlessEditor.create({
             extensions: [basicExtensions, placeholderExtension]
         });
-
         if (editorRef.current) {
             headlessEditor.mount(editorRef.current);
         }
-
         return () => headlessEditor.destroy();
     }, []);
-
     return <div id="headless-editor" ref={editorRef}></div>;
 }
 

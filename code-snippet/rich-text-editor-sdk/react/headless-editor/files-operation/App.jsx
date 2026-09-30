@@ -1,15 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useEffect, useRef } from 'react';
-import {
-    HeadlessEditor,
-    basicExtensions,
-    placeholderExtension,
-    imageExtension
-} from '@syncfusion/ej2-headless-editor';
-
+import { HeadlessEditor, basicExtensions, placeholderExtension, imageExtension } from '@syncfusion/ej2-headless-editor';
 import './index.css';
-
 function App() {
     const editorRef = useRef(null);
     const fileInputRef = useRef(null);
@@ -21,48 +14,33 @@ function App() {
     const uploadButtonRef = useRef(null);
     const insertButtonRef = useRef(null);
     const cancelButtonRef = useRef(null);
-
     useEffect(() => {
-        // -------------------------------------------------------------------------
-        // 1. Create the editor.
-        // -------------------------------------------------------------------------
         const headlessEditor = HeadlessEditor.create({
             extensions: [basicExtensions, imageExtension, placeholderExtension]
         });
-
         if (editorRef.current) {
             headlessEditor.mount(editorRef.current);
         }
-
-        // -------------------------------------------------------------------------
-        // 2. Register the file upload handler before any file operation begins.
-        // -------------------------------------------------------------------------
         const uploadHandler = {
             upload: async (request) => {
                 const total = request.file.size;
                 let loaded = 0;
                 const chunkSize = Math.max(Math.ceil(total / 10), 1);
-
                 while (loaded < total) {
                     if (request.signal?.aborted) {
                         throw new DOMException('Upload cancelled', 'AbortError');
                     }
-
                     await new Promise((resolve) => {
                         window.setTimeout(resolve, 100);
                     });
-
                     loaded = Math.min(loaded + chunkSize, total);
-
                     const progress = {
                         loaded,
                         total,
                         percentage: total > 0 ? (loaded / total) * 100 : 100
                     };
-
                     request.onProgress?.(progress);
                 }
-
                 return {
                     url: URL.createObjectURL(request.file),
                     fileName: request.file.name,
@@ -70,27 +48,19 @@ function App() {
                     size: request.file.size
                 };
             },
-
             cancel: (uploadId) => {
                 setStatus(`Cancelling upload: ${uploadId}`);
             }
         };
-
         headlessEditor.setFileUploadHandler(uploadHandler);
-
-        // -------------------------------------------------------------------------
-        // 3. State and helpers.
-        // -------------------------------------------------------------------------
         let selectedFile = null;
         let currentUploadId = null;
         let lastUploadedUrl = null;
-
         function setStatus(message) {
             if (statusMessageRef.current) {
                 statusMessageRef.current.textContent = message;
             }
         }
-
         function setProgress(percentage, state = 'uploading') {
             const clamped = Math.max(0, Math.min(100, percentage));
             if (progressBarRef.current) {
@@ -106,7 +76,6 @@ function App() {
                 }
             }
         }
-
         function resetProgress() {
             if (progressBarRef.current) {
                 progressBarRef.current.style.width = '0%';
@@ -118,7 +87,6 @@ function App() {
                 progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
             }
         }
-
         function updateButtonStates() {
             if (uploadButtonRef.current) {
                 uploadButtonRef.current.disabled = !selectedFile || currentUploadId !== null;
@@ -130,7 +98,6 @@ function App() {
                 cancelButtonRef.current.disabled = selectedFile === null && lastUploadedUrl === null;
             }
         }
-
         function formatFileInfo(file) {
             const kb = file.size / 1024;
             const sizeText = kb < 1024
@@ -138,23 +105,17 @@ function App() {
                 : `${(kb / 1024).toFixed(2)} MB`;
             return `${file.name} (${sizeText})`;
         }
-
-        // -------------------------------------------------------------------------
-        // 4. Select File button — opens the file picker.
-        // -------------------------------------------------------------------------
         function handleSelectClick() {
             if (fileInputRef.current) {
                 fileInputRef.current.value = '';
                 fileInputRef.current.click();
             }
         }
-
         function handleFileChange() {
             const file = fileInputRef.current?.files?.[0];
             if (!file) {
                 return;
             }
-
             selectedFile = file;
             lastUploadedUrl = null;
             if (fileInfoRef.current) {
@@ -164,23 +125,16 @@ function App() {
             resetProgress();
             updateButtonStates();
         }
-
-        // -------------------------------------------------------------------------
-        // 5. Upload button — starts the upload and reports progress.
-        // -------------------------------------------------------------------------
         function handleUploadClick() {
             if (!selectedFile) {
                 return;
             }
-
             resetProgress();
             setStatus('Uploading...');
             currentUploadId = headlessEditor.getFileHandler().startUpload(selectedFile);
             updateButtonStates();
-
             pollUploadState();
         }
-
         function pollUploadState() {
             if (!currentUploadId) {
                 return;
@@ -189,14 +143,12 @@ function App() {
             if (!pending) {
                 return;
             }
-
             if (pending.status === 'uploading' || pending.status === 'pending') {
                 const pct = pending.progress?.percentage ?? 0;
                 setProgress(pct, 'uploading');
                 window.setTimeout(pollUploadState, 100);
                 return;
             }
-
             if (pending.status === 'completed') {
                 setProgress(100, 'completed');
                 lastUploadedUrl = pending.result?.url ?? null;
@@ -205,7 +157,6 @@ function App() {
                 updateButtonStates();
                 return;
             }
-
             if (pending.status === 'failed') {
                 setProgress(0, 'failed');
                 setStatus(`Upload failed: ${pending.error?.message ?? 'Unknown error'}`);
@@ -213,7 +164,6 @@ function App() {
                 updateButtonStates();
                 return;
             }
-
             if (pending.status === 'cancelled') {
                 setProgress(0, 'cancelled');
                 setStatus('Upload cancelled.');
@@ -222,23 +172,16 @@ function App() {
                 return;
             }
         }
-
-        // -------------------------------------------------------------------------
-        // 6. Cancel button — aborts the in-flight upload via AbortSignal, OR
-        //    discards the completed upload so the user can pick a different file.
-        // -------------------------------------------------------------------------
         function handleCancelClick() {
             if (currentUploadId) {
                 headlessEditor.getFileHandler().cancel(currentUploadId);
                 setStatus('Cancellation requested...');
                 return;
             }
-
             if (selectedFile || lastUploadedUrl) {
                 discardSelection();
             }
         }
-
         function discardSelection() {
             selectedFile = null;
             lastUploadedUrl = null;
@@ -253,15 +196,10 @@ function App() {
             setStatus('Discarded. Click Select File to choose another.');
             updateButtonStates();
         }
-
-        // -------------------------------------------------------------------------
-        // 7. Insert button — places the uploaded file into the editor.
-        // -------------------------------------------------------------------------
         function handleInsertClick() {
             if (!lastUploadedUrl || !selectedFile) {
                 return;
             }
-
             headlessEditor.commands.insertImage([
                 {
                     src: lastUploadedUrl,
@@ -271,12 +209,9 @@ function App() {
                     wrap: 'none'
                 }
             ]);
-
             setStatus(`Inserted "${selectedFile.name}" into the editor.`);
-
             window.setTimeout(resetForNextSelection, 1200);
         }
-
         function resetForNextSelection() {
             selectedFile = null;
             lastUploadedUrl = null;
@@ -290,19 +225,13 @@ function App() {
             setStatus('Inserted. Click Select File to upload another.');
             updateButtonStates();
         }
-
-        // -------------------------------------------------------------------------
-        // 8. Wire up event listeners and initialize the UI.
-        // -------------------------------------------------------------------------
         selectButtonRef.current?.addEventListener('click', handleSelectClick);
         fileInputRef.current?.addEventListener('change', handleFileChange);
         uploadButtonRef.current?.addEventListener('click', handleUploadClick);
         cancelButtonRef.current?.addEventListener('click', handleCancelClick);
         insertButtonRef.current?.addEventListener('click', handleInsertClick);
-
         setStatus('Idle. Click Select File to begin.');
         updateButtonStates();
-
         return () => {
             selectButtonRef.current?.removeEventListener('click', handleSelectClick);
             fileInputRef.current?.removeEventListener('change', handleFileChange);
@@ -312,7 +241,6 @@ function App() {
             headlessEditor.destroy();
         };
     }, []);
-
     return (
         <div className="control-section">
             <div className="file-ops-panel">
@@ -334,14 +262,11 @@ function App() {
                 </div>
                 <div id="status-message" className="file-ops-status" ref={statusMessageRef}>Idle</div>
             </div>
-
             <div className="headless-editor-surface">
                 <div id="headless-editor" ref={editorRef}></div>
             </div>
         </div>
     );
 }
-
 export default App;
-
 ReactDOM.render(<App />, document.getElementById('container'));

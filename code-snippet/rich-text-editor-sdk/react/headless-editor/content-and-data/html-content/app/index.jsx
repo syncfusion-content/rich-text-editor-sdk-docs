@@ -6,44 +6,34 @@ import { HeadlessEditor, basicExtensions, placeholderExtension } from '@syncfusi
 function App() {
     const editorRef = useRef(null);
     const outputRef = useRef(null);
-
     useEffect(() => {
         const editor = HeadlessEditor.create({
             extensions: [basicExtensions, placeholderExtension],
             content: '<h2>HTML Content</h2><p>This content was loaded when the editor was created.</p>'
         });
-
         function showOutput(value) {
             if (outputRef.current) {
                 outputRef.current.textContent = value;
             }
         }
-
         if (editorRef.current) {
             editor.mount(editorRef.current);
         }
-
         /* Load HTML Content */
-
         document.getElementById('set-html')?.addEventListener('click', () => {
             editor.setContent(
                 '<h2>Updated HTML Content</h2><p>This content was loaded using <strong>setContent()</strong>.</p>'
             );
         });
-
         document.getElementById('clear-content')?.addEventListener('click', () => {
             editor.setContent('');
         });
-
         /* Export HTML Content */
-
         document.getElementById('get-html')?.addEventListener('click', () => {
             showOutput(editor.getHtml());
         });
-
         return () => editor.destroy();
     }, []);
-
     return (
         <div id="container">
             <div id="headless-editor" ref={editorRef}></div>
@@ -63,7 +53,5 @@ function App() {
         </div>
     );
 }
-
 export default App;
-
 ReactDOM.render(<App />, document.getElementById('container'));

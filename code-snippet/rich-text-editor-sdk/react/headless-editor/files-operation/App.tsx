@@ -1,21 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useEffect, useRef } from 'react';
-import {
-    HeadlessEditor,
-    basicExtensions,
-    placeholderExtension,
-    imageExtension
-} from '@syncfusion/ej2-headless-editor';
-
-import type {
-    FileUploadHandler,
-    FileUploadRequest,
-    FileUploadProgress
-} from '@syncfusion/ej2-headless-editor';
-
+import {HeadlessEditor,basicExtensions,placeholderExtension,imageExtension} from '@syncfusion/ej2-headless-editor';
+import type {FileUploadHandler,FileUploadRequest,FileUploadProgress} from '@syncfusion/ej2-headless-editor';
 import './index.css';
-
 function App() {
     const editorRef = useRef<HTMLDivElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
@@ -27,48 +15,33 @@ function App() {
     const uploadButtonRef = useRef<HTMLButtonElement>(null);
     const insertButtonRef = useRef<HTMLButtonElement>(null);
     const cancelButtonRef = useRef<HTMLButtonElement>(null);
-
     useEffect(() => {
-        // -------------------------------------------------------------------------
-        // 1. Create the editor.
-        // -------------------------------------------------------------------------
         const headlessEditor: HeadlessEditor = HeadlessEditor.create({
             extensions: [basicExtensions, imageExtension, placeholderExtension]
         });
-
         if (editorRef.current) {
             headlessEditor.mount(editorRef.current);
         }
-
-        // -------------------------------------------------------------------------
-        // 2. Register the file upload handler before any file operation begins.
-        // -------------------------------------------------------------------------
         const uploadHandler: FileUploadHandler = {
             upload: async (request: FileUploadRequest) => {
                 const total: number = request.file.size;
                 let loaded: number = 0;
                 const chunkSize: number = Math.max(Math.ceil(total / 10), 1);
-
                 while (loaded < total) {
                     if (request.signal?.aborted) {
                         throw new DOMException('Upload cancelled', 'AbortError');
                     }
-
                     await new Promise<void>((resolve: () => void) => {
                         window.setTimeout(resolve, 100);
                     });
-
                     loaded = Math.min(loaded + chunkSize, total);
-
                     const progress: FileUploadProgress = {
                         loaded,
                         total,
                         percentage: total > 0 ? (loaded / total) * 100 : 100
                     };
-
                     request.onProgress?.(progress);
                 }
-
                 return {
                     url: URL.createObjectURL(request.file),
                     fileName: request.file.name,
@@ -76,27 +49,19 @@ function App() {
                     size: request.file.size
                 };
             },
-
             cancel: (uploadId: string): void => {
                 setStatus(`Cancelling upload: ${uploadId}`);
             }
         };
-
         headlessEditor.setFileUploadHandler(uploadHandler);
-
-        // -------------------------------------------------------------------------
-        // 3. State and helpers.
-        // -------------------------------------------------------------------------
         let selectedFile: File | null = null;
         let currentUploadId: string | null = null;
         let lastUploadedUrl: string | null = null;
-
         function setStatus(message: string): void {
             if (statusMessageRef.current) {
                 statusMessageRef.current.textContent = message;
             }
         }
-
         function setProgress(percentage: number, state: 'idle' | 'uploading' | 'completed' | 'failed' | 'cancelled' = 'uploading'): void {
             const clamped: number = Math.max(0, Math.min(100, percentage));
             if (progressBarRef.current) {
@@ -112,7 +77,6 @@ function App() {
                 }
             }
         }
-
         function resetProgress(): void {
             if (progressBarRef.current) {
                 progressBarRef.current.style.width = '0%';
@@ -124,7 +88,6 @@ function App() {
                 progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
             }
         }
-
         function updateButtonStates(): void {
             if (uploadButtonRef.current) {
                 uploadButtonRef.current.disabled = !selectedFile || currentUploadId !== null;
@@ -136,7 +99,6 @@ function App() {
                 cancelButtonRef.current.disabled = selectedFile === null && lastUploadedUrl === null;
             }
         }
-
         function formatFileInfo(file: File): string {
             const kb: number = file.size / 1024;
             const sizeText: string = kb < 1024
@@ -144,23 +106,17 @@ function App() {
                 : `${(kb / 1024).toFixed(2)} MB`;
             return `${file.name} (${sizeText})`;
         }
-
-        // -------------------------------------------------------------------------
-        // 4. Select File button — opens the file picker.
-        // -------------------------------------------------------------------------
         function handleSelectClick(): void {
             if (fileInputRef.current) {
                 fileInputRef.current.value = '';
                 fileInputRef.current.click();
             }
         }
-
         function handleFileChange(): void {
             const file: File | undefined = fileInputRef.current?.files?.[0];
             if (!file) {
                 return;
             }
-
             selectedFile = file;
             lastUploadedUrl = null;
             if (fileInfoRef.current) {
@@ -170,10 +126,6 @@ function App() {
             resetProgress();
             updateButtonStates();
         }
-
-        // -------------------------------------------------------------------------
-        // 5. Upload button — starts the upload and reports progress.
-        // -------------------------------------------------------------------------
         function handleUploadClick(): void {
             if (!selectedFile) {
                 return;
@@ -296,10 +248,6 @@ function App() {
             setStatus('Inserted. Click Select File to upload another.');
             updateButtonStates();
         }
-
-        // -------------------------------------------------------------------------
-        // 8. Wire up event listeners and initialize the UI.
-        // -------------------------------------------------------------------------
         selectButtonRef.current?.addEventListener('click', handleSelectClick);
         fileInputRef.current?.addEventListener('change', handleFileChange);
         uploadButtonRef.current?.addEventListener('click', handleUploadClick);
@@ -347,7 +295,5 @@ function App() {
         </div>
     );
 }
-
 export default App;
-
 ReactDOM.render(<App />, document.getElementById('container'));
