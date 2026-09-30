@@ -24,7 +24,7 @@ Use the `attrs` field on `NodeDefinition` and `MarkDefinition` to declare the at
 
 ## Example attribute definitions
 
-```js id="c7p4vx"
+```js
 var customBlockExtension = ej.headlesseditor.defineExtension({
   name: 'customBlock',
   nodes: function () {

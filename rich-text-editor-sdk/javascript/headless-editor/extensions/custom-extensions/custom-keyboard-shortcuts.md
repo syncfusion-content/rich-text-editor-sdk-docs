@@ -14,7 +14,7 @@ Use the `keyboardShortcuts` field on `ExtensionConfig` to bind a key combination
 
 ## What you write
 
-```js id="0p5x6h"
+```js
 keyboardShortcuts: function () {
   return {
     // Key bindings
@@ -42,7 +42,7 @@ The `Mod-` prefix lets the same binding work cross-platform without writing two 
 
 A handler is a zero-argument function that returns `true` when it handled the key, or `false` to let the next handler run:
 
-```js id="x3q8vj"
+```js
 function () {
   return true;
 }
@@ -54,7 +54,7 @@ Return `true` after a successful command so the editor knows the key was used. R
 
 The editor already ships with a `toggleBold` command. Bind a custom shortcut to it without touching the built-in `Mod-b` binding:
 
-```js id="n0p4sx"
+```js
 var extraShortcutsExtension = ej.headlesseditor.defineExtension({
   name: 'extra-shortcuts',
   keyboardShortcuts: function () {

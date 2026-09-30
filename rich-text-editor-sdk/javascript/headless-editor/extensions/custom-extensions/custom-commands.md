@@ -43,7 +43,7 @@ The option returns the list of commands the extension adds. You can return comma
 
 ## Defining a command
 
-```js id="d3n8x2"
+```js
 var counterExtension = ej.headlesseditor.defineExtension({
   name: 'counter',
   commands: function () {
@@ -67,7 +67,7 @@ var counterExtension = ej.headlesseditor.defineExtension({
 
 Commands accept an optional payload. The payload is opaque to the editor; you define its shape inside the command:
 
-```js id="6xw1kp"
+```js
 var calloutExtension = ej.headlesseditor.defineExtension({
   name: 'callout',
   commands: function () {
@@ -92,7 +92,7 @@ The command facade at `editor.execute('setCalloutVariant', { variant: 'warning' 
 
 You can also import a built-in `Command` and re-export it from your own extension. The commands option accepts both new commands and command instances you have on hand:
 
-```js id="5h4mzc"
+```js
 var mentionExtension = ej.headlesseditor.defineExtension({
   name: 'mention',
   commands: function () {
@@ -109,7 +109,7 @@ Use this when you want a command to live alongside your extension's other code s
 
 Once the editor is created, custom commands are reachable through the same `execute` API as built-in commands:
 
-```js id="8k2vqm"
+```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [counterExtension]
 });

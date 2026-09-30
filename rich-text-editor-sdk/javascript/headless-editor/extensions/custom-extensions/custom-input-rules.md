@@ -14,7 +14,7 @@ Use the `inputRules` field on `ExtensionConfig` to turn a short typing pattern i
 
 ## What you write
 
-```js id="r2j1ma"
+```js
 inputRules: function () {
   return [
     // Input rule definitions
@@ -50,7 +50,7 @@ The contributor returns the list of input rule definitions the extension registe
 
 Inside a handler, call `dispatchCommand(commandName, payload)` to mutate the document:
 
-```js id="b9d4tp"
+```js
 dispatchCommand('wrapInHeading', { level: 1 });
 ```
 
