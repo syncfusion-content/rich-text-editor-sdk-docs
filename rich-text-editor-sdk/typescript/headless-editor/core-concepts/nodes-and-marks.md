@@ -19,7 +19,7 @@ A node is one element in the document tree. Every node has:
 - `type`: The name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …).
 - `attrs`: Key/value pairs whose meaning depends on the node's type.
 - `children`: Other nodes inside this one (empty for leaves).
-- a `marks`: Formatting marks applied to the node itself (used for block-level marks).
+- `marks`: Formatting marks applied to the node itself (used for block-level marks).
 
 A text node has a `text` string and no `children`.
 
