@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Content Expressions in Vue Headless Editor | Syncfusion
-description: Use the NodeContent builder to write content rules for NodeDefinition in the Vue Headless Editor.
+description: Learn how to use the NodeContent builder in the Vue Headless Editor to define valid content rules for NodeDefinition and document structures.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
