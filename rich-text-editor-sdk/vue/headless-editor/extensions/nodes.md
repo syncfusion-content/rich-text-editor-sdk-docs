@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Node Extensions in TypeScript Headless Editor | Syncfusion
-description: Learn about the node extensions available in the TypeScript Headless Editor for registering block, inline, and leaf nodes in the editor schema.
+title: Node Extensions in Vue Headless Editor | Syncfusion
+description: Learn about the node extensions available in the Vue Headless Editor for registering block, inline, and leaf nodes in the editor schema.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Node Extensions in TypeScript Headless Editor
+# Node Extensions in Vue Headless Editor
 
-Node extensions register the schema nodes used by the editor to model content. Every node type — block, inline, or leaf — is contributed by an extension you register when creating an editor.
+Node extensions register the schema nodes used by the editor to model content. Every node type (block, inline, or leaf) is contributed by an extension you register when creating an editor.
 
 ## Node groups
 
@@ -28,12 +28,12 @@ Node extensions register the schema nodes used by the editor to model content. E
 The example below mounts an editor with all available node extensions.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/index.ts %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/extensions/nodes/app-composition.vue %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/index.html %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/extensions/nodes/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/extensions/nodes" %}
