@@ -16,10 +16,10 @@ Every part of a Headless Editor document is a node. Inline formatting on text is
 
 A node is one element in the document tree. Every node has:
 
-- a `type`: the name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …),
-- an `attrs` object: key/value pairs whose meaning depends on the node's type,
-- a `children` array: other nodes inside this one (empty for leaves),
-- a `marks` array: formatting marks applied to the node itself (used for block-level marks).
+- `type`: The name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …).
+- `attrs`: Key/value pairs whose meaning depends on the node's type.
+- `children`: Other nodes inside this one (empty for leaves).
+- a `marks`: Formatting marks applied to the node itself (used for block-level marks).
 
 A text node has a `text` string and no `children`.
 
@@ -87,8 +87,8 @@ A mark is inline formatting attached to text — `bold`, `italic`, `link`, and s
 
 A mark has:
 
-- a `type`: the mark's name,
-- an `attrs`: mark-specific values such as an `href` for a link or a `color` for text color.
+- `type`: The mark's name.
+- `attrs`: Mark-specific values such as an `href` for a link or a `color` for text color.
 
 ```ts
 import { Mark } from '@syncfusion/ej2-headless-editor';
