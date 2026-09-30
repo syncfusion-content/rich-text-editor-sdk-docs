@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Document in React Headless Editor
+# Document in React Headless Editor Overview
 
 A Headless Editor document is a tree of nodes. The root is always a single `document` node. Inside the root are blocks (paragraphs, headings, lists, tables, images, code blocks). Inside each block is inline content — text and inline nodes — and the text can carry inline formatting marks.
 
