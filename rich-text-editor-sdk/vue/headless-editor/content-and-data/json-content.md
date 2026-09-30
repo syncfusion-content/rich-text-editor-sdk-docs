@@ -39,7 +39,6 @@ N> Node identity is position based within the document tree; persistent node ide
 
 ```ts
 import { DocumentRoot } from '@syncfusion/ej2-headless-editor';
-
 const doc: DocumentRoot = {
   type: 'document',
   schemaVersion: 1,
