@@ -16,9 +16,10 @@ System.config({
         main: "index.ts",
         typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
         "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-headless-editor": "syncfusion:ej2-headless-editor/dist/ej2-headless-editor.umd.min.js"
+        "@syncfusion/ej2-headless-editor": "syncfusion:ej2-headless-editor/dist/ej2-headless-editor.umd.min.js",
     }
 });
+
 System.import('index.ts').catch(console.error.bind(console)).then(function () {
     document.getElementById('loader').style.display = "none";
     document.getElementById('container').style.visibility = "visible";

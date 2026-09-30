@@ -20,7 +20,7 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
-  extensions: [ej.headlesseditor.undoRedoExtension]
+  extensions: [ej.headlesseditor.undoRedoExtension, ej.headlesseditor.paragraphExtension]
 });
 editor.mount(document.getElementById('editor'));
 ```
@@ -41,6 +41,7 @@ The `undoRedo` extension exposes options for tuning the history stack:
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
+    ej.headlesseditor.paragraphExtension,
     ej.headlesseditor.undoRedoExtension.configure({
       depth: 50,
       newGroupDelay: 500
