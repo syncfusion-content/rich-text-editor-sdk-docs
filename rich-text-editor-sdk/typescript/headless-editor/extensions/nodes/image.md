@@ -179,7 +179,6 @@ editor.commands.addCaption();
 
 // Toggle a caption, seeding it with text when adding
 editor.commands.toggleCaption({ caption: 'Figure 1' });
-editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Resize events

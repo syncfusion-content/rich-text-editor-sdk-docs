@@ -44,7 +44,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.linkExtension.configure({
       htmlAttributes: { class: 'my-custom-class' },
-      openOnClick: true
+      openOnClick: false
     })
   ]
 });
@@ -82,12 +82,6 @@ editor.commands.setLink({
 // Remove the link from the current selection
 editor.commands.unsetLink();
 ```
-
-## Keyboard shortcut
-
-| Action | Windows | Mac |
-|--------|---------|-----|
-| Set Link | <kbd>Ctrl</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>K</kbd> |
 
 ## Markdown input rules
 
