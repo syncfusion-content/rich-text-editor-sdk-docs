@@ -134,7 +134,7 @@ editor.appendTo('#editor');
 
 | Trigger | What happens |
 | --- | --- |
-| Caret enters an `<a>` (mouseup or key up) | The toolbar opens above the link element. |
+| Caret enters an `<a>` (mouseup or keyup) | The toolbar opens above the link element. |
 | Caret leaves an `<a>` | The toolbar closes. |
 | `Escape` key | The toolbar closes. |
 | Outside mouse-down | The toolbar closes. |
