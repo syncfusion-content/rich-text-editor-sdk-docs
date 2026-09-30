@@ -19,10 +19,10 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 ```
 
 ```ts
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [textAlignExtension]
+    extensions: [paragraphExtension, textAlignExtension]
 });
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
@@ -41,10 +41,11 @@ The `textAlign` extension exposes options for choosing which block types accept 
 ```
 
 ```ts
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [
+        paragraphExtension,
         textAlignExtension.configure({
             types: ['paragraph', 'heading', 'blockquote']
         })
