@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Document in React Headless Editor Overview
 
-A Headless Editor document is a tree of nodes. The root is always a single `document` node. Inside the root are blocks (paragraphs, headings, lists, tables, images, code blocks). Inside each block is inline content — text and inline nodes — and the text can carry inline formatting marks.
+A Headless Editor document is a tree of nodes. The root is always a single `document` node. Inside the root are blocks such as paragraphs, headings, lists, tables, images, and code blocks. Each block can contain inline content, including text and inline nodes, and text can carry inline formatting marks.
 
 ```
 document
@@ -67,10 +67,10 @@ const document: DocumentRoot = {
 
 A document contains two layers of content:
 
-- **Block-level nodes** — paragraphs, headings, blockquotes, code blocks, lists, list items, tables, table rows, table cells, images, horizontal rules, and any custom block types you add through extensions.
-- **Inline content** — text, marks, and inline nodes such as images. Inline content lives inside block-level nodes.
+- **Block-level nodes** paragraphs, headings, blockquotes, code blocks, lists, list items, tables, table rows, table cells, images, horizontal rules, and any custom block types you add through extensions.
+- **Inline content** text, marks, and inline nodes such as images. Inline content lives inside block-level nodes.
 
-Blocks are the top-level children of the document root. A text node is always inside a block — it never appears directly under the document root.
+Blocks are the top-level children of the document root. A text node is always inside a block and never appears directly under the document root.
 
 ```ts
 {

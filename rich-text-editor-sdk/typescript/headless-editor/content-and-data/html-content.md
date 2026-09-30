@@ -82,4 +82,18 @@ Serialization is driven by the same schema and extensions that govern parsing. E
 
 The HTML returned by `getHtml()` is serialized according to the same schema and extensions used when loading HTML content.
 
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.ts%}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
+
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %}

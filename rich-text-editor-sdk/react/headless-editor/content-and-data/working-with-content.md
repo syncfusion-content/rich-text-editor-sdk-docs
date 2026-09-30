@@ -169,6 +169,19 @@ editor.commands.insertNode({
   }
 });
 ```
+{% tabs %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/working-with-content/app/app.tsx%}
+{% endhighlight %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/working-with-content/app/app.jsx %}
+{% endhighlight %}
+{% highlight css tabtitle="App.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
+
+{% endhighlight %}
+{% endtabs %}
 
 The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
 

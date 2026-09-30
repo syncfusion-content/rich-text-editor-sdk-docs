@@ -25,6 +25,6 @@ The `document` extension has no configurable options. Add it to the `extensions`
 {% endhighlight %}
 {% endtabs %}
 
-The `document` node itself does not carry any attributes. It is the schema root and is owned by the editor — you do not create, update, or remove it directly. It is rendered as a `<div>` and automatically wraps whatever block-level content you insert, such as paragraphs, headings, or lists. You manage its content indirectly by inserting, updating, or removing the block nodes it contains.
+The `document` node itself does not carry any attributes. It is the schema root and is owned by the editor, so you do not create, update, or remove it directly. It is rendered as a `<div>` and automatically wraps whatever block-level content you insert, such as paragraphs, headings, or lists. You manage its content indirectly by inserting, updating, or removing the block nodes it contains.
 
 I> Omitting the `document` extension results in an invalid schema. The Headless Editor automatically adds the required `document` extension if they are not registered.

@@ -172,4 +172,18 @@ editor.commands.insertNode({
 
 The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
 
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/index.ts%}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/index.html%}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
+
+{% endhighlight %}
+{% endtabs %}
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/" %}
