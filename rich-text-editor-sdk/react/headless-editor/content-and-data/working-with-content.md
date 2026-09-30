@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Working with Content in TypeScript Headless Editor | Syncfusion 
-description: Learn how to get, set, and update content in the Syncfusion TypeScript Headless Editor using the public content APIs and built-in commands.
+title: Working with Content in React Headless Editor | Syncfusion 
+description: Learn how to get, set, and update content in the Syncfusion React Headless Editor using the public content APIs and built-in commands.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Working with Content in TypeScript Headless Editor
+# Working with Content in React Headless Editor
 
 After a Headless Editor instance is mounted, you can read the current content in different shapes, assign new content through `setContent` or `setDocument`, and modify the document in place through typed commands such as `insertText`, `replaceText`, and `insertNode`.
 
@@ -169,21 +169,20 @@ editor.commands.insertNode({
   }
 });
 ```
-
-The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
-
 {% tabs %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/index.ts%}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/working-with-content/app/app.tsx%}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/index.html%}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/working-with-content/app/app.jsx %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
+{% highlight css tabtitle="App.css" %}
 
 @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/working-with-content/" %}
+The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/working-with-content/" %}

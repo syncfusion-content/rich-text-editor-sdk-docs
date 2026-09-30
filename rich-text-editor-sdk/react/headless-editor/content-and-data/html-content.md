@@ -1,14 +1,14 @@
 ---
 layout: post
-title: HTML Content in TypeScript Headless Editor | Syncfusion 
-description: Learn how the Syncfusion TypeScript Headless Editor loads and exports HTML through the schema-driven parsing and serialization pipeline.
+title: HTML Content in React Headless Editor | Syncfusion 
+description: Learn how the Syncfusion React Headless Editor loads and exports HTML through the schema-driven parsing and serialization pipeline.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# HTML Content in TypeScript Headless Editor
+# HTML Content in React Headless Editor
 
 The Headless Editor loads HTML through a schema-driven parsing pipeline and exports HTML through a schema-driven serialization pipeline. Both directions are governed by the schema and the extensions registered with the editor, not by a fixed public allow-list of HTML tags.
 
@@ -82,18 +82,18 @@ Serialization is driven by the same schema and extensions that govern parsing. E
 
 The HTML returned by `getHtml()` is serialized according to the same schema and extensions used when loading HTML content.
 
-{% tabs %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.ts%}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
+    {% tabs %}
+    {% highlight ts tabtitle="App.tsx" %}
+    {% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/html-content/app/app.tsx%}
+    {% endhighlight %}
+    {% highlight js tabtitle="App.jsx" %}
+    {% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/html-content/app/app.jsx %}
+    {% endhighlight %}
+    {% highlight css tabtitle="App.css" %}
 
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
+    @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
 
-{% endhighlight %}
-{% endtabs %}
+    {% endhighlight %}
+    {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/html-content/" %}

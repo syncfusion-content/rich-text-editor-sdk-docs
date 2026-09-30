@@ -1,14 +1,14 @@
 ---
 layout: post
-title: JSON Content in TypeScript Headless Editor | Syncfusion 
-description: Learn the public document model used by the Syncfusion TypeScript Headless Editor, and how to load and export JSON content through DocumentRoot.
+title: JSON Content in React Headless Editor | Syncfusion 
+description: Learn the public document model used by the Syncfusion React Headless Editor, and how to load and export JSON content through DocumentRoot.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# JSON Content in TypeScript Headless Editor
+# JSON Content in React Headless Editor
 
 The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting: provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
 
@@ -199,17 +199,17 @@ editor.setDocument(restored);
 This pattern is safe because `getDocument()` and `setDocument()` operate on the same `DocumentRoot` shape. To clear the document, pass a `DocumentRoot` whose `children` is a single empty paragraph.
 
 {% tabs %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/json-content/index.ts%}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/json-content/app/app.tsx%}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/json-content/index.html %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/json-content/app/app.jsx %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
+{% highlight css tabtitle="App.css" %}
 
 @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/json-content/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/json-content/" %}
