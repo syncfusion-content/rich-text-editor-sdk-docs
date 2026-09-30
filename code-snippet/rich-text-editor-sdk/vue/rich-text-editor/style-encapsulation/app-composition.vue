@@ -39,6 +39,8 @@ provide('richtexteditor',  [Toolbar, Link, Image, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+
 .control-section {
   display: flex;
   justify-content: space-between;
@@ -76,12 +78,5 @@ li p {
   box-sizing: border-box;
   margin-right: 10px;
 }
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css";
+@import '../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
 </style>

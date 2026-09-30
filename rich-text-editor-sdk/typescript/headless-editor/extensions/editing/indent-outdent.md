@@ -19,10 +19,10 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 ```
 
 ```ts
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: []
+    extensions: [paragraphExtension]
 });
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
@@ -36,10 +36,10 @@ The Tab key behavior is controlled by the `enableTabKey` editor configuration. W
 ```
 
 ```ts
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [],
+    extensions: [paragraphExtension],
     enableTabKey: true
 });
 editor.mount(document.getElementById('editor') as HTMLElement);

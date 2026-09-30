@@ -4,6 +4,7 @@
 
 <script>
 import { RichTextEditorComponent, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-vue-richtexteditor';
+import '@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css';
 
 export default {
     name: "App",

@@ -47,5 +47,5 @@ const cssClass = "customClass";
 provide('richtexteditor', [Toolbar, Link, Count, Image, HtmlEditor, QuickToolbar]);
 </script>
 <style>
-  @import "https://ej2.syncfusion.com/vue/documentation./../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css";
+  @import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
 </style>
