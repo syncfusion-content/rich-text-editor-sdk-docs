@@ -75,7 +75,7 @@ export class App implements AfterViewInit, OnDestroy {
       extensions: [
         linkExtension.configure({
           htmlAttributes: { class: 'my-custom-class' },
-          openOnClick: true
+          openOnClick: false
         })
       ]
     });

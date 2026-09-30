@@ -44,7 +44,7 @@ var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
     ej.headlesseditor.linkExtension.configure({
       htmlAttributes: { class: 'my-custom-class' },
-      openOnClick: true
+      openOnClick: false
     })
   ]
 });
