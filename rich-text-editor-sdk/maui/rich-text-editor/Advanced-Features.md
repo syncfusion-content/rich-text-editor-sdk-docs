@@ -62,6 +62,19 @@ richTextEditor.TValue = RichTextEditorValueType.HTML;
 {% endtabs %}
 ![.NET MAUI Rich Text Editor with HtmlText](images/richtexteditor-htmltext-property.png)
 
+## Getting Raw Text
+
+To retrieve the plain text content from the Rich Text Editor, use the `GetText()` method. This is an asynchronous method that returns a `Task<string>` and must be awaited.
+
+{% tabs %}
+
+{% highlight c# %}
+
+string text = await richTextEditor.GetText();
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Getting Selected HTML
 
