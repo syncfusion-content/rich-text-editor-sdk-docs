@@ -10,13 +10,9 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Quick Toolbar in TypeScript Modern Rich Text Editor
 
-The **Quick Toolbar** is a contextual popup toolbar that appears next to the
-current selection inside the editable area, giving fast access to the most
-relevant commands without moving focus to the top of the editor. It is wired
-through `quickToolbarSettings` on `RichTextEditorUI`.
+The **Quick Toolbar** is a contextual popup toolbar that appears next to the current selection inside the editable area, giving fast access to the most relevant commands without moving focus to the top of the editor. It is wired through `quickToolbarSettings` on `RichTextEditorUI`.
 
-The Modern Rich Text Editor exposes the Quick Toolbar through one
-configuration object with five sub-surfaces:
+The Modern Rich Text Editor exposes the Quick Toolbar through one configuration object with five sub-surfaces:
 
 | Property | Type | Default | Purpose |
 | --- | --- | --- | --- |
@@ -45,11 +41,7 @@ configuration object with five sub-surfaces:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar/quicktoolbar-settings/" %}
 
-When `quickToolbarSettings.enable` is `true` and at least one of `text`,
-`image`, `link`, or `table` is non-empty, the corresponding popup is built
-and bound to the relevant editor surface. Any sub-surface whose array is
-empty (or `null`) is **not** instantiated — set `text` to `null` to disable
-the text quick toolbar while keeping the image / link / table ones.
+When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`, `link`, or `table` is non-empty, the corresponding popup is built and bound to the relevant editor surface. Any sub-surface whose array is empty (or `null`) is **not** instantiated — set `text` to `null` to disable the text quick toolbar while keeping the image / link / table ones.
 
 > **Note:** Inline mode can be achieved by disabling the main toolbar and
 > adding the text quick-toolbar items on the `quickToolbarSettings.text`
@@ -76,8 +68,7 @@ the text quick toolbar while keeping the image / link / table ones.
 
 ## 1. Enable Append To Body
 
-`enableAppendToBody` controls whether the quick toolbar popup is mounted on
-`document.body` or on the editor container.
+`enableAppendToBody` controls whether the quick toolbar popup is mounted on `document.body` or on the editor container.
 
 - When set to `true`, the popup is appended to the document body and remains visible over the editor area.
 - When set to `false` (default), the popup is appended to the editor area and always remains inside the editor area.
@@ -100,25 +91,15 @@ the text quick toolbar while keeping the image / link / table ones.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-append-to-body/" %}
 
-> With `enableAppendToBody: true`, the popup is parented to
-> `document.body` and its visibility is clamped to the editor's bounds — the
-> popup hides itself off-screen when the target block scrolls out of the
-> editor's visible region.
+> With `enableAppendToBody: true`, the popup is parented to `document.body` and its visibility is clamped to the editor's bounds — the popup hides itself off-screen when the target block scrolls out of the editor's visible region.
 
 ---
 
 ## 2. Text Quick Toolbar
 
-`text` is the array of items shown when a non-collapsed text selection
-exists inside the editor. The popup opens on `mouseup` and `keyup` (when a
-non-collapsed selection exists), and closes on `Escape`, on outside
-interaction, or on `selectionchange` that empties the selection.
+`text` is the array of items shown when a non-collapsed text selection exists inside the editor. The popup opens on `mouseup` and `keyup` (when a non-collapsed selection exists), and closes on `Escape`, on outside interaction, or on `selectionchange` that empties the selection.
 
-The default is `null`, which means the Text Quick Toolbar is **not**
-rendered unless you supply a non-empty `text` array. The Text Quick Toolbar
-is the only quick-toolbar surface that accepts the full `ToolbarItem`
-union — built-in identifiers, built-in-with-config objects, custom items,
-and the `'|'` separator.
+The default is `null`, which means the Text Quick Toolbar is **not** rendered unless you supply a non-empty `text` array. The Text Quick Toolbar is the only quick-toolbar surface that accepts the full `ToolbarItem` union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator.
 
 {% tabs %}
 
@@ -142,12 +123,9 @@ and the `'|'` separator.
 
 The Text Quick Toolbar opens under three triggers:
 
-- **Mouse selection (`mouseup`)** — after the user finishes a drag-select
-  inside the editable area.
-- **Keyboard selection (`keyup`)** — when the user extends a selection with
-  Shift + arrow keys.
-- **Triple-click (`trippleclick`)** — when the user triple-clicks a word
-  or block; the toolbar opens centred above the block.
+- **Mouse selection (`mouseup`)** — after the user finishes a drag-select inside the editable area.
+- **Keyboard selection (`keyup`)** — when the user extends a selection with Shift + arrow keys.
+- **Triple-click (`trippleclick`)** — when the user triple-clicks a word or block; the toolbar opens centred above the block.
 
 The popup is dismissed on:
 
@@ -160,15 +138,9 @@ For customising the items that appear in the Text Quick Toolbar (built-in identi
 
 ## 3. Custom Toolbar Item
 
-A **Custom Toolbar Item** is a user-supplied toolbar entry that does not map to a
-built-in editor command. It is declared through the `CustomToolbarItem`
-interface and is dispatched through the editor's `toolbarSettings.itemClicked`
-event.
+A **Custom Toolbar Item** is a user-supplied toolbar entry that does not map to a built-in editor command. It is declared through the `CustomToolbarItem` interface and is dispatched through the editor's `toolbarSettings.itemClicked` event.
 
-The Text Quick Toolbar (`quickToolbarSettings.text`) accepts the full
-`ToolbarItem` union — built-in identifiers, built-in-with-config objects,
-custom items, and the `'|'` separator. The item shapes that can be
-mixed into any Text Quick Toolbar array are:
+The Text Quick Toolbar (`quickToolbarSettings.text`) accepts the full `ToolbarItem` union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator. The item shapes that can be mixed into any Text Quick Toolbar array are:
 
 | Item form | Example | Purpose |
 | --- | --- | --- |
@@ -193,16 +165,11 @@ export interface CustomToolbarItem extends ItemModel {
 | `windowsShortcutText` | `string` | No | Tooltip text for the Windows keyboard shortcut. |
 | `macShortcutText` | `string` | No | Tooltip text for the macOS keyboard shortcut. |
 
-Any other field inherited from `ItemModel` (`text`, `id`, `iconCss`,
-`prefixIcon`, `tooltipText`, `htmlAttributes`, etc.) is also accepted.
+Any other field inherited from `ItemModel` (`text`, `id`, `iconCss`, `prefixIcon`, `tooltipText`, `htmlAttributes`, etc.) is also accepted.
 
-A custom item can appear in any of the four quick-toolbar arrays —
-`text`, `image`, `link`, `table` — because each of those arrays is a
-union that includes `CustomToolbarItem`. See
-[Available Items](#4-available-items) for the full built-in catalog.
+A custom item can appear in any of the four quick-toolbar arrays — `text`, `image`, `link`, `table` — because each of those arrays is a union that includes `CustomToolbarItem`. See [Available Items](#4-available-items) for the full built-in catalog.
 
-The click is delivered through `toolbarSettings.itemClicked` with the
-following args shape:
+The click is delivered through `toolbarSettings.itemClicked` with the following args shape:
 
 ```ts
 interface ToolbarItemClickedEventArgs {
@@ -212,11 +179,7 @@ interface ToolbarItemClickedEventArgs {
 }
 ```
 
-`ToolbarItemClickedEventArgs` is defined in
-`@syncfusion/ej2-richtexteditor-ui`'s toolbar settings model and is the
-declared type of the `toolbarSettings.itemClicked` event handler. If your
-import surface only re-exports it indirectly, declare the handler args shape
-inline (the type is structural).
+`ToolbarItemClickedEventArgs` is defined in `@syncfusion/ej2-richtexteditor-ui`'s toolbar settings model and is the declared type of the `toolbarSettings.itemClicked` event handler. If your import surface only re-exports it indirectly, declare the handler args shape inline (the type is structural).
 
 {% tabs %}
 
@@ -236,27 +199,17 @@ inline (the type is structural).
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-custom-item/" %}
 
-> `actionId` is the routing key. `toolbarSettings.itemClicked` is fired for
-> every toolbar item (main and quick) — branch on
-> `args.item.actionId` to dispatch the right command or run your custom
-> handler. The public top-level `itemClick` event you may see in older
-> guides does not exist on `RichTextEditorUI`; the public surface is
-> `toolbarSettings.itemClicked`.
+> `actionId` is the routing key. `toolbarSettings.itemClicked` is fired for every toolbar item (main and quick) — branch on `args.item.actionId` to dispatch the right command or run your custom handler. The public top-level `itemClick` event you may see in older guides does not exist on `RichTextEditorUI`; the public surface is `toolbarSettings.itemClicked`.
 
 ### Custom items in image / link / table quick toolbars
 
-Custom items are accepted by `image`, `link`, and `table` as well. The
-`link` and `image` arrays are unions that include `CustomToolbarItem`, so
-the same shape works in every quick-toolbar context.
+Custom items are accepted by `image`, `link`, and `table` as well. The `link` and `image` arrays are unions that include `CustomToolbarItem`, so the same shape works in every quick-toolbar context.
 
 ---
 
 ## 4. Available Items
 
-The built-in quick-toolbar items are declared as typed unions in
-`src/richtexteditor-ui/model/toolbar.types.ts`. Each quick-toolbar surface
-accepts a different union — the union narrows the available identifiers
-per surface so the compiler flags unsupported items.
+The built-in quick-toolbar items are declared as typed unions in `src/richtexteditor-ui/model/toolbar.types.ts`. Each quick-toolbar surface accepts a different union — the union narrows the available identifiers per surface so the compiler flags unsupported items.
 
 ### Link Quick Toolbar items (`LinkQuickToolbarItem`)
 
@@ -318,9 +271,7 @@ API References:
 [`BuiltInToolbarItemConfig`](../../api/ts/src-richtexteditor-ui-model-toolbar.types.html#builtintoolbaritemconfig) ·
 [`CustomToolbarItem`](../../api/ts/src-richtexteditor-ui-model-toolbar.types.html#customtoolbaritem)
 
-The Text Quick Toolbar accepts the full `ToolbarItem` union — every built-in
-toolbar identifier, built-in-with-config objects, custom items, and the
-`'|'` separator.
+The Text Quick Toolbar accepts the full `ToolbarItem` union — every built-in toolbar identifier, built-in-with-config objects, custom items, and the `'|'` separator.
 
 | Identifier | Behavior |
 | --- | --- |
@@ -342,22 +293,14 @@ toolbar identifier, built-in-with-config objects, custom items, and the
 | `CalloutInfo`, `CalloutSuccess`, `CalloutWarning`, `CalloutError`, `CalloutNote` | Callout-variant children of the `Callout` split button. |
 | `\|` | Visual separator. |
 
-> Built-in identifiers can also be wrapped in a
-> `BuiltInToolbarItemConfig` to override the visible label:
-> `{ item: 'Bold', align: 'Right' }`.
+> Built-in identifiers can also be wrapped in a `BuiltInToolbarItemConfig` to override the visible label: `{ item: 'Bold', align: 'Right' }`.
 
 ---
 
 ## See also
 
-* [Getting Started](getting-started.md) — set up the Modern Rich Text Editor
-  in a TypeScript project and render the base `RichTextEditorUI` instance.
-* [Migration](migration.md) — map legacy `RichTextEditor` settings over to
-  the Modern `RichTextEditorUI` surface and the new `commands()` builder.
-* [Inline Formats](inline-formats/options.md) — the `Bold`, `Italic`,
-  `FontColor`, `BackgroundColor`, `Formats`, and other identifiers that the
-  Text Quick Toolbar re-uses.
-* [Table](table.md) — the Table Quick Toolbar rides on top of the
-  `Table` toolbar item; this page covers the matching insert / resize
-  behavior.
+* [Getting Started](getting-started) — set up the Modern Rich Text Editor in a TypeScript project and render the base `RichTextEditorUI` instance.
+* [Migration](migration) — map legacy `RichTextEditor` settings over to the Modern `RichTextEditorUI` surface and the new `commands()` builder.
+* [Inline Formats](inline-formats/options) — the `Bold`, `Italic`, `FontColor`, `BackgroundColor`, `Formats`, and other identifiers that the Text Quick Toolbar re-uses.
+* [Table](table) — the Table Quick Toolbar rides on top of the `Table` toolbar item; this page covers the matching insert / resize behavior.
 
