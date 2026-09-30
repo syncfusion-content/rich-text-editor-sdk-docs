@@ -80,4 +80,4 @@ with the matching variant.
 
 The command is non-destructive — invoking it on a block that is already a
 callout of the same variant toggles the callout off. See
-[Text Formats](text-formats.md) for the full block-format command map.
+[Text Formats](text-formats) for the full block-format command map.

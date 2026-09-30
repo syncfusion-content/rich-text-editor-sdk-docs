@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Inline Format Options in TypeScript Modern Rich Text Editor
 
-The Modern Rich Text Editor exposes the configuration surface for inline formats through the `fontSize`, `fontFamily`, `fontColor`, and `backgroundColor` settings models. These options control which values appear in the toolbar dropdowns and Color Pickers and how those controls are rendered. For the full list of inline formats, see [Supported Formats](supported-formats.md). For runtime invocation of every inline format, see [Commands](commands.md).
+The Modern Rich Text Editor exposes the configuration surface for inline formats through the `fontSize`, `fontFamily`, `fontColor`, and `backgroundColor` settings models. These options control which values appear in the toolbar dropdowns and Color Pickers and how those controls are rendered. For the full list of inline formats, see [Supported Formats](supported-formats). For runtime invocation of every inline format, see [Commands](commands).
 
 ## Font family
 
@@ -185,5 +185,5 @@ The number of columns in the color palette for both `FontColor` and `BackgroundC
 
 ## See also
 
-* [Supported Formats](supported-formats.md) — the inventory of inline marks and their toolbar items.
-* [Commands](commands.md) — how to invoke every inline format from code.
+* [Supported Formats](supported-formats) — the inventory of inline marks and their toolbar items.
+* [Commands](commands) — how to invoke every inline format from code.

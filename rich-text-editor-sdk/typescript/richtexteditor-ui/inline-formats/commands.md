@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 The Modern Rich Text Editor exposes every inline format through two equivalent surfaces — a toolbar click and the fluent `editor.commands().<builder>().<setter>().apply()` chain. Both routes converge on the same `actionBegin` / `actionComplete` pipeline and share identical cancellation and history semantics.
 
-The set of available inline formats is on [Supported Formats](supported-formats.md). The configuration surface (`fontSize`, `fontFamily`, `fontColor`, `backgroundColor`) is on [Options](options.md).
+The set of available inline formats is on [Supported Formats](supported-formats). The configuration surface (`fontSize`, `fontFamily`, `fontColor`, `backgroundColor`) is on [Options](options).
 
 ## Toggle text-style commands
 
@@ -95,5 +95,5 @@ The toolbar item label is `FontName`, but the command name and mark type are bot
 
 ## See also
 
-* [Supported Formats](supported-formats.md) — the inventory of marks and serialization shapes.
-* [Options](options.md) — `fontSize`, `fontFamily`, `fontColor`, `backgroundColor` configuration, including the full color picker reference.
+* [Supported Formats](supported-formats) — the inventory of marks and serialization shapes.
+* [Options](options) — `fontSize`, `fontFamily`, `fontColor`, `backgroundColor` configuration, including the full color picker reference.

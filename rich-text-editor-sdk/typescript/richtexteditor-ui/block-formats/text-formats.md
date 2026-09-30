@@ -84,14 +84,14 @@ single control.
 ### Block quote
 
 Wraps the current block in a `<blockquote>`. Toolbar `Quote`, slash command
-`Blockquote`, command `blockQuote`. See [Block Quote](blockquote.md) for the
+`Blockquote`, command `blockQuote`. See [Block Quote](blockquote) for the
 dedicated page.
 
 ### Code block
 
 Inserts a `<pre>` block with optional language annotation. Toolbar
 `CodeBlock`, command `codeBlock` with payload `CodeBlockCommand`
-(`{ language: string }`). See [Code Block](codeblock.md) for the dedicated
+(`{ language: string }`). See [Code Block](codeblock) for the dedicated
 page.
 
 ### Horizontal line
@@ -109,14 +109,14 @@ variants cannot be wired as separate top-level toolbar buttons; the public
 through a slash-command selection. All variants funnel through the
 `callout` command with payload `CalloutCommand`
 (`{ callout: 'info' | 'success' | 'warning' | 'error' | 'note' }`). See
-[Callouts](callout.md) for the dedicated page.
+[Callouts](callout) for the dedicated page.
 
 ### Collapsible headings
 
 Five entries: `Collapsible Paragraph`, `Collapsible Heading 1` …
 `Collapsible Heading 4`. Collapsible sections are reached **only** through
 the slash-command popup — there is no dedicated public toolbar item. See
-[Collapsible Headings](collapsable-heading.md) for the dedicated page.
+[Collapsible Headings](collapsable-heading) for the dedicated page.
 
 ## Commands support
 
@@ -143,7 +143,7 @@ activated.
 
 ## See also
 
-* [Block Quote](blockquote.md) — wraps a block in a `<blockquote>`.
-* [Code Block](codeblock.md) — inserts a syntax-highlighted `<pre>` block.
-* [Callouts](callout.md) — highlights a block with `Info`, `Success`, `Warning`, `Error`, or `Note`.
-* [Collapsible Headings](collapsable-heading.md) — foldable paragraphs and headings.
+* [Block Quote](blockquote) — wraps a block in a `<blockquote>`.
+* [Code Block](codeblock) — inserts a syntax-highlighted `<pre>` block.
+* [Callouts](callout) — highlights a block with `Info`, `Success`, `Warning`, `Error`, or `Note`.
+* [Collapsible Headings](collapsable-heading) — foldable paragraphs and headings.
