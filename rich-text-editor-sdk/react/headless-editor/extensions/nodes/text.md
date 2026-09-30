@@ -1,0 +1,30 @@
+---
+layout: post
+title: Text Extension in React Headless Editor | Syncfusion
+description: Learn about the Text extension in the React Headless Editor, which registers the inline text node used inside block content.
+platform: rich-text-editor-sdk
+control: Headless Editor
+documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+---
+
+# Text in React Headless Editor
+
+The `textExtension` registers the inline `text` node used to represent plain textual content. The `text` node is used inside block nodes such as paragraphs, headings, and blockquotes, and is a mandatory part of the editor schema.
+
+## Register the extension
+
+The `text` extension has no configurable options. Add it to the `extensions` array when initializing the editor.
+
+{% tabs %}
+{% highlight js tabtitle="app.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/text/app.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/text/app.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+Marks such as bold, italic, or links are applied on top of `text` nodes. Refer to the [Marks](../marks) concept page for more details on how marks attach to text.
+
+I> Every editor instance requires the `text` node. Omitting it results in an invalid schema. The Headless Editor automatically adds the required `text` extension if they are not registered.
