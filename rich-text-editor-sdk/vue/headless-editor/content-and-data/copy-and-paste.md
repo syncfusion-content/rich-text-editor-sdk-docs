@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 The Headless Editor handles paste automatically through ProseMirror native clipboard pipeline. There is no public `editor.paste()` method. To observe or customize paste behavior, use the `beforePaste` and `afterPaste` lifecycle callbacks, the corresponding event subscriptions, or the `EditorConfig.clipboard` transformation hooks.
 
-Copy and cut are also handled by the browser and the editor native behavior; the Headless Editor does not expose a public copy or cut API, hook, or event.
+Copy and cut are also handled by the browser and the editor native behavior. The Headless Editor does not expose a public copy or cut API, hook, or event.
 
 This page covers:
 
@@ -32,7 +32,6 @@ The `beforePaste` callback fires before the paste is inserted and lets you inspe
 
 ```ts
 import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
-
 const editor = HeadlessEditor.create({
   schema,
   extensions,
@@ -68,7 +67,7 @@ The `beforePaste` and `afterPaste` callbacks receive paste event payloads. The p
 
 ### Paste Formats
 
-The editor does not expose separate methods for plain text and HTML paste; both go through the same schema driven pipeline. The format detected for a given paste is reported as the `source` field on the clipboard transformation context, which has the type `'html' | 'text' | 'unknown'`:
+The editor does not expose separate methods for plain text and HTML paste. Both go through the same schema driven pipeline. The format detected for a given paste is reported as the `source` field on the clipboard transformation context, which has the type `'html' | 'text' | 'unknown'`:
 
 ```text
 source: 'html' | 'text' | 'unknown'
@@ -134,8 +133,8 @@ The editor applies a built in security sanitizer to clipboard HTML before any us
 The sanitizer is:
 
 - **Always on.** It cannot be disabled.
-- **Not configurable.** There is no public allow list, deny list, or set of allowed styles for the paste path; `EditorConfig.clipboard` does not expose these settings.
+- **Not configurable.** There is no public allow list, deny list, or set of allowed styles for the paste path. `EditorConfig.clipboard` does not expose these settings.
 - **Internal.** The sanitizer itself is an implementation detail and is not part of the public API surface.
-- **Paste only.** It is applied to clipboard content entering the editor. It is **not** applied to `setContent()` or `EditorConfig.content`; see [HTML Content](html-content) for HTML loading.
+- **Paste only.** It is applied to clipboard content entering the editor. It is **not** applied to `setContent()` or `EditorConfig.content`. See [HTML Content](html-content) for HTML loading.
 
 If you need to further restrict what is accepted from the clipboard, combine the built in sanitizer with `transformHTML` and `transformContent`, or cancel the paste entirely through `beforePaste`.

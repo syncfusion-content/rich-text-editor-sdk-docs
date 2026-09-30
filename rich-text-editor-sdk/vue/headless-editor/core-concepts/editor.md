@@ -14,7 +14,7 @@ The `HeadlessEditor` class is the single entry point for the Headless Editor. Yo
 
 ## Creating an editor
 
-Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal; `create()` is the only public way to obtain an instance.
+Use the static `HeadlessEditor.create()` method to instantiate the editor. The constructor is internal and `create()` is the only public way to obtain an instance.
 
 ```ts
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -82,7 +82,7 @@ For the full list of events and their payloads, see the `Events` api.
 
 ## Mounting inside a Vue component
 
-In Vue, the editor is created inside `onMounted` (Composition API) or `mounted` (Options API) so it has access to a real DOM element, and destroyed inside `onBeforeUnmount` or `beforeUnmount` to release resources.
+In Vue, the editor is created inside `onMounted` (Composition API) or `mounted` (Options API) so it has access to a real DOM element and destroyed inside `onBeforeUnmount` or `beforeUnmount` to release resources.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -151,7 +151,7 @@ editor.mount(container);
 editor.unmount();
 ```
 
-After `unmount()`, the editor state (document, selection, and history) is preserved. You can re attach the same instance to the same container or to a different one with another call to `mount()`.
+After `unmount()`, the editor's state, including the document, selection, and history, is preserved. You can re-attach the same instance to the same container or to a different one by calling `mount()` again.
 
 ## Disposing an editor
 
