@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Image Configuration Options in TypeScript Modern Rich Text Editor | Syncfusion
-description: Configure image insertion, storage, display, and resizing in TypeScript Modern Rich Text Editor. Learn about file formats, size restrictions, save formats, and dimension settings.
+title: Image Options in TypeScript Modern Rich Text Editor | Syncfusion
+description: Configure image insertion, storage, display, and resizing in the TypeScript Modern Rich Text Editor, including formats, size limits, saving, and dimensions.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 Comprehensive configuration options enable fine-tuned control over image insertion, storage, and display in the Modern Rich Text Editor. This section covers supported formats, size restrictions, save formats, and display configurations.
 
-### Allowed Image Formats
+## Allowed Image Formats
 
 The `allowedTypes` property specifies the image file extensions that can be selected, dropped, pasted, or uploaded.
 
@@ -31,7 +31,7 @@ const editor = new RichTextEditorUI({
 });
 ```
 
-### Image Size Restrictions
+## Image Size Restrictions
 
  The `maxFileSize` property specifies the maximum permitted image file size in bytes.
 
@@ -44,11 +44,11 @@ const editor = new RichTextEditorUI({
 });
 ```
 
-### Image Save Formats
+## Image Save Formats
 
 The RichTextEditor supports two primary formats for saving images: Blob (server-based) and Base64 (embedded). Each format offers distinct advantages and trade-offs based on your use case.
 
-#### Blob Format (Recommended - Default)
+### Blob Format (Recommended - Default)
 
 ```typescript
 const editor = new RichTextEditorUI({
@@ -58,7 +58,7 @@ const editor = new RichTextEditorUI({
 });
 ```
 
-#### Base64 Format
+### Base64 Format
 
 ```typescript
 const editor = new RichTextEditorUI({
@@ -68,11 +68,11 @@ const editor = new RichTextEditorUI({
 });
 ```
 
-### Limitations of Base64 & Blob
+## Limitations of Base64 & Blob
 
 Understanding the limitations of each format helps you choose the right approach for your specific requirements.
 
-#### Base64 Limitations
+### Base64 Limitations
 
 | Issue | Impact | Solution |
 |-------|--------|----------|
@@ -82,7 +82,7 @@ Understanding the limitations of each format helps you choose the right approach
 | Mobile concerns | Large payload on mobile devices | Use Blob format for mobile apps |
 | Debugging | Hard to inspect in dev tools | Use Blob for development |
 
-#### Blob Limitations
+### Blob Limitations
 
 | Issue | Impact | Solution |
 |-------|--------|----------|
@@ -91,7 +91,7 @@ Understanding the limitations of each format helps you choose the right approach
 | Temporary files | Need cleanup mechanism | Implement file lifecycle management |
 | Session dependency | Files tied to session | Persist files properly |
 
-### Dimension
+## Dimension
 
 Configure custom dimensions or preset sizes for images with min/max constraints. The `dimension` property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
 
@@ -106,11 +106,11 @@ Configure custom dimensions or preset sizes for images with min/max constraints.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-dimension-cs1" %}
 
-### Image Display Options
+## Image Display Options
 
 Control how images are rendered and positioned within the editor content through display modes and wrapping options.
 
-#### Display
+### Display
 
 Configure how images are rendered in the document - either flowing with text or on a separate line.
 
@@ -120,10 +120,10 @@ Configure how images are rendered in the document - either flowing with text or 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/image/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-display-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-display-cs1/image/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-display-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,20 +131,20 @@ Configure how images are rendered in the document - either flowing with text or 
 
 ---
 
-### Image Resizing
+## Image Resizing
 
 Enable and configure image resizing with constraints and event tracking.
 
-#### Enable Image Resize
+### Enable Image Resize
 
 The `resize` property controls whether images can be resized by users. By default, image resizing is enabled. Use the `dimension` property to set minimum and maximum constraints for resizable images.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/image/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-resize-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image-resize-cs1/image/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/image/image-resize-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

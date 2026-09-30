@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remote Image Upload in TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to implement remote image upload in TypeScript Modern Rich Text Editor. Configure endpoints, handle file uploads, rename images, and secure uploads with authentication.
+description: Learn remote image upload in the TypeScript Modern Rich Text Editor by configuring endpoints, handling uploads, renaming images, and securing requests.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 Remote image upload enables centralized image management on your server, providing better control over storage, performance, and security. This section covers implementing a complete server-side upload pipeline with authentication and validation.
 
-### Writing an Endpoint for Image Upload
+## Writing an Endpoint for Image Upload
 
 When a user uploads an image through the RichTextEditor, the component sends the file to your server using the form field name `UploadFiles`. Your server processes the file and returns a JSON response containing the filename, which the editor combines with the `imageUrl` setting to create the final image source.
 
-#### Client-Side Configuration
+### Client-Side Configuration
 
 Configure the Modern Rich Text Editor component with the upload endpoint and base URL:
 
@@ -36,7 +36,7 @@ const editor = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-#### Server-Side Configuration
+### Server-Side Configuration
 
 {% tabs %}
 {% highlight c# tabtitle="Server.cs" %}
@@ -44,7 +44,7 @@ editor.appendTo('#editor');
 {% endhighlight %}
 {% endtabs %}
 
-Set up your ASP.NET Core application to handle image uploads with proper CORS, static file serving, and multipart body size configuration in your `program.cs` file:
+Set up your ASP.NET Core application to handle image uploads with proper CORS, static file serving, and multi part body size configuration in your `program.cs` file:
 
 {% tabs %}
 {% highlight c# tabtitle="program.cs" %}
@@ -52,11 +52,11 @@ Set up your ASP.NET Core application to handle image uploads with proper CORS, s
 {% endhighlight %}
 {% endtabs %}
 
-### Rename Images Before Inserting
+## Rename Images Before Inserting
 
 You can implement server-side renaming to ensure all uploaded images follow your naming standards. The client receives the renamed filename and automatically inserts it using the `imageUrl` configuration.
 
-#### Server-Side Configuration
+### Server-Side Configuration
 
 {% tabs %}
 {% highlight c# tabtitle="Server.cs" %}
@@ -64,7 +64,7 @@ You can implement server-side renaming to ensure all uploaded images follow your
 {% endhighlight %}
 {% endtabs %}
 
-#### Client-Side Configuration
+### Client-Side Configuration
 
 ```typescript
 // ============================================
@@ -86,11 +86,11 @@ const editor = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-### Secure image upload with authentication
+## Secure image upload with authentication
 
 You can add additional data with the image uploaded from the Modern Rich Text Editor on the client side, which can even be received on the server side. By using the `fileUploading` event and its arguments you can access the current request and set the request header within this event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
-#### Client-Side Configuration
+### Client-Side Configuration
 
 ```typescript
 // CLIENT-SIDE: Add authentication token before upload
@@ -107,7 +107,7 @@ const editor = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-#### Server-Side Configuration
+### Server-Side Configuration
 
 {% tabs %}
 {% highlight c# tabtitle="Server.cs" %}
