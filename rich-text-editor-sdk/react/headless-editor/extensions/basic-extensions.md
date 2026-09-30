@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 ## Register the preset
 
-```tsx
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
