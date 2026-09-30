@@ -10,10 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Link Quick Toolbar in TypeScript Modern Rich Text Editor
 
-The **Link Quick Toolbar** is the contextual popup that opens when the
-caret enters an `<a>` element inside the editable area. It surfaces the
-most relevant link commands — Open, Copy, Edit, Remove — without
-requiring the user to reach for the main toolbar.
+The **Link Quick Toolbar** is the contextual popup that opens when the caret enters an `<a>` element inside the editable area. It surfaces the most relevant link commands — Open, Copy, Edit, Remove — without requiring the user to reach for the main toolbar.
 
 It is wired through `quickToolbarSettings.link` on `RichTextEditorUI`:
 
@@ -32,23 +29,15 @@ const editor: RichTextEditorUI = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-By default, `quickToolbarSettings.link` is set to
-`['Open', 'Copy', 'Edit', 'Remove']`. To disable the Link Quick Toolbar
-without disabling the rest of the quick toolbar system, set `link: []`
-or `link: null` — the toolbar is only instantiated when `link` is a
-non-empty array.
+By default, `quickToolbarSettings.link` is set to `['Open', 'Copy', 'Edit', 'Remove']`. To disable the Link Quick Toolbar without disabling the rest of the quick toolbar system, set `link: []` or `link: null` — the toolbar is only instantiated when `link` is a non-empty array.
 
-> See [Quick Toolbar](../quick-toolbar.md) for the parent
-> `quickToolbarSettings` shape, the `enable` master switch, and
-> `enableAppendToBody` for clipping inside narrow containers.
+> See [Quick Toolbar](../quick-toolbar.md) for the parent `quickToolbarSettings` shape, the `enable` master switch, and `enableAppendToBody` for clipping inside narrow containers.
 
 ---
 
 ## Available items
 
-The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which
-narrows the available identifiers to the four link-specific commands
-plus a visual separator and any user-supplied custom item.
+The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which narrows the available identifiers to the four link-specific commands plus a visual separator and any user-supplied custom item.
 
 ### Built-in items
 
@@ -69,21 +58,15 @@ The default `link` array is:
 link: ['Open', 'Copy', 'Edit', 'Remove']
 ```
 
-The order is significant — items render left-to-right in the array
-order, separated visually by the popup's tip-pointer logic. To rearrange
-the buttons, supply the items in the order you want.
+The order is significant — items render left-to-right in the array order, separated visually by the popup's tip-pointer logic. To rearrange the buttons, supply the items in the order you want.
 
 ### Default-link toolbar surface
 
-The Link Quick Toolbar is **not** rendered until the caret enters an
-`<a>` element. The toolbar is governed by:
+The Link Quick Toolbar is **not** rendered until the caret enters an `<a>` element. The toolbar is governed by:
 
-- `quickToolbarSettings.enable` — master switch. When `false`, no quick
-  toolbars (text, link, image, table) are rendered.
-- `quickToolbarSettings.link` — the items array. When empty or `null`,
-  the link quick toolbar is not instantiated.
-- `toolbarSettings.enable` — when `false`, the Link Quick Toolbar is
-  also disabled (it requires the main toolbar subsystem to be enabled).
+- `quickToolbarSettings.enable` — master switch. When `false`, no quick toolbars (text, link, image, table) are rendered.
+- `quickToolbarSettings.link` — the items array. When empty or `null`, the link quick toolbar is not instantiated.
+- `toolbarSettings.enable` — when `false`, the Link Quick Toolbar is also disabled (it requires the main toolbar subsystem to be enabled).
 
 ```ts
 const editor: RichTextEditorUI = new RichTextEditorUI({
@@ -96,9 +79,7 @@ const editor: RichTextEditorUI = new RichTextEditorUI({
 editor.appendTo('#editor');
 ```
 
-> When `link` is configured, the toolbar is positioned directly above
-> the link element using the same tip-pointer logic as the text quick
-> toolbar (top-position collision flipping).
+> When `link` is configured, the toolbar is positioned directly above the link element using the same tip-pointer logic as the text quick toolbar (top-position collision flipping).
 
 ### Customising the items
 
@@ -164,14 +145,8 @@ editor.appendTo('#editor');
 
 ## See also
 
-* [Quick Toolbar](../quick-toolbar.md) — the parent `quickToolbarSettings`
-  surface and the four built-in sub-arrays (`text`, `image`, `link`,
-  `table`) the Link Quick Toolbar is part of.
-* [Link Settings](config.md) — `linkSettings` controls how links are
-  created, normalized, validated, and given a default `target` when the
-  Insert-Link dialog opens over them.
-* [Getting Started](../getting-started.md) — install the Modern Rich Text
-  Editor and render your first `RichTextEditorUI` instance.
-* [Migration](../migration.md) — map legacy `RichTextEditor` properties
-  over to `RichTextEditorUI` and the `commands()` builder.
+* [Quick Toolbar](../quick-toolbar) — the parent `quickToolbarSettings` surface and the four built-in sub-arrays (`text`, `image`, `link`, `table`) the Link Quick Toolbar is part of.
+* [Link Settings](settings) — `linkSettings` controls how links are created, normalized, validated, and given a default `target` when the Insert-Link dialog opens over them.
+* [Getting Started](../getting-started) — install the Modern Rich Text Editor and render your first `RichTextEditorUI` instance.
+* [Migration](../migration) — map legacy `RichTextEditor` properties over to `RichTextEditorUI` and the `commands()` builder.
 
