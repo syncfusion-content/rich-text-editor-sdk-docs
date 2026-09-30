@@ -14,8 +14,8 @@ A command is a named action the editor knows how to perform. Commands are the on
 
 There are two kinds of commands in the editor:
 
-- **Generic built-in commands** — listed on this page. They are not tied to any particular feature and are always available.
-- **Extension commands** — owned by their extension (for example, `toggleBold` on the Bold extension, `toggleHeading` on the Heading extension, etc).
+- **Generic built-in commands:** listed on this page. They are not tied to any particular feature and are always available.
+- **Extension commands:** owned by their extension (for example, `toggleBold` on the Bold extension, `toggleHeading` on the Heading extension, etc).
 
 If you are not yet familiar with the editor instance, see the **Editor** page first.
 
