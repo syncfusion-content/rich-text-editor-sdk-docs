@@ -1,44 +1,35 @@
 ---
 layout: post
-title: File Operations in TypeScript Headless Editor | Syncfusion
-description: Learn how to handle file selection, uploads, upload progress, cancellation, errors, and custom upload handlers in the TypeScript Headless Editor.
+title: File Operations in Vue Headless Editor | Syncfusion
+description: Learn how to handle file selection, uploads, progress, cancellation, and custom upload handlers in the Vue Headless Editor component.
 control: Headless Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# File Operations in TypeScript Headless Editor
+# File Operations in Vue Headless Editor
 
-The TypeScript Headless Editor provides file operation support for receiving files through editor interactions and uploading them through a configurable upload handler. The file operation pipeline supports file selection, upload progress, cancellation, upload errors, and upload state management.
+The Vue Headless Editor provides file operation support for receiving files through editor interactions and uploading them through a configurable upload handler. The file operation pipeline supports file selection, upload progress, cancellation, upload errors, and upload state management.
 
-The upload implementation is provided by the application through the `FileUploadHandler` interface. This keeps the editor independent of the application's server, storage provider, and HTTP implementation.
+The upload implementation is provided by the application through the `FileUploadHandler` interface. This keeps the editor independent of the application server, storage provider, and HTTP implementation.
 
 ## File upload example
 
-The following example uses a file input to select a file and demonstrates upload handler registration, progress reporting, and cancellation.
+The following example uses a file input to select a file and demonstrates upload handler registration, progress reporting, and cancellation inside a Vue component.
 
 {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/files-operation/index.ts %}
-
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/files-operation/app-composition.vue %}
 {% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/files-operation/index.html %}
-
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-
-{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/files-operation/index.css %}
-
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/files-operation/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
 ## File selection
 
-The Headless Editor supports file intake through editor file operations and provides APIs for application-driven uploads. Applications can also use their own file-selection controls and pass the selected `File` object to the file handler.
+The Headless Editor supports file intake through editor file operations and provides APIs for application driven uploads. Applications can also use their own file selection controls and pass the selected `File` object to the file handler.
 
 Files received through supported editor operations such as paste and drop are processed through the file operation pipeline.
 
@@ -48,11 +39,11 @@ After the file is accepted, the editor publishes the `fileReceived` event. Recei
 
 ## File upload
 
-Register an application-specific `FileUploadHandler` by using `setFileUploadHandler`.
+Register an application specific `FileUploadHandler` by using `setFileUploadHandler`.
 
 The upload handler receives a `FileUploadRequest` containing the file, upload ID, optional `AbortSignal`, and progress callback.
 
-The handler must return a promise that resolves to a `FileUploadResult`. The result must contain a non-empty `url`. Additional file metadata such as file name, MIME type, size, width, and height can also be returned.
+The handler must return a promise that resolves to a `FileUploadResult`. The result must contain a non empty `url`. Additional file metadata such as file name, MIME type, size, width, and height can also be returned.
 
 ```ts
 const uploadHandler: FileUploadHandler = {
@@ -68,11 +59,11 @@ headlessEditor.setFileUploadHandler(uploadHandler);
 
 ## Upload handler
 
-The `FileUploadHandler` separates application-specific upload logic from the editor runtime.
+The `FileUploadHandler` separates application specific upload logic from the editor runtime.
 
 The application upload handler is responsible for:
 
-* Sending the file to the application's upload service.
+* Sending the file to the application upload service.
 * Validating the HTTP response.
 * Parsing and validating the response data.
 * Returning a valid `FileUploadResult`.
@@ -94,7 +85,7 @@ Each upload is tracked through an upload state with one of the following statuse
 
 The upload state can also contain the number of bytes loaded, total size, percentage, upload result, or an error.
 
-For extension-driven UI, the upload state can be associated with the extension's registry key. For example, the Image extension uses the image node ID to observe the corresponding upload state and update its UI.
+For extension driven UI, the upload state can be associated with the extension registry key. For example, the Image extension uses the image node ID to observe the corresponding upload state and update its UI.
 
 ## Upload progress
 
@@ -114,12 +105,11 @@ The `total` and `percentage` values are optional. When the total size is known, 
 
 ## Upload cancellation
 
-The `startUpload` method returns an upload ID. Pass this ID to the file handler's `cancel` method to cancel the upload.
+The `startUpload` method returns an upload ID. Pass this ID to the file handler `cancel` method to cancel the upload.
 
 ```ts
 // Assume `file` is a File obtained from a file input, drop event, or paste event.
-const uploadId: string =
-    headlessEditor.getFileHandler().startUpload(file);
+const uploadId: string = headlessEditor.getFileHandler().startUpload(file);
 
 headlessEditor.getFileHandler().cancel(uploadId);
 ```
@@ -160,11 +150,11 @@ const uploadHandler: FileUploadHandler = {
 };
 ```
 
-The editor also validates the upload result and marks the upload as failed when the returned result does not contain a valid non-empty `url`.
+The editor also validates the upload result and marks the upload as failed when the returned result does not contain a valid non empty `url`.
 
 ## Custom file providers
 
-The Headless Editor does not require a separate file-provider implementation. To connect file operations to a custom storage service, implement the `FileUploadHandler` interface and register it with `setFileUploadHandler`.
+The Headless Editor does not require a separate file provider implementation. To connect file operations to a custom storage service, implement the `FileUploadHandler` interface and register it with `setFileUploadHandler`.
 
 This allows the application to use its own:
 
@@ -181,8 +171,8 @@ The editor only depends on the `FileUploadHandler` contract and the resulting `F
 
 | API                    | Description                                                       |
 | ---------------------- | ----------------------------------------------------------------- |
-| `setFileUploadHandler` | Registers the application's file upload handler.                  |
-| `getFileHandler`       | Returns the editor's file handler.                                |
+| `setFileUploadHandler` | Registers the application file upload handler.                    |
+| `getFileHandler`       | Returns the editor file handler.                                  |
 | `startUpload`          | Starts an upload and returns an upload ID.                        |
 | `cancel`               | Cancels an upload using its upload ID.                            |
 | `getPendingUploads`    | Returns the upload entries currently tracked by the file handler. |
