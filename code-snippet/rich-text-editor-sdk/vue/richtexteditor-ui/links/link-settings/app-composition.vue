@@ -1,0 +1,18 @@
+<template>
+  <ejs-richtexteditor-ui
+    :linkSettings="linkSettings"
+    placeholder="Type something ...">
+  </ejs-richtexteditor-ui>
+</template>
+
+<script setup>
+import { RichTextEditorUIComponent as EjsRichtexteditorUi } from '@syncfusion/ej2-vue-richtexteditor-ui';
+
+const linkSettings = {
+  linkOnPaste: true,
+  defaultTarget: '_blank',
+  autoPrependProtocol: true,
+  defaultProtocol: 'https',
+  allowedProtocols: ['http', 'https', 'mailto', 'tel']
+};
+</script>
