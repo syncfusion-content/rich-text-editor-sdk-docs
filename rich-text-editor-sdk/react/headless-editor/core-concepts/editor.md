@@ -84,7 +84,7 @@ For the full list of events and their payloads, see the `Events` api.
 
 Use `mount()` to attach the editor to a DOM container, and `unmount()` to detach it.
 
-```tsx
+```ts
 // `editorRef` is a React ref attached to the mount target element.
 const container = editorRef.current;
 
