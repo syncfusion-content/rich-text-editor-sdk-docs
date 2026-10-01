@@ -48,7 +48,7 @@ const editor = HeadlessEditor.create({
     extensions: [
         linkExtension.configure({
             htmlAttributes: { class: 'my-custom-class' },
-            openOnClick: true
+            openOnClick: false
         })
     ]
 });

@@ -19,10 +19,10 @@ The `placeholderExtension` displays hint text inside empty editor nodes to guide
 ```
 
 ```ts
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [placeholderExtension]
+    extensions: [placeholderExtension, paragraphExtension]
 });
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
@@ -47,10 +47,11 @@ The `placeholder` extension exposes options for hint text and visibility rules:
 ```
 
 ```ts
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [
+        paragraphExtension,
         placeholderExtension.configure({
             placeholder: 'Start typing...',
             emptyNodeClass: 'is-empty',
@@ -61,17 +62,22 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-The `placeholder` and `emptyNodeClass` options accept either a string or a function that returns a string. Use a function to render context-specific hints, for example:
+The `placeholder` and `emptyNodeClass` options accept either a string or a function that returns a string.
+
+## Dynamic placeholders
+
+Use a function to render context-specific hints, for example:
 
 ```html
 <div id="editor"></div>
 ```
 
 ```ts
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [
+        paragraphExtension,
         placeholderExtension.configure({
             placeholder: (context) => `Write a ${context.node.type.name}...`
         })

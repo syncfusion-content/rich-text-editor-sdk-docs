@@ -93,14 +93,7 @@ export default {
 </script>
 
 <style>
-  @import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-  @import '../node_modules/@syncfusion/ej2-blockeditor/styles/tailwind3.css';
+  @import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/blockeditor/index.css';
   /* Custom CSS for blocks  */
 .e-block.info-block, .e-block.warning-block, .e-block.success-block, .e-block.error-block {
     padding-top: 10px;
