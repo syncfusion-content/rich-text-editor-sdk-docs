@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating to Vue Modern Rich Text Editor | Syncfusion
-description: Learn how to migrate from the Essential JS 2 Rich Text Editor to the Vue Modern Rich Text Editor, including API mappings, toolbar updates, and configuration changes.
+description: Learn how to migrate from the Essential JS 2 Rich Text Editor to the Vue Modern Rich Text Editor with API, toolbar, and configuration changes.
 control: Modern Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
