@@ -9,6 +9,7 @@ function App() {
     useEffect(() => {
         const editor = HeadlessEditor.create({
             extensions: [
+                paragraphExtension,
                 textAlignExtension.configure({
                     types: ['paragraph', 'heading', 'blockquote']
                 })
