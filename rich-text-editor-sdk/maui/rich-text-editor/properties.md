@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties of .NET MAUI Rich Text Editor control | Syncfusion®
-description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Rich Text Editor, including content formatting, toolbar configuration, styling, hyperlinks, tables, and image insertion.
+description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI Rich Text Editor, including formatting, toolbar, styles, tables, images, and links.
 platform: maui
 control: SfRichTextEditor
 documentation: ug
