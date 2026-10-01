@@ -7,6 +7,7 @@ platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ------------------------------------------------------------
+---
 
 # File Operations in TypeScript Headless Editor
 

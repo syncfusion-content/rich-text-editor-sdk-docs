@@ -20,7 +20,7 @@ The `placeholderExtension` displays hint text inside empty editor nodes to guide
 
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
-  extensions: [ej.headlesseditor.placeholderExtension]
+  extensions: [ej.headlesseditor.placeholderExtension, ej.headlesseditor.paragraphExtension]
 });
 editor.mount(document.getElementById('editor'));
 ```
@@ -47,6 +47,7 @@ The `placeholder` extension exposes options for hint text and visibility rules:
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
+    ej.headlesseditor.paragraphExtension,
     ej.headlesseditor.placeholderExtension.configure({
       placeholder: 'Start typing...',
       emptyNodeClass: 'is-empty',
@@ -66,6 +67,7 @@ The `placeholder` and `emptyNodeClass` options accept either a string or a funct
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
   extensions: [
+    ej.headlesseditor.paragraphExtension,
     ej.headlesseditor.placeholderExtension.configure({
       placeholder: function (context) { return 'Write a ' + context.node.type.name + '...'; }
     })
