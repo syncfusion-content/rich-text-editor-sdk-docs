@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# BulletFormat List Configuration
+# BulletFormat List in Typescript Modern Rich Text Editor
 
 The BulletFormat List feature enables users to create and manage unordered lists with bullet markers. Bulleted lists are ideal for presenting key points, feature lists, and any content that does not require a specific order.
 

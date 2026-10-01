@@ -102,7 +102,18 @@ export default {
     return {
       quickToolbarSettings: {
         image: ['Replace']
-   html
+      }
+    };
+  }
+};
+</script>
+```
+
+### Text Wrap
+
+Control how text flows around the selected image using the Text Wrap quick toolbar item. Configure text wrapping to position images inline with text or allow text to wrap around them.
+
+```html
 <template>
   <ejs-richtexteditor-ui :quickToolbarSettings="quickToolbarSettings"></ejs-richtexteditor-ui>
 </template>
@@ -123,19 +134,12 @@ export default {
   }
 };
 </script>
+```
 
-### Text Wrap
+### Alignment
 
-Control how text flows around the selected image using the Text Wrap quick toolbar item. Configure text wrapping to position images inline with text or allow text to wrap around them.
+Set horizontal alignment of the selected image using the Alignment quick toolbar item. You can align images to the left, center, or right within the editor.
 
-```typescript
-// Enable WrapText in quick toolbar
-const editor = new RichTextEditorUI({
-    quickToolbarSettings: {
-        image: ['WrapText']
-    }
-});
-editor.appendTo('#editor');
 ```html
 <template>
   <ejs-richtexteditor-ui :quickToolbarSettings="quickToolbarSettings"></ejs-richtexteditor-ui>
@@ -157,21 +161,13 @@ export default {
   }
 };
 </script>
-
-### Alignment
-
-Set horizontal alignment of the selected image using the Alignment quick toolbar item. You can align images to the left, center, or right within the editor.
-
-```typescript
-// Enable Align in quick toolbar
-const editor = new RichTextEditorUI({
-    quickToolbarSettings: {
-        image: ['Align']
-    }
-});
-editor.appendTo('#editor');
 ```
-html
+
+### Remove
+
+Delete the selected image from the editor using the Remove quick toolbar item. This provides a quick way to remove images without using the delete key.
+
+```html
 <template>
   <ejs-richtexteditor-ui :quickToolbarSettings="quickToolbarSettings"></ejs-richtexteditor-ui>
 </template>
@@ -192,19 +188,6 @@ export default {
   }
 };
 </script>
-
-### Remove
-
-Delete the selected image from the editor using the Remove quick toolbar item. This provides a quick way to remove images without using the delete key.
-
-```typescript
-// Enable Remove in quick toolbar (recommended)
-const editor = new RichTextEditorUI({
-    quickToolbarSettings: {
-        image: ['Remove']
-    }
-});
-editor.appendTo('#editor');
 ```
 
 ---

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Methods
+# Methods in Vue Modern Rich Text Editor
 
 The Syncfusion Essential JS 2 Rich Text Editor exposes a set of public methods
 on the component instance that let you programmatically interact with the
