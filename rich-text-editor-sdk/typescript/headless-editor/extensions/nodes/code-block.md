@@ -87,7 +87,6 @@ editor.commands.setCodeBlock({ language: 'typescript' });
 
 // Change the active code block's language
 editor.commands.setCodeBlockLanguage({ language: 'javascript' });
-editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcuts

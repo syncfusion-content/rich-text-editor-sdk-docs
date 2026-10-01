@@ -71,6 +71,7 @@ var insertField = new ej.splitbuttons.DropDownButton({
 });
 insertField.appendTo('#insertField');
 
+{% raw %}
 function onItemSelect(args) {
   if (args.item.text != null) {
     var value = textToValueMap[args.item.text];
@@ -85,6 +86,7 @@ function onItemSelect(args) {
     );
   }
 }
+{% endraw %}
 
 {% endraw %}
 
