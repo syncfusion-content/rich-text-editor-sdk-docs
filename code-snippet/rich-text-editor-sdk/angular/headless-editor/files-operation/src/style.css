@@ -1,0 +1,7 @@
+/* Global resets for the Angular Headless Editor - File Operations sample. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', 'calibiri';
+}
