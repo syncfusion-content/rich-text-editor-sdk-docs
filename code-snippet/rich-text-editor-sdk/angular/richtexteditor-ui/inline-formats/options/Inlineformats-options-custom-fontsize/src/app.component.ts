@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RichTextEditorUIModule, SlashCommand } from '@syncfusion/ej2-angular-richtexteditor-ui';
+import { RichTextEditorUIModule, SlashCommandService } from '@syncfusion/ej2-angular-richtexteditor-ui';
 
 @Component({
     imports: [RichTextEditorUIModule],
     standalone: true,
     selector: 'app-root',
-    providers: [SlashCommand],
+    providers: [SlashCommandService],
     templateUrl: './app.component.html'
 })
 export class App {
