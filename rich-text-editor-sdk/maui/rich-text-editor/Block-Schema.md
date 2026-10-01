@@ -9,7 +9,7 @@ documentation: ug
 
 # Block Schema in .NET MAUI Rich Text Editor
 
-The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor) supports a block-based document. To work with block schema content, set the [TValue](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TValue) property to `Schema` and bind a collection of [BlockNode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.BlockNode.html) to the [Value](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Value) property. The block schema represents document content as a collection of strongly typed nodes, enabling developers to create, load, and manipulate rich text content programmatically without using HTML.
+The [.NET MAUI Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-editor) supports a block-based document. To work with block schema content, set the `TValue` property to `Schema` and bind a collection of block nodes to the `Value` property. The block schema represents document content as a collection of strongly typed nodes, enabling developers to create, load, and manipulate rich text content programmatically without using HTML.
 
 The block schema provides a structured representation of editor content and supports common document elements such as paragraphs, headings, lists, hyperlinks, images, tables, code blocks, and text formatting.
 
