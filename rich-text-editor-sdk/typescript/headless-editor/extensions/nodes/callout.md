@@ -74,7 +74,6 @@ editor.commands.toggleCallout();
 
 // Toggle with a warning variant
 editor.commands.toggleCallout({ variant: 'warning' });
-editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcut

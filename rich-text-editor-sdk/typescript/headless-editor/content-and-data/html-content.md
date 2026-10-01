@@ -35,7 +35,7 @@ const editor = HeadlessEditor.create({
 
 If both `EditorConfig.document` (JSON) and `EditorConfig.content` (HTML) are provided, `document` takes precedence and `content` is ignored.
 
-N> `EditorConfig.content` is read once at creation. To replace the content of a live editor, use `editor.setContent(html)` instead — it swaps the document in a single transaction and preserves the editor instance, plugins, and undo history.
+N> `EditorConfig.content` is read once at creation. To replace the content of a live editor, use `editor.setContent(html)` instead. It replaces the document in a single transaction while preserving the editor instance, plugins, and undo history.
 
 ### On a Live Editor
 
@@ -55,7 +55,7 @@ editor.setContent('');
 
 Both `EditorConfig.content` and `editor.setContent(html)` parse HTML through the same pipeline: the registered ProseMirror schema, with every `parseDOM` rule contributed by the loaded extensions, is used to convert the HTML into the editor's document tree.
 
-This means which HTML elements are recognized depends on the schema and extensions you register. There is no public, fixed allow-list or deny-list of HTML tags — tags that no extension recognizes are simply not part of the document model.
+The HTML elements recognized depend on the schema and registered extensions. There is no public, fixed allow-list or deny-list of HTML tags. Tags that are not recognized by any extension are not included in the document model.
 
 N> HTML loading is not run through the clipboard sanitizer. The clipboard sanitizer is handled separately by the clipboard pipeline and does not apply to `setContent()` or `EditorConfig.content`.
 
@@ -78,6 +78,22 @@ If an error occurs during serialization, `getHtml()` returns an empty string ins
 
 ### Schema-driven Serialization
 
-Serialization is driven by the same schema and extensions that govern parsing. Each registered extension contributes a `toDOM` specification that defines how its node and mark types are rendered to HTML. The string returned by `getHtml()` therefore reflects the extensions you have loaded — adding an extension can change the HTML output for its node types.
+Serialization is driven by the same schema and extensions that govern parsing. Each registered extension contributes a `toDOM` specification that defines how its node and mark types are rendered to HTML. The string returned by `getHtml()` therefore reflects the extensions you have loaded. Adding an extension can change the HTML output for its node types.
 
 The HTML returned by `getHtml()` is serialized according to the same schema and extensions used when loading HTML content.
+
+{% tabs %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.ts%}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css';
+
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %}

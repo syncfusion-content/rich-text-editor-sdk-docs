@@ -1,6 +1,6 @@
 
 var headlessEditor = ej.headlesseditor.HeadlessEditor.create({
-    extensions: [basicExtensions, placeholderExtension]
+    extensions: [ej.headlesseditor.basicExtensions, ej.headlesseditor.placeholderExtension]
 });
 var container = document.getElementById('headless-editor');
 
