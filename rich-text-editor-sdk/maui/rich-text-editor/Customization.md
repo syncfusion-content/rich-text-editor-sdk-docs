@@ -46,7 +46,7 @@ richTextEditor.EnableWordWrap = true;
 
 ## Enable Grouped Toolbar Items
 
-The Overlay Toolbar enhances the mobile editing experience by displaying context-aware formatting options directly near the selected content. When the `IsGrouped` property is enabled, related toolbar items are organized into grouped overlay menus, providing a cleaner and more intuitive interface while optimizing screen space on mobile platforms. This allows users to quickly access formatting commands without interrupting their editing workflow.
+The Overlay Toolbar enhances the mobile editing experience by displaying context-aware formatting options directly near the selected content. When the [IsGrouped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_IsGrouped) property is enabled, related toolbar items are organized into grouped overlay menus, providing a cleaner and more intuitive interface while optimizing screen space on mobile platforms. This allows users to quickly access formatting commands without interrupting their editing workflow.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,13 +88,13 @@ richTextEditor.ToolbarItems.Add(new RichTextToolbarItem() { Type = RichTextToolb
 
 ## Programmatic Formatting
 
-The `SfRichTextEditor` provides a comprehensive set of methods to apply formatting programmatically. These methods are useful when you want to create your own custom UI for formatting or apply styles dynamically without relying on the built-in toolbar.
+The [SfRichTextEditor]((https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html)) provides a comprehensive set of methods to apply formatting programmatically. These methods are useful when you want to create your own custom UI for formatting or apply styles dynamically without relying on the built-in toolbar.
 
 The following code examples assume you have an instance of `SfRichTextEditor` named `richTextEditor`.
 
 ### Toggling Character Formatting
 
-You can easily toggle common text styles like bold, italic, and underline on the current text selection.
+You can easily toggle common text styles like bold, italic, underline, and change the casing of the current text selection.
 
 *   [ToggleBold()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleBold): Toggles the bold style.
 *   [ToggleItalic()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleItalic): Toggles the italic style.
@@ -102,6 +102,8 @@ You can easily toggle common text styles like bold, italic, and underline on the
 *   [ToggleStrikethrough()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleStrikethrough): Toggles the strikethrough style.
 *   [ToggleSubscript()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleSubscript): Toggles the subscript style.
 *   [ToggleSuperscript()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleSuperscript): Toggles the superscript style.
+*   [Uppercase()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Uppercase): Converts the selected text to uppercase.
+*   [Lowercase()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Lowercase): Converts the selected text to lowercase.
 
 {% tabs %}
 {% highlight c# %}
