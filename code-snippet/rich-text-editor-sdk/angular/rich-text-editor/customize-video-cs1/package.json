@@ -17,7 +17,6 @@
     "@syncfusion/ej2-richtexteditor": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-dropdowns": "*",
-    "@syncfusion/ej2-lists": "*",
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-splitbuttons": "*",
