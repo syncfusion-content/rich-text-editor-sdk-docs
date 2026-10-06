@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Attributes in JavaScript Headless Editor | Syncfusion
-description: Learn how to define custom node and mark attributes, including supported types, default values, and reusable definitions.
+description: Learn how to define custom node and mark attributes, including supported types, default values, and reusable definitions in JavaScript Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

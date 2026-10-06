@@ -20,7 +20,7 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, undoRedoExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ export class App implements AfterViewInit, OnDestroy {
   private editor!: HeadlessEditor;
 
   ngAfterViewInit(): void {
-    this.editor = HeadlessEditor.create({ extensions: [undoRedoExtension] });
+    this.editor = HeadlessEditor.create({ extensions: [undoRedoExtension, paragraphExtension] });
     this.editor.mount(this.editorRef.nativeElement);
   }
 
@@ -59,7 +59,7 @@ The `undoRedo` extension exposes options for tuning the history stack:
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, undoRedoExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -73,6 +73,7 @@ export class App implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     this.editor = HeadlessEditor.create({
       extensions: [
+        paragraphExtension,
         undoRedoExtension.configure({
           depth: 50,
           newGroupDelay: 500
