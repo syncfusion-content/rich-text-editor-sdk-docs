@@ -44,7 +44,7 @@ The **Link Settings** govern how hyperlinks are created, normalized, and validat
 
 ---
 
-## 1. Paste link as text
+## Paste link as text
 
 `linkSettings.linkOnPaste` controls what happens when the user pastes a URL over a non-collapsed text selection inside the editor.
 
@@ -83,7 +83,7 @@ A paste whose payload contains whitespace, or that is plain text with a URL insi
 
 ---
 
-## 2. Always Open link in new tab
+## Always Open link in new tab
 
 `linkSettings.defaultTarget` sets the `target` attribute applied to hyperlinks the editor creates through the Insert-Link dialog or through `linkOnPaste`. The supported values mirror the standard HTML `target` attribute.
 
@@ -111,11 +111,11 @@ public linkSettings: object = {
 
 ---
 
-## 3. Configure Available Protocols
+## Configure Available Protocols
 
 `linkSettings.autoPrependProtocol` and `linkSettings.defaultProtocol` work as a pair: when `autoPrependProtocol` is `true`, URLs typed into the Insert-Link dialog or pasted over a selection that lack a protocol  are prefixed with `defaultProtocol` (for example `https://`). When `autoPrependProtocol` is `false`, the URL is left untouched and is inserted exactly as typed.
 
-| `autoPrependProtocol` | `defaultProtocol` | URL typed | URL stored as |
+| autoPrependProtocol | defaultProtocol | URL typed | URL stored as |
 | --- | --- | --- | --- |
 | `true` | `'https'` | `example.com/page` | `https://example.com/page` |
 | `true` | `'http'` | `example.com/page` | `http://example.com/page` |
@@ -135,7 +135,7 @@ public linkSettings: object = {
 
 ---
 
-## 4. Default Protocol
+## Default Protocol
 
 `linkSettings.defaultProtocol` selects which protocol  is prepended to protocol-less URLs when `autoPrependProtocol` is `true`. It is also the initial selection in the Insert-Link dialog's protocol dropdown.
 
@@ -161,7 +161,7 @@ The value must be one of the entries in `allowedProtocols` (matched case-insensi
 
 ---
 
-## 5. Configure Allowed Protocols
+## Configure Allowed Protocols
 
 `linkSettings.allowedProtocols` is the allow-list applied to URL
 **validation** in two places:

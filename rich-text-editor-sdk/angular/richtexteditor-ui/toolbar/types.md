@@ -16,27 +16,14 @@ The main toolbar is the primary interaction surface for formatting commands, and
 
 ### Toolbar items
 
-Set `toolbarSettings.items` to the ordered list of buttons (and `'|'` separators) you want to show. The default set already covers the common cases — `['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']` — so you only need to set this when you want to trim it down or add other built-in tools.
+Set `toolbarSettings.items` to the ordered list of buttons (and `'|'` separators) you want to show. The default set already covers the common cases, so you only need to set this when you want to trim it down or add other built-in tools.
 
 If you don't want a toolbar at all — for example, when the editor is driven entirely by your own UI, as in the [ribbon sample](../toolbar/custom-toolbar-items#updatedtoolbarstatus-event) — set `toolbarSettings.enable` to `false` and no toolbar is rendered; the editor stays fully usable programmatically.
 
-{% tabs %}
+> **Note**: Below are the default toolbar items:
+`['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']`
 
-{% highlight ts tabtitle="app.component.ts" %}
-
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-config/src/app.component.ts %}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-config/src/app.component.html %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-config/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/config/" %}
 
 #### Available toolbar items
 
@@ -66,21 +53,4 @@ By default the toolbar sits at the top of the editor (`toolbarSettings.position:
 
 For a long document, losing the toolbar off-screen as the user scrolls down is disruptive. [`toolbarSettings.enableFloating`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#enableFloating) is `true` by default, so the toolbar automatically detaches and sticks in place once the editor scrolls out of view. Set it to `false` if you'd rather the toolbar just scroll away with the content. If your page includes a sticky header, use [`toolbarSettings.floatingOffset`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#floatingOffset) to add a top offset (in pixels) and prevent the floating toolbar from overlapping the header. The default value is `0`.
 
-
-{% tabs %}
-
-{% highlight ts tabtitle="app.component.ts" %}
-
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-type/src/app.component.ts %}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="app.component.html" %}
-
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-type/src/app.component.html %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/types/Toolbar-type/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/type/" %}
