@@ -16,25 +16,25 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 {% highlight tsx tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Basic-setup/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight jsx tabtitle="App.jsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Basic-setup/app/App.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/app/App.jsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Basic-setup/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Basic-setup/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/" %}
 
 ## Set Editor content
 

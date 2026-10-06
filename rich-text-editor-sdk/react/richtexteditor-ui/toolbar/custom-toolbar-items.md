@@ -16,19 +16,19 @@ Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-custom-item/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-custom-item/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-custom-item/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-custom-item/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-custom-item/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-custom-item/" %}
 
 ## itemClicked Event
 
@@ -52,19 +52,19 @@ Refer to the following sample, which drives an external ribbon component — wit
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-ribbon/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-ribbon/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-ribbon/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-ribbon/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-ribbon/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-ribbon/" %}
 
 This sample turns off the built-in toolbar entirely (`toolbarSettings.enable: false`) and replaces it with a plain HTML "ribbon" — three formatting buttons, a heading `<select>`, and a color `<input>`. Each control calls the matching `commands()` method on click.
 

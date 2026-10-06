@@ -99,19 +99,19 @@ Configure custom dimensions or preset sizes for images with min/max constraints.
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-dimension-cs1/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-dimension-cs1/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-dimension-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-dimension-cs1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-dimension-cs1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-dimension-cs1/" %}
 
 ## Image Display Options
 
@@ -129,19 +129,19 @@ Configure how images are rendered in the document - either flowing with text or 
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-display-cs1/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-display-cs1/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-display-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-display-cs1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-display-cs1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-display-cs1/" %}
 
 ---
 
@@ -157,16 +157,16 @@ The `resize` property controls whether images can be resized by users. By defaul
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-resize-cs1/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-resize-cs1/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-resize-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-resize-cs1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/image-resize-cs1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/image-resize-cs1/" %}

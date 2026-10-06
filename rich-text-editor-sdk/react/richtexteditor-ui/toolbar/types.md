@@ -24,19 +24,19 @@ If you don't want a toolbar at all — for example, when the editor is driven en
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-config/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-config/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-config/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/" %}
 
 #### Available toolbar items
 
@@ -71,16 +71,16 @@ For a long document, losing the toolbar off-screen as the user scrolls down is d
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-type/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-type/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Toolbar/Toolbar-type/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/" %}

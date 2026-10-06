@@ -41,7 +41,7 @@ Configure the Modern Rich Text Editor component with the upload endpoint and bas
 
 {% highlight ts tabtitle="Server.cs" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/remote-upload-server-cs1/index.cs %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/remote-upload-server-cs1/index.cs %}
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Set up your ASP.NET Core application to handle image uploads with proper CORS, s
 
 {% highlight ts tabtitle="program.cs" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/remote-upload-program-cs1/index.cs %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/remote-upload-program-cs1/index.cs %}
 
 {% endhighlight %}
 
@@ -69,7 +69,7 @@ You can implement server-side renaming to ensure all uploaded images follow your
 
 {% highlight ts tabtitle="Server.cs" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/remote-upload-rename-server-cs1/index.cs %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/remote-upload-rename-server-cs1/index.cs %}
 
 {% endhighlight %}
 
@@ -120,7 +120,7 @@ You can add additional data with the image uploaded from the Modern Rich Text Ed
 
 {% highlight ts tabtitle="Server.cs" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/remote-upload-auth-server-cs1/index.cs %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/remote-upload-auth-server-cs1/index.cs %}
 
 {% endhighlight %}
 

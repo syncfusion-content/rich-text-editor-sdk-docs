@@ -145,16 +145,16 @@ The default image quick toolbar includes:
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/quick-toolbar-customize-cs1/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/quick-toolbar-customize-cs1/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/quick-toolbar-customize-cs1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/quick-toolbar-customize-cs1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/Image/quick-toolbar-customize-cs1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/image/quick-toolbar-customize-cs1/" %}

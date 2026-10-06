@@ -37,19 +37,19 @@ The following example demonstrates how to add the bullet format list in toolbar 
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List1/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List1/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List1/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List1/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List1/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List1/" %}
 
 
 ---
@@ -66,19 +66,19 @@ The following example demonstrates how to customize the bullet format list in th
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List2/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List2/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List2/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List2/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/List/BulletFormat-List2/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/list/BulletFormat-List2/" %}
 
 ---
 
