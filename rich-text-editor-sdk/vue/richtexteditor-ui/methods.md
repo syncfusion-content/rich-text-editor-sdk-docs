@@ -17,10 +17,10 @@ focus, persist the editor value, and update the toolbar state.
 
 In Vue, every method is invoked on the editor component instance obtained
 through a template ref. The standard pattern is to declare a ref named
-`rteObj` on the editor and access it through `this.$refs.rteObj`:
+`editor` on the editor and access it through `this.$refs.editor`:
 
 ```html
-<ejs-richtexteditor-ui ref="rteObj"></ejs-richtexteditor-ui>
+<ejs-richtexteditor-ui ref="editor"></ejs-richtexteditor-ui>
 ```
 
 
@@ -29,7 +29,7 @@ through a template ref. The standard pattern is to declare a ref named
 Persists the current editor content into the component's `value` property.
 
 ```typescript
-this.$refs.rteObj.save();
+this.$refs.editor.save();
 ```
 
 ## 2. focusIn
@@ -38,7 +38,7 @@ Moves focus into the editor's editable area and triggers the editor's focus-in
 handling.
 
 ```typescript
-this.$refs.rteObj.focusIn();
+this.$refs.editor.focusIn();
 ```
 
 ## 3. focusOut
@@ -47,7 +47,7 @@ Removes focus from the editor's editable area and triggers the editor's
 focus-out handling.
 
 ```typescript
-this.$refs.rteObj.focusOut();
+this.$refs.editor.focusOut();
 ```
 
 ## 4. getDocument
@@ -55,7 +55,7 @@ this.$refs.rteObj.focusOut();
 Returns the current editor document.
 
 ```typescript
-let document = this.$refs.rteObj.getDocument();
+let document = this.$refs.editor.getDocument();
 ```
 
 ## 5. getHtml
@@ -63,7 +63,7 @@ let document = this.$refs.rteObj.getDocument();
 Returns the current editor content as an HTML string.
 
 ```typescript
-let html: string = this.$refs.rteObj.getHtml();
+let html: string = this.$refs.editor.getHtml();
 console.log('Rich Text Editor HTML: ', html);
 ```
 
@@ -72,7 +72,7 @@ console.log('Rich Text Editor HTML: ', html);
 Returns the current editor content as plain text.
 
 ```typescript
-let text: string = this.$refs.rteObj.getText();
+let text: string = this.$refs.editor.getText();
 console.log('Rich Text Editor text: ', text);
 ```
 
@@ -82,7 +82,7 @@ console.log('Rich Text Editor text: ', text);
 Applies a batch of toolbar item updates (add, remove) to the editor's toolbar.
 
 ```typescript
-this.$refs.rteObj.updateToolbarItems([
+this.$refs.editor.updateToolbarItems([
     { action: 'add', item: 'Italic', index: 1 }
 ]);
 ```

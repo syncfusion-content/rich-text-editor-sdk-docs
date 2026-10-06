@@ -20,12 +20,12 @@ initialized and rendered. The standard EJ2 instance pattern is used in the
 examples below:
 
 ```typescript
-import { RichTextEditor } from '@syncfusion/ej2-richtexteditor';
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui'
 
-let rteObj: RichTextEditor = new RichTextEditor({
+let editor: RichTextEditorUI = new RichTextEditorUI({
     // editor configuration
 });
-rteObj.appendTo('#default');
+editor.appendTo('#default');
 ```
 
 
@@ -34,7 +34,7 @@ rteObj.appendTo('#default');
 Persists the current editor content into the component's `value` property.
 
 ```typescript
-rteObj.save();
+editor.save();
 ```
 
 ## 2. focusIn
@@ -43,7 +43,7 @@ Moves focus into the editor's editable area and triggers the editor's focus-in
 handling.
 
 ```typescript
-rteObj.focusIn();
+editor.focusIn();
 ```
 
 ## 3. focusOut
@@ -52,7 +52,7 @@ Removes focus from the editor's editable area and triggers the editor's
 focus-out handling.
 
 ```typescript
-rteObj.focusOut();
+editor.focusOut();
 ```
 
 ## 4. getDocument
@@ -60,7 +60,7 @@ rteObj.focusOut();
 Returns the current editor document.
 
 ```typescript
-let document = rteObj.getDocument();
+let document = editor.getDocument();
 ```
 
 ## 5. getHtml
@@ -68,7 +68,7 @@ let document = rteObj.getDocument();
 Returns the current editor content as an HTML string.
 
 ```typescript
-let html: string = rteObj.getHtml();
+let html: string = editor.getHtml();
 console.log('Rich Text Editor HTML: ', html);
 ```
 
@@ -77,7 +77,7 @@ console.log('Rich Text Editor HTML: ', html);
 Returns the current editor content as plain text.
 
 ```typescript
-let text: string = rteObj.getText();
+let text: string = editor.getText();
 console.log('Rich Text Editor text: ', text);
 ```
 
@@ -87,7 +87,7 @@ console.log('Rich Text Editor text: ', text);
 Applies a batch of toolbar item updates (add, remove) to the editor's toolbar.
 
 ```typescript
-rteObj.updateToolbarItems([
+editor.updateToolbarItems([
     { action: 'add', item: 'Italic', index: 1 }
 ]);
 ```
