@@ -5,7 +5,7 @@ description: Learn how to customize the placeholder text style in the React Rich
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Customize Placeholder Text Style in React Rich Text Editor

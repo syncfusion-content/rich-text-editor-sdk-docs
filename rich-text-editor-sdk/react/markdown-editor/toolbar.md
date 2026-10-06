@@ -5,7 +5,7 @@ description: Learn how to configure the toolbar in the React Markdown Editor wit
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Configuration in React Markdown Editor

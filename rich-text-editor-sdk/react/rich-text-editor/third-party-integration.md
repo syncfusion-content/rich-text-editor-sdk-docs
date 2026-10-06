@@ -5,7 +5,7 @@ description:  Learn how to integrate CodeMirror, Embedly, Highlight.js, and othe
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Third-Party Integration in React Rich Text Editor

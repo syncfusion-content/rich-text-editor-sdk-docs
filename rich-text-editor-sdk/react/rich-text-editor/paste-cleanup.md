@@ -5,7 +5,7 @@ description:  Learn how to clean and manage pasted content in the React Rich Tex
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in React Rich Text Editor

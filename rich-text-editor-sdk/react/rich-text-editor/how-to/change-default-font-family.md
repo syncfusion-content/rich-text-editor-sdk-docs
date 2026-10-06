@@ -5,7 +5,7 @@ description: Learn how to set the default font family in the React Rich Text Edi
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Set Default Font Family in React Rich Text Editor

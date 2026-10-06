@@ -5,7 +5,7 @@ description: Learn how to set the cursor position at a specific range in the Rea
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Set Cursor Position by Range in React Rich Text Editor

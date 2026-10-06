@@ -5,7 +5,7 @@ description: Learn how to enable IFrame editing mode in the React Rich Text Edit
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # IFrame Editing Mode in React Rich Text Editor

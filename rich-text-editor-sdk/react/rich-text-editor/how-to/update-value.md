@@ -5,7 +5,7 @@ description: Learn how to update content in the React Rich Text Editor dynamical
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Update Editor Value in React Rich Text Editor

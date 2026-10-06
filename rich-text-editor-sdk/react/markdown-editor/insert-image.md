@@ -5,7 +5,7 @@ description: Learn how to insert images in the React Markdown Editor using the I
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in React Markdown Editor

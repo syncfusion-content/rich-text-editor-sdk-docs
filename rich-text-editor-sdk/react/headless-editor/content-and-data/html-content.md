@@ -5,7 +5,7 @@ description: Learn how the Syncfusion React Headless Editor loads and exports HT
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # HTML Content in React Headless Editor

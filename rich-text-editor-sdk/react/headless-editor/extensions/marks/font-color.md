@@ -5,7 +5,7 @@ description: Learn how to configure the Font Color mark in the React Headless Ed
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Font Color Mark in React Headless Editor

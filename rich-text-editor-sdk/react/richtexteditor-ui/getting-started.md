@@ -5,7 +5,7 @@ description: Learn how to get started with the React Modern Rich Text Editor and
 control: Modern Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting started in React Modern Rich Text Editor

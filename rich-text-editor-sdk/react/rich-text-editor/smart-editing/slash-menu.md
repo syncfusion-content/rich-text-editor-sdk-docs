@@ -5,7 +5,7 @@ description: Learn how to use slash commands in the React Rich Text Editor to qu
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Slash Commands in React Rich Text Editor

@@ -5,7 +5,7 @@ description:  Learn about all available toolbar items in React Rich Text Editor,
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in React Rich Text Editor

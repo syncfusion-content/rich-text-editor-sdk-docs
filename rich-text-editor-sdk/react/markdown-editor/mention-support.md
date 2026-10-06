@@ -5,7 +5,7 @@ description: Learn how to enable mentions in the React Markdown Editor using the
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in React Markdown Editor

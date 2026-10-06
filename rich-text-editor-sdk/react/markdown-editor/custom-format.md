@@ -5,7 +5,7 @@ description: Learn how to customize Markdown syntax in the React Markdown Editor
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Markdown Syntax in React Markdown Editor

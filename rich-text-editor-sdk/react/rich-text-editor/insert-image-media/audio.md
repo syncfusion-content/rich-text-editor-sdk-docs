@@ -5,7 +5,7 @@ description: Learn how to add, upload, manage, and customize audio content in th
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Audio in React Rich Text Editor

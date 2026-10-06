@@ -5,7 +5,7 @@ description: Learn how to enable and configure the React Rich Text Editor AI Ass
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrating the AI Assistant in React Rich Text Editor
