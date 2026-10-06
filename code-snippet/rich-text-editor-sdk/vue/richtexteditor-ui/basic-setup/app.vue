@@ -15,6 +15,7 @@ export default {
     'ejs-richtexteditor-ui': RichTextEditorUIComponent
   },
   data: function() {
+    const hostUrl = 'https://services.syncfusion.com/js/production/';
         return {
           value: '<p>Getting started with the Rich Text Editor UI.</p>',
           valueFormat: 'html',
@@ -23,7 +24,9 @@ export default {
           },
           imageSettings: {
             allowedTypes: ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp'],
-            maxFileSize: 30000000
+            maxFileSize: 30000000,
+            uploadUrl: hostUrl + 'api/RichTextEditor/SaveFile',
+            imageUrl: hostUrl + 'RichTextEditor/'
           }
         };
       }

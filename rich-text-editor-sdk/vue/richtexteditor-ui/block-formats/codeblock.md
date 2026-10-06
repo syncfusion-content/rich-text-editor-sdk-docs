@@ -10,26 +10,17 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # Code Block in Vue Modern Rich Text Editor
 
-A code block inserts a `<pre>` element at the current selection and tags it
-with a language identifier for syntax highlighting. Code blocks are reached
-through the `CodeBlock` built-in toolbar identifier in the Modern Rich Text
-Editor. There is no slash-command entry for the code block; users reach it
-through the toolbar or through the `codeBlock` command.
+A code block inserts a `<pre>` element at the current selection and tags it with a language identifier for syntax highlighting. Code blocks are reached through the `CodeBlock` built-in toolbar identifier in the Modern Rich Text Editor. There is no slash-command entry for the code block; users reach it through the toolbar or through the `codeBlock` command..
 
 ## Commands support
 
-The `codeBlock` command accepts a `CodeBlockCommand` payload
-(`{ language: string }`). The `language` value is the language identifier
-applied to the block — common values include `"javascript"`, `"typescript"`,
-`"html"`, `"css"`, `"python"`, and `"plaintext"`. An empty string applies a
-plain code block with no specific language annotation.
+The `codeBlock` command accepts a `CodeBlockCommand` payload (`{ language: string }`). The `language` value is the language identifier applied to the block — common values include `"javascript"`, `"typescript"`, `"html"`, `"css"`, `"python"`, and `"plaintext"`. An empty string applies a plain code block with no specific language annotation..
 
 | Command | Payload | Toolbar item | Keyboard shortcut |
 | --- | --- | --- | --- |
 | `codeBlock` | `CodeBlockCommand` (`{ language: string }`) | `CodeBlock` | `Ctrl+Shift+B` (Windows) / `⌘ ⇧ B` (macOS) |
 
-Add the `CodeBlock` toolbar item next to the other block-format buttons to
-expose the command.
+Add the `CodeBlock` toolbar item next to the other block-format buttons to expose the command.
 
 {% tabs %}
 
@@ -48,9 +39,3 @@ expose the command.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/blockformats-codeblock/" %}
-
-When the user clicks the `CodeBlock` toolbar button, the editor dispatches
-the `codeBlock` command with a default language value. The command is
-non-destructive — invoking it on a block that is already a code block
-toggles the block back to a paragraph. See [Text Formats](text-formats)
-for the full block-format command map.
