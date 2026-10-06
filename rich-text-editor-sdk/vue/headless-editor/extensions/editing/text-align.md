@@ -18,7 +18,7 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
@@ -27,7 +27,7 @@ onMounted(() => {
         return;
     }
     editor = HeadlessEditor.create({
-        extensions: [textAlignExtension]
+        extensions: [textAlignExtension, paragraphExtension]
     });
     editor.mount(editorContainer.value);
 });
@@ -41,7 +41,7 @@ onBeforeUnmount(() => editor?.destroy());
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 export default defineComponent({
     data() {
@@ -51,7 +51,7 @@ export default defineComponent({
     },
     mounted() {
         const editor = HeadlessEditor.create({
-            extensions: [textAlignExtension]
+            extensions: [textAlignExtension, paragraphExtension]
         });
         this.editor = markRaw(editor);
         editor.mount(this.$refs.editorContainer as HTMLDivElement);
