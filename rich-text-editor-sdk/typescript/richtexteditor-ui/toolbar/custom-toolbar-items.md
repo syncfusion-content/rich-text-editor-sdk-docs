@@ -16,19 +16,19 @@ Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui//toolbar/custom-item/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/custom-item/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-custom-item/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/custom-item/" %}
 
 ## itemClicked Event
 
@@ -38,35 +38,27 @@ Refer to the sample above: clicking the word-count button reads `args.item.actio
 
 ## updatedToolbarStatus Event
 
-Where `itemClicked` tells you a button was pressed, `updatedToolbarStatus` tells you what's currently active at the cursor — it fires whenever the selection moves or changes, with a snapshot of the current formatting state:
+The `updatedToolbarStatus` event is raised after the toolbar synchronizes its visual state with the current editor selection or cursor formatting. Its event arguments provide the active inline marks, block-level formats, and resolved font and color styles.
 
-* `args.activeMarks` — booleans for `bold`, `italic`, `underline`, `strikethrough`, `subscript`, `superscript`, `inlineCode`.
-* `args.blockFormats` — booleans for `paragraph`, `blockQuote`, `orderedList`, `bulletList`, `codeBlock`, `alignLeft`, `alignCenter`, `alignRight`, `alignJustify`, plus `heading` (a string such as `'heading1'`, or `null` when the block isn't a heading).
-* `args.styles` — the resolved `fontColor`, `backgroundColor`, `fontFamily`, and `fontSize` at the selection (each a string or `null`).
-
-This is exactly what you need to drive a completely custom formatting UI instead of the built-in toolbar — apply commands from your own controls.
-
-Refer to the following sample, which drives an external ribbon component — with buttons, a dropdown, and a color picker — entirely from `commands()`:
+The following example demonstrates how to handle the `updatedToolbarStatus` event and display which text formatting styles (bold, italic, underline, strikethrough) are currently active at the cursor position.
 
 {% tabs %}
 
-{% highlight ts tabtitle="main.ts" %}
+{% highlight ts tabtitle="index.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/updateToolbarStatus/index.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/index.html %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/updateToolbarStatus/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-ribbon/" %}
-
-This sample turns off the built-in toolbar entirely (`toolbarSettings.enable: false`) and replaces it with a plain HTML "ribbon" — three formatting buttons, a heading `<select>`, and a color `<input>`. Each control calls the matching `commands()` method on click.
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/updateToolbarStatus/" %}
 
 ## Updating toolbar items at runtime
 
