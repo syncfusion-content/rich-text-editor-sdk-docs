@@ -20,7 +20,7 @@ The `placeholderExtension` displays hint text inside empty editor nodes to guide
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ export class App implements AfterViewInit, OnDestroy {
   private editor!: HeadlessEditor;
 
   ngAfterViewInit(): void {
-    this.editor = HeadlessEditor.create({ extensions: [placeholderExtension] });
+    this.editor = HeadlessEditor.create({ extensions: [placeholderExtension, paragraphExtension ] });
     this.editor.mount(this.editorRef.nativeElement);
   }
 
@@ -65,7 +65,7 @@ The `placeholder` extension exposes options for hint text and visibility rules:
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -79,6 +79,7 @@ export class App implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     this.editor = HeadlessEditor.create({
       extensions: [
+        paragraphExtension,
         placeholderExtension.configure({
           placeholder: 'Start typing...',
           emptyNodeClass: 'is-empty',
@@ -109,7 +110,7 @@ Use a function to render context-specific hints, for example:
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -123,6 +124,7 @@ export class App implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     this.editor = HeadlessEditor.create({
       extensions: [
+        paragraphExtension,
         placeholderExtension.configure({
           placeholder: (context) => `Write a ${context.node.type.name}...`
         })

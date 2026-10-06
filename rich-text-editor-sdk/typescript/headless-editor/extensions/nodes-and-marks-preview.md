@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Nodes and Marks Preview
+# Nodes and Marks Preview in TypeScript Headless Editor
 
 This example demonstrates the built-in **nodes** and **marks** available in the TypeScript Headless Editor. It includes common text blocks, lists, tables, callouts, collapsible content, and text formatting such as bold, italic, underline, strikethrough, superscript, subscript, inline code, and links.
 

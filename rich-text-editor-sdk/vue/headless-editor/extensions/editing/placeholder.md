@@ -18,7 +18,7 @@ The `placeholderExtension` displays hint text inside empty editor nodes to guide
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
@@ -27,7 +27,7 @@ onMounted(() => {
         return;
     }
     editor = HeadlessEditor.create({
-        extensions: [placeholderExtension]
+        extensions: [placeholderExtension, paragraphExtension]
     });
     editor.mount(editorContainer.value);
 });
@@ -41,7 +41,7 @@ onBeforeUnmount(() => editor?.destroy());
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 export default defineComponent({
     data() {
@@ -51,7 +51,7 @@ export default defineComponent({
     },
     mounted() {
         const editor = HeadlessEditor.create({
-            extensions: [placeholderExtension]
+            extensions: [placeholderExtension, paragraphExtension]
         });
         this.editor = markRaw(editor);
         editor.mount(this.$refs.editorContainer as HTMLDivElement);
@@ -87,7 +87,7 @@ The `placeholder` extension exposes options for hint text and visibility rules:
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editorContainer = ref<HTMLDivElement | null>(null);
 let editor: HeadlessEditor | null = null;
@@ -96,7 +96,7 @@ onMounted(() => {
         return;
     }
     editor = HeadlessEditor.create({
-        extensions: [
+        extensions: [paragraphExtension,
             placeholderExtension.configure({
                 placeholder: 'Start typing...',
                 emptyNodeClass: 'is-empty',
@@ -116,7 +116,7 @@ onBeforeUnmount(() => editor?.destroy());
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 <script lang="ts">
 import { defineComponent, markRaw } from 'vue';
-import { HeadlessEditor, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, placeholderExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 export default defineComponent({
     data() {
@@ -126,7 +126,7 @@ export default defineComponent({
     },
     mounted() {
         const editor = HeadlessEditor.create({
-            extensions: [
+            extensions: [paragraphExtension,
                 placeholderExtension.configure({
                     placeholder: 'Start typing...',
                     emptyNodeClass: 'is-empty',
