@@ -20,7 +20,7 @@ The `textAlignExtension` registers the `setTextAlign` and `unsetTextAlign` comma
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ export class App implements AfterViewInit, OnDestroy {
   private editor!: HeadlessEditor;
 
   ngAfterViewInit(): void {
-    this.editor = HeadlessEditor.create({ extensions: [textAlignExtension] });
+    this.editor = HeadlessEditor.create({ extensions: [textAlignExtension, paragraphExtension] });
     this.editor.mount(this.editorRef.nativeElement);
   }
 
@@ -59,7 +59,7 @@ The `textAlign` extension exposes options for choosing which block types accept 
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -73,6 +73,7 @@ export class App implements AfterViewInit, OnDestroy {
   ngAfterViewInit(): void {
     this.editor = HeadlessEditor.create({
       extensions: [
+        paragraphExtension,
         textAlignExtension.configure({
           types: ['paragraph', 'heading', 'blockquote']
         })

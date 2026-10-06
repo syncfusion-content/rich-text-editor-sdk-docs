@@ -35,7 +35,7 @@ cd my-app
 npm install
 ```
 
-## Adding Modern Rich Text Editor packages
+## Adding Modern Rich Text Editor package
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
 To install the Modern Rich Text Editor control, use the following command:
@@ -71,9 +71,7 @@ Now, you can start adding the Modern Rich Text Editor control to the application
 
 import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
-const editor: RichTextEditorUI = new RichTextEditorUI({
-    placeholder: 'Type something ...'
-});
+const editor: RichTextEditorUI = new RichTextEditorUI({});
 
 editor.appendTo('#editor');
 
