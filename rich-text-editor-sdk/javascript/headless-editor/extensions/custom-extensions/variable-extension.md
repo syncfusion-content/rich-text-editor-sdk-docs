@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Document Variable Extension Example in JavaScript Headless Editor | Syncfusion
+title: Document Variable Extension in JavaScript Headless Editor | Syncfusion
 description: A runnable Document Variable custom extension for the JavaScript Headless Editor that turns {{name}} tokens into styled chips.
 platform: rich-text-editor-sdk
 control: Headless Editor

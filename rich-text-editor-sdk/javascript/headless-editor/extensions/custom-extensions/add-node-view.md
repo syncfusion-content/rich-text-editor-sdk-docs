@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a Node View to an Existing Node in Javascript Headless Editor | Syncfusion
+title: Add Node View to Existing Node in Javascript Headless Editor | Syncfusion
 description: Learn how to layer a product UI on top of a built-in Javascript Headless Editor node using the addNodeView extension option.
 platform: rich-text-editor-sdk
 control: Headless Editor
