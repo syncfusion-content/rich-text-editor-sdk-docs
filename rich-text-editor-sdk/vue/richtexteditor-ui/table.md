@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tables in TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to insert, format, and manage tables in the TypeScript Modern Rich Text Editor with row, column, and cell customization options.
+title: Tables in Vue Modern Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the Vue Modern Rich Text Editor with row, column, and cell customization options.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Table Configuration & Properties in TypeScript Modern Rich Text Editor
+# Table Configuration & Properties in Vue Modern Rich Text Editor
 
 ## Overview
 
@@ -134,7 +134,7 @@ Access via Quick Toolbar → **Remove** button.
 
 ### TableSettings
 
-Use the [`tableSettings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/tableSettings) property to configure the default behavior and interaction settingsModern Rich Text Editor.
+Use the [`tableSettings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/tableSettings) property to configure the default behavior and interaction settings in the Modern Rich Text Editor.
 
 **Available Properties**
 
@@ -142,13 +142,11 @@ Use the [`tableSettings`](https://ej2.syncfusion.com/documentation/api/richtexte
 |----------|------|---------|-------------|
 | `resize` | `boolean` | `true` | Enables or disables table resize drag handles.|
 
-**TypeScript Configuration Example:**
+**Vue Configuration Example:**
 ```typescript
-const editor = new RichTextEditor({
-  tableSettings: {
-    resize: true
-  }
-});
+tableSettings: {
+  resize: false
+}
 ```
 
 ### Quick Toolbar Items
@@ -184,18 +182,18 @@ The following example demonstrates how to enable table support and perform commo
 
 {% tabs %}
 
-{% highlight ts tabtitle="main.ts" %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Table/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/table/app-composition.vue %}
 
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Table/index.html %}
+{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/table/app.vue %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Table/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/table/" %}

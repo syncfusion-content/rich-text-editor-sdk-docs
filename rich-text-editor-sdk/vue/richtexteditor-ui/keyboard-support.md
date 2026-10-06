@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Support in TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to use keyboard shortcuts in the TypeScript Modern Rich Text Editor for text formatting, navigation, accessibility, and editing actions.
+title: Keyboard Support in Vue Modern Rich Text Editor | Syncfusion
+description: Learn how to use keyboard shortcuts in the Vue Modern Rich Text Editor for text formatting, navigation, accessibility, and editing actions.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 ---
 
-# Keyboard Shortcuts in TypeScript Modern Rich Text Editor
+# Keyboard Shortcuts in Vue Modern Rich Text Editor
 
 The Syncfusion Essential JS 2 Modern Rich Text Editor provides built-in keyboard shortcuts to perform formatting, edit content, insert elements, and navigate the user interface efficiently without relying on mouse interactions.
 
@@ -92,18 +92,18 @@ Use the keyBindings property to customize or override the default keyboard short
 
 {% tabs %}
 
-{% highlight ts tabtitle="main.ts" %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Keyboard-support/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/keyboard-support/app-composition.vue %}
 
 {% endhighlight %}
 
-{% highlight html tabtitle="index.html" %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Keyboard-support/index.html %}
+{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/keyboard-support/app.vue %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Keyboard-support/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/keyboard-support" %}
