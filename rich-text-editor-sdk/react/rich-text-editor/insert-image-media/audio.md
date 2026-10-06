@@ -5,7 +5,8 @@ description: Learn how to add, upload, manage, and customize audio content in th
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Audio in React Rich Text Editor
@@ -324,7 +325,7 @@ class App extends React.Component<{},{}> {
     return (
       <RichTextEditorComponent height={450} toolbarSettings={this.toolbarSettings} fileUploadSuccess={this.onFileUploadSuccess} insertAudioSettings={this.insertAudioSettings} >
         <Inject services={[Toolbar, Audio, Link, HtmlEditor, QuickToolbar]} />
-        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown">markdown</a> of the content</p>
+        <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup content">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown content">markdown</a> of the content</p>
       </RichTextEditorComponent>
     );
   }
