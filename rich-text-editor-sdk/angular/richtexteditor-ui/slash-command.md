@@ -194,20 +194,21 @@ export class App {
             'Paragraph',
             'Heading 1',
             {
-                text: 'Insert Date',
-                command: 'insertDate',
-                iconCss: 'e-icons e-date',
-                description: 'Insert today\u2019s date',
+                text: 'Inline Code',
+                command: 'applyInlineCode',
+                iconCss: 'e-icons e-code',
+                description: 'Wrap selection in inline code',
                 type: 'Inline'
             }
         ],
         itemSelect: (args: any) => {
-            if (args.itemData.command === 'insertDate') {
+            if (args.itemData.command === 'applyInlineCode') {
                 // Take over the action — cancel the default execution.
                 args.cancel = true;
 
-                const today: string = new Date().toLocaleDateString();
-                this.rteObj.executeCommand('insertText', { text: today });
+                // Run the action through the editor's command pipeline
+                // by chaining methods on the `commands()` builder.
+                this.rteObj.commands().inlineCode().apply();
             }
         }
     };
