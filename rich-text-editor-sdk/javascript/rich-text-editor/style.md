@@ -5,7 +5,7 @@ description: Learn how to customize the JavaScript Rich Text Editor style and ap
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in JavaScript Rich Text Editor

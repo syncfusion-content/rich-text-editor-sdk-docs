@@ -5,7 +5,7 @@ description: Learn how to add user mentions in the JavaScript Rich Text Editor w
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in JavaScript Rich Text Editor

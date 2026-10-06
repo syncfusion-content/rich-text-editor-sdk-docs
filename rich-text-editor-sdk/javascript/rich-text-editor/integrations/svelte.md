@@ -5,7 +5,7 @@ description: Learn here all about Svelte-TS integration in Syncfusion Typescript
 platform: rich-text-editor-sdk
 control: Svelte-TS
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate Svelte-TS with Rich Text Editor Component

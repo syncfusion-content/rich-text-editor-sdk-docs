@@ -5,7 +5,7 @@ description: Learn how to render the JavaScript Rich Text Editor inside a Dialog
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render JavaScript Rich Text Editor in Dialog

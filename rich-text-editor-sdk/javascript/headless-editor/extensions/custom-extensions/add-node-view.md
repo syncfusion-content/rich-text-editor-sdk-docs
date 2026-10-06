@@ -5,7 +5,7 @@ description: Learn how to layer a product UI on top of a built-in Headless Edito
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Add a Node View to an Existing Node

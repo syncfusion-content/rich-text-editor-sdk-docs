@@ -5,7 +5,7 @@ description: Learn how to bind custom keyboard shortcuts to commands in the Head
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Keyboard Shortcuts in JavaScript Headless Editor

@@ -5,7 +5,7 @@ description: Learn how to customize Quick Toolbars in the JavaScript Rich Text E
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Quick Toolbars in JavaScript Rich Text Editor

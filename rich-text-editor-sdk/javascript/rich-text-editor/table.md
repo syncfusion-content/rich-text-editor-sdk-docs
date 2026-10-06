@@ -5,7 +5,7 @@ description: Learn how to insert, format, and manage tables in the JavaScript Ri
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Tables in JavaScript Rich Text Editor
