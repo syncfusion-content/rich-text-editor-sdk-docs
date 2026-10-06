@@ -66,7 +66,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 
 ---
 
-## 1. Enable Append To Body
+## Enable Append To Body
 
 `enableAppendToBody` controls whether the quick toolbar popup is mounted on `document.body` or on the editor container.
 
@@ -95,7 +95,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 
 ---
 
-## 2. Text Quick Toolbar
+## Text Quick Toolbar
 
 `text` is the array of items shown when a non-collapsed text selection exists inside the editor. The popup opens on `mouseup` and `keyup` (when a non-collapsed selection exists), and closes on `Escape`, on outside interaction, or on `selectionchange` that empties the selection.
 
@@ -136,7 +136,7 @@ For customising the items that appear in the Text Quick Toolbar (built-in identi
 
 ---
 
-## 3. Custom Toolbar Item
+## Custom Toolbar Item
 
 A **Custom Toolbar Item** is a user-supplied toolbar entry that does not map to a built-in editor command. It is declared through the `CustomToolbarItem` interface and is dispatched through the editor's `toolbarSettings.itemClicked` event.
 
@@ -207,11 +207,11 @@ Custom items are accepted by `image`, `link`, and `table` as well. The `link` an
 
 ---
 
-## 4. Available Items
+## Available Items
 
 The built-in quick-toolbar items are declared as typed unions in `src/richtexteditor-ui/model/toolbar.types.ts`. Each quick-toolbar surface accepts a different union — the union narrows the available identifiers per surface so the compiler flags unsupported items.
 
-### Link Quick Toolbar items (`LinkQuickToolbarItem`)
+### Link Quick Toolbar items
 
 ```ts
 type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomToolbarItem;
@@ -223,10 +223,10 @@ type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomTo
 | `Copy` | Copies the link `href` to the clipboard. |
 | `Edit` | Opens the Insert-Link dialog pre-filled with the current link. |
 | `Remove` | Removes the link while keeping the link text. |
-| `\|` | Visual separator used to split action groups inside the popup. |
+| `|` | Visual separator used to split action groups inside the popup. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
-### Table Quick Toolbar items (`TableQuickToolbarItem`)
+### Table Quick Toolbar items
 
 ```ts
 type TableQuickToolbarItem = 'Row' | 'Column' | 'Header' | 'CellBackgroundColor' | 'VerticalAlign' | 'Align' | 'Remove' | '|' | CustomToolbarItem;
@@ -244,7 +244,7 @@ type TableQuickToolbarItem = 'Row' | 'Column' | 'Header' | 'CellBackgroundColor'
 | `\|` | Visual separator. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
-### Image Quick Toolbar items (`ImageQuickToolbarItem`)
+### Image Quick Toolbar items
 
 ```ts
 type ImageQuickToolbarItem = 'AltText' | 'Caption' | 'Align' | 'Display' | 'WrapText' | 'Dimension' | 'Replace' | 'Remove' | '|' | CustomToolbarItem;
@@ -263,9 +263,8 @@ type ImageQuickToolbarItem = 'AltText' | 'Caption' | 'Align' | 'Display' | 'Wrap
 | `\|` | Visual separator. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
-### Text Quick Toolbar items (`ToolbarItem`)
+### Text Quick Toolbar items
 
-API References:
 [`ToolbarItem`](../../api/ts/src-richtexteditor-ui-model-toolbar.types.html#toolbaritem) ·
 [`BuiltInToolbarItem`](../../api/ts/src-richtexteditor-ui-model-toolbar.types.html#builtintoolbaritem) ·
 [`BuiltInToolbarItemConfig`](../../api/ts/src-richtexteditor-ui-model-toolbar.types.html#builtintoolbaritemconfig) ·
