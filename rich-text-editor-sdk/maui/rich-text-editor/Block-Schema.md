@@ -4,7 +4,7 @@ title: Block Schema in .NET MAUI Rich Text Editor | Syncfusion®
 description: Learn here all about Block Schema support in Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDKappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Block Schema in .NET MAUI Rich Text Editor

@@ -5,7 +5,7 @@ canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/maui-rich-text-e
 description: Learn here about getting started with Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDKappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with .NET MAUI Rich Text Editor

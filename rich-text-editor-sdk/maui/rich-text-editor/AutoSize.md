@@ -4,7 +4,7 @@ title: AutoSize in .NET MAUI Rich Text Editor control | Syncfusion®
 description: Learn here all about AutoSize support in Syncfusion® .NET MAUI Rich Text Editor (SfRichTextEditor) control and more.
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDKappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # AutoSize in .NET MAUI Rich Text Editor
