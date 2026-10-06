@@ -7,9 +7,10 @@
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import { RichTextEditorUIComponent as EjsRichtexteditorUi, SlashCommand } from '@syncfusion/ej2-vue-richtexteditor-ui';
 
-EjsRichtexteditorUi.Inject(SlashCommand);
+provide('richtexteditor-ui', [SlashCommand]);
 
 const toolbarSettings = {
   items: ['FontColor', 'BackgroundColor']

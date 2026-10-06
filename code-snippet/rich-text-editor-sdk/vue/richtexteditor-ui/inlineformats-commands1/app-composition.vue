@@ -17,13 +17,14 @@
 </template>
 
 <script setup>
+import { provide } from 'vue';
 import { ref } from 'vue';
 import {
   RichTextEditorUIComponent as EjsRichtexteditorUi,
   SlashCommand
 } from '@syncfusion/ej2-vue-richtexteditor-ui';
 
-EjsRichtexteditorUi.Inject(SlashCommand);
+provide('richtexteditor-ui', [SlashCommand]);
 
 const editor = ref(null);
 
