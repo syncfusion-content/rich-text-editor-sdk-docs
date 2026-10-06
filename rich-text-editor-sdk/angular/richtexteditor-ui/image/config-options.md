@@ -3,6 +3,7 @@ layout: post
 title: Image Options in Angular Modern Rich Text Editor | Syncfusion
 description: Configure image insertion, storage, display, and resizing in the Angular Modern Rich Text Editor, including formats, size limits, saving, and dimensions.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

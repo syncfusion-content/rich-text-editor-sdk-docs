@@ -3,6 +3,7 @@ layout: post
 title: Tables in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to insert, format, and manage tables in the Angular Modern Rich Text Editor with row, column, and cell customization options.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

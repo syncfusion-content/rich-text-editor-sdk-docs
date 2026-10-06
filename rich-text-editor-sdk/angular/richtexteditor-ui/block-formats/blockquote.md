@@ -3,6 +3,7 @@ layout: post
 title: Block Quote in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to configure the block quote toolbar item and slash command in the Angular Modern Rich Text Editor.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

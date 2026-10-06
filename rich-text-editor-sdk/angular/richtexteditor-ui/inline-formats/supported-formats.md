@@ -3,6 +3,7 @@ layout: post
 title: Inline Formats in Angular Modern Rich Text Editor | Syncfusion
 description: Learn about the inline formats available in the Angular Modern Rich Text Editor, including bold, italic, underline, font styling, colors, and more.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

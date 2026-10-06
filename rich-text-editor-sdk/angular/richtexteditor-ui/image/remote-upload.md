@@ -3,6 +3,7 @@ layout: post
 title: Remote Image Upload in Angular Modern Rich Text Editor | Syncfusion
 description: Learn remote image upload in the Angular Modern Rich Text Editor by configuring endpoints, handling uploads, renaming images, and securing requests.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

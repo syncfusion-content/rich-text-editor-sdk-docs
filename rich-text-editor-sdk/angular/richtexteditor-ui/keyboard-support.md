@@ -3,6 +3,7 @@ layout: post
 title: Keyboard Support in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to use keyboard shortcuts in the Angular Modern Rich Text Editor for text formatting, navigation, accessibility, and editing actions.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

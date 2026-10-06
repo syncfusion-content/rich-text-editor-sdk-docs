@@ -3,6 +3,7 @@ layout: post
 title: Basic Setup in Angular Modern Rich Text Editor | Syncfusion
 description: Learn the four properties you'll typically configure first in the Angular Modern Rich Text Editor — value, valueFormat, toolbarSettings, and imageSettings.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

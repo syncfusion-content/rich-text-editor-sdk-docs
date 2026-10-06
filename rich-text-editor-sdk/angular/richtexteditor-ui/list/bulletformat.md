@@ -3,6 +3,7 @@ layout: post
 title: BulletFormat List in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to get configure Bullet Format List in Angular Modern Rich Text Editor and explore setup with core feature examples.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

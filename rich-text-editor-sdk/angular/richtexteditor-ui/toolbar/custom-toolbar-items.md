@@ -3,6 +3,7 @@ layout: post
 title: Custom Toolbar Item in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to add custom toolbar items, handle itemClicked and updatedToolbarStatus events, and update them in the Angular Modern Rich Text Editor.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Link Settings in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to configure link creation, default target, protocol handling, and allowed protocols in the Angular Modern Rich Text Editor through linkSettings.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

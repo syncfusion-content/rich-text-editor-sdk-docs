@@ -3,6 +3,7 @@ layout: post
 title: Image Quick Toolbar in Angular Modern Rich Text Editor | Syncfusion
 description: Configure the image quick toolbar in the Angular Modern Rich Text Editor with Alt Text, Caption, Alignment, Resize, Replace, and Remove options.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

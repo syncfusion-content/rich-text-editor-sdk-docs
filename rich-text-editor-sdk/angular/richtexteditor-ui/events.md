@@ -3,6 +3,7 @@ layout: post
 title: Events in Angular Modern Rich Text Editor | Syncfusion
 description: Learn about the events available in the Angular Modern Rich Text Editor, including content changes, focus, toolbar updates, and editor actions.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

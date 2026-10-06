@@ -3,6 +3,7 @@ layout: post
 title: Quick Toolbar in Angular Modern Rich Text Editor | Syncfusion
 description: Configure the contextual Quick Toolbar in the Angular Modern Rich Text Editor — inline mode, append-to-body, and text/image/link/table sub-surfaces.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

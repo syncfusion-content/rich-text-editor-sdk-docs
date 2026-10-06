@@ -3,6 +3,7 @@ layout: post
 title: Toolbar Types in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to configure toolbar items, layout, and floating behavior in the Angular Modern Rich Text Editor.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

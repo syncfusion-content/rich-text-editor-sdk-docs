@@ -3,6 +3,7 @@ layout: post
 title: Inline Format Commands in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to invoke inline format commands programmatically in the Angular Modern Rich Text Editor using the fluent commands builder.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---

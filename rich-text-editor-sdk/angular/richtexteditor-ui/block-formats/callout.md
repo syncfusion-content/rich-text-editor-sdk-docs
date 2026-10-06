@@ -3,6 +3,7 @@ layout: post
 title: Callouts in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to configure Info, Success, Warning, Error, and Note callouts in the Angular Modern Rich Text Editor using toolbar and slash commands.
 control: Modern Rich Text Editor
+platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
