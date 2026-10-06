@@ -4,7 +4,7 @@ title: Resizable Editor in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to make the Blazor Rich Text Editor resizable, allowing users to adjust its dimensions and much more details.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in Blazor Rich Text Editor

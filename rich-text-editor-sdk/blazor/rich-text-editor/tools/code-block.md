@@ -4,7 +4,7 @@ title: Code Blocks in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to insert and configure code blocks in the Blazor Rich Text Editor with language selection, formatting options, and syntax highlighting support.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code Blocks in Blazor Rich Text Editor

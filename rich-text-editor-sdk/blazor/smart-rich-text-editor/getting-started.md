@@ -4,7 +4,7 @@ title: Get Started with Smart Rich Text Editor in Server App | Syncfusion®
 description: Check out and learn here all about Getting started with Blazor Smart Rich Text Editor component in Blazor Server App and more.
 platform: Blazor
 component: Smart Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Smart Rich Text Editor in Server App

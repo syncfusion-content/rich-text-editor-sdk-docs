@@ -4,7 +4,7 @@ title: Undo and Redo in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to use Undo and Redo in the Blazor Rich Text Editor to restore changes, manage edit history, and improve editing productivity.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo and Redo in Blazor Rich Text Editor

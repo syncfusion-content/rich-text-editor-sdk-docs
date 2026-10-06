@@ -4,7 +4,7 @@ title: Getting Started with Blazor Rich Text Editor in WASM | Syncfusion®
 description: Learn how to get started with Blazor Rich Text Editor in a WebAssembly application with Visual Studio and detailed examples.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 <!-- markdownlint-disable MD024 -->

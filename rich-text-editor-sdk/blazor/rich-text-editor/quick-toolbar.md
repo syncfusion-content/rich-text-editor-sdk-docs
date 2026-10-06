@@ -4,7 +4,7 @@ title: Quick Toolbars in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to customize Quick Toolbars in the Blazor Rich Text Editor for images, links, tables, audio, video, and text with context-aware editing commands.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Quick Toolbars in Blazor Rich Text Editor

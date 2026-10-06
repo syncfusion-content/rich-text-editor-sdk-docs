@@ -4,7 +4,7 @@ title: How to Get Character Count in Blazor Markdown Editor | Syncfusion®
 description: Checkout and learn about how to get character count of characters in Blazor Markdown Editor component of Syncfusion, and more details.
 platform: rich-text-editor-sdk
 control: MarkdownEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Retrieve the number of characters in the Blazor Markdown Editor

@@ -4,7 +4,7 @@ title: Table Blocks in Blazor Block Editor | Syncfusion®
 description: Learn how to add and configure table blocks in the Blazor Block Editor with rows, columns, headers, cell content, resizing, selection, and deletion.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Table Blocks in Blazor Block Editor

@@ -4,7 +4,7 @@ title: Markdown Syntax Supported in Blazor Markdown Editor | Syncfusion®
 description: Learn the Markdown syntax supported in the Blazor Markdown Editor, including text formatting, headings, lists, links, tables, images, and code blocks.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Syntax Supported in Blazor Markdown Editor

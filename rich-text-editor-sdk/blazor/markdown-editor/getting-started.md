@@ -4,7 +4,7 @@ title: Getting Started with Blazor Markdown Editor in WASM App | Syncfusion®
 description: Learn how to get started with Blazor Markdown Editor in Blazor WebAssembly App by installing packages and running your first app.
 platform: rich-text-editor-sdk
 component: Markdown Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 <!-- markdownlint-disable MD024 -->

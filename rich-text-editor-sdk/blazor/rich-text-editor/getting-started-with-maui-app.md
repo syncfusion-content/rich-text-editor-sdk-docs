@@ -5,7 +5,7 @@ canonical_url: "https://blazor.syncfusion.com/documentation/rich-text-editor/get
 description: Learn how to get started with the Rich Text Editor in Blazor MAUI Application and explore setup, configuration, and core feature examples.
 platform: rich-text-editor-sdk
 component: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Rich Text Editor

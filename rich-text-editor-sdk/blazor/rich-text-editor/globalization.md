@@ -4,7 +4,7 @@ title: Globalization in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to localize the Blazor Rich Text Editor with custom language support, right-to-left (RTL) mode, and locale-specific UI customization.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in Blazor Rich Text Editor

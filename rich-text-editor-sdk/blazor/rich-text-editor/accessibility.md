@@ -4,7 +4,7 @@ title: Accessibility in Blazor Rich Text Editor | Syncfusion®
 description: Learn about accessibility features in the Blazor Rich Text Editor, including WAI-ARIA attributes, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in Blazor Rich Text Editor

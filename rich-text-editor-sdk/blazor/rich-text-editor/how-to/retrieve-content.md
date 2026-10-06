@@ -4,7 +4,7 @@ title: How to Retrieve the Content in Blazor RichTextEditor | Syncfusion®
 description: Checkout and learn about how to retrieve the formatted content in Blazor Rich Text Editor component of Syncfusion, and more details.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Retrieve the formatted content in Blazor Rich Text Editor

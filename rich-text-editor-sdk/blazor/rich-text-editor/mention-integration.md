@@ -4,7 +4,7 @@ title: Mentions in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to add user mentions in the Blazor Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in Blazor Rich Text Editor

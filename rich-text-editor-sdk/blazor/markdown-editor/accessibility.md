@@ -4,7 +4,7 @@ title: Accessibility in Blazor Markdown Editor | Syncfusion®
 description: Learn about accessibility features in the Blazor Markdown Editor with WAI-ARIA attributes, keyboard navigation, and screen reader support.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in Blazor Markdown Editor

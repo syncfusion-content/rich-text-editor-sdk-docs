@@ -4,7 +4,7 @@ title: WebAssembly Performance in Blazor Rich Text Editor | Syncfusion®
 description: Learn performance best practices for the Blazor Rich Text Editor in WebAssembly, including PreventRender to reduce unnecessary component rendering.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # WebAssembly Performance in Blazor Rich Text Editor

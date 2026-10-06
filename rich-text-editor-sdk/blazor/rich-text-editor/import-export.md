@@ -4,7 +4,7 @@ title: Import and Export Content Blazor Rich Text Editor | Syncfusion®
 description: Learn how to import Word documents and export content to PDF and Word formats in Blazor Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Import and Export in Blazor Rich Text Editor

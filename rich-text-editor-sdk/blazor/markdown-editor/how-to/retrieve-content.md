@@ -4,7 +4,7 @@ title: How to Retrieve the Content in Blazor Markdown Editor | Syncfusion®
 description: Checkout and learn about how to retrieve the formatted content in Blazor Markdown Editor component and much more details.
 platform: rich-text-editor-sdk
 control: MarkdownEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Retrieve the formatted content in the Blazor Markdown Editor

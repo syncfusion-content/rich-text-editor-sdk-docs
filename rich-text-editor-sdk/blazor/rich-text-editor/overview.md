@@ -5,7 +5,7 @@ description: Learn how to use Blazor Rich Text Editor for creating rich content 
 canonical_url: https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-editor
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Blazor Rich Text Editor Documentation Overview

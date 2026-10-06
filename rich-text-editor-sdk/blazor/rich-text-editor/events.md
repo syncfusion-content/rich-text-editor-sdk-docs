@@ -4,7 +4,7 @@ title: Events in Blazor Rich Text Editor | Syncfusion®
 description: Learn about the events available in Blazor Rich Text Editor for handling user interactions and content changes.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Events in Blazor Rich Text Editor

@@ -4,7 +4,7 @@ title: Execute Command in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to programmatically modify content in the Blazor Rich Text Editor using editor commands for formatting and editing operations.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Execute Command in Blazor Rich Text Editor

@@ -4,7 +4,7 @@ title: Format Painter in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to use the Blazor Rich Text Editor Format Painter to copy and apply formatting, customize formats, and use shortcuts.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Format Painter in Blazor Rich Text Editor

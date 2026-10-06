@@ -4,7 +4,7 @@ title: Toolbar Items in Blazor Rich Text Editor | Syncfusion®
 description: Learn about all available toolbar items in Blazor Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in Blazor Rich Text Editor

@@ -4,7 +4,7 @@ title: Inline Content in Blazor Block Editor | Syncfusion®
 description: Learn how to add inline content in the Blazor Block Editor, blocks including bold text, links, code spans, and mentions.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Content in Blazor Block Editor

@@ -4,7 +4,7 @@ title: XHTML Validation in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to validate XHTML content and prevent XSS attacks in the Blazor Rich Text Editor using built-in sanitization and custom filtering.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XHTML Validation in Blazor Rich Text Editor

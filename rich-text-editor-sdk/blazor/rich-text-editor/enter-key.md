@@ -4,7 +4,7 @@ title: Enter Key Customization in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to customize Enter and Shift+Enter key behavior in the Blazor Rich Text Editor for flexible content formatting and structure.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Enter and Shift+Enter in Blazor Rich Text Editor

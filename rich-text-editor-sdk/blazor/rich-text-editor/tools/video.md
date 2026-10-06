@@ -4,7 +4,7 @@ title: Insert Videos in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to insert, upload, embed, resize, and manage videos in the Blazor Rich Text Editor from local files, URLs, and online sources.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Videos in Blazor Rich Text Editor

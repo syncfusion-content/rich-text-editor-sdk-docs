@@ -4,7 +4,7 @@ title: Insert Images in Blazor Markdown Editor | Syncfusion®
 description: Learn how to insert images in Blazor Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
 platform: rich-text-editor-sdk
 control: Markdown Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in Blazor Markdown Editor

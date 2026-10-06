@@ -4,7 +4,7 @@ title: Links in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to add, edit, remove, and manage hyperlinks in the Blazor Rich Text Editor for better content navigation and user experiences.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Links in Blazor Rich Text Editor

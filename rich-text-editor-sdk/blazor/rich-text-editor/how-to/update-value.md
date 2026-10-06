@@ -4,7 +4,7 @@ title: How to Update Value in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to update the value in Blazor Rich Text Editor programmatically with examples and detailed steps.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Capture Ctrl+S to update the value in Blazor Rich Text Editor

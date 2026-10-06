@@ -4,7 +4,7 @@ title: Nested Blocks in Blazor Block Editor | Syncfusion®
 description: Learn how to create and configure nested blocks in Blazor Block Editor, using child blocks, parent-child relationships, collapsible, quote, and callout blocks.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Nested Blocks in Blazor Block Editor

@@ -4,7 +4,7 @@ title: Style in Blazor Rich Text Editor | Syncfusion®
 description: Learn how to customize the Blazor Rich Text Editor style and appearance using CSS for the content area, toolbar, placeholder, and UI elements.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Blazor Rich Text Editor

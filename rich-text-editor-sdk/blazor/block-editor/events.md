@@ -4,7 +4,7 @@ title: Events in Blazor Block Editor | Syncfusion®
 description: Learn how to handle events in the Blazor Block Editor, including block changes, selection changes, drag-and-drop, focus, blur, and paste events.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Events in Blazor Block Editor
