@@ -5,7 +5,7 @@ description: Learn how to programmatically modify content in the TypeScript Rich
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Execute Command in TypeScript Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to enable and configure the TypeScript Rich Text Editor A
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrating the AI Assistant in TypeScript Rich Text Editor

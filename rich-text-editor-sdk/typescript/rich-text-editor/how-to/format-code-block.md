@@ -5,7 +5,7 @@ description: Learn how to add code block formatting in the TypeScript Rich Text 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Add Code Block Formatting in TypeScript Rich Text Editor

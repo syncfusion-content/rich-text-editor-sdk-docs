@@ -5,7 +5,7 @@ description: Learn how to set the default font in the TypeScript Rich Text Edito
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Default font in TypeScript Rich text editor

@@ -6,7 +6,7 @@ canonical_url: "https://www.syncfusion.com/javascript-ui-controls/js-rich-text-e
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting started in TypeScript Rich Text Editor

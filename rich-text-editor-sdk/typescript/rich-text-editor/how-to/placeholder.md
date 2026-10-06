@@ -5,7 +5,7 @@ description: Learn how to customize the placeholder text style in the Syncfusion
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Placeholder in TypeScript Rich text editor
