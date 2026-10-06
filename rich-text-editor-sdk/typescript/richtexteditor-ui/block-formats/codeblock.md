@@ -39,5 +39,3 @@ Add the `CodeBlock` toolbar item next to the other block-format buttons to expos
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/blockformats-codeblock/" %}
-
-When the user clicks the `CodeBlock` toolbar button, the editor dispatches the `codeBlock` command with a default language value. The command is non-destructive — invoking it on a block that is already a code block toggles the block back to a paragraph. See [Text Formats](text-formats) for the full block-format command map.

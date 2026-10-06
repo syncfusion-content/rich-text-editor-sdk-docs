@@ -62,5 +62,3 @@ The `callout` command accepts a `CalloutCommand` payload (`{ callout: 'info' | '
 | Slash command | `Warning` | `callout` | `'warning'` |
 | Slash command | `Error` | `callout` | `'error'` |
 | Slash command | `Note` | `callout` | `'note'` |
-
-The command is non-destructive — invoking it on a block that is already a callout of the same variant toggles the callout off. See [Text Formats](text-formats) for the full block-format command map.

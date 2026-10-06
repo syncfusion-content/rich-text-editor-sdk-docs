@@ -23,7 +23,7 @@ If you don't want a toolbar at all — for example, when the editor is driven en
 > **Note**: Below are the default toolbar items:
 `['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']`
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-config/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/config/" %}
 
 #### Available toolbar items
 
@@ -53,4 +53,4 @@ By default the toolbar sits at the top of the editor (`toolbarSettings.position:
 
 For a long document, losing the toolbar off-screen as the user scrolls down is disruptive. [`toolbarSettings.enableFloating`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#enableFloating) is `true` by default, so the toolbar automatically detaches and sticks in place once the editor scrolls out of view. Set it to `false` if you'd rather the toolbar just scroll away with the content. If your page includes a sticky header, use [`toolbarSettings.floatingOffset`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#floatingOffset) to add a top offset (in pixels) and prevent the floating toolbar from overlapping the header. The default value is `0`.
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/Toolbar-type/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/type/" %}
