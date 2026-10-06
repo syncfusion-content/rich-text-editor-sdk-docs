@@ -5,7 +5,7 @@ description: Learn how to configure font family, font size, font color, backgrou
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Format Options in TypeScript Modern Rich Text Editor

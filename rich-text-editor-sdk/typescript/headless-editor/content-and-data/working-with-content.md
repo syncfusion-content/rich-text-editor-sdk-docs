@@ -5,7 +5,7 @@ description: Learn how to get, set, and update content in the Syncfusion TypeScr
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Working with Content in TypeScript Headless Editor

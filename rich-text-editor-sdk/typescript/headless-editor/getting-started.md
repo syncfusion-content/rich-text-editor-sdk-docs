@@ -5,7 +5,7 @@ description: Learn how to get started with the TypeScript Headless Editor and ex
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting started in TypeScript Headless Editor

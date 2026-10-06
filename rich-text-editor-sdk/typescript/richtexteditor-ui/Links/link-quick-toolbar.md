@@ -5,7 +5,7 @@ description: Learn how to configure the link quick toolbar in the TypeScript Mod
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Link Quick Toolbar in TypeScript Modern Rich Text Editor

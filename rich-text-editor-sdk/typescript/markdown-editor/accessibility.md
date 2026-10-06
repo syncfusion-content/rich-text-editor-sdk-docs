@@ -5,7 +5,7 @@ description: Learn about accessibility features in the TypeScript Markdown Edito
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in TypeScript Markdown Editor

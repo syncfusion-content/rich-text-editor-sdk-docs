@@ -5,7 +5,7 @@ description: Learn how to enable mentions in TypeScript Markdown Editor using th
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in TypeScript Markdown Editor

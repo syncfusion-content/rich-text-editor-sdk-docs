@@ -5,7 +5,7 @@ description: Learn how to use keyboard shortcuts in the TypeScript Modern Rich T
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in EJ2 Modern Rich Text Editor
