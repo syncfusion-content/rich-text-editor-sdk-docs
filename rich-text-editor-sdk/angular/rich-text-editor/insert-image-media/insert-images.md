@@ -5,7 +5,7 @@ description: Learn how to insert images in the Angular Rich Text Editor using UR
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in Angular Rich Text Editor

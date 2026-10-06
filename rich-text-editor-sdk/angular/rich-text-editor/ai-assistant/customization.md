@@ -5,7 +5,7 @@ description: Learn how to customize the AI Assistant in the Angular Rich Text Ed
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Customization of AI Assistant in Angular Rich Text Editor

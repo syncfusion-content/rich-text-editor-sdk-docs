@@ -5,7 +5,7 @@ description: Learn how to implement the Ctrl+S keyboard shortcut in the Angular 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Implement Ctrl+S Shortcut to Save Content in Angular Rich Text Editor

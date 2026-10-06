@@ -4,7 +4,7 @@ title: Getting Started with Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to get started with the Angular Modern Rich Text Editor and explore setup, configuration, and core feature examples.
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Angular Modern Rich Text Editor

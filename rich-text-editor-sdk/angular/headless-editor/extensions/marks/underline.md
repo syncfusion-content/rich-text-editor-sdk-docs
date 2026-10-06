@@ -5,7 +5,7 @@ description: Learn how to configure the Underline mark in the Angular Headless E
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Underline Mark in Angular Headless Editor

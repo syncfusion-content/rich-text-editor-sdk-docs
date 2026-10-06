@@ -5,7 +5,7 @@ description: Learn how to render the Angular Rich Text Editor inside a Dialog co
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render Rich Text Editor in Angular Dialog

@@ -5,7 +5,7 @@ description: Learn how to integrate the Syncfusion Tab component with the Angula
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate Tab component into the Angular Rich Text Editor

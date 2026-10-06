@@ -5,7 +5,7 @@ description: Learn how to add, edit, remove, and manage hyperlinks in the Angula
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Links in Angular Rich Text Editor

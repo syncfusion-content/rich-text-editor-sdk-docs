@@ -5,7 +5,7 @@ description: Learn how to resolve Tailwind CSS Preflight conflicts in the Angula
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Fix Tailwind CSS Preflight in Angular Rich Text Editor

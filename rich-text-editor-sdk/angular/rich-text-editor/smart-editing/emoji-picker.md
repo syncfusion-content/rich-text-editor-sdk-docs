@@ -5,7 +5,7 @@ description: Learn how to add emojis in the Angular Rich Text Editor with search
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Emoji Picker in Angular Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to programmatically modify content in the Angular Rich Te
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Execute Command in Angular Rich Text Editor

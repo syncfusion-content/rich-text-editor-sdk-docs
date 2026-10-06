@@ -5,7 +5,7 @@ description: Learn how to add user mentions in the Angular Rich Text Editor with
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in Angular Rich Text Editor

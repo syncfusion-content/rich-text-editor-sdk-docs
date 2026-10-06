@@ -5,7 +5,7 @@ description: Learn the keyboard shortcuts supported in the Angular Markdown Edit
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in Angular Markdown Editor

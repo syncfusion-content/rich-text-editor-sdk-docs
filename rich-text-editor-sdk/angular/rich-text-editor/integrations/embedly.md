@@ -5,7 +5,7 @@ description: Learn here all about Embedly integration in Syncfusion Angular Rich
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate Embedly into the Angular Rich Text Editor

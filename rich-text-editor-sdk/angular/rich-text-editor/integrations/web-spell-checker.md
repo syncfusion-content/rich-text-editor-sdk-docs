@@ -5,7 +5,7 @@ description: Learn here all about Spell Checker in Syncfusion Angular Rich Text 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate WProofreader into the Angular Rich Text Editor

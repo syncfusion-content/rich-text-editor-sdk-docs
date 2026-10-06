@@ -5,7 +5,7 @@ description: Learn how the Angular Headless Editor schema defines NodeDefinition
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Schema in Angular Headless Editor
