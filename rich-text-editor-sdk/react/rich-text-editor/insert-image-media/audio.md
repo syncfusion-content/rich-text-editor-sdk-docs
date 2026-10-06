@@ -363,7 +363,7 @@ function App (){
   return (
     <RichTextEditorComponent height={450} toolbarSettings={toolbarSettings} fileUploadSuccess={this.onFileUploadSuccess} insertAudioSettings={insertAudioSettings} >
       <Inject services={[Toolbar, Audio, Link, HtmlEditor, QuickToolbar]} />
-      <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank">markdown</a> of the content</p>
+      <p>The Rich Text Editor is WYSIWYG ("what you see is what you get") editor useful to create and edit content, and return the valid <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="HTML markup content">HTML markup</a> or <a href="https://ej2.syncfusion.com/home/" target="_blank" aria-label="markdown content">markdown</a> of the content</p>
     </RichTextEditorComponent>
   );
 }
