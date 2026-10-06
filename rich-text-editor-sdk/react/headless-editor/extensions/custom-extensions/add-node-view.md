@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a Node View to an Existing Node | React Headless Editor | Syncfusion
+title: Add a Node View to an Existing Node in React Headless Editor | Syncfusion
 description: Learn how to layer a product UI on top of a built-in Headless Editor node using the addNodeView extension option.
 platform: rich-text-editor-sdk
 control: Headless Editor
