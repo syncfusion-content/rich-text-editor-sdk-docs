@@ -6,7 +6,7 @@ canonical_url: "https://www.syncfusion.com/vue-components/vue-wysiwyg-rich-text-
 control: Get started 
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Vue Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to create personalized documents in the Vue Rich Text Edi
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mail Merge in Vue Rich Text Editor

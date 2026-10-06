@@ -5,7 +5,7 @@ description: Learn how to display and customize placeholder text in the Vue Rich
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Placeholder Text in Vue Rich Text Editor

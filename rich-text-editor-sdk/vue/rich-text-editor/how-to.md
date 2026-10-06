@@ -5,7 +5,7 @@ description: Learn how to customize, configure, and implement common scenarios i
 control: How to 
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # How to in Vue Rich text editor

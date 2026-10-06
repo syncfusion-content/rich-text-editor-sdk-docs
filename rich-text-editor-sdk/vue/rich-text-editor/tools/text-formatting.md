@@ -5,7 +5,7 @@ description: Learn how to format text in the Vue Rich Text Editor with bold, ita
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Formatting in Vue Rich Text Editor

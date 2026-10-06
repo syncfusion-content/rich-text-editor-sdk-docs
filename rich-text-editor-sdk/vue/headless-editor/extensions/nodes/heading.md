@@ -5,7 +5,7 @@ description: Learn how to configure the Heading extension in the Vue Headless Ed
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Heading in Vue Headless Editor

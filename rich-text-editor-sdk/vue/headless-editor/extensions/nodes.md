@@ -5,7 +5,7 @@ description: Learn about the node extensions available in the Vue Headless Edito
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Node Extensions in Vue Headless Editor

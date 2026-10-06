@@ -5,7 +5,7 @@ description: Learn how to customize the Vue Block Editor appearance by configuri
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Vue Block Editor

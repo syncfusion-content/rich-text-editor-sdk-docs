@@ -5,7 +5,7 @@ description: Learn how to insert, format, and manage tables in the Vue Rich Text
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Tables in Vue Rich Text Editor

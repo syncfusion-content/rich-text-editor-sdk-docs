@@ -5,7 +5,7 @@ description: Learn how to get started with Vue Markdown Editor by creating your 
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Vue Markdown Editor

@@ -5,7 +5,7 @@ description: Learn how to enable mentions in the Vue Markdown Editor using the @
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in Vue Markdown Editor

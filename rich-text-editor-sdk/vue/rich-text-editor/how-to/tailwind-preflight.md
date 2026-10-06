@@ -5,7 +5,7 @@ description: Learn how to resolve Tailwind CSS Preflight conflicts in the Vue Ri
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Fix Tailwind CSS Preflight in Vue Rich Text Editor

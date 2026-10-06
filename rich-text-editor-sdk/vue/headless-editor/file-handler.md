@@ -5,7 +5,7 @@ description: Learn how to handle file selection, uploads, progress, cancellation
 control: Headless Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # File Operations in Vue Headless Editor

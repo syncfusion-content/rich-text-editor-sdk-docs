@@ -5,7 +5,7 @@ description: Learn how to localize the Vue Rich Text Editor with custom language
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in Vue Rich Text Editor

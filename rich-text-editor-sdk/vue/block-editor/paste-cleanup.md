@@ -5,7 +5,7 @@ description: Learn how to configure paste cleanup in Vue Block Editor to control
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in Vue Block Editor

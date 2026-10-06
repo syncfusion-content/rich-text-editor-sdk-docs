@@ -5,7 +5,7 @@ description: Learn how to use read-only and disabled modes in the Vue Rich Text 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in Vue Rich Text Editor

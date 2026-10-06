@@ -5,7 +5,7 @@ description: Learn about the basic extensions preset in the Vue Headless Editor 
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Basic Extensions in Vue Headless Editor

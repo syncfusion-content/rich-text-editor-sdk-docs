@@ -5,7 +5,7 @@ description: Learn how to configure Expand, MultiRow, Scrollable, and Popup tool
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Types in Vue Rich Text Editor

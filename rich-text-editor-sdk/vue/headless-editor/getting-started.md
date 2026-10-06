@@ -6,7 +6,7 @@ canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/vue-headless-edi
 control: Headless Editor
 platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Vue Headless Editor

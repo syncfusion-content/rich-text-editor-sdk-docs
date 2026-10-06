@@ -5,7 +5,7 @@ description: Learn how to use keyboard shortcuts in the Vue Rich Text Editor for
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Support in Vue Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to configure the AI Assistant in the Vue Rich Text Editor
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Configure AI Assistant in Vue Rich Text Editor

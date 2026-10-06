@@ -5,7 +5,7 @@ description: Learn how to enable Markdown preview in the Vue Markdown Editor by 
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Preview in Vue Markdown Editor

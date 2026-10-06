@@ -5,7 +5,7 @@ description: Learn how to configure the Superscript mark in the Vue Headless Edi
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Superscript Mark in Vue Headless Editor

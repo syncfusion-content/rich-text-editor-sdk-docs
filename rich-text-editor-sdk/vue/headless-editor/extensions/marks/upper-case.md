@@ -5,7 +5,7 @@ description: Learn how to configure the To Upper Case extension in the Vue Headl
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # To Upper Case in Vue Headless Editor

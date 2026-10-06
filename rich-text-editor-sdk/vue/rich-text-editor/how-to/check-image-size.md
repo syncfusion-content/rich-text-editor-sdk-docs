@@ -5,7 +5,7 @@ description: Learn how to validate image dimensions before uploading in the Vue 
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Validate Image Size Before Upload in Vue Rich Text Editor

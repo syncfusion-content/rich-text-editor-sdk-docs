@@ -5,7 +5,7 @@ description: Learn how to configure text block types in the Vue Block Editor, in
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Block Types in Vue Block Editor

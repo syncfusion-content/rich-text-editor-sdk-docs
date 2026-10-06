@@ -5,7 +5,7 @@ description: Learn how to rename uploaded images in the Vue Rich Text Editor usi
 control: Rich Text Editor 
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Rename Uploaded Images in Vue Rich Text Editor

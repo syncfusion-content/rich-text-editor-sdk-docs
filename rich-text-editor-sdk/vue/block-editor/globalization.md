@@ -5,7 +5,7 @@ description: Learn how to localize the Vue Block Editor with localization, right
 platform: rich-text-editor-sdk
 control: Block Editor 
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in Vue Block Editor

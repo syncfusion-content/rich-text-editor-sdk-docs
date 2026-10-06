@@ -5,7 +5,7 @@ description: Learn how to enable XSS prevention in the Vue Block Editor to sanit
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XSS Prevention in Vue Block Editor
