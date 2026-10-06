@@ -5,7 +5,7 @@ description: Learn how to use Undo and Redo in the Angular Rich Text Editor to r
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo and Redo in Angular Rich Text Editor

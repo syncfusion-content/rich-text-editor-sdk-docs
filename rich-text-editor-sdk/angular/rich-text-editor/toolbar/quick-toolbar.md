@@ -5,7 +5,7 @@ description: Learn how to customize Quick Toolbars in the Angular Rich Text Edit
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Quick Toolbars in Angular Rich Text Editor

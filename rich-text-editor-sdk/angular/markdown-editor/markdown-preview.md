@@ -5,7 +5,7 @@ description: Learn how to enable Markdown preview in the Angular Markdown Editor
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Preview in Angular Markdown Editor

@@ -5,7 +5,7 @@ description: Learn how to resize the Angular Rich Text Editor dynamically by ena
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in Angular Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn here all about Highlight.js integration in Syncfusion Angular
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate Highlight.js into the Angular Rich Text Editor

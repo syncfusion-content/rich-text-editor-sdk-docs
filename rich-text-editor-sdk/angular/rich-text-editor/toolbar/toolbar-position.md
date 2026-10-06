@@ -5,7 +5,7 @@ description: Learn how to position the toolbar at the top or bottom of the Angul
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Position in Angular Rich Text Editor

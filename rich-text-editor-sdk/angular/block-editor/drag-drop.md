@@ -5,7 +5,7 @@ description: Learn how to enable drag and drop in the Angular Block Editor to re
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Drag and Drop in Angular Block Editor

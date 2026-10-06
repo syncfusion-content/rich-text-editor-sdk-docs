@@ -5,7 +5,7 @@ description: Learn how to render multiple Angular Rich Text Editor instances ins
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render Rich Text Editor in Angular Tab

@@ -5,7 +5,7 @@ description: Learn the keyboard shortcuts available in the Angular Block Editor 
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in Angular Block Editor

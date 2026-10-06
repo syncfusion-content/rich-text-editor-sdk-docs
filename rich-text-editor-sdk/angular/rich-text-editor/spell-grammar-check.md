@@ -5,7 +5,7 @@ description: Learn how to integrate spell and grammar checking in the Angular Ri
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Spell and Grammar Check in Angular Rich Text Editor

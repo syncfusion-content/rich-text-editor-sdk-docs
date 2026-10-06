@@ -5,7 +5,7 @@ description: Learn how to integrate Tailwind CSS Preflight with the Syncfusion A
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Integrate Tailwind preflight into the Angular Rich Text Editor

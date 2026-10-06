@@ -5,7 +5,7 @@ description: Learn how to integrate and customize the Mention in the Syncfusion 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

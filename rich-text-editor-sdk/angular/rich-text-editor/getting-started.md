@@ -5,7 +5,7 @@ description: Learn how to get started with the Angular Rich Text Editor and expl
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/angular-rich-text-editor"
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Angular Rich Text Editor

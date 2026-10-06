@@ -5,7 +5,7 @@ description: Learn how to customize the Angular Rich Text Editor style and appea
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Angular Rich Text Editor

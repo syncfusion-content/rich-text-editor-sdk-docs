@@ -5,7 +5,7 @@ description: Learn how to configure the Ordered List extension in the Angular He
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Ordered List in Angular Headless Editor

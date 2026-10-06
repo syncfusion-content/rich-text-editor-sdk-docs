@@ -5,7 +5,7 @@ description: Learn how to insert and configure code blocks in the Angular Rich T
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code Blocks in Angular Rich Text Editor

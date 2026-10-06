@@ -5,7 +5,7 @@ description: Learn how to clean and customize clipboard content in the Angular R
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Clipboard Cleanup in Angular Rich Text Editor

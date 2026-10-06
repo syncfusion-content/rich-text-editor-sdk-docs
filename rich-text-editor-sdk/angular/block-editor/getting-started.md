@@ -5,7 +5,7 @@ description: Learn how to get started with the Angular Block Editor and explore 
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Angular Block Editor
