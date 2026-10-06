@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Checklist Configuration in Angular Modern Rich Text Editor | Syncfusion
+title: Checklist in Angular Modern Rich Text Editor | Syncfusion
 description: Learn how to get configure Checklist in Angular Modern Rich Text Editor and explore setup with core feature examples.
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Checklist Configuration
+# Checklist Configuration in Angular
 
 The Checklist feature enables users to create and manage interactive checkbox lists within the Rich Text Editor. Checklists are ideal for task management, requirements tracking, and scenarios where items need to be marked as complete or incomplete.
 

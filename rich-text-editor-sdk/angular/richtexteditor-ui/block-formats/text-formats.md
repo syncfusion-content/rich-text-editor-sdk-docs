@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Formats in Angular Modern Rich Text Editor | Syncfusion
-description: Learn how to configure paragraph, heading, blockquote, code block, horizontal line, callout, and collapsible heading formats in the Angular Modern Rich Text Editor.
+description: Learn how to configure paragraph, heading, blockquote, code block, horizontal line, callout, and collapsible heading formats in Angular Modern Rich Text Editor.
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk

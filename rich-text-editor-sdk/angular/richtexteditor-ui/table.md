@@ -7,7 +7,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table Configuration & Properties
+# Table Configuration & Properties in Angular
 
 ## Overview
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating to Angular Modern Rich Text Editor | Syncfusion
-description: Learn how to migrate from the Essential JS 2 Rich Text Editor to the Modern Rich Text Editor in Angular by mapping APIs, toolbar items, and configuration settings.
+description: Learn how to migrate from Essential JS 2 Rich Text Editor to Modern Rich Text Editor in Angular by mapping APIs, toolbar items, and settings.
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
