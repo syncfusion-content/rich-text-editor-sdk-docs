@@ -4,7 +4,7 @@ title: Toolbar Items in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn about the built-in toolbar items in the ASP.NET MVC Rich Text Editor, including text formatting, images, tables, links, lists, and customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in ASP.NET MVC Rich Text Editor

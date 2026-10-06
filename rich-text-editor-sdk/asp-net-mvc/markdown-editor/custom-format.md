@@ -4,7 +4,7 @@ title: Custom Markdown Syntax in ASP.NET MVC Markdown Editor | Syncfusion
 description: Learn how to customize Markdown syntax in the ASP.NET MVC Markdown Editor by overriding default list, bold, and italic symbols.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Markdown Syntax in ASP.NET MVC Markdown Editor

@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET MVC Markdown Editor | Syncfusion
 description: Learn how to get started with ASP.NET MVC Markdown Editor by creating your first application, installing packages, configuring modules, and running the editor.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with ASP.NET MVC Markdown Editor

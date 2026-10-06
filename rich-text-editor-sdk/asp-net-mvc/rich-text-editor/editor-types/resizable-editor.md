@@ -4,7 +4,7 @@ title: Resizable Editor in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to resize the ASP.NET MVC Rich Text Editor dynamically by enabling editor resizing and controlling the available resize area.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in ASP.NET MVC Rich Text Editor

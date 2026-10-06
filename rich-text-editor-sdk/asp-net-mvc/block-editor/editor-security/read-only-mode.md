@@ -4,7 +4,7 @@ title: Read-Only Mode in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to enable read-only mode in the ASP.NET MVC BlockEditor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in ASP.NET MVC Block Editor

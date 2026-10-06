@@ -4,7 +4,7 @@ title: Undo and Redo in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to configure undo and redo in ASP.NET MVC Block Editor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo and Redo in ASP.NET MVC Block Editor

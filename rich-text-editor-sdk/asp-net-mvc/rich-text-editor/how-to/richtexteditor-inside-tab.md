@@ -4,7 +4,7 @@ title: Render ASP.NET MVC Rich Text Editor in Tab | Syncfusion
 description: Learn how to render multiple ASP.NET MVC Rich Text Editor instances inside a Tab with toolbar configuration and content editing support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render ASP.NET MVC Rich Text Editor in Tab

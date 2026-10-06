@@ -4,7 +4,7 @@ title: Paste Cleanup in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to configure paste cleanup in ASP.NET MVC Block Editor to control pasted content, preserve or remove formatting, and paste content as plain text.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in ASP.NET MVC Block Editor

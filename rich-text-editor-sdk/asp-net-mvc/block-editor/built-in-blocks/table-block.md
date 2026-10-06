@@ -5,7 +5,7 @@ description: Learn how to add and configure table blocks in the ASP.NET MVC Bloc
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Table Blocks in ASP.NET MVC Block Editor
