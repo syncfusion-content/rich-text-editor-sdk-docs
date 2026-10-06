@@ -23,6 +23,22 @@ If you don't want a toolbar at all — for example, when the editor is driven en
 > **Note**: Below are the default toolbar items:
 `['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']`
 
+{% tabs %}
+
+{% highlight ts tabtitle="main.ts" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/config/index.ts %}
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/config/index.html %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/config/" %}
 
 #### Available toolbar items
