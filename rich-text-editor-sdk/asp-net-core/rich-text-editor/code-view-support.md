@@ -4,7 +4,7 @@ title: Code View Support in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to enable code view support in the ASP.NET Core Rich Text Editor to switch between visual editing and HTML source code.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code View Support in ASP.NET Core Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to add and configure table blocks in the ASP.NET Core Blo
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overviewappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Table Blocks in ASP.NET Core Block Editor

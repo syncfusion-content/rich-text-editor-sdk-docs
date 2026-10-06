@@ -4,7 +4,7 @@ title: Insert Images in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to insert and manage images in the ASP.NET Core Rich Text Editor with uploads, resizing, alignment, captions, storage, and File Manager support.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in ASP.NET Core Rich Text Editor

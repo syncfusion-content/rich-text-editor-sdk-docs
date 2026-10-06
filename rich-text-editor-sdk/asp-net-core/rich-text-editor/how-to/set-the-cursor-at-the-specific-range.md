@@ -4,7 +4,7 @@ title: Set Cursor Position in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to set the cursor position at a specific range in the ASP.NET Core Rich Text Editor using the NodeSelection and setRange methods.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

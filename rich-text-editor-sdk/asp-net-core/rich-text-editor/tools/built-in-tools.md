@@ -4,7 +4,7 @@ title: Toolbar Items in ASP.NET Core Rich Text Editor | Syncfusion
 description: Explore all toolbar items in ASP.NET Core Rich Text Editor, including text formatting, images, tables, links, lists, quick toolbars, and customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in ASP.NET Core Rich Text Editor

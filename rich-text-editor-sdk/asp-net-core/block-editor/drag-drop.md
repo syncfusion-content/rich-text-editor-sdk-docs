@@ -4,7 +4,7 @@ title: Drag and Drop in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to enable drag and drop in the ASP.NET Core BlockEditor to rearrange single or multiple blocks using the built-in drag handle.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Drag and Drop in ASP.NET Core Block Editor

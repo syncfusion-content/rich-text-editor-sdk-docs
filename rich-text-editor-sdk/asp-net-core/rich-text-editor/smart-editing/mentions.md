@@ -4,7 +4,7 @@ title: Mentions in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add user mentions in the ASP.NET Core Rich Text Editor with searchable suggestions, custom displays, and efficient content tagging.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in the ASP.NET Core Rich Text Editor

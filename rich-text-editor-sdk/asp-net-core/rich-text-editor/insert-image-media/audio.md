@@ -4,7 +4,7 @@ title: Insert Audios in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add, upload, manage, and customize audio content in the ASP.NET Core Rich Text Editor using online sources and local audio files.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Audios in ASP.NET Core Rich Text Editor

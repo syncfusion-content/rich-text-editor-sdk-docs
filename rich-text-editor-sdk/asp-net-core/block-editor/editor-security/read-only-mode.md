@@ -4,7 +4,7 @@ title: Read-Only Mode in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to enable read-only mode in the ASP.NET Core BlockEditor to display content without allowing users to edit it.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in ASP.NET Core Block Editor

@@ -4,7 +4,7 @@ title: Insert Images in ASP.NET Core Markdown Editor | Syncfusion
 description: Learn how to insert images in the ASP.NET Core Markdown Editor using the Insert Image toolbar option. Add images from online URLs directly into your Markdown content.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in ASP.NET Core Markdown Editor

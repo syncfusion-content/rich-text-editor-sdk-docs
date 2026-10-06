@@ -5,7 +5,7 @@ description: Learn how to use built-in block types in the ASP.NET Core Block Edi
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overviewappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Block Types in ASP.NET Core Block Editor

@@ -4,7 +4,7 @@ title: Font Styling in ASP.NET Core Rich Text Editor | Syncfusion
 description:  Learn how to customize font family, font size, text color, background color, Google Fonts, and custom font styles in the ASP.NET Core Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Font Styling in ASP.NET Core Rich Text Editor

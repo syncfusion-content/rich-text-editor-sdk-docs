@@ -4,7 +4,7 @@ title: Migrate Essential JS 1 Rich Text Editor to ASP.NET Core | Syncfusion
 description: Learn how to migrate from Essential JS 1 to the ASP.NET Core Rich Text Editor by mapping APIs, features, and configuration settings.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

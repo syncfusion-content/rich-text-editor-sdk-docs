@@ -4,7 +4,7 @@ title: Validate Image Size in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to validate image dimensions before uploading in the ASP.NET Core Rich Text Editor and restrict images that exceed the allowed size.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

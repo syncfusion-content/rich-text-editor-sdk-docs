@@ -4,7 +4,7 @@ title: Text Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to format text in the ASP.NET Core Rich Text Editor using bold, italic, headings, lists, checklists, blockquotes, and Markdown auto-format.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Formatting in ASP.NET Core Rich Text Editor

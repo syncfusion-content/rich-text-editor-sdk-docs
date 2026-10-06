@@ -4,7 +4,7 @@ title:  Import and Export in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to import Word documents and export content to PDF and Word formats in ASP.NET Core Rich Text Editor.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Import and Export Content in ASP.NET Core Rich Text Editor

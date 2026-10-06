@@ -4,7 +4,7 @@ title: Editor Value in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to set, retrieve, bind, and manage content in the ASP.NET Core Rich Text Editor with placeholders, auto save, character count, and source code edits.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Value in ASP.NET Core Rich Text Editor

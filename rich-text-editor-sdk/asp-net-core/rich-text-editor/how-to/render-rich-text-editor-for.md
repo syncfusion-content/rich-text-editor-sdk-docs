@@ -4,7 +4,7 @@ title: Render RichTextEditorFor in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to render the RichTextEditorFor control in the ASP.NET Core Rich Text Editor and bind editor content to model properties.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

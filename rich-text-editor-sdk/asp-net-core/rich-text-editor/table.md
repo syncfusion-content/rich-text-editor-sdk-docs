@@ -4,7 +4,7 @@ title: Tables in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to insert, format, and manage tables in the ASP.NET Core Rich Text Editor with row, column, and cell customization options.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Tables in ASP.NET Core Rich Text Editor
