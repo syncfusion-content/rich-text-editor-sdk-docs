@@ -47,7 +47,7 @@ The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which narrows t
 | `Copy` | Copies the link `href` to the clipboard as both `text/plain` and `text/html` (using `navigator.clipboard.write` with a `ClipboardItem`). |
 | `Edit` | Opens the Insert-Link dialog pre-filled with the link's current `href`, `text`, `title`, and `target` attributes. |
 | `Remove` | Unlinks the selection — removes the `<a>` wrapper but keeps the link's text content. |
-| `\|` | Visual separator used to split action groups inside the popup. |
+| `&#124;` | Visual separator used to split action groups inside the popup. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
 ### Default configuration
