@@ -6,6 +6,7 @@ platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in JavaScript Markdown Editor
@@ -21,32 +22,3 @@ Follow these steps to add an image in the Markdown editor:
 3. Click the **Insert** button in the image dialog.
 
 The image will be added to the editor content at the cursor position.
-
-The following example demonstrates how to enable image insertion in the Markdown Editor.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-insert-image" %}
-{% endif %}

@@ -5,7 +5,7 @@ description: Learn how to configure the Task List extension in the JavaScript He
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Task List in JavaScript Headless Editor

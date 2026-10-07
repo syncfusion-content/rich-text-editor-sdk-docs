@@ -5,7 +5,7 @@ description: Learn how to use built-in block types in the JavaScript Block Edito
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Block Types and Configuration in JavaScript Block Editor
