@@ -72,7 +72,7 @@ The following example demonstrates the usage of `readOnly` and `cssClass` proper
 
 {% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}2
+{% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance/index.js %}
 {% endhighlight %}
