@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Shortcuts in ASP.NET Core Markdown Editor | Syncfusion
-description: Learn the keyboard shortcuts available in the ASP.NET Core Markdown Editor for formatting text, inserting content, navigating the toolbar, and editing efficiently.
+description: Learn the keyboard shortcuts in the ASP.NET Core Markdown Editor for formatting text, navigating the toolbar, and performing editing actions.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
