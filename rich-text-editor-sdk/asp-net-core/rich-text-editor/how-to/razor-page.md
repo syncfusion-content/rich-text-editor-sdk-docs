@@ -5,6 +5,7 @@ description: Learn how to use model binding in Razor Pages with the ASP.NET Core
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

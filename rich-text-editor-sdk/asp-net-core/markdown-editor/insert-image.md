@@ -5,6 +5,7 @@ description: Learn how to insert images in the ASP.NET Core Markdown Editor usin
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in ASP.NET Core Markdown Editor

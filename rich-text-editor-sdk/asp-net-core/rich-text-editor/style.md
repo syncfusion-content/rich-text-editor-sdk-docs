@@ -5,6 +5,7 @@ description: Learn how to customize the ASP.NET Core Rich Text Editor style and 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in ASP.NET Core Rich Text Editor

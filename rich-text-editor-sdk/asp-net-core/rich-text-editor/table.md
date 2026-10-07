@@ -5,6 +5,7 @@ description: Learn how to insert, format, and manage tables in the ASP.NET Core 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Tables in ASP.NET Core Rich Text Editor

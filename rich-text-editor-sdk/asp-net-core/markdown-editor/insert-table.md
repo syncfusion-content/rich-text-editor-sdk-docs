@@ -5,6 +5,7 @@ description: Learn how to insert and customize tables in the ASP.NET Core Markdo
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Tables in ASP.NET Core Markdown Editor

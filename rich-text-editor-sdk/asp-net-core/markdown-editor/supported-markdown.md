@@ -5,6 +5,7 @@ description: Learn the Markdown syntax supported in the ASP.NET Core Markdown Ed
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Syntax Supported in ASP.NET Core Markdown Editor

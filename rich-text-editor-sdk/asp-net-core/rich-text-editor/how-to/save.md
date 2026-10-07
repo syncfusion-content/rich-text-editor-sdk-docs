@@ -5,6 +5,7 @@ description: Learn how to save content to a file on the server in ASP.NET Core R
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

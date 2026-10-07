@@ -5,6 +5,7 @@ description: Learn how to customize the ASP.NET Core BlockEditor appearance by c
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in ASP.NET Core Block Editor

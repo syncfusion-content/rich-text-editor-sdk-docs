@@ -5,6 +5,7 @@ description: Learn how to enable IFrame editing mode in the ASP.NET Core Rich Te
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # IFrame Editing Mode in ASP.NET Core Rich Text Editor

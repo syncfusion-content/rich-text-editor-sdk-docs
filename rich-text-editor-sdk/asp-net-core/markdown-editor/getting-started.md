@@ -5,6 +5,7 @@ description: Learn how to get started with ASP.NET Core Markdown Editor by creat
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with ASP.NET Core Markdown Editor

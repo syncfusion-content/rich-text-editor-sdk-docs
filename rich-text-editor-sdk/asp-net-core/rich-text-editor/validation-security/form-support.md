@@ -5,6 +5,7 @@ description: Learn how to integrate the ASP.NET Core Rich Text Editor with HTML 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 
