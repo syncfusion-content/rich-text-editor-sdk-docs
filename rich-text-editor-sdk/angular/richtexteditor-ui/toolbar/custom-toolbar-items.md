@@ -28,7 +28,7 @@ Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/custom-item/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/custom-item" %}
 
 ## itemClicked Event
 
@@ -58,7 +58,7 @@ The following example demonstrates how to handle the `updatedToolbarStatus` even
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/updateToolbarStatus/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/updateToolbarStatus" %}
 
 ## Updating toolbar items at runtime
 

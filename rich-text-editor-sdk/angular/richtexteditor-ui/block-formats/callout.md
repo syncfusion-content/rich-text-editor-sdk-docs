@@ -56,7 +56,7 @@ enable `slashCommandSettings` and list the matching entries in
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/callout/blockformats-callout/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/callout" %}
 
 ## Commands support
 

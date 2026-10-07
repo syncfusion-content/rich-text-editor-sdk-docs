@@ -28,7 +28,7 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/Basic-setup/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup" %}
 
 ## Set Editor content.
 

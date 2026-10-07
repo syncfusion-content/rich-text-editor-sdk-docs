@@ -40,7 +40,7 @@ default formatting controls.
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/text-formats/blockformats-text-formats/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/text-formats" %}
 
 To expose the same block formats through the slash-command popup, set
 `slashCommandSettings.enable` to `true` and list the matching entries in
@@ -64,7 +64,7 @@ and collapsible headings.
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/text-formats/blockformats-text-formats-slash/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/text-formats-slash" %}
 
 ## Supported formats
 

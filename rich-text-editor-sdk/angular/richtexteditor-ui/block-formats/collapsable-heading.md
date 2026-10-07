@@ -53,7 +53,7 @@ a string identifier from `SlashCommandItems`.
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/collapsable-heading/blockformats-collapsable-heading/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/block-formats/collapsable-heading" %}
 
 ## Commands support
 
