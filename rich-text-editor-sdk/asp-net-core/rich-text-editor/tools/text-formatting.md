@@ -5,6 +5,7 @@ description: Learn how to format text in the ASP.NET Core Rich Text Editor using
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Formatting in ASP.NET Core Rich Text Editor

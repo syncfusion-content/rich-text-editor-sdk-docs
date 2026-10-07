@@ -5,6 +5,7 @@ description: Learn how to programmatically modify content in the ASP.NET Core Ri
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Execute Command in ASP.NET Core Rich Text Editor

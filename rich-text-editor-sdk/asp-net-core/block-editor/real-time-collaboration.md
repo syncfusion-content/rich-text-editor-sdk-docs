@@ -5,6 +5,7 @@ description: Learn how to enable real-time collaboration in the ASP.NET Core Blo
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Real-time Collaboration in ASP.NET Core Block Editor

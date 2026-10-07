@@ -5,6 +5,7 @@ description: Learn how to remove text formatting in the ASP.NET Core Rich Text E
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Remove Formatting in ASP.NET Core Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to apply heading styles in the ASP.NET Core Rich Text Edi
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Heading Styles in ASP.NET Core Rich Text Editor
