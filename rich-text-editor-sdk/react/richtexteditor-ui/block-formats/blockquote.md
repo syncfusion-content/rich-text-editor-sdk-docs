@@ -40,4 +40,3 @@ Add the `Quote` toolbar item alongside the other block-format buttons, and add `
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/block-formats/blockformats-blockquote/" %}
 
-Because the command is non-destructive, the user can toggle the blockquote on and off by activating the `Quote` toolbar button or the `Blockquote` slash-command entry repeatedly. See [Text Formats](text-formats) for the full block-format command map.

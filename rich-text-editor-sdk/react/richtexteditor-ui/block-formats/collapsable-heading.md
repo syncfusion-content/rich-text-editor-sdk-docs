@@ -58,4 +58,3 @@ The `collapsible` command accepts a `ToggleCollapsiblePayload` (`{ triggerType: 
 | `Collapsible Heading 3` | `collapsible` | `{ triggerType: 'heading', level: 3 }` |
 | `Collapsible Heading 4` | `collapsible` | `{ triggerType: 'heading', level: 4 }` |
 
-The command is non-destructive — invoking it on a block that is already a collapsible section of the same type and level toggles it back to a normal paragraph or heading. See [Text Formats](text-formats) for the full block-format command map.

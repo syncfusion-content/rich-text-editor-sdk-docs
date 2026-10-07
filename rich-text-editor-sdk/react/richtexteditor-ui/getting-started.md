@@ -133,7 +133,7 @@ npm install
 
 N> To set up a React application with Nextjs or Remix, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/quick-start) for more details.
 
-## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Modern Rich Text Editor packages
+## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Modern Rich Text Editor package
 
 All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
 To install Modern Rich Text Editor component, use the following command

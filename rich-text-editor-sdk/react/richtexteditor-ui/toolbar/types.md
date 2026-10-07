@@ -16,27 +16,30 @@ The main toolbar is the primary interaction surface for formatting commands, and
 
 ### Toolbar items
 
-Set `toolbarSettings.items` to the ordered list of buttons (and `'|'` separators) you want to show. The default set already covers the common cases — `['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']` — so you only need to set this when you want to trim it down or add other built-in tools.
+Set `toolbarSettings.items` to the ordered list of buttons (and `'|'` separators) you want to show. The default set already covers the common cases, so you only need to set this when you want to trim it down or add other built-in tools.
 
 If you don't want a toolbar at all — for example, when the editor is driven entirely by your own UI, as in the [ribbon sample](../toolbar/custom-toolbar-items#updatedtoolbarstatus-event) — set `toolbarSettings.enable` to `false` and no toolbar is rendered; the editor stays fully usable programmatically.
+
+> **Note**: Below are the default toolbar items:
+`['Bold','Italic','Underline','Strikethrough','|','Formats','Alignment','BulletList','NumberedList','|','Link','Image','Table','|','Undo','Redo']`
 
 {% tabs %}
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/config/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/config/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-config/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/config/" %}
 
 #### Available toolbar items
 
@@ -71,16 +74,16 @@ For a long document, losing the toolbar off-screen as the user scrolls down is d
 
 {% highlight ts tabtitle="App.tsx" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/app/App.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/type/app/App.tsx %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/index.html %}
+{% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/type/index.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/Toolbar-type/" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/toolbar/type/" %}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
+import { RichTextEditorUIComponent, Inject, SlashCommand } from '@syncfusion/ej2-react-richtexteditor-ui';
 
 function App() {
     return (
@@ -17,7 +17,9 @@ function App() {
                 items: ['Blockquote']
             }}
             placeholder='Quote a passage...'
-        />
+        >
+        <Inject services={[SlashCommand]} />
+        </RichTextEditorUIComponent>
     );
 }
 

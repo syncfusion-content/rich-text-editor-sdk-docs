@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
+import { RichTextEditorUIComponent, Inject, SlashCommand } from '@syncfusion/ej2-react-richtexteditor-ui';
 
 function App() {
     return (
@@ -19,7 +19,9 @@ function App() {
                     'Collapsible Heading 3', 'Collapsible Heading 4'
                 ]
             }}
-        />
+        >
+        <Inject services={[SlashCommand]} />
+        </RichTextEditorUIComponent>
     );
 }
 
