@@ -46,7 +46,7 @@ mailMergeEditor.appendTo('#mailMergeEditor');
 
 ## Using DropDownButton for selecting placeholders
 
-The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., `{{FirstName}}`) is inserted at the current cursor position using the `insertHTML` command.
+The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., &#123;&#123;FirstName&#125;&#125;) is inserted at the current cursor position using the `insertHTML` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -70,7 +70,6 @@ let insertField: DropDownButton = new DropDownButton({
 });
 insertField.appendTo('#insertField');
 
-{% raw %}
 function onItemSelect(args: MenuEventArgs): void {
    if (args.item.text != null) {
       const value = textToValueMap[args.item.text];
@@ -82,7 +81,6 @@ function onItemSelect(args: MenuEventArgs): void {
       );
    }
 }
-{% endraw %}
 
 {% endraw %}
 
@@ -91,7 +89,7 @@ function onItemSelect(args: MenuEventArgs): void {
 
 ## Populating merge fields using Mention
 
-The **Mention** control provides an alternative way to insert placeholders by typing the `{{` character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
+The **Mention** control provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}

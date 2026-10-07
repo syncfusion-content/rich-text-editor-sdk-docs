@@ -1,0 +1,17 @@
+<ejs-richtexteditor-ui #editor></ejs-richtexteditor-ui>
+
+<div class="logger-panel">
+    <div class="logger-header">
+        <h4>Live Event Log Console</h4>
+        <button id="clear-btn" (click)="clearLogs()">Clear Logs</button>
+    </div>
+    <div class="log-container">
+        <div *ngIf="showEmpty" class="empty-message">
+            No events captured yet. Try typing or formatting some text inside the editor...
+        </div>
+        <div *ngFor="let log of logs" class="log-row" [style.borderLeft]="'3px solid ' + log.color">
+            <strong [style.color]="log.color">[{{ log.timestamp }}] {{ log.eventName }}</strong>
+            &mdash; <em>Action:</em> {{ log.action }}
+        </div>
+    </div>
+</div>

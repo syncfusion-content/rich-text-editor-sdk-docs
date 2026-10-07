@@ -1,0 +1,13 @@
+<div class="external-toolbar">
+    <button id="boldBtn" (click)="applyBold()">Bold</button>
+    <button id="underlineBtn" (click)="applyUnderline()">Underline</button>
+    <button id="fontSizeBtn" (click)="applyFontSize()">18px Font Size</button>
+    <button id="fontColorBtn" (click)="applyFontColor()">Blue Font Color</button>
+    <button id="highlightBtn" (click)="applyHighlight()">Highlight</button>
+    <button id="clearFormatBtn" (click)="applyClearFormat()">Clear Format</button>
+</div>
+<ejs-richtexteditor-ui
+    #editor
+    [placeholder]="placeholder"
+    [toolbarSettings]="toolbarSettings">
+</ejs-richtexteditor-ui>

@@ -20,7 +20,7 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
-  extensions: []
+  extensions: [ej.headlesseditor.paragraphExtension]
 });
 editor.mount(document.getElementById('editor'));
 ```
@@ -33,7 +33,7 @@ The Tab key behavior is controlled by the `enableTabKey` editor configuration. W
 
 ```js
 var editor = ej.headlesseditor.HeadlessEditor.create({
-  extensions: [],
+  extensions: [ej.headlesseditor.paragraphExtension],
   enableTabKey: true
 });
 editor.mount(document.getElementById('editor'));

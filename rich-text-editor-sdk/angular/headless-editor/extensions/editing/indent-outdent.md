@@ -20,7 +20,7 @@ The `indentOutdentExtension` registers the `indent` and `outdent` commands and w
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ export class App implements AfterViewInit, OnDestroy {
   private editor!: HeadlessEditor;
 
   ngAfterViewInit(): void {
-    this.editor = HeadlessEditor.create({ extensions: [] });
+    this.editor = HeadlessEditor.create({ extensions: [paragraphExtension] });
     this.editor.mount(this.editorRef.nativeElement);
   }
 
@@ -54,7 +54,7 @@ The Tab key behavior is controlled by the `enableTabKey` editor configuration. W
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 @Component({
   selector: 'app-root',
@@ -67,7 +67,7 @@ export class App implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.editor = HeadlessEditor.create({
-      extensions: [],
+      extensions: [paragraphExtension],
       enableTabKey: true
     });
     this.editor.mount(this.editorRef.nativeElement);

@@ -20,7 +20,7 @@ To enable mail merge functionality, the Rich Text Editor toolbar is extended wit
 
 > Prerequisite: Add the corresponding HTML elements (`<button id="insertField">Insert Field</button>` and `<button id="merge_data">Merge Data</button>`) to your page so the templates can resolve.
 
-- **Insert Field:** Opens a list of merge fields for inserting placeholders like {{FirstName}} into the editor.
+- **Insert Field:** Opens a list of merge fields for inserting placeholders like &#123;&#123;FirstName&#125;&#125; into the editor.
 - **Merge Data:** Replaces all placeholders in the editor with actual values from a predefined data source.
 
 {% tabs %}
@@ -48,7 +48,7 @@ mailMergeEditor.appendTo('#mailMergeEditor');
 
 ## Using DropDownButton for selecting placeholders
 
-The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., {{FirstName}}) is inserted at the current cursor position using the `insertHTML` command. The `textToValueMap` object used below maps the displayed item text to the placeholder key.
+The **DropDownButton** component displays a list of merge fields such as First Name, Last Name, and Company Name. When a user selects an item, the corresponding placeholder (e.g., &#123;&#123;FirstName&#125;&#125;) is inserted at the current cursor position using the `insertHTML` command. The `textToValueMap` object used below maps the displayed item text to the placeholder key.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -71,7 +71,6 @@ var insertField = new ej.splitbuttons.DropDownButton({
 });
 insertField.appendTo('#insertField');
 
-{% raw %}
 function onItemSelect(args) {
   if (args.item.text != null) {
     var value = textToValueMap[args.item.text];
@@ -86,7 +85,6 @@ function onItemSelect(args) {
     );
   }
 }
-{% endraw %}
 
 {% endraw %}
 
@@ -95,7 +93,7 @@ function onItemSelect(args) {
 
 ## Using Mention to insert placeholders
 
-The **Mention** control provides an alternative way to insert placeholders by typing the `{{` character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
+The **Mention** control provides an alternative way to insert placeholders by typing the <code>&#123;&#123;</code> character inside the editor. A popup list of merge fields appears, allowing quick selection without using the toolbar.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
