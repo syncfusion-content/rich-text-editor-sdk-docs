@@ -70,7 +70,7 @@ The following code demonstrates how to set up the custom slash menu item in the 
 
 ![Blazor RichTextEditor slash commands](./images/smart-suggestion.webp)
 
-> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/smart-suggestion?theme=fluent2)
+> [View Sample](https://blazor.syncfusion.com/demos/rich-text-editor/slash-commands?theme=fluent2)
 
 ## See also
 
