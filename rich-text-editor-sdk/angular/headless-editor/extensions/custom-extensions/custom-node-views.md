@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom Node Views in Angular Headless Editor | Syncfusion
-description: Learn how to contribute a custom DOM render for a Headless Editor node, including the descriptor shape and lifecycle handlers.
+description: Learn how to contribute a custom DOM render for a Angular Headless Editor node, including the descriptor shape and lifecycle handlers.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Node Views in Angular Headless Editor

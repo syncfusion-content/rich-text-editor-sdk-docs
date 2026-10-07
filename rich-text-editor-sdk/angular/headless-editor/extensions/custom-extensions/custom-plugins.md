@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom Plugins in Angular Headless Editor | Syncfusion
-description: Learn how to contribute custom ProseMirror plugins to the Headless Editor to observe and react to editor activity.
+description: Learn how to contribute custom ProseMirror plugins to the Angular Headless Editor to observe and react to editor activity.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Plugins in Angular Headless Editor
