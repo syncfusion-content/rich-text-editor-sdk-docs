@@ -4,7 +4,7 @@ title: XSS Prevention in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to prevent Cross-Site Scripting (XSS) attacks in the ASP.NET MVC Rich Text Editor by validating and sanitizing content.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XSS Prevention in ASP.NET MVC Rich Text Editor

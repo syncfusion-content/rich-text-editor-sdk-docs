@@ -4,7 +4,7 @@ title: Markdown Preview in ASP.NET MVC Markdown Editor | Syncfusion
 description: Learn how to enable Markdown preview in ASP.NET MVC Markdown Editor by converting Markdown content into HTML and displaying the formatted output in real time.
 control: Markdown Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Preview in ASP.NET MVC Markdown Editor

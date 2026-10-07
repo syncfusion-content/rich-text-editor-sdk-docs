@@ -4,7 +4,7 @@ title: Save Content to Server in ASP.NET MVC Rich Text Editor | Syncfusion
 description: Learn how to save content to a file on the server in ASP.NET MVC Rich Text Editor and securely store editor data.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Save Content to a Server File in ASP.NET MVC Rich Text Editor

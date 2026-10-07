@@ -4,7 +4,7 @@ title: Real-time Collaboration in ASP.NET MVC Block Editor | Syncfusion
 description: Learn how to enable real-time collaboration in the ASP.NET MVC Block Editor using Yjs with remote cursors, presence, and version history.
 platform: rich-text-editor-sdk
 control: Block Editor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Real-time Collaboration in ASP.NET MVC Block Editor
