@@ -27,8 +27,7 @@ var editor = new ej.richtexteditorui.RichTextEditorUI({
 editor.appendTo('#default');
 ```
 
-
-## 1. save
+## save
 
 Persists the current editor content into the component's `value` property.
 
@@ -36,7 +35,7 @@ Persists the current editor content into the component's `value` property.
 editor.save();
 ```
 
-## 2. focusIn
+## focusIn
 
 Moves focus into the editor's editable area and triggers the editor's focus-in
 handling.
@@ -45,7 +44,7 @@ handling.
 editor.focusIn();
 ```
 
-## 3. focusOut
+## focusOut
 
 Removes focus from the editor's editable area and triggers the editor's
 focus-out handling.
@@ -54,7 +53,7 @@ focus-out handling.
 editor.focusOut();
 ```
 
-## 4. getDocument
+## getDocument
 
 Returns the current editor document.
 
@@ -62,7 +61,7 @@ Returns the current editor document.
 var document = editor.getDocument();
 ```
 
-## 5. getHtml
+## getHtml
 
 Returns the current editor content as an HTML string.
 
@@ -71,7 +70,7 @@ var html = editor.getHtml();
 console.log('Rich Text Editor HTML: ', html);
 ```
 
-## 6. getText
+## getText
 
 Returns the current editor content as plain text.
 
@@ -80,8 +79,7 @@ var text = editor.getText();
 console.log('Rich Text Editor text: ', text);
 ```
 
-
-## 7. updateToolbarItems
+## updateToolbarItems
 
 Applies a batch of toolbar item updates (add, remove) to the editor's toolbar.
 
