@@ -5,6 +5,7 @@ description: Learn how to localize the Blazor Rich Text Editor with custom langu
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in Blazor Rich Text Editor

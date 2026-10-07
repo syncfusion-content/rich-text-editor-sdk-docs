@@ -5,6 +5,7 @@ description: Configure Azure OpenAI for Blazor Smart Rich Text Editor authentica
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Azure OpenAI Configuration

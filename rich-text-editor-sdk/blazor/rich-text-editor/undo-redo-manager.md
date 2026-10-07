@@ -5,6 +5,7 @@ description: Learn how to use Undo and Redo in the Blazor Rich Text Editor to re
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo and Redo in Blazor Rich Text Editor

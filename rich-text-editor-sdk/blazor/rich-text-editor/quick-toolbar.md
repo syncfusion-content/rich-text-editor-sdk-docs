@@ -5,6 +5,7 @@ description: Learn how to customize Quick Toolbars in the Blazor Rich Text Edito
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Quick Toolbars in Blazor Rich Text Editor

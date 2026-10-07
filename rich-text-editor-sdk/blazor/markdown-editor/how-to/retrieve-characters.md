@@ -5,6 +5,7 @@ description: Checkout and learn about how to get character count of characters i
 platform: rich-text-editor-sdk
 control: MarkdownEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Retrieve the number of characters in the Blazor Markdown Editor

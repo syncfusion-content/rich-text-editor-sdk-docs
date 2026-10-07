@@ -5,6 +5,7 @@ description: Learn how to render the Blazor Rich Text Editor inside a Dialog and
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render Blazor Rich Text Editor in Dialog

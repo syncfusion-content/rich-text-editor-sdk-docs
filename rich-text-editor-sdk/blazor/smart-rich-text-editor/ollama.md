@@ -5,6 +5,7 @@ description: Step-by-step guide to configure Ollama for the Blazor Smart Rich Te
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Ollama Configuration

@@ -5,6 +5,7 @@ description: Learn how to update the value in Blazor Rich Text Editor programmat
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Capture Ctrl+S to update the value in Blazor Rich Text Editor

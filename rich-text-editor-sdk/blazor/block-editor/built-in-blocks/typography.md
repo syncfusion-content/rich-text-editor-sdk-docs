@@ -5,6 +5,7 @@ description: Learn how to configure text block types in the Blazor Block Editor,
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Block Types in Blazor Block Editor

@@ -5,6 +5,7 @@ description: Learn about accessibility features in the Blazor Markdown Editor wi
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in Blazor Markdown Editor

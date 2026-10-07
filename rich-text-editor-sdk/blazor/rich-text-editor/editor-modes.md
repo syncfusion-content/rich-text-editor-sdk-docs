@@ -5,6 +5,7 @@ description: Learn how to use HTML, Markdown, and IFrame editing modes in the Bl
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Modes in Blazor Rich Text Editor

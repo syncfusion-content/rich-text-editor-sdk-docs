@@ -5,6 +5,7 @@ description: Learn how to create and configure nested blocks in Blazor Block Edi
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Nested Blocks in Blazor Block Editor

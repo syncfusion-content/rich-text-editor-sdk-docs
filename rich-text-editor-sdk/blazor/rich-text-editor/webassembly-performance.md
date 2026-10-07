@@ -5,6 +5,7 @@ description: Learn performance best practices for the Blazor Rich Text Editor in
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # WebAssembly Performance in Blazor Rich Text Editor

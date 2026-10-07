@@ -5,6 +5,7 @@ description: Learn how to customize the Blazor Block Editor appearance by config
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Blazor Block Editor
