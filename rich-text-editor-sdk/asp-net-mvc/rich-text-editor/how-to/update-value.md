@@ -5,6 +5,7 @@ description: Learn how to bind a keyboard shortcut (Ctrl+S) in the ASP.NET MVC R
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Update Value via Keyboard Shortcut in ASP.NET MVC Rich Text Editor

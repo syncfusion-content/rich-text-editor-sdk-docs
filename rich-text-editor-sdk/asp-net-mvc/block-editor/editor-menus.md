@@ -5,6 +5,7 @@ description: Learn how to use the editor menus in the ASP.NET MVC Block Editor t
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Menus in ASP.NET MVC Block Editor

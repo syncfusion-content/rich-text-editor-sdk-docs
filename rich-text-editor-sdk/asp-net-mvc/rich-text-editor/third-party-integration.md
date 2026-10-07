@@ -5,6 +5,7 @@ description: Learn how to integrate CodeMirror, Embedly, Highlight.js, and other
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Third-Party Integration in ASP.NET MVC Rich Text Editor

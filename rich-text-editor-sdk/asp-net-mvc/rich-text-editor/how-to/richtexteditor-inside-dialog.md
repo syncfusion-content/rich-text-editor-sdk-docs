@@ -5,6 +5,7 @@ description: Learn how to render the ASP.NET MVC Rich Text Editor inside a Dialo
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render ASP.NET MVC Rich Text Editor in Dialog

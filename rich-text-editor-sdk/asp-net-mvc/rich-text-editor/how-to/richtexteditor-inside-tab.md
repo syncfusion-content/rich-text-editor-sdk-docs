@@ -5,6 +5,7 @@ description: Learn how to render multiple ASP.NET MVC Rich Text Editor instances
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render ASP.NET MVC Rich Text Editor in Tab

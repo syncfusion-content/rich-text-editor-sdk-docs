@@ -5,6 +5,7 @@ description: Learn how to use keyboard shortcuts in the ASP.NET MVC Rich Text Ed
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Support in ASP.NET MVC Rich Text Editor

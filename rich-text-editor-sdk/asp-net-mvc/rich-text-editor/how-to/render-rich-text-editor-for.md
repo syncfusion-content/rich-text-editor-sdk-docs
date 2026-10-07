@@ -5,6 +5,7 @@ description: Learn how to render the RichTextEditorFor control in the ASP.NET MV
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

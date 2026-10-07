@@ -5,6 +5,7 @@ description: Learn how to set, retrieve, bind, and manage content in the ASP.NET
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Value in ASP.NET MVC Rich Text Editor

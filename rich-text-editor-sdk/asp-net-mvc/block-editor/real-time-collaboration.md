@@ -5,6 +5,7 @@ description: Learn how to enable real-time collaboration in the ASP.NET MVC Bloc
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Real-time Collaboration in ASP.NET MVC Block Editor

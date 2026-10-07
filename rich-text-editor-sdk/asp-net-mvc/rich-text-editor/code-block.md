@@ -5,6 +5,7 @@ description: Learn how to insert and configure code blocks in the ASP.NET MVC Ri
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code Blocks in ASP.NET MVC Rich Text Editor

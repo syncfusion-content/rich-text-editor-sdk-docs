@@ -5,6 +5,7 @@ description: Learn how to add and apply Google Fonts in the ASP.NET MVC Rich Tex
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 
