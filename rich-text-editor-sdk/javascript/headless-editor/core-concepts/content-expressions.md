@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Content Expressions in JavaScript Headless Editor
 
-Every node in the schema declares how its content should be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition`'s `content` field.
+Every node in the schema declares how its content should be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition's content` field.
 
 ## Why a builder?
 
@@ -38,8 +38,8 @@ Start an expression with one of the four factory methods. By default the resulti
 
 | Factory | Matches |
 |---------|---------|
-| `NodeContent.block()` | Any node in the `'block'` group. |
-| `NodeContent.inline()` | Any node in the `'inline'` group. |
+| `NodeContent.block()` | Any node in the `block` group. |
+| `NodeContent.inline()` | Any node in the `inline` group. |
 | `NodeContent.text()` | The `text` leaf node. |
 | `NodeContent.node(name)` | A specific named node type. |
 
@@ -121,13 +121,13 @@ ej.headlesseditor.NodeContent.sequence(
 A few real-world cases:
 
 ```js
-// The document root — one or more blocks.
+// The document root - one or more blocks.
 ej.headlesseditor.NodeContent.block().oneOrMore()                  // block+
 
-// A paragraph — zero or more inline nodes.
+// A paragraph - zero or more inline nodes.
 ej.headlesseditor.NodeContent.inline().zeroOrMore()                // inline*
 
-// A list item — a paragraph or heading followed by zero or more blocks.
+// A list item - a paragraph or heading followed by zero or more blocks.
 ej.headlesseditor.NodeContent.sequence(
   ej.headlesseditor.NodeContent.choice(
     ej.headlesseditor.NodeContent.node('paragraph'),
@@ -136,7 +136,7 @@ ej.headlesseditor.NodeContent.sequence(
   ej.headlesseditor.NodeContent.block().zeroOrMore()
 )                                                // (paragraph | heading) block*
 
-// A table — one or more rows, optionally followed by a caption.
+// A table - one or more rows, optionally followed by a caption.
 ej.headlesseditor.NodeContent.sequence(
   ej.headlesseditor.NodeContent.node('tableRow').oneOrMore(),
   ej.headlesseditor.NodeContent.node('caption').optional()
