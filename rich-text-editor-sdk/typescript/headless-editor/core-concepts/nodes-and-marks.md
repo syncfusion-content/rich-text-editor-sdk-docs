@@ -59,7 +59,7 @@ A node's `type` decides whether it is a block, an inline node, a leaf, or a cont
 - **Leaf nodes** are nodes without children/content. Examples: `image`, `horizontalRule`.
 - **Container nodes** are blocks that hold other blocks. Examples: `bulletList`, `orderedList`, `table`.
 
-The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'container'`, `'root'`, `'block list'`, `'list'`) decides which category a node belongs to. You do not need to set this directly when reading a document — the category is implied by the `type` and the position of the node in the tree.
+The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'container'`, `'root'`, `'block list'`, `'list'`) decides which category a node belongs to. You do not need to set this directly when reading a document ,because the category is implied by the `type` and the position of the node in the tree.
 
 ### Node attributes
 

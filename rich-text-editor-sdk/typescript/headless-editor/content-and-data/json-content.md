@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 # JSON Content in TypeScript Headless Editor
 
-The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting: provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
+The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting. You can provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
 
 This page covers:
 
@@ -20,7 +20,7 @@ This page covers:
 
 ## Document Structure
 
-The document model has four public types. Every node in the tree is an `EditorNode`; the root is a `DocumentRoot`; text leaves are `TextNode`; and inline formatting is carried by `Mark`.
+The document model has four public types. Every node in the tree is an `EditorNode`, the root is a `DocumentRoot`, text leaves are `TextNode`, and inline formatting is carried by `Mark`.
 
 ### Type Summary
 
@@ -31,7 +31,7 @@ The document model has four public types. Every node in the tree is an `EditorNo
 | `TextNode` | `EditorNode` | `text: string`, `marks: Mark[]`, `children: never[]` |
 | `Mark` | — | `type: string`, `attrs: Record<string, unknown>` |
 
-N> Node identity is position-based within the document tree; persistent node identifiers are not part of the public document model. Do not add an `id` property to JSON payloads.
+N> Node identity is position-based within the document tree. Persistent node identifiers are not part of the public document model. Do not add an `id` property to JSON payloads.
 
 ### The Document Root
 

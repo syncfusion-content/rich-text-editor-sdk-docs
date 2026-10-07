@@ -123,13 +123,13 @@ NodeContent.sequence(
 A few real-world cases:
 
 ```ts
-// The document root — one or more blocks.
+// The document root : one or more blocks.
 NodeContent.block().oneOrMore()                  // block+
 
-// A paragraph — zero or more inline nodes.
+// A paragraph : zero or more inline nodes.
 NodeContent.inline().zeroOrMore()                // inline*
 
-// A list item — a paragraph or heading followed by zero or more blocks.
+// A list item : a paragraph or heading followed by zero or more blocks.
 NodeContent.sequence(
     NodeContent.choice(
         NodeContent.node('paragraph'),
@@ -138,7 +138,7 @@ NodeContent.sequence(
     NodeContent.block().zeroOrMore()
 )                                                // (paragraph | heading) block*
 
-// A table — one or more rows, optionally followed by a caption.
+// A table : one or more rows, optionally followed by a caption.
 NodeContent.sequence(
     NodeContent.node('tableRow').oneOrMore(),
     NodeContent.node('caption').optional()

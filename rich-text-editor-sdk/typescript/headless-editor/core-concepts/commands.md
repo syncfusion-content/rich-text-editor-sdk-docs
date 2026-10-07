@@ -14,8 +14,8 @@ A command is a named action the editor knows how to perform. Commands are the on
 
 There are two kinds of commands in the editor:
 
-- **Generic built-in commands** listed on this page. They are not tied to any particular feature and are always available.
-- **Extension commands** owned by their extension (for example, `toggleBold` on the Bold extension, `toggleHeading` on the Heading extension, etc).
+- **Generic built-in commands** These are not tied to any particular feature and are always available.
+- **Extension commands:** These are owned by their respective extensions, such as `toggleBold` on the Bold extension and `toggleHeading` on the Heading extension.
 
 If you are not yet familiar with the editor instance, see the **Editor** page first.
 
@@ -52,7 +52,7 @@ editor.execute('setSelection', { from: 1, to: 5 });
 
 The string form returns the same `boolean` as the typed facade.
 
-### Command chaining — `editor.chain`
+### Command chaining: `editor.chain`
 
 Use `editor.chain()` to run several commands as one atomic step. Every step is collected, availability-checked, and dispatched together as single action.
 
@@ -65,7 +65,7 @@ editor.chain()
 
 Chaining is described in brief here [Command chaining](#command-chaining).
 
-## Checking availability — `editor.can()`
+## Checking availability: `editor.can()`
 
 Use `editor.can()` to check whether a command would run successfully without changing state. This is the standard way to update toolbar and menu state.
 
