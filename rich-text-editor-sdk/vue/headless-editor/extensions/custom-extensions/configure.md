@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Configure an Extension in Vue Headless Editor | Syncfusion
-description: Learn how to customize an extension's options with the configure method and how the merge behavior affects defaults.
+description: Learn how to customize an extension's options with the configure method and how the merge behavior affects defaults in Vue Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Configure an Extension in Vue Headless Editor
