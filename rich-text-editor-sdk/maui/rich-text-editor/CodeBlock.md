@@ -6,6 +6,7 @@ platform: rich-text-editor-sdk
 control: SfRichTextEditor
 documentation: ug
 keywords: maui rich text editor code block, code block language maui rte, syncfusion maui rte code formatting, maui rte syntax code block, rich text editor code snippet maui.
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code block support in .NET MAUI Rich Text Editor
