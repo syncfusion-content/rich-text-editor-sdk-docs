@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Checklist Configuration in Modern Rich Text Editor | Syncfusion
-description: Learn how to get configure Checklist in Modern Rich Text Editor and explore setup with core feature examples.
+title: Checklist in JavaScript Modern Rich Text Editor | Syncfusion
+description: Learn how to get configure Checklist in JavaScript Modern Rich Text Editor and explore setup with core feature examples.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug

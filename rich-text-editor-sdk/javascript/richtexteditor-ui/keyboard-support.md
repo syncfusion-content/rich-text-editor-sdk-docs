@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Keyboard Shortcuts in EJ2 Modern Rich Text Editor
+# Keyboard Shortcuts in JavaScript Modern Rich Text Editor
 
 The Syncfusion Essential JS 2 Modern Rich Text Editor provides built-in keyboard shortcuts to perform formatting, edit content, insert elements, and navigate the user interface efficiently without relying on mouse interactions.
 
