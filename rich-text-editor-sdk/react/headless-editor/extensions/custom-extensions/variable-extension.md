@@ -6,17 +6,18 @@ platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Document Variable Extension Example
+# Document Variable Extension Example in React Headless Editor
 
-This page demonstrates how to build a custom extension using the contributors covered above: `defineExtension`, `marks`, `commands`, `inputRules`, `domSpecs`, and `keyboardShortcuts`. The extension turns a typed token like `{{customerName}}` into a styled chip, and the same chip can be inserted from a toolbar button or from the <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> keyboard shortcut.
+This page demonstrates how to build a custom extension using the contributors covered above: `defineExtension`, `marks`, `commands`, `inputRules`, `domSpecs`, and `keyboardShortcuts`. The extension turns a typed token like `{{ '{{' }}customerName{{ '}}' }}` into a styled chip, and the same chip can be inserted from a toolbar button or from the <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> keyboard shortcut.
 
 ## What we are building
 
 - A `variable` mark with `name` and `value` attributes that decorates inline text.
 - A registered `insertVariable` command with `canExecute` payload validation that dispatches the built-in `inputRuleMark` command at the current selection.
-- A `{{name}}` input rule that converts the typed token into the `variable` mark.
+- A `{{ '{{' }}name{{ '}}' }}` input rule that converts the typed token into the `variable` mark.
 - A `domSpecs` block that renders the mark as a chip and parses the same shape back.
 - A keyboard shortcut that cycles through the configured variables and dispatches `insertVariable`.
 
@@ -24,6 +25,7 @@ This page demonstrates how to build a custom extension using the contributors co
 
 The example below mounts the editor with the Document Variable extension.
 
+{% raw %}
 ```html
   <div class="variable-hint">
     Type <code>{{ '{' }}{{ '{' }}customerName{{ '}' }}{{ '}' }}</code> in the editor to convert it into a variable chip, click a button to insert one, or press <kbd>Mod</kbd>+<kbd>Alt</kbd>+<kbd>v</kbd> to cycle through the list.
@@ -39,6 +41,7 @@ The example below mounts the editor with the Document Variable extension.
 
 <div #editor></div>
 ```
+{% endraw %}
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';

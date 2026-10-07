@@ -5,6 +5,7 @@ description: Learn how to validate image dimensions before uploading in the ASP.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

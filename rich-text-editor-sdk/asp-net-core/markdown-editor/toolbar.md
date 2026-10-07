@@ -5,6 +5,7 @@ description: Learn how to configure the toolbar in the ASP.NET Core Markdown Edi
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Configuration in ASP.NET Core Markdown Editor

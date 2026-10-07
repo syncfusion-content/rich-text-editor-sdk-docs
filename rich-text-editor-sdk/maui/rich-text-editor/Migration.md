@@ -5,6 +5,7 @@ description: Learn about Migrating from Syncfusion® Xamarin Rich Text Editor to
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Migrating from Xamarin Rich Text Editor to .NET MAUI Rich Text Editor

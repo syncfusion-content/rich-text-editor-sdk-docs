@@ -5,6 +5,7 @@ description: Learn how to localize the ASP.NET Core Rich Text Editor with custom
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in ASP.NET Core Rich Text Editor

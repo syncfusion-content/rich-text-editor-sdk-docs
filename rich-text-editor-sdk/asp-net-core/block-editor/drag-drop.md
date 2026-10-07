@@ -5,6 +5,7 @@ description: Learn how to enable drag and drop in the ASP.NET Core BlockEditor t
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Drag and Drop in ASP.NET Core Block Editor

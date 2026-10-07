@@ -5,6 +5,7 @@ description: Learn how to insert and manage images in the ASP.NET Core Rich Text
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in ASP.NET Core Rich Text Editor

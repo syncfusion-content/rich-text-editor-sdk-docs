@@ -5,6 +5,7 @@ description: Learn how to prevent Cross-Site Scripting (XSS) attacks in the ASP.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Prevent XSS in ASP.NET Core Rich Text Editor

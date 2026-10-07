@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Style and Appearance in Angular Block Editor | Syncfusion
-description: Learn how to customize the Angular Block Editor appearance by configuring width, height, read-only mode, and custom CSS classes.
+description: Angular Block Editor style and appearance provides a consolidated guide to built-in themes, CSS customization, dimensions, and appearance-related properties.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Angular Block Editor
@@ -28,7 +29,7 @@ If `width` and `height` are not set, the editor defaults to `width: '100%'` and 
 
 ## Customization using CSS class
 
-You can apply a custom theme to the Block Editor by passing one or more CSS class names through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#cssclass) property. The class is added to the editor's root element, so selectors should target `.e-block-editor.your-class` (or whichever root class the editor renders). This property is useful for things like brand colors, gradient backgrounds, or dark-mode overrides:
+You can apply a custom theme to the Block Editor by passing one or more CSS class names through the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/blockeditor/index-default#cssclass) property. The class is added to the editor's root element, so selectors should target `.e-blockeditor.your-class` (the root class the editor renders). This property is useful for things like brand colors, gradient backgrounds, or dark-mode overrides:
 
 ```html
 <ejs-blockeditor [width]="'600px'" [height]="'400px'" [cssClass]="'custom-editor-theme'" />
@@ -61,3 +62,80 @@ The following example demonstrates the usage of `readOnly` and `cssClass` togeth
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/appearance" %}
+
+## Theme Customization
+
+The Block Editor provides flexible theme customization options to help match the editor appearance with your application design. You can customize built-in themes by overriding CSS variables, targeting specific CSS classes/IDs, or create a fully customized theme using Syncfusion Theme Studio.
+
+### Default CSS Override
+
+The Block Editor uses CSS variables with the unified `--sf` naming convention. These variables control colors, typography, backgrounds, borders, icons, and other visual elements across the editor.
+
+### Block Editor CSS Classes and IDs
+
+| Selector                      | Purpose                            |
+| ----------------------------- | ---------------------------------- |
+| `.e-blockeditor`              | Main Block Editor element          |
+| `.e-active`                   | Active Block Editor element        |
+| `.e-selected`                 | Selected Block Editor element      |
+| `.e-list-item`                | Dropdown or list item              |
+| `.e-dropdownbase`             | Dropdown container                 |
+| `.e-table-element`            | Block Editor table element         |
+| `#blockeditor_contextmenu`    | Block Editor context menu          |
+| `#blockeditor_code-ddl_popup` | Code block language dropdown popup |
+
+### Block Editor CSS Variables
+
+| Variable                               | Purpose                  |
+| -------------------------------------- | ------------------------ |
+| `--color-sf-content-bg-color`          | Content background       |
+| `--color-sf-content-bg-color-hover`    | Hover background         |
+| `--color-sf-content-bg-color-selected` | Selected background      |
+| `--color-sf-content-bg-color-pressed`  | Pressed background       |
+| `--color-sf-content-text-color`        | Content text color       |
+| `--color-sf-content-text-color-alt1`   | Alternate text color     |
+| `--color-sf-placeholder-text-color`    | Placeholder text color   |
+| `--color-sf-border-light`              | Light border color       |
+| `--color-sf-border`                    | Border color             |
+| `--color-sf-border-hover`              | Hover border color       |
+| `--color-sf-border-selected`           | Selected border color    |
+| `--color-sf-primary`                   | Primary color            |
+| `--color-sf-primary-bg-color`          | Primary background color |
+| `--color-sf-primary-border-color`      | Primary border color     |
+| `--color-sf-primary-text-color`        | Primary text color       |
+| `--color-sf-icon-color`                | Icon color               |
+
+### Theme Customization Example
+
+The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/theme-customization" %}
+
+
+## Using Theme Studio
+
+Syncfusion Theme Studio provides an advanced way to create a fully customized theme for the Block Editor and other EJ2 components.
+
+1. Visit the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/).
+2. Select a base theme such as Material 3, Fluent 2, Bootstrap 5.3, or Tailwind 3.
+3. Customize colors, typography, borders, and component styles.
+4. Download the generated CSS file.
+5. Include the generated theme in your application.
+
+This approach ensures consistent styling across all Syncfusion components in your application.

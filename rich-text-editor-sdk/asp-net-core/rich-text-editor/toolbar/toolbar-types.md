@@ -5,6 +5,7 @@ description: Learn how to configure Expand, MultiRow, Scrollable, and Popup tool
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Types in ASP.NET Core Rich Text Editor

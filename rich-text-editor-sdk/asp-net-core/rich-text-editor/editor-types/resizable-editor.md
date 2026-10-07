@@ -5,6 +5,7 @@ description: Learn how to resize the ASP.NET Core Rich Text Editor dynamically b
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in ASP.NET Core Rich Text Editor

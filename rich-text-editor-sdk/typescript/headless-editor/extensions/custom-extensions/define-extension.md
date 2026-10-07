@@ -27,7 +27,7 @@ function defineExtension<TOptions extends object = object>(
 ): ExtensionDefinition<TOptions>
 ```
 
-`TOptions` is the extension's option shape. It defaults to `object`; pass a stronger shape for typed `defineOptions`, `configure`, and `extend`.
+`TOptions` is the extension's option shape. It defaults to `object`. Pass a stronger shape for typed `defineOptions`, `configure`, and `extend`.
 
 ## The minimum config
 
@@ -60,7 +60,7 @@ Other contributors are not validated here; pass valid shapes to avoid editor sta
 
 ## Reusing across editors
 
-A defined extension can be registered with multiple editors. `configure` and `extend` return a new definition each time; the original is not modified, so the same base extension can be customized differently for different editors.
+A defined extension can be registered with multiple editors. `configure` and `extend` return a new definition each time. The original is not modified, so the same base extension can be customized differently for different editors.
 
 ```typescript
 const base = defineExtension({ name: 'demo' });

@@ -5,6 +5,7 @@ description: Learn how to customize font family, font size, and text color in th
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Font Family, Size, and Color in ASP.NET Core Rich Text Editor

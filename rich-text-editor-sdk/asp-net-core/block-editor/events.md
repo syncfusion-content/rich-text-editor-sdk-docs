@@ -5,6 +5,7 @@ description: Learn how to handle events in the ASP.NET Core BlockEditor, includi
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Events in ASP.NET Core Block Editor

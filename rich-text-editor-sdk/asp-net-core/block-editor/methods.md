@@ -5,6 +5,7 @@ description: Learn about the public methods in ASP.NET Core BlockEditor for mana
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Methods in ASP.NET Core Block Editor

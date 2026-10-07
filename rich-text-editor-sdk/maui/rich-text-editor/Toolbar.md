@@ -5,6 +5,7 @@ description: Learn here all about Toolbar features in Syncfusion® .NET MAUI Ric
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar in .NET MAUI Rich Text Editor

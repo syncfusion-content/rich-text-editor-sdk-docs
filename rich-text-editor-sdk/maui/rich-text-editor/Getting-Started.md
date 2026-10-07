@@ -6,6 +6,7 @@ description: Learn here about getting started with Syncfusion® .NET MAUI Rich T
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with .NET MAUI Rich Text Editor

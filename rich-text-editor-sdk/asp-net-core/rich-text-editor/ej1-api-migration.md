@@ -5,6 +5,7 @@ description: Learn how to migrate from Essential JS 1 to the ASP.NET Core Rich T
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

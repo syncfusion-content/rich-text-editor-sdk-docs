@@ -5,6 +5,7 @@ description: Learn how to add emojis in the ASP.NET Core Rich Text Editor with s
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Emoji Picker in the ASP.NET Core Rich Text Editor

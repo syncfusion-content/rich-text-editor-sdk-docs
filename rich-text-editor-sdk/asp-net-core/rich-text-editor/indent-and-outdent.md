@@ -5,6 +5,7 @@ description: Learn how to increase and decrease indentation in the ASP.NET Core 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Increase and Decrease Indent in ASP.NET Core Rich Text Editor

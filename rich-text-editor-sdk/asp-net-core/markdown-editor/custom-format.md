@@ -5,6 +5,7 @@ description: Learn how to customize Markdown syntax in the ASP.NET Core Markdown
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Markdown Syntax in ASP.NET Core Markdown Editor

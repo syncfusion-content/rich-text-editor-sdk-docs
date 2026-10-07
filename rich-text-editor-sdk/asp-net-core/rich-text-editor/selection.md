@@ -5,6 +5,7 @@ description: Learn how to select text, nodes, table cells, and content programma
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Selection in ASP.NET Core Rich Text Editor

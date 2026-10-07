@@ -24,7 +24,7 @@ nodeViews?: (this: ExtensionScope<TOptions>) => Record<string, (node: EditorNode
 | Field | Type | Description |
 |-------|------|-------------|
 | `dom` | `HTMLElement` | The DOM root this view manages. Required. |
-| `contentDOM` | `HTMLElement \| null` | Optional. Where child content is rendered. If `null`, the node is treated as atom-like. |
+| `contentDOM` | `HTMLElement &#124; null` | Optional. Where child content is rendered. If `null`, the node is treated as atom-like. |
 | `update` | `(attrs) => boolean` | Optional. Called when the node's data changes; return `true` if the view is still valid. |
 | `ignoreMutation` | `(mutation) => boolean` | Optional. Return `true` to tell the editor the mutation came from the view itself. |
 | `destroy` | `() => void` | Optional. Cleanup on view teardown. |
