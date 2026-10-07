@@ -96,7 +96,7 @@ Configure custom dimensions or preset sizes for images with min/max constraints.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image-dimension-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image/config-options/image-dimension-cs1" %}
 
 ## Image Display Options
 
@@ -119,7 +119,7 @@ Configure how images are rendered in the document - either flowing with text or 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image-display-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image/config-options/image-display-cs1" %}
 
 ---
 
@@ -140,4 +140,4 @@ The `resize` property controls whether images can be resized by users. By defaul
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image-resize-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image/config-options/image-resize-cs1" %}
