@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom DOM Specifications in React Headless Editor | Syncfusion
-description: Learn how to contribute custom DOM render and parse specs for Headless Editor nodes and marks, including the toDOM and parseDOM shape.
+description: Learn how to contribute custom DOM render and parse specs for React Headless Editor nodes and marks, including the toDOM and parseDOM shape.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom DOM Specifications in React Headless Editor
