@@ -187,7 +187,7 @@ npm run dev
 ```
 The Syncfusion<sup style="font-size:70%">&reg;</sup> React Modern Rich Text Editor is displayed in the browser as shown below.
 
-![Syncfusion React Modern Rich Text Editor output](images/getting-started.png)
+![Syncfusion React Modern Rich Text Editor output](images/cli-rte.png)
 
 {% endtabcontent %}
 {% endtabcontents %}
