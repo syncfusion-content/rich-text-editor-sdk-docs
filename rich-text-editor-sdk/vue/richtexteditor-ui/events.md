@@ -92,32 +92,6 @@ The following example demonstrates how to handle the `destroyed` event and log t
 
 ---
 
-## updatedToolbarStatus
-
-The `updatedToolbarStatus` event is raised after the toolbar synchronizes its visual state with the current editor selection or cursor formatting. Its event arguments provide the active inline marks, block-level formats, and resolved font and color styles.
-
-The following example demonstrates how to handle the `updatedToolbarStatus` event and display which text formatting styles (bold, italic, underline, strikethrough) are currently active at the cursor position.
-
-{% tabs %}
-
-{% highlight html tabtitle="app.vue" %}
-
-{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/events/updateToolbarStatus/app.vue %}
-
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-{% include code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/events/updateToolbarStatus/index.html %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/richtexteditor-ui/events/updateToolbarStatus/" %}
-
----
-
 ## focus
 
 The `focus` event is raised when the editor receives focus, either through user interaction or a method call. Its event arguments identify the event name, indicate whether the focus was user-initiated, and specify the focus source.
