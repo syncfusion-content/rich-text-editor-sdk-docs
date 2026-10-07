@@ -5,6 +5,7 @@ description: Learn how to configure Content Security Policy directives for the A
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Content Security Policy (CSP) in ASP.NET MVC Rich Text Editor

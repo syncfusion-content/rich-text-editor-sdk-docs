@@ -5,6 +5,7 @@ description: Learn how to create personalized documents in the ASP.NET MVC Rich 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mail Merge in ASP.NET MVC Rich Text Editor

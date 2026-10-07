@@ -5,6 +5,7 @@ description: Learn how to insert images in the ASP.NET MVC Markdown Editor using
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Images in ASP.NET MVC Markdown Editor

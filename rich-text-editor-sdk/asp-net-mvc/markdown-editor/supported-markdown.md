@@ -5,6 +5,7 @@ description: Learn the Markdown syntax supported in the ASP.NET MVC Markdown Edi
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Syntax Supported in ASP.NET MVC Markdown Editor

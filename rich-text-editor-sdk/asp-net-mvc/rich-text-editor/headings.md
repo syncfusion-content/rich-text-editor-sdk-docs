@@ -5,6 +5,7 @@ description: Learn how to apply heading styles in the ASP.NET MVC Rich Text Edit
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Heading Styles in ASP.NET MVC Rich Text Editor

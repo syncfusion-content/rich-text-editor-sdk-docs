@@ -5,6 +5,7 @@ description: Learn how to enable mentions in the ASP.NET MVC Markdown Editor usi
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mentions in ASP.NET MVC Markdown Editor
