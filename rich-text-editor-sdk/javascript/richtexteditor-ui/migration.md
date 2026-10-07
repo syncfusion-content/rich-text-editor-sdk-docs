@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# JavaScript Rich Text Editor to Modern Rich Text Editor Migratio
+# JavaScript Rich Text Editor to Modern Rich Text Editor Migration
 
 This article describes the API migration process from the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor (`@syncfusion/ej2-richtexteditor`) to the Modern Rich Text Editor (`@syncfusion/ej2-richtexteditor-ui`).
 
