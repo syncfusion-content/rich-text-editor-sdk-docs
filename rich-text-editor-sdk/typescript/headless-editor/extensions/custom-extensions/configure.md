@@ -57,7 +57,7 @@ themedExtension.config.defineOptions?.().step; // 5
 | You only want to change option values. | You want to add, replace, or remove a contributor. |
 | You want defaults to be inherited. | You want a new `nodes`, `marks`, `commands`, etc. |
 
-## Example: changing the `htmlAttributes` default
+## Example: changing the htmlAttributes default
 
 Most built-in extensions expose an `htmlAttributes` option through the shared `ExtensionOptions` interface. Pass a partial set of attributes and the rest of the defaults are preserved.
 

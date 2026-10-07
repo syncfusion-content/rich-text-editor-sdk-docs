@@ -52,7 +52,7 @@ editor.execute('setSelection', { from: 1, to: 5 });
 
 The string form returns the same `boolean` as the typed facade.
 
-### Command chaining: `editor.chain`
+### Command chaining
 
 Use `editor.chain()` to run several commands as one atomic step. Every step is collected, availability-checked, and dispatched together as single action.
 
@@ -65,7 +65,7 @@ editor.chain()
 
 Chaining is described in brief here [Command chaining](#command-chaining).
 
-## Checking availability: `editor.can()`
+## Checking availability
 
 Use `editor.can()` to check whether a command would run successfully without changing state. This is the standard way to update toolbar and menu state.
 

@@ -15,7 +15,7 @@ After a Headless Editor instance is mounted, you can read the current content in
 This page covers the three common content operations:
 
 - [Get Content](#get-content) – read the current document, HTML, text, or selection.
-- [Set Content](#set-content) – assign HTML or a structured document, and use it to clear the document..
+- [Set Content](#set-content) – assign HTML or a structured document, and use it to clear the document.
 - [Update Content](#update-content) – apply in-place changes through typed commands.
 
 N> The examples below assume an editor instance created with `HeadlessEditor.create({ schema, extensions })` and mounted to a DOM container. Replace `editor` with the initialized editor instance in your application.
@@ -91,7 +91,7 @@ N> Use `setContent('')` to clear the editor in one transaction instead of dispat
 
 `setDocument()` accepts a `DocumentRoot`, which is the same shape that `getDocument()` returns. Use it when you have a structured document round-tripped from the editor or persisted from an external store.
 
-A `DocumentRoot` has the following properties.
+A `DocumentRoot` has the following properties:
 
 | Property | Type | Description |
 | --- | --- | --- |

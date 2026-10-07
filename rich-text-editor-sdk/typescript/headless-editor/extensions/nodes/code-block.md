@@ -105,6 +105,6 @@ editor.commands.setCodeBlockLanguage({ language: 'javascript' });
 
 Type triple backticks or triple tildes at the start of a line, optionally followed by a language identifier and a space or newline:
 
-* ```` ```ts ```` followed by space creates a code block with language set to `typescript`
+* ```` ```typescript ```` followed by space creates a code block with language set to `typescript`
 * ```` ``` ```` followed by space creates a code block with the default language
 * `~~~csharp ` followed by space creates a code block with language set to `csharp`
