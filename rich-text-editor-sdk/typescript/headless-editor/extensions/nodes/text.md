@@ -5,7 +5,7 @@ description: Learn about the Text extension in the TypeScript Headless Editor, w
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text in TypeScript Headless Editor

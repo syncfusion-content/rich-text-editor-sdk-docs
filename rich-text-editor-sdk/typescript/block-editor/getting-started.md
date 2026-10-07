@@ -6,7 +6,7 @@ canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/javascript-block
 platform: ej2-javascript
 control: Getting started 
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with TypeScript Block Editor

@@ -5,7 +5,7 @@ description: Learn how to contribute custom mark types to the TypeScript Headles
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Marks in TypeScript Headless Editor

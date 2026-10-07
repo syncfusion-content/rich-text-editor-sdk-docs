@@ -5,7 +5,7 @@ description: Learn how to customize the TypeScript Block Editor appearance by co
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in TypeScript Block Editor

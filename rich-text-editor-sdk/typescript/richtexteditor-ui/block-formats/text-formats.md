@@ -5,7 +5,7 @@ description: Learn how to configure paragraph, heading, blockquote, code block, 
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Formats in TypeScript Modern Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to customize Markdown syntax in the TypeScript Markdown E
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Markdown Syntax in TypeScript Markdown Editor

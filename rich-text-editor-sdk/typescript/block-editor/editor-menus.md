@@ -5,7 +5,7 @@ description: Learn how to use the editor menus in the TypeScript Block Editor to
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Menus in TypeScript Block Editor

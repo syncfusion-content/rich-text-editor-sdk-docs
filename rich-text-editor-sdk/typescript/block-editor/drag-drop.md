@@ -5,7 +5,7 @@ description: Learn how to enable drag and drop in the TypeScript Block Editor to
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Drag and Drop in TypeScript Block Editor

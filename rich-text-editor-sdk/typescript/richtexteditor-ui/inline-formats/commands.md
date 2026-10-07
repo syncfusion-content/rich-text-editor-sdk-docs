@@ -5,7 +5,7 @@ description: Learn how to invoke inline format commands programmatically in the 
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Format Commands in TypeScript Modern Rich Text Editor
