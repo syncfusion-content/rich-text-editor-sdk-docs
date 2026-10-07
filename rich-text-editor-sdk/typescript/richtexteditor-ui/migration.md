@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Migrating to TypeScript Modern Rich Text Editor | Syncfusion
-description: Learn how to migrate from the Essential JS 2 Rich Text Editor to the Modern Rich Text Editor by mapping APIs, toolbar items, and configuration settings.
+description: Learn how to migrate from the TypeScript Rich Text Editor to the Modern Rich Text Editor by mapping APIs, toolbar items, and configuration settings.
 control: Modern Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Migrating from Rich Text Editor to Modern Rich Text Editor
+# TypeScript Rich Text Editor to Modern Rich Text Editor Migration
 
 This article describes the API migration process from the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Rich Text Editor (`@syncfusion/ej2-richtexteditor`) to the Modern Rich Text Editor (`@syncfusion/ej2-richtexteditor-ui`).
 
