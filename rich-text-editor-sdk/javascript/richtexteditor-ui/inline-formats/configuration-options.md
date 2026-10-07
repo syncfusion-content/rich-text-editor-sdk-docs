@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Format Options in JavaScript Modern Rich Text Editor | Syncfusion
+title: Inline Format Options in Modern Rich Text Editor | Syncfusion
 description: Learn how to configure font family, font size, font color, background color, and other inline format options in the JavaScript Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor

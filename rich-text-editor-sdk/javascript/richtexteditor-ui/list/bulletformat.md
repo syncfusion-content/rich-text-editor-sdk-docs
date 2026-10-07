@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# BulletFormat List Configuration
+# BulletFormat List Configuration in JavaScript Modern Rich Text Editor
 
 The BulletFormat List feature enables users to create and manage unordered lists with bullet markers. Bulleted lists are ideal for presenting key points, feature lists, and any content that does not require a specific order.
 

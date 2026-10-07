@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Table Configuration & Properties
+# Table Configuration & Properties in JavaScript Modern Rich Text Editor
 
 ## Overview
 

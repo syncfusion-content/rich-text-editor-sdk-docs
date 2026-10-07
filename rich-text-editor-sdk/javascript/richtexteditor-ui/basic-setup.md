@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-## Basic setup in JavaScript Modern Rich Text Editor
+# Basic setup in JavaScript Modern Rich Text Editor
 
 After initializing the Modern Rich Text Editor (see [Getting Started](getting-started)), configure the properties that define its initial content, content format, toolbar options, image handling behavior, and editing experience. These settings establish the editor's default configuration and provide a foundation for further customization based on application requirements.
 

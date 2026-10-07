@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapsible Headings in JavaScript Modern Rich Text Editor | Syncfusion
+title: Collapsible Headings in Modern Rich Text Editor | Syncfusion
 description: Learn how to configure collapsible sections (paragraph and heading 1–4) in the JavaScript Modern Rich Text Editor through slash commands.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor

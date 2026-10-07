@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Formats in JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to configure paragraph, heading, blockquote, code block, horizontal line, callout, and collapsible heading formats in the JavaScript Modern Rich Text Editor.
+description: Learn how to configure paragraph, heading, blockquote, code block, horizontal line, callout, and collapsible heading formats in the Modern Rich Text Editor.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug

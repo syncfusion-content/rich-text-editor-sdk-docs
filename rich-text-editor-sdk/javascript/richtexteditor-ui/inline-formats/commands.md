@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Format Commands in JavaScript Modern Rich Text Editor | Syncfusion
+title: Inline Format Commands in Modern Rich Text Editor | Syncfusion
 description: Learn how to invoke inline format commands programmatically in the JavaScript Modern Rich Text Editor using the fluent commands builder.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor

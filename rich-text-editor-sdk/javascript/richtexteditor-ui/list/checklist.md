@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Checklist Configuration in JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to get configure Checklist in JavaScript Modern Rich Text Editor and explore setup with core feature examples.
+title: Checklist Configuration in Modern Rich Text Editor | Syncfusion
+description: Learn how to get configure Checklist in Modern Rich Text Editor and explore setup with core feature examples.
 platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Checklist Configuration
+# Checklist Configuration in JavaScript Modern Rich Text Editor
 
 The Checklist feature enables users to create and manage interactive checkbox lists within the Rich Text Editor. Checklists are ideal for task management, requirements tracking, and scenarios where items need to be marked as complete or incomplete.
 
