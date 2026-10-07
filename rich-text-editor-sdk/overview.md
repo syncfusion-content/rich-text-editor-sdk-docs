@@ -10,7 +10,7 @@ domainurl: https://helpstaging.syncfusion.com/rich-text-editor-sdk
 
 # Welcome to Syncfusion® Rich Text Editor SDK
 
-The Rich Text Editor SDK provides three powerful editing experiences designed to support different content authoring scenarios. Whether you need traditional document editing, block-based content creation, or lightweight Markdown authoring, you can choose the editor that best fits your application requirements and deliver an efficient, intuitive, and productive editing experience.
+The Rich Text Editor SDK provides four powerful editing experiences designed to support different content authoring scenarios. Whether you need traditional document editing, a modern content creation experience, block-based content creation, or lightweight Markdown authoring, you can choose the editor that best fits your application requirements and deliver an efficient, intuitive, and productive editing experience.
 
 ---
 
@@ -44,7 +44,27 @@ The Syncfusion Rich Text Editor is a powerful WYSIWYG (What You See Is What You 
 
 {% enddoccards %}
 
-### 2. Block Editor
+### 2. Modern Rich Text Editor
+
+The Syncfusion Modern Rich Text Editor is a next-generation WYSIWYG editor that delivers a streamlined, modern authoring experience with a refined UI, faster performance, and built-in productivity features for everyday content creation.
+
+**Available Platforms:**
+
+{% doccards %}
+
+{% doccard text="React" link="/rich-text-editor-sdk/react/richtexteditor-ui/getting-started" icon="/rich-text-editor-sdk/images/React.svg" %}
+
+{% doccard text="Angular" link="/rich-text-editor-sdk/angular/richtexteditor-ui/getting-started" icon="/rich-text-editor-sdk/images/Angular.svg" %}
+
+{% doccard text="TypeScript" link="/rich-text-editor-sdk/typescript/richtexteditor-ui/getting-started" icon="/rich-text-editor-sdk/images/TypeScript.svg" %}
+
+{% doccard text="JavaScript" link="/rich-text-editor-sdk/javascript/richtexteditor-ui/getting-started" icon="/rich-text-editor-sdk/images/JavaScript.svg" %}
+
+{% doccard text="Vue" link="/rich-text-editor-sdk/vue/richtexteditor-ui/getting-started" icon="/rich-text-editor-sdk/images/Vue.svg" %}
+
+{% enddoccards %}
+
+### 3. Block Editor
 
 The Syncfusion Block Editor is a modern, block-based editor for composing rich, structured documents ideal for document editing, knowledge bases, note-taking, and content creation tools.
 
@@ -70,7 +90,7 @@ The Syncfusion Block Editor is a modern, block-based editor for composing rich, 
 
 {% enddoccards %}
 
-### 3. Markdown Editor
+### 4. Markdown Editor
 
 The Syncfusion Markdown Editor is a lightweight, web-based editor designed for creating and editing Markdown content with ease.
 
