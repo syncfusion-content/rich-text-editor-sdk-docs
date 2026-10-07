@@ -16,7 +16,7 @@ The Essential JS 2 for JavaScript (global script) is an ES5-formatted pure JavaS
 
 The following list of dependencies are required to use the `Headless Editor` library in the application.
 
-```javascript
+```js
 |-- @syncfusion/ej2-headless-editor
     |-- @syncfusion/ej2-base
     |-- prosemirror-history
@@ -76,8 +76,6 @@ I> Ensure that all Headless Editor script files are loaded in the correct order 
 ## Adding Headless Editor library
 
 Add the Headless Editor library to the application as follows. Place the target element in **index.html** and the initialization code in **index.js** using the sample below.
-
-> Add a target element such as `<div id="editor"></div>` in `index.html` before calling `mount()` in `index.js`.
 
 The Headless Editor can be initialized on a `div` element, as shown below:
 

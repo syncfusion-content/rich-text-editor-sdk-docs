@@ -13,7 +13,7 @@ This section covers the essential properties, methods, and events of the [.NET M
 
 ## Setting Plain Text
 
-The Rich Text Editor control displays plain text content through the `Value` property. To work with text-based content, set the `TValue` property to `Html` and assign plain text to the `Value` property.
+The Rich Text Editor control displays plain text content through the [Value](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Value) property. To work with text-based content, set the [TValue](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TValue) property to `Html` and assign plain text to the `Value` property.
 
 {% tabs %} 
 
@@ -39,7 +39,7 @@ richTextEditor.TValue = RichTextEditorValueType.HTML;
 
 ## Setting HTML Formatted Text
 
-The `Value` property of the `SfRichTextEditor` control is used to set HTML formatted content. To render HTML content correctly, set the `TValue` property to `Html`.
+The [Value](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Value) property of the [SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html) control is used to set HTML formatted content. To render HTML content correctly, set the [TValue](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TValue) property to `Html`.
 
 {% tabs %} 
 
@@ -62,6 +62,19 @@ richTextEditor.TValue = RichTextEditorValueType.HTML;
 {% endtabs %}
 ![.NET MAUI Rich Text Editor with HtmlText](images/richtexteditor-htmltext-property.png)
 
+## Getting Raw Text
+
+To retrieve the plain text content from the Rich Text Editor, use the `GetText()` method. This is an asynchronous method that returns a `Task<string>` and must be awaited.
+
+{% tabs %}
+
+{% highlight c# %}
+
+string text = await richTextEditor.GetText();
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Getting Selected HTML
 

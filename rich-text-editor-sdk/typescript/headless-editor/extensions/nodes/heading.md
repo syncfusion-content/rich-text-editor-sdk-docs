@@ -65,7 +65,6 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 ```ts
 // Convert the current block to an <h2>
 editor.commands.setHeading({ level: 2 });
-editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
 ## Keyboard shortcuts

@@ -19,10 +19,10 @@ The `undoRedoExtension` registers the `undo` and `redo` commands for navigating 
 ```
 
 ```ts
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, undoRedoExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
-    extensions: [undoRedoExtension]
+    extensions: [undoRedoExtension, paragraphExtension]
 });
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
@@ -41,10 +41,11 @@ The `undoRedo` extension exposes options for tuning the history stack:
 ```
 
 ```ts
-import { HeadlessEditor, undoRedoExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, undoRedoExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 const editor = HeadlessEditor.create({
     extensions: [
+        paragraphExtension,
         undoRedoExtension.configure({
             depth: 50,
             newGroupDelay: 500

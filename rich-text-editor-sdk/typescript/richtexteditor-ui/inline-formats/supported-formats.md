@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
 
 The Modern Rich Text Editor ships a curated set of inline formats that apply character-level marks to the selected text without changing the surrounding block. The toolbar palette exposes these formats through built-in items, and the same formats are reachable from code through the fluent `commands()` builder.
 
-This page lists every inline format the component supports, the toolbar item that triggers it, and how it is exposed in code. For configuration of the inline dropdowns and color pickers, see [Options](options.md). For runtime invocation, see [Commands](commands.md).
+This page lists every inline format the component supports, the toolbar item that triggers it, and how it is exposed in code. For configuration of the inline dropdowns and color pickers, see [Options](options). For runtime invocation, see [Commands](commands).
 
 ## Available inline formats
 
@@ -59,13 +59,13 @@ The toggle styles include `Bold`, `Italic`, `Underline`, `StrikeThrough`, `SubSc
 
 ## Font and styling
 
-The `FontName`, `FontSize`, `FontColor`, and `BackgroundColor` toolbar items are bound to a `FontName` dropdown, a `FontSize` dropdown, and the foreground and background Color Picker controls respectively. Each accepts a typed payload and the empty string removes the corresponding mark from the selection. For property-by-property configuration, see [Options](options.md).
+The `FontName`, `FontSize`, `FontColor`, and `BackgroundColor` toolbar items are bound to a `FontName` dropdown, a `FontSize` dropdown, and the foreground and background Color Picker controls respectively. Each accepts a typed payload and the empty string removes the corresponding mark from the selection. For property-by-property configuration, see [Options](options).
 
 ## Clear all inline formatting
 
-The `ClearFormat` toolbar item strips every inline mark (bold, italic, underline, strikethrough, subscript, superscript, code, color, highlight, font size, and font family) from the current selection without altering the block structure. For a programmatic equivalent, use `clearFormat` from the [Commands](commands.md) page.
+The `ClearFormat` toolbar item strips every inline mark (bold, italic, underline, strikethrough, subscript, superscript, code, color, highlight, font size, and font family) from the current selection without altering the block structure. For a programmatic equivalent, use `clearFormat` from the [Commands](commands) page.
 
 ## See also
 
-* [Options](options.md) — property surface for `fontSize`, `fontFamily`, `fontColor`, and `backgroundColor`.
-* [Commands](commands.md) — how to invoke every inline format from code.
+* [Options](options) — property surface for `fontSize`, `fontFamily`, `fontColor`, and `backgroundColor`.
+* [Commands](commands) — how to invoke every inline format from code.

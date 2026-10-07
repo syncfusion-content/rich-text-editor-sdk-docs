@@ -6,6 +6,8 @@
 import { provide } from "vue";
 
 import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-vue-richtexteditor';
+import '@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css';
+
 const iframeData = {
   enable: true,
   attributes: {

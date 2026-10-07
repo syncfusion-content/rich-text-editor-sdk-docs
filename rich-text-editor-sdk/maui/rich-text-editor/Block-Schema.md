@@ -15,7 +15,7 @@ The block schema provides a structured representation of editor content and supp
 
 ## Binding block schema content
 
-You can bind a collection of block nodes to the `Value` property of the `SfRichTextEditor`.
+You can bind a collection of block nodes to the `Value` property of the [SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html).
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ public class ViewModel
 
 ## Working with lists
 
-The block schema supports both bulleted and numbered lists through the `BulletListNode` and `OrderedListNode` elements.
+The block schema supports both bulleted and numbered lists through the [BulletListNode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.BulletListNode.html) and [OrderedListNode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.OrderedListNode.html) elements.
 
 {% tabs %}
 
@@ -108,7 +108,7 @@ new BulletListNode
 
 ## Working with hyperlinks
 
-Hyperlinks can be created using the `LinkMark`.
+Hyperlinks can be created using the [LinkMark](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.LinkMark.html).
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ new ParagraphNode
 
 ## Working with images
 
-Images can be inserted using the `ImageNode`.
+Images can be inserted using the [ImageNode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.ImageNode.html).
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ new ImageNode
 
 ## Working with code blocks
 
-The block schema supports syntax-highlighted code blocks through the `CodeBlockNode`.
+The block schema supports syntax-highlighted code blocks through the [CodeBlockNode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.CodeBlockNode.html).
 
 {% tabs %}
 
