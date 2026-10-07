@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Document Variable Extension Example
+# Document Variable Extension Example in Angular Headless Editor
 
 This page demonstrates how to build a custom extension using the contributors covered above: `defineExtension`, `marks`, `commands`, `inputRules`, `domSpecs`, and `keyboardShortcuts`. The extension turns a typed token like `{{customerName}}` into a styled chip, and the same chip can be inserted from a toolbar button or from the <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> keyboard shortcut.
 
