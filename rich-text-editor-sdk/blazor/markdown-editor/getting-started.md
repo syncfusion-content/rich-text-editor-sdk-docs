@@ -5,6 +5,7 @@ description: Learn how to get started with Blazor Markdown Editor in Blazor WebA
 platform: rich-text-editor-sdk
 component: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 <!-- markdownlint-disable MD024 -->

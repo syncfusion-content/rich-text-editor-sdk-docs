@@ -5,6 +5,7 @@ description: Learn how to browse, select, and insert files from server folders a
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # File Browser in ASP.NET MVC Rich Text Editor

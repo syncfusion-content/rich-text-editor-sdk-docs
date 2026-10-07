@@ -5,6 +5,7 @@ description: Learn how to add, upload, manage, and customize audio content in th
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Audios in ASP.NET MVC Rich Text Editor

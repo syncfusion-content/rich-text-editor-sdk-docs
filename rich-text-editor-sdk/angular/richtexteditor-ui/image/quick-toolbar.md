@@ -142,4 +142,4 @@ The default image quick toolbar includes:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/image/quick-toolbar/quick-toolbar-customize-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/image/quick-toolbar/quick-toolbar-customize-cs1" %}

@@ -5,6 +5,7 @@ description: Learn about the built-in toolbar items in the ASP.NET MVC Rich Text
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in ASP.NET MVC Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to enable drag and drop in the ASP.NET MVC Block Editor t
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Drag and Drop in ASP.NET MVC Block Editor

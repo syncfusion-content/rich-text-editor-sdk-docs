@@ -5,6 +5,7 @@ description: Learn how to add inline content in the Blazor Block Editor, blocks 
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Content in Blazor Block Editor

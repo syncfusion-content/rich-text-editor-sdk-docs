@@ -5,6 +5,7 @@ description: Learn how to clean and customize clipboard content in the Blazor Ri
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Clipboard Cleanup in Blazor Rich Text Editor

@@ -16,19 +16,19 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 {% highlight ts tabtitle="app.component.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/Basic-setup/src/app.component.ts %}
+{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/src/app.component.ts %}
 
 {% endhighlight %}
 
 {% highlight html tabtitle="app.component.html" %}
 
-{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/Basic-setup/src/app.component.html %}
+{% include code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/src/app.component.html %}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup/Basic-setup/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/basic-setup" %}
 
 ## Set Editor content.
 

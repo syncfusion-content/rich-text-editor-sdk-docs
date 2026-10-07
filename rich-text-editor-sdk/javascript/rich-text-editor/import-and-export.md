@@ -6,6 +6,7 @@ platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Import and Export Content in JavaScript Rich Text Editor

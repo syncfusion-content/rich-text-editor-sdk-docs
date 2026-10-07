@@ -5,6 +5,7 @@ description: Learn how to use IChatInferenceService to integrate custom AI servi
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom AI Service Integration with Blazor Smart Rich Text Editor

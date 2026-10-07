@@ -5,6 +5,7 @@ description: Learn how to customize font family, font size, text color, backgrou
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Font Styling in Blazor Rich Text Editor

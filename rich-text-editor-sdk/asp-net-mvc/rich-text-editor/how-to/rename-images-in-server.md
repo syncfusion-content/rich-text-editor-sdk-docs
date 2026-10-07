@@ -5,6 +5,7 @@ description: Learn how to rename uploaded images in the ASP.NET MVC Rich Text Ed
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

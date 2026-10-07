@@ -5,6 +5,7 @@ description: Learn about the ASP.NET MVC Rich Text Editor features, editing capa
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

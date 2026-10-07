@@ -5,6 +5,7 @@ description: Learn about accessibility in the Blazor Block Editor, including WAI
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in Blazor Block Editor
