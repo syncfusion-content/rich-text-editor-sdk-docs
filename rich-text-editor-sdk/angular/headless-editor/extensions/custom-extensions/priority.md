@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extension Priority in Angular Headless Editor | Syncfusion
-description: Learn how the priority field controls the order extensions and their nodes are added to the Headless Editor schema.
+description: Learn how the priority field controls the order extensions and their nodes are added to the Headless Editor schema in Angular Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

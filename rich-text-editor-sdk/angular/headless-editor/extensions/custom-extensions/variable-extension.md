@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Document Variable Extension Example | Headless Editor | Syncfusion
-description: A runnable Document Variable custom extension for the Headless Editor that turns {{name}} tokens into styled chips.
+description: A runnable Document Variable custom extension for the Angular Headless Editor that turns {{name}} tokens into styled chips.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom DOM Specifications in Angular Headless Editor | Syncfusion
-description: Learn how to contribute custom DOM render and parse specs for Headless Editor nodes and marks, including the toDOM and parseDOM shape.
+description: Learn how to contribute custom DOM render and parse specs for Headless Editor nodes and marks, including the toDOM and parseDOM shape in Angular Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

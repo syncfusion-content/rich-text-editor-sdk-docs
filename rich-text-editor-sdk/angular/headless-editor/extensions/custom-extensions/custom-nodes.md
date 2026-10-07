@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Nodes in Angular Headless Editor | Syncfusion
-description: Learn how to contribute custom node types to the Headless Editor schema using the nodes contributor and NodeDefinition.
+description: Learn how to contribute custom node types to the Headless Editor schema using the nodes contributor and NodeDefinition in Angular Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
