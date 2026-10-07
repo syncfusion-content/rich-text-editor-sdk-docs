@@ -49,7 +49,7 @@ The following example demonstrates how to add the bullet format list in toolbar 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/list/bulletformat/BulletFormat-List1/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/list/bulletformat/BulletFormat-List1" %}
 
 
 ---
@@ -78,7 +78,7 @@ The following example demonstrates how to customize the bullet format list in th
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/list/bulletformat/BulletFormat-List2/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/list/bulletformat/BulletFormat-List2" %}
 
 ---
 

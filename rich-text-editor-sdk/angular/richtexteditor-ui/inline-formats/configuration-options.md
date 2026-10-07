@@ -36,7 +36,7 @@ You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-built-in-fontname/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-built-in-fontname" %}
 
 ### Custom font family
 
@@ -58,7 +58,7 @@ The Modern Rich Text Editor supports providing custom fonts along with the exist
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-custom-fontfamily/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-custom-fontfamily" %}
 
 ### Google font support
 
@@ -120,7 +120,7 @@ You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-built-in-fontsize/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-built-in-fontsize" %}
 
 ### Custom font size
 
@@ -142,7 +142,7 @@ The Modern Rich Text Editor supports providing custom sizes along with the exist
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-custom-fontsize/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-custom-fontsize" %}
 
 ## Font and background color
 
@@ -164,7 +164,7 @@ You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-font-color/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/Inlineformats-options-font-color" %}
 
 ### Custom font and background colors
 
@@ -188,7 +188,7 @@ The number of columns in the color palette for both `FontColor` and `BackgroundC
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/inlineformats-options1/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/options/inlineformats-options1" %}
 
 ## See also
 
