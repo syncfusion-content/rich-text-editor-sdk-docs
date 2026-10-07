@@ -38,7 +38,7 @@ The **Link Settings** govern how hyperlinks are created, normalized, and validat
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/link-settings" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/settings/link-settings" %}
 
 > If `defaultProtocol` is **not** present in `allowedProtocols`, the editor logs a warning and silently falls back to the first entry of `allowedProtocols`. Add your default to the allow-list, or change `defaultProtocol` to one that already exists.
 
@@ -77,7 +77,7 @@ A paste whose payload contains whitespace, or that is plain text with a URL insi
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/link-on-paste" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/settings/link-on-paste" %}
 
 > When `autoPrependProtocol` is `true` and the pasted URL has no protocol, the editor prepends `defaultProtocol`(for example `https://`) before dispatching the `link` command.
 
@@ -157,7 +157,7 @@ The value must be one of the entries in `allowedProtocols` (matched case-insensi
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/default-protocol" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/settings/default-protocol" %}
 
 ---
 
@@ -213,7 +213,7 @@ To restrict the editor to one protocol, list only that protocol in `allowedProto
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/restrict-single-scheme" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/links/settings/restrict-single-scheme" %}
 
 > Protocols that can execute scripts (`javascript:`, `data:`) are **not** included in the default allow-list. The editor never validates URLs whose protocol is outside `allowedProtocols` as a successful link — the URL is rejected at dialog validation and at `linkOnPaste`.
 

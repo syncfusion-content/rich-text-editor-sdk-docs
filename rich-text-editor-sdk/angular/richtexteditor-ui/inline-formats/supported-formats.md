@@ -51,7 +51,7 @@ The table below lists the inline formats available in the Modern Rich Text Edito
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/InlineSupported-Formats" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/supported-formats/InlineSupported-Formats" %}
 
 ## Toggle text styles
 

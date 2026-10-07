@@ -91,7 +91,7 @@ The toolbar item label is `FontName`, but the command name and mark type are bot
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/commands" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/inline-formats/commands/inlineformats-commands1" %}
 
 ## See also
 
