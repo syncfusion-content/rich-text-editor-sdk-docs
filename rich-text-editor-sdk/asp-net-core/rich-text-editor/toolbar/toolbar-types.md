@@ -4,7 +4,7 @@ title: Toolbar Types in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to configure Expand, MultiRow, Scrollable, and Popup toolbar types in the ASP.NET Core Rich Text Editor for different layout requirements.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Types in ASP.NET Core Rich Text Editor

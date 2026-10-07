@@ -4,7 +4,7 @@ title: Font and Color Tools in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize font family, font size, and text color in the ASP.NET Core Rich Text Editor to enhance content formatting.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Font Family, Size, and Color in ASP.NET Core Rich Text Editor

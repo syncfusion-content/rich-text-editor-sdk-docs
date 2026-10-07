@@ -4,7 +4,7 @@ title: XSS Prevention in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to enable XSS prevention in the ASP.NET Core BlockEditor to sanitize script tags and unsafe attributes from content.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XSS Prevention in ASP.NET Core Block Editor

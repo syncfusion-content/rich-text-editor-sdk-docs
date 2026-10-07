@@ -4,7 +4,7 @@ title: Keyboard Shortcuts in ASP.NET Core Block Editor | Syncfusion
 description: Learn the keyboard shortcuts available in the ASP.NET Core BlockEditor for block creation, navigation, formatting, and undo/redo.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in ASP.NET Core Block Editor

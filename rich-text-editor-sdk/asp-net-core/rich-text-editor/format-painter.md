@@ -4,7 +4,7 @@ title: Format Painter in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to use the Format Painter feature in the ASP.NET Core Rich Text Editor to copy and apply text formatting quickly.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Format Painter in ASP.NET Core Rich Text Editor

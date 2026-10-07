@@ -5,7 +5,7 @@ description: Learn how to create nested blocks in ASP.NET Core Block Editor usin
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overviewappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Nested Blocks in ASP.NET Core Block Editor

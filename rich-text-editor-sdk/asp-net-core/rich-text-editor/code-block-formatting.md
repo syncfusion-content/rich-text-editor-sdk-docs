@@ -4,7 +4,7 @@ title: Code Block Formatting in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to add code block formatting in the ASP.NET Core Rich Text Editor using toolbar options to apply and remove code styles.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Configure Code Block Formatting in ASP.NET Core Rich Text Editor

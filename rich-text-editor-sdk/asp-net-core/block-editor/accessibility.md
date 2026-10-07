@@ -4,7 +4,7 @@ title: Accessibility in ASP.NET Core Block Editor | Syncfusion
 description: Learn about accessibility in the ASP.NET Core Block Editor, including WAI-ARIA roles, keyboard navigation, screen reader support, and WCAG 2.2 compliance.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in ASP.NET Core Block Editor

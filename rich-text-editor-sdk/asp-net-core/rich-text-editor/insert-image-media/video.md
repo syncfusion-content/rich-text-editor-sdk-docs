@@ -4,7 +4,7 @@ title: Insert Videos in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to insert, upload, embed, resize, and manage videos in the ASP.NET Core Rich Text Editor from local files, URLs, and online sources.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Videos in ASP.NET Core Rich Text Editor

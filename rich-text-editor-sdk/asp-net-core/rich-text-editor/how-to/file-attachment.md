@@ -4,7 +4,7 @@ title: Manage File Attachments in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to manage file attachments in the ASP.NET Core Rich Text Editor using file upload, drag-and-drop support, upload services, and attachment links.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

@@ -4,7 +4,7 @@ title: Undo and Redo in ASP.NET Core Block Editor | Syncfusion
 description: Learn how to configure undo and redo in ASP.NET Core BlockEditor, customize the undo/redo history stack, and restore editing actions.
 platform: rich-text-editor-sdk
 control: BlockEditor
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo and Redo in ASP.NET Core Block Editor

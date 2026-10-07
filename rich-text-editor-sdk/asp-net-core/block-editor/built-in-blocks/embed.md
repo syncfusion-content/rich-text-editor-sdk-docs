@@ -5,7 +5,7 @@ description: Learn how to configure image blocks in ASP.NET Core Block Editor, i
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overviewappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Image Blocks in ASP.NET Core Block Editor

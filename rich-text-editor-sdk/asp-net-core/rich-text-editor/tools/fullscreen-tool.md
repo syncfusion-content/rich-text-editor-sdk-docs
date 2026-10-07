@@ -4,7 +4,7 @@ title: Fullscreen Mode in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to enable fullscreen mode in the ASP.NET Core Rich Text Editor for distraction-free editing and an expanded content editing workspace.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Fullscreen Mode in ASP.NET Core Rich Text Editor

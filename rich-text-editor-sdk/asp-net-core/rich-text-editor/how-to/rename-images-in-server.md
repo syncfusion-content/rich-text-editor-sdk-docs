@@ -4,7 +4,7 @@ title: Rename Uploaded Images in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to rename uploaded images in the ASP.NET Core Rich Text Editor using the image upload success event and a custom server-side upload handler.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

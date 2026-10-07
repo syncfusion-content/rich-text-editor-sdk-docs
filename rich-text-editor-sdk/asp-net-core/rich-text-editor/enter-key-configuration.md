@@ -4,7 +4,7 @@ title: Enter Key Configuration in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn how to customize Enter and Shift+Enter key behavior in the ASP.NET Core Rich Text Editor for flexible content formatting and structure.
 control: Rich Text Editor
 platform: rich-text-editor-sdk
-documentation: ug
+documentation: ugappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Enter and Shift+Enter in ASP.NET Core Rich Text Editor
