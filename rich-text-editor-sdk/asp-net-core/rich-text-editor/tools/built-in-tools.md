@@ -5,6 +5,7 @@ description: Explore all toolbar items in ASP.NET Core Rich Text Editor, includi
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Tools in ASP.NET Core Rich Text Editor

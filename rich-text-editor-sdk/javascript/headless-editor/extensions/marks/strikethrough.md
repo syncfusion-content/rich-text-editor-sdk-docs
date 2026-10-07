@@ -67,7 +67,7 @@ editor.commands.toggleStrikethrough();
 |--------|---------|-----|
 | Toggle Strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> |
 
-## Markdown input rules
+## Input rules
 
 The Strikethrough mark supports Markdown-style input rules using `~~text~~` syntax.
 

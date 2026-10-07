@@ -5,6 +5,7 @@ description: Learn how to localize the ASP.NET Core BlockEditor with localizatio
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in ASP.NET Core Block Editor

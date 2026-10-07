@@ -5,6 +5,7 @@ description: Learn how to customize Enter and Shift+Enter key behavior in the AS
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Enter and Shift+Enter in ASP.NET Core Rich Text Editor

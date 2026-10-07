@@ -6,6 +6,7 @@ description: Learn here all about introduction of Syncfusion® .NET MAUI Rich Te
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # About Syncfusion .NET MAUI Rich Text Editor Control 

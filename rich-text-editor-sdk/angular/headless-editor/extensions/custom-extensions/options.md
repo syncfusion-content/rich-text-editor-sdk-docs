@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Extension Options in Angular Headless Editor | Syncfusion
-description: Learn how to declare and consume extension options, including the shared ExtensionOptions interface and the defineOptions factory.
+description: Learn how to declare and consume extension options, including the shared ExtensionOptions interface and the defineOptions factory in Angular Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Extension Options in Angular Headless Editor

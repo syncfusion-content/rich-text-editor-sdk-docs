@@ -5,6 +5,7 @@ description: Learn how to insert, upload, embed, resize, and manage videos in th
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Videos in ASP.NET Core Rich Text Editor

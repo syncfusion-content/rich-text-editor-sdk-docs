@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # JSON Content in JavaScript Headless Editor
 
-The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting: provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
+The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting. You can provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
 
 This page covers:
 
@@ -21,18 +21,18 @@ This page covers:
 
 ## Document Structure
 
-The document model has four public types. Every node in the tree is an `EditorNode`; the root is a `DocumentRoot`; text leaves are `TextNode`; and inline formatting is carried by `Mark`.
+The document model has four public types. Every node in the tree is an `EditorNode`, the root is a `DocumentRoot`, text leaves are `TextNode`, and inline formatting is carried by `Mark`.
 
 ### Type Summary
 
 | Type | Extends | Properties |
 | --- | --- | --- |
-| `DocumentRoot` | `EditorNode` | `type: 'document'`, `schemaVersion: number`, plus `attrs`, `marks`, `children` |
-| `EditorNode` | — | `type: string`, `attrs: Record<string, unknown>`, `marks: Mark[]`, `children: EditorNode[]` |
+| `DocumentRoot` | `EditorNode` | `type: document`, `schemaVersion: number`, plus `attrs`, `marks`, `children` |
+| `EditorNode` | - | `type: string`, `attrs: Record<string, unknown>`, `marks: Mark[]`, `children: EditorNode[]` |
 | `TextNode` | `EditorNode` | `text: string`, `marks: Mark[]`, `children: never[]` |
-| `Mark` | — | `type: string`, `attrs: Record<string, unknown>` |
+| `Mark` | - | `type: string`, `attrs: Record<string, unknown>` |
 
-N> Node identity is position-based within the document tree; persistent node identifiers are not part of the public document model. Do not add an `id` property to JSON payloads.
+N> Node identity is position-based within the document tree. Persistent node identifiers are not part of the public document model. Do not add an `id` property to JSON payloads.
 
 ### The Document Root
 
@@ -189,7 +189,7 @@ var json = JSON.stringify(editor.getDocument());
 
 // Persist `json` to storage, send it over the network, etc.
 
-// Later — load it back into an editor
+// Later - load it back into an editor
 var restored = JSON.parse(json);
 editor.setDocument(restored);
 ```

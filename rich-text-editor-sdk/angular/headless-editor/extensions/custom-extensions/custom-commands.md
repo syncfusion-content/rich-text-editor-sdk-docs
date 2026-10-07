@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom Commands in Angular Headless Editor | Syncfusion
-description: Learn how to contribute custom commands to the Headless Editor, define parameters, and reach them through the editor commands facade.
+description: Learn how to contribute custom commands to the Angular Headless Editor, define parameters, and reach them through the editor commands facade.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Commands in Angular Headless Editor

@@ -6,6 +6,7 @@ platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/overview
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in ASP.NET Core Block Editor

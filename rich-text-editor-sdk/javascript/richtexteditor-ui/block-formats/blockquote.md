@@ -1,0 +1,42 @@
+---
+layout: post
+title: Block Quote in JavaScript Modern Rich Text Editor | Syncfusion
+description: Learn how to configure the block quote toolbar item and slash command in the JavaScript Modern Rich Text Editor.
+platform: rich-text-editor-sdk
+control: Modern Rich Text Editor
+documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
+---
+
+# Block Quote in JavaScript Modern Rich Text Editor
+
+A block quote wraps the current block in a `<blockquote>` element to visually set it apart from surrounding text. The Modern Rich Text Editor exposes the block quote through the `Quote` built-in toolbar identifier and through the `Blockquote` slash-command entry.
+
+## Commands support
+
+The `blockQuote` command does not require a payload. It toggles a blockquote on the current selection: invoking it on a plain paragraph wraps it in a blockquote, and invoking it again on the resulting blockquote unwraps it.
+
+| Command | Payload | Toolbar item | Slash-command entry |
+| --- | --- | --- | --- |
+| `blockQuote` | — | `Quote` | `Blockquote` |
+
+Add the `Quote` toolbar item alongside the other block-format buttons, and add `Blockquote` to `slashCommandSettings.items` if you want to expose it through the slash-command popup as well.
+
+{% tabs %}
+
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/blockformats-blockquote/index.js %}
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/blockformats-blockquote/index.html %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/blockformats-blockquote/" %}

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Add a Node View to an Existing Node | Vue Headless Editor | Syncfusion
-description: Learn how to layer a product UI on top of a built-in Headless Editor node using the addNodeView extension option.
+description: Learn how to layer a product UI on top of a built-in Vue Headless Editor node using the addNodeView extension option.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Add a Node View to an Existing Node in Vue Headless Editor

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Document Variable Extension Example in Vue Headless Editor | Syncfusion
-description: A runnable Document Variable custom extension for the Headless Editor that turns {{name}} tokens into styled chips.
+title: Document Variable Extension in Vue Headless Editor | Syncfusion
+description: A runnable Document Variable custom extension for the Vue Headless Editor that turns {{name}} tokens into styled chips.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Document Variable Extension Example in Vue Headless Editor

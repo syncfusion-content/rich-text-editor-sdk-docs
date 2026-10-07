@@ -1,6 +1,4 @@
-import { RichTextEditorUI, SlashCommand } from '@syncfusion/ej2-richtexteditor-ui';
-
-RichTextEditorUI.Inject(SlashCommand);
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const hostUrl: string = 'https://services.syncfusion.com/js/production/';
 const editor: RichTextEditorUI = new RichTextEditorUI({

@@ -7,6 +7,7 @@ control: Block Editor
 platform: ej2-vue
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Vue Block Editor

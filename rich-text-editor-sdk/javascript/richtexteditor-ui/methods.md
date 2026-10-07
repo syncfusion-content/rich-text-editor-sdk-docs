@@ -1,0 +1,90 @@
+---
+layout: post
+title: Methods in JavaScript Modern Rich Text Editor | Syncfusion
+description: Learn how to use Methods in the JavaScript Modern Rich Text Editor to read content, manage focus, save editor values, and update toolbar states.
+platform: rich-text-editor-sdk
+control: Modern Rich Text Editor
+documentation: ug
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
+---
+
+# Methods in JavaScript Modern Rich Text Editor
+
+The Syncfusion Essential JS 2 Rich Text Editor exposes a set of public methods
+on the component instance that let you programmatically interact with the
+editor from your application code. Use these methods to read content, control
+focus, persist the editor value, and update the toolbar state.
+
+All methods are invoked on the editor instance after the component has been
+initialized and rendered. The standard EJ2 instance pattern is used in the
+examples below:
+
+```javascript
+var editor = new ej.richtexteditorui.RichTextEditorUI({
+    // editor configuration
+});
+editor.appendTo('#default');
+```
+
+## save
+
+Persists the current editor content into the component's `value` property.
+
+```javascript
+editor.save();
+```
+
+## focusIn
+
+Moves focus into the editor's editable area and triggers the editor's focus-in
+handling.
+
+```javascript
+editor.focusIn();
+```
+
+## focusOut
+
+Removes focus from the editor's editable area and triggers the editor's
+focus-out handling.
+
+```javascript
+editor.focusOut();
+```
+
+## getDocument
+
+Returns the current editor document.
+
+```javascript
+var document = editor.getDocument();
+```
+
+## getHtml
+
+Returns the current editor content as an HTML string.
+
+```javascript
+var html = editor.getHtml();
+console.log('Rich Text Editor HTML: ', html);
+```
+
+## getText
+
+Returns the current editor content as plain text.
+
+```javascript
+var text = editor.getText();
+console.log('Rich Text Editor text: ', text);
+```
+
+## updateToolbarItems
+
+Applies a batch of toolbar item updates (add, remove) to the editor's toolbar.
+
+```javascript
+editor.updateToolbarItems([
+    { action: 'add', item: 'Italic', index: 1 }
+]);
+```
