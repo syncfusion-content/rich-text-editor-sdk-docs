@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inline Code Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Inline Code mark in the TypeScript Headless Editor, including attributes, commands, keyboard shortcuts, and Markdown input rules.
+description: Learn how to configure the Inline Code mark in the TypeScript Headless Editor, including attributes, commands, keyboard shortcuts, and input rules.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -71,7 +71,7 @@ editor.commands.toggleCodeMark();
 |--------|---------|-----|
 | Toggle Inline Code | <kbd>Ctrl</kbd> + <kbd>`</kbd> | <kbd>⌘</kbd> + <kbd>`</kbd> |
 
-## Markdown input rules
+## Input rules
 
 The Inline Code mark supports Markdown-style input rules using `` `text` `` syntax.
 

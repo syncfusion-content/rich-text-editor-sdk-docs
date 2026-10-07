@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Italic Mark in TypeScript Headless Editor | Syncfusion
-description: Learn how to configure the Italic mark in the TypeScript Headless Editor, including attributes, commands, keyboard shortcuts, and Markdown input rules.
+description: Learn how to configure the Italic mark in the TypeScript Headless Editor, including attributes, commands, keyboard shortcuts, and input rules.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -71,7 +71,7 @@ editor.commands.toggleItalic();
 |--------|---------|-----|
 | Toggle Italic | <kbd>Ctrl</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>I</kbd> |
 
-## Markdown input rules
+## Input rules
 
 The Italic mark supports Markdown-style input rules using `*text*` or `_text_` syntax.
 

@@ -101,4 +101,4 @@ Blocks are the top-level children of the document root. A text node is always in
 
 The schema defines which node types and which mark types are valid in the document. As long as the editor is configured with the same schema, the document you read out of it has the same shape as the document you wrote in.
 
-This means a document saved as JSON today can be loaded back tomorrow and produce the same tree — assuming the schema is unchanged.
+This means a document saved as JSON today can be loaded back tomorrow and produce the same tree assuming the schema is unchanged.

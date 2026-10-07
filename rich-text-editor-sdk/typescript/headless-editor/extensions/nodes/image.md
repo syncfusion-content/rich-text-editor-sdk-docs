@@ -113,9 +113,9 @@ editor.mount(document.getElementById('editor') as HTMLElement);
 | `title` | `string` | Tooltip text. |
 | `width` | `number` | Image width in pixels. |
 | `height` | `number` | Image height in pixels. |
-| `display` | `'block' \| 'inline'` | Display mode for the new image. |
-| `align` | `'left' \| 'center' \| 'right' \| 'none'` | Horizontal alignment. |
-| `wrap` | `'left' \| 'right' \| 'none'` | Text wrapping. |
+| `display` | `'block' &#124; 'inline'` | Display mode for the new image. |
+| `align` | `'left' &#124; 'center' &#124; 'right' &#124; 'none'` | Horizontal alignment. |
+| `wrap` | `'left' &#124; 'right' &#124; 'none'` | Text wrapping. |
 | `caption` | `string` | Caption text rendered below the image. |
 | `attributes` | `Record<string, string>` | Custom HTML attributes (for example, `data-*`, `class`). |
 
