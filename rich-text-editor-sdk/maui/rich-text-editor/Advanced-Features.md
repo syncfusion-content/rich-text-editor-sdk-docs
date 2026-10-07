@@ -5,6 +5,7 @@ description: Learn about the basic features of the .NET MAUI Rich Text Editor (S
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Advanced Features in .NET MAUI Rich Text Editor

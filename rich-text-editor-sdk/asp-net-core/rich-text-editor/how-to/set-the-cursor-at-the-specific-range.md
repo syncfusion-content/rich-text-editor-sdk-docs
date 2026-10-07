@@ -5,6 +5,7 @@ description: Learn how to set the cursor position at a specific range in the ASP
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

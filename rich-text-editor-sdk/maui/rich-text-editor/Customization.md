@@ -5,6 +5,7 @@ description: Learn here all about customization support in the Syncfusion® .NET
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Customization in .NET MAUI Rich Text Editor

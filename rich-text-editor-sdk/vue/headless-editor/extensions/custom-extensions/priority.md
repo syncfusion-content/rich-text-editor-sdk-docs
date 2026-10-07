@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Extension Priority in Vue Headless Editor | Syncfusion
-description: Learn how the priority field controls the order extensions and their nodes are added to the Headless Editor schema.
+description: Learn how the priority field controls the order extensions and their nodes are added to the Vue Headless Editor schema.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Extension Priority in Vue Headless Editor

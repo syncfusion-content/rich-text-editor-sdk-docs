@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Insert Tables in ASP.NET Core Markdown Editor | Syncfusion
-description: Learn how to insert and customize tables in the ASP.NET Core Markdown Editor using the Create Table toolbar option. Configure rows, columns, and table content in Markdown format.
+description: Learn how to create and customize tables in the ASP.NET Core Markdown Editor using the Create Table toolbar option to configure rows, columns, and content.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Tables in ASP.NET Core Markdown Editor
@@ -18,54 +19,6 @@ By default, when a table is inserted, it consists of:
 
 This ensures that users can start formatting and adding content immediately.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Changing default content
 
 By default, when you insert a table, it comes with predefined column headers and structure. However, you can customize the table’s default content, including the heading and column names, to match your requirements.
-
-The following example demonstrates how to customize the table content in the Markdown Editor:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table-constants/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table-constants/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table-constants/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-table-constants/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

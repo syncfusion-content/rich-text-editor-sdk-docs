@@ -5,6 +5,7 @@ description: Learn the keyboard shortcuts available in the ASP.NET Core BlockEdi
 platform: rich-text-editor-sdk
 control: BlockEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in ASP.NET Core Block Editor

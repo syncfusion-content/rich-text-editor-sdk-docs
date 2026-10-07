@@ -5,6 +5,7 @@ description: Learn how to use slash commands in the ASP.NET Core Rich Text Edito
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Slash Commands in ASP.NET Core Rich Text Editor

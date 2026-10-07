@@ -5,6 +5,7 @@ description: Learn how to create custom toolbar items in the ASP.NET Core Rich T
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Toolbar Items in ASP.NET Core Rich Text Editor

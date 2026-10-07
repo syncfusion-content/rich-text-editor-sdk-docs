@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom Attributes in Angular Headless Editor | Syncfusion
-description: Learn how to define custom node and mark attributes, including supported types, default values, and reusable definitions.
+description: Learn how to define custom node and mark attributes, including supported types, default values, and reusable definitions in Angular Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Attributes in Angular Headless Editor

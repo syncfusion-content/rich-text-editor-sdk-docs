@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Custom Keyboard Shortcuts in React Headless Editor | Syncfusion
-description: Learn how to bind custom keyboard shortcuts to commands in the Headless Editor, including key names and conflict handling.
+description: Learn how to bind custom keyboard shortcuts to commands in the React Headless Editor, including key names and conflict handling.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Keyboard Shortcuts in React Headless Editor

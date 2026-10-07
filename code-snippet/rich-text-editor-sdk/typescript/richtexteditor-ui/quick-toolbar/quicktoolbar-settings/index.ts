@@ -1,6 +1,4 @@
-import { RichTextEditorUI, SlashCommand } from '@syncfusion/ej2-richtexteditor-ui';
-
-RichTextEditorUI.Inject(SlashCommand);
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
 
 const editor: RichTextEditorUI = new RichTextEditorUI({
     quickToolbarSettings: {

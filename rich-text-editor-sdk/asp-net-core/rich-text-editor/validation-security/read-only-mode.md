@@ -5,6 +5,7 @@ description: Learn how to use read-only and disabled modes in the ASP.NET Core R
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in ASP.NET Core Rich Text Editor

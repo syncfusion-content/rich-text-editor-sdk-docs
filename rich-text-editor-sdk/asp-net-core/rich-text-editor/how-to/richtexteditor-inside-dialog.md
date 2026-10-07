@@ -5,6 +5,7 @@ description: Learn how to render the ASP.NET Core Rich Text Editor inside a Dial
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Render the ASP.NET Core Rich Text Editor in a Dialog

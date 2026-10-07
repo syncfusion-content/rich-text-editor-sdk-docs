@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Extend an Extension in Vue Headless Editor | Syncfusion
-description: Learn how to override extension configuration with the extend method, including the keyboard shortcut merge behavior.
+description: Learn how to override extension configuration with the extend method, including the keyboard shortcut merge behavio in Vue Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Extend an Extension in Vue Headless Editor

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Extension Lifecycle in React Headless Editor | Syncfusion
-description: Learn the extension lifecycle hooks (onRegister, onReady, onDestroy) and the order in which they fire.
+description: Learn the extension lifecycle hooks (onRegister, onReady, onDestroy) in React Headless Editor and the order in which they fire.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Extension Lifecycle in React Headless Editor
