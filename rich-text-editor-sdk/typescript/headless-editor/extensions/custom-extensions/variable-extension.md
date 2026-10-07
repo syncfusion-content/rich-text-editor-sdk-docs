@@ -20,7 +20,7 @@ This page demonstrates how to build a custom extension using the contributors co
 - A `domSpecs` block that renders the mark as a chip and parses the same shape back.
 - A keyboard shortcut that cycles through the configured variables and dispatches `insertVariable`.
 
-## Preview sample
+## Preview samples
 
 The runnable example below mounts the editor with the Document Variable extension.
 
