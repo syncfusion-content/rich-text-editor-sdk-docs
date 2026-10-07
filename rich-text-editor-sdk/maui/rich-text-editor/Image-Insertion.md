@@ -5,6 +5,7 @@ description: Learn how to insert images from the gallery or a stream into the Sy
 platform: rich-text-editor-sdk 
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Image Insertion in .NET MAUI Rich Text Editor
