@@ -17,15 +17,15 @@ Every part of a Headless Editor document is a node. Inline formatting on text is
 
 A node is one element in the document tree. Every node has:
 
-- a `type`: the name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …),
-- an `attrs` object: key/value pairs whose meaning depends on the node's type,
-- a `children` array: other nodes inside this one (empty for leaves),
-- a `marks` array: formatting marks applied to the node itself (used for block-level marks).
+- `type`: The name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …).
+- `attrs`: key/value pairs whose meaning depends on the node's type.
+- `children`: Other nodes inside this one (empty for leaves).
+- `marks`: Formatting marks applied to the node itself (used for block-level marks).
 
 A text node has a `text` string and no `children`.
 
 ```js
-// A block node — has children.
+// A block node - has children.
 var heading = {
   type: 'heading',
   attrs: { level: 2 },
@@ -40,7 +40,7 @@ var heading = {
   ]
 };
 
-// A text node — has a text string, no children.
+// A text node - has a text string, no children.
 var text = {
   type: 'text',
   attrs: {},
@@ -58,7 +58,7 @@ A node's `type` decides whether it is a block, an inline node, a leaf, or a cont
 - **Leaf nodes** are nodes without children/content. Examples: `image`, `horizontalRule`.
 - **Container nodes** are blocks that hold other blocks. Examples: `bulletList`, `orderedList`, `table`.
 
-The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'container'`, `'root'`, `'block list'`, `'list'`) decides which category a node belongs to. You do not need to set this directly when reading a document — the category is implied by the `type` and the position of the node in the tree.
+The `group` field on a node's `NodeDefinition` (`'block'`, `'inline'`, `'container'`, `'root'`, `'block list'`, `'list'`) decides which category a node belongs to. You do not need to set this directly when reading a document - the category is implied by the `type` and the position of the node in the tree.
 
 ### Node attributes
 
@@ -82,7 +82,7 @@ Every node has an `attrs` property. The schema decides which keys exist on a giv
 
 ## Mark
 
-A mark is inline formatting attached to text — `bold`, `italic`, `link`, and so on. Marks always live on text nodes (and on block-level nodes that support block marks). They never appear as their own nodes in the tree.
+A mark is inline formatting attached to text - `bold`, `italic`, `link`, and so on. Marks always live on text nodes (and on block-level nodes that support block marks). They never appear as their own nodes in the tree.
 
 A mark has:
 

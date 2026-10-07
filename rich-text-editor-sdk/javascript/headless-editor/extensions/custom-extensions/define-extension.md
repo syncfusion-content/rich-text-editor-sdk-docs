@@ -60,7 +60,7 @@ Other contributors are not validated here; pass valid shapes to avoid editor sta
 
 ## Reusing across editors
 
-A defined extension can be registered with multiple editors. `configure` and `extend` return a new definition each time; the original is not modified, so the same base extension can be customized differently for different editors.
+A defined extension can be registered with multiple editors. `configure` and `extend` return a new definition each time. The original is not modified, so the same base extension can be customized differently for different editors.
 
 ```js
 var base = ej.headlesseditor.defineExtension({ name: 'demo' });

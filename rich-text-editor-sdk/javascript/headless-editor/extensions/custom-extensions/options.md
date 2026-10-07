@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 Extension options let consumers of an extension customize its behavior without writing a fork. Declare them with the `defineOptions` factory on the extension config; read them at runtime through `ExtensionScope.options`.
 
-## Shared `ExtensionOptions` interface
+## Shared ExtensionOptions interface
 
 The Headless Editor publishes a shared `ExtensionOptions` interface that most built-in extensions use. It contains a single optional field, `htmlAttributes`, which is merged onto the rendered DOM element.
 
@@ -91,7 +91,7 @@ var counterExtension = ej.headlesseditor.defineExtension({
 
 The `this.options` field is read-only. To change an option at runtime, expose a command or use the editor's command facade.
 
-## Customizing options with `configure`
+## Customizing options with configure
 
 Consumers customize options with `configure`, which shallow-merges the supplied options over the defaults:
 

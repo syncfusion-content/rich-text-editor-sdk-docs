@@ -84,7 +84,7 @@ editor.commands.setLink({
 editor.commands.unsetLink();
 ```
 
-## Markdown input rules
+## Input rules
 
 The Link mark supports Markdown-style input rules using `[label](url)` syntax. Bare URLs, `www.` host names, and email addresses are also recognized.
 

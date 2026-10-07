@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Custom Extensions in JavaScript Headless Editor
 
-When the built-in extensions don't cover your scenario, you can build your own. A custom extension adds a new node type, a new mark, a custom command, a keyboard shortcut, an input rule, a plugin, a DOM spec, or a node view — and you can mix any of them together.
+When the built-in extensions don't cover your scenario, you can build your own. A custom extension adds a new node type, a new mark, a custom command, a keyboard shortcut, an input rule, a plugin, a DOM spec, or a node view - and you can mix any of them together.
 
 Start from the `defineExtension` factory and an `ExtensionConfig` object that describes what you want the extension to contribute.
 
