@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Svelte-TS in Typescript Rich text editor component | Syncfusion
-description: Learn here all about Svelte-TS integration in Syncfusion Typescript Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Svelte-TS in JavaScript Rich text editor component | Syncfusion
+description: Learn here all about Svelte-TS integration in Syncfusion JavaScript Rich text editor component of Syncfusion Essential JS 2 and more.
 platform: rich-text-editor-sdk
 control: Svelte-TS
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
-# Integrate Svelte-TS with Rich Text Editor Component
+# Integrate Svelte-TS in JavaScript Rich Text Editor Component
 
 `Svelte-TS` combines the Svelte UI framework with TypeScript, letting you author .svelte components with static typing and improved editor tooling. It compiles reactive components to highly efficient JavaScript while providing `type safety, better refactoring, and fewer runtime errors`.
 
