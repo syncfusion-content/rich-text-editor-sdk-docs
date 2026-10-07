@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Plugins in Vue Headless Editor | Syncfusion
-description: Learn how to contribute custom ProseMirror plugins to the Headless Editor to observe and react to editor activity.
+description: Learn how to contribute custom ProseMirror plugins to the Vue Headless Editor to observe and react to editor activity.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

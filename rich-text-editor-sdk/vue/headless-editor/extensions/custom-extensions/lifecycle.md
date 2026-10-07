@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extension Lifecycle in Vue Headless Editor | Syncfusion
-description: Learn the extension lifecycle hooks (onRegister, onReady, onDestroy) and the order in which they fire.
+description: Learn the extension lifecycle hooks (onRegister, onReady, onDestroy) in Vue Headless Editor and the order in which they fire.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

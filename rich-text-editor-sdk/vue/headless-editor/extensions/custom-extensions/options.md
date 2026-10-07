@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extension Options in Vue Headless Editor | Syncfusion
-description: Learn how to declare and consume extension options, including the shared ExtensionOptions interface and the defineOptions factory.
+description: Learn how to declare and consume extension options, including the shared ExtensionOptions interface and the defineOptions factory in Vue Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

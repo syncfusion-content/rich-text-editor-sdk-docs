@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Input Rules in Vue Headless Editor | Syncfusion
-description: Learn how to define custom input rules for the Headless Editor, including patterns, handlers, and the dispatchCommand contract.
+description: Learn how to define custom input rules for the Vue Headless Editor, including patterns, handlers, and the dispatchCommand contract.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
