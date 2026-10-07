@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure an Extension in React Headless Editor | Syncfusion
-description: Learn how to customize an extension's options with the configure method and how the merge behavior affects defaults.
+description: Learn how to customize an extension's options with the configure method and how the merge behavior affects defaults in React Headless Editor.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
