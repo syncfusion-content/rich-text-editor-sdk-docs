@@ -5,6 +5,7 @@ description: Learn how to use slash commands in the Blazor Rich Text Editor to q
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Slash Commands in Blazor Rich Text Editor

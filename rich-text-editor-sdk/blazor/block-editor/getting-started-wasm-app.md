@@ -5,6 +5,7 @@ description: Learn how to get started with the Blazor Block Editor in Blazor Web
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Block Editor in Blazor WASM App

@@ -5,6 +5,7 @@ description: Learn how to add, edit, remove, and manage hyperlinks in the Blazor
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Links in Blazor Rich Text Editor

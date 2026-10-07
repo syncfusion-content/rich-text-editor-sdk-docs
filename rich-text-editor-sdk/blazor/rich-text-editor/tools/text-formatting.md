@@ -5,6 +5,7 @@ description:  Learn how to format text in the Blazor Rich Text Editor with bold,
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Text Formatting in Blazor Rich Text Editor

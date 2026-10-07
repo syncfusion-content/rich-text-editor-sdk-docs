@@ -5,6 +5,7 @@ description: Learn how to isolate or apply application styles in the Blazor Rich
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style Encapsulation in Blazor Rich Text Editor

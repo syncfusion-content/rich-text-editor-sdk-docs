@@ -5,6 +5,7 @@ description: Learn how to create personalized documents in the Blazor Rich Text 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Mail Merge in Blazor Rich Text Editor

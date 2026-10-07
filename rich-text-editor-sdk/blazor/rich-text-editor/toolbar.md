@@ -5,6 +5,7 @@ description: Learn how to configure Expand, MultiRow, Scrollable, and Popup tool
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Types in Blazor Rich Text Editor

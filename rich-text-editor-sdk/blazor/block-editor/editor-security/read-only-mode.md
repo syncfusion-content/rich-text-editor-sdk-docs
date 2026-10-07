@@ -5,6 +5,7 @@ description: Learn how to enable read-only mode in the Blazor Block Editor to di
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in Blazor Block Editor

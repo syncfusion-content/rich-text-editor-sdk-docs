@@ -5,6 +5,7 @@ description: Learn how to position the toolbar at the top or bottom of the Blazo
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Toolbar Position in Blazor Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to enable inline editing in the Blazor Rich Text Editor t
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Editing in Blazor Rich Text Editor

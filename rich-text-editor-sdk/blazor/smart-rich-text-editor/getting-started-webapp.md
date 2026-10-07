@@ -5,6 +5,7 @@ description: Learn how to create and run Blazor Smart Rich Text Editor component
 platform: Blazor
 component: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Smart Rich Text Editor in Blazor Web App

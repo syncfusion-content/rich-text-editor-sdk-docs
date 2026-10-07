@@ -5,6 +5,7 @@ description: Learn how to process large HTML content in Blazor Rich Text Editor 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Large HTML Content Processing in Blazor Rich Text Editor

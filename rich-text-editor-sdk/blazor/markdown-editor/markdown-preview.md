@@ -5,6 +5,7 @@ description: Learn how to enable Markdown preview in the Blazor Markdown Editor 
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Live Markdown Preview in Blazor Markdown Editor

@@ -5,6 +5,7 @@ description: Learn how to add and configure bullet, numbered, and checklist bloc
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # List Blocks in Blazor Block Editor
