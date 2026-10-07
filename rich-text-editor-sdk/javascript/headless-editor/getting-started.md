@@ -50,8 +50,7 @@ Add the following styles inside the `my-app/index.html` file to include the `tai
 {% highlight html tabtitle="index.html" %}
 
 
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-headless-editor/styles/tailwind3.css" rel="stylesheet">
+<link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet">
 
 {% endhighlight %}
 {% endtabs %}
