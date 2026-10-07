@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Rich Text Editor SDK Overview
-description: Learn about the Syncfusion Rich Text Editor, a powerful WYSIWYG component that enables developers to create and manage rich content with advanced formatting and editing capabilities across modern web applications.
+description: Learn about the Syncfusion Rich Text Editor, a WYSIWYG component for creating, editing, and formatting rich content in modern web applications.
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
