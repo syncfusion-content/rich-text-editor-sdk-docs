@@ -5,6 +5,7 @@ description: Learn how to create custom toolbar items in the Blazor Rich Text Ed
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Toolbar Items in Blazor Rich Text Editor

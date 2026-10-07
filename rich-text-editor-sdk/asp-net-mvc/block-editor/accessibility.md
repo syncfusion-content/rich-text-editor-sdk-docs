@@ -5,6 +5,7 @@ description: Learn about accessibility in the ASP.NET MVC Block Editor, includin
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Accessibility in ASP.NET MVC Block Editor

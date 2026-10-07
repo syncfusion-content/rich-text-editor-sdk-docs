@@ -5,6 +5,7 @@ description: AssistViewSettings reference with concise definitions and examples 
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # AssistViewSettings Properties

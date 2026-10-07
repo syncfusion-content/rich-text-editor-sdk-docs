@@ -7,6 +7,7 @@ platform: ej2-javascript
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # ES5 getting started in JavaScript Block Editor

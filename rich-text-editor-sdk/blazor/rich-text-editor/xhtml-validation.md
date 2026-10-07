@@ -5,6 +5,7 @@ description: Learn how to validate XHTML content and prevent XSS attacks in the 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XHTML Validation in Blazor Rich Text Editor

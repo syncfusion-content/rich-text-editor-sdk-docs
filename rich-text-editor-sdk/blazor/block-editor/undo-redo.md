@@ -5,6 +5,7 @@ description: Learn how to configure undo and redo in Blazor Block Editor, custom
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Undo Redo in Blazor Block Editor

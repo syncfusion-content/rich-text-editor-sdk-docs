@@ -5,6 +5,7 @@ description: Learn the Markdown syntax supported in the Blazor Markdown Editor, 
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Markdown Syntax Supported in Blazor Markdown Editor

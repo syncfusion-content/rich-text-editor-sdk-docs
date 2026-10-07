@@ -5,6 +5,7 @@ description: Learn about data binding in Blazor Rich Text Editor, including valu
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Value Binding in Blazor Rich Text Editor

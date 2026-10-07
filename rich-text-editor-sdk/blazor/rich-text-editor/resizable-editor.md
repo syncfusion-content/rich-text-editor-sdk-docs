@@ -5,6 +5,7 @@ description: Learn how to make the Blazor Rich Text Editor resizable, allowing u
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in Blazor Rich Text Editor

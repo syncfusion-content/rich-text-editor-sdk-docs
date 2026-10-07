@@ -5,6 +5,7 @@ description: Learn how to apply list formatting in the ASP.NET MVC Rich Text Edi
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # List Formatting in ASP.NET MVC Rich Text Editor

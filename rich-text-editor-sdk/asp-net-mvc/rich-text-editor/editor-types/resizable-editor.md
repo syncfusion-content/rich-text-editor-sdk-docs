@@ -5,6 +5,7 @@ description: Learn how to resize the ASP.NET MVC Rich Text Editor dynamically by
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in ASP.NET MVC Rich Text Editor

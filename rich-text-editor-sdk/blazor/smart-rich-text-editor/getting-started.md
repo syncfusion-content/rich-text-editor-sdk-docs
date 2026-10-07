@@ -5,6 +5,7 @@ description: Check out and learn here all about Getting started with Blazor Smar
 platform: Blazor
 component: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Smart Rich Text Editor in Server App

@@ -5,6 +5,7 @@ description: Learn how to customize the Blazor Rich Text Editor style and appear
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in Blazor Rich Text Editor

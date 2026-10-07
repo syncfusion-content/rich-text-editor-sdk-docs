@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Keyboard Shortcuts in ASP.NET MVC Markdown Editor | Syncfusion
-description: Learn the keyboard shortcuts supported in the ASP.NET MVC Markdown Editor for formatting text, inserting content, navigating the toolbar, and performing editing actions.
+description: Learn the keyboard shortcuts available in the ASP.NET MVC Markdown Editor for formatting text, navigating the editor, and performing editing actions.
 control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in ASP.NET MVC Markdown Editor
@@ -88,26 +89,3 @@ These shortcuts provide additional functionalities like fullscreen mode.
 | Actions | Windows | Mac | 
 |----------------|---------| --------- |
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

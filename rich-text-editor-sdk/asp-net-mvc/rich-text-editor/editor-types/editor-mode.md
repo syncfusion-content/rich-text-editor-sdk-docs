@@ -5,6 +5,7 @@ description: Learn how to use HTML, Markdown, and IFrame editing modes in the AS
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Modes in ASP.NET MVC Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to programmatically modify content in the ASP.NET MVC Ric
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Customize the AI Assistant popup CSS selectors, animation examples,
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Customizing the AI Assistant Popup

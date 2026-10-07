@@ -5,6 +5,7 @@ description: Learn how to add and configure image blocks in Blazor Block Editor,
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Image Blocks in Blazor Block Editor

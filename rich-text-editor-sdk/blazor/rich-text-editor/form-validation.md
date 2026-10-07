@@ -5,6 +5,7 @@ description: Learn how to implement form validation in Blazor Rich Text Editor t
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Form Validation in Blazor Rich Text Editor

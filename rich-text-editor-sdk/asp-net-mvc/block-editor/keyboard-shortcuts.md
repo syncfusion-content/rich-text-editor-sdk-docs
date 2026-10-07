@@ -5,6 +5,7 @@ description: Learn the keyboard shortcuts available in the ASP.NET MVC Block Edi
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in ASP.NET MVC Block Editor

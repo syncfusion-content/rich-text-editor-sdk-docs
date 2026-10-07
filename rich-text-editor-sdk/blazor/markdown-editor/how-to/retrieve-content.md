@@ -5,6 +5,7 @@ description: Checkout and learn about how to retrieve the formatted content in B
 platform: rich-text-editor-sdk
 control: MarkdownEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Retrieve the formatted content in the Blazor Markdown Editor

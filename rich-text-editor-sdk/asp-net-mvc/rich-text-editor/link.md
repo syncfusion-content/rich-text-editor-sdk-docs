@@ -5,6 +5,7 @@ description: Learn how to add, edit, remove, and manage hyperlinks in the ASP.NE
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Links in ASP.NET MVC Rich Text Editor

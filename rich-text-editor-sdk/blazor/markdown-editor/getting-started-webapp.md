@@ -5,6 +5,7 @@ description: Learn how to get started with the Blazor Markdown Editor in a Blazo
 platform: Blazor
 component: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Blazor Markdown Editor in Web App

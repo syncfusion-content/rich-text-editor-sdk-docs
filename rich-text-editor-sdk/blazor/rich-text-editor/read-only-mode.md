@@ -5,6 +5,7 @@ description: Learn how to configure read-only mode in Blazor Rich Text Editor to
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Controlling Editor Access in Blazor Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to handle events in the Blazor Block Editor, including bl
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Events in Blazor Block Editor

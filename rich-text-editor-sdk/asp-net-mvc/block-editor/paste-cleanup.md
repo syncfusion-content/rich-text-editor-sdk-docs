@@ -5,6 +5,7 @@ description: Learn how to configure paste cleanup in ASP.NET MVC Block Editor to
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in ASP.NET MVC Block Editor

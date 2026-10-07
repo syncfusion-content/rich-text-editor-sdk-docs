@@ -5,6 +5,7 @@ description: Learn how to use keyboard shortcuts in the Blazor Rich Text Editor 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard support in Blazor Rich Text Editor

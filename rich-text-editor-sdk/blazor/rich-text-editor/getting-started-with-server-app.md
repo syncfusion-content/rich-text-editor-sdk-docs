@@ -6,6 +6,7 @@ description: Learn how to get started with the Blazor Rich Text Editor component
 platform: rich-text-editor-sdk
 component: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Rich Text Editor in Blazor Server App
