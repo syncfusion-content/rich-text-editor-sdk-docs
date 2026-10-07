@@ -5,7 +5,7 @@ description: Learn how to enable IFrame editing mode in the JavaScript Rich Text
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # IFrame Editing Mode in JavaScript Rich Text Editor

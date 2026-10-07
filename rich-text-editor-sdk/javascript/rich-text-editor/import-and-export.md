@@ -5,7 +5,7 @@ description: Learn how to import Word documents and export content to PDF and Wo
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Import and Export Content in JavaScript Rich Text Editor

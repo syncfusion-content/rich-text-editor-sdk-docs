@@ -5,7 +5,7 @@ description: Learn how to enable inline editing in the JavaScript Rich Text Edit
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Inline Editing in JavaScript Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to rename uploaded images in the JavaScript Rich Text Edi
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Rename Uploaded Images in JavaScript Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to create and configure nested blocks in the JavaScript B
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Nested Blocks in JavaScript Block Editor

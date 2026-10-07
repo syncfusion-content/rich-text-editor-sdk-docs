@@ -5,7 +5,7 @@ description: Learn how to configure the To Lower Case extension in the JavaScrip
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # To Lower Case in JavaScript Headless Editor

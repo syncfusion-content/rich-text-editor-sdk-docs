@@ -5,7 +5,7 @@ description: Learn how to define custom input rules for the JavaScript Headless 
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Input Rules in JavaScript Headless Editor

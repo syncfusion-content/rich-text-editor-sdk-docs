@@ -5,7 +5,7 @@ description: Learn how to insert, upload, embed, resize, and manage videos in th
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Videos in JavaScript Rich Text Editor

@@ -5,7 +5,7 @@ description: Learn how to insert and customize tables in the Syncfusion JavaScri
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Insert Tables in JavaScript Markdown Editor

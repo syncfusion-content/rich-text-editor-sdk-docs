@@ -5,7 +5,7 @@ description: Use the Headless Editor command api in the JavaScript platform to e
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Commands in JavaScript Headless Editor

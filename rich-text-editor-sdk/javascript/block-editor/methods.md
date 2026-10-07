@@ -5,7 +5,7 @@ description: Learn about the public methods in JavaScript Block Editor for manag
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Methods in JavaScript Block Editor

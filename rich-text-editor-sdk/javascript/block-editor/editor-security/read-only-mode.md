@@ -5,7 +5,7 @@ description: Learn how to enable read-only mode in the JavaScript Block Editor t
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Read-Only Mode in JavaScript Block Editor

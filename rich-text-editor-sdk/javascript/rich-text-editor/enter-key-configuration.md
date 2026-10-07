@@ -5,7 +5,7 @@ description: Learn how to customize Enter and Shift+Enter key behavior in the Ja
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Enter and Shift+Enter in JavaScript Rich Text Editor

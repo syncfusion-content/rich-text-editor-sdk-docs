@@ -5,7 +5,7 @@ description: Learn how to resize the JavaScript Rich Text Editor dynamically by 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Resizable Editor in JavaScript Rich Text Editor

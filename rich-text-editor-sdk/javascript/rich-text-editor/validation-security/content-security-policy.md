@@ -5,7 +5,7 @@ description: Learn how to configure Content Security Policy directives for the J
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+domainurl: https://help.syncfusion.com/rich-text-editor-sdkappliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Content Security Policy (CSP) in JavaScript Rich Text Editor

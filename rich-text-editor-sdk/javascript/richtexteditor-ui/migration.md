@@ -5,7 +5,7 @@ description: Learn how to migrate from the Essential JS 2 Rich Text Editor to th
 control: Modern Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
-domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+domainurl: https://help.syncfusion.com/rich-text-editor-sdk/appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Migrating from Rich Text Editor to Modern Rich Text Editor
