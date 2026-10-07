@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Existing Node UI in Angular | Headless Editor | Syncfusion
-description: Learn how to layer a product UI on top of a built-in Headless Editor node using the addNodeView extension option in Angular Headless Editor.
+description: Learn how to layer a product UI on top of a built-in Angular Headless Editor node using the addNodeView extension option.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

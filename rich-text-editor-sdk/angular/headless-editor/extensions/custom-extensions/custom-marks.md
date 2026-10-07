@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Marks in Angular Headless Editor | Syncfusion
-description: Learn how to contribute custom mark types to the Headless Editor schema using the marks contributor and MarkDefinition in Angular Headless Editor.
+description: Learn how to contribute custom mark types to the Angular Headless Editor schema using the marks contributor and MarkDefinition.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
