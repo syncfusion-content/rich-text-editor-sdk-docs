@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extend an Extension in TypeScript Headless Editor | Syncfusion
-description: Learn how to override extension configuration with the extend method, including the keyboard shortcut merge behavior.
+description: Learn how to override extension configuration in TypeScript Headless Editor with the extend method, including the keyboard shortcut merge behavior.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug

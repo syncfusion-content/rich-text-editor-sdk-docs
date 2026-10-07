@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Document Variable Extension Example | Headless Editor | Syncfusion
-description: A runnable Document Variable custom extension for the Headless Editor that turns {{name}} tokens into styled chips.
+title: Document Variable Extension in TypeScript Headless Editor | Syncfusion
+description: A runnable Document Variable custom extension for the TypeScript Headless Editor that turns {{name}} tokens into styled chips.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Document Variable Extension Example
+# Document Variable Extension Example in TypeScript Headless Editor
 
 This page demonstrates how to build a custom extension using the contributors covered above: `defineExtension`, `marks`, `commands`, `inputRules`, `domSpecs`, and `keyboardShortcuts`. The extension turns a typed token like `{{customerName}}` into a styled chip, and the same chip can be inserted from a toolbar button or from the <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> keyboard shortcut.
 

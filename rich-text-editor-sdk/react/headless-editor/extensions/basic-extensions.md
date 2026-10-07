@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 
 ## Register the preset
 
-```tsx
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, basicExtensions } from '@syncfusion/ej2-headless-editor';
@@ -63,7 +63,7 @@ I> `basicExtensions` does not include every available node extension, such as `t
 
 You can combine `basicExtensions` with additional individual extensions:
 
-```tsx
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, basicExtensions, tableExtension, imageExtension } from '@syncfusion/ej2-headless-editor';
@@ -91,7 +91,7 @@ export default App;
 
 If you need full control over which node types and behavior are available, register the required extensions individually instead of using the preset:
 
-```tsx
+```ts
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { HeadlessEditor, documentExtension, paragraphExtension, textExtension } from '@syncfusion/ej2-headless-editor';

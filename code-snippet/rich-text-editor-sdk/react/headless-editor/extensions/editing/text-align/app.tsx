@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HeadlessEditor, textAlignExtension } from '@syncfusion/ej2-headless-editor';
+import { HeadlessEditor, textAlignExtension, paragraphExtension } from '@syncfusion/ej2-headless-editor';
 
 function App() {
     const editorRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const editor = HeadlessEditor.create({
-            extensions: [textAlignExtension],
+            extensions: [textAlignExtension, paragraphExtension],
         });
         if (editorRef.current) {
             editor.mount(editorRef.current);
