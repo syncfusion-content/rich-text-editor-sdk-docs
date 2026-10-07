@@ -5,6 +5,7 @@ description: Learn how to customize Markdown syntax in the Blazor Markdown Edito
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Custom Markdown Syntax in Blazor Markdown Editor

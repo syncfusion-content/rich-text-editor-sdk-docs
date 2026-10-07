@@ -6,6 +6,7 @@ platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # List Formatting and Configuration

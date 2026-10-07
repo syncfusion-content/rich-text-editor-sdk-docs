@@ -5,6 +5,7 @@ description: Learn how to localize the Blazor Block Editor with localization, ri
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Globalization in Blazor Block Editor

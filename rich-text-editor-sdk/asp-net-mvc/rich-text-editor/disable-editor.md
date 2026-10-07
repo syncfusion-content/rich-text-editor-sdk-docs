@@ -5,6 +5,7 @@ description: Learn how to disable the ASP.NET MVC Rich Text Editor to restrict e
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Disable ASP.NET MVC Rich Text Editor

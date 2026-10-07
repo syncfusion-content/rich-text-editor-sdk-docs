@@ -55,7 +55,7 @@ The following example demonstrates how to add the number format list in toolbar 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/list/numberformat/NumberFormat-List1/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/list/numberformat/NumberFormat-List1" %}
 
 ---
 
@@ -83,7 +83,7 @@ The following example demonstrates how to customize the number format list in th
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/list/numberformat/NumberFormat-List2/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/list/numberformat/NumberFormat-List2" %}
 
 ---
 

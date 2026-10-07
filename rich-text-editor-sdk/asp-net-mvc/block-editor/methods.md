@@ -5,6 +5,7 @@ description: Learn about the public methods in ASP.NET MVC Block Editor for mana
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Methods in ASP.NET MVC Block Editor

@@ -5,6 +5,7 @@ description: Reference for AssistViewSettings events, arguments, and examples to
 platform: Blazor
 control: Smart Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # AssistViewSettings Events

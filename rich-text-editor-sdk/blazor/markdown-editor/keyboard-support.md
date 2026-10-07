@@ -5,6 +5,7 @@ description: Learn the keyboard shortcuts supported in the Blazor Markdown Edito
 platform: rich-text-editor-sdk
 control: Markdown Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Keyboard Shortcuts in Blazor Markdown Editor

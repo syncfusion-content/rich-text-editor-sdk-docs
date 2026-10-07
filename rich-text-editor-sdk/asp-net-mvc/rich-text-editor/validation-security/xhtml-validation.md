@@ -5,6 +5,7 @@ description: Learn how to validate XHTML content and prevent XSS attacks in the 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # XHTML Validation in ASP.NET MVC Rich Text Editor

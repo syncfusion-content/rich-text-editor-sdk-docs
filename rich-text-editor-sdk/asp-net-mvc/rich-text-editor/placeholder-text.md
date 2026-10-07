@@ -5,6 +5,7 @@ description: Learn how to add and customize placeholder text in the ASP.NET MVC 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Placeholder in ASP.NET MVC Rich Text Editor

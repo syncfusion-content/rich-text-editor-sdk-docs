@@ -5,6 +5,7 @@ description: Learn how to use the editor menus in the Blazor Block Editor to add
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Editor Menus in Blazor Block Editor

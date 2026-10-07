@@ -5,6 +5,7 @@ description: Learn how to customize Enter and Shift+Enter key behavior in the Bl
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Enter and Shift+Enter in Blazor Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to customize the AI Assistant in the ASP.NET MVC Rich Tex
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Customization of AI Assistant in ASP.NET MVC Rich Text Editor

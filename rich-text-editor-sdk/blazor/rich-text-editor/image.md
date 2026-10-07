@@ -5,6 +5,7 @@ description: Learn how to insert, upload, resize, caption, align, and manage ima
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Images in Blazor Rich Text Editor

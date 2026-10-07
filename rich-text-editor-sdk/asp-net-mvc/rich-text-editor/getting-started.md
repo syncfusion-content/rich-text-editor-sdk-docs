@@ -7,6 +7,7 @@ canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with ASP.NET MVC Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to use the built-in block types in Blazor Block Editor, i
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Built-in Block Types and Configuration in Blazor Block Editor

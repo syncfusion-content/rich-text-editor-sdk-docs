@@ -5,6 +5,7 @@ description: Learn how to apply basic text styling in the ASP.NET MVC Rich Text 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Basic Text Styling in ASP.NET MVC Rich Text Editor

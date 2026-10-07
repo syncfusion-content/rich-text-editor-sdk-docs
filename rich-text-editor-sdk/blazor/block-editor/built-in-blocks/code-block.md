@@ -5,6 +5,7 @@ description: Learn how to add and configure code blocks in the Blazor Block Edit
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Code Blocks in Blazor Block Editor

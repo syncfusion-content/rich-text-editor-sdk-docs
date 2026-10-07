@@ -5,6 +5,7 @@ description: Learn how to customize the ASP.NET MVC Rich Text Editor style and a
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Style and Appearance in ASP.NET MVC Rich Text Editor

@@ -5,6 +5,7 @@ description: Learn how to clean and manage pasted content in the ASP.NET MVC Ric
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Paste Cleanup in ASP.NET MVC Rich Text Editor

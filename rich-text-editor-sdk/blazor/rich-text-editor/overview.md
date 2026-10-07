@@ -6,6 +6,7 @@ canonical_url: https://www.syncfusion.com/rich-text-editor-sdk/blazor-rich-text-
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Blazor Rich Text Editor Documentation Overview

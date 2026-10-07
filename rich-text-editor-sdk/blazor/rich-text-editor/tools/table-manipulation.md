@@ -5,6 +5,7 @@ description: Learn how to create, edit, resize, merge, split, style, and manage 
 platform: rich-text-editor-sdk
 control: Rich Text Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Table Manipulation in Blazor Rich Text Editor

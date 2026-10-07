@@ -6,6 +6,7 @@ canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-block
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 

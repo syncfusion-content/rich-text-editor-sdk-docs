@@ -5,6 +5,7 @@ description: Learn how to enable and display character count in the ASP.NET MVC 
 control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Character Count in ASP.NET MVC Rich Text Editor
