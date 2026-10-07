@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrating to JavaScript Modern Rich Text Editor | Syncfusion
-description: Learn how to migrate from the JavaScript Essential JS 2 Rich Text Editor to the Modern Rich Text Editor by mapping APIs, toolbar items, and configuration settings.
+description: Learn how to migrate from the JavaScript Rich Text Editor to the Modern Rich Text Editor by mapping APIs, toolbar items, and configuration settings.
 control: Modern Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
