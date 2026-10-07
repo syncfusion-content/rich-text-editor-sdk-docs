@@ -5,6 +5,7 @@ description: Learn how to get started with the Angular Headless Editor and explo
 control: Headless Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Getting Started with Angular Headless Editor
