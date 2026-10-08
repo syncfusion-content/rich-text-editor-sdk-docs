@@ -1,160 +1,312 @@
 var blockData = [
-    {
-        blockType: 'Heading',
-        properties: { level: 1 },
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Block Editor - Theme Customization'
-            }
-        ]
+  {
+    blockType: 'Heading',
+    properties: { level: 1 },
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'Block Editor - All Block Types',
+      },
+    ],
+  },
+  {
+    blockType: 'Paragraph',
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'This sample shows every block type used once, including a ',
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'bold',
+        properties: { styles: { bold: true } },
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: ' word, a ',
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Link,
+        content: 'link',
+        properties: {
+          url: 'https://ej2.syncfusion.com/documentation/block-editor/getting-started',
+        },
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: ', a mention ',
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Mention,
+        properties: { userId: 'user1' },
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: ', and a label ',
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Label,
+        properties: { labelId: 'progress' },
+      },
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: '.',
+      },
+    ],
+  },
+  {
+    blockType: 'BulletList',
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'Bullet list item',
+      },
+    ],
+  },
+  {
+    blockType: 'NumberedList',
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'Numbered list item',
+      },
+    ],
+  },
+  {
+    blockType: 'Checklist',
+    properties: {
+      isChecked: true,
     },
-    {
-        blockType: 'Paragraph',
-        content: [
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'Checklist item',
+      },
+    ],
+  },
+  {
+    blockType: 'Quote',
+    properties: {
+      children: [
+        {
+          blockType: 'Paragraph',
+          content: [
             {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'This sample demonstrates multiple theme options for the Block Editor. Switch between themes using the buttons above to see different styling applied.'
-            }
-        ]
+              contentType: ej.blockeditor.ContentType.Text,
+              content: 'Quote block example.',
+            },
+          ],
+        },
+      ],
     },
-    {
-        blockType: 'Heading',
-        properties: { level: 2 },
-        content: [
+  },
+  {
+    blockType: 'Code',
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'function greet(name) {\n  return `Hello, ${name}!`;\n}',
+      },
+    ],
+  },
+  {
+    blockType: 'CollapsibleParagraph',
+    content: [
+      {
+        contentType: ej.blockeditor.ContentType.Text,
+        content: 'Toggle block example',
+        properties: {
+          styles: { bold: true },
+        },
+      },
+    ],
+    properties: {
+      isExpanded: false,
+      children: [
+        {
+          blockType: 'Paragraph',
+          content: [
             {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Available Themes'
-            }
-        ]
+              contentType: ej.blockeditor.ContentType.Text,
+              content: 'Collapsed content goes here.',
+            },
+          ],
+        },
+      ],
     },
-    {
-        blockType: 'BulletList',
-        content: [
+  },
+  {
+    blockType: 'Table',
+    properties: {
+      columns: [
+        { headerText: 'Name' },
+        { headerText: 'Role' },
+        { headerText: 'Status' },
+      ],
+      rows: [
+        {
+          cells: [
             {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Slate Light - Professional light theme with blue accents'
-            }
-        ]
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Arun Kumar',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Developer',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Active',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          cells: [
+            {
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Divya Sharma',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Designer',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              blocks: [
+                {
+                  blockType: 'Paragraph',
+                  content: [
+                    {
+                      contentType: ej.blockeditor.ContentType.Text,
+                      content: 'Active',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
-    {
-        blockType: 'BulletList',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Sage Green - Calming green theme with natural colors'
-            }
-        ]
-    },
-    {
-        blockType: 'BulletList',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Dark Pro - Modern dark theme for reduced eye strain'
-            }
-        ]
-    },
-    {
-        blockType: 'Paragraph',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Try editing this content and observe how the theme colors affect the entire interface, including text, buttons, and interactive elements.'
-            }
-        ]
-    },
-    {
-        blockType: 'Heading',
-        properties: { level: 2 },
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Features Included'
-            }
-        ]
-    },
-    {
-        blockType: 'BulletList',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'CSS variable-based theme system for easy customization'
-            }
-        ]
-    },
-    {
-        blockType: 'BulletList',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Consistent styling across all UI components'
-            }
-        ]
-    },
-    {
-        blockType: 'BulletList',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Support for light and dark mode preferences'
-            }
-        ]
-    },
-    {
-        blockType: 'Paragraph',
-        content: [
-            {
-                contentType: ej.blockeditor.ContentType.Text,
-                content: 'Each theme includes carefully selected colors for backgrounds, text, borders, and interactive states to ensure optimal readability and user experience.'
-            }
-        ]
-    }
+  },
+  {
+    blockType: 'Divider',
+  },
 ];
 
 var blockEditor = new ej.blockeditor.BlockEditor({
-    blocks: blockData,
+  width: '100%',
+  height: '600px',
+  blocks: blockData,
+  users: [
+    {
+      avatarUrl:
+        'https://ej2.syncfusion.com/demos/src/block-editor/images/andrew.png',
+      id: 'user1',
+      user: 'Andrews',
+    },
+  ],
 });
 
 blockEditor.appendTo('#blockeditor');
 
-// Track current theme state
-var currentTheme = 'sageGreenTheme';
+// Theme switching functions
+function applyTheme(themeName) {
+  document.body.classList.remove(
+    'slateLightTheme',
+    'sageGreenTheme',
+    'darkProTheme'
+  );
 
-// Theme switching function
-function applyTheme(themeName, buttonElement) {
-    // Remove previous theme classes from body
-    document.body.classList.remove('slateLightTheme', 'sageGreenTheme', 'darkProTheme');
-    
-    // Add new theme class
-    document.body.classList.add(themeName);
-    currentTheme = themeName;
-    
-    // Update button states
-    document.querySelectorAll('.theme-switcher button').forEach(btn => {
-        btn.setAttribute('aria-pressed', 'false');
-    });
-    buttonElement.setAttribute('aria-pressed', 'true');
-    
-    // Log theme change
-    console.log('Theme changed to: ' + themeName);
+  document.body.classList.add(themeName);
+
+  var themeButtons = [
+    document.getElementById('slateLightThemeBtn'),
+    document.getElementById('sageGreenThemeBtn'),
+    document.getElementById('darkProThemeBtn'),
+  ];
+
+  themeButtons.forEach(function (button) {
+    if (!button) {
+      return;
+    }
+
+    var isActive =
+      (button.id === 'slateLightThemeBtn' && themeName === 'slateLightTheme') ||
+      (button.id === 'sageGreenThemeBtn' && themeName === 'sageGreenTheme') ||
+      (button.id === 'darkProThemeBtn' && themeName === 'darkProTheme');
+
+    button.classList.toggle('active', isActive);
+    button.setAttribute('aria-pressed', String(isActive));
+  });
 }
 
-// Initialize with default theme (Sage Green)
-document.body.classList.add('sageGreenTheme');
+// Event listeners for theme buttons
+var slateLightBtn = document.getElementById('slateLightThemeBtn');
+var sageGreenBtn = document.getElementById('sageGreenThemeBtn');
+var darkProBtn = document.getElementById('darkProThemeBtn');
 
-// Theme button event listeners
-(document.getElementById('slateLightThemeBtn')).addEventListener('click', function() {
-    applyTheme('slateLightTheme', this);
-});
+if (slateLightBtn) {
+  slateLightBtn.addEventListener('click', function () {
+    applyTheme('slateLightTheme');
+  });
+}
 
-(document.getElementById('sageGreenThemeBtn')).addEventListener('click', function() {
-    applyTheme('sageGreenTheme', this);
-});
+if (sageGreenBtn) {
+  sageGreenBtn.addEventListener('click', function () {
+    applyTheme('sageGreenTheme');
+  });
+}
 
-(document.getElementById('darkProThemeBtn')).addEventListener('click', function() {
-    applyTheme('darkProTheme', this);
-});
+if (darkProBtn) {
+  darkProBtn.addEventListener('click', function () {
+    applyTheme('darkProTheme');
+  });
+}
 
-// Set initial button state
-document.getElementById('sageGreenThemeBtn').setAttribute('aria-pressed', 'true');
+// Initialize with default theme
+applyTheme('slateLightTheme');
