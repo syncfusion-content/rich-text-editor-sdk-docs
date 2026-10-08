@@ -24,6 +24,7 @@ The `allowedTypes` property specifies the image file extensions that can be sele
 - BMP (`.bmp`)
 - WebP (`.webp`)
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   imageSettings={{
@@ -31,11 +32,13 @@ The `allowedTypes` property specifies the image file extensions that can be sele
   }}
 />
 ```
+{% endraw %}
 
 ## Image Size Restrictions
 
 The `maxFileSize` property specifies the maximum permitted image file size in bytes.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   imageSettings={{
@@ -44,6 +47,7 @@ The `maxFileSize` property specifies the maximum permitted image file size in by
   }}
 />
 ```
+{% endraw %}
 
 ## Image Save Formats
 
@@ -51,6 +55,7 @@ The RichTextEditor supports two primary formats for saving images: Blob (server-
 
 ### Blob Format (Recommended - Default)
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   imageSettings={{
@@ -58,9 +63,11 @@ The RichTextEditor supports two primary formats for saving images: Blob (server-
   }}
 />
 ```
+{% endraw %}
 
 ### Base64 Format
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   imageSettings={{
@@ -68,6 +75,7 @@ The RichTextEditor supports two primary formats for saving images: Blob (server-
   }}
 />
 ```
+{% endraw %}
 
 ## Limitations of Base64 & Blob
 

@@ -17,6 +17,7 @@ The Slash command in the Modern Rich Text Editor provides users with an efficien
 
 To use the Slash command, set the [`enable`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#enable) property within [`slashCommandSettings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#slashcommandsettings) to `true`. By default, this feature is disabled. Once enabled, the Slash command popup will appear when the user types the `/` character in the editor.
 
+{% raw %}
 ```ts
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
@@ -32,6 +33,7 @@ function App() {
 
 export default App;
 ```
+{% endraw %}
 
 Setting `enable` to `false` at runtime removes the popup and stops listening for the `/` trigger. The editor continues to function normally without the Slash command feature.
 
@@ -39,6 +41,7 @@ Setting `enable` to `false` at runtime removes the popup and stops listening for
 
 Slash command is a standalone module. Inject it through `RichTextEditorUI.Inject` before rendering the editor. If you skip this step, the editor renders without the Slash command capability, even when `slashCommandSettings.enable` is `true`.
 
+{% raw %}
 ```ts
 import { RichTextEditorUI, SlashCommand } from '@syncfusion/ej2-richtexteditor-ui';
 
@@ -53,6 +56,7 @@ function App() {
 
 export default App;
 ```
+{% endraw %}
 
 The injection is a one-time, side-effect-only call. It registers the module class with the editor; subsequent renders of `RichTextEditorUIComponent` do not need to re-inject.
 
@@ -96,8 +100,7 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 - **Restrict** the popup to a subset of built-ins.
 - **Reorder** items — the array order is the popup order.
 - **Add** custom items alongside or instead of built-ins.
-- **Remove** specific groups, for example to hide all `Media` items.
-
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   slashCommandSettings={{
@@ -106,9 +109,9 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
   }}
 />
 ```
+{% endraw %}
 
-The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
-
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   slashCommandSettings={{
@@ -119,6 +122,7 @@ The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.c
   }}
 />
 ```
+{% endraw %}
 
 Items are filtered as the user types after `/`. The popup narrows to items whose `text` or `description` matches the typed query. Backspace restores the full list.
 
@@ -136,6 +140,7 @@ Custom items extend the popup with commands the built-in set does not cover. Eac
 
 A custom item is any element of `items` that is not one of the built-in names listed above. Mixing built-ins and customs in the same array is supported.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   slashCommandSettings={{
@@ -161,6 +166,7 @@ A custom item is any element of `items` that is not one of the built-in names li
   }}
 />
 ```
+{% endraw %}
 
 When a custom item is selected, the editor does not dispatch any command on its own. Your `itemSelect` handler is responsible for the action.
 
@@ -180,6 +186,7 @@ The event fires for every selection, including built-in items. For built-in item
 
 Use a `useRef` to access the editor instance and chain commands on `commands()`. Pass the handler as the `itemSelect` prop on `slashCommandSettings`.
 
+{% raw %}
 ```ts
 import { useRef } from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
@@ -220,6 +227,7 @@ function App() {
 
 export default App;
 ```
+{% endraw %}
 
 Branching on `args.itemData.command` lets one handler serve many custom items. The `originalEvent` is the underlying `MouseEvent` / `KeyboardEvent` / `TouchEvent` and can be inspected when the action needs to react to the trigger source.
 

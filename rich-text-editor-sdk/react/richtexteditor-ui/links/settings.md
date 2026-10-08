@@ -98,6 +98,7 @@ A paste whose payload contains whitespace, or that is plain text with a URL insi
 
 The Insert-Link dialog exposes an **"Open link in new window"** checkbox. When checked, the new link gets `target="_blank"`. When unchecked, the link gets `linkSettings.defaultTarget`.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   linkSettings={{
@@ -105,6 +106,7 @@ The Insert-Link dialog exposes an **"Open link in new window"** checkbox. When c
   }}
 />
 ```
+{% endraw %}
 
 > The Link Quick Toolbar's `Open` item always uses `window.open(href, target || '_blank')` — so a link with no `target` still opens in a new tab from the quick toolbar.
 
@@ -123,6 +125,7 @@ The Insert-Link dialog exposes an **"Open link in new window"** checkbox. When c
 
 The Insert-Link dialog renders a protocol dropdown next to the URL input when `autoPrependProtocol` is `true`. The dropdown is populated from `allowedProtocols`, and the initial selection is `defaultProtocol`. As the user types in the URL input, the dropdown auto-syncs to the protocol it can detect.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   linkSettings={{
@@ -131,6 +134,7 @@ The Insert-Link dialog renders a protocol dropdown next to the URL input when `a
   }}
 />
 ```
+{% endraw %}
 
 > Relative URLs that start with `/`, `?`, or `#` are never prepended — they are always inserted as typed.
 
@@ -186,6 +190,7 @@ The default allow-list is `['http', 'https', 'mailto', 'tel']`. These protocols 
 
 Extend `allowedProtocols` to accept protocols that are not in the default allow-list. Each entry is matched case-insensitively against the protocol parsed from the URL.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   linkSettings={{
@@ -194,6 +199,7 @@ Extend `allowedProtocols` to accept protocols that are not in the default allow-
   }}
 />
 ```
+{% endraw %}
 
 ### Restricting to a single protocol
 

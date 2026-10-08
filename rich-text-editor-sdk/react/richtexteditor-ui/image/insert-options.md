@@ -17,6 +17,7 @@ Image insertion in the Modern Rich Text Editor supports multiple methods to acco
 
 To upload images from your local machine, click the `Image` tool in the toolbar. By default, this tool opens a dialog box where you can browse and select an image to insert from your local machine.
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   imageSettings={{
@@ -28,6 +29,7 @@ To upload images from your local machine, click the `Image` tool in the toolbar.
   }}
 />
 ```
+{% endraw %}
 
 ## Web URLs
 
