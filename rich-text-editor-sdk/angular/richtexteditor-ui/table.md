@@ -135,7 +135,7 @@ Access via Quick Toolbar → **Remove** button.
 
 ### TableSettings
 
-Use the [`tableSettings`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/tableSettings) property to configure the default behavior and interaction settingsModern Rich Text Editor.
+Use the [`tableSettings`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/tableSettings) property to configure the default behavior and interaction settingsModern Rich Text Editor.
 
 **Available Properties**
 
@@ -162,7 +162,7 @@ public tableSettings: object = {
 
 ### Quick Toolbar Items
 
-The Quick Toolbar appears when a table is selected, providing quick access to common table operations. Configure which items appear in the Quick Toolbar using the [`quickToolbarSettings`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/quickToolbarSettings###table) property.
+The Quick Toolbar appears when a table is selected, providing quick access to common table operations. Configure which items appear in the Quick Toolbar using the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/quickToolbarSettings###table) property.
 
 **Available Table Items:**
 - `Header` — Toggle header row button

@@ -13,7 +13,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 The **Link Quick Toolbar** is the contextual popup that opens when the caret enters an `<a>` element inside the editable area. It surfaces the most relevant link commands — Open, Copy, Edit, Remove — without requiring the user to reach for the main toolbar.
 
-It is wired through [`quickToolbarSettings.link`](https://helpej2.syncfusion.com/angular/documentation/api//richtexteditor-ui/quickToolbarSettings#link) on `RichTextEditorUI`:
+It is wired through [`quickToolbarSettings.link`](https://ej2.syncfusion.com/angular/documentation/api//richtexteditor-ui/quickToolbarSettings#link) on `RichTextEditorUI`:
 
 ```ts
 type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomToolbarItem;

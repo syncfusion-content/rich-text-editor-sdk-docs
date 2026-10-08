@@ -31,7 +31,7 @@ The Rich Text Editor provides three distinct list types, each designed for diffe
 
 ## Configuring List Items in Toolbar
 
-To configure which list format options appear in the toolbar, use the toolbar item configuration. List items are configured through the [`listSettings`](https://helpej2.syncfusion.com/angular/documentation/api//richtexteditor-ui/listSettings) property when setting up toolbar items.
+To configure which list format options appear in the toolbar, use the toolbar item configuration. List items are configured through the [`listSettings`](https://ej2.syncfusion.com/angular/documentation/api//richtexteditor-ui/listSettings) property when setting up toolbar items.
 
 **Configure in Toolbar Settings:**
 

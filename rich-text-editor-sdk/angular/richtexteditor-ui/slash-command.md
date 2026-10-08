@@ -15,7 +15,7 @@ The Slash command in the Modern Rich Text Editor provides users with an efficien
 
 ## Enabling the slash command
 
-To use the Slash command, set the [`enable`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#enable) property within [`slashCommandSettings`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#slashcommandsettings) to `true`. By default, this feature is disabled. Once enabled, the Slash command popup will appear when the user types the `/` character in the editor.
+To use the Slash command, set the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#enable) property within [`slashCommandSettings`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#slashcommandsettings) to `true`. By default, this feature is disabled. Once enabled, the Slash command popup will appear when the user types the `/` character in the editor.
 
 ```ts
 import { Component } from '@angular/core';
@@ -39,7 +39,7 @@ Setting `enable` to `false` at runtime removes the popup and stops listening for
 
 ## Service registration
 
-Slash command is a standalone module in the Angular wrapper. Register it as a provider on the component (or on the module) through `SlashCommandService`. If you skip this step, the editor renders without the Slash command capability, even when [`slashCommandSettings.enable`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#enable) is `true`.
+Slash command is a standalone module in the Angular wrapper. Register it as a provider on the component (or on the module) through `SlashCommandService`. If you skip this step, the editor renders without the Slash command capability, even when [`slashCommandSettings.enable`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#enable) is `true`.
 
 ```ts
 import { Component } from '@angular/core';
@@ -88,13 +88,13 @@ The Slash command ships with a curated set of built-in items. When `items` is no
 | `Image` | `Media` | `InsertImage` (provided by the `Image` module) |
 | `Table` | `Basic Block` | `InsertTable` (provided by the `Table` module) |
 
-The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the [`itemSelect`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event for their default action; the editor dispatches the command itself.
+The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the [`itemSelect`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event for their default action; the editor dispatches the command itself.
 
 `Link`, `Image`, and `Table` are contributed by their respective feature modules. They appear in the popup only when the corresponding module is also registered.
 
 ## Configure slash command items
 
-The [`items`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#items) property on `slashCommandSettings` controls which items appear in the popup. By default, every built-in item is included. Override `items` to:
+The [`items`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#items) property on `slashCommandSettings` controls which items appear in the popup. By default, every built-in item is included. Override `items` to:
 
 - **Restrict** the popup to a subset of built-ins.
 - **Reorder** items — the array order is the popup order.
@@ -108,7 +108,7 @@ public slashCommandSettings: object = {
 };
 ```
 
-The popup size can be customized through [`popupWidth`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
+The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
 
 ```ts
 public slashCommandSettings: object = {
@@ -123,7 +123,7 @@ Items are filtered as the user types after `/`. The popup narrows to items whose
 
 ## Add custom slash command items
 
-Custom items extend the popup with commands the built-in set does not cover. Each custom item is described by an [`ISlashCommandItem`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/islashcommanditem):
+Custom items extend the popup with commands the built-in set does not cover. Each custom item is described by an [`ISlashCommandItem`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/islashcommanditem):
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -163,7 +163,7 @@ When a custom item is selected, the editor does not dispatch any command on its 
 
 ## Use the `itemSelect` event
 
-The [`itemSelect`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event fires when the user picks an item from the popup. The handler receives [`SlashCommandItemSelectArgs`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommanditemselectargs) with the following properties:
+The [`itemSelect`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event fires when the user picks an item from the popup. The handler receives [`SlashCommandItemSelectArgs`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommanditemselectargs) with the following properties:
 
 | Property | Type | Description |
 | --- | --- | --- |
