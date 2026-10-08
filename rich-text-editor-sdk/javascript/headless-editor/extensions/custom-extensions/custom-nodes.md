@@ -30,7 +30,7 @@ The contributor returns the list of node definitions the extension adds to the e
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | `string` | Unique node type name. |
-| `group` | `'root' &#124;  'block' &#124;  'container' &#124;  'inline' &#124;  'block list' &#124;  'list'` | Semantic group this node belongs to. |
+| `group` | `'root'` &#124; `'block'` &#124; `'container'` &#124; `'inline'` &#124; `'block list'` &#124; `'list'` | Semantic group this node belongs to. |
 | `content` | `NodeContent` | Optional. A content expression that constrains the children. |
 | `attrs` | `AttributeDefinition[]` | Optional. Attribute definitions for the node. |
 | `inline` | `boolean` | Optional. Marks the node as an inline (leaf) node. |
