@@ -1,6 +1,14 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: [
+        'Bold', 'Italic', 'Underline', 'Strikethrough', '|',
+        'BulletList', 'NumberedList', '|',
+        'Undo', 'Redo'
+    ]
+};
+
 function App() {
     const [eventLog, setEventLog] = React.useState('');
 
@@ -13,13 +21,7 @@ function App() {
     return (
         <div className="container">
             <RichTextEditorUIComponent
-                toolbarSettings={{
-                    items: [
-                        'Bold', 'Italic', 'Underline', 'Strikethrough', '|',
-                        'BulletList', 'NumberedList', '|',
-                        'Undo', 'Redo'
-                    ]
-                }}
+                toolbarSettings={toolbarSettings}
                 placeholder='Perform actions to trigger actionComplete events...'
                 actionComplete={handleActionComplete}
             />
