@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Content Expressions in Vue Headless Editor
 
-Every node in the schema declares how its content should be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition` `content` field.
+Every node in the schema declares how its content should be. Headless Editor uses a fluent builder called `NodeContent` for this. Instead of writing fragile content strings, you compose `NodeContent` expressions and pass them to a `NodeDefinition's content` field.
 
 ## Why a builder?
 
@@ -41,8 +41,8 @@ Start an expression with one of the four factory methods. By default the resulti
 
 | Factory | Matches |
 |---------|---------|
-| `NodeContent.block()` | Any node in the `'block'` group. |
-| `NodeContent.inline()` | Any node in the `'inline'` group. |
+| `NodeContent.block()` | Any node in the `block` group. |
+| `NodeContent.inline()` | Any node in the `inline` group. |
 | `NodeContent.text()` | The `text` leaf node. |
 | `NodeContent.node(name)` | A specific named node type. |
 

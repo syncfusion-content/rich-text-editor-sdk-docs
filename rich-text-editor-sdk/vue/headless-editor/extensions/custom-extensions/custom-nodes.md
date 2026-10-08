@@ -25,18 +25,18 @@ nodes?: (this: ExtensionScope<TOptions>) => NodeDefinition[]
 
 The contributor returns the list of node definitions the extension adds to the editor. Each returned `NodeDefinition` must have a unique `name`.
 
-## `NodeDefinition` shape
+## NodeDefinition shape
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | `string` | Unique node type name. |
-| `group` | `'root' \| 'block' \| 'container' \| 'inline' \| 'block list' \| 'list'` | Semantic group this node belongs to. |
+| `group` | `'root'` &#124; `'block'` &#124; `'container'` &#124; `'inline'` &#124; `'block list'` &#124; `'list'` | Semantic group this node belongs to. |
 | `content` | `NodeContent` | Optional. A content expression that constrains the children. |
 | `attrs` | `AttributeDefinition[]` | Optional. Attribute definitions for the node. |
 | `inline` | `boolean` | Optional. Marks the node as an inline (leaf) node. |
 | `leaf` | `boolean` | Optional. Marks the node as a leaf with no content (for example, image or horizontal rule). |
 
-## Example: a custom `callout` block
+## Example: a custom callout block
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

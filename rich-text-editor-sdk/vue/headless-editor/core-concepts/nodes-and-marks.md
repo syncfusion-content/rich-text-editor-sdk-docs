@@ -17,10 +17,10 @@ Every part of a Headless Editor document is a node. Inline formatting on text is
 
 A node is one element in the document tree. Every node has:
 
-- `type`: The name of the node kind, such as (`'paragraph'`, `'heading'`, `'table'`,...),
-- `attrs`: Key/value pairs whose meaning depends on the node type.
-- `children`: Other nodes inside this one; empty for leaves.
-- `marks`: Formatting marks applied to the node itself (used for block level marks).
+- `type`: The name of the node kind (`'paragraph'`, `'heading'`, `'table'`, …).
+- `attrs`: key/value pairs whose meaning depends on the node's type.
+- `children`: Other nodes inside this one (empty for leaves).
+- `marks`: Formatting marks applied to the node itself (used for block-level marks).
 
 A text node has a `text` string and no `children`.
 

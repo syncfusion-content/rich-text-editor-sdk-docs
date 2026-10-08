@@ -64,8 +64,6 @@ The example demonstrates the following marks:
 | `subscript`     | Lowers text below the baseline.   |
 | `link`          | Adds a hyperlink to text.         |
 
-## Preview sample
-
 The following example registers the required extensions and loads sample content into the editor.
 
 ```html
