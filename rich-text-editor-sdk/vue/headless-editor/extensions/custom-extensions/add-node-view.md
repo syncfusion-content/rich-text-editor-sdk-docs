@@ -23,7 +23,7 @@ addNodeView?: () => Record<string, NodeViewFactory>
 {% endhighlight %}
 {% endtabs %}
 
-## When to use `addNodeView` instead of `nodeViews`
+## When to use addNodeView instead of nodeViews
 
 | Use `addNodeView` when | Use `nodeViews` when |
 |------------------------|----------------------|

@@ -25,7 +25,7 @@ nodes?: (this: ExtensionScope<TOptions>) => NodeDefinition[]
 
 The contributor returns the list of node definitions the extension adds to the editor. Each returned `NodeDefinition` must have a unique `name`.
 
-## `NodeDefinition` shape
+## NodeDefinition shape
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -36,7 +36,7 @@ The contributor returns the list of node definitions the extension adds to the e
 | `inline` | `boolean` | Optional. Marks the node as an inline (leaf) node. |
 | `leaf` | `boolean` | Optional. Marks the node as a leaf with no content (for example, image or horizontal rule). |
 
-## Example: a custom `callout` block
+## Example: a custom callout block
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -25,7 +25,7 @@ commands?: () => Command[]
 
 The option returns the list of commands the extension adds. You can return commands you define inline, or import and re-export a built-in command. The same name can only be registered once; conflicts are surfaced by the editor.
 
-## `Command` shape
+## Command shape
 
 | Field | Type | Description |
 |-------|------|-------------|
