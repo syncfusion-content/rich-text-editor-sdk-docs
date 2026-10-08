@@ -39,7 +39,7 @@ Setting `enable` to `false` at runtime removes the popup and stops listening for
 
 ## Service registration
 
-Slash command is a standalone module in the Angular wrapper. Register it as a provider on the component (or on the module) through `SlashCommandService`. If you skip this step, the editor renders without the Slash command capability, even when `slashCommandSettings.enable` is `true`.
+Slash command is a standalone module in the Angular wrapper. Register it as a provider on the component (or on the module) through `SlashCommandService`. If you skip this step, the editor renders without the Slash command capability, even when [`slashCommandSettings.enable`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#enable) is `true`.
 
 ```ts
 import { Component } from '@angular/core';
@@ -88,7 +88,7 @@ The Slash command ships with a curated set of built-in items. When `items` is no
 | `Image` | `Media` | `InsertImage` (provided by the `Image` module) |
 | `Table` | `Basic Block` | `InsertTable` (provided by the `Table` module) |
 
-The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the `itemSelect` event for their default action; the editor dispatches the command itself.
+The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the [`itemSelect`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event for their default action; the editor dispatches the command itself.
 
 `Link`, `Image`, and `Table` are contributed by their respective feature modules. They appear in the popup only when the corresponding module is also registered.
 
@@ -170,7 +170,7 @@ The [`itemSelect`](https://ej2.syncfusion.com/documentation/api/richtexteditor-u
 | `isInteracted` | `boolean` | `true` when the selection was triggered by user interaction (mouse, keyboard, or touch); `false` for programmatic selection. |
 | `item` | `HTMLLIElement` | The selected DOM list item. |
 | `itemData` | `ISlashCommandItem` | The data of the selected item, matching the entry declared in `slashCommandSettings.items`. |
-| `originalEvent` | `MouseEvent \| KeyboardEvent \| TouchEvent` | The original browser event that triggered the selection. |
+| `originalEvent` | `MouseEvent  `&#124;` KeyboardEvent  `&#124;` TouchEvent` | The original browser event that triggered the selection. |
 | `cancel` | `boolean` | Set to `true` inside the handler to suppress the editor's default command execution. |
 
 The event fires for every selection, including built-in items. For built-in items, the default dispatch happens after the handler returns; setting `cancel` suppresses it. For custom items there is no default dispatch, so the handler is the only place where the action runs.

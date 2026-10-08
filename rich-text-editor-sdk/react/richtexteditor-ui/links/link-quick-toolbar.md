@@ -44,11 +44,11 @@ The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which narrows t
 
 | Identifier | Behaviour |
 | --- | --- |
-| `Open` | Opens the link `href` in a new tab using `window.open(href, target \|\| '_blank')`. The link's own `target` attribute is honored when present. |
+| `Open` | Opens the link `href` in a new tab using `window.open(href, target  `&#124; &#124;` '_blank')`. The link's own `target` attribute is honored when present. |
 | `Copy` | Copies the link `href` to the clipboard as both `text/plain` and `text/html` (using `navigator.clipboard.write` with a `ClipboardItem`). |
 | `Edit` | Opens the Insert-Link dialog pre-filled with the link's current `href`, `text`, `title`, and `target` attributes. |
 | `Remove` | Unlinks the selection — removes the `<a>` wrapper but keeps the link's text content. |
-| `\|` | Visual separator used to split action groups inside the popup. |
+|  &#124; | Visual separator used to split action groups inside the popup. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
 ### Default configuration
@@ -90,7 +90,7 @@ The Link Quick Toolbar is **not** rendered until the caret enters an `<a>` eleme
 | --- | --- | --- |
 | Built-in identifier | `'Open'` | Use the editor's built-in handler. |
 | Custom item | `{ actionId: 'bookmark', id: 'bookmark', text: 'Bookmark link' }` | Wire a user-defined action that branches on `toolbarSettings.itemClicked`. |
-| Separator | `'\|'` | Visual divider between groups. |
+| Separator | &#124; | Visual divider between groups. |
 
 The example below adds a custom "Bookmark" item alongside the four built-ins, then routes the click through `toolbarSettings.itemClicked`:
 
