@@ -17,7 +17,7 @@ Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion
 
 {% highlight ts tabtitle="main.ts" %}
 
-{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui//toolbar/custom-item/index.ts %}
+{% include code-snippet/rich-text-editor-sdk/typescript/richtexteditor-ui/toolbar/custom-item/index.ts %}
 
 {% endhighlight %}
 

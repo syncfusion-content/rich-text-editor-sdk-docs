@@ -20,6 +20,44 @@ By default, when a table is inserted, it consists of:
 
 This ensures that users can start formatting and adding content immediately.
 
+{% tabs %}
+
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs3/index.js %}
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs3/index.html %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs3" %}
+
 ## Changing default content
 
 By default, when you insert a table, it comes with predefined column headers and structure. However, you can customize the table’s default content, including the heading and column names, to match your requirements.
+
+The following example demonstrates how to customize the table content in the Markdown Editor:
+
+{% tabs %}
+
+{% highlight js tabtitle="index.js" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs4/index.js %}
+
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs4/index.html %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs4" %}

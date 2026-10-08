@@ -19,6 +19,7 @@ It is wired through `quickToolbarSettings.link` on `RichTextEditorUIComponent`:
 type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomToolbarItem;
 ```
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   quickToolbarSettings={{
@@ -27,6 +28,7 @@ type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomTo
   }}
 />
 ```
+{% endraw %}
 
 By default, `quickToolbarSettings.link` is set to `['Open', 'Copy', 'Edit', 'Remove']`. To disable the Link Quick Toolbar without disabling the rest of the quick toolbar system, set `link: []` or `link: null` — the toolbar is only instantiated when `link` is a non-empty array.
 
@@ -67,6 +69,7 @@ The Link Quick Toolbar is **not** rendered until the caret enters an `<a>` eleme
 - `quickToolbarSettings.link` — the items array. When empty or `null`, the link quick toolbar is not instantiated.
 - `toolbarSettings.enable` — when `false`, the Link Quick Toolbar is also disabled (it requires the main toolbar subsystem to be enabled).
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   quickToolbarSettings={{
@@ -75,6 +78,7 @@ The Link Quick Toolbar is **not** rendered until the caret enters an `<a>` eleme
   }}
 />
 ```
+{% endraw %}
 
 > When `link` is configured, the toolbar is positioned directly above the link element using the same tip-pointer logic as the text quick toolbar (top-position collision flipping).
 
@@ -90,6 +94,7 @@ The Link Quick Toolbar is **not** rendered until the caret enters an `<a>` eleme
 
 The example below adds a custom "Bookmark" item alongside the four built-ins, then routes the click through `toolbarSettings.itemClicked`:
 
+{% raw %}
 ```ts
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 import React, { useRef } from 'react';
@@ -135,6 +140,7 @@ function App() {
 
 export default App;
 ```
+{% endraw %}
 
 ### Link Quick Toolbar behaviour
 

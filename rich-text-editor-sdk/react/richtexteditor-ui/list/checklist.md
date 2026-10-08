@@ -29,6 +29,7 @@ The `checklistType` property defines the visual shape of checkboxes in checklist
 
 **Example:**
 
+{% raw %}
 ```ts
 // Create a Rich Text Editor with default square checkboxes
 <RichTextEditorUIComponent
@@ -47,6 +48,7 @@ The `checklistType` property defines the visual shape of checkboxes in checklist
 // Change checkbox shape at runtime
 editorRef.current.listSettings.checklistType = 'Square';
 ```
+{% endraw %}
 
 ---
 
