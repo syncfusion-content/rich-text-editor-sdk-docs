@@ -151,6 +151,7 @@ The following properties are currently not supported in `RichTextEditorUICompone
 
 ### Updated Configuration
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   interactionSettings={{
@@ -158,6 +159,7 @@ The following properties are currently not supported in `RichTextEditorUICompone
   }}
 />
 ```
+{% endraw %}
 
 ---
 

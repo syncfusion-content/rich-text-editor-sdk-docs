@@ -29,6 +29,7 @@ Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
 </figure>
 ```
 
+{% raw %}
 ```ts
 // Enable Caption in quick toolbar
 <RichTextEditorUIComponent
@@ -37,6 +38,7 @@ Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
   }}
 />
 ```
+{% endraw %}
 
 ---
 
@@ -44,6 +46,7 @@ Captions are rendered as `<figcaption>` elements inside a `<figure>` container.
 
 Use the Alt Text quick toolbar item to add descriptive alternative text for the image.
 
+{% raw %}
 ```ts
 // Enable Alt Text in quick toolbar (default)
 <RichTextEditorUIComponent
@@ -52,6 +55,7 @@ Use the Alt Text quick toolbar item to add descriptive alternative text for the 
   }}
 />
 ```
+{% endraw %}
 
 ---
 
@@ -59,6 +63,7 @@ Use the Alt Text quick toolbar item to add descriptive alternative text for the 
 
 Use the Replace quick toolbar item to replace the currently selected image with a new image source.
 
+{% raw %}
 ```ts
 // Enable Replace in quick toolbar
 <RichTextEditorUIComponent
@@ -67,6 +72,7 @@ Use the Replace quick toolbar item to replace the currently selected image with 
   }}
 />
 ```
+{% endraw %}
 
 ---
 
@@ -74,6 +80,7 @@ Use the Replace quick toolbar item to replace the currently selected image with 
 
 Control how text flows around the selected image using the Text Wrap quick toolbar item. Configure text wrapping to position images inline with text or allow text to wrap around them.
 
+{% raw %}
 ```ts
 // Enable WrapText in quick toolbar
 <RichTextEditorUIComponent
@@ -82,6 +89,7 @@ Control how text flows around the selected image using the Text Wrap quick toolb
   }}
 />
 ```
+{% endraw %}
 
 **Text Wrap Modes:**
 - `'left'` - Wraps text to the right of the image
@@ -94,6 +102,7 @@ Control how text flows around the selected image using the Text Wrap quick toolb
 
 Set horizontal alignment of the selected image using the Alignment quick toolbar item. You can align images to the left, center, or right within the editor.
 
+{% raw %}
 ```ts
 // Enable Align in quick toolbar
 <RichTextEditorUIComponent
@@ -102,6 +111,7 @@ Set horizontal alignment of the selected image using the Alignment quick toolbar
   }}
 />
 ```
+{% endraw %}
 
 **Available Alignment Options:**
 - `'left'` - Align image to the left
@@ -115,6 +125,7 @@ Set horizontal alignment of the selected image using the Alignment quick toolbar
 
 Delete the selected image from the editor using the Remove quick toolbar item. This provides a quick way to remove images without using the delete key.
 
+{% raw %}
 ```ts
 // Enable Remove in quick toolbar (recommended)
 <RichTextEditorUIComponent
@@ -123,6 +134,7 @@ Delete the selected image from the editor using the Remove quick toolbar item. T
   }}
 />
 ```
+{% endraw %}
 
 ---
 

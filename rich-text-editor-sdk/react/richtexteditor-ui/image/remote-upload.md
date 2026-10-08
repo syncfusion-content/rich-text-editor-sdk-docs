@@ -21,6 +21,7 @@ When a user uploads an image through the RichTextEditor, the component sends the
 
 Configure the Modern Rich Text Editor component with the upload endpoint and base URL:
 
+{% raw %}
 ```ts
 // ============================================
 // CLIENT-SIDE: Configure the RichTextEditor
@@ -35,6 +36,7 @@ Configure the Modern Rich Text Editor component with the upload endpoint and bas
   }}
 />
 ```
+{% endraw %}
 
 ### Server-Side Configuration
 
@@ -78,6 +80,7 @@ You can implement server-side renaming to ensure all uploaded images follow your
 
 ### Client-Side Configuration
 
+{% raw %}
 ```ts
 // ============================================
 // CLIENT-SIDE: Track Upload Success
@@ -95,6 +98,7 @@ You can implement server-side renaming to ensure all uploaded images follow your
   }}
 />
 ```
+{% endraw %}
 
 ## Secure image upload with authentication
 
@@ -102,6 +106,7 @@ You can add additional data with the image uploaded from the Modern Rich Text Ed
 
 ### Client-Side Configuration
 
+{% raw %}
 ```ts
 // CLIENT-SIDE: Add authentication token before upload
 <RichTextEditorUIComponent
@@ -114,6 +119,7 @@ You can add additional data with the image uploaded from the Modern Rich Text Ed
   }}
 />
 ```
+{% endraw %}
 
 ### Server-Side Configuration
 

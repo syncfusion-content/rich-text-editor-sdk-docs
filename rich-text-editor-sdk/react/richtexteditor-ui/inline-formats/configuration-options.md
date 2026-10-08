@@ -65,6 +65,7 @@ The Modern Rich Text Editor supports providing custom fonts along with the exist
 
 To use web fonts in the Modern Rich Text Editor, the web fonts do not need to be present on the local machine. To add web fonts to the editor, refer the web font links in your page and add the font names to the [fontFamily](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontFamily#items) property.
 
+{% raw %}
 ```ts
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 import React, { useRef } from 'react';
@@ -88,6 +89,8 @@ function App() {
         />
     );
 }
+```
+{% endraw %}
 
 export default App;
 ```

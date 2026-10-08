@@ -48,6 +48,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 > adding the text quick-toolbar items on the `quickToolbarSettings.text`
 > surface:
 >
+> {% raw %}
 > ```ts
 > <RichTextEditorUIComponent
 >     toolbarSettings={{ enable: false }}
@@ -62,6 +63,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 >     }}
 > />
 > ```
+> {% endraw %}
 
 ---
 

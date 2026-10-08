@@ -35,6 +35,7 @@ To configure which list format options appear in the toolbar, use the toolbar it
 
 **Configure in Toolbar Settings:**
 
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   toolbarSettings={{
@@ -57,6 +58,7 @@ To configure which list format options appear in the toolbar, use the toolbar it
   }}
 />
 ```
+{% endraw %}
 
 ---
 

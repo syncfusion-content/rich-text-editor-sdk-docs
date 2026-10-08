@@ -4,7 +4,7 @@ import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-
 function App() {
     const editorRef = React.useRef<RichTextEditorUIComponent>(null);
 
-    const handleItemClicked = (args: any) => {
+    const handleItemClicked = (args: any): void => {
         if (args.item) {
             const editor = editorRef.current;
             if (editor && args.item.id === 'WordCount') {
@@ -14,23 +14,27 @@ function App() {
         }
     };
 
+    const wordCountItem = {
+        id: 'WordCount',
+        actionId: 'wordCount',
+        prefixIcon: 'e-icons e-numbering-list',
+        tooltipText: 'Word count',
+        align: 'Left'
+    } as any;
+
+    const toolbarSettings = {
+        items: [
+            'Bold', 'Italic', 'Underline', '|',
+            wordCountItem,
+            '|', 'Undo', 'Redo'
+        ],
+        itemClicked: handleItemClicked
+    };
+
     return (
         <RichTextEditorUIComponent
             ref={editorRef}
-            toolbarSettings={{
-                items: [
-                    'Bold', 'Italic', 'Underline', '|',
-                    {
-                        id: 'WordCount',
-                        actionId: 'wordCount',
-                        prefixIcon: 'e-icons e-numbering-list',
-                        tooltipText: 'Word count',
-                        align: 'Left'
-                    } as any,
-                    '|', 'Undo', 'Redo'
-                ],
-                itemClicked: handleItemClicked
-            }}
+            toolbarSettings={toolbarSettings}
         />
     );
 }

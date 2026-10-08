@@ -15,7 +15,7 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 {% tabs %}
 
-{% highlight tsx tabtitle="App.tsx" %}
+{% highlight ts tabtitle="App.tsx" %}
 
 {% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/app/App.tsx %}
 
@@ -71,6 +71,7 @@ Before setting editor content, choose the appropriate `valueFormat`. Use `'html'
 
 Configure `toolbarSettings.items` to display only the editing tools required by your application. Keeping the toolbar focused helps simplify the editing experience and reduces unnecessary commands.
 
+{% raw %}
 ```ts
 toolbarSettings={{
     items: [
@@ -81,6 +82,7 @@ toolbarSettings={{
     ]
 }}
 ```
+{% endraw %}
 
 See [Toolbar](toolbar/types.md) for layout, floating behavior, and toolbar events.
 
@@ -88,6 +90,7 @@ See [Toolbar](toolbar/types.md) for layout, floating behavior, and toolbar event
 
 Configure `imageSettings` to control how images are uploaded and validated. You can specify accepted file types, file size limits, and server endpoints used for upload and removal operations.
 
+{% raw %}
 ```ts
 imageSettings={{
     saveUrl: 'https://services.syncfusion.com/react/uploader/Save',
@@ -97,6 +100,7 @@ imageSettings={{
     maxFileSize: 30000000
 }}
 ```
+{% endraw %}
 
 See [Insert Image](insert-image) for upload, storage, and display configuration beyond this basic validation.
 
