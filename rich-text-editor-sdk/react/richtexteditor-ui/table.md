@@ -141,6 +141,7 @@ Use the [`tableSettings`](https://ej2.syncfusion.com/documentation/api/richtexte
 | `resize` | `boolean` | `true` | Enables or disables table resize drag handles.|
 
 **React Configuration Example:**
+{% raw %}
 ```ts
 <RichTextEditorUIComponent
   tableSettings={{
@@ -148,6 +149,7 @@ Use the [`tableSettings`](https://ej2.syncfusion.com/documentation/api/richtexte
   }}
 />
 ```
+{% endraw %}
 
 ### Quick Toolbar Items
 

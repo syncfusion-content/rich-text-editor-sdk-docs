@@ -14,23 +14,27 @@ function App() {
         }
     };
 
+    const wordCountItem = {
+        id: 'WordCount',
+        actionId: 'wordCount',
+        prefixIcon: 'e-icons e-numbering-list',
+        tooltipText: 'Word count',
+        align: 'Left'
+    };
+
+    const toolbarSettings = {
+        items: [
+            'Bold', 'Italic', 'Underline', '|',
+            wordCountItem,
+            '|', 'Undo', 'Redo'
+        ],
+        itemClicked: handleItemClicked
+    };
+
     return (
         <RichTextEditorUIComponent
             ref={editorRef}
-            toolbarSettings={{
-                items: [
-                    'Bold', 'Italic', 'Underline', '|',
-                    {
-                        id: 'WordCount',
-                        actionId: 'wordCount',
-                        prefixIcon: 'e-icons e-numbering-list',
-                        tooltipText: 'Word count',
-                        align: 'Left'
-                    },
-                    '|', 'Undo', 'Redo'
-                ],
-                itemClicked: handleItemClicked
-            }}
+            toolbarSettings={toolbarSettings}
         />
     );
 }
