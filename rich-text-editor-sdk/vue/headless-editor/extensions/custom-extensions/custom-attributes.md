@@ -18,7 +18,7 @@ Use the `attrs` field on `NodeDefinition` and `MarkDefinition` to declare the ty
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | `string` | Unique attribute name within the node or mark. |
-| `type` | `'string'` &#124 `'number'` &#124 `'boolean'` &#124 `'enum'` | Storage type. |
+| `type` | `'string'` &#124;`'number'` &#124;`'boolean'` &#124;`'enum'` | Storage type. |
 | `default` | `unknown` | Optional. Default value when the attribute is not supplied. |
 | `required` | `boolean` | Optional. When `true`, the attribute must be supplied explicitly and no default is used. |
 | `values` | `readonly string[]` | Required for `type: 'enum'`. Allowed values (non-empty). |
