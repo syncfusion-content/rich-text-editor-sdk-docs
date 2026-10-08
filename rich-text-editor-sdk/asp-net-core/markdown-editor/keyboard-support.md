@@ -89,3 +89,19 @@ These shortcuts provide additional functionalities like fullscreen mode.
 | Actions | Windows | Mac | 
 |----------------|---------| --------- |
 | Toggle fullscreen mode | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>F</kbd> |
+
+{% tabs %}
+
+{% highlight cshtml tabtitle="CSHTML" %}
+
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/tagHelper %}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="Controller.cs" %}
+
+{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/md-keyboard/controller.cs %}
+
+{% endhighlight %}
+
+{% endtabs %}
