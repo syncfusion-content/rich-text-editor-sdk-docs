@@ -40,7 +40,7 @@ The Modern Rich Text Editor exposes the Quick Toolbar through one configuration 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings/" %}
 
 When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`, `link`, or `table` is non-empty, the corresponding popup is built and bound to the relevant editor surface. Any sub-surface whose array is empty (or `null`) is **not** instantiated — set `text` to `null` to disable the text quick toolbar while keeping the image / link / table ones.
 
@@ -88,7 +88,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-append-to-body/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-append-to-body/" %}
 
 > With `enableAppendToBody: true`, the popup is parented to `document.body` and its visibility is clamped to the editor's bounds — the popup hides itself off-screen when the target block scrolls out of the editor's visible region.
 
@@ -116,7 +116,7 @@ The default is `null`, which means the Text Quick Toolbar is **not** rendered un
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-text/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-text/" %}
 
 ### When the Text Quick Toolbar opens
 
@@ -196,7 +196,7 @@ interface ToolbarItemClickedEventArgs {
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-custom-item/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/quick-toolbar/quicktoolbar-settings-custom-item/" %}
 
 > `actionId` is the routing key. `toolbarSettings.itemClicked` is fired for every toolbar item (main and quick) — branch on `args.item.actionId` to dispatch the right command or run your custom handler. The public top-level `itemClick` event you may see in older guides does not exist on `RichTextEditorUI`; the public surface is `toolbarSettings.itemClicked`.
 

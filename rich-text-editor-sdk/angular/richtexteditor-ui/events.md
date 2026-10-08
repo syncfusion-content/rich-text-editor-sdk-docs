@@ -37,7 +37,7 @@ The following example demonstrates how to handle the `change` event and display 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/change/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/change/" %}
 
 ---
 
@@ -63,7 +63,7 @@ The following example demonstrates how to handle the `created` event and display
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/created/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/created/" %}
 
 ---
 
@@ -89,7 +89,7 @@ The following example demonstrates how to handle the `destroyed` event and log t
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/destroyed/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/destroyed/" %}
 
 ---
 
@@ -115,7 +115,7 @@ The following example demonstrates how to handle the `focus` event and log a not
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/focus/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/focus/" %}
 
 ---
 
@@ -141,7 +141,7 @@ The following example demonstrates how to handle the `blur` event and log a noti
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/blur/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/blur/" %}
 
 ---
 
@@ -167,7 +167,7 @@ The following example demonstrates how to handle the `actionBegin` event and log
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/actionBegin/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/actionBegin/" %}
 
 ---
 
@@ -193,4 +193,4 @@ The following example demonstrates how to handle the `actionComplete` event and 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/events/actionComplete/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/events/actionComplete/" %}
