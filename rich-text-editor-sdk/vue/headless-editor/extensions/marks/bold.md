@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bold Mark in Vue Headless Editor | Syncfusion
-description: Learn how to configure the Bold mark in the Vue Headless Editor, including attributes, commands, keyboard shortcuts, and Markdown input rules.
+description: Learn how to configure the Bold mark in the Vue Headless Editor, including attributes, commands, keyboard shortcuts, and input rules.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -55,7 +55,7 @@ editor.commands.toggleBold();
 |--------|---------|-----|
 | Toggle Bold | <kbd>Ctrl</kbd> + <kbd>B</kbd> | <kbd>⌘</kbd> + <kbd>B</kbd> |
 
-## Markdown input rules
+## Input rules
 
 The Bold mark supports Markdown style input rules using `**text**` or `__text__` syntax.
 

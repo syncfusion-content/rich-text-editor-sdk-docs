@@ -113,10 +113,10 @@ An `AttributeDefinition` declares a single typed attribute on a node or a mark a
 | Field | Purpose |
 |-------|---------|
 | `name` | The attribute key as it appears in `attrs`. |
-| `type` | The value type. One of `'string'`, `'number'`, `'boolean'`, or `'enum'`. |
+| `type` | The value type. One of `string`, `number`, `boolean`, or `enum`. |
 | `default` | The default value used when the attribute is not provided. |
 | `required` | If `true`, the attribute must be supplied explicitly and has no default. |
-| `values` | Allowed values for an `enum` type. Required when `type` is `'enum'`. |
+| `values` | Allowed values for an `enum` type. Required when `type` is `enum`. |
 
 ```ts
 import type { AttributeDefinition } from '@syncfusion/ej2-headless-editor';
@@ -133,7 +133,7 @@ const textAlign: AttributeDefinition = {
 
 The editor validates the schema when the editor is created. Two rules apply:
 
-- The schema must include a node named `'document'`. This is the root of every document.
+- The schema must include a node named `document`. This is the root of every document.
 - Node and mark names must be unique within their respective collections. Two nodes cannot share a name, and two marks cannot share a name.
 
 If either rule is broken, `HeadlessEditor.create()` throws an error and the editor is not created. The error message clearly names the broken definition.

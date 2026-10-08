@@ -33,7 +33,7 @@ The document root has below fields:
 
 | Field | Purpose |
 |-------|---------|
-| `type` | Always `'document'`. |
+| `type` | Always `document`. |
 | `schemaVersion` | Version of the schema the document was authored against. |
 | `attrs` | Reserved for future root level attributes. Typically empty. |
 | `children` | The top level block nodes. |
