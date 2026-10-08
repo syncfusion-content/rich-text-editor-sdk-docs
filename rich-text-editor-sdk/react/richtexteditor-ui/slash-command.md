@@ -100,6 +100,8 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 - **Restrict** the popup to a subset of built-ins.
 - **Reorder** items — the array order is the popup order.
 - **Add** custom items alongside or instead of built-ins.
+- **Remove** specific groups, for example to hide all `Media` items.
+
 {% raw %}
 ```ts
 <RichTextEditorUIComponent
@@ -123,6 +125,8 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 />
 ```
 {% endraw %}
+
+The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
 
 Items are filtered as the user types after `/`. The popup narrows to items whose `text` or `description` matches the typed query. Backspace restores the full list.
 
