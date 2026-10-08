@@ -1,18 +1,33 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: [
+        'FontColor', 'BackgroundColor'
+    ]
+};
+
+const fontColor = {
+    default: '#DC2626',
+    mode: 'Palette',
+    columns: 5,
+    modeSwitcher: true
+} as any;
+
+const backgroundColor = {
+    default: '#FFF7C7',
+    mode: 'Picker',
+    columns: 5,
+    modeSwitcher: false
+} as any;
+
 function App() {
     return (
         <RichTextEditorUIComponent
-            toolbarSettings={{
-                items: [
-                    'Bold', 'Italic', 'Underline', 'Strikethrough', 'Subscript', 'Superscript', 'LowerCase', 'UpperCase', '|',
-                    'InlineCode', '|',
-                    'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-                    'ClearFormat'
-                ]
-            }}
+            toolbarSettings={toolbarSettings}
             placeholder='Type something ...'
+            fontColor={fontColor}
+            backgroundColor={backgroundColor}
         />
     );
 }

@@ -1,26 +1,30 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent, Inject, SlashCommand } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: [
+        'Bold', 'Italic', 'Underline', '|',
+        'Callout',
+        '|',
+        'Undo', 'Redo'
+    ]
+};
+
+const slashCommandSettings = {
+    enable: true,
+    items: [
+        'Info', 'Success', 'Warning', 'Error', 'Note'
+    ]
+};
+
 function App() {
     return (
         <RichTextEditorUIComponent
-            toolbarSettings={{
-                items: [
-                    'Bold', 'Italic', 'Underline', '|',
-                    'Callout',
-                    '|',
-                    'Undo', 'Redo'
-                ]
-            }}
-            slashCommandSettings={{
-                enable: true,
-                items: [
-                    'Info', 'Success', 'Warning', 'Error', 'Note'
-                ]
-            }}
+            toolbarSettings={toolbarSettings}
+            slashCommandSettings={slashCommandSettings}
             placeholder='Type / for slash commands...'
         >
-        <Inject services={[SlashCommand]} />
+            <Inject services={[SlashCommand]} />
         </RichTextEditorUIComponent>
     );
 }

@@ -31,6 +31,21 @@ function App() {
         }
     };
 
+    const toolbarSettings = {
+        items: [
+            'Undo', 'Redo', '|',
+            'Bold', 'Italic', 'Underline', 'Strikethrough', '|',
+            'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
+            'Formats', 'Alignments', '|',
+            'BulletList', 'NumberedList', '|',
+            'Link', 'Image', 'Table', '|',
+            'Subscript', 'Superscript', 'ClearFormat'
+        ],
+        type: toolbarType,
+        position: position,
+        enableFloating: floating
+    };
+
     return (
         <div>
             <div className="toolbar-config">
@@ -48,9 +63,9 @@ function App() {
                 </select>
 
                 <label>
-                    <input 
-                        type="checkbox" 
-                        checked={floating} 
+                    <input
+                        type="checkbox"
+                        checked={floating}
                         onChange={handleFloatingChange}
                     />
                     Enable Floating
@@ -59,24 +74,4 @@ function App() {
 
             <RichTextEditorUIComponent
                 ref={editorRef}
-                toolbarSettings={{
-                    items: [
-                        'Undo', 'Redo', '|',
-                        'Bold', 'Italic', 'Underline', 'Strikethrough', '|',
-                        'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-                        'Formats', 'Alignments', '|',
-                        'BulletList', 'NumberedList', '|',
-                        'Link', 'Image', 'Table', '|',
-                        'Subscript', 'Superscript', 'ClearFormat'
-                    ],
-                    type: toolbarType,
-                    position: position,
-                    enableFloating: floating
-                }}
-                placeholder='Type something...'
-            />
-        </div>
-    );
-}
-
-export default App;
+                toolbarSettings={toolbarSettings}
