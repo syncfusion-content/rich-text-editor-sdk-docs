@@ -27,7 +27,7 @@ blockquote, and invoking it again on the resulting blockquote unwraps it.
 | `blockQuote` | — | `Quote` | `Blockquote` |
 
 Add the `Quote` toolbar item alongside the other block-format buttons, and
-add `Blockquote` to `slashCommandSettings.items` if you want to expose it
+add `Blockquote` to [`slashCommandSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#items) if you want to expose it
 through the slash-command popup as well.
 
 {% tabs %}
