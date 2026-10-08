@@ -131,7 +131,7 @@ The popup is dismissed on:
 - `Escape` key.
 - Editor blur (configurable).
 
-For customising the items that appear in the Text Quick Toolbar (built-in identifiers, built-in-with-config objects, custom items, separators), see [Custom Toolbar Item](#3-custom-toolbar-item) and [Available Items](#4-available-items).
+For customising the items that appear in the Text Quick Toolbar (built-in identifiers, built-in-with-config objects, custom items, separators), see [Custom Toolbar Item](#custom-toolbar-item) and [Available Items](#available-items).
 
 ---
 
@@ -166,7 +166,7 @@ export interface CustomToolbarItem extends ItemModel {
 
 Any other field inherited from `ItemModel` (`text`, `id`, `iconCss`, `prefixIcon`, `tooltipText`, `htmlAttributes`, etc.) is also accepted.
 
-A custom item can appear in any of the four quick-toolbar arrays — `text`, `image`, `link`, `table` — because each of those arrays is a union that includes `CustomToolbarItem`. See [Available Items](#4-available-items) for the full built-in catalog.
+A custom item can appear in any of the four quick-toolbar arrays — `text`, `image`, `link`, `table` — because each of those arrays is a union that includes `CustomToolbarItem`. See [Available Items](#available-items) for the full built-in catalog.
 
 The click is delivered through `toolbarSettings.itemClicked` with the following args shape:
 
@@ -208,7 +208,7 @@ Custom items are accepted by `image`, `link`, and `table` as well. The `link` an
 
 ## Available Items
 
-The built-in quick-toolbar items are declared as typed unions in `src/richtexteditor-ui/model/toolbar.types.ts`. Each quick-toolbar surface accepts a different union — the union narrows the available identifiers per surface so the compiler flags unsupported items.
+The built-in quick-toolbar items are declared as typed unions. Each quick-toolbar surface accepts a different union — the union narrows the available identifiers per surface so the compiler flags unsupported items.
 
 ### Link Quick Toolbar items
 
@@ -261,3 +261,38 @@ type ImageQuickToolbarItem = 'AltText' | 'Caption' | 'Align' | 'Display' | 'Wrap
 | `Remove` | Deletes the image. |
 |  &#124; | Visual separator. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
+
+### Text Quick Toolbar items
+
+The Text Quick Toolbar accepts the full `ToolbarItem` union — every built-in toolbar identifier, built-in-with-config objects, custom items, and the `'|'` separator.
+
+| Identifier | Behavior |
+| --- | --- |
+| `Bold`, `Italic`, `Underline`, `Strikethrough` | Toggle inline marks. |
+| `Subscript`, `Superscript` | Toggle inline marks. |
+| `UpperCase`, `LowerCase` | Transform the selection. |
+| `InlineCode` | Toggle inline code mark. |
+| `HorizontalLine` | Insert a horizontal rule at the cursor. |
+| `Formats` | Open the paragraph / heading dropdown. |
+| `FontSize`, `FontColor`, `BackgroundColor`, `FontName` | Open the matching picker. |
+| `BulletList`, `NumberedList`, `NumberFormatList`, `BulletFormatList`, `Checklist` | List controls. |
+| `Alignment` | Open the alignment picker. |
+| `Quote`, `CodeBlock`, `Callout` | Block-format split buttons. |
+| `Link`, `Image`, `Table` | Insert-link / image / table popups. |
+| `ClearFormat` | Remove inline marks from the selection. |
+| `Paragraph`, `Heading 1`–`Heading 4` | Block-format converters. |
+| `Indent`, `Outdent` | Indent controls. |
+| `AlignLeft`, `AlignCenter`, `AlignRight`, `AlignJustify` | Direct alignment controls. |
+| `CalloutInfo`, `CalloutSuccess`, `CalloutWarning`, `CalloutError`, `CalloutNote` | Callout-variant children of the `Callout` split button. |
+| &#124; | Visual separator. |
+
+> Built-in identifiers can also be wrapped in a `BuiltInToolbarItemConfig` to override the visible label: `{ item: 'Bold', align: 'Right' }`.
+
+---
+
+## See also
+
+* [Getting Started](getting-started) — install the Modern Rich Text Editor in an Angular project and render your first `RichTextEditorUI` instance.
+* [Migration](migration) — map legacy `RichTextEditor` properties over to `RichTextEditorUI` and the `commands()` builder.
+* [Inline Formats](inline-formats/supported-formats) — the `Bold`, `Italic`, `FontColor`, `BackgroundColor`, `Formats`, and other identifiers that the Text Quick Toolbar re-uses.
+* [Table](table) — the Table Quick Toolbar rides on top of the `Table` toolbar item; this page covers the matching insert / resize behavior.
