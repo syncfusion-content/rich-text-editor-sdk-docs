@@ -135,7 +135,7 @@ effect.
 | `blockQuote` | — | Toggles blockquote on the current block. |
 | `codeBlock` | `CodeBlockCommand` (`{ language: string }`) | Inserts or converts to a code block with the given language. |
 | `horizontalRule` | — | Inserts a horizontal rule at the cursor. |
-| `callout` | `CalloutCommand` (`{ callout: 'info'` &#124; `'success'` &#124; `'warning'` &#124; `'error'` &#124; `'note' }`) | Toggles a callout block of the given variant. |
+| `callout` | `CalloutCommand` (`{ callout: 'info'` &#124; `\'success'` &#124; `'warning'` &#124; `'error'` &#124; `'note' }`) | Toggles a callout block of the given variant. |
 | `collapsible` | `ToggleCollapsiblePayload` (`{ triggerType: 'paragraph'` &#124; `'heading'`, `level?: 1` &#124; `2` &#124; `3` &#124; `4 }`) | Toggles a collapsible section of the given type and level. |
 
 All command names above are members of `EditorCommandMap` and are dispatched

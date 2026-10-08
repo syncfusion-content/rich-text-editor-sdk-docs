@@ -20,9 +20,9 @@ The Modern Rich Text Editor exposes the Quick Toolbar through one configuration 
 | `enable` | `boolean` | `true` | Master switch for all quick toolbars. |
 | `enableAppendToBody` | `boolean` | `false` | Mounts the popup to the document body to escape clipping inside narrow or scroll-constrained containers. |
 | `text` | `ToolbarItem[]` | `null` | Items shown when text is selected. |
-| `image` | `ImageQuickToolbarItem[]` | `['AltText', 'Caption', &#124;, 'Align', 'Display', 'WrapText', &#124;, 'Dimension', 'Replace', 'Remove']` | Items shown when an image is selected. |
+| `image` | `ImageQuickToolbarItem[]` | `['AltText', 'Caption', '`&#124;`' , 'Align', 'Display', 'WrapText', '`&#124;`' , 'Dimension', 'Replace', 'Remove']` | Items shown when an image is selected. |
 | `link` | `LinkQuickToolbarItem[]` | `['Open', 'Copy', 'Edit', 'Remove']` | Items shown when the caret is inside a link. |
-| `table` | `TableQuickToolbarItem[]` | `['Header', 'Remove', &#124;, 'Row', 'Column', &#124;, 'CellBackgroundColor', 'Align', 'VerticalAlign']` | Items shown when the caret is inside a table. |
+| `table` | `TableQuickToolbarItem[]` | `['Header', 'Remove', '`&#124;`' , 'Row', 'Column', '`&#124;`' , 'CellBackgroundColor', 'Align', 'VerticalAlign']` | Items shown when the caret is inside a table. |
 
 {% tabs %}
 

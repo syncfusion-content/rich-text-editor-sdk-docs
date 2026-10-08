@@ -44,7 +44,7 @@ The Link Quick Toolbar accepts the `LinkQuickToolbarItem` union, which narrows t
 
 | Identifier | Behaviour |
 | --- | --- |
-| `Open` | Opens the link `href` in a new tab using `window.open(href, target &#124;&#124; '_blank')`. The link's own `target` attribute is honored when present. |
+| `Open` | Opens the link `href` in a new tab using `window.open(href, target` &#124;&#124; `'_blank')`. The link's own `target` attribute is honored when present. |
 | `Copy` | Copies the link `href` to the clipboard as both `text/plain` and `text/html` (using `navigator.clipboard.write` with a `ClipboardItem`). |
 | `Edit` | Opens the Insert-Link dialog pre-filled with the link's current `href`, `text`, `title`, and `target` attributes. |
 | `Remove` | Unlinks the selection — removes the `<a>` wrapper but keeps the link's text content. |
