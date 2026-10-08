@@ -156,7 +156,7 @@ The [`itemSelect`](https://ej2.syncfusion.com/documentation/api/richtexteditor-u
 | `isInteracted` | `boolean` | `true` when the selection was triggered by user interaction (mouse, keyboard, or touch); `false` for programmatic selection. |
 | `item` | `HTMLLIElement` | The selected DOM list item. |
 | `itemData` | `ISlashCommandItem` | The data of the selected item, matching the entry declared in `slashCommandSettings.items`. |
-| `originalEvent` | `MouseEvent \| KeyboardEvent \| TouchEvent` | The original browser event that triggered the selection. |
+| `originalEvent` | `MouseEvent` &#124; `KeyboardEvent` &#124; `TouchEvent` | The original browser event that triggered the selection. |
 | `cancel` | `boolean` | Set to `true` inside the handler to suppress the editor's default command execution. |
 
 The event fires for every selection, including built-in items. For built-in items, the default dispatch happens after the handler returns; setting `cancel` suppresses it. For custom items there is no default dispatch, so the handler is the only place where the action runs.
