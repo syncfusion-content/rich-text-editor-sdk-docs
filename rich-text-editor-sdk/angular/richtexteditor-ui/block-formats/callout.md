@@ -38,8 +38,8 @@ All five variants funnel through the same `callout` command with a
 
 Add the `Callout` split-button to expose all five variants through a single
 toolbar control. To surface the variants through the slash-command popup,
-enable [`slashCommandSettings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#slashcommandsettings) and list the matching entries in
-[`slashCommandSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#items).
+enable [`slashCommandSettings`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#slashcommandsettings) and list the matching entries in
+[`slashCommandSettings.items`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/slashcommandsettings#items).
 
 {% tabs %}
 

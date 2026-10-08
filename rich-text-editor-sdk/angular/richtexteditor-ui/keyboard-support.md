@@ -78,7 +78,7 @@ Default shortcuts use standard cross-platform modifier keys:
 
 ## Configuring Keyboard Shortcuts
 
-You can override default shortcut key combinations or assign custom combinations using the [`keyBindings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#keybindings) property.
+You can override default shortcut key combinations or assign custom combinations using the [`keyBindings`](https://helpej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#keybindings) property.
 
 ### Syntax Rules
 
