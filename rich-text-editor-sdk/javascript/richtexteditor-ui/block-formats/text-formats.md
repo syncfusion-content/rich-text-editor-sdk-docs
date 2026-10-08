@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Text Formats in JavaScript Modern Rich Text Editor
 
-Block formats in the Modern Rich Text Editor change the block-level structure of the document rather than inline text. The editor exposes block formats through two public surfaces: built-in toolbar identifiers in `toolbarSettings.items`, and slash-command entries in `slashCommandSettings.items`. There is no separate public `format` configuration object — every block format is wired through one of those two arrays.
+Block formats in the Modern Rich Text Editor change the block-level structure of the document rather than inline text. The editor exposes block formats through two public surfaces: built-in toolbar identifiers in [`toolbarSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings#items), and slash-command entries in [`slashCommandSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#items). There is no separate public `format` configuration object — every block format is wired through one of those two arrays.
 
 ## Configuring block formats
 

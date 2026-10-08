@@ -34,7 +34,7 @@ Setting `enable` to `false` at runtime removes the popup and stops listening for
 
 ## Module injection
 
-Slash command is a standalone module. Inject it through `RichTextEditorUI.Inject` before creating the editor instance. If you skip this step, the editor renders without the Slash command capability, even when `slashCommandSettings.enable` is `true`.
+Slash command is a standalone module. Inject it through `RichTextEditorUI.Inject` before creating the editor instance. If you skip this step, the editor renders without the Slash command capability, even when [`slashCommandSettings.enable`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#enable) is `true`.
 
 ```typescript
 import { RichTextEditorUI, SlashCommand } from '@syncfusion/ej2-richtexteditor-ui';
@@ -78,7 +78,7 @@ The Slash command ships with a curated set of built-in items. When `items` is no
 | `Image` | `Media` | `InsertImage` (provided by the `Image` module) |
 | `Table` | `Basic Block` | `InsertTable` (provided by the `Table` module) |
 
-The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the `itemSelect` event for their default action; the editor dispatches the command itself.
+The `Dispatches` column shows the editor command the item routes through. Built-in items never raise the [`itemSelect`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#itemselect) event for their default action; the editor dispatches the command itself.
 
 `Link`, `Image`, and `Table` are contributed by their respective feature modules. They appear in the popup only when the corresponding module is also injected.
 

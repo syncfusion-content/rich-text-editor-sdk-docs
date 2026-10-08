@@ -6,13 +6,14 @@ platform: rich-text-editor-sdk
 control: Modern Rich Text Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk/
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Link Quick Toolbar in TypeScript Modern Rich Text Editor
 
 The **Link Quick Toolbar** is the contextual popup that opens when the caret enters an `<a>` element inside the editable area. It surfaces the most relevant link commands — Open, Copy, Edit, Remove — without requiring the user to reach for the main toolbar.
 
-It is wired through `quickToolbarSettings.link` on `RichTextEditorUI`:
+It is wired through [`quickToolbarSettings.link`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/quickToolbarSettings#link) on `RichTextEditorUI`:
 
 ```ts
 type LinkQuickToolbarItem = 'Open' | 'Copy' | 'Edit' | 'Remove' | '|' | CustomToolbarItem;
