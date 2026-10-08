@@ -19,7 +19,7 @@ The Rich Text Editor initializes with a default font family, which inherits the 
 
 ### Built-in font family
 
-You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
+You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the
 
 ### Custom font family
 
-The Modern Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, configure the `items` field of the [fontFamily](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontFamily#items) property.
+The Modern Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, configure the `items` field of the [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/fontFamily#items) property.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ The Modern Rich Text Editor supports providing custom fonts along with the exist
 
 ### Google font support
 
-To use web fonts in the Modern Rich Text Editor, the web fonts do not need to be present on the local machine. To add web fonts to the editor, refer the web font links in your page and add the font names to the [fontFamily](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontFamily#items) property.
+To use web fonts in the Modern Rich Text Editor, the web fonts do not need to be present on the local machine. To add web fonts to the editor, refer the web font links in your page and add the font names to the [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/fontFamily#items) property.
 
 ```ts
 import { RichTextEditorUIModule } from '@syncfusion/ej2-angular-richtexteditor-ui';
@@ -103,7 +103,7 @@ The Modern Rich Text Editor initializes with a default font size, which inherits
 
 ### Built-in font size
 
-You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
+You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the
 
 ### Custom font size
 
-The Modern Rich Text Editor supports providing custom sizes along with the existing list. To add additional sizes to the font size dropdown, configure the `items` field of the [fontSize](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontSize#items) property.
+The Modern Rich Text Editor supports providing custom sizes along with the existing list. To add additional sizes to the font size dropdown, configure the `items` field of the [fontSize](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/fontSize#items) property.
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ The Modern Rich Text Editor supports providing custom sizes along with the exist
 
 ## Font and background color
 
-You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
+You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarSettings#items) property.
 
 {% tabs %}
 
@@ -169,9 +169,9 @@ You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text 
 
 ### Custom font and background colors
 
-The `FontColor` and `BackgroundColor` properties offer two modes — `Picker` and `Palette`. The `Palette` mode provides a predefined set of colors, while the `Picker` mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontColorModel#modeSwitcher) feature.
+The `FontColor` and `BackgroundColor` properties offer two modes — `Picker` and `Palette`. The `Palette` mode provides a predefined set of colors, while the `Picker` mode includes a color scheme to choose custom colors. You can switch between these options using the [modeSwitcher](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/fontColorModel#modeSwitcher) feature.
 
-The number of columns in the color palette for both `FontColor` and `BackgroundColor` can be configured using the [columns](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/backgroundColorModel#columns) property. The [default](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/backgroundColorModel#default) property specifies the default color that is applied when no color is explicitly selected by the user.
+The number of columns in the color palette for both `FontColor` and `BackgroundColor` can be configured using the [columns](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/backgroundColorModel#columns) property. The [default](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/backgroundColorModel#default) property specifies the default color that is applied when no color is explicitly selected by the user.
 
 {% tabs %}
 

@@ -33,7 +33,7 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 ## Set Editor content.
 
-Configure the `value` property to load content when the editor is initialized. This is commonly used to display existing content for editing or to provide starter content.
+Configure the [`value`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#value) property to load content when the editor is initialized. This is commonly used to display existing content for editing or to provide starter content.
 
 ```ts
 public value: string = '<p>Getting started with the Rich Text Editor UI.</p>';
@@ -47,7 +47,7 @@ Bind it on the component template:
 
 ## Set content format
 
-Before setting editor content, choose the appropriate `valueFormat`. Use html when working with HTML strings and json when storing or exchanging content using the editor's structured document model.
+Before setting editor content, choose the appropriate [`valueFormat`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#valueformat). Use html when working with HTML strings and json when storing or exchanging content using the editor's structured document model.
 
 ```ts
 public valueFormat: string = 'html';
@@ -62,7 +62,7 @@ public valueFormat: string = 'html';
 
 ## Configure toolbar options
 
-Configure `toolbarSettings.items` to display only the editing tools required by your application. Keeping the toolbar focused helps simplify the editing experience and reduces unnecessary commands.
+Configure [`toolbarSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarsettings#items) to display only the editing tools required by your application. Keeping the toolbar focused helps simplify the editing experience and reduces unnecessary commands.
 
 ```ts
 public toolbarSettings: object = {
@@ -74,7 +74,7 @@ See [Toolbar](toolbar/types) for layout, floating behavior, and toolbar events.
 
 ## Configure image settings
 
-Configure `imageSettings` to control how images are uploaded and validated. You can specify accepted file types, file size limits, and server endpoints used for upload and removal operations.
+Configure [`imageSettings`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#imagesettings) to control how images are uploaded and validated. You can specify accepted file types, file size limits, and server endpoints used for upload and removal operations.
 
 ```ts
 public hostUrl: string = 'https://services.syncfusion.com/js/production/';
@@ -91,16 +91,8 @@ See [Insert Image](insert-image) for upload, storage, and display configuration 
 
 ## Set placeholder text 
 
-Use the `placeholder` property to display instructional text when the editor is empty. This helps users understand what content is expected before they start typing.
+Use the [`placeholder`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#placeholder) property to display instructional text when the editor is empty. This helps users understand what content is expected before they start typing.
 
 ```html
 <ejs-richtexteditor-ui placeholder="Type something."></ejs-richtexteditor-ui>
-```
-
-## Configure auto-save behavior
-
-When `enableAutoSave` is enabled, use `saveInterval` to control how long the editor waits before automatically saving unsaved changes. The value is specified in milliseconds and is triggered after the user becomes idle.
-
-```ts
-public saveInterval: number = 1000;
 ```

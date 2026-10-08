@@ -15,7 +15,7 @@ Comprehensive configuration options enable fine-tuned control over image inserti
 
 ## Allowed Image Formats
 
-The `allowedTypes` property specifies the image file extensions that can be selected, dropped, pasted, or uploaded.
+The [`allowedTypes`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings#allowedTypes) property specifies the image file extensions that can be selected, dropped, pasted, or uploaded.
 
 **Default Supported Formats:**
 - JPEG (`.jpg`, `.jpeg`)
@@ -32,7 +32,7 @@ public imageSettings: object = {
 
 ## Image Size Restrictions
 
- The `maxFileSize` property specifies the maximum permitted image file size in bytes.
+ The [`maxFileSize`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings#maxFileSize) property specifies the maximum permitted image file size in bytes.
 
 ```ts
 public imageSettings: object = {
@@ -86,7 +86,7 @@ Understanding the limitations of each format helps you choose the right approach
 
 ## Dimension
 
-Configure custom dimensions or preset sizes for images with min/max constraints. The `dimension` property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
+Configure custom dimensions or preset sizes for images with min/max constraints. The [`dimension`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings#dimension) property allows you to set default and constraint values for image sizing. You can specify width and height as CSS strings (e.g., `'300px'`, `'auto'`) or numeric values (interpreted as pixels).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -130,7 +130,7 @@ Enable and configure image resizing with constraints and event tracking.
 
 ### Enable Image Resize
 
-The `resize` property controls whether images can be resized by users. By default, image resizing is enabled. Use the `dimension` property to set minimum and maximum constraints for resizable images.
+The [`resize`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings#resize) property controls whether images can be resized by users. By default, image resizing is enabled. Use the [`dimension`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings#dimension) property to set minimum and maximum constraints for resizable images.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

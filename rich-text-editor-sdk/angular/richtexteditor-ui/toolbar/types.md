@@ -28,7 +28,7 @@ If you don't want a toolbar at all — for example, when the editor is driven en
 
 #### Available toolbar items
 
-The built-in items you can list in [`toolbarSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/builtInToolbarItem):
+The built-in items you can list in [`toolbarSettings.items`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarsettings#items):
 
 * **History** — `Undo`, `Redo`
 * **Text formatting** — `Bold`, `Italic`, `Underline`, `Strikethrough`, `Subscript`, `Superscript`, `InlineCode`, `ClearFormat`
@@ -44,7 +44,7 @@ Beyond these, you can add your own entries — see [Custom toolbar item](../tool
 
 #### Type
 
-When your item list is longer than the available width, [`toolbarSettings.type`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarType) controls how overflow items are displayed. The default value is `'Auto'`, which automatically uses `'Expanded'` mode on web/desktop devices and `'Scrollable'` mode on mobile devices. In `'Expanded'` mode, all toolbar items remain visible by expanding the toolbar to accommodate the available commands without introducing horizontal scrolling. Use `'Scrollable'` to always enable horizontal scrolling, or use `'MultiRow'` to wrap overflow items onto additional rows.
+When your item list is longer than the available width, [`toolbarSettings.type`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarsettings#type) controls how overflow items are displayed. The default value is `'Auto'`, which automatically uses `'Expanded'` mode on web/desktop devices and `'Scrollable'` mode on mobile devices. In `'Expanded'` mode, all toolbar items remain visible by expanding the toolbar to accommodate the available commands without introducing horizontal scrolling. Use `'Scrollable'` to always enable horizontal scrolling, or use `'MultiRow'` to wrap overflow items onto additional rows.
 
 #### Position
 
@@ -52,6 +52,6 @@ By default the toolbar sits at the top of the editor (`toolbarSettings.position:
 
 ### Floating Toolbar
 
-For a long document, losing the toolbar off-screen as the user scrolls down is disruptive. [`toolbarSettings.enableFloating`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#enableFloating) is `true` by default, so the toolbar automatically detaches and sticks in place once the editor scrolls out of view. Set it to `false` if you'd rather the toolbar just scroll away with the content. If your page includes a sticky header, use [`toolbarSettings.floatingOffset`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarSettings#floatingOffset) to add a top offset (in pixels) and prevent the floating toolbar from overlapping the header. The default value is `0`.
+For a long document, losing the toolbar off-screen as the user scrolls down is disruptive. [`toolbarSettings.enableFloating`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarSettings#enableFloating) is `true` by default, so the toolbar automatically detaches and sticks in place once the editor scrolls out of view. Set it to `false` if you'd rather the toolbar just scroll away with the content. If your page includes a sticky header, use [`toolbarSettings.floatingOffset`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/toolbarSettings#floatingOffset) to add a top offset (in pixels) and prevent the floating toolbar from overlapping the header. The default value is `0`.
 
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/toolbar/type" %}
