@@ -96,3 +96,10 @@ Use the [`placeholder`](https://helpej2.syncfusion.com/angular/documentation/api
 ```html
 <ejs-richtexteditor-ui placeholder="Type something."></ejs-richtexteditor-ui>
 ```
+## Configure auto-save behavior
+
+When `enableAutoSave` is enabled, use `saveInterval` to control how long the editor waits before automatically saving unsaved changes. The value is specified in milliseconds and is triggered after the user becomes idle.
+
+```ts
+public saveInterval: number = 1000;
+```
