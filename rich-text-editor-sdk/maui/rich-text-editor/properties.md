@@ -396,36 +396,36 @@ documentation: ug
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Focused" aria-label="View Focused event in API reference">Focused</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler" aria-label="View EventHandler type in API reference">EventHandler</a></td>
-    <td>Raised when the editor receives input focus, either because the user tapped inside it or Focus was called.</td>
+    <td>Triggered when the editor receives input focus, either because the user tapped inside it or Focus was called.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_FormatChanged" aria-label="View FormatChanged event in API reference">FormatChanged</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorFormatChangedEventArgs.html" aria-label="View RichTextEditorFormatChangedEventArgs type in API reference">RichTextEditorFormatChangedEventArgs&gt;</a></a></td>
-    <td>Raised when the formatting state at the cursor or selection changes so the host can update toolbar toggle states to match the active formatting.</td>
+    <td>Triggered when the formatting state at the cursor or selection changes so the host can update toolbar toggle states to match the active formatting.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_HyperlinkClicked" aria-label="View HyperlinkClicked event in API reference">HyperlinkClicked</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorHyperlinkClickedEventArgs.html" aria-label="View RichTextEditorHyperlinkClickedEventArgs type in API reference">RichTextEditorHyperlinkClickedEventArgs&gt;</a></a></td>
-    <td>Raised when a user taps a hyperlink inside the content, carrying the link text and URL so the host can decide whether to open it in a browser or handle it internally.</td>
+    <td>Triggered when a user taps a hyperlink inside the content, carrying the link text and URL so the host can decide whether to open it in a browser or handle it internally.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ImageRequested" aria-label="View ImageRequested event in API reference">ImageRequested</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorImageRequestedEventArgs.html" aria-label="View RichTextEditorImageRequestedEventArgs type in API reference">RichTextEditorImageRequestedEventArgs&gt;</a></a></td>
-    <td>Raised when the user taps the image button on the toolbar, giving the host a chance to supply an image source for insertion at the cursor.</td>
+    <td>Triggered when the user taps the image button on the toolbar, giving the host a chance to supply an image source for insertion at the cursor.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TextChanged" aria-label="View TextChanged event in API reference">TextChanged</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorTextChangedEventArgs.html" aria-label="View RichTextEditorTextChangedEventArgs type in API reference">RichTextEditorTextChangedEventArgs&gt;</a></a></td>
-    <td>Raised whenever the editor content changes through typing, deleting, formatting, or programmatic updates to HtmlText or Text.</td>
+    <td>Triggered whenever the editor content changes through typing, deleting, formatting, or programmatic updates to HtmlText or Text.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Unfocused" aria-label="View Unfocused event in API reference">Unfocused</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler" aria-label="View EventHandler type in API reference">EventHandler</a></td>
-    <td>Raised when the editor loses input focus, either because the user tapped outside it or Unfocus was called.</td>
+    <td>Triggered when the editor loses input focus, either because the user tapped outside it or Unfocus was called.</td>
 </tr>
 </table>
