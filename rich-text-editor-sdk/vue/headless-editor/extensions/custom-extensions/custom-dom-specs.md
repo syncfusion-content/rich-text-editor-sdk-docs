@@ -25,21 +25,21 @@ domSpecs?: (this: ExtensionScope<TOptions>) => ExtensionDOMSpecs
 
 The option returns a `ExtensionDOMSpecs` collection keyed by node name and mark name. Each entry is one descriptor.
 
-## `NodeDOMDescriptor` shape
+## NodeDOMDescriptor shape
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `toDOM(attrs)` | `(attrs) => DOMOutputDescriptor` | Returns the HTML representation of the node. |
 | `parseDOM` | `readonly ParseRule[]` | Optional. Rules for parsing HTML into this node. |
 
-## `MarkDOMDescriptor` shape
+## MarkDOMDescriptor shape
 
 | Field | Type | Description |
 |-------|------|-------------|
 | `toDOM(attrs, inline)` | `(attrs, inline) => DOMOutputDescriptor` | Returns the HTML representation of the mark. |
 | `parseDOM` | `readonly ParseRule[]` | Optional. Rules for parsing HTML into this mark. |
 
-## `DOMOutputDescriptor` shape
+## DOMOutputDescriptor shape
 
 `DOMOutputDescriptor` accepts either a tag-name string or a nested array spec:
 
@@ -57,7 +57,7 @@ The option returns a `ExtensionDOMSpecs` collection keyed by node name and mark 
 
 `0` is the content slot where the children are rendered.
 
-## `ParseRule` shape
+## ParseRule shape
 
 Each entry in `parseDOM` is a rule that matches against an HTML element and reads attributes from it.
 

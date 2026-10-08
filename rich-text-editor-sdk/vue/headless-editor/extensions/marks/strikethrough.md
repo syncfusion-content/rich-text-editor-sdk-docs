@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strikethrough Mark in Vue Headless Editor | Syncfusion
-description: Learn how to configure the Strikethrough mark in the Vue Headless Editor, including attributes, commands, shortcuts, and Markdown input rules.
+description: Learn how to configure the Strikethrough mark in the Vue Headless Editor, including attributes, commands, shortcuts, and input rules.
 platform: rich-text-editor-sdk
 control: Headless Editor
 documentation: ug
@@ -55,7 +55,7 @@ editor.commands.toggleStrikethrough();
 |--------|---------|-----|
 | Toggle Strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>X</kbd> |
 
-## Markdown input rules
+## Input rules
 
 The Strikethrough mark supports Markdown style input rules using `~~text~~` syntax.
 

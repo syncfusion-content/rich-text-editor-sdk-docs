@@ -25,7 +25,7 @@ marks?: (this: ExtensionScope<TOptions>) => MarkDefinition[]
 
 The contributor returns the list of mark definitions the extension adds to the editor. Each returned `MarkDefinition` must have a unique `name`.
 
-## `MarkDefinition` shape
+## MarkDefinition shape
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -37,7 +37,7 @@ The contributor returns the list of mark definitions the extension adds to the e
 
 For a tour of the built-in marks, see [Text](../nodes/text).
 
-## Example: a custom `highlight` mark
+## Example: a custom highlight mark
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

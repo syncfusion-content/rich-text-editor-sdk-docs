@@ -25,7 +25,7 @@ inputRules?: (this: ExtensionScope<TOptions>) => readonly InputRuleDefinition[]
 
 The contributor returns the list of input rule definitions the extension registers. Each rule matches a pattern against the text immediately before the cursor; when the pattern matches, the rule's handler runs and mutates state through `dispatchCommand`.
 
-## `InputRuleDefinition` shape
+## InputRuleDefinition shape
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -36,7 +36,7 @@ The contributor returns the list of input rule definitions the extension registe
 | `label` | `string` | Optional. Human-readable label for tooling. |
 | `allowUndo` | `boolean` | Optional. Whether the resulting change participates in undo/redo. |
 
-## `InputRuleContext` shape
+## InputRuleContext shape
 
 | Field | Description |
 |-------|-------------|
@@ -61,7 +61,7 @@ dispatchCommand('wrapInHeading', { level: 1 });
 
 The pattern must end with `$` so it only matches when the user has just typed the closing characters of the trigger.
 
-## Example: a `**bold**` input rule
+## Example: a **bold** input rule
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
