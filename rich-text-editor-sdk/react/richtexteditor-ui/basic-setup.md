@@ -21,7 +21,7 @@ After initializing the Modern Rich Text Editor (see [Getting Started](getting-st
 
 {% endhighlight %}
 
-{% highlight jsx tabtitle="App.jsx" %}
+{% highlight js tabtitle="App.jsx" %}
 
 {% include code-snippet/rich-text-editor-sdk/react/richtexteditor-ui/basic-setup/app/App.jsx %}
 
@@ -84,7 +84,7 @@ toolbarSettings={{
 ```
 {% endraw %}
 
-See [Toolbar](toolbar/types.md) for layout, floating behavior, and toolbar events.
+See [Toolbar](toolbar/types) for layout, floating behavior, and toolbar events.
 
 ## Configure image settings
 

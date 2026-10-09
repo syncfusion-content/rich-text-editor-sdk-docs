@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: ['FontColor', 'BackgroundColor']
+};
+
 function App() {
     return (
         <RichTextEditorUIComponent
-            toolbarSettings={{
-                items: ['FontColor', 'BackgroundColor']
-            }}
+            toolbarSettings={toolbarSettings}
             placeholder='Type something ...'
         />
     );
