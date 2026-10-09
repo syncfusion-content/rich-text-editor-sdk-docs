@@ -22,7 +22,7 @@ This page demonstrates how to build a custom extension using the contributors co
 - A keyboard shortcut that cycles through the configured variables and dispatches `insertVariable`.
 
 The following example demonstrates the Document Variable extension.
-
+{% raw %}
 ```html
   <div class="variable-hint">
     Type <code>{{ '{' }}{{ '{' }}customerName{{ '}' }}{{ '}' }}</code> in the editor to convert it into a variable chip, click a button to insert one, or press <kbd>Mod</kbd>+<kbd>Alt</kbd>+<kbd>v</kbd> to cycle through the list.
@@ -38,6 +38,7 @@ The following example demonstrates the Document Variable extension.
 
 <div #editor></div>
 ```
+{% endraw %}
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
