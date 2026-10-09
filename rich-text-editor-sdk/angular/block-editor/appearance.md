@@ -110,23 +110,22 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/main.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.component.html %}
+{% highlight html tabtitle="app.html" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.html %}
 {% endhighlight %}
-{% highlight css tabtitle="styles.css" %}
-{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/styles.css %}
+{% highlight css tabtitle="app.css" %}
+{% include code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization/src/app.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/block-editor/theme-customization" %}
-
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/block-editor/theme-customization" %}
 
 ## Using Theme Studio
 
