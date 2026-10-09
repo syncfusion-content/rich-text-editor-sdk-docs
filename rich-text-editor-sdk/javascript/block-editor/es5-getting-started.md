@@ -49,14 +49,7 @@ Add the following styles inside the `my-app/index.html` file to include the `tai
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
 
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-blockeditor/styles/tailwind3.css" rel="stylesheet">
+<link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@{{site.ej2version}}/styles/blockeditor/index.css" rel="stylesheet">
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,14 +102,7 @@ blockeditor.appendTo('#blockeditor_default');
     <meta name="author" content="Syncfusion">
 
     <!-- Essential JS 2 Block Editor's dependent tailwind3 theme -->
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet"/>
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-blockeditor/styles/tailwind3.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@{{site.ej2version}}/styles/blockeditor/index.css" rel="stylesheet">
 
      <!-- Essential JS 2 all script -->
     <script src="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/dist/ej2.min.js" type="text/javascript"></script>

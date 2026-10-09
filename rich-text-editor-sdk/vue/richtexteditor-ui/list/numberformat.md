@@ -29,14 +29,7 @@ The Rich Text Editor supports the following numbering formats for ordered lists:
 - `'upper-roman'` - Uppercase Roman numerals (I, II, III, ...)
 - `'lower-greek'` - Lowercase Greek letters (α, β, γ, ...)
 
-**Default Formats:**
-By default, the Rich Text Editor provides six standard number formats accessible from the toolbar dropdown:
-- Number
-- Lower Greek
-- Lower Roman
-- Upper Alpha
-- Lower Alpha
-- Upper Roman
+> **Default Formats:** By default, the Rich Text Editor provides six standard number formats accessible from the toolbar dropdown: Number, Lower Greek, Lower Roman, Upper Alpha, Lower Alpha, Upper Roman.
 
 The following example demonstrates how to add the number format list in toolbar of the Vue Modern Rich Text Editor.
 

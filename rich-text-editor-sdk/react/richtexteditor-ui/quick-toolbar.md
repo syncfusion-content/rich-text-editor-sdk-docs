@@ -20,9 +20,9 @@ The Modern Rich Text Editor exposes the Quick Toolbar through one configuration 
 | `enable` | `boolean` | `true` | Master switch for all quick toolbars. |
 | `appendTo` | `string` | `null` | Mounts the popup to the document body or specified selector to escape clipping inside narrow or scroll-constrained containers. |
 | `text` | `ToolbarItem[]` | `null` | Items shown when text is selected. |
-| `image` | `ImageQuickToolbarItem[]` | `['AltText', 'Caption', '\|', 'Align', 'Display', 'WrapText', '\|', 'Dimension', 'Replace', 'Remove']` | Items shown when an image is selected. |
+| `image` | `ImageQuickToolbarItem[]` | `['AltText', 'Caption', '`&#124;`', 'Align', 'Display', 'WrapText', '`&#124;`', 'Dimension', 'Replace', 'Remove']` | Items shown when an image is selected. |
 | `link` | `LinkQuickToolbarItem[]` | `['Open', 'Copy', 'Edit', 'Remove']` | Items shown when the caret is inside a link. |
-| `table` | `TableQuickToolbarItem[]` | `['Header', 'Remove', '\|', 'Row', 'Column', '\|', 'CellBackgroundColor', 'Align', 'VerticalAlign']` | Items shown when the caret is inside a table. |
+| `table` | `TableQuickToolbarItem[]` | `['Header', 'Remove', '`&#124;`', 'Row', 'Column', '`&#124;`', 'CellBackgroundColor', 'Align', 'VerticalAlign']` | Items shown when the caret is inside a table. |
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ The Text Quick Toolbar (`quickToolbarSettings.text`) accepts the full `ToolbarIt
 | Built-in identifier | `'Bold'` | Use the editor's built-in handler. |
 | Built-in with config | `{ item: 'Bold', align: 'Right' }` | Override the label of a built-in. |
 | Custom item | `{ actionId: 'save', id: 'save', text: 'Save' }` | Wire a user-defined action (this section). |
-| Separator | `'\|'` | Visual divider between groups. |
+| Separator | &#124; | Visual divider between groups. |
 
 Add `actionId` (and optional shortcut labels) to the toolbar item to make it route through `toolbarSettings.itemClicked`:
 
@@ -230,7 +230,7 @@ type TableQuickToolbarItem = 'Row' | 'Column' | 'Header' | 'CellBackgroundColor'
 | `VerticalAlign` | Opens the vertical-align picker (top / middle / bottom). |
 | `Align` | Opens the horizontal-align picker (left / center / right). |
 | `Remove` | Deletes the table. |
-| &#124;| Visual separator. |
+|  &#124; | Visual separator. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
 ### Image Quick Toolbar items
@@ -249,7 +249,7 @@ type ImageQuickToolbarItem = 'AltText' | 'Caption' | 'Align' | 'Display' | 'Wrap
 | `Dimension` | Opens the dimension editor (width / height). |
 | `Replace` | Opens the file picker to replace the image source. |
 | `Remove` | Deletes the image. |
-| &#124;| Visual separator. |
+|  &#124; | Visual separator. |
 | `CustomToolbarItem` | A user-defined item routed through `toolbarSettings.itemClicked`. |
 
 ### Text Quick Toolbar items

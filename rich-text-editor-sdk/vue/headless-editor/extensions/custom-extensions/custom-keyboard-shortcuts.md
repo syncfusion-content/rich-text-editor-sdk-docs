@@ -80,6 +80,6 @@ Both `Mod-b` (built-in) and `Mod-Shift-c` (this extension) toggle bold.
 
 When two extensions register the same key, the editor dispatches them in registration order. The first handler that returns `true` consumes the key. To opt out, return `false` from your handler and let the next extension handle the key.
 
-## Merging with `extend`
+## Merging with extend
 
 When you call `extend` on an extension that already defines shortcuts, the editor merges the two maps. Override keys win; the base extension's keys are preserved. See [Extend an Extension](extend) for the full merge semantics.

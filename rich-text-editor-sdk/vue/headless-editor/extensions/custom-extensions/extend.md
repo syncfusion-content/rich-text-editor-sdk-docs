@@ -66,7 +66,7 @@ prioritizedExtension.config.priority; // 10
 {% endhighlight %}
 {% endtabs %}
 
-## Special case: `keyboardShortcuts` merging
+## Special case: keyboardShortcuts merging
 
 `keyboardShortcuts` is merged rather than replaced when both the base and the override define it. The override is applied on top of the base, so the override can add or replace individual bindings without losing the base's bindings.
 

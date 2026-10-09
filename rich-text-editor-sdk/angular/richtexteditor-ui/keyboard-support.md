@@ -78,7 +78,7 @@ Default shortcuts use standard cross-platform modifier keys:
 
 ## Configuring Keyboard Shortcuts
 
-You can override default shortcut key combinations or assign custom combinations using the `keyBindings` property.
+You can override default shortcut key combinations or assign custom combinations using the [`keyBindings`](https://ej2.syncfusion.com/angular/documentation/api/richtexteditor-ui/index-default#keybindings) property.
 
 ### Syntax Rules
 
@@ -107,4 +107,4 @@ Use the keyBindings property to customize or override the default keyboard short
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/angular/richtexteditor-ui/keyboard-support/Keyboard-support/" %}
+{% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/richtexteditor-ui/keyboard-support/Keyboard-support/" %}
