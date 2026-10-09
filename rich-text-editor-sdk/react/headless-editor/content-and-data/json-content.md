@@ -213,4 +213,4 @@ This pattern is safe because `getDocument()` and `setDocument()` operate on the 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/json-content/" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/content-and-data/json-content/" %} -->
