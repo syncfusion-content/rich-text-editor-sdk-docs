@@ -100,6 +100,8 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 - **Restrict** the popup to a subset of built-ins.
 - **Reorder** items — the array order is the popup order.
 - **Add** custom items alongside or instead of built-ins.
+- **Remove** specific groups, for example to hide all `Media` items.
+
 {% raw %}
 ```ts
 <RichTextEditorUIComponent
@@ -123,6 +125,8 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 />
 ```
 {% endraw %}
+
+The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/react/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/react/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
 
 Items are filtered as the user types after `/`. The popup narrows to items whose `text` or `description` matches the typed query. Backspace restores the full list.
 
@@ -179,7 +183,7 @@ The [`itemSelect`](https://ej2.syncfusion.com/documentation/api/richtexteditor-u
 | `isInteracted` | `boolean` | `true` when the selection was triggered by user interaction (mouse, keyboard, or touch); `false` for programmatic selection. |
 | `item` | `HTMLLIElement` | The selected DOM list item. |
 | `itemData` | `ISlashCommandItem` | The data of the selected item, matching the entry declared in `slashCommandSettings.items`. |
-| `originalEvent` | `MouseEvent \| KeyboardEvent \| TouchEvent` | The original browser event that triggered the selection. |
+| `originalEvent` | `MouseEvent  `&#124;` KeyboardEvent  `&#124;` TouchEvent` | The original browser event that triggered the selection. |
 | `cancel` | `boolean` | Set to `true` inside the handler to suppress the editor's default command execution. |
 
 The event fires for every selection, including built-in items. For built-in items, the default dispatch happens after the handler returns; setting `cancel` suppresses it. For custom items there is no default dispatch, so the handler is the only place where the action runs.

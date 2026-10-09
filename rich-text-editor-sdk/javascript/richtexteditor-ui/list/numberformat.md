@@ -29,14 +29,7 @@ The Rich Text Editor supports the following numbering formats for ordered lists:
 - `'upper-roman'` - Uppercase Roman numerals (I, II, III, ...)
 - `'lower-greek'` - Lowercase Greek letters (α, β, γ, ...)
 
-**Default Formats:**
-By default, the Rich Text Editor provides six standard number formats accessible from the toolbar dropdown:
-- Number
-- Lower Greek
-- Lower Roman
-- Upper Alpha
-- Lower Alpha
-- Upper Roman
+> **Default Formats:** By default, the Rich Text Editor provides six standard number formats accessible from the toolbar dropdown: Number, Lower Greek, Lower Roman, Upper Alpha, Lower Alpha, Upper Roman.
 
 The following example demonstrates how to add the number format list in toolbar of the JavaScript Modern Rich Text Editor.
 
@@ -62,7 +55,7 @@ The following example demonstrates how to add the number format list in toolbar 
 
 ## Custom List Items
 
-You can customize which number formats are available in the toolbar by modifying the `numberFormatListItems` property. This allows you to define a subset of supported formats or add custom ones tailored to your application's needs.
+You can customize which number formats are available in the toolbar by modifying the [`numberFormatListItems`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/listSettings#numberFormatListItems) property. This allows you to define a subset of supported formats or add custom ones tailored to your application's needs.
 
 **Property:** `listSettings.numberFormatListItems`
 

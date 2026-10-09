@@ -219,7 +219,7 @@ The following table quick toolbar items are currently unavailable:
 
 HTML content cannot be loaded directly into the appended `RichTextEditorUI` DOM element.
 
-To load content into the editor, configure the content using the `value` property along with the `valueFormat` setting.
+To load content into the editor, configure the content using the [`value`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#value) property along with the [`valueFormat`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#valueFormat) setting.
 
 ### Supported Value Formats
 
@@ -240,7 +240,7 @@ valueFormat: 'json',
 value: jsonData
 ```
 
-The `value` property can be configured with either an HTML string or JSON data to load content into the Rich Text Editor UI.
+The [`value`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#value) property can be configured with either an HTML string or JSON data to load content into the Rich Text Editor UI.
 
 ---
 

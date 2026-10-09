@@ -22,8 +22,6 @@ Editing extensions add the commands, keyboard shortcuts, and runtime behavior th
 | [Text Alignment](editing/text-align) | `setTextAlign` and `unsetTextAlign` commands, `Ctrl/Cmd+Shift+L/E/R/J` shortcuts. |
 | [Indent and Outdent](editing/indent-outdent) | `indent` and `outdent` commands, shape-aware <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> handling. |
 
-## Preview sample
-
 The example below mounts an editor with the editing extensions enabled.
 
 {% tabs %}
@@ -38,4 +36,4 @@ The example below mounts an editor with the editing extensions enabled.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing" %} -->

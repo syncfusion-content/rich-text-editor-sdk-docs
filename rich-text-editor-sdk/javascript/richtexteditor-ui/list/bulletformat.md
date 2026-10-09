@@ -26,11 +26,7 @@ The Rich Text Editor supports the following bullet styles for unordered lists:
 - `'circle'` - Hollow circle bullet (○)
 - `'square'` - Square bullet (■)
 
-**Default Styles:**
-By default, the Rich Text Editor provides three standard bullet styles accessible from the toolbar dropdown:
-- Disc
-- Circle
-- Square
+> **Default Styles:** By default, the Rich Text Editor provides three standard bullet styles accessible from the toolbar dropdown: Disc, Circle, and Square.
 
 The following example demonstrates how to add the bullet format list in toolbar of the JavaScript Modern Rich Text Editor.
 
@@ -57,7 +53,7 @@ The following example demonstrates how to add the bullet format list in toolbar 
 
 ## Custom List Items
 
-You can customize which bullet styles are available in the toolbar by modifying the `bulletFormatListItems` property. This allows you to define a subset of supported styles or add custom ones tailored to your application's needs.
+You can customize which bullet styles are available in the toolbar by modifying the [`bulletFormatListItems`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/listSettings#bulletFormatListItems) property. This allows you to define a subset of supported styles or add custom ones tailored to your application's needs.
 
 **Property:** `listSettings.bulletFormatListItems`
 
@@ -100,7 +96,7 @@ Commands provide programmatic control over BulletFormat List operations. Use the
 
 ```javascript
 // Insert a bulleted list with default disc bullets
-this.parent.commands().numberedList().apply();
+this.parent.commands().bulletList().apply();
 ```
 
 ### Change Bullet Style

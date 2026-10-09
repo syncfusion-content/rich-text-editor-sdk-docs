@@ -21,10 +21,8 @@ This page demonstrates how to build a custom extension using the contributors co
 - A `domSpecs` block that renders the mark as a chip and parses the same shape back.
 - A keyboard shortcut that cycles through the configured variables and dispatches `insertVariable`.
 
-## Preview sample
-
-The runnable example below mounts the editor with the Document Variable extension.
-
+The following example demonstrates the Document Variable extension.
+{% raw %}
 ```html
   <div class="variable-hint">
     Type <code>{{ '{' }}{{ '{' }}customerName{{ '}' }}{{ '}' }}</code> in the editor to convert it into a variable chip, click a button to insert one, or press <kbd>Mod</kbd>+<kbd>Alt</kbd>+<kbd>v</kbd> to cycle through the list.
@@ -40,6 +38,7 @@ The runnable example below mounts the editor with the Document Variable extensio
 
 <div #editor></div>
 ```
+{% endraw %}
 
 ```ts
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';

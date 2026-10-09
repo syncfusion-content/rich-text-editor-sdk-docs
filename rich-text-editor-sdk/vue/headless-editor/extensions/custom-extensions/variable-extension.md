@@ -21,9 +21,7 @@ This page demonstrates how to build a custom extension using the contributors co
 - A `domSpecs` block that renders the mark as a chip and parses the same shape back.
 - A keyboard shortcut that cycles through the configured variables and dispatches `insertVariable`.
 
-## Preview sample
-
-The runnable example below mounts the editor with the Document Variable extension.
+The example below mounts the editor with the Document Variable extension.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -34,4 +32,4 @@ The runnable example below mounts the editor with the Document Variable extensio
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue3/headless-editor/extensions/custom-extensions/variable/index" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue3/headless-editor/extensions/custom-extensions/variable/index" %} -->

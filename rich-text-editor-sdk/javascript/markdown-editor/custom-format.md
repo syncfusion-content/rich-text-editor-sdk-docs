@@ -20,3 +20,16 @@ You can define custom symbols for different Markdown formatting options:
 * Use `+` for unordered lists instead of `-`.
 * Use `__text__` for bold text instead of `**text**`.
 * Use `_text_` for italic text instead of `*text*`.
+
+The following example demonstrates how to customize Markdown tags in the editor:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/markdown-editor/markdown-cs5" %}

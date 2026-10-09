@@ -62,7 +62,7 @@ The following example demonstrates how to add the number format list in toolbar 
 
 ## Custom List Items
 
-You can customize which number formats are available in the toolbar by modifying the `numberFormatListItems` property. This allows you to define a subset of supported formats or add custom ones tailored to your application's needs.
+You can customize which number formats are available in the toolbar by modifying the [`numberFormatListItems`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/listSettings#numberFormatListItems) property. This allows you to define a subset of supported formats or add custom ones tailored to your application's needs.
 
 **Property:** `listSettings.numberFormatListItems`
 

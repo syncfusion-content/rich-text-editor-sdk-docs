@@ -29,7 +29,9 @@ editor.appendTo('#default');
 
 ## save
 
-Persists the current editor content into the component's `value` property.
+| Method | Description |
+|----------|------|
+| [`save`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#save) | Persists the current editor content into the component's [`value`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#value) property. |
 
 ```javascript
 editor.save();
@@ -37,8 +39,9 @@ editor.save();
 
 ## focusIn
 
-Moves focus into the editor's editable area and triggers the editor's focus-in
-handling.
+| Method | Description |
+|----------|------|
+| [`focusIn`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#focusIn) | Moves focus into the editor's editable area and triggers the editor's focus-in handling. |
 
 ```javascript
 editor.focusIn();
@@ -46,8 +49,9 @@ editor.focusIn();
 
 ## focusOut
 
-Removes focus from the editor's editable area and triggers the editor's
-focus-out handling.
+| Method | Description |
+|----------|------|
+| [`focusOut`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#focusOut) | Removes focus from the editor's editable area and triggers the editor's focus-out handling. |
 
 ```javascript
 editor.focusOut();
@@ -55,7 +59,9 @@ editor.focusOut();
 
 ## getDocument
 
-Returns the current editor document.
+| Method | Description |
+|----------|------|
+| [`getDocument`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#getDocument) | Returns the current editor document. |
 
 ```javascript
 var document = editor.getDocument();
@@ -63,7 +69,9 @@ var document = editor.getDocument();
 
 ## getHtml
 
-Returns the current editor content as an HTML string.
+| Method | Description |
+|----------|------|
+| [`getHtml`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#getHtml) | Returns the current editor content as an HTML string. |
 
 ```javascript
 var html = editor.getHtml();
@@ -72,7 +80,9 @@ console.log('Rich Text Editor HTML: ', html);
 
 ## getText
 
-Returns the current editor content as plain text.
+| Method | Description |
+|----------|------|
+| [`getText`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#getText) | Returns the current editor content as plain text. |
 
 ```javascript
 var text = editor.getText();
@@ -81,7 +91,9 @@ console.log('Rich Text Editor text: ', text);
 
 ## updateToolbarItems
 
-Applies a batch of toolbar item updates (add, remove) to the editor's toolbar.
+| Method | Description |
+|----------|------|
+| [`updateToolbarItems`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#updateToolbarItems) | Applies a batch of toolbar item updates (add, remove) to the editor's toolbar. |
 
 ```javascript
 editor.updateToolbarItems([

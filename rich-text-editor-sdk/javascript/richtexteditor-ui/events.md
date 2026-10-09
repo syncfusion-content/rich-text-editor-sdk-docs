@@ -17,7 +17,7 @@ The Modern Rich Text Editor component emits various events to notify your applic
 
 ## change
 
-The `change` event is raised whenever the editor content changes, such as when text is inserted, deleted, moved, replaced, or formatted. Its event arguments provide the updated document and selection states, the type of action performed, and the nodes affected by the change.
+The [`change`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#change) event is raised whenever the editor content changes, such as when text is inserted, deleted, moved, replaced, or formatted. Its event arguments provide the updated document and selection states, the type of action performed, and the nodes affected by the change.
 
 The following example demonstrates how to handle the `change` event and display the action performed along with the primary affected element.
 
@@ -43,7 +43,7 @@ The following example demonstrates how to handle the `change` event and display 
 
 ## created
 
-The `created` event is raised after the Rich Text Editor UI component has been successfully initialized and rendered. Use this event to perform setup tasks that depend on the editor instance or its rendered DOM elements.
+The [`created`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#created) event is raised after the Rich Text Editor UI component has been successfully initialized and rendered. Use this event to perform setup tasks that depend on the editor instance or its rendered DOM elements.
 
 The following example demonstrates how to handle the `created` event and display a notification confirming that the editor is ready for interaction.
 
@@ -69,7 +69,7 @@ The following example demonstrates how to handle the `created` event and display
 
 ## destroyed
 
-The `destroyed` event is raised when the Rich Text Editor component is destroyed and removed from the application. It can be used to perform cleanup tasks, such as releasing resources, removing event handlers, or resetting related state.
+The [`destroyed`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#destroyed) event is raised when the Rich Text Editor component is destroyed and removed from the application. It can be used to perform cleanup tasks, such as releasing resources, removing event handlers, or resetting related state.
 
 The following example demonstrates how to handle the `destroyed` event and log the destruction notification to confirm cleanup and resource release.
 
@@ -95,7 +95,7 @@ The following example demonstrates how to handle the `destroyed` event and log t
 
 ## focus
 
-The `focus` event is raised when the editor receives focus, either through user interaction or a method call. Its event arguments identify the event name, indicate whether the focus was user-initiated, and specify the focus source.
+The [`focus`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#focus) event is raised when the editor receives focus, either through user interaction or a method call. Its event arguments identify the event name, indicate whether the focus was user-initiated, and specify the focus source.
 
 The following example demonstrates how to handle the `focus` event and log a notification indicating that the editor has received focus and is ready for user input.
 
@@ -121,7 +121,7 @@ The following example demonstrates how to handle the `focus` event and log a not
 
 ## blur
 
-The `blur` event is raised when the editor loses focus, either through user interaction or a method call. Its event arguments identify the event name, indicate whether the blur was caused by user interaction, provide the focus event, and specify the source.
+The [`blur`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#blur) event is raised when the editor loses focus, either through user interaction or a method call. Its event arguments identify the event name, indicate whether the blur was caused by user interaction, provide the focus event, and specify the source.
 
 The following example demonstrates how to handle the `blur` event and log a notification indicating that the editor has lost focus and user input has ceased.
 
@@ -147,7 +147,7 @@ The following example demonstrates how to handle the `blur` event and log a noti
 
 ## actionBegin
 
-The `actionBegin` event is raised before an editor action is executed, such as inserting, deleting, formatting, or modifying content. It provides details about the pending action and allows applications to monitor or customize the editor behavior before the operation begins.
+The [`actionBegin`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#actionbegin) event is raised before an editor action is executed, such as inserting, deleting, formatting, or modifying content. It provides details about the pending action and allows applications to monitor or customize the editor behavior before the operation begins.
 
 The following example demonstrates how to handle the `actionBegin` event and log pre-action events with timestamps to track when operations are initiated before they complete.
 
@@ -173,7 +173,7 @@ The following example demonstrates how to handle the `actionBegin` event and log
 
 ## actionComplete
 
-The `actionComplete` event is raised after an editor action, such as inserting, deleting, formatting, or modifying content, has been completed. It provides details about the completed action so applications can respond, update related state, or perform follow-up processing.
+The [`actionComplete`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#actioncomplete) event is raised after an editor action, such as inserting, deleting, formatting, or modifying content, has been completed. It provides details about the completed action so applications can respond, update related state, or perform follow-up processing.
 
 The following example demonstrates how to handle the `actionComplete` event and log post-action events with timestamps to track when operations have successfully finished and are ready for follow-up processing.
 
