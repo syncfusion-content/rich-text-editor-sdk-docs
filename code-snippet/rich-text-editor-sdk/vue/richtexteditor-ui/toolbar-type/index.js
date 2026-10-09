@@ -1,19 +1,38 @@
 import Vue from 'vue';
-import { RichTextEditorUIPlugin } from '@syncfusion/ej2-vue-richtexteditor-ui';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { CheckBox } from '@syncfusion/ej2-buttons';
+import { RichTextEditorUIPlugin, RichTextEditorUIComponent } from '@syncfusion/ej2-vue-richtexteditor-ui';
 
-Vue.use(RichTextEditorUIPlugin);
+Vue.component('ejs-richtexteditor-ui', RichTextEditorUIComponent);
 
 new Vue({
   el: '#app',
-  template: `<div>
+  template: `<div style="display: flex; gap: 15px;">
     <ejs-richtexteditor-ui
       ref="editor"
       :width="width"
       :toolbarSettings="toolbarSettings">
     </ejs-richtexteditor-ui>
-  </div>`,
+    <div class="property-section">
+      <p style="margin-bottom: 15px;">Properties</p>
+      <div class="editor-toolbar-properties">
+        <div class="form-group" style="margin-bottom: 15px;">
+          <label class="form-label property-label">Toolbar Type</label>
+          <input type="text" id="toolbarType" name="toolbarType" class="form-control" />
+        </div>
+        
+        <div class="form-group" style="margin-bottom: 15px;">
+          <label class="form-label property-label">Toolbar Position</label>
+          <input type="text" id="toolbarPosition" name="toolbarPosition" class="form-control" />
+        </div>
+        
+        <div class="form-group">
+          <input type="checkbox" id="float" checked="false">
+        </div>
+      </div>
+    </div>
+  </div>
+  `,
   data: function () {
     return {
       width: '70%',
