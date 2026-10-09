@@ -28,7 +28,7 @@
     "@angular/core": "21.2.22",
     "@angular/forms": "21.2.22",
     "@angular/platform-browser": "21.2.22",
-    "@angular/router": "21.2.22",
+    "@angular/router": "21.2.24",
     "@syncfusion/ej2-angular-buttons": "^32.1.24",
     "@syncfusion/ej2-angular-popups": "^32.1.25",
     "@syncfusion/ej2-angular-richtexteditor": "^32.1.25",
