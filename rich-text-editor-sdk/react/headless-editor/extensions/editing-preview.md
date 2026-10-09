@@ -36,4 +36,4 @@ The example below mounts an editor with the editing extensions enabled.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing" %} -->
