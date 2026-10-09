@@ -1,7 +1,9 @@
 import {
     HeadlessEditor,
     basicExtensions,
-    defineExtension
+    defineExtension,
+placeholderExtension
+    
 } from '@syncfusion/ej2-headless-editor';
 
 interface VariableDef {
@@ -141,7 +143,7 @@ const variableExtension = defineExtension({
         return {
             marks: {
                 variable: {
-                    toDOM(attrs) {
+                    toDOM(attrs: any ) {
                         return [
                             'span',
                             { 'data-type': 'variable', 'data-name': attrs['name'], 'class': 'variable-chip' },
@@ -151,7 +153,7 @@ const variableExtension = defineExtension({
                     parseDOM: [
                         {
                             tag: 'span[data-type="variable"]',
-                            getAttrs(node) {
+                            getAttrs(node: any) {
                                 const element = node as HTMLElement;
                                 return {
                                     name: element.getAttribute('data-name') ?? '',
@@ -170,7 +172,7 @@ const variableExtension = defineExtension({
 
 const headlessEditor: HeadlessEditor = HeadlessEditor.create({
     enableTabKey: true,
-    extensions: [basicExtensions, variableExtension]
+    extensions: [basicExtensions, variableExtension, placeholderExtension]
 });
 
 editorRef = headlessEditor;

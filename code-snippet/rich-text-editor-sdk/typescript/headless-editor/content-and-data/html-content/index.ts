@@ -20,18 +20,29 @@ if (container) {
 
 /* Load HTML Content */
 
-document.getElementById('set-html')?.addEventListener('click', () => {
-    editor.setContent(
-        '<h2>Updated HTML Content</h2><p>This content was loaded using <strong>setContent()</strong>.</p>'
-    );
-});
+const setHtmlButton = document.getElementById('set-html');
 
-document.getElementById('clear-content')?.addEventListener('click', () => {
-    editor.setContent('');
-});
+if (setHtmlButton) {
+    setHtmlButton.addEventListener('click', () => {
+        editor.setContent(
+            '<h2>Updated HTML Content</h2><p>This content was loaded using <strong>setContent()</strong>.</p>'
+        );
+    });
+}
 
+const clearContentButton = document.getElementById('clear-content');
+
+if (clearContentButton) {
+    clearContentButton.addEventListener('click', () => {
+        editor.setContent('');
+    });
+}
 /* Export HTML Content */
 
-document.getElementById('get-html')?.addEventListener('click', () => {
-    showOutput(editor.getHtml());
-});
+const getHtmlButton = document.getElementById('get-html');
+
+if (getHtmlButton) {
+    getHtmlButton.addEventListener('click', () => {
+        showOutput(editor.getHtml());
+    });
+}

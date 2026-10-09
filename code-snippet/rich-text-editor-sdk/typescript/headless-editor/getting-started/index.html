@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syncfusion TypeScript Headless Editor</title>
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@{{site.ej2version}}/styles/headless-editor/index.css" rel="stylesheet">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet">
         <!--style reference from app-->
     <link href="index.css" rel="stylesheet" />
 
@@ -17,6 +17,18 @@
 <body>
     <div id='loader'>LOADING....</div>
     <div id="container">
+        <div id="toolbar">
+        <button id="undo" class="e-icons e-undo" title="Undo (Ctrl+Z)"></button>
+        <button id="redo" class="e-icons e-redo" title="Redo (Ctrl+Y)"></button>
+        <button id="bold" class="e-icons e-bold" title="Bold (Ctrl+B)"></button>
+        <button id="italic" class="e-icons e-italic" title="Italic (Ctrl+I)"></button>
+        <button id="underline" class="e-icons e-underline" title="Underline (Ctrl+U)"></button>
+        <button id="strikethrough" class="e-icons e-strikethrough" title="Strike Through"></button>
+        <button id="inlineCode" class="e-icons e-insert-code" title="Inline Code (Ctrl+`)"></button>
+        <button id="blockquote" class="e-icons e-blockquote" title="Blockquote (Ctrl+Alt+Q)"></button>
+        <button id="bulletList" class="e-icons e-list-unordered" title="Bulleted List"></button>
+        <button id="orderedList" class="e-icons e-list-ordered" title="Numbered List"></button>
+    </div>
         <div id="headless-editor"></div>
     </div>
     <script type="module" src="index.ts"></script>
