@@ -1,6 +1,16 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: [
+        'Bold', 'Italic', 'Underline', 'Strikethrough',
+        '|',
+        'FontSize', 'FontName', 'FontColor', 'BackgroundColor',
+        '|',
+        'InlineCode', 'ClearFormat'
+    ]
+};
+
 function App() {
     const editorRef = React.useRef<RichTextEditorUIComponent>(null);
 
@@ -59,15 +69,7 @@ function App() {
     return (
         <RichTextEditorUIComponent
             ref={editorRef}
-            toolbarSettings={{
-                items: [
-                    'Bold', 'Italic', 'Underline', 'Strikethrough',
-                    '|',
-                    'FontSize', 'FontName', 'FontColor', 'BackgroundColor',
-                    '|',
-                    'InlineCode', 'ClearFormat'
-                ]
-            }}
+            toolbarSettings={toolbarSettings}
             placeholder='Type something ...'
         />
     );
