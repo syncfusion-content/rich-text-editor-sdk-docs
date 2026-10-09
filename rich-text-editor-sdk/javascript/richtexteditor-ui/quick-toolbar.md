@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Quick Toolbar in JavaScript Modern Rich Text Editor
 
-The **Quick Toolbar** is a contextual popup toolbar that appears next to the current selection inside the editable area, giving fast access to the most relevant commands without moving focus to the top of the editor. It is wired through `quickToolbarSettings` on `RichTextEditorUI`.
+The **Quick Toolbar** is a contextual popup toolbar that appears next to the current selection inside the editable area, giving fast access to the most relevant commands without moving focus to the top of the editor. It is wired through [`quickToolbarSettings`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#quicktoolbarsettings) on `RichTextEditorUI`.
 
 The Modern Rich Text Editor exposes the Quick Toolbar through one configuration object with five sub-surfaces:
 
@@ -42,7 +42,7 @@ The Modern Rich Text Editor exposes the Quick Toolbar through one configuration 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/javascript/richtexteditor-ui/quick-toolbar/quicktoolbar-settings/" %}
 
-When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`, `link`, or `table` is non-empty, the corresponding popup is built and bound to the relevant editor surface. Any sub-surface whose array is empty (or `null`) is **not** instantiated — set `text` to `null` to disable the text quick toolbar while keeping the image / link / table ones.
+When [`quickToolbarSettings.enable`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#quicktoolbarsettings) is `true` and at least one of `text`, `image`, `link`, or `table` is non-empty, the corresponding popup is built and bound to the relevant editor surface. Any sub-surface whose array is empty (or `null`) is **not** instantiated — set `text` to `null` to disable the text quick toolbar while keeping the image / link / table ones.
 
 > **Note:** Inline mode can be achieved by disabling the main toolbar and
 > adding the text quick-toolbar items on the `quickToolbarSettings.text`
@@ -100,7 +100,7 @@ When `quickToolbarSettings.enable` is `true` and at least one of `text`, `image`
 
 `text` is the array of items shown when a non-collapsed text selection exists inside the editor. The popup opens on `mouseup` and `keyup` (when a non-collapsed selection exists), and closes on `Escape`, on outside interaction, or on `selectionchange` that empties the selection.
 
-The default is `null`, which means the Text Quick Toolbar is **not** rendered unless you supply a non-empty `text` array. The Text Quick Toolbar is the only quick-toolbar surface that accepts the full `ToolbarItem` union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator.
+The default is `null`, which means the Text Quick Toolbar is **not** rendered unless you supply a non-empty `text` array. The Text Quick Toolbar is the only quick-toolbar surface that accepts the full [`ToolbarItem`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbaritem) union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ For customising the items that appear in the Text Quick Toolbar (built-in identi
 
 A **Custom Toolbar Item** is a user-supplied toolbar entry that does not map to a built-in editor command. It is declared through the `CustomToolbarItem` interface and is dispatched through the editor's `toolbarSettings.itemClicked` event.
 
-The Text Quick Toolbar (`quickToolbarSettings.text`) accepts the full `ToolbarItem` union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator. The item shapes that can be mixed into any Text Quick Toolbar array are:
+The Text Quick Toolbar [`quickToolbarSettings.text`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/quicktoolbarsettings#text) accepts the full `ToolbarItem` union — built-in identifiers, built-in-with-config objects, custom items, and the `'|'` separator. The item shapes that can be mixed into any Text Quick Toolbar array are:
 
 | Item form | Example | Purpose |
 | --- | --- | --- |
@@ -150,7 +150,7 @@ The Text Quick Toolbar (`quickToolbarSettings.text`) accepts the full `ToolbarIt
 | Custom item | `{ actionId: 'save', id: 'save', text: 'Save' }` | Wire a user-defined action (this section). |
 | Separator | &#124; | Visual divider between groups. |
 
-Add `actionId` (and optional shortcut labels) to the toolbar item to make it route through `toolbarSettings.itemClicked`:
+Add `actionId` (and optional shortcut labels) to the toolbar item to make it route through [`toolbarSettings.itemClicked`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings#itemclicked):
 
 ```ts
 export interface CustomToolbarItem extends ItemModel {
@@ -162,7 +162,7 @@ export interface CustomToolbarItem extends ItemModel {
 
 | Field | Type | Required | Purpose |
 | --- | --- | --- | --- |
-| `actionId` | `string` | Yes | Stable identifier — read off the clicked item in `toolbarSettings.itemClicked` to route the action. |
+| `actionId` | `string` | Yes | Stable identifier — read off the clicked item in [`toolbarSettings.itemClicked`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings#itemclicked) to route the action. |
 | `windowsShortcutText` | `string` | No | Tooltip text for the Windows keyboard shortcut. |
 | `macShortcutText` | `string` | No | Tooltip text for the macOS keyboard shortcut. |
 
@@ -180,7 +180,7 @@ interface ToolbarItemClickedEventArgs {
 }
 ```
 
-`ToolbarItemClickedEventArgs` is defined in `@syncfusion/ej2-richtexteditor-ui`'s toolbar settings model and is the declared type of the `toolbarSettings.itemClicked` event handler. If your import surface only re-exports it indirectly, declare the handler args shape inline (the type is structural).
+[`ToolbarItemClickedEventArgs`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/ToolbarItemClickedEventArgs) is defined in `@syncfusion/ej2-richtexteditor-ui`'s toolbar settings model and is the declared type of the `toolbarSettings.itemClicked` event handler. If your import surface only re-exports it indirectly, declare the handler args shape inline (the type is structural).
 
 {% tabs %}
 

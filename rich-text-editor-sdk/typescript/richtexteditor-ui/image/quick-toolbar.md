@@ -134,7 +134,7 @@ editor.appendTo('#editor');
 
 ## Customizing Quick Toolbar Items
 
-The Modern Rich Text Editor provides comprehensive customization options for the image quick toolbar, offering a rich set of tools including 'AltText', 'Caption', 'Align', 'Display', 'WrapText', 'Dimension', 'Replace', and 'Remove'. By configuring these toolbar items through the `quickToolbarSettings` property, you can create a tailored editing experience that streamlines image operations.
+The Modern Rich Text Editor provides comprehensive customization options for the image quick toolbar, offering a rich set of tools including 'AltText', 'Caption', 'Align', 'Display', 'WrapText', 'Dimension', 'Replace', and 'Remove'. By configuring these toolbar items through the [`quickToolbarSettings`](https://helpej2.syncfusion.com/documentation/api/richtexteditor-ui/quickToolbarSettings) property, you can create a tailored editing experience that streamlines image operations.
 
 **Default Quick Toolbar Items for Images:**
 The default image quick toolbar includes:

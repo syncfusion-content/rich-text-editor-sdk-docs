@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Custom Toolbar Items in TypeScript Modern Rich Text Editor
 
-Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customToolbarItem) also accepts item objects for tools of your own. Give each one an `actionId` — a unique identifier you'll check for in the `itemClicked` handler — plus the usual presentation properties (`prefixIcon`/`suffixIcon`, `tooltipText`, `align`, `cssClass`, `disabled`, and so on, the same set the underlying EJ2 Toolbar item model uses).
+Alongside the built-in strings, [`toolbarSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings#items) also accepts item objects for tools of your own. Give each one an `actionId` — a unique identifier you'll check for in the `itemClicked` handler — plus the usual presentation properties (`prefixIcon`/`suffixIcon`, `tooltipText`, `align`, `cssClass`, `disabled`, and so on, the same set the underlying EJ2 Toolbar item model uses).
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ Refer to the sample above: clicking the word-count button reads `args.item.actio
 
 ## updatedToolbarStatus Event
 
-The `updatedToolbarStatus` event is raised after the toolbar synchronizes its visual state with the current editor selection or cursor formatting. Its event arguments provide the active inline marks, block-level formats, and resolved font and color styles.
+The [`updatedToolbarStatus`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings#updatedtoolbarstatus) event is raised after the toolbar synchronizes its visual state with the current editor selection or cursor formatting. Its event arguments provide the active inline marks, block-level formats, and resolved font and color styles.
 
 The following example demonstrates how to handle the `updatedToolbarStatus` event and display which text formatting styles (bold, italic, underline, strikethrough) are currently active at the cursor position.
 

@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Inline Format Commands in JavaScript Modern Rich Text Editor
 
-The Modern Rich Text Editor exposes every inline format through two equivalent surfaces — a toolbar click and the fluent `editor.commands().<builder>().<setter>().apply()` chain. Both routes converge on the same `actionBegin` / `actionComplete` pipeline and share identical cancellation and history semantics.
+The Modern Rich Text Editor exposes every inline format through two equivalent surfaces — a toolbar click and the fluent `editor.commands().<builder>().<setter>().apply()` chain. Both routes converge on the same [`actionBegin`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#actionbegin) / [`actionComplete`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/index-default#actionComplete) pipeline and share identical cancellation and history semantics.
 
 The set of available inline formats is on [Supported Formats](supported-formats). The configuration surface (`fontSize`, `fontFamily`, `fontColor`, `backgroundColor`) is on [Options](options).
 
