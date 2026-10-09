@@ -21,7 +21,7 @@ The `blockQuote` command does not require a payload. It toggles a blockquote on 
 | --- | --- | --- | --- |
 | `blockQuote` | — | `Quote` | `Blockquote` |
 
-Add the `Quote` toolbar item alongside the other block-format buttons, and add `Blockquote` to `slashCommandSettings.items` if you want to expose it through the slash-command popup as well.
+Add the `Quote` toolbar item alongside the other block-format buttons, and add `Blockquote` to [`slashCommandSettings.items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#items) if you want to expose it through the slash-command popup as well.
 
 {% tabs %}
 
