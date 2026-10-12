@@ -7,7 +7,6 @@
 - [HTML Import & Export](#html-import--export)
 - [JSON Serialization](#json-serialization)
 - [Copy-Paste & Clipboard](#copy-paste--clipboard)
-- [Common Patterns](#common-patterns)
 
 ## Reading Content
 
@@ -187,13 +186,14 @@ If an error occurs during serialization, `getHtml()` returns an empty string ins
 `editor.setContent(html)` replaces the current document with the parsed HTML in a single transaction:
 
 ```ts
-const success = editor.setContent('<h1>Welcome</h1><p>Start typing...</p>');
-if (success) {
-    console.log('HTML imported');
-} else {
-    console.log('Failed to parse HTML');
-}
+// Replace the document with HTML
+editor.setContent('<h1>New Title</h1><p>Fresh content.</p>');
+
+// Reset the document to a single empty paragraph
+editor.setContent('');
 ```
+
+`setContent()` returns `true` when the HTML is parsed and dispatched, and `false` when parsing fails. On failure, the existing document and selection are left untouched, no events fire, and a diagnostic warning is emitted.
 
 > If both `EditorConfig.document` (JSON) and `EditorConfig.content` (HTML) are provided, `document` takes precedence and `content` is ignored. HTML loading is not run through the clipboard sanitizer — the clipboard sanitizer is handled separately by the clipboard pipeline and does not apply to `setContent()` or `EditorConfig.content`.
 
@@ -292,132 +292,3 @@ The sanitizer is:
 - **Not configurable.** There is no public allow-list, deny-list, or set of allowed styles for the paste path. `EditorConfig.clipboard` does not expose these settings.
 - **Internal.** The sanitizer itself is an implementation detail and is not part of the public API surface.
 - **Paste-only.** It is applied to clipboard content entering the editor. It is **not** applied to `setContent()` or `EditorConfig.content`.
-
----
-
-## Common Patterns
-
-### Pattern 1: Auto-Save to Storage
-
-Save content to `localStorage` on every change through the `contentChanged` config callback:
-
-```ts
-const STORAGE_KEY = 'editor-content';
-
-const editor = HeadlessEditor.create({
-    extensions: [basicExtensions],
-    contentChanged: () => {
-        const content = editor.getHtml();
-        localStorage.setItem(STORAGE_KEY, content);
-    }
-});
-
-// Load on init
-const saved = localStorage.getItem(STORAGE_KEY);
-if (saved) {
-    editor.setContent(saved);
-}
-```
-
-### Pattern 2: JSON Export Button
-
-Export the document as a JSON file:
-
-```ts
-function exportAsJSON() {
-    const doc = editor.getDocument();
-    const json = JSON.stringify(doc, null, 2);
-
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'document.json';
-    a.click();
-
-    URL.revokeObjectURL(url);
-}
-
-document.getElementById('exportBtn').onclick = exportAsJSON;
-```
-
-### Pattern 3: HTML Export Button
-
-Export the document as a full HTML file:
-
-```ts
-function exportAsHTML() {
-    const html = editor.getHtml();
-    const fullHtml = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Document</title>
-        </head>
-        <body>
-            ${html}
-        </body>
-        </html>
-    `;
-
-    const blob = new Blob([fullHtml], { type: 'text/html' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'document.html';
-    a.click();
-
-    URL.revokeObjectURL(url);
-}
-
-document.getElementById('exportBtn').onclick = exportAsHTML;
-```
-
-### Pattern 4: Import Document
-
-Load a document from a file input (HTML or JSON):
-
-```ts
-document.getElementById('importBtn').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    const text = await file.text();
-
-    try {
-        if (file.name.endsWith('.json')) {
-            // JSON import
-            const doc = JSON.parse(text);
-            editor.setDocument(doc);
-        } else {
-            // HTML import
-            editor.setContent(text);
-        }
-    } catch (error) {
-        console.error('Import failed:', error);
-    }
-});
-```
-
-### Pattern 5: Get Word Count
-
-Display character and word count whenever the document changes through the `contentChanged` config callback:
-
-```ts
-function updateStats() {
-    const text = editor.getText();
-    const charCount = text.length;
-    const wordCount = text.split(/\s+/).filter(w => w.length > 0).length;
-
-    document.getElementById('stats').textContent =
-        `Words: ${wordCount} | Characters: ${charCount}`;
-}
-
-const editor = HeadlessEditor.create({
-    extensions: [basicExtensions],
-    contentChanged: updateStats
-});
-```
