@@ -421,17 +421,3 @@ const editor = HeadlessEditor.create({
     contentChanged: updateStats
 });
 ```
-
-### Pattern 6: Clear Document with Confirmation
-
-Clear all content with a confirmation prompt:
-
-```ts
-function clearDocument() {
-    if (confirm('Clear all content? This cannot be undone.')) {
-        editor.setContent('');
-    }
-}
-
-document.getElementById('clearBtn').onclick = clearDocument;
-```
