@@ -15,7 +15,7 @@ This section guides you through setting up and configuring a **Rich Text Editor*
 
 To get started quickly with our [.NET MAUI Rich Text Editor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html), you can check the below video.
 
-{% youtube "https://www.youtube.com/watch?v=1r8OrZxG_HI" %}
+<style>#MAUIMapLineLayerVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIRichTextEditorVideoTutorial' src='https://www.youtube.com/embed/1r8OrZxG_HI'></iframe>
 
 {% tabcontents %}
 {% tabcontent Visual Studio %}
