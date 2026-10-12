@@ -292,3 +292,235 @@ The sanitizer is:
 - **Not configurable.** There is no public allow-list, deny-list, or set of allowed styles for the paste path. `EditorConfig.clipboard` does not expose these settings.
 - **Internal.** The sanitizer itself is an implementation detail and is not part of the public API surface.
 - **Paste-only.** It is applied to clipboard content entering the editor. It is **not** applied to `setContent()` or `EditorConfig.content`.
+
+---
+
+## End-to-End Example
+
+The full application scaffold used by the UG exercises the get / set / update content operations together. The example mounts an editor with `basicExtensions` and `placeholderExtension`, wires a button for each read and write API, and prints the result in an output region.
+
+### `index.ts`
+
+```ts
+import { HeadlessEditor, basicExtensions, placeholderExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor = HeadlessEditor.create({
+    extensions: [basicExtensions, placeholderExtension]
+});
+
+const container = document.getElementById('headless-editor');
+const output = document.getElementById('output');
+
+function showOutput(value: unknown): void {
+    if (output) {
+        output.textContent = typeof value === 'string'
+            ? value
+            : JSON.stringify(value, null, 2);
+    }
+}
+
+if (container) {
+    editor.mount(container);
+
+    editor.setContent(
+        '<p>Hello world! The Headless Editor. Edit this content and try the actions below.</p><p>This is the second paragraph.</p>'
+    );
+}
+
+/* Get Content */
+
+document.getElementById('get-document')?.addEventListener('click', () => {
+    showOutput(editor.getDocument());
+});
+
+document.getElementById('get-html')?.addEventListener('click', () => {
+    showOutput(editor.getHtml());
+});
+
+document.getElementById('get-text')?.addEventListener('click', () => {
+    showOutput(editor.getText());
+});
+
+document.getElementById('get-selection-text')?.addEventListener('click', () => {
+    showOutput(editor.getSelectionText());
+});
+
+/* Set Content */
+
+document.getElementById('set-html')?.addEventListener('click', () => {
+    editor.setContent(
+        '<h2>New Title</h2><p>Fresh content.</p><p>This is another paragraph.</p>'
+    );
+});
+
+document.getElementById('set-document')?.addEventListener('click', () => {
+    editor.setDocument({
+        type: 'document',
+        attrs: {},
+        marks: [],
+        schemaVersion: 1,
+        children: [
+            {
+                type: 'paragraph',
+                attrs: {},
+                marks: [],
+                children: [
+                    {
+                        type: 'text',
+                        text: 'Content set using setDocument().',
+                        attrs: {},
+                        marks: []
+                    }
+                ]
+            },
+            {
+                type: 'paragraph',
+                attrs: {},
+                marks: [],
+                children: [
+                    {
+                        type: 'text',
+                        text: 'Second paragraph.',
+                        attrs: {},
+                        marks: []
+                    }
+                ]
+            }
+        ]
+    });
+});
+
+document.getElementById('clear-content')?.addEventListener('click', () => {
+    editor.setContent('');
+});
+
+/* Update Content */
+
+document.getElementById('insert-text')?.addEventListener('click', () => {
+    editor.commands.insertText({
+        text: 'Hello world'
+    });
+});
+
+document.getElementById('replace-text')?.addEventListener('click', () => {
+    editor.commands.replaceText({
+        from: { offset: 0 },
+        to: { offset: 12 },
+        text: 'Updated text'
+    });
+});
+
+document.getElementById('insert-node')?.addEventListener('click', () => {
+    editor.commands.insertNode({
+        parentPos: 0,
+        index: 1,
+        node: {
+            type: 'paragraph',
+            attrs: {},
+            marks: [],
+            children: [
+                {
+                    type: 'text',
+                    text: 'Inserted paragraph.',
+                    attrs: {},
+                    marks: []
+                }
+            ]
+        }
+    });
+});
+```
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Working with Content - TypeScript Headless Editor</title>
+
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="headless-editor"></div>
+        <div class="actions">
+            <h3>Get Content</h3>
+            <div class="button-group">
+                <button id="get-document">Get Document</button>
+                <button id="get-html">Get HTML</button>
+                <button id="get-text">Get Text</button>
+                <button id="get-selection-text">Get Selection Text</button>
+            </div>
+            <h3>Set Content</h3>
+            <div class="button-group">
+                <button id="set-html">Set HTML</button>
+                <button id="set-document">Set Document</button>
+                <button id="clear-content">Clear Content</button>
+            </div>
+            <h3>Update Content</h3>
+            <div class="button-group">
+                <button id="insert-text">Insert Text</button>
+                <button id="replace-text">Replace Text</button>
+                <button id="insert-node">Insert Node</button>
+            </div>
+        </div>
+        <h3>Output</h3>
+        <pre id="output"></pre>
+    </div>
+    <script type="module" src="index.ts"></script>
+</body>
+
+</html>
+```
+
+### `index.css`
+
+```css
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#headless-editor {
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions h3 {
+    margin: 20px 0 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+#output {
+    min-height: 120px;
+    margin-top: 10px;
+    padding: 15px;
+    overflow: auto;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+}
+```
