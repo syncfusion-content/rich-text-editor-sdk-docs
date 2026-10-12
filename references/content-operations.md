@@ -1,0 +1,437 @@
+# Content Operations
+
+## Table of Contents
+- [Reading Content](#reading-content)
+- [Setting Content](#setting-content)
+- [Updating Content In-Place](#updating-content-in-place)
+- [HTML Import & Export](#html-import--export)
+- [JSON Serialization](#json-serialization)
+- [Copy-Paste & Clipboard](#copy-paste--clipboard)
+- [Common Patterns](#common-patterns)
+
+## Reading Content
+
+After a Headless Editor instance is mounted, you can read the current content in different shapes. None of these APIs dispatch a transaction, so calling them from a `contentChanged` listener is safe.
+
+### Four Read APIs
+
+| API | Returns | When to use |
+|-----|---------|------------|
+| `getDocument()` | `DocumentRoot` | Persist or diff the editor state as a Syncfusion-native JSON tree. |
+| `getHtml()` | `string` | Export the schema-driven HTML serialization. |
+| `getText()` | `string` | Read plain text with all formatting stripped. |
+| `getSelectionText()` | `string` | Read only the text inside the current selection. |
+
+> `getDocument()` throws if the editor has been destroyed through `destroy()`. The other accessors return an empty string on error so that read paths never throw.
+
+### Get Structured Document
+
+Read the structured document. The returned `DocumentRoot` exposes the document tree through its `children` array:
+
+```ts
+const doc = editor.getDocument();
+console.log(doc.type); // 'document'
+doc.children.forEach((node) => console.log(node.type));
+```
+
+### Get HTML
+
+Serialize the document to HTML:
+
+```ts
+const html = editor.getHtml();
+console.log(html); // "<p>Hello <strong>world</strong></p>"
+```
+
+### Get Plain Text
+
+Read the plain text of the whole document:
+
+```ts
+const text = editor.getText();
+console.log(text); // "Hello world"
+```
+
+### Get Selected Text
+
+Read only the currently selected text. Returns an empty string when the selection is collapsed to a caret:
+
+```ts
+const selected = editor.getSelectionText();
+if (selected) {
+  console.log(`User selected: ${selected}`);
+}
+```
+
+---
+
+## Setting Content
+
+Use `setContent()` or `setDocument()` to assign new content to a mounted editor. Both APIs swap the document body in a single transaction through the same schema-driven parser used at create-time, so the editor instance, view, plugins, and undo stack are preserved. The replacement is a single undo step, and the selection is reset to the start of the new document.
+
+Both APIs are all-or-nothing:
+
+- If the input parses successfully, `contentChanged` and `documentChanged` (with `action: 'Replaced'`) fire once.
+- If parsing fails, a diagnostic warning is emitted, the existing document and selection are left untouched, no events fire, and the method returns `false`.
+
+### Assign HTML with `setContent`
+
+`setContent()` accepts an HTML string. Pass an empty or whitespace-only string to clear the document to a single empty paragraph:
+
+```ts
+// Replace the document with HTML
+editor.setContent('<h1>New Title</h1><p>Fresh content.</p>');
+
+// Clear the document to a single empty paragraph
+editor.setContent('');
+```
+
+> Use `setContent('')` to clear the editor in one transaction instead of dispatching multiple delete commands. This keeps undo/redo intact and fires `contentChanged` once.
+
+### Assign a Structured Document with `setDocument`
+
+`setDocument()` accepts a `DocumentRoot`, which is the same shape that `getDocument()` returns. Use it when you have a structured document round-tripped from the editor or persisted from an external store.
+
+```ts
+editor.setDocument({
+  type: 'document',
+  attrs: {},
+  marks: [],
+  schemaVersion: 1,
+  children: [
+    { type: 'paragraph', attrs: {}, marks: [], children: [] }
+  ]
+});
+```
+
+> The `setDocument()` payload is validated against the active schema. Unknown node types or marks are rejected without mutating the document.
+
+---
+
+## Updating Content In-Place
+
+In-place changes are dispatched through typed commands on the command facade. The Headless Editor ships with three commands dedicated to content updates:
+
+- `insertText` – insert plain text at the current selection or at an explicit offset.
+- `replaceText` – replace the text in an offset-based range.
+- `insertNode` – insert a structured `EditorNode` into a parent at a given index.
+
+All three commands execute in a single transaction, participate in undo/redo, and honor the active selection snapshot.
+
+### Insert Text
+
+`insertText` accepts a `text` payload and inserts it at the current selection. `offset` values use ProseMirror document positions. They refer to positions in the document tree rather than character indexes within an individual text node. Pass an `at` payload to target a specific offset instead:
+
+```ts
+// Insert at the current selection
+editor.commands.insertText({ text: 'Hello world' });
+
+// Insert at a specific offset
+editor.commands.insertText({ text: 'Hello world', at: { offset: 0 } });
+```
+
+The command is a no-op when `text` is empty.
+
+### Replace Text in a Range
+
+`replaceText` replaces the plain text between two offsets. Use it to update a segment of an existing paragraph or block without rebuilding the surrounding structure:
+
+```ts
+editor.commands.replaceText({
+  from: { offset: 0 },
+  to:   { offset: 11 },
+  text: 'Updated text'
+});
+```
+
+If `from.offset` is greater than or equal to `to.offset`, the command silently no-ops and the document is left untouched.
+
+### Insert a Node
+
+`insertNode` inserts a structured `EditorNode` into a parent at a given index. The parent is identified by its PM position (`parentPos`), the `index` is the zero-based insertion position within the parent's children, and `node` is the `EditorNode` to insert:
+
+```ts
+editor.commands.insertNode({
+  parentPos: 0,
+  index: 1,
+  node: {
+    type: 'paragraph',
+    attrs: {},
+    marks: [],
+    children: []
+  }
+});
+```
+
+The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
+
+---
+
+## HTML Import & Export
+
+The Headless Editor loads HTML through a schema-driven parsing pipeline and exports HTML through a schema-driven serialization pipeline. Both directions are governed by the schema and the extensions registered with the editor, not by a fixed public allow-list of HTML tags.
+
+### Export to HTML
+
+`editor.getHtml()` returns the current document serialized as an HTML string:
+
+```ts
+const html = editor.getHtml();
+console.log(html); // "<p>Hello <strong>world</strong></p>"
+```
+
+If an error occurs during serialization, `getHtml()` returns an empty string instead of throwing.
+
+### Import from HTML
+
+`editor.setContent(html)` replaces the current document with the parsed HTML in a single transaction:
+
+```ts
+const success = editor.setContent('<h1>Welcome</h1><p>Start typing...</p>');
+if (success) {
+    console.log('HTML imported');
+} else {
+    console.log('Failed to parse HTML');
+}
+```
+
+> If both `EditorConfig.document` (JSON) and `EditorConfig.content` (HTML) are provided, `document` takes precedence and `content` is ignored. HTML loading is not run through the clipboard sanitizer — the clipboard sanitizer is handled separately by the clipboard pipeline and does not apply to `setContent()` or `EditorConfig.content`.
+
+---
+
+## JSON Serialization
+
+The Headless Editor exchanges structured content with your application through a Syncfusion-native document tree rooted at `DocumentRoot`. The same `DocumentRoot` shape is used for loading and exporting. You can provide it when creating the editor, set it on a live editor, or read it back as a JSON-serializable object.
+
+### Get Document as JSON
+
+`editor.getDocument()` returns the current document as a `DocumentRoot`. The returned tree uses the same public types that `setDocument()` accepts, so it can be inspected, persisted, or fed straight back into `setDocument()` on a future session:
+
+```ts
+const json = JSON.stringify(editor.getDocument(), null, 2);
+```
+
+### Parse JSON String
+
+To load a document stored as a JSON string, parse the string into a `DocumentRoot` and assign it through the same path. The standard `JSON.parse` and `JSON.stringify` helpers are the source-supported round-trip pattern; the Headless Editor does not expose a dedicated JSON loader:
+
+```ts
+const json = '{"type":"document","schemaVersion":1,"attrs":{},"marks":[],"children":[]}';
+const parsed: DocumentRoot = JSON.parse(json) as DocumentRoot;
+
+editor.setDocument(parsed);
+```
+
+### Round-Trip Example
+
+```ts
+// Get document as JSON
+const doc = editor.getDocument();
+const jsonString = JSON.stringify(doc);
+
+// Later, retrieve and restore
+const restoredDoc = JSON.parse(jsonString) as DocumentRoot;
+editor.setDocument(restoredDoc);
+```
+
+> `getDocument()` and `setDocument()` operate on the same `DocumentRoot` shape, so round-trips are safe.
+
+---
+
+## Copy-Paste & Clipboard
+
+The Headless Editor handles paste automatically through ProseMirror's native clipboard pipeline. There is no public `editor.paste()` method. To observe or customize paste behavior, use the `beforePaste` and `afterPaste` lifecycle callbacks, the corresponding event subscriptions, or the `EditorConfig.clipboard` transformation hooks.
+
+Copy and cut are handled by the browser and the editor's native behavior. The Headless Editor does not expose a public copy or cut API, hook, or event.
+
+### Paste Lifecycle
+
+The `beforePaste` and `afterPaste` callbacks are available as named events through `editor.on(...)`:
+
+```ts
+editor.on('beforePaste', (payload) => {
+  console.log('Pasting content:', payload.content);
+  console.log('Paste event:', payload.event);
+});
+
+editor.on('afterPaste', (payload) => {
+  console.log('Inserted at', payload.insertPosition, 'length', payload.insertedLength);
+});
+```
+
+### Customizing Paste
+
+Use `EditorConfig.clipboard` to register transformation hooks. The two hooks receive a shared `ClipboardTransformContext`:
+
+```ts
+const editor = HeadlessEditor.create({
+  schema,
+  extensions,
+  clipboard: {
+    transformHTML: (html, { editor, source }) => {
+      // Remove unwanted HTML before schema parsing
+      return html.replace(/<figure[^>]*>[\s\S]*?<\/figure>/gi, '');
+    },
+    transformContent: ({ slice }, { editor, source }) => {
+      // Drop foreign marks or restructure nodes
+      return { slice };
+    }
+  }
+});
+```
+
+> The hooks run in this order: HTML sanitizer → `transformHTML` → schema parser → `transformContent` → insertion.
+
+### Clipboard Security
+
+The editor applies a built-in security sanitizer to clipboard HTML before any user-defined transformation. The sanitizer removes dangerous clipboard content before the HTML is passed to the schema parser.
+
+The sanitizer is:
+
+- **Always on.** It cannot be disabled.
+- **Not configurable.** There is no public allow-list, deny-list, or set of allowed styles for the paste path. `EditorConfig.clipboard` does not expose these settings.
+- **Internal.** The sanitizer itself is an implementation detail and is not part of the public API surface.
+- **Paste-only.** It is applied to clipboard content entering the editor. It is **not** applied to `setContent()` or `EditorConfig.content`.
+
+---
+
+## Common Patterns
+
+### Pattern 1: Auto-Save to Storage
+
+Save content to `localStorage` on every change through the `contentChanged` config callback:
+
+```ts
+const STORAGE_KEY = 'editor-content';
+
+const editor = HeadlessEditor.create({
+    extensions: [basicExtensions],
+    contentChanged: () => {
+        const content = editor.getHtml();
+        localStorage.setItem(STORAGE_KEY, content);
+    }
+});
+
+// Load on init
+const saved = localStorage.getItem(STORAGE_KEY);
+if (saved) {
+    editor.setContent(saved);
+}
+```
+
+### Pattern 2: JSON Export Button
+
+Export the document as a JSON file:
+
+```ts
+function exportAsJSON() {
+    const doc = editor.getDocument();
+    const json = JSON.stringify(doc, null, 2);
+
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'document.json';
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
+
+document.getElementById('exportBtn').onclick = exportAsJSON;
+```
+
+### Pattern 3: HTML Export Button
+
+Export the document as a full HTML file:
+
+```ts
+function exportAsHTML() {
+    const html = editor.getHtml();
+    const fullHtml = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Document</title>
+        </head>
+        <body>
+            ${html}
+        </body>
+        </html>
+    `;
+
+    const blob = new Blob([fullHtml], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'document.html';
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
+
+document.getElementById('exportBtn').onclick = exportAsHTML;
+```
+
+### Pattern 4: Import Document
+
+Load a document from a file input (HTML or JSON):
+
+```ts
+document.getElementById('importBtn').addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const text = await file.text();
+
+    try {
+        if (file.name.endsWith('.json')) {
+            // JSON import
+            const doc = JSON.parse(text);
+            editor.setDocument(doc);
+        } else {
+            // HTML import
+            editor.setContent(text);
+        }
+    } catch (error) {
+        console.error('Import failed:', error);
+    }
+});
+```
+
+### Pattern 5: Get Word Count
+
+Display character and word count whenever the document changes through the `contentChanged` config callback:
+
+```ts
+function updateStats() {
+    const text = editor.getText();
+    const charCount = text.length;
+    const wordCount = text.split(/\s+/).filter(w => w.length > 0).length;
+
+    document.getElementById('stats').textContent =
+        `Words: ${wordCount} | Characters: ${charCount}`;
+}
+
+const editor = HeadlessEditor.create({
+    extensions: [basicExtensions],
+    contentChanged: updateStats
+});
+```
+
+### Pattern 6: Clear Document with Confirmation
+
+Clear all content with a confirmation prompt:
+
+```ts
+function clearDocument() {
+    if (confirm('Clear all content? This cannot be undone.')) {
+        editor.setContent('');
+    }
+}
+
+document.getElementById('clearBtn').onclick = clearDocument;
+```
