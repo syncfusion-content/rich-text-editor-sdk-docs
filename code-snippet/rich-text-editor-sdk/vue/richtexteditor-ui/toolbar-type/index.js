@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { CheckBox } from '@syncfusion/ej2-buttons';
-import { RichTextEditorUIPlugin, RichTextEditorUIComponent } from '@syncfusion/ej2-vue-richtexteditor-ui';
+import { RichTextEditorUIComponent } from '@syncfusion/ej2-vue-richtexteditor-ui';
 
 Vue.component('ejs-richtexteditor-ui', RichTextEditorUIComponent);
 
