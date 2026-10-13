@@ -15,6 +15,11 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [EditorConfig](#editorconfig)
 - [Document model](#document-model)
   - [DocumentRoot](#documentroot)
+  - [EditorNode](#editornode)
+  - [TextNode](#textnode)
+  - [EditorState](#editorstate)
+  - [Position](#position)
+  - [Mark](#mark)
 - [Public types](#public-types)
   - [Command](#command)
   - [CommandContext](#commandcontext)
@@ -24,6 +29,7 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [CommandMeta](#commandmeta)
   - [ChainResult](#chainresult)
   - [ValidationError](#validationerror)
+  - [CellSelection](#cellselection)
 - [Payloads](#payloads)
   - [DeleteRangePayload](#deleterangepayload)
   - [SetMarkPayload](#setmarkpayload)
@@ -847,3 +853,315 @@ Arguments supplied during an active resize operation.
 | Property | Type | Description |
 |----------|------|-------------|
 | `editor` | `HeadlessEditor` | The editor instance receiving the paste operation. |
+er, so the input is already stripped of dangerous tags, event-handler attributes, and unsafe URL protocols. Use to strip platform-specific markup, normalize HTML structure, or apply `deniedTags`/`deniedAttrs` rules at the HTML level. Return the (possibly rewritten) HTML string. |
+
+### ClipboardTransformContext
+
+`ClipboardTransformContext` — context passed to clipboard transform hooks. Provides the editor instance and detected source format to allow transform hooks to make context-aware decisions about clipboard content handling.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `editor` | `HeadlessEditor` | The editor instance receiving the paste operation. |
+
+## Document model
+
+### EditorNode
+
+`EditorNode` — base interface for all document nodes. Represents block and container nodes (paragraphs, headings, tables, etc.). Identity is position-based within the document tree; no persistent node IDs are stored on the model.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Node attributes (alignment, indent, color, etc.). |
+| `children` | `EditorNode[]` | Child nodes — empty array for leaf nodes. |
+| `marks` | `Mark[]` | Marks applied to this node (for block-level mark support). |
+| `type` | `string` | The node type name, matching a registered `NodeDefinition`. |
+
+### TextNode
+
+`TextNode` — a leaf node carrying inline text content. Extends `EditorNode` with a text string and inline marks.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Node attributes (alignment, indent, color, etc.). |
+| `children` | `never[]` | `TextNode` has no children. |
+| `marks` | `Mark[]` | Inline marks applied to this text (bold, italic, link, etc.). |
+| `text` | `string` | The raw text string. |
+| `type` | `string` | The node type name, matching a registered `NodeDefinition`. |
+
+### EditorState
+
+`EditorState` — a pure Syncfusion-owned view of the current editor snapshot. Passed to every command via `CommandContext`. Built internally by `ImmediateExecutor` and `ChainExecutor` from PM state — PM types never escape this boundary.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `document` | `DocumentRoot` | The current document root. |
+| `isMounted` | `boolean` | Whether the editor is currently mounted to the DOM. |
+| `selection` | `Selection` | The current selection (cursor / range). |
+
+### Position
+
+`Position` — Position relative to the document tree. A path is the sequence of child indices from the root down to the target node; an empty path points at the document root itself. `offset` carries any character offset inside the resolved node. Together they uniquely identify a cursor location without requiring persistent node IDs.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `offset` | `number` | Zero-based character offset within the resolved node. |
+| `path` | `number[]` | Path from document root to target: each element is a child index. |
+
+### Mark
+
+`Mark` — represents inline formatting applied to text.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Mark attributes — type-safe values only, no PM types. |
+| `type` | `string` | The mark type name (e.g. `'bold'`, `'italic'`, `'link'`). |
+
+## Public types
+
+### CellSelection
+
+`CellSelection` — a selection spanning one or more table cells.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `anchorCellPath` | `number[]` | Path to the anchor (first) cell in the selection. |
+| `headCellPath` | `number[]` | Path to the head (last) cell in the selection. |
+| `type` | `Cell` | Always `SelectionType.Cell`. |
+
+## File upload
+
+### FileUploadHandler
+
+`FileUploadHandler` — product-implemented interface for uploading files. Responsibility: the handler is responsible for HTTP transport, validation, and error handling. The framework (`FileHandler`) owns upload state lifecycle.
+
+The handler must:
+- Validate HTTP response status (throw if `!response.ok`)
+- Parse and validate response schema
+- Validate that `result.url` is a non-empty string
+- Throw on any error (including validation errors)
+- Call `onProgress()` during transfer for UI feedback
+- Respect `AbortSignal` for cancellation
+
+The framework will:
+- Determine terminal state from Promise: `resolve` → completed, `reject` → failed
+- Handle `AbortError` specially: treated as cancelled state
+- Validate `FileUploadResult` contract and reject if invalid
+- Write upload state (progress, completed, failed, cancelled) directly to registry
+- Notify UI via `UploadStateRegistry` subscriptions
+
+#### Methods
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `upload(request)` | Upload a file and return hosted URL. The `request` argument is a `FileUploadRequest` (file + signal + progress callback). | `Promise<FileUploadResult>` |
+| `cancel(uploadId)` | Optional: cancel an in-flight upload. Called when the user/extension cancels the upload. The handler should abort any pending network operations. | `void` |
+
+### FileUploadProgress
+
+`FileUploadProgress` — progress information during file upload.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `loaded` | `number` | Bytes transferred so far. |
+| `percentage` | `number` | Computed percentage (0–100) if `total` is available. |
+| `total` | `number` | Total bytes (undefined if server doesn't provide). |
+
+### FileUploadRequest
+
+`FileUploadRequest` — request parameters for file upload. The product handler receives this object and must: validate HTTP response status before treating as success, validate response schema and return valid `FileUploadResult`, throw on any error, call `onProgress()` during transfer, and respect the `AbortSignal` for cancellation.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `file` | `File` | The file being uploaded. |
+| `id` | `string` | Unique upload identifier (UUID). Stable for this upload lifecycle. |
+| `onProgress` | `Object` | Progress callback for real-time UI feedback. Called during transfer. |
+| `signal` | `AbortSignal` | `AbortSignal` for cancellation support. |
+
+### FileUploadResult
+
+`FileUploadResult` — result of a successful file upload. The handler MUST validate the HTTP response and server schema before returning this object. The framework will reject the upload if `url` is missing/null/empty/not a string, or if the Promise rejects for any reason (including validation errors).
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `url` | `string` | Hosted URL to embed in document. **Required**: non-empty string. |
+| `fileName` | `string` | Optional: canonical filename on server. |
+| `height` | `number` | Optional: image height (for image files). |
+| `mimeType` | `string` | Optional: server-confirmed MIME type. |
+| `size` | `number` | Optional: server-side file size in bytes. |
+| `width` | `number` | Optional: image width (for image files). |
+
+## Selection helpers
+
+### SelectedNode
+
+`SelectedNode` — A selected node with its corresponding DOM element.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `dom` | `HTMLElement \| null` | Live DOM element that renders this node in the editor. |
+| `node` | `EditorNode \| TextNode` | The selected `EditorNode` or `TextNode`. PM-free. |
+| `pmPos` | `number` | The ProseMirror position of this node's start (0-based offset). |
+
+### SelectedCell
+
+`SelectedCell` — Cell-specific info for table interactions.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `colIndex` | `number` | Zero-based column index of this cell within its row. |
+| `dom` | `HTMLElement \| null` | Live DOM element that renders this node in the editor. |
+| `node` | `EditorNode \| TextNode` | The selected `EditorNode` or `TextNode`. PM-free. |
+| `pmPos` | `number` | The ProseMirror position of this node's start (0-based offset). |
+| `row` | `EditorNode` | The row (`tableRow`) `EditorNode` containing this cell. |
+| `rowIndex` | `number` | Zero-based row index of this cell within its table. |
+| `table` | `EditorNode` | The containing table `EditorNode`. |
+
+### SelectionContext
+
+`SelectionContext` — PM-free formatting and structural context for the current selection.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `marks` | `SelectionMark[]` | Gets the formatting marks applied to the current selection. The state indicates whether the mark is active across the entire selection or mixed across the selected content. |
+| `nodes` | `SelectionNode[]` | Gets the relevant structural nodes associated with the current selection. |
+
+### SelectionMark
+
+`SelectionMark` — represents a formatting mark in the current selection.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Gets the attributes associated with the formatting mark. |
+| `type` | `string` | Gets the name of the formatting mark. |
+
+### SelectionNode
+
+`SelectionNode` — represents a relevant structural node in the current selection.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Gets the attributes associated with the structural node. |
+| `type` | `string` | Gets the name of the structural node type. |
+
+### SelectionSnapshotStatus
+
+`SelectionSnapshotStatus` — Lifecycle status of a selection snapshot. Describes the snapshot's position in the save-restore workflow.
+
+| Value | Description |
+|-------|-------------|
+| `pending` | Snapshot captured; waiting to be applied to live PM state before next command. |
+| `restored` | Snapshot has been applied to the live PM state. |
+| `consumed` | Command that used this snapshot has completed; snapshot is archived but inspectable. |
+| `stale` | Document structure has changed since snapshot was captured; restore may fail. |
+| `partial` | Snapshot partially restored (e.g., some nodes were deleted); restore succeeded partially. |
+
+## ResizableNodeView
+
+### ResizableNodeView
+
+`ResizableNodeView` — pure-DOM resize engine for the Headless Editor. Provides in-place drag-based resizing for atom nodes (images, videos, embeds) without any dependency on ProseMirror or external libraries. The wrapper is PM-free and can be used standalone in any HTML environment.
+
+**Usage:**
+- Wrap an element with `ResizableNodeView`
+- Provide an `onResizeStop` callback to persist the new dimensions (e.g., via `editor.commands.updateImage()`)
+- Optionally provide `onResize` and `onResizeStart` callbacks for interim feedback
+- Call `setSelected(true)` when the PM node is selected to show resize handles
+- Call `destroy()` when the node is removed to clean up listeners
+
+**Features:**
+- Multiple drag handle directions (configurable: top-left, top-right, bottom-left, bottom-right)
+- Minimum and maximum size constraints
+- Aspect ratio preservation option
+- Custom handle templates via `createCustomHandle()`
+- Keyboard support (arrow keys + Shift for fine tuning, Escape to cancel)
+- Touch and mouse event support
+- CSS class-based styling (configurable: wrapper, handle, resizing, selected states)
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `contentElement` | `HTMLElement \| null` | Public: optional content slot for consumers with editable children. |
+| `element` | `HTMLElement` | The wrapped element passed at construction. |
+| `wrapper` | `HTMLElement` | Public: wrapper element, also returned as `NodeView` `dom`. Always non-null after construction. |
+
+#### Methods
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `selectNode()` | NodeView `selectNode`: show resize handles and apply the `selected` class. Handles are only rendered when editing is also enabled (not read-only). | `void` |
+| `deselectNode()` | NodeView `deselectNode`: hide resize handles and remove the `selected` class. Any in-flight drag is allowed to finish naturally; handles are removed after. | `void` |
+| `update(attrs)` | Re-seeds engine size from new `attrs` and applies it to the wrapped element's inline style. Always returns `true` (the engine never rejects updates; consumer-side filtering lives in the NodeView bridge). | `boolean` |
+| `ignoreMutation(_mutation)` | Returns `true` for every mutation observed inside the engine's wrapper, so PM never remounts the NodeView due to inline `style.width` / `style.height` writes during drag, handle DOM insertions/removals during `setEnabled`, or any host-app tool that mutates the wrapper. | `boolean` |
+| `destroy()` | Tears down every listener, removes every handle, cancels any in-flight drag, and removes the wrapper from its parent if any. Safe to call multiple times. After `destroy`, no callbacks (`onResize` / `onResizeStop` / `onUpdate`) fire. | `void` |
+
+### ResizableNodeDimensions
+
+`ResizableNodeDimensions` — pixel dimensions applied to the resizable element.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `height` | `number` | Height in pixels. |
+| `width` | `number` | Width in pixels. |
+
+### ResizableNodeViewConfig
+
+`ResizableNodeViewConfig` — public constructor options for the generic `ResizableNodeView` engine. The engine is pure DOM and has no awareness of Editor, Commands, or PM node types. The constructor accepts an element, optional behavior settings, and lifecycle callbacks. Persistence is owned by the consumer and must be performed from `onResizeStop` when required.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `element` | `HTMLElement` | The DOM element whose dimensions are resized. |
+| `onResize` | `Object` | Fires for each pointer movement during an active resize operation with the current constraint-adjusted dimensions. |
+| `onResizeStart` | `Object` | Fires before the resize operation is initialized. Return `true` to cancel the operation before the element changes. |
+| `onResizeStop` | `Object` | Fires exactly once when a resize operation ends, before the consumer persists the final dimensions. |
+| `onUpdate` | `Object` | Fires after `update(attrs)` re-seeds the resize state. Consumers can use this to synchronize their element with updated node attributes. |
+| `options` | `ResizableNodeViewOptions` | Optional behavior settings for handles, constraints, and aspect ratio. |
+
+### ResizableNodeViewCssClasses
+
+`ResizableNodeViewCssClasses` — optional class-name overrides for the resize wrapper and handles. Each field defaults to the engine's documented default class. Setting any field to truthy overrides that default but does not affect the other fields.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `handle` | `string` | Class applied to each resize handle. |
+| `resizing` | `string` | Class toggled on the wrapper while resizing is active. |
+| `selected` | `string` | Class toggled on the wrapper while the node is selected. |
+| `wrapper` | `string` | Class applied to the resize wrapper. |
+
+### ResizableNodeViewOptions
+
+`ResizableNodeViewOptions` — behavior options for the generic resize engine.
+
+**Defaults:**
+- `directions`: `['bottom-left', 'bottom-right', 'top-left', 'top-right']`
+- `min`: `{ width: 8, height: 8 }`
+- `max`: `undefined`
+- `preserveAspectRatio`: `false`
+- `cssClasses`: `{}`
+- `createCustomHandle`: `undefined`
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `createCustomHandle` | `Object` | Creates a custom handle for a direction. If the callback does not return an `HTMLElement`, the engine creates its default handle. |
+| `cssClasses` | `ResizableNodeViewCssClasses` | CSS class overrides for the resize UI. |
+| `directions` | `ResizableNodeViewDirection[]` | Directions for which handles are rendered. |
+| `max` | `Partial<ResizableNodeDimensions>` | Maximum dimensions permitted during resizing, in pixels. |
+| `min` | `Partial<ResizableNodeDimensions>` | Minimum dimensions permitted during resizing, in pixels. |
+| `preserveAspectRatio` | `boolean` | Whether to preserve the element aspect ratio for every resize operation. When `false`, holding `Shift` preserves the aspect ratio during a drag. |
+
+### ResizableNodeViewDirection
+
+`ResizableNodeViewDirection` — eight directions supported by the generic resize handle system. `top` / `right` / `bottom` / `left` are edge handles (single-axis). `top-right` / `top-left` / `bottom-right` / `bottom-left` are corner handles (both axes). Edges span the wrapper's full width or height; corners attach only at the named intersection.
+
+| Value | Description |
+|-------|-------------|
+| `top` | Edge handle: top edge. |
+| `right` | Edge handle: right edge. |
+| `bottom` | Edge handle: bottom edge. |
+| `left` | Edge handle: left edge. |
+| `top-right` | Corner handle: top-right intersection. |
+| `top-left` | Corner handle: top-left intersection. |
+| `bottom-right` | Corner handle: bottom-right intersection. |
+| `bottom-left` | Corner handle: bottom-left intersection. |
