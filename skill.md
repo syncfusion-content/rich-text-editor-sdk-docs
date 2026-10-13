@@ -21,108 +21,125 @@ Use the Headless Editor when you need:
 
 ## Documentation and Navigation Guide
 
+This skill bundles 12 reference files that map to the Syncfusion TypeScript Headless Editor documentation. Use the navigation below to locate the right reference for a given task.
+
 ### Getting Started & Setup
 📄 **Read:** [references/getting-started.md](references/getting-started.md)
-- Installation and package setup
-- Creating your first editor instance
-- Theme configuration and CSS imports
-- Basic mounting and DOM integration
-- Environment setup with Vite or other bundlers
+- Prerequisites (Node.js 24.13.0 or higher)
+- Creating a TypeScript application with Vite
+- Installing `@syncfusion/ej2-headless-editor` and the Tailwind 3 theme
+- Adding the CSS reference and the main editor library
+- Running the application
 
-### Editor Core API
+### Editor API
 📄 **Read:** [references/editor-api.md](references/editor-api.md)
-- HeadlessEditor class and factory method
-- Editor configuration options
-- Lifecycle hooks (created, destroyed, contentChanged, selectionChanged)
-- Mounting and unmounting editors
-- Event subscriptions
-- Editor destruction and cleanup
+- Creating an editor with `HeadlessEditor.create()`
+- Editor configuration (`content`, `document`, `extensions`, behavior toggles, lifecycle hooks)
+- Mounting and unmounting
+- Updating configuration with `setOptions()`
+- Disposing an editor with `destroy()`
+- Reading content (`getDocument`, `getHtml`, `getText`, `getSelectionText`)
+- Setting content (`setContent`, `setDocument`)
 
 ### Document Structure & Content Model
 📄 **Read:** [references/document-structure.md](references/document-structure.md)
 - Document tree architecture
-- Node and mark concepts
-- Schema structure and versioning
-- Block-level vs inline content
-- Document serialization formats
+- Document root identity
+- Content layers (block-level nodes, inline content, marks)
+- Schema stability
+- Document examples
 
-### Commands & Interactions
+### Core Commands
 📄 **Read:** [references/core-commands.md](references/core-commands.md)
-- Command execution API
-- Text formatting commands (bold, italic, underline)
-- Block manipulation commands
-- List operations (bullets, ordered, task lists)
-- Selection and cursor management
-- History (undo/redo) commands
+- Command execution (`editor.commands.*`, `editor.execute`)
+- Command return values
+- Checking availability (`editor.can()`, `canRun()`)
+- Default injectable commands
+- Content commands (`insertText`, `deleteText`, `replaceText`, `deleteRange`)
+- Selection commands (`setSelection`, `clearSelection`)
+- Command chaining (`editor.chain()`)
 
 ### Content Operations
 📄 **Read:** [references/content-operations.md](references/content-operations.md)
-- Reading document content programmatically
-- Updating and manipulating content
+- Reading content (`getDocument`, `getHtml`, `getText`, `getSelectionText`)
+- Setting content (`setContent`, `setDocument`)
+- Updating content in-place via typed commands
 - HTML import and export
-- JSON serialization and deserialization
+- JSON serialization
 - Copy-paste and clipboard handling
+- End-to-end example
 
 ### Extensions & Plugin System
 📄 **Read:** [references/extensions-guide.md](references/extensions-guide.md)
-- Extension architecture and lifecycle
-- basicExtensions preset overview
-- Registering extensions
-- Extension priorities and loading order
-- Composing custom extension stacks
+- `basicExtensions` preset
+- Adding extensions alongside the preset
+- Registering extensions individually
+- How extensions compose
+- Defining a custom extension
+- Extension config fields (summary)
+- Reusing and extending extensions
+- Extension lifecycle
+- End-to-end example: document variable
+
+### Custom Extensions & Plugins (Deep Dive)
+📄 **Read:** [references/custom-extensions.md](references/custom-extensions.md)
+- Custom node types
+- Custom marks
+- Custom commands
+- Custom keyboard shortcuts
+- Custom input rules
+- Custom plugins
+- Custom DOM specifications
+- Custom node views
+- Custom attributes
+- Layering a node view on an existing node
+- Extension constraints
 
 ### Node Types Reference
 📄 **Read:** [references/node-types.md](references/node-types.md)
-- Document, paragraph, and text nodes
-- Headings and blockquotes
-- Code blocks and inline code
-- Lists (bullet, ordered, task)
-- Tables and images
-- Special nodes (callout, collapsible, horizontal rule)
+- Document, paragraph, heading, block quote, code block
+- Bullet list and ordered list
+- Task list
+- Text node
+- Hard break, horizontal rule
+- Table, image, callout, collapsible
 
 ### Mark Types Reference
 📄 **Read:** [references/mark-types.md](references/mark-types.md)
-- Text formatting marks (bold, italic, underline, strikethrough)
-- Font styling (color, family, size, background)
-- Inline code and links
-- Text transforms (upper-case, lower-case)
-- Subscript and superscript
+- Bold, italic, underline, strikethrough
+- Link (with URL validation)
+- Inline code
+- Font color, background color, font family, font size
+- Subscript, superscript
+- `toLowerCase`, `toUpperCase`
 
-### Custom Extensions & Plugins
-📄 **Read:** [references/custom-extensions.md](references/custom-extensions.md)
-- Defining custom extensions
-- Creating custom commands and keyboard shortcuts
-- Custom input rules for autoformatting
-- Custom node types and marks
-- Custom node views (DOM rendering)
-- Lifecycle hooks and priority management
-- Advanced plugin patterns
-
-### Keyboard Handling
+### Keyboard Shortcuts
 📄 **Read:** [references/keyboard-shortcuts.md](references/keyboard-shortcuts.md)
-- Default keyboard shortcuts (selection, navigation, history, formatting, lists)
-- Block shortcuts via input rules (`# `, `## `, `- `, `1. `, `> `, `` ``` ``, etc.)
+- All default keyboard shortcuts (selection, navigation, history, formatting, lists)
+- Block shortcuts via input rules (`#`, `##`, `-`, `1.`, `>`, `` ``` ``, etc.)
+- How shortcuts are matched (keymap assembly and priority)
 - Disabling shortcuts (`enableInputRules`, `enableTabKey`)
 - Custom keyboard shortcuts via `defineExtension` and `keyboardShortcuts()`
 - Custom input rules via `defineExtension` and `inputRules()`
-- Keyboard accessibility (WAI-ARIA, focus management)
+- Keyboard accessibility and focus management
 
-### Advanced Features & Patterns
+### Advanced Features
 📄 **Read:** [references/advanced-features.md](references/advanced-features.md)
-- Placeholder text configuration
-- Text alignment and indentation
-- Content expressions and queries
-- Selection preservation
-- Event handling patterns
-- Performance optimization
+- Placeholder configuration
+- Text alignment
+- Indentation and outdentation
+- Undo and redo
+- Advanced command patterns
 
 ### Accessibility & Security
 📄 **Read:** [references/accessibility-security.md](references/accessibility-security.md)
-- WCAG 2.1 compliance
-- Accessibility features (screen readers, focus management)
-- Security considerations
-- Input sanitization and XSS prevention
-- File upload security
+- Accessibility overview
+- WCAG 2.2 compliance
+- WAI-ARIA attributes
+- Keyboard accessibility
+- Screen reader support
+- Custom node accessibility
+- Security considerations (input sanitization, file uploads)
 
 ---
 
