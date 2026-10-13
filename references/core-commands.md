@@ -5,6 +5,8 @@
 - [Command Return Values](#command-return-values)
 - [Checking Availability](#checking-availability)
 - [Default Injectable Commands](#default-injectable-commands)
+- [Content Commands](#content-commands)
+- [Selection Commands](#selection-commands)
 - [Command Chaining](#command-chaining)
 
 ## Command Execution
@@ -165,6 +167,89 @@ The following generic built-in commands are always available. Each entry lists t
 
 ---
 
+## Content Commands
+
+The Headless Editor ships with three content-update commands that have detailed examples in the content-and-data section. They all execute in a single transaction, participate in undo/redo, and honor the active selection snapshot.
+
+### Insert Text
+
+`insertText` accepts a `text` payload and inserts it at the current selection. `offset` values use ProseMirror document positions. They refer to positions in the document tree rather than character indexes within an individual text node. Pass an `at` payload to target a specific offset instead:
+
+```ts
+// Insert at the current selection
+editor.commands.insertText({ text: 'Hello world' });
+
+// Insert at a specific offset
+editor.commands.insertText({ text: 'Hello world', at: { offset: 0 } });
+```
+
+The command is a no-op when `text` is empty.
+
+### Replace Text in a Range
+
+`replaceText` replaces the plain text between two offsets. Use it to update a segment of an existing paragraph or block without rebuilding the surrounding structure:
+
+```ts
+editor.commands.replaceText({
+  from: { offset: 0 },
+  to:   { offset: 11 },
+  text: 'Updated text'
+});
+```
+
+If `from.offset` is greater than or equal to `to.offset`, the command silently no-ops and the document is left untouched.
+
+### Insert a Node
+
+`insertNode` inserts a structured `EditorNode` into a parent at a given index. The parent is identified by its PM position (`parentPos`), the `index` is the zero-based insertion position within the parent's children, and `node` is the `EditorNode` to insert:
+
+```ts
+editor.commands.insertNode({
+  parentPos: 0,
+  index: 1,
+  node: {
+    type: 'paragraph',
+    attrs: {},
+    marks: [],
+    children: []
+  }
+});
+```
+
+The command rejects payloads with a missing parent, a negative `index`, or an out-of-bounds `index`.
+
+---
+
+## Selection Commands
+
+Use selection commands to position the cursor or move the selection.
+
+### selectAll
+
+Select the entire document:
+
+```ts
+editor.commands.selectAll();
+```
+
+### setSelection
+
+Set the text selection to a from/to range. `from` and `to` are document positions:
+
+```ts
+editor.commands.setSelection({ from: 1, to: 5 });
+```
+
+### clearSelection
+
+Collapse the selection to a cursor at the anchor:
+
+```ts
+editor.commands.clearSelection();
+```
+
+---
+
 ## Command Chaining
 
 `editor.chain()` collects commands and dispatches them as one atomic step. Every step is run through the same availability guard that a single-command execution would use.
@@ -183,3 +268,11 @@ Chaining has three important rules:
 - **Focus is restored.** After a successful run, focus returns to the editor automatically.
 
 A chain with no steps returns `{ success: false; reason: 'empty' }` and dispatches nothing.
+
+You can also dry-run a whole chain with `editor.chain().<a>().<b>().canRun()`:
+
+```ts
+if (editor.chain().clearSelection().setSelection({ from: 1, to: 5 }).canRun()) {
+    // Safe to run the same chain.
+}
+```
