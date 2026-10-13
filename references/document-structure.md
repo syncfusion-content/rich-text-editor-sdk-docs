@@ -1,5 +1,7 @@
 # Document Structure & Content Model
 
+> **See also:** [api-references.md](api-references.md) for the full type definitions of `DocumentRoot`, `EditorNode`, `TextNode`, `EditorState`, `Position`, `Mark`, and `Selection`. [api-references-part-2.md](api-references-part-2.md) covers the schema building blocks: `NodeDefinition`, `MarkDefinition`, `AttributeDefinition`, `NodeGroup`, and `NodeContent` (content expressions).
+
 ## Table of Contents
 - [Document Tree Architecture](#document-tree-architecture)
 - [Document Root Identity](#document-root-identity)

@@ -1,5 +1,7 @@
 # Content Operations
 
+> **See also:** [api-references.md](api-references.md) for the full signatures of `getDocument`, `getHtml`, `getText`, `getSelectionText`, `setContent`, `setDocument`, plus the clipboard types (`ClipboardContent`, `ClipboardOptions` with `transformContent` and `transformHTML` hooks, `ClipboardTransformContext`) and the event payloads `BeforePasteEventArgs`, `AfterPasteEventArgs`, `PasteContent`, `ContentChangedEventArgs`, `DocumentChangedEventArgs`, `DocumentChangeAction` (7 enum values describing transaction actions). The `DocumentRoot` shape with its `attrs`, `children`, `marks`, and `schemaVersion` properties is also documented there.
+
 ## Table of Contents
 - [Reading Content](#reading-content)
 - [Setting Content](#setting-content)

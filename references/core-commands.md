@@ -1,5 +1,7 @@
 # Commands & Interactions
 
+> **See also:** [api-references.md](api-references.md) for the complete method lists of `TypedCommandsFacade` (immediate command execution), `TypedCanFacade` (dry-run availability checks), and `TypedChain` (atomic command chaining), plus the `Command`, `CommandContext`, `PMCommandContext`, `ChainResult`, and `CommandMeta` type definitions.
+
 ## Table of Contents
 - [Command Execution](#command-execution)
 - [Command Return Values](#command-return-values)

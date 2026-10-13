@@ -2,6 +2,8 @@
 
 The `HeadlessEditor` class is the single entry point for the Headless Editor. You create one with `HeadlessEditor.create()`, mount it into a DOM container, interact with it through commands, observe it through lifecycle callbacks, and dispose it with `destroy()`.
 
+> **See also:** [api-references.md](api-references.md) for the authoritative public API surface of the `HeadlessEditor` class — including all methods (`mount`, `unmount`, `destroy`, `setOptions`, `getDocument`, `getHtml`, `getText`, `getSelectionText`, `getSelection`, `getSelectionContext`, `getSelectedBlocks`, `getSelectedLeafNodes`, `getSelectedCells`, `setContent`, `setDocument`, `saveSelection`, `restoreSelection`, `focusView`, `getFileHandler`, `setFileUploadHandler`, `on`, `off`), the full `EditorConfig` (25 properties), and event payloads (`AfterPasteEventArgs`, `BeforePasteEventArgs`, `ContentChangedEventArgs`, `DocumentChangedEventArgs`, `PasteContent`, `BeforeFileUploadEventArgs`, `FileReceivedEventArgs`, `ResizeEventArgs`, `ResizeStartEventArgs`, `ResizeStopEventArgs`, `ResizingEventArgs`).
+
 ## Table of Contents
 - [Creating an editor](#creating-an-editor)
 - [Editor configuration](#editor-configuration)

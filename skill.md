@@ -21,7 +21,9 @@ Use the Headless Editor when you need:
 
 ## Documentation and Navigation Guide
 
-This skill bundles 12 reference files that map to the Syncfusion TypeScript Headless Editor documentation. Use the navigation below to locate the right reference for a given task.
+This skill bundles 14 reference files that map to the Syncfusion TypeScript Headless Editor documentation: 12 conceptual reference files plus 2 API reference files (sourced from the Syncfusion API documentation at `https://ej2.syncfusion.com/documentation/api/headless-editor/`). Use the navigation below to locate the right reference for a given task.
+
+> **Important — read the API reference first.** Two files in this skill, [references/api-references.md](references/api-references.md) and [references/api-references-part-2.md](references/api-references-part-2.md), contain the authoritative public API surface of the Headless Editor (sourced from the Syncfusion API documentation at `https://ej2.syncfusion.com/documentation/api/headless-editor/`). They must be checked before answering any question about a method, property, event payload, command facade, or extension configuration shape. The other reference files in this skill cover conceptual explanations and usage examples; the API reference files are the source of truth for signatures, parameter names, return types, and event payloads.
 
 ### Getting Started & Setup
 📄 **Read:** [references/getting-started.md](references/getting-started.md)
@@ -141,8 +143,9 @@ This skill bundles 12 reference files that map to the Syncfusion TypeScript Head
 - Custom node accessibility
 - Security considerations (input sanitization, file uploads)
 
-### API Reference
+### API Reference — MUST CHECK FIRST
 📄 **Read:** [references/api-references.md](references/api-references.md)
+- **This file is the authoritative reference for the public API surface.** Consult it before answering any question about a `HeadlessEditor` method, property, event payload, command facade, or extension configuration.
 - `HeadlessEditor` class methods and properties
 - `EditorConfig`, `DocumentRoot`, `EditorNode`, `TextNode`, `EditorState`, `Position`, `Mark`
 - `Command`, `CommandContext`, `PMCommandContext`, `NodeResolver`, `CommandMeta`, `ChainResult`, `ValidationError`, `SelectionType`
@@ -156,15 +159,19 @@ This skill bundles 12 reference files that map to the Syncfusion TypeScript Head
 - Selection helpers: `SelectedNode`, `SelectedCell`, `SelectionContext`, `SelectionMark`, `SelectionNode`, `SelectionSnapshotStatus`, `CellSelection`
 - `ResizableNodeView` and related types
 
-### API Reference — Part 2
+### API Reference — Part 2 — MUST CHECK FIRST
 📄 **Read:** [references/api-references-part-2.md](references/api-references-part-2.md)
+- **This file is the authoritative reference for the schema, content expressions, extension options, command payloads, input rules, extension authoring, and static factory functions.** Consult it before answering any question about a node or mark definition, a `NodeContent` expression, an extension's `configure()` options, a command's payload shape, or an input rule's `InputRuleDefinition` / `InputRuleContext` types.
 - Schema building blocks: `AttributeDefinition`, `NodeGroup`, `NodeDefinition`, `MarkDefinition`
 - Content expressions: `NodeContent`
 - File upload registry: `FileHandler`, `PendingFileUpload`
-- Extension options: `CalloutExtensionOptions`, `CalloutVariant`, `CodeBlockOptions`, `CollapsibleExtensionOptions`, `LinkExtensionOptions`, `ListExtensionOptions`, `ListKeymapExtensionOptions`, `ImageOptions`, `ImageResizeOptions`, `ImageUIContribution`, `ImageUINodeViewFactory`
-- Command payloads: `SetHighlightPayload`, `SetColorPayload`, `SetFontFamilyPayload`, `SetFontSizePayload`, `SetHeadingPayload`, `SetLinkPayload`, `InsertImagePayload`, `IndentCodeBlockPayload`, `OutdentCodeBlockPayload`, `CollapsePayload`, `ExpandPayload`, `SetBulletListTypePayload`, `SetOrderedListTypePayload`, `ToggleBulletListPayload`, `ToggleOrderedListPayload`, `ToggleListTypePayload`
+- Extension options: `CalloutExtensionOptions`, `CalloutVariant`, `CodeBlockOptions`, `CollapsibleExtensionOptions`, `LinkExtensionOptions`, `ListExtensionOptions`, `ListKeymapExtensionOptions`, `ImageOptions`, `ImageResizeOptions`, `ImageUIContribution`, `ImageUINodeViewFactory`, `PlaceholderOptions`, `TableOptions`, `TaskListExtensionOptions`, `TextAlignOptions`, `UndoRedoOptions`, `ExtensionOptions`
+- Command payloads: `SetHighlightPayload`, `SetColorPayload`, `SetFontFamilyPayload`, `SetFontSizePayload`, `SetHeadingPayload`, `SetLinkPayload`, `InsertImagePayload`, `InsertTablePayload`, `IndentCodeBlockPayload`, `OutdentCodeBlockPayload`, `CollapsePayload`, `ExpandPayload`, `SetBulletListTypePayload`, `SetOrderedListTypePayload`, `ToggleBulletListPayload`, `ToggleOrderedListPayload`, `ToggleListTypePayload`, `ToggleTaskCheckedPayload`, `ToggleTaskListPayload`
 - Image enums: `ImageAlign`, `ImageDisplayMode`, `ImageUIPlacement`, `ImageWrap`, `SaveFormatType`
-- Input rule options: `CreateNodeRuleOptions`, `CreateLinkRuleOptions`, `CreateTextBlockRuleOptions`, `CreateWrappingRuleOptions`
+- Input rule options: `CreateNodeRuleOptions`, `CreateLinkRuleOptions`, `CreateTextBlockRuleOptions`, `CreateWrappingRuleOptions`, `InputRuleDefinition`, `InputRuleContext`
+- Extension authoring: `ExtensionConfig`, `ExtensionDefinition`, `ExtensionDOMSpecs`, `NodeViewDescriptor`, `NodeViewConstructor`, `NodeDOMDescriptor`, `MarkDOMDescriptor`, `DOMOutputDescriptor`
+- Table internals: `TableService`, `CellContext`, `TableContext`
+- Static functions: `createSnapshot`, `withStatus`, `defineExtension`, `getPositionForUploadId`, `getUploadIdAtPosition`, `createNodeRule`, `createLinkRule`, `createMarkRule`, `createTextBlockRule`, `createWrappingRule`, `setTextAlignCommand`, `unsetTextAlignCommand`
 
 ---
 

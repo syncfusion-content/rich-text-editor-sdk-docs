@@ -1,5 +1,7 @@
 # Custom Extensions
 
+> **See also:** [api-references-part-2.md](api-references-part-2.md) for the full type definitions used in extension authoring: `ExtensionConfig` (14 properties covering all extension contributors), `ExtensionDefinition` (`configure()` and `extend()` methods), `ExtensionOptions` (htmlAttributes), `ExtensionDOMSpecs` (nodes and marks), `NodeDefinition`, `MarkDefinition`, `AttributeDefinition`, `NodeViewDescriptor` (7 properties), `NodeViewConstructor`, `NodeDOMDescriptor`, `MarkDOMDescriptor`, `DOMOutputDescriptor`, `InputRuleDefinition`, `InputRuleContext`, plus the 5 rule factories (`createNodeRule`, `createLinkRule`, `createMarkRule`, `createTextBlockRule`, `createWrappingRule`) and their options types.
+
 ## Table of Contents
 - [Overview](#overview)
 - [Extension Config Fields](#extension-config-fields)

@@ -2,6 +2,8 @@
 
 The TypeScript Headless Editor ships with built-in block and inline node types, each contributed by its own extension. The preset `basicExtensions` includes `document`, `paragraph`, `heading`, `blockquote`, `text`, `codeBlock`, `inlineCode`, `horizontalRule`, `hardBreak`, `list`, `taskList`, and `undoRedo`; other nodes such as `table`, `image`, `callout`, and `collapsible` are registered individually as needed.
 
+> **See also:** [api-references-part-2.md](api-references-part-2.md) for the payload types used by node commands: `InsertTablePayload`, `InsertImagePayload`, `SetHeadingPayload`, `IndentCodeBlockPayload`, `OutdentCodeBlockPayload`, `CollapsePayload`, `ExpandPayload`, `ToggleTaskCheckedPayload`, `ToggleTaskListPayload`, plus the extension options `CodeBlockOptions` (defaultLanguage, languageClassPrefix, enableTabIndentation, tabSize, exitOnTripleEnter, exitOnArrowUp, exitOnArrowDown), `TableOptions` (resize), `CalloutExtensionOptions` (defaultVariant, htmlAttributes), `CollapsibleExtensionOptions`, `PlaceholderOptions`, `ImageOptions` (align, display, wrap, saveFormat, allowBase64), and the image enums `ImageAlign` / `ImageDisplayMode` / `ImageWrap` / `ImageUIPlacement` / `SaveFormatType`. The `TaskListExtensionOptions` and `CalloutVariant` types are also documented there.
+
 ## Table of Contents
 - [Document Node](#document-node)
 - [Paragraph](#paragraph)

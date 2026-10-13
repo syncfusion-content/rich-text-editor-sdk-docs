@@ -1,5 +1,7 @@
 # Advanced Features & Patterns
 
+> **See also:** [api-references-part-2.md](api-references-part-2.md) for the full options types: `PlaceholderOptions` (9 properties for the placeholder extension), `TextAlignOptions` (types and htmlAttributes), `UndoRedoOptions` (depth and newGroupDelay), and the static functions `setTextAlignCommand` and `unsetTextAlignCommand` that build the text-align command instances.
+
 ## Table of Contents
 - [Placeholder Configuration](#placeholder-configuration)
 - [Text Alignment](#text-alignment)

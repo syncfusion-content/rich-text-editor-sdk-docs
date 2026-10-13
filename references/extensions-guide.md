@@ -1,5 +1,7 @@
 # Extensions & Plugin System
 
+> **See also:** [api-references-part-2.md](api-references-part-2.md) for the `ExtensionConfig` type, `ExtensionDefinition` (with `configure()` and `extend()`), `ExtensionDOMSpecs`, `NodeDefinition`, `MarkDefinition`, `AttributeDefinition`, and the `defineExtension` static function. [api-references.md](api-references.md) covers the public `HeadlessEditor` API used to register extensions via `extensions: [...]` in `EditorConfig`.
+
 ## Table of Contents
 - [basicExtensions Preset](#basicextensions-preset)
 - [Adding Extensions Alongside the Preset](#adding-extensions-alongside-the-preset)

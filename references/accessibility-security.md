@@ -1,5 +1,7 @@
 # Accessibility & Security
 
+> **See also:** [api-references.md](api-references.md) for the file upload event payloads: `BeforeFileUploadEventArgs` (with `file`, `cancel`, and `source` properties) and `FileReceivedEventArgs`. The `FileUploadHandler`, `FileUploadRequest`, `FileUploadResult`, `FileUploadProgress`, and `FileHandler` types are documented in [api-references-part-2.md](api-references-part-2.md).
+
 ## Table of Contents
 - [Accessibility Overview](#accessibility-overview)
 - [WCAG Compliance](#wcag-compliance)

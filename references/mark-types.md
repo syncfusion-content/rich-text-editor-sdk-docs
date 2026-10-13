@@ -2,6 +2,8 @@
 
 The TypeScript Headless Editor ships with built-in marks for inline text formatting, each contributed by its own extension. The preset `basicExtensions` includes the `bold`, `italic`, `underline`, and `strikethrough` marks; other marks such as link, inline code, font color, background color, font family, font size, subscript, superscript, and case transforms are registered individually as needed.
 
+> **See also:** [api-references-part-2.md](api-references-part-2.md) for the payload type definitions used by the mark commands: `SetMarkPayload`, `SetHighlightPayload`, `SetColorPayload`, `SetFontFamilyPayload`, `SetFontSizePayload`, and `SetLinkPayload` (with `LinkExtensionOptions` including `openOnClick` and protocol allow list details).
+
 ## Table of Contents
 - [Bold Mark](#bold-mark)
 - [Italic Mark](#italic-mark)
