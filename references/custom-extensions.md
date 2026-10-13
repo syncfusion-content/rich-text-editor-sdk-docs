@@ -1,68 +1,33 @@
-# Custom Extensions & Plugins
+# Custom Extensions
 
 ## Table of Contents
-- [Defining Extensions](#defining-extensions)
-- [Extension Configuration](#extension-configuration)
-- [Registering Custom Extensions](#registering-custom-extensions)
-- [Reusing Extensions](#reusing-extensions)
-- [Extension Lifecycle](#extension-lifecycle)
+- [Overview](#overview)
+- [Extension Config Fields](#extension-config-fields)
+- [Custom Nodes](#custom-nodes)
+- [Custom Marks](#custom-marks)
+- [Custom Commands](#custom-commands)
+- [Custom Keyboard Shortcuts](#custom-keyboard-shortcuts)
+- [Custom Input Rules](#custom-input-rules)
+- [Custom Plugins](#custom-plugins)
+- [Custom DOM Specifications](#custom-dom-specifications)
+- [Custom Node Views](#custom-node-views)
+- [Custom Attributes](#custom-attributes)
+- [Layering a Node View on an Existing Node](#layering-a-node-view-on-an-existing-node)
 - [Extension Constraints](#extension-constraints)
-- [End-to-End Example: Document Variable](#end-to-end-example-document-variable)
 
-## Defining Extensions
+For high-level documentation on `defineExtension`, configuring/reusing extensions, lifecycle, priority, registration, and a full end-to-end example, see [Extensions & Plugin System](./extensions-guide.md).
 
-Use the `defineExtension` factory to build a custom extension from an `ExtensionConfig`.
+## Overview
 
-### Import
+When the built-in extensions don't cover your scenario, you can build your own. A custom extension adds a new node type, a new mark, a custom command, a keyboard shortcut, an input rule, a plugin, a DOM spec, or a node view — and you can mix any of them together.
 
-```ts
-import { defineExtension } from '@syncfusion/ej2-headless-editor';
-```
+Start from the `defineExtension` factory and an `ExtensionConfig` object that describes what you want the extension to contribute. The factory and signature are documented in [Extensions & Plugin System > Defining a Custom Extension](./extensions-guide.md#defining-a-custom-extension).
 
-### Signature
-
-```ts
-function defineExtension<TOptions extends object = object>(
-    config: ExtensionConfig<TOptions>
-): ExtensionDefinition<TOptions>
-```
-
-`TOptions` is the extension's option shape. It defaults to `object`. Pass a stronger shape for typed `defineOptions`, `configure`, and `extend`.
-
-### Minimum Config
-
-The only required field is `name`. Every other field is optional.
-
-```ts
-import { defineExtension } from '@syncfusion/ej2-headless-editor';
-
-const greetingExtension = defineExtension({
-    name: 'greeting'
-});
-```
-
-The factory requires a non-empty `name`. Passing an empty or whitespace-only string throws an error.
-
-```ts
-defineExtension({ name: '   ' });
-// throws: Error: Extension name cannot be empty.
-```
-
-Other contributors are not validated here; pass valid shapes to avoid editor startup errors.
+Use a custom extension when the built-in extensions cannot express the behavior you need. Common cases include a new block type, a new mark, a custom shortcut, a custom input rule, or a NodeView that renders a built-in node with extra product UI.
 
 ---
 
-## Extension Configuration
-
-### The Returned Definition
-
-| Property | Type | Description |
-|----------|------|-------------|
-| `name` | `string` | The unique extension identifier. |
-| `configure(options)` | method | Returns a new `ExtensionDefinition` with merged option defaults. |
-| `extend(overrides)` | method | Returns a new `ExtensionDefinition` with overridden configuration. |
-
-### Extension Config Fields
+## Extension Config Fields
 
 | Field | Purpose |
 |-------|---------|
@@ -82,45 +47,11 @@ Other contributors are not validated here; pass valid shapes to avoid editor sta
 | `onReady` | Lifecycle hook called after editor startup completion. |
 | `onDestroy` | Lifecycle hook called during editor destruction. |
 
-### Name Field
+The deep-dive documentation for each contributor (nodes, marks, commands, keyboardShortcuts, inputRules, plugins, domSpecs, nodeViews, attributes, addNodeView) is in the sections below. See [Extensions & Plugin System](./extensions-guide.md) for the high-level overview, lifecycle, reuse, and the end-to-end Document Variable example.
 
-Unique identifier for the extension within an editor instance:
+---
 
-```ts
-const extension = defineExtension({
-    name: 'my-feature'
-});
-```
-
-### Priority Field
-
-`priority` is an optional numeric field that controls the order in which the extension is wired up. Higher numbers are processed first; lower numbers are processed last. When `priority` is omitted, the editor uses `50`.
-
-| Priority | Use for | Built-in examples |
-|----------|---------|-------------------|
-| `100` | Standalone blocks (fillers) that should be available before the blocks that hold them. | Paragraph, heading, image, horizontal rule. |
-| `50` | The default. Most extensions do not need to set this. | Bold, italic, link. |
-| `10` | Recursive containers that hold other blocks. | Table, blockquote, list, callout, collapsible. |
-
-```ts
-import { defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
-
-const calloutExtension = defineExtension({
-    name: 'callout',
-    priority: 10,
-    nodes() {
-        return [
-            {
-                name: 'callout',
-                group: 'block',
-                content: NodeContent.block().oneOrMore()
-            }
-        ];
-    }
-});
-```
-
-### Nodes Field
+## Custom Nodes
 
 The `nodes` field on `ExtensionConfig` adds node types to the editor's schema. The contributor returns an array of `NodeDefinition` objects:
 
@@ -128,16 +59,58 @@ The `nodes` field on `ExtensionConfig` adds node types to the editor's schema. T
 nodes?: (this: ExtensionScope<TOptions>) => NodeDefinition[]
 ```
 
-| Field | Description |
-|-------|-------------|
-| `name` | Unique node type name. |
-| `group` | `'root' | 'block' | 'container' | 'inline' | 'block list' | 'list'`. |
-| `content` | Optional. A content expression that constrains the children. |
-| `attrs` | Optional. Attribute definitions for the node. |
-| `inline` | Optional. Marks the node as an inline (leaf) node. |
-| `leaf` | Optional. Marks the node as a leaf with no content. |
+The contributor returns the list of node definitions the extension adds to the editor. Each returned `NodeDefinition` must have a unique `name`.
 
-### Marks Field
+### `NodeDefinition` shape
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | `string` | Unique node type name. |
+| `group` | `'root' \| 'block' \| 'container' \| 'inline' \| 'block list' \| 'list'` | Semantic group this node belongs to. |
+| `content` | `NodeContent` | Optional. A content expression that constrains the children. |
+| `attrs` | `AttributeDefinition[]` | Optional. Attribute definitions for the node. |
+| `inline` | `boolean` | Optional. Marks the node as an inline (leaf) node. |
+| `leaf` | `boolean` | Optional. Marks the node as a leaf with no content (for example, image or horizontal rule). |
+
+### Example: a custom `callout` block
+
+```ts
+import { defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
+
+interface CalloutOptions {
+    defaultVariant: 'info' | 'warning' | 'error';
+    htmlAttributes?: Readonly<Record<string, string>>;
+}
+
+const calloutExtension = defineExtension<CalloutOptions>({
+    name: 'callout',
+    priority: 10,
+    defineOptions: () => ({ defaultVariant: 'info', htmlAttributes: {} }),
+    nodes() {
+        return [
+            {
+                name: 'callout',
+                group: 'block',
+                content: NodeContent.block().oneOrMore(),
+                attrs: [
+                    { name: 'variant', type: 'enum', default: 'info',
+                      values: ['info', 'warning', 'error'] }
+                ]
+            }
+        ];
+    }
+});
+```
+
+This is a simplified version of the built-in Callout extension.
+
+### Priority for recursive containers
+
+When a block can contain other blocks (for example, a table cell or a callout body), set `priority` to `10` so the container is added to the schema after the blocks it contains. See [Extensions & Plugin System > Priority Field](./extensions-guide.md#priority-field) for the full priority table.
+
+---
+
+## Custom Marks
 
 The `marks` field on `ExtensionConfig` adds mark types to the editor. The contributor returns an array of `MarkDefinition` objects:
 
@@ -145,15 +118,45 @@ The `marks` field on `ExtensionConfig` adds mark types to the editor. The contri
 marks?: (this: ExtensionScope<TOptions>) => MarkDefinition[]
 ```
 
-| Field | Description |
-|-------|-------------|
-| `name` | Unique mark type name. |
-| `attrs` | Optional. Attribute definitions for the mark. |
-| `inclusive` | Optional. When `false`, the mark is exclusive. Defaults to `true`. |
-| `spanning` | Optional. When `true`, the mark spans across block boundaries. |
-| `excludes` | Optional. Names of marks that cannot coexist with this mark. |
+The contributor returns the list of mark definitions the extension adds to the editor. Each returned `MarkDefinition` must have a unique `name`.
 
-### Commands Field
+### `MarkDefinition` shape
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | `string` | Unique mark type name. |
+| `attrs` | `AttributeDefinition[]` | Optional. Attribute definitions for the mark. |
+| `inclusive` | `boolean` | Optional. When `false`, the mark is exclusive (typing inside it leaves it). Defaults to `true`. |
+| `spanning` | `boolean` | Optional. When `true`, the mark spans across block boundaries. |
+| `excludes` | `string[]` | Optional. Names of marks that cannot coexist with this mark. |
+
+### Example: a custom `highlight` mark
+
+```ts
+import { defineExtension } from '@syncfusion/ej2-headless-editor';
+
+const highlightExtension = defineExtension({
+    name: 'highlight',
+    marks() {
+        return [
+            {
+                name: 'highlight',
+                attrs: [
+                    { name: 'color', type: 'string', default: 'yellow' }
+                ]
+            }
+        ];
+    }
+});
+```
+
+### How marks attach to text
+
+Marks live on text nodes, not on blocks. When the user selects a range and applies a mark, every text node inside the range is wrapped with the mark.
+
+---
+
+## Custom Commands
 
 The `commands` field on `ExtensionConfig` adds new commands or re-exports built-in commands. Each command has a unique `name`, an optional `payload`, and an `execute` function:
 
@@ -161,12 +164,28 @@ The `commands` field on `ExtensionConfig` adds new commands or re-exports built-
 commands?: () => Command[]
 ```
 
+The option returns the list of commands the extension adds. You can return commands you define inline, or import and re-export a built-in command. The same name can only be registered once; conflicts are surfaced by the editor.
+
+### `Command` shape
+
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | `string` | Unique command name within the editor instance. |
 | `meta` | object | Optional. Metadata (label, category, icon) for tooling and UI. |
 | `canExecute(ctx, payload)` | function | Optional. Returns `true` when the command can run on the current selection. |
 | `execute(ctx, payload)` | function | Runs the command, mutating state through the supplied context. |
+
+`ctx` is a `CommandContext`. It carries the editor state, the current selection, the document, a back-reference to the editor, and a `dispatch` helper for writing back changes.
+
+| Field | Description |
+|-------|-------------|
+| `editorState` | The current editor state. |
+| `selection` | The current selection. |
+| `document` | The current document. |
+| `editor` | A back-reference to the editor. |
+| `dispatch(transaction)` | Apply a transaction to mutate the state. |
+
+### Defining a command
 
 ```ts
 import { defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -188,19 +207,25 @@ const counterExtension = defineExtension({
 });
 ```
 
+### Command parameters
+
 Commands accept an optional payload. The payload is opaque to the editor; you define its shape inside the command:
 
 ```ts
+interface SetVariantPayload {
+    variant: 'info' | 'warning' | 'error';
+}
+
 const calloutExtension = defineExtension({
     name: 'callout',
     commands() {
         return [
             {
                 name: 'setCalloutVariant',
-                canExecute(ctx, payload: { variant: 'info' | 'warning' | 'error' }) {
+                canExecute(ctx, payload: SetVariantPayload) {
                     return payload?.variant !== undefined;
                 },
-                execute(ctx, payload: { variant: 'info' | 'warning' | 'error' }) {
+                execute(ctx, payload: SetVariantPayload) {
                     // Apply payload.variant to the current callout
                 }
             }
@@ -211,7 +236,9 @@ const calloutExtension = defineExtension({
 
 The command facade at `editor.execute('setCalloutVariant', { variant: 'warning' })` enforces the payload shape at the call site.
 
-You can also import a built-in `Command` and re-export it from your own extension:
+### Re-exporting a built-in command
+
+You can also import a built-in `Command` and re-export it from your own extension. The commands option accepts both new commands and command instances you have on hand:
 
 ```ts
 import { defineExtension, insertNodeCommand } from '@syncfusion/ej2-headless-editor';
@@ -226,6 +253,10 @@ const mentionExtension = defineExtension({
 });
 ```
 
+Use this when you want a command to live alongside your extension's other code so consumers have a single import surface.
+
+### Reaching commands from application code
+
 Once the editor is created, custom commands are reachable through the same `execute` API as built-in commands:
 
 ```ts
@@ -236,7 +267,9 @@ const editor = HeadlessEditor.create({
 editor.execute('incrementCounter');
 ```
 
-### Keyboard Shortcuts Field
+---
+
+## Custom Keyboard Shortcuts
 
 The `keyboardShortcuts` field on `ExtensionConfig` binds a key combination to a command:
 
@@ -244,11 +277,9 @@ The `keyboardShortcuts` field on `ExtensionConfig` binds a key combination to a 
 keyboardShortcuts?: (this: ExtensionScope<TOptions>) => Record<string, () => boolean>
 ```
 
-The handler is a zero-arg function that returns `true` when it handled the key, or `false` to let the next handler try:
+The option returns a map from key name to handler. Each handler runs a command and returns `true` when it handled the key, or `false` to let the next handler try.
 
-```ts
-() => boolean
-```
+### Key names
 
 | Pattern | Meaning |
 |---------|---------|
@@ -257,6 +288,22 @@ The handler is a zero-arg function that returns `true` when it handled the key, 
 | `Mod-Alt-Enter` | Adds <kbd>Alt</kbd> / <kbd>Option</kbd>. |
 | `Enter`, `Tab`, `Backspace`, `Delete`, `Escape` | Named keys. |
 | `ArrowUp`, `ArrowDown`, `ArrowLeft`, `ArrowRight` | Arrow keys. |
+
+The `Mod-` prefix lets the same binding work cross-platform without writing two entries.
+
+### Handler signature
+
+A handler is a zero-arg function that returns `true` when it handled the key, or `false` to let the next handler run:
+
+```ts
+() => boolean
+```
+
+Return `true` after a successful command so the editor knows the key was used. Return `false` if you want the key event to keep flowing to other handlers.
+
+### Example: an extra `Mod-Shift-c` shortcut
+
+The editor already ships with a `toggleBold` command. Bind a custom shortcut to it without touching the built-in `Mod-b` binding:
 
 ```ts
 import { defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -273,17 +320,27 @@ const extraShortcutsExtension = defineExtension({
 
 Both `Mod-b` (built-in) and `Mod-Shift-c` (this extension) toggle bold.
 
+### Shortcut conflicts
+
 When two extensions register the same key, the editor dispatches them in registration order. The first handler that returns `true` consumes the key. To opt out, return `false` from your handler and let the next extension handle the key.
 
-### Input Rules Field
+### Merging with `extend`
 
-The `inputRules` field on `ExtensionConfig` turns a short typing pattern into a richer editor action:
+When you call `extend` on an extension that already defines shortcuts, the editor merges the two maps. Override keys win; the base extension's keys are preserved. See [Extensions & Plugin System > Extend Method](./extensions-guide.md#extend-method) for the full merge semantics.
+
+---
+
+## Custom Input Rules
+
+The `inputRules` field on `ExtensionConfig` turns a short typing pattern into a richer editor action. For example, typing `**word**` in plain text and watching it become bold.
 
 ```ts
 inputRules?: (this: ExtensionScope<TOptions>) => readonly InputRuleDefinition[]
 ```
 
-The pattern must end with `$` so it only matches when the user has just typed the closing characters of the trigger.
+The contributor returns the list of input rule definitions the extension registers. Each rule matches a pattern against the text immediately before the cursor; when the pattern matches, the rule's handler runs and mutates state through `dispatchCommand`.
+
+### `InputRuleDefinition` shape
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -294,7 +351,28 @@ The pattern must end with `$` so it only matches when the user has just typed th
 | `label` | `string` | Optional. Human-readable label for tooling. |
 | `allowUndo` | `boolean` | Optional. Whether the resulting change participates in undo/redo. |
 
-`InputRuleContext` fields: `match`, `start`, `end`, `nodeAt`, `selection`, `dispatchCommand`. Inside a handler, call `dispatchCommand(commandName, payload)` to mutate the document:
+### `InputRuleContext` shape
+
+| Field | Description |
+|-------|-------------|
+| `match` | The `RegExpExecArray` produced by `pattern.exec`. |
+| `start` | Start position of the match in the document. |
+| `end` | End position of the match in the document. |
+| `nodeAt` | The `EditorNode` at the cursor, or `null` if unavailable. |
+| `selection` | The current editor selection. |
+| `dispatchCommand` | Call to mutate state from inside a handler. |
+
+### Mutating state
+
+Inside a handler, call `dispatchCommand(commandName, payload)` to mutate the document:
+
+```ts
+dispatchCommand('wrapInHeading', { level: 1 });
+```
+
+The pattern must end with `$` so it only matches when the user has just typed the closing characters of the trigger.
+
+### Example: a `**bold**` input rule
 
 ```ts
 import { defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -317,13 +395,33 @@ const boldStarsExtension = defineExtension({
 });
 ```
 
-### Plugins Field
+The handler extracts the captured text and dispatches a command, which applies bold to the matched range.
 
-The `plugins` field on `ExtensionConfig` adds a long-lived observer to the editor. `Plugin` is included in the `prosemirror-state` package used by the Headless Editor, so you do not need to install it separately:
+---
+
+## Custom Plugins
+
+The `plugins` field on `ExtensionConfig` adds a long-lived observer to the editor. A plugin is the right home for behavior that has to follow the editor over time, like logging, focus tracking, or content change reactions.
+
+```ts
+plugins?: (this: ExtensionScope<TOptions>) => readonly Plugin[]
+```
+
+The option returns the list of plugins the extension adds. Each entry is a `Plugin` instance built with the `Plugin` constructor from the `prosemirror-state` package, imported directly.
+
+### Import plugin
+
+`Plugin` is included in the `prosemirror-state` package used by the Headless Editor, so you do not need to install it separately.
+
+Import it directly in your extension:
 
 ```ts
 import { Plugin } from 'prosemirror-state';
 ```
+
+### Example: a focus-tracker plugin
+
+The following plugin watches the editor's focus and blur events and logs them. It is mounted by the editor and lives for the life of the editor instance.
 
 ```ts
 import { defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -352,17 +450,68 @@ const focusTrackerExtension = defineExtension({
 });
 ```
 
-A plugin that needs to change the document must dispatch a command through `editor.execute(name, payload)` rather than mutating state on its own.
+### When to ship a plugin
 
-### DOM Specs Field
+| Use `plugins` when | Use `addExtensions` when |
+|---------------------|---------------------------|
+| You need to observe or react to editor activity over time. | You only need to add nodes, marks, commands, or shortcuts. |
+| The lifetime of the work is tied to the editor. | The lifetime of the work is per-extension. |
+| You are wrapping a third-party library that needs to be present alongside the editor. | You are building a small extension. |
 
-The `domSpecs` field on `ExtensionConfig` describes how a node or mark is rendered to HTML and how HTML is read back into the schema:
+> A plugin that needs to change the document must dispatch a command through `editor.execute(name, payload)` rather than mutating state on its own.
+
+---
+
+## Custom DOM Specifications
+
+The `domSpecs` field on `ExtensionConfig` describes how a node or mark is rendered to HTML and how HTML is read back into the schema. The two halves of the field, `toDOM` and `parseDOM`, keep saved content and parsed content in sync.
 
 ```ts
 domSpecs?: (this: ExtensionScope<TOptions>) => ExtensionDOMSpecs
 ```
 
-`NodeDOMDescriptor` and `MarkDOMDescriptor` each expose `toDOM` (returns the HTML representation) and an optional `parseDOM` (rules for parsing HTML back into the schema):
+The option returns a `ExtensionDOMSpecs` collection keyed by node name and mark name. Each entry is one descriptor.
+
+### `NodeDOMDescriptor` shape
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `toDOM(attrs)` | `(attrs) => DOMOutputDescriptor` | Returns the HTML representation of the node. |
+| `parseDOM` | `readonly ParseRule[]` | Optional. Rules for parsing HTML into this node. |
+
+### `MarkDOMDescriptor` shape
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `toDOM(attrs, inline)` | `(attrs, inline) => DOMOutputDescriptor` | Returns the HTML representation of the mark. |
+| `parseDOM` | `readonly ParseRule[]` | Optional. Rules for parsing HTML into this mark. |
+
+### `DOMOutputDescriptor` shape
+
+`DOMOutputDescriptor` accepts either a tag-name string or a nested array spec:
+
+```ts
+'div'
+
+['div', { class: 'callout' }, 0]
+
+['span', { class: 'highlight', style: 'background-color: yellow' }, 0]
+```
+
+`0` is the content slot where the children are rendered.
+
+### `ParseRule` shape
+
+Each entry in `parseDOM` is a rule that matches against an HTML element and reads attributes from it.
+
+| Field | Description |
+|-------|-------------|
+| `tag` | The CSS selector to match. For example, `div[data-type="callout"]`. |
+| `getAttrs(node)` | Function. Reads the attribute values back out of the matched element. |
+
+### Example: a callout with both render and parse
+
+The following extension describes a callout that renders as a `<div data-type="callout" data-variant="...">` and parses the same shape back when HTML is loaded into the editor:
 
 ```ts
 import { defineExtension, NodeContent } from '@syncfusion/ej2-headless-editor';
@@ -411,15 +560,17 @@ const calloutExtension = defineExtension({
 });
 ```
 
-`DOMOutputDescriptor` accepts either a tag-name string or a nested array spec. `0` is the content slot where the children are rendered.
+---
 
-### Node Views Field
+## Custom Node Views
 
-The `nodeViews` field on `ExtensionConfig` takes over how a node is rendered. The contributor returns a map keyed by node name whose values receive the node and return a `NodeViewDescriptor` or `null`:
+The `nodeViews` field on `ExtensionConfig` takes over how a node is rendered. A node view is the right home when you want the editor to display a node with your own DOM and your own behavior, not just the default `domSpecs` HTML.
 
 ```ts
 nodeViews?: (this: ExtensionScope<TOptions>) => Record<string, (node: EditorNode) => NodeViewDescriptor | null>
 ```
+
+### `NodeViewDescriptor` shape
 
 | Field | Description |
 |-------|-------------|
@@ -430,6 +581,22 @@ nodeViews?: (this: ExtensionScope<TOptions>) => Record<string, (node: EditorNode
 | `destroy()` | Cleanup on view teardown. |
 | `selectNode()` | Called when the node becomes the editor selection. |
 | `deselectNode()` | Called when the node loses the editor selection. |
+
+### `dom` and `contentDOM`
+
+`dom` is the outer wrapper the editor mounts. If your node has editable children, `contentDOM` is where the editor inserts them. If you only need a leaf widget, omit `contentDOM`.
+
+### `update` lifecycle
+
+`update(attrs)` runs whenever the node's data changes. Returning `true` keeps the existing view in place; returning `false` triggers a full rebuild. Use `update` to react to attribute changes (for example, refreshing a label when an attribute changes).
+
+### `ignoreMutation` lifecycle
+
+`ignoreMutation(mutation)` runs for every DOM mutation inside the view. Return `true` when a mutation is the node view's own product. Returning `false` lets the editor treat the mutation as an external edit and respond accordingly.
+
+### Example: a badge with a click handler
+
+Imagine a `badge` block that displays a label and reacts to a click. The node view builds the wrapper element, attaches the click handler, and cleans up on teardown:
 
 ```ts
 import { defineExtension } from '@syncfusion/ej2-headless-editor';
@@ -478,19 +645,27 @@ const badgeExtension = defineExtension({
 });
 ```
 
-Node views take precedence over DOM specs for rendering. The editor uses `domSpecs` to produce HTML on save; it uses `nodeViews` to mount the running view in the editor surface.
+### Precedence over `domSpecs`
 
-### Attributes
+Node views take precedence over DOM specs for rendering. The editor uses `domSpecs` to produce HTML on save; it uses `nodeViews` to mount the running view in the editor surface. If both are defined for the same node, `nodeViews` controls the live render.
 
-The `attrs` field on `NodeDefinition` and `MarkDefinition` declares the typed attributes a node or mark carries. Each attribute is described by an `AttributeDefinition`:
+---
 
-| Field | Description |
-|-------|-------------|
-| `name` | Unique attribute name within the node or mark. |
-| `type` | `'string' | 'number' | 'boolean' | 'enum'`. Storage type. |
-| `default` | Optional. Default value when the attribute is not supplied. |
-| `required` | Optional. When `true`, the attribute must be supplied explicitly and no default is used. |
-| `values` | Required for `type: 'enum'`. Allowed values (non-empty). |
+## Custom Attributes
+
+The `attrs` field on `NodeDefinition` and `MarkDefinition` declares the typed attributes a node or mark carries. Each attribute is described by an `AttributeDefinition` that says what it is called, what type of value it stores, and what default it falls back to.
+
+### `AttributeDefinition` shape
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `name` | `string` | Unique attribute name within the node or mark. |
+| `type` | `'string' \| 'number' \| 'boolean' \| 'enum'` | Storage type. |
+| `default` | `unknown` | Optional. Default value when the attribute is not supplied. |
+| `required` | `boolean` | Optional. When `true`, the attribute must be supplied explicitly and no default is used. |
+| `values` | `readonly string[]` | Required for `type: 'enum'`. Allowed values (non-empty). |
+
+### Example attribute definitions
 
 ```ts
 import { defineExtension, AttributeDefinition, NodeContent } from '@syncfusion/ej2-headless-editor';
@@ -514,17 +689,31 @@ const customBlockExtension = defineExtension({
 });
 ```
 
+### Default values
+
 When a node or mark is created without an attribute, the editor substitutes the `default` value. Use `null` for attributes that have no meaningful default and treat `null` as "unset" in your NodeView or DOM spec.
 
-### Layering a Node View on an Existing Node
+---
+
+## Layering a Node View on an Existing Node
 
 Built-in extensions expose an `addNodeView` option so the consuming product can layer its own UI on top of the extension's underlying node structure. The extension keeps ownership of the schema and the data; the product contributes the user-facing wrapper.
+
+```ts
+addNodeView?: () => Record<string, NodeViewFactory>
+```
+
+### When to use `addNodeView` instead of `nodeViews`
 
 | Use `addNodeView` when | Use `nodeViews` when |
 |------------------------|----------------------|
 | You are extending an existing built-in extension. | You are defining a new node from scratch. |
 | The extension already provides a schema. | You contribute both schema and render. |
 | You want the extension to keep ownership of structure. | The node is fully yours. |
+
+### Example: layering a custom UI on a built-in node
+
+A product can mount its own DOM around a built-in node by passing a factory through `addNodeView`. The factory receives the node and returns the DOM the editor should display.
 
 ```ts
 import { HeadlessEditor } from '@syncfusion/ej2-headless-editor';
@@ -543,167 +732,6 @@ const editor = HeadlessEditor.create({
 
 ---
 
-## Registering Custom Extensions
-
-### Pass to HeadlessEditor.create
-
-```ts
-import { HeadlessEditor, defineExtension } from '@syncfusion/ej2-headless-editor';
-
-const counterExtension = defineExtension({
-    name: 'counter',
-    commands: () => [
-        {
-            name: 'incrementCounter',
-            execute() { /* ... */ }
-        }
-    ]
-});
-
-const editor = HeadlessEditor.create({
-    extensions: [counterExtension]
-});
-```
-
-### Combine with Built-In Extensions
-
-```ts
-import {
-    HeadlessEditor,
-    basicExtensions,
-    defineExtension
-} from '@syncfusion/ej2-headless-editor';
-
-const customExtension = defineExtension({
-    name: 'my-feature'
-});
-
-const editor = HeadlessEditor.create({
-    extensions: [basicExtensions, customExtension]
-});
-```
-
----
-
-## Reusing Extensions
-
-A defined extension can be registered with multiple editors. `configure` and `extend` return a new definition each time. The original is not modified, so the same base extension can be customized differently for different editors.
-
-### Configure Method
-
-Use `ExtensionDefinition.configure(options)` to change an extension's option values without rebuilding the extension from scratch. The call returns a new extension with the supplied options layered on top of the defaults.
-
-```ts
-configure(options: Partial<TOptions>): ExtensionDefinition<TOptions>
-```
-
-`configure` merges the supplied options over the defaults returned by `defineOptions`. The merge is shallow; nested objects are not deep-merged.
-
-```ts
-const baseExtension = defineExtension({
-    name: 'counter',
-    defineOptions: () => ({ start: 0, step: 1, max: 10 })
-});
-
-const zeroStepExtension = baseExtension.configure({ step: 0 });
-// zeroStepExtension has: { start: 0, step: 0, max: 10 }
-```
-
-Most built-in extensions expose an `htmlAttributes` option through the shared `ExtensionOptions` interface:
-
-```ts
-import { paragraphExtension } from '@syncfusion/ej2-headless-editor';
-
-const themedBasicExtensions = paragraphExtension.configure({
-    htmlAttributes: { class: 'dark-theme' }
-});
-
-const editor = HeadlessEditor.create({
-    extensions: [themedBasicExtensions]
-});
-editor.mount(document.getElementById('editor') as HTMLElement);
-```
-
-### Extend Method
-
-Use `ExtensionDefinition.extend(overrides)` to add, replace, or remove a contributor without rebuilding the extension from scratch. The call returns a new extension with the overrides applied.
-
-```ts
-extend(overrides: Partial<ExtensionConfig<TOptions>>): ExtensionDefinition<TOptions>
-```
-
-Unlike `configure`, which only replaces option values, `extend` can override any field in `ExtensionConfig` — including the contributor functions and lifecycle hooks.
-
-```ts
-import { defineExtension } from '@syncfusion/ej2-headless-editor';
-
-const baseExtension = defineExtension({
-    name: 'counter',
-    commands: () => [
-        { name: 'increment', execute() { /* ... */ } }
-    ]
-});
-
-const loggedExtension = baseExtension.extend({
-    onRegister() {
-        console.log('counter registered');
-    }
-});
-```
-
-`loggedExtension` inherits `name`, the `commands` contributor, and any other fields, but adds an `onRegister` hook.
-
-| Use `configure` when | Use `extend` when |
-|----------------------|---------------------|
-| You only want to change option values. | You want to add, replace, or remove a contributor. |
-| You want defaults to be inherited. | You want a new `nodes`, `marks`, `commands`, etc. |
-
-`keyboardShortcuts` is merged rather than replaced when both the base and the override define it. The override is applied on top of the base, so the override can add or replace individual bindings without losing the base's bindings.
-
----
-
-## Extension Lifecycle
-
-Every custom extension moves through three lifecycle phases during the editor's life: registration, ready, and destruction. Hooks let you run code at the boundary of each phase.
-
-| Hook | When it fires | Typical use |
-|------|---------------|-------------|
-| `onRegister` | After the extension has been registered with the editor. | Validate config, prepare internal state. |
-| `onReady` | After the editor is fully started. | Start background tasks, register listeners. |
-| `onDestroy` | During editor destruction, in reverse registration order. | Release listeners, flush pending state. |
-
-All three hooks are optional. If a hook is not implemented, the extension simply moves to the next phase.
-
-When an editor starts up:
-
-1. Each extension is registered. `onRegister` fires in registration order.
-2. The editor finishes starting up. `onReady` fires in registration order.
-
-When the editor is destroyed:
-
-1. `onDestroy` fires in reverse registration order, so the most recently registered extension cleans up first.
-
-```ts
-import { defineExtension } from '@syncfusion/ej2-headless-editor';
-
-const analyticsExtension = defineExtension({
-    name: 'analytics',
-    onRegister() {
-        console.log('analytics registered');
-    },
-    onReady() {
-        // Start a heartbeat or register a contentChanged listener
-    },
-    onDestroy() {
-        // Flush pending analytics, remove listeners
-    }
-});
-```
-
-If an extension fails to start up because of an invalid configuration, the editor surfaces the error. Other extensions are not affected. Use `onRegister` to surface configuration errors early so they are caught before the editor finishes starting up.
-
----
-
 ## Extension Constraints
 
 ### What an extension can do
@@ -719,201 +747,3 @@ If an extension fails to start up because of an invalid configuration, the edito
 
 - Mutate its own definition after creation; `ExtensionDefinition` is immutable.
 - Mutate document state outside of a command handler or input rule handler. Use `editor.commands.*` for all state mutations.
-
----
-
-## End-to-End Example: Document Variable
-
-The Document Variable example ties the contributors together: a `variable` mark with `name` and `value` attributes, a registered `insertVariable` command with payload validation, a `{{name}}` input rule, a `domSpecs` block that renders the mark as a chip, and a <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> shortcut that cycles through the configured variables.
-
-### `index.ts`
-
-```ts
-import {
-    HeadlessEditor,
-    basicExtensions,
-    defineExtension
-} from '@syncfusion/ej2-headless-editor';
-
-interface VariableDef {
-    name: string;
-    label: string;
-    value: string;
-}
-
-const VARIABLES: VariableDef[] = [
-    { name: 'customerName', label: 'Customer Name', value: 'John Smith' },
-    { name: 'invoiceNumber', label: 'Invoice Number', value: 'INV-2026-0042' },
-    { name: 'dueDate', label: 'Due Date', value: '2026-10-15' }
-];
-
-interface InsertVariablePayload {
-    name: string;
-}
-
-function resolveVariable(
-    variables: readonly VariableDef[],
-    name: string
-): VariableDef | undefined {
-    return variables.find((v) => v.name === name);
-}
-
-let editorRef: HeadlessEditor | null = null;
-
-interface InsertVariableArgs {
-    name: string;
-    from: number;
-    to: number;
-}
-
-const variableExtension = defineExtension({
-    name: 'variable',
-
-    defineOptions: () => ({
-        variables: VARIABLES
-    }),
-
-    marks() {
-        return [
-            {
-                name: 'variable',
-                attrs: [
-                    { name: 'name', type: 'string', default: '' },
-                    { name: 'value', type: 'string', default: '' }
-                ]
-            }
-        ];
-    },
-
-    commands() {
-        return [
-            {
-                name: 'insertVariable',
-                canExecute(_ctx: any, payload: InsertVariablePayload) {
-                    return (
-                        payload !== undefined &&
-                        typeof payload.name === 'string' &&
-                        payload.name.length > 0
-                    );
-                },
-                execute(_ctx: any, payload: InsertVariableArgs) {
-                    const def = resolveVariable(VARIABLES, payload.name);
-                    if (!def) {
-                        return;
-                    }
-                    editorRef?.execute('inputRuleMark', {
-                        markType: 'variable',
-                        text: def.value,
-                        matchStart: payload.from,
-                        matchEnd: payload.to,
-                        attrs: { name: def.name, value: def.value }
-                    });
-                }
-            }
-        ];
-    },
-
-    keyboardShortcuts() {
-        const variables = this.options.variables;
-        let cycleIndex = 0;
-        return {
-            'Mod-Alt-v': () => {
-                const editor = this.editor;
-                if (!editor) {
-                    return false;
-                }
-                const def = variables[cycleIndex % variables.length];
-                cycleIndex += 1;
-                const selection = editor.getSelection();
-                return editor.execute('insertVariable', {
-                    name: def.name,
-                    from: selection.from,
-                    to: selection.to
-                });
-            }
-        };
-    },
-
-    inputRules(this) {
-        const _this = this;
-        return [
-            {
-                id: 'variable:double-braces',
-                pattern: /\{\{(\w+)\}\}$/,
-                handler(ctx: any) {
-                    const name = ctx.match[1];
-                    const def = resolveVariable(_this.options.variables, name);
-                    if (!def) {
-                        return;
-                    }
-                    ctx.dispatchCommand('inputRuleMark', {
-                        markType: 'variable',
-                        text: def.value,
-                        matchStart: ctx.start,
-                        matchEnd: ctx.end,
-                        attrs: { name: def.name, value: def.value }
-                    });
-                }
-            }
-        ];
-    },
-
-    domSpecs() {
-        return {
-            marks: {
-                variable: {
-                    toDOM(attrs) {
-                        return [
-                            'span',
-                            { 'data-type': 'variable', 'data-name': attrs['name'], 'class': 'variable-chip' },
-                            0
-                        ];
-                    },
-                    parseDOM: [
-                        {
-                            tag: 'span[data-type="variable"]',
-                            getAttrs(node) {
-                                const element = node as HTMLElement;
-                                return {
-                                    name: element.getAttribute('data-name') ?? '',
-                                    value: ''
-                                };
-                            }
-                        }
-                    ]
-                }
-            }
-        };
-    }
-});
-
-const headlessEditor: HeadlessEditor = HeadlessEditor.create({
-    enableTabKey: true,
-    extensions: [basicExtensions, variableExtension]
-});
-
-editorRef = headlessEditor;
-
-const container: HTMLElement | null = document.getElementById('headless-editor');
-if (container) {
-    headlessEditor.mount(container);
-}
-```
-
-### `index.html`
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syncfusion TypeScript Headless Editor - Document Variable</title>
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet">
-</head>
-<body>
-    <div id="headless-editor"></div>
-    <script type="module" src="index.ts"></script>
-</body>
-</html>
-```
