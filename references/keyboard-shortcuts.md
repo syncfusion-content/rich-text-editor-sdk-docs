@@ -278,7 +278,7 @@ Use `Mod` for `Ctrl` on Windows and Linux and `Cmd` on macOS.
 
 ## Focus management
 
-Use `focus` and `blur` callbacks on `EditorConfig` to respond to focus changes. The same-named lifecycle callbacks are wired to public events on the editor instance.
+Use `focus` and `blur` callbacks on `EditorConfig` to respond to focus changes. The same-named lifecycle callbacks are wired to public events on the editor instance, and can also be subscribed to at runtime through `editor.on(eventName, handler)`.
 
 ```ts
 const editor = HeadlessEditor.create({
@@ -289,6 +289,18 @@ const editor = HeadlessEditor.create({
     blur: () => {
         console.log('Editor blurred');
     }
+});
+```
+
+The same events can be subscribed to after creation:
+
+```ts
+editor.on('focus', () => {
+    console.log('Editor focused');
+});
+
+editor.on('blur', () => {
+    console.log('Editor blurred');
 });
 ```
 

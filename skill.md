@@ -141,6 +141,31 @@ This skill bundles 12 reference files that map to the Syncfusion TypeScript Head
 - Custom node accessibility
 - Security considerations (input sanitization, file uploads)
 
+### API Reference
+📄 **Read:** [references/api-references.md](references/api-references.md)
+- `HeadlessEditor` class methods and properties
+- `EditorConfig`, `DocumentRoot`, `EditorNode`, `TextNode`, `EditorState`, `Position`, `Mark`
+- `Command`, `CommandContext`, `PMCommandContext`, `NodeResolver`, `CommandMeta`, `ChainResult`, `ValidationError`, `SelectionType`
+- Payload types: `DeleteRangePayload`, `SetMarkPayload`
+- Command facades: `TypedCommandsFacade`, `TypedCanFacade`, `TypedChain`
+- Event payloads: `AfterPasteEventArgs`, `BeforePasteEventArgs`, `PasteContent`, `ContentChangedEventArgs`, `DocumentChangedEventArgs`, `DocumentChangeAction`
+- File upload event payloads: `BeforeFileUploadEventArgs`, `FileReceivedEventArgs`
+- Resize event payloads: `ResizeEventArgs`, `ResizeStartEventArgs`, `ResizeStopEventArgs`, `ResizingEventArgs`
+- Clipboard: `ClipboardContent`, `ClipboardOptions`, `ClipboardTransformContext`
+- File upload: `FileUploadHandler`, `FileUploadProgress`, `FileUploadRequest`, `FileUploadResult`
+- Selection helpers: `SelectedNode`, `SelectedCell`, `SelectionContext`, `SelectionMark`, `SelectionNode`, `SelectionSnapshotStatus`, `CellSelection`
+- `ResizableNodeView` and related types
+
+### API Reference — Part 2
+📄 **Read:** [references/api-references-part-2.md](references/api-references-part-2.md)
+- Schema building blocks: `AttributeDefinition`, `NodeGroup`, `NodeDefinition`, `MarkDefinition`
+- Content expressions: `NodeContent`
+- File upload registry: `FileHandler`, `PendingFileUpload`
+- Extension options: `CalloutExtensionOptions`, `CalloutVariant`, `CodeBlockOptions`, `CollapsibleExtensionOptions`, `LinkExtensionOptions`, `ListExtensionOptions`, `ListKeymapExtensionOptions`, `ImageOptions`, `ImageResizeOptions`, `ImageUIContribution`, `ImageUINodeViewFactory`
+- Command payloads: `SetHighlightPayload`, `SetColorPayload`, `SetFontFamilyPayload`, `SetFontSizePayload`, `SetHeadingPayload`, `SetLinkPayload`, `InsertImagePayload`, `IndentCodeBlockPayload`, `OutdentCodeBlockPayload`, `CollapsePayload`, `ExpandPayload`, `SetBulletListTypePayload`, `SetOrderedListTypePayload`, `ToggleBulletListPayload`, `ToggleOrderedListPayload`, `ToggleListTypePayload`
+- Image enums: `ImageAlign`, `ImageDisplayMode`, `ImageUIPlacement`, `ImageWrap`, `SaveFormatType`
+- Input rule options: `CreateNodeRuleOptions`, `CreateLinkRuleOptions`, `CreateTextBlockRuleOptions`, `CreateWrappingRuleOptions`
+
 ---
 
 ## Quick Start Example
@@ -240,10 +265,8 @@ editor.setContent('');
 editor.setDocument({
   type: 'document',
   attrs: {},
-  marks: [],
-  schemaVersion: 1,
   children: [
-    { type: 'paragraph', attrs: {}, marks: [], children: [] }
+    { type: 'paragraph', attrs: {}, children: [] }
   ]
 });
 ```

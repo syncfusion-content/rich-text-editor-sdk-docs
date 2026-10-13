@@ -10,6 +10,11 @@ The `HeadlessEditor` class is the single entry point for the Headless Editor. Yo
 - [Disposing an editor](#disposing-an-editor)
 - [Reading content](#reading-content)
 - [Setting content](#setting-content)
+- [Selection helpers](#selection-helpers)
+- [Selection snapshots](#selection-snapshots)
+- [File handling](#file-handling)
+- [Focus](#focus)
+- [Event subscription](#event-subscription)
 
 ## Creating an editor
 
@@ -67,7 +72,7 @@ If both `EditorConfig.document` (JSON) and `EditorConfig.content` (HTML) are pro
 
 ### Lifecycle hooks
 
-`EditorConfig` exposes lifecycle callbacks such as `created`, `destroyed`, `contentChanged`, `selectionChanged`, `focus`, and `blur`. These are wired to the same-named public events on the editor instance.
+`EditorConfig` exposes lifecycle callbacks such as `created`, `destroyed`, `contentChanged`, `selectionChanged`, `focus`, and `blur`. These are wired to the same-named public events on the editor instance and can also be subscribed to through `editor.on(eventName, handler)` after creation.
 
 ```ts
 const editor = HeadlessEditor.create({
@@ -222,3 +227,124 @@ A `DocumentRoot` has the following properties:
 | --- | --- | --- |
 | `type` | `'document'` | Always `'document'` for the root. |
 | `attrs` | `Record<string, unknown>` | Root-level attributes. |
+
+## Selection helpers
+
+In addition to `getSelectionText()`, the editor exposes methods that return structured selection information.
+
+### `getSelection()`
+
+Returns the current selection range as absolute document positions. Provides the `from` and `to` positions (in document offset units) and an `empty` flag indicating whether the selection is a collapsed cursor or spans text. All positions are absolute offsets relative to the document root.
+
+```ts
+const selection = editor.getSelection();
+if (selection) {
+  console.log(selection.from, selection.to, selection.empty);
+}
+```
+
+### `getSelectionContext()`
+
+Returns the formatting marks and structural nodes relevant to the current selection. Marks are limited to those present at the selection start. A mark is mixed when its attributes differ or it is absent from part of the range. Structural wrapper nodes that do not represent toolbar context are omitted.
+
+```ts
+const ctx = editor.getSelectionContext();
+ctx.marks.forEach((m) => console.log(m.type, m.attrs));
+ctx.nodes.forEach((n) => console.log(n.type, n.attrs));
+```
+
+### `getSelectedBlocks()`
+
+Returns all block-level nodes that intersect the current selection. For a cursor or single selection, returns a single block. For a range spanning multiple blocks, returns all blocks in the range. Each returned node includes its live DOM element (if mounted) for toolbar positioning.
+
+### `getSelectedLeafNodes()`
+
+Returns all leaf nodes (atom nodes with no children: image, horizontal rule, hard break, etc.) within the current selection range. Each returned node includes its live DOM element (if mounted) for toolbar positioning or bulk operations.
+
+### `getSelectedCells()`
+
+Returns all currently selected table cells (for `CellSelection`). For non-`CellSelection`, returns an empty array. Each cell includes its live DOM element (if mounted), row and table references, and 0-based coordinates.
+
+## Selection snapshots
+
+The editor captures and stores the current selection as a PM-free `SelectionSnapshot` so toolbar button clicks (which blur the editor) do not reset the selection.
+
+### `saveSelection()`
+
+Captures and stores the current selection. Multiple calls replace the previously held snapshot. The snapshot is independent of any command chain or execution. This is essential for maintaining selection across focus changes in toolbar-based editors where clicking a toolbar button blurs the editor.
+
+### `restoreSelection()`
+
+Applies a previously captured selection snapshot to the current editor state. Restores a saved selection from a `SelectionSnapshot`. If no snapshot is provided, uses the most recently held snapshot from `saveSelection()`. Success depends on snapshot freshness (stale snapshots may fail if document structure changed). Restore operations do NOT consume the snapshot — only command execution consumes. Calling `restoreSelection()` followed by a command is equivalent to a single command execution with automatic selection restoration.
+
+## File handling
+
+The editor exposes a lazy `FileHandler` for managing file uploads. Most applications use the convenience wrapper; the lower-level accessors are for advanced use cases.
+
+### `getFileHandler()`
+
+Returns the `FileHandler` instance for file upload operations. The `FileHandler` is lazily initialized on first access and manages the complete file lifecycle: paste/drop detection, upload ID generation, handler invocation, and event emission.
+
+### `setFileUploadHandler(handler)`
+
+Registers a file upload handler for paste and drag-drop file operations. The provided handler is invoked whenever files are pasted or dropped into the editor. This method must be called before file paste/drop operations begin to have any effect. Calling it multiple times replaces the previous handler. The `FileUploadHandler` receives a file object and metadata, and must return a `Promise` resolving to the uploaded file URL or resource identifier.
+
+```ts
+editor.setFileUploadHandler({
+  async upload(request) {
+    // request.file, request.signal, request.onProgress
+    const response = await fetch('/api/upload', { method: 'POST', body: request.file });
+    if (!response.ok) throw new Error('Upload failed');
+    const { url } = await response.json();
+    return { url };
+  }
+});
+```
+
+## Focus
+
+### `focusView()`
+
+Programmatically focus the editor view. Useful for programmatic interaction when the editor loses focus (e.g., after a toolbar button click). The focus is placed at the current selection position.
+
+```ts
+editor.focusView();
+```
+
+## Event subscription
+
+The lifecycle callbacks passed to `EditorConfig` are also exposed as public events on the editor instance. Subscribe to them at runtime with `editor.on(eventName, handler)`, and unsubscribe with `editor.off(eventName, handler)`.
+
+| Method | Description |
+|--------|-------------|
+| `on(eventName, handler)` | Subscribes to a public editor event. Registers an event listener that fires each time the specified event is published. The handler receives the event payload directly. Event names correspond to the config-level callbacks (e.g., `'contentChanged'`, `'focus'`, `'beforePaste'`). Multiple handlers can be registered for the same event. |
+| `off(eventName, handler)` | Unsubscribes from a previously registered event listener. Removes the handler that was registered via `on()`. If the handler is not found or was already unsubscribed, this method is a safe no-op. The handler reference passed to `off()` must match the one passed to `on()`. |
+
+```ts
+const editor = HeadlessEditor.create({
+    extensions: [basicExtensions]
+});
+
+// Subscribe to events
+editor.on('contentChanged', (args) => {
+    console.log('Content updated');
+    console.log(editor.getHtml());
+});
+
+editor.on('selectionChanged', (args) => {
+    console.log('Selection updated');
+});
+
+editor.on('focus', () => {
+    console.log('Editor focused');
+});
+
+editor.on('blur', () => {
+    console.log('Editor blurred');
+});
+
+// Unsubscribe
+const handler = (args) => console.log('change', args);
+editor.on('contentChanged', handler);
+editor.off('contentChanged', handler);
+```
