@@ -27,10 +27,28 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [SetFontFamilyPayload](#setfontfamilypayload)
   - [SetFontSizePayload](#setfontsizepayload)
   - [SetHeadingPayload](#setheadingpayload)
+  - [SetLinkPayload](#setlinkpayload)
+  - [InsertImagePayload](#insertimagepayload)
   - [IndentCodeBlockPayload](#indentcodeblockpayload)
   - [OutdentCodeBlockPayload](#outdentcodeblockpayload)
   - [CollapsePayload](#collapsepayload)
   - [ExpandPayload](#expandpayload)
+  - [SetBulletListTypePayload](#setbulletlisttypepayload)
+  - [SetOrderedListTypePayload](#setorderedlisttypepayload)
+  - [ToggleBulletListPayload](#togglebulletlistpayload)
+  - [ToggleOrderedListPayload](#toggleorderedlistpayload)
+  - [ToggleListTypePayload](#togglelisttypepayload)
+- [Image enums](#image-enums)
+  - [ImageAlign](#imagealign)
+  - [ImageDisplayMode](#imagedisplaymode)
+  - [ImageUIPlacement](#imageuiplacement)
+  - [ImageWrap](#imagewrap)
+  - [SaveFormatType](#saveformattype)
+- [Input rule options](#input-rule-options)
+  - [CreateNodeRuleOptions](#createnoderuleoptions)
+  - [CreateLinkRuleOptions](#createlinkruleoptions)
+  - [CreateTextBlockRuleOptions](#createtextblockruleoptions)
+  - [CreateWrappingRuleOptions](#createwrappingruleoptions)
 
 ## Schema building blocks
 
@@ -261,3 +279,227 @@ Enum values: `info`, `warning`, `note`, `success`, `error`, `tip`.
 | Property | Type | Description |
 |----------|------|-------------|
 | `pos` | `number` | Absolute document position of the collapsible node. When provided, selection is ignored. |
+
+## Extension options (continued)
+
+### LinkExtensionOptions
+
+`LinkExtensionOptions` — options accepted by the Link extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the rendered DOM element (class, data-*, etc.). |
+| `openOnClick` | `boolean` | Determines whether links open when clicked in the editor. When enabled, clicking a link navigates to its target URL in a new browser tab. When disabled, clicking places the cursor inside the link for editing. |
+
+### ListExtensionOptions
+
+`ListExtensionOptions` — options accepted by the List extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the list container elements (`<ul>`, `<ol>`). |
+| `itemHtmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to list item elements (`<li>`). |
+
+### ListKeymapExtensionOptions
+
+`ListKeymapExtensionOptions` — options accepted by the List Keymap extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the rendered DOM element (class, data-*, etc.). |
+
+### ImageOptions
+
+`ImageOptions` — top-level configuration options consumed by the Image extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `addNodeView` | `Object` | Optional custom NodeView UI factory for rendering product-supplied status UI around block image nodes (upload progress, badges, etc.). Invoked once per editor mount (never per-node remount — same factory discipline as the CodeBlock `addNodeView`). The returned record is keyed by node type name; only the `image` (block) entry is consumed. The extension continues to own the `<img>` structure, composition, and lifecycle — the product contributes only its UI subtree. |
+| `align` | `ImageAlign` | Default horizontal alignment for newly inserted images. |
+| `allowBase64` | `boolean` | Allow pasted/dropped images to keep their base64 payload as `src`. |
+| `display` | `ImageDisplayMode` | Default display mode for newly inserted images. |
+| `htmlAttributes` | `Record` | Static HTML attributes merged onto every inserted `<img>` element. |
+| `resize` | `ImageResizeOptions \| false` | Configures image resizing behavior for block and inline images. When enabled, resize handles are added to both `image` and `imageInline` node views. Consumers can configure the available resize directions, minimum dimensions, and aspect-ratio preservation. Resizing emits the `resizeStart`, `resizing`, and `resizeStop` lifecycle events. The final width and height are persisted to the image attributes when resizing is completed. |
+| `saveFormat` | `SaveFormatType` | How inserted images should be persisted. |
+| `wrap` | `ImageWrap` | Default text wrapping for newly inserted images. |
+
+### ImageResizeOptions
+
+`ImageResizeOptions` — resizable behavior configuration supplied to the image extension. Lets consumers configure which directions are resizable, the lower size bound, and whether the image's aspect ratio should always be preserved.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `alwaysPreserveAspectRatio` | `boolean` | When `true`, the engine preserves the image's aspect ratio on every resize handle. When `false`, holding `Shift` toggles aspect lock interactively. |
+| `directions` | `ResizableNodeViewDirection[]` | Whitelist of resize directions to render handles for. When omitted, the engine default (`top-left`, `top-right`, `bottom-left`, `bottom-right`) is used. |
+| `enabled` | `boolean` | Master switch. When `false`, the resizable engine never mounts handles on image node views (no-op for that view). |
+| `minHeight` | `number` | Minimum allowed height in pixels during a resize drag. Falls back to the engine default (8 px) when `undefined`. |
+| `minWidth` | `number` | Minimum allowed width in pixels during a resize drag. Falls back to the engine default (8 px) when `undefined`. |
+
+### ImageUIContribution
+
+`ImageUIContribution` — UI contribution returned by the product's per-node factory. The extension composes this into the final NodeView; the product never owns or recreates the image structure itself.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `dom` | `HTMLElement` | Product-owned UI element (progress bar, status badge, controls, etc.). |
+| `placement` | `ImageUIPlacement` | Slot placement relative to the image. Default `'top-right'`. |
+
+#### Methods
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `destroy()` | Called when the NodeView is destroyed so the product can clean up widgets. | `void` |
+| `onUploadState()` | Push callback invoked on every upload-state change for this image. Receives an immediate snapshot at NodeView construction and every subsequent runtime update. Progress updates never touch the document. | `void` |
+
+### ImageUINodeViewFactory
+
+`ImageUINodeViewFactory` — per-node factory supplied through `ImageOptions.addNodeView`. Same shape as the extension NodeView constructor contract.
+
+| Parameter | Name | Type |
+|-----------|------|------|
+| | `attrs` | `Record` |
+| | `view` | `unknown` |
+| | `getPos` | `Object` |
+
+## Image enums
+
+### ImageAlign
+
+`ImageAlign` — horizontal alignment for block images. `none` honors the editor's default text-align (typically left).
+
+`left`, `center`, `right`, `none`
+
+### ImageDisplayMode
+
+`ImageDisplayMode` — image display modes supported by image nodes. `block`: image occupies its own line, like a standalone figure. `inline`: image flows with surrounding text.
+
+`block`, `inline`
+
+### ImageUIPlacement
+
+`ImageUIPlacement` — placement of the product UI slot relative to the image. Applied by the extension via a stable CSS class on the UI slot element.
+
+`top-left`, `top-center`, `top-right`, `center-left`, `center`, `center-right`, `bottom-left`, `bottom-center`, `bottom-right`
+
+### ImageWrap
+
+`ImageWrap` — text wrapping behavior. Wrapped images float so surrounding text flows around them; `none` keeps the image on its own line.
+
+`left`, `right`, `none`
+
+### SaveFormatType
+
+`SaveFormatType` — persistence format used when the editor saves an image reference. `blob`: store as a Blob URL (recommended; survives serialization). `base64`: inline as `data:image/...;base64,...` (portable but heavy).
+
+`blob`, `base64`
+
+## Input rule options
+
+### CreateNodeRuleOptions
+
+`CreateNodeRuleOptions` — defines configuration options for creating a node insertion input rule.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `allowUndo` | `boolean` | If set to `true`, enables undo support for the rule. @default `true` |
+| `attributeProvider` | `Record \| Object` | Static attributes or a function that computes attributes from the regex match. Used to populate node attributes when the rule is triggered. |
+| `id` | `string` | Unique identifier for the rule. |
+| `pattern` | `RegExp` | Regular expression pattern to match in the input text. |
+| `target` | `string` | Target node type name to insert (e.g., `horizontalRule`, `image`). |
+
+### CreateLinkRuleOptions
+
+`CreateLinkRuleOptions` — defines configuration options for creating a link input rule.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `allowUndo` | `boolean` | If set to `true`, enables undo support for the rule. @default `true` |
+| `id` | `string` | Unique identifier for the rule. |
+| `pattern` | `RegExp` | Regular expression pattern to match URLs or Markdown link syntax in the input text. Can match auto-links (URLs) or Markdown-style links with capturing groups for text and href. |
+
+### CreateTextBlockRuleOptions
+
+`CreateTextBlockRuleOptions` — defines configuration options for creating a text block transformation input rule.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `allowUndo` | `boolean` | If set to `true`, enables undo support for the rule. @default `true` |
+| `attributeProvider` | `Record \| Object` | Static attributes or a function that computes attributes from the regex match. Used to populate node attributes when the rule is triggered. |
+| `id` | `string` | Unique identifier for the rule. |
+| `pattern` | `RegExp` | Regular expression pattern to match in the input text. |
+| `target` | `string` | Target block node type to transform the current block into (e.g., `heading`, `codeBlock`). |
+
+### CreateWrappingRuleOptions
+
+`CreateWrappingRuleOptions` — defines configuration options for creating a block wrapping input rule.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `allowUndo` | `boolean` | If set to `true`, enables undo support for the rule. @default `true` |
+| `attributeProvider` | `Record \| Object` | Static attributes or a function that computes attributes from the regex match. Used to populate wrapper node attributes when the rule is triggered. |
+| `id` | `string` | Unique identifier for the rule. |
+| `pattern` | `RegExp` | Regular expression pattern to match in the input text. |
+| `target` | `string` | Target wrapper node type (e.g., `bulletList`, `orderedList`, `blockquote`). |
+
+## Command payloads (continued)
+
+### SetLinkPayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `displayText` | `string` | Optional display text. When provided, the current selection is replaced with this text in the same transaction so the link mark wraps the new text. Falls back to current selection text, then `href`. If omitted, the selection is left as-is (mark-only). |
+| `href` | `string` | Destination URL of the link. |
+| `rel` | `string \| null` | Link relationship metadata (`noopener noreferrer`, etc.). |
+| `target` | `string \| null` | Where to open the link (`_blank`, `_self`, etc.). |
+| `title` | `string \| null` | Tooltip text shown on hover. |
+
+### InsertImagePayload
+
+`InsertImagePayload` — payload for the `insertImage` command. Inserts one or more images at the current cursor position. Can accept a single image payload or an array of payloads for batch insertion.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `align` | `ImageAlign` | Horizontal alignment for block images: `left`, `center`, `right`, `none`. |
+| `alt` | `string` | Alternative text displayed when image fails to load (accessibility). |
+| `attributes` | `Record` | Custom HTML attributes applied to the image element (e.g., `data-*`, `class`). |
+| `caption` | `string` | Optional caption text displayed below the image. |
+| `display` | `ImageDisplayMode` | Display mode: `block` (standalone line) or `inline` (flows with text). |
+| `height` | `number` | Image height in pixels. |
+| `src` | `string` | Image source URL (HTTP, HTTPS, or data URI). |
+| `title` | `string` | Title text shown in image tooltip. |
+| `width` | `number` | Image width in pixels (constrained by editor max-width). |
+| `wrap` | `ImageWrap` | Text wrapping: `left`, `right` (float), or `none` (standalone). |
+
+### SetBulletListTypePayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `listStyleType` | `string` | CSS `list-style-type` value to apply (e.g. `'disc'`, `'circle'`). |
+
+### SetOrderedListTypePayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `listStyleType` | `string` | CSS `list-style-type` value to apply (e.g. `'decimal'`, `'lower-roman'`). |
+
+### ToggleBulletListPayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `keepMarks` | `boolean` | When `true`, active marks are preserved on the new list item. |
+| `listStyleType` | `string` | CSS `list-style-type` value for the bullet list container (e.g. `'disc'`, `'circle'`, `'square'`). When omitted, `'disc'` is used. When the selection is already inside a `bulletList` using a different style, the list is updated to this style instead of lifted. |
+
+### ToggleOrderedListPayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `keepMarks` | `boolean` | When `true`, active marks are preserved on the new list item. |
+| `listStyleType` | `string` | CSS `list-style-type` value for the ordered list container (e.g. `'decimal'`, `'lower-alpha'`, `'upper-roman'`). When omitted, `'decimal'` is used. When the selection is already inside an `orderedList` using a different style, the list is updated to this style instead of lifted. |
+
+### ToggleListTypePayload
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `checked` | `boolean` | Checked state applied to task items when toggling into a task list. When omitted, the existing default behavior (unchecked on wrap, preserved on conversion) is unchanged. Task lists ignore `listStyleType`. |
+| `keepMarks` | `boolean` | When `true`, active marks are preserved on the new list item after toggling. |
+| `listStyleType` | `string` | CSS `list-style-type` value for the target list container. Applies to bullet and ordered lists only. When omitted, the target type's default style (`disc` / `decimal`) is used to build fresh list attrs; when the selection already sits in a list of the same type and the current style differs, the list is updated instead of lifted. |
