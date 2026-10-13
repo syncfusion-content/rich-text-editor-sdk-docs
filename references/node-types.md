@@ -620,6 +620,10 @@ The `tableExtension` registers the `table`, `tableRow`, `tableCell`, and `tableH
 
 ### Register the extension
 
+```html
+<div id="editor"></div>
+```
+
 ```ts
 import { HeadlessEditor, tableExtension } from '@syncfusion/ej2-headless-editor';
 
@@ -629,13 +633,111 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-> Refer to the [Table extension UG](https://help.syncfusion.com/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/table) for the full options, commands, and shortcuts, including row and column management, cell formatting, and navigation.
+### Node attributes
+
+#### tableCell and tableHeader
+
+| Attribute | Description | Default |
+|-----------|-------------|---------|
+| `colspan` | Number of columns the cell spans. | `1` |
+| `rowspan` | Number of rows the cell spans. | `1` |
+| `colwidth` | Comma-separated column widths in pixels (for example, `120,200,80`). | `null` |
+| `align` | Horizontal text alignment of the cell (`left`, `center`, or `right`). | `null` |
+| `verticalAlign` | Vertical text alignment of the cell (`top`, `middle`, or `bottom`). | `null` |
+| `backgroundColor` | CSS color value for the cell background. | `null` |
+| `color` | CSS color value for the cell text. | `null` |
+| `borderColor` | CSS color value for the cell border. | `null` |
+
+### Configure table options
+
+The `table` extension exposes options that control table behavior:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `resize` | When `true`, table columns can be resized by dragging the column separator handles in the header row. | `true` |
+
+```html
+<div id="editor"></div>
+```
+
+```ts
+import { HeadlessEditor, tableExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor = HeadlessEditor.create({
+    extensions: [
+        tableExtension.configure({
+            resize: true
+        })
+    ]
+});
+editor.mount(document.getElementById('editor') as HTMLElement);
+```
+
+### Commands
+
+#### Table structure
+
+| Command | Description |
+|---------|-------------|
+| `insertTable({ rows, columns })` | Inserts a new table at the current cursor position with the specified number of `rows` and `columns` (minimum 1). Each cell is initialized with an empty paragraph. |
+| `deleteTable()` | Removes the table under the cursor from the document. |
+| `insertRowBefore()` | Inserts a new empty row above the current row. |
+| `insertRowAfter()` | Inserts a new empty row below the current row. |
+| `deleteRow()` | Removes the table row under the cursor. |
+| `insertColumnBefore()` | Inserts a new empty column to the left of the current column. |
+| `insertColumnAfter()` | Inserts a new empty column to the right of the current column. |
+| `deleteColumn()` | Removes the table column under the cursor. |
+
+#### Cell content and formatting
+
+| Command | Description |
+|---------|-------------|
+| `insertParagraphInCell()` | Inserts a new paragraph block inside the current table cell without splitting the cell structure. Bound to <kbd>Enter</kbd> inside a cell. |
+| `setCellAttribute({ attribute, value })` | Sets an arbitrary attribute on the cell(s) in the current selection. Common attributes include `colspan`, `rowspan`, `colwidth`, `align`, `verticalAlign`, `backgroundColor`, `color`, and `borderColor`. |
+| `toggleHeaderRow()` | Toggles the row containing the cursor between a body row and a header row. |
+| `toggleHeaderColumn()` | Toggles the column containing the cursor between body cells and header cells. |
+
+#### Cell navigation
+
+| Command | Description |
+|---------|-------------|
+| `moveToNextCell()` | Moves the cursor to the next table cell. If the cursor is in the last cell, a new row is appended automatically. |
+| `moveToPreviousCell()` | Moves the cursor to the previous table cell. |
+
+```ts
+// Insert a 3x3 table at the cursor
+editor.commands.insertTable({ rows: 3, columns: 3 });
+
+// Add a new row below the current row
+editor.commands.insertRowAfter();
+
+// Convert the current row into a header row
+editor.commands.toggleHeaderRow();
+
+// Apply background color to the selected cells
+editor.commands.setCellAttribute({ attribute: 'backgroundColor', value: '#f0f8ff' });
+
+// Move to the next cell
+editor.commands.moveToNextCell();
+```
+
+### Keyboard shortcuts
+
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Move to Next Cell | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
+| Move to Previous Cell | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>Shift</kbd> + <kbd>Tab</kbd> |
+| Insert Paragraph in Cell | <kbd>Enter</kbd> | <kbd>Enter</kbd> |
 
 ## Image
 
 The `imageExtension` registers the `image` block and `imageInline` inline nodes for rendering images as `<figure>` with `<img>` (block) or `<img>` (inline) elements.
 
 ### Register the extension
+
+```html
+<div id="editor"></div>
+```
 
 ```ts
 import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
@@ -646,13 +748,181 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-> Refer to the [Image extension UG](https://help.syncfusion.com/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/image) for the full options, including display modes, alignment, wrapping, captions, and resize behavior.
+### Node attributes
+
+The `image` and `imageInline` nodes share the same attribute set:
+
+| Attribute | Description | Default |
+|-----------|-------------|---------|
+| `src` | Image source URL (HTTP, HTTPS, or data URI). | `''` |
+| `alt` | Alternative text displayed when the image fails to load (accessibility). | `''` |
+| `title` | Tooltip text shown on hover. | `''` |
+| `width` | Image width in pixels. | `null` |
+| `height` | Image height in pixels. | `null` |
+| `display` | Display mode: `block` (standalone figure) or `inline` (flows with text). | `'block'` |
+| `align` | Horizontal alignment for block images (`left`, `center`, `right`, or `none`). | `'none'` |
+| `wrap` | Text wrapping for block images (`left`, `right`, or `none`). | `'none'` |
+| `caption` | Whether the image renders an editable caption. | `false` |
+
+### Configure image options
+
+The `image` extension exposes options for default image behavior, persistence, and resize handles:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `allowBase64` | Allow pasted or dropped images to keep their base64 payload as `src`. | `true` |
+| `htmlAttributes` | Static HTML attributes merged onto every inserted `<img>` element. | `{}` |
+| `saveFormat` | Persistence format for image references: `blob` (Blob URL) or `base64` (inline data URI). | `'blob'` |
+| `display` | Default display mode for newly inserted images. | `'block'` |
+| `align` | Default horizontal alignment for newly inserted images. | `'none'` |
+| `wrap` | Default text wrapping for newly inserted images. | `'none'` |
+| `resize` | Configure image resizing. Set to `false` to disable drag handles, or provide an `ImageResizeOptions` object. | `{ enabled: true, alwaysPreserveAspectRatio: true }` |
+
+`ImageResizeOptions` accepts the following fields:
+
+| Field | Description | Default |
+|-------|-------------|---------|
+| `enabled` | When `true`, drag-to-resize handles are rendered on image node views. | `true` |
+| `alwaysPreserveAspectRatio` | When `true`, the engine preserves the aspect ratio on every handle. When `false`, holding <kbd>Shift</kbd> toggles aspect lock interactively. | `true` |
+| `directions` | Whitelist of resize directions to render handles for (for example, `top-left`, `top-right`, `bottom-left`, `bottom-right`). | All four corners |
+| `minWidth` | Minimum allowed width in pixels during a resize drag. | `8` |
+| `minHeight` | Minimum allowed height in pixels during a resize drag. | `8` |
+
+```html
+<div id="editor"></div>
+```
+
+```ts
+import { HeadlessEditor, imageExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor = HeadlessEditor.create({
+    extensions: [
+        imageExtension.configure({
+            display: 'block',
+            align: 'none',
+            wrap: 'none',
+            resize: {
+                enabled: true,
+                directions: ['bottom-right'],
+                alwaysPreserveAspectRatio: true,
+                minWidth: 50,
+                minHeight: 50
+            }
+        })
+    ]
+});
+editor.mount(document.getElementById('editor') as HTMLElement);
+```
+
+### Commands
+
+#### Insert and remove
+
+| Command | Description |
+|---------|-------------|
+| `insertImage(payload)` | Inserts one or more images at the current cursor position. Accepts a single `InsertImagePayload` or an array of payloads for batch insertion. |
+| `removeImage()` | Removes the selected image from the document. |
+| `updateImage(payload)` | Updates properties of the selected image. Each payload field is optional; only supplied fields are applied. |
+
+`InsertImagePayload` accepts the following fields:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `src` | `string` | Image source URL (HTTP, HTTPS, or data URI). Required. |
+| `alt` | `string` | Alternative text for accessibility. |
+| `title` | `string` | Tooltip text. |
+| `width` | `number` | Image width in pixels. |
+| `height` | `number` | Image height in pixels. |
+| `display` | `'block'` \| `'inline'` | Display mode for the new image. |
+| `align` | `'left'` \| `'center'` \| `'right'` \| `'none'` | Horizontal alignment. |
+| `wrap` | `'left'` \| `'right'` \| `'none'` | Text wrapping. |
+| `caption` | `string` | Caption text rendered below the image. |
+| `attributes` | `Record<string, string>` | Custom HTML attributes (for example, `data-*`, `class`). |
+
+`UpdateImagePayload` accepts `src`, `alt`, `title`, `width`, `height`, and `attributes`.
+
+#### Layout and dimension
+
+| Command | Description |
+|---------|-------------|
+| `setImageAlign({ align })` | Sets the horizontal alignment of the selected image. Accepted values: `left`, `center`, `right`, `none`. Clears any active text wrapping. |
+| `setImageWrap({ wrap })` | Sets the text wrapping of the selected image. Accepted values: `left`, `right`, `none`. Clears any active alignment when wrapping is enabled. |
+| `setImageDisplay({ mode })` | Converts the selected image between block and inline display modes. Accepted values: `block`, `inline`. |
+| `setImageDimension({ width?, height? })` | Updates the `width` and `height` attributes of the selected image. Pass `null` to clear a dimension. |
+
+#### Captions
+
+| Command | Description |
+|---------|-------------|
+| `addCaption({ caption? })` | Adds an editable caption to the selected image. When the selection is an inline image, it is first converted to a block image. Accepts an optional `caption` string; if omitted or empty, the placeholder text `Insert caption` is used and the cursor is placed inside the caption. |
+| `removeCaption()` | Removes the caption text and disables the `caption` attribute on the selected image. |
+| `toggleCaption({ caption? })` | Toggles the caption on the selected image. When a caption already exists, it is removed; otherwise, a new one is added. Accepts the same optional `caption` payload as `addCaption` to seed the new caption text. |
+
+The optional `caption` payload for `addCaption` and `toggleCaption` is `CaptionPayload`:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `caption` | `string` | Initial text for the new caption. When omitted or whitespace-only, the placeholder text `Insert caption` is used. |
+
+```ts
+// Insert a single block image
+editor.commands.insertImage({
+    src: 'https://example.com/photo.png',
+    alt: 'Example photo',
+    width: 400,
+    height: 300,
+    display: 'block'
+});
+
+// Insert multiple images at once
+editor.commands.insertImage([
+    { src: 'image1.png', alt: 'First image' },
+    { src: 'image2.png', alt: 'Second image' }
+]);
+
+// Update the alt text of the selected image
+editor.commands.updateImage({ alt: 'Updated alt text' });
+
+// Float the selected image to the left with text wrapping
+editor.commands.setImageWrap({ wrap: 'left' });
+
+// Resize the selected image programmatically
+editor.commands.setImageDimension({ width: 600, height: 400 });
+
+// Convert the selected image to inline display
+editor.commands.setImageDisplay({ mode: 'inline' });
+
+// Add a caption with custom text
+editor.commands.addCaption({ caption: 'Sunset over the lake' });
+
+// Add a caption with the default placeholder text
+editor.commands.addCaption();
+
+// Toggle a caption, seeding it with text when adding
+editor.commands.toggleCaption({ caption: 'Figure 1' });
+```
+
+### Resize events
+
+When `resize.enabled` is `true`, the extension emits lifecycle events during user drag interactions:
+
+| Event | Payload |
+|-------|---------|
+| `resize-start` | Initial dimensions and event coordinates. |
+| `resizing` | Updated dimensions as the drag progresses. |
+| `resize-stop` | Final dimensions when the drag completes. |
+
+The final `width` and `height` are persisted to the image attributes when resizing is completed.
 
 ## Callout
 
 The `calloutExtension` registers the `callout` block container node for rendering highlighted message boxes such as informational notes, warnings, errors, success and tips.
 
 ### Register the extension
+
+```html
+<div id="editor"></div>
+```
 
 ```ts
 import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
@@ -663,13 +933,77 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-> Refer to the [Callout extension UG](https://help.syncfusion.com/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/callout) for the full options, including callout variants, toggle commands, shortcuts, and input rules.
+### Node attributes
+
+| Attribute | Description |
+|-----------|-------------|
+| `variant` | Visual style variant of the callout: `info`, `warning`, `note`, `success`, `error`, or `tip`. Defaults to `info`. |
+
+### Configure callout options
+
+The `callout` extension provides options to set the default variant and add custom HTML attributes:
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `defaultVariant` | Default variant used when creating a callout without specifying one. | `'info'` |
+| `htmlAttributes` | Custom HTML attributes applied to the outer callout container element. | `{}` |
+
+Use `.configure()` to apply custom settings:
+
+```html
+<div id="editor"></div>
+```
+
+```ts
+import { HeadlessEditor, calloutExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor = HeadlessEditor.create({
+    extensions: [
+        calloutExtension.configure({
+            defaultVariant: 'note',
+            htmlAttributes: { class: 'custom-callout' }
+        })
+    ]
+});
+editor.mount(document.getElementById('editor') as HTMLElement);
+```
+
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `toggleCallout({ variant? })` | Toggles a callout wrapper around the current block or selection. Accepts an optional `variant` (`info`, `warning`, `note`, `success`, `error`, or `tip`). If already inside a callout, unwraps the content. |
+
+```ts
+// Toggle with default variant
+editor.commands.toggleCallout();
+
+// Toggle with a warning variant
+editor.commands.toggleCallout({ variant: 'warning' });
+```
+
+### Keyboard shortcut
+
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Toggle Callout | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>C</kbd> |
+
+### Input rules
+
+Type the following triggers followed by a space at the start of a line to wrap the current block in a callout:
+
+* `!!!` creates an `info` callout
+* `:::` creates a `note` callout
 
 ## Collapsible
 
 The `collapsibleExtension` registers the `collapsible` block node for expandable sections.
 
 ### Register the extension
+
+```html
+<div id="editor"></div>
+```
 
 ```ts
 import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
@@ -680,4 +1014,67 @@ const editor = HeadlessEditor.create({
 editor.mount(document.getElementById('editor') as HTMLElement);
 ```
 
-> Refer to the [Collapsible extension UG](https://help.syncfusion.com/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes/collapsible) for the full options, including expandable sections, toggle commands, and keyboard navigation.
+> The editor automatically registers `collapsibleKeymapExtension` when `collapsibleExtension` is registered, so <kbd>Enter</kbd>, <kbd>Backspace</kbd>, and <kbd>Delete</kbd> handling inside collapsible sections is enabled without an extra import.
+
+### Node attributes
+
+#### collapsible
+
+| Attribute | Description | Default |
+|-----------|-------------|---------|
+| `collapsed` | When `true`, the body content is collapsed and hidden. When `false`, the body is expanded and visible. | `false` |
+
+`collapsibleHeader` and `collapsibleBody` nodes do not expose additional attributes.
+
+### Configure collapsible options
+
+The `collapsible` extension exposes an `htmlAttributes` option that adds custom HTML attributes to the outer collapsible `<div>` container. The `data-type` and `data-collapsed` attributes are always applied. It defaults to an empty object.
+
+```html
+<div id="editor"></div>
+```
+
+```ts
+import { HeadlessEditor, collapsibleExtension } from '@syncfusion/ej2-headless-editor';
+
+const editor = HeadlessEditor.create({
+    extensions: [
+        collapsibleExtension.configure({
+            htmlAttributes: { class: 'custom-collapsible' }
+        })
+    ]
+});
+editor.mount(document.getElementById('editor') as HTMLElement);
+```
+
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `toggleCollapsible({ triggerType, level? })` | Wraps the current block in a collapsible, or unwraps it if the selection is already inside one. `triggerType` selects the block type of the collapsible trigger child: `heading` or `paragraph`. When `triggerType` is `heading`, `level` sets the heading level (1 to 6) and defaults to `1`. |
+| `collapse({ pos? })` | Sets `collapsed` to `true` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
+| `expand({ pos? })` | Sets `collapsed` to `false` on the nearest collapsible ancestor. Pass an explicit document `pos` to target a specific collapsible (used by custom NodeViews). |
+
+```ts
+// Wrap the current block as a heading-triggered collapsible (level 1)
+editor.commands.toggleCollapsible({ triggerType: 'heading', level: 2 });
+
+// Wrap the current block as a paragraph-triggered collapsible
+editor.commands.toggleCollapsible({ triggerType: 'paragraph' });
+
+// Collapse the nearest collapsible
+editor.commands.collapse();
+
+// Expand the nearest collapsible
+editor.commands.expand();
+```
+
+### Keyboard shortcuts
+
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Toggle Collapsible (paragraph trigger) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>[</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>[</kbd> |
+| Collapse nearest collapsible | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>,</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>,</kbd> |
+| Expand nearest collapsible | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>.</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>.</kbd> |
+
+> To create a heading-triggered collapsible via keyboard, call `toggleCollapsible({ triggerType: 'heading', level: N })` programmatically. The `Mod-Alt-[` shortcut always toggles a paragraph-triggered collapsible.
