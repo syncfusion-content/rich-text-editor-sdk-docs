@@ -15,6 +15,7 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [EditorConfig](#editorconfig)
 - [Document model](#document-model)
   - [DocumentRoot](#documentroot)
+- [Document model (additional types)](#document-model-additional-types)
   - [EditorNode](#editornode)
   - [TextNode](#textnode)
   - [EditorState](#editorstate)
@@ -26,9 +27,11 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [PMCommandContext](#pmcommandcontext)
   - [NodeResolver](#noderesolver)
   - [SelectionType](#selectiontype)
+- [Public types (metadata)](#public-types-metadata)
   - [CommandMeta](#commandmeta)
   - [ChainResult](#chainresult)
   - [ValidationError](#validationerror)
+- [Public types (selection)](#public-types-selection)
   - [CellSelection](#cellselection)
 - [Payloads](#payloads)
   - [DeleteRangePayload](#deleterangepayload)
@@ -621,7 +624,7 @@ const editor = new HeadlessEditor({
 | `marks` | `Mark[]` | Marks applied to this node (for block-level mark support). |
 | `schemaVersion` | `number` | Schema version — used for future migration handling. |
 
-## Public types
+## Public types (metadata)
 
 ### CommandMeta
 
@@ -865,7 +868,7 @@ er, so the input is already stripped of dangerous tags, event-handler attributes
 |----------|------|-------------|
 | `editor` | `HeadlessEditor` | The editor instance receiving the paste operation. |
 
-## Document model
+## Document model (additional types)
 
 ### EditorNode
 
@@ -918,7 +921,7 @@ er, so the input is already stripped of dangerous tags, event-handler attributes
 | `attrs` | `Record` | Mark attributes — type-safe values only, no PM types. |
 | `type` | `string` | The mark type name (e.g. `'bold'`, `'italic'`, `'link'`). |
 
-## Public types
+## Public types (selection)
 
 ### CellSelection
 

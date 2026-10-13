@@ -6,6 +6,7 @@
 - [Placeholder Configuration](#placeholder-configuration)
 - [Text Alignment](#text-alignment)
 - [Indentation & Outdentation](#indentation--outdentation)
+- [Undo and Redo](#undo-and-redo)
 - [Advanced Command Patterns](#advanced-command-patterns)
 
 ## Placeholder Configuration

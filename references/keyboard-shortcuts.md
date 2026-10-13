@@ -8,6 +8,7 @@ Headless Editor ships with a set of default keyboard shortcuts for selection, na
 - [Disabling shortcuts](#disabling-shortcuts)
 - [Custom keyboard shortcuts](#custom-keyboard-shortcuts)
 - [Keyboard accessibility](#keyboard-accessibility)
+- [Focus management](#focus-management)
 
 ## All keyboard shortcuts
 

@@ -34,23 +34,26 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [TextAlignOptions](#textalignoptions)
   - [UndoRedoOptions](#undoredooptions)
   - [ExtensionOptions](#extensionoptions)
+- [Command payloads](#command-payloads)
   - [SetHighlightPayload](#sethighlightpayload)
   - [SetColorPayload](#setcolorpayload)
   - [SetFontFamilyPayload](#setfontfamilypayload)
   - [SetFontSizePayload](#setfontsizepayload)
   - [SetHeadingPayload](#setheadingpayload)
-  - [SetLinkPayload](#setlinkpayload)
-  - [InsertImagePayload](#insertimagepayload)
-  - [InsertTablePayload](#inserttablepayload)
   - [IndentCodeBlockPayload](#indentcodeblockpayload)
   - [OutdentCodeBlockPayload](#outdentcodeblockpayload)
   - [CollapsePayload](#collapsepayload)
   - [ExpandPayload](#expandpayload)
+- [Command payloads (continued)](#command-payloads-continued)
+  - [SetLinkPayload](#setlinkpayload)
+  - [InsertImagePayload](#insertimagepayload)
   - [SetBulletListTypePayload](#setbulletlisttypepayload)
   - [SetOrderedListTypePayload](#setorderedlisttypepayload)
   - [ToggleBulletListPayload](#togglebulletlistpayload)
   - [ToggleOrderedListPayload](#toggleorderedlistpayload)
   - [ToggleListTypePayload](#togglelisttypepayload)
+- [Command payloads (additional)](#command-payloads-additional)
+  - [InsertTablePayload](#inserttablepayload)
   - [ToggleTaskCheckedPayload](#toggletaskcheckedpayload)
   - [ToggleTaskListPayload](#toggletasklistpayload)
 - [Image enums](#image-enums)
@@ -64,6 +67,7 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [CreateLinkRuleOptions](#createlinkruleoptions)
   - [CreateTextBlockRuleOptions](#createtextblockruleoptions)
   - [CreateWrappingRuleOptions](#createwrappingruleoptions)
+- [Input rule options (continued)](#input-rule-options-continued)
   - [InputRuleDefinition](#inputruledefinition)
   - [InputRuleContext](#inputrulecontext)
 - [Extension authoring](#extension-authoring)
@@ -597,7 +601,7 @@ Enum values: `info`, `warning`, `note`, `success`, `error`, `tip`.
 | `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the rendered DOM element (class, data-*, etc.). |
 
 
-## Command payloads (continued)
+## Command payloads (additional)
 
 ### InsertTablePayload
 

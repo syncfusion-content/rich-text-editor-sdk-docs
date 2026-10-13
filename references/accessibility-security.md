@@ -10,7 +10,6 @@
 - [Screen Reader Support](#screen-reader-support)
 - [Custom Node Accessibility](#custom-node-accessibility)
 - [Security Considerations](#security-considerations)
-- [Input Validation](#input-validation)
 
 ## Accessibility Overview
 

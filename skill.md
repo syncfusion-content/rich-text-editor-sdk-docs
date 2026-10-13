@@ -78,14 +78,18 @@ This skill bundles 14 reference files that map to the Syncfusion TypeScript Head
 - Registering extensions individually
 - How extensions compose
 - Defining a custom extension
+- The extension definition
 - Extension config fields (summary)
-- Reusing and extending extensions
+- Reusing extensions
 - Extension lifecycle
+- Registering custom extensions
 - End-to-end example: document variable
 
 ### Custom Extensions & Plugins (Deep Dive)
 📄 **Read:** [references/custom-extensions.md](references/custom-extensions.md)
-- Custom node types
+- Overview
+- Extension config fields
+- Custom nodes
 - Custom marks
 - Custom commands
 - Custom keyboard shortcuts
@@ -123,7 +127,8 @@ This skill bundles 14 reference files that map to the Syncfusion TypeScript Head
 - Disabling shortcuts (`enableInputRules`, `enableTabKey`)
 - Custom keyboard shortcuts via `defineExtension` and `keyboardShortcuts()`
 - Custom input rules via `defineExtension` and `inputRules()`
-- Keyboard accessibility and focus management
+- Keyboard accessibility
+- Focus management
 
 ### Advanced Features
 📄 **Read:** [references/advanced-features.md](references/advanced-features.md)
