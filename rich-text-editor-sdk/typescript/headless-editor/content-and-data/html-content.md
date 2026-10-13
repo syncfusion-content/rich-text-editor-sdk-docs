@@ -97,4 +97,4 @@ The HTML returned by `getHtml()` is serialized according to the same schema and 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/content-and-data/html-content/" %} -->

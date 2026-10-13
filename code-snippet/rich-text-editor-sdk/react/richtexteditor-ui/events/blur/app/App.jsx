@@ -1,6 +1,14 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const toolbarSettings = {
+    items: [
+        'Bold', 'Italic', 'Underline', '|',
+        'BulletList', 'NumberedList', '|',
+        'Undo', 'Redo'
+    ]
+};
+
 function App() {
     const [eventStatus, setEventStatus] = React.useState('');
 
@@ -15,13 +23,7 @@ function App() {
     return (
         <div className="container">
             <RichTextEditorUIComponent
-                toolbarSettings={{
-                    items: [
-                        'Bold', 'Italic', 'Underline', '|',
-                        'BulletList', 'NumberedList', '|',
-                        'Undo', 'Redo'
-                    ]
-                }}
+                toolbarSettings={toolbarSettings}
                 placeholder='Click to focus or click outside to blur...'
                 blur={handleBlur}
                 focus={handleFocus}

@@ -1,6 +1,14 @@
 import * as React from 'react';
 import { RichTextEditorUIComponent } from '@syncfusion/ej2-react-richtexteditor-ui';
 
+const wordCountItem = {
+    id: 'WordCount',
+    actionId: 'wordCount',
+    prefixIcon: 'e-icons e-numbering-list',
+    tooltipText: 'Word count',
+    align: 'Left'
+};
+
 function App() {
     const editorRef = React.useRef(null);
 
@@ -12,14 +20,6 @@ function App() {
                 alert('Word count: ' + words);
             }
         }
-    };
-
-    const wordCountItem = {
-        id: 'WordCount',
-        actionId: 'wordCount',
-        prefixIcon: 'e-icons e-numbering-list',
-        tooltipText: 'Word count',
-        align: 'Left'
     };
 
     const toolbarSettings = {

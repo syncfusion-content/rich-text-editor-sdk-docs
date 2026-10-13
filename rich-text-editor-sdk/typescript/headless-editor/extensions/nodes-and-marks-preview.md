@@ -77,4 +77,4 @@ The following example registers the required extensions and loads sample content
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/nodes" %} -->

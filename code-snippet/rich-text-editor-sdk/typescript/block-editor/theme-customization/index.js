@@ -5,84 +5,84 @@ var blockData = [
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'Block Editor - All Block Types'
-      }
-    ]
+        content: 'Block Editor - All Block Types',
+      },
+    ],
   },
   {
     blockType: 'Paragraph',
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'This sample shows every block type used once, including a '
+        content: 'This sample shows every block type used once, including a ',
       },
       {
         contentType: ej.blockeditor.ContentType.Text,
         content: 'bold',
-        properties: { styles: { bold: true } }
+        properties: { styles: { bold: true } },
       },
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: ' word, a '
+        content: ' word, a ',
       },
       {
         contentType: ej.blockeditor.ContentType.Link,
         content: 'link',
         properties: {
-          url: 'https://ej2.syncfusion.com/documentation/block-editor/getting-started'
-        }
+          url: 'https://ej2.syncfusion.com/documentation/block-editor/getting-started',
+        },
       },
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: ', a mention '
+        content: ', a mention ',
       },
       {
         contentType: ej.blockeditor.ContentType.Mention,
-        properties: { userId: 'user1' }
+        properties: { userId: 'user1' },
       },
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: ', and a label '
+        content: ', and a label ',
       },
       {
         contentType: ej.blockeditor.ContentType.Label,
-        properties: { labelId: 'progress' }
+        properties: { labelId: 'progress' },
       },
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: '.'
-      }
-    ]
+        content: '.',
+      },
+    ],
   },
   {
     blockType: 'BulletList',
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'Bullet list item'
-      }
-    ]
+        content: 'Bullet list item',
+      },
+    ],
   },
   {
     blockType: 'NumberedList',
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'Numbered list item'
-      }
-    ]
+        content: 'Numbered list item',
+      },
+    ],
   },
   {
     blockType: 'Checklist',
     properties: {
-      isChecked: true
+      isChecked: true,
     },
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'Checklist item'
-      }
-    ]
+        content: 'Checklist item',
+      },
+    ],
   },
   {
     blockType: 'Quote',
@@ -93,21 +93,21 @@ var blockData = [
           content: [
             {
               contentType: ej.blockeditor.ContentType.Text,
-              content: 'Quote block example.'
-            }
-          ]
-        }
-      ]
-    }
+              content: 'Quote block example.',
+            },
+          ],
+        },
+      ],
+    },
   },
   {
     blockType: 'Code',
     content: [
       {
         contentType: ej.blockeditor.ContentType.Text,
-        content: 'function greet(name) {\n  return `Hello, ${name}!`;\n}'
-      }
-    ]
+        content: 'function greet(name) {\n  return `Hello, ${name}!`;\n}',
+      },
+    ],
   },
   {
     blockType: 'CollapsibleParagraph',
@@ -116,9 +116,9 @@ var blockData = [
         contentType: ej.blockeditor.ContentType.Text,
         content: 'Toggle block example',
         properties: {
-          styles: { bold: true }
-        }
-      }
+          styles: { bold: true },
+        },
+      },
     ],
     properties: {
       isExpanded: false,
@@ -128,12 +128,12 @@ var blockData = [
           content: [
             {
               contentType: ej.blockeditor.ContentType.Text,
-              content: 'Collapsed content goes here.'
-            }
-          ]
-        }
-      ]
-    }
+              content: 'Collapsed content goes here.',
+            },
+          ],
+        },
+      ],
+    },
   },
   {
     blockType: 'Table',
@@ -141,7 +141,7 @@ var blockData = [
       columns: [
         { headerText: 'Name' },
         { headerText: 'Role' },
-        { headerText: 'Status' }
+        { headerText: 'Status' },
       ],
       rows: [
         {
@@ -153,11 +153,11 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Arun Kumar'
-                    }
-                  ]
-                }
-              ]
+                      content: 'Arun Kumar',
+                    },
+                  ],
+                },
+              ],
             },
             {
               blocks: [
@@ -166,11 +166,11 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Developer'
-                    }
-                  ]
-                }
-              ]
+                      content: 'Developer',
+                    },
+                  ],
+                },
+              ],
             },
             {
               blocks: [
@@ -179,13 +179,13 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Active'
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+                      content: 'Active',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
           cells: [
@@ -196,11 +196,11 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Divya Sharma'
-                    }
-                  ]
-                }
-              ]
+                      content: 'Divya Sharma',
+                    },
+                  ],
+                },
+              ],
             },
             {
               blocks: [
@@ -209,11 +209,11 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Designer'
-                    }
-                  ]
-                }
-              ]
+                      content: 'Designer',
+                    },
+                  ],
+                },
+              ],
             },
             {
               blocks: [
@@ -222,20 +222,20 @@ var blockData = [
                   content: [
                     {
                       contentType: ej.blockeditor.ContentType.Text,
-                      content: 'Active'
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+                      content: 'Active',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   },
   {
-    blockType: 'Divider'
-  }
+    blockType: 'Divider',
+  },
 ];
 
 var blockEditor = new ej.blockeditor.BlockEditor({
@@ -247,9 +247,9 @@ var blockEditor = new ej.blockeditor.BlockEditor({
       avatarUrl:
         'https://ej2.syncfusion.com/demos/src/block-editor/images/andrew.png',
       id: 'user1',
-      user: 'Andrews'
-    }
-  ]
+      user: 'Andrews',
+    },
+  ],
 });
 
 blockEditor.appendTo('#blockeditor');
@@ -267,7 +267,7 @@ function applyTheme(themeName) {
   var themeButtons = [
     document.getElementById('slateLightThemeBtn'),
     document.getElementById('sageGreenThemeBtn'),
-    document.getElementById('darkProThemeBtn')
+    document.getElementById('darkProThemeBtn'),
   ];
 
   themeButtons.forEach(function (button) {
@@ -276,12 +276,9 @@ function applyTheme(themeName) {
     }
 
     var isActive =
-      (button.id === 'slateLightThemeBtn' &&
-        themeName === 'slateLightTheme') ||
-      (button.id === 'sageGreenThemeBtn' &&
-        themeName === 'sageGreenTheme') ||
-      (button.id === 'darkProThemeBtn' &&
-        themeName === 'darkProTheme');
+      (button.id === 'slateLightThemeBtn' && themeName === 'slateLightTheme') ||
+      (button.id === 'sageGreenThemeBtn' && themeName === 'sageGreenTheme') ||
+      (button.id === 'darkProThemeBtn' && themeName === 'darkProTheme');
 
     button.classList.toggle('active', isActive);
     button.setAttribute('aria-pressed', String(isActive));

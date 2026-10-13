@@ -7,7 +7,7 @@ new Vue({
   el: '#app',
   template: `
     <div id="container">
-      <h2>Block Editor - Theme Customizati  on</h2>
+      <h2>Block Editor - Theme Customization</h2>
 
       <div class="theme-switcher">
         <button
@@ -15,21 +15,21 @@ new Vue({
           :class="{ active: currentTheme === 'slateLightTheme' }"
           @click="applyTheme('slateLightTheme')"
         >
-          Rose Theme
+          Slate Light
         </button>
         <button
           type="button"
           :class="{ active: currentTheme === 'sageGreenTheme' }"
           @click="applyTheme('sageGreenTheme')"
         >
-          Azure Theme
+          Sage Green
         </button>
         <button
           type="button"
           :class="{ active: currentTheme === 'darkProTheme' }"
           @click="applyTheme('darkProTheme')"
         >
-          Dark Teal Theme
+          Dark Pro
         </button>
       </div>
 

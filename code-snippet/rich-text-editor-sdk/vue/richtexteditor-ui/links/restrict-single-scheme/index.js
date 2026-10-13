@@ -1,5 +1,7 @@
 import Vue from 'vue';
-import { RichTextEditorUIPlugin } from '@syncfusion/ej2-vue-richtexteditor-ui';
+import { RichTextEditorUIComponent } from '@syncfusion/ej2-vue-richtexteditor-ui';
+
+Vue.component('ejs-richtexteditor-ui', RichTextEditorUIComponent);
 
 new Vue({
   el: '#app',

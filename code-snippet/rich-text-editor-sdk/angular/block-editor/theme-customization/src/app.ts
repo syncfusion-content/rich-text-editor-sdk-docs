@@ -7,8 +7,8 @@ import { BlockEditorModule, ContentType } from '@syncfusion/ej2-angular-blockedi
   standalone: true,
   imports: [CommonModule, BlockEditorModule],
   encapsulation: ViewEncapsulation.None,
-  templateUrl: './app.component.html',
-  styleUrls: ['./styles.css']
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class AppComponent implements OnInit {
   public currentTheme = 'slateLightTheme';

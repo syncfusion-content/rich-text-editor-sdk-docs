@@ -88,6 +88,24 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 | `--color-sf-primary-text-color`        | Primary text color       |
 | `--color-sf-icon-color`                | Icon color               |
 
+### Theme Customization Example
+
+The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/block-editor/theme-customization/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/block-editor/theme-customization/app.vue %}
+{% endhighlight %}
+{% highlight css tabtitle="style.css" %}
+{% include code-snippet/rich-text-editor-sdk/vue/block-editor/theme-customization/index.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/block-editor/theme-customization" %}
+
 ## Using Theme Studio
 
 Syncfusion Theme Studio provides an advanced way to create a fully customized theme for the Block Editor and other EJ2 components.

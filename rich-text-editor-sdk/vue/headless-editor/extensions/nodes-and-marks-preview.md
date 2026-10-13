@@ -77,4 +77,4 @@ The following Vue examples register the required extensions and load sample cont
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/extensions/nodes" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/extensions/nodes" %} -->

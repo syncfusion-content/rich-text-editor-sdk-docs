@@ -32,4 +32,4 @@ The runnable example below mounts the editor with the Document Variable extensio
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/custom-extensions/variable" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/headless-editor/extensions/custom-extensions/variable" %} -->

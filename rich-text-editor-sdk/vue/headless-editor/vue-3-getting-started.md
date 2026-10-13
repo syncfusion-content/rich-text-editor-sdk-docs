@@ -80,7 +80,7 @@ Now, add the Vue Headless Editor component to the **src/App.vue** file using the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue3/headless-editor/getting-started/index" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue3/headless-editor/getting-started/index" %} -->
 
 ## Run the application
 

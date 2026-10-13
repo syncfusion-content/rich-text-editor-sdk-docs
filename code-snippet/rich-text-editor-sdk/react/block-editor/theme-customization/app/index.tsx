@@ -52,20 +52,6 @@ const blockData = [
     }
   },
   {
-    blockType: 'Callout',
-    properties: {
-      children: [
-        {
-          blockType: 'Paragraph',
-          content: [
-            { contentType: ContentType.Text, content: 'Tip: ', properties: { styles: { bold: true } } },
-            { contentType: ContentType.Text, content: 'Callout block example.' }
-          ]
-        }
-      ]
-    }
-  },
-  {
     blockType: 'Code',
     content: [{ contentType: ContentType.Text, content: 'function greet(name) {\n  return `Hello, ${name}!`;\n}' }]
   },
@@ -118,9 +104,9 @@ function App() {
         <h2>Block Editor - Theme Customization</h2>
 
         <div className="theme-switcher">
-          <button onClick={() => setTheme('slateLightTheme')}>Rose Theme</button>
-          <button onClick={() => setTheme('sageGreenTheme')}>Azure Theme</button>
-          <button onClick={() => setTheme('darkProTheme')}>Dark Teal Theme</button>
+          <button onClick={() => setTheme('slateLightTheme')}>Slate Light</button>
+          <button onClick={() => setTheme('sageGreenTheme')}>Sage Green</button>
+          <button onClick={() => setTheme('darkProTheme')}>Dark Pro</button>
         </div>
 
         <BlockEditorComponent

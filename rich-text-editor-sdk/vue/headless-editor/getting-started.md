@@ -95,7 +95,7 @@ The Headless Editor can be initialized and mounted to a target element as shown 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/getting-started/index" %}
+<!-- {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/getting-started/index" %} -->
 
 ## Run the application
 

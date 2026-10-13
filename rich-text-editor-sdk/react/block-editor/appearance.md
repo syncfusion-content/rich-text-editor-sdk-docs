@@ -101,6 +101,24 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 | `--color-sf-primary-text-color`        | Primary text color       |
 | `--color-sf-icon-color`                | Icon color               |
 
+### Theme Customization Example
+
+The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/block-editor/theme-customization/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/rich-text-editor-sdk/react/block-editor/theme-customization/app/index.tsx %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor-sdk/react/block-editor/theme-customization/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/react/block-editor/theme-customization" %}
+
 ## Using Theme Studio
 
 Syncfusion Theme Studio provides an advanced way to create a fully customized theme for the Block Editor and other EJ2 components.

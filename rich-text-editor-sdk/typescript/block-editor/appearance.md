@@ -129,6 +129,43 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 | `--color-sf-primary-text-color`        | Primary text color       |
 | `--color-sf-icon-color`                | Icon color               |
 
+### Theme Customization Example
+
+The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization" %}
+{% endif %}
+
 ## Using Theme Studio
 
 Syncfusion Theme Studio provides an advanced way to create a fully customized theme for the Block Editor and other EJ2 components.

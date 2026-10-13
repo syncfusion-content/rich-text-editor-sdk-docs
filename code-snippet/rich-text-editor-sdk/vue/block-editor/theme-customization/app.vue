@@ -8,21 +8,21 @@
         :class="{ active: currentTheme === 'slateLightTheme' }"
         @click="applyTheme('slateLightTheme')"
       >
-        Rose Theme
+        Slate Light
       </button>
       <button
         type="button"
         :class="{ active: currentTheme === 'sageGreenTheme' }"
         @click="applyTheme('sageGreenTheme')"
       >
-        Azure Theme
+        Sage Green
       </button>
       <button
         type="button"
         :class="{ active: currentTheme === 'darkProTheme' }"
         @click="applyTheme('darkProTheme')"
       >
-        Dark Teal Theme
+        Dark Pro
       </button>
     </div>
 
