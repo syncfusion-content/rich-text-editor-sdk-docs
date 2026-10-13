@@ -21,7 +21,19 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [CalloutVariant](#calloutvariant)
   - [CodeBlockOptions](#codeblockoptions)
   - [CollapsibleExtensionOptions](#collapsibleextensionoptions)
-- [Command payloads](#command-payloads)
+  - [LinkExtensionOptions](#linkextensionoptions)
+  - [ListExtensionOptions](#listextensionoptions)
+  - [ListKeymapExtensionOptions](#listkeymapextensionoptions)
+  - [ImageOptions](#imageoptions)
+  - [ImageResizeOptions](#imageresizeoptions)
+  - [ImageUIContribution](#imageuicontribution)
+  - [ImageUINodeViewFactory](#imageuinodeviewfactory)
+  - [PlaceholderOptions](#placeholderoptions)
+  - [TableOptions](#tableoptions)
+  - [TaskListExtensionOptions](#tasklistextensionoptions)
+  - [TextAlignOptions](#textalignoptions)
+  - [UndoRedoOptions](#undoredooptions)
+  - [ExtensionOptions](#extensionoptions)
   - [SetHighlightPayload](#sethighlightpayload)
   - [SetColorPayload](#setcolorpayload)
   - [SetFontFamilyPayload](#setfontfamilypayload)
@@ -29,6 +41,7 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [SetHeadingPayload](#setheadingpayload)
   - [SetLinkPayload](#setlinkpayload)
   - [InsertImagePayload](#insertimagepayload)
+  - [InsertTablePayload](#inserttablepayload)
   - [IndentCodeBlockPayload](#indentcodeblockpayload)
   - [OutdentCodeBlockPayload](#outdentcodeblockpayload)
   - [CollapsePayload](#collapsepayload)
@@ -38,6 +51,8 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [ToggleBulletListPayload](#togglebulletlistpayload)
   - [ToggleOrderedListPayload](#toggleorderedlistpayload)
   - [ToggleListTypePayload](#togglelisttypepayload)
+  - [ToggleTaskCheckedPayload](#toggletaskcheckedpayload)
+  - [ToggleTaskListPayload](#toggletasklistpayload)
 - [Image enums](#image-enums)
   - [ImageAlign](#imagealign)
   - [ImageDisplayMode](#imagedisplaymode)
@@ -49,6 +64,23 @@ This file is the second part of the API reference for the Syncfusion TypeScript 
   - [CreateLinkRuleOptions](#createlinkruleoptions)
   - [CreateTextBlockRuleOptions](#createtextblockruleoptions)
   - [CreateWrappingRuleOptions](#createwrappingruleoptions)
+  - [InputRuleDefinition](#inputruledefinition)
+  - [InputRuleContext](#inputrulecontext)
+- [Extension authoring](#extension-authoring)
+  - [ExtensionConfig](#extensionconfig)
+  - [ExtensionDefinition](#extensiondefinition)
+  - [ExtensionDOMSpecs](#extensiondomspecs)
+  - [NodeViewDescriptor](#nodeviewdescriptor)
+  - [NodeViewConstructor](#nodeviewconstructor)
+  - [NodeDOMDescriptor](#nodedomdescriptor)
+  - [MarkDOMDescriptor](#markdomdescriptor)
+  - [DOMOutputDescriptor](#domoutputdescriptor)
+- [Table internals](#table-internals)
+  - [TableService](#tableservice)
+  - [CellContext](#cellcontext)
+  - [TableContext](#tablecontext)
+- [Static functions](#static-functions)
+  - [StaticFunctions](#staticfunctions)
 
 ## Schema building blocks
 
@@ -503,3 +535,275 @@ Enum values: `info`, `warning`, `note`, `success`, `error`, `tip`.
 | `checked` | `boolean` | Checked state applied to task items when toggling into a task list. When omitted, the existing default behavior (unchecked on wrap, preserved on conversion) is unchanged. Task lists ignore `listStyleType`. |
 | `keepMarks` | `boolean` | When `true`, active marks are preserved on the new list item after toggling. |
 | `listStyleType` | `string` | CSS `list-style-type` value for the target list container. Applies to bullet and ordered lists only. When omitted, the target type's default style (`disc` / `decimal`) is used to build fresh list attrs; when the selection already sits in a list of the same type and the current style differs, the list is updated instead of lifted. |
+
+### PlaceholderOptions
+
+`PlaceholderOptions` — configuration options for the Placeholder extension. The Placeholder extension displays hint text in empty nodes or when the entire editor is empty, improving user experience by showing where content should be entered.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `dataAttribute` | `string` | HTML data attribute name used to store the placeholder text on DOM elements. The placeholder value is stored as a data attribute for accessibility and CSS `::before` pseudo-element rendering. |
+| `emptyEditorClass` | `string` | CSS class applied to the editor root element when the entire editor is empty. Applied at the document level, enabling distinct styling for the empty-editor state (e.g., larger placeholder text, different background color). |
+| `emptyNodeClass` | `string \| Object` | CSS class applied to nodes that are empty and should display placeholder text. Can be a static class name string or a function that generates class names dynamically. Used for styling empty placeholders with CSS. |
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the rendered DOM element (class, data-*, etc.). |
+| `includeChildren` | `boolean` | When `true`, placeholder is shown for parent nodes containing only empty child nodes. When `false`, placeholders appear only on leaf-level empty nodes. |
+| `placeholder` | `string \| Object` | The placeholder text to display in empty nodes or the editor. Can be a static string or a function that dynamically generates text based on the node context. Useful for displaying context-specific hints like "Write your intro…" for introduction sections. |
+| `showOnlyCurrent` | `boolean` | When `true`, placeholder is shown only for the current (focused) node. Reduces visual clutter by hiding placeholders for all other empty nodes, showing only the placeholder for the node containing the active cursor. |
+| `showOnlyWhenEditable` | `boolean` | When `true`, placeholder is displayed only when the editor is in editable mode. When `false`, placeholders appear even in read-only editors. |
+| `showOnlyWhenEditorEmpty` | `boolean` | When `true`, placeholder is shown only when the entire editor is empty (no content at all). Useful for showing a global "Start typing here…" message only when the document has no content. |
+
+### TableOptions
+
+`TableOptions` — top-level configuration options consumed by the Table extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `resize` | `boolean` | Enable or disable table column resizing via drag handles. Default `true`. When `true`, table columns can be resized by dragging the column separator handles in the header row. When `false`, column resize handles are not rendered. |
+
+### TaskListExtensionOptions
+
+`TaskListExtensionOptions` — options for the task list extension. Defines the HTML attributes applied to task list container and item elements, along with the nested content policy for task items.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the `<ul data-type="taskList">` container element. |
+| `itemHtmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to task item `<li>` elements. |
+| `nested` | `boolean` | When `true`, task items allow nested block content (lists, blockquotes, etc.) after the leading paragraph. When `false`, content is restricted to `paragraph+`. |
+
+### TextAlignOptions
+
+`TextAlignOptions` — configuration options for the text align extension. Defines the HTML attributes and block node types where text alignment applies. Consumers can override the default block types to limit or extend alignment support.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the aligned block elements. |
+| `types` | `string[]` | The block node types where text alignment is allowed. Mirrors Tiptap's `TextAlign.types` option. Consumers override this when they want to limit alignment to a subset of block types or to add support for additional ones (for example, a custom callout node). |
+
+### UndoRedoOptions
+
+`UndoRedoOptions` — history plugin configuration options.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `depth` | `number` | Maximum depth of the undo history stack (default: `30`). |
+| `newGroupDelay` | `number` | Time in milliseconds after which new edits form a new history group (default: `300`). |
+
+### ExtensionOptions
+
+`ExtensionOptions` — common, reusable options shared by built-in extensions (bold, italic, underline, strikethrough, code, etc.). Each extension can use this interface as-is for its `TOptions` generic, or extend it with extension-specific fields. All fields are optional so an extension that only needs one or two of them can still use the shared type without forcing consumers to supply the rest.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `htmlAttributes` | `Readonly<Record<string, string>>` | HTML attributes applied to the rendered DOM element (class, data-*, etc.). |
+
+
+## Command payloads (continued)
+
+### InsertTablePayload
+
+`InsertTablePayload` — payload for the `insertTable` command. Inserts a new table at the current cursor position. Each cell is initialized with an empty paragraph and inherits document alignment settings.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `columns` | `number` | Number of columns in the new table (minimum 1). |
+| `rows` | `number` | Number of rows in the new table (minimum 1). |
+
+### ToggleTaskCheckedPayload
+
+`ToggleTaskCheckedPayload` — payload for `toggleTaskChecked` — `pos` bypasses selection-based lookup.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `pos` | `number` | Absolute document position of the `taskItem` node. When provided, selection is ignored. |
+
+### ToggleTaskListPayload
+
+`ToggleTaskListPayload` — payload for the `toggleTaskList` command.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `checked` | `boolean` | Checked state applied to the task items created when toggling into a task list. When omitted, the existing default behavior (unchecked on wrap, preserved on conversion) is unchanged. |
+| `keepMarks` | `boolean` | When `true`, active marks are preserved on the new task item. |
+
+
+## Input rule options (continued)
+
+### InputRuleDefinition
+
+`InputRuleDefinition` — definition of a single input rule contributed by an extension. All fields are read-only; the registry never mutates definitions.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `handler` | `Object` | Handler invoked when the pattern matches. |
+| `id` | `string` | Unique rule identifier (e.g. `'mark:bold-stars'`). |
+| `label` | `string` | Human-readable label for tooling / debugging. |
+| `pattern` | `RegExp` | `RegExp` that is tested against the text immediately before the cursor. Must end with `$`. |
+| `priority` | `number` | Priority for ordering rules (higher = earlier). Defaults to `0`. |
+
+### InputRuleContext
+
+`InputRuleContext` — PM-free context passed to every input rule handler at the point a pattern match fires. All fields are read-only — handlers must not mutate the context. Handlers must use only `dispatchCommand()` to modify editor state. Direct state access or transaction dispatch is not available — use the command framework instead.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `dispatchCommand` | `Object` | Dispatches a registered command by name, returning `true` if it executed successfully. This is the ONLY way for input rule handlers to modify editor state. Thin closure over `CommandManager.execute()` — goes through the full command pipeline, ensuring undo/redo grouping, event emission, and consistent state management. |
+| `end` | `number` | End position of the match in the document. |
+| `match` | `RegExpMatchArray` | The match array produced by `RegExp.exec` against the text before the cursor. |
+| `nodeAt` | `EditorNode \| null` | The Syncfusion `EditorNode` at the cursor position, or `null` if unavailable. |
+| `selection` | `Selection` | The current editor selection, converted to the Syncfusion model. |
+| `start` | `number` | Start position of the match in the document. |
+
+## Extension authoring
+
+### ExtensionConfig
+
+`ExtensionConfig` — describes an extension's configuration and capabilities. v1 excludes `TStorage` generic, `defaultStorage` contributor, `nodeViews` contributor. All capability contributors and lifecycle hooks use `ExtensionScope` as `this`.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `addExtensions` | `Object` | Contribute additional extensions (composition). |
+| `commands` | `Object` | Contribute command definitions. |
+| `defineOptions` | `Object` | Factory function that returns the option values for this extension. |
+| `domSpecs` | `Object` | Contribute DOM rendering specs for custom nodes and marks. Called during `EditorBuilder._buildDOMSpecRegistry()` — before PM schema compilation. Implementations must not import or reference any PM types. Use `DOMOutputDescriptor` (`string \| readonly unknown[]`) as the return type for `toDOM` functions. |
+| `inputRules` | `Object` | Contribute input rule definitions. |
+| `keyboardShortcuts` | `Object` | Contribute keyboard shortcut definitions. |
+| `marks` | `Object` | Contribute mark type definitions. |
+| `name` | `string` | Unique extension identifier within an editor instance. |
+| `nodeViews` | `Object` | Contribute NodeView factories for custom node rendering. Called during `bindEditorAndFinalize()` so the editor reference is available on `this`. Return a map of `node-type-name` → `NodeViewConstructor`. NodeViews take precedence over `domSpecs` for the same node type. Implementations must NOT import any PM types — use `editor.commands.*` for all state mutations. |
+| `nodes` | `Object` | Contribute node type definitions. |
+| `pasteRules` | `Object` | Contribute paste rule definitions. |
+| `plugins` | `Object` | Contribute editor plugins. |
+| `priority` | `number` | When this extension's nodes are added to the editor's schema. Higher numbers are added first. You only need to set this for extensions that contribute blocks which can hold other blocks (recursive containers — use `10`). For everything else, the default of `50` is the right choice. If you're adding a block that should always win as a filler (like a paragraph), use `100`. Quick guide: `100` — blocks that should be tried first when filling empty space (paragraph, heading, image, horizontal rule); `50` — default; safe for most custom extensions; `10` — blocks that can contain other blocks (table, blockquote, list, callout, collapsible). |
+| `serializers` | `Object` | Contribute serializer definitions. |
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `onDestroy()` | Called during editor destruction. | `void` |
+| `onReady()` | Called after editor startup completion. | `void` |
+| `onRegister()` | Called after successful registration. | `void` |
+
+### ExtensionDefinition
+
+`ExtensionDefinition` — an immutable extension definition. Created by `defineExtension()` factory function.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `config` | `Readonly<...>` | Internal: full configuration (for `ExtensionCompiler` access). |
+| `name` | `string` | Unique extension identifier. |
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `configure(options)` | Creates a new extension with merged options. Original is never modified. | `ExtensionDefinition` |
+| `extend(overrides)` | Creates a new extension by overriding parts of the config. Original is never modified. | `ExtensionDefinition` |
+
+### ExtensionDOMSpecs
+
+`ExtensionDOMSpecs` — collection of node and mark DOM descriptors contributed by an extension.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `marks` | `Readonly<...>` | Keyed by `MarkDefinition.name`. |
+| `nodes` | `Readonly<...>` | Keyed by `NodeDefinition.name`. |
+
+### NodeViewDescriptor
+
+`NodeViewDescriptor` — describes the object returned by a `NodeViewConstructor`. Mirrors ProseMirror's `NodeView` interface but uses only DOM/primitives — no PM types are referenced here.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `contentDOM` | `HTMLElement \| null` | If provided, ProseMirror will render the node's children into this element (the "content hole"). If omitted the node is treated as a leaf. |
+| `deselectNode` | `Object` | Called when the node is deselected. |
+| `destroy` | `Object` | Called when the node view is removed from the DOM. |
+| `dom` | `HTMLElement` | The outer DOM element for the node. |
+| `ignoreMutation` | `Object` | Called for every DOM mutation observed inside the NodeView. Return `true` to tell ProseMirror the mutation is harmless UI noise and must NOT trigger a remount — e.g. a widget's internal DOM swap (Syncfusion's `Button.appendTo` wraps the host element). Returning `false` lets ProseMirror process the mutation normally (re-reading children, dispatching transactions). |
+| `selectNode` | `Object` | Called when the node is selected. |
+| `update` | `Object` | Called whenever the node is updated with new attrs/content. Return `true` to accept the update (ProseMirror re-renders children); return `false` to force a full remount. |
+
+### NodeViewConstructor
+
+`NodeViewConstructor` — PM-free factory function for a custom node view. Extensions implement this to take full control of a node's DOM rendering and interactive behaviour without importing any ProseMirror types.
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `attrs` | `Record` | Node attributes. |
+| `view` | `unknown` | The editor view. |
+| `getPos` | `Object` | Function that returns the current node position. |
+| `hasContent` (optional) | `boolean` | Whether the node has content. |
+
+### NodeDOMDescriptor
+
+`NodeDOMDescriptor` — PM-free descriptor for how a node type should render to the DOM. Used by extensions to contribute custom `toDOM` behaviour without importing any ProseMirror types.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `toDOM` | `Object` | Returns a `DOMOutputDescriptor` for the node. Receives the node's attribute bag — never the PM Node object. |
+
+### MarkDOMDescriptor
+
+`MarkDOMDescriptor` — PM-free descriptor for how a mark type should render to the DOM.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `toDOM` | `Object` | Returns a `DOMOutputDescriptor` for the mark. Receives the mark's attribute bag and inline flag. |
+
+### DOMOutputDescriptor
+
+`DOMOutputDescriptor` — PM-free representation of a single DOM output item. Mirrors ProseMirror's `DOMOutputSpec` but without PM type imports. Accepts a tag-name string or a nested array spec.
+
+| Type | Description |
+|------|-------------|
+| `string` | Tag-name string. |
+| nested array spec | Nested array spec. |
+
+## Table internals
+
+### TableService
+
+`TableService` — resolves table, row, and cell context from the headless document. All methods perform pure tree walks (no PM imports). Complex structural operations (e.g. `TableMap`, colspan-aware coordinates) are delegated to PM adapters inside `src/pm/` by commands at the PM boundary.
+
+| Method | Description | Returns |
+|--------|-------------|---------|
+| `getCurrentCell(doc, selection)` | Find the `tableCell` containing the cursor/anchor of the current selection. Performs a tree walk from the document root. | `CellContext \| null` |
+| `getCurrentTable(doc, selection)` | Find the table containing the cursor/anchor of the current selection. Performs a tree walk from the document root. | `TableContext \| null` |
+| `getSelectedCells(doc, selection)` | Get all cells included in a `CellSelection` range. Returns an empty array when the selection is not a `CellSelection`. | `CellContext[]` |
+| `resolveCellCoordinates(cellNode, tableNode)` | Resolve the (row, col) coordinates of a cell within its parent table. | `Object \| null` |
+
+### CellContext
+
+`CellContext` — resolved context for a single table cell.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `cellNode` | `EditorNode` | The `tableCell` `EditorNode`. |
+| `cellPath` | `number[]` | Path from the document root to the cell. |
+| `col` | `number` | Zero-based column index within the row. |
+| `row` | `number` | Zero-based row index within the table. |
+
+### TableContext
+
+`TableContext` — resolved context for a table node in the document.
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `node` | `EditorNode` | The table `EditorNode`. |
+
+## Static functions
+
+### StaticFunctions
+
+`StaticFunctions` — root static functions of `HeadlessEditor`. These are factory / utility methods available on the `HeadlessEditor` class itself.
+
+| Function | Description | Returns |
+|----------|-------------|---------|
+| `createSnapshot(selection)` | Captures a selection as a PM-free snapshot. Creates a `SelectionSnapshot` from a Syncfusion `Selection` object. The snapshot is initialized in the `'pending'` state, indicating it will be auto-applied to the live ProseMirror state before the next command execution. Use this to save the user's cursor position before an operation that would blur the editor (e.g., toolbar interactions), then restore it afterward via `HeadlessEditor.restoreSelection`. | `SelectionSnapshot` |
+| `withStatus(snap, status)` | Creates a new snapshot with an updated lifecycle status. Returns the input snapshot unchanged if its current status already matches the requested status. Otherwise, creates a shallow copy with the new status. Used internally by the framework to advance snapshot state through its lifecycle (`pending` → `restored` → `consumed`). | `SelectionSnapshot` |
+| `defineExtension(config)` | Creates an immutable extension definition from the given configuration. | `ExtensionDefinition` |
+| `getPositionForUploadId(state, uploadId)` | Resolve the current mapped position of the image tracked by `uploadId`. Used by the completion handler to write the final `src` back into the document — even after the image has moved. | `number \| undefined` |
+| `getUploadIdAtPosition(state, pos)` | Resolve the runtime `uploadId` for the image node whose open token sits at `pos`. Returns `undefined` when no active upload is associated with the image at that position. This is the bridge the Image NodeView uses to subscribe to the generic `UploadStateRegistry` without putting `uploadId` into the image schema. | `string \| undefined` |
+| `createNodeRule(options)` | Creates a node insertion input rule definition. Generates a reusable input rule that detects text patterns and inserts standalone nodes into the document. The handler receives the matched positions and dispatches an `'inputRuleInsert'` command to ensure proper undo/redo support and command event tracking. | `InputRuleDefinition` |
+| `createLinkRule(options)` | Creates a link input rule definition. Generates a reusable input rule that detects URL patterns and Markdown link syntax, then converts them into link marks in the document. Supports both auto-linking (plain URLs) and explicit Markdown syntax. The handler receives the matched positions and dispatches an `'inputRuleMark'` command. | `InputRuleDefinition` |
+| `createMarkRule(options)` | Creates a mark (inline format) input rule definition. Generates a reusable input rule that detects text patterns and applies inline formatting marks. The handler receives the matched positions and dispatches an `'inputRuleMark'` command. | `InputRuleDefinition` |
+| `createTextBlockRule(options)` | Creates a text block transformation input rule definition. Generates a reusable input rule that detects text patterns and transforms the current text block into a different node type. The handler receives the matched positions and dispatches an `'inputRuleTransform'` command. | `InputRuleDefinition` |
+| `createWrappingRule(options)` | Creates a block wrapping input rule definition. Generates a reusable input rule that detects text patterns and wraps the current block within a container node. Useful for creating lists, blockquotes, and other wrapper structures. The handler receives the matched positions and dispatches an `'inputRuleWrap'` command. | `InputRuleDefinition` |
+| `setTextAlignCommand(alignableTypes)` | Build the `setTextAlign` command instance scoped to the given block types. `alignableTypes` is the set of node type names that the command is allowed to act on. The caller (the textAlign extension) wires up the actual command. | (command) |
+
