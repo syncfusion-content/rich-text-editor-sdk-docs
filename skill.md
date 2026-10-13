@@ -100,11 +100,12 @@ Use the Headless Editor when you need:
 
 ### Keyboard Handling
 📄 **Read:** [references/keyboard-shortcuts.md](references/keyboard-shortcuts.md)
-- Default keyboard shortcuts
-- Custom keyboard keybindings
-- Tab key behavior configuration
-- Accessibility keyboard patterns
-- Conflict resolution with custom shortcuts
+- Default keyboard shortcuts (selection, navigation, history, formatting, lists)
+- Block shortcuts via input rules (`# `, `## `, `- `, `1. `, `> `, `` ``` ``, etc.)
+- Disabling shortcuts (`enableInputRules`, `enableTabKey`)
+- Custom keyboard shortcuts via `defineExtension` and `keyboardShortcuts()`
+- Custom input rules via `defineExtension` and `inputRules()`
+- Keyboard accessibility (WAI-ARIA, focus management)
 
 ### Advanced Features & Patterns
 📄 **Read:** [references/advanced-features.md](references/advanced-features.md)
@@ -371,5 +372,5 @@ Structural properties such as `document`, `content`, `extensions`, and `clipboar
 
 ## Related Resources
 
-- [Syncfusion Documentation](https://ej2.syncfusion.com/documentation/headless-editor/introduction/)
+- [Syncfusion TypeScript Headless Editor Documentation](https://help.syncfusion.com/rich-text-editor-sdk/typescript/headless-editor/)
 - [ProseMirror Guide](https://prosemirror.net/docs/guide/)
