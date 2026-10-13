@@ -27,7 +27,7 @@ function App() {
                 let loaded = 0;
                 const chunkSize = Math.max(Math.ceil(total / 10), 1);
                 while (loaded < total) {
-                    if (request.signal?.aborted) {
+                    if (request.signal && request.signal.aborted) {
                         throw new DOMException('Upload cancelled', 'AbortError');
                     }
                     await new Promise((resolve) => {
@@ -39,7 +39,9 @@ function App() {
                         total,
                         percentage: total > 0 ? (loaded / total) * 100 : 100
                     };
-                    request.onProgress?.(progress);
+                    if (request.onProgress) {
+                        request.onProgress(progress);
+                    }
                 }
                 return {
                     url: URL.createObjectURL(request.file),
@@ -112,7 +114,9 @@ function App() {
             }
         }
         function handleFileChange() {
-            const file = fileInputRef.current?.files?.[0];
+            const currentFileInput = fileInputRef.current;
+            const files = currentFileInput ? currentFileInput.files : null;
+            const file = files ? files[0] : undefined;
             if (!file) {
                 return;
             }
@@ -144,22 +148,28 @@ function App() {
                 return;
             }
             if (pending.status === 'uploading' || pending.status === 'pending') {
-                const pct = pending.progress?.percentage ?? 0;
+                const progressInfo = pending.progress;
+                const pct = progressInfo ? (progressInfo.percentage || 0) : 0;
                 setProgress(pct, 'uploading');
                 window.setTimeout(pollUploadState, 100);
                 return;
             }
             if (pending.status === 'completed') {
                 setProgress(100, 'completed');
-                lastUploadedUrl = pending.result?.url ?? null;
-                setStatus(`Upload complete: ${pending.result?.fileName ?? selectedFile?.name ?? ''}`);
+                const completedResult = pending.result;
+                lastUploadedUrl = completedResult ? (completedResult.url || null) : null;
+                const completedFileName = completedResult ? completedResult.fileName : '';
+                const selectedFileName = selectedFile ? selectedFile.name : '';
+                setStatus(`Upload complete: ${completedFileName || selectedFileName || ''}`);
                 currentUploadId = null;
                 updateButtonStates();
                 return;
             }
             if (pending.status === 'failed') {
                 setProgress(0, 'failed');
-                setStatus(`Upload failed: ${pending.error?.message ?? 'Unknown error'}`);
+                const failedError = pending.error;
+                const failedMessage = failedError ? (failedError.message || 'Unknown error') : 'Unknown error';
+                setStatus(`Upload failed: ${failedMessage}`);
                 currentUploadId = null;
                 updateButtonStates();
                 return;
@@ -199,6 +209,12 @@ function App() {
         function handleInsertClick() {
             if (!lastUploadedUrl || !selectedFile) {
                 return;
+e another.');
+            updateButtonStates();
+        }
+        function handleInsertClick() {
+            if (!lastUploadedUrl || !selectedFile) {
+                return;
             }
             headlessEditor.commands.insertImage([
                 {
@@ -225,19 +241,39 @@ function App() {
             setStatus('Inserted. Click Select File to upload another.');
             updateButtonStates();
         }
-        selectButtonRef.current?.addEventListener('click', handleSelectClick);
-        fileInputRef.current?.addEventListener('change', handleFileChange);
-        uploadButtonRef.current?.addEventListener('click', handleUploadClick);
-        cancelButtonRef.current?.addEventListener('click', handleCancelClick);
-        insertButtonRef.current?.addEventListener('click', handleInsertClick);
+        if (selectButtonRef.current) {
+            selectButtonRef.current.addEventListener('click', handleSelectClick);
+        }
+        if (fileInputRef.current) {
+            fileInputRef.current.addEventListener('change', handleFileChange);
+        }
+        if (uploadButtonRef.current) {
+            uploadButtonRef.current.addEventListener('click', handleUploadClick);
+        }
+        if (cancelButtonRef.current) {
+            cancelButtonRef.current.addEventListener('click', handleCancelClick);
+        }
+        if (insertButtonRef.current) {
+            insertButtonRef.current.addEventListener('click', handleInsertClick);
+        }
         setStatus('Idle. Click Select File to begin.');
         updateButtonStates();
         return () => {
-            selectButtonRef.current?.removeEventListener('click', handleSelectClick);
-            fileInputRef.current?.removeEventListener('change', handleFileChange);
-            uploadButtonRef.current?.removeEventListener('click', handleUploadClick);
-            cancelButtonRef.current?.removeEventListener('click', handleCancelClick);
-            insertButtonRef.current?.removeEventListener('click', handleInsertClick);
+            if (selectButtonRef.current) {
+                selectButtonRef.current.removeEventListener('click', handleSelectClick);
+            }
+            if (fileInputRef.current) {
+                fileInputRef.current.removeEventListener('change', handleFileChange);
+            }
+            if (uploadButtonRef.current) {
+                uploadButtonRef.current.removeEventListener('click', handleUploadClick);
+            }
+            if (cancelButtonRef.current) {
+                cancelButtonRef.current.removeEventListener('click', handleCancelClick);
+            }
+            if (insertButtonRef.current) {
+                insertButtonRef.current.removeEventListener('click', handleInsertClick);
+            }
             headlessEditor.destroy();
         };
     }, []);

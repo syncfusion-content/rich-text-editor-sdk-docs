@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
@@ -29,7 +30,7 @@ interface InsertVariableArgs {
 }
 
 function resolveVariable(
-    variables: readonly VariableDef[],
+    variables: VariableDef[],
     name: string
 ): VariableDef | undefined {
     return variables.find((v) => v.name === name);
@@ -81,13 +82,15 @@ export default function App() {
                         if (!def) {
                             return;
                         }
-                        editorHolder.current?.execute('inputRuleMark', {
-                            markType: 'variable',
-                            text: def.value,
-                            matchStart: payload.from,
-                            matchEnd: payload.to,
-                            attrs: { name: def.name, value: def.value }
-                        });
+                        if (editorHolder.current) {
+                            editorHolder.current.execute('inputRuleMark', {
+                                markType: 'variable',
+                                text: def.value,
+                                matchStart: payload.from,
+                                matchEnd: payload.to,
+                                attrs: { name: def.name, value: def.value }
+                            });
+                        }
                     }
                 }
             ];
@@ -155,7 +158,7 @@ export default function App() {
                                 getAttrs(node: Node) {
                                     const element = node as HTMLElement;
                                     return {
-                                        name: element.getAttribute('data-name') ?? '',
+                                        name: element.getAttribute('data-name') || '',
                                         value: ''
                                     };
                                 }
@@ -200,13 +203,13 @@ export default function App() {
     }, []);
 
     return (
-        <>
+        <React.Fragment>
             <div ref={toolbarRef} className="variable-toolbar" />
             <p className="variable-hint">
                 Type a <code>{'{{name}}'}</code> token such as <code>{'{{customerName}}'}</code> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> to cycle through the variables.
             </p>
             <div ref={editorRef} className="variable-editor" />
-        </>
+        </React.Fragment>
     );
 }
 
