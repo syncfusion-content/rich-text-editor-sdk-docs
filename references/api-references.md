@@ -11,12 +11,19 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [Constructor and factory](#constructor-and-factory)
   - [Properties](#properties)
   - [Methods](#methods)
+- [Configuration](#configuration)
+  - [EditorConfig](#editorconfig)
+- [Document model](#document-model)
+  - [DocumentRoot](#documentroot)
 - [Public types](#public-types)
   - [Command](#command)
   - [CommandContext](#commandcontext)
   - [PMCommandContext](#pmcommandcontext)
   - [NodeResolver](#noderesolver)
   - [SelectionType](#selectiontype)
+  - [CommandMeta](#commandmeta)
+  - [ChainResult](#chainresult)
+  - [ValidationError](#validationerror)
 - [Payloads](#payloads)
   - [DeleteRangePayload](#deleterangepayload)
   - [SetMarkPayload](#setmarkpayload)
@@ -24,6 +31,25 @@ This file is the API reference for the Syncfusion TypeScript Headless Editor. It
   - [TypedCommandsFacade](#typedcommandsfacade)
   - [TypedCanFacade](#typedcanfacade)
   - [TypedChain](#typedchain)
+- [Event payloads](#event-payloads)
+  - [AfterPasteEventArgs](#afterpasteeventargs)
+  - [BeforePasteEventArgs](#beforepasteeventargs)
+  - [PasteContent](#pastecontent)
+  - [ContentChangedEventArgs](#contentchangedeventargs)
+  - [DocumentChangedEventArgs](#documentchangedeventargs)
+  - [DocumentChangeAction](#documentchangeaction)
+- [File upload event payloads](#file-upload-event-payloads)
+  - [BeforeFileUploadEventArgs](#beforefileuploadeventargs)
+  - [FileReceivedEventArgs](#filereceivedeventargs)
+- [Resize event payloads](#resize-event-payloads)
+  - [ResizeEventArgs](#resizeeventargs)
+  - [ResizeStartEventArgs](#resizestarteventargs)
+  - [ResizeStopEventArgs](#resizestopeventargs)
+  - [ResizingEventArgs](#resizingeventargs)
+- [Clipboard](#clipboard)
+  - [ClipboardContent](#clipboardcontent)
+  - [ClipboardOptions](#clipboardoptions)
+  - [ClipboardTransformContext](#clipboardtransformcontext)
 
 ## Overview
 
@@ -527,4 +553,297 @@ The complete list of methods on `TypedCanFacade` (all return `boolean`):
 
 The chainable methods on `TypedChain` mirror the methods on `TypedCommandsFacade` with the addition of a `payload` parameter where applicable. The full list:
 
-`addCaption`, `backspaceCollapsible`, `clearCodeBlock`, `clearFormatting`, `clearSelection`, `collapse`, `deleteCollapsible`, `deleteColumn`, `deleteListItem`, `deleteNode(payload: DeleteNodePayload)`, `deleteRange(payload: DeleteRangePayload)`, `deleteRow`, `deleteTable`, `deleteText(payload: DeleteTextPayload)`, `enterCollapsible`, `exitCode`, `expand`, `indent`, `indentCodeBlock`, `indentListItem`, `inputRuleInsert(payload: InputRuleInsertPayload)`, `inputRuleMark(payload: InputRuleMarkPayload)`, `inputRuleTransform(payload: InputRuleTransformPayload)`, `inputRuleWrap(payload: InputRuleWrapPayload)`, `insertColumnAfter`, `insertColumnBefore`, `insertImage(payload: InsertImagePayload)`, `insertNode(payload: InsertNodePayload)`, `insertParagraphInCell`, `insertRowAfter`, `insertRowBefore`, `insertTable(payload: InsertTablePayload)`, `insertText(payload: InsertTextPayload)`, `joinListBackward`, `mergeCollapsibleBackward`, `mergeCollapsibleForward`, `moveNode(payload: MoveNodePayload)`, `moveToNextCell`, `moveToPreviousCell`, `outdent`, `outdentCodeBlock`, `outdentListItem`, `removeCaption`, `removeImage`, `replaceText(payload: ReplaceTextPayload)`, `selectAll`, `setBulletListType(payload: SetBulletListTypePayload)`, `setCellAttribute(payload: SetCellAttributePayload)`, `setCodeBlock`, `setCodeBlockLanguage(payload: SetCodeBlockLanguagePayload)`.
+`addCaption`, `backspaceCollapsible`, `clearCodeBlock`, `clearFormatting`, `clearSelection`, `collapse`, `deleteCollapsible`, `deleteColumn`, `deleteListItem`, `deleteNode(payload: DeleteNodePayload)`, `deleteRange(payload: DeleteRangePayload)`, `deleteRow`, `deleteTable`, `deleteText(payload: DeleteTextPayload)`, `enterCollapsible`, `exitCode`, `expand`, `indent`, `indentCodeBlock`, `indentListItem`, `inputRuleInsert(payload: InputRuleInsertPayload)`, `inputRuleMark(payload: InputRuleMarkPayload)`, `inputRuleTransform(payload: InputRuleTransformPayload)`, `inputRuleWrap(payload: InputRuleWrapPayload)`, `insertColumnAfter`, `insertColumnBefore`, `insertImage(payload: InsertImagePayload)`, `insertNode(payload: InsertNodePayload)`, `insertParagraphInCell`, `insertRowAfter`, `insertRowBefore`, `insertTable(payload: InsertTablePayload)`, `insertText(payload: InsertTextPayload)`, `joinListBackward`, `mergeCollapsibleBackward`, `mergeCollapsibleForward`, `moveNode(payload: MoveNodePayload)`, `moveToNextCell`, `moveToPreviousCell`, `outdent`, `outdentCodeBlock`, `outdentListItem`, `removeCaption`, `removeImage`, `replaceText(payload: ReplaceTextPayload)`, `selectAll`, `setBulletListType(payload: SetBulletListTypePayload)`, `setCellAttribute(payload: SetCellAttributePayload)`, `setCodeBlock`, `setCodeBlockLanguage(payload: SetCodeBlockLanguagePayload)`, `setColor(payload: SetColorPayload)`, `setFontFamily(payload: SetFontFamilyPayload)`, `setFontSize(payload: SetFontSizePayload)`, `setHardBreak`, `setHeading(payload: SetHeadingPayload)`, `setHighlight(payload: SetHighlightPayload)`, `setHorizontalRule`, `setImageAlign(payload: SetImageAlignPayload)`, `setImageDimension(payload: SetImageDimensionPayload)`, `setImageDisplay(payload: SetImageDisplayPayload)`, `setImageWrap(payload: SetImageWrapPayload)`, `setLink(payload: SetLinkPayload)`, `setMark(payload: SetMarkPayload)`, `setOrderedListType(payload: SetOrderedListTypePayload)`, `setParagraph`, `setSelection(payload: SetSelectionPayload)`, `setTextAlign(payload: SetTextAlignPayload)`, `splitBlock`, `splitCollapsible`, `splitListItem`, `toggleBlockQuote`, `toggleBold`, `toggleBulletList(payload: ToggleBulletListPayload)`, `toggleCallout(payload: ToggleCalloutPayload)`, `toggleCaption(payload: ToggleCaptionPayload)`, `toggleCodeBlock`, `toggleCodeMark`, `toggleCollapsible(payload: ToggleCollapsiblePayload)`, `toggleHeaderColumn`, `toggleHeaderRow`, `toggleItalic`, `toggleMark(payload: ToggleMarkPayload)`, `toggleOrderedList(payload: ToggleOrderedListPayload)`, `toggleStrikethrough`, `toggleSubscript`, `toggleSuperscript`, `toggleTaskChecked(payload: ToggleTaskCheckedPayload)`, `toggleTaskList(payload: ToggleTaskListPayload)`, `toggleUnderline`, `unsetColor`, `unsetFontFamily`, `unsetFontSize`, `unsetHighlight`, `unsetLink`, `unsetTextAlign`, `updateImage(payload: UpdateImagePayload)`.
+
+## Configuration
+
+### EditorConfig
+
+The public configuration object for creating a Headless Editor instance. Provides a declarative way to configure editor behavior, initial content, extensions, clipboard handling, file upload, and lifecycle event handlers. Contains Syncfusion-owned types only — no implementation-specific or ProseMirror types are exposed.
+
+```ts
+const editor = new HeadlessEditor({
+    content: '<h1>Welcome</h1>',
+    extensions: [boldExtension, italicExtension],
+    enableInputRules: true,
+    autoSaveSelectionOnBlur: true,
+    contentChanged: (args) => console.log('Content updated')
+});
+```
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `content` | `string` | Initial document content as HTML markup. Convenience property for importing HTML content (templates, copy-paste, or migration scenarios). Read once at creation. To replace the content of a live editor later, use `editor.setContent(html)`. Requires an HTML content parser extension to be loaded. If `document` is also provided, it takes precedence and `content` is ignored. |
+| `document` | `DocumentRoot` | Initial document content as a structured object. Use this when you have pre-built document data. Read once at creation. To replace the document of a live editor later, use `editor.setDocument(doc)`. If both `document` and `content` are provided, `document` takes precedence. |
+| `extensions` | `ExtensionDefinition[]` | Array of extensions that provide formatting, blocks, and behaviors. |
+| `autofocus` | `boolean` | Auto-focus the editor when mounted. `true` / `'auto'`: focus at the last known selection (or start if none). `'start'`: focus at document beginning. `'end'`: focus at document end. `undefined`: no auto-focus (default). |
+| `readOnly` | `boolean` | Render editor in read-only mode. When enabled, all mutations are blocked. Content is viewable only. Commands execute but do not modify state. |
+| `enableInputRules` | `boolean` | Enable automatic formatting from text patterns. When enabled, typing patterns like `**text**`, `# heading`, or `> quote` are automatically converted. Commands always work regardless of this setting. |
+| `enableTabKey` | `boolean` | Enables Tab and Shift+Tab keyboard behavior. |
+| `autoSaveSelectionOnBlur` | `boolean` | Automatically save selection when editor loses focus. Essential for toolbar-based editors where toolbar clicks blur the editor. |
+| `clipboard` | `ClipboardOptions` | Clipboard transformation hooks for product-level paste policy. |
+| `fileUploadHandler` | `FileUploadHandler` | File upload handler for processing files. Must be provided to enable file upload functionality. |
+| `created` | `Object` (callback) | Invoked once after the editor is fully initialized and ready for use. |
+| `destroyed` | `Object` (callback) | Invoked before the editor starts its teardown sequence. |
+| `contentChanged` | `Object` (callback) | Invoked after content is modified (document change committed). |
+| `documentChanged` | `Object` (callback) | Invoked after the document is modified (document change committed). |
+| `selectionChanged` | `Object` (callback) | Invoked when the cursor or selection moves (without document change). |
+| `focus` | `Object` (callback) | Invoked when the editor gains DOM focus. |
+| `blur` | `Object` (callback) | Invoked when the editor loses DOM focus. |
+| `beforePaste` | `Object` (callback) | Invoked before pasted content is inserted into the document. |
+| `afterPaste` | `Object` (callback) | Invoked after pasted content has been inserted into the document. |
+| `beforeFileUpload` | `Object` (callback) | Invoked before a file is uploaded. |
+| `fileReceived` | `Object` (callback) | Invoked after a file is received. |
+| `resizeStart` | `Object` (callback) | Invoked before a resize operation starts on a resizable element. Set `cancel` to `true` in the event arguments to prevent the resize. |
+| `resizeStop` | `Object` (callback) | Invoked when a resize operation on a resizable element completes. |
+| `resizing` | `Object` (callback) | Invoked for every dimension update during an active resize operation. |
+
+## Document model
+
+### DocumentRoot
+
+`DocumentRoot` — the top-level container for the entire document. Always has `type: 'document'`.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `attrs` | `Record` | Node attributes (alignment, indent, color, etc.). |
+| `children` | `EditorNode[]` | Child nodes — empty array for leaf nodes. |
+| `marks` | `Mark[]` | Marks applied to this node (for block-level mark support). |
+| `schemaVersion` | `number` | Schema version — used for future migration handling. |
+
+## Public types
+
+### CommandMeta
+
+`CommandMeta` — optional metadata for UI rendering, discovery, and accessibility of commands. Provides human-readable labels, descriptions, icons, keyboard shortcuts, and searchable tags for each command. Used by toolbars, menus, keyboard shortcut registries, command palettes, and accessibility systems. All fields are optional, allowing simple commands to omit metadata entirely. The `category` field is intentionally a plain string so custom categories can be introduced by extensions without modifying this interface.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `category` | `string` | Semantic category for command organization and filtering. The category is a plain string intentionally allowing extensions to define custom categories beyond built-in values. Recommended built-in categories: `'formatting'` | `'structure'` | `'list'` | `'table'` | `'content'` | `'selection'` | `'history'` | `'media'` | `'collaboration'` | `'block'` | `'inline'`. Custom categories can be domain-specific (e.g., `'admonition'`, `'callout'`). |
+| `description` | `string` | Longer explanation of what the command does and its effects. Used in extended help text, tooltips, and accessibility descriptions. |
+| `focusAfterDispatch` | `boolean` | If `true`, automatically focus the editor after the command's transaction updates the DOM. Defaults to `true` for most interactive commands. Set to `false` for commands that should not steal focus. |
+| `icon` | `string` | Icon identifier or resource for toolbar/menu rendering. Can be an icon name (e.g., `'icon-bold'`), a CSS class, a data URL, or an SVG identifier. |
+| `label` | `string` | User-facing command label displayed in toolbars, menus, and dialogs. |
+| `shortcut` | `string` | Keyboard shortcut hint for display in menus and help systems. Format is display-oriented (e.g., `'Ctrl+B'`, `'Cmd+I'`). This field is for documentation only; actual keybinding registration is handled separately. The shortcut string is not validated or executed. |
+
+### ChainResult
+
+`ChainResult` — returned by `ChainBuilder.run()`. Distinguishes an empty chain from an aborted one so callers can react appropriately.
+
+### ValidationError
+
+`ValidationError` — single reason why a schema or document validation failed. Carries the dot-path of the offending value (e.g. `nodes.paragraph.attrs.align`) so consumers can produce meaningful error messages.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `message` | `string` | Short human-readable reason for the failure. |
+| `path` | `string` | Dot-path to the failing field. Empty string for the whole document. |
+
+## Event payloads
+
+### AfterPasteEventArgs
+
+Payload for `afterPaste` — describes what was actually inserted.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `content` | `PasteContent` | The content that was inserted. |
+| `event` | `ClipboardEvent` | The original DOM paste event. |
+| `insertPosition` | `number` | Position in document where content was inserted. |
+| `insertedLength` | `number` | Number of characters/nodes inserted. |
+
+### BeforePasteEventArgs
+
+Payload for `beforePaste` — carries the parsed clipboard content ready for insertion. Set `event.cancel = true` to abort the paste.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `content` | `PasteContent` | The parsed clipboard content about to be inserted. |
+| `event` | `ClipboardEvent` | The original DOM paste event. |
+
+### PasteContent
+
+`PasteContent` — clipboard content carried by paste events. This is a PM-independent view of the clipboard payload. Listeners that need the parsed document structure should read `editor.getDocument()` in the `AFTER_PASTE` handler. Post-parse transformation belongs in the `config.clipboard.transformContent` hook, not in these events.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `files` | `File[]` | Image files extracted from clipboard content. Populated when the user pastes direct image files (`image/png`, `image/jpeg`, etc.) from system clipboard, or when HTML content contains images as data URIs (automatically converted to `File` objects). Empty or `undefined` when source is plain text or HTML without embedded images. |
+| `htmlContent` | `string` | HTML content from the clipboard (after Headless security sanitisation and any product `transformHTML` hook has run). |
+| `text` | `string` | Plain text fallback content from the clipboard. |
+
+### ContentChangedEventArgs
+
+Payload for `contentChanged` — aggregated from `TransactionApplied` + `HistoryRecorded` + `SelectionUpdated` + `RendererInvalidated`.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `document` | `DocumentRoot` | The document state after the change. |
+| `selection` | `Selection` | The selection state after the change. |
+
+### DocumentChangedEventArgs
+
+Payload for `documentChanged` — emitted on document-mutating transactions with semantic change information. Provides rich context about what changed (action), which nodes were affected, and the new state. Use this for product-level behaviors (Block Editor block tracking, RTE undo previews, analytics).
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `action` | `DocumentChangeAction` | Semantic action describing the nature of the change. |
+| `affectedNodes` | `EditorNode[]` | All Headless Editor nodes touched by this transaction. Populated based on action. |
+| `document` | `DocumentRoot` | The document state after the change. |
+| `selection` | `Selection` | The selection state after the change. |
+
+#### `affectedNodes` per action
+
+- `'Insertion'`: Newly inserted nodes and their ancestors.
+- `'Deletion'`: Nodes that existed before deletion (for archival/undo preview).
+- `'Moved'`: Relocated nodes.
+- `'Replaced'`: Both old and new nodes.
+- `'Update'`: Nodes with changed attributes; normally containing block.
+- `'Formatting'`: Nodes with added/removed marks; normally containing block.
+- `'Unknown'`: All nodes with changes (best effort).
+
+### DocumentChangeAction
+
+`DocumentChangeAction` — semantic action that describes the nature of a document change. Allowed values: `Insertion`, `Deletion`, `Moved`, `Replaced`, `Update`, `Formatting`, `Unknown`.
+
+| Action | Description |
+|--------|-------------|
+| `Insertion` | Content was added (typing, paste, insert command). |
+| `Deletion` | Content was removed (backspace, delete, remove command). |
+| `Moved` | Content was relocated (drag-drop, reorder, move command). |
+| `Replaced` | Content was swapped (find-replace, transform). |
+| `Update` | Node attributes changed without content/structural change (heading level, node attrs). |
+| `Formatting` | Mark/formatting changed (bold, italic, color) without content/structural change. |
+| `Unknown` | Transaction too complex to categorize; examine `affectedNodes` for details. |
+
+## File upload event payloads
+
+### BeforeFileUploadEventArgs
+
+Payload for `BEFORE_FILE_UPLOAD` event. Published before a file upload is attempted. Extensions can inspect the file and cancel the upload if needed.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `cancel` | `boolean` | Set to `true` to cancel the upload. Extensions can set this in their event handler to prevent the upload from starting. |
+| `file` | `File` | The file about to be uploaded. |
+
+### FileReceivedEventArgs
+
+Payload for `FILE_RECEIVED` event. Published when a file is received (pasted/dropped/API). Extensions receive this to decide whether to accept the file and create a node.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `file` | `File` | The file that was received. |
+
+## Resize event payloads
+
+### ResizeEventArgs
+
+Common arguments for resize lifecycle events.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `currentHeight` | `number` | The current height of the element in pixels. |
+| `currentWidth` | `number` | The current width of the element in pixels. |
+| `element` | `HTMLElement` | The DOM element being resized. |
+| `nodeType` | `string` | The schema node type associated with the element being resized. |
+
+### ResizeStartEventArgs
+
+Arguments supplied when a resize operation starts. Set `cancel` to `true` to prevent the operation from starting.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `cancel` | `boolean` | Prevents the resize operation when set to `true`. |
+| `currentHeight` | `number` | The current height of the element in pixels. |
+| `currentWidth` | `number` | The current width of the element in pixels. |
+| `element` | `HTMLElement` | The DOM element being resized. |
+| `nodeType` | `string` | The schema node type associated with the element being resized. |
+
+### ResizeStopEventArgs
+
+Arguments supplied when a resize operation completes.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `currentHeight` | `number` | The current height of the element in pixels. |
+| `currentWidth` | `number` | The current width of the element in pixels. |
+| `element` | `HTMLElement` | The DOM element being resized. |
+| `nodeType` | `string` | The schema node type associated with the element being resized. |
+| `originalHeight` | `number` | The height captured when the resize operation started, in pixels. |
+| `originalWidth` | `number` | The width captured when the resize operation started, in pixels. |
+
+### ResizingEventArgs
+
+Arguments supplied during an active resize operation.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `currentHeight` | `number` | The current height of the element in pixels. |
+| `currentWidth` | `number` | The current width of the element in pixels. |
+| `element` | `HTMLElement` | The DOM element being resized. |
+| `nodeType` | `string` | The schema node type associated with the element being resized. |
+| `originalHeight` | `number` | The height captured when the resize operation started, in pixels. |
+| `originalWidth` | `number` | The width captured when the resize operation started, in pixels. |
+
+## Clipboard
+
+### ClipboardContent
+
+`ClipboardContent` — parsed clipboard content as a ProseMirror slice. Product `transformContent` hooks receive the slice that ProseMirror's schema-driven parser produced, and may return a new slice to replace it. This allows for content restructuring, node type normalization, or mark filtering after parsing but before insertion into the document.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `slice` | `PMSlice` | The parsed ProseMirror slice ready for insertion into the document. Transform hooks may modify and return a new slice to alter the inserted content. |
+
+### ClipboardOptions
+
+`ClipboardOptions` — clipboard transformation options exposed on `EditorConfig.clipboard`. Provides extensibility points for product-level paste policies. Headless composes a non-overridable security sanitiser ahead of `transformHTML`. Products register their paste policy (`deniedTags`, `deniedAttrs`, `allowedStyles`, `allowedTags`, etc.) by implementing one or both of these hooks to enforce content rules, normalize structure, and handle platform-specific content (e.g., Office, Google Docs).
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `transformContent` | `Object` | Transform parsed clipboard content before it is inserted. Receives the slice produced by ProseMirror's schema parser and may return a modified slice to alter insertion behavior. Use to drop foreign marks not supported by your schema, restructure node hierarchies, normalize content, or apply schema-aware filtering. |
+| `transformHTML` | `Object` | Transform clipboard HTML before it is parsed into editor content. Runs after Headless's non-overridable security sanitiser, so the input is already stripped of dangerous tags, event-handler attributes, and unsafe URL protocols. Use to strip platform-specific markup, normalize HTML structure, or apply `deniedTags`/`deniedAttrs` rules at the HTML level. Return the (possibly rewritten) HTML string. |
+
+### ClipboardTransformContext
+
+`ClipboardTransformContext` — context passed to clipboard transform hooks. Provides the editor instance and detected source format to allow transform hooks to make context-aware decisions about clipboard content handling.
+
+#### Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `editor` | `HeadlessEditor` | The editor instance receiving the paste operation. |
