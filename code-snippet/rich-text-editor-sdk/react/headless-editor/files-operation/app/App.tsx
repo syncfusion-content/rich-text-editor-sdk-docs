@@ -2,7 +2,6 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useEffect, useRef } from 'react';
 import {HeadlessEditor,basicExtensions,placeholderExtension,imageExtension,FileUploadHandler,FileUploadRequest,FileUploadProgress} from '@syncfusion/ej2-headless-editor';
-import './index.css';
 function App() {
     const editorRef = useRef<HTMLDivElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
