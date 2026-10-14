@@ -1,23 +1,42 @@
 import * as React from 'react';
-import { useEffect, useRef } from 'react';
 import {HeadlessEditor,basicExtensions,placeholderExtension,imageExtension,FileUploadHandler,FileUploadRequest,FileUploadProgress} from '@syncfusion/ej2-headless-editor';
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-    const fileInputRef = useRef<HTMLInputElement>(null);
-    const fileInfoRef = useRef<HTMLSpanElement>(null);
-    const progressBarRef = useRef<HTMLDivElement>(null);
-    const progressTextRef = useRef<HTMLSpanElement>(null);
-    const statusMessageRef = useRef<HTMLDivElement>(null);
-    const selectButtonRef = useRef<HTMLButtonElement>(null);
-    const uploadButtonRef = useRef<HTMLButtonElement>(null);
-    const insertButtonRef = useRef<HTMLButtonElement>(null);
-    const cancelButtonRef = useRef<HTMLButtonElement>(null);
-    useEffect(() => {
+class App extends React.Component {
+    private editorRef: React.RefObject<HTMLDivElement>;
+    private fileInputRef: React.RefObject<HTMLInputElement>;
+    private fileInfoRef: React.RefObject<HTMLSpanElement>;
+    private progressBarRef: React.RefObject<HTMLDivElement>;
+    private progressTextRef: React.RefObject<HTMLSpanElement>;
+    private statusMessageRef: React.RefObject<HTMLDivElement>;
+    private selectButtonRef: React.RefObject<HTMLButtonElement>;
+    private uploadButtonRef: React.RefObject<HTMLButtonElement>;
+    private insertButtonRef: React.RefObject<HTMLButtonElement>;
+    private cancelButtonRef: React.RefObject<HTMLButtonElement>;
+    private headlessEditor: HeadlessEditor | null = null;
+    private selectedFile: File | null = null;
+    private currentUploadId: string | null = null;
+    private lastUploadedUrl: string | null = null;
+
+    constructor(props: {}) {
+        super(props);
+        this.editorRef = React.createRef<HTMLDivElement>();
+        this.fileInputRef = React.createRef<HTMLInputElement>();
+        this.fileInfoRef = React.createRef<HTMLSpanElement>();
+        this.progressBarRef = React.createRef<HTMLDivElement>();
+        this.progressTextRef = React.createRef<HTMLSpanElement>();
+        this.statusMessageRef = React.createRef<HTMLDivElement>();
+        this.selectButtonRef = React.createRef<HTMLButtonElement>();
+        this.uploadButtonRef = React.createRef<HTMLButtonElement>();
+        this.insertButtonRef = React.createRef<HTMLButtonElement>();
+        this.cancelButtonRef = React.createRef<HTMLButtonElement>();
+    }
+
+    componentDidMount() {
         const headlessEditor: HeadlessEditor = HeadlessEditor.create({
             extensions: [basicExtensions, imageExtension, placeholderExtension]
         });
-        if (editorRef.current) {
-            headlessEditor.mount(editorRef.current);
+        this.headlessEditor = headlessEditor;
+        if (this.editorRef.current) {
+            headlessEditor.mount(this.editorRef.current);
         }
         const uploadHandler: FileUploadHandler = {
             upload: async (request: FileUploadRequest) => {
@@ -49,277 +68,298 @@ function App() {
                 };
             },
             cancel: (uploadId: string): void => {
-                setStatus(`Cancelling upload: ${uploadId}`);
+                this.setStatus(`Cancelling upload: ${uploadId}`);
             }
         };
         headlessEditor.setFileUploadHandler(uploadHandler);
-        let selectedFile: File | null = null;
-        let currentUploadId: string | null = null;
-        let lastUploadedUrl: string | null = null;
-        function setStatus(message: string): void {
-            if (statusMessageRef.current) {
-                statusMessageRef.current.textContent = message;
-            }
-        }
-        function setProgress(percentage: number, state: 'idle' | 'uploading' | 'completed' | 'failed' | 'cancelled' = 'uploading'): void {
-            const clamped: number = Math.max(0, Math.min(100, percentage));
-            if (progressBarRef.current) {
-                progressBarRef.current.style.width = `${clamped}%`;
-            }
-            if (progressTextRef.current) {
-                progressTextRef.current.textContent = `${clamped.toFixed(0)}%`;
-            }
-            if (progressBarRef.current) {
-                progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
-                if (state !== 'uploading' && state !== 'idle') {
-                    progressBarRef.current.classList.add(state);
-                }
-            }
-        }
-        function resetProgress(): void {
-            if (progressBarRef.current) {
-                progressBarRef.current.style.width = '0%';
-            }
-            if (progressTextRef.current) {
-                progressTextRef.current.textContent = '0%';
-            }
-            if (progressBarRef.current) {
-                progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
-            }
-        }
-        function updateButtonStates(): void {
-            if (uploadButtonRef.current) {
-                uploadButtonRef.current.disabled = !selectedFile || currentUploadId !== null;
-            }
-            if (insertButtonRef.current) {
-                insertButtonRef.current.disabled = !lastUploadedUrl;
-            }
-            if (cancelButtonRef.current) {
-                cancelButtonRef.current.disabled = selectedFile === null && lastUploadedUrl === null;
-            }
-        }
-        function formatFileInfo(file: File): string {
-            const kb: number = file.size / 1024;
-            const sizeText: string = kb < 1024
-                ? `${kb.toFixed(1)} KB`
-                : `${(kb / 1024).toFixed(2)} MB`;
-            return `${file.name} (${sizeText})`;
-        }
-        function handleSelectClick(): void {
-            if (fileInputRef.current) {
-                fileInputRef.current.value = '';
-                fileInputRef.current.click();
-            }
-        }
-        function handleFileChange(): void {
-            const currentFileInput = fileInputRef.current;
-            const files = currentFileInput ? currentFileInput.files : null;
-            const file: File | undefined = files ? files[0] : undefined;
-            if (!file) {
-                return;
-            }
-            selectedFile = file;
-            lastUploadedUrl = null;
-            if (fileInfoRef.current) {
-                fileInfoRef.current.textContent = `Selected: ${formatFileInfo(file)}`;
-            }
-            setStatus('File selected. Click Upload to start.');
-            resetProgress();
-            updateButtonStates();
-        }
-        function handleUploadClick(): void {
-            if (!selectedFile) {
-                return;
-            }
 
-            resetProgress();
-            setStatus('Uploading...');
-            currentUploadId = headlessEditor.getFileHandler().startUpload(selectedFile);
-            updateButtonStates();
-
-            pollUploadState();
+        const selectButton = this.selectButtonRef.current;
+        if (selectButton) {
+            selectButton.addEventListener('click', this.handleSelectClick);
+        }
+        const fileInput = this.fileInputRef.current;
+        if (fileInput) {
+            fileInput.addEventListener('change', this.handleFileChange);
+        }
+        const uploadButton = this.uploadButtonRef.current;
+        if (uploadButton) {
+            uploadButton.addEventListener('click', this.handleUploadClick);
+        }
+        const cancelButton = this.cancelButtonRef.current;
+        if (cancelButton) {
+            cancelButton.addEventListener('click', this.handleCancelClick);
+        }
+        const insertButton = this.insertButtonRef.current;
+        if (insertButton) {
+            insertButton.addEventListener('click', this.handleInsertClick);
         }
 
-        function pollUploadState(): void {
-            if (!currentUploadId) {
-                return;
-            }
-            const pending = headlessEditor.getFileHandler().getPendingUpload(currentUploadId);
-            if (!pending) {
-                return;
-            }
+        this.setStatus('Idle. Click Select File to begin.');
+        this.updateButtonStates();
+    }
 
-            if (pending.status === 'uploading' || pending.status === 'pending') {
-                const progressInfo = pending.progress;
-                const pct: number = progressInfo ? (progressInfo.percentage || 0) : 0;
-                setProgress(pct, 'uploading');
-                window.setTimeout(pollUploadState, 100);
-                return;
-            }
+    componentWillUnmount() {
+        const selectButton = this.selectButtonRef.current;
+        if (selectButton) {
+            selectButton.removeEventListener('click', this.handleSelectClick);
+        }
+        const fileInput = this.fileInputRef.current;
+        if (fileInput) {
+            fileInput.removeEventListener('change', this.handleFileChange);
+        }
+        const uploadButton = this.uploadButtonRef.current;
+        if (uploadButton) {
+            uploadButton.removeEventListener('click', this.handleUploadClick);
+        }
+        const cancelButton = this.cancelButtonRef.current;
+        if (cancelButton) {
+            cancelButton.removeEventListener('click', this.handleCancelClick);
+        }
+        const insertButton = this.insertButtonRef.current;
+        if (insertButton) {
+            insertButton.removeEventListener('click', this.handleInsertClick);
+        }
+        if (this.headlessEditor) {
+            this.headlessEditor.destroy();
+            this.headlessEditor = null;
+        }
+    }
 
-            if (pending.status === 'completed') {
-                setProgress(100, 'completed');
-                const completedResult = pending.result;
-                lastUploadedUrl = completedResult ? (completedResult.url || null) : null;
-                const completedFileName = completedResult ? completedResult.fileName : '';
-                const selectedFileName = selectedFile ? selectedFile.name : '';
-                setStatus(`Upload complete: ${completedFileName || selectedFileName || ''}`);
-                currentUploadId = null;
-                updateButtonStates();
-                return;
-            }
+    private setStatus(message: string): void {
+        if (this.statusMessageRef.current) {
+            this.statusMessageRef.current.textContent = message;
+        }
+    }
 
-            if (pending.status === 'failed') {
-                setProgress(0, 'failed');
-                const failedError = pending.error;
-                const failedMessage = failedError ? (failedError.message || 'Unknown error') : 'Unknown error';
-                setStatus(`Upload failed: ${failedMessage}`);
-                currentUploadId = null;
-                updateButtonStates();
-                return;
-            }
-
-            if (pending.status === 'cancelled') {
-                setProgress(0, 'cancelled');
-                setStatus('Upload cancelled.');
-                currentUploadId = null;
-                updateButtonStates();
-                return;
+    private setProgress(percentage: number, state: 'idle' | 'uploading' | 'completed' | 'failed' | 'cancelled' = 'uploading'): void {
+        const clamped: number = Math.max(0, Math.min(100, percentage));
+        if (this.progressBarRef.current) {
+            this.progressBarRef.current.style.width = `${clamped}%`;
+        }
+        if (this.progressTextRef.current) {
+            this.progressTextRef.current.textContent = `${clamped.toFixed(0)}%`;
+        }
+        if (this.progressBarRef.current) {
+            this.progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
+            if (state !== 'uploading' && state !== 'idle') {
+                this.progressBarRef.current.classList.add(state);
             }
         }
+    }
 
-        // -------------------------------------------------------------------------
-        // 6. Cancel button — aborts the in-flight upload via AbortSignal, OR
-        //    discards the completed upload so the user can pick a different file.
-        // -------------------------------------------------------------------------
-        function handleCancelClick(): void {
-            if (currentUploadId) {
-                headlessEditor.getFileHandler().cancel(currentUploadId);
-                setStatus('Cancellation requested...');
-                return;
-            }
+    private resetProgress(): void {
+        if (this.progressBarRef.current) {
+            this.progressBarRef.current.style.width = '0%';
+        }
+        if (this.progressTextRef.current) {
+            this.progressTextRef.current.textContent = '0%';
+        }
+        if (this.progressBarRef.current) {
+            this.progressBarRef.current.classList.remove('failed', 'cancelled', 'completed');
+        }
+    }
 
-            if (selectedFile || lastUploadedUrl) {
-                discardSelection();
-            }
+    private updateButtonStates(): void {
+        if (this.uploadButtonRef.current) {
+            this.uploadButtonRef.current.disabled = !this.selectedFile || this.currentUploadId !== null;
+        }
+        if (this.insertButtonRef.current) {
+            this.insertButtonRef.current.disabled = !this.lastUploadedUrl;
+        }
+        if (this.cancelButtonRef.current) {
+            this.cancelButtonRef.current.disabled = this.selectedFile === null && this.lastUploadedUrl === null;
+        }
+    }
+
+    private formatFileInfo(file: File): string {
+        const kb: number = file.size / 1024;
+        const sizeText: string = kb < 1024
+            ? `${kb.toFixed(1)} KB`
+            : `${(kb / 1024).toFixed(2)} MB`;
+        return `${file.name} (${sizeText})`;
+    }
+
+    private handleSelectClick = (): void => {
+        if (this.fileInputRef.current) {
+            this.fileInputRef.current.value = '';
+            this.fileInputRef.current.click();
+        }
+    }
+
+    private handleFileChange = (): void => {
+        const currentFileInput = this.fileInputRef.current;
+        const files = currentFileInput ? currentFileInput.files : null;
+        const file: File | undefined = files ? files[0] : undefined;
+        if (!file) {
+            return;
+        }
+        this.selectedFile = file;
+        this.lastUploadedUrl = null;
+        if (this.fileInfoRef.current) {
+            this.fileInfoRef.current.textContent = `Selected: ${this.formatFileInfo(file)}`;
+        }
+        this.setStatus('File selected. Click Upload to start.');
+        this.resetProgress();
+        this.updateButtonStates();
+    }
+
+    private handleUploadClick = (): void => {
+        if (!this.selectedFile || !this.headlessEditor) {
+            return;
         }
 
-        function discardSelection(): void {
-            selectedFile = null;
-            lastUploadedUrl = null;
-            currentUploadId = null;
-            if (fileInputRef.current) {
-                fileInputRef.current.value = '';
-            }
-            if (fileInfoRef.current) {
-                fileInfoRef.current.textContent = 'No file selected';
-            }
-            resetProgress();
-            setStatus('Discarded. Click Select File to choose another.');
-            updateButtonStates();
+        this.resetProgress();
+        this.setStatus('Uploading...');
+        this.currentUploadId = this.headlessEditor.getFileHandler().startUpload(this.selectedFile);
+        this.updateButtonStates();
+
+        this.pollUploadState();
+    }
+
+    private pollUploadState = (): void => {
+        if (!this.currentUploadId || !this.headlessEditor) {
+            return;
+        }
+        const pending = this.headlessEditor.getFileHandler().getPendingUpload(this.currentUploadId);
+        if (!pending) {
+            return;
         }
 
-        // -------------------------------------------------------------------------
-        // 7. Insert button — places the uploaded file into the editor.
-        // -------------------------------------------------------------------------
-        function handleInsertClick(): void {
-            if (!lastUploadedUrl || !selectedFile) {
-                return;
-            }
-
-            headlessEditor.commands.insertImage([
-                {
-                    src: lastUploadedUrl,
-                    alt: selectedFile.name,
-                    display: 'block',
-                    align: 'none',
-                    wrap: 'none'
-                }
-            ]);
-
-            setStatus(`Inserted "${selectedFile.name}" into the editor.`);
-
-            window.setTimeout(resetForNextSelection, 1200);
+        if (pending.status === 'uploading' || pending.status === 'pending') {
+            const progressInfo = pending.progress;
+            const pct: number = progressInfo ? (progressInfo.percentage || 0) : 0;
+            this.setProgress(pct, 'uploading');
+            window.setTimeout(this.pollUploadState, 100);
+            return;
         }
 
-        function resetForNextSelection(): void {
-            selectedFile = null;
-            lastUploadedUrl = null;
-            if (fileInputRef.current) {
-                fileInputRef.current.value = '';
-            }
-            if (fileInfoRef.current) {
-                fileInfoRef.current.textContent = 'No file selected';
-            }
-            resetProgress();
-            setStatus('Inserted. Click Select File to upload another.');
-            updateButtonStates();
-        }
-        if (selectButtonRef.current) {
-            selectButtonRef.current.addEventListener('click', handleSelectClick);
-        }
-        if (fileInputRef.current) {
-            fileInputRef.current.addEventListener('change', handleFileChange);
-        }
-        if (uploadButtonRef.current) {
-            uploadButtonRef.current.addEventListener('click', handleUploadClick);
-        }
-        if (cancelButtonRef.current) {
-            cancelButtonRef.current.addEventListener('click', handleCancelClick);
-        }
-        if (insertButtonRef.current) {
-            insertButtonRef.current.addEventListener('click', handleInsertClick);
+        if (pending.status === 'completed') {
+            this.setProgress(100, 'completed');
+            const completedResult = pending.result;
+            this.lastUploadedUrl = completedResult ? (completedResult.url || null) : null;
+            const completedFileName = completedResult ? completedResult.fileName : '';
+            const selectedFileName = this.selectedFile ? this.selectedFile.name : '';
+            this.setStatus(`Upload complete: ${completedFileName || selectedFileName || ''}`);
+            this.currentUploadId = null;
+            this.updateButtonStates();
+            return;
         }
 
-        setStatus('Idle. Click Select File to begin.');
-        updateButtonStates();
+        if (pending.status === 'failed') {
+            this.setProgress(0, 'failed');
+            const failedError = pending.error;
+            const failedMessage = failedError ? (failedError.message || 'Unknown error') : 'Unknown error';
+            this.setStatus(`Upload failed: ${failedMessage}`);
+            this.currentUploadId = null;
+            this.updateButtonStates();
+            return;
+        }
 
-        return () => {
-            if (selectButtonRef.current) {
-                selectButtonRef.current.removeEventListener('click', handleSelectClick);
-            }
-            if (fileInputRef.current) {
-                fileInputRef.current.removeEventListener('change', handleFileChange);
-            }
-            if (uploadButtonRef.current) {
-                uploadButtonRef.current.removeEventListener('click', handleUploadClick);
-            }
-            if (cancelButtonRef.current) {
-                cancelButtonRef.current.removeEventListener('click', handleCancelClick);
-            }
-            if (insertButtonRef.current) {
-                insertButtonRef.current.removeEventListener('click', handleInsertClick);
-            }
-            headlessEditor.destroy();
-        };
-    }, []);
+        if (pending.status === 'cancelled') {
+            this.setProgress(0, 'cancelled');
+            this.setStatus('Upload cancelled.');
+            this.currentUploadId = null;
+            this.updateButtonStates();
+            return;
+        }
+    }
 
-    return (
-        <div className="control-section">
-            <div className="file-ops-panel">
-                <div className="file-ops-row">
-                    <button id="select-button" type="button" className="e-btn e-outline" ref={selectButtonRef}>Select File</button>
-                    <span id="file-info" className="file-ops-info" ref={fileInfoRef}>No file selected</span>
-                    <input id="file-input" type="file" accept="image/*" style={{ display: 'none' }} ref={fileInputRef} />
-                </div>
-                <div className="file-ops-row">
-                    <button id="upload-button" type="button" className="e-btn e-outline" disabled ref={uploadButtonRef}>Upload</button>
-                    <button id="insert-button" type="button" className="e-btn e-outline" disabled ref={insertButtonRef}>Insert</button>
-                    <button id="cancel-button" type="button" className="e-btn e-outline" disabled ref={cancelButtonRef}>Cancel</button>
-                </div>
-                <div className="file-ops-row">
-                    <div className="file-ops-progress-track">
-                        <div id="progress-bar" className="file-ops-progress-bar" ref={progressBarRef}></div>
+    // -------------------------------------------------------------------------
+    // 6. Cancel button — aborts the in-flight upload via AbortSignal, OR
+    //    discards the completed upload so the user can pick a different file.
+    // -------------------------------------------------------------------------
+    private handleCancelClick = (): void => {
+        if (this.currentUploadId && this.headlessEditor) {
+            this.headlessEditor.getFileHandler().cancel(this.currentUploadId);
+            this.setStatus('Cancellation requested...');
+            return;
+        }
+
+        if (this.selectedFile || this.lastUploadedUrl) {
+            this.discardSelection();
+        }
+    }
+
+    private discardSelection = (): void => {
+        this.selectedFile = null;
+        this.lastUploadedUrl = null;
+        this.currentUploadId = null;
+        if (this.fileInputRef.current) {
+            this.fileInputRef.current.value = '';
+        }
+        if (this.fileInfoRef.current) {
+            this.fileInfoRef.current.textContent = 'No file selected';
+        }
+        this.resetProgress();
+        this.setStatus('Discarded. Click Select File to choose another.');
+        this.updateButtonStates();
+    }
+
+    // -------------------------------------------------------------------------
+    // 7. Insert button — places the uploaded file into the editor.
+    // -------------------------------------------------------------------------
+    private handleInsertClick = (): void => {
+        if (!this.lastUploadedUrl || !this.selectedFile || !this.headlessEditor) {
+            return;
+        }
+
+        this.headlessEditor.commands.insertImage([
+            {
+                src: this.lastUploadedUrl,
+                alt: this.selectedFile.name,
+                display: 'block',
+                align: 'none',
+                wrap: 'none'
+            }
+        ]);
+
+        this.setStatus(`Inserted "${this.selectedFile.name}" into the editor.`);
+
+        window.setTimeout(this.resetForNextSelection, 1200);
+    }
+
+    private resetForNextSelection = (): void => {
+        this.selectedFile = null;
+        this.lastUploadedUrl = null;
+        if (this.fileInputRef.current) {
+            this.fileInputRef.current.value = '';
+        }
+        if (this.fileInfoRef.current) {
+            this.fileInfoRef.current.textContent = 'No file selected';
+        }
+        this.resetProgress();
+        this.setStatus('Inserted. Click Select File to upload another.');
+        this.updateButtonStates();
+    }
+
+    render() {
+        return (
+            <div className="control-section">
+                <div className="file-ops-panel">
+                    <div className="file-ops-row">
+                        <button id="select-button" type="button" className="e-btn e-outline" ref={this.selectButtonRef}>Select File</button>
+                        <span id="file-info" className="file-ops-info" ref={this.fileInfoRef}>No file selected</span>
+                        <input id="file-input" type="file" accept="image/*" style={{ display: 'none' }} ref={this.fileInputRef} />
                     </div>
-                    <span id="progress-text" className="file-ops-info" ref={progressTextRef}>0%</span>
+                    <div className="file-ops-row">
+                        <button id="upload-button" type="button" className="e-btn e-outline" disabled ref={this.uploadButtonRef}>Upload</button>
+                        <button id="insert-button" type="button" className="e-btn e-outline" disabled ref={this.insertButtonRef}>Insert</button>
+                        <button id="cancel-button" type="button" className="e-btn e-outline" disabled ref={this.cancelButtonRef}>Cancel</button>
+                    </div>
+                    <div className="file-ops-row">
+                        <div className="file-ops-progress-track">
+                            <div id="progress-bar" className="file-ops-progress-bar" ref={this.progressBarRef}></div>
+                        </div>
+                        <span id="progress-text" className="file-ops-info" ref={this.progressTextRef}>0%</span>
+                    </div>
+                    <div id="status-message" className="file-ops-status" ref={this.statusMessageRef}>Idle</div>
                 </div>
-                <div id="status-message" className="file-ops-status" ref={statusMessageRef}>Idle</div>
-            </div>
 
-            <div className="headless-editor-surface">
-                <div id="headless-editor" ref={editorRef}></div>
+                <div className="headless-editor-surface">
+                    <div id="headless-editor" ref={this.editorRef}></div>
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 export default App;
