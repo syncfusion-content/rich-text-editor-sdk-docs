@@ -1,6 +1,14 @@
 import * as React from 'react';
-import { useRef, useEffect } from 'react';
-import { createRoot } from 'react-dom/client';
+import {
+    HeadlessEditor,
+    basicExtensions,
+    tableExtension,
+    calloutExtension,
+    collapsibleExtension,
+    subscriptExtension,
+    superscriptExtension,
+    linkExtension
+} from '@syncfusion/ej2-headless-editor';
 
 const initialDocument = {
     type: 'document',
@@ -110,7 +118,7 @@ const initialDocument = {
             marks: []
         },
         {
-            type: 'codeBlock', attrs: { language: 'ts' },
+            type: 'codeBlock', attrs: { language: 'typescript' },
             children: [{ type: 'text', text: "const editor = HeadlessEditor.create({ extensions: [basicExtensions] });", attrs: {}, children: [], marks: [] }],
             marks: []
         },
@@ -218,30 +226,37 @@ const initialDocument = {
     marks: []
 };
 
-function App() {
-    const editorRef = useRef(null);
+export default class App extends React.Component {
+    private editorRef: HTMLDivElement | null = null;
+    private editor: any = null;
 
-    useEffect(() => {
-        const editor = ej.headlesseditor.HeadlessEditor.create({
+    componentDidMount() {
+        this.editor = HeadlessEditor.create({
             document: initialDocument,
             extensions: [
-                ej.headlesseditor.basicExtensions,
-                ej.headlesseditor.tableExtension,
-                ej.headlesseditor.collapsibleExtension,
-                ej.headlesseditor.calloutExtension,
-                ej.headlesseditor.subscriptExtension,
-                ej.headlesseditor.superscriptExtension,
-                ej.headlesseditor.linkExtension
-            ],
+                basicExtensions,
+                tableExtension,
+                collapsibleExtension,
+                calloutExtension,
+                subscriptExtension,
+                superscriptExtension,
+                linkExtension
+            ]
         });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
+
+        if (this.editorRef) {
+            this.editor.mount(this.editorRef);
         }
-        return () => editor.destroy();
-    }, []);
+    }
 
-    return <div ref={editorRef} />;
+    componentWillUnmount() {
+        if (this.editor) {
+            this.editor.destroy();
+            this.editor = null;
+        }
+    }
+
+    render() {
+        return <div ref={(el) => { this.editorRef = el; }} />;
+    }
 }
-
-const rootElement = document.getElementById('app') || document.body;
-createRoot(rootElement).render(<App />);

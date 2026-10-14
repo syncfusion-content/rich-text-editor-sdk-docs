@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { useEffect, useRef } from 'react';
-import { createRoot } from 'react-dom/client';
 import {
     HeadlessEditor,
     basicExtensions,
@@ -36,15 +34,15 @@ function resolveVariable(
     return variables.find((v) => v.name === name);
 }
 
-export default function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
-    const toolbarRef = useRef<HTMLDivElement>(null);
-    // A module-level reference is used so the custom command's
+export default class App extends React.Component {
+    private editorRef: HTMLDivElement | null = null;
+    private toolbarRef: HTMLDivElement | null = null;
+    // A class-level reference is used so the custom command's
     // `execute` can reach the editor facade. The reference is set
-    // after `HeadlessEditor.create()` returns inside `useEffect`.
-    const editorHolder: { current: HeadlessEditor | null } = { current: null };
+    // after `HeadlessEditor.create()` returns inside `componentDidMount`.
+    private editorHolder: { current: HeadlessEditor | null } = { current: null };
 
-    const variableExtension = defineExtension({
+    private variableExtension = defineExtension({
         name: 'variable',
 
         defineOptions: () => ({
@@ -82,8 +80,8 @@ export default function App() {
                         if (!def) {
                             return;
                         }
-                        if (editorHolder.current) {
-                            editorHolder.current.execute('inputRuleMark', {
+                        if (this.editorHolder.current) {
+                            this.editorHolder.current.execute('inputRuleMark', {
                                 markType: 'variable',
                                 text: def.value,
                                 matchStart: payload.from,
@@ -117,7 +115,7 @@ export default function App() {
             };
         },
 
-        inputRules(this) {
+        inputRules() {
             const _this = this;
             return [
                 {
@@ -170,19 +168,19 @@ export default function App() {
         }
     });
 
-    useEffect(() => {
+    componentDidMount() {
         const editor = HeadlessEditor.create({
             enableTabKey: true,
-            extensions: [basicExtensions, variableExtension]
+            extensions: [basicExtensions, this.variableExtension]
         });
 
-        editorHolder.current = editor;
+        this.editorHolder.current = editor;
 
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
+        if (this.editorRef) {
+            editor.mount(this.editorRef);
         }
 
-        if (toolbarRef.current) {
+        if (this.toolbarRef) {
             VARIABLES.forEach((v) => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
@@ -195,23 +193,27 @@ export default function App() {
                         to: selection.to
                     });
                 });
-                toolbarRef.current.appendChild(btn);
+                this.toolbarRef.appendChild(btn);
             });
         }
+    }
 
-        return () => editor.destroy();
-    }, []);
+    componentWillUnmount() {
+        if (this.editorHolder.current) {
+            this.editorHolder.current.destroy();
+            this.editorHolder.current = null;
+        }
+    }
 
-    return (
-        <React.Fragment>
-            <div ref={toolbarRef} className="variable-toolbar" />
-            <p className="variable-hint">
-                Type a <code>{'{{name}}'}</code> token such as <code>{'{{customerName}}'}</code> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> to cycle through the variables.
-            </p>
-            <div ref={editorRef} className="variable-editor" />
-        </React.Fragment>
-    );
+    render() {
+        return (
+            <React.Fragment>
+                <div ref={(el) => { this.toolbarRef = el; }} className="variable-toolbar" />
+                <p className="variable-hint">
+                    Type a <code>{'{{name}}'}</code> token such as <code>{'{{customerName}}'}</code> or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd> to cycle through the variables.
+                </p>
+                <div ref={(el) => { this.editorRef = el; }} className="variable-editor" />
+            </React.Fragment>
+        );
+    }
 }
-
-const rootElement = document.getElementById('app') || document.body;
-createRoot(rootElement).render(<App />);
