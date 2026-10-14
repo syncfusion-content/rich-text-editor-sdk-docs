@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import { useEffect, useRef } from 'react';
 import {HeadlessEditor,basicExtensions,placeholderExtension,imageExtension,FileUploadHandler,FileUploadRequest,FileUploadProgress} from '@syncfusion/ej2-headless-editor';
 function App() {
@@ -324,4 +323,3 @@ function App() {
     );
 }
 export default App;
-ReactDOM.render(<App />, document.getElementById('container'));

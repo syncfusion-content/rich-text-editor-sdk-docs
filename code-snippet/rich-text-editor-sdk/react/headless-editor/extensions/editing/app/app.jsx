@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
-import { createRoot } from 'react-dom/client';
 
 function App() {
     const editorRef = useRef(null);
 
     useEffect(() => {
-        const editor = HeadlessEditor.create({
+        const editor = ej.headlesseditor.HeadlessEditor.create({
             extensions: [
                 ej.headlesseditor.basicExtensions,
                 ej.headlesseditor.textAlignExtension,
@@ -24,5 +23,4 @@ function App() {
     return <div ref={editorRef} />;
 }
 
-const rootElement = document.getElementById('app') || document.body;
-createRoot(rootElement).render(<App />);
+export default App;

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { useRef, useEffect } from 'react';
-import { createRoot } from 'react-dom/client';
 import {
     HeadlessEditor,
     basicExtensions,
@@ -31,5 +30,4 @@ function App() {
     return <div ref={editorRef} />;
 }
 
-const rootElement = document.getElementById('app') || document.body;
-createRoot(rootElement).render(<App />);
+export default App;
