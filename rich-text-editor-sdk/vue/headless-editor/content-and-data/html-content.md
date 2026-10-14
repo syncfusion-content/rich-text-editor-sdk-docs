@@ -82,3 +82,17 @@ If an error occurs during serialization, `getHtml()` returns an empty string ins
 Serialization is driven by the same schema and extensions that govern parsing. Each registered extension contributes a `toDOM` specification that defines how its node and mark types are rendered to HTML. The string returned by `getHtml()` therefore reflects the extensions you have loaded. Adding an extension can change the HTML output for its node types.
 
 The HTML returned by `getHtml()` is serialized according to the same schema and extensions used when loading HTML content.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/app.vue %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/index.css %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/index" %}

@@ -2,17 +2,70 @@
 <html lang="en">
 
 <head>
-    <title>Syncfusion Javascript Headless Editor</title>
+    <title>Syncfusion JavaScript Headless Editor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Typescript UI Controls">
+    <meta name="description" content="JavaScript Headless Editor">
     <meta name="author" content="Syncfusion">
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
-    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
+
+    <!-- Syncfusion Headless Editor Theme -->
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css"
+        rel="stylesheet" />
+
+    <!-- Syncfusion EJ2 JavaScript -->
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js"
+        type="text/javascript"></script>
+
+    <!-- Custom CSS -->
+    <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="headless-editor"></div>
+    <div id="container">
+
+        <!-- Headless Editor Toolbar -->
+        <div id="toolbar">
+            <button id="undo" class="e-icons e-undo" type="button" title="Undo (Ctrl+Z)"
+                aria-label="Undo"></button>
+
+            <button id="redo" class="e-icons e-redo" type="button" title="Redo (Ctrl+Y)"
+                aria-label="Redo"></button>
+
+            <span class="toolbar-separator"></span>
+
+            <button id="bold" class="e-icons e-bold" type="button" title="Bold (Ctrl+B)"
+                aria-label="Bold"></button>
+
+            <button id="italic" class="e-icons e-italic" type="button" title="Italic (Ctrl+I)"
+                aria-label="Italic"></button>
+
+            <button id="underline" class="e-icons e-underline" type="button" title="Underline (Ctrl+U)"
+                aria-label="Underline"></button>
+
+            <button id="strikethrough" class="e-icons e-strikethrough" type="button" title="Strike Through"
+                aria-label="Strikethrough"></button>
+
+            <button id="inlineCode" class="e-icons e-insert-code" type="button" title="Inline Code (Ctrl+`)"
+                aria-label="Inline Code"></button>
+
+            <button id="blockquote" class="e-icons e-blockquote" type="button" title="Blockquote (Ctrl+Alt+Q)"
+                aria-label="Blockquote"></button>
+
+            <span class="toolbar-separator"></span>
+
+            <button id="bulletList" class="e-icons e-list-unordered" type="button" title="Bulleted List"
+                aria-label="Bulleted List"></button>
+
+            <button id="orderedList" class="e-icons e-list-ordered" type="button" title="Numbered List"
+                aria-label="Numbered List"></button>
+        </div>
+
+        <!-- Headless Editor Container -->
+        <div id="headless-editor"></div>
+
+    </div>
+
+    <!-- Headless Editor JavaScript -->
     <script src="index.js" type="text/javascript"></script>
 </body>
 

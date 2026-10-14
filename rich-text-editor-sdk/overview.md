@@ -116,3 +116,22 @@ The Syncfusion Markdown Editor is a lightweight, web-based editor designed for c
 
 {% enddoccards %}
 
+### 5. Headless Editor
+
+The Syncfusion Headless Editor is a framework-agnostic editing foundation built on ProseMirror. It provides extensible commands, a structured document model, and customizable editing capabilities for building rich-text editing experiences with custom user interfaces.
+
+**Available Platforms:**
+
+{% doccards %}
+
+{% doccard text="React" link="/rich-text-editor-sdk/react/headless-editor/getting-started" icon="/rich-text-editor-sdk/images/React.svg" %}
+
+{% doccard text="Angular" link="/rich-text-editor-sdk/angular/headless-editor/getting-started" icon="/rich-text-editor-sdk/images/Angular.svg" %}
+
+{% doccard text="JavaScript" link="/rich-text-editor-sdk/javascript/headless-editor/getting-started" icon="/rich-text-editor-sdk/images/JavaScript.svg" %}
+
+{% doccard text="TypeScript" link="/rich-text-editor-sdk/typescript/headless-editor/getting-started" icon="/rich-text-editor-sdk/images/TypeScript.svg" %}
+
+{% doccard text="Vue" link="/rich-text-editor-sdk/vue/headless-editor/getting-started" icon="/rich-text-editor-sdk/images/Vue.svg" %}
+
+{% enddoccards %}
