@@ -199,3 +199,16 @@ editor.setDocument(restored);
 ```
 
 This pattern is safe because `getDocument()` and `setDocument()` operate on the same `DocumentRoot` shape. To clear the document, pass a `DocumentRoot` whose `children` is a single empty paragraph.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/app.vue %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/index.css %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/index" %}

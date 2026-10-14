@@ -21,7 +21,7 @@ System.config({
         ts: "https://unpkg.com/plugin-typescript@8.0.0/lib/plugin.js",
         typescript: "https://unpkg.com/typescript@2.2.2/lib/typescript.js",
         "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-headless-editor": "syncfusion:ej2-headless-editor/dist/ej2-react-headless-editor.umd.min.js",
+        "@syncfusion/ej2-headless-editor": "syncfusion:ej2-headless-editor/dist/ej2-headless-editor.umd.min.js",
         "react-dom": "https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js",
         "react": "https://unpkg.com/react@16.3.1/umd/react.development.js"
     },

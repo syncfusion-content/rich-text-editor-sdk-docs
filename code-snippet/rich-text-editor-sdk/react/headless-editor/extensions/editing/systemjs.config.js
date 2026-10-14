@@ -29,7 +29,7 @@ System.config({
             "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
 
         "@syncfusion/ej2-headless-editor":
-            "syncfusion:ej2-headless-editor/dist/ej2-react-headless-editor.umd.min.js",
+            "syncfusion:ej2-headless-editor/dist/ej2-headless-editor.umd.min.js",
 
         "react":
             "https://unpkg.com/react@16.3.1/umd/react.development.js",
