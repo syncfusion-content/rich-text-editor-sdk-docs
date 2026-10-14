@@ -1,11 +1,14 @@
 import * as React from 'react';
-import { useRef, useEffect } from 'react';
 
-function App() {
-    const editorRef = useRef(null);
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.editorRef = React.createRef();
+        this.editor = null;
+    }
 
-    useEffect(() => {
-        const editor = ej.headlesseditor.HeadlessEditor.create({
+    componentDidMount() {
+        this.editor = ej.headlesseditor.HeadlessEditor.create({
             extensions: [
                 ej.headlesseditor.basicExtensions,
                 ej.headlesseditor.textAlignExtension,
@@ -14,13 +17,21 @@ function App() {
             ],
             enableTabKey: true,
         });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
+        if (this.editorRef.current) {
+            this.editor.mount(this.editorRef.current);
         }
-        return () => editor.destroy();
-    }, []);
+    }
 
-    return <div ref={editorRef} />;
+    componentWillUnmount() {
+        if (this.editor) {
+            this.editor.destroy();
+            this.editor = null;
+        }
+    }
+
+    render() {
+        return React.createElement('div', { ref: this.editorRef });
+    }
 }
 
 export default App;
