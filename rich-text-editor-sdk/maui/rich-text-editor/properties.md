@@ -38,24 +38,6 @@ documentation: ug
 </tr>
 
 <tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontFamily" aria-label="View DefaultFontFamily property in API reference">DefaultFontFamily</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
-    <td>Controls the font family applied to text the user types before any font is explicitly chosen from the toolbar.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontSize" aria-label="View DefaultFontSize property in API reference">DefaultFontSize</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.double" aria-label="View Double type in API reference">double</a></td>
-    <td>Controls the font size in pixels applied to text the user types before any size is explicitly chosen from the toolbar.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultTextColor" aria-label="View DefaultTextColor property in API reference">DefaultTextColor</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color" aria-label="View Color type in API reference">Color</a></td>
-    <td>Controls the text color applied to text the user types before any color is explicitly chosen from the toolbar.</td>
-</tr>
-
-<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_EditorBackgroundColor" aria-label="View EditorBackgroundColor property in API reference">EditorBackgroundColor</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color" aria-label="View Color type in API reference">Color</a></td>
     <td>Customizes the background color of the editor area.</td>
@@ -86,9 +68,15 @@ documentation: ug
 </tr>
 
 <tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_HtmlText" aria-label="View HtmlText property in API reference">HtmlText</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
-    <td>Provides the editor's content, including formatting, as an HTML string. Assign HTML to load existing content and read it back after the user edits.</td>
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Value" aria-label="View Value property in API reference">Value</a></td>
+    <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0" aria-label="View Object type in API reference">object</a></td>
+    <td>Provides the editor's content through a single, unified entry point. The runtime type of the assigned value is selected by the <code>TValue</code> property — set <code>TValue = RichTextEditorValueType.HTML</code> for an HTML string, or <code>TValue = RichTextEditorValueType.Schema</code> for an <code>ObservableCollection&lt;BlockNode&gt;</code> document. Assign a value to load existing content and read it back after the user edits.</td>
+</tr>
+
+<tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TValue" aria-label="View TValue property in API reference">TValue</a></td>
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorValueType.html" aria-label="View Enum type in API reference">RichTextEditorValueType </a></td>
+    <td>Selects the runtime type carried by the <code>Value</code> property — <code>RichTextEditorValueType.HTML</code> for an HTML string (default) or <code>RichTextEditorValueType.Schema</code> for an <code>ObservableCollection&lt;BlockNode&gt;</code> document. Changing <code>TValue</code> projects the current editor content into the newly selected representation without re-rendering the editor.</td>
 </tr>
 
 <tr valign="top">
@@ -143,12 +131,6 @@ documentation: ug
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TableCellSelectionColor" aria-label="View TableCellSelectionColor property in API reference">TableCellSelectionColor</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color" aria-label="View Color type in API reference">Color</a></td>
     <td>Customizes the highlight color applied to a selected table cell.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Text" aria-label="View Text property in API reference">Text</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
-    <td>Provides the editor's content as plain text with all HTML formatting stripped out. Use this when only the raw text is needed.</td>
 </tr>
 
 <tr valign="top">
