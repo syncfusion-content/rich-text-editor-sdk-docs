@@ -92,6 +92,7 @@ The HTML returned by `getHtml()` is serialized according to the same schema and 
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/html-content/index" %}

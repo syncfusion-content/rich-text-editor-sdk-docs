@@ -209,6 +209,7 @@ This pattern is safe because `getDocument()` and `setDocument()` operate on the 
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/index.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/index" %}
