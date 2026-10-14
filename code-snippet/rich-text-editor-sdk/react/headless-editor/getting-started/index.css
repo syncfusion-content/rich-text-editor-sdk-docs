@@ -1,0 +1,66 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+#headless-editor {
+    min-height: 400px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.toolbar-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toolbar-button:hover {
+    background-color: #e5e7eb;
+    border-color: #d1d5db;
+}
+
+.toolbar-button:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 1px;
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 24px;
+    margin: 0 4px;
+    background-color: #d1d5db;
+}
+
+
+
+#headless-editor .e-headless-editor {
+    min-height: 225px;
+    outline: none;
+}

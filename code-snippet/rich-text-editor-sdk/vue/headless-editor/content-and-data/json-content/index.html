@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Content - Vue Headless Editor</title>
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="loader">LOADING....</div>
+
+    <div id="app">
+        <div class="page-container">
+            <h1>JSON Content</h1>
+            <div id="headless-editor" class="editor-container"></div>
+            <div class="toolbar">
+                <button id="set-document" type="button" v-on:click="setDocument">Load JSON Content</button>
+                <button id="get-document" type="button" v-on:click="getDocument">Get Document</button>
+                <button id="get-json" type="button" v-on:click="getJson">Export JSON</button>
+                <button id="round-trip" type="button" v-on:click="roundTrip">JSON Round-Trip</button>
+            </div>
+            <div class="output-section">
+                <h2>Document Output</h2>
+                <pre id="output">{{ outputText }}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

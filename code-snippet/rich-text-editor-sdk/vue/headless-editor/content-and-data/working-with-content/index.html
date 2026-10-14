@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Content - Vue Headless Editor</title>
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="loader">LOADING....</div>
+
+    <div id="app">
+        <div id="container">
+            <div id="headless-editor"></div>
+            <div class="actions">
+                <h3>Get Content</h3>
+                <div class="button-group">
+                    <button id="get-document" type="button" v-on:click="getDocument">Get Document</button>
+                    <button id="get-html" type="button" v-on:click="getHtml">Get HTML</button>
+                    <button id="get-text" type="button" v-on:click="getText">Get Text</button>
+                    <button id="get-selection-text" type="button" v-on:click="getSelectionText">Get Selection Text</button>
+                </div>
+                <h3>Set Content</h3>
+                <div class="button-group">
+                    <button id="set-html" type="button" v-on:click="setHtml">Set HTML</button>
+                    <button id="set-document" type="button" v-on:click="setDocument">Set Document</button>
+                    <button id="clear-content" type="button" v-on:click="clearContent">Clear Content</button>
+                </div>
+                <h3>Update Content</h3>
+                <div class="button-group">
+                    <button id="insert-text" type="button" v-on:click="insertText">Insert Text</button>
+                    <button id="replace-text" type="button" v-on:click="replaceText">Replace Text</button>
+                    <button id="insert-node" type="button" v-on:click="insertNode">Insert Node</button>
+                </div>
+            </div>
+            <h3>Output</h3>
+            <pre id="output">{{ outputText }}</pre>
+        </div>
+    </div>
+</body>
+
+</html>
