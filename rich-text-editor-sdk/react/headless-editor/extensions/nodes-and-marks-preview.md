@@ -70,10 +70,10 @@ The following example registers the required extensions and loads sample content
 
 {% tabs %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/index.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/app/app.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/index.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/app/app.jsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/nodes/index.html %}

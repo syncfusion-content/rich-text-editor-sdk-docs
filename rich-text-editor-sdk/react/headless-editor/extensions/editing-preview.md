@@ -26,10 +26,10 @@ The example below mounts an editor with the editing extensions enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/index.tsx %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/app/app.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/index.jsx %}
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/app/index.jsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/extensions/editing/index.html %}

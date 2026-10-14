@@ -178,7 +178,7 @@ The command rejects payloads with a missing parent, a negative `index`, or an ou
 {% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/json-content/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/working-with-content/tapp.vue %}
+{% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/working-with-content/app.vue %}
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 {% include code-snippet/rich-text-editor-sdk/vue/headless-editor/content-and-data/working-with-content/index.css %}
