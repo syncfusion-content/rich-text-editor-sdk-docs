@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useRef, useEffect } from 'react';
 import {
     HeadlessEditor,
     basicExtensions,
@@ -8,11 +7,12 @@ import {
     placeholderExtension
 } from '@syncfusion/ej2-headless-editor';
 
-function App() {
-    const editorRef = useRef<HTMLDivElement>(null);
+class App extends React.Component {
+    private editorRef: React.RefObject<HTMLDivElement> = React.createRef<HTMLDivElement>();
+    private editor: HeadlessEditor | null = null;
 
-    useEffect(() => {
-        const editor = HeadlessEditor.create({
+    componentDidMount() {
+        this.editor = HeadlessEditor.create({
             extensions: [
                 basicExtensions,
                 textAlignExtension,
@@ -21,13 +21,21 @@ function App() {
             ],
             enableTabKey: true,
         });
-        if (editorRef.current) {
-            editor.mount(editorRef.current);
+        if (this.editorRef.current) {
+            this.editor.mount(this.editorRef.current);
         }
-        return () => editor.destroy();
-    }, []);
+    }
 
-    return <div ref={editorRef} />;
+    componentWillUnmount() {
+        if (this.editor) {
+            this.editor.destroy();
+            this.editor = null;
+        }
+    }
+
+    render() {
+        return <div ref={this.editorRef} />;
+    }
 }
 
 export default App;
