@@ -207,12 +207,6 @@ function App() {
         function handleInsertClick() {
             if (!lastUploadedUrl || !selectedFile) {
                 return;
-e another.');
-            updateButtonStates();
-        }
-        function handleInsertClick() {
-            if (!lastUploadedUrl || !selectedFile) {
-                return;
             }
             headlessEditor.commands.insertImage([
                 {
