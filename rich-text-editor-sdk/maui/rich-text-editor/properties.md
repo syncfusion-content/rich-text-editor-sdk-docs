@@ -80,6 +80,12 @@ documentation: ug
 </tr>
 
 <tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_IsGrouped" aria-label="View IsGrouped property in API reference">IsGrouped</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.boolean" aria-label="View Boolean type in API reference">bool</a></td>
+    <td>On Android and iOS, groups the custom toolbar items into overlay categories such as text formatting, alignment, and numbered list, reducing the toolbar's on-screen footprint. Has no effect on desktop platforms. Default is false.</td>
+</tr>
+
+<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_IsFocused" aria-label="View IsFocused property in API reference">IsFocused</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.boolean" aria-label="View Boolean type in API reference">bool</a></td>
     <td>Reports whether the editor currently has input focus and the on-screen keyboard is shown on mobile, or the caret is active on desktop.</td>
@@ -151,11 +157,6 @@ documentation: ug
     <td>Configures visual aspects of the toolbar such as background, spacing, and available on-demand items.</td>
 </tr>
 
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_UseHybridWebView" aria-label="View UseHybridWebView property in API reference">UseHybridWebView</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.boolean" aria-label="View Boolean type in API reference">bool</a></td>
-    <td>Switches the editor's internal web view to hybrid mode, which can improve rendering and scripting behavior on supported platforms. Supported on iOS 18 and later, macOS 15 and later, Android, and Windows; has no effect on platforms that do not support hybrid WebView.</td>
-</tr>
 </table>
 
 ## Methods
@@ -243,12 +244,6 @@ documentation: ug
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Focus" aria-label="View Focus method in API reference">Focus()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Places the input focus in the editor, showing the on-screen keyboard on mobile and activating the caret on desktop.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_GetSelectedText" aria-label="View GetSelectedText method in API reference">GetSelectedText()</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1" aria-label="View Task type in API reference">Task&lt;string&gt;</a></td>
-    <td>Retrieves the plain text of the current selection asynchronously, producing an empty string when nothing is selected.</td>
 </tr>
 
 <tr valign="top">
