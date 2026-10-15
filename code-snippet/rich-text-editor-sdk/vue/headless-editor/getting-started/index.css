@@ -1,3 +1,48 @@
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/headless-editor/index.css";
 #container {
     margin: 50px auto;
+    width: calc(100% - 20px);
+}
+
+#toolbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+
+#toolbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#toolbar button:hover {
+    background: #e5e5e5;
+}
+
+#toolbar button:focus-visible {
+    outline: 2px solid #0d6efd;
+}
+
+#headless-editor {
+    min-height: 300px;
+    padding: 10px 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    box-sizing: border-box;
 }

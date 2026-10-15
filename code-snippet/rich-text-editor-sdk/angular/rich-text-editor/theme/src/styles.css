@@ -1,0 +1,68 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-icons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import 'node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+
+body {
+    touch-action: none;
+    background-color: #f0f7ff;
+}
+
+.control-section {
+    margin-top: 100px;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.e-richtexteditor {
+    /* Semantic */
+    --color-sf-success: #1a7f37;
+    --color-sf-info: #0969da;
+    --color-sf-warning: #9a6700;
+    --color-sf-danger: #cf222e;
+
+    --color-sf-success-light: #dafbe1;
+    --color-sf-info-light: #ddf4ff;
+    --color-sf-warning-light: #fff8c5;
+
+    --color-sf-primary: #0969da;
+    --color-sf-primary-text-color: #ffffff;
+    --color-sf-primary-light: #0550ae;
+    --color-sf-primary-lighter: #ddf4ff;
+    --color-sf-primary-dark: #0550ae;
+    --color-sf-primary-darker: #033d8b;
+    --color-sf-secondary: #f6f8fa;
+    --color-sf-secondary-text-color: #24292f;
+    --color-sf-secondary-text-color-hover: #0969da;
+    --color-sf-content-bg-color: #ffffff;
+    --color-sf-content-bg-color-alt1: #f6f8fa;
+    --color-sf-treeview-item-active-hover-bg: #dbeafe;
+}
+
+.theme-switcher {
+    margin-bottom: 15px;
+}
+
+.theme-switcher label {
+    color: #0D6EFD;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.theme-switcher select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
