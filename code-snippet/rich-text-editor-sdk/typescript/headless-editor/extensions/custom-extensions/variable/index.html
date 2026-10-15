@@ -4,49 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syncfusion TypeScript Headless Editor - Document Variable</title>
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet">
-    <style>
-        .variable-toolbar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            padding: 12px;
-            border: 1px solid #e5e7eb;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            background: #f9fafb;
-        }
-        .variable-toolbar button {
-            padding: 6px 12px;
-            border: 1px solid #d1d5db;
-            border-radius: 4px;
-            background: #ffffff;
-            cursor: pointer;
-            font-size: 13px;
-        }
-        .variable-toolbar button:hover { background: #f3f4f6; }
-        .variable-chip {
-            display: inline-block;
-            padding: 1px 6px;
-            margin: 0 1px;
-            background: #dbeafe;
-            color: #1e40af;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.95em;
-        }
-        .variable-editor {
-            min-height: 160px;
-            padding: 12px;
-            border: 1px solid #e5e7eb;
-            border-radius: 6px;
-        }
-        .variable-hint {
-            font-size: 12px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-    </style>
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/tailwind3.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <!--system js reference and configuration-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
 </head>
 <body>
     <div class="variable-hint">
@@ -56,4 +18,5 @@
     <div id="headless-editor" class="variable-editor"></div>
     <script type="module" src="index.ts"></script>
 </body>
+
 </html>

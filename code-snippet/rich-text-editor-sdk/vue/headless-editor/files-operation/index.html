@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Syncfusion Vue Headless Editor - File Operations</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +9,40 @@
     <meta name="author" content="Syncfusion" />
     <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-    <div id="app"></div>
-    <script type="module" src="./index.js"></script>
+    <div id="loader">LOADING....</div>
+
+    <div id="app">
+        <div class="control-section">
+            <div class="file-ops-panel">
+                <div class="file-ops-row">
+                    <button id="select-button" type="button" class="e-btn e-outline" v-on:click="openFilePicker">Select File</button>
+                    <span id="file-info" class="file-ops-info">{{ fileInfo }}</span>
+                    <input id="file-input" type="file" accept="image/*" style="display:none" v-on:change="onFileChange" />
+                </div>
+                <div class="file-ops-row">
+                    <button id="upload-button" type="button" class="e-btn e-outline" v-bind:disabled="uploadDisabled" v-on:click="startUpload">Upload</button>
+                    <button id="insert-button" type="button" class="e-btn e-outline" v-bind:disabled="insertDisabled" v-on:click="insertUploaded">Insert</button>
+                    <button id="cancel-button" type="button" class="e-btn e-outline" v-bind:disabled="cancelDisabled" v-on:click="cancelOrDiscard">Cancel</button>
+                </div>
+                <div class="file-ops-row">
+                    <div class="file-ops-progress-track">
+                        <div id="progress-bar" class="file-ops-progress-bar" v-bind:style="{ width: progressWidth }" v-bind:class="progressStateClass"></div>
+                    </div>
+                    <span id="progress-text" class="file-ops-info">{{ progressText }}</span>
+                </div>
+                <div id="status-message" class="file-ops-status">{{ statusMessage }}</div>
+            </div>
+
+            <div class="headless-editor-surface">
+                <div id="headless-editor"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
