@@ -126,7 +126,7 @@ The [`items`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/sla
 ```
 {% endraw %}
 
-The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/react/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/react/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
+The popup size can be customized through [`popupWidth`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupwidth) and [`popupHeight`](https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings#popupheight). Both accept pixel values, numbers (treated as pixels), or CSS strings.
 
 Items are filtered as the user types after `/`. The popup narrows to items whose `text` or `description` matches the typed query. Backspace restores the full list.
 

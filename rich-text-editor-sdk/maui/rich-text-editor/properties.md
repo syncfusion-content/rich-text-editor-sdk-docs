@@ -38,6 +38,24 @@ documentation: ug
 </tr>
 
 <tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontFamily" aria-label="View DefaultFontFamily property in API reference">DefaultFontFamily</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
+    <td>Controls the font family applied to text the user types before any font is explicitly chosen from the toolbar.</td>
+</tr>
+
+<tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultFontSize" aria-label="View DefaultFontSize property in API reference">DefaultFontSize</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.double" aria-label="View Double type in API reference">double</a></td>
+    <td>Controls the font size in pixels applied to text the user types before any size is explicitly chosen from the toolbar.</td>
+</tr>
+
+<tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DefaultTextColor" aria-label="View DefaultTextColor property in API reference">DefaultTextColor</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color" aria-label="View Color type in API reference">Color</a></td>
+    <td>Controls the text color applied to text the user types before any color is explicitly chosen from the toolbar.</td>
+</tr>
+
+<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_EditorBackgroundColor" aria-label="View EditorBackgroundColor property in API reference">EditorBackgroundColor</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.graphics.color" aria-label="View Color type in API reference">Color</a></td>
     <td>Customizes the background color of the editor area.</td>
@@ -68,21 +86,9 @@ documentation: ug
 </tr>
 
 <tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Value" aria-label="View Value property in API reference">Value</a></td>
-    <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0" aria-label="View Object type in API reference">object</a></td>
-    <td>Provides the editor's content through a single, unified entry point. The runtime type of the assigned value is selected by the <code>TValue</code> property — set <code>TValue = RichTextEditorValueType.HTML</code> for an HTML string, or <code>TValue = RichTextEditorValueType.Schema</code> for an <code>ObservableCollection&lt;BlockNode&gt;</code> document. Assign a value to load existing content and read it back after the user edits.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_TValue" aria-label="View TValue property in API reference">TValue</a></td>
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorValueType.html" aria-label="View Enum type in API reference">RichTextEditorValueType </a></td>
-    <td>Selects the runtime type carried by the <code>Value</code> property — <code>RichTextEditorValueType.HTML</code> for an HTML string (default) or <code>RichTextEditorValueType.Schema</code> for an <code>ObservableCollection&lt;BlockNode&gt;</code> document. Changing <code>TValue</code> projects the current editor content into the newly selected representation without re-rendering the editor.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_IsGrouped" aria-label="View IsGrouped property in API reference">IsGrouped</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.boolean" aria-label="View Boolean type in API reference">bool</a></td>
-    <td>On Android and iOS, groups the custom toolbar items into overlay categories such as text formatting, alignment, and numbered list, reducing the toolbar's on-screen footprint. Has no effect on desktop platforms. Default is false.</td>
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_HtmlText" aria-label="View HtmlText property in API reference">HtmlText</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
+    <td>Provides the editor's content, including formatting, as an HTML string. Assign HTML to load existing content and read it back after the user edits.</td>
 </tr>
 
 <tr valign="top">
@@ -140,6 +146,12 @@ documentation: ug
 </tr>
 
 <tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Text" aria-label="View Text property in API reference">Text</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.string" aria-label="View String type in API reference">string</a></td>
+    <td>Provides the editor's content as plain text with all HTML formatting stripped out. Use this when only the raw text is needed.</td>
+</tr>
+
+<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToolbarItems" aria-label="View ToolbarItems property in API reference">ToolbarItems</a></td>
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.RichTextEditorToolBarItemCollection.html" aria-label="View RichTextEditorToolBarItemCollection type in API reference">RichTextEditorToolBarItemCollection</a></td>
     <td>Defines which formatting actions appear in the toolbar and in what order. By default the built-in set of items is shown; a custom collection replaces that set.</td>
@@ -157,6 +169,11 @@ documentation: ug
     <td>Configures visual aspects of the toolbar such as background, spacing, and available on-demand items.</td>
 </tr>
 
+<tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_UseHybridWebView" aria-label="View UseHybridWebView property in API reference">UseHybridWebView</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.boolean" aria-label="View Boolean type in API reference">bool</a></td>
+    <td>Switches the editor's internal web view to hybrid mode, which can improve rendering and scripting behavior on supported platforms. Supported on iOS 18 and later, macOS 15 and later, Android, and Windows; has no effect on platforms that do not support hybrid WebView.</td>
+</tr>
 </table>
 
 ## Methods
@@ -244,6 +261,12 @@ documentation: ug
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_Focus" aria-label="View Focus method in API reference">Focus()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Places the input focus in the editor, showing the on-screen keyboard on mobile and activating the caret on desktop.</td>
+</tr>
+
+<tr valign="top">
+    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_GetSelectedText" aria-label="View GetSelectedText method in API reference">GetSelectedText()</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1" aria-label="View Task type in API reference">Task&lt;string&gt;</a></td>
+    <td>Retrieves the plain text of the current selection asynchronously, producing an empty string when nothing is selected.</td>
 </tr>
 
 <tr valign="top">
