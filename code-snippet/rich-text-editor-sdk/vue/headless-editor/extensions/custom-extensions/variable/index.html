@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js"></script>
     <title>Syncfusion Vue Headless Editor - Document Variable</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,12 +9,32 @@
     <meta name="author" content="Syncfusion" />
     <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
 </head>
 
 <body>
-    <div id="app"></div>
-    <script type="module" src="./index.js"></script>
+    <div id="loader">LOADING....</div>
+
+    <div id="app">
+        <div class="variable-demo">
+            <p class="variable-hint">
+                Type <code>{{ '{{customerName}}' }}</code> in the editor to create a variable chip,
+                choose a button to insert one, or press <kbd>Mod</kbd>+<kbd>Alt</kbd>+<kbd>V</kbd>
+                to cycle through the variables.
+            </p>
+            <div class="variable-toolbar" role="toolbar" aria-label="Insert a document variable">
+                <button
+                    v-for="variable in variables"
+                    v-bind:key="variable.name"
+                    type="button"
+                    v-on:click="insertVariable(variable.name)">
+                    Insert {{ variable.label }}
+                </button>
+            </div>
+            <div id="headless-editor" class="variable-editor"></div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Content - Vue Headless Editor</title>
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <div id="loader">LOADING....</div>
+
+    <div id="app">
+        <div id="container">
+            <div id="headless-editor"></div>
+            <div class="actions">
+                <h3>Load HTML Content</h3>
+                <div class="button-group">
+                    <button id="set-html" type="button" v-on:click="setHtml">Set HTML</button>
+                    <button id="clear-content" type="button" v-on:click="clearContent">Clear Content</button>
+                </div>
+                <h3>Export HTML Content</h3>
+                <div class="button-group">
+                    <button id="get-html" type="button" v-on:click="getHtml">Get HTML</button>
+                </div>
+            </div>
+            <h3>Output</h3>
+            <pre id="output">{{ outputText }}</pre>
+        </div>
+    </div>
+</body>
+
+</html>

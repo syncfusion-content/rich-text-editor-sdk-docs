@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syncfusion TypeScript Headless Editor</title>
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Headless Editor - JSON Content</title>
+
+    <!-- Syncfusion Headless Editor theme -->
+    <link
+        href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.37/styles/headless-editor/index.css"
+        rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="index.css" rel="stylesheet">
+    <!-- SystemJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
 </head>
+
 <body>
-    <div id="headless-editor"></div>
-    <script type="module" src="index.ts"></script>
+    <div class="page-container">
+
+        <h1>JSON Content</h1>
+        <!-- Editor -->
+        <div id="headless-editor" class="editor-container"></div>
+        <!-- Action buttons -->
+        <div class="toolbar">
+            <button id="set-document" type="button">
+                Load JSON Content
+            </button>
+
+            <button id="get-document" type="button">
+                Get Document
+            </button>
+
+            <button id="get-json" type="button">
+                Export JSON
+            </button>
+
+            <button id="round-trip" type="button">
+                JSON Round-Trip
+            </button>
+        </div>
+
+        <!-- Output -->
+        <div class="output-section">
+            <h2>Document Output</h2>
+            <pre id="output">Click a button to view the document output.</pre>
+        </div>
+    </div>
 </body>
 </html>
