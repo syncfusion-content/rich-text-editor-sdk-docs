@@ -54,24 +54,6 @@ const editor = new BlockEditor({
 
 The following example demonstrates the usage of `readOnly` and `cssClass` together.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance/index.css %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance/index.js %}
@@ -85,7 +67,6 @@ The following example demonstrates the usage of `readOnly` and `cssClass` togeth
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/appearance" %}
-{% endif %}
 
 ## Theme Customization
 
@@ -133,8 +114,6 @@ The Block Editor uses CSS variables with the unified `--sf` naming convention. T
 
 The following example demonstrates how to customize the Block Editor appearance using CSS variable overrides with multiple built-in themes.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.ts %}
@@ -148,23 +127,6 @@ The following example demonstrates how to customize the Block Editor appearance 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.html %}
-{% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization/index.css %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/block-editor/theme-customization" %}
-{% endif %}
 
 ## Using Theme Studio
 
