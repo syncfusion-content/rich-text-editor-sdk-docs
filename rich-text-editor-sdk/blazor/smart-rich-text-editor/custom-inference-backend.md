@@ -81,7 +81,7 @@ var app = builder.Build();
 ## Testing the Custom AI Integration
 
 1. Implement and register the custom AI service as shown above.
-2. Follow the [Getting Started](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
+2. Follow the [Getting Started](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
 3. Run the application press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio, run `dotnet run` from the CLI or integrated terminal in VS Code, or use the Run command in your preferred IDE to render the Blazor Smart Rich Text Editor component in the default web browser.
 4. Use the AI AssistView or AI Commands in the Smart Rich Text Editor to verify that the custom AI service generates appropriate responses.
 
@@ -93,9 +93,9 @@ Here are examples of AI services integrated using the `IChatInferenceService` in
 
 | Service | Documentation |
 |---------|---------------|
-| OpenAI | [OpenAI Integration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/openai-service) |
-| Azure OpenAI | [Azure OpenAI Integration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/azure-openai-service) |
-| Ollama | [Ollama Integration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/ollama) |
+| OpenAI | [OpenAI Integration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/openai-service) |
+| Azure OpenAI | [Azure OpenAI Integration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/azure-openai-service) |
+| Ollama | [Ollama Integration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/ollama) |
 
 ## Troubleshooting
 
@@ -106,7 +106,7 @@ If the custom AI service does not work as expected, try the following:
 
 ## See also
 
-* [Getting Started with Blazor Smart Rich Text Editor](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp)
-* [OpenAI Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/openai-service)
-* [Azure OpenAI Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/azure-openai-service)
-* [Ollama Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/ollama)
+* [Getting Started with Blazor Smart Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp)
+* [OpenAI Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/openai-service)
+* [Azure OpenAI Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/azure-openai-service)
+* [Ollama Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/ollama)

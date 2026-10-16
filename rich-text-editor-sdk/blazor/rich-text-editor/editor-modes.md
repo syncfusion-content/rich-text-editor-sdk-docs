@@ -81,7 +81,7 @@ To enable Markdown editing, set the [EditorMode](https://help.syncfusion.com/cr/
 
 ![Blazor RichTextEditor with Markdown Editor](./images/blazor-richtexteditor-markdown-editor.webp)
 
-For further details on Markdown editing, refer to the [Markdown](https://blazor.syncfusion.com/documentation/markdown-editor/getting-started-webapp) section.
+For further details on Markdown editing, refer to the [Markdown](https://help.syncfusion.com/rich-text-editor-sdk/blazor/markdown-editor/getting-started-webapp) section.
 
 N> You can also explore our [Blazor Rich Text Editor](https://blazor.syncfusion.com/demos/rich-text-editor/overview?theme=fluent2) demo to learn how to render and configure the editor tools.
 

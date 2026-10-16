@@ -39,7 +39,7 @@ OpenAI offers various models for different use cases:
 
 ## Setup the Smart Rich Text Editor Component
 
-Follow the [Getting Started](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
+Follow the [Getting Started](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
 
 ## Install NuGet packages
 
@@ -190,7 +190,7 @@ var app = builder.Build();
 
 ## See also
 
-* [Getting Started with Smart Rich Text Editor](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp)
-* [Azure OpenAI Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/azure-openai-service)
-* [Ollama Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/ollama)
+* [Getting Started with Smart Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp)
+* [Azure OpenAI Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/azure-openai-service)
+* [Ollama Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/ollama)
 * [OpenAI Documentation](https://developers.openai.com/api/docs)
