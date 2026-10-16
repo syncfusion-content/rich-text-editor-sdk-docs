@@ -86,6 +86,6 @@ The following example demonstrates how to use AssistViewSettings methods in a bu
 
 ## See also
 
-* [Properties](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/property)
-* [Appearance](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/appearance)
-* [Events](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/events)
+* [Properties](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/property)
+* [Appearance](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/appearance)
+* [Events](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/events)

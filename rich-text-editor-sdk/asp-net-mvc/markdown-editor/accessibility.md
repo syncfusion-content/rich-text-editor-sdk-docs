@@ -59,19 +59,6 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 | role="application" | This attribute added to the Markdown Editor element describes the actual role of the element. |
 | aria-disabled | Indicates the disabled state of the Markdown Editor. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started-cs1/razor %}
@@ -80,7 +67,6 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Keyboard Navigation
 
