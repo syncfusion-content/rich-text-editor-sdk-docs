@@ -16,8 +16,6 @@ The Markdown Editor provides an instant preview of Markdown changes, allowing us
 
 To enable the Markdown preview feature, the Syncfusion `MarkdownConverter` is used to convert Markdown content into HTML format. The following example demonstrates how to enable Markdown to HTML preview in the Markdown Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-preview/tagHelper %}
@@ -26,15 +24,3 @@ To enable the Markdown preview feature, the Syncfusion `MarkdownConverter` is us
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-preview/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-preview/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-preview/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

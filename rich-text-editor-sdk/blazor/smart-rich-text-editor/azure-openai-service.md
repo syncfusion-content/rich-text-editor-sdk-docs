@@ -23,7 +23,7 @@ The Blazor Smart Rich Text Editor supports Azure OpenAI for enterprise-grade AI 
 
 ### Step 1: Create Azure OpenAI Resource
 
-1. Sign in to [Azure Portal](https://portal.azure.com/)
+1. Sign in to [Azure Portal](https://portal.azure.com/#home)
 2. Click **Create a resource**
 3. Search for **Azure OpenAI**
 4. Click **Create**
@@ -55,7 +55,7 @@ From your Azure OpenAI resource in Azure Portal, copy:
 
 ## Setup the Smart Rich Text Editor Component
 
-Follow the [Getting Started](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
+Follow the [Getting Started](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp) guide to configure and render the Smart Rich Text Editor component in the application and that prerequisites are met.
 
 ## Install NuGet packages
 
@@ -239,7 +239,7 @@ N> Store sensitive keys in user secrets or environment variables, not in appsett
 
 ## See also
 
-* [Getting Started with Smart Rich Text Editor](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started-webapp)
-* [OpenAI Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/openai-service)
-* [Ollama Configuration](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/ollama)
+* [Getting Started with Smart Rich Text Editor](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp)
+* [OpenAI Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/openai-service)
+* [Ollama Configuration](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/ollama)
 * [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)

@@ -30,8 +30,6 @@ The Syncfusion Mention control provides several customizable properties to enhan
 
 The following example demonstrates how to enable Mention support in the Markdown Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/markdown-mention-support/tagHelper %}
@@ -43,18 +41,3 @@ The following example demonstrates how to enable Mention support in the Markdown
 {% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/markdown-mention-support/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/markdown-mention-support/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mention.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/markdown-mention-support/mention.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-mvc/markdown-editor/markdown-mention-support/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
