@@ -32,7 +32,7 @@ To add the [ASP.NET Core Block Editor](https://www.syncfusion.com/rich-text-edit
 
 All Syncfusion ASP.NET Core packages are available at [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). For more information, see the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) documentation.
 
-**Note:** The version placeholder `{{ site.releaseversion }}` will be replaced with the actual version during documentation build. For the latest version, check the [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/).
+**Note:** The version placeholder `{{ site.releaseversion }}` will be replaced with the actual version during documentation build. For the latest version, check the [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes).
 
 Alternatively, install the packages using the Package Manager Console:
 
