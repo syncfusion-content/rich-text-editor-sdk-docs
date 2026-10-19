@@ -21,19 +21,13 @@ The following example uses a file input to select a file and demonstrates upload
 
 {% tabs %}
 {% highlight ts tabtitle="App.tsx" %}
-
-{% include code-snippet/rich-text-editor-sdk/react/headless-editor/files-operation/App.tsx %}
-
+{% include code-snippet/rich-text-editor-sdk/react/headless-editor/files-operation/app/App.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/files-operation/index.html %}
-
 {% endhighlight %}
 {% highlight css tabtitle="index.css" %}
-
 {% include code-snippet/rich-text-editor-sdk/react/headless-editor/files-operation/index.css %}
-
 {% endhighlight %}
 {% endtabs %}
 
