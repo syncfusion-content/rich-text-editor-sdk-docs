@@ -143,6 +143,6 @@ Fires before the AI Assistant popup closes. Use to perform actions before the po
 
 ## See also
 
-* [Properties](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/property)
-* [Methods](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/method)
-* [Appearance](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/events)
+* [Properties](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/property)
+* [Methods](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/method)
+* [Appearance](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/events)

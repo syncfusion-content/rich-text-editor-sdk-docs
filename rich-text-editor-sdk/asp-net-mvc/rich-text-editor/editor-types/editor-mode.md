@@ -49,7 +49,7 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 {% endhighlight %}
 {% endtabs %}
 
-For further details on Markdown editing, refer to the [Markdown editor documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started).
+For further details on Markdown editing, refer to the [Markdown editor documentation](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started).
 
 ## See Also
 

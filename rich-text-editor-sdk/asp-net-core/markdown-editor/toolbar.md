@@ -34,8 +34,6 @@ The default toolbar mode is `Expand`, which is configured using [toolbarSettings
 
 In this mode, any overflowing toolbar items are hidden in the next row. Users can reveal them by clicking the expand arrow.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-expand/tagHelper %}
@@ -45,23 +43,9 @@ In this mode, any overflowing toolbar items are hidden in the next row. Users ca
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-expand/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-expand/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Configuring a Multi-row Toolbar
 
 By setting type: `MultiRow` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings), the toolbar items are arranged across multiple rows. This ensures that all configured toolbar items are always visible.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -72,23 +56,9 @@ By setting type: `MultiRow` in [toolbarSettings](https://help.syncfusion.com/cr/
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-multirow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-multirow/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Implementing a Scrollable Toolbar
 
 Use `type: 'Scrollable'` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) to create a single-line toolbar with horizontal scrolling capability for overflow items.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -99,18 +69,6 @@ Use `type: 'Scrollable'` in [toolbarSettings](https://help.syncfusion.com/cr/asp
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-scrollable/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/toolbar-scrollable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Creating a Sticky Toolbar
 
 By default, the toolbar remains fixed at the top of the Markdown editor when scrolling.
@@ -118,8 +76,6 @@ By default, the toolbar remains fixed at the top of the Markdown editor when scr
 You can customize its position by setting [floatingToolbarOffset](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FloatingToolbarOffset) to adjust the offset from the top of the document.
 
 Additionally, you can enable or disable the floating toolbar using the [enableFloating](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_EnableFloating) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -130,18 +86,6 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/floating-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/floating-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Custom Toolbar Items
 
 The Markdown Editor allows you to add custom commands to the toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. These custom commands can be displayed as plain text, icons, or HTML templates. You can define their order and grouping, ensuring a structured and intuitive toolbar layout. Additionally, actions can be bound to these commands by retrieving their instances and handling events accordingly.
@@ -149,8 +93,6 @@ The Markdown Editor allows you to add custom commands to the toolbar using the [
 In this example, a custom toolbar item (Ω) is added to insert special characters into the editor. When users click the Ω button, a list of special characters appears, allowing them to select and insert a character into the content. This feature enhances the Markdown Editor by providing quick access to special symbols without manually entering character codes.
 
 The following code snippet demonstrates how to configure a custom toolbar item with a tooltip. The item is added to the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) field of the `toolbarSettings` property, ensuring seamless integration within the toolbar.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -160,15 +102,3 @@ The following code snippet demonstrates how to configure a custom toolbar item w
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/custom-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/custom-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/custom-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
