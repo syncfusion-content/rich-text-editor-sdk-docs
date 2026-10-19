@@ -32,7 +32,7 @@ By using the [`insertImageSettings`](https://ej2.syncfusion.com/vue/documentatio
 </div>
 </template>
 <script setup>
-    
+
     import { RichTextEditorComponent, Toolbar, Link, Count, Image, HtmlEditor, QuickToolbar } from "@syncfusion/ej2-vue-richtexteditor";
 
     
@@ -71,14 +71,8 @@ By using the [`insertImageSettings`](https://ej2.syncfusion.com/vue/documentatio
     }
 </script>
 <style>
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/material.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
+
 </style>
 
 ```

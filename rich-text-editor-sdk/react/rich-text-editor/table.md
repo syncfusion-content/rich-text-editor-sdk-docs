@@ -26,7 +26,6 @@ inject the Table module using the `<Inject services={[Table]} />`.
 
 In the following sample, the table feature has been injected from table module.
 
-
 `[Class-component]`
 
 {% tabs %}
@@ -252,7 +251,7 @@ Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehe
   - Align center
   - Align right
   - Align justify
-  
+
 * **Vertical alignment**: Position cell content vertically with the following options:
   - Align top
   - Align middle
@@ -291,14 +290,7 @@ In the following sample, the table cell properties feature has been provided fro
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 {% endhighlight %}
 {% endtabs %}
@@ -315,15 +307,6 @@ In the following sample, the table cell properties feature has been provided fro
 {% include code-snippet/rich-text-editor-sdk/react/rich-text-editor/table-cell-properties-cs2/app/App.tsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
-
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
 
 {% endhighlight %}
 {% endtabs %}

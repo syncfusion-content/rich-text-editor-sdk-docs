@@ -24,7 +24,7 @@
         </div>
     </div>
 </template>
- 
+
 <script>
 import { RichTextEditorComponent, Toolbar, HtmlEditor } from "@syncfusion/ej2-vue-richtexteditor";
 import { CheckBoxComponent } from "@syncfusion/ej2-vue-buttons";
@@ -56,5 +56,5 @@ export default {
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

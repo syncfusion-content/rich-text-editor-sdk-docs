@@ -36,9 +36,8 @@ Additionally add the styles as given below in `<style>` section of the `App.vue`
 
 ```
 <style>
-  @import "../node_modules/@syncfusion/ej2-layouts/styles/material.css";
-  @import "../node_modules/@syncfusion/ej2-grids/styles/material.css";
-  @import "../node_modules/@syncfusion/ej2-filemanager/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
+
 </style>
 ```
 
@@ -61,7 +60,7 @@ The following example demonstrates how to configure the file browser within the 
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/file-browser-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/file-browser-cs1" %}
 
 ## See also

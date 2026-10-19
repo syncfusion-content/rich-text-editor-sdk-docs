@@ -33,7 +33,7 @@ In the following sample, the table feature has been provided from table module.
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs19" %}
 
 ## Table headers
@@ -72,7 +72,7 @@ The Rich Text Editor allows users to insert tables within other table cells, ena
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/nesting-table/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/nesting-table" %}
 
 ## Quick insert for table rows and columns
@@ -220,7 +220,7 @@ Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehe
   - Align center
   - Align right
   - Align justify
-  
+
 * **Vertical alignment**: Position cell content vertically with the following options:
   - Align top
   - Align middle
@@ -257,18 +257,11 @@ In the following sample, the table cell properties feature has been provided fro
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/table-cell-properties" %}
 
 ## Table cell selection and formatting
@@ -302,7 +295,7 @@ The text formatting feature in tables allows users to apply various styles to se
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/table-row-and-column-selection/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/table-row-and-column-selection" %}
 
 ## Copy, cut, and paste table rows and columns
@@ -357,7 +350,7 @@ The following image explains the table split action.
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/getting-started-cs20" %}
 
 ## See also

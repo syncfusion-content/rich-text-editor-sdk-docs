@@ -26,5 +26,5 @@ provide('richtexteditor', [Toolbar, Link, Audio, HtmlEditor, Image, QuickToolbar
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 </style>

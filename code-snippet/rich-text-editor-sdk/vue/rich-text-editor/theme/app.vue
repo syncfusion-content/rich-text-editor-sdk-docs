@@ -44,14 +44,7 @@ export default {
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import "../../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 
 body {
     touch-action: none;
@@ -146,7 +139,6 @@ body {
     --color-sf-secondary-bg-color-hover: #ceb9cb;
 }
 
-
 /* THEME 2 */
 /* Toolbar icons */
 .theme2.e-rte-toolbar .e-icons {
@@ -206,7 +198,6 @@ body {
     /* disabe state */
     --color-sf-content-bg-color-alt4: #A8A29E;
 }
-
 
 /* THEME 3 */
 .theme3.e-rte-toolbar .e-icons {

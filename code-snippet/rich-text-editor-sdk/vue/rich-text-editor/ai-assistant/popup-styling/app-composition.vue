@@ -31,5 +31,5 @@ const richtexteditor = [Toolbar, Link, Image, HtmlEditor, AIAssistant];
 provide('richtexteditor', richtexteditor);
 </script>
 <style>
-    @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+    @import "../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

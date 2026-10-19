@@ -66,7 +66,7 @@ const beforePopupOpen = (event) => {
       const profileDropDown = event.element.querySelector('#profileDropDown');
       if (profileDropDown) {
         console.log('Creating DropDownButton...');
-        
+
         // Destroy existing instance if it exists
         if (userDropDown.value) {
           userDropDown.value.destroy();
@@ -81,7 +81,7 @@ const beforePopupOpen = (event) => {
           iconCss: 'e-icons e-user',
           cssClass: 'e-caret-hide',
         }, profileDropDown);
-        
+
         console.log('DropDownButton created:', userDropDown.value);
       }
     }, 0);
@@ -102,5 +102,5 @@ provide('richtexteditor', richtexteditor);
 </script>
 
 <style>
-  @import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+  @import "../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

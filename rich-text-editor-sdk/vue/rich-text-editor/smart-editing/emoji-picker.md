@@ -111,15 +111,8 @@ provide('richtexteditor', [Toolbar, Link, Image, HtmlEditor, QuickToolbar, Emoji
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';   
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 </style>
 
 ```
@@ -140,10 +133,8 @@ The following code example shows how to add the emoji picker tool in the Rich Te
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/emoji-picker-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/emoji-picker-cs1" %}
-
-
 
 ## Using shortcut keys to open the emoji picker
 

@@ -39,7 +39,7 @@ To configure the `Video` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/video-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/video-cs1" %}
 
 ## Video save formats
@@ -117,17 +117,8 @@ provide('richtexteditor', [Toolbar, Link, Image, QuickToolbar, HtmlEditor, Table
 </script>
 
 <style>
-@import 'https://ej2.syncfusion.com/vue/documentation/node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+@import 'https://ej2.syncfusion.com/vue/documentation/node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 </style>
 
 ```
@@ -176,17 +167,7 @@ provide('richtexteditor', [Toolbar, Link, Video, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -309,17 +290,7 @@ const onFileUploadSuccess = (args) => {
 provide('richtexteditor', [Toolbar, Link, Video, HtmlEditor, QuickToolbar]);
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 ```
 
@@ -417,17 +388,7 @@ provide('richtexteditor', [Toolbar, Link, Video, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 ```
 
@@ -470,7 +431,6 @@ Sets the default display property for the video when it is inserted in the Rich 
 
 > The default `layoutOption` property is set to `Inline`.
 
-
 ```
 <template>
     <div>
@@ -499,17 +459,7 @@ provide('richtexteditor', [Toolbar, Link, Video, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -528,7 +478,7 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs34/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs34" %}
 
 ### Disabling video drag and drop

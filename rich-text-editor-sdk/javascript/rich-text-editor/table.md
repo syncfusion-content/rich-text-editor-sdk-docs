@@ -220,7 +220,7 @@ Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehe
   - Align center
   - Align right
   - Align justify
-  
+
 * **Vertical alignment**: Position cell content vertically with the following options:
   - Align top
   - Align middle
@@ -257,14 +257,7 @@ In the following sample, the table cell properties feature has been provided fro
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 {% endhighlight %}
 {% endtabs %}

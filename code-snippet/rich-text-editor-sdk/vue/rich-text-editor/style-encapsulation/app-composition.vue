@@ -39,7 +39,7 @@ provide('richtexteditor',  [Toolbar, Link, Image, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 
 .control-section {
   display: flex;
@@ -78,5 +78,5 @@ li p {
   box-sizing: border-box;
   margin-right: 10px;
 }
-@import '../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 </style>

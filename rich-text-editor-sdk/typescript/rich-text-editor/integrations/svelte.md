@@ -57,13 +57,8 @@ Add the following imports inside the `~/src/app.css` file to include the `tailwi
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';;
 
 {% endhighlight %}
@@ -79,7 +74,7 @@ Add the following imports inside the `~/src/app.css` file to include the `tailwi
 ```typescript
 import { onMount, onDestroy } from 'svelte';
 import { RichTextEditor, Toolbar, Link, Image, HtmlEditor, QuickToolbar } from '@syncfusion/ej2-richtexteditor';
-  
+
 RichTextEditor.Inject(Toolbar, Link, Image, HtmlEditor, QuickToolbar);
 ```
 

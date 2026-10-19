@@ -23,5 +23,5 @@ const insertAudioSettings = {
 provide('richtexteditor', [Toolbar, Image, Link, HtmlEditor, QuickToolbar]);
 </script>
 
-<style>@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+<style>@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

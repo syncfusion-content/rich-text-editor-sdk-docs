@@ -20,14 +20,8 @@ The Rich Text Editor has quick toolbars that act as context-menus, appearing whe
 Before using the quick toolbar, ensure the Syncfusion theme CSS is imported in your application. For example, with Tailwind 3:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 ```
 
 ## Image quick toolbar
@@ -45,7 +39,7 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/customize-image-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/customize-image-cs1" %}
 
 ## Link quick toolbar
@@ -65,7 +59,7 @@ The following example demonstrates how to customize the link quick toolbar using
 {% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/getting-started-cs17" %}
 
 ## Table quick toolbar
@@ -125,7 +119,7 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/customize-video-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/customize-video-cs1" %}
 
 ## Text quick toolbar

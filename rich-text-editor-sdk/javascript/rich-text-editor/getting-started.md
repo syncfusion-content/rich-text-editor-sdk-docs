@@ -48,14 +48,7 @@ Add the following styles inside the `my-app/index.html` file to include the `tai
 {% highlight html tabtitle="index.html" %}
 
 
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-base/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-buttons/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-inputs/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-lists/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-navigations/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-popups/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet">
-<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet">
+<link href="https://cdn.syncfusion.com/ej2/{{site.ej2version}}/material.css" rel="stylesheet" />
 
 {% endhighlight %}
 {% endtabs %}

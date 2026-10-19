@@ -116,14 +116,7 @@ The following example shows the Rich Text Editor configured with a Content Secur
                    img-src 'self' data: blob:;" />
     <title>Rich Text Editor with CSP</title>
     <link href="index.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/tailwind3.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/tailwind3.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/34.1.29/material.css" rel="stylesheet" />
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>

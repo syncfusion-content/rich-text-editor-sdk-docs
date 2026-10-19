@@ -34,18 +34,10 @@ Along with the default Rich Text Editor styles, the **Interactive Chat** and **N
 Add the following style references to your application's main stylesheet:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 /* Required for AI Assistant */
-@import '../node_modules/@syncfusion/ej2-interactive-chat/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
+
 ```
 
 Once these styles are included, the **AI Assistant** will render as expected.

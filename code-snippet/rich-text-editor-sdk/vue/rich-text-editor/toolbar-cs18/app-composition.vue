@@ -43,5 +43,5 @@ const onFloatChange = (args) => {
 provide('richtexteditor', [Toolbar, HtmlEditor]);
 </script>
 
-<style>@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+<style>@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

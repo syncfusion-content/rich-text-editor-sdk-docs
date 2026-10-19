@@ -29,7 +29,7 @@ To configure the `Audio` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/audio-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/audio-cs1" %}
 
 ## Audio save formats
@@ -101,17 +101,8 @@ provide('richtexteditor', [Toolbar, Link, Image, QuickToolbar, HtmlEditor, Table
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 </style>
 
 ```
@@ -134,7 +125,6 @@ The selected audio can be uploaded to the required destination using the control
 > If you want to insert lower-sized audio files in the editor and don't want a specific physical location for saving the audio, you can opt to save the format as `Base64`.
 
 In the following code blocks, the audio module has been injected and can insert the audio files saved in the specified path.
-
 
 ```
 <template>
@@ -166,17 +156,7 @@ provide('richtexteditor', [Toolbar, Link, Audio, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -299,17 +279,7 @@ provide('richtexteditor', [Toolbar, Link, Audio, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -409,17 +379,7 @@ provide('richtexteditor', [Toolbar, Link, Audio, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -481,17 +441,7 @@ provide('richtexteditor', [Toolbar, Link, Audio, HtmlEditor, QuickToolbar]);
 </script>
 
 <style>
-@import 'https://ej2.syncfusion.com/vue/documentation/node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
 </style>
 
 ```
@@ -510,7 +460,7 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs33/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs33" %}
 
 ### Disabling audio drag and drop

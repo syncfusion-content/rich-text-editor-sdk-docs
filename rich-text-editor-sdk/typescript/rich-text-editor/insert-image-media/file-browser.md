@@ -43,9 +43,8 @@ Map the above packages style and script reference in sample as like below
 Additionally add the below styles in the `index.html` file.
 
 ```css
-  @import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-  @import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-  @import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
+
 ```
 
 ## Setup steps
@@ -69,7 +68,7 @@ The following example demonstrates configuring the file browser within the Rich 
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/file-browser-cs3" %}
 
 ## See also

@@ -39,9 +39,9 @@ Additionally add below styles in the `[src/styles.css]` file.
 
 ```css
 
-  @import "https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-  @import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-  @import "../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+@import "https://ej2.syncfusion.com/angular/documentation/node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
+
+@import "../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 
 ```
 ## Setup steps
@@ -64,7 +64,7 @@ The following example demonstrates how to configure the file browser within the 
 {% include code-snippet/rich-text-editor-sdk/angular/rich-text-editor/file-browser-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/rich-text-editor-sdk/angular/rich-text-editor/file-browser-cs1" %}
 
 ## See also

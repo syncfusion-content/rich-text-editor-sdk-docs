@@ -29,7 +29,7 @@ To configure the `Image` toolbar item, refer to the below code.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/markdown-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/markdown-cs3" %}
 
 ## Supported image save formats
@@ -54,7 +54,7 @@ The code snippet below illustrates the configuration of the [insertImageSettings
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/save-format-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/save-format-cs1" %}
 
 > The default `saveFormat` property is set to `Blob` format.
@@ -113,17 +113,8 @@ provide('richtexteditor', [Toolbar, Link, Image, QuickToolbar, HtmlEditor, Table
 </script>
 
 <style> 
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 </style>
 
 ```
@@ -258,7 +249,7 @@ The following sample explains, how to configure the `removeUrl` to remove a save
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs18/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs18" %}
 
 ## Deleting Images from Server Using Keyboard and Quick Toolbar Actions
@@ -332,14 +323,7 @@ export default {
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-lists/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-popups/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-vue-richtexteditor/styles/material.css";
+
 </style>
 
 ```
@@ -375,7 +359,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/markdown-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/markdown-cs4" %}
 
 ## Configuring image alignment
@@ -449,7 +433,7 @@ In the following sample, you can see feature demo.
 {% include code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs19/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/vue/rich-text-editor/getting-started-cs19" %}
 
 ### Disabling image drag and drop

@@ -35,9 +35,8 @@ npm install @syncfusion/ej2-filemanager @syncfusion/ej2-layouts @syncfusion/ej2-
 Additionally add the below styles in the `[src/App.css]` file.
 
 ```css
-  @import "../../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-  @import "../../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-  @import "../../node_modules/@syncfusion/ej2-filemanager/styles/tailwind3.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
+
 ```
 
 ## Setup steps

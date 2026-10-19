@@ -168,5 +168,5 @@ provide('richtexteditor', [Toolbar, Link, Image, QuickToolbar, HtmlEditor]);
     cursor: pointer;
     user-select: none;
 }
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

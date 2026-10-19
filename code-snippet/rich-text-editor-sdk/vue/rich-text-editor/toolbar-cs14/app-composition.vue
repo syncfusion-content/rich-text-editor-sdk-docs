@@ -9,7 +9,6 @@
 import { provide } from 'vue';
 import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, HtmlEditor, PasteCleanup } from "@syncfusion/ej2-vue-richtexteditor";
 
-
 const rteValue= `<p>Rich Text Editor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.</p>
  <p><b>Paste Cleanup properties:</b></p>
         <ul>
@@ -54,5 +53,5 @@ provide('richtexteditor', [Toolbar, HtmlEditor, PasteCleanup]);
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css";
+@import "../../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css";
 </style>

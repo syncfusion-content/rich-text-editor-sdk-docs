@@ -20,14 +20,8 @@ The Rich Text Editor has quick toolbars that act as context-menus, appearing whe
 Before using the quick toolbar, ensure the Syncfusion theme CSS is imported in your application. For example, with Tailwind 3:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
+
 ```
 
 ## Image quick toolbar
@@ -44,7 +38,7 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-image-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-image-cs1" %}
 
 ## Link quick toolbar
@@ -63,7 +57,7 @@ The following example demonstrates how to customize the link quick toolbar using
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/link-quick-toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/link-quick-toolbar-cs1" %}
 
 ## Table quick toolbar
@@ -82,7 +76,7 @@ The following sample demonstrates the customization of table quick toolbar.
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/table-quick-toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/table-quick-toolbar-cs1" %}
 
 ## Audio quick toolbar
@@ -99,7 +93,7 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-audio-cs1" %}
 
 ## Video quick toolbar
@@ -118,7 +112,7 @@ By configuring these options in the [quickToolbarSettings](https://helpej2.syncf
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-video-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/customize-video-cs1" %}
 
 ## Text quick toolbar
@@ -135,7 +129,7 @@ Customize the quick toolbar items using the `text` property in the [quickToolbar
 {% include code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/text-quick-toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/text-quick-toolbar-cs1" %}
 
 ## Render quick toolbar in document body
@@ -153,16 +147,7 @@ The following example demonstrates how to render the quick toolbar directly in t
 {% endhighlight %}
 {% highlight css tabtitle="styles.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
-
 {% endhighlight %}
 {% endtabs %}
-          
+
 {% previewsample "https://help.syncfusion.com/code-snippet/rich-text-editor-sdk/typescript/rich-text-editor/quick-toolbar-body" %}

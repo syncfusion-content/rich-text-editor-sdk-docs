@@ -59,7 +59,7 @@ npm install @syncfusion/ej2-tailwind3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/style.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 ```
 
 I> To apply the application-specific styles correctly, import **style.css** into **src/main.ts** and remove all the default styles from **src/style.css** and use the Rich Text Editor styles provided above.
@@ -109,7 +109,7 @@ editor.appendTo('#editor');
 
 {% highlight css tabtitle="style.css" %}
 
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 
 {% endhighlight %}
 
@@ -133,7 +133,7 @@ editor.appendTo('#editor');
 
 {% endhighlight %}
 {% endtabs %}
-          
+
 ## Run the Application
 
 Use the following command to run the application in the browser.

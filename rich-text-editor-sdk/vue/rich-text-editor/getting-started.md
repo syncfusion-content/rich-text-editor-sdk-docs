@@ -133,7 +133,6 @@ npm install
 
 All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/search?q=ej2-vue) registry. Install the Vue Rich Text Editor component with the following command:
 
-
 ```bash
 npm install @syncfusion/ej2-vue-richtexteditor
 ```
@@ -151,7 +150,7 @@ npm install @syncfusion/ej2-tailwind3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/style.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor/index.css';
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/rich-text-editor/index.css';
 ```
 
 I> To apply the application-specific styles correctly remove all the default styles from **src/style.css**. 
