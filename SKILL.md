@@ -221,6 +221,17 @@ Use this skill when you need to:
 - `ListSettings` — `bulletFormatListItems`, `numberFormatListItems`
 - `EditorKeyBindingAction` enum — every action the `keyBindings` property can target (`toolbar-focus`, `link`, `image`, `audio`, `video`, `table`, `undo`, `redo`, `bold`, `italic`, `underline`, `strikethrough`, `superscript`, `subscript`, `indents`, `outdents`, `clear-format`, `ordered-list`, `unordered-list`, `checklist`, `inlinecode`, `uppercase`, `lowercase`, `code-block`)
 
+### API Reference (Part 4)
+
+📄 **Read:** [references/api-references-part-4.md](references/api-references-part-4.md)
+- List settings & list items: `BulletFormatList` (4 props: `command`, `id`, `listType: BulletListType`, `text`), `NumberFormatList` (4 props: `command`, `id`, `listType: NumberListType`, `text`), `BulletFormatListItem` (union of `BulletListType` | `CustomFormatListItem`), `NumberFormatListItem` (union of `NumberListType` | `CustomFormatListItem`), `ListSettingsModel` (`bulletFormatListItems`, `numberFormatListItems`)
+- Quick toolbar: `QuickToolbarSettings` (6 props with defaults: `enable=true`, `enableAppendToBody=false`, `image`, `link`, `table`, `text`), `QuickToolbarSettingsModel`
+- Slash command: `SlashCommandSettings` (4 props with defaults: `enable=false`, `items`, `popupHeight='320px'`, `popupWidth='300px'`, plus `itemSelect` event), `SlashCommandType` enum (`Inline` | `Basic Block` | `Media`), `SlashCommandSettingsModel`
+- Table: `TableSettings` (`resize=true`), `TableSettingsModel`
+- Toolbar: `ToolbarSettings` (6 props with defaults: `enable=true`, `enableFloating=true`, `floatingOffset=0`, `items`, `position='Top'`, `type='Auto'`, plus `itemClicked` and `updatedToolbarStatus` events), `ToolbarSettingsModel`, `ToolbarItemClickedEventArgs` (4 props: `dataIndex`, `event`, `item: ToolbarItemModel`, `name`)
+- Toolbar dropdowns: `FontFamily` (`items: FontFamilyItem[]`, `width='72px'`), `FontFamilyModel`, `FontSize` (`items: FontSizeItem[]`, `width='60px'`), `FontSizeModel`, `Format` (`items: ToolbarSubItem[]`, `width='75px'`), `FormatModel`
+- `AddToolbarItem` (`index: number`, `item: ToolbarItem`) — input shape consumed by `editor.updateToolbarItems(...)`
+
 ## Quick Start Example
 
 ### Minimal Editor Setup
