@@ -504,3 +504,23 @@ Interface for the class `ImageSettings`.
 | `resize` | `boolean` | Specifies whether users can resize images in the editor. |
 | `saveFormat` | `ImageSaveFormat` | Specifies how local images are represented when an upload endpoint is not configured. Possible values are: `Blob` (creates a temporary object URL for the image); `Base64` (embeds the image as a Base64 data URL). |
 | `uploadUrl` | `string \| null` | Specifies the server endpoint used to upload image files. When this property is not configured, the editor uses `saveFormat` to create a local image source. |
+
+
+### `ImageQuickToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/imagequicktoolbaritem>
+
+Built-in items exposed by the Image Quick Toolbar.
+
+#### Enum members
+
+- `AltText`
+- `Caption`
+- `Align`
+- `Display`
+- `WrapText`
+- `Dimension`
+- `Replace`
+- `Remove`
+- `|`
+- `CustomToolbarItem`

@@ -692,3 +692,43 @@ Interface for the class `Format`.
 
 - `items` — `ToolbarSubItem[]` — Specifies the items displayed in the Format dropdown.
 - `width` — `string` — Specifies the width of the Format dropdown.
+
+
+### `FontFamilyItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontfamilyitem>
+
+Typed interface for font family dropdown items. Represents a single font family option with family name and editor command.
+
+#### Properties
+
+- `command` — `string` — Editor command to execute (must be `'fontName'`).
+- `id` — `string` — Unique identifier for the dropdown menu item.
+- `text` — `string` — Display text for the item (e.g., `'Arial'`).
+- `value` — `string` — Font family value payload with font name (e.g., `{ family: 'Arial' }`).
+
+### `FontSizeItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontsizeitem>
+
+Typed interface for font size dropdown items. Represents a single font size option with numeric value and editor command.
+
+#### Properties
+
+- `command` — `string` — Editor command to execute (must be `'fontSize'`).
+- `id` — `string` — Unique identifier for the dropdown menu item.
+- `text` — `string` — Display text for the item (e.g., `'14'`).
+- `value` — `string` — Font size value payload with CSS unit (e.g., `{ size: '14px' }`).
+
+### `TextAlignment`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/textalignment>
+
+Text alignment values applied to block-level nodes.
+
+#### Enum members
+
+- `left`
+- `center`
+- `right`
+- `justify`

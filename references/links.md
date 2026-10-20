@@ -452,3 +452,19 @@ Interface for the class `LinkSettings`.
 | `defaultProtocol` | `string` | Specifies the protocol to prepend when `autoPrependProtocol` is enabled and the URL lacks a protocol. |
 | `defaultTarget` | `string` | Specifies the default target for newly created links. Possible values: `''`, `'_self'`, `'_blank'`, `'_parent'`, `'_top'`. |
 | `linkOnPaste` | `boolean` | Specifies whether pasting a URL over selected text converts it into a link. |
+
+
+### `LinkQuickToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/linkquicktoolbaritem>
+
+Built-in items exposed by the Link Quick Toolbar.
+
+#### Enum members
+
+- `Open`
+- `Copy`
+- `Edit`
+- `Remove`
+- `|`
+- `CustomToolbarItem`

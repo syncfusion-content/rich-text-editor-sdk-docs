@@ -42,7 +42,7 @@ Use this skill when you need to:
 - Configure `toolbarSettings.items` and `imageSettings`
 - Set placeholder text
 - Accessibility compliance, ARIA attributes, keyboard navigation, axe-core validation
-- **API references**: `ValueFormat`, `InteractionSettings`, `InteractionSettingsModel` (under the `## API references` section of this file)
+- **API references**: `ValueFormat`, `InteractionSettings`, `InteractionSettingsModel`, `RichTextEditorUIModel`, `EditorDocument`, `BlockNode`, `InlineNode`, `EditorMark` (under the `## API references` section of this file)
 
 ### Toolbar
 
@@ -56,7 +56,7 @@ Use this skill when you need to:
 - `toolbarSettings.itemClicked` and `toolbarSettings.updatedToolbarStatus` events
 - Configuring keyboard shortcuts via `toolbarSettings.keyBindings`
 - Updating toolbar items at runtime with `editor.updateToolbarItems(updates)`
-- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService`, `EditorKeyBindingAction`, `QuickToolbarSettings`, `QuickToolbarSettingsModel`, `ToolbarSettings`, `ToolbarItemClickedEventArgs`, `ToolbarSettingsModel`, `AddToolbarItem` (under the `## API references` section of this file)
+- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService`, `EditorKeyBindingAction`, `QuickToolbarSettings`, `QuickToolbarSettingsModel`, `ToolbarSettings`, `ToolbarItemClickedEventArgs`, `ToolbarSettingsModel`, `AddToolbarItem`, `BuiltInToolbarItemConfig`, `CustomToolbarItem`, `BuiltInToolbarItem`, `ToolbarItem`, `ToolbarItemUpdate`, `ToolbarPosition`, `ToolbarType`, `DisableToolbarItem`, `EnableToolbarItem`, `HideToolbarItem`, `ShowToolbarItem`, `RemoveToolbarItem`, `StaticFunctions` (under the `## API references` section of this file)
 
 ### Inline Formatting
 
@@ -72,7 +72,7 @@ Use this skill when you need to:
 - `ClearFormat` toolbar item and `clearFormat` fluent command
 - Programmatic end-to-end example wiring external buttons to `editor.commands().<builder>().apply()`
 - Keyboard shortcuts for every text-formatting action (Bold, Italic, Underline, Strikethrough, Subscript, Superscript, Inline Code, Clear Format, Uppercase, Lowercase)
-- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder`, `BackgroundColor`, `FontColor`, `BackgroundColorModel`, `FontColorModel`, `ColorModeType`, `ColorPickerType`, `FontFamily`, `FontSize`, `Format`, `FontFamilyModel`, `FontSizeModel`, `FormatModel` (under the `## API references` section of this file)
+- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder`, `BackgroundColor`, `FontColor`, `BackgroundColorModel`, `FontColorModel`, `ColorModeType`, `ColorPickerType`, `FontFamily`, `FontSize`, `Format`, `FontFamilyModel`, `FontSizeModel`, `FormatModel`, `FontFamilyItem`, `FontSizeItem`, `TextAlignment` (under the `## API references` section of this file)
 
 ### Block Formats — Block Quote
 
@@ -125,7 +125,7 @@ Use this skill when you need to:
 - `tableSettings.resize`
 - Quick toolbar items: `Header`, `Row`, `Column`, `CellBackgroundColor`, `Align`, `VerticalAlign`, `Remove`
 - Keyboard shortcuts (Ctrl+Shift+E to open the Insert Table popup/dialog; Arrow Keys, Enter, Escape inside the popup)
-- **API references**: `TableSettings`, `TableSettingsModel` (under the `## API references` section of this file)
+- **API references**: `TableSettings`, `TableSettingsModel`, `TableQuickToolbarItem` (under the `## API references` section of this file)
 
 ### Block Formats — Images
 
@@ -141,7 +141,7 @@ Use this skill when you need to:
 - Wrap text modes (`'left'`, `'right'`, `'none'`) and alignment options (`'left'`, `'center'`, `'right'`, `'none'`)
 - Remote upload with `uploadUrl`, `imageUrl`, `removeUrl`; the `UploadFiles` form field name
 - `Ctrl+Shift+I` (Windows) / `⌘ ⇧ I` (macOS) keyboard shortcut
-- **API references**: `ImageSettings`, `ImageDisplayMode`, `ImageSaveFormat`, `ImageSettingsModel` (under the `## API references` section of this file)
+- **API references**: `ImageSettings`, `ImageDisplayMode`, `ImageSaveFormat`, `ImageSettingsModel`, `ImageQuickToolbarItem` (under the `## API references` section of this file)
 
 ### Block Formats — Links
 
@@ -155,7 +155,7 @@ Use this skill when you need to:
 - Default-link toolbar surface and trigger/close behavior
 - Customizing the link quick toolbar with custom items routed through `toolbarSettings.itemClicked`
 - `Ctrl+K` (Windows) / `⌘ K` (macOS) keyboard shortcut
-- **API references**: `LinkCommandBuilder`, `LinkSettings`, `LinkSettingsModel` (under the `## API references` section of this file)
+- **API references**: `LinkCommandBuilder`, `LinkSettings`, `LinkSettingsModel`, `LinkQuickToolbarItem` (under the `## API references` section of this file)
 
 ### Block Formats — Lists
 
@@ -211,20 +211,6 @@ Use this skill when you need to:
 - `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
 - `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
 - Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
-
-### API Reference (Part 5)
-
-📄 **Read:** [references/api-references-part-5.md](references/api-references-part-5.md)
-- Toolbar item configs: `BuiltInToolbarItemConfig` (15 props + `click` event), `CustomToolbarItem` (18 props + `click` event)
-- Toolbar update payloads: `DisableToolbarItem`, `EnableToolbarItem`, `HideToolbarItem`, `ShowToolbarItem`, `RemoveToolbarItem` (`itemId` + optional `index`)
-- Toolbar unions: `BuiltInToolbarItem` (43 enum members), `ToolbarItem` (`BuiltInToolbarItem` | `BuiltInToolbarItemConfig` | `CustomToolbarItem` | `|`), `ToolbarItemUpdate` (`AddToolbarItem` | `RemoveToolbarItem` | `ShowToolbarItem` | `HideToolbarItem` | `EnableToolbarItem` | `DisableToolbarItem`)
-- Dropdown items: `FontFamilyItem` (4 props), `FontSizeItem` (4 props)
-- Quick toolbar unions: `ImageQuickToolbarItem`, `LinkQuickToolbarItem`, `TableQuickToolbarItem`
-- Toolbar enums: `ToolbarPosition` (`Top` | `Bottom`), `ToolbarType` (`Auto` | `Expanded` | `MultiRow` | `Scrollable`)
-- Root component: `RichTextEditorUIModel` (35 props + 18 events, including `value`, `valueFormat`, `height`, `width`, `cssClass`, `enable`, `enablePersistence`, `enableRtl`, `readonly`, `placeholder`, `locale`, `saveInterval`, `undoRedoSteps`, `undoRedoTimer`, `keyBindings`, plus the full set of sub-component models and every event)
-- Document model: `EditorDocument` (4 props: `attrs`, `children: BlockNode[]`, `marks`, `schemaVersion`), `BlockNode` (6 union members), `InlineNode` (2 union members), `EditorMark` (10 union members)
-- `TextAlignment` enum (`left` | `center` | `right` | `justify`)
-- `StaticFunctions` — `RichTextEditorUI.reconcileToolbarItems(newItems, oldItems): ToolbarItemUpdate[]`
 
 ## Quick Start Example
 

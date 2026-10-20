@@ -195,3 +195,22 @@ Interface for the class `TableSettings`.
 #### Properties
 
 - `resize` — `boolean` — Enables table resize drag handles when new tables are inserted into the editor.
+
+
+### `TableQuickToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/tablequicktoolbaritem>
+
+Built-in items exposed by the Table Quick Toolbar.
+
+#### Enum members
+
+- `Row`
+- `Column`
+- `Header`
+- `CellBackgroundColor`
+- `VerticalAlign`
+- `Align`
+- `Remove`
+- `|`
+- `CustomToolbarItem`

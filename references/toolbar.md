@@ -458,3 +458,235 @@ Adds a toolbar item at a specified index.
 
 - `index` — `number` — Index at which to insert the item.
 - `item` — `ToolbarItem` — The item to add.
+
+
+### `BuiltInToolbarItemConfig`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/builtintoolbaritemconfig>
+
+Configuration for a built-in toolbar item. Helps align built-in items with `ItemModel` properties.
+
+#### Properties
+
+- `align` — `ItemAlign` — Specifies the location for aligning Toolbar items on the Toolbar. Each command will be aligned according to the `align` property.
+  - `Left` — To align commands to the left side of the Toolbar.
+  - `Center` — To align commands at the center of the Toolbar.
+  - `Right` — To align commands to the right side of the Toolbar.
+
+  ```ts
+  let toolbar: Toolbar = new Toolbar({
+      items: [
+          { text: "Home" },
+          { text: "My Home Page", align: 'Center' },
+          { text: "Search", align: 'Right' },
+          { text: "Settings", align: 'Right' }
+      ]
+  });
+  toolbar.appendTo('#element');
+  ```
+
+- `cssClass` — `string` — Defines single/multiple classes (separated by space) to be used for customization of commands.
+- `disabled` — `boolean` — Specifies whether an item should be disabled or not.
+- `htmlAttributes` — `{ [key: string]: string }` — Defines `htmlAttributes` used to add custom attributes to Toolbar command. Supports HTML attributes such as `style`, `class`, etc.
+- `id` — `string` — Specifies the unique ID to be used with button or input element of Toolbar items.
+- `item` — `BuiltInToolbarItem` — The built-in toolbar item name.
+- `overflow` — `OverflowOption` — Specifies the Toolbar command display area when an element's content is too large to fit available space. This is applicable only to popup mode.
+  - `Show` — Always shows the item as the primary priority on the Toolbar.
+  - `Hide` — Always shows the item as the secondary priority on the popup.
+  - `None` — No priority for display, and as per normal order moves to popup when content exceeds.
+
+- `prefixIcon` — `string` — Defines single/multiple classes separated by space used to specify an icon for the button. The icon will be positioned before the text content if text is available, otherwise the icon alone will be rendered.
+- `showAlwaysInPopup` — `boolean` — Defines the priority of items to display it in popup always. It allows to maintain toolbar item on popup always but it does not work for toolbar priority items.
+- `showTextOn` — `DisplayMode` — Specifies where the button text will be displayed on popup mode of the Toolbar.
+  - `Toolbar` — Text will be displayed on Toolbar only.
+  - `Overflow` — Text will be displayed only when content overflows to popup.
+  - `Both` — Text will be displayed on popup and Toolbar.
+
+- `suffixIcon` — `string` — Defines single/multiple classes separated by space used to specify an icon for the button. The icon will be positioned after the text content if text is available.
+- `tabIndex` — `number` — Specifies the tab order of the Toolbar items. When positive values assigned, it allows to switch focus to the next/previous toolbar items with Tab/ShiftTab keys. By default, user can able to switch between items only via arrow keys. If the value is set to `0` for all tool bar items, then tab switches based on element order.
+- `template` — `string | Object | Function` — Specifies the HTML element/element ID as a string that can be added as a Toolbar command.
+
+  ```ts
+  items: [{ template: '<input placeholder="Search"/>' }, { template: '#checkbox1' }]
+  ```
+
+- `text` — `string` — Specifies the text to be displayed on the Toolbar button.
+- `tooltipText` — `string` — Specifies the text to be displayed on hovering the Toolbar button.
+- `type` — `ItemType` — Specifies the types of command to be rendered in the Toolbar.
+  - `Button` — Creates the Button control with its given properties like `text`, `prefixIcon`, etc.
+  - `Separator` — Adds a horizontal line that separates the Toolbar commands.
+  - `Input` — Creates an input element that is applicable to template rendering with Syncfusion controls like DropDownList, AutoComplete, etc.
+
+- `visible` — `boolean` — Specifies whether an item should be hidden or not.
+- `width` — `number | string` — Specifies the width of the Toolbar button commands.
+
+#### Events
+
+- `click` — `EmitType<ClickEventArgs>` — Event triggers when click the toolbar item.
+
+### `CustomToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customtoolbaritem>
+
+Custom toolbar item with user-defined action.
+
+#### Properties
+
+- `actionId` — `string` — Unique identifier for the custom toolbar item. Used to distinguish items and handle `itemClick` events.
+- `align` — `ItemAlign` — Specifies the location for aligning Toolbar items on the Toolbar.
+  - `Left` — To align commands to the left side of the Toolbar.
+  - `Center` — To align commands at the center of the Toolbar.
+  - `Right` — To align commands to the right side of the Toolbar.
+
+- `cssClass` — `string` — Defines single/multiple classes (separated by space) to be used for customization of commands.
+- `disabled` — `boolean` — Specifies whether an item should be disabled or not.
+- `htmlAttributes` — `{ [key: string]: string }` — Defines `htmlAttributes` used to add custom attributes to Toolbar command.
+- `id` — `string` — Specifies the unique ID to be used with button or input element of Toolbar items.
+- `macShortcutText` — `string` — Keyboard shortcut tooltip for macOS.
+- `overflow` — `OverflowOption` — Specifies the Toolbar command display area when content is too large to fit available space. Applicable only to popup mode.
+  - `Show` — Primary priority on the Toolbar.
+  - `Hide` — Secondary priority on the popup.
+  - `None` — No priority.
+
+- `prefixIcon` — `string` — Defines single/multiple classes separated by space used to specify an icon for the button. The icon will be positioned before the text content if text is available, otherwise the icon alone will be rendered.
+- `showAlwaysInPopup` — `boolean` — Defines the priority of items to display it in popup always. Does not work for toolbar priority items.
+- `showTextOn` — `DisplayMode`
+  - `Toolbar` — Text on Toolbar only.
+  - `Overflow` — Text on overflow only.
+  - `Both` — Text on popup and Toolbar.
+
+- `suffixIcon` — `string` — Defines single/multiple classes separated by space used to specify an icon for the button. The icon will be positioned after the text content if text is available.
+- `tabIndex` — `number` — Specifies the tab order of the Toolbar items. Supports positive values to enable Tab/ShiftTab key navigation; `0` switches based on element order.
+- `template` — `string | Object | Function` — Specifies the HTML element/element ID as a string that can be added as a Toolbar command.
+- `text` — `string` — Specifies the text to be displayed on the Toolbar button.
+- `tooltipText` — `string` — Specifies the text to be displayed on hovering the Toolbar button.
+- `type` — `ItemType`
+  - `Button` — Button control with its given properties.
+  - `Separator` — Horizontal line separator.
+  - `Input` — Input element for Syncfusion controls (DropDownList, AutoComplete, etc.).
+
+- `visible` — `boolean` — Specifies whether an item should be hidden or not.
+- `width` — `number | string` — Specifies the width of the Toolbar button commands.
+- `windowsShortcutText` — `string` — Keyboard shortcut tooltip for Windows.
+
+#### Events
+
+- `click` — `EmitType<ClickEventArgs>` — Event triggers when click the toolbar item.
+
+### `DisableToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/disabletoolbaritem>
+
+Disables a toolbar item by ID.
+
+#### Properties
+
+- `itemId` — `string` — Stable ID of the item to disable.
+
+### `EnableToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/enabletoolbaritem>
+
+Enables a toolbar item by ID.
+
+#### Properties
+
+- `itemId` — `string` — Stable ID of the item to enable.
+
+### `HideToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/hidetoolbaritem>
+
+Hides a toolbar item by ID.
+
+#### Properties
+
+- `itemId` — `string` — Stable ID of the item to hide.
+
+### `RemoveToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/removetoolbaritem>
+
+Removes a toolbar item by ID.
+
+#### Properties
+
+- `index` — `number` — Index of the item to remove.
+- `itemId` — `string` — Stable ID of the item to remove.
+
+### `ShowToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/showtoolbaritem>
+
+Shows a toolbar item by ID.
+
+#### Properties
+
+- `itemId` — `string` — Stable ID of the item to show.
+
+### `BuiltInToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/builtintoolbaritem>
+
+Built-in toolbar item names for common editor commands.
+
+#### Enum members
+
+`Undo`, `Redo`, `Bold`, `Italic`, `Underline`, `Strikethrough`, `Subscript`, `Superscript`, `UpperCase`, `LowerCase`, `HorizontalLine`, `InlineCode`, `Formats`, `FontSize`, `FontColor`, `BackgroundColor`, `FontName`, `BulletList`, `NumberedList`, `NumberFormatList`, `BulletFormatList`, `Checklist`, `Alignment`, `Quote`, `CodeBlock`, `Callout`, `Link`, `Image`, `Table`, `ClearFormat`, `Heading 1`, `Heading 2`, `Heading 3`, `Heading 4`, `Paragraph`, `Indent`, `Outdent`, `AlignLeft`, `AlignCenter`, `AlignRight`, `AlignJustify`, `CalloutInfo`, `CalloutSuccess`, `CalloutWarning`, `CalloutError`, `CalloutNote`.
+
+### `ToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbaritem>
+
+Union type for toolbar items. Accepts built-in items by name, custom configurations, custom items, or separators.
+
+#### Union members
+
+`BuiltInToolbarItem`, `BuiltInToolbarItemConfig`, `CustomToolbarItem`, `|`.
+
+### `ToolbarItemUpdate`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbaritemupdate>
+
+Discriminated union for toolbar item update operations. Used during reconciliation of items array changes and direct toolbar updates.
+
+#### Union members
+
+`AddToolbarItem`, `RemoveToolbarItem`, `ShowToolbarItem`, `HideToolbarItem`, `EnableToolbarItem`, `DisableToolbarItem`.
+
+### `ToolbarPosition`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarposition>
+
+Defines the toolbar vertical position relative to editor.
+
+#### Enum members
+
+`Top`, `Bottom`.
+
+### `ToolbarType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbartype>
+
+Defines the toolbar overflow and layout behavior.
+
+#### Enum members
+
+`Auto`, `Expanded`, `MultiRow`, `Scrollable`.
+
+### `StaticFunctions`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/staticfunctions>
+
+Root static functions of the `RichTextEditorUI` component. Hosts toolbar reconciliation — see `getting-started.md` for the root component itself.
+
+#### `reconcileToolbarItems`
+
+Reconciles two toolbar item collections. Detects added and removed items and returns the required update operations.
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `newItems` | `ToolbarItem[]` | The updated toolbar items |
+| `oldItems` | `ToolbarItem[]` | The previous toolbar items |
+
+Returns `ToolbarItemUpdate[]`.
