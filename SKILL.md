@@ -232,6 +232,20 @@ Use this skill when you need to:
 - Toolbar dropdowns: `FontFamily` (`items: FontFamilyItem[]`, `width='72px'`), `FontFamilyModel`, `FontSize` (`items: FontSizeItem[]`, `width='60px'`), `FontSizeModel`, `Format` (`items: ToolbarSubItem[]`, `width='75px'`), `FormatModel`
 - `AddToolbarItem` (`index: number`, `item: ToolbarItem`) — input shape consumed by `editor.updateToolbarItems(...)`
 
+### API Reference (Part 5)
+
+📄 **Read:** [references/api-references-part-5.md](references/api-references-part-5.md)
+- Toolbar item configs: `BuiltInToolbarItemConfig` (15 props + `click` event), `CustomToolbarItem` (18 props + `click` event)
+- Toolbar update payloads: `DisableToolbarItem`, `EnableToolbarItem`, `HideToolbarItem`, `ShowToolbarItem`, `RemoveToolbarItem` (`itemId` + optional `index`)
+- Toolbar unions: `BuiltInToolbarItem` (43 enum members), `ToolbarItem` (`BuiltInToolbarItem` | `BuiltInToolbarItemConfig` | `CustomToolbarItem` | `|`), `ToolbarItemUpdate` (`AddToolbarItem` | `RemoveToolbarItem` | `ShowToolbarItem` | `HideToolbarItem` | `EnableToolbarItem` | `DisableToolbarItem`)
+- Dropdown items: `FontFamilyItem` (4 props), `FontSizeItem` (4 props)
+- Quick toolbar unions: `ImageQuickToolbarItem`, `LinkQuickToolbarItem`, `TableQuickToolbarItem`
+- Toolbar enums: `ToolbarPosition` (`Top` | `Bottom`), `ToolbarType` (`Auto` | `Expanded` | `MultiRow` | `Scrollable`)
+- Root component: `RichTextEditorUIModel` (35 props + 18 events, including `value`, `valueFormat`, `height`, `width`, `cssClass`, `enable`, `enablePersistence`, `enableRtl`, `readonly`, `placeholder`, `locale`, `saveInterval`, `undoRedoSteps`, `undoRedoTimer`, `keyBindings`, plus the full set of sub-component models and every event)
+- Document model: `EditorDocument` (4 props: `attrs`, `children: BlockNode[]`, `marks`, `schemaVersion`), `BlockNode` (6 union members), `InlineNode` (2 union members), `EditorMark` (10 union members)
+- `TextAlignment` enum (`left` | `center` | `right` | `justify`)
+- `StaticFunctions` — `RichTextEditorUI.reconcileToolbarItems(newItems, oldItems): ToolbarItemUpdate[]`
+
 ## Quick Start Example
 
 ### Minimal Editor Setup
