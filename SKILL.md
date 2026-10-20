@@ -200,6 +200,14 @@ Use this skill when you need to:
 - `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
 - Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
 
+### API Reference (Part 2)
+
+📄 **Read:** [references/api-references-part-2.md](references/api-references-part-2.md)
+- Slash-command types: `ISlashCommandItem`, `SlashCommandItemSelectArgs`, `SlashCommandItems` (the 22 built-in popup entries)
+- `FormattingStateService` — formatting-state cache with `getCurrentState` and `refreshFormattingState(editorCore)`
+- Command builders (`AlignmentCommandBuilder`, `CalloutCommandBuilder`, `ChecklistCommandBuilder`, `CodeBlockCommandBuilder`, `CollapsibleCommandBuilder`, `ColorCommandBuilder`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `HorizontalRuleCommandBuilder`, `LinkCommandBuilder`, `ListCommandBuilder`, `ListStyleCommandBuilder`, `ToggleCommandBuilder`) — chainable `apply()` plus the typed setters that produce them
+- `CommandExecutor` — the `editor.commands()` builder access: every command surface (`bold`, `italic`, `underline`, `strike­through`, `subscript`, `superscript`, `inlineCode`, `clearFormat`, `uppercase`, `lowercase`, `paragraph`, `heading1`–`heading4`, `blockQuote`, `callout`, `codeBlock`, `collapsible`, `horizontalRule`, `indent`, `outdent`, `link`, `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`, `setTextAlign`, `fontName`, `fontSize`, `fontColor`, `backgroundColor`, `undo`, `redo`) and the builder type each one returns
+
 ## Quick Start Example
 
 ### Minimal Editor Setup
