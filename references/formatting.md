@@ -488,3 +488,134 @@ Command executor providing chainable builders for all supported commands. The pu
 | `underline()` | `ToggleCommandBuilder` |
 | `undo()` | `ToggleCommandBuilder` |
 | `uppercase()` | `ToggleCommandBuilder` |
+
+Color-picker configuration types and the color-mode enum, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `BackgroundColor`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/backgroundcolor>
+
+Defines the configuration for the background color (text highlight color) picker.
+
+#### Properties
+
+- `columns` — `number` — Specifies the number of columns in the color palette.
+  - Defaults to `5`.
+- `default` — `string` — Specifies the default background color.
+  - Defaults to `'#FFF7C7'`.
+- `mode` — `ColorModeType` — Specifies the color mode.
+  - Defaults to `'Palette'`.
+- `modeSwitcher` — `boolean` — Enables or disables the mode switcher button.
+  - Defaults to `false`.
+- `preset` — `{ [key: string]: string[] }` — Specifies custom color codes keyed by group label.
+
+  Defaults to:
+
+  ```text
+  {
+    Custom: [
+      '#000000', '#FFFFFF', '#FCE3E0', '#FFEDD4', '#EBF7D1', '#FFF7C7',
+      '#DBF5E0', '#D6F5EB', '#D4F2F2', '#D4F0FA', '#DBEBFC', '#E0E5FC',
+      '#E5E3FC', '#EDE0FC', '#F2E0FC', '#FAE0F2', '#FCE0E8', '#FCE0E3',
+      '#F5EBDE', '#F7F2E0', '#F0F2DB', '#E5EBF0', '#EDEDED', '#E0E0E5',
+      '#DEE0EB'
+    ]
+  }
+  ```
+
+- `showRecentColors` — `boolean` — Indicates whether the recent colors section is shown in the picker.
+  - Defaults to `true`.
+
+### `FontColor`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontcolor>
+
+Defines the configuration for the font color picker. Controls the default color, color palette, mode, number of columns, mode switcher, and recent-colors visibility shown in the `FontColor` toolbar item.
+
+#### Properties
+
+- `columns` — `number` — Specifies the number of columns in the color palette.
+  - Defaults to `5`.
+- `default` — `string` — Specifies the default font color.
+  - Defaults to `'#DC2626'`.
+- `mode` — `ColorModeType` — Specifies the color mode.
+  - Defaults to `'Palette'`.
+- `modeSwitcher` — `boolean` — Enables or disables the mode switcher button.
+  - Defaults to `false`.
+- `preset` — `{ [key: string]: string[] }` — Specifies custom color codes keyed by group label.
+
+  Defaults to:
+
+  ```text
+  {
+    Custom: [
+      '#000000', '#FFFFFF', '#DC2626', '#B8590D', '#8C7000', '#5B21B6',
+      '#4D700F', '#1F7333', '#146B52', '#0D6666', '#0A6185', '#1A5499',
+      '#2640A6', '#383399', '#612E9E', '#732494', '#941F6B', '#9E2447',
+      '#992938', '#704724', '#7A612E', '#5C611F', '#404C61', '#4D4D4D',
+      '#242947'
+    ]
+  }
+  ```
+
+- `showRecentColors` — `boolean` — Indicates whether the recent colors section is shown in the picker.
+  - Defaults to `true`.
+
+### `BackgroundColorModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/backgroundcolormodel>
+
+Interface for the class `BackgroundColor`.
+
+#### Properties
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `columns` | `number` | Specifies the number of columns in the color palette. |
+| `default` | `string` | Specifies the default background color. |
+| `mode` | `ColorModeType` | Specifies the color mode. |
+| `modeSwitcher` | `boolean` | Enables or disables the mode switcher button. |
+| `preset` | `{ [key: string]: string[] }` | Specifies custom color codes keyed by group label. |
+| `showRecentColors` | `boolean` | Indicates whether the recent colors section is shown in the picker. |
+
+### `FontColorModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontcolormodel>
+
+Interface for the class `FontColor`.
+
+#### Properties
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `columns` | `number` | Specifies the number of columns in the color palette. |
+| `default` | `string` | Specifies the default font color. |
+| `mode` | `ColorModeType` | Specifies the color mode. |
+| `modeSwitcher` | `boolean` | Enables or disables the mode switcher button. |
+| `preset` | `{ [key: string]: string[] }` | Specifies custom color codes keyed by group label. |
+| `showRecentColors` | `boolean` | Indicates whether the recent colors section is shown in the picker. |
+
+### `ColorModeType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/colormodetype>
+
+Enumerates the color picker display modes supported by the font color and background color pickers.
+
+- `Palette` — Renders a fixed swatch grid.
+- `Picker` — Renders an inline color picker only (no palette).
+
+Enum members:
+
+- `Palette`
+- `Picker`
+
+### `ColorPickerType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/colorpickertype>
+
+Identifies which editor color picker triggered an event or is being referenced in a payload.
+
+Enum members:
+
+- `FontColor`
+- `BackgroundColor`

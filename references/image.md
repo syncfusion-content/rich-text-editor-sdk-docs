@@ -12,6 +12,7 @@ Image insertion in the Modern Rich Text Editor supports multiple methods to acco
 - [Image quick toolbar](#image-quick-toolbar)
 - [Remote upload](#remote-upload)
 - [Keyboard shortcut](#keyboard-shortcut)
+- [API references](#api-references)
 
 ## Insert an image
 
@@ -418,3 +419,88 @@ editor.appendTo('#editor');
 ## Keyboard shortcut
 
 The default keyboard shortcut for inserting an image is **Ctrl+Shift+I** (Windows) / `⌘ ⇧ I` (macOS). To remap the shortcut, override `keyBindings.image` on `toolbarSettings` — see [toolbar.md](toolbar.md) → *Configuring keyboard shortcuts*.
+
+
+## API references
+
+Image configuration types, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ImageSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettings>
+
+Configures the image settings of the RichTextEditor.
+
+#### Properties
+
+- `allowedTypes` — `string[]` — Specifies the image file extensions that can be selected, dropped, pasted, or uploaded. API names use TypeScript camel casing.
+  - Defaults to `['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp']`.
+- `dimension` — `ImageDimensionOptions` — Specifies the default and permitted dimensions of an image.
+  - Defaults to `{ width: 'auto', height: 'auto', minWidth: 0, maxWidth: null, minHeight: 0, maxHeight: null }`.
+- `display` — `ImageDisplayMode` — Specifies how an image is positioned in the editor content. Possible values are:
+  - `inline` — Places the image within the current text flow.
+  - `break` — Places the image on a separate line.
+
+  Defaults to `'inline'`.
+
+- `imageUrl` — `string | null` — Specifies the public base URL used to resolve uploaded image names returned by the server. For example, when `imageUrl` is `/uploads/images/` and the server returns `sample.png`, the resulting source is `/uploads/images/sample.png`.
+  - Defaults to `null`.
+- `maxFileSize` — `number` — Specifies the maximum permitted image file size, in bytes.
+  - Defaults to `30000000`.
+- `removeUrl` — `string | null` — Specifies the server endpoint used to remove an uploaded image.
+  - Defaults to `null`.
+- `resize` — `boolean` — Specifies whether users can resize images in the editor.
+  - Defaults to `true`.
+- `saveFormat` — `ImageSaveFormat` — Specifies how local images are represented when an upload endpoint is not configured. Possible values are:
+  - `Blob` — Creates a temporary object URL for the image.
+  - `Base64` — Embeds the image as a Base64 data URL.
+
+  Defaults to `'Blob'`.
+
+- `uploadUrl` — `string | null` — Specifies the server endpoint used to upload image files. When this property is not configured, the editor uses `saveFormat` to create a local image source.
+  - Defaults to `null`.
+
+### `ImageDisplayMode`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/imagedisplaymode>
+
+Default display mode for inserted images.
+
+- `'inline'` — Places the image within the current text flow.
+- `'break'` — Places the image on a separate line.
+
+Enum members:
+
+- `inline`
+- `break`
+
+### `ImageSaveFormat`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesaveformat>
+
+Local representation chosen for the next image insertion when the editor uses a local proxy source (no `uploadUrl`).
+
+Enum members:
+
+- `Blob`
+- `Base64`
+
+### `ImageSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/imagesettingsmodel>
+
+Interface for the class `ImageSettings`.
+
+#### Properties
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `allowedTypes` | `string[]` | Specifies the image file extensions that can be selected, dropped, pasted, or uploaded. API names use TypeScript camel casing. |
+| `dimension` | `ImageDimensionOptions` | Specifies the default and permitted dimensions of an image. |
+| `display` | `ImageDisplayMode` | Specifies how an image is positioned in the editor content. Possible values are: `inline` (places the image within the current text flow); `break` (places the image on a separate line). |
+| `imageUrl` | `string \| null` | Specifies the public base URL used to resolve uploaded image names returned by the server. For example, when `imageUrl` is `/uploads/images/` and the server returns `sample.png`, the resulting source is `/uploads/images/sample.png`. |
+| `maxFileSize` | `number` | Specifies the maximum permitted image file size, in bytes. |
+| `removeUrl` | `string \| null` | Specifies the server endpoint used to remove an uploaded image. |
+| `resize` | `boolean` | Specifies whether users can resize images in the editor. |
+| `saveFormat` | `ImageSaveFormat` | Specifies how local images are represented when an upload endpoint is not configured. Possible values are: `Blob` (creates a temporary object URL for the image); `Base64` (embeds the image as a Base64 data URL). |
+| `uploadUrl` | `string \| null` | Specifies the server endpoint used to upload image files. When this property is not configured, the editor uses `saveFormat` to create a local image source. |

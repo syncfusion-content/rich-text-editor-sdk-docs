@@ -11,6 +11,7 @@ The main toolbar is the primary interaction surface for formatting commands, and
 - [Custom toolbar items](#custom-toolbar-items)
 - [Configuring keyboard shortcuts](#configuring-keyboard-shortcuts)
 - [Updating toolbar items at runtime](#updating-toolbar-items-at-runtime)
+- [API references](#api-references)
 
 ## Toolbar items and types
 
@@ -320,3 +321,37 @@ Service for querying and caching the editor's formatting state. Ensures formatti
   | `editorCore` | `EditorCore` | The editor core instance |
 
   Returns `FormattingState`.
+### Toolbar runtime key bindings
+
+The enum that backs the `keyBindings` configuration on `toolbarSettings`, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `EditorKeyBindingAction`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/editorkeybindingaction>
+
+Enum members:
+
+- `toolbar-focus`
+- `link`
+- `image`
+- `audio`
+- `video`
+- `table`
+- `undo`
+- `redo`
+- `bold`
+- `italic`
+- `underline`
+- `strikethrough`
+- `superscript`
+- `subscript`
+- `indents`
+- `outdents`
+- `clear-format`
+- `ordered-list`
+- `unordered-list`
+- `checklist`
+- `inlinecode`
+- `uppercase`
+- `lowercase`
+- `code-block`

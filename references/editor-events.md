@@ -11,6 +11,7 @@ The Modern Rich Text Editor component emits various events to notify your applic
 - [blur](#blur)
 - [actionBegin](#actionbegin)
 - [actionComplete](#actioncomplete)
+- [API references](#api-references)
 
 ## change
 
@@ -214,3 +215,56 @@ function logToConsole(eventName: string, requestType: string | undefined, color:
     logContainer.insertBefore(logRow, logContainer.firstChild);
 }
 ```
+
+
+## API references
+
+Event-arg types that back the editor events, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ChangeEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/changeeventargs>
+
+#### Properties
+
+- `action` — `DocumentChangeAction` — Semantic action describing the nature of the change.
+  - `'Insertion'` — Content was added (typing, paste, insert command).
+  - `'Deletion'` — Content was removed (backspace, delete, remove command).
+  - `'Moved'` — Content was relocated (drag-drop, reorder, move command).
+  - `'Replaced'` — Content was swapped (find-replace, transform).
+  - `'Update'` — Attributes or formatting changed without structural change (heading level, text color).
+  - `'Unknown'` — Transaction too complex to categorize; examine `affectedNodes` for details.
+- `affectedNodes` — `EditorNode[]` — All Headless Editor nodes touched by this transaction. Populated based on action:
+  - `'Insertion'` — Newly inserted nodes and their ancestors.
+  - `'Deletion'` — Nodes that existed before deletion (for archival/undo preview).
+  - `'Moved'` — Relocated nodes.
+  - `'Replaced'` — Both old and new nodes.
+  - `'Update'` — Mutated nodes.
+  - `'Unknown'` — All nodes with changes (best effort).
+- `document` — `EditorDocument` — The document state after the change.
+- `selection` — `Selection` — The selection state after the change.
+
+### `UpdatedToolbarStatusEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/updatedtoolbarstatuseventargs>
+
+Event arguments for the `updatedToolbarStatus` event raised after the toolbar synchronizes its visual state (active buttons, dropdown values, color pickers) with the current editor selection / cursor formatting.
+
+#### Properties
+
+- `activeMarks` — `Object` — Snapshot of the active marks at the current selection.
+- `blockFormats` — `Object` — Snapshot of block-level formats at the current selection.
+- `styles` — `Object` — Resolved font / color values at the current selection.
+
+### `itemClickEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/itemclickeventargs>
+
+Event arguments for the `itemClick` event raised when a toolbar item is clicked.
+
+#### Properties
+
+- `actionId` — `string` — The action/command ID for the clicked item.
+- `item` — `ToolbarItem` — The toolbar item configuration.
+- `itemId` — `string` — Stable ID of the toolbar item that was clicked.
+- `originalEvent` — `MouseEvent | KeyboardEvent` — The originating DOM event.

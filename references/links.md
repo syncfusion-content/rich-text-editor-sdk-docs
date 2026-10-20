@@ -12,6 +12,7 @@ The **Link Settings** govern how hyperlinks are created, normalized, and validat
 - [Configure allowed protocols](#configure-allowed-protocols)
 - [Link quick toolbar](#link-quick-toolbar)
 - [Keyboard shortcut](#keyboard-shortcut)
+- [API references](#api-references)
 
 ## Link settings
 
@@ -415,3 +416,39 @@ Builder for link command with chainable URL/text options. Owns the link-command 
   | `urlValue` | `string` | The URL value to set |
 
   Returns `this`.
+
+
+### `LinkSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/linksettings>
+
+Configures the link settings of the RichTextEditor.
+
+#### Properties
+
+- `allowedProtocols` — `string[]` — Specifies the list of allowed protocols for link URLs. URLs with a protocol outside this list are rejected. Relative URLs, query strings, and fragments skip this validation.
+  - Defaults to `['http', 'https', 'mailto', 'tel']`.
+- `autoPrependProtocol` — `boolean` — Specifies whether to automatically prepend a protocol (such as `https://`) to URLs that do not contain one.
+  - Defaults to `true`.
+- `defaultProtocol` — `string` — Specifies the protocol to prepend when `autoPrependProtocol` is enabled and the URL lacks a protocol.
+  - Defaults to `'https'`.
+- `defaultTarget` — `string` — Specifies the default target for newly created links. Possible values: `''`, `'_self'`, `'_blank'`, `'_parent'`, `'_top'`.
+  - Defaults to `'_blank'`.
+- `linkOnPaste` — `boolean` — Specifies whether pasting a URL over selected text converts it into a link.
+  - Defaults to `true`.
+
+### `LinkSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/linksettingsmodel>
+
+Interface for the class `LinkSettings`.
+
+#### Properties
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `allowedProtocols` | `string[]` | Specifies the list of allowed protocols for link URLs. URLs with a protocol outside this list are rejected. Relative URLs, query strings, and fragments skip this validation. |
+| `autoPrependProtocol` | `boolean` | Specifies whether to automatically prepend a protocol (such as `https://`) to URLs that do not contain one. |
+| `defaultProtocol` | `string` | Specifies the protocol to prepend when `autoPrependProtocol` is enabled and the URL lacks a protocol. |
+| `defaultTarget` | `string` | Specifies the default target for newly created links. Possible values: `''`, `'_self'`, `'_blank'`, `'_parent'`, `'_top'`. |
+| `linkOnPaste` | `boolean` | Specifies whether pasting a URL over selected text converts it into a link. |

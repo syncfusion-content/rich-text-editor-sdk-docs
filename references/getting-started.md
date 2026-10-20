@@ -16,6 +16,7 @@ The Syncfusion JavaScript Modern Rich Text Editor is a WYSIWYG control for creat
 - [Configure image settings](#configure-image-settings)
 - [Set placeholder text](#set-placeholder-text)
 - [Accessibility](#accessibility)
+- [API references](#api-references)
 
 ## Prerequisites
 
@@ -226,3 +227,61 @@ The Modern Rich Text Editor component follows the [keyboard interaction](https:/
 ### Implementing accessibility best practices
 
 The Rich Text Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+
+## API references
+
+Top-level editor setting types and the allowed value-format enum, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ValueFormat`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/valueformat>
+
+Allowed value formats.
+
+- `'html'` — value is an HTML string.
+- `'json'` — value is an `EditorDocument` object.
+
+Enum members:
+
+- `html`
+- `json`
+
+### `InteractionSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/interactionsettings>
+
+Configures the Intereactions settings of the RichTextEditor.
+
+#### Properties
+
+- `enableAutoFormat` — `boolean` — Specifies whether Markdown-style auto formatting is enabled while typing. When `true`, supported Markdown-style syntax entered at the beginning of a block is converted into the corresponding editor structure (for example `#`, `##`, `>`, `-`, `1.`, ` ``` `).
+  - Defaults to `true`.
+- `enableTabKeyIndent` — `boolean` — Specifies whether the Tab and Shift+Tab keys can be used for indentation. When `true`:
+  - `Tab` at the beginning of a supported block indents the block.
+  - `Shift+Tab` at the beginning of a supported block outdents the block.
+  - `Tab` in the middle of a block inserts tab spacing at the cursor position.
+
+  If the current selection does not support indentation or tab spacing, normal browser focus navigation is preserved.
+
+  When `false`, Tab and Shift+Tab do not trigger editor indentation.
+
+  Defaults to `true`.
+
+### `InteractionSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/interactionsettingsmodel>
+
+Interface for the class `InteractionSettings`.
+
+#### Properties
+
+- `enableAutoFormat` — `boolean` — Specifies whether Markdown-style auto formatting is enabled while typing. When `true`, supported Markdown-style syntax entered at the beginning of a block is converted into the corresponding editor structure (for example `#`, `##`, `>`, `-`, `1.`, ` ``` `).
+- `enableTabKeyIndent` — `boolean` — Specifies whether the Tab and Shift+Tab keys can be used for indentation. When `true`:
+  - `Tab` at the beginning of a supported block indents the block.
+  - `Shift+Tab` at the beginning of a supported block outdents the block.
+  - `Tab` in the middle of a block inserts tab spacing at the cursor position.
+
+  If the current selection does not support indentation or tab spacing, normal browser focus navigation is preserved.
+
+  When `false`, Tab and Shift+Tab do not trigger editor indentation.

@@ -42,6 +42,7 @@ Use this skill when you need to:
 - Configure `toolbarSettings.items` and `imageSettings`
 - Set placeholder text
 - Accessibility compliance, ARIA attributes, keyboard navigation, axe-core validation
+- **API references**: `ValueFormat`, `InteractionSettings`, `InteractionSettingsModel` (under the `## API references` section of this file)
 
 ### Toolbar
 
@@ -55,7 +56,7 @@ Use this skill when you need to:
 - `toolbarSettings.itemClicked` and `toolbarSettings.updatedToolbarStatus` events
 - Configuring keyboard shortcuts via `toolbarSettings.keyBindings`
 - Updating toolbar items at runtime with `editor.updateToolbarItems(updates)`
-- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService` (under the `## API references` section of this file)
+- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService`, `EditorKeyBindingAction` (under the `## API references` section of this file)
 
 ### Inline Formatting
 
@@ -71,7 +72,7 @@ Use this skill when you need to:
 - `ClearFormat` toolbar item and `clearFormat` fluent command
 - Programmatic end-to-end example wiring external buttons to `editor.commands().<builder>().apply()`
 - Keyboard shortcuts for every text-formatting action (Bold, Italic, Underline, Strikethrough, Subscript, Superscript, Inline Code, Clear Format, Uppercase, Lowercase)
-- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder` (under the `## API references` section of this file)
+- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder`, `BackgroundColor`, `FontColor`, `BackgroundColorModel`, `FontColorModel`, `ColorModeType`, `ColorPickerType` (under the `## API references` section of this file)
 
 ### Block Formats — Block Quote
 
@@ -139,6 +140,7 @@ Use this skill when you need to:
 - Wrap text modes (`'left'`, `'right'`, `'none'`) and alignment options (`'left'`, `'center'`, `'right'`, `'none'`)
 - Remote upload with `uploadUrl`, `imageUrl`, `removeUrl`; the `UploadFiles` form field name
 - `Ctrl+Shift+I` (Windows) / `⌘ ⇧ I` (macOS) keyboard shortcut
+- **API references**: `ImageSettings`, `ImageDisplayMode`, `ImageSaveFormat`, `ImageSettingsModel` (under the `## API references` section of this file)
 
 ### Block Formats — Links
 
@@ -152,7 +154,7 @@ Use this skill when you need to:
 - Default-link toolbar surface and trigger/close behavior
 - Customizing the link quick toolbar with custom items routed through `toolbarSettings.itemClicked`
 - `Ctrl+K` (Windows) / `⌘ K` (macOS) keyboard shortcut
-- **API references**: `LinkCommandBuilder` (under the `## API references` section of this file)
+- **API references**: `LinkCommandBuilder`, `LinkSettings`, `LinkSettingsModel` (under the `## API references` section of this file)
 
 ### Block Formats — Lists
 
@@ -164,7 +166,7 @@ Use this skill when you need to:
 - BulletFormat list styles (`'disc'`, `'circle'`, `'square'`)
 - Commands: `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`
 - Keyboard shortcuts (Ordered List, Unordered List, Checklist, Indent, Outdent)
-- **API references**: `ListCommandBuilder`, `ListStyleCommandBuilder`, `ChecklistCommandBuilder` (under the `## API references` section of this file)
+- **API references**: `ListCommandBuilder`, `ListStyleCommandBuilder`, `ChecklistCommandBuilder`, `CustomFormatListItem`, `ListSettings` (under the `## API references` section of this file)
 
 ### Slash Commands
 
@@ -188,6 +190,7 @@ Use this skill when you need to:
 - `focus` and `blur` events
 - `actionBegin` event
 - `actionComplete` event
+- **API references**: `ChangeEventArgs`, `UpdatedToolbarStatusEventArgs`, `itemClickEventArgs` (under the `## API references` section of this file)
 
 ### Methods
 
@@ -207,20 +210,6 @@ Use this skill when you need to:
 - `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
 - `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
 - Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
-
-### API Reference (Part 3)
-
-📄 **Read:** [references/api-references-part-3.md](references/api-references-part-3.md)
-- Editor event-arg interfaces: `ChangeEventArgs` (`action`, `affectedNodes`, `document`, `selection`), `UpdatedToolbarStatusEventArgs` (`activeMarks`, `blockFormats`, `styles`), `itemClickEventArgs` (`actionId`, `item`, `itemId`, `originalEvent`)
-- `CustomFormatListItem` — `{ listType: string; text: string }` for the list dropdowns
-- Color picker configuration types: `BackgroundColor` (6 props with defaults), `FontColor` (6 props with defaults), `ColorModeType` (`Palette` | `Picker`), `ColorPickerType` (`FontColor` | `BackgroundColor`), `BackgroundColorModel`, `FontColorModel`
-- Image configuration types: `ImageSettings` (9 props with defaults: `allowedTypes`, `dimension`, `display`, `imageUrl`, `maxFileSize`, `removeUrl`, `resize`, `saveFormat`, `uploadUrl`), `ImageDisplayMode` (`inline` | `break`), `ImageSaveFormat` (`Blob` | `Base64`), `ImageSettingsModel`
-- `InteractionSettings` / `InteractionSettingsModel` — `enableAutoFormat`, `enableTabKeyIndent`
-- `ValueFormat` enum (`html` | `json`)
-- `LinkSettings` (5 props with defaults: `allowedProtocols`, `autoPrependProtocol`, `defaultProtocol`, `defaultTarget`, `linkOnPaste`), `LinkSettingsModel`
-- `ListSettings` — `bulletFormatListItems`, `numberFormatListItems`
-- `EditorKeyBindingAction` enum — every action the `keyBindings` property can target (`toolbar-focus`, `link`, `image`, `audio`, `video`, `table`, `undo`, `redo`, `bold`, `italic`, `underline`, `strikethrough`, `superscript`, `subscript`, `indents`, `outdents`, `clear-format`, `ordered-list`, `unordered-list`, `checklist`, `inlinecode`, `uppercase`, `lowercase`, `code-block`)
-
 ### API Reference (Part 4)
 
 📄 **Read:** [references/api-references-part-4.md](references/api-references-part-4.md)

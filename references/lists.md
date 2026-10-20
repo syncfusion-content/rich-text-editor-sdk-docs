@@ -373,3 +373,26 @@ Builder for checklist command.
 #### Methods
 
 - `apply` — Execute the checklist command. Returns `void`.
+
+
+### `CustomFormatListItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customformatlistitem>
+
+Custom dropdown item.
+
+#### Properties
+
+- `listType` — `string` — Custom CSS list-style-type value.
+- `text` — `string` — Text displayed in dropdown.
+
+### `ListSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/listsettings>
+
+#### Properties
+
+- `bulletFormatListItems` — `BulletFormatListItem[]` — Defines the items displayed in the `BulletFormatList` dropdown.
+  - Defaults to `BulletFormatLists`.
+- `numberFormatListItems` — `NumberFormatListItem[]` — Defines the items displayed in the `NumberFormatList` dropdown.
+  - Defaults to `NumberFormatLists`.
