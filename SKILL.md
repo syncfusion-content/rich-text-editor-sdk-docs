@@ -208,6 +208,19 @@ Use this skill when you need to:
 - Command builders (`AlignmentCommandBuilder`, `CalloutCommandBuilder`, `ChecklistCommandBuilder`, `CodeBlockCommandBuilder`, `CollapsibleCommandBuilder`, `ColorCommandBuilder`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `HorizontalRuleCommandBuilder`, `LinkCommandBuilder`, `ListCommandBuilder`, `ListStyleCommandBuilder`, `ToggleCommandBuilder`) — chainable `apply()` plus the typed setters that produce them
 - `CommandExecutor` — the `editor.commands()` builder access: every command surface (`bold`, `italic`, `underline`, `strike­through`, `subscript`, `superscript`, `inlineCode`, `clearFormat`, `uppercase`, `lowercase`, `paragraph`, `heading1`–`heading4`, `blockQuote`, `callout`, `codeBlock`, `collapsible`, `horizontalRule`, `indent`, `outdent`, `link`, `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`, `setTextAlign`, `fontName`, `fontSize`, `fontColor`, `backgroundColor`, `undo`, `redo`) and the builder type each one returns
 
+### API Reference (Part 3)
+
+📄 **Read:** [references/api-references-part-3.md](references/api-references-part-3.md)
+- Editor event-arg interfaces: `ChangeEventArgs` (`action`, `affectedNodes`, `document`, `selection`), `UpdatedToolbarStatusEventArgs` (`activeMarks`, `blockFormats`, `styles`), `itemClickEventArgs` (`actionId`, `item`, `itemId`, `originalEvent`)
+- `CustomFormatListItem` — `{ listType: string; text: string }` for the list dropdowns
+- Color picker configuration types: `BackgroundColor` (6 props with defaults), `FontColor` (6 props with defaults), `ColorModeType` (`Palette` | `Picker`), `ColorPickerType` (`FontColor` | `BackgroundColor`), `BackgroundColorModel`, `FontColorModel`
+- Image configuration types: `ImageSettings` (9 props with defaults: `allowedTypes`, `dimension`, `display`, `imageUrl`, `maxFileSize`, `removeUrl`, `resize`, `saveFormat`, `uploadUrl`), `ImageDisplayMode` (`inline` | `break`), `ImageSaveFormat` (`Blob` | `Base64`), `ImageSettingsModel`
+- `InteractionSettings` / `InteractionSettingsModel` — `enableAutoFormat`, `enableTabKeyIndent`
+- `ValueFormat` enum (`html` | `json`)
+- `LinkSettings` (5 props with defaults: `allowedProtocols`, `autoPrependProtocol`, `defaultProtocol`, `defaultTarget`, `linkOnPaste`), `LinkSettingsModel`
+- `ListSettings` — `bulletFormatListItems`, `numberFormatListItems`
+- `EditorKeyBindingAction` enum — every action the `keyBindings` property can target (`toolbar-focus`, `link`, `image`, `audio`, `video`, `table`, `undo`, `redo`, `bold`, `italic`, `underline`, `strikethrough`, `superscript`, `subscript`, `indents`, `outdents`, `clear-format`, `ordered-list`, `unordered-list`, `checklist`, `inlinecode`, `uppercase`, `lowercase`, `code-block`)
+
 ## Quick Start Example
 
 ### Minimal Editor Setup
