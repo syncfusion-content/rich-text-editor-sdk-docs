@@ -55,6 +55,7 @@ Use this skill when you need to:
 - `toolbarSettings.itemClicked` and `toolbarSettings.updatedToolbarStatus` events
 - Configuring keyboard shortcuts via `toolbarSettings.keyBindings`
 - Updating toolbar items at runtime with `editor.updateToolbarItems(updates)`
+- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService` (under the `## API references` section of this file)
 
 ### Inline Formatting
 
@@ -70,6 +71,7 @@ Use this skill when you need to:
 - `ClearFormat` toolbar item and `clearFormat` fluent command
 - Programmatic end-to-end example wiring external buttons to `editor.commands().<builder>().apply()`
 - Keyboard shortcuts for every text-formatting action (Bold, Italic, Underline, Strikethrough, Subscript, Superscript, Inline Code, Clear Format, Uppercase, Lowercase)
+- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder` (under the `## API references` section of this file)
 
 ### Block Formats — Block Quote
 
@@ -88,6 +90,7 @@ Use this skill when you need to:
 - Variants cannot be wired as separate top-level toolbar buttons
 - `callout` command with `CalloutCommand` payload (`{ callout: 'info' | 'success' | 'warning' | 'error' | 'note' }`)
 - Surface-to-payload dispatch table
+- **API references**: `CalloutCommandBuilder` (under the `## API references` section of this file)
 
 ### Block Formats — Code Block
 
@@ -97,12 +100,14 @@ Use this skill when you need to:
 - Toolbar identifier `CodeBlock`
 - No slash-command entry for code block
 - `Ctrl+Shift+B` (Windows) / `⌘ ⇧ B` (macOS) keyboard shortcut
+- **API references**: `CodeBlockCommandBuilder` (under the `## API references` section of this file)
 
 ### Block Formats — Collapsible Sections
 
 📄 **Read:** [references/collapsible.md](references/collapsible.md)
 - Five collapsible variants: `Collapsible Paragraph`, `Collapsible Heading 1`–`Collapsible Heading 4`
 - Reachable **only** through the slash-command popup (no dedicated public toolbar item)
+- **API references**: `CollapsibleCommandBuilder` (under the `## API references` section of this file)
 - `collapsible` command with `ToggleCollapsiblePayload` (`{ triggerType: 'paragraph' | 'heading', level?: 1 | 2 | 3 | 4 }`)
 - Slash-command entries to payload mapping table
 
@@ -147,6 +152,7 @@ Use this skill when you need to:
 - Default-link toolbar surface and trigger/close behavior
 - Customizing the link quick toolbar with custom items routed through `toolbarSettings.itemClicked`
 - `Ctrl+K` (Windows) / `⌘ K` (macOS) keyboard shortcut
+- **API references**: `LinkCommandBuilder` (under the `## API references` section of this file)
 
 ### Block Formats — Lists
 
@@ -158,6 +164,7 @@ Use this skill when you need to:
 - BulletFormat list styles (`'disc'`, `'circle'`, `'square'`)
 - Commands: `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`
 - Keyboard shortcuts (Ordered List, Unordered List, Checklist, Indent, Outdent)
+- **API references**: `ListCommandBuilder`, `ListStyleCommandBuilder`, `ChecklistCommandBuilder` (under the `## API references` section of this file)
 
 ### Slash Commands
 
@@ -170,6 +177,7 @@ Use this skill when you need to:
 - Custom items via `ISlashCommandItem` (`text`, `command`, `iconCss`, `description`, `type`)
 - `itemSelect` event with `SlashCommandItemSelectArgs` (`isInteracted`, `item`, `itemData`, `originalEvent`, `cancel`)
 - Caret restoration, filtering, read-only/disabled behavior, destroy lifecycle
+- **API references**: `ISlashCommandItem`, `SlashCommandItemSelectArgs`, `SlashCommandItems` (under the `## API references` section of this file)
 
 ### Events
 
@@ -199,14 +207,6 @@ Use this skill when you need to:
 - `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
 - `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
 - Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
-
-### API Reference (Part 2)
-
-📄 **Read:** [references/api-references-part-2.md](references/api-references-part-2.md)
-- Slash-command types: `ISlashCommandItem`, `SlashCommandItemSelectArgs`, `SlashCommandItems` (the 22 built-in popup entries)
-- `FormattingStateService` — formatting-state cache with `getCurrentState` and `refreshFormattingState(editorCore)`
-- Command builders (`AlignmentCommandBuilder`, `CalloutCommandBuilder`, `ChecklistCommandBuilder`, `CodeBlockCommandBuilder`, `CollapsibleCommandBuilder`, `ColorCommandBuilder`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `HorizontalRuleCommandBuilder`, `LinkCommandBuilder`, `ListCommandBuilder`, `ListStyleCommandBuilder`, `ToggleCommandBuilder`) — chainable `apply()` plus the typed setters that produce them
-- `CommandExecutor` — the `editor.commands()` builder access: every command surface (`bold`, `italic`, `underline`, `strike­through`, `subscript`, `superscript`, `inlineCode`, `clearFormat`, `uppercase`, `lowercase`, `paragraph`, `heading1`–`heading4`, `blockQuote`, `callout`, `codeBlock`, `collapsible`, `horizontalRule`, `indent`, `outdent`, `link`, `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`, `setTextAlign`, `fontName`, `fontSize`, `fontColor`, `backgroundColor`, `undo`, `redo`) and the builder type each one returns
 
 ### API Reference (Part 3)
 

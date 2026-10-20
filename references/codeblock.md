@@ -61,3 +61,24 @@ editor.appendTo('#editor');
 ## Keyboard shortcut
 
 The default keyboard shortcut for inserting a code block is `Ctrl+Shift+B` (Windows) / `⌘ ⇧ B` (macOS). To remap the shortcut, override `keyBindings['code-block']` on `toolbarSettings` — see [toolbar.md](toolbar.md) → *Configuring keyboard shortcuts*.
+
+## API references
+
+API types that back the code-block surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `CodeBlockCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/codeblockcommandbuilder>
+
+Builder for code block command.
+
+#### Methods
+
+- `apply` — Execute the code block command with set options. Returns `void`.
+- `language(lang)` — Set the code language.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `lang` | `string` | The language code to set |
+
+  Returns `this`.

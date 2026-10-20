@@ -278,3 +278,45 @@ editor.updateToolbarItems([
     { action: 'add', item: 'Italic', index: 1 }
 ]);
 ```
+
+## API references
+
+API types that back the toolbar surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `AlignmentCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/alignmentcommandbuilder>
+
+Builder for text alignment command.
+
+#### Methods
+
+- `align` — Set the text alignment. Returns `this`.
+- `apply` — Execute the alignment command with set options. Returns `void`.
+
+### `HorizontalRuleCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/horizontalrulecommandbuilder>
+
+Builder for horizontal line command.
+
+#### Methods
+
+- `apply` — Executes the toggle command. Returns `void`.
+
+### `FormattingStateService`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/formattingstateservice>
+
+Service for querying and caching the editor's formatting state. Ensures formatting state is queried only once per command, and the result is shared to both toolbar and quick-toolbar modules.
+
+#### Methods
+
+- `getCurrentState` — Returns the most recently cached formatting state. Returns `FormattingState | null`.
+- `refreshFormattingState(editorCore)` — Queries the current formatting state from the editor and caches it. This is the single query point for all toolbar UI updates.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `editorCore` | `EditorCore` | The editor core instance |
+
+  Returns `FormattingState`.

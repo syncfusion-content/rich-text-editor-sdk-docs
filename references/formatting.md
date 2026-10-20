@@ -17,6 +17,7 @@ This page covers every inline format the component supports, the toolbar item th
 - [Clear all inline formatting](#clear-all-inline-formatting)
 - [Programmatic end-to-end example](#programmatic-end-to-end-example)
 - [Keyboard shortcuts](#keyboard-shortcuts)
+- [API references](#api-references)
 
 ## Available inline formats
 
@@ -376,3 +377,114 @@ The Modern Rich Text Editor provides the following built-in keyboard shortcuts f
 | Lowercase | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>L</kbd> | Transforms the selection to lowercase. |
 
 To override or remap a shortcut, use the `keyBindings` property on `toolbarSettings` — see [toolbar.md](toolbar.md) → *Configuring keyboard shortcuts*.
+
+
+## API references
+
+API types that back the inline-formatting surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ColorCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/colorcommandbuilder>
+
+Builder for color commands (`fontColor`, `backgroundColor`).
+
+#### Methods
+
+- `apply` — Execute the color command with set options. Returns `void`.
+- `color(colorValue)` — Set the color value.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `colorValue` | `string` | The color value to set |
+
+  Returns `this`.
+
+### `FontFamilyCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontfamilycommandbuilder>
+
+Builder for font family command.
+
+#### Methods
+
+- `apply` — Execute the font family command with set options. Returns `void`.
+- `family(fontName)` — Set the font family name.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `fontName` | `string` | The font family name to set |
+
+  Returns `this`.
+
+### `FontSizeCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontsizecommandbuilder>
+
+Builder for font size command.
+
+#### Methods
+
+- `apply` — Execute the font size command with set options. Returns `void`.
+- `size(sizeValue)` — Set the font size.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `sizeValue` | `string` | The font size value to set |
+
+  Returns `this`.
+
+### `ToggleCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/togglecommandbuilder>
+
+Base builder for toggle commands (`bold`, `italic`, etc.).
+
+#### Methods
+
+- `apply` — Executes the toggle command. Returns `void`.
+
+### `CommandExecutor`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/commandexecutor>
+
+Command executor providing chainable builders for all supported commands. The public surface accessed through `editor.commands().*`.
+
+#### Methods
+
+| Method | Returns |
+| --- | --- |
+| `backgroundColor()` | `ColorCommandBuilder` |
+| `blockQuote()` | `ToggleCommandBuilder` |
+| `bold()` | `ToggleCommandBuilder` |
+| `bulletList()` | `ListCommandBuilder` |
+| `callout()` | `CalloutCommandBuilder` |
+| `clearFormat()` | `ToggleCommandBuilder` |
+| `codeBlock()` | `CodeBlockCommandBuilder` |
+| `collapsible()` | `CollapsibleCommandBuilder` |
+| `fontColor()` | `ColorCommandBuilder` |
+| `fontName()` | `FontFamilyCommandBuilder` |
+| `fontSize()` | `FontSizeCommandBuilder` |
+| `heading1()` | `ToggleCommandBuilder` |
+| `heading2()` | `ToggleCommandBuilder` |
+| `heading3()` | `ToggleCommandBuilder` |
+| `heading4()` | `ToggleCommandBuilder` |
+| `horizontalRule()` | `HorizontalRuleCommandBuilder` |
+| `indent()` | `ToggleCommandBuilder` |
+| `inlineCode()` | `ToggleCommandBuilder` |
+| `italic()` | `ToggleCommandBuilder` |
+| `link()` | `LinkCommandBuilder` |
+| `lowercase()` | `ToggleCommandBuilder` |
+| `numberedList()` | `ListCommandBuilder` |
+| `outdent()` | `ToggleCommandBuilder` |
+| `paragraph()` | `ToggleCommandBuilder` |
+| `redo()` | `ToggleCommandBuilder` |
+| `setListStyle()` | `ListStyleCommandBuilder` |
+| `setTextAlign()` | `AlignmentCommandBuilder` |
+| `strikethrough()` | `ToggleCommandBuilder` |
+| `subscript()` | `ToggleCommandBuilder` |
+| `superscript()` | `ToggleCommandBuilder` |
+| `toggleTaskList()` | `ChecklistCommandBuilder` |
+| `underline()` | `ToggleCommandBuilder` |
+| `undo()` | `ToggleCommandBuilder` |
+| `uppercase()` | `ToggleCommandBuilder` |

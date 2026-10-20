@@ -11,6 +11,7 @@ The Slash command in the Modern Rich Text Editor provides users with an efficien
 - [Add custom slash command items](#add-custom-slash-command-items)
 - [Use the itemSelect event](#use-the-itemselect-event)
 - [Selection and lifecycle behavior](#selection-and-lifecycle-behavior)
+- [API references](#api-references)
 
 ## Enabling the slash command
 
@@ -203,3 +204,64 @@ Branching on `args.itemData.command` lets one handler serve many custom items. T
 - **Read-only and disabled editors** — when the editor's `readonly` property is `true` or `enable` is `false`, the Slash command popup does not appear.
 - **Destroy** — when the editor instance is destroyed, the Slash command module removes its listeners and tears down the popup. No manual cleanup is required.
 - **Default labels** — the popup's text and descriptions are taken from the editor's locale. The default English strings are listed in the *Available items* table above.
+
+## API references
+
+API types that back the slash-command popup, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ISlashCommandItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/islashcommanditem>
+
+Specifies the custom slash command item configuration.
+
+#### Properties
+
+- `command` — `string` — Specifies the command to execute when the slash command item is clicked.
+- `description` — `string` — Specifies the description to be displayed for the slash command item.
+- `iconCss` — `string` — Specifies the icon class for the slash command item.
+- `text` — `string` — Specifies the text to be displayed in the slash command item.
+- `type` — `string` — Specifies the type of the slash command item. Grouping is done based on this value.
+
+### `SlashCommandItemSelectArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommanditemselectargs>
+
+Provides detailed information about a `SlashCommandItemSelect` event.
+
+#### Properties
+
+- `cancel` — `boolean` — Specifies whether to cancel the default action.
+- `isInteracted` — `boolean` — Returns `true` if the event is triggered by user interaction; otherwise `false`.
+- `item` — `HTMLLIElement` — Returns the selected list item element of the slash command list.
+- `itemData` — `ISlashCommandItem` — Returns the selected slash command item data.
+- `originalEvent` — `MouseEvent | KeyboardEvent | TouchEvent` — Specifies the original event arguments (MouseEvent, KeyboardEvent, or TouchEvent).
+
+### `SlashCommandItems`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommanditems>
+
+Lists the items available in the slash command popup.
+
+- `Heading 1`
+- `Heading 2`
+- `Heading 3`
+- `Heading 4`
+- `Collapsible Paragraph`
+- `Collapsible Heading 1`
+- `Collapsible Heading 2`
+- `Collapsible Heading 3`
+- `Collapsible Heading 4`
+- `Paragraph`
+- `Blockquote`
+- `Info`
+- `Warning`
+- `Error`
+- `Success`
+- `Note`
+- `NumberedList`
+- `BulletList`
+- `Checklist`
+- `Table`
+- `Image`
+- `Link`

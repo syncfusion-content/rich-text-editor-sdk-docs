@@ -66,3 +66,18 @@ The `callout` command accepts a `CalloutCommand` payload (`{ callout: 'info' | '
 | Slash command | `Warning` | `callout` | `'warning'` |
 | Slash command | `Error` | `callout` | `'error'` |
 | Slash command | `Note` | `callout` | `'note'` |
+
+## API references
+
+API types that back the callout surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `CalloutCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/calloutcommandbuilder>
+
+Builder for the callout command. Sets the callout variant (`info` | `warning` | `error` | `success` | `note`) before dispatching the toggle to the headless editor.
+
+#### Methods
+
+- `apply` — Execute the callout command with set options. Returns `void`.
+- `callout` — Set the callout variant. Returns `this`.

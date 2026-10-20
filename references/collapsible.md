@@ -7,6 +7,7 @@ Collapsible sections wrap a block of text in a expandable container that the use
 - [Available types](#available-types)
 - [Configuring collapsible sections](#configuring-collapsible-sections)
 - [Commands support](#commands-support)
+- [API references](#api-references)
 
 ## Available types
 
@@ -57,3 +58,26 @@ The `collapsible` command accepts a `ToggleCollapsiblePayload` (`{ triggerType: 
 | `Collapsible Heading 2` | `collapsible` | `{ triggerType: 'heading', level: 2 }` |
 | `Collapsible Heading 3` | `collapsible` | `{ triggerType: 'heading', level: 3 }` |
 | `Collapsible Heading 4` | `collapsible` | `{ triggerType: 'heading', level: 4 }` |
+
+## API references
+
+API types that back the collapsible surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `CollapsibleCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/collapsiblecommandbuilder>
+
+Builder for collapsible command.
+
+#### Methods
+
+- `apply` — Execute the collapsible command. Returns `void`.
+- `level(level)` — Set heading level.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `level` | `1` \| `2` \| `3` \| `4` | Heading level |
+
+  Returns `this`.
+
+- `triggerType` — Set trigger type. Returns `this`.

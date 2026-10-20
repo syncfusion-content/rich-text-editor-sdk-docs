@@ -13,6 +13,7 @@ The List feature in the Rich Text Editor enables users to create and format diff
 - [BulletFormat list](#bulletformat-list)
 - [Checklist](#checklist)
 - [Keyboard shortcuts](#keyboard-shortcuts)
+- [API references](#api-references)
 
 ## List types overview
 
@@ -323,3 +324,52 @@ The Modern Rich Text Editor provides the following built-in keyboard shortcuts f
 | Outdent | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>Shift</kbd> + <kbd>Tab</kbd> | Decreases the indentation level of a list item or text. |
 
 To override or remap a shortcut, use the `keyBindings` property on `toolbarSettings` — see [toolbar.md](toolbar.md) → *Configuring keyboard shortcuts*.
+
+
+## API references
+
+API types that back the list surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `ListCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/listcommandbuilder>
+
+Builder for list commands (`numberedList`, `bulletList`).
+
+#### Methods
+
+- `apply` — Execute the list command with set options. Returns `void`.
+- `options(opts)` — Set list options.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `opts` | `Partial<...>` | The list command options |
+
+  Returns `this`.
+
+### `ListStyleCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/liststylecommandbuilder>
+
+Builder for list style command.
+
+#### Methods
+
+- `apply` — Execute the list style command with set options. Returns `void`.
+- `listType(styleType)` — Set the list style type.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `styleType` | `string` | The list style type to set |
+
+  Returns `this`.
+
+### `ChecklistCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/checklistcommandbuilder>
+
+Builder for checklist command.
+
+#### Methods
+
+- `apply` — Execute the checklist command. Returns `void`.

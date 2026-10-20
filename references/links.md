@@ -345,3 +345,73 @@ editor.appendTo('#editor');
 ## Keyboard shortcut
 
 The default keyboard shortcut for inserting a link is **Ctrl+K** (Windows) / `⌘ K` (macOS). To remap the shortcut, override `keyBindings.link` on `toolbarSettings` — see [toolbar.md](toolbar.md) → *Configuring keyboard shortcuts*.
+
+## API references
+
+API types that back the link surface, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `LinkCommandBuilder`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/linkcommandbuilder>
+
+Builder for link command with chainable URL/text options. Owns the link-command payload assembly and dispatch. The internal link module simply produces the building blocks (`operation`, `href`, `displayText`, `target`, `title`) and delegates the final mutation through this builder so all link-related actions route through one entry point.
+
+#### Methods
+
+- `apply` — Execute the link command and dispatch through the action pipeline. Returns `void`.
+- `displayText(displayValue)` — Set the display text of the link. Alias for `text()`.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `displayValue` | `string` | The display text value to set |
+
+  Returns `this`.
+
+- `href(hrefValue)` — Set the href for the link.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `hrefValue` | `string` | The href value to set |
+
+  Returns `this`.
+
+- `operation` — Set the link operation mode. Default is `'insert'`. Pass `'edit'` to update an existing link, `'remove'` to unlink a selection, and `'open'` / `'copy'` for the matching Quick Toolbar actions. Returns `this`.
+- `source(event)` — Capture the originating event so the action pipeline can forward it through `EditorController.process`. Optional for callers that only need a fire-and-forget mutation (e.g. `executeCommand('link', ...)`).
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `event` | `MouseEvent` \| `KeyboardEvent` | The source event |
+
+  Returns `this`.
+
+- `target(targetValue)` — Set the target attribute (e.g. `'_blank'`, `'_self'`).
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `targetValue` | `string` \| `null` | The target attribute value to set |
+
+  Returns `this`.
+
+- `text(textValue)` — Set the visible text of the link.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `textValue` | `string` | The text value to set |
+
+  Returns `this`.
+
+- `title(titleValue)` — Set the title/tooltip attribute of the link.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `titleValue` | `string` \| `null` | The title value to set |
+
+  Returns `this`.
+
+- `url(urlValue)` — Set the URL/href for the link. Alias for `href()` to match the public API expected from dialog consumers.
+
+  | Parameter | Type | Description |
+  | --- | --- | --- |
+  | `urlValue` | `string` | The URL value to set |
+
+  Returns `this`.
