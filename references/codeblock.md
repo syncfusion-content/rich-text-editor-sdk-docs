@@ -7,6 +7,7 @@ A code block inserts a `<pre>` element at the current selection and tags it with
 - [Commands support](#commands-support)
 - [Configuring code block](#configuring-code-block)
 - [Keyboard shortcut](#keyboard-shortcut)
+- [API references](#api-references)
 
 ## Commands support
 

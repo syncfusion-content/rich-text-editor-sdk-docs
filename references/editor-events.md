@@ -268,3 +268,69 @@ Event arguments for the `itemClick` event raised when a toolbar item is clicked.
 - `item` — `ToolbarItem` — The toolbar item configuration.
 - `itemId` — `string` — Stable ID of the toolbar item that was clicked.
 - `originalEvent` — `MouseEvent | KeyboardEvent` — The originating DOM event.
+
+
+### `BeforeDialogCloseEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/beforedialogcloseeventargs>
+
+Event args for `RichTextEditor.beforeDialogClose`. Extends the ej2 `BeforeCloseEventArgs` with the `source` field that identifies the editor feature (e.g. `'Link'`, `'Image'`, `'Table'`) the dialog belongs to.
+
+#### Properties
+
+- `cancel` — `boolean` — Defines whether the current action can be prevented.
+- `closedBy` — `string` — Returns whether the dialog is closed by "close icon", "overlayClick", "escape", and "user action".
+- `container` — `HTMLElement` — Returns the root container element of the dialog.
+- `element` — `Element` — Returns the element of the dialog.
+- `event` — `Event` — Returns the original event arguments.
+- `isInteracted` — `boolean` — Determines whether the event is triggered by interaction.
+- `preventFocus` — `boolean` — Gets or sets a value indicating whether to prevent focus from returning to the previously active element after dialog closure.
+- `source` — `string` — The editor feature the sub-component belongs to. Supplied by the caller when the sub-component is created. Undefined for generic sub-components that are not tied to a specific feature.
+- `target` — `HTMLElement | string` — Returns the target element of the dialog.
+
+### `BeforeDialogOpenEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/beforedialogopeneventargs>
+
+Event args for `RichTextEditor.beforeDialogOpen`. Extends the ej2 `BeforeOpenEventArgs` with the `source` field that identifies the editor feature (e.g. `'Link'`, `'Image'`, `'Table'`) the dialog belongs to.
+
+#### Properties
+
+- `cancel` — `boolean` — Defines whether the current action can be prevented.
+- `container` — `HTMLElement` — Returns the root container element of the dialog.
+- `element` — `Element` — Returns the element of the dialog.
+- `maxHeight` — `string` — Specify the value to override max-height value of dialog.
+- `source` — `string` — The editor feature the sub-component belongs to. Supplied by the caller when the sub-component is created. Undefined for generic sub-components that are not tied to a specific feature.
+- `target` — `HTMLElement | string` — Returns the target element of the dialog.
+
+### `BeforePopupCloseEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/beforepopupcloseeventargs>
+
+Event args for `RichTextEditor.beforePopupClose`. Extends the ej2 `BeforeCloseEventArgs` with the `source` field that identifies the editor feature (e.g. `'Link'`, `'Image'`, `'Table'`) the popup belongs to.
+
+#### Properties
+
+- `cancel` — `boolean` — Defines whether the current action can be prevented.
+- `closedBy` — `string` — Returns whether the dialog is closed by "close icon", "overlayClick", "escape", and "user action".
+- `container` — `HTMLElement` — Returns the root container element of the dialog.
+- `element` — `Element` — Returns the element of the dialog.
+- `event` — `Event` — Returns the original event arguments.
+- `isInteracted` — `boolean` — Determines whether the event is triggered by interaction.
+- `preventFocus` — `boolean` — Gets or sets a value indicating whether to prevent focus from returning to the previously active element after dialog closure.
+- `source` — `string` — The editor feature the sub-component belongs to. Supplied by the caller when the sub-component is created. Undefined for generic sub-components that are not tied to a specific feature.
+- `target` — `HTMLElement | string` — Returns the target element of the dialog.
+
+### `BeforePopupOpenEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/beforepopupopeneventargs>
+
+Event args for `RichTextEditor.beforePopupOpen`. Extends the ej2 `PopupEventArgs` with the `source` field that identifies the editor feature (e.g. `'Link'`, `'Image'`, `'Table'`) the popup belongs to.
+
+#### Properties
+
+- `animation` — `AnimationModel` — Specifies the animation Object.
+- `cancel` — `boolean` — Illustrates whether the current action needs to be prevented or not.
+- `event` — `MouseEvent | KeyboardEventArgs | TouchEvent | Object` — Specifies the event.
+- `popup` — `Popup` — Specifies the popup Object.
+- `source` — `string` — The editor feature the sub-component belongs to. Supplied by the caller when the sub-component is created. Undefined for generic sub-components that are not tied to a specific feature.

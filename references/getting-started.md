@@ -506,3 +506,68 @@ Inline formatting marks — built-in plus registered custom marks.
 #### Union members
 
 `BoldMark`, `ItalicMark`, `UnderlineMark`, `StrikeMark`, `SubscriptMark`, `SuperscriptMark`, `CodeMark`, `LinkMark`, `TextColorMark`, `BackgroundColorMark`.
+
+
+### `CustomNodeAttributeType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customnodeattributetype>
+
+Custom node attribute type enum. Members:
+
+- `string`
+- `number`
+- `boolean`
+- `enum`
+
+### `CustomNodeContent`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customnodecontent>
+
+Custom node content enum. Members:
+
+- `block`
+- `inline`
+- `text`
+- `none`
+
+### `CustomNodeGroup`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customnodegroup>
+
+Coarse content cardinality for the runtime schema. The spec uses typed arrays (`content: BlockNode[]`) at the model level; the runtime maps those to ProseMirror-style cardinality rules.
+
+Members:
+
+- `block`
+- `inline`
+
+### `CustomNodeName`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customnodename>
+
+Custom node name type alias. Members:
+
+- `CustomBlockNodeName`
+- `CustomInlineNodeName`
+
+### `DialogType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/dialogtype>
+
+Enumerates the dialog types supported by the editor for inserting links, images, audio, video, and tables.
+
+Members:
+
+- `InsertImage` — Defines DialogType for inserting an image.
+- `InsertLink` — Defines DialogType for inserting a link.
+- `InsertTable` — Defines DialogType for inserting a table.
+
+### `EditorComponentEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/editorcomponenteventargs>
+
+Editor feature (`source`) carried by every sub-component event argument raised on the editor. The `source` is a plain string set at sub-component initialization (e.g. `'Link'`, `'Image'`, `'Table'`) identifying which feature the dialog, popup, or upload belongs to. A single handler can branch on `args.source` rather than wiring one callback per feature.
+
+#### Properties
+
+- `source` — `string` — The editor feature the sub-component belongs to. Supplied by the caller when the sub-component is created. Undefined for generic sub-components that are not tied to a specific feature.

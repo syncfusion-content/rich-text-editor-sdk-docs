@@ -7,6 +7,7 @@ Callouts highlight a block of text with a status indicator. The Modern Rich Text
 - [Available types](#available-types)
 - [Configuring callouts](#configuring-callouts)
 - [Commands support](#commands-support)
+- [API references](#api-references)
 
 ## Available types
 

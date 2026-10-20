@@ -42,7 +42,7 @@ Use this skill when you need to:
 - Configure `toolbarSettings.items` and `imageSettings`
 - Set placeholder text
 - Accessibility compliance, ARIA attributes, keyboard navigation, axe-core validation
-- **API references**: `ValueFormat`, `InteractionSettings`, `InteractionSettingsModel`, `RichTextEditorUIModel`, `EditorDocument`, `BlockNode`, `InlineNode`, `EditorMark` (under the `## API references` section of this file)
+- **API references**: `ValueFormat`, `InteractionSettings`, `InteractionSettingsModel`, `RichTextEditorUIModel`, `EditorDocument`, `BlockNode`, `InlineNode`, `EditorMark`, `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName`, `DialogType`, `EditorComponentEventArgs` (under the `## API references` section of this file)
 
 ### Toolbar
 
@@ -143,6 +143,17 @@ Use this skill when you need to:
 - `Ctrl+Shift+I` (Windows) / `⌘ ⇧ I` (macOS) keyboard shortcut
 - **API references**: `ImageSettings`, `ImageDisplayMode`, `ImageSaveFormat`, `ImageSettingsModel`, `ImageQuickToolbarItem` (under the `## API references` section of this file)
 
+### File upload
+
+📄 **Read:** [references/file-upload.md](references/file-upload.md)
+- File drop event: `beforeFileDrop` (`BeforeFileDropEventArgs`)
+- File selection event: `fileSelected` (`FileSelectedEventArgs`)
+- Upload lifecycle: `beforeFileUpload` (`BeforeFileUploadEventArgs`), `fileUploading` (`FileUploadingEventArgs`), `fileUploadSuccess` (`FileUploadSuccessEventArgs`), `fileUploadFailed` (`FileUploadFailedEventArgs`)
+- File removal: `fileRemoving` (`FileRemovingEventArgs`)
+- All 7 event-arg types carry `source: 'Image'`; the `source` discriminant identifies the editor feature the upload is for
+- Settings referenced by the upload workflow (`uploadUrl`, `imageUrl`, `removeUrl`, `UploadFiles`, `saveFormat: 'Blob' | 'Base64'`) live under [image.md](image.md) → `ImageSettings`
+- **API references**: `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` (under the `## API references` section of this file)
+
 ### Block Formats — Links
 
 📄 **Read:** [references/links.md](references/links.md)
@@ -191,7 +202,7 @@ Use this skill when you need to:
 - `focus` and `blur` events
 - `actionBegin` event
 - `actionComplete` event
-- **API references**: `ChangeEventArgs`, `UpdatedToolbarStatusEventArgs`, `itemClickEventArgs` (under the `## API references` section of this file)
+- **API references**: `ChangeEventArgs`, `UpdatedToolbarStatusEventArgs`, `itemClickEventArgs`, `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs` (under the `## API references` section of this file)
 
 ### Methods
 
@@ -203,14 +214,6 @@ Use this skill when you need to:
 - `getHtml` — return the current editor content as an HTML string
 - `getText` — return the current editor content as plain text
 - `updateToolbarItems` — apply a batch of toolbar item updates
-
-### API Reference (Part 1)
-
-📄 **Read:** [references/api-references.md](references/api-references.md)
-- `RichTextEditorUI` and the API index — every type, builder, enum, event-arg, and helper exported by `@syncfusion/ej2-richtexteditor-ui`
-- `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
-- `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
-- Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
 
 ## Quick Start Example
 
