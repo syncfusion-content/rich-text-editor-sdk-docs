@@ -9,6 +9,7 @@ The Modern Rich Text Editor provides comprehensive table functionality that allo
 - [Quick toolbar items](#quick-toolbar-items)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Configuration example](#configuration-example)
+- [API references](#api-references)
 
 ## Supported actions
 
@@ -168,3 +169,29 @@ const editor: RichTextEditorUI = new RichTextEditorUI({
 
 editor.appendTo('#editor');
 ```
+
+
+## API references
+
+Table configuration types, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
+
+### `TableSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/tablesettings>
+
+Configures the table insertion behavior of the Rich Text Editor.
+
+#### Properties
+
+- `resize` — `boolean` — Enables table resize drag handles when new tables are inserted into the editor.
+  - **Defaults to `true`.**
+
+### `TableSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/tablesettingsmodel>
+
+Interface for the class `TableSettings`.
+
+#### Properties
+
+- `resize` — `boolean` — Enables table resize drag handles when new tables are inserted into the editor.

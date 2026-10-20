@@ -56,7 +56,7 @@ Use this skill when you need to:
 - `toolbarSettings.itemClicked` and `toolbarSettings.updatedToolbarStatus` events
 - Configuring keyboard shortcuts via `toolbarSettings.keyBindings`
 - Updating toolbar items at runtime with `editor.updateToolbarItems(updates)`
-- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService`, `EditorKeyBindingAction` (under the `## API references` section of this file)
+- **API references**: `AlignmentCommandBuilder`, `HorizontalRuleCommandBuilder`, `FormattingStateService`, `EditorKeyBindingAction`, `QuickToolbarSettings`, `QuickToolbarSettingsModel`, `ToolbarSettings`, `ToolbarItemClickedEventArgs`, `ToolbarSettingsModel`, `AddToolbarItem` (under the `## API references` section of this file)
 
 ### Inline Formatting
 
@@ -72,7 +72,7 @@ Use this skill when you need to:
 - `ClearFormat` toolbar item and `clearFormat` fluent command
 - Programmatic end-to-end example wiring external buttons to `editor.commands().<builder>().apply()`
 - Keyboard shortcuts for every text-formatting action (Bold, Italic, Underline, Strikethrough, Subscript, Superscript, Inline Code, Clear Format, Uppercase, Lowercase)
-- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder`, `BackgroundColor`, `FontColor`, `BackgroundColorModel`, `FontColorModel`, `ColorModeType`, `ColorPickerType` (under the `## API references` section of this file)
+- **API references**: `ColorCommandBuilder`, `CommandExecutor`, `FontFamilyCommandBuilder`, `FontSizeCommandBuilder`, `ToggleCommandBuilder`, `BackgroundColor`, `FontColor`, `BackgroundColorModel`, `FontColorModel`, `ColorModeType`, `ColorPickerType`, `FontFamily`, `FontSize`, `Format`, `FontFamilyModel`, `FontSizeModel`, `FormatModel` (under the `## API references` section of this file)
 
 ### Block Formats — Block Quote
 
@@ -125,6 +125,7 @@ Use this skill when you need to:
 - `tableSettings.resize`
 - Quick toolbar items: `Header`, `Row`, `Column`, `CellBackgroundColor`, `Align`, `VerticalAlign`, `Remove`
 - Keyboard shortcuts (Ctrl+Shift+E to open the Insert Table popup/dialog; Arrow Keys, Enter, Escape inside the popup)
+- **API references**: `TableSettings`, `TableSettingsModel` (under the `## API references` section of this file)
 
 ### Block Formats — Images
 
@@ -166,7 +167,7 @@ Use this skill when you need to:
 - BulletFormat list styles (`'disc'`, `'circle'`, `'square'`)
 - Commands: `numberedList`, `bulletList`, `toggleTaskList`, `setListStyle`
 - Keyboard shortcuts (Ordered List, Unordered List, Checklist, Indent, Outdent)
-- **API references**: `ListCommandBuilder`, `ListStyleCommandBuilder`, `ChecklistCommandBuilder`, `CustomFormatListItem`, `ListSettings` (under the `## API references` section of this file)
+- **API references**: `ListCommandBuilder`, `ListStyleCommandBuilder`, `ChecklistCommandBuilder`, `CustomFormatListItem`, `ListSettings`, `BulletFormatList`, `NumberFormatList`, `BulletFormatListItem`, `NumberFormatListItem`, `ListSettingsModel` (under the `## API references` section of this file)
 
 ### Slash Commands
 
@@ -179,7 +180,7 @@ Use this skill when you need to:
 - Custom items via `ISlashCommandItem` (`text`, `command`, `iconCss`, `description`, `type`)
 - `itemSelect` event with `SlashCommandItemSelectArgs` (`isInteracted`, `item`, `itemData`, `originalEvent`, `cancel`)
 - Caret restoration, filtering, read-only/disabled behavior, destroy lifecycle
-- **API references**: `ISlashCommandItem`, `SlashCommandItemSelectArgs`, `SlashCommandItems` (under the `## API references` section of this file)
+- **API references**: `ISlashCommandItem`, `SlashCommandItemSelectArgs`, `SlashCommandItems`, `SlashCommandSettings`, `SlashCommandType`, `SlashCommandSettingsModel` (under the `## API references` section of this file)
 
 ### Events
 
@@ -210,16 +211,6 @@ Use this skill when you need to:
 - `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
 - `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
 - Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
-### API Reference (Part 4)
-
-📄 **Read:** [references/api-references-part-4.md](references/api-references-part-4.md)
-- List settings & list items: `BulletFormatList` (4 props: `command`, `id`, `listType: BulletListType`, `text`), `NumberFormatList` (4 props: `command`, `id`, `listType: NumberListType`, `text`), `BulletFormatListItem` (union of `BulletListType` | `CustomFormatListItem`), `NumberFormatListItem` (union of `NumberListType` | `CustomFormatListItem`), `ListSettingsModel` (`bulletFormatListItems`, `numberFormatListItems`)
-- Quick toolbar: `QuickToolbarSettings` (6 props with defaults: `enable=true`, `enableAppendToBody=false`, `image`, `link`, `table`, `text`), `QuickToolbarSettingsModel`
-- Slash command: `SlashCommandSettings` (4 props with defaults: `enable=false`, `items`, `popupHeight='320px'`, `popupWidth='300px'`, plus `itemSelect` event), `SlashCommandType` enum (`Inline` | `Basic Block` | `Media`), `SlashCommandSettingsModel`
-- Table: `TableSettings` (`resize=true`), `TableSettingsModel`
-- Toolbar: `ToolbarSettings` (6 props with defaults: `enable=true`, `enableFloating=true`, `floatingOffset=0`, `items`, `position='Top'`, `type='Auto'`, plus `itemClicked` and `updatedToolbarStatus` events), `ToolbarSettingsModel`, `ToolbarItemClickedEventArgs` (4 props: `dataIndex`, `event`, `item: ToolbarItemModel`, `name`)
-- Toolbar dropdowns: `FontFamily` (`items: FontFamilyItem[]`, `width='72px'`), `FontFamilyModel`, `FontSize` (`items: FontSizeItem[]`, `width='60px'`), `FontSizeModel`, `Format` (`items: ToolbarSubItem[]`, `width='75px'`), `FormatModel`
-- `AddToolbarItem` (`index: number`, `item: ToolbarItem`) — input shape consumed by `editor.updateToolbarItems(...)`
 
 ### API Reference (Part 5)
 

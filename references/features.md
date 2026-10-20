@@ -265,3 +265,52 @@ Lists the items available in the slash command popup.
 - `Table`
 - `Image`
 - `Link`
+
+
+### `SlashCommandSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettings>
+
+Configures the slash command settings of the RichTextEditor.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether to enable or disable the slash command in the editor.
+  - **Defaults to `false`.**
+- `items` — `[]` — Defines the items to be displayed in the slash command popup.
+  - **Defaults to `['Paragraph', 'Heading 1', 'Heading 2', 'Heading 3', 'Heading 4', 'NumberedList', 'BulletList', 'Checklist', 'Blockquote', 'Table', 'Link', 'Image', 'Collapsible Paragraph', 'Collapsible Heading 1', 'Collapsible Heading 2', 'Collapsible Heading 3', 'Collapsible Heading 4', 'Info', 'Warning', 'Error', 'Success', 'Note']`.**
+- `popupHeight` — `string | number` — Specifies the height of the slash command popup. Can be defined in pixels, numbers, or percentages. A numeric value is treated as pixels.
+  - **Defaults to `'320px'`.**
+- `popupWidth` — `string | number` — Specifies the width of the slash command popup. Can be defined in pixels, numbers, or percentages. A numeric value is treated as pixels.
+  - **Defaults to `'300px'`.**
+
+#### Events
+
+- `itemSelect` — `EmitType<SlashCommandItemSelectArgs>` — Raised when a slash command item is selected from the slash command popup. Set `args.cancel` to `true` inside the handler to prevent the default command execution. The event args are of type `SlashCommandItemSelectArgs`.
+
+### `SlashCommandType`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandtype>
+
+Defines the type of the slash command item.
+
+- `Inline`
+- `Basic Block`
+- `Media`
+
+### `SlashCommandSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/slashcommandsettingsmodel>
+
+Interface for the class `SlashCommandSettings`.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether to enable or disable the slash command in the editor.
+- `items` — `[]` — Defines the items to be displayed in the slash command popup.
+- `popupHeight` — `string | number` — Specifies the height of the slash command popup. Can be defined in pixels, numbers, or percentages. A numeric value is treated as pixels.
+- `popupWidth` — `string | number` — Specifies the width of the slash command popup. Can be defined in pixels, numbers, or percentages. A numeric value is treated as pixels.
+
+#### Events
+
+- `itemSelect` — `EmitType<SlashCommandItemSelectArgs>` — Raised when a slash command item is selected from the slash command popup. Set `args.cancel` to `true` inside the handler to prevent the default command execution. The event args are of type `SlashCommandItemSelectArgs`.

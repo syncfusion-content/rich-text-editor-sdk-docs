@@ -381,6 +381,8 @@ Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/customfo
 
 Custom dropdown item.
 
+> Note: the same API URL (`customformatlistitem`) is also cited by the API-reference batch under the "CustomFormatListItem (duplicate link)" entry. Both refer to the same type; the body above is the authoritative source.
+
 #### Properties
 
 - `listType` — `string` — Custom CSS list-style-type value.
@@ -396,3 +398,53 @@ Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/listsett
   - Defaults to `BulletFormatLists`.
 - `numberFormatListItems` — `NumberFormatListItem[]` — Defines the items displayed in the `NumberFormatList` dropdown.
   - Defaults to `NumberFormatLists`.
+
+
+### `BulletFormatList`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/bulletformatlist>
+
+Reusable definition of a bulleted (unordered) list style. Mirrors the CSS `list-style-type` value of the same name and is the canonical mapping consumed by the toolbar layer when rendering a "Bullet List" dropdown.
+
+#### Properties
+
+- `command` — `string` — Editor command name dispatched when the entry is selected.
+- `id` — `string` — Stable identifier used by the toolbar renderer.
+- `listType` — `BulletListType` — Underlying list-style type passed to the headless editor.
+- `text` — `string` — Display label shown in the toolbar dropdown.
+
+### `NumberFormatList`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/numberformatlist>
+
+Reusable definition of a numbered (ordered) list style. Mirrors the CSS `list-style-type` value of the same name and is the canonical mapping consumed by the toolbar layer when rendering a "Numbered List" dropdown.
+
+#### Properties
+
+- `command` — `string` — Editor command name dispatched when the entry is selected.
+- `id` — `string` — Stable identifier used by the toolbar renderer.
+- `listType` — `NumberListType` — Underlying list-style type passed to the headless editor.
+- `text` — `string` — Display label shown in the toolbar dropdown.
+
+### `BulletFormatListItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/bulletformatlistitem>
+
+Union of `BulletListType` and `CustomFormatListItem`.
+
+### `NumberFormatListItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/numberformatlistitem>
+
+Union of `NumberListType` and `CustomFormatListItem`.
+
+### `ListSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/listsettingsmodel>
+
+Interface for the class `ListSettings`.
+
+#### Properties
+
+- `bulletFormatListItems` — `BulletFormatListItem[]` — Defines the items displayed in the BulletFormatList dropdown.
+- `numberFormatListItems` — `NumberFormatListItem[]` — Defines the items displayed in the NumberFormatList dropdown.

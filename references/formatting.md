@@ -619,3 +619,76 @@ Enum members:
 
 - `FontColor`
 - `BackgroundColor`
+
+
+### `FontFamily`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontfamily>
+
+Font family settings for the editor. Configures the font family dropdown control within the toolbar.
+
+#### Properties
+
+- `items` — `FontFamilyItem[]` — Specifies the default font family items for the dropdown. Each item includes `id`, `text`, `command`, and typed value payload.
+  - **Defaults to `DEFAULT_FONT_FAMILY_ITEMS`.**
+- `width` — `string` — Specifies the width of the dropdown content area.
+  - **Defaults to `'72px'`.**
+
+### `FontSize`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontsize>
+
+Font size settings for the editor. Configures the font size dropdown control within the toolbar.
+
+#### Properties
+
+- `items` — `FontSizeItem[]` — Specifies the default font size items for the dropdown. Each item includes `id`, `text`, `command`, and typed value payload.
+  - **Defaults to `DEFAULT_FONT_SIZE_ITEMS`.**
+- `width` — `string` — Specifies the width of the dropdown content area.
+  - **Defaults to `'60px'`.**
+
+### `Format`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/format>
+
+Configuration for the Format toolbar item.
+
+#### Properties
+
+- `items` — `ToolbarSubItem[]` — Specifies the items displayed in the Format dropdown.
+  - **Defaults to `DEFAULT_FORMAT_ITEMS`.**
+- `width` — `string` — Specifies the width of the Format dropdown.
+  - **Defaults to `'75px'`.**
+
+### `FontFamilyModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontfamilymodel>
+
+Interface for the class `FontFamily`.
+
+#### Properties
+
+- `items` — `FontFamilyItem[]` — Specifies the default font family items for the dropdown. Each item includes `id`, `text`, `command`, and typed value payload.
+- `width` — `string` — Specifies the width of the dropdown content area.
+
+### `FontSizeModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/fontsizemodel>
+
+Interface for the class `FontSize`.
+
+#### Properties
+
+- `items` — `FontSizeItem[]` — Specifies the default font size items for the dropdown. Each item includes `id`, `text`, `command`, and typed value payload.
+- `width` — `string` — Specifies the width of the dropdown content area.
+
+### `FormatModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/formatmodel>
+
+Interface for the class `Format`.
+
+#### Properties
+
+- `items` — `ToolbarSubItem[]` — Specifies the items displayed in the Format dropdown.
+- `width` — `string` — Specifies the width of the Format dropdown.

@@ -321,10 +321,6 @@ Service for querying and caching the editor's formatting state. Ensures formatti
   | `editorCore` | `EditorCore` | The editor core instance |
 
   Returns `FormattingState`.
-### Toolbar runtime key bindings
-
-The enum that backs the `keyBindings` configuration on `toolbarSettings`, sourced from the Syncfusion EJ2 TypeScript API reference for `@syncfusion/ej2-richtexteditor-ui`.
-
 ### `EditorKeyBindingAction`
 
 Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/editorkeybindingaction>
@@ -355,3 +351,110 @@ Enum members:
 - `uppercase`
 - `lowercase`
 - `code-block`
+
+
+### `QuickToolbarSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/quicktoolbarsettings>
+
+Configures the quick toolbar settings of the RichTextEditor.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether the quick toolbar is enabled in the RichTextEditor.
+  - **Defaults to `true`.**
+- `enableAppendToBody` — `boolean` — Specifies whether to append the quick toolbar popup to the document body instead of the editor container. Enable this to avoid clipping in containers with constrained width or overflow. Disable it to keep the popup positioned within the editor container.
+  - **Defaults to `false`.**
+- `image` — `ImageQuickToolbarItem[]` — Specifies the toolbar items shown when an image is selected.
+  - **Defaults to `['AltText', 'Caption', '|', 'Align', 'Display', 'WrapText', '|', 'Dimension', 'Replace', 'Remove']`.**
+- `link` — `LinkQuickToolbarItem[]` — Specifies the toolbar items shown when the cursor is inside a link. If no items are configured, the link quick toolbar is not initialized. Default order: Open, Copy, Edit, Remove.
+  - **Defaults to `['OpenLink', 'CopyLink', 'EditLink', 'RemoveLink']`.**
+- `table` — `TableQuickToolbarItem[]` — Items displayed in the Table Quick Toolbar.
+  - **Defaults to `['Header', 'Remove', '|', 'Row', 'Column', '|', 'CellBackgroundColor', 'Align', 'VerticalAlign']`.**
+- `text` — `ToolbarItem[]` — Specifies the toolbar items shown when text is selected. If no items are configured, the text quick toolbar is not rendered.
+  - **Defaults to `null`.**
+
+### `QuickToolbarSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/quicktoolbarsettingsmodel>
+
+Interface for the class `QuickToolbarSettings`.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether the quick toolbar is enabled in the RichTextEditor.
+- `enableAppendToBody` — `boolean` — Specifies whether to append the quick toolbar popup to the document body instead of the editor container. Enable this to avoid clipping in containers with constrained width or overflow. Disable it to keep the popup positioned within the editor container.
+- `image` — `ImageQuickToolbarItem[]` — Specifies the toolbar items shown when an image is selected.
+- `link` — `LinkQuickToolbarItem[]` — Specifies the toolbar items shown when the cursor is inside a link. If no items are configured, the link quick toolbar is not initialized. Default order: Open, Copy, Edit, Remove.
+- `table` — `TableQuickToolbarItem[]` — Items displayed in the Table Quick Toolbar.
+- `text` — `ToolbarItem[]` — Specifies the toolbar items shown when text is selected. If no items are configured, the text quick toolbar is not rendered.
+
+### `ToolbarSettings`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettings>
+
+Configures the Toolbar settings of the RichTextEditor.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether to render the Toolbar in the Editor.
+  - **Defaults to `true`.**
+- `enableFloating` — `boolean` — Whether the toolbar remains visible while its scroll owner is scrolled.
+  - **Defaults to `true`.**
+- `floatingOffset` — `number` — Non-negative vertical offset, in pixels, applied while floating.
+  - **Defaults to `0`.**
+- `items` — `ToolbarItem[]` — Defines the items displayed in the toolbar.
+  - **Defaults to `['Bold', 'Italic', 'Underline', 'Strikethrough', '|', 'Formats', 'Alignment', 'BulletList', 'NumberedList', '|', 'Link', 'Image', 'Table', '|', 'Undo', 'Redo']`.**
+- `position` — `ToolbarPosition` — Defines whether the toolbar is rendered above or below the editor.
+  - **Defaults to `'Top'`.**
+- `type` — `ToolbarType` — Defines the toolbar overflow and layout behavior.
+  - **Defaults to `'Auto'`.**
+
+#### Events
+
+- `itemClicked` — `EmitType<ToolbarItemClickedEventArgs>` — Event raised when a toolbar item is clicked in the component.
+- `updatedToolbarStatus` — `EmitType<UpdatedToolbarStatusEventArgs>` — Raised after the toolbar item status (active states, dropdown values, color picker selections) has been synchronized with the current editor selection. This event fires after formatting states are updated to reflect the user's current cursor position or selection in the editor.
+
+### `ToolbarItemClickedEventArgs`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbaritemclickedeventargs>
+
+Represents the event arguments for a toolbar item click event in the component.
+
+#### Properties
+
+- `dataIndex` — `number` — Specifies the index of the message data associated with the toolbar item click event. This property is not applicable for header toolbar item click.
+- `event` — `Event` — Specifies the event object associated with the toolbar item click. Represents the underlying event that triggered the click action, providing details about the event.
+- `item` — `ToolbarItemModel` — Specifies the toolbar item that was clicked. Represents the model of the toolbar item that triggered the click event.
+- `name` — `string` — Specifies name of the event.
+
+### `ToolbarSettingsModel`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/toolbarsettingsmodel>
+
+Interface for the class `ToolbarSettings`.
+
+#### Properties
+
+- `enable` — `boolean` — Specifies whether to render the Toolbar in the Editor.
+- `enableFloating` — `boolean` — Whether the toolbar remains visible while its scroll owner is scrolled.
+- `floatingOffset` — `number` — Non-negative vertical offset, in pixels, applied while floating.
+- `items` — `ToolbarItem[]` — Defines the items displayed in the toolbar.
+- `position` — `ToolbarPosition` — Defines whether the toolbar is rendered above or below the editor.
+- `type` — `ToolbarType` — Defines the toolbar overflow and layout behavior.
+
+#### Events
+
+- `itemClicked` — `EmitType<ToolbarItemClickedEventArgs>` — Event raised when a toolbar item is clicked in the component.
+- `updatedToolbarStatus` — `EmitType<UpdatedToolbarStatusEventArgs>` — Raised after the toolbar item status (active states, dropdown values, color picker selections) has been synchronized with the current editor selection. This event fires after formatting states are updated to reflect the user's current cursor position or selection in the editor.
+
+### `AddToolbarItem`
+
+Source: <https://ej2.syncfusion.com/documentation/api/richtexteditor-ui/addtoolbaritem>
+
+Adds a toolbar item at a specified index.
+
+#### Properties
+
+- `index` — `number` — Index at which to insert the item.
+- `item` — `ToolbarItem` — The item to add.
