@@ -192,6 +192,14 @@ Use this skill when you need to:
 - `getText` — return the current editor content as plain text
 - `updateToolbarItems` — apply a batch of toolbar item updates
 
+### API Reference (Part 1)
+
+📄 **Read:** [references/api-references.md](references/api-references.md)
+- `RichTextEditorUI` and the API index — every type, builder, enum, event-arg, and helper exported by `@syncfusion/ej2-richtexteditor-ui`
+- `CustomNodeAttributeType`, `CustomNodeContent`, `CustomNodeGroup`, `CustomNodeName` — schema-building enums for custom nodes
+- `DialogType` — dialog enum (`InsertImage`, `InsertLink`, `InsertTable`)
+- Sub-component event args: `BeforeDialogCloseEventArgs`, `BeforeDialogOpenEventArgs`, `BeforeFileDropEventArgs`, `BeforeFileUploadEventArgs`, `BeforePopupCloseEventArgs`, `BeforePopupOpenEventArgs`, `EditorComponentEventArgs`, `FileRemovingEventArgs`, `FileSelectedEventArgs`, `FileUploadFailedEventArgs`, `FileUploadSuccessEventArgs`, `FileUploadingEventArgs` — each with the `source` field identifying the editor feature (`'Link'`, `'Image'`, `'Table'`)
+
 ## Quick Start Example
 
 ### Minimal Editor Setup
