@@ -346,7 +346,7 @@ var app = builder.Build();
 {% endhighlight %}
 {% endtabs %}
 
-N> To configure other AI services, refer to the following sections [Ollama AI Service](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/ollama) and [Custom AI Service](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/custom-inference-backend).
+N> To configure other AI services, refer to the following sections [Ollama AI Service](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/ollama) and [Custom AI Service](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/custom-inference-backend).
 
 ## Add stylesheet and script resources
 
@@ -450,5 +450,5 @@ N> [View Sample in GitHub](https://github.com/syncfusion/smart-ai-samples).
 
 ## See also
 
-1. [Getting Started with Blazor Smart Rich Text Editor in Server App](https://blazor.syncfusion.com/documentation/smart-rich-text-editor/getting-started)
-2. [Rich Text Editor Documentation](https://blazor.syncfusion.com/documentation/rich-text-editor)
+1. [Getting Started with Blazor Smart Rich Text Editor in Server App](https://help.syncfusion.com/rich-text-editor-sdk/blazor/smart-rich-text-editor/getting-started-webapp)
+2. [Rich Text Editor Documentation](https://help.syncfusion.com/rich-text-editor-sdk/blazor/rich-text-editor/overview)
