@@ -167,7 +167,7 @@ npm install @syncfusion/ej2-material3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/styles.css`.
 
 ```css
-@import '../node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor-ui/index.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/richtexteditor-ui/index.css';
 ```
 
 ## Add the Modern Rich Text Editor component
