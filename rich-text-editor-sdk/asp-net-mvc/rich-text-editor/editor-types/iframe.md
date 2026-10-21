@@ -63,4 +63,4 @@ Likewise, add an external script file to the `<iframe>` element using the `scrip
 ## See Also
 
 * [Implementing Inline Editing](./inline-editing)
-* [Using the Markdown Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started)
+* [Using the Markdown Editor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/markdown-editor/getting-started)

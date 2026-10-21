@@ -59,7 +59,7 @@ The following ARIA attributes are recommended for the Block Editor to improve di
 
 The Block Editor control follows [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, enabling easy use for people with assistive technologies or those relying on keyboard navigation. The control supports a variety of keyboard shortcuts for common actions.
 
-For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://ej2.syncfusion.com/aspnetcore/documentation/block-editor/keyboard-shortcuts) documentation.
+For a complete list of keyboard shortcuts, refer to the [Keyboard Support](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/block-editor/keyboard-shortcuts) documentation.
 
 ## Ensuring accessibility
 

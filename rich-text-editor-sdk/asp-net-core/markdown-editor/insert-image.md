@@ -24,8 +24,6 @@ The image will be added to the editor content at the cursor position.
 
 The following example demonstrates how to enable image insertion in the Markdown Editor.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-image/tagHelper %}
@@ -34,15 +32,3 @@ The following example demonstrates how to enable image insertion in the Markdown
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-image/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-image/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/markdown-editor/markdown-image/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

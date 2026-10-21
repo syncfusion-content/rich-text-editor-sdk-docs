@@ -33,8 +33,6 @@ N> Custom CSS variable overrides must be declared **after** the theme stylesheet
 
 The following example demonstrates custom theme variants for the Rich Text Editor using CSS variable overrides.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/theme/tagHelper %}
@@ -44,18 +42,6 @@ The following example demonstrates custom theme variants for the Rich Text Edito
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/theme/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/theme/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 {% previewsample "page.domainurl/code-snippet/rich-text-editor-sdk/asp-net-core/rich-text-editor/theme" %}
 
