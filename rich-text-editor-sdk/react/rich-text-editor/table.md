@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Table in React Rich text editor component | Syncfusion
-description: Learn how to insert, format, and manage Table in the Syncfusion React Rich text editor component of Syncfusion Essential JS 2 and more.
-control: Table 
+title: Tables in React Rich Text Editor | Syncfusion
+description: Learn how to insert, format, and manage tables in the React Rich Text Editor with row, column, and cell customization options.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Table in React Rich Text Editor Component
+# Tables in React Rich Text Editor
 
 The [React Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor) allows inserting table in the edit panel, providing options to add, edit, format, and remove tables as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://ej2.syncfusion.com/react/documentation/api/rich-text-editor/tablesettingsmodel)
 

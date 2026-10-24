@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with React Rich Text Editor Component | Syncfusion
-description: Learn how to set up and configure the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with React Rich Text Editor | Syncfusion
+description: Learn how to get started with the React Rich Text Editor and explore setup, configuration, and core feature examples.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/react-rich-text-editor"
-control: Getting started
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk

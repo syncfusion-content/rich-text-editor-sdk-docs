@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Link in React Rich Text Editor component | Syncfusion
-description: Learn how to insert, edit, and manage links in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Link
+title: Links in React Rich Text Editor | Syncfusion
+description: Learn how to add, edit, remove, and manage hyperlinks in the React Rich Text Editor for better content navigation and user experiences.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Link in React Rich Text Editor
+# Links in React Rich Text Editor
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 

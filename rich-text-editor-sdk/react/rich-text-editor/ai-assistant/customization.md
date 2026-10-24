@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize AI Assistant in React Rich Text Editor | Syncfusion
-description: Learn about AI Assistant customization in the Syncfusion React Rich Text Editor component of Syncfusion Essential JS 2 and more.
-control: Customization of AI Assistant
+title: Customization of AI Assistant in React Rich Text Editor | Syncfusion
+description: Learn how to customize the AI Assistant in the React Rich Text Editor with custom toolbar buttons, response styling, and event hooks.
+control: Rich Text Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Customization of AI Assistant
+# Customization of AI Assistant in React Rich Text Editor
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
 

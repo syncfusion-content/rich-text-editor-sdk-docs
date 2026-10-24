@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in React Block Editor component | Syncfusion
-description: Checkout and learn about Globalization with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Globalization in React Block Editor | Syncfusion
+description: Learn how to localize the React Block Editor with localization, right-to-left (RTL) support, and translated UI text for global applications.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Globalization in React Block Editor component
+# Globalization in React Block Editor
 
 Globalization is the process of designing and developing applications that can adapt to different cultures and languages. The Syncfusion Block Editor component provides support for globalization, enabling it to serve users from diverse linguistic and cultural backgrounds.
 

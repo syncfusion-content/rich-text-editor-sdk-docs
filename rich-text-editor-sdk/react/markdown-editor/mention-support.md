@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Support in React Markdown Editor component | Syncfusion
-description: Learn how to enable mention support in the Syncfusion React Markdown Editor component of Syncfusion Essential JS 2 and more.
-control: Mention Support in Markdown Editor
+title: Mentions in React Markdown Editor | Syncfusion
+description: Learn how to enable mentions in the React Markdown Editor using the @ trigger to tag users or items from a suggestion list while editing Markdown content.
+control: Markdown Editor
 platform: rich-text-editor-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Mention Support in React Markdown Editor Component
+# Mentions in React Markdown Editor
 
 By integrating the [Mention](https://ej2.syncfusion.com/react/documentation/mention/getting-started/) component with the Markdown Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving both efficiency and accuracy.
 

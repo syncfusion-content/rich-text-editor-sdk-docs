@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Code Blocks in React Block Editor Component | Syncfusion
-description: Checkout and learn about Code Blocks with React Block Editor component of Syncfusion Essential JS 2 and more.
+title: Code Blocks in React Block Editor | Syncfusion
+description: Learn how to add and configure code blocks in the React Block Editor with syntax highlighting, language options, and default language settings.
 platform: rich-text-editor-sdk
 control: Block Editor
 documentation: ug
 domainurl: https://help.syncfusion.com/rich-text-editor-sdk
 ---
 
-# Code Blocks in React Block Editor component
+# Code Blocks in React Block Editor
 
 The Syncfusion Block Editor allows you to render code snippets with syntax highlighting by setting the block's [blockType](https://ej2.syncfusion.com/react/documentation/api/blockeditor/blockmodel#blocktype) property to `Code`. You can customize the available programming languages and set a default language using the `properties` property.
 
