@@ -1,0 +1,176 @@
+# Inline Format Options in TypeScript Modern Rich Text Editor
+
+The Modern Rich Text Editor exposes the configuration surface for inline formats through the `fontSize`, `fontFamily`, `fontColor`, and `backgroundColor` settings models. These options control which values appear in the toolbar dropdowns and Color Pickers and how those controls are rendered.
+
+## Font family
+
+The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar displays `Font Name`. For other font families, the toolbar shows the name of the selected font.
+
+### Built-in font family
+
+You can add the `FontName` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` items property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontName']
+    },
+    placeholder: 'Type something ...'
+});
+
+editor.appendTo('#editor');
+```
+
+### Custom font family
+
+The Modern Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, configure the `items` field of the `fontFamily` property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontName']
+    },
+    placeholder: 'Type something ...',
+    fontFamily: {
+        items: [
+            { text: 'Default', value: 'Default' },
+            { text: 'Segoe UI', value: 'Segoe UI, sans-serif' },
+            { text: 'Roboto', value: 'Roboto, sans-serif' },
+            { text: 'Georgia', value: 'Georgia, serif' },
+            { text: 'Courier New', value: 'Courier New, monospace' }
+        ]
+    }
+});
+
+editor.appendTo('#editor');
+```
+
+### Google font support
+
+To use web fonts in the Modern Rich Text Editor, the web fonts do not need to be present on the local machine. To add web fonts to the editor, refer the web font links in your page and add the font names to the `fontFamily` property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontName']
+    },
+    fontFamily: {
+        items: [
+            { text: 'Default', value: 'Default' },
+            { text: 'Roboto', value: 'Roboto, sans-serif' },
+            { text: 'Great Vibes', value: '"Great Vibes", cursive' }
+        ]
+    }
+});
+editor.appendTo('#editor');
+```
+
+The following web font links are referenced in the page.
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+```
+
+## Font size
+
+The Modern Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the size for the selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar displays `Font Size`. For other font sizes, the toolbar shows the selected size.
+
+### Built-in font size
+
+You can add the `FontSize` tool to the Modern Rich Text Editor toolbar using the `toolbarSettings` items property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontSize']
+    },
+    placeholder: 'Type something ...'
+});
+
+editor.appendTo('#editor');
+```
+
+### Custom font size
+
+The Modern Rich Text Editor supports providing custom sizes along with the existing list. To add additional sizes to the font size dropdown, configure the `items` field of the `fontSize` property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontSize']
+    },
+    placeholder: 'Type something ...',
+    fontSize: {
+        items: [
+            { text: 'Default', value: 'Default' },
+            { text: '10', value: '10px' },
+            { text: '12', value: '12px' },
+            { text: '14', value: '14px' },
+            { text: '16', value: '16px' },
+            { text: '18', value: '18px' },
+            { text: '24', value: '24px' },
+            { text: '32', value: '32px' }
+        ]
+    }
+});
+
+editor.appendTo('#editor');
+```
+
+## Font and background color
+
+You can add the `FontColor` and `BackgroundColor` tools to the Modern Rich Text Editor toolbar using the `toolbarSettings` `items` property.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontColor', 'BackgroundColor']
+    },
+    placeholder: 'Type something ...'
+});
+
+editor.appendTo('#editor');
+```
+
+### Custom font and background colors
+
+The `FontColor` and `BackgroundColor` properties offer two modes — `Picker` and `Palette`. The `Palette` mode provides a predefined set of colors, while the `Picker` mode includes a color scheme to choose custom colors. You can switch between these options using the `modeSwitcher` feature.
+
+The number of columns in the color palette for both `FontColor` and `BackgroundColor` can be configured using the `columns` property. The `default` property specifies the default color that is applied when no color is explicitly selected by the user.
+
+```ts
+import { RichTextEditorUI } from '@syncfusion/ej2-richtexteditor-ui';
+
+const editor: RichTextEditorUI = new RichTextEditorUI({
+    toolbarSettings: {
+        items: ['FontColor', 'BackgroundColor']
+    },
+    fontColor: {
+        default: '#DC2626',
+        mode: 'Palette',
+        columns: 5,
+        modeSwitcher: true
+    },
+    backgroundColor: {
+        default: '#FFF7C7',
+        mode: 'Picker',
+        columns: 5,
+        modeSwitcher: false
+    }
+});
+
+editor.appendTo('#editor');
+```
