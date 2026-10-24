@@ -156,7 +156,7 @@ npm install @syncfusion/ej2-tailwind3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into **src/App.css**:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor-ui/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/richtexteditor-ui/index.css';
 ```
 
 I> To apply the application-specific styles correctly, import **App.css** into **src/App.tsx** and remove all the default styles from **src/index.css**.
@@ -174,7 +174,7 @@ Now, you can start adding the React Modern Rich Text Editor component in the app
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
 
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor-ui/index.css';
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/richtexteditor-ui/index.css';
 
 {% endhighlight %}
 {% endtabs %}

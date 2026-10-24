@@ -7,5 +7,5 @@ import { RichTextEditorUIComponent as EjsRichtexteditorUi } from '@syncfusion/ej
 </script>
 
 <style>
-@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/rich-text-editor-ui/index.css";
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/richtexteditor-ui/index.css";
 </style>
