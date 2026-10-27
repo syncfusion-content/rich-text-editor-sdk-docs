@@ -57,7 +57,7 @@ The Rich Text Editor supports dynamic theme switching at runtime by updating the
 
 T> Theme switching is a two-step operation. After updating the `cssClass` property, `dataBind()` must be called to apply the change to the editor's DOM.
 
-{% highlight jsx hl_lines="1 2" %}
+{% highlight js hl_lines="1 2" %}
 this.rteObj.cssClass = 'custom ' + theme;
 this.rteObj.dataBind();
 {% endhighlight %}
