@@ -24,10 +24,14 @@ Instead of relying on DOM inspection or simulating user interactions, AI assista
 
 Once connected, an AI assistant can perform Rich Text Editor tasks such as:
 
-- Read the editor content as HTML or plain text.
-- Insert or update content at the current selection.
-- Apply formatting such as bold, italic, underline, alignments, and list formats.
-- Insert images, tables, links, and code blocks.
+- Read the editor content as HTML.
+- Read the HTML content of the current selection.
+- Insert new text or basic HTML content at the current cursor position.
+- Apply inline formatting such as bold, italic, and underline to the selection.
+- Change the block type (headings, paragraphs, block quotes) and text alignment.
+- Insert links, images, and tables through the corresponding tools.
+- Apply numbered and bulleted list formats.
+- Undo and redo the recent changes.
 - Perform control-specific actions through natural language prompts.
 
 > WebMCP is currently an experimental browser capability and requires a Chromium-based browser with WebMCP support enabled. Availability and required browser flags may change as the specification evolves.
@@ -79,7 +83,9 @@ Import the WebMCP module and inject it into the control to make WebMCP functiona
         <div id="richtexteditor"></div>
     </div>
 <script>
-ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.WebMcpRichTextEditor);
+ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.Toolbar, ej.richtexteditor.Link, ej.richtexteditor.Image,
+    ej.richtexteditor.Table, ej.richtexteditor.QuickToolbar, ej.richtexteditor.HtmlEditor,
+    ej.richtexteditor.WebMcpRichTextEditor);
 
 var richtexteditor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
@@ -99,30 +105,24 @@ richtexteditor.appendTo('#richtexteditor');
 
 Set the `enableWebMcp` property to `true` to register the control's available tools with the WebMCP runtime.
 
-When `enableWebMcp` is enabled, supported control tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
-
-For example, a Rich Text Editor control may expose tools such as:
-
-- getContent
-- setContent
-- insertContent
-- formatText
-- insertImage
-- insertTable
-- insertLink
+When `enableWebMcp` is enabled, the WebMCP module registers the Rich Text Editor's supported tools with the WebMCP runtime (`document.modelContext`) and they become discoverable by authorized WebMCP clients.
 
 An AI assistant can discover these tools and invoke them based on user prompts.
 
 ```html
 <script>
-ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.WebMcpRichTextEditor);
+ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.Toolbar, ej.richtexteditor.Link, ej.richtexteditor.Image,
+    ej.richtexteditor.Table, ej.richtexteditor.QuickToolbar, ej.richtexteditor.HtmlEditor,
+    ej.richtexteditor.WebMcpRichTextEditor);
 
 var richtexteditor = new ej.richtexteditor.RichTextEditor({
     enableWebMcp: true,
     webMcpSettings: {
         name: 'editor',
-        tools: ['getContent', 'setContent', 'insertContent', 'formatText', 'insertImage', 'insertTable', 'insertLink'],
-        exposeTo: ['https://www.syncfusion.com/']
+        tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
+                'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
+                'insertTable', 'insertImage', 'undoLastAction', 'redoLastAction', 'clearFormatting'],
+        exposedTo: ['https://www.syncfusion.com/']
     },
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
@@ -141,20 +141,24 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 
 | Property | Description |
 |-----------|-------------|
-| `name` | Prefix applied to registered tool names. If name: `editor` is specified, a tool such as `getContent` may be registered as `editor_getContent`, allowing multiple control instances to coexist without tool name conflicts. |
-| `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
-| `exposeTo` | List of trusted domains that are allowed to interact with the control through WebMCP. |
+| `name` | Prefix applied to registered tool names. If name: `editor` is specified, a tool such as `getContent` may be registered as `editor_getContent`, allowing multiple control instances to coexist without tool name conflicts. If not specified, the control's element id is used as the prefix. |
+| `tools` | List of tool names or `WebMcpTool` objects to register. Any supported tools not included in this list will not be registered. |
+| `exposedTo` | List of trusted origins that are allowed to interact with the control through WebMCP. |
 
 ```html
 <script>
-ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.WebMcpRichTextEditor);
+ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.Toolbar, ej.richtexteditor.Link, ej.richtexteditor.Image,
+    ej.richtexteditor.Table, ej.richtexteditor.QuickToolbar, ej.richtexteditor.HtmlEditor,
+    ej.richtexteditor.WebMcpRichTextEditor);
 
 var richtexteditor = new ej.richtexteditor.RichTextEditor({
     enableWebMcp: true,
     webMcpSettings: {
         name: 'editor',
-        tools: ['getContent', 'setContent', 'insertContent', 'formatText', 'insertImage', 'insertTable', 'insertLink'],
-        exposeTo: ['https://www.syncfusion.com/']
+        tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
+                'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
+                'insertTable', 'insertImage', 'undoLastAction', 'redoLastAction', 'clearFormatting'],
+        exposedTo: ['https://www.syncfusion.com/']
     },
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
@@ -167,7 +171,7 @@ richtexteditor.appendTo('#richtexteditor');
 </script>
 ```
 
-> Use the `exposeTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your control tools.
+> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your control tools.
 
 ### Step 5: Monitor and control tool execution
 
@@ -178,22 +182,26 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 - Cancel tool execution when necessary.
 - Apply custom business rules and security policies.
 
-> AI-generated requests should always be validated before executing write operations. Restrict access using `exposeTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying editor content.
+> AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying editor content.
 
 ```html
 <script>
-ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.WebMcpRichTextEditor);
+ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.Toolbar, ej.richtexteditor.Link, ej.richtexteditor.Image,
+    ej.richtexteditor.Table, ej.richtexteditor.QuickToolbar, ej.richtexteditor.HtmlEditor,
+    ej.richtexteditor.WebMcpRichTextEditor);
 
 var richtexteditor = new ej.richtexteditor.RichTextEditor({
     enableWebMcp: true,
     webMcpSettings: {
         name: 'editor',
-        tools: ['getContent', 'setContent', 'insertContent', 'formatText', 'insertImage', 'insertTable', 'insertLink'],
-        exposeTo: ['https://www.syncfusion.com/']
+        tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
+                'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
+                'insertTable', 'insertImage', 'undoLastAction', 'redoLastAction', 'clearFormatting'],
+        exposedTo: ['https://www.syncfusion.com/']
     },
     beforeWebMcpToolExecute: function (args) {
         // Example business rule
-        if (args.toolName.indexOf('setContent') !== -1 || args.toolName.indexOf('insertContent') !== -1) {
+        if (args.toolName.indexOf('insertContent') !== -1) {
             var hour = new Date().getHours();
 
             if (hour < 9 || hour > 17) {
@@ -215,11 +223,48 @@ richtexteditor.appendTo('#richtexteditor');
 </script>
 ```
 
+## Supported tools
+
+The following table lists the WebMCP tools supported by the Rich Text Editor.
+
+| Tool | Description |
+|-------------|-------------|
+| `getContent` | Reads the complete HTML content inside the editor. |
+| `getSelectedHtml` | Reads the HTML content of the current selection. |
+| `selectAllContent` | Selects all the content in the editor so a following bulk operation can act on the entire document. |
+| `showDialog` | Opens a built-in editor dialog such as InsertLink, InsertImage, InsertAudio, InsertVideo, or InsertTable. |
+| `closeDialog` | Closes a built-in editor dialog that is currently open. |
+| `insertContent` | Inserts plain text or basic HTML content at the current cursor position. |
+| `formatSelectedContent` | Applies inline formatting such as bold, italic, underline, superscript, or subscript to the selected content. |
+| `setBlockType` | Changes the block element wrapping the current selection or cursor line (P, H1–H6, BlockQuote, PRE). |
+| `setTextAlignment` | Sets the horizontal alignment of the selected content (justifyCenter, justifyFull, justifyLeft, justifyRight). |
+| `insertLink` | Inserts a hyperlink at the current cursor position or converts the selected text into a hyperlink. |
+| `insertTable` | Inserts a table with the specified number of rows and columns. |
+| `insertImage` | Inserts an image at the current cursor position using the given URL. |
+| `undoLastAction` | Reverts the most recent change made in the editor. |
+| `redoLastAction` | Re-applies the most recent action that was undone. |
+| `clearFormatting` | Removes all inline formatting from the selected content. |
+| `printContent` | Opens the browser print dialog for the editor content. |
+| `setCodeBlock` | Inserts a syntax-highlighted code block for the specified programming language. |
+| `applyNumberedListFormat` | Applies a numbered list format with the chosen numbering style to the selected content. |
+| `applyBulletedListFormat` | Applies a bulleted list format with the chosen bullet style to the selected content. |
+| `insertBR` | Inserts a line break at the current cursor position. |
+
+The list of `WebMcpTool` objects can also be retrieved programmatically using the `getWebMcpTools` method of the Rich Text Editor.
+
+```javascript
+// Returns the schema of all supported tools.
+var tools = richtexteditor.getWebMcpTools();
+
+// Returns the schema of the specified tools only.
+var selectedTools = richtexteditor.getWebMcpTools(['getContent', 'insertContent', 'setBlockType']);
+```
+
 ## Best practices
 
 - Expose only the tools required by your application.
 - Use the `name` property when multiple control instances exist on the same page.
-- Configure `exposeTo` to limit access to trusted domains.
+- Configure `exposedTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.
 - Apply application-specific validation before executing tool operations.
 
