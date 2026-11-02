@@ -77,7 +77,7 @@ RichTextEditor.Inject(Toolbar, Link, Image, Table, QuickToolbar, HtmlEditor, Web
 const editor: RichTextEditor = new RichTextEditor({
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -112,7 +112,7 @@ const editor: RichTextEditor = new RichTextEditor({
     webMcpSettings: webMcpSettings,
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -148,7 +148,7 @@ const editor: RichTextEditor = new RichTextEditor({
     webMcpSettings: webMcpSettings,
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -202,7 +202,7 @@ const editor: RichTextEditor = new RichTextEditor({
     beforeWebMcpToolExecute: onBeforeWebMcpToolExecute,
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -239,6 +239,8 @@ The following table lists the WebMCP tools supported by the Rich Text Editor.
 The list of `WebMcpTool` objects can also be retrieved programmatically using the `getWebMcpTools` method of the Rich Text Editor.
 
 ```typescript
+import { WebMcpTool } from '@syncfusion/ej2-richtexteditor';
+
 // Returns the schema of all supported tools.
 let tools: WebMcpTool[] = editor.getWebMcpTools();
 

@@ -68,13 +68,13 @@ Create a React application and integrate the Syncfusion® React Rich Text Editor
 Import the WebMCP module and inject it into the component using the `<Inject>` element to make the WebMCP functionality available.
 
 ```tsx
-import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor } from '@syncfusion/ej2-react-richtexteditor';
+import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor, ToolbarSettingsModel } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
 
 class App extends React.Component<{}, {}> {
-    public toolbarSettings: object = {
+    public toolbarSettings: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 
@@ -98,13 +98,13 @@ When `enableWebMcp` is enabled, the WebMCP module registers the Rich Text Editor
 An AI assistant can discover these tools and invoke them based on user prompts.
 
 ```tsx
-import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor } from '@syncfusion/ej2-react-richtexteditor';
+import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor, RichTextEditorWebMcpSettingsModel, ToolbarSettingsModel } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
 
 class App extends React.Component<{}, {}> {
     public enableWebMcp: boolean = true;
 
-    public webMcpSettings: object = {
+    public webMcpSettings: RichTextEditorWebMcpSettingsModel = {
         name: 'editor',
         tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
                 'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
@@ -112,9 +112,9 @@ class App extends React.Component<{}, {}> {
         exposedTo: ['https://www.syncfusion.com/']
     };
 
-    public toolbarSettings: object = {
+    public toolbarSettings: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 
@@ -141,13 +141,13 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 | `exposedTo` | List of trusted origins that are allowed to interact with the component through WebMCP. |
 
 ```tsx
-import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor } from '@syncfusion/ej2-react-richtexteditor';
+import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor, RichTextEditorWebMcpSettingsModel, ToolbarSettingsModel } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
 
 class App extends React.Component<{}, {}> {
     public enableWebMcp: boolean = true;
 
-    public webMcpSettings: object = {
+    public webMcpSettings: RichTextEditorWebMcpSettingsModel = {
         name: 'editor',
         tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
                 'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
@@ -155,9 +155,9 @@ class App extends React.Component<{}, {}> {
         exposedTo: ['https://www.syncfusion.com/']
     };
 
-    public toolbarSettings: object = {
+    public toolbarSettings: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 
@@ -187,13 +187,13 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying editor content.
 
 ```tsx
-import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor } from '@syncfusion/ej2-react-richtexteditor';
+import { HtmlEditor, Image, Inject, Link, QuickToolbar, RichTextEditorComponent, Table, Toolbar, WebMcpRichTextEditor, WebMcpToolExecuteEventArgs, RichTextEditorWebMcpSettingsModel, ToolbarSettingsModel } from '@syncfusion/ej2-react-richtexteditor';
 import * as React from 'react';
 
 class App extends React.Component<{}, {}> {
     public enableWebMcp: boolean = true;
 
-    public webMcpSettings: object = {
+    public webMcpSettings: RichTextEditorWebMcpSettingsModel = {
         name: 'editor',
         tools: ['getContent', 'getSelectedHtml', 'selectAllContent', 'insertContent',
                 'formatSelectedContent', 'setBlockType', 'setTextAlignment', 'insertLink',
@@ -201,15 +201,15 @@ class App extends React.Component<{}, {}> {
         exposedTo: ['https://www.syncfusion.com/']
     };
 
-    public toolbarSettings: object = {
+    public toolbarSettings: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 
-    public onBeforeWebMcpToolExecute(args: { [key: string]: object }): void {
+    public onBeforeWebMcpToolExecute(args: WebMcpToolExecuteEventArgs): void {
         // Example business rule
-        const toolName = args.toolName as string;
+        const toolName: string = args.toolName;
         if (toolName.indexOf('insertContent') !== -1) {
             const hour: number = new Date().getHours();
 
@@ -264,11 +264,13 @@ The following table lists the WebMCP tools supported by the Rich Text Editor.
 The list of `WebMcpTool` objects can also be retrieved programmatically using the `getWebMcpTools` method of the Rich Text Editor.
 
 ```tsx
+import { WebMcpTool } from '@syncfusion/ej2-react-richtexteditor';
+
 // Returns the schema of all supported tools.
-let tools: Object[] = this.rteObj.getWebMcpTools();
+let tools: WebMcpTool[] = this.rteObj.getWebMcpTools();
 
 // Returns the schema of the specified tools only.
-let selectedTools: Object[] = this.rteObj.getWebMcpTools(['getContent', 'insertContent', 'setBlockType']);
+let selectedTools: WebMcpTool[] = this.rteObj.getWebMcpTools(['getContent', 'insertContent', 'setBlockType']);
 ```
 
 ## Best practices

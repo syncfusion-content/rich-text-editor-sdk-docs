@@ -90,7 +90,7 @@ ej.richtexteditor.RichTextEditor.Inject(ej.richtexteditor.Toolbar, ej.richtexted
 var richtexteditor = new ej.richtexteditor.RichTextEditor({
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -126,7 +126,7 @@ var richtexteditor = new ej.richtexteditor.RichTextEditor({
     },
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -162,7 +162,7 @@ var richtexteditor = new ej.richtexteditor.RichTextEditor({
     },
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
@@ -214,7 +214,7 @@ var richtexteditor = new ej.richtexteditor.RichTextEditor({
     },
     toolbarSettings: {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     }
 });
