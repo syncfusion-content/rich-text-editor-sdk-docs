@@ -86,7 +86,7 @@ import { RichTextEditorModule, ToolbarService, LinkService, ImageService, TableS
 export class AppComponent {
     public tools: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     };
 }
@@ -127,7 +127,7 @@ export class AppComponent {
     };
     public tools: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     };
 }
@@ -170,7 +170,7 @@ export class AppComponent {
     };
     public tools: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     };
 }
@@ -193,7 +193,7 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 import { Component } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, LinkService, ImageService, TableService,
          QuickToolbarService, HtmlEditorService, WebMcpRichTextEditorService,
-         ToolbarSettingsModel, RichTextEditorWebMcpSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+         ToolbarSettingsModel, RichTextEditorWebMcpSettingsModel, WebMcpToolExecuteEventArgs } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [
@@ -216,13 +216,13 @@ export class AppComponent {
     };
     public tools: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                 'Undo', 'Redo']
     };
 
-    public onBeforeWebMcpToolExecute(args: { [key: string]: object }): void {
+    public onBeforeWebMcpToolExecute(args: WebMcpToolExecuteEventArgs): void {
         // Example business rule
-        const toolName: string = args.toolName as string;
+        const toolName: string = args.toolName;
         if (toolName.indexOf('insertContent') !== -1) {
             const hour: number = new Date().getHours();
 
@@ -265,13 +265,15 @@ The following table lists the WebMCP tools supported by the Rich Text Editor.
 The list of `WebMcpTool` objects can also be retrieved programmatically using the `getWebMcpTools` method of the Rich Text Editor.
 
 ```typescript
+import { WebMcpTool } from '@syncfusion/ej2-richtexteditor';
+
 @ViewChild('editor') public rteObj?: RichTextEditorComponent;
 
 // Returns the schema of all supported tools.
-let tools: Object[] = this.rteObj.getWebMcpTools();
+let tools: WebMcpTool[] = this.rteObj.getWebMcpTools();
 
 // Returns the schema of the specified tools only.
-let selectedTools: Object[] = this.rteObj.getWebMcpTools(['getContent', 'insertContent', 'setBlockType']);
+let selectedTools: WebMcpTool[] = this.rteObj.getWebMcpTools(['getContent', 'insertContent', 'setBlockType']);
 ```
 
 ## Best practices

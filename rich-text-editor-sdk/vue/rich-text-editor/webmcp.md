@@ -81,7 +81,7 @@ import { RichTextEditorComponent as EjsRichtexteditor, Toolbar, Link, Image, Tab
 
 const toolbarSettings = {
     items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
             'Undo', 'Redo']
 };
 
@@ -108,7 +108,7 @@ export default {
         return {
             toolbarSettings: {
                 items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                         'Undo', 'Redo']
             }
         };
@@ -156,7 +156,7 @@ const webMcpSettings = {
 
 const toolbarSettings = {
     items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
             'Undo', 'Redo']
 };
 
@@ -192,7 +192,7 @@ export default {
             },
             toolbarSettings: {
                 items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                         'Undo', 'Redo']
             }
         };
@@ -255,7 +255,7 @@ const webMcpSettings = {
 
 const toolbarSettings = {
     items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+            'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
             'Undo', 'Redo']
 };
 
@@ -303,7 +303,7 @@ export default {
             },
             toolbarSettings: {
                 items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', '|',
-                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'InsertTable', '|',
+                        'OrderedList', 'UnorderedList', '|', 'CreateLink', 'Image', 'CreateTable', '|',
                         'Undo', 'Redo']
             }
         };
