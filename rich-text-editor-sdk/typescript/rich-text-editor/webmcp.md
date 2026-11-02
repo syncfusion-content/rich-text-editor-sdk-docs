@@ -14,7 +14,7 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 WebMCP enables AI agents to discover and interact with Syncfusion® controls through a standardized tool interface. By enabling WebMCP, AI-powered applications can securely discover control capabilities, read data, perform actions, and automate workflows through a standardized interface.
 
-This section demonstrates how to integrate WebMCP with the Syncfusion® TypeScript Rich Text Editor control. The same approach can be used with other supported controls such as Grid, Scheduler, Chart, Spreadsheet, and more.
+This section demonstrates how to integrate WebMCP with the Syncfusion® TypeScript Rich Text Editor control.
 
 ## WebMCP Overview
 
@@ -38,7 +38,7 @@ Once connected, an AI assistant can perform Rich Text Editor tasks such as:
 
 ## Prerequisites
 
-- Syncfusion® TypeScript Rich Text Editor control
+- Syncfusion® TypeScript Rich Text Editor control.
 - Chromium-based Browser (like Chrome, Edge, or Brave)
 - [Node.js 24+](https://nodejs.org/en) (LTS recommended).
 - WebMCP browser extension installed
