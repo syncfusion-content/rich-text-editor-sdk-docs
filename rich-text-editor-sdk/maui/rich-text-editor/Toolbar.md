@@ -57,9 +57,10 @@ The following items are available to be added to the `ToolbarItems` collection:
 *   `TextTransform`
 *   `FontFamily`, `FontSize`, `TextColor`, `HighlightColor`
 *   `ParagraphFormat`, `Alignment`
-*   `NumberList`, `BulletList`
+*   `NumberList`, `BulletList`, `TaskList`
 *   `IncreaseIndent`, `DecreaseIndent`
 *   `Hyperlink`, `Image`, `Table`
+*   `BlockQuote`, `InlineCode`, `ClearFormat`, `HorizontalLine`
 *   `Undo`, `Redo`
 *   `Separator`
 
