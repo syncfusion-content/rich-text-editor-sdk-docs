@@ -17,44 +17,6 @@ The [Syncfusion .NET MAUI RichTextEditor](https://www.syncfusion.com/rich-text-e
 
 ### Toolbar
 
-<table>
-<tr>
-<td>
-<b> Shortcut Keys </b> <br/><br/></td><td>
-<b> Descriptions </b> <br/><br/></td></tr>
-<tr>
-<td>
-Tab<br/><br/></td><td>Moves selection to the next focusable toolbar item. 
-<br/><br/></td></tr>
-<tr>
-<td>
-Shift + Tab<br/><br/></td><td>
-Moves selection to the previous focusable toolbar item. 
-<br/><br/></td></tr>
-<tr>
-<td>
-Enter<br/><br/></td><td>
-Performs the action of the focused toolbar item.<br/><br/></td></tr>
-<tr>
-<td>
-Ctrl + Z<br/><br/></td><td>
-Reverse the most recent action performed on the image editor. 
-<br/><br/></td></tr>
-<tr>
-<td>
-Ctrl + Y<br/><br/></td><td>
-Restores the last undone action.
-<br/><br/></td></tr>
-<tr>
-<td>
-Ctrl + S<br/><br/></td><td>
-Save the current image. 
-<br/><br/></td></tr>
-<tr>
-<td>
-Ctrl + O<br/><br/></td><td>
-Opens the image browser to import the new image inside Image Editor. 
-<br/><br/></td></tr>
-</table>
+<table> <tr> <td> <b> Shortcut Keys </b> <br/><br/></td><td> <b> Descriptions </b> <br/><br/></td></tr> <tr> <td> Tab<br/><br/></td><td>Moves selection to the next focusable toolbar item. <br/><br/></td></tr> <tr> <td> Shift + Tab<br/><br/></td><td> Moves selection to the previous focusable toolbar item. <br/><br/></td></tr> <tr> <td> Enter<br/><br/></td><td> Performs the action of the focused toolbar item.<br/><br/></td></tr> <tr> <td> Ctrl + B<br/><br/></td><td> Applies or removes bold formatting on the selected text. <br/><br/></td></tr> <tr> <td> Ctrl + I<br/><br/></td><td> Applies or removes italic formatting on the selected text. <br/><br/></td></tr> <tr> <td> Ctrl + U<br/><br/></td><td> Applies or removes underline formatting on the selected text. <br/><br/></td></tr> <tr> <td> Ctrl + Shift + X<br/><br/></td><td> Applies or removes strikethrough formatting on the selected text. <br/><br/></td></tr> <tr> <td> Ctrl + Z<br/><br/></td><td> Reverses the most recent action performed in the rich text editor. <br/><br/></td></tr> <tr> <td> Ctrl + Y<br/><br/></td><td> Restores the last undone action. <br/><br/></td></tr> <tr> <td> Shift + Tab <br/><br/></td><td> Decreases the indent level of the current block or paragraph. <br/><br/></td></tr> <tr> <td> Ctrl + L<br/><br/></td><td> Aligns the selected text or paragraph to the left. <br/><br/></td></tr> <tr> <td> Ctrl + E<br/><br/></td><td> Aligns the selected text or paragraph to the center. <br/><br/></td></tr> <tr> <td> Ctrl + R<br/><br/></td><td> Aligns the selected text or paragraph to the right. <br/><br/></td></tr> <tr> <td> Ctrl + J<br/><br/></td><td> Justifies the selected text or paragraph. <br/><br/></td></tr> </table>
 
 N> Use the `Command` key instead of the `Ctrl` key on macOS.
