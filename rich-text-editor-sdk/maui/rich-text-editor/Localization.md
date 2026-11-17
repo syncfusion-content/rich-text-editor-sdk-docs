@@ -5,6 +5,7 @@ description: Learn here all about Localization feature of Syncfusion® .NET MAUI
 platform: MAUI
 control: SfRichTextEditor
 documentation: ug
+appliesto: UI Component Suite, Rich Text Editor SDK
 ---
 
 # Localization in .NET MAUI RichTextEditor
