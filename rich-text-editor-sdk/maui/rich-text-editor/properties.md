@@ -223,6 +223,12 @@ documentation: ug
 </tr>
 
 <tr valign="top">
+    <td>ClearFormatting()</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
+    <td>Clears all formatting from the selected text, restoring it to the default text style.</td>
+</tr>
+
+<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_DecreaseIndent" aria-label="View DecreaseIndent method in API reference">DecreaseIndent()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Reduces the left indentation of the paragraph at the cursor or every paragraph in the current selection.</td>
@@ -250,6 +256,12 @@ documentation: ug
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_IncreaseIndent" aria-label="View IncreaseIndent method in API reference">IncreaseIndent()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Increases the left indentation of the paragraph at the cursor or every paragraph in the current selection.</td>
+</tr>
+
+<tr valign="top">
+    <td>InsertHorizontalLine()</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
+    <td>Inserts a horizontal divider line at the cursor position.</td>
 </tr>
 
 <tr valign="top">
@@ -301,27 +313,27 @@ documentation: ug
 </tr>
 
 <tr valign="top">
+    <td>ToggleBlockQuote()</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
+    <td>Applies blockquote styling to the paragraph at the cursor or selection, or removes it when the paragraph is already formatted as a blockquote.</td>
+</tr>
+
+<tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleBold" aria-label="View ToggleBold method in API reference">ToggleBold()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Applies bold formatting to the selected text, or removes it when the selection is already bold.</td>
 </tr>
 
 <tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleBulletList" aria-label="View ToggleBulletList method in API reference">ToggleBulletList()</a></td>
+    <td>ToggleInlineCode()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
-    <td>Converts the paragraph at the cursor into a bullet list, or removes bullet formatting when the paragraph is already a bullet list item.</td>
+    <td>Applies inline monospace code formatting to the selected text, or removes it when the selection is already formatted as inline code.</td>
 </tr>
 
 <tr valign="top">
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleItalic" aria-label="View ToggleItalic method in API reference">ToggleItalic()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Applies italic formatting to the selected text, or removes it when the selection is already italic.</td>
-</tr>
-
-<tr valign="top">
-    <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleNumberedList" aria-label="View ToggleNumberedList method in API reference">ToggleNumberedList()</a></td>
-    <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
-    <td>Converts the paragraph at the cursor into a numbered list, or removes numbered formatting when the paragraph is already a numbered list item.</td>
 </tr>
 
 <tr valign="top">
@@ -340,6 +352,12 @@ documentation: ug
     <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html#Syncfusion_Maui_RichTextEditor_SfRichTextEditor_ToggleSuperscript" aria-label="View ToggleSuperscript method in API reference">ToggleSuperscript()</a></td>
     <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
     <td>Applies superscript formatting to the selected text, or removes it when the selection is already superscript.</td>
+</tr>
+
+<tr valign="top">
+    <td>ToggleTaskList()</a></td>
+    <td><a href="https://learn.microsoft.com/dotnet/api/system.void" aria-label="View Void type in API reference">void</a></td>
+    <td>Converts the paragraph at the cursor into an interactive checklist item with a checkbox, or removes checklist formatting when the paragraph is already a task list item.</td>
 </tr>
 
 <tr valign="top">
