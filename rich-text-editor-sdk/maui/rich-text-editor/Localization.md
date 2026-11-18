@@ -10,7 +10,138 @@ appliesto: UI Component Suite, Rich Text Editor SDK
 
 # Localization in .NET MAUI RichTextEditor
 
-`Localization` is the process of translating the application resources into different languages for specific cultures. The [SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html?tabs=tabid-11) can be localized by adding a `resource` file.
+`Localization` is the process of translating the application resources into different languages for specific cultures. The [SfRichTextEditor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.RichTextEditor.SfRichTextEditor.html?tabs=tabid-11) can be localized by adding a `resource` file. The `SfRichTextEditor` allows you to localize the following built-in strings to suit your application’s language and culture:
+
+<table>
+<tr>
+    <td> <b> Name </b> <br/><br/></td>
+    <td> <b> Value </b> <br/><br/></td>
+</tr>
+<tr>
+    <td> UpperCase<br/><br/></td>
+    <td> UPPERCASE<br/><br/></td>
+</tr>
+<tr>
+    <td> LowerCase<br/><br/></td>
+    <td> lowercase<br/><br/></td>
+</tr>
+<tr>
+    <td> InsertTable<br/><br/></td>
+    <td> Insert Table<br/><br/></td>
+</tr>
+<tr>
+    <td> TableDimensions<br/><br/></td>
+    <td> Table<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberOfColumns<br/><br/></td>
+    <td> Number of columns<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberOfRows<br/><br/></td>
+    <td> Number of rows<br/><br/></td>
+</tr>
+<tr>
+    <td> Cancel<br/><br/></td>
+    <td> Cancel<br/><br/></td>
+</tr>
+<tr>
+    <td> Insert<br/><br/></td>
+    <td> Insert<br/><br/></td>
+</tr>
+<tr>
+    <td> InsertLink<br/><br/></td>
+    <td> Insert Link<br/><br/></td>
+</tr>
+<tr>
+    <td> EditLink<br/><br/></td>
+    <td> Edit Link<br/><br/></td>
+</tr>
+<tr>
+    <td> Update<br/><br/></td>
+    <td> Update<br/><br/></td>
+</tr>
+<tr>
+    <td> EnterDisplayText<br/><br/></td>
+    <td> Enter the display text<br/><br/></td>
+</tr>
+<tr>
+    <td> EnterURL<br/><br/></td>
+    <td> Enter URL<br/><br/></td>
+</tr>
+<tr>
+    <td> BulletListDisc<br/><br/></td>
+    <td> Disc<br/><br/></td>
+</tr>
+<tr>
+    <td> BulletListCircle<br/><br/></td>
+    <td> Circle<br/><br/></td>
+</tr>
+<tr>
+    <td> BulletListSquare<br/><br/></td>
+    <td> Square<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListDecimal<br/><br/></td>
+    <td> Decimal<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListLowerAlpha<br/><br/></td>
+    <td> Lower Alpha<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListUpperAlpha<br/><br/></td>
+    <td> Upper Alpha<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListLowerRoman<br/><br/></td>
+    <td> Lower Roman<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListUpperRoman<br/><br/></td>
+    <td> Upper Roman<br/><br/></td>
+</tr>
+<tr>
+    <td> NumberedListLowerGreek<br/><br/></td>
+    <td> Lower Greek<br/><br/></td>
+</tr>
+<tr>
+    <td> AlignLeft<br/><br/></td>
+    <td> Align Left<br/><br/></td>
+</tr>
+<tr>
+    <td> AlignCenter<br/><br/></td>
+    <td> Align Center<br/><br/></td>
+</tr>
+<tr>
+    <td> AlignRight<br/><br/></td>
+    <td> Align Right<br/><br/></td>
+</tr>
+<tr>
+    <td> AlignJustify<br/><br/></td>
+    <td> Justify<br/><br/></td>
+</tr>
+<tr>
+    <td> Paragraph<br/><br/></td>
+    <td> Paragraph<br/><br/></td>
+</tr>
+<tr>
+    <td> Heading1<br/><br/></td>
+    <td> Heading 1<br/><br/></td>
+</tr>
+<tr>
+    <td> Heading2<br/><br/></td>
+    <td> Heading 2<br/><br/></td>
+</tr>
+<tr>
+    <td> Heading3<br/><br/></td>
+    <td> Heading 3<br/><br/></td>
+</tr>
+<tr>
+    <td> Heading4<br/><br/></td>
+    <td> Heading 4<br/><br/></td>
+</tr>
+</table>
 
 ## Setting CurrentUICulture to the application
 
